@@ -32,7 +32,7 @@ Create a Circular Gauge instance in Main Page and set Circular Gauge as a Conten
 
 ## Adding Header
 
-You can assign a unique header to **SfCircularGauge** by making use of **Header** property and you can positioned it wherever you want using **Position** property.
+You can assign a unique header to `SfCircularGauge` by making use of `Header` property and you can positioned it wherever you want using `Position` property.
 
 
 {% highlight c# %}
@@ -50,7 +50,7 @@ You can assign a unique header to **SfCircularGauge** by making use of **Header*
 
 ## Configuring Scales
 
-You can configure the **CircularScale** elements by making use of following API’s available in SfCircularGage.
+You can configure the `CircularScale` elements by making use of following API’s available in SfCircularGage.
 
 They are:
 
@@ -80,7 +80,7 @@ They are:
 
 ## Adding Ranges
 
-You can add ranges to SfCircularGauge by creating ranges collection using **Ranges**.
+You can add ranges to SfCircularGauge by creating ranges collection using `Ranges`.
 
 {% highlight c# %}
 
