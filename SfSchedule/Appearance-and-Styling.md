@@ -11,7 +11,7 @@ documentation: ug
 
 ## Cell Customization
 
-Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. Month view cell contains the date along with its appointments if available. There is an option available in Schedule control to change the default UI of Month View cell. By using monthViewItemChangedListener  each month cell can be changed to required UI. For instance, Sunday and Saturday can be differentiated by different color or customized to required UI.
+Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. Month view cell contains the date along with its appointments if available. There is an option available in Schedule control to change the default UI of Month View cell. By using `monthViewItemChangedListener`  each month cell can be changed to required UI. For instance, Sunday and Saturday can be differentiated by different color or customized to required UI.
 
 {% highlight c# %}
 
@@ -90,7 +90,7 @@ Schedule views are designed as per the native calendar control with some enriche
 
 ## Appointment Customization.
 
-ScheduleAppointment created in schedule are arranged based on its duration, where the appointments viewed through day, week and work week view  are positioned in the timeslots. Default UI of the appointments in day, week and work week view can be changed by using appointmentTemplateChangedListener .
+ScheduleAppointment created in schedule are arranged based on its duration, where the appointments viewed through day, week and work week view  are positioned in the timeslots. Default UI of the appointments in day, week and work week view can be changed by using `appointmentTemplateChangedListener` .
 
 {% highlight c# %}
 
@@ -190,7 +190,7 @@ ScheduleAppointment created in schedule are arranged based on its duration, wher
 
 ## Inline view Customization.
 
-By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which contains list of appointments on a particular day. Default UI of inline available in month view can be customized by using inlineTappedListener .
+By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which contains list of appointments on a particular day. Default UI of inline available in month view can be customized by using `inlineTappedListener` .
 
 {% highlight c# %}
 

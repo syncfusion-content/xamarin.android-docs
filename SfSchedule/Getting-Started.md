@@ -188,7 +188,7 @@ When the schedule appointments are viewed in Month view, it will not display muc
 
 ## Restricting Dates
 
-Certain dates can be restricted in schedule by setting `minDisplayDate` and `maxDisplayDate` properties of SfSchedule.  To know more about restricting dates within a particular range of dates refer Min Max dates.
+Certain dates can be restricted in schedule by setting `minDisplayDate` and `maxDisplayDate` properties of `SfSchedule`.  To know more about restricting dates within a particular range of dates refer Min Max dates.
 
 {% highlight c# %}
 

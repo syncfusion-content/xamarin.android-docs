@@ -15,11 +15,11 @@ TickSetting help you identify the gauge’s data value by marking the gauge scal
 
 ## Tick Customization  
 
-The **Interval** property is used to calculate the tick count for a scale. Like ticks, minor ticks are calculated using the **MinorTicksPerInterval** property.
+The `Interval` property is used to calculate the tick count for a scale. Like ticks, minor ticks are calculated using the `MinorTicksPerInterval` property.
 
-A tick’s length, color, and thickness are set by the **Length**, **Color** and **Thickness** UI properties.
+A tick’s length, color, and thickness are set by the `Length`, `Color` and    `Thickness` UI properties.
 
-The Major and Minor ticks can be positioned far away from the rim by using the **Offset** property
+The Major and Minor ticks can be positioned far away from the rim by using the `Offset` property
 
 
 {% highlight c# %}
