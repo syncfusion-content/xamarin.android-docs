@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides a quick overview for working with SfDataGrid for **Xamarin.Android**. You will walk through the entire process of creating a real world SfDataGrid.
+This section provides a quick overview for working with SfDataGrid for Xamarin.Android. You will walk through the entire process of creating a real world SfDataGrid.
 
 
 ## Assembly deployment
@@ -56,7 +56,7 @@ This section explains how to create a SfDataGrid and configure it. The SfDataGri
 
 ![](SfDataGrid_images/GettingStarted.png)
 
-You can download the entire source code of this demo for **Xamarin.Android** from [here](http://files2.syncfusion.com/Xamarin.Android/Samples/DataGrid_GettingStartedAndroid.zip).
+You can download the entire source code of this demo for Xamarin.Android from [here](http://files2.syncfusion.com/Xamarin.Android/Samples/DataGrid_GettingStartedAndroid.zip).
  
 In this walk through, you will create a new application that contains the SfDataGrid which includes the below topics.
 
@@ -71,7 +71,7 @@ In this walk through, you will create a new application that contains the SfData
 
 ## Creating the project
 
-Create a new Android application in Xamarin Studio or Visual Studio for **Xamarin.Android**.
+Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
 ## Adding SfDataGrid in Xamarin.Android
 
@@ -150,7 +150,7 @@ public class OrderInfo
 } 
 {% endhighlight %}
 
-N> If you want your data model to respond to property changes, then implement INotifyPropertyChanged interface in your model class
+N> If you want your data model to respond to property changes, then implement `INotifyPropertyChanged` interface in your model class
 
 Create a model repository class with OrderInfo collection property initialized with required number of data objects in a new class file as shown in the following code example and save it as OrderInfoRepository.cs file.
 
@@ -208,7 +208,7 @@ Now run the application to render the following output.
 
 By default, the SfDataGrid automatically creates columns for all the properties in the data source. The type of the column generated depends on the type of data in the column. When the columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event to customize or cancel the columns before they are added to the Columns collection in SfDataGrid.
  
-You can also define the columns manually by setting the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html) property to false and by adding the GridColumn objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. The following code example illustrates how this can be done. 
+You can also define the columns manually by setting the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html) property to false and by adding the `GridColumn` objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. The following code example illustrates how this can be done. 
 
 {% highlight c# %}
 dataGrid.AutoGenerateColumns = false;
