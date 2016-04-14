@@ -121,7 +121,7 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 Visible dates can be restricted between certain range of dates using `minDisplayDate` and `maxDisplayDate` properties available in Schedule control. It is applicable in all the schedule views.
 
-So that beyond the min max date range, it will restrict date navigations features of forward(), backward(), moveToDate() and also can’t swipe the control using touch gesture beyond the min max date range.Also, beyond the min max date range, selection will also not works for month view. So that tapped listeners while tapped on the month cell will not be listened. Thus Inline feature in month view will works only within the min max date range.
+So that beyond the min max date range, it will restrict date navigations features of forward(), backward(), moveToDate() and also can’t swipe the control using touch gesture beyond the min max date range.Also, beyond the min max date range, selection will also not works for month view. So that tapped events while tapped on the month cell will not be listened. Thus Inline feature in month view will works only within the min max date range.
 
 {% highlight c# %}
 
@@ -166,7 +166,7 @@ Dates can be navigated by using swipe gesture as well as using inbuilt methods (
 
 ## Inline
 
-By enabling Inline feature in month view, while touch the month view cell, appointments available in a particular day will be listed in inline view. There are options available to customize the default UI of inline view while tap on the month cell using `inlineTapped listener`. InlineAppointmentsTappedListener is a listener available in month view to raise while tapped on the appointments in inline view.
+By enabling Inline feature in month view, while touch the month view cell, appointments available in a particular day will be listed in inline view. There are options available to customize the default UI of inline view while tap on the month cell using `inlineTapped` event. InlineAppointmentsTapped event is a event available in month view to raise while tapped on the appointments in inline view.
 
 {% highlight c# %}
 
@@ -174,7 +174,7 @@ By enabling Inline feature in month view, while touch the month view cell, appoi
     sfschedule.ScheduleView = ScheduleView.WeekView;
     
     //setting Show inline 
-    fschedule.MonthViewSettings.ShowAppointmentsInline = true;
+    sfchedule.MonthViewSettings.ShowAppointmentsInline = true;
 
 {% endhighlight %}
 
