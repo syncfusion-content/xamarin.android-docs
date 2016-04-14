@@ -26,4 +26,4 @@ By using the following IDE, you can develop Xamarin.Android apps:
 
 **Supported** **Platforms**
 
-The Android platforms supported Android 4.1 (API level 16) and later versions.
+Supports Android 4.1 (API level 16) and later versions.
