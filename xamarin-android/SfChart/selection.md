@@ -35,8 +35,6 @@ columnSeries.SelectedDataPointColor = Color.Red;
 
 {% endhighlight %}
 
-{% endtabs %} 
-
 ![](selection_images/selection_img2.png)
 
 
