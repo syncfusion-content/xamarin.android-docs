@@ -9,7 +9,7 @@ documentation: ug
 
 # Views
 
-Schedule control provides four different types of views to display dates. Day view, Week view, WorkWeek view and month view. It can be assigned to the schedule control by using `ScheduleView` property. Based on the user’s preference appointments can be viewed in any of the four type of view available. By default schedule control is assigned with day view.
+Schedule control provides four different types of views to display dates. Day view, Week view, Work Week view and Month view. It can be assigned to the schedule control by using `ScheduleView` property. Based on the user’s preference appointments can be viewed in any of the four type of view available. By default schedule control is assigned with day view.
 
 ## Day View
 
@@ -38,15 +38,15 @@ You can format the date and time string in the schedule control using `DayLabelS
 
 #### Non-Accessible Blocks
 
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlocks` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 #### Working Hours
 
-You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and  `WorkEndHour`  properties of DayViewSettings.
+You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and  `WorkEndHour` properties of DayViewSettings.
 
 #### All Day Appointments Panel
 
-You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay property of DayViewSettings as true.
+You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of DayViewSettings as true.
 
 {% highlight c# %}
 
@@ -93,7 +93,7 @@ You can view All day appointments in separate panel and the panels visibility ca
 
 ## Week View
 
-To view all the seven days of a particular week, by default if will be current week.Appointments arranged in timeslots based on its duration with respective day of the week.
+To view all the seven days of a particular week, by default if will be current week. Appointments arranged in timeslots based on its duration with respective day of the week.
 
 {% highlight c# %}
 
@@ -118,7 +118,7 @@ You can format the date and time string in the schedule control using `WeekLabel
 
 #### Non-Accessible Blocks
 
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlocks` of `WeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 #### Working Hours
 
@@ -198,7 +198,7 @@ You can format the date and time string in the schedule control using `WorkWeekL
 
 #### Non-Accessible Blocks
 
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlocks` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 #### Working Hours
 
@@ -282,7 +282,7 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
 
 #### Week number
 
-You display the week number of the year in month view by setting `showWeekNumber` in property of `MonthViewSettings` are true. By default it is false.
+You display the week number of the year in month view by setting `ShowWeekNumber` in property of `MonthViewSettings` are true. By default it is false.
 
 #### Visible AppointmentCount
 
