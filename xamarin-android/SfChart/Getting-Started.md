@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-## Create your first Chart in Xamarin.Android
+# Getting Started
 
 This section provides a quick overview for working with Essential Chart for Xamarin Android. It guides you to the entire process of creating a real-world chart.
 
@@ -99,7 +99,7 @@ December</td><td>
 
 
 
-### Reference Essential Studio components in your solution
+## Reference Essential Studio components in your solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
@@ -117,7 +117,7 @@ android\Syncfusion.SfChart.Andriod.dll
 
 
 
-### Add and configure the Chart
+## Add and configure the Chart
 
 The following steps explain on how to create a Chart and configure its elements,
 
@@ -157,7 +157,7 @@ chart.Title.Text = "Weather Analysis";
 
 {% endhighlight %}
 
-Add a Chart series
+## Add Chart series
 
 In this sample, you can display the temperature over the months using a Column Series. Before creating the series, create a data model representing the climate details data.
 
@@ -202,7 +202,7 @@ chart.Series.Add (new ColumnSeries ()
 
 {% endhighlight %}
 
-### Add Legends
+## Add Legends
 
 You can enable the Legends in SfChart by setting legend visibility to visible as follows.
 
@@ -231,7 +231,7 @@ chart.Series.Add (new ColumnSeries ()
 
 {% endhighlight %}
 
-### Add multiple series to the SfChart
+## Add multiple series to the SfChart
 
 So far, only the high temperature data is displayed over time. Now, you can display other data such as low temperature and precipitation.
 
@@ -266,7 +266,7 @@ chart.Series.Add (new SplineSeries ()
 
 Currently, all the data is plotted against a single scale but the precipitation data should be plotted against a different scale.
 
-### Add multiple Y-axis
+## Add multiple Y-axis
 
 Add a secondary axis(y axis) to the chart as follows.
 
