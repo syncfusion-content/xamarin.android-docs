@@ -40,7 +40,7 @@ Similarly, you can specify the settings of other linear Barcodes corresponding t
 
 ## Two Dimensional Barcode Settings
 
-Two dimensional Barcodes are customized by using the `xDimension` property that modifies its block size and it is commonly used for all kinds of supported two dimensional Barcodes.
+Two dimensional Barcodes are customized by using the `XDimension` property that modifies its block size and it is commonly used for all kinds of supported two dimensional Barcodes.
 
 ### Data Matrix Settings
 
@@ -56,8 +56,8 @@ The Data Matrix symbology can be customized with the help of the following setti
 
 {% endhighlight %}
 
-* The `encoding` property is used to specify the encoding technique from enumeration of `DataMatrixEncoding` that contains encoding techniques such as ASCII, ASCIINumeric, Auto and Base256.
-* The `size` property allows you to specify the size of the Barcode from a set of predefined sizes available in the `DataMatrixSize` enumeration.
+* The `Encoding` property is used to specify the encoding technique from enumeration of `DataMatrixEncoding` that contains encoding techniques such as ASCII, ASCIINumeric, Auto and Base256.
+* The `Size` property allows you to specify the size of the Barcode from a set of predefined sizes available in the `DataMatrixSize` enumeration.
 
 
 <table>										
