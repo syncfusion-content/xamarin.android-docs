@@ -651,7 +651,7 @@ radarSeries.DrawType = PolarChartDrawType.Line;
 
 {% endhighlight %}
 
-![](charttypes_images/charttypes_img41.png)
+![](charttypes_images/charttypes_img42.png)
 
 ### Customize the appearance
 
@@ -677,7 +677,7 @@ radarSeries.StrokeColor = Color.Blue;
 
 {% endhighlight %}
 
-![](charttypes_images/charttypes_img42.png)
+![](charttypes_images/charttypes_img43.png)
 
 ### Closed Series
 
@@ -694,7 +694,7 @@ radarSeries.Closed = false;
 
 {% endhighlight %}
 
-![](charttypes_images/charttypes_img43.png)
+![](charttypes_images/charttypes_img44.png)
 
 ## Polar Chart
 
@@ -718,7 +718,7 @@ polarSeries.DrawType = PolarChartDrawType.Line;
 
 {% endhighlight %}
 
-![](charttypes_images/charttypes_img44.png)
+![](charttypes_images/charttypes_img45.png)
 
 ### Customize the appearance
 
@@ -744,7 +744,7 @@ polarSeries.StrokeColor = Color.Blue;
 
 {% endhighlight %}
 
-![](charttypes_images/charttypes_img45.png)
+![](charttypes_images/charttypes_img46.png)
 
 ### Closed Series
 
@@ -761,7 +761,7 @@ polarSeries.Closed = false;
 
 {% endhighlight %}
 
-![](charttypes_images/charttypes_img46.png)
+![](charttypes_images/charttypes_img47.png)
 
 ## Pie Chart
 
