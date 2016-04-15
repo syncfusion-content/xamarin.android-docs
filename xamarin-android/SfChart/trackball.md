@@ -1,0 +1,160 @@
+---
+layout: post
+title: Chart Trackball
+description: How to enable and customize the trackball behavior in Xamarin.Android Chart
+platform: Xamarin.Android
+control: Chart
+documentation: ug
+---
+
+# Trackball
+
+Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of `ChartTrackballBehavior` to the `Behaviors` collection property of `SfChart`. Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
+
+You can use the following properties to show/hide the line and labels.
+
+* `ShowLabel` – Shows/hides trackball label. Default value is true.
+
+* `ShowLine` – Shows/hides the trackball line. Default value is true.
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+ChartTrackballBehavior trackballBehavior = new ChartTrackballBehavior();
+trackballBehavior.ShowLabel = true;
+trackballBehavior.ShowLine = true;
+
+chart.Behaviors.Add(trackballBehavior);
+
+{% endhighlight %}
+
+![](trackball_images/trackball_img1.png)
+
+## Label Display Mode
+
+`LabelDisplayMode` property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the three options you can set to this property,
+
+* `FloatAllPoints` – Displays label for all the data points along the vertical line.
+* `NearestPoint` – Displays label for single data point that is nearer to the touch contact position.
+* `GroupAllPoints` - Displays label for all the data points are grouped and positioned at the top of the chart area.
+
+{% highlight c# %} 
+[C#]
+
+trackballBehavior.LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint;
+
+{% endhighlight %}
+
+In the following screenshot, trackball label is shown for only single data point,
+
+![](trackball_images/trackball_img2.png)
+
+## Customizing appearance
+
+**Customize Trackball Labels**
+
+Following properties are used to customize the trackball labels.
+
+* `TextColor` – used to change the color of the labels.
+* `BackgroundColor` – used to change the label background color.
+* `StrokeColor` – used to change the border color.
+* `StrokeWidth` – used to change the thickness of the border.
+* `TextSize` – used to change the text size.
+* `Typeface` – used to change the font family and font weight.
+* `MarginTop` - used to change the top margin of the labels.
+* `MarginBottom` - used to change the bottom margin of the labels.
+* `MarginLeft` - used to change the left margin of the labels.
+* `MarginRight` - used to change the right margin of the labels.
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+ChartTrackballBehavior trackballBehavior = new ChartTrackballBehavior();
+
+trackballBehavior.LabelStyle.BackgroundColor = Color.Cyan;
+
+trackballBehavior.LabelStyle.StrokeColor = Color.ParseColor("#FF8C0707");
+
+trackballBehavior.LabelStyle.StrokeWidth = 2;
+
+trackballBehavior.LabelStyle.TextColor = Color.Red;
+
+trackballBehavior.LabelStyle.TextSize = 18;
+
+chart.Behaviors.Add(trackballBehavior);
+
+{% endhighlight %}
+
+
+**Customize Trackball Marker**
+
+Following properties are used to customize the trackball marker.
+
+* `ShowMarker` – used to enable / disable the marker. Default value is true.
+* `StrokeColor` – used to change the marker stroke color.
+* `Color` – used to change the marker background color.
+* `StrokeWidth` – used to change the width of the marker stroke.
+* `Width` – used to change the width of the marker.
+* `Height` – used to change the height of the marker.
+
+{% highlight c# %} 
+
+SfChart chart = new SfChart();
+...
+
+ChartTrackballBehavior trackballBehavior = new ChartTrackballBehavior();
+
+trackballBehavior.MarkerStyle.StrokeColor = Color.Purple;
+
+trackballBehavior.MarkerStyle.StrokeWidth = 1;
+
+trackballBehavior.MarkerStyle.ShowMarker = true;
+
+trackballBehavior.MarkerStyle.Height = 8;
+
+trackballBehavior.MarkerStyle.Width = 8;
+
+trackballBehavior.MarkerStyle.Color = Color.Green;
+
+chart.Behaviors.Add(trackballBehavior);
+
+{% endhighlight %}
+
+**Customize Trackball Line**
+
+Following properties are used to customize the trackball line.
+
+* `ShowLine` – used to enable / disable the line. Default value is true.
+* `StrokeWidth` – used to change the stroke width of the line.
+* `StrokeColor` – used to change the stroke color of the line.
+* `PathEffect` – Specifies the dashes to be applied on the line.
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+ChartTrackballBehavior trackballBehavior = new ChartTrackballBehavior();
+
+trackballBehavior.ShowLine = true;
+     
+trackballBehavior.LineStyle.StrokeWidth = 2;
+     
+trackballBehavior.LineStyle.StrokeColor = Color.Blue;
+
+trackballBehavior.LineStyle.PathEffect = new DashPathEffect(new float[] { 2, 3 }, 3);
+
+chart.Behaviors.Add(trackballBehavior);
+
+{% endhighlight %}
+
+Following screenshot illustrates the customization of trackball elements.
+
+![](trackball_images/trackball_img3.png)
