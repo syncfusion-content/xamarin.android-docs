@@ -32,6 +32,5 @@ highTemperature.Add(new ChartDataPoint("Sep", 78));
 highTemperature.Add(new ChartDataPoint("Oct", 67));
 highTemperature.Add(new ChartDataPoint("Nov", 55));
 highTemperature.Add(new ChartDataPoint("Dec", 45));
-{% endhighlight %}
 
-{% endtabs %}
+{% endhighlight %}
