@@ -9,15 +9,15 @@ documentation: ug
 
 # Recurrence
 
-Recursive appointments can be created by enabling `isRecursive` property in Schedule appointments, to know more about adding appointments in the control, refer ScheduleAppointment
+Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments, to know more about adding appointments in the control, refer Schedule Appointment.
 
-And then need to set the RecurrenceRule to populate the required recursive appointment collection in a specific pattern.
+And then need to set the `RecurrenceRule` to populate the required recursive appointment collection in a specific pattern.
 
 Recursive appointment can be created in any recurrence patterns, for instance, some events can be repeated every week such as “Server maintenance”, where as some on them may repeat every year like wedding anniversary. 
 
 ## Recurrence Pattern
 
-* Recurrence pattern used in the control are in iCal standard 
+* Recurrence pattern used in the control are in `iCal` standard 
 * Schedule control supports all four types of recurrence patterns.
    * Daily Recurrence
    * Weekly Recurrence

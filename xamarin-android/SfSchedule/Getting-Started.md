@@ -13,7 +13,7 @@ This section explains you the steps required to render the Schedule control by p
 
 ## Adding control reference to the application
 
-Illustration for the procedures to install the Syncfusion Essential Studio can be referred from [Syncfusion Xamarin.Android components installation](http://help.syncfusion.com/Xamarin.Android/introduction/download-and-installation), `Syncfusion.SfSchedule.Xamarin.Android.aar` should be used to add schedule reference in the application. 
+Illustration for the procedures to install the Syncfusion Essential Studio can be referred from [Syncfusion Xamarin.Android components installation](http://help.syncfusion.com/Xamarin.Android/introduction/download-and-installation), `Syncfusion.SfSchedule.Android` should be used to add schedule reference in the application. 
 
 ## Initializing Schedule 
 
@@ -35,7 +35,7 @@ Create a SfSchedule instance in Main Activity and set schedule as a ContentView 
 
 ![](GettingStarted_images/GettingStarted_img1.jpeg)
 
-You can change the default UI of schedule using ScheduleView to display the dates in different layouts available in the control.
+You can change the default UI of schedule using `ScheduleView` to display the dates in different layouts available in the control.
 
 {% highlight c# %}
 
@@ -50,7 +50,7 @@ You can change the default UI of schedule using ScheduleView to display the date
 
 ## Populating Events
 
-You can also add events to the schedule by creating collection of ScheduleAppointments  using  `ScheduleAppointmentCollection`. 
+You can also add events to the schedule by creating collection of ` ScheduleAppointment` using  `ScheduleAppointmentCollection`. 
 
 {% highlight c# %}
 
@@ -106,7 +106,7 @@ You can also add events to the schedule by creating collection of ScheduleAppoin
 
 ## Populating Recursive Events
 
-You can also add recursive appointments to Schedule,refer Recurrence section to know more about creating the recursive appointments using Rrule generator in schedule.
+You can also add recursive appointments to Schedule, refer Recurrence section to know more about creating the recursive appointments using RRULE generator in schedule.
 
 {% highlight c# %}
 
@@ -173,7 +173,7 @@ You can also add recursive appointments to Schedule,refer Recurrence section to 
 
 ## Enabling Appointments Inline
 
-When the schedule appointments are viewed in Month view, it will not display much information about the appointments, you can view the appointments in inline by setting `showAppointmentsInline` property of `MonthViewSettings` as `True`.
+When the schedule appointments are viewed in Month view, it will not display much information about the appointments, you can view the appointments in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` as `True`.
 
 {% highlight c# %}
 
@@ -188,7 +188,7 @@ When the schedule appointments are viewed in Month view, it will not display muc
 
 ## Restricting Dates
 
-Certain dates can be restricted in schedule by setting `minDisplayDate` and `maxDisplayDate` properties of `SfSchedule`.  To know more about restricting dates within a particular range of dates refer Min Max dates.
+Certain dates can be restricted in schedule by setting `MinDisplayDate` and `MaxDisplayDate` properties of `SfSchedule`.  To know more about restricting dates within a particular range of dates refer Min Max dates.
 
 {% highlight c# %}
 
