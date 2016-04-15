@@ -50,7 +50,7 @@ You can change the default UI of schedule using `ScheduleView` to display the da
 
 ## Populating Events
 
-You can also add events to the schedule by creating collection of ` ScheduleAppointment` using  `ScheduleAppointmentCollection`. 
+You can also add events to the schedule by creating collection of `ScheduleAppointment` using `ScheduleAppointmentCollection`. 
 
 {% highlight c# %}
 
