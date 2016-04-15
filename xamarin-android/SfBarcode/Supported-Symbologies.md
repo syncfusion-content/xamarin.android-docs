@@ -126,7 +126,7 @@ Code 39 Extended Barcode
 Code 93 is designed to complement and improve upon Code 39. It represents the full ASCII character set by using the combination of 2 characters. It is a continuous, variable-length symbology and it produces denser code.
 
 * Encodes character set of uppercase alphabets (A-Z), digits (0-9), and special characters like asterisk (*), dash (-), dollar ($), percent (%), Space, dot (.), slash (/), and plus (+).
-* The asterisk (*) is not a true encoding character, but it is the start and stop symbol for Code 93 symbology.
+* The asterisk (*) is not a true  character, but it is the start and stop symbol for Code 93 symbology.
 
 {% highlight c# %}
 
@@ -145,7 +145,7 @@ Code 93 Barcode
 Code 93 is designed to complement and improve upon Code 39. It represents the full ASCII character set by using the combination of 2 characters. It is a continuous, variable-length symbology and it produces denser code.
 
 * Encodes character set of uppercase alphabets (A-Z), digits (0-9), and special characters like asterisk (*), dash (-), dollar ($), percent (%), Space, dot (.), slash (/), and plus (+).
-* The asterisk (*) is not a true encoding character, but it is the start and stop symbol for Code 93 symbology.
+* The asterisk (*) is not a true  character, but it is the start and stop symbol for Code 93 symbology.
 
 {% highlight c# %}
 
@@ -161,7 +161,7 @@ Code 93 Extended Barcode
 
 ### Code 128
 
-Code 128 is a variable length, high density, alphanumeric, linear Barcode symbology. It is capable of encoding full ASCII character set and extended character sets. This symbol includes a checksum digit for verification and the Barcode may also be verified character-by-character for parity of each data byte.
+Code 128 is a variable length, high density, alphanumeric, linear Barcode symbology. It is capable of  full ASCII character set and extended character sets. This symbol includes a checksum digit for verification and the Barcode may also be verified character-by-character for parity of each data byte.
 
 #### Code 128 A
 
@@ -243,7 +243,7 @@ QR Barcode
 
 ### Data Matrix
 
-DataMatrix symbology is widely used in printed media such as labels and letters. It can be read easily by a Barcode reader and also by mobile phones. It consists of a Grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the Barcode can be either number or alphanumeric.
+`DataMatrix` symbology is widely used in printed media such as labels and letters. It can be read easily by a Barcode reader and also by mobile phones. It consists of a Grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the Barcode can be either number or alphanumeric.
 
 {% highlight c# %}
 

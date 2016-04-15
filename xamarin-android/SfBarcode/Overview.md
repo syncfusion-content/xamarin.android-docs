@@ -13,5 +13,5 @@ Essential Barcode for Xamarin.Android provides a perfect approach to encode text
 
 
 ![](Overview_images/Overview_img1.png)                                                                                                                    
-Xamarin.Android device with 1D & 2D Barcodes                                                           
+Android device with 1D & 2D Barcodes                                                           
 {:.caption}
