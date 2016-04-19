@@ -25,7 +25,7 @@ Spin Buttons will get aligned to the right side of the control.
 
 {% endhighlight %}
 
-![](images/right.png)
+![](images/spinright.png)
 
 ### Left
 
@@ -37,7 +37,7 @@ Spin Buttons will get aligned to the left side of the control.
 
 {% endhighlight %}
 
-![](images/left.png)
+![](images/spinleft.png)
 
 ### Both
 
@@ -49,7 +49,7 @@ Spin Buttons will get aligned to the both side of the control.
 
 {% endhighlight %}
 
-![](images/both.png)
+![](images/spinboth.png)
 
 N> By default the property value is Right.
 
