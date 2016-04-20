@@ -8,11 +8,10 @@ documentation: ug
 ---
 
 # Getting started
-## Create your first DateTime Range Navigator in Xamarin.Android
 
 This section walks you through the steps required to add SfDateTimeRangeNavigator and populate it with data, and also explains how to respond to range selection performed in the control. 
 
-### Reference Essential Studio components in your solution
+## Reference Essential Studio components in your solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
@@ -24,7 +23,7 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfChart.Andriod.dll
 
-### Add and configure the SfDateTimeRangeNavigator 
+## Add and configure the SfDateTimeRangeNavigator 
 
 First, let us initialize the control with major and minor date time scales by specifying the minimum and maximum date to be visualized in the control using `Minimum` and `Maximum` properties.
 
@@ -43,7 +42,7 @@ sfDateTimeRangeNavigator.Maximum = new GregorianCalendar(2016, 01, 01).Time;
 
 ![](gettingstarted_images/gettingstarted_img1.jpeg)
 
-### Handle range selection
+## Handle range selection
 
 In real time, other controls like chart, grid etc., are updated in response to the range selection performed in `SfDateTimeRangeNavigator`. You can handle the selection using `RangeChanged` event and update other controls based on the selected date time or perform some other tasks using the selected data.
 
