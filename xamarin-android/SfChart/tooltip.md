@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-Tooltip for data points, can be enabled by setting `TooltipEnabled` method as `true`.
+Tooltip for data points, can be enabled by setting `TooltipEnabled` property as `true`.
 
 {% highlight c# %} 
 [C#]
@@ -31,7 +31,7 @@ chart.Series.Add(columnSeries);
 
 ## Customizing appearance
 
-For customizing the tooltip appearance, you need to add an instance of `ChartTooltipBehavior` to the `Behaviors` collection method of `SfChart`. You can use the following methods available in the `ChartTooltipBehavior`.
+For customizing the tooltip appearance, you need to add an instance of `ChartTooltipBehavior` to the `Behaviors` collection property of `SfChart`. You can use the following properties available in the `ChartTooltipBehavior`.
 
 * `StrokeColor` – used to change the label border color.
 * `StrokeWidth` – used to change the label border width.
