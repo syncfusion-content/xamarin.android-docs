@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation
 
-`SfChart` provides animation support for data series. Series will be animated whenever the DataSource changes. Animation can be enabled by using the `AnimationEnabled` method. You can also control the duration of the animation using `AnimationDuration` method. 
+`SfChart` provides animation support for data series. Series will be animated whenever the DataSource changes. Animation can be enabled by using the `AnimationEnabled` property. You can also control the duration of the animation using `AnimationDuration` property. 
 
 {% highlight c# %}
 [C#]
