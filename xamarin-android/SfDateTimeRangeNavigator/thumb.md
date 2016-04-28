@@ -36,6 +36,6 @@ rangenavigator.RightThumbStyle.LineColor = 0xE70E49;
 rangenavigator.RightThumbStyle.LineWidth = 5;
 {% endhighlight %}
 
-![](thumb_images/thumb_img1.jpeg)
+![](thumb_images/thumb_img1.png)
 
 
