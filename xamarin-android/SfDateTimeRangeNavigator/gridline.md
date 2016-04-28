@@ -29,6 +29,6 @@ rangenavigator.MinorScaleStyle.GridLineWidth = 3;
 rangenavigator.MinorScaleStyle.GridLinePathEffect = new DashPathEffect(new float[] { 4, 4}, 0);
 {% endhighlight %}
 
-![](gridline_images/gridline_img1.jpeg)
+![](gridline_images/gridline_img1.png)
 
 
