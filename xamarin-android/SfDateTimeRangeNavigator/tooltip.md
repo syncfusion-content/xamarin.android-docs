@@ -22,7 +22,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator(this);
 rangeNavigator.TooltipEnabled = false;
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img1.jpeg)
+![](tooltip_images/tooltip_img1.png)
 
 ## Tooltip Format
 
@@ -33,7 +33,7 @@ You can format the date value of the tooltip using `TooltipFormat` property of `
 dateTimeRangeNavigator.TooltipFormat = "yyyy/MM";
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img2.jpeg)
+![](tooltip_images/tooltip_img2.png)
 
 ## Appearance Customization
 
@@ -72,6 +72,6 @@ dateTimeRangeNavigator.RightTooltipStyle.MarginRight = 15;
 dateTimeRangeNavigator.RightTooltipStyle.MarginBottom = 15;
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img3.jpeg)
+![](tooltip_images/tooltip_img3.png)
 
 
