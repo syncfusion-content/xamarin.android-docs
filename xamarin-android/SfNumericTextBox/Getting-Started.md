@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion NumericTextBox control for Xamarin.Android
 description: A quick tour to initial users on Syncfusion numericTextBox control for Xamarin.Android platform 
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you the steps to configure a NumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in NumericTextBox control.
 
-![](images/NumericTextBox.png) 
+![](images/gettingstarted.png) 
 
 ## Creating your first NumericTextBox in Xamarin.Android
 
