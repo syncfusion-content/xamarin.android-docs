@@ -43,5 +43,5 @@ sfRangeNavigator.DeferredUpdateEnabled = false;
 
 This event is triggered when the selected range of the `SfDateTimeRangeNavigator` is changed. The argument contains the following information.
 
-* `ViewRangeStartDate` – used to get the start date of the selected range.
-* `ViewRangeEndDate` – used to get the end date of the selected range.
+* `P0` – used to get the start date of the selected range.
+* `P1` – used to get the end date of the selected range.
