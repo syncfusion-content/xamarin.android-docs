@@ -28,10 +28,6 @@ sfRangeNavigator.ViewRangeEnd = new GregorianCalendar(2016, 9, 1).Time;
 
 ![](range_images/range_img1.png)
 
-## Selected Data
-
-The `SelectedData` property of `SfDateTimeRangeNavigator` used to get the underlying data collection of the selected range. You can directly bind this property to other data visualization control to visualize the selected range of data.
-
 ## Deferred Update
 
 `RangeChanged` event will be fired whenever you drag the thumbs. If you are doing some long running tasks in this event handler, then dragging the thumbs will not be smooth. You can delay this event by enabling `EnableDeferredUpdate` property. If this property is set to true, the `RangeChanged` event will get fired only when you stop dragging or if the thumb is held for more than 500 milliseconds. If it is false, the range will be updated for every movement of the thumb. However, It is true by default.
