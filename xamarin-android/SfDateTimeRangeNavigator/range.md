@@ -30,7 +30,7 @@ sfRangeNavigator.ViewRangeEnd = new GregorianCalendar(2016, 9, 1).Time;
 
 ## Deferred Update
 
-`RangeChanged` event will be fired whenever you drag the thumbs. If you are doing some long running tasks in this event handler, then dragging the thumbs will not be smooth. You can delay this event by enabling `EnableDeferredUpdate` property. If this property is set to true, the `RangeChanged` event will get fired only when you stop dragging or if the thumb is held for more than 500 milliseconds. If it is false, the range will be updated for every movement of the thumb. However, It is true by default.
+`RangeChanged` event will be fired whenever you drag the thumbs. If you are doing some long running tasks in this event handler, then dragging the thumbs will not be smooth. You can delay this event by enabling `DeferredUpdateEnabled` property. If this property is set to true, the `RangeChanged` event will get fired only when you stop dragging or if the thumb is held for more than 500 milliseconds. If it is false, the range will be updated for every movement of the thumb. However, It is true by default.
 
 {% highlight c# %}
 SfDateTimeRangeNavigator sfRangeNavigator = new SfDateTimeRangeNavigator(); 
