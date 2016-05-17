@@ -13,7 +13,7 @@ This section explains you the steps required to render the Schedule control by p
 
 ## Adding control reference to the application
 
-Illustration for the procedures to install the Syncfusion Essential Studio can be referred from [Syncfusion Xamarin.Android components installation](http://help.syncfusion.com/Xamarin.Android/introduction/download-and-installation), `Syncfusion.SfSchedule.Android` should be used to add schedule reference in the application. 
+Illustration for the procedures to install the Syncfusion Essential Studio can be referred from [Syncfusion Xamarin.Android components installation](http://help.syncfusion.com/Xamarin-Android/introduction/download-and-installation), `Syncfusion.SfSchedule.Android` should be used to add schedule reference in the application. 
 
 ## Initializing Schedule 
 
