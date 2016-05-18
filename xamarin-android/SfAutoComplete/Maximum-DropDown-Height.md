@@ -17,4 +17,4 @@ To set the maximum height of the drop-down portion of the Autocomplete Box contr
 	 
 {% endhighlight %}
 	
-![](images/maxdropdownheight.png)
+![](images/maximumdropdownheight.png)

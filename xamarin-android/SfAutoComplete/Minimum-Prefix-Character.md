@@ -21,4 +21,4 @@ N> Population of the Autocomplete Box does not occur until the conditions specif
 	 
 {% endhighlight %}
 	
-![](images/minprefixcharacter.png)
+![](images/minimumprefixcharacter.png)
