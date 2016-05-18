@@ -84,6 +84,6 @@ It provides the following options:
 
 {% endhighlight %}
 
-![](images/PercentageDisplayMode.png)
+![](images/PercentDisplayMode.png)
 
 
