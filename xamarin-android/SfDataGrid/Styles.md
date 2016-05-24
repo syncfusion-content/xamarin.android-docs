@@ -83,7 +83,7 @@ public class Dark : DataGridStyle
     
     public override Color GetAlternatingRowBackgroundColor()
     {
-    return Color.Cyan;
+        return Color.Cyan;
     }
 } 
 {% endhighlight %}
