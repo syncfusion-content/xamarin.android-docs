@@ -39,8 +39,8 @@ android\Syncfusion.SfBusyIndicator.Andriod.dll
 
 {% highlight c# %}
 	
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-    this.Content=sfBusyIndicator;
+	SfBusyIndicator busyIndicator = new SfBusyIndicator(this);
+    this.Content=busyIndicator;
 	
 {% endhighlight %}
 
@@ -59,11 +59,11 @@ To set AnimationType for the BusyIndicator, use AnimationType property and choos
 
 {% highlight c# %}
 	
-	sfBusyIndicator.AnimationType=AnimationTypes.Ball;
-	sfBusyIndicator.TextColor=Color.RED;
-	sfBusyIndicator.ViewBoxHeight=20;
-	sfBusyIndicator.ViewBoxWidth=20;
-	sfBusyIndicator.IsBusy=True;
+	busyIndicator.AnimationType=AnimationTypes.Ball;
+	busyIndicator.TextColor=Color.RED;
+	busyIndicator.ViewBoxHeight=20;
+	busyIndicator.ViewBoxWidth=20;
+	busyIndicator.IsBusy=True;
 	
 {% endhighlight %}
 

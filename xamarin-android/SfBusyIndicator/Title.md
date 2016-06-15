@@ -15,8 +15,9 @@ It is one of the representation of showing what is going on.
 
 {% highlight c# %}
 
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	sfBusyIndicator.Title="Loading...";
+	SfBusyIndicator busyIndicator = new SfBusyIndicator(this);
+	busyIndicator.AnimationType=AnimationTypes.Battery;
+	busyIndicator.Title="Loading...";
 	
 {% endhighlight %}
 
@@ -31,9 +32,10 @@ BusyIndicator with title
 
 {% highlight c# %}
 
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	sfBusyIndicator.Title="Loading...";
-	sfBusyIndicator.Fontface=Typeface.create("Arial",Typeface.BOLD);
+	SfBusyIndicator busyIndicator = new SfBusyIndicator(this);
+	busyIndicator.AnimationType=AnimationTypes.Battery;
+	busyIndicator.Title="Loading...";
+	busyIndicator.Fontface=Typeface.create("Arial",Typeface.NONE);
 
 {% endhighlight %}
 

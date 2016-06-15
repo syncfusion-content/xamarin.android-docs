@@ -20,7 +20,7 @@ The selected dates can be retrieved through `CalendarTappedListner` which is rai
 
 {% highlight c# %}
 	
-	sfCalendar.SelectionMode=SelectionMode.SingleSelection;
+	calendar.SelectionMode=SelectionMode.SingleSelection;
 	
 {% endhighlight %}
 

@@ -41,8 +41,8 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 
 {% highlight C# %}
 
-	SfCarousel sfCarousel=new SfCarousel();
-	SetContentView(sfCarousel);
+	SfCarousel carousel=new SfCarousel();
+	SetContentView(carousel);
 
 {% endhighlight %}
 
@@ -52,9 +52,9 @@ Set the Offset property to specify the distance between the items in Carousel pa
 
 {% highlight C# %}
 
-	SfCarousel sfCarousel = new SfCarousel();
-	sfCarousel.SelectedIndex=2;
-	sfCarousel.Offset=20;
+	SfCarousel carousel = new SfCarousel();
+	carousel.SelectedIndex=2;
+	carousel.Offset=20;
 
 {% endhighlight %}
 
@@ -65,10 +65,10 @@ Set the RotationAngle property to decide the angle in which items should be rota
 
 {% highlight C# %}
 
-	SfCarousel sfCarousel = new SfCarousel();
-	sfCarousel.SelectedIndex=2;
-	sfCarousel.Offset=20;
-	SfCarousel.RotationAngle = 45;
+	SfCarousel carousel = new SfCarousel();
+	carousel.SelectedIndex=2;
+	carousel.Offset=20;
+	carousel.RotationAngle = 45;
 
 {% endhighlight %}
 
