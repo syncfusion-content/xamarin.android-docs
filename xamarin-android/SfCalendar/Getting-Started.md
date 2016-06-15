@@ -41,8 +41,8 @@ The following steps explain on how to create an Calendar and configure its eleme
 
 {% highlight c# %}
 	
-	SfCalendar sfCalendar = new SfCalendar(this);
-	setContentView(sfCalendar);
+	SfCalendar calendar = new SfCalendar(this);
+	setContentView(calendar);
 	
 {% endhighlight %}
 

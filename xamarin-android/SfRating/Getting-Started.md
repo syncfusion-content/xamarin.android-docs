@@ -44,13 +44,13 @@ Add the following assembly references to the Android project,
 
 {% highlight C# %}
 
-	sfRating.ItemCount=5;
-	sfRating.Precision = SFRatingPrecision.Half;
-	sfRating.ToolTipPlacement= SFRatingToolTipPlacement.None;
-	sfRating.ItemSize=10;
-	sfRating.Readonly=true;
-	sfRating.Value=(nfloat)3.5;
-	sfRating.ItemSpacing = 5;
+	rating.ItemCount=5;
+	rating.Precision = SFRatingPrecision.Half;
+	rating.ToolTipPlacement= SFRatingToolTipPlacement.None;
+	rating.ItemSize=10;
+	rating.Readonly=true;
+	rating.Value=(nfloat)3.5;
+	rating.ItemSpacing = 5;
 
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ N> By default, property value is 0.
 
 {% highlight C# %}
 
-    sfRating.Value=3;
+    rating.Value=3;
 
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ N> By default, property value is 0.
 
 {% highlight C#%}
 
-    sfRating.Precision = Precision.Standard;
+    rating.Precision = Precision.Standard;
 
 {% endhighlight%}
 
