@@ -70,7 +70,7 @@ The TabStripPosition property decides the position in which navigation strip ite
 
 ## Setting DataSource
 
-SfRotator items can be populated with a collection of image datas. For example, a user may want to create a SfRotator control which will display a sequence of images.
+SfRotator items can be populated with a collection of image data. For example, a user may want to create a SfRotator control which will display a sequence of images.
 
 {% highlight C# %}
 
