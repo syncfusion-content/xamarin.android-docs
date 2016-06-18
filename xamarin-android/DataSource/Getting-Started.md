@@ -40,8 +40,8 @@ This is how the final output will look like. You can also download the entire so
 
 ![](DataSource_images/datasource.png)
 
-* Create new **BlankApp** (Xamarin.Android) application in**Xamarin Studio** or **Visual Studio**.
-* Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs**file.
+* Create new **BlankApp** (Xamarin.Android) application in **Xamarin Studio** or **Visual Studio**.
+* Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs** file.
 {% tabs %}
 {% highlight c# %}
 public class Contacts : INotifyPropertyChanged
@@ -114,7 +114,7 @@ public class ContactsList : ObservableCollection<Contacts>, INotifyPropertyChang
 }
 {% endhighlight %}
 {% endtabs %}
-* You can set the source of the DataSource by using the `DataSource.Source` property as follows. Now you can bind the DataSource.DisplayItems as ItemsSource for any data bound control.
+* You can set the source of the DataSource by using the `DataSource.Source` property as follows. Now you can bind the `DataSource.DisplayItems` as ItemsSource for any data bound control.
 
 {% tabs %}
 {% highlight c# %}
@@ -149,12 +149,14 @@ dataSource.SortDescriptors.Add(new SortDescriptor("ContactName"));
 ## Grouping
 
 DataSource also allows to sort the bound source by using the `DataSource.GroupDescriptors` property.  You can create a `GroupDescriptor` for the property to be grouped and add it in the `DataSource.GroupDescriptors` collection. 
-GroupDescriptor object holds following two properties:
+`GroupDescriptor` object holds following two properties:
 
 * PropertyName: Name of the grouped property.
-* KeySelector: Sets the key selector for grouping
+* KeySelector: Sets the `KeySelector` for grouping
 * Comparer: Comparer to be applied in when sorting take place
-The following code example illustrates this without Key Selector.
+
+
+The following code example illustrates this without `KeySelector`.
 {% tabs %}
 {% highlight c# %}
 [C#]
@@ -162,7 +164,7 @@ dataSource.GroupDescriptors.Add(new GroupDescriptor("ContactName"));
 
 {% endhighlight %}
 {% endtabs %}
-The following code example illustrates this with Key Selector.
+The following code example illustrates this with `KeySelector`.
 {% tabs %}
 {% highlight c# %}
 [C#]
