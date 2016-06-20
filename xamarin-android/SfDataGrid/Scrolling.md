@@ -6,37 +6,7 @@ platform: xamarin
 control: SfDataGrid
 documentation: ug
 ---
-# Scrolling
-
-## Scroll to Row and Column Index
-
-* You can scroll programmatically to particular Row and Column using `SfDataGrid.ScrollToRowColumnIndex` method by passing row and column index.
-
-{% highlight C# %}
-
-dataGrid.ScrollToRowColumnIndex(int rowIndex, int columnIndex);
-
-{% endhighlight %}
-
-## Scroll to Row Index
-
-* You can scroll programmatically to particular Row `SfDataGrid.ScrollToRowIndex` method by passing row index.
-
-{% highlight C# %}
-
-dataGrid.ScrollToRowIndex(int rowIndex);
-
-{% endhighlight %}
-
-## Scroll to Column Index
-
-* You can scroll programmatically to particular Column `SfDataGrid.ScrollToColumnIndex` method by passing column index.
-
-{% highlight C# %}
-
-dataGrid.ScrollToColumnIndex(int columnIndex);
-
-{% endhighlight %}
+# Scrolling 
 
 ## ScrollingMode
 
@@ -69,5 +39,41 @@ dataGrid.ScrollingMode = ScrollingMode.Line;
 {% highlight c# %}
 dataGrid.ScrollingMode = ScrollingMode.Pixel; 
 {% endhighlight %}
+
+## Programmatic Scrolling
+
+SfDataGrid allow you to scroll to particular Row and Column index from programmatically
+
+### Scroll to Row and Column Index
+
+* You can scroll programmatically to particular Row and Column using `SfDataGrid.ScrollToRowColumnIndex` method by passing row and column index.
+
+{% highlight C# %}
+
+dataGrid.ScrollToRowColumnIndex(int rowIndex, int columnIndex);
+
+{% endhighlight %}
+
+### Scroll to Row Index
+
+* You can scroll programmatically to particular Row `SfDataGrid.ScrollToRowIndex` method by passing row index.
+
+{% highlight C# %}
+
+dataGrid.ScrollToRowIndex(int rowIndex);
+
+{% endhighlight %}
+
+### Scroll to Column Index
+
+* You can scroll programmatically to particular Column `SfDataGrid.ScrollToColumnIndex` method by passing column index.
+
+{% highlight C# %}
+
+dataGrid.ScrollToColumnIndex(int columnIndex);
+
+{% endhighlight %}
+
+
 
 

@@ -129,4 +129,4 @@ public class CustomAppearance : AppearanceManager
 
 The following screenshot shows the final outcome upon execution of the above code 
 
-![](SfDataGrid_images/Paging.png)
+![](SfDataGrid_images/CustomPageAppearence.png)
