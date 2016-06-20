@@ -43,7 +43,7 @@ The following steps explain on how to create an AutoComplete and configure its e
 {% highlight C# %}
 
 	SfAutoComplete countryAutoComplete = new SfAutoComplete(con);
-	this.Content=countryAutoComplete;
+	SetContentView(countryAutoComplete);
 	
 {% endhighlight %}
 

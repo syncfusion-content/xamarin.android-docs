@@ -40,7 +40,7 @@ android\Syncfusion.SfBusyIndicator.Andriod.dll
 {% highlight c# %}
 	
 	SfBusyIndicator busyIndicator = new SfBusyIndicator(this);
-    this.Content=busyIndicator;
+    SetContentView(busyIndicator);
 	
 {% endhighlight %}
 
