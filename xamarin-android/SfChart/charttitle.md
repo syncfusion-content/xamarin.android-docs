@@ -9,19 +9,19 @@ documentation: ug
 
 # Chart Title
 
-You can define and customize the Chart title using `Title` property of `SfChart`. The `Text` property of `ChartTitle` is used to set the text for the title. 
+You can define and customize the Chart title using [`Title`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle.html) property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). The [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~Text.html) property of [`ChartTitle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle.html) is used to set the text for the title. 
 
 Following properties are used to customize its appearance.
 
-* `Text` – used to set the chart title.
-* `TextColor` – used to change the color of the title.
-* `BackgroundColor` – used to change the title background color.
-* `TextSize` – used to change the text size.
-* `Typeface` – used to change the font family and font weight.
-* `Padding` - used to change the padding value for title.
-* `Height` - used to change the height of the title.
-* `Width` - used to change the width of the title.
-* `Alpha` - used to set the alpha value of title. It's range from 0.0 to 1.0
+* [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~Text.html) – used to set the chart title.
+* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~TextColors.html) – used to change the color of the title.
+* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~Background.html) – used to change the title background color.
+* [`TextSize`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~TextSize.html) – used to change the text size.
+* [`Typeface`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~Typeface.html) – used to change the font family and font weight.
+* [`Padding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~PaddingStart.html) - used to change the padding value for title.
+* [`Height`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~Height.html) - used to change the height of the title.
+* [`Width`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~Width.html) - used to change the width of the title.
+* [`Alpha`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~Alpha.html) - used to set the alpha value of title. It's range from 0.0 to 1.0
 
 {% highlight c# %}
 [C#]
@@ -38,7 +38,7 @@ sfChart.Title.SetTextColor( Color.Blue);
 
 ## Text Alignment
 
-You can align the title text content to the Start, Center or End of the title using the `TextAlignment` property of the `ChartTitle`.
+You can align the title text content to the Start, Center or End of the title using the [`TextAlignment`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~TextAlignment.html) property of the [`ChartTitle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle.html).
 
 {% highlight c# %}
 [C#]
