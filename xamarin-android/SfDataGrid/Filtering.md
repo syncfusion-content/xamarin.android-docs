@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Filtering | SfDataGrid | Xamarin | Syncfusion
+title: Filtering | SfDataGrid | Xamarin.Android | Syncfusion
 description: How to filter the records in view in a SfDataGrid.
-platform: xamarin.Android
+platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---

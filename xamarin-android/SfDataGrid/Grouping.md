@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Grouping | SfDataGrid | Xamarin | Syncfusion
+title: Grouping | SfDataGrid | Xamarin.Android | Syncfusion
 description: How to group a column in a SfDataGrid and about the properites and customizations in grouping.
-platform: xamarin.Android
+platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
