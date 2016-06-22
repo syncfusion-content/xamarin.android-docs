@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Scrolling | SfDataGrid | Xamarin | Syncfusion
+title: Scrolling | SfDataGrid | Xamarin.Android | Syncfusion
 description: How to scroll the SfDataGrid.
-platform: xamarin
+platform: Xamarin.Android
 control: SfDataGrid
 documentation: ug
 ---
+
 # Scrolling 
 
 ## ScrollingMode
