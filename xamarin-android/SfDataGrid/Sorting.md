@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sorting | SfDataGrid | Xamarin | Syncfusion
+title: Sorting | SfDataGrid | Xamarin.Android | Syncfusion
 description: How to sort the data and about the properties and events that involve in sorting in a SfDataGrid.
-platform: xamarin.Android
+platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
