@@ -11,7 +11,7 @@ documentation: ug
 
 ## Apply palette for Series
 
-`ColorModel` property of `SfChart` is used to define the colors for each series. ColorModel contains the following color palettes.
+[`ColorModel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~ColorModel.html) property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) is used to define the colors for each series. ColorModel contains the following color palettes.
 
 **Predefined Palettes**
 
@@ -21,7 +21,7 @@ Currently, Chart supports only Metro palette and it is the default palette for S
 
 **Custom Palette**
 
-You can apply the custom colors by setting the palette as `Custom` using `ColorPalette` and provide the custom colors using `CustomColors` property.
+You can apply the custom colors by setting the palette as [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.ChartColorPalette.html) using [`ColorPalette`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.ChartColorPalette.html) and provide the custom colors using [`CustomColors`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~CustomColors.html) property.
 
 Following code illustrates how to set the custom colors.
 
@@ -45,11 +45,11 @@ chart.ColorModel.CustomColors = colors;
 
 **None Palette**
 
-None palette will not apply any color to the series. So in order to define the color for any series, you can use the `Color` property or the `ColorModel` property of ChartSeries (The ColorModel of Series will be explained later in this document).
+None palette will not apply any color to the series. So in order to define the color for any series, you can use the [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) property or the `ColorModel` property of ChartSeries (The ColorModel of Series will be explained later in this document).
 
 ## Apply palette for data points
 
-`ColorModel` property of ChartSeries is used to define the colors for each data point. Following palettes are used to define the colors.
+[`ColorModel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~ColorModel.html) property of ChartSeries is used to define the colors for each data point. Following palettes are used to define the colors.
 
 **Predefined Palettes**
 
@@ -67,7 +67,7 @@ columnSeies.ColorModel.ColorPalette = ChartColorPalette.Metro;
 
 **Custom Palette**
 
-You can apply the custom colors by setting the palette as `Custom` using `ColorPalette` and provide the custom colors using `setCustomColors` property.
+You can apply the custom colors by setting the palette as [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~ColorPalette.html) using [`ColorPalette`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~ColorPalette.html) and provide the custom colors using [`setCustomColors`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~CustomColors.html) property.
 
 Following code illustrates how to set the custom colors.
 
@@ -91,4 +91,4 @@ columnSeies.ColorModel.CustomColors = colors;
 
 **None Palette**
 
-None palette will not apply any color to the data points. So in order to define the color for the data points, you can use the `Color` property of ChartSeries.
+None palette will not apply any color to the data points. So in order to define the color for the data points, you can use the [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) property of ChartSeries.
