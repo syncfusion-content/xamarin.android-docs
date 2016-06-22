@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | SfDataGrid | Xamarin | Syncfusion
+title: Overview | SfDataGrid | Xamarin.Android | Syncfusion
 description: Overview
-platform: xamarin
+platform: Xamarin.Android
 control: SfDataGrid
 documentation: ug
 ---
