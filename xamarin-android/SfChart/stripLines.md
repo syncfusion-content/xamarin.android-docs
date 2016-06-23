@@ -15,20 +15,20 @@ Strip lines are used to shade the different ranges in plot area in different col
 
 ## How to add strip lines?
 
-Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** based on the type of input you provide to draw the strip line. Since strip lines are drawn based on the axis, you have to add strip line instance using `getStripLines()` property of the respective axis. You can also add multiple strip lines to an axis.
+Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** based on the type of input you provide to draw the strip line. Since strip lines are drawn based on the axis, you have to add strip line instance using getStripLines() property of the respective axis. You can also add multiple strip lines to an axis.
 
 Following properties are used to configure the strip line.
 
-* `Start` – used to change the start position of the strip line.
-* `Width` – used to change how long strip line should expand.
-* `Text` – used to change the text of the strip line.
-* `FillColor` – used to change the fill color of the strip line.
-* `StrokeWidth` – used to change the stroke width of the strip line.
-* `StrokeColor` – used to change the stroke color of the strip line.
+* [`Start`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentStart.html) – used to change the start position of the strip line.
+* [`Width`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~Width.html) – used to change how long strip line should expand.
+* [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~Text.html) – used to change the text of the strip line.
+* [`FillColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~FillColor.html) – used to change the fill color of the strip line.
+* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~StrokeWidth.html) – used to change the stroke width of the strip line.
+* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~StrokeColor.html) – used to change the stroke color of the strip line.
 
 **NumericalStripLine**
 
-`NumericalStripLine` are used to draw strip lines for `NumericalAxis` and `CategoryAxis`. To add a strip line, create an instance of `NumericalStripLine` and add to the axis using `StripLines` property of the respective axis.
+[`NumericalStripLine`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalStripLine.html) are used to draw strip lines for [`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis.html) and [`CategoryAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CategoryAxis.html). To add a strip line, create an instance of [`NumericalStripLine`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalStripLine.html) and add to the axis using [`StripLines`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CategoryAxis~StripLines.html) property of the respective axis.
 
 {% highlight c# %}
 [C#]
@@ -62,7 +62,7 @@ chart.SecondaryAxis = numericalAxis;
 
 **DateTimeStripLine**
 
-As the name indicates, `DateTimeStripLine` are used to draw strip lines for `DateTimeAxis`. To add a strip line for `DateTimeAxis`, create an instance of `DateTimeStripLine` and add to the axis using `StripLines` property of `DateTimeAxis`.
+As the name indicates, [`DateTimeStripLine`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeStripLine.html) are used to draw strip lines for [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis.html). To add a strip line for [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis.html), create an instance of [`DateTimeStripLine`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeStripLine.html) and add to the axis using [`StripLines`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~StripLines.html) property of [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis.html).
 
 {% highlight c# %}
 [C#]
@@ -105,8 +105,8 @@ chart.PrimaryAxis = dateTimeAxis;
 
 This feature is used to enable the strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
 
-* `RepeatEvery` – used to change the frequency of the strip line being repeated.
-* `RepeatUntil` – specifies the end value at which point strip line has to stop repeating.
+* [`RepeatEvery`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~RepeatEvery.html) – used to change the frequency of the strip line being repeated.
+* [`RepeatUntil`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalStripLine~RepeatUntil.html) – specifies the end value at which point strip line has to stop repeating.
 
 Following code snippet and screenshot demonstrates this feature by highlighting weekends. 
 
@@ -135,17 +135,17 @@ numericalStripLines.LabelStyle.TextColor = Color.Red;
 
 ## Customize Text
 
-The `LabelStyle` property provide options to customize the font-family, color, size and font-weight of strip line text. Following are the options available,
+The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLineLabelStyle.html) property provide options to customize the font-family, color, size and font-weight of strip line text. Following are the options available,
 
-* `TextColor` – used to change the color of the text.
-* `BackgroundColor` – used to change the label background color.
-* `BorderColor` – used to change the border color.
-* `BorderThickness` – used to change the thickness of the border.
-* `Font`– used to change the text size, font family and font weight.
-* `Margin` - used to change the margin size for text.
-* `Angle` – used to rotate the text.
-* `HorizontalAlignment` – used to change the horizontal alignment of text.
-* `VerticalAlignment`  - used to change the vertical alignment of text.
+* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html) – used to change the color of the text.
+* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – used to change the label background color.
+* [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeColor.html) – used to change the border color.
+* [`BorderThickness`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeWidth.html) – used to change the thickness of the border.
+* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~Typeface.html) – used to change the text size, font family and font weight.
+* [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginBottom.html) - used to change the margin size for text.
+* [`Angle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLineLabelStyle~Angle.html) – used to rotate the text.
+* [`HorizontalAlignment`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLineLabelStyle~HorizontalLabelAlignment.html) – used to change the horizontal alignment of text.
+* [`VerticalAlignment`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLineLabelStyle~VerticalLabelAlignment.html)  - used to change the vertical alignment of text.
 
 {% highlight c# %} 
 [C#]
@@ -175,14 +175,14 @@ numericalAxis.StripLines.Add(numericalStripLines);
 
 ## Segmented Strip Line
 
-Typically, if you draw a strip line for a vertical axis, the height of the strip line is determined by the `Start` and `Width` properties and width of the strip line is equivalent to the width of its associated horizontal axis i.e., strip line is drawn horizontally to the entire stretch of its associated horizontal axis. Similarly, for horizontal axis, width is determined by `Start` and `Width` properties, and vertically, it is drawn to the entire stretch of the associated vertical axis.
+Typically, if you draw a strip line for a vertical axis, the height of the strip line is determined by the [`Start`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalStripLine~Start.html) and [`Width`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~Width.html) properties and width of the strip line is equivalent to the width of its associated horizontal axis i.e., strip line is drawn horizontally to the entire stretch of its associated horizontal axis. Similarly, for horizontal axis, width is determined by [`Start`]() and [`Width`]() properties, and vertically, it is drawn to the entire stretch of the associated vertical axis.
 
-Suppose, you want to draw a strip line that should not stretch along its associated axis, you can customize using `SegmentStart` and `SegmentEnd` properties. Values provided in these two properties correspond to its associated axis specified using `SegmentAxisName` property. Finally, you need to set `Segmented` property to true to indicate that strip line should be drawn as a segment.
+Suppose, you want to draw a strip line that should not stretch along its associated axis, you can customize using [`SegmentStart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentStart.html) and [`SegmentEnd`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentEnd.html) properties. Values provided in these two properties correspond to its associated axis specified using [`SegmentAxisName`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentAxisName.html) property. Finally, you need to set [`Segmented`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~Segmented.html) property to true to indicate that strip line should be drawn as a segment.
 
-* `Segmented` – Used to enable / disable the segmented strip line.
-* `SegmentStart` – Used to change the segment start value. Value correspond to associated axis.
-* `SegmentEnd` – Used to change the segment end value. Value correspond to associated axis.
-* `SegmentAxisName` – Specify the name of the associated axis name.
+* [`Segmented`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~Segmented.html) – Used to enable / disable the segmented strip line.
+* [`SegmentStart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentStart.html) – Used to change the segment start value. Value correspond to associated axis.
+* [`SegmentEnd`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentEnd.html) – Used to change the segment end value. Value correspond to associated axis.
+* [`SegmentAxisName`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentAxisName.html) – Specify the name of the associated axis name.
 
 N> You can set the double or DateTime value for SegmentStart and SegmentEnd properties based on the associated axis type.
 
