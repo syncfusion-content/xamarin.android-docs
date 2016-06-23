@@ -9,9 +9,9 @@ documentation: ug
 
 # Populating Data
 
-SfChart control can be configured with data points using `DataSource` property of `ChartSeries`. You can create a collection of [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/android/sfchart/com/syncfusion/charts/ChartDataPoint.html#) objects and set this collection using DataSource property. Here, each ChartDataPoint object represents a data point in a chart series.
+SfChart control can be configured with data points using [`DataSource`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~DataSource.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html). You can create a collection of ['ChartDataPoint'](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataPoint.html) objects and set this collection using DataSource property. Here, each ChartDataPoint object represents a data point in a chart series.
 
-N> `ChartDataPoint` class has few overloaded constructors depending on the number of y-values required to plot a data point for a particular series type. For example, you can use a constructor with two parameters to instantiate data point for XYDataSeries like Line, Spline, and Pie etc.
+N> [`ChartDataPoint`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataPoint.html) class has few overloaded constructors depending on the number of y-values required to plot a data point for a particular series type. For example, you can use a constructor with two parameters to instantiate data point for XYDataSeries like Line, Spline, and Pie etc.
 
 Following code snippet illustrates this,
 
