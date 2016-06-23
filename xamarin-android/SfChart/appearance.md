@@ -21,7 +21,7 @@ Currently, Chart supports only Metro palette and it is the default palette for S
 
 **Custom Palette**
 
-You can apply the custom colors by setting the palette as [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.ChartColorPalette.html) using [`ColorPalette`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.ChartColorPalette.html) and provide the custom colors using [`CustomColors`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~CustomColors.html) property.
+You can apply the custom colors by setting the palette as [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.ChartColorPalette_members.html) using [`ColorPalette`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.ChartColorPalette.html) and provide the custom colors using [`CustomColors`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~CustomColors.html) property.
 
 Following code illustrates how to set the custom colors.
 
@@ -67,7 +67,7 @@ columnSeies.ColorModel.ColorPalette = ChartColorPalette.Metro;
 
 **Custom Palette**
 
-You can apply the custom colors by setting the palette as [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~ColorPalette.html) using [`ColorPalette`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~ColorPalette.html) and provide the custom colors using [`CustomColors`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~CustomColors.html) property.
+You can apply the custom colors by setting the palette as [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.ChartColorPalette_members.html) using [`ColorPalette`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~ColorPalette.html) and provide the custom colors using [`CustomColors`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~CustomColors.html) property.
 
 Following code illustrates how to set the custom colors.
 
