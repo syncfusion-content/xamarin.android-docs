@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | PullToRefresh |Xamarin.Android | Syncfusion
 description: getting started
-platform:Xamarin.Android
+platform: Xamarin.Android
 control: PullToRefresh
 documentation: ug
 --- 
