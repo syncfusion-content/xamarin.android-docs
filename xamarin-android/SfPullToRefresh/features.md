@@ -115,7 +115,6 @@ The default PullDirection is `Top`. That draws the `RefreshContent` on top of th
 
     pullToRefresh.PullDirection=PullDirection.Top;
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -124,7 +123,7 @@ The following code example shows how to set `PullDirection` as `Bottom` to SfPul
 
 {% tabs %}
 
-{{% highlight C# %}
+{% highlight C# %}
 
     pullToRefresh.PullDirection=PullDirection.Bottom;
 
@@ -155,6 +154,7 @@ There are three built-in events in the PullToRefresh control namely:
     pullToRefresh.Pulling+= (object sender, SfPullToRefresh.PullingEventArgs e) => {
 				
 			};
+			
 {% endhighlight %}
 
 {% endtabs %}
