@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Selection | SfDataGrid | Xamarin | Syncfusion
+title: Selection | SfDataGrid | Xamarin.Android | Syncfusion
 description: How to enable selection, about the selection modes, properties, events and customizations available for selection in a SfDataGrid.
-platform: xamarin.Android
+platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
