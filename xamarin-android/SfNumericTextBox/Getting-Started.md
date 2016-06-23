@@ -41,8 +41,8 @@ android\Syncfusion.SfNumericTextBox.Andriod.dll
 
 {% highlight c# %}
 
-	SfNumericTextBox sfNumericTextBox=new SfNumericTextBox(this);
-	SetContentView(sfNumericTextBox);
+	SfNumericTextBox numericTextBox=new SfNumericTextBox(this);
+	SetContentView(numericTextBox);
 
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ The NumericTextBox control display value can be set using `Value` property.
 
 {% highlight c# %}
 
-	sfNumericTextBox.Value = 123.45;
+	numericTextBox.Value = 123.45;
 
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
-	sfNumericTextBox.ParsingMode=Parsers.Decimal;
+	numericTextBox.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
 
@@ -85,7 +85,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% highlight c# %}
 
-	sfNumericTextBox.FormatString = "c";
+	numericTextBox.FormatString = "c";
 
 {% endhighlight %}
 

@@ -12,7 +12,7 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% highlight C# %}
 
-	sfNumericUpDown.Watermark = "Numeric Text";
+	numericupdown.Watermark = "Numeric Text";
 	
 {% endhighlight %}
 

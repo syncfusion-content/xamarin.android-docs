@@ -23,7 +23,7 @@ The tooltip will display on top of the rating stars.
 
 {% highlight C# %}
 
-	   sfRating.TooltipPlacement=TooltipPlacement.TopLeft;
+	   rating.TooltipPlacement=TooltipPlacement.TopLeft;
 
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ The tooltip will display on bottom of the rating stars.
 
 {% highlight C# %}
 
-	   sfRating.TooltipPlacement=TooltipPlacement.BottomRight;
+	   rating.TooltipPlacement=TooltipPlacement.BottomRight;
 
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ The tooltip display will be disabled.
 
 {% highlight C# %}
 
-	   sfRating.TooltipPlacement=TooltipPlacement.None;
+	   rating.TooltipPlacement=TooltipPlacement.None;
 
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ N> The default value of ToolTip precision is 1.
 
 {% highlight C# %}
 
-       sfRating.TooltipPlacement=6;
+       rating.TooltipPlacement=6;
 
 {% endhighlight %}
 

@@ -22,7 +22,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	sfCalendar.ViewMode=ViewMode.MonthView;
+	calendar.ViewMode=ViewMode.MonthView;
 
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	MonthLabelSettings labelsettings = new MonthLabelSettings();
+	MonthLabelSettings labelSettings = new MonthLabelSettings();
 	labelSettings.DateFormat = “dd”;
 	labelSettings.DayLabelSize = 20;
 	labelSettings.DayFormat = "EEE";
@@ -48,7 +48,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 	monthViewSettings.InlineBackgroundColor=Color.ParseColor("#E4E8ED");
 	monthViewSettings.SetWeekDayBackGroundColor(Color.ParseColor("#F7F7F7"));
 	monthviewSettings.MonthLabelSettings = labelSettings;
-	sfCalendar.MonthViewSettings=monthViewSettings;
+	calendar.MonthViewSettings=monthViewSettings;
 	
 {% endhighlight %}
 

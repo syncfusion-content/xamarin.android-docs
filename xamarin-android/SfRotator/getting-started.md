@@ -42,8 +42,8 @@ android\Syncfusion.SfRotator.Andriod.dll
 
 {% highlight c# %}		
 
-	SfRotator  sfRotator  = new SfRotator();
-	SetContentView(sfRotator);
+	SfRotator  rotator  = new SfRotator();
+	SetContentView(rotator);
 
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ The NavigationMode property decides the navigation mode for navigating items. Th
 
 {% highlight C# %}	
 
-	sfRotator.NavigationMode = NavigationMode.Dots;
+	rotator.NavigationMode = NavigationMode.Dots;
 
 {% endhighlight %}
 
@@ -63,14 +63,14 @@ The TabStripPosition property decides the position in which navigation strip ite
 
 {% highlight C# %}	
 
-	sfRotator.NavigationMode = NavigationMode.Dots;
-	sfRotator.TabStripPosition = TabStripPosition.Bottom;
+	rotator.NavigationMode = NavigationMode.Dots;
+	rotator.TabStripPosition = TabStripPosition.Bottom;
 	
 {% endhighlight %}
 
 ## Setting DataSource
 
-SfRotator items can be populated with a collection of image datas. For example, a user may want to create a SfRotator control which will display a sequence of images.
+SfRotator items can be populated with a collection of image data. For example, a user may want to create a SfRotator control which will display a sequence of images.
 
 {% highlight C# %}
 
