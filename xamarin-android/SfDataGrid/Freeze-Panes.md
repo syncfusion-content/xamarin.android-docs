@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Freeze Panes | SfDataGrid | Xamarin | Syncfusion
+title: Freeze Panes | SfDataGrid | Xamarin.Android | Syncfusion
 description: How to freeze rows and columns in a SfDataGrid.
-platform: xamarin.iOS
+platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
