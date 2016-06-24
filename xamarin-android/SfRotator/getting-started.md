@@ -42,7 +42,7 @@ android\Syncfusion.SfRotator.Andriod.dll
 
 {% highlight c# %}		
 
-	SfRotator  rotator  = new SfRotator();
+	SfRotator  rotator  = new SfRotator(this);
 	SetContentView(rotator);
 
 {% endhighlight %}

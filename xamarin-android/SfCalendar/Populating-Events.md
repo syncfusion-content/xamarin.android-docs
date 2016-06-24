@@ -39,13 +39,14 @@ Calendar Events collection can be provided to calendar using the following steps
 
 {% highlight C# %}
 		   
-		   CalendarInlineEvent event=new CalendarInlineEvent();
+		   CalendarEventCollection eventsCollection =new CalendarEventCollection();
+		   CalendarInlineEvent events=new CalendarInlineEvent();
            DateTime d=new DateTime(2015,1,1);
            DateTime d1=new DateTime(2015,1,1);
-           event.StartTime=d;
-           event.EndTime=d1;
-           event.Subject=”Go to Meeting”;
-           event.Color=Color.RED;
+           events.StartTime=d;
+           events.EndTime=d1;
+           events.Subject=”Go to Meeting”;
+           events.Color=Color.RED;
 		   
 {% endhighlight %}
 

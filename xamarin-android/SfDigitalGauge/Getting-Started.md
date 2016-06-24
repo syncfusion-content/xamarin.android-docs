@@ -39,7 +39,7 @@ android\Syncfusion.SfDigitalGauge.Andriod.dll
 
 {% highlight c# %}
 
-	SfDigitalGauge digitalGauge = new SfDigitalGauge(con);
+	SfDigitalGauge digitalGauge = new SfDigitalGauge(this);
 	SetContentView(digitalGauge);
 	
 {% endhighlight %}

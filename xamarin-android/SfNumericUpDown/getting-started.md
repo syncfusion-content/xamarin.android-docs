@@ -33,7 +33,7 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 {% highlight c# %}
 
-	using Syncfusion.SfNumericUpDown.XForms;
+	using Com.Syncfusion.NumericUpDown;
 
 {% endhighlight %}
 
