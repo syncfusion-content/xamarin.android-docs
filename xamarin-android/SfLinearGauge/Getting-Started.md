@@ -42,7 +42,7 @@ The LinearGauge control is configured entirely in C# code.The following steps ex
 
 {% highlight c# %}
 
-	SfLinearGauge linearGauge = new SfLinearGauge ();
+	SfLinearGauge linearGauge = new SfLinearGauge (this);
 	SetContentView(linearGauge);
 	
 {% endhighlight %}

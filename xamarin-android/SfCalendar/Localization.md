@@ -17,7 +17,7 @@ N> By default, calendar control is available with en-US locale.
 
 {% highlight c# %}
 
-	calendar.Locale= new System.Globalization.CultureInfo("zh-CN");
+	calendar.Locale= new System.Globalization.CultureInfo("zh,CN");
 
 {% endhighlight %}
 
