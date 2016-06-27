@@ -25,6 +25,10 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfNavigationDrawer.Andriod.dll
 
+and 
+
+Xamarin.Android.Support.v4 library (from Nuget Packages)
+
 ### Initializing NavigationDrawer
 
 * Adding reference to navigationDrawer.

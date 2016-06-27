@@ -25,6 +25,10 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfCarousel.Andriod.dll
 
+and 
+
+Xamarin.Android.Support.v17.Leanback library (from Nuget Packages)
+
 ## Add and Customize the Carousel Control
 
 The Carousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Carousel and configure its elements,
