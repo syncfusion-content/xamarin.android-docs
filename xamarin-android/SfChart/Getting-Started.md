@@ -103,7 +103,7 @@ December</td><td>
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
-{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+{Syncfusion Installed location}\Essential Studio\14.2.0.26\lib
 
 
 
