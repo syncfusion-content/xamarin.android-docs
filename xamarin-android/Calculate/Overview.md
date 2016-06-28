@@ -2,7 +2,7 @@
 layout: post
 title: Overview | Calculate | Xamarin | Syncfusion
 description: Overview.
-platform: xamarin
+platform: xamarin.Android
 control: Calculate
 documentation: ug
 ---

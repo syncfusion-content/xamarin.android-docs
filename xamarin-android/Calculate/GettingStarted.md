@@ -2,7 +2,7 @@
 layout: post
 title: Getting started | Calculate | Xamarin | Syncfusion
 description: Getting started with Calculate.
-platform: xamarin
+platform: xamarin.Android
 control: Calculate
 documentation: ug
 ---
@@ -121,7 +121,7 @@ public class CalcData : ICalcData
         else if (values.ContainsKey(key) && values[key] != value)
            values[key] = value;
     }
-
+    
     public void WireParentObject()
     {
             
