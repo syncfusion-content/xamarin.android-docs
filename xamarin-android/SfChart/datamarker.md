@@ -24,20 +24,20 @@ lineSeries.DataMarker.ShowLabel = true;
 
 The label appearance can be customized using following properties,
 
-* `TextColor` – used to change the color of the label.
-* `BackgroundColor` – used to change the label background color.
-* `StrokeColor` – used to change the border color.
-* `StrokeWidth` – used to change the width of the border.
-* `TextSize` – used to change the text size.
-* `Typeface` – used to change the font family and font weight.
-* `MarginTop` - used to change the top margin of the labels.
-* `MarginBottom` - used to change the bottom margin of the labels.
-* `MarginLeft` - used to change the left margin of the labels.
-* `MarginRight` - used to change the right margin of the labels.
-* `Angle` – used to rotate the labels.
-* `LabelPadding` - used to change the padding value of label.
-* `OffsetX` - used to set the offset value of X.
-* `OffsetY` - used to set the offset value of Y.
+* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html) – used to change the color of the label.
+* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – used to change the label background color.
+* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeColor.html) – used to change the border color.
+* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeWidth.html) – used to change the width of the border.
+* [`TextSize`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextSize.html) – used to change the text size.
+* [`Typeface`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~Typeface.html) – used to change the font family and font weight.
+* [`MarginTop`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginTop.html) - used to change the top margin of the labels.
+* [`MarginBottom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginBottom.html) - used to change the bottom margin of the labels.
+* [`MarginLeft`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginLeft.html) - used to change the left margin of the labels.
+* [`MarginRight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginRight.html) - used to change the right margin of the labels.
+* [`Angle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~Angle.html) – used to rotate the labels.
+* [`LabelPadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~LabelPadding.html) - used to change the padding value of label.
+* [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~OffsetX.html) - used to set the offset value of X.
+* [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~OffsetY.html) - used to set the offset value of Y.
 
 Following code snippet illustrates the customization of label and its background,
 
@@ -63,10 +63,10 @@ lineSeries.DataMarker.LabelStyle.MarginBottom = 5;
 
 ## Formatting Label Content
 
-You can customize the content of the label using `LabelContent` property. Following are the two options that are supported now,
+You can customize the content of the label using [`LabelContent`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~LabelContent.html) property. Following are the two options that are supported now,
 
-* `Percentage` – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
-* `YValue` – This will show the corresponding Y value.
+* [`Percentage`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.LabelContent.html) – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
+* [`YValue`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.LabelContent.html) – This will show the corresponding Y value.
 
 {% highlight c# %} 
 [C#]
@@ -79,7 +79,7 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 ## Label Position
 
-This feature is used to position the data marker labels at Center, Inner and Outer position of the actual data point position. By default, labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using `OffsetX` and `OffsetY` properties respectively.
+This feature is used to position the data marker labels at Center, Inner and Outer position of the actual data point position. By default, labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using [`OffsetX`]() and [`OffsetY`]() properties respectively.
 
 The following screenshot illustrates the default position of data marker labels,
 
@@ -122,7 +122,7 @@ columnSeries.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer
 
 ## Smart Labels
 
-In Pie and Doughnut series, overlapping of data labels can be avoided by setting `SmartLabelsEnabled` property to true.
+In Pie and Doughnut series, overlapping of data labels can be avoided by setting [`SmartLabelsEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~SmartLabelsEnabled.html) property to true.
 
 {% highlight c# %}
 [C#]
@@ -151,13 +151,13 @@ chart.Series.Add(pieSeries);
 
 ## Customizing Marker Shapes
 
-Shapes can be added to chart data marker by setting the `ShowMarker` property to true. There are different shapes you can set to the chart using `MarkerType` property such as rectangle, circle, diamond etc. Following properties are used to customize marker appearance,
+Shapes can be added to chart data marker by setting the [`ShowMarker`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~ShowMarker.html) property to true. There are different shapes you can set to the chart using `MarkerType` property such as rectangle, circle, diamond etc. Following properties are used to customize marker appearance,
 
-* `MarkerWidth` - used to change the width of the marker.
-* `MarkerHeight` - used to change the height of the marker.
-* `MarkerColor` - used to change the color of the marker.
-* `MarkerStrokeColor` - used to change the border color of the shape.
-* `MarkerStrokeWidth` – used to change the marker border width.
+* [`MarkerWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~MarkerWidth.html) - used to change the width of the marker.
+* [`MarkerHeight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~MarkerHeight.html) - used to change the height of the marker.
+* [`MarkerColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~MarkerColor.html) - used to change the color of the marker.
+* [`MarkerStrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~MarkerStrokeColor.html) - used to change the border color of the shape.
+* [`MarkerStrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~MarkerStrokeWidth.html) – used to change the marker border width.
 
 The following code example shows how to enable marker and specify its types,
 
@@ -182,11 +182,11 @@ lineSeries.DataMarker.MarkerStrokeWidth = 2;
 
 This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. Following properties used to customize connector line,
 
-* `StrokeColor` – used to change the color of the line.
-* `StrokeWidth` – used to change the stroke thickness of the line.
-* `PathEffect` – used to set the dashes for the line.
-* `ConnectorHeight` – used to change the connector line height.
-* `ConnectorRotationAngle` – used to change the connector line rotation angle.
+* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineStyle~StrokeColor.html) – used to change the color of the line.
+* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineStyle~StrokeWidth.html) – used to change the stroke thickness of the line.
+* [`PathEffect`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineStyle~PathEffect.html) – used to set the dashes for the line.
+* [`ConnectorHeight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ConnectorLineStyle~ConnectorHeight.html) – used to change the connector line height.
+* [`ConnectorRotationAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ConnectorLineStyle~ConnectorRotationAngle.html) – used to change the connector line rotation angle.
 
 The following code illustrates how to specify the connector height and its angle,
 
