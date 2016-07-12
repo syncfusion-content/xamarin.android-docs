@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a BusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in BusyIndicator control.
+This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
 ![](images/Getting-Started_img1.png)
                                                            
-## Creating your first BusyIndicator in Xamarin.Android.
+## Creating your first SfBusyIndicator in Xamarin.Android.
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -25,9 +25,9 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfBusyIndicator.Andriod.dll
 
-### Add and Configure the BusyIndicator
+### Add and Configure the SfBusyIndicator
 
-* Adding reference to busyindicator.
+* Adding reference to BusyIndicator.
 
 {% highlight c# %}
 
@@ -35,7 +35,7 @@ android\Syncfusion.SfBusyIndicator.Andriod.dll
 
 {% endhighlight %}
 
-* Create an instance of BusyIndicator.
+* Create an instance of SfBusyIndicator.
 
 {% highlight c# %}
 	
@@ -44,9 +44,9 @@ android\Syncfusion.SfBusyIndicator.Andriod.dll
 	
 {% endhighlight %}
 
-### Set the AnimationType to BusyIndicator
+### Set the AnimationType to SfBusyIndicator
 
-To set AnimationType for the BusyIndicator, use AnimationType property and choose anyone of the 13 predefined animation types. 
+To set AnimationType for the SfBusyIndicator, use `AnimationType` property and choose anyone of the 13 predefined animation types. 
 
 {% highlight c# %}
 
@@ -55,7 +55,7 @@ To set AnimationType for the BusyIndicator, use AnimationType property and choos
 
 {% endhighlight %}
 
-### Configure the Properties in BusyIndicator
+### Configure the Properties in SfBusyIndicator
 
 {% highlight c# %}
 	
