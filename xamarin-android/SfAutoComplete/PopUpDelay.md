@@ -1,19 +1,17 @@
 ---
 layout : post
 title : PopUpDelay in Syncfusion AutoComplete Control for Xamarin.Android
-description : Learn how to set the PopUpDelay in AutoComplete 
+description : Learn how to set the PopUpDelay in SfAutoComplete 
 platform : Xamarin.Android
-control : AutoComplete
+control : SfAutoComplete
 documentation : ug
 ---
 
 # PopUpDelay
 
-* It is used to delay the appearance of the dropdown in the suggestion list. 
+Time delay taken to display the dropdown with the list of possible matches after text is typed in the text box.
 
-* Gets or sets the minimum delay, in milliseconds, after text is typed in the text box before the Autocomplete Box control populates the list of possible matches in the drop-down. 
-
-N> The default value is 0.
+N> The default value is 0. The property value should be in milliseconds.
 
 {% highlight C# %}
 	

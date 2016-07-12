@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AnimationTypes in Syncfusion BusyIndicator control for Xamarin.Android
-description: Learn various animation types in BusyIndicator
+description: Learn various animation types in SfBusyIndicator
 platform: Xamarin.Android
 control: SfBusyIndicator
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # AnimationType
 
-The `AnimationType` property of SfBusyIndicator allows to set anyone of the animation from the built-in animations as a BusyIndicator.
+The `AnimationType` property of SfBusyIndicator allows to set anyone of the animation from the built-in animations as a SfBusyIndicator.
 
 {% highlight c# %}
 
