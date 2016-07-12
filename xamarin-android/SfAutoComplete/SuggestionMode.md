@@ -1,15 +1,15 @@
 ---
 layout : post
 title : Suggestion mode for Syncfusion AutoComplete Control in Xamarin.Android
-description : Learn how to display suggestion mode in AutoComplete
+description : Learn how to display suggestion mode in SfAutoComplete
 platform : Xamarin.Android
-control : AutoComplete
+control : SfAutoComplete
 documentation : ug
 ---
 
 # Suggestion Mode	
 
-It is used to display which type of filtered list is show in the dropdown. They are,
+`SuggestionMode` property provides various option to filter the data according to the text entered. They are,
 
 * StartsWith - It begins to search with the starting letter.
 
@@ -21,7 +21,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 	
 ![](images/startswith.png)
 
-* StartsWithCaseSensitive - This mode is used to display the suggestions based on the starting letter with case sensitive in autocomplete.
+* StartsWithCaseSensitive - This mode is used to display the suggestions based on the starting letter with case sensitive in SfAutoComplete.
 
 {% highlight C# %}
 	
@@ -31,7 +31,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 	
 ![](images/startswithcasesensitive.png)
 
-* Contains - It displays Suggestion if AutoComplete contains that words.
+* Contains - It displays Suggestion if SfAutoComplete contains that words.
 
 {% highlight C# %}
 	
@@ -71,7 +71,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 	
 ![](images/equalswithcasesensitive.png)
 
-* EndsWith - It displays the suggestion based on ending word in autocomplete control.
+* EndsWith - It displays the suggestion based on ending word in SfAutoComplete control.
 
 {% highlight C# %}
 	
@@ -81,7 +81,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 	
 ![](images/endswith.png)
 
-* EndsWithCaseSensitive - It display the suggestion based on the ending words with case sensitive in autocomplete control.
+* EndsWithCaseSensitive - It display the suggestion based on the ending words with case sensitive in SfAutoComplete control.
 
 {% highlight C# %}
 	

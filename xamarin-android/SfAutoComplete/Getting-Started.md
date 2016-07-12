@@ -1,19 +1,19 @@
 ---
 layout : post
 title : Getting Started with Syncfusion AutoComplete Control for Xamarin.Android
-description : A quick tour to initial users on Syncfusion autocomplete control for Xamarin.Android platform 
+description : A quick tour to initial users on Syncfusion SfAutoComplete control for Xamarin.Android platform 
 platform : Xamarin.Android
-control : AutoComplete
+control : SfAutoComplete
 documentation : ug
 ---
 
 # Getting Started
 
-This section explains you the steps to configure a AutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in AutoComplete control.
+This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
 ![](images/gettingstarted.png)
 
-## Creating your first AutoComplete in Xamarin.Android
+## Creating your first SfAutoComplete in Xamarin.Android
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -25,11 +25,11 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfAutoComplete.Andriod.dll
 
-### Add and configure the AutoComplete Control
+### Add and configure the SfAutoComplete Control
 
-The following steps explain on how to create an AutoComplete and configure its elements,
+The following steps explain on how to create an SfAutoComplete and configure its elements,
 
-* Adding reference to autocomplete.
+* Adding reference to SfAutoComplete.
 
 {% highlight C# %}
 
@@ -38,7 +38,7 @@ The following steps explain on how to create an AutoComplete and configure its e
 {% endhighlight %}
 
 
-* Create an instance of AutoComplete.
+* Create an instance of SfAutoComplete.
 
 {% highlight C# %}
 
@@ -48,9 +48,9 @@ The following steps explain on how to create an AutoComplete and configure its e
 {% endhighlight %}
 
 	
-### Add the AutoCompleteSource for AutoComplete.
+### Add the AutoCompleteSource for SfAutoComplete.
 
-You can set the suggestion list to the AutoComplete using the property AutoCompleteSource.   Add the AutoCompleteSource for the AutoComplete as follows.
+You can set the suggestion list to the SfAutoComplete using the property `AutoCompleteSource`. Add the AutoCompleteSource for the SfAutoComplete as follows.
 
 {% highlight C# %}
 
@@ -66,9 +66,9 @@ You can set the suggestion list to the AutoComplete using the property AutoCompl
 
 {% endhighlight %}
 
-### Customization of AutoComplete Properties
+### Customization of SfAutoComplete Properties
 
-You can set the behavior of suggestions by adding AutoCompleteMode to Autocomplete.
+Behavior of the suggestions can be customized using AutoCompleteMode property in SfAutoComplete.
 
 {% highlight C# %}
 

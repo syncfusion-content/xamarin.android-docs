@@ -3,17 +3,17 @@ layout : post
 title : Getting Started with Syncfusion Carousel Control for Xamarin.Android
 description : A quick tour to initial users on Syncfusion carousel control for Xamarin.Android platform.
 platform : Xamarin.Android
-control : Carousel
+control : SfCarousel
 documentation : ug
 ---
 
 # Getting Started
 
-This section explains you the steps to configure a Carousel control in a real-time scenario and also provides a walk-through on some of the customization features available in Carousel control.
+This section explains you the steps to configure a SfCarousel control in a real-time scenario and also provides a walk-through on some of the customization features available in SfCarousel control.
 
 ![](images/carousel.png)
 
-## Creating your first Carousel in Xamarin.Android
+## Creating your first SfCarousel in Xamarin.Android
 
 ## Referencing Essential Studio components in your solution
 
@@ -29,11 +29,11 @@ and
 
 Xamarin.Android.Support.v17.Leanback library (from Nuget Packages)
 
-## Add and Customize the Carousel Control
+## Add and Customize the SfCarousel Control
 
-The Carousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Carousel and configure its elements,
+The SfCarousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Carousel and configure its elements,
 
-* Adding reference to carousel.
+* Adding reference to Carousel.
 
 {% highlight C# %}
 
@@ -52,7 +52,7 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 
 ## Setting Offset
 
-Set the Offset property to specify the distance between the items in Carousel panel.
+Set the Offset property to specify the distance between the items in SfCarousel panel.
 
 {% highlight C# %}
 
