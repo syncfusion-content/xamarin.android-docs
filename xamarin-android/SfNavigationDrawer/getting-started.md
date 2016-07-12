@@ -29,9 +29,9 @@ and
 
 Xamarin.Android.Support.v4 library (from Nuget Packages)
 
-### Initializing NavigationDrawer
+### Initializing SfNavigationDrawer
 
-* Adding reference to navigationDrawer.
+* Adding reference to NavigationDrawer.
 
 {% highlight c# %}
 
@@ -51,7 +51,7 @@ Xamarin.Android.Support.v4 library (from Nuget Packages)
 
 ### Setting Content View
 
-The main view of the NavigationDrawer can be set using `ContentView` property with desired views.
+The main view of the SfNavigationDrawer can be set using `ContentView` property with desired views.
 
 {% highlight c# %}
 
@@ -68,7 +68,7 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 
 ### Setting DrawerContent View
 
-The sliding main content of the NavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
 
 {% highlight c# %}
 

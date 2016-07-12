@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Position
 
-The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options:
+The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options,
 
 * Left
 
@@ -22,7 +22,7 @@ N> The default option is Left.
 
 ## Left
 
-Sets the NavigationDrawer sliding position to the left.
+Sets the SfNavigationDrawer sliding position to the left.
 
 
 {% highlight c# %}
@@ -36,7 +36,7 @@ Sets the NavigationDrawer sliding position to the left.
 
 ## Right
 
-Sets the NavigationDrawer sliding position to the right.
+Sets the SfNavigationDrawer sliding position to the right.
 
 {% highlight c# %}
 
@@ -49,7 +49,7 @@ Sets the NavigationDrawer sliding position to the right.
 	
 ## Top
 
-Sets the NavigationDrawer sliding position to the top.
+Sets the SfNavigationDrawer sliding position to the top.
 
 {% highlight c# %}
 
@@ -62,7 +62,7 @@ Sets the NavigationDrawer sliding position to the top.
 
 ## Bottom
 
-Sets the NavigationDrawer sliding position to the bottom.
+Sets the SfNavigationDrawer sliding position to the bottom.
 
 {% highlight c# %}
 

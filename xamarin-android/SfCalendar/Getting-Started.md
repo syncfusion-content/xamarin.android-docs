@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to render the calendar control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the Calendar.
+This section explains you the steps required to render the SfCalendar control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the SfCalendar.
 
 ![](images/gettingstarted.png)
 
-## Creating your first Calendar in Xamarin.Android.
+## Creating your first SfCalendar in Xamarin.Android.
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -25,15 +25,15 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfCalendar.Andriod.dll
 
-### And and Configure the Calendar
+### Add and Configure the SfCalendar
 
-The following steps explain on how to create an Calendar and configure its elements,
+The following steps explain on how to create an SfCalendar and configure its elements,
 
-* Adding reference to calendar.
+* Adding reference to Calendar.
 
 {% highlight c# %}
 
-	using Com.Syncfusion.Autocomplete; 
+	using Com.Syncfusion.Calendar; 
 
 {% endhighlight %}
 
