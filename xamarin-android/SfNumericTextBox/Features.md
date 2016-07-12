@@ -24,7 +24,7 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 ## Nullable Value
 
-The null values can be set in NumericTextBox `Value` property, by setting `AllowNull` property value to true.
+The null values can be set in SfNumericTextBox `Value` property, by setting `AllowNull` property value to true.
 
 N> By default, the property value is false.
 
