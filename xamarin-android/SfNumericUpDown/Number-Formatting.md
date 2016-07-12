@@ -42,13 +42,13 @@ It has three types,
 	 
 {% endhighlight %}
 	
-N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in NumericUpDown.
+N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericUpDown.
 
 ![](images/format.png)
 
 ## Parser Mode
 
-The value of the NumericUpDown can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericUpDown can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
 
@@ -66,7 +66,7 @@ The `PercentDisplayMode` property can be used to display numeric data in Percent
 
 N> The control displays the percent value on lost focus. 
 
-It provides the following options:
+It provides the following options
 
 * `Value`: Displays the value with percentage symbol.
 

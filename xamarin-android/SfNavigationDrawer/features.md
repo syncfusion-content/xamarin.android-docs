@@ -11,7 +11,7 @@ documentation: ug
 
 ## ContentView
 
-The main view of the NavigationDrawer can be set using `ContentView` property with desired views.
+The main view of the SfNavigationDrawer can be set using `ContentView` property with desired views.
 
 {% highlight c# %}
 
@@ -30,7 +30,7 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 
 ## DrawerContentView
 
-The sliding main content of the NavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
 
 {% highlight c# %}
 
@@ -111,7 +111,7 @@ Gets or sets the header of the DrawerView panel in the SfNavigationDrawer contro
 
 ## Drawer Size
 
-Gets or sets the height and width of the DrawerView panel in the NavigationDrawer control using `DrawerHeight` and `DrawerWidth` properties.
+Gets or sets the height and width of the DrawerView panel in the SfNavigationDrawer control using `DrawerHeight` and `DrawerWidth` properties.
 
 {% highlight c# %}
 

@@ -11,9 +11,13 @@ documentation: ug
 
 ## SpinButton Alignment
 
-Spin Button position in the NumericUpDown control can be changed relative to the TextBox based on `SpinButtonAlignment` property. 
+Spin Button position in the SfNumericUpDown control can be changed relative to the TextBox based on `SpinButtonAlignment` property. 
 
 There are three built-in modes.
+
+* Right
+* Left
+* Both
 
 ### Right
 
