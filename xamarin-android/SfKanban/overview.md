@@ -1,6 +1,10 @@
 ---
+layout: post
+title: Overview of Essential Xamarin.Android Kanban
+description: What are the key features available in Kanban.
 platform: Xamarin.Android
-control: kanban
+control: SfKanban
+documentation: ug
 ---
 
 # Kanban
