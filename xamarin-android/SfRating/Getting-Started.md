@@ -11,11 +11,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a rating control in a real-time scenario and also provides a walk-through on some of the customization features available in Rating control.
+This section explains you the steps to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
 
 ![](images/gettingstarted.png)
 
-## Creating your first Rating in Xamarin.Android
+## Creating your first SfRating in Xamarin.Android
 
 ### Referencing Essential Studio components in your solution
 
@@ -29,9 +29,9 @@ Add the following assembly references to the Android project,
 
 [android\Syncfusion.SfRating.Andriod.dll]
 
-### Add and Configure the Rating Control
+### Add and Configure the SfRating Control
 
-* Create an instance for rating control and adding to application.
+* Create an instance for SfRating control and adding to application.
 
 {% highlight C#%}
 
@@ -40,7 +40,7 @@ Add the following assembly references to the Android project,
 	
 {% endhighlight %}
 
-* Configure the properties of Rating control.
+* Configure the properties of SfRating control.
 
 {% highlight C# %}
 
@@ -56,7 +56,7 @@ Add the following assembly references to the Android project,
 
 ### Setting Value
 
-* The `Value` property sets the display value of the rating. 
+* The `Value` property sets the display value of the Rating. 
 
 N> By default, property value is 0.
 
@@ -68,7 +68,7 @@ N> By default, property value is 0.
 
 ### Precision
 
-* To enable full, half and exact values of rating, set the `Precision` property.
+* To enable full, half and exact values of Rating, set the `Precision` property.
 
 {% highlight C#%}
 

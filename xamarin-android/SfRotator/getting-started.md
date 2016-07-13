@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
+This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
 
 ![](images/rotator.png)
 
-## Creating your first Rotator in Xamarin.Android
+## Creating your first SfRotator in Xamarin.Android
 
 ## Referencing Essential Studio Components in Your Solution
 
@@ -30,7 +30,7 @@ and
 Xamarin.Android.Support.v17.Leanback library (from Nuget Packages)
 
 
-## Add and Configure the Rotator 
+## Add and Configure the SfRotator 
 
 * Adding reference to Rotator.
 
@@ -63,7 +63,7 @@ The NavigationMode property decides the navigation mode for navigating items. Th
 
 ## Customizing Position
 
-The TabStripPosition property decides the position in which navigation strip items such as Thumbnail or Dots should be rendered. 
+The `TabStripPosition` property decides the position in which navigation strip items such as Thumbnail or Dots should be rendered. 
 
 {% highlight C# %}	
 

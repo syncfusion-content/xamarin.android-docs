@@ -23,7 +23,7 @@ N> By default, the property value is set to false.
 
 ## Navigation Delay
 
-The `NavigationDelay` property specifies the duration to delay the switch to next navigation item, when `EnableAutoPlay` property is enabled.
+The `NavigationDelay` property specifies the delay to switch next navigation item, when `EnableAutoPlay` property is enabled.
 
 N> The property value should be in milliseconds.
 
@@ -57,7 +57,7 @@ N> By default, the property value is false.
 
 ## Navigation Direction
 
-The `NavigationDirection` property specifies the direction in which items should be navigated in Rotator control.
+The `NavigationDirection` property specifies the direction in which items should be navigated in SfRotator control.
 
 * `Horizontal` - Items can be navigated in horizontal direction.
 
