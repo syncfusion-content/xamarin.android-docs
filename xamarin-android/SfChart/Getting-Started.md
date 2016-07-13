@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | SfChart | Android | Syncfusion
+title:Getting Started for Essential Xamarin.Android Chart
 description: getting started
 platform: android
 control: SfChart
