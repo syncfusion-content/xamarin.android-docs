@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Started | SfKanban | Xamarin.Android | Syncfusion
+description: getting started
+platform: Xamarin.Android
+control: SfKanban
+documentation: ug
+---
+
 #<a id="KanbanAndroid"></a>Kanban for Xamarin.Android
 
 **Create your first Kanban in Xamarin.Android**
