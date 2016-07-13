@@ -11,7 +11,7 @@ documentation: ug
 
 ## Item Size
 
-The `ItemSize` property sets the size of the rating items. 
+The `ItemSize` property sets the size of the Rating items. 
 
 N> By default, property value is 50.
 
@@ -25,7 +25,7 @@ N> By default, property value is 50.
  
 ## Item Spacing
 
-The `ItemSpacing` property sets the spacing between the rating items. 
+The `ItemSpacing` property sets the spacing between the Rating items. 
 
 N> By default, property value is 5.
 

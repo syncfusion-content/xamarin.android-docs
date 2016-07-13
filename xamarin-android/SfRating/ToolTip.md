@@ -13,13 +13,13 @@ documentation: ug
 
 ## Tooltip Placement
 
-Rating control provides tooltip support with rating value using `TooltipPlacement` property. 
+SfRating control provides Tooltip support with rating value using `TooltipPlacement` property. 
 
 N> By default, this property value is set to None.
 
 ### TopLeft 
 
-The tooltip will display on top of the rating stars. 
+The Tooltip will display on top of the rating stars. 
 
 {% highlight C# %}
 
@@ -31,7 +31,7 @@ The tooltip will display on top of the rating stars.
 
 ### BottomRight
 
-The tooltip will display on bottom of the rating stars. 
+The Tooltip will display on bottom of the rating stars. 
 
 {% highlight C# %}
 
@@ -43,7 +43,7 @@ The tooltip will display on bottom of the rating stars.
 
 ### None
 
-The tooltip display will be disabled.
+The Tooltip will be disabled.
 
 {% highlight C# %}
 
@@ -55,7 +55,7 @@ The tooltip display will be disabled.
 
 ## Tooltip Precision
 
-The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in tool tip. 
+The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in Tooltip. 
 
 N> The default value of ToolTip precision is 1. 
 

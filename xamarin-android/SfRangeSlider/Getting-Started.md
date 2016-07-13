@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a RangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in RangeSlider control.
+This section explains you the steps to configure a SfRangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRangeSlider control.
 
 ![](images/RangeSlider.png)
 
-## Creating your first RangeSlider in Xamarin.Android
+## Creating your first SfRangeSlider in Xamarin.Android
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -26,9 +26,9 @@ Add the following assembly references to the Android project,
 android\Syncfusion.SfRangeSlider.Andriod.dll
 
 
-### Add and Configure the RangeSlider
+### Add and Configure the SfRangeSlider
 
-* Adding reference to rangeSlider.
+* Adding reference to RangeSlider.
 
 {% highlight c# %}
 
@@ -39,7 +39,6 @@ android\Syncfusion.SfRangeSlider.Andriod.dll
 
 * Create an instance of SfRangeSlider.
 
-
 {% highlight c# %}		
 
 	SfRangeSlider rangeSlider = new SfRangeSlider(this);
@@ -49,7 +48,7 @@ android\Syncfusion.SfRangeSlider.Andriod.dll
 
 ### Add Values and Scale
 
-You can set the minimum value for the slider by using the `setMinimum()` and `setMaximum()` properties in the RangeSlider. It can be Numerical values.
+You can set the minimum value for the slider by using the `setMinimum()` and `setMaximum()` properties in the SfRangeSlider. It can be Numerical values.
 
 {% highlight c# %}
 
@@ -63,9 +62,9 @@ You can set the minimum value for the slider by using the `setMinimum()` and `se
 
 {% endhighlight %}
 
-N> Likewise, `RangeStart` and `RangeEnd` can be set that denote the start range and end range values while dual thumb is used. The `ShowRange` property is used to switch between a single thumb and double thumb. The `Orientation` property sets the type of orientation.
+N> Likewise, `RangeStart` and `RangeEnd` can be set to denote the start range and end range values while dual thumb is used. The `ShowRange` property is used to switch between a single thumb and double thumb. The `Orientation` property sets the type of orientation.
 
-### Add Ticks and Labels for RangeSlider
+### Add Ticks and Labels for SfRangeSlider
 
 The ticks can be set by setting the `TickFrequency` and `TickPlacement`. Likewise, value labels can be set by setting the `ShowValueLabel` property to true. The position of label can be varied by the `LabelPlacement` property.
 
@@ -80,7 +79,7 @@ The ticks can be set by setting the `TickFrequency` and `TickPlacement`. Likewis
 
 N> The TickFrequency determines the interval between the ticks.
 
-### Add Snapping Type for RangeSlider
+### Add Snapping Type for SfRangeSlider
 
 The movement of the thumb can be varied in different ways. This is achieved by setting the SnapsTo property.
 
@@ -91,7 +90,7 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% endhighlight %}
 
-### Configure the Properties in RangeSlider
+### Configure the Properties in SfRangeSlider
 
 {% highlight c# %}
 

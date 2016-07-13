@@ -95,7 +95,7 @@ December</td><td>
 </table>
 
 
-![](Create-your-first-Chart-in-XamarinAndroid_images/img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
