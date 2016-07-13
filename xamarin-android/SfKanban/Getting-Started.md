@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | SfKanban | Xamarin.Android | Syncfusion
+title: Getting Started for Essential Xamarin.Android Kanban
 description: getting started
 platform: Xamarin.Android
 control: SfKanban
