@@ -9,8 +9,6 @@ documentation: UG
 
 # Grouping 
 
-This section explains you how to group a column in SfDataGrid and about the properties and customizations available for Grouping in SfDataGrid.
-
 A Group represents a collection of records that belong to a particular category. When Grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a Group. Each Group is identified by its `CaptionSummaryRow` to get the underlying records in view.
 
 
@@ -21,7 +19,7 @@ SfDataGrid also allows to perform grouping from the code by defining the [GroupC
 `GroupColumnDescription` object holds following two properties:
 
 * ColumnName: Name of the grouped column.
-* Converter: Get the IValueConverter as input that helps to apply the custom grouping.
+* Converter: Get the `IValueConverter` as input that helps to apply the custom grouping.
 
 The following code example illustrates how to apply grouping by a column in SfDataGrid.
 
