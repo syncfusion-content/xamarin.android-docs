@@ -14,7 +14,7 @@ A group represents a collection of records that belong to a particular category.
 
 ## Programmatic Grouping
 
-SfDataGrid also allows to perform grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription.html) collection. SfDataGrid groups the data based on the `GroupColumnDescription` object that is added to this collection.
+SfDataGrid also allows to perform grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription.html) object and adding it in the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescriptions.html) collection. SfDataGrid groups the data based on the `GroupColumnDescription` object that is added to this collection.
 
 `GroupColumnDescription` object holds following two properties:
 
@@ -35,7 +35,7 @@ The following screenshot shows the output rendered when grouping is applied.
 
 ## Expand groups while grouping
  
-You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoExpandGroups.html) to `true`. So, when user group any column, then all groups will be in expanded state. 
+You can expand all the groups while grouping by setting `SfDataGrid.AutoExpandGroups` to `true`. So, when user group any column, then all groups will be in expanded state. 
 
 {% highlight c# %}
 this.dataGrid.AutoExpandGroups = true;
