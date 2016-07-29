@@ -137,7 +137,7 @@ You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](ht
 {% highlight c# %}
 this.dataGrid.GroupExpanding += dataGrid_GroupExpanding;
 
-void dataGrid_GroupExpanding(object sender, Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs e)
+void dataGrid_GroupExpanding(object sender, Syncfusion.SfDataGrid.GroupChangingEventArgs e)
 {
     if (e.Group.Key.Equals(1001))    
         e.Cancel = true;    
@@ -167,7 +167,7 @@ You can cancel the group is being collapsed by using [GroupChangingEventArgs.Can
 {% highlight c# %}
 this.dataGrid.GroupCollapsing += dataGrid_GroupCollapsing;
 
-void dataGrid_GroupCollapsing(object sender, Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs e)
+void dataGrid_GroupCollapsing(object sender, Syncfusion.SfDataGrid.GroupChangingEventArgs e)
 {
     if (e.Group.Key.Equals(1001))    
         e.Cancel = true;    
@@ -198,4 +198,3 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { 
     ColumnName = "ShippingDate"
 });
 {% endhighlight %}
-
