@@ -9,12 +9,13 @@ documentation: ug
 
 # IsBusy
 
-The `IsBusy` property in the BusyIndicator control is used to determine whether an animation needs to be executed or not.
+The `IsBusy` property in the SfBusyIndicator control is used to determine whether an animation needs to be executed or not.
 
 {% highlight c# %}
 
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	sfBusyIndicator.IsBusy=true;
+	SfBusyIndicator busyIndicator = new SfBusyIndicator(this);
+	busyIndicator.AnimationType=AnimationTypes.SingleCircle;
+	busyIndicator.IsBusy=true;
 
 {% endhighlight %}
 

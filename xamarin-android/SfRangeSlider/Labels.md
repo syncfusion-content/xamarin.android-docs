@@ -17,27 +17,27 @@ N> The default value of the `ShowValueLabel` property is false.
 
 {% highlight c# %}
 
-	sfRangeSlider.ShowValueLabel= True;
+	rangeSlider.ShowValueLabel= True;
 
 {% endhighlight %}
 
 ## CustomLabel
 
-To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items by specifying the custom labels for corresponding values.
+To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items. Each items should be specified by the custom labels for corresponding values.
 
 {% highlight c# %}
 	
-	 SfRangeSlider RangeSlider; 
+	 SfRangeSlider rangeSlider; 
 	 ObservableCollection<Items>  customCollection;
 	 public RangeSliderPage ()
      {
        	customCollection = new ObservableCollection<Items> ();
            customCollection.Add(new Items(){Label = "Min", Value= 0});
            customCollection.Add(new Items() { Label = "Max", Value = 100 });
-		   RangeSlider = new SfRangeSlider ();
-           RangeSlider.HeightRequest = 400;
-           RangeSlider.ShowCustomLabel = true;
-           RangeSlider.CustomLabels = customCollection
+		   rangeSlider = new SfRangeSlider ();
+           rangeSlider.HeightRequest = 400;
+           rangeSlider.ShowCustomLabel = true;
+           rangeSlider.CustomLabels = customCollection
 
 	 }
 
@@ -56,7 +56,7 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	sfRangeSlider.ValuePlacement=ValuePlacement.TopLeft;
+	rangeSlider.ValuePlacement=ValuePlacement.TopLeft;
 
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	sfRangeSlider.ValuePlacement=ValuePlacement.BottomRight;
+	rangeSlider.ValuePlacement=ValuePlacement.BottomRight;
 
 {% endhighlight %}
 
@@ -82,6 +82,6 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	sfRangeSlider.LabelPlacement=LabelPlacement.TopLeft;
+	rangeSlider.LabelPlacement=LabelPlacement.TopLeft;
 
 {% endhighlight %}

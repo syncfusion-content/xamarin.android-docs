@@ -9,8 +9,8 @@ documentation: ug
 
 # LinearTickSettings
 
-Ticks are categorized into two types: major and minor. These ticks are arranged with respect to the specified frequency i.e., Interval of the linear scale. The minor ticks are displayed using the 
-MinorTicksPerInterval property.
+Ticks are categorized into two type as major and minor. These ticks are arranged with respect to the specified frequency i.e., Interval of the linear scale. The minor ticks are displayed using the 
+`MinorTicksPerInterval` property.
 
 {% highlight c# %}
 

@@ -25,9 +25,13 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfNavigationDrawer.Andriod.dll
 
-### Initializing NavigationDrawer
+and 
 
-* Adding reference to navigationDrawer.
+Xamarin.Android.Support.v4 library (from Nuget Packages)
+
+### Initializing SfNavigationDrawer
+
+* Adding reference to NavigationDrawer.
 
 {% highlight c# %}
 
@@ -39,15 +43,15 @@ android\Syncfusion.SfNavigationDrawer.Andriod.dll
 
 {% highlight c# %}
 
-	SfNavigationDrawer sfNavigationDrawer = new SfNavigationDrawer(this);
-	SetContentView(sfNavigationDrawer);
+	SfNavigationDrawer navigationDrawer = new SfNavigationDrawer(this);
+	SetContentView(navigationDrawer);
 	
 {% endhighlight %}
 
 
 ### Setting Content View
 
-The main view of the NavigationDrawer can be set using `ContentView` property with desired views.
+The main view of the SfNavigationDrawer can be set using `ContentView` property with desired views.
 
 {% highlight c# %}
 
@@ -64,7 +68,7 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 
 ### Setting DrawerContent View
 
-The sliding main content of the NavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
 
 {% highlight c# %}
 
@@ -86,6 +90,6 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 	frame.SetBackgroundColor(Color.White);
 	frame.AddView (contentLayout);
 	//Add Drawer content view to Navigation
-	slideDrawer.DrawerContentView=frame;	
+	navigationDrawer.DrawerContentView=frame;	
 
 {% endhighlight %}

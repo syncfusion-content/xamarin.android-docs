@@ -3,17 +3,17 @@ layout : post
 title : Getting Started with Syncfusion Carousel Control for Xamarin.Android
 description : A quick tour to initial users on Syncfusion carousel control for Xamarin.Android platform.
 platform : Xamarin.Android
-control : Carousel
+control : SfCarousel
 documentation : ug
 ---
 
 # Getting Started
 
-This section explains you the steps to configure a Carousel control in a real-time scenario and also provides a walk-through on some of the customization features available in Carousel control.
+This section explains you the steps to configure a SfCarousel control in a real-time scenario and also provides a walk-through on some of the customization features available in SfCarousel control.
 
 ![](images/carousel.png)
 
-## Creating your first Carousel in Xamarin.Android
+## Creating your first SfCarousel in Xamarin.Android
 
 ## Referencing Essential Studio components in your solution
 
@@ -25,11 +25,15 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfCarousel.Andriod.dll
 
-## Add and Customize the Carousel Control
+and 
 
-The Carousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Carousel and configure its elements,
+Xamarin.Android.Support.v17.Leanback library (from Nuget Packages)
 
-* Adding reference to carousel.
+## Add and Customize the SfCarousel Control
+
+The SfCarousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Carousel and configure its elements,
+
+* Adding reference to Carousel.
 
 {% highlight C# %}
 
@@ -41,20 +45,20 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 
 {% highlight C# %}
 
-	SfCarousel sfCarousel=new SfCarousel();
-	SetContentView(sfCarousel);
+	SfCarousel carousel=new SfCarousel(this);
+	SetContentView(carousel);
 
 {% endhighlight %}
 
 ## Setting Offset
 
-Set the Offset property to specify the distance between the items in Carousel panel.
+Set the Offset property to specify the distance between the items in SfCarousel panel.
 
 {% highlight C# %}
 
-	SfCarousel sfCarousel = new SfCarousel();
-	sfCarousel.SelectedIndex=2;
-	sfCarousel.Offset=20;
+	SfCarousel carousel = new SfCarousel(this);
+	carousel.SelectedIndex=2;
+	carousel.Offset=20;
 
 {% endhighlight %}
 
@@ -65,16 +69,16 @@ Set the RotationAngle property to decide the angle in which items should be rota
 
 {% highlight C# %}
 
-	SfCarousel sfCarousel = new SfCarousel();
-	sfCarousel.SelectedIndex=2;
-	sfCarousel.Offset=20;
-	SfCarousel.RotationAngle = 45;
+	SfCarousel carousel = new SfCarousel(this);
+	carousel.SelectedIndex=2;
+	carousel.Offset=20;
+	carousel.RotationAngle = 45;
 
 {% endhighlight %}
 
 ## Setting DataSource
 
-SfCarousel items can be populated with a collection of image datas. For example, a user may want to create a SfCarousel control which will display a list of images.
+SfCarousel items can be populated with a collection of image data. For example, a user may want to create a SfCarousel control which will display a list of images.
 
 {% highlight c# %}
 

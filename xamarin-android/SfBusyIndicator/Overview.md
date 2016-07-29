@@ -9,7 +9,7 @@ documentation: ug
 
 # SfBusyIndicator
 
-BusyIndicator makes it easy to let the user know when an application is busy. Simply wrap the relevant content in an instance of the BusyIndicator control and toggle its IsBusy property to True during any long-running process. The busy indicator should be used to indicate activity while content is being loaded or the UI is blocked waiting for a resource to become available. 
+SfBusyIndicator makes it easy to let the user know when an application is busy. Simply wrap the relevant content in an instance of the SfBusyIndicator control and toggle its `IsBusy` property to True during any long-running process. The busy indicator should be used to indicate activity while content is being loaded or the UI is blocked waiting for a resource to become available. 
 
 ![](images/overview.png)
 

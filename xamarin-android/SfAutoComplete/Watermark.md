@@ -1,15 +1,15 @@
 ---
 layout : post
 title : WaterMark in Syncfusion AutoComplete Control for Xamarin.Android
-description : Learn how to set the Watermark in AutoComplete 
+description : Learn how to set the Watermark in SfAutoComplete 
 platform : Xamarin.Android
-control : AutoComplete
+control : SfAutoComplete
 documentation : ug
 ---
 
 # Watermark
 
-The `watermark` text is used to display some information regarding the autocomplete box. This watermark is visible when EditText is empty or null. The watermark text disappears when to begin type in the autocomplete box. 
+This property is used to customize the watermark text that is displayed when the textbox is empty.
 
 {% highlight C# %}
 	

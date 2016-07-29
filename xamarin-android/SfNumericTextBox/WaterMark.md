@@ -12,9 +12,8 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% highlight c# %}
 
-	sfNumericTextBox.Watermark = "Principal Amount";
+	numericTextBox.Watermark = "Principal Amount";
 	
 {% endhighlight %}
-
 
 ![](images/WaterMark.png)

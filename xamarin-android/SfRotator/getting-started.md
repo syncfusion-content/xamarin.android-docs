@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
+This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
 
 ![](images/rotator.png)
 
-## Creating your first Rotator in Xamarin.Android
+## Creating your first SfRotator in Xamarin.Android
 
 ## Referencing Essential Studio Components in Your Solution
 
@@ -25,8 +25,12 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfRotator.Andriod.dll
 
+and 
 
-## Add and Configure the Rotator 
+Xamarin.Android.Support.v17.Leanback library (from Nuget Packages)
+
+
+## Add and Configure the SfRotator 
 
 * Adding reference to Rotator.
 
@@ -42,8 +46,8 @@ android\Syncfusion.SfRotator.Andriod.dll
 
 {% highlight c# %}		
 
-	SfRotator  sfRotator  = new SfRotator();
-	SetContentView(sfRotator);
+	SfRotator  rotator  = new SfRotator(this);
+	SetContentView(rotator);
 
 {% endhighlight %}
 
@@ -53,24 +57,24 @@ The NavigationMode property decides the navigation mode for navigating items. Th
 
 {% highlight C# %}	
 
-	sfRotator.NavigationMode = NavigationMode.Dots;
+	rotator.NavigationMode = NavigationMode.Dots;
 
 {% endhighlight %}
 
 ## Customizing Position
 
-The TabStripPosition property decides the position in which navigation strip items such as Thumbnail or Dots should be rendered. 
+The `TabStripPosition` property decides the position in which navigation strip items such as Thumbnail or Dots should be rendered. 
 
 {% highlight C# %}	
 
-	sfRotator.NavigationMode = NavigationMode.Dots;
-	sfRotator.TabStripPosition = TabStripPosition.Bottom;
+	rotator.NavigationMode = NavigationMode.Dots;
+	rotator.TabStripPosition = TabStripPosition.Bottom;
 	
 {% endhighlight %}
 
 ## Setting DataSource
 
-SfRotator items can be populated with a collection of image datas. For example, a user may want to create a SfRotator control which will display a sequence of images.
+SfRotator items can be populated with a collection of image data. For example, a user may want to create a SfRotator control which will display a sequence of images.
 
 {% highlight C# %}
 

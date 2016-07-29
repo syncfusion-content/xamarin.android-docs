@@ -20,7 +20,7 @@ It has three types,
 	
 {% highlight c# %}
 	
-	SfNumericTextBox.FormatString="c";
+	numericTextBox.FormatString="c";
 	 
 {% endhighlight %}
 	
@@ -29,7 +29,7 @@ It has three types,
 	
 {% highlight c# %}
 	
-	SfNumericTextBox.FormatString="n";
+	numericTextBox.FormatString="n";
 	 
 {% endhighlight %}
 	
@@ -38,23 +38,23 @@ It has three types,
 	
 {% highlight c# %}
 
-	SfNumericTextBox.FormatString="p";
+	numericTextBox.FormatString="p";
 	 
 {% endhighlight %}
 	
-N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in NumericTextBox. 
+N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericTextBox. 
 
 ![](images/FormatString.png)
 
 ## Parser Mode
 
-The value of the NumericTextBox can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericTextBox can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
 
 {% highlight c# %}
 
-	sfNumericTextBox.ParserMode=ParserMode.Decimal;
+	numericTextBox.ParserMode=ParserMode.Decimal;
 	  
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ It provides the following options:
 
 {% highlight c# %}
 
-	sfNumericTextBox.PercentDisplayMode=PercentDisplayMode.Value;
+	numericTextBox.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ It provides the following options:
 
 {% highlight c# %}
 
-	sfNumericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
+	numericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}
 

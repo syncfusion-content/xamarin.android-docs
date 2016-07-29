@@ -9,7 +9,7 @@ documentation: ug
 
 # Precision Mode
 
-The precision mode defines the accuracy level of the rating control. It has Standard, Half and Exact options.
+The precision mode defines the accuracy level of the SfRating control. It has Standard, Half and Exact options.
 
 ## Standard
 
@@ -17,7 +17,7 @@ The rating item will be filled completely based on the rating value.
 
 {% highlight C# %}
 
-	   sfRating.Precision=Precision.Standard;
+	   rating.Precision=Precision.Standard;
 
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ The rating item will be filled partially based on the rating value.
 
 {% highlight C# %}
 
-	   sfRating.Precision=Precision.Half;
+	   rating.Precision=Precision.Half;
 
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ The rating item will be filled exactly based on the rating value.
 
 {% highlight C# %}
 
-	   sfRating.Precision=Precision.Exact;
+	   rating.Precision=Precision.Exact;
 
 {% endhighlight %}
 

@@ -1,17 +1,17 @@
 ---
 layout : post
 title : AutoComplete mode for Syncfusion AutoComplete control in Xamarin.Android
-description : Learn how to change the AutoComplete mode in AutoComplete 
+description : Learn how to change the AutoComplete mode in SfAutoComplete 
 platform : Xamarin.Android
-control : AutoComplete
+control : SfAutoComplete
 documentation : ug
 ---
 
 # AutoCompleteMode
 
-The `AutocompleteMode` property is used to customize the behavior of the suggestions that are filtered according to the text entered. By default there are three AutoComplete modes provided. They are:
+The `AutocompleteMode` property is used to customize the behavior of the suggestions that are filtered according to the text entered. By default there are three AutoComplete modes provided.
 
-* Append  Appends the first matching string with the entered character.
+* Append - Appends the first matching string with the entered character.
 
 
 {% highlight C# %}
@@ -29,7 +29,7 @@ The `AutocompleteMode` property is used to customize the behavior of the suggest
 	 
 {% endhighlight %}
 	
-* SuggestAppend Displays the suggestion in the dropdown along with appending the first matching string.
+* SuggestAppend - Displays the suggestion in the dropdown along with appending the first matching string.
 
 {% highlight C# %}
 	

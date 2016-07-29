@@ -16,19 +16,19 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 {% highlight C# %}
 
-	sfNumericUpDown.MaximumNumberDecimalDigits = 2;
+	numericupdown.MaximumNumberDecimalDigits = 2;
 
 {% endhighlight %}
 
 ## Nullable Value
 
-The null values can be set in NumericUpDown `Value` property, by setting `AllowNull` property value to true.
+The null values can be set in SfNumericUpDown `Value` property, by setting `AllowNull` property value to true.
 
 N> By default, the property value is false.
 
 {% highlight C# %}
 
-	SfNumericUpDown.AllowNull=true;
+	numericupdown.AllowNull=true;
 
 {% endhighlight %}
 
@@ -36,13 +36,13 @@ N> By default, the property value is false.
 
 ## AutoReverse
 
-While incrementing, the control will start from Minimum once it reaches the Maximum and vice-versa.
+The control will start from Minimum value once it reaches the Maximum value While incrementing and vice-versa.
 
 N> By default the property value is false.
 
 {% highlight C# %}
 
-	sfNumericUpDown.AutoReverse = true;
+	numericupdown.AutoReverse = true;
 
 {% endhighlight %}
 

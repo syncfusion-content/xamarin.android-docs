@@ -11,13 +11,13 @@ documentation: ug
 
 ## Item Size
 
-The `ItemSize` property sets the size of the rating items. 
+The `ItemSize` property sets the size of the Rating items. 
 
 N> By default, property value is 50.
 
 {% highlight C# %}
 
-	   sfRating.ItemSize=20;
+	   rating.ItemSize=20;
 
 {% endhighlight %}
 
@@ -25,13 +25,13 @@ N> By default, property value is 50.
  
 ## Item Spacing
 
-The `ItemSpacing` property sets the spacing between the rating items. 
+The `ItemSpacing` property sets the spacing between the Rating items. 
 
 N> By default, property value is 5.
 
 {% highlight C# %}
 
-	   sfRating.ItemSpacing=20;
+	   rating.ItemSpacing=20;
 
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ N> The default property value is 5.
 
 {% highlight C# %}
 
-	   sfRating.ItemCount=4;
+	   rating.ItemCount=4;
 
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ N> By default, property value is set to False.
 
 {% highlight C# %}
 
-	   sfRating.ReadOnly= true;
+	   rating.ReadOnly= true;
 
 {% endhighlight %}
 
@@ -80,9 +80,9 @@ The `SfRatingSettings` object contains following list of properties.
 
 {% highlight C# %}
 
-	SfRatingSettings sfRatingSettings = new SfRatingSettings();
-    sfRatingSettings.RatedFill = Color.FromHex("#fbd10a");
-    sfRating.RatingSettings=sfRatingSettings;
+	SfRatingSettings ratingSettings = new SfRatingSettings();
+    ratingSettings.RatedFill = Color.FromHex("#fbd10a");
+    rating.RatingSettings=ratingSettings;
 
 {% endhighlight %}
 
@@ -92,7 +92,7 @@ The `RatedFill` property fills the rated area with the specified solid color.
 
 {% highlight C# %}
 
-	sfRatingSettings.RatedFill=Color.FromHex("#fbd10a");
+	ratingSettings.RatedFill=Color.FromHex("#fbd10a");
 
 {% endhighlight %}
 
@@ -104,7 +104,7 @@ The `RatedStroke` property sets the stroke for the rated area with the specified
 
 {% highlight C# %}
 
-	sfRatingSettings.RatedStroke=Color.GREEN;
+	ratingSettings.RatedStroke=Color.GREEN;
 
 {% endhighlight %}
 
@@ -116,7 +116,7 @@ The `RatedStrokeThickness` property sets the stroke thickness for the rated area
 
 {% highlight C# %}
 
-	sfRatingSettings.RatedStrokeThickness=3;
+	ratingSettings.RatedStrokeThickness=3;
 
 {% endhighlight %}
 
@@ -128,7 +128,7 @@ The `UnRatedFill` property fills the unrated area with the specified solid color
 
 {% highlight C# %}
 
-	sfRatingSettings.UnRatedFill=Color.GRAY;
+	ratingSettings.UnRatedFill=Color.GRAY;
 
 {% endhighlight %}
 
@@ -140,7 +140,7 @@ The `UnRatedStroke` property sets the stroke for the unrated area with the speci
 
 {% highlight C# %}
 
-	sfRatingSettings.UnRatedStroke=Color.BLACK;
+	ratingSettings.UnRatedStroke=Color.BLACK;
 
 {% endhighlight %}
 
@@ -152,7 +152,7 @@ The `UnRatedStrokeThickness` property sets the stroke thickness for the unrated 
 
 {% highlight C# %}
 
-	sfRatingSettings.UnRatedStrokeThickness=3;
+	ratingSettings.UnRatedStrokeThickness=3;
 
 {% endhighlight %}
 

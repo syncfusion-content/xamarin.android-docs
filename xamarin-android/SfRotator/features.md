@@ -17,19 +17,19 @@ N> By default, the property value is set to false.
 
 {% highlight C# %}
 
-	sfRotator.EnableAutoPlay = True;
+	rotator.EnableAutoPlay = True;
 
 {% endhighlight %}
 
 ## Navigation Delay
 
-The `NavigationDelay` property specifies the duration to delay the switch to next navigation item, when `EnableAutoPlay` property is enabled.
+The `NavigationDelay` property specifies the delay to switch next navigation item, when `EnableAutoPlay` property is enabled.
 
 N> The property value should be in milliseconds.
 
 {% highlight C# %}
 
-	sfRotator.NavigationDelay = 2000;
+	rotator.NavigationDelay = 2000;
 
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ The `EnableLooping` property specifies whether the items should navigate to firs
 
 {% highlight C# %}
 
-	sfRotator.EnableLooping = True;
+	rotator.EnableLooping = True;
 
 {% endhighlight %}
 
@@ -51,19 +51,19 @@ N> By default, the property value is false.
 
 {% highlight C# %}
 
-	sfRotator.IsTextVisible = True;
+	rotator.IsTextVisible = True;
 
 {% endhighlight %}
 
 ## Navigation Direction
 
-The `NavigationDirection` property specifies the direction in which items should be navigated in Rotator control.
+The `NavigationDirection` property specifies the direction in which items should be navigated in SfRotator control.
 
 * `Horizontal` - Items can be navigated in horizontal direction.
 
 {% highlight C# %}
 
-	sfRotator.NavigationDirection = NavigationDirection.Horizontal;
+	rotator.NavigationDirection = NavigationDirection.Horizontal;
 
 {% endhighlight %}
 
@@ -71,6 +71,6 @@ The `NavigationDirection` property specifies the direction in which items should
 
 {% highlight C# %}
 
-	sfRotator.NavigationDirection = NavigationDirection.Vertical;
+	rotator.NavigationDirection = NavigationDirection.Vertical;
 
 {% endhighlight %}

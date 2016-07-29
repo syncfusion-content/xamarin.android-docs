@@ -20,7 +20,7 @@ It has three types,
 	
 {% highlight C# %}
 	
-	SfNumericUpDown.FormatString="c";
+	numericupdown.FormatString="c";
 	 
 {% endhighlight %}
 	
@@ -29,7 +29,7 @@ It has three types,
 	
 {% highlight C# %}
 	
-	SfNumericUpDown.FormatString="n";
+	numericupdown.FormatString="n";
 	 
 {% endhighlight %}
 	
@@ -38,23 +38,23 @@ It has three types,
 	
 {% highlight C# %}
 
-	SfNumericUpDown.FormatString="p";
+	numericupdown.FormatString="p";
 	 
 {% endhighlight %}
 	
-N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in NumericUpDown.
+N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericUpDown.
 
 ![](images/format.png)
 
 ## Parser Mode
 
-The value of the NumericUpDown can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericUpDown can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
 
 {% highlight C# %}
 
-	sfNumericUpDown.ParserMode=ParserMode.Decimal;
+	numericupdown.ParserMode=ParserMode.Decimal;
 	  
 {% endhighlight %}
 
@@ -66,13 +66,13 @@ The `PercentDisplayMode` property can be used to display numeric data in Percent
 
 N> The control displays the percent value on lost focus. 
 
-It provides the following options:
+It provides the following options
 
 * `Value`: Displays the value with percentage symbol.
 
 {% highlight C# %}
 
-	sfNumericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
+	numericupdown.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ It provides the following options:
 
 {% highlight C# %}
 
-	sfNumericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
+	numericupdown.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}
 

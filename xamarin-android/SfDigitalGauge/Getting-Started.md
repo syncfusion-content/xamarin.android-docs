@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with DigitalGauge for Xamarin.Android.It walks through the entire process of creating a DigitalGauge.
+This section provides overview for working with SfDigitalGauge for Xamarin.Android. It walks through the entire process of creating a SfDigitalGauge.
 
 ![](images/Studio.png)
 
-## Creating Your First DigitalGauge in Xamarin.Android
+## Creating Your First SfDigitalGauge in Xamarin.Android
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -25,9 +25,9 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfDigitalGauge.Andriod.dll
 
-### Add and Configure the Digitalgauge
+### Add and Configure the SfDigitalgauge
 
-* Adding reference to digitalGauge.
+* Adding reference to DigitalGauge.
 
 {% highlight c# %}
 
@@ -39,12 +39,12 @@ android\Syncfusion.SfDigitalGauge.Andriod.dll
 
 {% highlight c# %}
 
-	SfDigitalGauge digitalGauge = new SfDigitalGauge(con);
+	SfDigitalGauge digitalGauge = new SfDigitalGauge(this);
 	SetContentView(digitalGauge);
 	
 {% endhighlight %}
 
-### Configure the properties of DigitalGauge
+### Configure the properties of SfDigitalGauge
 
 {% highlight c# %}
 

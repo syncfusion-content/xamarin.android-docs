@@ -21,7 +21,7 @@ SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator(this);
 dateTime.Intervals = EnumSet.Of(DateTimeIntervalType.Year, DateTimeIntervalType.Month);
 {% endhighlight %}
 
-![](majorandminorscale_images/majorandminorscale_img1.png)
+![](majorandminorscale_images/minorandmajorscale_img1.png)
 
 ## Appearance Customization
 
@@ -77,6 +77,6 @@ dateTime.MinorScaleStyle.SelectedLabelMarginBottom = 15;
 dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 {% endhighlight %}
 
-![](majorandminorscale_images/majorandminorscale_img2.png)
+![](majorandminorscale_images/minorandmajorscale_img2.png)
 
 

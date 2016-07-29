@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a NumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in NumericTextBox control.
+This section explains you the steps to configure a SfNumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNumericTextBox control.
 
 ![](images/gettingstarted.png) 
 
-## Creating your first NumericTextBox in Xamarin.Android
+## Creating your first SfNumericTextBox in Xamarin.Android
 
 ### Reference Essential Studio components in your solution
 
@@ -27,9 +27,9 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfNumericTextBox.Andriod.dll
 
-### Add and configure the NumericTextBox
+### Add and configure the SfNumericTextBox
 
-* Adding reference to numerictextbox.
+* Adding reference to NumericTextBox.
 
 {% highlight c# %}
 
@@ -41,35 +41,34 @@ android\Syncfusion.SfNumericTextBox.Andriod.dll
 
 {% highlight c# %}
 
-	SfNumericTextBox sfNumericTextBox=new SfNumericTextBox(this);
-	SetContentView(sfNumericTextBox);
+	SfNumericTextBox numericTextBox=new SfNumericTextBox(this);
+	SetContentView(numericTextBox);
 
 {% endhighlight %}
 
 
 ### Setting Value
 
-The NumericTextBox control display value can be set using `Value` property.
+The SfNumericTextBox control display value can be set using `Value` property.
 
 {% highlight c# %}
 
-	sfNumericTextBox.Value = 123.45;
+	numericTextBox.Value = 123.45;
 
 {% endhighlight %}
 
 
 ### Enable Parsing Mode
 
-The value of the NumericTextBox can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericTextBox can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
 
 {% highlight c# %}
 
-	sfNumericTextBox.ParsingMode=Parsers.Decimal;
+	numericTextBox.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
-
 
 ### Add Format String
 
@@ -85,7 +84,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% highlight c# %}
 
-	sfNumericTextBox.FormatString = "c";
+	numericTextBox.FormatString = "c";
 
 {% endhighlight %}
 

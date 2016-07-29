@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the LinearGauge and configure its properties.This section provides overview for working with LinearGauge for Xamarin.Android.
+This section explains how to create the SfLinearGauge and configure its properties. It walks through the entire process of creating a SfLinearGauge for Xamarin.Android.
 
 ![](images/Studio.png)
 
-## Creating your First LinearGauge in Xamarin.Android
+## Creating your First SfLinearGauge in Xamarin.Android
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -25,9 +25,9 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfLinearGauge.Andriod.dll
 
-### Add and Configure the LinearGauge
+### Add and Configure the SfLinearGauge
 
-The LinearGauge control is configured entirely in C# code.The following steps explain on how to create a LinearGauge and configure its elements,
+The SfLinearGauge control is configured entirely in C# code. The following steps explain on how to create a SfLinearGauge and configure its elements.
 
 * Add reference to LinearGauge
 
@@ -42,12 +42,12 @@ The LinearGauge control is configured entirely in C# code.The following steps ex
 
 {% highlight c# %}
 
-	SfLinearGauge linearGauge = new SfLinearGauge ();
+	SfLinearGauge linearGauge = new SfLinearGauge (this);
 	SetContentView(linearGauge);
 	
 {% endhighlight %}
 
-* Configure the properties of LinearGauge
+* Configure the properties of SfLinearGauge
 
 {% highlight c# %}
 
@@ -55,9 +55,9 @@ The LinearGauge control is configured entirely in C# code.The following steps ex
 
 {% endhighlight %}
 
-### Add Scales:
+### Add Scales
 
-We will add one or more scale value to linear gauge. Before adding that scales we have to set 
+We will add one or more scale value to SfLinearGauge. Before adding that scales we have to set 
 Maximum and Minimum value to this.
 
 {% highlight c# %}
@@ -79,9 +79,9 @@ Maximum and Minimum value to this.
 
 Before adding scales to Array list, Add range value to Scale.
 
-### Add Symbol Pointer:
+### Add Symbol Pointer
 
-We can point a value on scale in lineargauge by creating instance of SymbolPointer.
+We can point a value on scale in SfLinearGauge by creating instance of `SymbolPointer`.
 
 {% highlight c# %}
 
@@ -95,7 +95,7 @@ We can point a value on scale in lineargauge by creating instance of SymbolPoint
 			
 {% endhighlight %}
 
-### Add a Bar Pointer:
+### Add a Bar Pointer
 
 Before adding that symbol and bar pointer into Scale’s pointer add value of that pointers.
 
@@ -110,9 +110,9 @@ Before adding that symbol and bar pointer into Scale’s pointer add value of th
 			
 {% endhighlight %}
 
-### Add a Range:
+### Add a Range
 
-We can improve the readability of data by including ranges that quickly display when values fall within specific ranges
+We can improve the readability of data by including ranges that quickly display when values fall within specific ranges.
 
 {% highlight c# %}
 
