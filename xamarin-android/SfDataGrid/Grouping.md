@@ -9,7 +9,7 @@ documentation: UG
 
 # Grouping 
 
-A Group represents a collection of records that belong to a particular category. When Grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a Group. Each Group is identified by its `CaptionSummaryRow` to get the underlying records in view.
+A group represents a collection of records that belong to a particular category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its `CaptionSummaryRow` to get the underlying records in view.
 
 
 ## Programmatic Grouping
