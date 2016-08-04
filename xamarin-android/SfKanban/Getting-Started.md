@@ -9,8 +9,6 @@ documentation: ug
 
 #<a id="KanbanAndroid"></a>Kanban for Xamarin.Android
 
-**Create your first Kanban in Xamarin.Android**
-
 This section provides a quick overview for working with Essential Kanban for Xamarin.Android. It’s an efficient way to visualize the workflow at each stage along its path to completion.
 
 **Referencing Essential Studio Components in your Solution**
