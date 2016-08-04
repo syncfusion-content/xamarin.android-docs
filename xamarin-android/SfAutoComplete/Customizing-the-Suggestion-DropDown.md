@@ -26,7 +26,7 @@ countryAutoComplete.MinimumPrefixCharacters = 4;
 	 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 	
 ![](images/minimumprefixcharacter.png)
 
