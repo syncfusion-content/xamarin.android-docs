@@ -7,11 +7,11 @@ control: SfBusyIndicator
 documentation: ug
 ---
 
-# Title
+# Set Header
 
-The `Title` property can be used to get or set the content that indicates the information related to loading. The Title is displayed beneath the animation. A user customized string is displayed while showing animation. 
+SfBusyIndicator provides option to set the text that indicates the information related to loading. This can be done using `Title` property.
 
-It is one of the representation of showing what is going on. 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -21,6 +21,8 @@ It is one of the representation of showing what is going on.
 	
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/Title_img1.png) 
                                           
 BusyIndicator with title
@@ -28,7 +30,9 @@ BusyIndicator with title
 
 ## FontFace
 
-`FontFace` can be used to modify the font style and font size of the title which is displayed beneath the animation.
+User can modify the Font style and Font size of the title which is displayed beneath the animation. `FontFace` property can be used to modify these settings. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -38,6 +42,8 @@ BusyIndicator with title
 	busyIndicator.Fontface=Typeface.create("Arial",Typeface.NONE);
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Title_img2.png)   
                                                   

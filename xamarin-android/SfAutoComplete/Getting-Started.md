@@ -11,11 +11,7 @@ documentation : ug
 
 This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
-![](images/gettingstarted.png)
-
-## Creating your first SfAutoComplete in Xamarin.Android
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
@@ -25,59 +21,81 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfAutoComplete.Andriod.dll
 
-### Add and configure the SfAutoComplete Control
+### Add SfAutoComplete
 
-The following steps explain on how to create an SfAutoComplete and configure its elements,
+The following steps helps to add a SfAutoComplete control through code.
 
-* Adding reference to SfAutoComplete.
+* Adding namespace for the added assemblies.
 
-{% highlight C# %}
-
-	using Com.Syncfusion.Autocomplete; 
-
-{% endhighlight %}
-
-
-* Create an instance of SfAutoComplete.
+{% tabs %}
 
 {% highlight C# %}
 
-	SfAutoComplete countryAutoComplete = new SfAutoComplete(con);
-	SetContentView(countryAutoComplete);
+using Com.Syncfusion.Autocomplete; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+* Now add the SfAutoComplete control with a required optimal name by using the included namespace.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfAutoComplete countryAutoComplete = new SfAutoComplete(con);
+SetContentView(countryAutoComplete);
 	
 {% endhighlight %}
 
+{% endtabs %}
+
 	
-### Add the AutoCompleteSource for SfAutoComplete.
+## Add Items
+
+A list of string with country names are created and added to auto complete source. This list will be populated as suggestion list by setting the `AutoCompleteSource` property based on text entry .
 
 You can set the suggestion list to the SfAutoComplete using the property `AutoCompleteSource`. Add the AutoCompleteSource for the SfAutoComplete as follows.
 
+{% tabs %}
+
 {% highlight C# %}
 
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.AutoCompleteMode=AutoCompleteMode.Suggest;
-
+SfAutoComplete countryAutoComplete = new SfAutoComplete(con);
+List<String> countryList = new List<String>(); 	
+countryList.Add("Uganda");
+countryList.Add("Ukraine");
+countryList.Add("United Arab Emirates");
+countryList.Add("United Kingdom");
+countryList.Add("United States");
+ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
+countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
+countryAutoComplete.AutoCompleteMode=AutoCompleteMode.Suggest;
 
 {% endhighlight %}
 
-### Customization of SfAutoComplete Properties
+{% endtabs %}
 
-Behavior of the suggestions can be customized using AutoCompleteMode property in SfAutoComplete.
+## Set Filter Mode
+
+Filters can be applied to the displayed items based on starting letter. We can also append the first item from the suggested list to the TextBox. This can be done by using the `SuggestionMode` and `AutoCompleteMode` properties in SfAutoComplete control.
+
+The following example shows the SfAutoComplete control which suggest the country list starting with the letter U.
+
+{% tabs %}
 
 {% highlight C# %}
 
-	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
-	countryAutoComplete.MaximumDropDownHeight = 200;
-	countryAutoComplete.Watermark = "Enter a country name";
-	countryAutoComplete.PopUpDelay = 100;
-	countryAutoComplete.AutoCompleteMode=AutoCompleteMode.Append;
-	countryAutoComplete.MinimumPrefixCharacters = 2;
+SfAutoComplete countryAutoComplete = new SfAutoComplete(con);
+countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
+countryAutoComplete.MaximumDropDownHeight = 200;
+countryAutoComplete.Watermark = "Enter a country name";
+countryAutoComplete.PopUpDelay = 100;
+countryAutoComplete.AutoCompleteMode=AutoCompleteMode.Append;
+countryAutoComplete.MinimumPrefixCharacters = 2;
 	
 {% endhighlight %}
 
+{% endtabs %}
+
+![](images/gettingstarted.png)
