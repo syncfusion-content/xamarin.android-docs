@@ -11,10 +11,6 @@ documentation : ug
 
 This section provides overview for working with Essential NumericUpDown for Xamarin.Android. You can walk through the entire process of creating a SfNumericUpDown.
 
-![](images/gettingstarted.png)
-
-## Create your first SfNumericUpDown control in Xamarin.Android
-
 ## Referencing Essential Studio Components in Your Solution	
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
@@ -25,36 +21,48 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfNumericUpDown.Andriod.dll
 
-## Add and Configure the SfNumericUpDown
+## Add SfNumericUpDown
 
 The SfNumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNumericUpDown and configure its elements,
 
 * Adding reference to NumericUpDown.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	using Com.Syncfusion.NumericUpDown;
+using Com.Syncfusion.NumericUpDown;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 * Create an instance of SfNumericUpDown.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	SfNumericUpDown numericupdown = new SfNumericUpDown(this);
-	SetContentView(numericupdown);
+SfNumericUpDown numericupdown = new SfNumericUpDown(this);
+SetContentView(numericupdown);
 
 {% endhighlight %}
 
-## Setting Value
+{% endtabs %}
+
+## Set Value
 
 The SfNumericUpDown control display value can be set using `Value` property. 
 
+{% tabs %}
+
 {% highlight C# %}
 
-	numericupdown.Value= 5;
+numericupdown.Value= 5;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Enable Parsing Mode
 
@@ -62,11 +70,15 @@ The value of the SfNumericUpDown can be parsed based on the `ParsingMode` proper
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	numericupdown.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Add Format String
 
@@ -80,10 +92,14 @@ It has three types,
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
 
+{% tabs %}
+
 {% highlight C# %}
 
-	numericupdown.FormatString= “c”;
+numericupdown.FormatString= “c”;
 
 {% endhighlight %}
 
+{% endtabs %}
 
+![](images/gettingstarted.png)
