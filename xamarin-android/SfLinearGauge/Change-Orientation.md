@@ -9,7 +9,7 @@ documentation: ug
 
 # Change-Orientation
 
-SfLinearGauge provides support for the vertical orientation. By default Lineargauge renders with horizontal orientation. You can change the orientation by using the `Orientation` property. Orientation can be categorized as follows. 
+SfLinearGauge provides support for the vertical orientation. By default LinearGauge renders with horizontal orientation. You can change the orientation by using the `Orientation` property. Orientation can be categorized as follows. 
 
 * Horizontal
 * Vertical
