@@ -6,7 +6,7 @@ platform: Xamarin.Android
 control: NumericTextBox
 documentation: ug
 ---
-# Features
+# Assign Nullable Value
 
 ## Maximum Number Decimal Digits
 
@@ -14,11 +14,15 @@ The maximum number of digits to be displayed after the decimal point can be spec
 
 N> The `MaximumNumberDecimalDigits` property can be provided with positive value only.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	numericTextBox.MaximumNumberDecimalDigits=2;
   
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/MaximumNumberDecimalDigits.png)
 
@@ -28,11 +32,15 @@ The null values can be set in SfNumericTextBox `Value` property, by setting `All
 
 N> By default, the property value is false.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	numericTextBox.AllowNull=true;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/AllowNull.png)
 
