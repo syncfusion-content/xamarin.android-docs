@@ -35,7 +35,7 @@ using Com.Syncfusion.NumericTextBox;
 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 * Create an instance of SfNumericTextBox.
 
