@@ -6,7 +6,7 @@ platform: Xamarin.Android
 control: NavigationDrawer
 documentation: ug
 ---
-# Transition
+# Drawer Opening Animation
 
 The `Transition` property specifies the sliding animations for the DrawerView panel. The `Transition` property has the following three options,
 

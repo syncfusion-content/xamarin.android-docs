@@ -6,7 +6,7 @@ platform: Xamarin.Android
 control: NavigationDrawer
 documentation: ug
 ---
-# Position
+# Configuring The Drawer In Different Sides
 
 The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options,
 
@@ -24,6 +24,7 @@ N> The default option is Left.
 
 Sets the SfNavigationDrawer sliding position to the left.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -32,11 +33,15 @@ Sets the SfNavigationDrawer sliding position to the left.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/Left.png)
 
 ## Right
 
 Sets the SfNavigationDrawer sliding position to the right.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -45,11 +50,15 @@ Sets the SfNavigationDrawer sliding position to the right.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/Right.png)
 	
 ## Top
 
 Sets the SfNavigationDrawer sliding position to the top.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -57,6 +66,8 @@ Sets the SfNavigationDrawer sliding position to the top.
    	navigationDrawer.Position=sliderposition;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Top.png)
 
