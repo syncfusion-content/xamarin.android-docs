@@ -11,9 +11,11 @@ documentation: ug
 
 The Tooltip shows the current value based on thumb position.
 
-## ToolTipPrecision
+## Set ToolTip Precision
 
 The `ToolTipPrecision` property is used to define the precision of the value displayed in the Tooltip.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -21,7 +23,9 @@ The `ToolTipPrecision` property is used to define the precision of the value dis
 	
 {% endhighlight %}
 
-## ToolTipPlacement
+{% endtabs %}
+
+## Set ToolTip Placement
 
 The position of the Tooltip in relation to the thumb can be controlled by the `ToolTipPlacement` property. It has the following options.
 
@@ -33,31 +37,43 @@ The position of the Tooltip in relation to the thumb can be controlled by the `T
 
 The Tooltip will be placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	rangeSlider.ToolTipPlacement = ToolTipPlacement.BottomRight;
+rangeSlider.ToolTipPlacement = ToolTipPlacement.BottomRight;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ### TopLeft
 
-the Tooltip will be placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation.
+The Tooltip will be placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	rangeSlider.ToolTipPlacement = ToolTipPlacement.TopLeft;
+rangeSlider.ToolTipPlacement = ToolTipPlacement.TopLeft;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ### None
 
 Tooltip will be collapsed.
+
+{% tabs %}
 
 {% highlight c# %}
 
 	rangeSlider.ToolTipPlacement = ToolTipPlacement.None;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 
 
