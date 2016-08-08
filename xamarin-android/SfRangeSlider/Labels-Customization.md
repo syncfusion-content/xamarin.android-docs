@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Labels
+# Labels Customization
 
 ## ShowValueLabel
 
@@ -15,33 +15,40 @@ This property allows us to display labels for the ticks. When it sets to true, i
 
 N> The default value of the `ShowValueLabel` property is false.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.ShowValueLabel= True;
 
 {% endhighlight %}
 
-## CustomLabel
+{% endtabs %}
 
-To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items. Each items should be specified by the custom labels for corresponding values.
+## Set Custom Label
+
+To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items by specifying the custom labels for corresponding values.
+
+{% tabs %}
 
 {% highlight c# %}
 	
-	 SfRangeSlider rangeSlider; 
-	 ObservableCollection<Items>  customCollection;
-	 public RangeSliderPage ()
-     {
-       	customCollection = new ObservableCollection<Items> ();
-           customCollection.Add(new Items(){Label = "Min", Value= 0});
-           customCollection.Add(new Items() { Label = "Max", Value = 100 });
-		   rangeSlider = new SfRangeSlider ();
-           rangeSlider.HeightRequest = 400;
-           rangeSlider.ShowCustomLabel = true;
-           rangeSlider.CustomLabels = customCollection
-
-	 }
+SfRangeSlider rangeSlider; 
+ObservableCollection<Items>  customCollection;
+public RangeSliderPage ()
+{
+      customCollection = new ObservableCollection<Items> ();
+      customCollection.Add(new Items(){Label = "Min", Value= 0});
+      customCollection.Add(new Items() { Label = "Max", Value = 100 });
+      rangeSlider = new SfRangeSlider ();
+      rangeSlider.HeightRequest = 400;
+      rangeSlider.ShowCustomLabel = true;
+      rangeSlider.CustomLabels = customCollection
+}
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ## ValuePlacement
@@ -54,19 +61,27 @@ Available options for this property are:
 
 * TopLeft
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.ValuePlacement=ValuePlacement.TopLeft;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/value-TopLeft.png)
+
+{% tabs %}
 
 {% highlight c# %}
 
 	rangeSlider.ValuePlacement=ValuePlacement.BottomRight;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Value-BottomRight.png)
 
@@ -80,8 +95,12 @@ Available options for this property are:
 
 * TopLeft
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.LabelPlacement=LabelPlacement.TopLeft;
 
 {% endhighlight %}
+
+{% endtabs %}

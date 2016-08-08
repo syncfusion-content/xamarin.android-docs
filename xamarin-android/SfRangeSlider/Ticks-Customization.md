@@ -7,7 +7,9 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Ticks
+# Ticks Customization
+
+Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
 
 ## TickPlacement
 
@@ -25,7 +27,7 @@ The `TickPlacement` property determines where to draw tick marks in relation to 
 
 N> The default option is Inline.
 
-## BottomRight
+### BottomRight
 
 Tick marks are placed either below the track in horizontal orientation or right of the track in vertical orientation.
 
@@ -37,7 +39,7 @@ Tick marks are placed either below the track in horizontal orientation or right 
 
 ![](images/BottomRight.png)
 
-## TopLeft
+### TopLeft
 
 Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation.
 
@@ -49,7 +51,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 ![](images/TopLeft.png)
 
-## Inline
+### Inline
 
 Tick marks are placed along the track.
 
@@ -61,7 +63,7 @@ Tick marks are placed along the track.
 
 ![](images/Inline.png)
 
-## Outside
+### Outside
 
 Tick marks are placed on both sides of the track either in horizontal or vertical orientation.
 

@@ -7,11 +7,15 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Features
+# Selection Value Configuration
 
-## Minimum
+Various customization options are available to configure the selection value in SfRangeSlider.
+
+## Set Minimum Value
 
 Gets or sets the minimum possible value of the range. The thumb could not move beyond that value.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -19,9 +23,13 @@ Gets or sets the minimum possible value of the range. The thumb could not move b
 
 {% endhighlight %}
 
-## Maximum
+{% endtabs %}
+
+## Set Maximum Value
 
 Gets or sets the maximum possible value of the range. The thumb could not move after that value.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -29,21 +37,29 @@ Gets or sets the maximum possible value of the range. The thumb could not move a
 
 {% endhighlight %}
 
-## TickFrequency
+{% endtabs %}
+
+## Set Tick Frequency
 
 The `TickFrequency` property is used to decide the number of ticks to be displayed along the track based on Minimum and Maximum values.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.TickFrequency=4;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 N> When the `SnapsTo` property is set to `Ticks`, the `TickFrequency` is used to specify the interval between snap points.
 
-## StepFrequency
+## Set Interval between Snap Points.
 
 The `StepFrequency` property is used to specify the interval between snap points.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -51,9 +67,11 @@ The `StepFrequency` property is used to specify the interval between snap points
 
 {% endhighlight %}
 
+{% endtabs %}
+
 N> When the `SnapsTo` property is set to `StepValues`, the `StepFrequency` property is enabled.
 
-## SnapsTo
+## Set Snapping Mode
 
 The `SnapsTo` property determines whether the RangeSlider snaps to steps or ticks. Available options for this property are
 
@@ -65,40 +83,12 @@ The `SnapsTo` property determines whether the RangeSlider snaps to steps or tick
 
 N> The default option is Ticks.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.SnapsTo=SnapsTo.Ticks;
 
 {% endhighlight %}
 
-## Orientation
-
-The Orientation property has the following two options.
-
-### Horizontal
-
-In this orientation, the values and the slider are set horizontally. 
-
-{% highlight c# %}
-
-	rangeSlider.Orientation=Orientation.Horizontal
-
-{% endhighlight %}
-
-![](images/RangeSlider-Horizontal.png)
-
-### Vertical
-
-In this Orientation, the values and the slider are set vertically. 
-
-N> The default option is Horizontal.
-
-{% highlight c# %}
-
-	rangeSlider.Orientation=Orientation.Vertical
-
-{% endhighlight %}
-
-![](images/RangeSlider-Vertical.png)
-
-
+{% endtabs %}
