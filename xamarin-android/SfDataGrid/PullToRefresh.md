@@ -41,7 +41,39 @@ internal void ItemsSourceRefresh()
         int value = i + random.Next (100, 150);
         this.OrdersInfo.Insert (0, order.RefreshItemsSource (value));
     }
-} 
+}
+
+//Command.cs
+public class Command : ICommand
+{
+    private Action execute;
+    private bool canExecute = true;
+
+    public event EventHandler CanExecuteChanged;
+
+    public Command(Action action)
+    {
+        execute = action;
+    }
+
+    public bool CanExecute(object parameter)
+    {
+        return canExecute;
+    }
+
+    public void Execute(object parameter)
+    {
+        changeCanExecute(true);
+        execute.Invoke();
+    }
+
+    private void changeCanExecute(bool canExecute)
+    {
+        this.canExecute = canExecute;
+        if (CanExecuteChanged != null)
+            CanExecuteChanged(this, new EventArgs());
+    }
+}
 {% endhighlight %}
 
 Running the application renders the following output.
