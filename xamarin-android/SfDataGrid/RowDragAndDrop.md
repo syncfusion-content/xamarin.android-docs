@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Row Drag and Drop | SfDataGrid | Xamarin | Syncfusion
-description:  How to perform row drag and drop and its customizations, scenarios and events.
-platform: xamarin.Android
+description:  How to enable and perform row drag and drop operation and its customization.
+platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
