@@ -35,12 +35,7 @@ SfDataGrid allows you to load a desired content when performing row drag and dro
 
 Default template will be loaded, if template is not explicitly assigned for row drag and drop operations. 
 
-<table>
-<tr>
-<td>
-{{'![](SfDataGrid_images/RowDragAndDropDefaultTemplate.png)'| markdownify }}
-<br/><br/></td></tr>
-</table>
+![](SfDataGrid_images/RowDragAndDropDefaultTemplate.png)
 
 ## Customizing row drag and drop template
 
@@ -189,12 +184,7 @@ public class Label : TextView
 
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](SfDataGrid_images/DragAndDrop.png)'| markdownify }}
-<br/><br/></td></tr>
-</table>
+![](SfDataGrid_images/RowDragAndDrop.png)
 
 ## Row drag and drop event
 
