@@ -9,9 +9,9 @@ documentation: ug
 
 # Built-in Views
 
-Calendar control provides two types of views to display dates such as month view and year view. It can be assigned to the calendar control by using view mode property.
+SfCalendar control provides two types of views to display dates such as month view and year view. It can be assigned to the SfCalendar control by using view mode property.
 
-By default calendar control is assigned with month view. Based on the user’s preference calendar viewed in any of the available two type.
+By default SfCalendar control is assigned with month view. Based on the user’s preference, SfCalendar can be viewed in any one of the available two type.
 
 
 ## MonthView
@@ -22,7 +22,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	sfCalendar.ViewMode=ViewMode.MonthView;
+	calendar.ViewMode=ViewMode.MonthView;
 
 {% endhighlight %}
 
@@ -32,13 +32,13 @@ The dates in month view can be selected by three ways such as single, multiple a
 ### Month View Settings
 
 * The current day text color can be modified using `TodayTextColor` 
-* The month view label settings class has the APIs to change  date text size, day text size and various format options. 
+* The month view label settings class has the APIs to change date text size, day text size and various format options. 
 * The Background color of the inline view can be modified using `InlineBackgroundColor` property.
 * The blackout date color can be modified with `BlackoutColor` Property. 
 
 {% highlight c# %}
 
-	MonthLabelSettings labelsettings = new MonthLabelSettings();
+	MonthLabelSettings labelSettings = new MonthLabelSettings();
 	labelSettings.DateFormat = “dd”;
 	labelSettings.DayLabelSize = 20;
 	labelSettings.DayFormat = "EEE";
@@ -48,11 +48,11 @@ The dates in month view can be selected by three ways such as single, multiple a
 	monthViewSettings.InlineBackgroundColor=Color.ParseColor("#E4E8ED");
 	monthViewSettings.SetWeekDayBackGroundColor(Color.ParseColor("#F7F7F7"));
 	monthviewSettings.MonthLabelSettings = labelSettings;
-	sfCalendar.MonthViewSettings=monthViewSettings;
+	calendar.MonthViewSettings=monthViewSettings;
 	
 {% endhighlight %}
 
-N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
+N> Similarly there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
 
 ## YearView
 

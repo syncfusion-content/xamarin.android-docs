@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | SfChart | Android | Syncfusion
+title:Getting Started for Essential Xamarin.Android Chart
 description: getting started
 platform: android
 control: SfChart
@@ -95,7 +95,7 @@ December</td><td>
 </table>
 
 
-![](Create-your-first-Chart-in-XamarinAndroid_images/img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -103,7 +103,7 @@ December</td><td>
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
-{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+{Syncfusion Installed location}\Essential Studio\14.2.0.26\lib
 
 
 

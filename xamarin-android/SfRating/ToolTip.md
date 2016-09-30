@@ -11,59 +11,77 @@ documentation: ug
 
 # ToolTip
 
-## Tooltip Placement
+The ToolTip shows the value of the SfRating control.
 
-Rating control provides tooltip support with rating value using `TooltipPlacement` property. 
+## Set Tooltip Placement
+
+SfRating control provides Tooltip support with rating value using `TooltipPlacement` property. 
 
 N> By default, this property value is set to None.
 
 ### TopLeft 
 
-The tooltip will display on top of the rating stars. 
+The Tooltip will display on top of the rating stars. 
+
+{% tabs %}
 
 {% highlight C# %}
 
-	   sfRating.TooltipPlacement=TooltipPlacement.TopLeft;
+	   rating.TooltipPlacement=TooltipPlacement.TopLeft;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/leftTop.jpg) 
 
 ### BottomRight
 
-The tooltip will display on bottom of the rating stars. 
+The Tooltip will display on bottom of the rating stars. 
+
+{% tabs %}
 
 {% highlight C# %}
 
-	   sfRating.TooltipPlacement=TooltipPlacement.BottomRight;
+	   rating.TooltipPlacement=TooltipPlacement.BottomRight;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/rightBottom.jpg)
 
 ### None
 
-The tooltip display will be disabled.
+The Tooltip will be disabled.
+
+{% tabs %}
 
 {% highlight C# %}
 
-	   sfRating.TooltipPlacement=TooltipPlacement.None;
+	   rating.TooltipPlacement=TooltipPlacement.None;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/null.jpg)
 
-## Tooltip Precision
+## Set ToolTip Precision
 
-The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in tool tip. 
+The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in Tooltip. 
 
 N> The default value of ToolTip precision is 1. 
 
+{% tabs %}
+
 {% highlight C# %}
 
-       sfRating.TooltipPlacement=6;
+       rating.TooltipPlacement=6;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/toolTipPrecision.jpg)
 

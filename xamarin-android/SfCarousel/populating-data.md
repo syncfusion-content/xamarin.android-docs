@@ -9,9 +9,13 @@ documentation : ug
 
 # Populating Data
 
+SfCarousel control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
+
 ## DataSource
 
-SfCarousel items can be populated with a collection of image datas. For example, a user may want to create a SfCarousel control which will display a list of images.
+SfCarousel items can be populated with a collection of image data. For example, a user may wants to create a SfCarousel control which will display a list of images.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -26,15 +30,21 @@ SfCarousel items can be populated with a collection of image datas. For example,
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## SelectedIndex
 
-It gets or sets the Selected Item index value of carousel control to bring the particular item to center of the screen.
+It gets or sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen.
 
-N> The selectedIndex property will be 0 by default
+N> The `SelectedIndex` property will be 0 by default.
+
+{% tabs %}
 
 {% highlight c# %}
 
 	carousel.SelectedIndex=2;
 
 {% endhighlight %}
+
+{% endtabs %}
 

@@ -9,13 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with DigitalGauge for Xamarin.Android.It walks through the entire process of creating a DigitalGauge.
+This section provides overview for working with SfDigitalGauge for Xamarin.Android. It walks through the entire process of creating a SfDigitalGauge.
 
-![](images/Studio.png)
-
-## Creating Your First DigitalGauge in Xamarin.Android
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
@@ -25,35 +21,51 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfDigitalGauge.Andriod.dll
 
-### Add and Configure the Digitalgauge
+## Add SfDigitalgauge
 
-* Adding reference to digitalGauge.
+The following steps explain on how to create a SfDigitalGauge and configure its elements.
+
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight c# %}
 
-	using Com.Syncfusion.Digitalgauge; 
+using Com.Syncfusion.Digitalgauge; 
 
 {% endhighlight %}
 
-* Create an instance of SfDigitalGauge.
+{% endtabs %}
+
+* Now add the SfDigitalGauge control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SfDigitalGauge digitalGauge = new SfDigitalGauge(con);
-	SetContentView(digitalGauge);
+SfDigitalGauge digitalGauge = new SfDigitalGauge(this);
+SetContentView(digitalGauge);
 	
 {% endhighlight %}
 
-### Configure the properties of DigitalGauge
+{% endtabs %}
+
+## Configure the properties of SfDigitalGauge
+
+User can customize the height, width and segment type in SfDigitalGauge.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	digitalGauge.Value=”Syncfusion”;
-	digitalGauge.CharacterHeight=50;
-	digitalGauge.CharacterWidth=50;
-	digitalGauge.CharacterType=CharacterTypes.SegmentSeven;
+digitalGauge.Value=”Syncfusion”;
+digitalGauge.CharacterHeight=50;
+digitalGauge.CharacterWidth=50;
+digitalGauge.CharacterType=CharacterTypes.SegmentSeven;
 
 {% endhighlight %}
 
+{% endtabs %}
 
+![](images/Studio.png)
 

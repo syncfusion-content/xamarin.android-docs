@@ -9,11 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
-
-![](images/rotator.png)
-
-## Creating your first Rotator in Xamarin.Android
+This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
 
 ## Referencing Essential Studio Components in Your Solution
 
@@ -25,10 +21,16 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfRotator.Andriod.dll
 
+and 
 
-## Add and Configure the Rotator 
+Xamarin.Android.Support.v17.Leanback library (from Nuget Packages)
 
-* Adding reference to Rotator.
+
+## Add SfRotator 
+
+* Adding namespace for the added assemblies.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -36,41 +38,56 @@ android\Syncfusion.SfRotator.Andriod.dll
 
 {% endhighlight %}
 
+{% endtabs %}
 
-* Create an instance of SfRotator.
+* Now add the SfRotator control with a required optimal name by using the included namespace.
 
+{% tabs %}
 
 {% highlight c# %}		
 
-	SfRotator  sfRotator  = new SfRotator();
-	SetContentView(sfRotator);
+SfRotator  rotator  = new SfRotator(this);
+SetContentView(rotator);
 
 {% endhighlight %}
 
-## Setting Navigation Mode
+{% endtabs %}
 
-The NavigationMode property decides the navigation mode for navigating items. The items can be navigated using Thumbnail or Dots.
+## Set Navigation Mode
+
+SfRoator provides option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using `NavigationMode` property.
+
+{% tabs %}
 
 {% highlight C# %}	
 
-	sfRotator.NavigationMode = NavigationMode.Dots;
+	rotator.NavigationMode = NavigationMode.Dots;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Customizing Position
 
-The TabStripPosition property decides the position in which navigation strip items such as Thumbnail or Dots should be rendered. 
+The placement position of navigation strip items such as Thumbnail or Dots can be customized in SfRotator. This can be specified using `TabStripPosition` property.  
+
+{% tabs %}
 
 {% highlight C# %}	
 
-	sfRotator.NavigationMode = NavigationMode.Dots;
-	sfRotator.TabStripPosition = TabStripPosition.Bottom;
+rotator.NavigationMode = NavigationMode.Dots;
+rotator.TabStripPosition = TabStripPosition.Bottom;
 	
 {% endhighlight %}
 
-## Setting DataSource
+{% endtabs %}
 
-SfRotator items can be populated with a collection of image datas. For example, a user may want to create a SfRotator control which will display a sequence of images.
+
+## Add Data Collection
+
+SfRotator items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -84,3 +101,7 @@ SfRotator items can be populated with a collection of image datas. For example, 
 	rotator.DataSource=temp;
 
 {% endhighlight %}
+
+{% endtabs %}
+
+![](images/rotator.png)

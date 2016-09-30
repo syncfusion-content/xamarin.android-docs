@@ -9,13 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the LinearGauge and configure its properties.This section provides overview for working with LinearGauge for Xamarin.Android.
+This section explains how to create the SfLinearGauge and configure its properties. It walks through the entire process of creating a SfLinearGauge for Xamarin.Android.
 
-![](images/Studio.png)
-
-## Creating your First LinearGauge in Xamarin.Android
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
@@ -25,121 +21,149 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfLinearGauge.Andriod.dll
 
-### Add and Configure the LinearGauge
+## Add SfLinearGauge
 
-The LinearGauge control is configured entirely in C# code.The following steps explain on how to create a LinearGauge and configure its elements,
+The SfLinearGauge control is configured entirely in C# code. The following steps explain on how to create a SfLinearGauge and configure its elements.
 
-* Add reference to LinearGauge
+* Adding namespace for the added assemblies.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	using Com.Syncfusion.LinearGauge; 
+using Com.Syncfusion.LinearGauge; 
 
 {% endhighlight %}
 
+{% endtabs %}
 
-* Create an instance of SfLinearGauge.
+* Now add the SfLinearGauge control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SfLinearGauge linearGauge = new SfLinearGauge ();
-	SetContentView(linearGauge);
+SfLinearGauge linearGauge = new SfLinearGauge (this);
+SetContentView(linearGauge);
 	
 {% endhighlight %}
 
-* Configure the properties of LinearGauge
+{% endtabs %}
+
+* Configure the properties of SfLinearGauge
+
+{% tabs %}
 
 {% highlight c# %}
 
-    linearGauge.SetOrientation (SfLinearGauge.Orientation.Vertical);
+linearGauge.SetOrientation (SfLinearGauge.Orientation.Vertical);
 
 {% endhighlight %}
 
-### Add Scales:
+{% endtabs %}
 
-We will add one or more scale value to linear gauge. Before adding that scales we have to set 
-Maximum and Minimum value to this.
+## Add Scales
+
+The scale that point out to the values can be added by instantiating LinearScale class and setting minimum values, maximum values, scale intervals and colors etc.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale> ();
-	LinearScale outerScale = new LinearScale ();
-	outerScale.Minimum = 0;
-	outerScale.Maximum = 100;
-	outerScale.ScaleBarSize = 50;
-	outerScale.ScaleBarLength = 100;
-	outerScale.Interval = 20;
-	outerScale.ScaleBarColor = Color.ParseColor ("#FAECEC");
-	outerScale.MinorTicksPerInterval = 2;
-	outerScale.LabelFontSize = 17;
-	outerScale.LabelColor = Color.ParseColor ("#545454");
-	outerScale.LabelPostfix = "%";
+ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale> ();
+LinearScale outerScale = new LinearScale ();
+outerScale.Minimum = 0;
+outerScale.Maximum = 100;
+outerScale.ScaleBarSize = 50;
+outerScale.ScaleBarLength = 100;
+outerScale.Interval = 20;
+outerScale.ScaleBarColor = Color.ParseColor ("#FAECEC");
+outerScale.MinorTicksPerInterval = 2;
+outerScale.LabelFontSize = 17;
+outerScale.LabelColor = Color.ParseColor ("#545454");
+outerScale.LabelPostfix = "%";
 			
 {% endhighlight %}
+
+{% endtabs %}
 
 Before adding scales to Array list, Add range value to Scale.
 
-### Add Symbol Pointer:
+## Add Symbol Pointer
 
-We can point a value on scale in lineargauge by creating instance of SymbolPointer.
+An arrow head that points to the value is called the Symbol Pointer which can be added by instantiating the SymbolPointer class and assigning it to the Pointers collection.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	ObservableCollection<LinearPointer> pointers = new ObservableCollection<LinearPointer> ();
-	SymbolPointer outerScale_needlePointer = new SymbolPointer ();
-	outerScale_needlePointer.Value = pointervalue;
-	outerScale_needlePointer.StrokeWidth = 0;
-	outerScale_needlePointer.Offset = 0.3f;
-	outerScale_needlePointer.Color = Color.ParseColor ("#414D4F");
-	pointers.Add (outerScale_needlePointer);
+ObservableCollection<LinearPointer> pointers = new ObservableCollection<LinearPointer> ();
+SymbolPointer outerScale_needlePointer = new SymbolPointer ();
+outerScale_needlePointer.Value = pointervalue;
+outerScale_needlePointer.StrokeWidth = 0;
+outerScale_needlePointer.Offset = 0.3f;
+outerScale_needlePointer.Color = Color.ParseColor ("#414D4F");
+pointers.Add (outerScale_needlePointer);
 			
 {% endhighlight %}
 
-### Add a Bar Pointer:
+{% endtabs %}
 
-Before adding that symbol and bar pointer into Scale’s pointer add value of that pointers.
+## Add a Bar Pointer
+
+A flat solid bar that points to the current value can be added by instantiating BarPointer and it can be added to pointers collection.
+
+{% tabs %}
 
 {% highlight c# %}
 		
-	BarPointer rangePointer = new BarPointer ();
-	rangePointer.Value = barvalue;
-	rangePointer.Color = Color.ParseColor ("#CE4545");
-	rangePointer.StrokeWidth = 20;
-	pointers.Add (rangePointer);
-	outerScale.Pointers = pointers;
+BarPointer rangePointer = new BarPointer ();
+rangePointer.Value = barvalue;
+rangePointer.Color = Color.ParseColor ("#CE4545");
+rangePointer.StrokeWidth = 20;
+pointers.Add (rangePointer);
+outerScale.Pointers = pointers;
 			
 {% endhighlight %}
 
-### Add a Range:
+{% endtabs %}
 
-We can improve the readability of data by including ranges that quickly display when values fall within specific ranges
+## Add a Range
+
+We can improve the readability of data by including ranges that quickly display when values fall within specific ranges.
+
+{% tabs %}
 
 {% highlight c# %}
 
-    ObservableCollection<LinearRange> ranges = new ObservableCollection<LinearRange> ();
-    LinearRange lowerRange = new LinearRange ();
-	lowerRange.StartWidth = 30;
-	lowerRange.EndWidth = 30;
-	lowerRange.Color = Color.ParseColor ("#67d6db");
-	lowerRange.StartValue = 0;
-	lowerRange.EndValue = 50;
-	lowerRange.Offset = -.3;
-	ranges.Add (lowerRange);
+ObservableCollection<LinearRange> ranges = new ObservableCollection<LinearRange> ();
+LinearRange lowerRange = new LinearRange ();
+lowerRange.StartWidth = 30;
+lowerRange.EndWidth = 30;
+lowerRange.Color = Color.ParseColor ("#67d6db");
+lowerRange.StartValue = 0;
+lowerRange.EndValue = 50;
+lowerRange.Offset = -0.3;
+ranges.Add (lowerRange);
 
-	LinearRange higherRange = new LinearRange ();
-	higherRange.StartWidth = 30;
-	higherRange.EndWidth = 30;
-	higherRange.Color = Color.ParseColor ("#32B8C6");
-	higherRange.StartValue = 50;
-	higherRange.EndValue = 100;
-	higherRange.Offset = -.3;
-	ranges.Add (higherRange);
+LinearRange higherRange = new LinearRange ();
+higherRange.StartWidth = 30;
+higherRange.EndWidth = 30;
+higherRange.Color = Color.ParseColor ("#32B8C6");
+higherRange.StartValue = 50;
+higherRange.EndValue = 100;
+higherRange.Offset = -0.3;
+ranges.Add (higherRange);
 
-	outerScale.Ranges = ranges;
-	scales.Add (outerScale);
-	linearGauge.Scales = scales;
+outerScale.Ranges = ranges;
+scales.Add (outerScale);
+linearGauge.Scales = scales;
 			
 {% endhighlight %}
+
+{% endtabs %}
+
+![](images/Studio.png)
 
 
 
