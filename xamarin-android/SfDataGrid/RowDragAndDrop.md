@@ -198,7 +198,7 @@ The `QueryRowDragging` event provides following properties in `QueryRowDragging
 * `RowData` – Returns the underlying data associated with the dragged row.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
-## How to 
+## How to 
 
 ### Disable dragging for particular row 
 
@@ -235,7 +235,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Disable dropping of particular row 
 
-Dropping can be cancelled for particular row by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping of particular row.
+Dropping can be canceled for particular row by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping of particular row.
 
 {% highlight c# %}
 
@@ -251,7 +251,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Disable dropping at a particular position 
 
-Dropping at a particular position can be cancelled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping at particular position.
+Dropping at a particular position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping at particular position.
 
 {% highlight c# %}
 
