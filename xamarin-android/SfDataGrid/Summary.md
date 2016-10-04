@@ -18,7 +18,7 @@ SfDataGrid provides built-in support for caption summaries. The caption summary 
 
 Below screenshot shows the built-in caption summary of Group.
 
-![](Summary_images/Summary_img1.png)
+![](SfDataGrid_images/Summary_img1.png)
 
 
 ### Formatting built-in caption summary
@@ -30,7 +30,7 @@ The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 *  **Key** - Displays the key value of group.
 *  **ItemsCount** - Displays the number of items in group.
 
-![](Summary_images/Summary_img2.png)
+![](SfDataGrid_images/Summary_img2.png)
 
 You can customize this group caption text format by setting the `SfDataGrid.GroupCaptionTextFormat` property. The following code example illustrates how to customize group caption text in SfDataGrid.
 
@@ -41,7 +41,7 @@ dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key}";
 
 Below screenshot shows the final outcome of the above code.
 
-![](Summary_images/Summary_img3.png)
+![](SfDataGrid_images/Summary_img3.png)
 
 
 ### Defining summary for row
@@ -71,7 +71,7 @@ sfgrid.CaptionSummaryRow= summaryRow;
 
 The following screenshot shows the final outcome for both values of `ShowSummaryInRow` to `true`.
 
-![](Summary_images/Summary_img4.png)
+![](SfDataGrid_images/Summary_img4.png)
 
 
 ### Defining summary for column
@@ -109,7 +109,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
 sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](Summary_images/Summary_img5.png)
+![](SfDataGrid_images/Summary_img5.png)
 
 
 ## Formatting Summary
@@ -136,7 +136,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
 sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](Summary_images/Summary_img6.png)
+![](SfDataGrid_images/Summary_img6.png)
 
 ### Formatting Summary Value
 
@@ -157,7 +157,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
 sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](Summary_images/Summary_img7.png)
+![](SfDataGrid_images/Summary_img7.png)
 
 
 ### Displaying additional Content in Summary
@@ -179,7 +179,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
 sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](Summary_images/Summary_img8.png)
+![](SfDataGrid_images/Summary_img8.png)
 
 
 ### Formatting Summary for Row using Title property
@@ -207,7 +207,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
 sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](Summary_images/Summary_img9.png)
+![](SfDataGrid_images/Summary_img9.png)
 
 
 ## Aggregate Types
@@ -333,7 +333,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn
 dataGrid.CaptionSummaryRow = summaryRow;
 {% endhighlight %}
 
-![](Summary_images/Summary_img10.png)
+![](SfDataGrid_images/Summary_img10.png)
 
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo-333052166).
