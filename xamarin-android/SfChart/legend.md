@@ -105,6 +105,18 @@ chart.Legend.ToggleSeriesVisibility = true;
 
 {% endhighlight %}
 
+## Legend item visibility
+
+You can control the visibility of particular series legend item by using the [`VisibilityOnLegend`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~VisibilityOnLegend.html) property of series. Default value of VisibilityOnLegend property is Visible.
+
+{% highlight c# %} 
+[C#]
+
+ColumnSeries series = new ColumnSeries();
+series.VisibilityOnLegend = Visibility.Gone;
+
+{% endhighlight %}
+
 ## Positioning the Legend
 
 You can position the legend anywhere inside the chart. Following properties are used to customize the legend positions.
