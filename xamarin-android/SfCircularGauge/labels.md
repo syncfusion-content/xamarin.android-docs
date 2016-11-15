@@ -19,15 +19,15 @@ The label color can be changed using the `LabelColor` property. The labels can b
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-
-    Scale scale=new Scale();
-    scale.LabelColor = Color.Gray;
-    scale.LabelOffset = 0.1;
-    scale.LabelFontSize=10;
-
-    circulargauge.Scales = scale;
-    this.content=circulargauge;
+    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
+        CircularScale scale = new CircularScale();
+        scale.LabelColor = Color.Gray;
+        scale.LabelOffset = 0.1;
+        scale.LabelTextSize = 10;
+        circularScales.Add(scale);
+        circularGauge.CircularScales = circularScales;
+        SetContentView(circularGauge);
 
 {% endhighlight %}
 
@@ -38,11 +38,12 @@ The `NumberOfDecimalDigits` property is used to set the number of decimal digits
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-    Scale scale=new Scale();
-    Scale.NumberOfDecimalDigits=1;
-    circulargauge.Scales = scale;
-    this.content=circulargauge;
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
+        CircularScale scale = new CircularScale();
+        scale.NumberOfDecimalDigits = 1;
+        circularScales.Add(scale);  
+        circularGauge.CircularScales = circularScales;
+        SetContentView(circularGauge);
 
 {% endhighlight %}
 
@@ -58,13 +59,11 @@ This property allows you to set the postfix values to the scale labels.
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-
-    Scale scale=new Scale();
-    Scale.LabelPostfix=”%”;
-
-    circulargauge.Scales = scale;
-    this.content=circulargauge;
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
+        CircularScale scale = new CircularScale();
+        scale.LabelPostfix = "%";
+        circularGauge.CircularScales = circularScales;
+        SetContentView(circularGauge);
 
 {% endhighlight %}
 
@@ -76,13 +75,11 @@ This property allows you to set the prefix values to the scale labels.
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-
-    Scale scale=new Scale();
-    Scale.LabelPostfix=”$”;
-
-    circulargauge.Scales = scale;
-    this.content=circulargauge;
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
+        CircularScale scale = new CircularScale();
+        scale.LabelPrefix = "$";
+        circularGauge.CircularScales = circularScales;
+        SetContentView(circularGauge);
 
 {% endhighlight %}
 
