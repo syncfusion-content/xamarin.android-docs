@@ -59,7 +59,7 @@ You can assign a unique header to `SfCircularGauge` by making use of `Header` pr
 
 ## Configuring Scales
 
-You can configure the `CircularScale` elements by making use of following API’s available in SfCircularGage.
+You can configure the `CircularScale` elements by making use of following API's available in SfCircularGage.
 
 They are:
 

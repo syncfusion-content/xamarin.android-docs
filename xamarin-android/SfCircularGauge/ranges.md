@@ -15,7 +15,7 @@ A range is a visual element which begins and ends at specified values within a s
 
 ## Ranges Customization
 
-Ranges start and end values are set by the `StartValue` and `EndValue` properties of the range. A range’s UI is customized by the `Color` and `Thickness` properties.
+Ranges start and end values are set by the `StartValue` and `EndValue` properties of the range. A range's UI is customized by the `Color` and `Thickness` properties.
 
 
 {% highlight c# %}
