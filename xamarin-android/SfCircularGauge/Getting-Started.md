@@ -59,7 +59,7 @@ You can assign a unique header to `SfCircularGauge` by making use of `Header` pr
 
 ## Configuring Scales
 
-You can configure the `CircularScale` elements by making use of following APIâ€™s available in SfCircularGage.
+You can configure the `CircularScale` elements by making use of following API’s available in SfCircularGage.
 
 They are:
 
@@ -136,7 +136,6 @@ A range pointer provides an alternative way of indicating the current value.
 
     ... 
     RangePointer rangePointer = new RangePointer();
-	rangePointer.RangeStart = 0;
 	rangePointer.Value = 60;
 	rangePointer.Color = Color.ParseColor("#2bbfb8");
 	rangePointer.Width = 20;
