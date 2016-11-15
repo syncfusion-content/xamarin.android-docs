@@ -22,21 +22,22 @@ A range is a visual element which begins and ends at specified values within a s
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-    scale = new Scale();
+    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
+    SfCircularGauge circularGauge = new SfCircularGauge(this);  
+    CircularScale scale = new CircularScale();
     scale.StartValue = 0;
     scale.EndValue = 100;
     scale.Interval = 10;
     scale.StartAngle = 135;
     scale.SweepAngle = 270;
-    scale.RimThickness = 20;
-    scale.RimColor = Color.FromHex("#d14646");
+    scale.RimWidth = 20;
+    scale.RimColor = Color.ParseColor("#FF777777");
     scale.LabelColor = Color.Gray;
-    scale.LabelOffset = 0.1;
+    scale.LabelOffset = 0.2;
     scale.MinorTicksPerInterval = 1;
-
-    circulargauge.Scales = scale;
-    this.content=circulargauge;
+    circularScales.Add(scale);
+    circularGauge.CircularScales = circularScales;
+    SetContentView(circularGauge);
 
 {% endhighlight %}
 
