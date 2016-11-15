@@ -25,14 +25,14 @@ This property places the header in a circular gauge. The value for `Position` sh
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge();
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
     Header header = new Header();
     header.Text = "Speedometer";
     header.TextSize = 20;
-    header.Position = Device.OnPlatform(iOS: new Point(.3, .7), Xamarin.Android:new Point(0.5, 0.7), WinPhone: new Point(0.38, 0.7));
-    header.ForegroundColor = Color.Gray;
-    circularGauge.Headers.Add(header); 
-    this.content = circularGauge;
+    header.Position = new PointF((float)0.5, (float)0.7);
+    header.TextColor = Color.Gray;
+    circularGauge.Headers.Add(header);
+    SetContentView(circularGauge);
 
 {% endhighlight %}
 
