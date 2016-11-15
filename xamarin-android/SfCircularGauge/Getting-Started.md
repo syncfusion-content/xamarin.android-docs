@@ -23,8 +23,17 @@ Create a Circular Gauge instance in Main Page and set Circular Gauge as a Conten
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge ();
-    this.Content = circulargauge;
+    
+	using Com.Syncfusion.Gauges.SfCircularGauge;
+
+
+	  protected override void OnCreate(Bundle bundle)
+		 {
+			base.OnCreate(bundle);
+			SfCircularGauge circularGauge = new SfCircularGauge(this);
+			// Set our view from the "main" layout resource
+			SetContentView(circularGauge);
+		 }
     
 {% endhighlight %}
 
@@ -37,12 +46,12 @@ You can assign a unique header to `SfCircularGauge` by making use of `Header` pr
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge();
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
     Header header = new Header();
     header.Text = "Speedmeter";
     header.TextSize = 20;
-    header.Position = Device.OnPlatform(iOS: new Point(.3, .7), new Point(0.38, 0.7), WinPhone: new Point(0.38, 0.7));
-    header.ForegroundColor = Color.Gray;
+    header.Position = new PointF((float)0.5, (float)0.7);
+    header.TextColor = Color.Gray;
     circularGauge.Headers.Add(header); 
     this.content = circularGauge;
 
@@ -50,7 +59,7 @@ You can assign a unique header to `SfCircularGauge` by making use of `Header` pr
 
 ## Configuring Scales
 
-You can configure the `CircularScale` elements by making use of following API’s available in SfCircularGage.
+You can configure the `CircularScale` elements by making use of following API�s available in SfCircularGage.
 
 They are:
 
@@ -64,17 +73,19 @@ They are:
 
 {% highlight c# %}
 
-    Scale scale = new Scale(); 
-    scale.StartValue = 0; 
-    scale.EndValue = 100;
-    scale.Interval = 10;
-    scale.StartAngle = 135;
-    scale.SweepAngle = 270;
-    scale.RimThickness =  20;
-    scale.RimColor = Color.FromHex("#d14646");
-    scale.MinorTicksPerInterval = 0;
-    circularGauge.Scales = scale;
-    this.Content= circulargauge;
+    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
+        CircularScale scale = new CircularScale(); 
+        scale.StartValue = 0; 
+        scale.EndValue = 100;
+        scale.Interval = 10;
+        scale.StartAngle = 135;
+        scale.SweepAngle = 270;
+        scale.RimThickness =  20;
+        scale.RimColor = Color.FromHex("#2bbfb8");
+        scale.MinorTicksPerInterval = 0;
+        circularScales.Add(scale);
+        circularGauge.CircularScales = circularScales;
+        SetContentView(circularGauge);
 
 {% endhighlight %}
 
@@ -84,15 +95,16 @@ You can add ranges to SfCircularGauge by creating ranges collection using `Range
 
 {% highlight c# %}
 
-    …
-    Range range = new Range(); 
-    range.StartValue = 0; 
-    range.EndValue = 80; 
-    range.Color = Color.FromHex("#FF777777"); 
-    range.Thickness = 10;
-    scale.Ranges.Add(range);
-    circularGauge.Scales = scale; 
-    this.Content= circulargauge;
+    ...
+    CircularRange range = new CircularRange();
+    range.StartValue = 0;
+    range.EndValue = 80;
+    range.Color = Color.ParseColor("#FF777777");
+    range.Width = 10;
+    circularRanges.Add(range);
+    scale.CircularRanges = circularRanges;
+    circularGauge.CircularScales = circularScales;
+    SetContentView(circularGauge);
 
 {% endhighlight %}
 
@@ -102,16 +114,16 @@ You can create a needle pointer and associate it with a scale to display the cur
 
 {% highlight c# %}
 
-    …
-    NeedlePointer needlePointer = new NeedlePointer(); 
-    needlePointer.Value = 60; 
-    needlePointer.Color = Color.White; 
-    needlePointer.KnobColor = Color.White; 
-    needlePointer.Thickness = 5;
+    ...
+    NeedlePointer needlePointer = new NeedlePointer();
+    needlePointer.Value = 60;
+    needlePointer.Color = Color.White;
+    needlePointer.KnobColor = Color.White;
+    needlePointer.Width = 5;
     needlePointer.KnobRadius = 20;
     needlePointer.LengthFactor = 0.8;
-    scale.Pointers.Add(needlePointer); 
-    circularGauge.Scales = scale; 
+    scale.CircularPointers.Add(needlePointer);
+    circularGauge.CircularScales=circularScales;
     ...
 
 {% endhighlight %}
@@ -124,11 +136,11 @@ A range pointer provides an alternative way of indicating the current value.
 
     ... 
     RangePointer rangePointer = new RangePointer();
-    rangePointer.Value = 60; 
-    rangePointer.Color = Color.FromHex("#2bbfb8");
-    rangePointer.Thickness = 20; 
-    scale.Pointers.Add(rangePointer);
-    …
+	rangePointer.Value = 60;
+	rangePointer.Color = Color.ParseColor("#2bbfb8");
+	rangePointer.Width = 20;
+	scale.CircularPointers.Add(rangePointer);
+    ...
 
 {% endhighlight %}
 
