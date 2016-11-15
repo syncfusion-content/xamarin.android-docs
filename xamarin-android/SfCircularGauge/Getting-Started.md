@@ -53,7 +53,7 @@ You can assign a unique header to `SfCircularGauge` by making use of `Header` pr
     header.Position = new PointF((float)0.5, (float)0.7);
     header.TextColor = Color.Gray;
     circularGauge.Headers.Add(header); 
-    this.content = circularGauge;
+    SetContentView(circularGauge);
 
 {% endhighlight %}
 
