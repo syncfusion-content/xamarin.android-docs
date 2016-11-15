@@ -28,21 +28,21 @@ It is `enum` includes the following option.
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-    Scale scale=new Scale();
-    List<Pointer> pointers = new List<Pointer>();
-    NeedlePointer needlePointer = new NeedlePointer();
-    needlePointer.Value = 60;
-    needlePointer.Color = Color.Gray;
-    needlePointer.KnobRadius = 10;
-    needlePointer.KnobColor = Color.FromHex("#797979");
-    needlePointer.Thickness = 5;
-    needlePointer.LengthFactor = 0.8;
-    needlePointer.Type = PointerType.Bar;
-
-    pointers.Add(needlePointer);
-    scale.Pointers = pointers;
-    circularGauge.Scales = scale;
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
+        CircularScale scale = new CircularScale();
+        List<CircularPointer> pointers = new List<CircularPointer>();
+        NeedlePointer needlePointer = new NeedlePointer();
+        needlePointer.Value = 60;
+        needlePointer.Color = Color.Gray;
+        needlePointer.KnobRadius = 10;
+        needlePointer.KnobColor = Color.ParseColor("#2bbfb8");
+        needlePointer.Width = 5;
+        needlePointer.LengthFactor = 0.8;
+        needlePointer.Type = NeedleType.Bar;
+        pointers.Add(needlePointer);
+        scale.CircularPointers = pointers;
+        circularScales.Add(scale);
+        circularGauge.CircularScales = circularScales;
 
 {% endhighlight %}
 
@@ -58,17 +58,17 @@ The `RangePointer` in the scale can be placed inside the scale or outside the sc
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-
-    Scale scale=new Scale();
-    List<Pointer> pointers = new List<Pointer>();
-    RangePointer rangePointer = new RangePointer();
-    rangePointer.Value = 70;
-    rangePointer.Color = Color.FromHex("#2bbfb8");
-    rangePointer.Thickness = 10;
-    pointers.Add(rangePointer);
-    scale.Pointers = pointers;
-    circularGauge.Scales = scale;
+    SfCircularGauge circulargauge = new SfCircularGauge(this);
+        CircularScale scale = new CircularScale();
+        List<CircularPointer> pointers = new List<CircularPointer>();
+        RangePointer rangePointer = new RangePointer();
+        rangePointer.Value = 70;
+        rangePointer.Color = Color.ParseColor("#2bbfb8");
+        rangePointer.Width = 10;
+        pointers.Add(rangePointer);
+        scale.CircularPointers = pointers;
+        circularScales.Add(scale);
+        circularGauge.CircularScales = circularScales;
 
 {% endhighlight %}
 
