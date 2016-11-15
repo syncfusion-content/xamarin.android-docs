@@ -26,9 +26,9 @@ documentation: ug
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-    Circulargauge.GaugeType=GaugeType.East;
-    this.content=circulargauge;
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
+    circularGauge.GaugeType = GaugeType.East;
+    SetContentView(circularGauge);
 
 {% endhighlight %}
 
