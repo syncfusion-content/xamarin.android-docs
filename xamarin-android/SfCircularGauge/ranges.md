@@ -15,28 +15,29 @@ A range is a visual element which begins and ends at specified values within a s
 
 ## Ranges Customization
 
-Ranges start and end values are set by the `StartValue` and `EndValue` properties of the range. A rangeâ€™s UI is customized by the `Color` and `Thickness` properties.
+Ranges start and end values are set by the `StartValue` and `EndValue` properties of the range. A range’s UI is customized by the `Color` and `Thickness` properties.
 
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-
-    Scale scale=new Scale();
-    Range range1 = new Range(); 
-    range1.StartValue = 0; 
-    range1.EndValue = 70; 
-    range1.Color = Color.FromHex("#d14646");
-    range1.Thickness = 10;
-    scale.Ranges.Add(range1);
-    Range range2 = new Range(); 
-    range2.StartValue = 70; 
-    range2.EndValue = 100; 
-    range2.Color = Color.FromHex("#444444");
-    range2.Thickness = 10;
-    scale.Ranges.Add(range2);
-    circularGauge.Scales = scale; 
-    this.Content = circulargauge;
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
+    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
+        CircularScale scale = new CircularScale();
+        CircularRange range1 = new CircularRange();
+        range1.StartValue = 0;
+        range1.EndValue = 70;
+        range1.Color = Color.ParseColor("#d14646");
+        range1.Width = 10;
+        scale.CircularRanges.Add(range1);
+        CircularRange range2 = new CircularRange();
+        range2.StartValue = 70;
+        range2.EndValue = 100;
+        range2.Color = Color.ParseColor("#444444");
+        range2.Width = 10;
+        scale.CircularRanges.Add(range2);
+        circularScales.Add(scale);
+        circularGauge.CircularScales = circularScales;
+        SetContentView(circularGauge);
 
 {% endhighlight %}
 
@@ -49,25 +50,26 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-
-    Scale scale=new Scale();
-    Range range1 = new Range(); 
-    range1.StartValue = 0; 
-    range1.EndValue = 60; 
-    range1.Color = Color.FromHex ("#d14646");
-    range1.Thickness = 10;
-    range1.Offset=0.3;
-    scale.Ranges.Add(range1);	
-    Range range2 = new Range(); 
-    range2.StartValue = 60; 
-    range2.EndValue = 100; 
-    range2.Color = Color.FromHex("#444444");
-    range2.Thickness = 10;
-    range2.Offset=0.3;
-    scale.Ranges.Add(range2);
-    circularGauge.Scales = scale; 
-    this.Content= circulargauge;
+    SfCircularGauge circularGauge = new SfCircularGauge(this);
+    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
+        CircularScale scale = new CircularScale();
+        CircularRange range1 = new CircularRange();
+        range1.StartValue = 0;
+        range1.EndValue = 70;
+        range1.Color = Color.ParseColor("#d14646");
+        range1.Width = 10;
+        range1.Offset = 0.3;
+        scale.CircularRanges.Add(range1);
+        CircularRange range2 = new CircularRange();
+        range2.StartValue = 70;
+        range2.EndValue = 100;
+        range2.Color = Color.ParseColor("#444444");
+        range2.Width = 10;
+        range2.Offset = 0.3;
+        scale.CircularRanges.Add(range2);
+        circularScales.Add(scale);
+        circularGauge.CircularScales = circularScales;
+        SetContentView(circularGauge);
 
 {% endhighlight %}
 
