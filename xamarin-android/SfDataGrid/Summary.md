@@ -52,14 +52,14 @@ You can display summary information in a row by setting [GridSummaryRow.ShowSumm
 GridSummaryRow summaryRow = new GridSummaryRow();
 summaryRow.Title = "Total Salary:{TotalSalary} for {ProductCount} items";
 summaryRow.ShowSummaryInRow = true;
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = " TotalSalary ",
     MappingName = "Salary",
     Format = "{Sum:c}",
     SummaryType = SummaryType.DoubleAggregate
 });
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = " ProductCount ",
     MappingName = "Salary",
@@ -99,7 +99,7 @@ In the below code snippet,the summary is defined for `Salary` column.
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
 summaryRow.ShowSummaryInRow = false;
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = "CaptionSummary",
     MappingName = "Salary",
@@ -126,7 +126,7 @@ N> `DoubleAggregate` is used as `SummaryType` which has the count, max, min, ave
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
 summaryRow.ShowSummaryInRow = false;
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = "CaptionSummary",
     MappingName = "Salary",
@@ -147,7 +147,7 @@ In the below code snippet `Salary` column summary is formatted using `c` format 
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
 summaryRow.ShowSummaryInRow = false;
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = "CaptionSummary",
     MappingName = "Salary",
@@ -169,7 +169,7 @@ In the below code snippet `Total :` text is appended before summary value.
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
 summaryRow.ShowSummaryInRow = false;
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = "CaptionSummary",
     MappingName = "Salary",
@@ -190,14 +190,14 @@ You can format the summary value for a row using [GridSummaryRow.Title](https://
 GridSummaryRow summaryRow = new GridSummaryRow();
 summaryRow.Title = "Total Salary:{TotalSalary} for {ProductCount} items";
 summaryRow.ShowSummaryInRow = true;
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = " TotalSalary",
     MappingName = "Salary",
     Format = "{Sum:c}",
     SummaryType = SummaryType.DoubleAggregate
 });
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = " ProductCount",
     MappingName = "Salary",
