@@ -3,7 +3,7 @@ platform: Xamarin.Android
 control: PDF Viewer
 ---
 
-# PDFViewer
+# PDF Viewer
 
 Essential PDF viewer for Xamarin is a new control that allows PDF documents to be viewed within your Xamarin.Android applications.
 
