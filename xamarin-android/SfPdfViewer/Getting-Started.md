@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started for Essential Xamarin.Android PDFViewer
+title:  Getting Started for Essential Xamarin.Android PDF viewer
 description: getting started
 platform: Xamarin.Android
 control: SfPdfViewer
@@ -64,7 +64,7 @@ The LoadDocument method can be used to load a PDF document using stream input.
 {% endtabs %}
 
 
-## Unloading PDF document from the PDFViewer
+## Unloading PDF document from the PDF viewer
 
 The SfPdfViewer control allows you to unload the PDF document from the viewer when the control is not in use anymore. This releases the PDF document and all its associated resources.
 
