@@ -9,292 +9,359 @@ documentation: ug
 
 # Appearance & Styling
 
-## Cell Customization
+## MonthCell Customization
 
-Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. Month view cell contains the date along with its appointments if available. There is an option available in Schedule control to change the default UI of Month View cell. By using `MonthViewItemChanged` event each month cell can be changed to required UI. For instance, Sunday and Saturday can be differentiated by different color or customized to required UI.
+Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. Month view cell contains the date along with its appointments if available. 
 
-{% highlight c# %}
+You can customize the MonthView cell in two ways, 
 
-    //creating new instance for schedule
-    SfSchedule sfschedule = new SfSchedule(this);
-    sfschedule.ScheduleView = ScheduleView.MonthView;
+* MonthCellStyle property.
+* MonthCellLoadedEvent.
 
-    //month cell customization
-    sfschedule.MonthViewItemChanged += sfSchedule_MonthViewItemChanged;
+**Using MonthCellStyle property**
 
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);     
+MonthView can be customized by setting monthCellStyle properties such as TextColor,TextStyle,BackgroundColor to the `MonthCellStyle` property of schedule.
 
-    //month cell customization
-    void sfSchedule_MonthViewItemChanged(object sender, SfSchedule.MonthViewItemChangedEventArgs e)
-        {
-            Calendar calendar = e.P0.Calendar;
-            FrameLayout frameLayout = new FrameLayout(this);
-            if (calendar != null)
-            {
-                GradientDrawable gradientDrawable = new GradientDrawable(
-                    GradientDrawable.Orientation.TopBottom,
-                    new int[] { 255, 0 }); //0xFF616261
-                gradientDrawable.SetCornerRadius(0f);
-                TextView monthCellText = new TextView(this);
-                String text = new SimpleDateFormat("dd").Format(calendar.Time);
-                monthCellText.Text = (text);
-                if ((calendar.Get(Calendar.DayOfWeek) == Calendar.Sunday) || (calendar.Get(Calendar.DayOfWeek) == Calendar.Saturday))
-                {
-                    monthCellText.SetTextColor(Color.Red);
-                }
-                else
-                {
-                    monthCellText.SetTextColor(Color.Black);
-                }
-                if ((calendar.Get(Calendar.Year) == Calendar.Instance.Get(Calendar.Year)) && (calendar.Get(Calendar.Month) == Calendar.Instance.Get(Calendar.Month) && (calendar.Get(Calendar.DayOfMonth) == Calendar.Instance.Get(Calendar.DayOfMonth))))
-                {
-                    monthCellText.SetTextColor(Color.Red);
-                }
-                monthCellText.TextSize = (18);
-                monthCellText.Gravity = GravityFlags.CenterHorizontal;
-                monthCellText.SetPadding(0, 10, 0, 0);
-                LinearLayout layout = new LinearLayout(this);
+{% highlight C# %}
 
-                Button appDot = new Button(this);
-                LinearLayout.LayoutParams params1 = new LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.WrapContent, LinearLayout.LayoutParams.WrapContent);
-                params1.SetMargins(0, 80, 0, 0);
-                appDot.LayoutParameters = (params1);
-                GradientDrawable appDotDrawable = new GradientDrawable();
-                appDotDrawable.SetColor(255);
-                appDotDrawable.SetCornerRadius(15);
-                appDotDrawable.SetStroke(0, Color.Red);
-                layout.SetGravity(GravityFlags.CenterHorizontal);
-                appDot.SetBackgroundDrawable(appDotDrawable);
-                appDot.LayoutParameters = (new ViewGroup.LayoutParams(10, 10));
-                layout.Orientation = Orientation.Vertical;
-                View line = new View(this);
-                line.LayoutParameters = (new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FillParent, 1));
-                line.SetBackgroundColor(Color.Gray);
-                layout.AddView(line);
-                layout.AddView(monthCellText);
-                if (e.P0.Appointments != null && e.P0.Appointments.Size() > 0)
-                {
-                    layout.AddView(appDot);
-                }
-                frameLayout.AddView(layout);
-            }
-            e.P0.MonthView = frameLayout;
-        }
+    MonthCellStyle monthCellStyle = new MonthCellStyle();
+    monthCellStyle.BackgroundColor = Color.Gray;
+    monthCellStyle.TextColor = Color.Blue;
+    monthCellStyle.TextSize = 12;
+    monthCellStyle.TextStyle = Typeface.DefaultBold;
+    sfschedule.MonthCellStyle = monthCellStyle;
 
+{% endhighlight %}
 
+**Using MonthCellLoaded Event**
+
+You can customize the month view during runtime using `MonthCellLoaded Event`. In MonthCellLoaded event, the properties such as CellStyle,Appointments,Calendar,view and boolean properties such as IsToday,IsPreviousMonthDate,IsNextMonthDate,IsBlackoutDate are passed in the `MonthCellLoadedEventArgs`.
+
+Month cells can be customized using the `CellStyle` property as follows,
+
+{% highlight C# %}
+    
+    sfschedule.MonthCellLoaded += (object sender, SfSchedule.MonthCellLoadedEventArgs e) =>
+		{
+			if (e.P0.IsToday)
+			{
+				e.P0.CellStyle.BackgroundColor = Color.Gray;
+				e.P0.CellStyle.TextColor = Color.Blue;
+				e.P0.CellStyle.TextSize = 12;
+				e.P0.CellStyle.TextStyle = Typeface.DefaultBold;
+			}
+		};
+
+{% endhighlight %}
+
+You can also add an object in the month cell view using `View` property passed through `MonthCellLoadedEventArgs`.
+
+{% highlight C# %}
+
+	sfschedule.MonthCellLoaded += (object sender, SfSchedule.MonthCellLoadedEventArgs e) =>
+		{
+		    Button button = new Button(this);
+			button.SetBackgroundColor(Color.Red);
+			e.P0.View = button;
+		};
+		
 {% endhighlight %}
 
 ![](Appearance/Appearance1.jpeg)
 
 ## Appointment Customization.
 
-`ScheduleAppointment` created in schedule are arranged based on its duration, where the appointments viewed through day, week and work week view  are positioned in the timeslots. Default UI of the appointments in day, week and work week view can be changed by using `AppointmentTemplateChanged` event .
+`ScheduleAppointment` created in schedule are arranged based on its duration, where the appointments viewed through day, week and work week view  are positioned in the timeslots.Schedule Appointment can be customized in two ways, 
 
-{% highlight c# %}
+* AppointmentStyle property.
+* AppointmentLoadedEvent.
 
-    //creating new instance for schedule
-            SfSchedule sfschedule = new SfSchedule(this);
-            sfschedule.ScheduleView = ScheduleView.DayView;
+**Using AppointmentStyle property**
 
-            appointmentCollection = new ScheduleAppointmentCollection();
+`ScheduleAppointment` can be customized by setting appointmentstyle properties such as TextColor,TextStyle,BorderColor,BorderCornerRadius,BorderWidth,SelectionBorderColor,SelectionTextColor to the `AppointmentStyle` property of schedule.
 
-            //Creating new event
-            ScheduleAppointment clientMeeting = new ScheduleAppointment();
+{% highlight C# %}
 
-            Calendar currentDate = Calendar.Instance;
-            Calendar startTime = (Calendar)currentDate.Clone();
+    AppointmentStyle appointmentStyle = new AppointmentStyle();
+	appointmentStyle.TextColor = Color.Red;
+	appointmentStyle.TextStyle = Font.SystemFontOfSize(15,FontAttributes.Bold);
+	appointmentStyle.BorderColor = Color.Blue;
+	appointmentStyle.BorderCornerRadius = 12;
+	appointmentStyle.BorderWidth = 10;
+	appointmentStyle.SelectionBorderColor = Color.Yellow;
+	appointmentStyle.SelectionTextColor = Color.Yellow;
+	sfschedule.AppointmentStyle = appointmentStyle;
+	
+{% endhighlight %}
 
-            //setting start time for the event
-            startTime.Set(
-                currentDate.Get(CalendarField.Year),
-                currentDate.Get(CalendarField.Month),
-                currentDate.Get(CalendarField.DayOfMonth),
-                10, 0, 0
-            );
+**Using AppointmentLoaded Event**
 
-            Calendar endTime = (Calendar)currentDate.Clone();
+Schedule appointment view can be customized during runtime using `AppointmentLoaded Event`.In AppointmentLoaded event, the properties such as appointmentStyle,appointment,view,Bounds are passed in the `AppointmentLoadedEventArgs`.
 
-            //setting end time for the event
-            endTime.Set(
-                currentDate.Get(CalendarField.Year),
-                currentDate.Get(CalendarField.Month),
-                currentDate.Get(CalendarField.DayOfMonth),
-                12, 0, 0
-            );
+ScheduleAppointment can be customized using the `appointmentStyle` property as follows,
 
-            clientMeeting.StartTime = startTime;
-            clientMeeting.EndTime = endTime;
-            clientMeeting.Color = Color.Blue;
+{% highlight C# %}
 
-            //setting Subject for the event
-            clientMeeting.Subject = "ClientMeeting";
+    	sfschedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
+		{
+			e.P0.AppointmentStyle.BorderColor = Color.AliceBlue;
+			e.P0.AppointmentStyle.BorderCornerRadius = 5;
+			e.P0.AppointmentStyle.BorderWidth = 10;
+			e.P0.AppointmentStyle.SelectionBorderColor = Color.Blue;
+			e.P0.AppointmentStyle.SelectionTextColor = Color.Yellow;
+			e.P0.AppointmentStyle.TextColor = Color.Brown;
+			e.P0.AppointmentStyle.TextStyle = Typeface.DefaultBold;
+		};
 
-            //adding event into the collection
-            appointmentCollection.Add(clientMeeting);
-            sfschedule.Appointments = appointmentCollection;
+{% endhighlight %}
 
-    //appointment customization
-            sfschedule.AppointmentTemplateChanged += sfSchedule_AppointmentTemplateChanged;
+You can also add an object in the appointment view using `view` property passed through `AppointmentLoadedEventArgs`.
 
-            // Set our view from the "main" layout resource
-            SetContentView(sfschedule);
+{% highlight C# %}
 
-    //appointment customization
-    void sfSchedule_AppointmentTemplateChanged(object sender, SfSchedule.AppointmentTemplateChangedEventArgs e)
-        {
-            FrameLayout frameLayout = new FrameLayout(this);
-            GradientDrawable gradientDrawable = new GradientDrawable();
-            //gradientDrawable.SetColor(B4B5C1);
-            //gradientDrawable.setCornerRadius(5);
-            //gradientDrawable.setStroke(1, 0xFF000000);
-            TextView monthCellText = new TextView(this);
-            monthCellText.SetBackgroundColor(Color.ParseColor("#A237B3E6"));
-            //frameLayout.SetBackgroundDrawable(gradientDrawable);
-            ImageView imageView = new ImageView(this);
-            ScheduleAppointmentCollection appointment = e.P0.Appointments;
-            for (int i = 0; i < appointment.Size(); i++)
-            {
-                monthCellText.Text = (((ScheduleAppointment)appointment.Get(i)).Subject.ToString());
-                monthCellText.SetTextColor(Color.White);
-                monthCellText.TextSize = (14);
-                monthCellText.SetPadding(8, 60, 0, 0);
-                frameLayout.SetPadding(20, 0, 0, 0);
-                frameLayout.AddView(monthCellText);
-                imageView = new ImageView(this);
-                imageView.SetPadding(8, 0, 0, 0);
-                if (((ScheduleAppointment)appointment.Get(i)).Subject == "Business Meeting")
-                {
-                    imageView.SetImageResource(Resource.Drawable.family);
-                }
-                else if (((ScheduleAppointment)appointment.Get(i)).Subject == "GoToMeeting")
-                {
-                   imageView.SetImageResource(Resource.Drawable.hospital);
-                }
-                else
-                {
-                   imageView.SetImageResource(Resource.Drawable.team);
-                }
-            }
-
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(46, 60);
-            imageView.LayoutParameters = (layoutParams);
-            frameLayout.AddView(imageView);
-            e.P0.AppointmentView = frameLayout;
-        }
-
+	sfschedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
+		{
+			Button button = new Button(this);
+			button.SetBackgroundColor(Color.Red);
+			e.P0.View = button;
+		};
+	
 {% endhighlight %}
 
 ![](Appearance/appointCust.png)
 
-## Inline view Customization.
+## Panel Customization
 
-By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which contains list of appointments on a particular day. Default UI of inline available in month view can be customized by using `InlineTapped` event .
+### Custom Day View
+
+#### Date Time Formating
+
+You can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WorkWeekViewSettings`.
 
 {% highlight c# %}
 
-            ScheduleAppointmentCollection appointmentCollection;
-            //..//
-            //creating new instance for schedule
-            SfSchedule sfschedule = new SfSchedule(this.ApplicationContext);
-            sfschedule.ScheduleView = ScheduleView.MonthView;
+    //creating new instance for schedule
+    sfschedule = new SfSchedule(this);
+        
+    //setting schedule view
+    sfschedule.ScheduleView = ScheduleView.DayView;
+        
+    //setting day view settings properties
+    DayViewSettings dayViewSettings = new DayViewSettings();
+    dayViewsettings.VerticalLineColor = Color.Green;
+    dayViewsettings.VerticalLineStrokeWidth = 5;
+    sfschedule.DayViewSettings=dayViewSettings;
+        
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
 
-            appointmentCollection = new ScheduleAppointmentCollection();
+{% endhighlight %}
 
-            //Creating new event
-            ScheduleAppointment clientMeeting = new ScheduleAppointment();
+#### Working Hours 
 
-            Calendar currentDate = Calendar.Instance;
-            Calendar startTime = (Calendar)currentDate.Clone();
+You can differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `DayViewSettings`.
 
-            //setting start time for the event
-            startTime.Set(
-                currentDate.Get(CalendarField.Year),
-                currentDate.Get(CalendarField.Month),
-                currentDate.Get(CalendarField.DayOfMonth),
-                10, 0, 0
-            );
+{% highlight c# %}
 
-            Calendar endTime = (Calendar)currentDate.Clone();
+    //creating new instance for schedule
+    sfschedule = new SfSchedule(this);
+    
+    //setting schedule view
+    sfschedule.ScheduleView = ScheduleView.DayView;
 
-            //setting end time for the event
-            endTime.Set(
-                currentDate.Get(CalendarField.Year),
-                currentDate.Get(CalendarField.Month),
-                currentDate.Get(CalendarField.DayOfMonth),
-                12, 0, 0
-            );
-
-            clientMeeting.StartTime = startTime;
-            clientMeeting.EndTime = endTime;
-            clientMeeting.Color = Color.Blue;
-
-            //setting Subject for the event
-            clientMeeting.Subject = "ClientMeeting";
-
-            //adding event into the collection
-            appointmentCollection.Add(clientMeeting);
-            sfschedule.Appointments = appointmentCollection;
-
-    // InlineTapped Event
-        sfschedule.MonthViewSettings.ShowAppointmentsInline = true;
-        sfschedule.MonthViewSettings.InlineTapped += MonthViewSettings_InlineTapped;
+    //setting day view settings properties
+    DayViewSettings dayViewSettings = new DayViewSettings();
+    dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
+    dayViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
+    dayViewSettings.TimeSlotColor = Color.Yellow;
+    dayViewSettings.TimeSlotBorderColor = Color.Aqua;
+    dayViewSettings.TimeSlotBorderStrokeWidth = 5;
+    sfschedule.DayViewSettings=dayViewSettings;
+    
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
             
-        // Set our view from the "main" layout resource
-        SetContentView(sfschedule);
+{% endhighlight %}
 
-        // InlineTapped Event
-        void MonthViewSettings_InlineTapped(object sender, MonthViewSettings.InlineTappedEventArgs e)
-        {
-            CustomView customView = new CustomView(this.ApplicationContext, e.P0.Calendar, e.P0.Schedule, e.P0.GetiviewRenderer());
-            e.P0.SetInlineView(customView);
-        }
+#### All Day Appointments Panel
 
-        //Custom UI for inline
-       class CustomView : InlineLayout
-    {
-        private Java.Util.Calendar calendar;
-        private SfSchedule sfSchedule;
-        private ViewRenderer viewRenderer;
+You can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor` of `DayViewSettings`.
 
-        public CustomView(Android.Content.Context context, Java.Util.Calendar calendar, SfSchedule sfSchedule, ViewRenderer viewRenderer)
-            : base(context, calendar, sfSchedule, viewRenderer)
-        {
-            // TODO: Complete member initialization          
-            this.calendar = calendar;
-            this.sfSchedule = sfSchedule;
-            this.viewRenderer = viewRenderer;
-        }
+{% highlight c# %}
 
-        public override void DrawInline(Android.Views.View view)
-        {
-            base.DrawInline(view);
-            FrameLayout frameLayout = new FrameLayout(Context);
-        frameLayout.SetBackgroundColor(Color.Black);
-        if(view is TextView) 
-        {
-            TextView textView = new TextView(Context);
-            textView.Text=(((TextView) view).Text);
-            textView.SetTextColor(Color.White);
-            textView.TextSize=(30);
-            frameLayout.AddView(textView);
-        }
-        else if(view is ScrollView){
-            int count = (((ScrollView)view).ChildCount);
-            TextView textView = new TextView(Context);
-            textView.Text=("Total events "+String.Concat(count));
-            textView.SetTextColor(Color.White);
-            textView.TextSize=(30);
-            frameLayout.AddView(textView);
-        }
-        this.AddView(frameLayout);
+    //creating new instance for schedule
+    sfschedule = new SfSchedule(this);
+            
+    //setting schedule view
+    sfschedule.ScheduleView = ScheduleView.DayView;
+            
+    //setting day view settings properties
+    DayViewSettings dayViewSettings = new DayViewSettings();
+    dayViewSettings.AllDayAppointmentBackgroundColor = Color.Pink;
+    sfschedule.DayViewSettings=dayViewSettings;
+            
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
 
-        }       
-    }
+{% endhighlight %}
+
+### Custom Week View
+
+#### Date Time Formating
+
+You can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WeekViewSettings`.
+
+{% highlight c# %}
+
+    //creating new instance for schedule
+    sfschedule = new SfSchedule(this);
+    
+    //setting schedule view
+    sfschedule.ScheduleView = ScheduleView.WeekView;
+    
+    WeekViewSettings weekViewSettings = new WeekViewSettings ();
+    weekViewSettings.VerticalLineColor = Color.Green;
+    weekViewSettings.VerticalLineStrokeWidth = 5;
+    sfschedule.WeekViewSettings = weekViewSettings;
+            
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### Working Hours 
+
+You can differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WeekViewSettings`.
+
+{% highlight c# %}
+
+    //creating new instance for schedule
+    sfschedule = new SfSchedule(this);
+    
+    //setting schedule view
+    sfschedule.ScheduleView = ScheduleView.WeekView;
+
+    //setting week view settings properties
+    WeekViewSettings weekViewSettings = new WeekViewSettings();
+    weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
+    weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
+    weekViewSettings.TimeSlotBorderColor = Color.Aqua;
+    weekViewSettings.TimeSlotColor = Color.Yellow;
+    weekViewSettings.TimeSlotBorderStrokeWidth = 5;
+    
+    sfschedule.WeekViewSettings = weekViewSettings;
+    
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### All Day Appointments Panel
+
+You can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor` of `WeekViewSettings`.
+
+{% highlight c# %}
+
+    //creating new instance for schedule
+    sfschedule = new SfSchedule(this);
+
+    //setting schedule view
+    sfschedule.ScheduleView = ScheduleView.WeekView;
+
+    //setting week view settings properties
+    WeekViewSettings weekViewSettings = new WeekViewSettings();
+    weekViewSettings.AllDayAppointmentBackgroundColor = Color.Pink;
+    sfschedule.WeekViewSettings = weekViewSettings;
+    
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
+
+{% endhighlight %}
+
+### Custom Work Week View
+
+#### Date Time Formating
+
+You can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WorkWeekViewSettings`.
+
+{% highlight c# %}
+
+    //creating new instance for schedule
+    sfschedule = new SfSchedule(this);
+
+    //setting schedule view
+    sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+    
+    WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
+    workWeekViewSettings.VerticalLineColor = Color.Green;
+    workWeekViewSettings.VerticalLineStrokeWidth = 5;
+    sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+            
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### Working Hours 
+
+You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WorkWeekViewSettings`.
+
+{% highlight c# %}
+
+    //creating new instance for schedule
+    sfschedule = new SfSchedule(this);
+
+    //setting schedule view
+    sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+
+    //setting workweek view settings properties
+    WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
+    workWeekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
+    workWeekViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
+    workWeekViewSettings.TimeSlotBorderColor = Color.Aqua;
+    workWeekViewSettings.TimeSlotColor = Color.Yellow;
+    workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
+    sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+    
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### All Day Appointments Panel
+
+You can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor` of `WorkWeekViewSettings`.
+
+{% highlight c# %}
+
+    //creating new instance for schedule
+    sfschedule = new SfSchedule(this);
+
+    //setting schedule view
+    sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+
+    //setting workweek view settings properties
+    WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+    workWeekViewSettings.AllDayAppointmentBackgroundColor = Color.Pink;
+    sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+            
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
+
+{% endhighlight %}
+
+## Inline view Customization.
+
+You can able to know the details of appointments in inline using `InlineAppointmentTapped` event in `Schedule`. Details of the selected  appointment and the corresponding date is passed through `InlineAppointmentTappedEventArgs` as `selectedAppointment` and `selectedDate` respectively.
+
+{% highlight C# %}
+    
+    monthViewSettings.InlineAppointmentTappedEvent += (object sender, MonthViewSettings.InlineAppointmentTappedEventArgs e) =>
+		{
+		    var appointment = e.P2;
+			var date = e.P1;
+		};
 
 {% endhighlight %}
 
 ![](Appearance/Appearance2.jpeg)
-
-![](Appearance/Appearance3.jpeg)
