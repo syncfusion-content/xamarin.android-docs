@@ -15,32 +15,8 @@ By default the date can be navigated to next view using touch gesture, by swipin
 
 {% highlight c# %}
 
-    //creating a linear layout 
-    LinearLayout linearLayout = new LinearLayout(this);
-    linearLayout.Orientation = Orientation.Vertical;
-
-    //creating button 
-    Button forward_button = new Button(this);
-    forward_button.Text="Forward";
-    forward_button.Click += forward_button_Click;
-
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.WeekView;
-
-    linearLayout.AddView(forward_button);
-    linearLayout.AddView(sfschedule);
-
-    // Set our view from the "main" layout resource
-    SetContentView(linearLayout);
-
-    //Button OnClick
-    void forward_button_Click(object sender, EventArgs e)
-    {
     //using schedule forward()
     sfschedule.Forward();
-    }
 
 {% endhighlight %}
 
@@ -52,32 +28,8 @@ By default the date can be navigated to previous view using touch gesture, by sw
 
 {% highlight c# %}
 
-    //creating a linear layout 
-    LinearLayout linearLayout = new LinearLayout(this);
-    linearLayout.Orientation = Orientation.Vertical;
-    
-    //creating button 
-    Button backward_button = new Button(this);
-    backward_button.Text = "Backward";
-    backward_button.Click += backward_button_Click;
-
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.WeekView;
-
-    linearLayout.AddView(backward_button);
-    linearLayout.AddView(sfschedule);
-
-    // Set our view from the "main" layout resource
-    SetContentView(linearLayout);
-
-    //Button OnClick
-    void backward_button_Click(object sender, EventArgs e)
-    {
-    //using schedule forward()
+    //using schedule backward()
     sfschedule.Backward();
-    }
 
 {% endhighlight %}
 
@@ -166,7 +118,7 @@ Dates can be navigated by using swipe gesture as well as using built-in methods 
 
 ## Inline
 
-By enabling Inline feature in month view, while touch the month view cell, appointments available in a particular day will be listed in inline view. There are options available to customize the default UI of inline view while tap on the month cell using `InlineTapped` event. `InlineAppointmentsTapped` event is a event available in month view to raise while tapped on the appointments in inline view.
+By enabling Inline feature in month view, while touch the month view cell, appointments available in a particular day will be listed in inline view. 
 
 {% highlight c# %}
 
