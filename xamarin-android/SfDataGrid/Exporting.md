@@ -236,7 +236,7 @@ exportOption.FitAllColumnsInOnePage = true;
 var doc = pdfExport.ExportToPdf (this.dataGrid, exportOption);
 {% endhighlight %}
 
-SfDataGrid provides you with several properties in `DataGridPdfExportingOption` class to customize the grid while exporting it to PDF. 
+SfDataGrid provides you with several properties in `DataGridPdfExportingOption` class to customize the grid while exporting it to PDF. 
 
 ### Events
 
