@@ -20,51 +20,54 @@ Create the collection of the ScheduleAppointments by setting required details us
 {% highlight c# %}
 
         ScheduleAppointmentCollection appointmentCollection;
-             //..//
-            //creating new instance for schedule
-            SfSchedule sfschedule = new SfSchedule(this);
-            sfschedule.ScheduleView = ScheduleView.WeekView;
-            appointmentCollection = new ScheduleAppointmentCollection();
-
-            //Creating new event
-            ScheduleAppointment clientMeeting = new ScheduleAppointment();
-
-            Calendar currentDate = Calendar.Instance;
-            Calendar startTime = (Calendar)currentDate.Clone();
-            
-    //setting start time for the event
+        //..//
+        //creating new instance for schedule
+        SfSchedule sfschedule = new SfSchedule(this);
+        sfschedule.ScheduleView = ScheduleView.WeekView;
+        appointmentCollection = new ScheduleAppointmentCollection();
+        
+        //Creating new event
+        ScheduleAppointment clientMeeting = new ScheduleAppointment();
+        
+        Calendar currentDate = Calendar.Instance;
+        Calendar startTime = (Calendar)currentDate.Clone();
+        
+        //setting start time for the event
             startTime.Set(
                 currentDate.Get(CalendarField.Year),
                 currentDate.Get(CalendarField.Month),
                 currentDate.Get(CalendarField.DayOfMonth),
                 10, 0, 0
             );
-
+            
             Calendar endTime = (Calendar)currentDate.Clone();
            
-    //setting end time for the event
+        //setting end time for the event
             endTime.Set(
                 currentDate.Get(CalendarField.Year),
                 currentDate.Get(CalendarField.Month),
                 currentDate.Get(CalendarField.DayOfMonth),
                 12, 0, 0
             );
-
+            
             clientMeeting.StartTime = startTime;
             clientMeeting.EndTime = endTime;
             clientMeeting.Color = Color.Blue;
-
-    //setting Subject for the event
+            
+        //setting Subject for the event
             clientMeeting.Subject = "ClientMeeting";
-
-    //adding event into the collection
+            
+        //adding event into the collection
             appointmentCollection.Add(clientMeeting);
             sfschedule.Appointments = appointmentCollection;
             
-            // Set our view from the "main" layout resource
+        // Set our view from the "main" layout resource
             SetContentView(sfschedule);
 
 {% endhighlight %}
 
+### AppointmentStyle
+
+ScheduleAppointment can be customized using the `AppointmentStyle` property. To know more about customization of Schedule Appointment refer [Appointment Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Appointment Customization")
 
 ![](PopulatingAppointments_images/PopulatingAppointments_img1.jpeg)

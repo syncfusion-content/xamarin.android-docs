@@ -9,9 +9,9 @@ documentation: ug
 
 # Recurrence
 
-Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments, to know more about adding appointments in the control, refer Schedule Appointment.
+Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments, to know more about adding appointments in the control, refer `Schedule Appointment`.
 
-And then need to set the `RecurrenceRule` to populate the required recursive appointment collection in a specific pattern.
+And then need to set the `RecurrenceRule` to populate the required recursive appointment collection in a specific pattern.RRULE can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
 
 Recursive appointment can be created in any recurrence patterns, for instance, some events can be repeated every week such as “Server maintenance”, where as some on them may repeat every year like wedding anniversary. 
 
@@ -79,14 +79,21 @@ RecurrenceGenerator/ recurrence builder is available with the control to create 
             recurrenceProp1.IsRangeEndDate = false;
             recurrenceProp1.RangeRecurrenceCount = 10;
             recurrenceProp1.RecurrenceRule = RecurrenceBuilder.RRuleGenerator(recurrenceProp1, appointment1.StartTime, appointment1.EndTime);
-            appointment1.RecurrenceRule = recurrenceProp1.RecurrenceRule;
 
-            //adding appointment to the collection  
-            appointmentCollection.Add(appointment1);
-            sfschedule.Appointments = appointmentCollection;
+{% endhighlight %}
 
-            // Set our view from the "main" layout resource
-            SetContentView(sfschedule);
+The generated RRule is assigned to the created ScheduleAppointment as given below.
+
+{% highlight C# %}
+
+    appointment1.RecurrenceRule = recurrenceProp1.RecurrenceRule;
+    
+    //adding appointment to the collection  
+    appointmentCollection.Add(appointment1);
+    sfschedule.Appointments = appointmentCollection;
+    
+    // Set our view from the "main" layout resource
+    SetContentView(sfschedule);
 
 {% endhighlight %}
 

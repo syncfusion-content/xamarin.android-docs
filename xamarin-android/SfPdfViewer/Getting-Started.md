@@ -23,6 +23,8 @@ Follow the below steps to create a simple application with the SfPdfViewer and l
 
 * Create a new blank application for Xamarin.Android in the Visual Studio and refer the required assembly to the project. 
 
+N>**Essential PDF Viewer for Xamarin.Android project is compatible with platform version of Android 5.0 (API Level 21) or more.
+
 Add the following Xml code in you Main.axml to make use of SfPdfViewer.
    
 {% tabs %}
