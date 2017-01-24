@@ -12,6 +12,7 @@ documentation: ug
 # ItemTapped
 
 This event is triggered when you tap on any card. The argument contains the following information.
+
 * [`Column`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanTappedEventArgs~Column.html)          - Used to get the column of the card.
 * [`Data`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanTappedEventArgs~Data.html) 			- Used to get the underlying model of the card.
 * [`Index`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanTappedEventArgs~Index.html) 			- Used to get the index of the card in a column.
