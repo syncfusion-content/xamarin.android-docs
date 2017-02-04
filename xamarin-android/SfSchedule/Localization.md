@@ -9,29 +9,29 @@ documentation: ug
 
 # Localization 
 
-Schedule control is available with complete localization support. 
+Schedule control is available with complete localization support . Localization can be specified by setting the `Locale` property of the control. In the format of `Language code`.  Based on the locale specified the strings in the control such as Date, time, days are localized accordingly. As the subject of the appointments are given in the application level, it can be set as localized strings as per the requirement. 
 
-Localization can be specified by setting the `Locale` property of the control. In the format of `Language code` followed by `Country code`.  Based on the locale specified the strings in the control such as Date, time, days are localized accordingly.
+## Locale
 
-By default schedule control is available with `en-US` locale. 
-
-As the subject of the appointments are given in the application level, it can be set as localized strings as per the requirement. To know more about settings the subject refer Schedule Appointment.
+Based on the locale specified the strings in the control such as Date, time, days are localized accordingly. By default schedule control is available with `en-US` locale. 
 
 {% highlight c# %}
 
-            //creating new instance for schedule
-            sfschedule = new SfSchedule(this);
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
 
-            //setting schedule view
-            sfschedule.ScheduleView = ScheduleView.WeekView;
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.DayView;
 
-            //setting locale for the control
-            sfschedule.Locale = new Locale("fr", "FR");
-            
-            // Set our view from the "main" layout resource
-            SetContentView(sfschedule);
+	//setting locale for the control
+	sfschedule.Locale = new Locale("fr");
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
 
 {% endhighlight %}
+
+>**NOTE**: AM/PM in the timeline will not be localized in the Schedule views.
 
 ![](Localization_images/Localization_img1.jpeg)
 
@@ -46,5 +46,11 @@ The procedure for creating `strings.xml` files is as follows:
 1. Translate the `strings.xml` file to each language.
 2. Create three new folders under res –`values-ar`, `values-de`, `values-en` and `values-fr` (The original `values` folder already exists).
 3. Place the translated `strings.xml` files in the respective folders.
+
+### AllDay and No events Text
+For an example in schedule there is a string `No Events` in Schedule Month View Inline. To localize the string, specify the key (“No Events”) and assign the corresponding localized string to it in `Localizable.strings` file. 
+
+### Appointment Localization
+Schedule search for the key in corresponding language `Localizable.strings` file and displays the corresponding string in the schedule. 
 
 ![](Localization_images/Localization_img2.jpeg)
