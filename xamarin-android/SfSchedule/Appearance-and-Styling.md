@@ -9,322 +9,428 @@ documentation: ug
 
 # Appearance & Styling
 
-## MonthCell Customization
+## Header Customization
 
-Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. Month view cell contains the date along with its appointments if available. 
+You can customize the header of the Schedule using `HeaderStyle` and `HeaderHeight` property in schedule.
 
-You can customize the MonthView cell in two ways, 
+### Header Height
 
-* MonthCellStyle property.
-* MonthCellLoadedEvent.
+You can customize the height for the Header in Schedule using `HeaderHeight` in schedule.
 
-**Using MonthCellStyle property**
+{% highlight c# %}
 
-MonthView can be customized by setting monthCellStyle properties such as TextColor,TextStyle,BackgroundColor to the `MonthCellStyle` property of schedule.
-
-{% highlight C# %}
-
-    MonthCellStyle monthCellStyle = new MonthCellStyle();
-    monthCellStyle.BackgroundColor = Color.Gray;
-    monthCellStyle.TextColor = Color.Blue;
-    monthCellStyle.TextSize = 12;
-    monthCellStyle.TextStyle = Typeface.DefaultBold;
-    sfschedule.MonthCellStyle = monthCellStyle;
+	sfSchedule.HeaderHeight = 50;
 
 {% endhighlight %}
 
-**Using MonthCellLoaded Event**
+### Labels
 
-You can customize the month view during runtime using `MonthCellLoaded Event`. In MonthCellLoaded event, the properties such as CellStyle,Appointments,Calendar,view and boolean properties such as IsToday,IsPreviousMonthDate,IsNextMonthDate,IsBlackoutDate are passed in the `MonthCellLoadedEventArgs`.
+you can change the header format and style using `HeaderStyle` property in schedule.
 
-Month cells can be customized using the `CellStyle` property as follows,
+#### Format
 
-{% highlight C# %}
-    
-    sfschedule.MonthCellLoaded += (object sender, SfSchedule.MonthCellLoadedEventArgs e) =>
-		{
-			if (e.P0.IsToday)
-			{
-				e.P0.CellStyle.BackgroundColor = Color.Gray;
-				e.P0.CellStyle.TextColor = Color.Blue;
-				e.P0.CellStyle.TextSize = 12;
-				e.P0.CellStyle.TextStyle = Typeface.DefaultBold;
-			}
-		};
+You can change the header text format and size using `ScheduleDateHeaderSize` and `ScheduleDateHeaderFormat` property in `HeaderStyle`
+
+{% highlight c# %}
+
+	sfSchedule.ScheduleDateHeaderSize = 30;
+	sfSchedule.ScheduleDateHeaderFormat = "MMM yyyy";
 
 {% endhighlight %}
 
-You can also add an object in the month cell view using `View` property passed through `MonthCellLoadedEventArgs`.
+#### Fonts and colors
 
-{% highlight C# %}
+You can change the backgroundcolor,text style and text size using properties such as `BackgroundColor`,`TextStyle`, `TextSize` of Header using `HeaderStyle` property in schedule.
 
-	sfschedule.MonthCellLoaded += (object sender, SfSchedule.MonthCellLoadedEventArgs e) =>
-		{
-		    Button button = new Button(this);
-			button.SetBackgroundColor(Color.Red);
-			e.P0.View = button;
-		};
-		
-{% endhighlight %}
+{% highlight c# %}
 
-![](Appearance/Appearance1.jpeg)
-
-## Appointment Customization.
-
-`ScheduleAppointment` created in schedule are arranged based on its duration, where the appointments viewed through day, week and work week view  are positioned in the timeslots.Schedule Appointment can be customized in two ways, 
-
-* AppointmentStyle property.
-* AppointmentLoadedEvent.
-
-**Using AppointmentStyle property**
-
-`ScheduleAppointment` can be customized by setting appointmentstyle properties such as TextColor,TextStyle,BorderColor,BorderCornerRadius,BorderWidth,SelectionBorderColor,SelectionTextColor to the `AppointmentStyle` property of schedule.
-
-{% highlight C# %}
-
-    AppointmentStyle appointmentStyle = new AppointmentStyle();
-	appointmentStyle.TextColor = Color.Red;
-	appointmentStyle.TextStyle = Font.SystemFontOfSize(15,FontAttributes.Bold);
-	appointmentStyle.BorderColor = Color.Blue;
-	appointmentStyle.BorderCornerRadius = 12;
-	appointmentStyle.BorderWidth = 10;
-	appointmentStyle.SelectionBorderColor = Color.Yellow;
-	appointmentStyle.SelectionTextColor = Color.Yellow;
-	sfschedule.AppointmentStyle = appointmentStyle;
-	
-{% endhighlight %}
-
-**Using AppointmentLoaded Event**
-
-Schedule appointment view can be customized during runtime using `AppointmentLoaded Event`.In AppointmentLoaded event, the properties such as appointmentStyle,appointment,view,Bounds are passed in the `AppointmentLoadedEventArgs`.
-
-ScheduleAppointment can be customized using the `appointmentStyle` property as follows,
-
-{% highlight C# %}
-
-    	sfschedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
-		{
-			e.P0.AppointmentStyle.BorderColor = Color.AliceBlue;
-			e.P0.AppointmentStyle.BorderCornerRadius = 5;
-			e.P0.AppointmentStyle.BorderWidth = 10;
-			e.P0.AppointmentStyle.SelectionBorderColor = Color.Blue;
-			e.P0.AppointmentStyle.SelectionTextColor = Color.Yellow;
-			e.P0.AppointmentStyle.TextColor = Color.Brown;
-			e.P0.AppointmentStyle.TextStyle = Typeface.DefaultBold;
-		};
+	HeaderStyle headerStyle = new HeaderStyle();
+	headerStyle.BackgroundColor = Color.Argb(255, 214, 214, 214);
+	headerStyle.TextStyle = Typeface.DefaultBold;
+	headerStyle.TextSize= Color.Black;
+	sfSchedule.HeaderStyle = headerStyle;
 
 {% endhighlight %}
 
-You can also add an object in the appointment view using `view` property passed through `AppointmentLoadedEventArgs`.
+## View Header Customization
 
-{% highlight C# %}
+You can customize the header of the Schedule using `ViewHeaderStyle` and `ViewHeaderHeight` property in schedule.
 
-	sfschedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
-		{
-			Button button = new Button(this);
-			button.SetBackgroundColor(Color.Red);
-			e.P0.View = button;
-		};
-	
+### Labels
+
+#### Fonts and Colors
+
+You can change the backgroundcolor,text style and text size using properties such as `BackgroundColor`,`DateTextStyle`, `DayTextStyle`, `DayTextColor`, `DateTextColor`,`DateTextSize`, `DayTextSize` of ViewHeader using `ViewHeaderStyle` property in schedule.
+
+{% highlight c# %}
+
+	ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle(sfSchedule);
+	viewHeaderStyle.BackgroundColor = Color.Argb(255, 28, 28, 28);
+	viewHeaderStyle.DayTextColor= Color.Argb(255, 238, 199, 43);
+	viewHeaderStyle.DateTextColor= Color.Argb(255, 238, 199, 43);
+	viewHeaderStyle.DateTextSize = 15;
+	viewHeaderStyle.DayTextSize = 10;
+	viewHeaderStyle.DateTextStyle = Typeface.Default;
+	viewHeaderStyle.DayTextStyle = Typeface.DefaultBold;
+	sfSchedule.ViewHeaderStyle = viewHeaderStyle;
+
 {% endhighlight %}
 
-![](Appearance/appointCust.png)
+### ViewHeader Height
 
-## Panel Customization
+You can customize the height for the Header in Schedule using `HeaderHeight` in schedule.
+
+{% highlight c# %}
+
+	sfSchedule.ViewHeaderHeight = 50;
+
+{% endhighlight %}
+
+## Timeslots customization
 
 ### Custom Day View
 
-#### Date Time Formating
+#### Non-Working Hours 
 
-You can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WorkWeekViewSettings`.
-
-{% highlight c# %}
-
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
-        
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.DayView;
-        
-    //setting day view settings properties
-    DayViewSettings dayViewSettings = new DayViewSettings();
-    dayViewsettings.VerticalLineColor = Color.Green;
-    dayViewsettings.VerticalLineStrokeWidth = 5;
-    sfschedule.DayViewSettings=dayViewSettings;
-        
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);
-
-{% endhighlight %}
-
-#### Working Hours 
-
-You can differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `DayViewSettings`.
+You can differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor` properties of `DayViewSettings`.
 
 {% highlight c# %}
 
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
-    
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.DayView;
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
 
-    //setting day view settings properties
-    DayViewSettings dayViewSettings = new DayViewSettings();
-    dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
-    dayViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
-    dayViewSettings.TimeSlotColor = Color.Yellow;
-    dayViewSettings.TimeSlotBorderColor = Color.Aqua;
-    dayViewSettings.TimeSlotBorderStrokeWidth = 5;
-    sfschedule.DayViewSettings=dayViewSettings;
-    
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);
-            
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.DayView;
+
+	//setting day view settings properties
+	DayViewSettings dayViewSettings = new DayViewSettings();
+	dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
+	dayViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
+	sfschedule.DayViewSettings=dayViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
+
 {% endhighlight %}
 
-#### All Day Appointments Panel
+#### Timeslots 
+
+You can differentiate working hours with non-working hour timeslots by its color using  `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `DayViewSettings`.
+
+{% highlight c# %}
+
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
+
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.DayView;
+
+	//setting day view settings properties
+	DayViewSettings dayViewSettings = new DayViewSettings();
+	dayViewSettings.TimeSlotColor = Color.Yellow;
+	dayViewSettings.TimeSlotBorderColor = Color.Aqua;
+	dayViewSettings.TimeSlotBorderStrokeWidth = 5;
+	sfschedule.DayViewSettings=dayViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### Lines
+
+You can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `DayViewSettings`.
+
+{% highlight c# %}
+
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
+
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.DayView;
+
+	//setting day view settings properties
+	DayViewSettings dayViewSettings = new DayViewSettings();
+	dayViewsettings.VerticalLineColor = Color.Green;
+	dayViewsettings.VerticalLineStrokeWidth = 5;
+	sfschedule.DayViewSettings=dayViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### Labels
+
+You can change the format , colors, size, style of text using `DateFormat` and `DayFormat`, `DateLabelSize`,`DayLabelSize`,`TimeFormat`, `TimeLabelColor`,`TimeLabelSize` properties of `DayLabelSettings` in `DayViewSettings`.
+
+{% highlight c# %}
+
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
+	
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.DayView;
+
+	DayViewSettings dayViewSettings = new DayViewSettings();
+	DayLabelSettings dayLabelSettings = new WeekLabelSettings();
+	dayLabelSettings.DateFormat = "d/M/yyyy";
+	dayLabelSettings.DateLabelSize = 10;
+	dayLabelSettings.DayLabelSize = 10;
+	dayLabelSettings.DayFormat = "ddd";
+	dayLabelSettings.TimeFormat = "hh mm";
+	dayLabelSettings.TimeLabelColor = Color.Blue;
+	dayLabelSettings.TimeLabelSize = 10;
+	dayViewSettings.DayLabelSettings = dayLabelSettings;
+	sfSchedule.DayViewSettings = dayViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### All Day Appointments color
 
 You can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor` of `DayViewSettings`.
 
 {% highlight c# %}
 
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
-            
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.DayView;
-            
-    //setting day view settings properties
-    DayViewSettings dayViewSettings = new DayViewSettings();
-    dayViewSettings.AllDayAppointmentBackgroundColor = Color.Pink;
-    sfschedule.DayViewSettings=dayViewSettings;
-            
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
+
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.DayView;
+
+	//setting day view settings properties
+	DayViewSettings dayViewSettings = new DayViewSettings();
+	dayViewSettings.AllDayAppointmentBackgroundColor = Color.Pink;
+	sfschedule.DayViewSettings=dayViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
 
 {% endhighlight %}
 
 ### Custom Week View
 
-#### Date Time Formating
+#### Non-Working Hours 
+
+You can differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor` properties of `WeekViewSettings`.
+
+{% highlight c# %}
+
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
+
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WeekView;
+
+	//setting week view settings properties
+	WeekViewSettings weekViewSettings = new WeekViewSettings();
+	weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
+	weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
+	sfschedule.WeekViewSettings = weekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### Timeslots 
+
+You can differentiate working hours with non-working hour timeslots by its color using `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WeekViewSettings`.
+
+{% highlight c# %}
+
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
+
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WeekView;
+
+	//setting week view settings properties
+	WeekViewSettings weekViewSettings = new WeekViewSettings();
+	weekViewSettings.TimeSlotBorderColor = Color.Aqua;
+	weekViewSettings.TimeSlotColor = Color.Yellow;
+	weekViewSettings.TimeSlotBorderStrokeWidth = 5;
+
+	sfschedule.WeekViewSettings = weekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### Lines
 
 You can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WeekViewSettings`.
 
 {% highlight c# %}
 
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
-    
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.WeekView;
-    
-    WeekViewSettings weekViewSettings = new WeekViewSettings ();
-    weekViewSettings.VerticalLineColor = Color.Green;
-    weekViewSettings.VerticalLineStrokeWidth = 5;
-    sfschedule.WeekViewSettings = weekViewSettings;
-            
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
+
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WeekView;
+
+	WeekViewSettings weekViewSettings = new WeekViewSettings ();
+	weekViewSettings.VerticalLineColor = Color.Green;
+	weekViewSettings.VerticalLineStrokeWidth = 5;
+	sfschedule.WeekViewSettings = weekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
 
 {% endhighlight %}
 
-#### Working Hours 
+#### Labels
 
-You can differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WeekViewSettings`.
+You can change the format , colors, size, style of text using `DateFormat` and `DayFormat`, `DateLabelSize`,`DayLabelSize`,`TimeFormat`, `TimeLabelColor`,`TimeLabelSize` properties of `WeekLabelSettings` in `WeekViewSettings`.
 
 {% highlight c# %}
 
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
-    
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.WeekView;
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
 
-    //setting week view settings properties
-    WeekViewSettings weekViewSettings = new WeekViewSettings();
-    weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
-    weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
-    weekViewSettings.TimeSlotBorderColor = Color.Aqua;
-    weekViewSettings.TimeSlotColor = Color.Yellow;
-    weekViewSettings.TimeSlotBorderStrokeWidth = 5;
-    
-    sfschedule.WeekViewSettings = weekViewSettings;
-    
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WeekView;
+
+	WeekViewSettings weekViewSettings = new WeekViewSettings();
+	WeekLabelSettings weekLabelSettings = new WeekLabelSettings();
+	weekLabelSettings.DateFormat = "d/M/yyyy";
+	weekLabelSettings.DateLabelSize = 10;
+	weekLabelSettings.DayLabelSize = 10;
+	weekLabelSettings.DayFormat = "ddd";
+	weekLabelSettings.TimeFormat = "hh mm";
+	weekLabelSettings.TimeLabelColor = Color.Blue;
+	weekLabelSettings.TimeLabelSize = 10;
+	weekViewSettings.WeekLabelSettings = weekLabelSettings;
+	sfSchedule.WeekViewSettings = weekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
 
 {% endhighlight %}
 
-#### All Day Appointments Panel
+#### All Day Appointments Color
 
 You can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor` of `WeekViewSettings`.
 
 {% highlight c# %}
 
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
 
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.WeekView;
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WeekView;
 
-    //setting week view settings properties
-    WeekViewSettings weekViewSettings = new WeekViewSettings();
-    weekViewSettings.AllDayAppointmentBackgroundColor = Color.Pink;
-    sfschedule.WeekViewSettings = weekViewSettings;
-    
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);
+	//setting week view settings properties
+	WeekViewSettings weekViewSettings = new WeekViewSettings();
+	weekViewSettings.AllDayAppointmentBackgroundColor = Color.Pink;
+	sfschedule.WeekViewSettings = weekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
 
 {% endhighlight %}
 
 ### Custom Work Week View
 
-#### Date Time Formating
+#### Non-Working Hours 
+
+You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor` properties of `WorkWeekViewSettings`.
+
+{% highlight c# %}
+
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
+
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+
+	//setting workweek view settings properties
+	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
+	workWeekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
+	workWeekViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
+	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### Timeslots
+
+You can also differentiate working hours with non-working hour timeslots by its color using `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WorkWeekViewSettings`.
+
+{% highlight c# %}
+
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
+
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+
+	//setting workweek view settings properties
+	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
+	workWeekViewSettings.TimeSlotBorderColor = Color.Aqua;
+	workWeekViewSettings.TimeSlotColor = Color.Yellow;
+	workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
+	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
+
+{% endhighlight %}
+
+#### Lines
 
 You can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WorkWeekViewSettings`.
 
 {% highlight c# %}
 
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
 
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.WorkWeekView;
-    
-    WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
-    workWeekViewSettings.VerticalLineColor = Color.Green;
-    workWeekViewSettings.VerticalLineStrokeWidth = 5;
-    sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-            
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+
+	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
+	workWeekViewSettings.VerticalLineColor = Color.Green;
+	workWeekViewSettings.VerticalLineStrokeWidth = 5;
+	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
 
 {% endhighlight %}
 
-#### Working Hours 
+#### Labels
 
-You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WorkWeekViewSettings`.
+You can change the format , colors, size, style of text using `DateFormat` and `DayFormat`, `DateLabelSize`,`DayLabelSize`,`TimeFormat`, `TimeLabelColor`,`TimeLabelSize` properties of `WorkWeekLabelSettings` in `WorkWeekViewSettings`.
 
 {% highlight c# %}
 
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
 
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
 
-    //setting workweek view settings properties
-    WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
-    workWeekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
-    workWeekViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
-    workWeekViewSettings.TimeSlotBorderColor = Color.Aqua;
-    workWeekViewSettings.TimeSlotColor = Color.Yellow;
-    workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
-    sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-    
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);
+	WorkWeekViewSettings workweekViewSettings = new WorkWeekViewSettings();
+	WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
+	workWeekLabelSettings.DateFormat = "d/M/yyyy";
+	workWeekLabelSettings.DateLabelSize = 10;
+	workWeekLabelSettings.DayLabelSize = 10;
+	workWeekLabelSettings.DayFormat = "ddd";
+	workWeekLabelSettings.TimeFormat = "hh mm";
+	workWeekLabelSettings.TimeLabelColor = Color.Blue;
+	workWeekLabelSettings.TimeLabelSize = 10;
+	workweekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
+	sfSchedule.WorkWeekViewSettings = workweekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
 
 {% endhighlight %}
 
@@ -334,33 +440,30 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% highlight c# %}
 
-    //creating new instance for schedule
-    sfschedule = new SfSchedule(this);
+	//creating new instance for schedule
+	sfschedule = new SfSchedule(this);
 
-    //setting schedule view
-    sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+	//setting schedule view
+	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
 
-    //setting workweek view settings properties
-    WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-    workWeekViewSettings.AllDayAppointmentBackgroundColor = Color.Pink;
-    sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-            
-    // Set our view from the "main" layout resource
-    SetContentView(sfschedule);
+	//setting workweek view settings properties
+	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+	workWeekViewSettings.AllDayAppointmentBackgroundColor = Color.Pink;
+	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+
+	// Set our view from the "main" layout resource
+	SetContentView(sfschedule);
 
 {% endhighlight %}
 
-## Inline view Customization.
+### Interval
 
-You can able to know the details of appointments in inline using `InlineAppointmentTapped` event in `Schedule`. Details of the selected  appointment and the corresponding date is passed through `InlineAppointmentTappedEventArgs` as `selectedAppointment` and `selectedDate` respectively.
+You can change the time interval and time interval height using `TimeInterval` and `TimeIntervalHeight` in schedule.
 
-{% highlight C# %}
-    
-    monthViewSettings.InlineAppointmentTappedEvent += (object sender, MonthViewSettings.InlineAppointmentTappedEventArgs e) =>
-		{
-		    var appointment = e.P2;
-			var date = e.P1;
-		};
+{% highlight c# %}
+
+	sfSchedule.TimeInterval = 5;
+	sfSchedule.TimeIntervalHeight = 10;
 
 {% endhighlight %}
 

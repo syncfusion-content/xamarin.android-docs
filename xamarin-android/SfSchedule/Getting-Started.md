@@ -165,7 +165,7 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
     colorCollection.Add("#11B45E");
     colorCollection.Add("#43BEC4");
     }
-
+	
 {% endhighlight %}
 
 ![](GettingStarted_images/GettingStarted_img3.jpeg)
