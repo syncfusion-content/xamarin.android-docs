@@ -131,7 +131,7 @@ To know more about customization of all day appointment panel refer [Recurrence 
 
 ### Appointment Editor
 
-Appointments can be edit using this Appointmenteditor by tapping the Appointment using `ScheduleCellTapped`event and set the required properties of `ScheduleAppointment` for editing, To know more about Appointment Editor please refer the KB (Knowledge Base).
+Appointments can be edit using this Appointmenteditor by tapping the Appointment using `ScheduleTappedEvent` event and set the required properties of `ScheduleAppointment` for editing.
 
 
 ## Appointment Customization

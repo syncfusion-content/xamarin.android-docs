@@ -51,6 +51,6 @@ The procedure for creating `strings.xml` files is as follows:
 For an example in schedule there is a string `No Events` in Schedule Month View Inline. To localize the string, specify the key (“No Events”) and assign the corresponding localized string to it in `Localizable.strings` file. 
 
 ### Appointment Localization
-Schedule search for the key in corresponding language `Localizable.strings` file and displays the corresponding string in the schedule. To know more about appointment localization, please refer the KB (Knowledge Base).
+Schedule search for the key in corresponding language `Localizable.strings` file and displays the corresponding string in the schedule. 
 
 ![](Localization_images/Localization_img2.jpeg)

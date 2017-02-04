@@ -131,7 +131,18 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 ## Cell tapped event
 
-Schedule cell taaped event enable to know the details of the appointment and dates passed for an appointment. To know more about this event please refer the KB.
+ScheduleTappedEvent enables to know the details of the appointment and dates passed for an appointment.
+
+{% highlight c# %}
+
+    sfschedule.ScheduleTappedEvent += (object sender, SfSchedule.ScheduleTappedEventArgs e) =>
+    {
+    var date = e.P1;
+    var appointmentCollection = e.P2;
+    var appointment = e.P3;
+    };
+
+{% endhighlight %}
 
 ## Selection
 

@@ -36,7 +36,7 @@ Day view is used to display a single day; current day will be visible by default
 
 You can format the date and time string in the schedule control using `DayLabelSettings` of  `DayViewSettings` and the size of those strings are also customizable.
 
-You can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `DayViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Timeslots Customization")
+You can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `DayViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -89,7 +89,7 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 
 You can modify the working hours using `WorkStartHour` and `WorkEndHour` properties of `DayViewSettings`.
 
-You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `DayViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Timeslots Customization")
+You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `DayViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -112,7 +112,7 @@ You can also differentiate working hours with non-working hour timeslots by its 
 
 #### All Day Appointments Color
 
-You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of DayViewSettings as true.Also you can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor`. To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Timeslots Customization")
+You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of DayViewSettings as true.Also you can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor`. To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -161,7 +161,7 @@ To view all the seven days of a particular week, by default if will be current w
 
 You can format the date and time string in the schedule control using `WeekLabelSettings` of `WeekViewSettings` and the size of those strings are also customizable.
 
-Also you can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WeekViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Timeslots Customization")
+Also you can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WeekViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -219,7 +219,7 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 
 You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour` properties of `WeekViewSettings`.
 
-You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WeekViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Timeslots Customization")
+You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WeekViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -242,7 +242,7 @@ You can also differentiate working hours with non-working hour timeslots by its 
 
 #### All Day Appointments Panel
 
-You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of `WeekViewSettings` as true. Also you can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Timeslots Customization")
+You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of `WeekViewSettings` as true. Also you can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-android/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -288,7 +288,7 @@ To view working days of a particular week, by default current work week will be 
 
 #### Date Time Formating
 
-You can format the date and time string in the schedule control using `WorkWeekLabelSettings` of  `WorkWeekViewSettings` and the size of those strings are also customizable.Also you can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WorkWeekViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin/sfschedule/Appearance-and-Styling "Timeslots Customization")
+You can format the date and time string in the schedule control using `WorkWeekLabelSettings` of  `WorkWeekViewSettings` and the size of those strings are also customizable.Also you can differentiate the timeslot panel using `VerticalLineColor` and `VerticalLineStrokeWidth` properties of `WorkWeekViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -346,7 +346,7 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 
 You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour`  properties of `WorkWeekViewSettings`.
 
-You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WorkWeekViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin/sfschedule/Appearance-and-Styling "Timeslots Customization")
+You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHoursTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `WorkWeekViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -369,7 +369,7 @@ You can also differentiate working hours with non-working hour timeslots by its 
 
 #### All Day Appointments Color
 
-You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of `WorkWeekViewSettings` as true. Also you can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor`.To know more about customization of All day appointment panel refer [Timeslots Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Timeslots Customization")
+You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of `WorkWeekViewSettings` as true. Also you can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor`.To know more about customization of All day appointment panel refer [Timeslots Customization](/xamarin-android/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -589,6 +589,6 @@ You can customize the number of appointments to be rendered inside a month view 
 
 ### Month cell customization
 
-You can customize the month cells of MonthView using vaious properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/Appearance-and-Styling "View Customization")
+You can customize the month cells of MonthView using vaious properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/appearance-and-styling "View Customization")
 
 ![](Views_images/Views_img8.jpeg)
