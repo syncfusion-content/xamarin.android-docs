@@ -28,8 +28,6 @@ Day view is used to display a single day; current day will be visible by default
 
 {% endhighlight %}
 
-![](Views_images/Views_img1.jpeg)
-
 ### Settings
 
 #### Date Time Formating
@@ -50,34 +48,6 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 	DayViewSettings dayViewSettings = new DayViewSettings();
 	dayViewSettings.WorkStartHour=10;
 	dayViewSettings.WorkEndHour=18;
-	sfschedule.DayViewSettings=dayViewSettings;
-
-	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
-
-{% endhighlight %}
-
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlocks` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-{% highlight c# %}
-
-	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
-
-	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.DayView;
-
-	//setting non-accessing blocks.
-	NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
-	NonAccessibleBlock lunchHour = new NonAccessibleBlock();
-	lunchHour.StartTime=13;
-	lunchHour.EndTime=14;
-	lunchHour.Color=Color.Black;
-	lunchHour.Text="LUNCH";
-	nonAccessibleBlocksCollection.Add(lunchHour);
-	dayViewSettings.NonAccessibleBlocks=nonAccessibleBlocksCollection;
 	sfschedule.DayViewSettings=dayViewSettings;
 
 	// Set our view from the "main" layout resource
@@ -132,7 +102,7 @@ You can view All day appointments in separate panel and the panels visibility ca
 
 {% endhighlight %}
 
-![](Views_images/Views_img2.jpeg)
+![](Views_images/DayView.png)
 
 >**Note**:These properties and customizations are applicable only for Day View. Customizations for other views are discussed under the respective views.
 
@@ -152,8 +122,6 @@ To view all the seven days of a particular week, by default if will be current w
 	SetContentView(sfschedule);
 
 {% endhighlight %}
-
-![](Views_images/Views_img3.jpeg)
 
 ### Settings
 
@@ -179,35 +147,6 @@ Also you can differentiate the timeslot panel using `VerticalLineColor` and `Ver
 	weekLabelSettings.DayFormat = "EEEE";
 	weekLabelSettings.TimeFormat = "hh:mm a ";
 	weekViewSettings.WeekLabelSettings = weekLabelSettings;
-	sfschedule.WeekViewSettings = weekViewSettings;
-
-	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
-
-{% endhighlight %}
-
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlocks` of `WeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-{% highlight c# %}
-
-	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
-
-	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WeekView;
-
-	//setting non-accessing blocks.
-	NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
-	NonAccessibleBlock lunchHour = new NonAccessibleBlock();
-	lunchHour.StartTime=13;
-	lunchHour.EndTime=14;
-	lunchHour.Color=Color.Black;
-	lunchHour.Text="LUNCH";
-	nonAccessibleBlocksCollection.Add(lunchHour);
-	weekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
-
 	sfschedule.WeekViewSettings = weekViewSettings;
 
 	// Set our view from the "main" layout resource
@@ -263,7 +202,7 @@ You can view All day appointments in separate panel and the panels visibility ca
 
 {% endhighlight %}
 
-![](Views_images/Views_img4.jpeg)
+![](Views_images/WeekView.png)
 
 ## Work Week View
 
@@ -281,8 +220,6 @@ To view working days of a particular week, by default current work week will be 
 	SetContentView(sfschedule);
 
 {% endhighlight %}
-
-![](Views_images/Views_img5.jpeg)
 
 ### Settings
 
@@ -305,35 +242,6 @@ You can format the date and time string in the schedule control using `WorkWeekL
 	workWeekLabelSettings.DayFormat = "EEEE";
 	workWeekLabelSettings.TimeFormat = "hh:mm a ";
 	workWeekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
-
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-
-	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
-
-{% endhighlight %}
-
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlocks` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-{% highlight c# %}
-
-	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
-
-	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
-
-	//setting non-accessing blocks.
-	NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
-	NonAccessibleBlock lunchHour = new NonAccessibleBlock();
-	lunchHour.StartTime=13;
-	lunchHour.EndTime=14;
-	lunchHour.Color=Color.Black;
-	lunchHour.Text="LUNCH";
-	nonAccessibleBlocksCollection.Add(lunchHour);
-	workWeekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
 
 	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
 
@@ -393,7 +301,7 @@ You can view All day appointments in separate panel and the panels visibility ca
 
 You can view the working days alone by restricting the non working days using `NonWorkingDays` property in `Schedule`.
 
-![](Views_images/Views_img6.jpeg)
+![](Views_images/WorkWeekView.png)
 
 ## Month View
 
@@ -411,8 +319,6 @@ To view entire dates of a particular month, by default current month will be dis
 	SetContentView(sfschedule);
 
 {% endhighlight %}
-
-![](Views_images/Views_img7.jpeg)
 
 ### Inline
 
@@ -496,53 +402,6 @@ You can format the date and time string in the schedule control using `MonthLabe
 
 {% endhighlight %}
 
-#### Blackout dates
-
-You can restrict/allocate certain month cell as blackout days using `BlackoutDates` of `MonthViewSettings`, so that we can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
-
-{% highlight c# %}
-
-	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
-
-	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.MonthView;
-
-	//setting month view settings properties
-	MonthViewSettings monthViewSettings = new MonthViewSettings();
-
-	//setting black out dates
-	List<Calendar> blackDatesCollection = new List<Calendar>();
-	Calendar currentDate = Calendar.Instance;
-	Calendar firstDate = (Calendar)currentDate.Clone();
-	firstDate.Set(
-	currentDate.Get(CalendarField.Year),
-	currentDate.Get(CalendarField.Month),
-	21// currentDate.Get(CalendarField.DayOfMonth),
-	);
-	blackDatesCollection.Add(firstDate);
-	Calendar secondDate = (Calendar)currentDate.Clone();
-	secondDate.Set(
-	currentDate.Get(CalendarField.Year),
-	currentDate.Get(CalendarField.Month), 22
-	);
-	blackDatesCollection.Add(secondDate);
-	Calendar thirdDate = (Calendar)currentDate.Clone();
-	thirdDate.Set(
-	currentDate.Get(CalendarField.Year),
-	currentDate.Get(CalendarField.Month),
-	23
-	);
-	blackDatesCollection.Add(thirdDate);
-	monthViewSettings.BlackoutDates = blackDatesCollection;
-
-	sfschedule.MonthViewSettings = monthViewSettings;
-
-	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
-
-{% endhighlight %}
-
 #### Week number
 
 You display the week number of the year in month view by setting `ShowWeekNumber` in property of `MonthViewSettings` are true. By default it is false.
@@ -591,4 +450,4 @@ You can customize the number of appointments to be rendered inside a month view 
 
 You can customize the month cells of MonthView using vaious properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/appearance-and-styling "View Customization")
 
-![](Views_images/Views_img8.jpeg)
+![](Views_images/MonthView.png)

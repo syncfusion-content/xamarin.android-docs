@@ -74,7 +74,7 @@ You can also add an object in the appointment view using `view` property passed 
 
 {% endhighlight %}
 
-![](Appearance/appointCust.png)
+![](ViewCustomization_images/AppointmentStyle.png)
 
 ## MonthCell Customization
 
@@ -138,7 +138,7 @@ You can also add an object in the month cell view using `View` property passed t
 
 {% endhighlight %}
 
-![](Appearance/Appearance1.jpeg)
+![](ViewCustomization_images/MonthCellLoaded.png)
 
 ## Inline view Customization.
 
@@ -168,7 +168,9 @@ You can also add an object in the month cell view using `View` property passed t
 
 ## Inline Appointment Customization
 
-You can able to know the details of appointments in inline using `InlineAppointmentTapped` event in `Schedule`. Details of the selected  appointment and the corresponding date is passed through `InlineAppointmentTappedEventArgs` as `selectedAppointment` and `selectedDate` respectively.
+You can able to know the details of appointments in inline using `InlineAppointmentTappedEvent` event in `Schedule`. Details of the selected  appointment and the corresponding date is passed through `InlineAppointmentTappedEventArgs` as `selectedAppointment` and `selectedDate` respectively.
+
+![](ViewCustomization_images/MonthCellLoaded.png)
 
 ## Selection
 
@@ -203,4 +205,4 @@ Also custom view can be passed using the `SelectionView` in Schedule.
 
 {% endhighlight %}
 
-![](Appearance/Appearance2.jpeg)
+![](ViewCustomization_images/Selection.png)

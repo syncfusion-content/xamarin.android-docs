@@ -99,6 +99,8 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 
 {% endhighlight %}
 
+![](RestrictedHoursandDates_images/NonAccessibleBlock_Day.png)
+
 ## Blackout Dates
 
 You can restrict/allocate certain month cell as blackout days using `BlackoutDates` of `MonthViewSettings`, so that we can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
@@ -146,4 +148,4 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
 
 {% endhighlight %}
 
-![](Localization_images/Localization_img2.jpeg)
+![](RestrictedHoursandDates_images/BlackOutDates.png)

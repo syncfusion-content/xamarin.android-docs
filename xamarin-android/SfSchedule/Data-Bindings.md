@@ -68,7 +68,7 @@ Create the collection of the ScheduleAppointments by setting required details us
 
 ### Adding AllDayAppointments 
 
-AllDayAppointment is for setting appointmet for fullday by using `ShowAllDay` property in the `ScheduleAppointment`. Create the collection of the `ScheduleAppointments` by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `Appointment` property of `SfSchedule` as like in below code example.
+AllDayAppointment is for setting appointmet for fullday by using `ShowAllDay` property in the `ScheduleAppointment`. Create the collection of the `ScheduleAppointments` by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `Appointments` property of `SfSchedule` as like in below code example.
 
 {% highlight c# %}
 
@@ -78,6 +78,10 @@ AllDayAppointment is for setting appointmet for fullday by using `ShowAllDay` pr
 	SfSchedule sfschedule = new SfSchedule(this);
 	sfschedule.ScheduleView = ScheduleView.WeekView;
 	appointmentCollection = new ScheduleAppointmentCollection();
+	
+	WeekViewSettings weekViewSettings = new WeekViewSettings();
+	weekViewSettings.ShowAllDay = true;
+	sfschedule.WeekViewSettings = weekViewSettings;
 
 	//Creating new event
 	ScheduleAppointment clientMeeting = new ScheduleAppointment();
@@ -106,6 +110,7 @@ AllDayAppointment is for setting appointmet for fullday by using `ShowAllDay` pr
 	clientMeeting.StartTime = startTime;
 	clientMeeting.EndTime = endTime;
 	clientMeeting.Color = Color.Blue;
+	clientMeeting.IsAllDay = true;
 
 	//setting Subject for the event
 	clientMeeting.Subject = "ClientMeeting";
@@ -133,9 +138,8 @@ To know more about customization of all day appointment panel refer [Recurrence 
 
 Appointments can be edit using this Appointmenteditor by tapping the Appointment using `ScheduleTappedEvent` event and set the required properties of `ScheduleAppointment` for editing.
 
-
 ## Appointment Customization
 
 ScheduleAppointment can be customized using the `AppointmentStyle` property. To know more about customization of Schedule Appointment refer [View Customization](/xamarin-android/sfschedule/View-Customization "View Customization")
 
-![](PopulatingAppointments_images/PopulatingAppointments_img1.jpeg)
+![](PopulatingAppointments_images/GettingStarted.png)

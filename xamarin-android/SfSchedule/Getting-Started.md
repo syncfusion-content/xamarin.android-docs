@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential Schedule for Xamarin.Android
-description: How to create a Schedule, add Appointments, enable Inline and other functionalities
+description: How to create a Schedule, add Appointments and other functionalities
 platform: Xamarin.Android
 control: SfSchedule
 documentation: ug
@@ -168,4 +168,4 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 	
 {% endhighlight %}
 
-![](GettingStarted_images/GettingStarted_img3.jpeg)
+![](GettingStarted_images/GettingStarted.png)
