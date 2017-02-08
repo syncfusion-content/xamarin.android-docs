@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance & Stylings in Schedule
-description: How to Customize appointment and day cell.
+description: How to Customize Header and time slots.
 platform: Xamarin.Android
 control: SfSchedule
 documentation: ug
@@ -85,6 +85,8 @@ You can customize the height for the Header in Schedule using `HeaderHeight` in 
 	sfSchedule.ViewHeaderHeight = 50;
 
 {% endhighlight %}
+
+![](Appearance_images/Header.png)
 
 ## Timeslots customization
 
@@ -334,6 +336,8 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
+![](Appearance_images/NonWorkingHoursWeekView.png)
+
 ### Custom Work Week View
 
 #### Non-Working Hours 
@@ -456,6 +460,8 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
+![](Appearance_images/NonWorkingHoursWorkWeekView.png)
+
 ### Interval
 
 You can change the time interval and time interval height using `TimeInterval` and `TimeIntervalHeight` in schedule.
@@ -467,4 +473,4 @@ You can change the time interval and time interval height using `TimeInterval` a
 
 {% endhighlight %}
 
-![](Appearance/Appearance2.jpeg)
+![](Appearance_images/TimeInterval.png)

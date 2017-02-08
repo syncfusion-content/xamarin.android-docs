@@ -131,7 +131,7 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 ## Cell tapped event
 
-ScheduleTappedEvent enables to know the details of the appointment and dates passed for an appointment.
+`ScheduleTappedEvent` enables to know the details of the appointment and dates passed for an appointment.
 
 {% highlight c# %}
 
@@ -167,4 +167,4 @@ Dates can be navigated by using swipe gesture as well as using built-in methods 
 
 {% endhighlight %}
 
-![](DateNavigationandGesture_images/DateNavigationandGesture_img2.jpeg)
+![](DateNavigationandGesture_images/WeekViewImage.png)
