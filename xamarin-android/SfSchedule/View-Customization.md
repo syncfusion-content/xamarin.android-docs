@@ -170,7 +170,7 @@ You can also add an object in the month cell view using `View` property passed t
 
 You can able to know the details of appointments in inline using `InlineAppointmentTappedEvent` event in `Schedule`. Details of the selected  appointment and the corresponding date is passed through `InlineAppointmentTappedEventArgs` as `selectedAppointment` and `selectedDate` respectively.
 
-![](ViewCustomization_images/MonthCellLoaded.png)
+![](ViewCustomization_images/InlineAppointmentCustomView.png)
 
 ## Selection
 

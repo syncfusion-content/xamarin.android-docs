@@ -98,7 +98,7 @@ By default the date can be navigated to previous view using touch gesture, by sw
 
 ## Move to Date 
 
-Visible dates can be moved to specific date using `MoveToDate()` method available in `SfSchedule`. It will move to any specific date if the `schedule view` is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view.
+Visible dates can be moved to specific date using `MoveToDate` property available in `SfSchedule`. It will move to any specific date if the `schedule view` is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view.
 
 {% highlight c# %}
 

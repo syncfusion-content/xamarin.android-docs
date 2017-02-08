@@ -33,7 +33,7 @@ Based on the locale specified the strings in the control such as Date, time, day
 
 >**NOTE**: AM/PM in the timeline will not be localized in the Schedule views.
 
-![](Localization_images/Localization_img1.jpeg)
+![](Localization_images/Locale.png)
 
 ## Schedule Custom String Localization
 

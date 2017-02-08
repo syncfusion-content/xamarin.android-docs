@@ -33,7 +33,6 @@ Create a SfSchedule instance in Main Activity and set schedule as a ContentView 
     
 {% endhighlight %}
 
-![](GettingStarted_images/GettingStarted_img1.jpeg)
 
 You can change the default UI of schedule using `ScheduleView` to display the dates in different layouts available in the control.
 
@@ -45,8 +44,6 @@ You can change the default UI of schedule using `ScheduleView` to display the da
     SetContentView(meetingRoomScheduler);
     
 {% endhighlight %}
-
-![](GettingStarted_images/GettingStarted_img2.jpeg)
 
 ## Populating Events
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Restricted Hours And Dates 
 
-You cab restrict the timeslots and certain month cells using `Non-Accessible Blocks` and `BlackOutDates` properties in the respective view settings of schedule.
+You can restrict the timeslots and certain month cells using `NonAccessibleBlocks` and `BlackOutDates` properties in the respective view settings of schedule.
 
 ## Non-Accessible blocks
 
