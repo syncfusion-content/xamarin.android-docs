@@ -90,4 +90,4 @@ RecurrenceGenerator/ recurrence builder is available with the control to create 
 
 {% endhighlight %}
 
-![](Recurrence_images/Recurrence.png)
+![](Recurrence_images/Recurrence_android.png)

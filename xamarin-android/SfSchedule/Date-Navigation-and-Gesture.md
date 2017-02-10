@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date Navigation and Gestures in Schedule
+title: Dates, Navigations and Gestures in Schedule
 description: How to Navigate date, enable or disable navigation and other functionalities of Schedule control.
 platform: Xamarin.Android
 control: SfSchedule
 documentation: ug
 ---
 
-# Date Navigation and Gesture
+# Dates, Navigations and Gestures
 
 ## Min Date
 
@@ -65,6 +65,8 @@ By default schedule control will be rendered with Sunday as the first day of the
 	sfschedule.FirstDayOfWeek = Calendar.Tuesday;
 
 {% endhighlight %}
+
+![](DateNavigationandGesture_images/FirstDayofWeek.png)
 
 ## Visible Dates event
 
@@ -147,24 +149,5 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 ## Selection
 
 Cells can be selected using customized properties such as `BackgroundColor`, `BorderColor`,`BorderThickness`,`CornerRadius` in the `selectionStyle` property of Schedule. Also view can be passed using the `SelectionView` in Schedule. To know more about customization of selection refer [View Customization](/xamarin-android/sfschedule/View-Customization "View Customization")
-
-## Transition modes
-
-Dates can be navigated by using swipe gesture as well as using built-in methods (Forward() and Backward()). By default those navigation are performed along with `Scroll` transition. Other than the default scroll animation, there are other options available like Card, Reveal, Float transitions is also available with it. It can be changed by using `TransitionMode` property of `SfSchedule`.
-
-{% highlight c# %}
-
-	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
-	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.DayView;
-
-	//setting transition mode
-	sfschedule.TransitionMode = TransitionMode.Reveal;
-
-	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
-
-{% endhighlight %}
 
 ![](DateNavigationandGesture_images/WeekViewImage.png)
