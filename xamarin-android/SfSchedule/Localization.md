@@ -33,24 +33,4 @@ Based on the locale specified the strings in the control such as Date, time, day
 
 >**NOTE**: AM/PM in the timeline will not be localized in the Schedule views.
 
-![](Localization_images/Locale.png)
-
-## Schedule Custom String Localization
-
-Schedule has a built-in support for localizing the custom Strings in it by specifying the corresponding string’s key and value in `strings.xml` under value directory. For an example in schedule there is a string “No Appointment” in Schedule Month View Inline. To localize the string, specify the key (“No_Appointments”) and assign the corresponding localized string to it in string.xml file. Please refer the following code for French language.
-
-Xamarin.Android can select and load resources from different directories, based on the current device configuration and locale. For an example, if an application requires multiple languages we can follow the below steps.
-
-The procedure for creating `strings.xml` files is as follows:
-
-1. Translate the `strings.xml` file to each language.
-2. Create three new folders under res –`values-ar`, `values-de`, `values-en` and `values-fr` (The original `values` folder already exists).
-3. Place the translated `strings.xml` files in the respective folders.
-
-### AllDay and No events Text
-For an example in schedule there is a string `No Events` in Schedule Month View Inline. To localize the string, specify the key (“No Events”) and assign the corresponding localized string to it in `Localizable.strings` file. 
-
-### Appointment Localization
-Schedule search for the key in corresponding language `Localizable.strings` file and displays the corresponding string in the schedule. 
-
-![](Localization_images/Localization_img2.jpeg)
+![](Localization_images/Localization.png)

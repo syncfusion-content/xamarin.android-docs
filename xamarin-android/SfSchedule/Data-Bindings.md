@@ -66,6 +66,8 @@ Create the collection of the ScheduleAppointments by setting required details us
 
 {% endhighlight %}
 
+![](PopulatingAppointments_images/GettingStarted.png)
+
 ### Adding AllDayAppointments 
 
 AllDayAppointment is for setting appointmet for fullday by using `ShowAllDay` property in the `ScheduleAppointment`. Create the collection of the `ScheduleAppointments` by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `Appointments` property of `SfSchedule` as like in below code example.
@@ -141,5 +143,3 @@ Appointments can be edit using this Appointmenteditor by tapping the Appointment
 ## Appointment Customization
 
 ScheduleAppointment can be customized using the `AppointmentStyle` property. To know more about customization of Schedule Appointment refer [View Customization](/xamarin-android/sfschedule/View-Customization "View Customization")
-
-![](PopulatingAppointments_images/GettingStarted.png)
