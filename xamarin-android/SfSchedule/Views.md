@@ -338,11 +338,11 @@ By enabling Inline feature in month view, while touch the month view cell, appoi
 
 #### Inline View Customization
 
-By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which can be customized accordingly. To know more about Inline view customization of Month cell refer [View Customization](/xamarin-android/sfschedule/Appearance-and-Styling "View Customization").
+By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which can be customized accordingly. To know more about Inline view customization of Month cell refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization").
 
 #### Inline Appointment Customization
 
-By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which contains list of appointments on a particular day.You can customize the inline appointments. To know more about Inline appointment customization of Month cell refer [View Customization](/xamarin-android/sfschedule/Appearance-and-Styling "View Customization").
+By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which contains list of appointments on a particular day.You can customize the inline appointments. To know more about Inline appointment customization of Month cell refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization").
 
 #### InlineAppointmentTapped Event
 
@@ -448,6 +448,6 @@ You can customize the number of appointments to be rendered inside a month view 
 
 ### Month cell customization
 
-You can customize the month cells of MonthView using vaious properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/appearance-and-styling "View Customization")
+You can customize the month cells of MonthView using vaious properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization")
 
 ![](Views_images/MonthView.png)

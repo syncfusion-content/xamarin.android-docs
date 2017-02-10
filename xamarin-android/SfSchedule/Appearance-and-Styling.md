@@ -213,7 +213,7 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
-![](Appearance_images/NonWorkingHoursDay.png)
+![](Appearance_images/Day_Nonworking.png)
 
 ### Custom Week View
 
@@ -338,7 +338,7 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
-![](Appearance_images/NonWorkingHoursWeekView.png)
+![](Appearance_images/Week_Nonworking.png)
 
 ### Custom Work Week View
 
@@ -462,7 +462,7 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
-![](Appearance_images/NonWorkingHoursWorkWeekView.png)
+![](Appearance_images/WorkWeek_Nonworking.png)
 
 ### Interval
 
@@ -474,5 +474,7 @@ You can change the time interval and time interval height using `TimeInterval` a
 	sfSchedule.TimeIntervalHeight = 100;
 
 {% endhighlight %}
+
+>**NOTE** : `TimeInterval` value should be given in minutes.
 
 ![](Appearance_images/TimeInterval.png)
