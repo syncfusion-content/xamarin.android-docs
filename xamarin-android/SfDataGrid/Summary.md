@@ -10,6 +10,9 @@ documentation: UG
 # Summary
 
 SfDataGrid displays the summaries for each group using the [CaptionSummaryRowControl](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.CaptionSummaryRowControl.html) which carries the information about a particular group like the group name, number of items (records) in the group, etc.
+
+N> To update the summary for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
+
 You can derive additional information from your data like sum, average, maximum, minimum and count using caption summary. These summary values are computed for groups using [SfDatagrid.GridSummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow.html) and [SfDatagrid.GridSummaryColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn.html) that implements [ISummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.ISummaryRow.html) and [ISummaryColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.ISummaryColumn.html) interface.
 
 ## Caption Summaries
