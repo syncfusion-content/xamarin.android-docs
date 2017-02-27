@@ -196,7 +196,7 @@ The `QueryRowDragging` event provides following properties in `QueryRowDragging
 * `To` – Returns the dragging index where you try to drop the row. 
 * `Reason` – Returns row dragging details as `QueryRowDraggingReason`.
 * `RowData` – Returns the underlying data associated with the dragged row.
-* `CurrentRowData`  – Returns the corresponding row data, over which the row drag view is currently placed.
+* `CurrentRowData` – Returns the corresponding row data, over which the row drag view is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
 ## How to disable dragging for particular row? 
@@ -283,3 +283,46 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 }
 
 {% endhighlight %}
+
+## How to get the position of the RowDragView? 
+
+The position of the RowDragView can be obtained in the code-behind, by handling the `QueryRowDragging` event. Refer the following code example in which the "Position" enum is used to determine whether the RowDragView is dragged below the last row or not. 
+
+{% highlight c# %} 
+
+public int LastIndex 
+{ 
+    get 
+    { 
+        return (sfGrid.GroupColumnDescriptions.Count > 0  
+                ? this.sfGrid.View.TopLevelGroup.DisplayElements.Count 
+                : this.sfGrid.View.Records.Count); 
+    } 
+} 
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e) 
+{ 
+    if (e.Reason == QueryRowDraggingReason.Dragging) 
+    { 
+        var totalHeight = sfGrid.RowColumnIndexToPoint(new RowColumnIndex(this.LastIndex,0)).Y + this.sfGrid.RowHeight; 
+        if(Math.Ceiling(e.Position.Y + (sfGrid.RowHeight * 0.45)) > totalHeight && e.To == LastIndex) 
+        { 
+            //Will hit if the RowDragView moves below the last row. 
+        } 
+    } 
+} 
+
+{% endhighlight %} 
+
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e) 
+{ 
+    if (e.Reason == QueryRowDraggingReason.Dragging) 
+    { 
+        var totalHeight = viewModel.OrdersInfo.Count * this.sfGrid.RowHeight; 
+        if (Math.Ceiling(e.Position.Y + (sfGrid.RowHeight * 0.45)) > totalHeight) 
+        { 
+            //Will hit if the RowDragView moves below the last row. 
+        } 
+    } 
+} 

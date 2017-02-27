@@ -20,7 +20,7 @@ Swipe views are displayed when swiping from ‘left to right’ or ‘right to l
 
 ## SwipeViews
 
-SfDataGrid enables you to load the desired content using the [SfDataGrid.LeftSwipeView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LeftSwipeView.html) when swiping towards right and [SfDataGrid.RightSwipeView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~RightSwipeView.html) when swiping towards the left. The contents inside the swipe view are arranged based on the offset values when you swipe a data row. Refer the following code example that shows how to load a view when swiping towards the right and towards the left.
+SfDataGrid enables you to load the desired content using the [SfDataGrid.LeftSwipeView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LeftSwipeView.html) when swiping towards right and [SfDataGrid.RightSwipeView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~RightSwipeView.html) when swiping towards the left. The "InputTransparent" property of the layout in the view should be "True", when using complex layout in the view. The contents inside the swipe view are arranged based on the offset values when you swipe a data row. Refer the following code example that shows how to load a view when swiping towards the right and towards the left.
 
 {% highlight c# %}
 SwipeView leftSwipeView = new SwipeView(BaseContext);
@@ -236,6 +236,7 @@ public class Swiping : SamplePage
         // Multiple views inside LeftSwipeView and RightSwipeView
         LinearLayout layout = new LinearLayout(BaseContext);
         layout.Orientation = Orientation.Horizontal;
+        layout.InputTransparent = "True";
         layout.AddView(editView, sfGrid.MaxSwipeOffset / 2, (int)sfGrid.RowHeight);
         layout.AddView(deleteView, sfGrid.MaxSwipeOffset / 2, (int)sfGrid.RowHeight);
         
