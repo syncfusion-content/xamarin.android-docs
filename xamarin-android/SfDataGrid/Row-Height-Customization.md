@@ -49,7 +49,7 @@ SfDataGrid allows you to customize the height of a grid row on demand by handlin
 * Height: This property sets and returns the height for a grid row on demand. Default line size for the rows is 50.
 * Handled: This property decides whether the specified height can be set to row or not. The default value is `false`. When this property is not set, the decided height is not set to the row.
 
-The following code example illustrates how to hook the `SfDataGrid.QueryRowHeight` event and customize a row‘s height based on the AutoRowHeight feature in SfDataGrid.
+The following code example illustrates how to hook the `SfDatagrid.QueryRowHeight` event and customize a row‘s height in SfDataGrid.
 
 {% highlight c# %}
 //Hooks QueryRowHeight event in SfDataGrid
@@ -58,11 +58,29 @@ dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;  
 //Event to set the row height on demand
 void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 {
-    //Sets height of the row based on the content of the GridCell
-    if (e.RowIndex != 0) {
+    //Sets height of the fifth row
+    if (e.RowIndex == 5) {
+        e.Height = 100;
+        e.Handled = true;
+    }
+} 
+{% endhighlight %}
+
+The following code example illustrates how to hook the `SfDatagrid.QueryRowHeight` event and customize a row‘s height based on the AutoRowHeight feature in SfDataGrid.
+
+{% highlight c# %}
+//Hooks QueryRowHeight event in SfDataGrid
+dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;  
+
+//Event to set the row height on demand
+void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
+{
+    //Sets height of the row based on the content of the GridCell
+    if (e.RowIndex != 0) {
         e.Height = dataGrid.GetRowHeight(e.RowIndex);
         e.Handled = true;
     }
 } 
 {% endhighlight %}
 
+![](SfDataGrid_images/AutoRowHeight_Android.png)
