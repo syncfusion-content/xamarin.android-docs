@@ -28,7 +28,7 @@ Create a SfSchedule instance in Main Activity and set schedule as a ContentView 
         base.OnCreate(bundle);
         SfSchedule meetingRoomScheduler = new SfSchedule(this);
         // Set our view from the "main" layout resource
-        SetContentView(sfschedule);
+        SetContentView(meetingRoomScheduler);
     }
     
 {% endhighlight %}
@@ -51,12 +51,16 @@ You can also add events to the schedule by creating collection of `ScheduleAppoi
 
 {% highlight c# %}
 
-    ScheduleAppointmentCollection appointmentCollection;
+    ScheduleAppointmentCollection ListOfMeeting;
+
     //..//
     //creating new instance for schedule
     SfSchedule meetingRoomScheduler = new SfSchedule(this);
     meetingRoomScheduler.ScheduleView = ScheduleView.WeekView;
+    BookingAppointments();
     meetingRoomScheduler.Appointments = ListOfMeeting;
+
+    SetContentView(meetingRoomScheduler);
     
     private void BookingAppointments()
     {
@@ -86,15 +90,15 @@ You can also add events to the schedule by creating collection of `ScheduleAppoi
     for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++)
     {
     ScheduleAppointment meeting = new ScheduleAppointment();
-    int hour = randomTime.NextInt(((15 -13) + 1) + 9);
+    int hour = randomTime.NextInt((randomTimeCollection[AdditionalAppointmentIndex]));
     Calendar startTimeCalendar = Calendar.Instance;
-    startTimeCalendar.Set(calendar.Get(CalendarField.Year),calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour, 0);
+    startTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour, 0);
     meeting.StartTime = startTimeCalendar;
     Calendar endTimeCalendar = Calendar.Instance;
     endTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour + 1, 0);
     meeting.EndTime = endTimeCalendar;
     meeting.Color = Color.ParseColor(colorCollection[randomTime.NextInt(9)]);
-    meeting.Subject = currentDayMeetings[randomTime.NextInt(9)];
+    meeting.Subject = meetingCollection[randomTime.NextInt(9)];
     ListOfMeeting.Add(meeting);
     }
     }
@@ -102,21 +106,43 @@ You can also add events to the schedule by creating collection of `ScheduleAppoi
     else
     {
     ScheduleAppointment meeting = new ScheduleAppointment();
-    int hour =randomTime.NextInt(((15 - 10) + 1) + 9);
+    int hour = randomTime.NextInt(((15 - 10) + 1) + 9);
     Calendar startTimeCalendar = Calendar.Instance;
-    startTimeCalendar.Set(calendar.Get(CalendarField.Year),calendar.Get(CalendarField.Month),calendar.Get(CalendarField.Date), hour, 0);
+    startTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour, 0);
     meeting.StartTime = startTimeCalendar;
     Calendar endTimeCalendar = Calendar.Instance;
-    endTimeCalendar.Set(calendar.Get(CalendarField.Year),calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour+1, 0);
+    endTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour + 1, 0);
     meeting.EndTime = endTimeCalendar;
     meeting.Color = Color.ParseColor(colorCollection[randomTime.NextInt(9)]);
-    meeting.Subject = currentDayMeetings[randomTime.NextInt(9)];
-    ListOfMeeting.Add(meeting);	
+    meeting.Subject = meetingCollection[randomTime.NextInt(9)];
+    ListOfMeeting.Add(meeting);
     }
     }
+    }
+    
+
+{% endhighlight %}
+
+You can set Time Ranges by creating a collection as List for the same.
+
+{% highlight c# %}
+
+    private List<int> GettingTimeRanges()
+    {
+    int number1 = (((15 - 5) + 1) + 9);
+    int number2 = (((15 + 7) - 1) + 9);
+    int number3 = (((15 - 10) + 1) + 9);
+
+    List<int> randomTimeCollection = new List<int>();
+    randomTimeCollection.Add(number1);
+    randomTimeCollection.Add(number2);
+    randomTimeCollection.Add(number3);
+
+    return randomTimeCollection;
     }
 
 {% endhighlight %}
+
 
 You can add `Subject` and `Color` to the appointments created by creating a collection for the same.
 
@@ -166,3 +192,5 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 {% endhighlight %}
 
 ![](GettingStarted_images/GettingStarted.png)
+
+You can find the complete getting started sample from this link [ScheduleGettingStarted](http://files2.syncfusion.com/dtsupport/directtrac/general/ze/ScheduleGettingStarted-1792269345.zip)
