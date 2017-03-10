@@ -75,3 +75,17 @@ dataGrid.ScrollToColumnIndex(int columnIndex);
 
 {% endhighlight %}
 
+### Vertical Over Scroll Mode
+`SfDataGrid.VerticalOverScrollMode` property allows you to customize the bouncing behavior of the SfDataGrid.
+
+ `SfDataGrid.VerticalOverScrollMode` is of type [VerticalScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~VerticalOverScrollMode.html) which has the below two modes. 
+ * `Bounce` - It allows the SfDataGrid to have bouncing effect. the default value of `SfDataGrid.VerticalOverScrollMode` is `Bounce` 
+ * `None` - It disables the bouncing effect in SfDataGrid.
+
+The below code example illustrates the how to customize the bouncing effect in SfDataGrid. 
+{% highlight C# %}
+
+dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
+
+{% endhighlight %}
+
