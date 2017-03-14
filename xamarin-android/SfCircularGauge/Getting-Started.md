@@ -73,17 +73,18 @@ They are:
 
 {% highlight c# %}
 
-    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
-        CircularScale scale = new CircularScale(); 
-        scale.StartValue = 0; 
-        scale.EndValue = 100;
-        scale.Interval = 10;
-        scale.StartAngle = 135;
-        scale.SweepAngle = 270;
-        scale.RimThickness =  20;
-        scale.RimColor = Color.FromHex("#2bbfb8");
-        scale.MinorTicksPerInterval = 0;
-        circularScales.Add(scale);
+     ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
+         CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.StartAngle = 135;
+            scale.SweepAngle = 270;
+            scale.RimWidth = 10;
+            scale.RimColor = Color.Gray;
+            scale.MinorTicksPerInterval = 0;
+            circularScales.Add(scale);
+            circularGauge.CircularScales = circularScales;
         circularGauge.CircularScales = circularScales;
         SetContentView(circularGauge);
 
@@ -99,7 +100,7 @@ You can add ranges to SfCircularGauge by creating ranges collection using `Range
     CircularRange range = new CircularRange();
     range.StartValue = 0;
     range.EndValue = 80;
-    range.Color = Color.ParseColor("#FF777777");
+    range.Color = Color.ParseColor("#2bbfb8");
     range.Width = 10;
     circularRanges.Add(range);
     scale.CircularRanges = circularRanges;
@@ -114,7 +115,7 @@ You can create a needle pointer and associate it with a scale to display the cur
 
 {% highlight c# %}
 
-    ...
+    List<CircularPointer> pointers = new List<CircularPointer>();
     NeedlePointer needlePointer = new NeedlePointer();
     needlePointer.Value = 60;
     needlePointer.Color = Color.White;
@@ -122,9 +123,11 @@ You can create a needle pointer and associate it with a scale to display the cur
     needlePointer.Width = 5;
     needlePointer.KnobRadius = 20;
     needlePointer.LengthFactor = 0.8;
-    scale.CircularPointers.Add(needlePointer);
-    circularGauge.CircularScales=circularScales;
-    ...
+    pointers.Add(needlePointer);
+    scale.CircularPointers = pointers;
+    circularScales.Add(scale);
+    circularGauge.CircularScales = circularScales;
+   
 
 {% endhighlight %}
 
@@ -134,13 +137,15 @@ A range pointer provides an alternative way of indicating the current value.
 
 {% highlight c# %}
 
-    ... 
-    RangePointer rangePointer = new RangePointer();
-	rangePointer.Value = 60;
-	rangePointer.Color = Color.ParseColor("#2bbfb8");
-	rangePointer.Width = 20;
-	scale.CircularPointers.Add(rangePointer);
-    ...
+     List<CircularPointer> pointers = new List<CircularPointer>();
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.Value = 70;
+            rangePointer.Color = Color.ParseColor("#2bbfb8");
+            rangePointer.Width = 10;
+            pointers.Add(rangePointer);
+            scale.CircularPointers = pointers;
+            circularScales.Add(scale);
+            circularGauge.CircularScales = circularScales;
 
 {% endhighlight %}
 
