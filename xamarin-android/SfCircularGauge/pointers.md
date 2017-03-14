@@ -19,9 +19,9 @@ A needle pointer contains two parts, the needle and the knob that can be placed 
 
 ### NeedlePointerType
 
-NeedlePointer appearance can be customized by using the Type property the default value of this property is Rectangle.
+NeedlePointer appearance can be customized by using the Type property . The default value of this property is Bar.
 
-It is `enum` includes the following option.
+It is `enum` and includes the following option.
 
 * Bar
 * Triangle
@@ -73,3 +73,19 @@ The `RangePointer` in the scale can be placed inside the scale or outside the sc
 {% endhighlight %}
 
 ![](pointers_images/pointers_img2.png)
+
+## Pointer Animation
+
+EnableAnimation property is a Boolean property that enables or disables the animation of the pointers in circularGauge.
+
+{% highlight c# %}
+
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;    
+            needlePointer.EnableAnimation = true;          
+            pointers.Add(needlePointer);
+            scale.CircularPointers = pointers;
+            circularScales.Add(scale);
+            circularGauge.CircularScales = circularScales;
+
+{% endhighlight  %}

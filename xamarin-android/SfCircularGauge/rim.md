@@ -37,3 +37,22 @@ The `StartValue` and `EndValue` properties will determine the overall range of t
 {% endhighlight %}
 
 ![](rim_images/rim_img1.png)
+
+## Show Rim
+
+Show Rim property is a Boolean property which is used to enable or disable feature of Rim in CircularGauge
+
+{% highlight c# %}
+
+            SfCircularGauge circulargauge = new SfCircularGauge();    
+            ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();   
+            CircularScale scale = new CircularScale();     
+            scale.ShowRim = false;
+            circularScales.Add(scale);
+            circularGauge.CircularScales = circularScales;
+            SetContentView(circularGauge);
+   
+    
+{% endhighlight %}
+
+
