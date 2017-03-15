@@ -9,7 +9,7 @@ documentation: ug
 
 # Unbound Column
 
-SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using `SfDataGrid.GridUnBoundColumn` class.
+SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using `SfDataGrid.GridUnboundColumn` class.
 
 {% highlight c# %}
 SfDataGrid dataGrid = new SfDataGrid(context);
@@ -38,7 +38,7 @@ dataGrid.Columns.Add(TotalColumn);
 
 ![](SfDataGrid_images/UnboundColumn.png)
 
-N> It is mandatory to specify the `GridColumn.MappingName` for `SfDataGrid.GridUnBoundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
+N> It is mandatory to specify the `GridColumn.MappingName` for `SfDataGrid.GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
 ## Populating data for unbound column
 
@@ -46,7 +46,7 @@ You can populate the data for unbound column by setting `Expression` or `Format`
 
 ### Using Expression
 
-You can specify the arithmetic or logic expression using `Expression` property to compute the display value. By default `GridUnBoundColumn` evaluates the expression with casing. You can disable the casing while evaluate the expression by setting `CaseSensitive` property to `false`.
+You can specify the arithmetic or logic expression using `Expression` property to compute the display value. By default `GridUnboundColumn` evaluates the expression with casing. You can disable the casing while evaluate the expression by setting `CaseSensitive` property to `false`.
 Below are the list of Arithmetic and logical operations supported.
 
 <table>
