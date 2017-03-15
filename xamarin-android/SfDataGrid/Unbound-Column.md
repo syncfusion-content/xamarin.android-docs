@@ -216,7 +216,19 @@ dataGrid.Columns.Add(TotalColumn);
 
 ### Using QueryUnboundColumnValue event
 
-You can populate data for the Unbound column by handling `QueryUnboundColumnValue` event, which allows you to customize the value of the `GridUnboundColumn`. `GridUnboundColumnEventsArgs` exposes `Value` property by which you can get or set the value of the unbound column.
+[QueryUnboundColumnValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryUnboundColumnValue_EV.html) event - This event is fired when value for the unbound column is queried. It provides the information about the cell triggered this event and hence you can set the desired value for the grid cells of the unbound column. This event is triggered with [GridUnboundColumnEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs.html).
+
+`GridUnboundColumnEventsArgs` provides the following properties:
+
+* [Column](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Column.html) - Gets the GridColumn of the cell that triggers this event.  
+* [OrginalSender](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridEventArgs~OriginalSender.html) - Gets the dataGrid raising this event.
+* [Record](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Record.html - Gets the underlying row data. 
+* [UnboundAction](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~UnboundAction.html) - Defines the action for triggering this event.
+* [Value](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Value.html) - Gets or sets the value for GridUnboundColumn cell based on UnboundAction.
+
+N> `UnboundActions.CommitData` and `UnboundActions.PasteData` are currently not supported and likely to be supported in future.    
+
+You can populate data for the Unbound column by handling `QueryUnboundColumnValue` event, which allows you to customize the value of the `GridUnboundColumn`. `GridUnboundColumnEventsArgs` exposes `Value` property by which you can set the value for the grid cells of the unbound column based on the `UnboundAction`.
 
 Refer the below code example in which data for the unbound column is populated by handling the `QueryUnboundColumnValue` event.
 
@@ -225,9 +237,12 @@ dataGrid.QueryUnboundColumnValue += DataGrid_QueryUnboundColumnValue;
 
 private void DataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs e)
 {
-    var quantity = Convert.ToInt16(e.Record.GetType().GetProperty("Quantity").GetValue(e.Record));
-    var unitPrice = Convert.ToInt16(e.Record.GetType().GetProperty("UnitPrice").GetValue(e.Record));
-    var amount = quantity * unitPrice;
-    e.Value = amount;
+    if (e.UnboundAction == UnboundActions.QueryData)
+    {
+        var quantity = Convert.ToInt16(e.Record.GetType().GetProperty("Quantity").GetValue(e.Record));
+        var unitPrice = Convert.ToInt16(e.Record.GetType().GetProperty("UnitPrice").GetValue(e.Record));
+        var amount = quantity * unitPrice;
+        e.Value = amount;
+    }
 }
 {% endhighlight %}
