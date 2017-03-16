@@ -297,7 +297,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
     var totalHeight = dataGrid.RowColumnIndexToPoint(new RowColumnIndex(viewModel.OrdersInfo.Count, 0)).Y + this.dataGrid.RowHeight;
     if (e.Reason == QueryRowDraggingReason.DragEnded)
     {
-        if (Math.Ceiling(e.Position.Y + (dataGrid.RowHeight)) > totalHeight && e.To == viewModel.OrdersInfo.Count)
+        if (Math.Ceiling(e.Position.Y + (dataGrid.RowHeight / 2)) > totalHeight && e.To == viewModel.OrdersInfo.Count)
         {
             // Will hit if the row is dropped at the last position                 
             Toast.MakeText(this,"The row is dropped in the last position",ToastLength.Short).Show();  
