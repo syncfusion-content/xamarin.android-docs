@@ -19,8 +19,8 @@ The label color can be changed using the `LabelColor` property. The labels can b
 
 {% highlight c# %}
 
-    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
-    SfCircularGauge circularGauge = new SfCircularGauge(this);
+        ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
+        SfCircularGauge circularGauge = new SfCircularGauge(this);
         CircularScale scale = new CircularScale();
         scale.LabelColor = Color.Gray;
         scale.LabelOffset = 0.1;
@@ -84,3 +84,21 @@ This property allows you to set the prefix values to the scale labels.
 {% endhighlight %}
 
 ![](labels_images/labels_img3.png)
+
+### ShowLabels
+
+ShowLabels property is a Boolean property which is used to enable or disable feature of labels in CircularGauge
+
+{% highlight c# %}
+
+            SfCircularGauge circulargauge = new SfCircularGauge();    
+            ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();   
+            CircularScale scale = new CircularScale();     
+            scale.ShowLabels = false;
+            circularScales.Add(scale);
+            circularGauge.CircularScales = circularScales;
+            SetContentView(circularGauge);
+   
+    
+{% endhighlight %}
+

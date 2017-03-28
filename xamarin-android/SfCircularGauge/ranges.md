@@ -56,14 +56,14 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
         CircularRange range1 = new CircularRange();
         range1.StartValue = 0;
         range1.EndValue = 70;
-        range1.Color = Color.ParseColor("#d14646");
+        range1.Color = Color.ParseColor("#2bbfb8");
         range1.Width = 10;
         range1.Offset = 0.3;
         scale.CircularRanges.Add(range1);
         CircularRange range2 = new CircularRange();
         range2.StartValue = 70;
         range2.EndValue = 100;
-        range2.Color = Color.ParseColor("#444444");
+        range2.Color = Color.ParseColor("#d14646");
         range2.Width = 10;
         range2.Offset = 0.3;
         scale.CircularRanges.Add(range2);

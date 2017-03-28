@@ -17,7 +17,7 @@ TickSetting help you identify the gauge's data value by marking the gauge scale 
 
 The `Interval` property is used to calculate the tick count for a scale. Like ticks, minor ticks are calculated using the `MinorTicksPerInterval` property.
 
-A tick's length, color, and thickness are set by the `Length`, `Color` and    `Thickness` UI properties.
+A tick's length, color, and thickness are set by the `Length`, `Color` and  `Thickness` UI properties.
 
 The Major and Minor ticks can be positioned far away from the rim by using the `Offset` property
 
@@ -44,3 +44,20 @@ The Major and Minor ticks can be positioned far away from the rim by using the `
 {% endhighlight %}
 
 ![](tick-setting_images/tick-setting_img1.png)
+
+## ShowTicks
+
+ShowTicks property is a Boolean property which is used to enable or disable feature of ticks in CircularGauge
+
+{% highlight c# %}
+
+            SfCircularGauge circulargauge = new SfCircularGauge();    
+            ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();   
+            CircularScale scale = new CircularScale();     
+            scale.ShowTicks = false;
+            circularScales.Add(scale);
+            circularGauge.CircularScales = circularScales;
+            SetContentView(circularGauge);
+   
+    
+{% endhighlight %}
