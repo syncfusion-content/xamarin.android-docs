@@ -13,31 +13,25 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 * `Thumbnail` - The slider items will be loaded in thumbnail view additionally. When a thumbnail item is clicked, the slider will switch to the corresponding image data.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	rotator.NavigationStripMode = NavigationStripMode.Thumbnail;	
+SfRotator rotator = new SfRotator(this);
+rotator.NavigationStripMode = NavigationStripMode.Thumbnail;	
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](images/thumbnail.png)
+![](images/thumbnail1.png)
 
 * `Dots` - The slider items will be loaded in dots view additionally. When a dots item is clicked, the slider will switch to the corresponding image data.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	rotator.NavigationStripMode = NavigationStripMode.Dots;	
+SfRotator rotator = new SfRotator(this);
+rotator.NavigationStripMode = NavigationStripMode.Dots;	
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](images/dots.png)
+![](images/rotator.png)
 
 ## Items / Dot Strip Positions
 
@@ -50,14 +44,11 @@ There are four available positions,
 * `Top` - Sets the position of the navigation bar items to the top.
 * `Right` - Sets the position of the navigation bar items to the right.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+SfRotator rotator = new SfRotator(this);
+rotator.NavigationStripPosition = NavigationStripPosition.Top;
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](images/tabstrip.png)
+![](images/top.png)

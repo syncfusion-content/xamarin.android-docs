@@ -17,15 +17,12 @@ The `EnableAutoPlay` property specifies whether the items should navigate automa
 
 N> By default, the property value is set to false.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	rotator.EnableAutoPlay = True;
+SfRotator rotator = new SfRotator(this);
+rotator.EnableAutoPlay = true;
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ## Setting Navigation Delay
 
@@ -33,26 +30,37 @@ The `NavigationDelay` property specifies the delay duration while switching to n
 
 N> The property value should be in milliseconds.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	rotator.NavigationDelay = 2000;
+SfRotator rotator = new SfRotator(this);
+rotator.NavigationDelay = 3000;
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ## Looping Items
 
 The `EnableLooping` property specifies whether the items should navigate to first item once it reaches the last item and vice-versa.
 
-{% tabs %}
+N> Default value of `EnableLooping` in Rotator is true.
 
 {% highlight C# %}
 
-	rotator.EnableLooping = True;
+SfRotator rotator = new SfRotator(this);
+rotator.EnableLooping = false;
 
 {% endhighlight %}
 
-{% endtabs %}
+## Restrict the Swiping
+
+Using `EnableSwiping` property , we can restrict the swiping gesture on Rotator's Item. By enabling the EnableSwiping property , we can't move the Rotator's Item by swipe gesture.
+
+N> By default , this property is set to true. 
+
+{% highlight C# %}
+
+SfRotator rotator = new SfRotator(this);
+rotator.EnableSwiping = false;
+
+{% endhighlight %}
+
+

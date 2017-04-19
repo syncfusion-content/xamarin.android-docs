@@ -15,26 +15,21 @@ The `NavigationDirection` property specifies the direction in which items should
 
 Items can be navigated in horizontal direction.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	rotator.NavigationDirection = NavigationDirection.Horizontal;
+SfRotator rotator = new SfRotator(this);
+rotator.NavigationDirection = NavigationDirection.Horizontal;
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ## Vertical
 
 Items can be navigated in vertical direction.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	rotator.NavigationDirection = NavigationDirection.Vertical;
+SfRotator rotator = new SfRotator(this);
+rotator.NavigationDirection = NavigationDirection.Vertical;
 
 {% endhighlight %}
 
-{% endtabs %}
