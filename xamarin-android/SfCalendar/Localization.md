@@ -17,7 +17,9 @@ N> By default, SfCalendar control is available with en-US locale.
 
 {% highlight c# %}
 
-	calendar.Locale= new System.Globalization.CultureInfo("zh,CN");
+SfCalendar sfCalendar = new SfCalendar(this);
+
+sfCalendar.Locale = new Java.Util.Locale("zh,CN");
 
 {% endhighlight %}
 

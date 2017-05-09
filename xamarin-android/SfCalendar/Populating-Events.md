@@ -25,7 +25,9 @@ Inline event support can be toggled on / off with `ShowEventsInline` property.
 
 {% highlight c# %}
 
-	sfcalendar.showInLineEvent=True;
+SfCalendar sfCalendar = new SfCalendar(this);
+
+sfcalendar.ShowEventsInline=True;
 
 {% endhighlight %}
 
@@ -35,18 +37,38 @@ N> The Inline function will be available only in MonthView with Single selection
 
 Calendar Events collection can be provided to SfCalendar using the following steps. `CalendarEventCollection` is a class, which holds the details about the events to be rendered in SfCalendar. 
 
-`CalendarInlineEvent` has some basic properties such as `StartTime`, `EndTime` and `Subject`.
+`CalendarInlineEvent` has some basic properties such as `StartTime`, `EndTime`, `Subject` and `Color`
 
 {% highlight C# %}
 		   
-		   CalendarEventCollection eventsCollection =new CalendarEventCollection();
-		   CalendarInlineEvent events=new CalendarInlineEvent();
-           DateTime d=new DateTime(2015,1,1);
-           DateTime d1=new DateTime(2015,1,1);
-           events.StartTime=d;
-           events.EndTime=d1;
-           events.Subject=”Go to Meeting”;
-           events.Color=Color.RED;
+SfCalendar sfCalendar = new SfCalendar(this);
+
+CalendarEventCollection eventsCollection = new CalendarEventCollection();
+CalendarInlineEvent events = new CalendarInlineEvent();
+
+//starting date of event
+Calendar startEventDate = Calendar.Instance;
+startEventDate.Set(2015, 9, 26, 10, 0, 0);
+events.StartTime = startEventDate;
+
+//ending date of event
+Calendar endEventDate = Calendar.Instance;
+endEventDate.Set(2015, 9, 26, 12, 0, 0);
+events.EndTime = endEventDate;
+
+//subject which will be going to add as content in Inline event appointments
+events.Subject = "Business Meeting";
+
+//Indicator color in appointments
+events.Color = Android.Graphics.Color.Red;
+
+eventsCollection.Add(events);
+
+//Add collection of events as source of SfCalendar
+
+sfCalendar.DataSource = eventsCollection;
+
+SetContentView(sfCalendar);
 		   
 {% endhighlight %}
 

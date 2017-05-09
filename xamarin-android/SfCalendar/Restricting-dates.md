@@ -7,7 +7,7 @@ control: Calendar
 documentation: ug
 ---
 
-# Restricting Dates
+# Restricting Dates from Selection
 
 ## Min Max dates
 
@@ -27,10 +27,19 @@ Beyond the min max date range, following restrictions will be applied.
 
 {% highlight c# %}
 
-	DateTime d1=new DateTime(2015,1,1);
-	sfCalendar.MinDate=d1;
-	DateTime d2=new DateTime(2040,12,12);
-	sfCalendar.MaxDate=d2;
+SfCalendar sfCalendar = new SfCalendar(this);
+
+Calendar minCalendar = Calendar.Instance;
+minCalendar.Set(2016, 9, 1);
+
+Calendar maxCalendar = Calendar.Instance;
+maxCalendar.Set(2020, 9, 1);
+
+sfCalendar.MinDate = minCalendar;
+sfCalendar.MaxDate = maxCalendar;
+
+SetContentView(sfCalendar);
+
 	
 {% endhighlight %}
 
@@ -46,15 +55,19 @@ The blackout dates can be achieved in two ways.
 
 {% highlight c# %}
 
-	List<DateTime> black_dates = new List<DateTime>();
-	black_dates.Add (new DateTime(2015,11,3));
-	black_dates.Add (new DateTime(2015,11,7));
-	black_dates.Add (new DateTime(2015,11,15));
-	black_dates.Add (new DateTime(2015,11,16));
-	black_dates.Add (new DateTime(2015,11,26));
-	black_dates.Add (new DateTime(2015,11,30));
-	sfCalendar.BlackoutDates= black_dates ;
-	
+SfCalendar sfCalendar = new SfCalendar(this);
+
+List<Date> black_dates = new List<Date>();
+
+for (int i = 4; i < =6; i++)
+{
+	Date date = new Date(2015,9,i);
+	black_dates.Add(date);
+}
+sfCalendar.BlackoutDates = black_dates;
+
+SetContentView(sfCalendar);
+
 {% endhighlight %}
 
 ![](images/blackout_dates.png)                                        
