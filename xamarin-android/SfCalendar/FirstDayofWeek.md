@@ -13,8 +13,10 @@ By default, the starting day will be sunday. This can be modified using `FirstDa
 
 {% highlight c# %}
 	
-	calendar.FirstDayofWeek= 4;
-	
+SfCalendar sfCalendar = new SfCalendar(this);
+
+sfCalendar.FirstDayOfWeek= 4;
+
 {% endhighlight %}
 
 ![](images/firstday_week.png)                                        
