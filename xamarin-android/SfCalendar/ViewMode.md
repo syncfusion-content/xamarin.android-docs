@@ -22,7 +22,9 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	calendar.ViewMode=ViewMode.MonthView;
+SfCalendar sfCalendar = new SfCalendar(this);
+
+sfCalendar.ViewMode = ViewMode.MonthView;
 
 {% endhighlight %}
 
@@ -38,18 +40,22 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	MonthLabelSettings labelSettings = new MonthLabelSettings();
-	labelSettings.DateFormat = “dd”;
-	labelSettings.DayLabelSize = 20;
-	labelSettings.DayFormat = "EEE";
-	labelSettings.DateLabelSize =  12;
-	MonthViewSettings monthViewSettings = new MonthViewSettings();
-	monthViewSettings.TodayTextColor=Color.ParseColor("#1B79D6");
-	monthViewSettings.InlineBackgroundColor=Color.ParseColor("#E4E8ED");
-	monthViewSettings.SetWeekDayBackGroundColor(Color.ParseColor("#F7F7F7"));
-	monthviewSettings.MonthLabelSettings = labelSettings;
-	calendar.MonthViewSettings=monthViewSettings;
-	
+SfCalendar sfCalendar = new SfCalendar(this);
+
+MonthViewLabelSetting labelSettings = new MonthViewLabelSetting();
+labelSettings.DateFormat = "dd";
+labelSettings.DayLabelSize = 20;
+labelSettings.DayFormat = "EEE";
+labelSettings.DateLabelSize = 12;
+
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.TodayTextColor = Android.Graphics.Color.ParseColor("#1B79D6");
+monthViewSettings.InlineBackgroundColor = Android.Graphics.Color.ParseColor("#E4E8ED");
+monthViewSettings.WeekEndBackgroundColor=Android.Graphics.Color.ParseColor("#F7F7F7");
+monthViewSettings.MonthViewLabelSetting = labelSettings;
+
+sfCalendar.MonthViewSettings = monthViewSettings;
+
 {% endhighlight %}
 
 N> Similarly there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
@@ -60,8 +66,10 @@ This displays entire dates/month of a particular year, by default current year w
 
 {% highlight c# %}
 
-	calendar.ViewMode=ViewMode.YearView;
-	
+SfCalendar sfCalendar = new SfCalendar(this);
+
+sfCalendar.ViewMode = ViewMode.YearView;
+
 {% endhighlight %}
 
 ![](images/year_view.png)                                        
@@ -75,14 +83,12 @@ This displays entire dates/month of a particular year, by default current year w
 
 {% highlight c# %}
 
-	SfCalendar calendar = new SfCalendar(this);
-	YearViewSettings yearViewSettings = new YearViewSettings();
-	yearViewSettings.YearHeaderTextColor=Color.parseColor("#1B79D6");
-	yearViewSettings.MonthHeaderBackground=Color.parseColor("#E4E8ED");
-	yearViewSettings.DateTextColor=Color.RED;
-	yearViewSettings.HeaderLabelAlignment=LabelAlignment.Center;
-	calendar.YearViewSettings=yearViewSettings;
-	SetContentView(calendar);
+YearViewSettings yearViewSettings = new YearViewSettings();
+yearViewSettings.YearHeaderTextColor = Android.Graphics.Color.ParseColor("#1B79D6");
+yearViewSettings.MonthHeaderBackground = Android.Graphics.Color.ParseColor("#E4E8ED");
+yearViewSettings.DateTextColor = Android.Graphics.Color.Red;
+yearViewSettings.HeaderLabelAlignment = LabelAlignment.Center;
+sfCalendar.YearViewSettings = yearViewSettings;
 
 {% endhighlight %}
 
