@@ -39,17 +39,18 @@ Visible dates can be moved to specific date using `MoveToDate` property availabl
 
 {% highlight c# %}
 
-	Calendar moveToDate = Calendar.getInstance();   
-    moveToDate.Set
-        (
-                2010,
-                Calendar.AUGUST,
-                25,
-                0,
-                0,
-                0
-        );
-    calendar.MoveToDate=moveToDate;
+SfCalendar sfCalendar = new SfCalendar(this);
+Calendar moveToDate = Calendar.getInstance();   
+moveToDate.Set
+    (
+            2010,
+            Calendar.AUGUST,
+            25,
+            0,
+            0,
+            0
+    );
+sfCalendar.MoveToDate=moveToDate;
 
 
 {% endhighlight %}
@@ -58,13 +59,13 @@ N>  The specified date should lie between MinDate and MaxDate, if the specified 
 
 ## Toggle  navigation
 
-By default, calendar views can be moved backwards and forwards using touch swipe gesture. This navigation, using touch gesture can be enabled and disabled using `NavigationEnabled` property available in SfCalendar control. By default, `NavigationEnabled` property is enabled.
+By default, calendar views can be moved backwards and forwards using touch swipe gesture. This navigation, using touch gesture can be enabled and disabled using `NavigationEnable` property available in SfCalendar control. By default, `NavigationEnable` property is enabled.
 
 {% highlight c# %}
 
-	calendar.ViewMode=ViewMode.MonthView;
-	calendar.NavigationEnabled=false;
-	
+SfCalendar sfCalendar = new SfCalendar(this);
+sfCalendar.NavigationEnable=false;
+
 {% endhighlight %}
 
 ## Transition modes
@@ -73,7 +74,8 @@ Dates can be navigated by using swipe gesture as well as using inbuilt methods `
 
 {% highlight c# %}
 
-    calendar.TransitionMode=TransitionMode.Card;
+SfCalendar sfCalendar = new SfCalendar(this);
+sfCalendar.TransitionMode=TransitionMode.Card;
 	
 {% endhighlight %}
 

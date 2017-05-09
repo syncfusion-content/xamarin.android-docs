@@ -20,8 +20,10 @@ The selected dates can be retrieved through `CalendarTappedListner` which is rai
 
 {% highlight c# %}
 	
-	calendar.SelectionMode=SelectionMode.SingleSelection;
-	
+SfCalendar sfCalendar = new SfCalendar(this);
+
+sfCalendar.SelectionMode = SelectionMode.MultiSelection;
+
 {% endhighlight %}
 
 N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of SfCalendar control.
