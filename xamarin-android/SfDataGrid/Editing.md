@@ -297,7 +297,7 @@ this.dataGrid.EndEdit();
 
 ### Cancel editing
 
-You can call the [SfDatagrid.CancelEdit](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CancelEdit.html) method to programatically cancel the editing. Calling this method for a cell currently undergoing editing will exit the edit mode without committing the value in the underlying collection. The below code example shows how to cancel the editing programatically.
+You can call the [SfDatagrid.CancelEdit](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CancelEdit.html) method to programatically cancel the editing. A cell that is currently in edit mode exits the edit mode without committing the edited value in the underlying collection. The below code example shows how to cancel the editing programatically.
 
 {% highlight c# %}
 this.dataGrid.CancelEdit();
