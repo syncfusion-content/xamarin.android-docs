@@ -1,196 +1,311 @@
----
-layout: post
-title: Getting started with Syncfusion Essential Schedule for Xamarin.Android
-description: How to create a Schedule, add Appointments and other functionalities
-platform: Xamarin.Android
-control: SfSchedule
-documentation: ug
----
+--- 
+layout: post 
+title: Getting started with Syncfusion Essential Schedule for Xamarin.Android 
+description: A quick tour to initial users on Syncfusion SfSchedule control for Xamarin.Android platform 
+platform: Xamarin.Android 
+control: SfSchedule 
+documentation: ug 
+--- 
+ 
+# Getting Started 
+ 
+This section provides you an overview for working with SfSchedule for Xamarin.Android and also provides a walk through to configure SfSchedule control in real time scenario. 
+ 
+## Assembly Configuration 
 
-# Getting started
+You can download our Xamarin components directly from our website, refer [here](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation) for assistance.
+ 
+Once the assemblies has been downloaded and explored as mentioned above,you can find all the required assemblies in the installation folders. 
+ 
+{Syncfusion Essential Studio Installed location}\Essential Studio\15.1.0.41\Xamarin\lib 
+ 
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.1.0.41\Xamarin\lib 
+ 
+>**Note**: Assemblies can be found in unzipped package location in Mac 
+ 
+The following assembly is need to be added as reference from the lib folder to use SfSchedule in your application. 
+ 
+<table> 
+<tr> 
+<th>Project</th> 
+<th>Required assembly</th> 
+</tr> 
+<tr> 
+<td>Xamarin.Android</td> 
+<td>android\Syncfusion.SfSchedule.Android.dll<br/></td> 
+</tr> 
+</table> 
+ 
+## Create a simple application with SfSchedule 
+ 
+This section explains how to create a simple application using SfSchedule control. SfSchedule control can be configured entirely in C# code. This is how the final output will look like on Android devices.
+ 
+![](GettingStarted_images/GettingStarted.png) 
 
-This section explains you the steps required to render the `Meeting Room Booking Scheduler` using Schedule control by populating events(appointments) in the control. This section covers only the minimal features that you need to know to get started with the Schedule.
+You can download the entire source code of this demo for Xamarin.Android from   
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted_Android1536194681.zip). 
+ 
+This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.
+ 
+* [Creating a new project](#creating-a-new-project) 
+* [Adding SfSchedule to the project](#adding-sfschedule-to-the-project)      
+* [Changing SfScheduleViews](#changing-sfscheduleviews)   
+* [Binding data to SfSchedule control](#binding-data-to-sfschedule-control) 
 
-## Adding control reference to the application
-
-Illustration for the procedures to install the Syncfusion Essential Studio can be referred from [Syncfusion Xamarin.Android components installation](http://help.syncfusion.com/Xamarin-Android/introduction/download-and-installation), `Syncfusion.SfSchedule.Android` should be used to add schedule reference in the application. 
-
-## Initializing Schedule 
-
-Create a SfSchedule instance in Main Activity and set schedule as a ContentView in onCreate() overridden method.
-
-{% highlight c# %}  
+## Creating a new project 
+ 
+Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android. 
+ 
+Add the required assembly references to the project as discussed in the [Assembly Configuration](#assembly-configuration) section. 
+ 
+Import SfSchedule control namespace `Syncfusion.SfSchedule.Android`. 
+ 
+## Adding SfSchedule to the project 
+ 
+Create an instance of SfSchedule control and add as a child to the view hosted in the Activity. 
+ 
+{% highlight c# %}   
+ 
+    using Syncfusion.SfSchedule.Android; 
     
-    using Com.Syncfusion.Schedule;
-
-    protected override void OnCreate(Bundle bundle)
-    {
+    SfSchedule schedule;
+    protected override void OnCreate(Bundle bundle) 
+    { 
         base.OnCreate(bundle);
-        SfSchedule meetingRoomScheduler = new SfSchedule(this);
-        // Set our view from the "main" layout resource
-        SetContentView(meetingRoomScheduler);
-    }
-    
-{% endhighlight %}
+        //Creating new instance for SfSchedule
+        schedule = new SfSchedule(this);
+        SetContentView(schedule); 
+    } 
+ 
+{% endhighlight %} 
+ 
+## Changing Schedule Views 
+ 
+SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using `ScheduleView` property. By default the control is assigned with `DayView`.Current date will be displayed initially for all the Schedule views.
+ 
+Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using `FirstDayOfWeek` property of `SfSchedule`. 
+ 
+{% highlight c# %} 
+ 
+    //setting first day of the week 
+    schedule.FirstDayOfWeek = Calendar.Tuesday; 
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/FirstDayofWeek.png) 
 
+### Day View 
+ 
+DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration. 
+ 
+{% highlight c# %} 
+ 
+    //setting schedule view 
+    schedule.ScheduleView = ScheduleView.DayView; 
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/DayView.png) 
 
-You can change the default UI of schedule using `ScheduleView` to display the dates in different layouts available in the control.
+### Week View 
+ 
+`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in repective timeslots. 
+ 
+{% highlight c# %} 
+ 
+    //setting schedule view 
+    schedule.ScheduleView = ScheduleView.WeekView; 
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/WeekView.png) 
 
-{% highlight c# %}
+### Work Week View 
+ 
+`WorkWeekView` is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week. 
+ 
+{% highlight c# %} 
+ 
+    //setting schedule view 
+    schedule.ScheduleView = ScheduleView.WorkWeekView; 
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/WorkWeekView.png) 
 
-    SfSchedule meetingRoomScheduler = new SfSchedule(this);
-    meetingRoomScheduler.ScheduleView = ScheduleView.WeekView;
-    // Set our view from the "main" layout resource
-    SetContentView(meetingRoomScheduler);
-    
-{% endhighlight %}
+>**Notes**: Appointments in non-working days will not be displayed. 
 
-## Populating Events
+### Month View 
+ 
+`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` of `SfSchedule` as true. 
+ 
+{% highlight c# %} 
+ 
+    //setting schedule view 
+    schedule.ScheduleView = ScheduleView.MonthView;
+    schedule.MonthViewSettings.ShowAppointmentsInline = true;
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/MonthView.png) 
 
-You can also add events to the schedule by creating collection of `ScheduleAppointment` using `ScheduleAppointmentCollection`. 
+## Binding data to SfSchedule control  
+ 
+You can add events to the schedule by creating collection of `ScheduleAppointment` using `ScheduleAppointmentCollection`.  
+ 
+### Adding Appointments  
+ 
+`ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as StartTime, EndTime, Subject and some additional information about the appointment can be added using Color, Notes, Location, All Day, Recursive properties. 
 
-{% highlight c# %}
+Here are steps to render `MeetingRoomScheduler` using SfSchedule control.
 
+* [Adding datas for class](#adding-datas-for-class)
+* [Populating data collection](#populating-data-collection) 
+* [Setting appointments for SfSchedule](#setting-appointments-for-sfschedule) 
+
+#### Adding datas for class
+
+##### Adding event names
+
+You can add `Subject` to the appointments created by creating a collection for the same. 
+ 
+{% highlight c# %} 
+ 
+    List<string> subjectCollection;
+ 
+    /// <summary> 
+    /// Creates subject collection. 
+    /// </summary> 
+    private void CreateSubjectCollection() 
+    { 
+        subjectCollection = new List<string>(); 
+        subjectCollection.Add("GoToMeeting"); 
+        subjectCollection.Add("Business Meeting"); 
+        subjectCollection.Add("Conference"); 
+        subjectCollection.Add("Project Status Discussion"); 
+        subjectCollection.Add("Auditing"); 
+        subjectCollection.Add("Client Meeting"); 
+        subjectCollection.Add("Generate Report"); 
+        subjectCollection.Add("Target Meeting"); 
+        subjectCollection.Add("General Meeting"); 
+        subjectCollection.Add("Pay House Rent"); 
+        subjectCollection.Add("Car Service"); 
+        subjectCollection.Add("Medical Check Up"); 
+        subjectCollection.Add("Wedding Anniversary"); 
+        subjectCollection.Add("Sam's Birthday"); 
+        subjectCollection.Add("Jenny's Birthday"); 
+    } 
+ 
+{% endhighlight %} 
+
+##### Adding color collection 
+
+You can add `Color` to the appointments created by creating a collection for the same. 
+ 
+{% highlight c# %} 
+
+    List<string> colorCollection; 
+ 
+    /// <summary> 
+    /// Creates color collection.  
+    /// </summary> 
+    private void CreateColorCollection() 
+    { 
+        colorCollection = new List<string>(); 
+        colorCollection.Add("#117EB4"); 
+        colorCollection.Add("#B4112E"); 
+        colorCollection.Add("#C44343"); 
+        colorCollection.Add("#11B45E"); 
+        colorCollection.Add("#43BEC4"); 
+        colorCollection.Add("#B4112E"); 
+        colorCollection.Add("#C44343"); 
+        colorCollection.Add("#117EB4"); 
+        colorCollection.Add("#C4435A"); 
+        colorCollection.Add("#DF5348"); 
+        colorCollection.Add("#43c484"); 
+        colorCollection.Add("#11B49B"); 
+        colorCollection.Add("#C44378"); 
+        colorCollection.Add("#DF8D48"); 
+        colorCollection.Add("#11B45E"); 
+        colorCollection.Add("#43BEC4"); 
+    } 
+ 
+{% endhighlight %} 
+
+#### Populating data collection
+
+Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections.
+
+{% highlight c# %} 
+ 
     ScheduleAppointmentCollection ListOfMeeting;
+    int workStartHour = 9;
+ 
+    /// <summary> 
+    /// Creates meetings and stores in a collection.
+    /// </summary> 
+    private void CreateAppointments() 
+    { 
+        ListOfMeeting = new ScheduleAppointmentCollection(); 
+        Java.Util.Random randomTime = new Java.Util.Random();
+        CreateSubjectCollection();
+        CreateColorCollection(); 
+        Calendar calendar = Calendar.Instance; 
+        Calendar DateFrom = Calendar.Instance; 
+        DateFrom.Add(CalendarField.Date, -10); 
+        Calendar DateTo = Calendar.Instance; 
+        DateTo.Add(CalendarField.Date, 10); 
+        Calendar dateRangeStart = Calendar.Instance; 
+        dateRangeStart.Add(CalendarField.Date, -3); 
+        Calendar dateRangeEnd = Calendar.Instance; 
+        dateRangeEnd.Add(CalendarField.Date, 3); 
+        for (calendar = DateFrom; calendar.Before(DateTo); calendar.Add(CalendarField.Date, 1)) 
+        { 
+            if (calendar.After(dateRangeStart) && calendar.Before(dateRangeEnd)) 
+            { 
+                for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++) 
+                { 
+                    ScheduleAppointment meeting = new ScheduleAppointment(); 
+                    int hour = workStartHour + randomTime.NextInt(9); 
+                    Calendar startTimeCalendar = Calendar.Instance; 
+                    startTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour, 0); 
+                    meeting.StartTime = startTimeCalendar; 
+                    Calendar endTimeCalendar = Calendar.Instance; 
+                    endTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour + 1, 0); 
+                    meeting.EndTime = endTimeCalendar; 
+                    meeting.Color = Color.ParseColor(colorCollection[randomTime.NextInt(9)]); 
+                    meeting.Subject = subjectCollection[randomTime.NextInt(9)]; 
+                    ListOfMeeting.Add(meeting); 
+                } 
+            } 
+            else 
+            { 
+                ScheduleAppointment meeting = new ScheduleAppointment(); 
+                int hour = workStartHour + randomTime.NextInt(9); 
+                Calendar startTimeCalendar = Calendar.Instance; 
+                startTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour, 0); 
+                meeting.StartTime = startTimeCalendar; 
+                Calendar endTimeCalendar = Calendar.Instance; 
+                endTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour + 1, 0); 
+                meeting.EndTime = endTimeCalendar; 
+                meeting.Color = Color.ParseColor(colorCollection[randomTime.NextInt(9)]); 
+                meeting.Subject = subjectCollection[randomTime.NextInt(9)]; 
+                ListOfMeeting.Add(meeting); 
+            } 
+        } 
+    } 
+ 
+{% endhighlight %} 
+ 
+#### Setting appointments for SfSchedule 
 
-    //..//
-    //creating new instance for schedule
-    SfSchedule meetingRoomScheduler = new SfSchedule(this);
-    meetingRoomScheduler.ScheduleView = ScheduleView.WeekView;
-    BookingAppointments();
-    meetingRoomScheduler.Appointments = ListOfMeeting;
-
-    SetContentView(meetingRoomScheduler);
-    
-    private void BookingAppointments()
-    {
-    ListOfMeeting = new ScheduleAppointmentCollection();
-    Java.Util.Random randomTime = new Java.Util.Random();
-    List<int> randomTimeCollection = GettingTimeRanges();
-    InitializeDataForBookings();
-    Calendar calendar = Calendar.Instance;
-
-    Calendar DateFrom = Calendar.Instance;
-    DateFrom.Add(CalendarField.Date, -10);
-
-    Calendar DateTo = Calendar.Instance;
-    DateTo.Add(CalendarField.Date, 10);
-
-    Calendar dateRangeStart = Calendar.Instance;
-    dateRangeStart.Add(CalendarField.Date, -3);
-
-    Calendar dateRangeEnd = Calendar.Instance;
-    dateRangeEnd.Add(CalendarField.Date, 3);
-
-    for (calendar = DateFrom; calendar.Before(DateTo);
-    calendar.Add(CalendarField.Date, 1))
-    {
-    if (calendar.After(dateRangeStart) && calendar.Before(dateRangeEnd))
-    {
-    for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++)
-    {
-    ScheduleAppointment meeting = new ScheduleAppointment();
-    int hour = randomTime.NextInt((randomTimeCollection[AdditionalAppointmentIndex]));
-    Calendar startTimeCalendar = Calendar.Instance;
-    startTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour, 0);
-    meeting.StartTime = startTimeCalendar;
-    Calendar endTimeCalendar = Calendar.Instance;
-    endTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour + 1, 0);
-    meeting.EndTime = endTimeCalendar;
-    meeting.Color = Color.ParseColor(colorCollection[randomTime.NextInt(9)]);
-    meeting.Subject = meetingCollection[randomTime.NextInt(9)];
-    ListOfMeeting.Add(meeting);
-    }
-    }
-
-    else
-    {
-    ScheduleAppointment meeting = new ScheduleAppointment();
-    int hour = randomTime.NextInt(((15 - 10) + 1) + 9);
-    Calendar startTimeCalendar = Calendar.Instance;
-    startTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour, 0);
-    meeting.StartTime = startTimeCalendar;
-    Calendar endTimeCalendar = Calendar.Instance;
-    endTimeCalendar.Set(calendar.Get(CalendarField.Year), calendar.Get(CalendarField.Month), calendar.Get(CalendarField.Date), hour + 1, 0);
-    meeting.EndTime = endTimeCalendar;
-    meeting.Color = Color.ParseColor(colorCollection[randomTime.NextInt(9)]);
-    meeting.Subject = meetingCollection[randomTime.NextInt(9)];
-    ListOfMeeting.Add(meeting);
-    }
-    }
-    }
-    
-
-{% endhighlight %}
-
-You can set Time Ranges by creating a collection as List for the same.
+Create meetings of type `ScheduleAppointmentCollection` and assign those appointments collection `ListOfMeeting` to the `Appointments` property.
 
 {% highlight c# %}
 
-    private List<int> GettingTimeRanges()
-    {
-    int number1 = (((15 - 5) + 1) + 9);
-    int number2 = (((15 + 7) - 1) + 9);
-    int number3 = (((15 - 10) + 1) + 9);
+    CreateAppointments();
+    schedule.Appointments = ListOfMeeting;
 
-    List<int> randomTimeCollection = new List<int>();
-    randomTimeCollection.Add(number1);
-    randomTimeCollection.Add(number2);
-    randomTimeCollection.Add(number3);
+{% endhighlight %} 
 
-    return randomTimeCollection;
-    }
-
-{% endhighlight %}
-
-
-You can add `Subject` and `Color` to the appointments created by creating a collection for the same.
-
-{% highlight c# %}
-
-    List<string> meetingCollection;
-    List<string> colorCollection;
-    
-    private void InitializeDataForBookings()
-    {
-    meetingCollection = new List<string>();
-    meetingCollection.Add("GoToMeeting");
-    meetingCollection.Add("Business Meeting");
-    meetingCollection.Add("Conference");
-    meetingCollection.Add("Project Status Discussion");
-    meetingCollection.Add("Auditing");
-    meetingCollection.Add("Client Meeting");
-    meetingCollection.Add("Generate Report");
-    meetingCollection.Add("Target Meeting");
-    meetingCollection.Add("General Meeting");
-    meetingCollection.Add("Pay House Rent");
-    meetingCollection.Add("Car Service");
-    meetingCollection.Add("Medical Check Up");
-    meetingCollection.Add("Wedding Anniversary");
-    meetingCollection.Add("Sam's Birthday");
-    meetingCollection.Add("Jenny's Birthday");
-
-    colorCollection = new List<string>();
-    colorCollection.Add("#117EB4");
-    colorCollection.Add("#B4112E");
-    colorCollection.Add("#C44343");
-    colorCollection.Add("#11B45E");
-    colorCollection.Add("#43BEC4");
-    colorCollection.Add("#B4112E");
-    colorCollection.Add("#C44343");
-    colorCollection.Add("#117EB4");
-    colorCollection.Add("#C4435A");
-    colorCollection.Add("#DF5348");
-    colorCollection.Add("#43c484");
-    colorCollection.Add("#11B49B");
-    colorCollection.Add("#C44378");
-    colorCollection.Add("#DF8D48");
-    colorCollection.Add("#11B45E");
-    colorCollection.Add("#43BEC4");
-    }
-	
-{% endhighlight %}
-
-![](GettingStarted_images/GettingStarted.png)
-
-You can find the complete getting started sample from this link [ScheduleGettingStarted](http://files2.syncfusion.com/dtsupport/directtrac/general/ze/ScheduleGettingStarted-1792269345.zip)
+![](GettingStarted_images/GettingStarted.png) 
