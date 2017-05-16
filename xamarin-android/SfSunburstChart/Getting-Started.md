@@ -22,11 +22,11 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfSunburstChart.Andriod.dll
 
-# Add and configure the Chart
+# Add and configure the sunburst chart
 
 The following steps explain on how to create a sunburst chart and configure its elements,
 
-1. Create an instance of SfChart.
+1. Create an instance of SfSunburstChart.
 
 {% highlight C# %}
 
