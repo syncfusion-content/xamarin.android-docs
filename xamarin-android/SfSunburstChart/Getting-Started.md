@@ -24,7 +24,7 @@ android\Syncfusion.SfSunburstChart.Andriod.dll
 
 # Add and configure the Chart
 
-The following steps explain on how to create a Chart and configure its elements,
+The following steps explain on how to create a sunburst chart and configure its elements,
 
 1. Create an instance of SfChart.
 
@@ -301,7 +301,7 @@ Marketing
 </tr>
 </table>
 
-Now, let us define a data model that represents the above data in `SfSunburstChart`.
+Now, let us define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
 
 {% highlight c# %}
 public class Model   
@@ -315,7 +315,7 @@ public class Model
 }
 {% endhighlight %} 
 
-In SfSunburstChart, the ItemsSource should to be a collection of objects. Add the following class for generating the datapoints.
+In [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html), the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html) should to be a collection of objects. Add the following class for generating the datapoints.
 
 {% highlight c# %}
 public class DataModel
@@ -406,8 +406,8 @@ public class DataModel
 
 ## Populate SunburstChart with data
 
-Now, set the Data property of the above DataModel to the `ItemsSource` property. 
-Add `SunburstHierarchicalLevel` to `Levels` property. Each hierarchy level is formed based on the property specified in `GroupMemberPath` property, and each arc segment size is calculated using `ValueMemberPath`.
+Now, set the Data property of the above DataModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~ItemsSource.html) property. 
+Add [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Levels.html) property. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~ValueMemberPath.html).
 
 {% highlight C# %}
 SfSunburstChart sunburst = new SfSunburstChart();
@@ -421,7 +421,7 @@ sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobRole"
 
 ## Add Title
 
-You can add title to sunburst chart to provide quick information to the user about the data being plotted in the chart. You can set title using `SfSunburstChart.Title` property as shown below.
+You can add title to sunburst chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Title.html) property as shown below.
 
 {% highlight C# %} 
 sunburst.Title.IsVisible = true;
@@ -430,7 +430,7 @@ sunburst.Title.Text = "Employees Count";
 
 ## Add legend
 
-You can enable legend using `SfSunburstChart.Legend` property as shown below,
+You can enable legend using [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Legend.html) property as shown below,
 
 {% highlight C# %} 
 sunburst.Legend.IsVisible = true; 
@@ -438,7 +438,7 @@ sunburst.Legend.IsVisible = true;
 
 ## Add data labels
 
-You can add data labels to improve the readability of the sunburst chart. This can be achieved using `SfSunburstChart.DataLabel` property as shown below.
+You can add data labels to improve the readability of the sunburst chart. This can be achieved using [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~DataLabel.html) property as shown below.
 
 {% highlight C# %} 
 sunburst.DataLabel.ShowLabel = true;
