@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains you the steps required to populate the sunburst chart with data, data labels, legends and title. This section covers only the minimal features that you need to know to get started with the sunburst chart. 
+This section explains you the steps required to populate the sunburst chart with data, data labels, legend and title. This section covers only the minimal features that you need to know to get started with the sunburst chart. 
 
 ## Reference Essential Studio components in your solution
 
@@ -428,7 +428,7 @@ sunburst.Title.IsVisible = true;
 sunburst.Title.Text = "Employees Count";
 {% endhighlight %}
 
-## Add legend
+## Add Legend
 
 You can enable legend using [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Legend.html) property as shown below,
 
@@ -442,6 +442,173 @@ You can add data labels to improve the readability of the sunburst chart. This c
 
 {% highlight C# %} 
 sunburst.DataLabel.ShowLabel = true;
+{% endhighlight %}
+
+The following is the complete code example for creating the Chart.
+
+{% highlight C# %}
+
+public class ChartActivity : Activity
+{
+    protected override void OnCreate (Bundle bundle)
+    {
+		base.OnCreate (bundle);          
+
+    	//Initializing chart
+    	SfSunburstChart chart = new SfSunburstChart (this); 
+	
+        //Define the title for the sunburst Chart.
+        sunburst.Title.IsVisible = true
+        sunburst.Title.Text = "Employees Count";
+	   
+        //Adding Legend to the sunburst Chart.
+        sunburst.Legend.IsVisible = true;
+		
+		//Adding data labels to the sunburst 
+		sunburst.DataLabel.ShowLabel = true;
+
+		////Defining the data source for the sunburst chart.
+		DataModel dataModel = new DataModel();
+		sunburst.ItemsSource = dataModel.Data;
+		sunburst.ValueMemberPath = "EmployeesCount";
+		
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country"});
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription"});
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup"});
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole"});
+
+        SetContentView(chart);
+    }
+
+    #endregion
+}
+	
+public class Model
+{
+    public string Category { get; set; }
+	public string Country { get; set; }
+	public string JobDescription { get; set; }
+	public string JobGroup { get; set; }
+	public string JobRole { get; set; }
+	public double EmployeesCount { get; set; }
+}
+    
+public class DataModel
+{
+	public DataModel()
+	{
+		Data = new ObservableCollection<Model>();
+		
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Sales",
+			EmployeesCount = 70
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Technical",
+			JobGroup = "Testers",
+			EmployeesCount = 35
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "iOS",
+			EmployeesCount = 105
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "Web",
+			EmployeesCount = 40
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Management",
+			EmployeesCount = 40
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Accounts",
+			EmployeesCount = 60
+		});
+		Data.Add(new Model
+		{
+			Country = "India",
+			JobDescription = "Technical",
+			JobGroup = "Testers",
+			EmployeesCount = 25
+		});
+		Data.Add(new Model
+		{
+			Country = "India",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "iOS",
+			EmployeesCount = 155
+		});
+		Data.Add(new Model
+		{
+			Country = "India",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "Web",
+			EmployeesCount = 60
+		});
+		Data.Add(new Model
+		{
+			Country = "China",
+			JobDescription = "Sales",
+			JobGroup = "Executive",
+			EmployeesCount = 30
+		});
+		Data.Add(new Model
+		{
+			Country = "China",
+			JobDescription = "Sales",
+			JobGroup = "Analyst",
+			EmployeesCount = 40
+		});
+		Data.Add(new Model
+		{
+			Country = "UK",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "iOS",
+			EmployeesCount = 100
+		});
+		Data.Add(new Model
+		{
+			Country = "UK",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "Web",
+			EmployeesCount = 30
+		});
+		Data.Add(new Model
+		{
+			Country = "UK",
+			JobDescription = "HR",
+			EmployeesCount = 60
+    	});	
+    	Data.Add(new Model}
+		{
+	    	Country = "UK",
+			JobDescription = "Marketing",
+			EmployeesCount = 40
+		});
+	}
+	public ObservableCollection<Model> Data { get; set; }
+}
+	
 {% endhighlight %}
 
 Following is the final output screenshot,
