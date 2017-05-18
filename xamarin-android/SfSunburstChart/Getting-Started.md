@@ -444,7 +444,7 @@ You can add data labels to improve the readability of the sunburst chart. This c
 sunburst.DataLabel.ShowLabel = true;
 {% endhighlight %}
 
-The following is the complete code example for creating the Chart.
+The following code example for creating sunburst chart.
 
 {% highlight C# %}
 
@@ -479,7 +479,6 @@ public class ChartActivity : Activity
 
         SetContentView(chart);
     }
-
     #endregion
 }
 	
