@@ -43,13 +43,13 @@ This section explains how to create a simple application using SfSchedule contro
 ![](GettingStarted_images/GettingStarted.png) 
 
 You can download the entire source code of this demo for Xamarin.Android from   
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted_Android1536194681.zip). 
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted1888257278.zip). 
  
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.
  
 * [Creating a new project](#creating-a-new-project) 
 * [Adding SfSchedule to the project](#adding-sfschedule-to-the-project)      
-* [Changing SfScheduleViews](#changing-sfscheduleviews)   
+* [Changing Schedule Views](#changing-schedule-views)   
 * [Binding data to SfSchedule control](#binding-data-to-sfschedule-control) 
 
 ## Creating a new project 
@@ -81,9 +81,9 @@ Create an instance of SfSchedule control and add as a child to the view hosted i
  
 ## Changing Schedule Views 
  
-SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using `ScheduleView` property. By default the control is assigned with `DayView`.Current date will be displayed initially for all the Schedule views.
+SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using [ScheduleView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ScheduleView.html) property. By default the control is assigned with `DayView`.Current date will be displayed initially for all the Schedule views.
  
-Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using `FirstDayOfWeek` property of `SfSchedule`. 
+Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`. 
  
 {% highlight c# %} 
  
@@ -96,7 +96,7 @@ Schedule control will be rendered with `Sunday` as the first day of the week, bu
 
 ### Day View 
  
-DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration. 
+`DayView` is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration. 
  
 {% highlight c# %} 
  
@@ -137,7 +137,7 @@ DayView is used to display a single day, current day will be visible by default.
 
 ### Month View 
  
-`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` of `SfSchedule` as true. 
+`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings~ShowAppointmentsInline.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~MonthViewSettings.html) of `SfSchedule` as true. 
  
 {% highlight c# %} 
  
@@ -151,11 +151,11 @@ DayView is used to display a single day, current day will be visible by default.
 
 ## Binding data to SfSchedule control  
  
-You can add events to the schedule by creating collection of `ScheduleAppointment` using `ScheduleAppointmentCollection`.  
+You can add events to the schedule by creating collection of [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment.html) using [ScheduleAppointmentCollection](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointmentCollection.html).  
  
 ### Adding Appointments  
  
-`ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as StartTime, EndTime, Subject and some additional information about the appointment can be added using Color, Notes, Location, All Day, Recursive properties. 
+`ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Color.html), [Notes](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Location.html), [IsAllDay](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~IsAllDay.html), [IsRecursive](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~IsRecursive.html) properties. 
 
 Here are steps to render `MeetingRoomScheduler` using SfSchedule control.
 
@@ -238,7 +238,7 @@ Schedule control has a built-in capability to handle the appointment arrangement
 
 {% highlight c# %} 
  
-    ScheduleAppointmentCollection ListOfMeeting;
+    ScheduleAppointmentCollection Meetings;
     int workStartHour = 9;
  
     /// <summary> 
@@ -246,7 +246,7 @@ Schedule control has a built-in capability to handle the appointment arrangement
     /// </summary> 
     private void CreateAppointments() 
     { 
-        ListOfMeeting = new ScheduleAppointmentCollection(); 
+        Meetings = new ScheduleAppointmentCollection(); 
         Java.Util.Random randomTime = new Java.Util.Random();
         CreateSubjectCollection();
         CreateColorCollection(); 
@@ -275,7 +275,7 @@ Schedule control has a built-in capability to handle the appointment arrangement
                     meeting.EndTime = endTimeCalendar; 
                     meeting.Color = Color.ParseColor(colorCollection[randomTime.NextInt(9)]); 
                     meeting.Subject = subjectCollection[randomTime.NextInt(9)]; 
-                    ListOfMeeting.Add(meeting); 
+                    Meetings.Add(meeting); 
                 } 
             } 
             else 
@@ -290,7 +290,7 @@ Schedule control has a built-in capability to handle the appointment arrangement
                 meeting.EndTime = endTimeCalendar; 
                 meeting.Color = Color.ParseColor(colorCollection[randomTime.NextInt(9)]); 
                 meeting.Subject = subjectCollection[randomTime.NextInt(9)]; 
-                ListOfMeeting.Add(meeting); 
+                Meetings.Add(meeting); 
             } 
         } 
     } 
@@ -299,12 +299,12 @@ Schedule control has a built-in capability to handle the appointment arrangement
  
 #### Setting appointments for SfSchedule 
 
-Create meetings of type `ScheduleAppointmentCollection` and assign those appointments collection `ListOfMeeting` to the `Appointments` property.
+Create meetings of type `ScheduleAppointmentCollection` and assign those appointments collection `Meetings` to the [Appointments](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~Appointments.html) property.
 
 {% highlight c# %}
 
     CreateAppointments();
-    schedule.Appointments = ListOfMeeting;
+    schedule.Appointments = Meetings;
 
 {% endhighlight %} 
 
