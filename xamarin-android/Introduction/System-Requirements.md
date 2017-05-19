@@ -24,6 +24,8 @@ By using the following IDE, you can develop Xamarin.Android apps:
 
 * Xamarin Studio
 
+* Visual Studio for Mac
+
 **Supported** **Platforms**
 
 Supports Android 4.1 (API level 16) and later versions.
