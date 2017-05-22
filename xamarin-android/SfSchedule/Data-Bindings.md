@@ -61,6 +61,8 @@ documentation: ug
 			SetContentView(schedule);
 {% endhighlight %}
 
+![](PopulatingAppointments_images/appointment.png)
+
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
@@ -152,6 +154,8 @@ of the respective view settings.
 
 {% endhighlight %} 
 
+![](PopulatingAppointments_images/allday.png)
+
 ## Recurrence Appointment
 Recurring an appointment on a daily, weekly, monthly, or yearly interval. Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments. 
 
@@ -242,6 +246,8 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/
             schedule.Appointments = scheduleAppointmentCollection;
 {% endhighlight %} 
 
+![](PopulatingAppointments_images/recurrence.png)
+
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 
@@ -266,6 +272,8 @@ Schedule appointment can be customized by setting appointment style properties s
         schedule.AppointmentStyle = appointmentStyle; 
 
 {% endhighlight %}
+
+![](PopulatingAppointments_images/style.png)
 
 ### Customize appearance using Event
 Schedule appointment can be customized during runtime using [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `AppointmentStyle` property.
@@ -312,6 +320,8 @@ Default appointment UI can be changed using `View` property passed through `A
 
  
 {% endhighlight %}
+
+![](PopulatingAppointments_images/custom.png)
 
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
@@ -360,3 +370,5 @@ N>**Note:** `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 			schedule.AppointmentStyle = appointmentStyle;
  
 {% endhighlight %}
+
+![](PopulatingAppointments_images/selection.png)
