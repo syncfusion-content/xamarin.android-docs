@@ -6,6 +6,7 @@ platform: Xamarin.Android
 control: SfSchedule
 documentation: ug
 ---
+
 # Localization 
 
 Schedule control is available with complete localization support. Localization can be specified by setting the [Locale](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~Locale.html) property of SfSchedule. In the format of `Language code`.
