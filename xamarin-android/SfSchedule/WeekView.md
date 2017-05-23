@@ -31,6 +31,8 @@ You can customize the default appearance of view header in [WeekView](https://he
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 
+![](daymodule_images/viewheader_appearance_week.png)
+
 You can customize the height of the ViewHeader in `WeekView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 
 {% highlight C# %}
@@ -38,6 +40,8 @@ You can customize the height of the ViewHeader in `WeekView` by setting [ViewHea
             schedule.ScheduleView = ScheduleView.WeekView;
 			schedule.ViewHeaderHeight = 50;
 {% endhighlight %}
+
+![](daymodule_images/viewheaderheight_week.png)
 
 ## Change Time Interval:
 You can customize the interval of timeslots in `WeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~TimeInterval.html) property of `SfSchedule`.
@@ -47,6 +51,8 @@ You can customize the interval of timeslots in `WeekView` by setting [TimeInterv
             schedule.ScheduleView = ScheduleView.WeekView;
 			schedule.TimeInterval = 120;
 {% endhighlight %}
+
+![](daymodule_images/timeinterval_week.png)
 
 ## Change Working hours:
 Working hours in `WeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekViewSettings~WorkEndHour.html) properties of [WeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~WeekViewSettings.html).
@@ -60,6 +66,8 @@ Working hours in `WeekView` of Schedule control will be differentiated with non-
 			weekViewSettings.WorkEndHour = 18;
 			schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/changeworkinghours_week.png)
 
 >**Note**:
 `WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
@@ -86,6 +94,7 @@ You can customize the appearance of the working hour timeslots by its color usin
 			schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 
+![](daymodule_images/timeslotappearance_week.png)
 
 ### Timeslot customization in Non-Working hours:
 
@@ -103,6 +112,8 @@ You can customize the appearance of the non-working hour timeslots by its color 
 			weekViewSettings.VerticalLineStrokeWidth = 5;
 			schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/non-working hours_week.png)
 
 >**Note**:
 ` TimeSlotBorderStrokeWidth`and ` VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
@@ -128,6 +139,7 @@ You can restrict or allocate certain timeslot as Non-accessible blocks by using[
 			schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 
+![](daymodule_images/non-accessibleblock_week.png)
 
 >**Note**:
 Selection and related events will not be working in this blocks.
@@ -142,6 +154,8 @@ By default, schedule control will be rendered with Sunday as the first day of th
 			schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
 
+![](daymodule_images/firstdayofweek_week.png)
+
 ## Time Label Formatting:
 You can customize the format for the labels which are mentioning the time, by setting [TimeFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekLabelSettings~TimeFormat.html) property of [WeekLabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekViewSettings~WeekLabelSettings.html) in `WeekViewSettings`.
 
@@ -154,6 +168,8 @@ You can customize the format for the labels which are mentioning the time, by se
 			weekViewSettings.WeekLabelSettings = weekLabelSettings;
 			schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/timelabelformat_week.png)
 
 ## Time Label Appearance:
 
@@ -170,6 +186,8 @@ You can customize the color for the labels which are mentioning the time, by set
 			weekViewSettings.WeekLabelSettings = weekLabelSettings;
 			schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/timelabelappearance_week.png)
 
 ## Selection:
 You can customize the default appearance of selection UI in the timeslots.
@@ -192,6 +210,7 @@ You can customize the timeslot selection by using [SelectionStyle](https://help.
 			schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 
+![](daymodule_images/selectionstyle_week.png)
 
 ### Selection customization using custom View:
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionView.html) property of `SfSchedule`.
@@ -205,6 +224,8 @@ You can replace the default selection UI with your custom view by setting [Selec
 			customView.SetTextColor(Color.White);
 			schedule.SelectionView = customView;
 {% endhighlight %}
+
+![](daymodule_images/selectioncustomview_week.png)
 
 >**Note:**
 Selection customization is applicable for time slots alone.
