@@ -17,7 +17,7 @@ Based on the `Locale` specified the strings in the control such as Date, time, d
 
 By default, schedule control is available with en locale, which is English.
 
-{% tabs %}   
+
 {% highlight c# %}   
     
           //creating new instance for schedule
@@ -28,9 +28,9 @@ By default, schedule control is available with en locale, which is English.
             schedule.Locale = new Locale("fr");
  
 {% endhighlight %}   
-{% endtabs %}   
+   
 
->**Note ** AM/PM in the timeline will not be localized in the Schedule views
+>**Note** AM/PM in the timeline will not be localized in the Schedule views
 
 ![](Localization_images/Localization.png)   
 
@@ -38,12 +38,13 @@ By default, schedule control is available with en locale, which is English.
 
 You can localize the custom strings used in the schedule control. You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
 
-{% tabs %}   
+ 
 {% highlight xml %} 
        
      <resources>
     	<string name="No_Appointments">Aucun événement</string>
      	<string name="all_day">Toute la journée</string>
      </resources>
+	 
 {% endhighlight %}   
-{% endtabs %} 
+
