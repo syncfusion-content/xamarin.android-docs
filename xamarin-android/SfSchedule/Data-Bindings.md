@@ -16,7 +16,7 @@ documentation: ug
 
 {% highlight c# %}
 
-    using Com.Syncfusion.Schedule;
+        using Com.Syncfusion.Schedule;
     using Java.Util;
 
     //Creating an instance for SfSchedule Control
@@ -39,15 +39,15 @@ documentation: ug
         Calendar endTime = (Calendar)currentDate.Clone();
 
     //setting end time for the event
-    endTime.Set(
+        endTime.Set(
             currentDate.Get(CalendarField.Year),
             currentDate.Get(CalendarField.Month),
             currentDate.Get(CalendarField.DayOfMonth),
             12, 0, 0
             );
 
-        //Adding Schedule appointment in schedule appointment collection 
-            scheduleAppointmentCollection.Add(new ScheduleAppointment()
+    //Adding Schedule appointment in schedule appointment collection 
+        scheduleAppointmentCollection.Add(new ScheduleAppointment()
             {
 	            StartTime = startTime,
                 EndTime = endTime,
@@ -59,6 +59,7 @@ documentation: ug
      //Adding schedule appointment collection to SfSchedule appointments
             schedule.Appointments = scheduleAppointmentCollection;
 			SetContentView(schedule);
+
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/appointment.png)
@@ -68,7 +69,7 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
 
 {% highlight c# %}
 
-    using Com.Syncfusion.Schedule;
+        using Com.Syncfusion.Schedule;
     using Java.Util;
 
     //Creating an instance for SfSchedule Control
@@ -91,7 +92,7 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
         Calendar endTime = (Calendar)currentDate.Clone();
 
     //setting end time for the event
-    endTime.Set(
+        endTime.Set(
             currentDate.Get(CalendarField.Year),
             currentDate.Get(CalendarField.Month),
             currentDate.Get(CalendarField.DayOfMonth)+2,
@@ -99,7 +100,7 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
             );
 
         //Adding Schedule appointment in schedule appointment collection 
-            scheduleAppointmentCollection.Add(new ScheduleAppointment()
+        scheduleAppointmentCollection.Add(new ScheduleAppointment()
             {
 	            StartTime = startTime,
                 EndTime = endTime,
@@ -111,6 +112,7 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
      //Adding schedule appointment collection to SfSchedule appointments
             schedule.Appointments = scheduleAppointmentCollection;
 			SetContentView(schedule);
+
 {% endhighlight %}
 
 ## All Day Appointments
@@ -119,7 +121,7 @@ All-Day appointment is an appointment which is scheduled for a whole day. It can
 {% highlight c# %}
 
     //Adding Schedule appointment in schedule appointment collection 
-            scheduleAppointmentCollection.Add(new ScheduleAppointment()
+        scheduleAppointmentCollection.Add(new ScheduleAppointment()
             {
 	            StartTime = startTime,
                 EndTime = endTime,
@@ -128,6 +130,7 @@ All-Day appointment is an appointment which is scheduled for a whole day. It can
                 Location = "Hutchison road",
                 IsAllDay = true
             });
+
 {% endhighlight %} 
 
 ### All-Day Appointment Panel
@@ -135,7 +138,7 @@ All-day appointment doesn't block out entire time slot in SfSchedule, rather it 
 
 {% highlight c# %}
 
-        //Setting schedule view 
+            //Setting schedule view 
             schedule.ScheduleView = ScheduleView.WeekView;
 
    	    //Creating week view settings for SfSchedule WeekView 
@@ -150,7 +153,7 @@ of the respective view settings.
 
 {% highlight c# %}
 
-        weekViewSeetings.AllDayAppointmentBackgroundColor = Color.Silver; 
+            weekViewSeetings.AllDayAppointmentBackgroundColor = Color.Silver; 
 
 {% endhighlight %} 
 
@@ -205,7 +208,7 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/
 {% highlight c# %}
 
 			
-    // Creating instance for schedule appointment collection
+        // Creating instance for schedule appointment collection
         ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 
 
@@ -251,16 +254,16 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 
-•	Customize appearance using Style 
-•	Customize appearance using Event
-•	Customize appearance using Custom View
+•	[Customize appearance using Style](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#customize-appearance-using-style) 
+•	[Customize appearance using Event](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#customize-appearance-using-event)
+•	[Customize appearance using Custom View](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#customize-appearance-using-custom-view)
 
 ### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderWidth.html) to the `AppointmentStyle` property of `SfSchedule`.
 
 {% highlight c# %}
 
-    //Creating appointment style 
+        //Creating appointment style 
         AppointmentStyle appointmentStyle = new AppointmentStyle();
         appointmentStyle.TextColor = Color.Red;
         appointmentStyle.TextStyle = Typeface.Create("Calibri", TypefaceStyle.Bold); 
@@ -291,7 +294,7 @@ Schedule appointment can be customized during runtime using [AppointmentLoadedEv
 
     void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
     {
-	    if (args.Appointment != null && args.Appointment.Subject == "Client Meeting")
+    if (args.Appointment != null && args.Appointment.Subject == "Client Meeting")
 	    {
 		    args.AppointmentStyle.BorderColor = Color.Blue;
 		    args.AppointmentStyle.BorderCornerRadius = 12;
@@ -309,7 +312,7 @@ Default appointment UI can be changed using `View` property passed through `A
  
      schedule.AppointmentLoaded += schedule_AppointmentLoaded;
 
-        void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
+    void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
         {
 	        Button button = new Button(this);
 	        button.SetBackgroundColor(Color.Green);
@@ -337,7 +340,7 @@ These events will be triggered while perform respective touch actions in timeslo
 
 {% highlight c# %} 
  
-    schedule.CellTapped += Schedule_CellTapped;
+        schedule.CellTapped += Schedule_CellTapped;
 	schedule.CellDoubleTapped += Schedule_CellDoubleTapped;
 	schedule.CellLongPressed += Schedule_CellLongPressed;
 
@@ -361,13 +364,13 @@ N>**Note:** `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
 {% highlight c# %} 
  
-    //Creating an appointment style 
-            AppointmentStyle appointmentStyle = new AppointmentStyle();
-			appointmentStyle.SelectionBorderColor = Color.Yellow;
-			appointmentStyle.SelectionTextColor = Color.Yellow;
+        //Creating an appointment style 
+        AppointmentStyle appointmentStyle = new AppointmentStyle();
+        appointmentStyle.SelectionBorderColor = Color.Yellow;
+        appointmentStyle.SelectionTextColor = Color.Yellow;
 
 		//Setting an appointment style 
-			schedule.AppointmentStyle = appointmentStyle;
+        schedule.AppointmentStyle = appointmentStyle;
  
 {% endhighlight %}
 
