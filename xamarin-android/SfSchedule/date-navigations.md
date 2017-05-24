@@ -9,22 +9,23 @@ documentation: ug
 
 
 # Date Navigations
+
 ## Enabling Navigation 
 By default, Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation gesture can be enabled or disabled by setting [EnableNavigation](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~EnableNavigation.html) property of `SfSchedule`. By default, it is enabled.
 
-{% tabs %}   
+
 {% highlight c# %} 
 
          //disabling navigation gesture
            schedule.EnableNavigation = false;
 
 {% endhighlight %}   
-{% endtabs %}  
+
 
 ## Programmatically change to specific dates 
 Visible dates can be moved to specific date using [MoveToDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~MoveToDate.html) property available in `SfSchedule`. It will move to any specific date if the schedule view is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view
 
-{% tabs %}   
+
 {% highlight c# %} 
 
             Calendar moveToSpecificDate = Calendar.Instance;
@@ -33,7 +34,7 @@ Visible dates can be moved to specific date using [MoveToDate](https://help.sync
 
 
 {% endhighlight %}   
-{% endtabs %}  
+
 
 >**NOTE**  The specified date should lies between `MinDisplayDate` and `MaxDisplayDate` , if  the specified date is greater than `MaxDisplayDate` then the view moved to `MaxDisplayDate` similarly if the specified date is lesser than the `MinDisplayDate` then the view moved to `MinDisplayDate`.
 
@@ -46,20 +47,20 @@ By default the date can be navigated to next and previous view using touch gestu
 ### Forward
 You can use the `Forward` method for viewing the next immediate visible dates in the SfSchedule. It will move to next month if the schedule view is month, similarly it will move to next week for week view and next day for day view.
 
-{% tabs %}   
+
 {% highlight c# %} 
 
           //Viewing next immediate visible dates
             schedule.Forward();
 
 {% endhighlight %}   
-{% endtabs %}  
+
 
 >**NOTE**  It can be navigated until it reaches the Min Max dates.
 
 ### Backward
 You can use the `Backward` method for viewing the previous immediate visible dates in the `SfSchedule`. It will move to previous month if the schedule view is month, similarly it will move to previous week for week view and previous day for day view.
-{% tabs %}   
+
 {% highlight c# %} 
 
            //Viewing previous immediate visible dates
@@ -67,7 +68,7 @@ You can use the `Backward` method for viewing the previous immediate visible dat
 
 
 {% endhighlight %}   
-{% endtabs %} 
+
 
 >**NOTE**  It can be navigated until it reaches the Min Max dates.
 
@@ -77,7 +78,7 @@ Visible dates can be restricted between certain range of dates, using [MinDispla
 ### Minimum Display Date
 `MinDisplayDate` will restrict date navigations features of `Backward`, `MoveToDate` and also can’t swipe the control using touch gesture beyond the min max date range. Thus, Inline and selection feature in month view will works only within the min max date range.
 
-{% tabs %}   
+
 {% highlight c# %} 
 
             Calendar currentDate = Calendar.Instance;
@@ -86,11 +87,12 @@ Visible dates can be restricted between certain range of dates, using [MinDispla
             schedule.MinDisplayDate = minDate;
 
 {% endhighlight %}   
-{% endtabs %} 
+
+
 ### Maximum Display Date
 `MaxDisplayDate` will restrict date navigations features of `Forward`, `MoveToDate` and also can’t swipe the control using touch gesture beyond the max date range. Thus, Inline and selection in month view will works only within the max date range.
 
-{% tabs %}   
+
 {% highlight c# %} 
 
             Calendar currentDate = Calendar.Instance; 
@@ -99,6 +101,6 @@ Visible dates can be restricted between certain range of dates, using [MinDispla
             schedule.MaxDisplayDate = maxDate;
 
 {% endhighlight %}   
-{% endtabs %} 
+
 
 
