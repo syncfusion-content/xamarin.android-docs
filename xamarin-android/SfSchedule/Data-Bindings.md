@@ -360,7 +360,7 @@ These events will be triggered while perform respective touch actions in timeslo
 ### Selection customization
 The default selection of an appointment can be customized by using [SelectionBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~SelectionBorderColor.html), [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~SelectionTextColor.html) properties in `AppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 
-N>**Note:** `BorderWidth` value must be set to highlight `SelectionBorderColor`.
+N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
 {% highlight c# %} 
  
