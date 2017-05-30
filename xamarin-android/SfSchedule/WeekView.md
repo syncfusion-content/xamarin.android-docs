@@ -75,7 +75,7 @@ Working hours in `WeekView` of Schedule control will be differentiated with non-
 ## Timeslot Appearance:
 You can customize the appearance of timeslots in `WeekView`.
 
- * [Timeslot customization in Work hours](#timeslot-customization-in-Work-hours)
+ * [Timeslot customization in Work hours](#timeslot-customization-in-work-hours)
  * [Timeslot customization in Non-Working hours](timeslot-customization-in-non-working-hours)
 
 ### Timeslot customization in Work hours:
@@ -96,7 +96,7 @@ You can customize the appearance of the working hour timeslots by its color usin
 
 ![](daymodule_images/timeslotappearance_week.png)
 
-### Timeslot customization in Non-Working hours:
+### Timeslot customization in Non Working hours:
 
 You can customize the appearance of the non-working hour timeslots by its color using [NonWorkingHoursTimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekViewSettings~NonWorkingHoursTimeSlotBorderColor.html),[NonWorkingHoursTimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekViewSettings~NonWorkingHoursTimeSlotColor.html),[VerticalLineStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekViewSettings~VerticalLineStrokeWidth.html), [VerticalLineColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekViewSettings~VerticalLineColor.html) and [TimeSlotBorderStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekViewSettings~TimeSlotBorderStrokeWidth.html) properties of `WeekViewSettings`.
 

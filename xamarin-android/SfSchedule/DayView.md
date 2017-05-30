@@ -76,7 +76,7 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 ## Timeslot Appearance:
 You can customize the appearance of timeslots in `DayView`.
 
- * [Timeslot customization in Work hours](#timeslot-customization-in-Work-hours)
+ * [Timeslot customization in Work hours](#timeslot-customization-in-work-hours)
  * [Timeslot customization in Non-Working hours](timeslot-customization-in-non-working-hours)
 
 ### Timeslot customization in Work hours:
@@ -95,7 +95,7 @@ You can customize the appearance of the WorkingHourTimeslot by its color using[T
 
 ![](daymodule_images/timeslotappearance_day.png)
 
-### Timeslot customization in Non-Working hours:
+### Timeslot customization in Non Working hours:
 
 You can customize the appearance of the Non-workingHourTimeslots by its color using [NonWorkingHoursTimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DayViewSettings~NonWorkingHoursTimeSlotBorderColor.html),[NonWorkingHoursTimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DayViewSettings~NonWorkingHoursTimeSlotColor.html), properties of `DayViewSettings`.
 
