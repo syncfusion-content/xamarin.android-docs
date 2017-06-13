@@ -65,13 +65,13 @@ dataGrid.ColumnSizer = ColumnSizer.Auto;
 
 ![](SfDataGrid_images/ColumnSizer_img4.png)
 
-N> If any column is specified a width explicitly using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property then that column is not considered ColumnSizing width and skipped while applying the ColumnSizer for grid columns.
+N> If any column is specified a width explicitly using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Width.html) property then that column is not considered ColumnSizing width and skipped while applying the ColumnSizer for grid columns.
 
 ## How to 
 
 ### Apply ColumnSizer for a particular column
 
-You can apply ColumnSizer to individual columns using the [GridColumn.ColumnSizer]() property. The `GridColumn.ColumnSizer` property takes the same values as the `SfDataGrid.ColumnSizer` and applies width to that particular column based on the ColumnSizer value. The following code example illustrates how to apply `ColumnSizer` for a particular column.
+You can apply ColumnSizer to individual columns using the [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property. The `GridColumn.ColumnSizer` property takes the same values as the `SfDataGrid.ColumnSizer` and applies width to that particular column based on the ColumnSizer value. The following code example illustrates how to apply `ColumnSizer` for a particular column.
 
 {% highlight c# %}
 GridTextColumn textColumn = new GridTextColumn();
