@@ -27,7 +27,7 @@ SfDataGrid applies width for all the `GridColumns` in the [SfDataGrid.Columns](h
 
 ## ColumnSizer.None
 
-No column sizing is applied when the `SfDataGrid.ColumnSizer` is set to `None`. `Columns` are arranged in view based on the [SfDataGrid.DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property. This is the default value of the `SfDataGrid.ColumnSizer` property.
+No column sizing is applied when the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) is set to `None`. `Columns` are arranged in view based on the [SfDataGrid.DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property. This is the default value of the `SfDataGrid.ColumnSizer` property.
 
 {% highlight c# %}
 dataGrid.ColumnSizer = ColumnSizer.None;
@@ -37,7 +37,7 @@ dataGrid.ColumnSizer = ColumnSizer.None;
 
 ## ColumnSizer.LastColumnFill
 
-When the `SfDataGrid.ColumnSizer` is `LastColumnFill`, the column width of the `GridColumns` are adjusted with respect to `SfDataGrid.DefaultColumnWidth` property. In case if the columns does not fill the entire view space, then the last column’s width fills the unoccupied space in the view.
+When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) is [LastColumnFill](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ColumnSizer.html), the column width of the `GridColumns` are adjusted with respect to `SfDataGrid.DefaultColumnWidth` property. In case if the columns does not fill the entire view space, then the last column’s width fills the unoccupied space in the view.
 
 {% highlight c# %}
 dataGrid.ColumnSizer = ColumnSizer.LastColumnFill;
@@ -47,7 +47,7 @@ dataGrid.ColumnSizer = ColumnSizer.LastColumnFill;
 
 ## ColumnSizer.Star
 
-When the `SfDataGrid.ColumnSizer` is `Star`, all the `GridColumns` are adjusted an equal column width to fit within the view. Setting `ColumnSizer` to `Star` will disable the `HorizontalScrolling` in SfDataGrid.
+When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) is [Star](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ColumnSizer.html), all the `GridColumns` are adjusted an equal column width to fit within the view. Setting `ColumnSizer` to `Star` will disable the horizontal scrolling in SfDataGrid.
 
 {% highlight c# %}
 dataGrid.ColumnSizer = ColumnSizer.Star;
@@ -57,7 +57,7 @@ dataGrid.ColumnSizer = ColumnSizer.Star;
 
 ## ColumnSizer.Auto
 
-When the `SfDataGrid.ColumnSizer` is `Auto`, the width of the `GridColumns` are adjusted based on the header text or cell contents.
+When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) is [Auto](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ColumnSizer.html), the width of the `GridColumns` are adjusted based on the header text or cell contents.
 
 {% highlight c# %}
 dataGrid.ColumnSizer = ColumnSizer.Auto;
@@ -65,13 +65,15 @@ dataGrid.ColumnSizer = ColumnSizer.Auto;
 
 ![](SfDataGrid_images/ColumnSizer_img4.png)
 
-N> If any column is specified a width explicitly using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Width.html) property then that column is not considered ColumnSizing width and skipped while applying the ColumnSizer for grid columns.
+N> If any column is specified a width explicitly using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Width.html) property then that column is not considered for Column sizing the width and skipped while applying the ColumnSizer for grid columns.
 
 ## How to 
 
 ### Apply ColumnSizer for a particular column
 
-You can apply ColumnSizer to individual columns using the [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property. The `GridColumn.ColumnSizer` property takes the same values as the `SfDataGrid.ColumnSizer` and applies width to that particular column based on the ColumnSizer value. The following code example illustrates how to apply `ColumnSizer` for a particular column.
+SfDataGrid allows you to setting the ColumnSizer for particular columns using the [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property. 
+
+The following code example illustrates how to apply `ColumnSizer` for a particular column.
 
 {% highlight c# %}
 GridTextColumn textColumn = new GridTextColumn();
