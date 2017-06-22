@@ -95,8 +95,7 @@ The following picture shows the grid loaded in different styles.
 
 ## Border Customization
 
-* SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. To achieve this, you have to overridden the `DataGridStyle.GetGridLinesVisibility()`
-method. 
+* SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the `DataGridStyle.GetGridLinesVisibility` method to customize the borders in SfDataGrid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
