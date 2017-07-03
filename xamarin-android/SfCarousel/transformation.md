@@ -9,8 +9,6 @@ documentation : ug
 
 # Transformation
 
-The Offset between selected and unselected item can be customized in SfCarousel control. And also the items can be scaled to the specified value.
-
 ## Tilt Non Selected Items
 
 The `RotationAngle` property in the SfCarousel control is used to rotate all the items in a specified angle. 
@@ -19,15 +17,14 @@ If the angle value is positive, then the rotation is in the clockwise direction.
 
 N> This angle can also be specified from 0 to 360.
 
-{% tabs %}
-
 {% highlight C# %}
+
+SfCarousel carousel = new SfCarousel(this);
 
 carousel.RotationAngle=40;
 
 {% endhighlight %}
 
-{% endtabs %}
 
 ![](images/rotationangle.png)
 
@@ -37,47 +34,52 @@ Specify the distance between the items in SfCarousel panel using `Offset` proper
 
 N> The default value is 20.
 
-{% tabs %}
-
 {% highlight C# %}
+
+SfCarousel carousel = new SfCarousel(this);
 
 carousel.Offset=30;
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![](images/offset.png)
 
-## Set Gap between Selected Item
+## Set Gap between Selected Item and Unselected Item
 
 Distance between the selected item and other items can be customized by using `SelectedItemOffset` property.
 
 N> The default value is 0.
 
-{% tabs %}
-
 {% highlight C# %}
+
+SfCarousel carousel = new SfCarousel(this);
 
 carousel.SelectedItemOffset=5;
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ## Set Scaling for Carousel Items
 
-The `ScaleOffset` property in the SfCarousel control is used to scale all the items to the specified scale value.
-
-{% tabs %}
+The `ScaleOffset` property in the SfCarousel control is used to scale all the unselected items to the specified scale value.
 
 {% highlight C# %}
 	
-	carousel.ScaleOffset=0.7f;
+SfCarousel carousel = new SfCarousel(this);
+carousel.ScaleOffset=0.7f;
 
 {% endhighlight %}
 
-{% endtabs %}
 
 ![](images/scaleoffset.png)
 
+## Spacing between the Items in Linear mode
+
+Spacing of all the items in Linear mode can be determined by using `ItemSpacing` property.
+
+{% highlight C# %}
+
+SfCarousel carousel = new SfCarousel();
+carousel.ItemSpacing=5;
+carousel.ViewMode=ViewMode.Linear;
+
+{% endhighlight %}
