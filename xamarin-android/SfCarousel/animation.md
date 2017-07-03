@@ -11,12 +11,10 @@ documentation : ug
 
 The Duration property of the SfCarousel control is used to specify the time taken to move an item to the selected item position. The duration is specified in seconds. The default value is 300s.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	carousel.Duration=100;
+SfCarousel carousel= new SfCarousel(this);
+
+carousel.Duration=500;
 
 {% endhighlight %}
-
-{% endtabs %}
