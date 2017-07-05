@@ -26,30 +26,27 @@ android\Syncfusion.SfImageEditor.Andriod.dll
 
 The following steps explain on how to create a image editor  and configure its elements,
 
-1. Create an instance of SfImageEditor.
+* Create an instance of SfImageEditor.
 
 {% highlight C# %}
 
-SfImageEditor editor  = new SfImageEditor(this);
-
-SetContentView();
+    SfImageEditor editor  = new SfImageEditor(this);
+    SetContentView(editor);
 
 {% endhighlight %}
 
-2. Load an image to the image editor as bitmap object.Since SfImageEditor supports bitmap images you can load the image to the control as a bitmap object only.
+* Load an image to the image editor as bitmap object.Since SfImageEditor supports bitmap images you can load the image to the control as a bitmap object only.
 
 {% highlight C# %}
 
-SfImageEditor editor = new SfImageEditor();
-editor.Bitmap = */ Your Bitmap */
+    SfImageEditor editor = new SfImageEditor();
+    editor.Bitmap = */ Your Bitmap */
 
 {% endhighlight %}
 
-If an image is not loaded to the image editor it will display the `Signature` control like white background view where we can draw path and add shapes as if we are doing on a simple canvas.
 
-3. After loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
 
-Following is the final output screenshot,
+* Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
 
-![SfImageEditor](Sunburst_images/gettingstarted.png)
+![SfImageEditor](ImageEditor_images/gettingstarted.png)
 
