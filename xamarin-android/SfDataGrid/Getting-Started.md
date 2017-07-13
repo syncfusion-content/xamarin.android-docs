@@ -33,7 +33,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>Xamarin.Android</td>
-<td>Syncfusion.Linq.Android.dll<br/>Syncfusion.SfDataGrid.Android.dll<br/>Syncfusion.GridCommon.Portable.dll<br/></td>
+<td>Syncfusion.Linq.Android.dll<br/>Syncfusion.SfDataGrid.Android.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/></td>
 </tr>
 </table>
 
