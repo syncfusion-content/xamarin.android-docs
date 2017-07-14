@@ -100,6 +100,24 @@ GridTextColumn column = new GridTextColumn()
 
 {% endhighlight %}
 
+#### HeaderTextMargin
+
+SfDataGrid allows you to get or set the padding for the header cell by using [GridColumn.HeaderTextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~HeaderTextMargin.html) prpperty. 
+
+The following code example shows you how to set the`HeaderTextMargin` property.
+
+{% highlight c# %}
+
+GridTextColumn orderId = new GridTextColumn();
+orderId.MappingName = "OrderID";
+orderId.HeaderTextMargin = 15;
+
+GridTextColumn employeeId = new GridTextColumn();
+employeeId.MappingName = "EmployeeID";
+employeeId.HeaderTextMargin = new Thickness(12, 0, 0, 0);
+
+{% endhighlight %}
+
 ### Column Width
 
 SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
@@ -146,6 +164,24 @@ if (e.Column.MappingName == "OrderID") {
 // Manually generated column
 
 dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = true});
+{% endhighlight %}
+
+### TextMargin
+
+SfDataGrid allows you to get or set the padding for the GridCell by using [GridColumn.TextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~TextMargin.html) property. 
+
+The following code example shows you how to set the`TextMargin` property.
+
+{% highlight c# %}
+
+GridTextColumn orderId = new GridTextColumn();
+orderId.MappingName = "OrderID";
+orderId.TextMargin = 15;
+
+GridTextColumn employeeId = new GridTextColumn();
+employeeId.MappingName = "EmployeeID";
+employeeId.TextMargin = new Thickness(0, 0, 25, 0);
+
 {% endhighlight %}
 
 
