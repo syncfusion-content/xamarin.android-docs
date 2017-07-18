@@ -520,14 +520,14 @@ N> The images should have its BuildAction set as EmbeddedResource since we are g
 The [GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDateTimeColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It displays the date information as the content of a column. To create `SfDatarGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type DateTime. You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn_members.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.Renderers.SfDatePicker.html) element which is a custom view that enables you to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDateTimeColumn~MaximumDate.html) and select one from it.
 
 {% highlight c# %}
-dataGrid = new SfDataGrid(context);
+dataGrid = new SfDataGrid();
 GridDateTimeColumn dateColumn = new GridDateTimeColumn()
 {
-    Format = "d",
+    MappingName = "ShippedDate",
     HeaderText = "Shipped Date",
-    MappingName = "ShippedDate"
+    Format = "d"
 };
-data.Colum.Add(dateColumn);
+dataGrid.Columns.Add(dateColumn);
 {% endhighlight %}
 
 {% highlight c# %}
@@ -629,11 +629,11 @@ dataGrid = new SfDataGrid(context);
 viewModel = new ViewModel();
 GridPickerColumn pickerColumn = new GridPickerColumn()
 {
-    ItemsSource = viewModel.CustomerNames;
+    ItemsSource = viewModel.CustomerNames,
     HeaderText = "Dealer Name",
     MappingName = "DealerName"
 };
-dataGrid.Colum.Add(pickerColumn);
+dataGrid.Columns.Add(pickerColumn);
 {% endhighlight %}
 
 {% highlight c# %}
@@ -785,14 +785,14 @@ When edit mode is exited by selecting a value(9) from the Picker pop up, the `Gr
 The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It is used to display numeric data. To create `GridNumericColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be a numeric type (int, double, float etc). You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays the [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin-android/sfnumerictextbox) element which is derived from [View](https://developer.xamarin.com/api/type/Android.Widget.EditText/). The below code example shows how to create a `GridNumericColumn` in SfDataGrid.
 
 {% highlight c# %}
-dataGrid = new SfDataGrid();
-GridNumericColumn numericColumn = new GridNumericColumn()
+dataGrid = new SfDataGrid();           
+GridNumericColumn numeric = new GridNumericColumn()
 {
-    numericColumn.MappingName = "ProductNo",
-    numericColumn.HeaderText = "Product No",
-    numericColumn.NumberDecimalDigits = 0
+    MappingName = "ProductNo",
+    HeaderText = "Product No",
+    NumberDecimalDigits =0
 };
-data.Colum.Add(numericColumn);
+dataGrid.Columns.Add(numeric);
 {% endhighlight %}
 
 ### Number Formatting
