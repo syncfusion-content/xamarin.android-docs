@@ -785,7 +785,7 @@ When edit mode is exited by selecting a value(9) from the Picker pop up, the `Gr
 The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It is used to display numeric data. To create `GridNumericColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be a numeric type (int, double, float etc). You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays the [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin-android/sfnumerictextbox) element which is derived from [View](https://developer.xamarin.com/api/type/Android.Widget.EditText/). The below code example shows how to create a `GridNumericColumn` in SfDataGrid.
 
 {% highlight c# %}
-dataGrid = new SfDataGrid();           
+dataGrid = new SfDataGrid(context);           
 GridNumericColumn numericColumn = new GridNumericColumn()
 {
     MappingName = "ProductNo",
