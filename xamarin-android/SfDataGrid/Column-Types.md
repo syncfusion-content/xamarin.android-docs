@@ -786,13 +786,13 @@ The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-androi
 
 {% highlight c# %}
 dataGrid = new SfDataGrid();           
-GridNumericColumn numeric = new GridNumericColumn()
+GridNumericColumn numericColumn = new GridNumericColumn()
 {
     MappingName = "ProductNo",
     HeaderText = "Product No",
     NumberDecimalDigits =0
 };
-dataGrid.Columns.Add(numeric);
+dataGrid.Columns.Add(numericColumn);
 {% endhighlight %}
 
 ### Number Formatting
