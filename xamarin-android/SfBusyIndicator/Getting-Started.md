@@ -31,7 +31,7 @@ The following steps helps to add a SfBusyIndicator control through code.
 
 {% highlight c# %}
 
-using Com.Syncfusion.BusyIndicator; 
+using Com.Syncfusion.Sfbusyindicator;
 
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ Following example depicts the battery type animation for SfBusyIndicator.
 {% highlight c# %}
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator (this); 
-busyIndicator.AnimationType=AnimationTypes.Battery;
+busyIndicator.AnimationType = AnimationTypes.Battery;
 
 {% endhighlight %}
 
@@ -76,10 +76,10 @@ User can customize the height, width and TextColor properties in SfBusyIndicator
 {% highlight c# %}
 	
 busyIndicator.AnimationType=AnimationTypes.Ball;
-busyIndicator.TextColor=Color.RED;
+busyIndicator.TextColor=Color.Red;
 busyIndicator.ViewBoxHeight=20;
 busyIndicator.ViewBoxWidth=20;
-busyIndicator.IsBusy=True;
+busyIndicator.IsBusy=true;
 	
 {% endhighlight %}
 

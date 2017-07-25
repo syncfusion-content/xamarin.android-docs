@@ -16,7 +16,7 @@ SfBusyIndicator provides option to set the text that indicates the information r
 {% highlight c# %}
 
 	SfBusyIndicator busyIndicator = new SfBusyIndicator(this);
-	busyIndicator.AnimationType=AnimationTypes.Battery;
+	busyIndicator.AnimationType = AnimationTypes.Battery;
 	busyIndicator.Title="Loading...";
 	
 {% endhighlight %}
