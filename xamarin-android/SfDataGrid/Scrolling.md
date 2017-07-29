@@ -11,7 +11,7 @@ documentation: ug
 
 ## ScrollingMode
 
-SfDataGrid provides three types of scrolling mode which can be customized using the [SfDataGrid.ScrollingMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollingMode.html) property. By default, the SfDataGrid will scroll its content based on pixel values.
+SfDataGrid provides three types of scrolling mode which can be customized using the [SfDataGrid.ScrollingMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property. By default, the SfDataGrid will scroll its content based on pixel values.
 
 * PixelLine
 * Line
@@ -47,7 +47,7 @@ SfDataGrid allow you to scroll to particular Row and Column index from programma
 
 ### Scroll to Row and Column Index
 
-* You can scroll programmatically to particular Row and Column using `SfDataGrid.ScrollToRowColumnIndex` method by passing row and column index.
+* You can scroll programmatically to particular Row and Column using [SfDataGrid.ScrollToRowColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowColumnIndex.html) method by passing row and column index.
 
 {% highlight C# %}
 
@@ -57,7 +57,7 @@ dataGrid.ScrollToRowColumnIndex(int rowIndex, int columnIndex);
 
 ### Scroll to Row Index
 
-* You can scroll programmatically to particular Row `SfDataGrid.ScrollToRowIndex` method by passing row index.
+* You can scroll programmatically to particular Row [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowIndex.html) method by passing row index.
 
 {% highlight C# %}
 
@@ -67,7 +67,7 @@ dataGrid.ScrollToRowIndex(int rowIndex);
 
 ### Scroll to Column Index
 
-* You can scroll programmatically to particular Column `SfDataGrid.ScrollToColumnIndex` method by passing column index.
+* You can scroll programmatically to particular Column [SfDataGrid.ScrollToColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToColumnIndex.html) method by passing column index.
 
 {% highlight C# %}
 
@@ -76,9 +76,9 @@ dataGrid.ScrollToColumnIndex(int columnIndex);
 {% endhighlight %}
 
 ### Vertical Over Scroll Mode
-`SfDataGrid.VerticalOverScrollMode` property allows you to customize the bouncing behavior of the SfDataGrid.
+[SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~VerticalOverScrollMode.html) property allows you to customize the bouncing behavior of the SfDataGrid.
 
- `SfDataGrid.VerticalOverScrollMode` is of type [VerticalScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~VerticalOverScrollMode.html) which has the below two modes. 
+ `SfDataGrid.VerticalOverScrollMode` is of type `VerticalScrollMode` which has the below two modes. 
  * `Bounce` - It allows the SfDataGrid to have bouncing effect. The default value of `SfDataGrid.VerticalOverScrollMode` is `Bounce` 
  * `None` - It disables the bouncing effect in SfDataGrid.
 

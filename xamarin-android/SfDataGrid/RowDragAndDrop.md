@@ -9,7 +9,7 @@ documentation: UG
 
 # Row Drag and Drop
 
-SfDataGrid allows you to drag and drop a row by setting the `SfDataGrid.AllowDraggingRow` property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using `SfDataGrid.QueryRowDragging` event.  
+SfDataGrid allows you to drag and drop a row by setting the [SfDataGrid.AllowDraggingRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowDraggingRow.html) property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using [SfDataGrid.QueryRowDragging](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryRowDragging_EV.html) event.  
 
 The following code example illustrates how to enable row drag and drop in SfDataGrid.
 
@@ -25,11 +25,11 @@ SfDataGrid allows you to perform the drag and drop operation with both the data 
 * Groups position can be reordered using drag and drop. But no groups can be added inside other groups. 
 * Data rows can be reordered within the same group or into the other groups as well. 
 
-N> Reordering changes are made only in `SfDataGrid.View` and not in the underlying data. Thus the changes will be reverted when performing sorting, grouping or any other operation that refreshes the view. Reordering changes in the underlying data can be achieved by handling `QueryRowDragging` event in the sample side as explained below in [Reordering underlying data](# Reordering underlying data ).
+N> Reordering changes are made only in [SfDataGrid.View](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~View.html) and not in the underlying data. Thus the changes will be reverted when performing sorting, grouping or any other operation that refreshes the view. Reordering changes in the underlying data can be achieved by handling `QueryRowDragging` event in the sample side as explained below in [Reordering underlying data](# Reordering underlying data ).
 
 ## Row drag and drop template
 
-SfDataGrid allows you to load a desired content when performing row drag and drop operation using the `SfDataGrid.RowDragDropTemplate`. 
+SfDataGrid allows you to load a desired content when performing row drag and drop operation using the [SfDataGrid.RowDragDropTemplate](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~RowDragDropTemplate.html). 
 
 ## Default template
 
@@ -188,15 +188,15 @@ public class Label : TextView
 
 ## Row drag and drop event
 
-`QueryRowDragging` event is fired upon starting to drag a row and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryRowDragging` event you can also cancel the dragging of a particular row.
+[QueryRowDragging](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryRowDragging_EV.html) event is fired upon starting to drag a row and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryRowDragging` event you can also cancel the dragging of a particular row.
 
-The `QueryRowDragging` event provides following properties in `QueryRowDraggingEventArgs`:
+The `QueryRowDragging` event provides following properties in [QueryRowDraggingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs.html):
 
-* `From` – Returns the index of the row currently being dragged.
-* `To` – Returns the dragging index where you try to drop the row. 
-* `Reason` – Returns row dragging details as `QueryRowDraggingReason`.
-* `RowData` – Returns the underlying data associated with the dragged row.
-* `CurrentRowData` – Returns the corresponding row data, over which the row drag view is currently placed.
+* [From](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~From.html) – Returns the index of the row currently being dragged.
+* [To](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~To.html) – Returns the dragging index where you try to drop the row. 
+* [Reason](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~Reason.html) – Returns row dragging details as `QueryRowDraggingReason`.
+* [RowData](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~Reason.html) – Returns the underlying data associated with the dragged row.
+* [CurrentRowData](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~CurrentRowData.html) – Returns the corresponding row data, over which the row drag view is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
 ## Disable dragging for particular row 
@@ -286,7 +286,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Drop a grid row in the last position
 
-The `To` property of the `QueryRowDraggingEventArgs` denotes the current drop index of the dragged row when dragging over the grid rows. It returns the same index when you drag a row over the rows in last position or last but one. In order to programmatically track whether the dragged row is dropped at the last position or last but one, SfDataGrid provides the `Position` property in `QueryRowDraggingEventArgs` which denotes the position of the RowDragView.
+The `To` property of the `QueryRowDraggingEventArgs` denotes the current drop index of the dragged row when dragging over the grid rows. It returns the same index when you drag a row over the rows in last position or last but one. In order to programmatically track whether the dragged row is dropped at the last position or last but one, SfDataGrid provides the [Position](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~Position.html) property in `QueryRowDraggingEventArgs` which denotes the position of the RowDragView.
 
 Refer the following code example in which the `Position` property is used to determine whether the row is dropped in the last position.
 
