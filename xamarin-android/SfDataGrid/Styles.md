@@ -9,7 +9,7 @@ documentation: UG
 
 # Styles
 
-SfDataGrid allows you to apply style to all of its elements by writing a Style class overriding from `DataGridStyle` and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+SfDataGrid allows you to apply style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
   
 The following example explains you how to apply custom style to SfDataGrid.
 
@@ -95,7 +95,7 @@ The following picture shows the grid loaded in different styles.
 
 ## Border Customization
 
-* SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the `DataGridStyle.GetGridLinesVisibility` method to customize the borders in SfDataGrid.
+* SfDataGrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle~GetGridLinesVisibility.html) method to customize the borders in SfDataGrid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
@@ -125,7 +125,7 @@ Following are the lists of options available to customize the grid borders.
 
 ### Both
 
-*  `GridLinesVisibility.Both` allows you to display the DataGrid with both Horizontal and Vertical borders.
+*  [GridLinesVisibility.Both](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLinesVisibility.html) allows you to display the DataGrid with both Horizontal and Vertical borders.
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -139,7 +139,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Horizontal
 
-* `GridLinesVisibility.Horizontal` allows you to display the DataGrid with Horizontal border only
+* [GridLinesVisibility.Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLinesVisibility.html) allows you to display the DataGrid with Horizontal border only
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -153,7 +153,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Vertical
 
-* `GridLinesVisibility.Vertical` allows you to display the DataGrid with Vertical border only
+* [GridLinesVisibility.Vertical](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLinesVisibility.html) allows you to display the DataGrid with Vertical border only
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -167,7 +167,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### None
 
-* `GridLinesVisibility.None` allows you to display the DataGrid without borders
+* [GridLinesVisibility.None](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLinesVisibility.html) allows you to display the DataGrid without borders
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -183,7 +183,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Change the Sorting Icon in column headers
 
-You can load any desired image as the sort icon in the `SfDataGrid` using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the `DataGridStyle` class. The following code example illustrates how to change the SortIcon in `SfDataGrid`.
+You can load any desired image as the sort icon in the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid.html) using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) class. The following code example illustrates how to change the SortIcon in SfDataGrid.
 
 {% highlight c# %}
 
@@ -213,7 +213,7 @@ N> The image's BuildAction must be set to AndroidResource so that we can access 
 
 ### Change the color of the resizing indicator
 
-You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in `SfDataGrid`. 
+You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in SfDataGrid. 
 
 {% highlight c# %}
 
