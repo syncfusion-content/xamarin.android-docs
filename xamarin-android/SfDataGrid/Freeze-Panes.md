@@ -9,13 +9,13 @@ documentation: UG
 
 # Freeze panes
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid.html) allows you to freeze the rows and columns when scrolling the grid.
+SfDataGrid allows you to freeze the rows and columns when scrolling the grid.
 
 
 ## Freeze Rows
-`SfDataGrid` provides extensive support to freeze the rows at the top of the view below the header row by setting the [SfDataGrid.FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~FrozenRowsCount.html) property. 
+SfDataGrid provides extensive support to freeze the rows at the top of the view below the header row by setting the [SfDataGrid.FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~FrozenRowsCount.html) property. 
 
-The following code example illustrates freezing two rows in `SfDataGrid`.
+The following code example illustrates freezing two rows in SfDataGrid.
 
 {% highlight c# %}
 //Setting number of rows to freeze in SfDataGrid

@@ -9,9 +9,9 @@ documentation: UG
 
 # Styles
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid.html) allows you to apply style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
+SfDataGrid allows you to apply style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
   
-The following example explains you how to apply custom style to `SfDataGrid`.
+The following example explains you how to apply custom style to SfDataGrid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
@@ -95,7 +95,7 @@ The following picture shows the grid loaded in different styles.
 
 ## Border Customization
 
-* `SfDatagrid` allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle~GetGridLinesVisibility.html) method to customize the borders in `SfDataGrid`.
+* SfDataGrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle~GetGridLinesVisibility.html) method to customize the borders in SfDataGrid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
@@ -183,7 +183,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Change the Sorting Icon in column headers
 
-You can load any desired image as the sort icon in the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid.html) using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) class. The following code example illustrates how to change the SortIcon in `SfDataGrid`.
+You can load any desired image as the sort icon in the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid.html) using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) class. The following code example illustrates how to change the SortIcon in SfDataGrid.
 
 {% highlight c# %}
 
@@ -213,7 +213,7 @@ N> The image's BuildAction must be set to AndroidResource so that we can access 
 
 ### Change the color of the resizing indicator
 
-You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in `SfDataGrid`. 
+You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in SfDataGrid. 
 
 {% highlight c# %}
 

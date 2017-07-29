@@ -9,9 +9,9 @@ documentation: ug
 
 # Paging
 
-The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid.html) provides interactive support to manipulate data using the [SfDataPager](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataPager_namespace.html) control. It also provides built-in options to page data on demand when dealing with large volumes of data. SfDataGrid lets you to place the `SfDataPager` above or below it as per your requirement which lets you to easily manage the data paging.
+The SfDataGrid provides interactive support to manipulate data using the [SfDataPager](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataPager_namespace.html) control. It also provides built-in options to page data on demand when dealing with large volumes of data. SfDataGrid lets you to place the `SfDataPager` above or below it as per your requirement which lets you to easily manage the data paging.
 
-To use the paging functionality in `SfDataGrid` add the below namespace to your project.
+To use the paging functionality in SfDataGrid add the below namespace to your project.
 `Syncfusion.SfDataGrid.DataPager`
 
 ## Normal Paging
@@ -95,7 +95,7 @@ The following code example illustrates how to use ResetCache method:
 
 ## Custom Appearence
 
-The following code example shows how to implement paging with custom appearenve in `SfDataGrid` for Xamarin.Android.
+The following code example shows how to implement paging with custom appearance in SfDataGrid.
 
 {% highlight c# %}
 sfDataPager.AppearanceManager = new CustomAppearance();

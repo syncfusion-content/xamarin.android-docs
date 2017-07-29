@@ -9,9 +9,9 @@ documentation: UG
 
 # Row Drag and Drop
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid.html) allows you to drag and drop a row by setting the [SfDataGrid.AllowDraggingRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowDraggingRow.html) property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using [SfDataGrid.QueryRowDragging](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryRowDragging_EV.html) event.  
+SfDataGrid allows you to drag and drop a row by setting the [SfDataGrid.AllowDraggingRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowDraggingRow.html) property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using [SfDataGrid.QueryRowDragging](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryRowDragging_EV.html) event.  
 
-The following code example illustrates how to enable row drag and drop in `SfDataGrid`.
+The following code example illustrates how to enable row drag and drop in SfDataGrid.
 
 {% highlight c# %}
 sfGrid.AllowDraggingRow = true;
@@ -19,7 +19,7 @@ sfGrid.AllowDraggingRow = true;
 
 ## Dragging scenarios
 
-`SfDataGrid` allows you to perform the drag and drop operation with both the data rows and groups.
+SfDataGrid allows you to perform the drag and drop operation with both the data rows and groups.
 
 * Records can be reordered to any position with auto scrolling.
 * Groups position can be reordered using drag and drop. But no groups can be added inside other groups. 
@@ -309,7 +309,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Updating summaries when dragging and dropping a row between groups
 
-Grouping and summaries of items in `SfDataGrid` are manipulated based on group key. When you drag and drop an item from one group to another group, the group key of the dragged item will differ from the group key of the items in the dropped group. Hence by default, the summaries will not be updated. This is the actual behavior of `SfDataGrid`. 
+Grouping and summaries of items in SfDataGrid are manipulated based on group key. When you drag and drop an item from one group to another group, the group key of the dragged item will differ from the group key of the items in the dropped group. Hence by default, the summaries will not be updated. This is the actual behavior of SfDataGrid. 
 
 Hence, in order to update the summaries when a row is dragged and dropped between groups you need to call the `UpdateCaptionSummaries` and `Refresh` methods in the `QueryRowDragging` event.
 
