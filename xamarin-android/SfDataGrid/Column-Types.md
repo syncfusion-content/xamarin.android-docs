@@ -55,28 +55,28 @@ The below table describes you the types of column and its purpose of usage in Sf
 
 ## GridColumn
 
-GridColumn is the base column type of all the columns in the SfDataGrid, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties.
+[GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn.html) is the base column type of all the columns in the SfDataGrid, hence `GridColumn` properties are used by all the columns. The following sub-sections explains you about the properties in the `GridColumn` and the customizations that can be done using those properties.
 
 ### MappingName
 
-[GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~MappingName.html) associates the GridColumn with a property available in the underlying data source. While setting MappingName alone to the SfDataGrid, [GridColumn.DisplayBinding]() will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
+[GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~MappingName.html) associates the `GridColumn` with a property available in the underlying data source. While setting MappingName alone to the SfDataGrid, GridColumn.DisplayBinding will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
 
 ### Header customizations
 
 #### HeaderCellTextSize
 
-The FontSize for the content of header cell in the GridColumn can be customized by using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~HeaderCellTextSize.html) property. The default font size of the header cells in SfDataGrid is 14.
+The FontSize for the content of header cell in the `GridColumn` can be customized by using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~HeaderCellTextSize.html) property. The default font size of the header cells in SfDataGrid is 14.
 
 #### HeaderFont
 
-The FontFamily for the content of header cell in the GridColumn can be customized by using the [GridColumn.HeaderFont](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~HeaderFont.html) property. The default value font used in SfDataGrid is `Roboto-Bold`.
+The FontFamily for the content of header cell in the `GridColumn` can be customized by using the [GridColumn.HeaderFont](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~HeaderFont.html) property. The default value font used in SfDataGrid is `Roboto-Bold`.
 
 #### HeaderText
 
 [GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~HeaderText.html) specifies the text displayed in the column header. If `HeaderText` is not defined, the `GridColumn.MappingName` will be assigned to the `HeaderText` and will be displayed as column header.
 
 #### HeaderTextAlignment
-You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is `Center`.
+You can get or set the TextAlignment of the header cell in the `GridColumn` by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is `Center`.
 
 #### HeaderTemplate
 
@@ -120,7 +120,7 @@ employeeId.HeaderTextMargin = new Thickness(12, 0, 0, 0);
 
 ### Column Width
 
-SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
+SfDataGrid allows you to customize the width of each `GridColumn` in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
 
 N> You can set the `IsHidden` property as `True` instead of setting column width as `0` to hide a column.
 
@@ -168,7 +168,7 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = 
 
 ### TextMargin
 
-SfDataGrid allows you to get or set the padding for the GridCell by using [GridColumn.TextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~TextMargin.html) property. 
+SfDataGrid allows you to get or set the padding for the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridCell.html) by using [GridColumn.TextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~TextMargin.html) property. 
 
 The following code example shows you how to set the`TextMargin` property.
 
@@ -187,9 +187,9 @@ employeeId.TextMargin = new Thickness(0, 0, 25, 0);
 
 ## GridTextColumn
 
-GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. Each of the record cells in GridTextColumn displays text based on the MappingName which associates the column with a property in the data source.
+[GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTextColumn.html) is derived from [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn.html) and hence it inherits all the properties of GridColumn. Each of the record cells in `GridTextColumn` displays text based on the MappingName which associates the column with a property in the data source.
 
-The following code example creates GridTextColumn.
+The following code example creates `GridTextColumn`.
 
 {% highlight c# %}
 dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
@@ -201,7 +201,7 @@ The below topics explain you about the customizations that can be done in the Gr
 
 SfDataGrid allows you to format the value displayed in the GridColumn by using the [GridColumn.Format](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Format.html) property. Assign the FormatString to this property based on the type of the property the GridColumn is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
 
-The following code example shows you how to apply formatting for a GridTextColumn.
+The following code example shows you how to apply formatting for a `GridTextColumn`.
 
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
@@ -280,7 +280,7 @@ dataGrid.Columns[0].LineBreakMode = LineBreakMode.WordWrap;
 
 ## TemplateColumn
 
-TemplateColumn is actually the GridTextColumn with **UserCellType** specified and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumns with your own view by creating custom GridCell to render in the column.
+TemplateColumn is actually the [GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTextColumn.html) with [UserCellType](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~UserCellType.html) specified and hence it inherits all the properties of `GridColumn`. It allows you to extend the functionality of GridColumns with your own view by creating custom GridCell to render in the column.
 
 The following code example shows how to create a TemplateColumn.
 
@@ -292,7 +292,7 @@ customerIdColumn.HeaderText = "Customer ID";
 dataGrid.Columns.Add(customerIdColumn);
 {% endhighlight %}
 
-In order to create a template column in SfDataGrid, you need to specify the UserCellType of the column. UserCellType is the type of the view to be used in the GridColumn and it must be derived from the GridCell GridCell which hosts the view of your own requirement).
+In order to create a template column in SfDataGrid, you need to specify the UserCellType of the column. UserCellType is the type of the view to be used in the `GridColumn` and it must be derived from the GridCell GridCell which hosts the view of your own requirement).
  
 The following code example shows you how to create a custom GridCell and use it in a template column.
 
@@ -340,9 +340,9 @@ The following screenshot shows how template columns are used in SfDataGrid
 
 ## Row Header 
 
-RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the row header in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` as `true`.
+RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the row header in SfDataGrid, you need to set the [SfDataGrid.ShowRowHeader](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ShowRowHeader.html) as `true`.
 
-Further, SfDataGrid allows you to customize the row header width using the `SfDataGrid.RowHeaderWidth` property. The default value of `SfDataGrid.RowHeaderWidth` is 20.
+Further, SfDataGrid allows you to customize the row header width using the [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ShowRowHeader.html) property. The default value of `SfDataGrid.RowHeaderWidth` is 20.
 
 The below code example illustrates how to enable and customize the row header in SfDataGrid.
 {% highlight c# %}
