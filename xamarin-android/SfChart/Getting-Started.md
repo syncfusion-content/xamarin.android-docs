@@ -11,28 +11,17 @@ documentation: ug
 
 This section explains you the steps required to populate the Chart with data, title, add data labels and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 
-
-![](Getting-Started_images/Getting-Started_img1.png)
-
-
-
-## Reference Essential Studio components in your solution
+## Adding Chart Reference
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
 {Syncfusion Installed location}\Essential Studio\15.3.0.26\lib
 
-
-
 N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Android project,
 
-
-
 android\Syncfusion.SfChart.Andriod.dll
-
-
 
 ## Initialize Chart
 
