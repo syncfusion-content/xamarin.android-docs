@@ -103,7 +103,7 @@ December</td><td>
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
-{Syncfusion Installed location}\Essential Studio\14.2.0.26\lib
+{Syncfusion Installed location}\Essential Studio\15.3.0.26\lib
 
 
 
@@ -161,35 +161,50 @@ chart.Title.Text = "Weather Analysis";
 
 In this sample, you can display the temperature over the months using a Column Series. Before creating the series, create a data model representing the climate details data.
 
-In SfChart, the series ItemsSource should to be a collection of ChartDataPoint objects. Add the following class for generating the datapoints.
+In SfChart, the series ItemsSource should to be a collection of custom objects. Add the following class for generating the datapoints.
 
 {% highlight C# %}
 
+public class Model
+{
+    public Model(string month, double precipitation)
+    {
+        this.Month = month;
+
+        this.Precipitation = precipitation;
+    }
+
+    public string Month { get; set; }
+
+    public double Precipitation { get; set; }
+}
+
+
 public class DataModel
 {
-	public ObservableArrayList  HighTemperature;
+	public ObservableCollection<Model> HighTemperature { get; set; }
 
 	public DataModel ()
     {
-		HighTemperature = new ObservableArrayList ();
-        HighTemperature.Add (new ChartDataPoint ("Jan", 42));
-        HighTemperature.Add (new ChartDataPoint ("Feb", 44));
-        HighTemperature.Add (new ChartDataPoint ("Mar", 53));
-        HighTemperature.Add (new ChartDataPoint ("Apr", 64));
-        HighTemperature.Add (new ChartDataPoint ("May", 75));
-        HighTemperature.Add (new ChartDataPoint ("Jun", 83));
-        HighTemperature.Add (new ChartDataPoint ("Jul", 87));
-        HighTemperature.Add (new ChartDataPoint ("Aug", 84));
-        HighTemperature.Add (new ChartDataPoint ("Sep", 78));
-        HighTemperature.Add (new ChartDataPoint ("Oct", 67));
-        HighTemperature.Add (new ChartDataPoint ("Nov", 55));
-        HighTemperature.Add (new ChartDataPoint ("Dec", 45));
+		HighTemperature = new ObservableCollection<Model> ();
+        HighTemperature.Add (new Model ("Jan", 42));
+        HighTemperature.Add (new Model ("Feb", 44));
+        HighTemperature.Add (new Model ("Mar", 53));
+        HighTemperature.Add (new Model ("Apr", 64));
+        HighTemperature.Add (new Model ("May", 75));
+        HighTemperature.Add (new Model ("Jun", 83));
+        HighTemperature.Add (new Model ("Jul", 87));
+        HighTemperature.Add (new Model ("Aug", 84));
+        HighTemperature.Add (new Model ("Sep", 78));
+        HighTemperature.Add (new Model ("Oct", 67));
+        HighTemperature.Add (new Model ("Nov", 55));
+        HighTemperature.Add (new Model ("Dec", 45));
     }
 }
    
 {% endhighlight %}
 
-Now, add the series to the chart and set its DataSource as follows.
+Now, add the series to the chart and set its ItemsSource as follows.
 
 {% highlight C# %}
 
@@ -197,7 +212,9 @@ Now, add the series to the chart and set its DataSource as follows.
 
 chart.Series.Add (new ColumnSeries () 
 {
-	DataSource= dataModel.HighTemperature
+	ItemsSource = dataModel.HighTemperature,
+    XBindingPath = "Month",
+    YBindingPath = "Precipitation",
 }); 
 
 {% endhighlight %}
@@ -225,7 +242,9 @@ The next step is to add the HighTemperature column series as follows.
 
 chart.Series.Add (new ColumnSeries () 
 {
-	DataSource = dataModel.HighTemperature,
+	ItemsSource = dataModel.HighTemperature,
+    XBindingPath = "Month",
+    YBindingPath = "Precipitation",
     Label = "Series 1" 
 });
 
@@ -244,21 +263,27 @@ DataModel dataModel = new DataModel ();
 //Adding ColumnSeries to the chart for Precipitation
 chart.Series.Add (new ColumnSeries () 
 {
-     DataSource = dataModel.Precipitation,
+     ItemsSource = dataModel.Temperature,
+     XBindingPath = "Month",
+     YBindingPath = "Precipitation",
      Label = "Precipitation"
 });
 
 //Adding the SplineSeries to the chart for high temperature
 chart.Series.Add (new SplineSeries () 
 {
-     DataSource = dataModel.HighTemperature,
+     ItemsSource = dataModel.Temperature,
+     XBindingPath = "Month",
+     YBindingPath = "High",
      Label = "High"
 });
 
 //Adding the SplineSeries to the chart for low temperature
 chart.Series.Add (new SplineSeries () 
 {
-     DataSource = dataModel.LowTemperature,
+     ItemsSource = dataModel.Temperature,
+     XBindingPath = "Month",
+     YBindingPath = "Low",
      Label = "Low"
 });
 
@@ -276,7 +301,9 @@ Add a secondary axis(y axis) to the chart as follows.
 
 chart.Series.Add (new ColumnSeries () 
 {
-	DataSource = dataModel.Precipitation,
+	ItemsSource = dataModel.Temperature,
+    XBindingPath = "Month",
+    YBindingPath = "Precipitation",
 	Label = "Precipitation",
 	YAxis = new NumericalAxis(){
 		OpposedPosition = true
@@ -312,98 +339,93 @@ public class WeatherActivity : Activity
     	NumericalAxis secondaryAxis = new NumericalAxis ();
     	secondaryAxis.Title.Text  = "Temperature" ;
     	chart.SecondaryAxis = secondaryAxis;
-	
-	
-    	DataModel dataModel = new DataModel ();
-	
-		//Adding ColumnSeries to the chart for Precipitation
-    	
-		chart.Series.Add (new ColumnSeries () 
-		{
-			DataSource = dataModel.Precipitation,
-        	Label = "Precipitation",
-        	YAxis = new NumericalAxis()
-			{ 
-				OpposedPosition = true, 
-        	    ShowMajorGridLines=  false 
-				
-			}
-    	});
+		
+    	DataModel dataModel = new DataModel();
 
-		//Adding the SplineSeries to the chart for high temperature
-    	
-		chart.Series.Add (new SplineSeries () 
-		{
-    		DataSource = dataModel.HighTemperature,
-    	    Label = "High"
-    	});
-	
-		//Adding the SplineSeries to the chart for low temperature
-    	
-		chart.Series.Add (new SplineSeries () 
-		{
-    	 	DataSource = dataModel.LowTemperature,
-    	    Label = "Low"
-    	});
-	
+        //Adding ColumnSeries to the chart for Precipitation
+
+        chart.Series.Add(new ColumnSeries()
+        {
+            ItemsSource = dataModel.Temperature,
+            XBindingPath = "Month",
+            YBindingPath = "Precipitation",
+            Label = "Precipitation",
+            YAxis = new NumericalAxis()
+            {
+                OpposedPosition = true,
+                ShowMajorGridLines = false
+            }
+        });
+
+        //Adding the SplineSeries to the chart for high temperature
+
+        chart.Series.Add(new SplineSeries()
+        {
+            ItemsSource = dataModel.Temperature,
+            XBindingPath = "Month",
+            YBindingPath = "High",
+            Label = "High"
+        });
+
+        //Adding the SplineSeries to the chart for low temperature
+
+        chart.Series.Add(new SplineSeries()
+        {
+            ItemsSource = dataModel.Temperature,
+            XBindingPath = "Month",
+            YBindingPath = "Low",
+            Label = "Low"
+        });
+
 		//Adding Chart Legend for the Chart
     	chart.Legend.Visibility = Visibility.Visible; 
+        
     	SetContentView(chart);
     }
+}
 
+public class Model
+{
+    public Model(string month, double high, double low, double precipitation)
+    {
+        this.Month = month;
+
+        this.High = high;
+
+        this.Low = low;
+
+        this.Precipitation = precipitation;
+    }
+
+    public string Month { get; set; }
+
+    public double High { get; set; }
+
+    public double Low { get; set; }
+
+    public double Precipitation { get; set; }
 }
 
 public class DataModel
 {
-	public ObservableArrayList  HighTemperature;
+    public ObservableCollection<Model> Temperature { get; set; }
 
-	public ObservableArrayList  LowTemperature;
-
-	public ObservableArrayList  Precipitation;
-
-	public DataModel ()
+    public DataModel()
     {
-		HighTemperature = new ObservableArrayList ();
-        HighTemperature.Add (new ChartDataPoint ("Jan", 42));
-        HighTemperature.Add (new ChartDataPoint ("Feb", 44));
-        HighTemperature.Add (new ChartDataPoint ("Mar", 53));
-        HighTemperature.Add (new ChartDataPoint ("Apr", 64));
-        HighTemperature.Add (new ChartDataPoint ("May", 75));
-        HighTemperature.Add (new ChartDataPoint ("Jun", 83));
-        HighTemperature.Add (new ChartDataPoint ("Jul", 87));
-        HighTemperature.Add (new ChartDataPoint ("Aug", 84));
-        HighTemperature.Add (new ChartDataPoint ("Sep", 78));
-        HighTemperature.Add (new ChartDataPoint ("Oct", 67));
-        HighTemperature.Add (new ChartDataPoint ("Nov", 55));
-        HighTemperature.Add (new ChartDataPoint ("Dec", 45));
+        Temperature = new ObservableCollection<Model>();
 
-        LowTemperature = new ObservableArrayList ();
-        LowTemperature.Add (new ChartDataPoint ("Jan", 27));
-        LowTemperature.Add (new ChartDataPoint ("Feb", 28));
-        LowTemperature.Add (new ChartDataPoint ("Mar", 35));
-        LowTemperature.Add (new ChartDataPoint ("Apr", 44));
-        LowTemperature.Add (new ChartDataPoint ("May", 54));
-        LowTemperature.Add (new ChartDataPoint ("Jun", 63));
-        LowTemperature.Add (new ChartDataPoint ("Jul", 68));
-        LowTemperature.Add (new ChartDataPoint ("Aug", 66));
-        LowTemperature.Add (new ChartDataPoint ("Sep", 59));
-        LowTemperature.Add (new ChartDataPoint ("Oct", 48));
-        LowTemperature.Add (new ChartDataPoint ("Nov", 38));
-        LowTemperature.Add (new ChartDataPoint ("Dec", 29));
-
-        Precipitation = new ObservableArrayList ();
-        Precipitation.Add (new ChartDataPoint ("Jan", 3.03));
-        Precipitation.Add (new ChartDataPoint ("Feb", 2.48));
-        Precipitation.Add (new ChartDataPoint ("Mar", 3.23));
-        Precipitation.Add (new ChartDataPoint ("Apr", 3.15));
-        Precipitation.Add (new ChartDataPoint ("May", 4.13));
-        Precipitation.Add (new ChartDataPoint ("Jun", 3.23));
-        Precipitation.Add (new ChartDataPoint ("Jul", 4.13));
-        Precipitation.Add (new ChartDataPoint ("Aug", 4.88));
-        Precipitation.Add (new ChartDataPoint ("Sep", 3.82));
-        Precipitation.Add (new ChartDataPoint ("Oct", 3.07));
-        Precipitation.Add (new ChartDataPoint ("Nov", 2.83));
-        Precipitation.Add (new ChartDataPoint ("Dec", 2.8));
+        Temperature.Add(new Model("Jan", 42, 27, 3.03));
+        Temperature.Add(new Model("Feb", 44, 28, 2.48));
+        Temperature.Add(new Model("Mar", 53, 35, 3.23));
+        Temperature.Add(new Model("Apr", 64, 44, 3.15));
+        Temperature.Add(new Model("May", 75, 54, 4.13));
+        Temperature.Add(new Model("Jun", 83, 63, 3.23));
+        Temperature.Add(new Model("Jul", 87, 68, 4.13));
+        Temperature.Add(new Model("Aug", 84, 66, 4.88));
+        Temperature.Add(new Model("Sep", 78, 59, 3.82));
+        Temperature.Add(new Model("Oct", 67, 48, 3.07));
+        Temperature.Add(new Model("Nov", 55, 38, 2.83));
+        Temperature.Add(new Model("Dec", 45, 29, 2.8));
     }
 }
 
