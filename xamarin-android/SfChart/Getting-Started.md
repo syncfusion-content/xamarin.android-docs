@@ -169,9 +169,9 @@ public class Model
 {
     public Model(string month, double precipitation)
     {
-        this.Month = month;
+        Month = month;
 
-        this.Precipitation = precipitation;
+        Precipitation = precipitation;
     }
 
     public string Month { get; set; }
@@ -388,13 +388,13 @@ public class Model
 {
     public Model(string month, double high, double low, double precipitation)
     {
-        this.Month = month;
+        Month = month;
 
-        this.High = high;
+        High = high;
 
-        this.Low = low;
+        Low = low;
 
-        this.Precipitation = precipitation;
+        Precipitation = precipitation;
     }
 
     public string Month { get; set; }
