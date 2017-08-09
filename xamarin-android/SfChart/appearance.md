@@ -31,10 +31,10 @@ Following code illustrates how to set the custom colors.
 SfChart chart = new SfChart(this);
 ...
 
-var colors = new List<Integer>();
-colors.Add(new Integer(Color.ParseColor("#FFEAE018")));
-colors.Add(new Integer(Color.ParseColor("#FFB3B1AD")));
-colors.Add(new Integer(Color.ParseColor("#FF8C0707")));
+var colors = new List<Color>();
+colors.Add(Color.ParseColor("#FFEAE018"));
+colors.Add(Color.ParseColor("#FFB3B1AD"));
+colors.Add(Color.ParseColor("#FF8C0707"));
 
 chart.ColorModel.ColorPalette = ChartColorPalette.Custom;
 chart.ColorModel.CustomColors = colors;
@@ -74,12 +74,12 @@ Following code illustrates how to set the custom colors.
 {% highlight c# %} 
 [C#]
 
-var colors = new List<Integer>();
-colors.Add(new Integer(Color.Red));
-colors.Add(new Integer(Color.Gray));
-colors.Add(new Integer(Color.Blue));
-colors.Add(new Integer(Color.Maroon));
-colors.Add(new Integer(Color.Pink));
+var colors = new List<Color>();
+colors.Add(Color.Red);
+colors.Add(Color.Gray);
+colors.Add(Color.Blue);
+colors.Add(Color.Maroon);
+colors.Add(Color.Pink);
 
 ColumnSeries columnSeies = new ColumnSeries();
 columnSeies.ColorModel.ColorPalette = ChartColorPalette.Custom;

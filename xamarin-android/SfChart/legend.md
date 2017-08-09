@@ -138,11 +138,11 @@ chart.Legend.OffsetY = 30;
 
 ## Legend Orientation
 
-By default, the legend items will be oriented based on the legend dock position for better readability of the legend. However, you can change the orientation of the legend items using [`Orientation`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~Orientation.html) property.
+By default, the legend items will be oriented based on the legend dock position for better readability of the legend. However, you can change the orientation of the legend items using [`ChartOrientation`]() property.
 
 {% highlight c# %} 
 [C#]
 
-chart.Legend.Orientation = Orientation.Horizontal;
+chart.Legend.Orientation = ChartOrientation.Horizontal;
 
 {% endhighlight %}
