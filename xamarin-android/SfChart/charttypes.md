@@ -690,7 +690,7 @@ You can use the following properties to customize the candle segment appearance.
 
 ### Bull and Bear Color
 
-In Candle chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and `setBearFillColor(int)` property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
+In Candle chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and `BearFillColor` property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
 
 {% highlight c# %}
 [C#]
@@ -1208,7 +1208,7 @@ chart.Series.Add(funnelSeries);
 
 ### Gap between the segments
 
-You can control the gap between the two segments using `setGapRatio(float)` property. Its ranges from 0 to 1.
+You can control the gap between the two segments using `GapRatio` property. Its ranges from 0 to 1.
 
 {% highlight c# %} 
 [C#]
