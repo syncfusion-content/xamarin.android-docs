@@ -70,8 +70,8 @@ Currently, Chart supports three types of palette. These predefined palettes are
 {% highlight c# %} 
 [C#]
 
-ColumnSeries columnSeies = new ColumnSeries();
-columnSeies.ColorModel.ColorPalette = ChartColorPalette.Metro;
+ColumnSeries columnSeries = new ColumnSeries();
+columnSeries.ColorModel.ColorPalette = ChartColorPalette.Metro;
 
 {% endhighlight %}
 
@@ -93,9 +93,9 @@ colors.Add(Color.Blue);
 colors.Add(Color.Maroon);
 colors.Add(Color.Pink);
 
-ColumnSeries columnSeies = new ColumnSeries();
-columnSeies.ColorModel.ColorPalette = ChartColorPalette.Custom;
-columnSeies.ColorModel.CustomColors = colors;
+ColumnSeries columnSeries = new ColumnSeries();
+columnSeries.ColorModel.ColorPalette = ChartColorPalette.Custom;
+columnSeries.ColorModel.CustomColors = colors;
 
 {% endhighlight %}
 
