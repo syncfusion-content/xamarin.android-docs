@@ -204,8 +204,6 @@ To render a range column chart, create an instance of `RangeColumnSeries` and ad
 
 Since the `RangeColumnSeries` requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point. 
 
-You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/Android/sfchart/com/syncfusion/charts/ChartDataPoint.html#ChartDataPoint%28Tx,%20Ty,%20Ty%29) three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
-
 {% highlight c# %}
 [C#] 
 
@@ -214,7 +212,7 @@ SfChart chart = new SfChart();
 	
 RangeColumnSeries rangeColumnSeries = new RangeColumnSeries()
 {
-	ItemsSource = data,
+	ItemsSource = Data,
 	XBindingPath = "XValue",
     High = "High",
 	Low = "Low"
@@ -537,8 +535,6 @@ To render a bubble chart, create an instance of `BubbleSeries` and add to the se
 
 Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here `‘Size’` is used to specify the size of each bubble segment. 
 
-You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/Android/sfchart/com/syncfusion/charts/ChartDataPoint.html#ChartDataPoint%28Tx,%20Ty,%20Ty%29) three parameter constructor to pass x, y and size values to  `BubbleSeries`,
-
 {% highlight c# %}
 [C#]
 
@@ -547,7 +543,7 @@ SfChart chart = new SfChart();
 	   
 BubbleSeries bubbleSeries = new BubbleSeries() 
 { 
-	ItemsSource = data,
+	ItemsSource = Data,
 	XBindingPath = "XValue",
     YBindingPath = "YValue",
 	Size = "Size" 
@@ -612,7 +608,7 @@ SfChart chart = new SfChart();
 	   
 HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
 { 
-	ItemsSource = data,
+	ItemsSource = Data,
 	XBindingPath = "XValue",
     High = "High",
 	Low = "Low",
@@ -659,8 +655,6 @@ To render a candle chart, create an instance of `CandleSeries` and add to the se
 
 Candle chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/Android/sfchart/com/syncfusion/charts/ChartDataPoint.html#ChartDataPoint%28Tx,%20Ty,%20Ty,%20Ty,%20Ty%29) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
-
 {% highlight c# %}
 [C#]
 
@@ -669,7 +663,7 @@ SfChart chart = new SfChart();
 	   
 CandleSeries candleSeries = new CandleSeries() 
 { 
-	ItemsSource = data,
+	ItemsSource = Data,
 	XBindingPath = "XValue",
     High = "High",
 	Low = "Low",
@@ -727,7 +721,7 @@ To render a radar chart, create an instance of `RadarSeries` and add to the Seri
 
 RadarSeries radarSeries = new RadarSeries();
 
-radarSeries.ItemsSource = dataPoints;
+radarSeries.ItemsSource = Data;
 
 radarSeries.XBindingPath = "XValue";
 
@@ -753,7 +747,7 @@ You can use the following properties to customize the appearance.
 
 RadarSeries radarSeries = new RadarSeries();
 
-radarSeries.ItemsSource = dataPoints;
+radarSeries.ItemsSource = Data;
 
 radarSeries.XBindingPath = "XValue";
 
@@ -778,7 +772,7 @@ radarSeries.StrokeColor = Color.Blue;
 
 RadarSeries radarSeries = new RadarSeries();
 
-radarSeries.ItemsSource = dataPoints;
+radarSeries.ItemsSource = Data;
 
 radarSeries.XBindingPath = "XValue";
 
@@ -806,7 +800,7 @@ To render a polar chart, create an instance of `PolarSeries` and add to the Seri
 
 PolarSeries polarSeries = new PolarSeries();
 
-polarSeries.ItemsSource = dataPoints;
+polarSeries.ItemsSource = Data;
 
 polarSeries.XBindingPath = "XValue";
 
@@ -832,7 +826,7 @@ You can use the following properties to customize the appearance.
 
 PolarSeries polarSeries = new PolarSeries();
 
-polarSeries.ItemsSource = dataPoints;
+polarSeries.ItemsSource = Data;
 
 polarSeries.XBindingPath = "XValue";
 
@@ -857,7 +851,7 @@ polarSeries.StrokeColor = Color.Blue;
 
 PolarSeries polarSeries = new PolarSeries();
 
-polarSeries.ItemsSource = dataPoints;
+polarSeries.ItemsSource = Data;
 
 polarSeries.XBindingPath = "XValue";
 
