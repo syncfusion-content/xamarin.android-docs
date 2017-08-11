@@ -276,9 +276,9 @@ private void OnColumnSelected(object sender, AdapterView.ItemSelectedEventArgs e
                 var type = prop.GetType();
                 if (prop.PropertyType == typeof(Java.Lang.String))
                 {
-                    condtionAdapter.Clear();
-                    condtionAdapter.Add("Equals");
-                    condtionAdapter.Add("Contains");
+                    conditionAdapter.Clear();
+                    conditionAdapter.Add("Equals");
+                    conditionAdapter.Add("Contains");
                     if (this.viewModel.SelectedCondition == "Equals")
                         this.viewModel.SelectedCondition = "Equals";
                     else
@@ -286,9 +286,9 @@ private void OnColumnSelected(object sender, AdapterView.ItemSelectedEventArgs e
                 }
                 else
                 {
-                    condtionAdapter.Clear();
-                    condtionAdapter.Add("Equals");
-                    condtionAdapter.Add("NotEquals");
+                    conditionAdapter.Clear();
+                    conditionAdapter.Add("Equals");
+                    conditionAdapter.Add("NotEquals");
                     if (this.viewModel.SelectedCondition == "Equals")
                         this.viewModel.SelectedCondition = "Equals";
                     else
@@ -438,17 +438,17 @@ The following code example illustrates how to create a `Spinner` for conditions 
 
 TextView conditionTextView;
 Spinner conditionDropdown;
-ArrayAdapter condtionAdapter;
+ArrayAdapter conditionAdapter;
 
 conditionDropdown = FindViewById<Spinner>(Resource.Id.condition);
 
-condtionAdapter = new ArrayAdapter(BaseContext, Android.Resource.Layout.SimpleSpinnerItem);
-condtionAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-condtionAdapter.Add("Equals");
-condtionAdapter.Add("NotEquals");
-condtionAdapter.Add("Contains");
+conditionAdapter = new ArrayAdapter(BaseContext, Android.Resource.Layout.SimpleSpinnerItem);
+conditionAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+conditionAdapter.Add("Equals");
+conditionAdapter.Add("NotEquals");
+conditionAdapter.Add("Contains");
 
-conditionDropdown.Adapter = condtionAdapter;
+conditionDropdown.Adapter = conditionAdapter;
 conditionDropdown.ItemSelected += OnConditionSelected;
 
 private void OnConditionSelected(object sender, AdapterView.ItemSelectedEventArgs e)
