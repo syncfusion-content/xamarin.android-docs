@@ -152,17 +152,17 @@ By default, we need to define the columns manually by adding the [`KanbanColumn`
 
 We need to set the required property name to [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnMappingPath.html) which will be essential to add the data to the respective columns.
 
-In this example, data whose [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanModel~Category.html) property’s value is set as `Open` will be added to the todoColumn and other data will be added to the respective columns.
+In this example, data whose [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanModel~Category.html) property’s value is set as `Open` will be added to the openColumn and other data will be added to the respective columns.
 
 The following code example illustrates how this can be done.
 
 {% highlight C# %}
 kanban.ColumnMappingPath = "Category"; 
  
-KanbanColumn todoColumn = new KanbanColumn();
-todoColumn.Title = "To Do"; 
-todoColumn.Categories = new List<object>() { "Open" };
-kanban.Columns.Add(todoColumn);  
+KanbanColumn openColumn = new KanbanColumn();
+openColumn.Title = "To Do"; 
+openColumn.Categories = new List<object>() { "Open" };
+kanban.Columns.Add(openColumn);  
 
 KanbanColumn progressColumn = new KanbanColumn();
 progressColumn.Title = "In Progress";  
@@ -186,7 +186,7 @@ When the columns are auto-generated, you can handle the [`ColumnsGenerated`](htt
 
 **Working with workflows**
 
-A Kanban workflow is a set of [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~Category.html) and  [`AllowedTransitions`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~AllowedTransitions.html), that an item moves through during its lifecycle and typically represents processes within your organization.
+A Kanban workflow is a set of [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~Category.html) and  [`AllowedTransitions`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~AllowedTransitions.html), that an item moves through during its life cycle and typically represents processes within your organization.
 
 [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~Category.html) represents a state of an item at a particular point in a specific workflow. An item can be in only one category at a specific point of time.
 
@@ -218,8 +218,8 @@ kanban.Workflows = workflows;
 In column, you can set minimum and maximum items limit by using the [`MinimumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfkanban/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~MaximumLimit.html) properties. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the color of the error bar. 
 
 {% highlight C# %}
-todoColumn.MinimumLimit = 5; 
-todoColumn.MaximumLimit = 10;   
+openColumn.MinimumLimit = 5; 
+openColumn.MaximumLimit = 10;   
 {% endhighlight %}
 
 Following properties are used to customize its appearance.
@@ -230,9 +230,9 @@ Following properties are used to customize its appearance.
 * Height – used to change the height of the error bar
 
 {% highlight C# %}
-todoColumn.ErrorBarSettings.Color = Color.Green; 
-todoColumn.ErrorBarSettings.MinValidationColor = Color.Orange; 
-todoColumn.ErrorBarSettings.MaxValidationColor = Color.Red; 
-todoColumn.ErrorBarSettings.Height = 4;    
+openColumn.ErrorBarSettings.Color = Color.Green; 
+openColumn.ErrorBarSettings.MinValidationColor = Color.Orange; 
+openColumn.ErrorBarSettings.MaxValidationColor = Color.Red; 
+openColumn.ErrorBarSettings.Height = 4;    
 {% endhighlight %}
 
