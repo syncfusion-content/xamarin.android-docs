@@ -18,7 +18,9 @@ SfChart chart = new SfChart();
 ...
 
 FastLineSeries fastLineSeries = new FastLineSeries();
-fastLineSeries.DataSource = Data;
+fastLineSeries.ItemsSource = Data;
+fastLineSeries.XBindingPath = "XValue";
+fastLineSeries.YBindigPath = "YValue;
 
 chart.Series.Add(fastLineSeries);
 
