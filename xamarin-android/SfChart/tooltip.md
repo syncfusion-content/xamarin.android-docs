@@ -19,7 +19,11 @@ SfChart chart = new SfChart();
 
 ColumnSeries columnSeries = new ColumnSeries();
 
-columnSeries.DataSource = Data;
+columnSeries.ItemsSource = Data;
+
+columnSeries.XBindingPath = "XValue";
+
+columnSeries.YBindingPath = "YValue";
 
 columnSeries.TooltipEnabled = true;
 
@@ -55,7 +59,11 @@ SfChart chart = new SfChart();
 
 ColumnSeries columnSeries = new ColumnSeries();
 
-columnSeries.DataSource = Data;
+columnSeries.ItemsSource = Data;
+
+columnSeries.XBindingPath = "XValue";
+
+columnSeries.YBindingPath = "YValue";
 
 columnSeries.TooltipEnabled = true;
 
