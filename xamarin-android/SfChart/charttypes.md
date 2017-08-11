@@ -598,8 +598,6 @@ To render an OHLC chart, create an instance of `HiLoOpenCloseSeries` and add to 
 
 OHLC chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/Android/sfchart/com/syncfusion/charts/ChartDataPoint.html#ChartDataPoint%28Tx,%20Ty,%20Ty,%20Ty,%20Ty%29) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
-
 {% highlight c# %}
 [C#]
 
