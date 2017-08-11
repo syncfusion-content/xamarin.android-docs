@@ -183,4 +183,4 @@ Refer this [link]() to learn more about the options available in [`SfChart`]() t
 
 ![](Getting-Started_images/img2.png)
 
-You can find the complete getting started sample from this [link.]()
+You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Android/Samples/Chart_GettingStarted.zip)
