@@ -18,15 +18,15 @@ The `MinorScaleStyle` and `MajorScaleStyle` properties of `SfDateTimeRangeNaviga
 
 {% highlight c# %}
 [C#]
-SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator();
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 ...
-rangenavigator.MajorScaleStyle.ShowGridLines = true;
-rangenavigator.MajorScaleStyle.GridLineColor =  0xF109D7;
-rangenavigator.MajorScaleStyle.GridLineWidth = 10;
-rangenavigator.MinorScaleStyle.ShowGridLines = true;
-rangenavigator.MinorScaleStyle.GridLineColor = Color.Red;
-rangenavigator.MinorScaleStyle.GridLineWidth = 3;
-rangenavigator.MinorScaleStyle.GridLinePathEffect = new DashPathEffect(new float[] { 4, 4}, 0);
+rangeNavigator.MajorScaleStyle.ShowGridLines = true;
+rangeNavigator.MajorScaleStyle.GridLineColor =  0xF109D7;
+rangeNavigator.MajorScaleStyle.GridLineWidth = 10;
+rangeNavigator.MinorScaleStyle.ShowGridLines = true;
+rangeNavigator.MinorScaleStyle.GridLineColor = Color.Red;
+rangeNavigator.MinorScaleStyle.GridLineWidth = 3;
+rangeNavigator.MinorScaleStyle.GridLinePathEffect = new DashPathEffect(new float[] { 4, 4}, 0);
 {% endhighlight %}
 
 ![](gridline_images/gridline_img1.png)
