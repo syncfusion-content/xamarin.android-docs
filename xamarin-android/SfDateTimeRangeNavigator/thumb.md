@@ -22,18 +22,18 @@ The `LeftThumbStyle` and `RightThumbStyle` properties are used to configure the 
 
 {% highlight c# %}
 [C#]
-SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator(this);
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator(this);
 ...
-rangenavigator.LeftThumbStyle.BackgroundColor = Color.Aqua;
-rangenavigator.LeftThumbStyle.StrokeColor = 0x083928;
-rangenavigator.LeftThumbStyle.StrokeWidth = 3;
-rangenavigator.LeftThumbStyle.LineColor = 0xE70E49;
-rangenavigator.LeftThumbStyle.LineWidth = 5;
-rangenavigator.RightThumbStyle.BackgroundColor = Color.Aqua;
-rangenavigator.RightThumbStyle.StrokeColor = 0x083928;
-rangenavigator.RightThumbStyle.StrokeWidth = 3;
-rangenavigator.RightThumbStyle.LineColor = 0xE70E49;
-rangenavigator.RightThumbStyle.LineWidth = 5;
+rangeNavigator.LeftThumbStyle.BackgroundColor = Color.Aqua;
+rangeNavigator.LeftThumbStyle.StrokeColor = 0x083928;
+rangeNavigator.LeftThumbStyle.StrokeWidth = 3;
+rangeNavigator.LeftThumbStyle.LineColor = 0xE70E49;
+rangeNavigator.LeftThumbStyle.LineWidth = 5;
+rangeNavigator.RightThumbStyle.BackgroundColor = Color.Aqua;
+rangeNavigator.RightThumbStyle.StrokeColor = 0x083928;
+rangeNavigator.RightThumbStyle.StrokeWidth = 3;
+rangeNavigator.RightThumbStyle.LineColor = 0xE70E49;
+rangeNavigator.RightThumbStyle.LineWidth = 5;
 {% endhighlight %}
 
 ![](thumb_images/thumb_img1.png)

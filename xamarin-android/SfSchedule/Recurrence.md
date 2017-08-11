@@ -33,8 +33,8 @@ RecurrenceGenerator/ recurrence builder is available with the control to create 
     ScheduleAppointmentCollection appointmentCollection;
             //..//
             //creating new instance for schedule
-            SfSchedule sfschedule = new SfSchedule(this);
-            sfschedule.ScheduleView = ScheduleView.WeekView;
+            SfSchedule schedule = new SfSchedule(this);
+            schedule.ScheduleView = ScheduleView.WeekView;
             appointmentCollection = new ScheduleAppointmentCollection();
 
 
@@ -83,10 +83,10 @@ RecurrenceGenerator/ recurrence builder is available with the control to create 
 
             //adding appointment to the collection  
             appointmentCollection.Add(appointment1);
-            sfschedule.Appointments = appointmentCollection;
+            schedule.Appointments = appointmentCollection;
 
             // Set our view from the "main" layout resource
-            SetContentView(sfschedule);
+            SetContentView(schedule);
 
 {% endhighlight %}
 
