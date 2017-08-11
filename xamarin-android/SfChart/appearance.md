@@ -15,7 +15,15 @@ documentation: ug
 
 **Predefined Palettes**
 
-Currently, Chart supports only Metro palette and it is the default palette for SfChart. The following screenshot shows the default appearance of multiple series.
+Currently, Chart supports three types of palette and Metro palette is the default palette for SfChart.
+
+These predefined palettes are
+
+* Metro
+* Pineapple
+* TomatoSpectrum
+
+ The following screenshot shows the default appearance of multiple series.
 
 ![](appearance_images/appearance_img1.png)
 
@@ -31,10 +39,10 @@ Following code illustrates how to set the custom colors.
 SfChart chart = new SfChart(this);
 ...
 
-var colors = new List<Integer>();
-colors.Add(new Integer(Color.ParseColor("#FFEAE018")));
-colors.Add(new Integer(Color.ParseColor("#FFB3B1AD")));
-colors.Add(new Integer(Color.ParseColor("#FF8C0707")));
+var colors = new List<Color>();
+colors.Add(Color.ParseColor("#FFEAE018"));
+colors.Add(Color.ParseColor("#FFB3B1AD"));
+colors.Add(Color.ParseColor("#FF8C0707"));
 
 chart.ColorModel.ColorPalette = ChartColorPalette.Custom;
 chart.ColorModel.CustomColors = colors;
@@ -53,13 +61,17 @@ None palette will not apply any color to the series. So in order to define the c
 
 **Predefined Palettes**
 
-Currently, Chart supports only Metro palette.
+Currently, Chart supports three types of palette. These predefined palettes are
+
+* Metro
+* Pineapple
+* TomatoSpectrum
 
 {% highlight c# %} 
 [C#]
 
-ColumnSeries columnSeies = new ColumnSeries();
-columnSeies.ColorModel.ColorPalette = ChartColorPalette.Metro;
+ColumnSeries columnSeries = new ColumnSeries();
+columnSeries.ColorModel.ColorPalette = ChartColorPalette.Metro;
 
 {% endhighlight %}
 
@@ -74,16 +86,16 @@ Following code illustrates how to set the custom colors.
 {% highlight c# %} 
 [C#]
 
-var colors = new List<Integer>();
-colors.Add(new Integer(Color.Red));
-colors.Add(new Integer(Color.Gray));
-colors.Add(new Integer(Color.Blue));
-colors.Add(new Integer(Color.Maroon));
-colors.Add(new Integer(Color.Pink));
+var colors = new List<Color>();
+colors.Add(Color.Red);
+colors.Add(Color.Gray);
+colors.Add(Color.Blue);
+colors.Add(Color.Maroon);
+colors.Add(Color.Pink);
 
-ColumnSeries columnSeies = new ColumnSeries();
-columnSeies.ColorModel.ColorPalette = ChartColorPalette.Custom;
-columnSeies.ColorModel.CustomColors = colors;
+ColumnSeries columnSeries = new ColumnSeries();
+columnSeries.ColorModel.ColorPalette = ChartColorPalette.Custom;
+columnSeries.ColorModel.CustomColors = colors;
 
 {% endhighlight %}
 

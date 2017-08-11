@@ -24,7 +24,9 @@ SfChart chart = new SfChart();
 
 LineSeries lineSeries = new LineSeries()
 {
-	DataSource = Data
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(lineSeries);
 
@@ -48,7 +50,9 @@ SfChart chart = new SfChart();
 
 AreaSeries areaSeries = new AreaSeries()
 {
-	DataSource = Data
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(areaSeries);
 
@@ -72,7 +76,9 @@ SfChart chart = new SfChart();
 
 SplineAreaSeries splineAreaSeries = new SplineAreaSeries()
 {
-	DataSource = Data
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(splineAreaSeries);
 
@@ -96,19 +102,25 @@ SfChart chart = new SfChart();
 
 StackingAreaSeries stackingAreaSeries1 = new StackingAreaSeries()
 {
-	DataSource = Data1
+	ItemsSource = Data1,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingAreaSeries1);
 
 StackingAreaSeries stackingAreaSeries2 = new StackingAreaSeries()
 {
-	DataSource = Data2
+	ItemsSource = Data2,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingAreaSeries2);
 
 StackingAreaSeries stackingAreaSeries3 = new StackingAreaSeries()
 {
-	DataSource = Data3
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingAreaSeries3);
 
@@ -132,19 +144,25 @@ SfChart chart = new SfChart();
 
 StackingArea100Series stackingArea100Series1 = new StackingArea100Series()
 {
-	DataSource = Data1
+	ItemsSource = Data1,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingArea100Series1);
 
 StackingArea100Series stackingArea100Series2 = new StackingArea100Series()
 {
-	DataSource = Data2
+	ItemsSource = Data2,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingArea100Series2);
 
 StackingArea100Series stackingArea100Series3 = new StackingArea100Series()
 {
-	DataSource = Data3
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingArea100Series3);
 
@@ -170,7 +188,9 @@ SfChart chart = new SfChart();
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-	DataSource = Data
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(columnSeries);
 
@@ -184,8 +204,6 @@ To render a range column chart, create an instance of `RangeColumnSeries` and ad
 
 Since the `RangeColumnSeries` requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point. 
 
-You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/Android/sfchart/com/syncfusion/charts/ChartDataPoint.html#ChartDataPoint%28Tx,%20Ty,%20Ty%29) three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
-
 {% highlight c# %}
 [C#] 
 
@@ -194,7 +212,10 @@ SfChart chart = new SfChart();
 	
 RangeColumnSeries rangeColumnSeries = new RangeColumnSeries()
 {
-	DataSource = data;
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    High = "High",
+	Low = "Low"
 }
 	
 chart.Series.Add(rangeColumnSeries);
@@ -227,19 +248,25 @@ SfChart chart = new SfChart();
 
 StackingColumnSeries stackingColumnSeries1 = new StackingColumnSeries()
 {
-	DataSource = Data1
+	ItemsSource = Data1,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingColumnSeries1);
 
 StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries()
 {
-	DataSource = Data2
+	ItemsSource = Data2,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingColumnSeries2);
 
 StackingColumnSeries stackingColumnSeries3 = new StackingColumnSeries()
 {
-	DataSource = Data3
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingColumnSeries3);
 
@@ -265,19 +292,25 @@ SfChart chart = new SfChart();
 
 StackingColumn100Series stackingColumn100Series1 = new StackingColumn100Series()
 {
-	DataSource = Data1
+	ItemsSource = Data1,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingColumn100Series1);
 
 StackingColumn100Series stackingColumn100Series2 = new StackingColumn100Series()
 {
-	DataSource = Data2
+	ItemsSource = Data2,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingColumnSeries2);
 
 StackingColumn100Series stackingColumn100Series3 = new StackingColumn100Series()
 {
-	DataSource = Data3
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingColumn100Series3);
 
@@ -304,7 +337,9 @@ SfChart chart = new SfChart();
 
 BarSeries barSeries = new BarSeries()
 {
-	DataSource = Data
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(barSeries);
 
@@ -330,19 +365,25 @@ SfChart chart = new SfChart();
 
 StackingBarSeries stackingBarSeries1 = new StackingBarSeries()
 {
-	DataSource = Data1
+	ItemsSource = Data1,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingBarSeries1);
 
 StackingBarSeries stackingBarSeries2 = new StackingBarSeries()
 {
-	DataSource = Data2
+	ItemsSource = Data2,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingBarSeries2);
 
 StackingBarSeries stackingBarSeries3 = new StackingBarSeries()
 {
-	DataSource = Data3
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingBarSeries3);
 
@@ -368,19 +409,25 @@ SfChart chart = new SfChart();
 
 StackingBar100Series stackingBar100Series1 = new StackingBar100Series()
 {
-	DataSource = Data1
+	ItemsSource = Data1,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingBar100Series1);
 
 StackingBar100Series stackingBar100Series2 = new StackingBar100Series()
 {
-	DataSource = Data2
+	ItemsSource = Data2,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingBar100Series2);
 
 StackingBar100Series stackingBar100Series3 = new StackingBar100Series()
 {
-	DataSource = Data3
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stackingBar100Series3);
 
@@ -403,7 +450,9 @@ SfChart chart = new SfChart();
 
 SplineSeries splineSeries = new SplineSeries()
 {
-	DataSource = Data
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(splineSeries);
 
@@ -426,7 +475,9 @@ SfChart chart = new SfChart();
 
 FastLineSeries fastLineSeries = new FastLineSeries()
 {
-	DataSource = Data
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(fastLineSeries);
 
@@ -443,7 +494,9 @@ chart.Series.Add(fastLineSeries);
 
 FastLineSeries fastLineSeries = new FastLineSeries() 
 { 
-	DataSource = Data 
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue" 
 };
 fastLineSeries.PathEffect = new DashPathEffect(new float[]{6,6}, 4);
 
@@ -466,7 +519,9 @@ SfChart chart = new SfChart();
 
 StepLineSeries stepLineSeries = new StepLineSeries()
 {
-	DataSource = Data
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(stepLineSeries);
 
@@ -480,8 +535,6 @@ To render a bubble chart, create an instance of `BubbleSeries` and add to the se
 
 Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here `‘Size’` is used to specify the size of each bubble segment. 
 
-You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/Android/sfchart/com/syncfusion/charts/ChartDataPoint.html#ChartDataPoint%28Tx,%20Ty,%20Ty%29) three parameter constructor to pass x, y and size values to  `BubbleSeries`,
-
 {% highlight c# %}
 [C#]
 
@@ -490,7 +543,10 @@ SfChart chart = new SfChart();
 	   
 BubbleSeries bubbleSeries = new BubbleSeries() 
 { 
-	DataSource = data 
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue",
+	Size = "Size" 
 };
 chart.Series.Add(bubbleSeries);
 
@@ -526,7 +582,9 @@ ScatterSeries scatterSeries = new ScatterSeries()
 {
     ScatterHeight = 15,
     ScatterWidth = 15,
-    DataSource = Data
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
 };
 chart.Series.Add(scatterSeries);
 
@@ -540,8 +598,6 @@ To render an OHLC chart, create an instance of `HiLoOpenCloseSeries` and add to 
 
 OHLC chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/Android/sfchart/com/syncfusion/charts/ChartDataPoint.html#ChartDataPoint%28Tx,%20Ty,%20Ty,%20Ty,%20Ty%29) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
-
 {% highlight c# %}
 [C#]
 
@@ -550,7 +606,12 @@ SfChart chart = new SfChart();
 	   
 HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
 { 
-	DataSource = data 
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    High = "High",
+	Low = "Low",
+	Open = "Open",
+	Close = "Close" 
 };
 chart.Series.Add(hiLoOpenCloseSeries);
 
@@ -572,7 +633,12 @@ In OHLC chart, `BullFillColor` property is used to specify a fill color for the 
 
 HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+    High = "High",
+	Low = "Low",
+	Open = "Open",
+	Close = "Close", 
     BearFillColor = Color.Blue,
     BullFillColor = Color.Purple
 };
@@ -587,8 +653,6 @@ To render a candle chart, create an instance of `CandleSeries` and add to the se
 
 Candle chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/Android/sfchart/com/syncfusion/charts/ChartDataPoint.html#ChartDataPoint%28Tx,%20Ty,%20Ty,%20Ty,%20Ty%29) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
-
 {% highlight c# %}
 [C#]
 
@@ -597,7 +661,12 @@ SfChart chart = new SfChart();
 	   
 CandleSeries candleSeries = new CandleSeries() 
 { 
-	DataSource = data 
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    High = "High",
+	Low = "Low",
+	Open = "Open",
+	Close = "Close"  
 };
 chart.Series.Add(candleSeries);
 
@@ -613,14 +682,19 @@ You can use the following properties to customize the candle segment appearance.
 
 ### Bull and Bear Color
 
-In Candle chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and `setBearFillColor(int)` property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
+In Candle chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and `BearFillColor` property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
 
 {% highlight c# %}
 [C#]
 
 CandleSeries candleSeries = new CandleSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+    High = "High",
+	Low = "Low",
+	Open = "Open",
+	Close = "Close", 
     BearFillColor = Color.Blue,
     BullFillColor = Color.Purple
 };
@@ -645,7 +719,11 @@ To render a radar chart, create an instance of `RadarSeries` and add to the Seri
 
 RadarSeries radarSeries = new RadarSeries();
 
-radarSeries.DataSource = dataPoints;
+radarSeries.ItemsSource = Data;
+
+radarSeries.XBindingPath = "XValue";
+
+radarSeries.YBindingPath = "YValue";
 
 radarSeries.DrawType = PolarChartDrawType.Line;
 
@@ -667,7 +745,11 @@ You can use the following properties to customize the appearance.
 
 RadarSeries radarSeries = new RadarSeries();
 
-radarSeries.DataSource = dataPoints;
+radarSeries.ItemsSource = Data;
+
+radarSeries.XBindingPath = "XValue";
+
+radarSeries.YBindingPath = "YValue";
 
 radarSeries.Color = Color.Aqua;
 
@@ -688,7 +770,11 @@ radarSeries.StrokeColor = Color.Blue;
 
 RadarSeries radarSeries = new RadarSeries();
 
-radarSeries.DataSource = dataPoints;
+radarSeries.ItemsSource = Data;
+
+radarSeries.XBindingPath = "XValue";
+
+radarSeries.YBindingPath = "YValue";
 
 radarSeries.Closed = false;
 
@@ -712,7 +798,11 @@ To render a polar chart, create an instance of `PolarSeries` and add to the Seri
 
 PolarSeries polarSeries = new PolarSeries();
 
-polarSeries.DataSource = dataPoints;
+polarSeries.ItemsSource = Data;
+
+polarSeries.XBindingPath = "XValue";
+
+polarSeries.YBindingPath = "YValue";
 
 polarSeries.DrawType = PolarChartDrawType.Line;
 
@@ -734,7 +824,11 @@ You can use the following properties to customize the appearance.
 
 PolarSeries polarSeries = new PolarSeries();
 
-polarSeries.DataSource = dataPoints;
+polarSeries.ItemsSource = Data;
+
+polarSeries.XBindingPath = "XValue";
+
+polarSeries.YBindingPath = "YValue";
 
 polarSeries.Color = Color.Aqua;
 
@@ -755,7 +849,11 @@ polarSeries.StrokeColor = Color.Blue;
 
 PolarSeries polarSeries = new PolarSeries();
 
-polarSeries.DataSource = dataPoints;
+polarSeries.ItemsSource = Data;
+
+polarSeries.XBindingPath = "XValue";
+
+polarSeries.YBindingPath = "YValue";
 
 polarSeries.Closed = false;
 
@@ -780,7 +878,9 @@ SfChart chart = new SfChart();
 
 PieSeries pieSeries = new PieSeries()
 {
-    DataSource = Data
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 };
 chart.Series.Add(pieSeries);
 
@@ -797,7 +897,9 @@ You can use `CircularCoefficient` property to change the diameter of the pie cha
 
 PieSeries pieSeries = new PieSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	CircularCoefficient = 0.5f
 };
 
@@ -814,7 +916,9 @@ You can explode a pie segment using `ExplodeIndex` property and specify the expl
 
 PieSeries pieSeries = new PieSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	ExplodeIndex = 1
 };
 
@@ -832,7 +936,9 @@ Using `ExplodeAll` property of `PieSeries`, you can explode all the pie segments
 
 PieSeries pieSeries = new PieSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	ExplodeAll = true
 };
 
@@ -849,7 +955,9 @@ SfChart allows you to render all the data points/segments in semi-pie, quarter-p
 
 PieSeries pieSeries = new PieSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	StartAngle = 180,
 	EndAngle = 360
 };
@@ -875,7 +983,9 @@ SfChart chart = new SfChart();
 
 DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
-    DataSource = Data
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue"
 };
 chart.Series.Add(doughnutSeries);
 
@@ -892,7 +1002,9 @@ You can change the doughnut chart inner radius using `DoughnutCoefficient` with 
 
 DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	DoughnutCoefficient = 0.6f
 };
 
@@ -909,7 +1021,9 @@ You can use the `CircularCoefficient` property to change the diameter of the dou
 
 DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	CircularCoefficient = 0.5f
 };
 
@@ -926,7 +1040,9 @@ Exploding a specific doughnut segment, you have to set the index to be exploded 
 
 DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	ExplodeIndex = 1
 };
 
@@ -943,7 +1059,9 @@ To explode all the segments, you have to enable `ExplodeAll` property of the ser
 
 DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	ExplodeAll = true
 };
 
@@ -960,7 +1078,9 @@ SfChart allows you to render all the data points/segments in semi-doughnut, quar
 
 DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	StartAngle = 180,
 	EndAngle = 360
 };
@@ -985,7 +1105,9 @@ SfChart chart = new SfChart();
 
 PyramidSeries pyramidSeries = new PyramidSeries()
 {
-    DataSource = Data
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue"
 };
 chart.Series.Add(pyramidSeries);
 
@@ -1002,7 +1124,9 @@ You can render the pyramid series as linear or surface mode. In linear mode, hei
 
 PyramidSeries pyramidSeries = new PyramidSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	PyramidMode = ChartPyramidMode.Surface
 };
 
@@ -1019,7 +1143,9 @@ You can control the gap between the two segments using `GapRatio` property. Its 
 
 PyramidSeries pyramidSeries = new PyramidSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	GapRatio = 0.1f
 };
 
@@ -1036,7 +1162,9 @@ You can explode a pyramid segment using `ExplodeIndex` property, and `ExplodeOff
 
 PyramidSeries pyramidSeries = new PyramidSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	ExplodeIndex = 2
 };
 
@@ -1060,7 +1188,9 @@ SfChart chart = new SfChart();
 
 FunnelSeries funnelSeries = new FunnelSeries()
 {
-    DataSource = Data
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue"
 };
 chart.Series.Add(funnelSeries);
 
@@ -1070,14 +1200,16 @@ chart.Series.Add(funnelSeries);
 
 ### Gap between the segments
 
-You can control the gap between the two segments using `setGapRatio(float)` property. Its ranges from 0 to 1.
+You can control the gap between the two segments using `GapRatio` property. Its ranges from 0 to 1.
 
 {% highlight c# %} 
 [C#]
 
 FunnelSeries funnelSeries = new FunnelSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	GapRatio = 0.1f,
 };
 
@@ -1094,7 +1226,9 @@ You can explode a pyramid segment using `ExplodeIndex` property and `ExplodeOffs
 
 FunnelSeries funnelSeries = new FunnelSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	ExplodeIndex = 1
 };
 
@@ -1110,7 +1244,9 @@ You can change the minimum width of the funnel neck using `MinWidth` property of
 
 FunnelSeries funnelSeries = new FunnelSeries()
 {
-    DataSource = Data,
+    ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
 	MinWidth = 160
 };
 
