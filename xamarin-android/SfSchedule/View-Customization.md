@@ -22,7 +22,7 @@ Schedule Appointment can be customized in two ways,
 
 **Using AppointmentStyle property**
 
-`ScheduleAppointment` can be customized by setting appointmentstyle properties such as TextColor,TextStyle,BorderColor,BorderCornerRadius,BorderWidth,SelectionBorderColor,SelectionTextColor to the `AppointmentStyle` property of schedule.
+`ScheduleAppointment` can be customized by setting appointment style properties such as TextColor,TextStyle,BorderColor,BorderCornerRadius,BorderWidth,SelectionBorderColor,SelectionTextColor to the `AppointmentStyle` property of schedule.
 
 {% highlight C# %}
 
@@ -34,7 +34,7 @@ Schedule Appointment can be customized in two ways,
 	appointmentStyle.BorderWidth = 10;
 	appointmentStyle.SelectionBorderColor = Color.Yellow;
 	appointmentStyle.SelectionTextColor = Color.Yellow;
-	sfschedule.AppointmentStyle = appointmentStyle;
+	schedule.AppointmentStyle = appointmentStyle;
 
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ ScheduleAppointment can be customized using the `appointmentStyle` property as f
 
 {% highlight C# %}
 
-	sfschedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
+	schedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
 	{
 	e.P0.AppointmentStyle.BorderColor = Color.AliceBlue;
 	e.P0.AppointmentStyle.BorderCornerRadius = 5;
@@ -65,7 +65,7 @@ You can also add an object in the appointment view using `view` property passed 
 
 {% highlight C# %}
 
-	sfschedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
+	schedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
 	{
 	Button button = new Button(this);
 	button.SetBackgroundColor(Color.Red);
@@ -98,7 +98,7 @@ MonthView can be customized by setting monthCellStyle properties such as TextCol
 	monthCellStyle.TextColor = Color.Blue;
 	monthCellStyle.TextSize = 12;
 	monthCellStyle.TextStyle = Typeface.DefaultBold;
-	sfschedule.MonthCellStyle = monthCellStyle;
+	schedule.MonthCellStyle = monthCellStyle;
 
 {% endhighlight %}
 
@@ -110,7 +110,7 @@ Month cells can be customized using the `CellStyle` property as follows,
 
 {% highlight C# %}
 
-	sfschedule.MonthCellLoaded += (object sender, SfSchedule.MonthCellLoadedEventArgs e) =>
+	schedule.MonthCellLoaded += (object sender, SfSchedule.MonthCellLoadedEventArgs e) =>
 	{
 	if (e.P0.IsToday)
 	{
@@ -129,7 +129,7 @@ You can also add an object in the month cell view using `View` property passed t
 
 {% highlight C# %}
 
-	sfschedule.MonthCellLoaded += (object sender, SfSchedule.MonthCellLoadedEventArgs e) =>
+	schedule.MonthCellLoaded += (object sender, SfSchedule.MonthCellLoadedEventArgs e) =>
 	{
 	Button button = new Button(this);
 	button.SetBackgroundColor(Color.Red);
@@ -149,7 +149,7 @@ You can able to know the details of appointments in inline using `InlineAppointm
 You can able to customize the inline view style using `MonthInlineLoadedEvent` 
 {% highlight C# %}
 
-	sfschedule.MonthInlineLoadedEvent += (object sender, SfSchedule.MonthInlineLoadedEventArgs e) =>
+	schedule.MonthInlineLoadedEvent += (object sender, SfSchedule.MonthInlineLoadedEventArgs e) =>
 	{
 	MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
 	monthInlineViewStyle.BackgroundColor = Color.ParseColor("#F6F6F6");
@@ -186,7 +186,7 @@ Cells can be selected using customized properties such as `BackgroundColor`, `Bo
 	selectionStyle.BackgroundColor = Color.Blue;
 	selectionStyle.BorderColor = Color.Yellow;
 	selectionStyle.BorderThickness = 5;
-	sfSchedule.SelectionStyle = selectionStyle;
+	schedule.SelectionStyle = selectionStyle;
 
 {% endhighlight %}
 
@@ -201,7 +201,7 @@ Also custom view can be passed using the `SelectionView` in Schedule.
 	button.SetTextColor(Color.White);
 	button.Gravity = GravityFlags.Left;
 	button.SetBackgroundColor(Color.ForestGreen);
-	sfSchedule.SelectionView = button;
+	schedule.SelectionView = button;
 
 {% endhighlight %}
 

@@ -142,9 +142,9 @@ All-day appointment doesn't block out entire time slot in SfSchedule, rather it 
             schedule.ScheduleView = ScheduleView.WeekView;
 
    	    //Creating week view settings for SfSchedule WeekView 
-            WeekViewSettings weekViewSeetings = new WeekViewSettings();
-            weekViewSeetings.ShowAllDay = true;
-            schedule.WeekViewSettings = weekViewSeetings; 
+            WeekViewSettings weekViewSettings = new WeekViewSettings();
+            weekViewSettings.ShowAllDay = true;
+            schedule.WeekViewSettings = weekViewSettings; 
 
 {% endhighlight %} 
 
@@ -153,7 +153,7 @@ of the respective view settings.
 
 {% highlight c# %}
 
-            weekViewSeetings.AllDayAppointmentBackgroundColor = Color.Silver; 
+            weekViewSettings.AllDayAppointmentBackgroundColor = Color.Silver; 
 
 {% endhighlight %} 
 
