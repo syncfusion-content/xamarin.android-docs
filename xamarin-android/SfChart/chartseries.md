@@ -21,19 +21,25 @@ SfChart chart = new SfChart();
 
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
-	DataSource = Data1
+	ItemsSource = Data1,
+    XBindingPath = "Country",
+    YBindingPath = "Count"
 };
 chart.Series.Add(columnSeries1);
 
 ColumnSeries columnSeries2 = new ColumnSeries()
 {
-	DataSource = Data2
+	ItemsSource = Data2,
+	XBindingPath = "Country",
+    YBindingPath = "Count"
 };
 chart.Series.Add(columnSeries2);
 
 ColumnSeries columnSeries3 = new ColumnSeries()
 {
-	DataSource = Data3
+	ItemsSource = Data3,
+	XBindingPath = "Country",
+    YBindingPath = "Count"
 };
 chart.Series.Add(columnSeries3);
 
@@ -53,13 +59,17 @@ SfChart chart = new SfChart();
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-	DataSource = Data1
+	ItemsSource = Data1,
+	XBindingPath = "Month",
+    YBindingPath = "Unit"
 };
 chart.Series.Add(columnSeries);
 
 LineSeries lineSeries = new LineSeries()
 {
-	DataSource = Data2
+	ItemsSource = Data2,
+	XBindingPath = "Month",
+    YBindingPath = "Unit"
 };
 
 {% endhighlight %}
@@ -80,13 +90,17 @@ SfChart chart = new SfChart();
 
 LineSeries lineSeries = new LineSeries()
 {
-	DataSource = Data1
+	ItemsSource = Data1,
+	XBindingPath = "Month",
+    YBindingPath = "Unit"
 };
 chart.Series.Add(lineSeries);
 
 PieSeries pieSeries = new PieSeries()
 {
-	DataSource = Data2
+	ItemsSource = Data2,
+	XBindingPath = "Month",
+    YBindingPath = "Unit"
 };
 chart.Series.Add(pieSeries);
 
@@ -102,25 +116,33 @@ You can group and stack the similar stacked series types using [`GroupingLabel`]
 [C#]
 
 StackingColumnSeries stackingColumnSeries1 = new StackingColumnSeries();
-stackingColumnSeries1.DataSource = Data1;
+stackingColumnSeries1.ItemsSource = Data1;
+stackingColumnSeries1.XBindingPath = "Year";
+stackingColumnSeries1.YBindingPath = "Visitors";
 stackingColumnSeries1.GroupingLabel = "GroupOne";
 stackingColumnSeries1.Label = "Google";
 chart.Series.Add(stackingColumnSeries1);
 
 StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries();
-stackingColumnSeries2.DataSource = Data2;
+stackingColumnSeries2.ItemsSource = Data2;
+stackingColumnSeries2.XBindingPath = "Year";
+stackingColumnSeries2.YBindingPath = "Visitors";
 stackingColumnSeries2.GroupingLabel = "GroupTwo";
 stackingColumnSeries2.Label = "Bing";
 chart.Series.Add(stackingColumnSeries2);
 
 StackingColumnSeries stackingColumnSeries3 = new StackingColumnSeries();
-stackingColumnSeries3.DataSource = Data3;
+stackingColumnSeries3.ItemsSource = Data3;
+stackingColumnSeries3.XBindingPath = "Year";
+stackingColumnSeries3.YBindingPath = "Visitors";
 stackingColumnSeries3.GroupingLabel = "GroupOne";
 stackingColumnSeries3.Label = "Yahoo";
 chart.Series.Add(stackingColumnSeries3);
 
 StackingColumnSeries stackingColumnSeries4 = new StackingColumnSeries();
-stackingColumnSeries4.DataSource = Data4;
+stackingColumnSeries4.ItemsSource = Data4;
+stackingColumnSeries4.XBindingPath = "Year";
+stackingColumnSeries4.YBindingPath = "Visitors";
 stackingColumnSeries4.GroupingLabel = "GroupTwo";
 stackingColumnSeries4.Label = "Ask";
 chart.Series.Add(stackingColumnSeries4);

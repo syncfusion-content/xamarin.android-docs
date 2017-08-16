@@ -20,10 +20,10 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	SfSchedule schedule = new SfSchedule(this);
 	
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.DayView;
+	schedule.ScheduleView = ScheduleView.DayView;
 
 	//setting non-accessing blocks.
 	NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
@@ -34,10 +34,10 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 	lunchHour.Text="LUNCH";
 	nonAccessibleBlocksCollection.Add(lunchHour);
 	dayViewSettings.NonAccessibleBlocks=nonAccessibleBlocksCollection;
-	sfschedule.DayViewSettings=dayViewSettings;
+	schedule.DayViewSettings=dayViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -48,10 +48,10 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WeekView;
+	schedule.ScheduleView = ScheduleView.WeekView;
 
 	//setting non-accessing blocks.
 	NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
@@ -63,10 +63,10 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 	nonAccessibleBlocksCollection.Add(lunchHour);
 	weekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
 
-	sfschedule.WeekViewSettings = weekViewSettings;
+	schedule.WeekViewSettings = weekViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -77,10 +77,10 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+	schedule.ScheduleView = ScheduleView.WorkWeekView;
 
 	//setting non-accessing blocks.
 	NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
@@ -92,10 +92,10 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
 	nonAccessibleBlocksCollection.Add(lunchHour);
 	workWeekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
 
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -108,10 +108,10 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.MonthView;
+	schedule.ScheduleView = ScheduleView.MonthView;
 
 	//setting month view settings properties
 	MonthViewSettings monthViewSettings = new MonthViewSettings();
@@ -141,10 +141,10 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
 	blackDatesCollection.Add(thirdDate);
 	monthViewSettings.BlackoutDates = blackDatesCollection;
 
-	sfschedule.MonthViewSettings = monthViewSettings;
+	schedule.MonthViewSettings = monthViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 

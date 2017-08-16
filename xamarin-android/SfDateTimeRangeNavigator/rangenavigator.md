@@ -21,7 +21,7 @@ N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Android project,
 
-android\Syncfusion.SfChart.Andriod.dll
+android\Syncfusion.SfChart.Android.dll
 
 ## Add and configure the SfDateTimeRangeNavigator 
 

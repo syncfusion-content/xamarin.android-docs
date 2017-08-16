@@ -18,13 +18,13 @@ Day view is used to display a single day; current day will be visible by default
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.DayView;
+	schedule.ScheduleView = ScheduleView.DayView;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -39,19 +39,19 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.DayView;
+	schedule.ScheduleView = ScheduleView.DayView;
 
 	//setting day view settings properties
 	DayViewSettings dayViewSettings = new DayViewSettings();
 	dayViewSettings.WorkStartHour=10;
 	dayViewSettings.WorkEndHour=18;
-	sfschedule.DayViewSettings=dayViewSettings;
+	schedule.DayViewSettings=dayViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -64,19 +64,19 @@ You can also differentiate working hours with non-working hour timeslots by its 
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.DayView;
+	schedule.ScheduleView = ScheduleView.DayView;
 
 	//setting day view settings properties
 	DayViewSettings dayViewSettings = new DayViewSettings();
 	dayViewSettings.WorkStartHour = 10;
 	dayViewSettings.WorkEndHour = 18;
-	sfschedule.DayViewSettings=dayViewSettings;
+	schedule.DayViewSettings=dayViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -87,18 +87,18 @@ You can view All day appointments in separate panel and the panels visibility ca
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.DayView;
+	schedule.ScheduleView = ScheduleView.DayView;
 
 	//setting day view settings properties
 	DayViewSettings dayViewSettings = new DayViewSettings();
 	dayViewSettings.ShowAllDay=true;
-	sfschedule.DayViewSettings=dayViewSettings;
+	schedule.DayViewSettings=dayViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -113,13 +113,13 @@ To view all the seven days of a particular week, by default if will be current w
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WeekView;
+	schedule.ScheduleView = ScheduleView.WeekView;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -134,10 +134,10 @@ Also you can differentiate the timeslot panel using `VerticalLineColor` and `Ver
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WeekView;
+	schedule.ScheduleView = ScheduleView.WeekView;
 
 	//setting label size and formats
 	WeekLabelSettings weekLabelSettings = new WeekLabelSettings();
@@ -147,10 +147,10 @@ Also you can differentiate the timeslot panel using `VerticalLineColor` and `Ver
 	weekLabelSettings.DayFormat = "EEEE";
 	weekLabelSettings.TimeFormat = "hh:mm a ";
 	weekViewSettings.WeekLabelSettings = weekLabelSettings;
-	sfschedule.WeekViewSettings = weekViewSettings;
+	schedule.WeekViewSettings = weekViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -163,19 +163,19 @@ You can also differentiate working hours with non-working hour timeslots by its 
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WeekView;
+	schedule.ScheduleView = ScheduleView.WeekView;
 
 	//setting week view settings properties
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
 	weekViewSettings.WorkStartHour = 10;
 	weekViewSettings.WorkEndHour = 18;
-	sfschedule.WeekViewSettings = weekViewSettings;
+	schedule.WeekViewSettings = weekViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -186,19 +186,19 @@ You can view All day appointments in separate panel and the panels visibility ca
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WeekView;
+	schedule.ScheduleView = ScheduleView.WeekView;
 
 	//setting week view settings properties
 	WeekViewSettings weekViewSettings = new WeekViewSettings();
 	weekViewSettings.ShowAllDay = true;
 
-	sfschedule.WeekViewSettings = weekViewSettings;
+	schedule.WeekViewSettings = weekViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -211,13 +211,13 @@ To view working days of a particular week, by default current work week will be 
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+	schedule.ScheduleView = ScheduleView.WorkWeekView;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -230,10 +230,10 @@ You can format the date and time string in the schedule control using `WorkWeekL
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+	schedule.ScheduleView = ScheduleView.WorkWeekView;
 	//setting label size and formats
 	WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
 	workWeekLabelSettings.TimeLabelSize = 14;
@@ -243,10 +243,10 @@ You can format the date and time string in the schedule control using `WorkWeekL
 	workWeekLabelSettings.TimeFormat = "hh:mm a ";
 	workWeekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
 
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -259,19 +259,19 @@ You can also differentiate working hours with non-working hour timeslots by its 
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+	schedule.ScheduleView = ScheduleView.WorkWeekView;
 
 	//setting workweek view settings properties
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();	
 	workWeekViewSettings.WorkStartHour = 10;
 	workWeekViewSettings.WorkEndHour = 18;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -282,18 +282,18 @@ You can view All day appointments in separate panel and the panels visibility ca
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+	schedule.ScheduleView = ScheduleView.WorkWeekView;
 
 	//setting workweek view settings properties
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
 	workWeekViewSettings.ShowAllDay = true;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -310,13 +310,13 @@ To view entire dates of a particular month, by default current month will be dis
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.MonthView;
+	schedule.ScheduleView = ScheduleView.MonthView;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -328,11 +328,11 @@ By enabling Inline feature in month view, while touch the month view cell, appoi
 
 {% highlight c# %}
 
-	SfSchedule sfschedule = new SfSchedule(this);
-	sfschedule.ScheduleView = ScheduleView.WeekView;
+	SfSchedule schedule = new SfSchedule(this);
+	schedule.ScheduleView = ScheduleView.WeekView;
 
 	//setting Show inline 
-	sfchedule.MonthViewSettings.ShowAppointmentsInline = true;
+	schedule.MonthViewSettings.ShowAppointmentsInline = true;
 
 {% endhighlight %}
 
@@ -367,7 +367,7 @@ You can able to know the details of appointments in inline using `InlineAppointm
 	MonthViewSettings monthViewSettings = new MonthViewSettings();
 	//To navigate vertically
 	monthViewSettings.MonthNavigationDirection =  MonthNavigationDirections.Vertical;
-	sfschedule.MonthViewSettings = monthViewSettings;
+	schedule.MonthViewSettings = monthViewSettings;
 
 {% endhighlight %}
 
@@ -380,10 +380,10 @@ You can format the date and time string in the schedule control using `MonthLabe
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.MonthView;
+	schedule.ScheduleView = ScheduleView.MonthView;
 
 	//setting month view settings properties
 	MonthViewSettings monthViewSettings = new MonthViewSettings();
@@ -395,10 +395,10 @@ You can format the date and time string in the schedule control using `MonthLabe
 	monthLabelSettings.DateLabelSize=26;
 	monthLabelSettings.DateFormat="dd";
 	monthViewSettings.MonthLabelSettings = monthLabelSettings;
-	sfschedule.MonthViewSettings = monthViewSettings;
+	schedule.MonthViewSettings = monthViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -409,18 +409,18 @@ You display the week number of the year in month view by setting `ShowWeekNumber
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.MonthView;
+	schedule.ScheduleView = ScheduleView.MonthView;
 
 	//setting month view settings properties
 	MonthViewSettings monthViewSettings = new MonthViewSettings();
 	monthViewSettings.ShowWeekNumber=true;
-	sfschedule.MonthViewSettings = monthViewSettings;
+	schedule.MonthViewSettings = monthViewSettings;
 
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
@@ -431,23 +431,23 @@ You can customize the number of appointments to be rendered inside a month view 
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	schedule = new SfSchedule(this);
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.MonthView;
+	schedule.ScheduleView = ScheduleView.MonthView;
 
 	//setting month view settings properties
 	MonthViewSettings monthViewSettings = new MonthViewSettings();
 	monthViewSettings.VisibleCellAppointmentsCount = 10;
-	sfschedule.MonthViewSettings = monthViewSettings;
+	schedule.MonthViewSettings = monthViewSettings;
 	
 	// Set our view from the "main" layout resource
-	SetContentView(sfschedule);
+	SetContentView(schedule);
 
 {% endhighlight %}
 
 ### Month cell customization
 
-You can customize the month cells of MonthView using vaious properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization")
+You can customize the month cells of MonthView using various properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization")
 
 ![](Views_images/MonthView.png)
