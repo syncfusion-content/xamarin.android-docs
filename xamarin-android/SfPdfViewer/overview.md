@@ -1,19 +1,23 @@
 ---
 platform: Xamarin.Android
-control: PDF viewer
+control: SfPdfViewer
 ---
 
 # PDF Viewer
 
-Essential PDF viewer for Xamarin is a new control that allows PDF documents to be viewed within your Xamarin.Android applications.
+PDF Viewer for Xamarin.Android allows the user to view PDF documents within your Xamarin.Android application. 
 
 ![](pdfviewer_images/pdfviewer.png)
 
-## Key Features
+**Key features:**
 
-Here is a quick summary of the features available in Essential PDF viewer.
+The following list shows the key features available in PDF Viewer control.
 
-* View PDF files.
-* Navigate through the pages seamlessly.
-* Magnification support.
-* Virtualized pages.
+* View PDF documents
+* Search a text in PDF document
+* Select text and copy it to clipboard
+* Scroll, pan, zoom in and out
+* Page navigation
+
+N>**PDF Viewer for Xamarin.Android will be supported from Android 5.0 (API Level 21) onwards.
+
