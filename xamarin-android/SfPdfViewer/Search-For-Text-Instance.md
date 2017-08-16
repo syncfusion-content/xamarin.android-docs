@@ -2,68 +2,174 @@
 layout: post
 title:  Search for a text instance
 description: search for a text instance
-platform: Xamarin.Forms
+platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug
 ---
 
 # Search for a text instance
 
-PDF Viewer provides support to find and highlight texts in the PDF document and it provides the following commands to perform text search operation.
+PDF Viewer provides support to find and highlight texts in the PDF document and it provides the following methods to perform text search operations.
 
 <table>
 
 <tr>
-<th>Command/Binding property</th>
-<th>Action</th>
+<td>SearchText</td>
+<td>Initiates text search and highlights all the matches of the searched text in the whole document.</td>
 </tr>
 
 <tr>
-<td>SearchTextCommand</td>
-<td>Command that is executed to search for the specified text instance that is provided as the command parameter.</td>
+<td>SearchNext</td>
+<td>Used to initiate text search and to traverse through the matches of the searched text in downwards direction.</td>
 </tr>
 
 <tr>
-<td>CancelSearchCommand</td>
-<td>Command that is executed to cancel the text search operation when it is in progress and used to clear the highlighted text instances when the text search is completed.</td>
+<td>SearchPrevious</td>
+<td>Used to initiate text search and to traverse through the matches of the searched text in upward direction.</td>
 </tr>
 
 <tr>
-<td>SearchNextTextCommand</td>
-<td>Command that is executed to navigate to the next text instance being searched.</td>
-</tr>
-
-<tr>
-<td>SearchPreviousTextCommand</td>
-<td>Command that is executed to navigate to the previous text instance of the text.</td>
+<td>CancelSearch</td>
+<td>Used to cancel the text search when text search is in progress and used to clear the highlights over the text matches.</td>
 </tr>
 
 </table>
 
 ## How to initiate text search?
 
-SearchTextCommand is used to initiate the text search, it takes the text to be searched as a parameter. The command searches for the text in the current page and highlights all the instances of the texts in complete document.
+SearchText method can be used to initiate text search operation. The text to be searched is provided as a parameter to this method.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Entry x:Name="textSearchEntry" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalOptions="Center"/>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="1"
+            android:layout_height="50dp">
+    <EditText
+            android:id="@+id/search"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="15dip"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/SearchEntry"
+            android:gravity="left" />
+    </GridLayout>
+  </FrameLayout>
 
-<Button x:Name="searchTextButton" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchTextCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
 
 {% endhighlight %}
 {% endtabs %}
 
-Here the text entered in the textSearchEntry control is provided as the parameter to the SearchTextCommand. 
+
+{% tabs %}
+{% highlight c# %}
+
+EditText searchView;
+SfPdfViewer pdfViewer;
+
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    
+    //Access the controls in the design.
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    searchView = FindViewById<EditText>(Resource.Id.search);
+
+    searchView.FocusableInTouchMode = true;
+    searchView.TextSize = 18;
+    searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
+    searchView.TextAlignment = TextAlignment.Center;
+    //Wireup KeyPress event with SearchView_KeyPress
+    searchView.KeyPress += SearchView_KeyPress;
+
+    //Access the document in the resource as stream and load it in the PDF viewer.
+    Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
+    pdfViewer.LoadDocument(PdfStream);
+}
+
+private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
+{   
+    //Condition passes when the search icon on the keyboard is being tapped.
+    if (e.KeyCode == Keycode.Enter)
+    {
+        //Checks whether the entered string is empty or has only space character.
+        if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
+        {
+            searchText = searchView.Text;
+            //Initiates text search.
+            pdfViewer.SearchText(searchText);
+        }
+        InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+        inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ## How to identify if there is no instance of the text being searched?
 
-SearchCompleted event of the PDF viewer can be used to identify if no instance of the searched text is found in the PDF document. This event has an event argument “NoMatchFound”, when this it is true it means that the document does not have any match to the text searched and vice versa.
+SearchCompleted event in the PDF viewer can be used to track the completion of the text search operation, NoMatchFound property of TextSearchEventArgs (event argument of this event) can be used to find if no match of text is being found.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}" SearchCompleted="pdfViewerControl_SearchCompleted" />
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="1"
+            android:layout_height="50dp">
+    <EditText
+            android:id="@+id/search"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="15dip"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/SearchEntry"
+            android:gravity="left" />
+    </GridLayout>
+  </FrameLayout>
+
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
 
 {% endhighlight %}
 {% endtabs %}
@@ -71,7 +177,51 @@ SearchCompleted event of the PDF viewer can be used to identify if no instance o
 {% tabs %}
 {% highlight c# %}
 
-private void pdfViewerControl_SearchCompleted(object sender, TextSearchEventArgs args)
+EditText searchView;
+SfPdfViewer pdfViewer;
+
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    
+    //Access the controls in the design.
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    searchView = FindViewById<EditText>(Resource.Id.search);
+
+    searchView.FocusableInTouchMode = true;
+    searchView.TextSize = 18;
+    searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
+    searchView.TextAlignment = TextAlignment.Center;
+
+    //Wireup KeyPress event with SearchView_KeyPress
+    searchView.KeyPress += SearchView_KeyPress;
+    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
+
+    //Access the document in the resource as stream and load it in the PDF viewer.
+    Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
+    pdfViewer.LoadDocument(PdfStream);
+}
+
+private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
+{   
+    //Condition passes when the search icon on the keyboard is being tapped.
+    if (e.KeyCode == Keycode.Enter)
+    {
+        //Checks whether the entered string is empty or has only space character.
+        if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
+        {
+            searchText = searchView.Text;
+            //Initiates text search.
+            pdfViewer.SearchText(searchText);
+        }
+        InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+        inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+    }
+}
+
+private void PdfViewer_SearchCompleted(object sender, TextSearchEventArgs args)
 {
     bool isNoMatchFound = args.NoMatchFound;
 }
@@ -79,50 +229,175 @@ private void pdfViewerControl_SearchCompleted(object sender, TextSearchEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-## How to navigate to the next instance of the text?
+## How to navigate to the next match of the text?
 
-SearchNextTextCommand is used to navigate to the next text instances in the PDF document. This command will highlight the current instance of the text with dark blue and all other instances in light blue. On executing the command continuously, the highlighted instance will navigate down the pages.
+SearchNext method of PDF viewer can be used to navigate to the successive match of the text in the PDF document. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<Entry x:Name="textSearchEntry" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalOptions="Center"/>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="1"
+            android:layout_height="50dp">
+    <EditText
+            android:id="@+id/search"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="15dip"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/SearchEntry"
+            android:gravity="left" />
+        <ImageButton
+          android:id="@+id/textSearchButton"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:background="#E9E9E9"
+          android:src="@drawable/SearchIcon"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:layout_marginRight="20dip"
+          android:layout_marginBottom="10dip"
+          android:layout_gravity="right" />
+    </GridLayout>
+  </FrameLayout>
 
-<Button x:Name="searchTextButton" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchNextTextCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
 
 {% endhighlight %}
 {% endtabs %}
 
-This command works both with and without a parameter. When a text parameter is provided to this command, it searches for the text provided as the parameter, when no parameter is sent to this command, it searches for the text that is provided as the parameter to the SearchTextCommand.
-
-## How to navigate to the previous instance of the text?
-
-SearchPreviousTextCommand is used to navigate to the previous text instances in the PDF document. This command will highlight the current instance of the text with dark blue and all other instances in light blue. On executing the command continuously, the highlighted instance will navigate upwards in the pages.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight c# %}
 
-<Entry x:Name="textSearchEntry" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalOptions="Center"/>
+EditText searchView;
+SfPdfViewer pdfViewer;
+ImageButton textSearchButton;
 
-<Button x:Name="searchTextButton" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchPreviousTextCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    
+    //Access the controls in the design.
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    searchView = FindViewById<EditText>(Resource.Id.search);
+    textSearchButton= FindViewById<ImageButton>(Resource.Id.textSearchButton);
+
+    searchView.FocusableInTouchMode = true;
+    searchView.TextSize = 18;
+    searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
+    searchView.TextAlignment = TextAlignment.Center;
+
+    //Wireup KeyPress event with SearchView_KeyPress
+    searchView.KeyPress += SearchView_KeyPress;
+    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
+    //Wireup Click event with TextSearchButton_Click
+    textSearchButton.Click += TextSearchButton_Click;
+    
+    //Access the document in the resource as stream and load it in the PDF viewer.
+    Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
+    pdfViewer.LoadDocument(PdfStream);
+}
+
+private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
+{   
+    //Condition passes when the search icon on the keyboard is being tapped.
+    if (e.KeyCode == Keycode.Enter)
+    {
+        //Checks whether the entered string is empty or has only space character.
+        if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
+        {
+            searchText = searchView.Text;
+            //Initiates text search.
+            pdfViewer.SearchText(searchText);
+        }
+        InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+        inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+    }
+}
+
+private void TextSearchButton_Click(object sender, System.EventArgs e)
+{
+    //Navigates to the successive matches of the text.
+    pdfViewer.SearchNext(searchView.Text);
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-This command works both with and without a parameter. When a text parameter is provided to this command, it searches for the text provided as the parameter, when no parameter is sent to this command, it searches for the text that is provided as the parameter to the SearchTextCommand. 
+## How to navigate to the previous match of the text?
 
-## How to identify if a complete cycle of text search is performed?
-
-The first instance of the text in the page the text search is initiated is the first instance of the text, this first instance would be reset when we manually scroll the PDF document while navigating using the SearchNextTextCommand or SearchPreviousTextCommand. 
-
-When the search happens to hit the first instance again, the NoMoreOccurrence property of the TextSearchEventArgs of SearchCompleted event will be set to true.
-
-For instance, if the text search is initiated at page 10 of a PDF document, the first instance in the page 10 will be considered as the first instance, on the occurrence of the same instance again in the cycle of text search NoMoreOccurrence property will be set to true.
+SearchPrevious method of PDF viewer can be used to navigate to the previous match of the text in the PDF document. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}" SearchCompleted="pdfViewerControl_SearchCompleted" />
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="1"
+            android:layout_height="50dp">
+    <EditText
+            android:id="@+id/search"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="15dip"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/SearchEntry"
+            android:gravity="left" />
+        <ImageButton
+          android:id="@+id/textSearchButton"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:background="#E9E9E9"
+          android:src="@drawable/SearchIcon"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:layout_marginRight="20dip"
+          android:layout_marginBottom="10dip"
+          android:layout_gravity="right" />
+    </GridLayout>
+  </FrameLayout>
+
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
 
 {% endhighlight %}
 {% endtabs %}
@@ -130,7 +405,165 @@ For instance, if the text search is initiated at page 10 of a PDF document, the 
 {% tabs %}
 {% highlight c# %}
 
-private void pdfViewerControl_SearchCompleted(object sender, TextSearchEventArgs args)
+EditText searchView;
+SfPdfViewer pdfViewer;
+ImageButton textSearchButton;
+
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    
+    //Access the controls in the design.
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    searchView = FindViewById<EditText>(Resource.Id.search);
+    textSearchButton= FindViewById<ImageButton>(Resource.Id.textSearchButton);
+
+    searchView.FocusableInTouchMode = true;
+    searchView.TextSize = 18;
+    searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
+    searchView.TextAlignment = TextAlignment.Center;
+
+    //Wireup KeyPress event with SearchView_KeyPress
+    searchView.KeyPress += SearchView_KeyPress;
+    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
+    //Wireup Click event with TextSearchButton_Click
+    textSearchButton.Click += TextSearchButton_Click;
+    
+    //Access the document in the resource as stream and load it in the PDF viewer.
+    Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
+    pdfViewer.LoadDocument(PdfStream);
+}
+
+private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
+{   
+    //Condition passes when the search icon on the keyboard is being tapped.
+    if (e.KeyCode == Keycode.Enter)
+    {
+        //Checks whether the entered string is empty or has only space character.
+        if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
+        {
+            searchText = searchView.Text;
+            //Initiates text search.
+            pdfViewer.SearchText(searchText);
+        }
+        InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+        inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+    }
+}
+
+private void TextSearchButton_Click(object sender, System.EventArgs e)
+{
+    //Navigates to the previous matches of the text.
+    pdfViewer.SearchPrevious(searchView.Text);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to identify if a complete cycle of text search is performed?
+
+Text search operation will start the process from the current page being displayed, then process the succeeding pages till last page of the document and then process the initial left-over pages if any.
+
+For example, consider a PDF document which consists of 20 pages and the user initiates the text search operation from the page 10 (current page being displayed). 
+
+* Now PDF viewer control will process the current page (page number 10) and highlight the matches if any
+* Then the following pages from page 11 to 20 one by one will be processed and highlight the matches if any
+* Once the end of the document is reached, the search will get started from page 1 to 9
+* When the search process, finds the same matching instance again, then the NoMoreOccurrence property of the TextSearchEventArgs of SearchCompleted event will be set to true.
+
+When we manually scroll the PDF document while navigating using the SearchNext() or SearchPrevious(), the search cycle will get restarted from the first matching instance of current page. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="1"
+            android:layout_height="50dp">
+    <EditText
+            android:id="@+id/search"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="15dip"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/SearchEntry"
+            android:gravity="left" />
+    </GridLayout>
+  </FrameLayout>
+
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+EditText searchView;
+SfPdfViewer pdfViewer;
+
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    
+    //Access the controls in the design.
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    searchView = FindViewById<EditText>(Resource.Id.search);
+
+    searchView.FocusableInTouchMode = true;
+    searchView.TextSize = 18;
+    searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
+    searchView.TextAlignment = TextAlignment.Center;
+
+    //Wireup KeyPress event with SearchView_KeyPress
+    searchView.KeyPress += SearchView_KeyPress;
+    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
+
+    //Access the document in the resource as stream and load it in the PDF viewer.
+    Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
+    pdfViewer.LoadDocument(PdfStream);
+}
+
+private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
+{   
+    //Condition passes when the search icon on the keyboard is being tapped.
+    if (e.KeyCode == Keycode.Enter)
+    {
+        //Checks whether the entered string is empty or has only space character.
+        if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
+        {
+            searchText = searchView.Text;
+            //Initiates text search.
+            pdfViewer.SearchText(searchText);
+        }
+        InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+        inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+    }
+}
+
+private void PdfViewer_SearchCompleted(object sender, TextSearchEventArgs args)
 {
     bool isNoMoreOccurrenceFound = args.NoMoreOccurrence;
 }
@@ -140,12 +573,102 @@ private void pdfViewerControl_SearchCompleted(object sender, TextSearchEventArgs
 
 ## How to cancel text search?
 
-CancelTextSearchCommand is used to cancel the text search progress. When the text search is in progress this command can be used to cancel the same, when text search is completed, this command can be used to clear all the highlighted texts in the PDF viewer.
+CancelSearch method can be used to cancel the text search progress. When the text search is in progress this method can be used to cancel the same, when text search is completed, this command can be used to clear all the highlighted texts in the PDF viewer.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Button x:Name="cancelSearchButton" Grid.Column="3" BackgroundColor="Transparent" Image="CancelSearch.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding CancelTextSearchCommand, Source={x:Reference Name=pdfViewerControl}}"/>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout>
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="15dip"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/SearchEntry"
+            android:gravity="left" />
+        <ImageButton
+            android:id="@+id/clearSearchResult"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/CancelSearch"
+            android:background="#E9E9E9"
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="1dp"
+            android:layout_gravity="right|center_vertical" />
+      </FrameLayout>
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+EditText searchView;
+SfPdfViewer pdfViewer;
+ImageButton clearSearchButton;
+
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    
+    //Access the controls in the design.
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    searchView = FindViewById<EditText>(Resource.Id.search);
+    clearSearchButton = FindViewById<ImageButton>(Resource.Id.clearSearchResult);
+
+    searchView.FocusableInTouchMode = true;
+    searchView.TextSize = 18;
+    searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
+    searchView.TextAlignment = TextAlignment.Center;
+
+    //Wireup KeyPress event with SearchView_KeyPress
+    searchView.KeyPress += SearchView_KeyPress;
+    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
+    //Wireup Click event with ClearSearchButton_Click
+    clearSearchButton.Click += ClearSearchButton_Click;
+
+    //Access the document in the resource as stream and load it in the PDF viewer.
+    Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
+    pdfViewer.LoadDocument(PdfStream);
+}
+
+private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
+{   
+    //Condition passes when the search icon on the keyboard is being tapped.
+    if (e.KeyCode == Keycode.Enter)
+    {
+        //Checks whether the entered string is empty or has only space character.
+        if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
+        {
+            searchText = searchView.Text;
+            //Initiates text search.
+            pdfViewer.SearchText(searchText);
+        }
+        InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+        inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+    }
+}
+
+private void ClearSearchButton_Click (object sender, TextSearchEventArgs args)
+{
+    pdfViewer.CancelSearch(); 
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -156,11 +679,11 @@ Text search progress can be tracked using the TextSearchInitiated event and Text
 
 ### SearchInitiated
 
-TextSearchInitiated event will be triggered soon after the call of the SearchTextCommand, the event argument of this event will contain details about the text being searched. 
+TextSearchInitiated event will be triggered soon after the call of the SearchText method, the event argument of this event will contain details about the text being searched.
 
 ### TextMatchFound
 
-TextMatchFound event will be triggered once when the match of the text is found in the page of the PDF document. When text search is triggered using SearchTextCommand this event would be triggered for every page in which the match is found, when text search is triggered using SearchPreviousCommand or SearchNextCommand this event would be triggered for every match being found.
+TextMatchFound event will be triggered once when the match of the text is found in the page of the PDF document. When text search is triggered using SearchText method this event would be triggered for every page in which the match is found, when text search is triggered using SearchNext or SearchPrevious methods, this event would be triggered for every match being found.
 
 ### SearchCompleted
 
@@ -174,184 +697,319 @@ When NoMoreOccurrence is set to true, it means that the PDF viewer had completed
 
 With the continuation of the getting started sample, you can extend the UI design to perform the text search in the PDF Viewer. Design the search toolbar in parallel to the main toolbar, here when the main toolbar is visible, search bar will be invisible and vice versa.
 
-•	Main toolbar – A new option to initiate text search toolbar will be added to the existing options.
-•	Search toolbar - A new and separate toolbar is created to search a text instance – it includes option to enter the text, perform search, cancel search and navigate back to the main toolbar.
+* Main toolbar – A new option to initiate text search toolbar will be added to the existing options.
+* Search toolbar - A new and separate toolbar is created to search a text instance – it includes option to enter the text, perform search, cancel search and navigate back to the main toolbar.
 
-In the PdfViewerViewModel class, create a new command (named – SearchAndToolbarToggleCommand) to toggle between the main toolbar and search toolbar. The view model class after the creation of the command and necessary boolean variables to toggle the visibility will be like
-
-{% tabs %}
-{% highlight c# %}
-
-using System.IO;
-using System.Reflection;
-using System.ComponentModel;
-using System.Windows.Input;
-using Xamarin.Forms;
-
-namespace GettingStarted
-{
-    class PdfViewerViewModel : INotifyPropertyChanged
-    {
-        private Stream m_pdfDocumentStream;
-        private bool m_isToolbarVisible = true;
-        private bool m_isSearchbarVisible = false;
-        /// <summary>
-        /// An event to detect the change in the value of a property.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Command used to toggle between search bar and document toolbar.
-        /// </summary>
-        public ICommand SearchAndToolbarToggleCommand { get; set; }
-
-        /// <summary>
-        /// The PDF document stream that is loaded into the instance of the PDF viewer. 
-        /// </summary>
-        public Stream PdfDocumentStream
-        {
-            get
-            {
-                return m_pdfDocumentStream;
-            }
-            set
-            {
-                m_pdfDocumentStream = value;
-                NotifyPropertyChanged("PdfDocumentStream");
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the bool value which will toggle the visibility of the toolbar.
-        /// </summary>
-        /// <remarks>
-        /// The value true will make the toolbar visible and false would make the toolbar invisible.
-        /// </remarks>
-        public bool IsToolbarVisible
-        {
-            get { return m_isToolbarVisible; }
-            set
-            {
-                if (m_isToolbarVisible == value)
-                    return;
-                m_isToolbarVisible = value;
-                NotifyPropertyChanged("IsToolbarVisible");
-            }
-        }        
-
-        /// <summary>
-        /// Gets or sets the bool value which will toggle the visibility of the search bar.
-        /// </summary>
-        /// <remarks>
-        /// The value true will make the toolbar visible and false would make the search bar invisible.
-        /// </remarks>
-        public bool IsSearchbarVisible
-        {
-            get { return m_isSearchbarVisible; }
-            set
-            {
-                if (m_isSearchbarVisible == value)
-                    return;
-                m_isSearchbarVisible = value;
-                NotifyPropertyChanged("IsSearchbarVisible");
-            }
-        }
-
-        /// <summary>
-        /// Constructor of the view model class
-        /// </summary>
-        public PdfViewerViewModel()
-        {
-            //Accessing the PDF document that is added as embedded resource as stream.
-            m_pdfDocumentStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("GettingStarted.Assets.GIS Succinctly.pdf");
-            //Command used to toggle the visibility of the toolbar and searchbar.
-            SearchAndToolbarToggleCommand= new Command<object>(OnSearchAndToolbarToggleCommand, CanExecute);
-        }
-        
-        private void NotifyPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }        
-
-        private bool CanExecute(object parameter)
-        {
-            return true;
-        }
-
-        /// <summary>
-        /// Method used to toggle the visibility of the toolbar and searchbar.
-        /// </summary>
-        private void OnSearchAndToolbarToggleCommand(object destinationPageParam)
-        {
-            IsToolbarVisible = !IsToolbarVisible;
-            IsSearchbarVisible = !IsToolbarVisible;
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-The complete XAML code after the design of the search bar will look like below
+After the adding the search toolbar, the Main.axml file will look as like the below code snippet.
 
 {% tabs %}
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:GettingStarted"
-             x:Class="GettingStarted.MainPage"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             >
-    <ContentPage.BindingContext>
-        <local:PdfViewerViewModel></local:PdfViewerViewModel>
-    </ContentPage.BindingContext>
-    <Grid x:Name="mainGrid">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <AbsoluteLayout>
-            <Grid x:Name="toolbar" Grid.Row="0" BackgroundColor="#E9E9E9" HorizontalOptions="Fill" VerticalOptions="Fill" IsVisible="{Binding IsGridVisible}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="0.4*" />
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="1*" />
-                </Grid.ColumnDefinitions>
-                <Entry Keyboard="Numeric" FontSize="18" x:Name="pageNumberEntry" HorizontalTextAlignment="Center" Grid.Column="0" VerticalOptions="Center" Text="{Binding PageNumber, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Label Text="/" Grid.Column="1" FontSize="18" x:Name="slashLabel"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <Label x:Name="pageCountLabel" Grid.Column="2" FontSize="18" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Text="{Binding PageCount, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Button x:Name="goToNextButton"  Grid.Column="3" BackgroundColor="Transparent" Image="PageDown.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToNextPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Button x:Name="goToPreviousButton" Grid.Column="4" BackgroundColor="Transparent" Image="PageUp.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToPreviousPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Button x:Name="searchButton" Grid.Column="6" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchAndToolbarToggleCommand}"/>
-            </Grid>
-            <Grid x:Name="searchBar" Grid.Row="0" BackgroundColor="#E9E9E9" HorizontalOptions="Fill" VerticalOptions="Fill" IsVisible="{Binding IsSearchbarVisible}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="5*" />
-                    <ColumnDefinition Width="1.5*" />
-                    <ColumnDefinition Width="1.5*" />
-                    <ColumnDefinition Width="1.5*" />
-                </Grid.ColumnDefinitions>
-                <Button x:Name="backIcon" Grid.Column="0" BackgroundColor="Transparent" Image="BackIcon.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding SearchAndToolbarToggleCommand}"/>
-                <Entry Grid.Column="1" x:Name="textSearchEntry" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalOptions="Center"/>
-                <Button x:Name="searchTextButton" Grid.Column="2" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchTextCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
-                <Button x:Name="cancelSearchButton" Grid.Column="3" BackgroundColor="Transparent" Image="CancelSearch.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding CancelTextSearchCommand, Source={x:Reference Name=pdfViewerControl}}"/>
-            </Grid>
-        </AbsoluteLayout>
-        <Grid x:Name="pdfViewGrid" Grid.Row="1">
-            <syncfusion:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}"/>
-        </Grid>
-    </Grid>
-</ContentPage>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="6"
+            android:layout_height="50dp">
+      <EditText
+          android:id="@+id/pagenumberentry"
+          android:layout_width="50dp"
+          android:layout_height="30dp"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:textAlignment="center"
+          android:background="@drawable/edittextbg"
+          android:textColor="@android:color/black"
+          android:inputType="number"
+          android:selectAllOnFocus="true"
+          android:gravity="center" />
+      <TextView
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:textSize="18dp"
+          android:text="/" />
+      <TextView
+          android:id="@+id/pagecounttext"
+          android:layout_width="50dp"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:textSize="18dp"
+          android:gravity="center"
+          android:text="0" />
+      <ImageButton
+          android:id="@+id/pagedownbutton"
+          android:background="#E9E9E9"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:src="@drawable/pagedown" />
+      <ImageButton
+          android:id="@+id/pageupbutton"
+          android:background="#E9E9E9"
+          android:src="@drawable/pageup"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip" />
+      <ImageButton
+          android:id="@+id/searchButton"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:background="#E9E9E9"
+          android:src="@drawable/SearchIcon"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:layout_marginRight="10dip"
+          android:layout_marginBottom="10dip"
+          android:layout_gravity="right" />
+    </GridLayout>
+    <GridLayout
+          android:id="@+id/searchGrid"
+          android:background="#E9E9E9"
+          android:layout_width="match_parent"
+          android:columnCount="2"
+          android:layout_height="50dp">
+      <ImageButton
+          android:id="@+id/backButton"
+          android:layout_width="40dp"
+          android:layout_height="30dp"
+          android:background="#E9E9E9"
+          android:src="@drawable/backIcon"
+          android:layout_marginLeft="1dip"
+          android:layout_marginTop="10dip" />
+      <FrameLayout>
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="15dip"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/SearchEntry"
+            android:gravity="left" />
+        <ImageButton
+            android:id="@+id/clearSearchResult"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/CancelSearch"
+            android:background="#E9E9E9"
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="1dp"
+            android:layout_gravity="right|center_vertical" />
+      </FrameLayout>
+    </GridLayout>
+  </FrameLayout>
+
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
+
+{% endhighlight %}
+{% endtabs %}
+
+The code behind MainActivity.cs will be
+
+{% tabs %}
+{% highlight c# %}
+
+using Android.App;
+using Android.Widget;
+using Android.OS;
+using Syncfusion.SfPdfViewer.Android;
+using System.IO;
+using Android.Views;
+using Android.Views.InputMethods;
+using Android.Content;
+
+namespace GettingStartedDroid
+{
+    [Activity(Label = "GettingStartedDroid", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        SfPdfViewer pdfViewer;
+        EditText pageNumberEntry;
+        TextView pageCountText;
+        ImageButton pageDownButton;
+        ImageButton pageUpButton;
+        LinearLayout mainView;
+        GridLayout toolBarGrid;
+        GridLayout searchBarGrid;
+        EditText searchView;
+        ImageButton searchButton;
+        ImageButton backButton;
+        ImageButton clearSearchButton;
+        string searchText = string.Empty;
+
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.Main);
+
+            //Access the controls in the design.
+            pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+            pageNumberEntry = FindViewById<EditText>(Resource.Id.pagenumberentry);
+            pageCountText = FindViewById<TextView>(Resource.Id.pagecounttext);
+            pageDownButton = FindViewById<ImageButton>(Resource.Id.pagedownbutton);
+            pageUpButton = FindViewById<ImageButton>(Resource.Id.pageupbutton);
+            mainView = FindViewById<LinearLayout>(Resource.Id.parentview);
+            toolBarGrid = FindViewById<GridLayout>(Resource.Id.toolbarGrid);
+            searchBarGrid = FindViewById<GridLayout>(Resource.Id.searchGrid);
+            searchButton = FindViewById<ImageButton>(Resource.Id.searchButton);
+            searchView = FindViewById<EditText>(Resource.Id.search);
+            backButton = FindViewById<ImageButton>(Resource.Id.backButton);
+            clearSearchButton = FindViewById<ImageButton>(Resource.Id.clearSearchResult);
+
+            //Wireup events.
+            pageNumberEntry.KeyPress += PageNumberEntry_KeyPress;
+            pageDownButton.Click += PageDownButton_Click;
+            pageUpButton.Click += PageUpButton_Click;
+            pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
+            searchButton.Click += SearchButton_Click;
+            backButton.Click += BackButton_Click;
+            clearSearchButton.Click += ClearSearchButton_Click;
+
+            searchView.SetHintTextColor(Android.Graphics.Color.Rgb(189, 189, 189));
+            searchView.Hint = "Search text";
+            searchView.FocusableInTouchMode = true;
+            searchView.TextSize = 18;
+            searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
+            searchView.TextAlignment = TextAlignment.Center;
+            searchView.KeyPress += SearchView_KeyPress;
+            searchView.TextChanged += SearchView_TextChanged;
+
+            searchBarGrid.Visibility = ViewStates.Invisible;
+
+            //Access the document in the resource as stream and load it in the PDF viewer.
+            Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
+            pdfViewer.LoadDocument(PdfStream);
+        }
+
+        private void SearchView_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
+        {
+            if (searchView.Text != string.Empty)
+            {
+                clearSearchButton.Visibility = ViewStates.Visible;
+            }
+            else
+            {
+                clearSearchButton.Visibility = ViewStates.Invisible;
+            }
+        }
+
+        private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
+        {
+            var editText = sender as EditText;
+            if (e.KeyCode == Keycode.Enter)
+            {
+                if (!string.IsNullOrWhiteSpace(editText.Text) && !string.IsNullOrEmpty(editText.Text))
+                {
+                    searchText = editText.Text;
+                    pdfViewer.SearchText(searchText);
+                }
+                InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+                inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+            }
+        }
+
+        private void ClearSearchButton_Click(object sender, System.EventArgs e)
+        {
+            pdfViewer.CancelSearch();
+            searchView.Text = "";
+            clearSearchButton.Visibility = ViewStates.Invisible;
+            InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+            inputMethodManager.ShowSoftInput(searchView, ShowFlags.Implicit);
+        }
+
+        private void BackButton_Click(object sender, System.EventArgs e)
+        {
+            if (searchBarGrid.Visibility == ViewStates.Visible)
+            {
+                searchBarGrid.Visibility = ViewStates.Invisible;
+                toolBarGrid.Visibility = ViewStates.Visible;
+                pdfViewer.CancelSearch();
+                searchView.Text = "";
+                clearSearchButton.Visibility = ViewStates.Invisible;
+                InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+                inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+            }
+        }
+
+        private void SearchButton_Click(object sender, System.EventArgs e)
+        {
+            if (toolBarGrid.Visibility == ViewStates.Visible)
+            {
+                toolBarGrid.Visibility = ViewStates.Invisible;
+                searchBarGrid.Visibility = ViewStates.Visible;
+                searchView.RequestFocus();
+                clearSearchButton.Visibility = ViewStates.Invisible;
+                InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+                inputMethodManager.ShowSoftInput(searchView, ShowFlags.Implicit);
+            }
+        }
+
+        private void PdfViewer_DocumentLoaded(object sender, System.EventArgs args)
+        {
+            pageNumberEntry.Text = pdfViewer.PageNumber.ToString();
+            pageCountText.Text = pdfViewer.PageCount.ToString();
+        }
+
+        private void PageUpButton_Click(object sender, System.EventArgs e)
+        {
+            pdfViewer.GoToPreviousPage();
+        }
+
+        private void PageDownButton_Click(object sender, System.EventArgs e)
+        {
+            pdfViewer.GoToNextPage();
+        }
+
+        private void PageNumberEntry_KeyPress(object sender, Android.Views.View.KeyEventArgs e)
+        {
+            e.Handled = false;
+            if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
+            {
+                int pageNumber = 0;
+                if (int.TryParse((pageNumberEntry.Text), out pageNumber))
+                {
+                    if ((pageNumber > 0) && (pageNumber <= pdfViewer.PageCount))
+                        pdfViewer.GoToPage(pageNumber);
+                    else
+                    {
+                        DisplayAlertDialog();
+                        pageNumberEntry.Text = pdfViewer.PageNumber.ToString();
+                    }
+                }
+                pageNumberEntry.ClearFocus();
+                InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+                inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+            }
+        }
+
+        void DisplayAlertDialog()
+        {
+            AlertDialog.Builder alertDialog = new AlertDialog.Builder(mainView.Context);
+            alertDialog.SetTitle("Error");
+            alertDialog.SetMessage("Please enter the valid page number");
+            alertDialog.SetPositiveButton("OK", (senderAlert, args) => { });
+            Dialog dialog = alertDialog.Create();
+            dialog.Show();
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -363,8 +1021,8 @@ The colors in which the current instance and other instances are highlighted can
 {% tabs %}
 {% highlight c# %}
 
-pdfViewerControl.TextSearchSettings.OtherInstanceColor = Color.FromRgba(255, 0, 0, 200);
-pdfViewerControl.TextSearchSettings.CurrentInstanceColor = Color.FromRgba(0, 0, 255, 200);
+pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Argb(255, 0, 0, 200);
+pdfViewer.TextSearchSettings.CurrentInstanceColor = Color.Argb(0, 0, 255, 200);
 
 {% endhighlight %}
 {% endtabs %}

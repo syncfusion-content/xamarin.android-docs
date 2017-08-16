@@ -1,6 +1,6 @@
 ---
 platform: Xamarin.Android
-control: PDF viewer
+control: SfPdfViewer
 ---
 
 # PDF Viewer
@@ -19,6 +19,5 @@ The following list shows the key features available in PDF Viewer control.
 * Scroll, pan, zoom in and out
 * Page navigation
 
-N>**•	PDF Viewer for Xamarin.Android will be supported from Android 5.0 (API Level 21) onwards.
+N>**PDF Viewer for Xamarin.Android will be supported from Android 5.0 (API Level 21) onwards.
 
-N>**PDF Viewer for Xamarin.Forms.iOS will be supported from iOS version 9.0 onwards.
