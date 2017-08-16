@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting started | SfDataForm | Xamarin.Android | Syncfusion
+description: Getting started with SfDataForm.
+platform: Xamarin.Android
+control: SfDataForm
+documentation: ug
+---
+
 # SfDataForm
 
 SfDataForm control helps to edit data fields of any data object. It can be used to develop various forms such as login, reservation, data entry, and more. Key features include the following,
