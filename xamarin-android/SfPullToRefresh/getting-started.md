@@ -44,7 +44,7 @@ Refer to the following code to add the SfPullToRefresh control:
 {% endtabs %}
 
 
-## Customizing a simple SfPulToRefresh sample
+## Customizing a simple SfPullToRefresh sample
 
 To develop an application with Android PullToRefresh is simple. The following steps explains how to create and configure its properties.
 

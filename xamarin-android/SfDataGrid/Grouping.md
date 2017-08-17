@@ -57,7 +57,7 @@ You can allow end-user to expand or collapse the groups programmatically at runt
 
 #### Expand or collapse all the Groups
 
-You can expand or collapse all the groups at programmatically at runtime by using `SfDataGrid.ExpandAllGroup` and `SfDataGrid.CollpaseAllGroup` methods.
+You can expand or collapse all the groups at programmatically at runtime by using `SfDataGrid.ExpandAllGroup` and `SfDataGrid.CollapseAllGroup` methods.
 
 {% tabs %}
 {% highlight c# %}
