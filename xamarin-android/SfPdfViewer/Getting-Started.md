@@ -7,72 +7,80 @@ control: SfPdfViewer
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-This section explains about the assemblies required for the deployment of SfPdfViewer and how to create simple application using the SfPdfViewer control.
+This section demonstrates how to create an application that displays a PDF file using SfPdfViewer control.
 
-## Assembly Required
+## Assemblies Required
 
-### Android project
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-android\Syncfusion.SfPdfViewer.Android.dll
+{Syncfusion Essential Studio Installed location}\Essential Studio\{Essential Studio version}\Xamarin\lib\android\
 
-## Create a simple application with the SfPdfViewer
+Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.28\Xamarin\lib\android\
 
-Follow the below steps to create a simple application with the SfPdfViewer and load a PDF document.
+For creating a PDF Viewer for android, the following assemblies need to be referenced in your Android project.
 
-* Create a new blank application for Xamarin.Android in the Visual Studio and refer the required assembly to the project. 
+* Syncfusion.Compression.Portable
+* Syncfusion.Pdf.Portable
+* Syncfusion.SfPdfViewer.Android
 
-N>**Essential PDF Viewer for Xamarin.Android project is compatible with platform version of Android 5.0 (API Level 21) or more.
+## Create a simple PDF Viewer
 
-Add the following Xml code in you Main.axml to make use of SfPdfViewer.
+Create a new blank application for Android using Visual Studio and name it as “GettingStartedDroid”. Refer the above-mentioned assemblies to the project. 
+
+Add a PDF document you need to display in the PDF Viewer (here GIS Succinctly.pdf is used) and set the build action property as “AndroidAssest”.
+
+Add the below code in the Main.axml to include PDF Viewer control.
    
 {% tabs %}
 {% highlight xaml %}
 
-   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
-    android:id="@+id/parentview">
-	    <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+    android:layout_height="match_parent">
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/pdfviewercontrol" />
-    </LinearLayout>
+</LinearLayout>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Loading PDF document
+Please add the below code snippet in the MainActivity class
 
-The LoadDocument method can be used to load a PDF document using stream input.
+* In the MainActivity.cs class, declare an instance of SfPdfViewer globally. 
+* In the override method OnCreate, set the content view to Main, locate the PDF viewer and load the PDF document.
 
-{% tabs %}   
+{% tabs %}
 {% highlight c# %}
 
-     protected override void OnCreate(Bundle bundle)
-       {
-           base.OnCreate(bundle);		
-           SetContentView(Resource.Layout.Main);
-		   SfPdfViewer pdfViewerControl = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
-           Stream docStream = Assets.Open("GIS Succinctly.pdf");
-           pdfViewerControl.LoadDocument(docStream);		   
-       }
+SfPdfViewer pdfViewer;
+
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
+    pdfViewer.LoadDocument(PdfStream);
+}
 
 {% endhighlight %}
 {% endtabs %}
 
+Deploying this project in the Android device would display the PDF document and allow you to scroll and zoom through the pages.
 
-## Unloading PDF document from the PDF viewer
+## Unloading PDF document from the Viewer
 
-The SfPdfViewer control allows you to unload the PDF document from the viewer when the control is not in use anymore. This releases the PDF document and all its associated resources.
+The SfPdfViewer control allows you to unload the PDF document from the viewer, when the PDF document is not in use anymore. This releases the PDF document and all its associated resources of the application.
 
-We need to call the Unload method of SfPdfViewer control as in the below code snippet to achieve the same.
+You need to call the Unload method of SfPdfViewer control as in the below code snippet to achieve the same.
 
-{% tabs %} 
+{% tabs %}   
 {% highlight c# %}
 
 pdfViewerControl.Unload();
@@ -80,6 +88,432 @@ pdfViewerControl.Unload();
 {% endhighlight %}
 {% endtabs %}
 
-This is how the final output will look like on Android devices.
+## How to get & set the current page number?
+
+PageChanged event of the PDF viewer can be used to track the change in the current page being displayed in the PDF viewer. 
+
+This below code snippet demonstrates how to track the current page number being viewed using PageChanged event and how to navigate to the respective page in the PDF Viewer.
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="1"
+            android:layout_height="50dp">
+    <EditText
+          android:id="@+id/pagenumberentry"
+          android:layout_width="50dp"
+          android:layout_height="30dp"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:textAlignment="center"
+          android:background="@drawable/edittextbg"
+          android:textColor="@android:color/black"
+          android:inputType="number"
+          android:selectAllOnFocus="true"
+          android:gravity="center" />
+    </GridLayout>
+  </FrameLayout>
+
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+EditText pageNumberEntry;
+SfPdfViewer pdfViewer;
+
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    
+    //Access the controls in the design.
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    pageNumberEntry = FindViewById<EditText>(Resource.Id.pagenumberentry);
+
+    //Wireup PageChanged event with PdfViewer_PageChanged
+    pdfViewer.PageChanged += PdfViewer_PageChanged;
+    //Wireup KeyPress event with PageNumberEntry_KeyPress
+    pageNumberEntry.KeyPress += PageNumberEntry_KeyPress;
+}
+
+private void PdfViewer_PageChanged(object sender, PageChangedEventArgs args)
+{
+    //Set the text of PageNumerEntry EditText control to the PageNumber event argument of PageChanged event.
+    pageNumberEntry.Text = args.PageNumber.ToString();
+}
+
+private void PageNumberEntry_KeyPress(object sender, Android.Views.View.KeyEventArgs e)
+{
+    e.Handled = false;
+    if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
+    {
+        int pageNumber = 0;
+        //Validated the entered text input is interger or validate.
+        if (int.TryParse((pageNumberEntry.Text), out pageNumber))
+        {
+            if ((pageNumber > 0) && (pageNumber <= pdfViewer.PageCount))
+                pdfViewer.GoToPage(pageNumber);
+        }
+         pageNumberEntry.ClearFocus();
+        InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+        inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>**When a page number which is not in the bounds (1 – page count) is provided as an input to the GoToPage method, no action will be performed.
+
+## How to get the total page number?
+
+PageCount property of the PDF viewer can be used to acquire the total number of pages in the PDF document that is being loaded. The PageCount property of the PDF viewer will be updated only after loading the PDF document, it can be tracked using DocumentLoaded event of the PDF viewer.
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="1"
+            android:layout_height="50dp">
+    <TextView
+          android:id="@+id/pagecounttext"
+          android:layout_width="50dp"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:textSize="18dp"
+          android:gravity="center"
+          android:text="0" />
+    </GridLayout>
+  </FrameLayout>
+
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+TextView pageCountText;
+SfPdfViewer pdfViewer;
+
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    
+    //Access the controls in the design.
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    pageCountText = FindViewById<TextView>(Resource.Id.pagecounttext);
+
+    //Wireup DocumentLoaded event with PdfViewer_DocumentLoaded
+    pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
+}
+
+private void PdfViewer_DocumentLoaded(object sender, System.EventArgs args)
+{
+    //Set the text of the PageCountText TextView to PageCount of PDF viewer
+    pageCountText.Text = pdfViewer.PageCount.ToString();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to navigate to next page and previous page?
+
+GoToPreviousPage and GoToNextPage methods of PDF viewer can be used to perform page navigation operations. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="2"
+            android:layout_height="50dp">
+      <ImageButton
+          android:id="@+id/pagedownbutton"
+          android:background="#E9E9E9"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:src="@drawable/pagedown" />
+      <ImageButton
+          android:id="@+id/pageupbutton"
+          android:background="#E9E9E9"
+          android:src="@drawable/pageup"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip" />
+    </GridLayout>
+  </FrameLayout>
+
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+ImageButton pageDownButton;
+ImageButton pageUpButton;
+SfPdfViewer pdfViewer;
+
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    SetContentView(Resource.Layout.Main);
+    
+    //Access the controls in the design.
+    pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+    pageDownButton = FindViewById<ImageButton>(Resource.Id.pagedownbutton);
+    pageUpButton = FindViewById<ImageButton>(Resource.Id.pageupbutton);
+
+    pageDownButton.Click += PageDownButton_Click;
+    pageUpButton.Click += PageUpButton_Click;
+}
+
+private void PageUpButton_Click(object sender, System.EventArgs e)
+{
+    //Method navigates to the previous page of the PDF document
+    pdfViewer.GoToPreviousPage();
+}
+
+private void PageDownButton_Click(object sender, System.EventArgs e)
+{
+    //Method navigates to the next page of the PDF document
+    pdfViewer.GoToNextPage();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>**When the current page is the first page, GoToPreviousPage method will not have any effect. Similarly, when in last page, GoToNextPage method will not have any effect.
+
+## Designing a toolbar
+
+This section depicts how to design a toolbar for the PDF viewer and include functionalities such as page navigation options. This simple toolbar consists of options such as current page number, total page count in the PDF document, go to previous page and go to next page.
+
+In Main.axml, please add this code snippet to design the toolbar to add the page navigation options.
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview">
+  <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <GridLayout
+            android:id="@+id/toolbarGrid"
+            android:background="#E9E9E9"
+            android:layout_width="match_parent"
+            android:columnCount="2"
+            android:layout_height="50dp">
+      <ImageButton
+          android:id="@+id/pagedownbutton"
+          android:background="#E9E9E9"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip"
+          android:src="@drawable/pagedown" />
+      <ImageButton
+          android:id="@+id/pageupbutton"
+          android:background="#E9E9E9"
+          android:src="@drawable/pageup"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="10dip" />
+    </GridLayout>
+  </FrameLayout>
+
+  <Syncfusion.SfPdfViewer.Android.SfPdfViewer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewercontrol" />
+</LinearLayout>
+
+{% endhighlight %}
+{% endtabs %}
+
+In MainActivity.cs, please add the below code snippet which contains the implementation for the following operations
+
+* Access & display the current page number being displayed and navigate to the specified page.
+* Display the total number of pages
+* Navigate to the previous page
+* Navigate to the next page
+
+{% tabs %}
+{% highlight c# %}
+
+using Android.App;
+using Android.Widget;
+using Android.OS;
+using Syncfusion.SfPdfViewer.Android;
+using System.IO;
+using Android.Views;
+using Android.Views.InputMethods;
+using Android.Content;
+
+namespace GettingStartedDroid
+{
+    [Activity(Label = "GettingStartedDroid", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        SfPdfViewer pdfViewer;
+        EditText pageNumberEntry;
+        TextView pageCountText;
+        ImageButton pageDownButton;
+        ImageButton pageUpButton;
+        LinearLayout mainView;
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.Main);
+
+            //Access the controls in the design.
+            pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
+            pageNumberEntry = FindViewById<EditText>(Resource.Id.pagenumberentry);
+            pageCountText = FindViewById<TextView>(Resource.Id.pagecounttext);
+            pageDownButton = FindViewById<ImageButton>(Resource.Id.pagedownbutton);
+            pageUpButton = FindViewById<ImageButton>(Resource.Id.pageupbutton);
+            mainView = FindViewById<LinearLayout>(Resource.Id.parentview);
+
+            //Wireup events.
+            pageNumberEntry.KeyPress += PageNumberEntry_KeyPress;
+            pageDownButton.Click += PageDownButton_Click;
+            pageUpButton.Click += PageUpButton_Click;
+            pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
+            pdfViewer.PageChanged += PdfViewer_PageChanged;
+
+            //Access the document in the resource as stream and load it in the PDF viewer.
+            Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
+            pdfViewer.LoadDocument(PdfStream);
+        }
+
+        private void PdfViewer_PageChanged(object sender, PageChangedEventArgs args)
+        {
+            pageNumberEntry.Text = args.PageNumber.ToString();
+        }
+
+        private void PdfViewer_DocumentLoaded(object sender, System.EventArgs args)
+        {
+            //Set the text of the PageCountText TextView to PageCount of PDF viewer
+            pageCountText.Text = pdfViewer.PageCount.ToString();
+        }
+
+        private void PageUpButton_Click(object sender, System.EventArgs e)
+        {
+            //Method navigates to the previous page of the PDF document
+            pdfViewer.GoToPreviousPage();
+        }
+
+        private void PageDownButton_Click(object sender, System.EventArgs e)
+        {
+            //Method navigates to the next page of the PDF document
+            pdfViewer.GoToNextPage();
+        }
+
+        private void PageNumberEntry_KeyPress(object sender, Android.Views.View.KeyEventArgs e)
+        {
+            e.Handled = false;
+            if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
+            {
+                int pageNumber = 0;
+                if (int.TryParse((pageNumberEntry.Text), out pageNumber))
+                {
+                    //Validated the entered text input is interger or validate.
+                    if ((pageNumber > 0) && (pageNumber <= pdfViewer.PageCount))
+                        pdfViewer.GoToPage(pageNumber);
+                    else
+                    {
+                        DisplayAlertDialog();
+                        pageNumberEntry.Text = pdfViewer.PageNumber.ToString();
+                    }
+                }
+                pageNumberEntry.ClearFocus();
+                InputMethodManager inputMethodManager = (InputMethodManager)mainView.Context.GetSystemService(Context.InputMethodService);
+                inputMethodManager.HideSoftInputFromWindow(mainView.WindowToken, HideSoftInputFlags.None);
+            }
+        }
+
+        void DisplayAlertDialog()
+        {
+            AlertDialog.Builder alertDialog = new AlertDialog.Builder(mainView.Context);
+            alertDialog.SetTitle("Error");
+            alertDialog.SetMessage("Please enter the valid page number");
+            alertDialog.SetPositiveButton("OK", (senderAlert, args) => { });
+            Dialog dialog = alertDialog.Create();
+            dialog.Show();
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+The final output will look as like in the below screenshot.
 
 ![](pdfviewer_images/gettingstarted.png)
+
+This demo can be downloaded from the below link.
+
+http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedDroid-1943126494.zip
