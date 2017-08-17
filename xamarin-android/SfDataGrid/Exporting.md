@@ -322,7 +322,7 @@ void pdfExport_CellExporting(object sender, DataGridCellPdfExportingEventArgs
 
 The [PdfHeaderFooterEventHandler](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgridconverter/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.PdfHeaderFooterEventHandler.html) delegate allows you to customize the header and footer of the exported PDF. The `HeaderAndFooterExporting` event is triggered with [PdfHeaderFooterEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgridconverter/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.PdfHeaderFooterEventArgs.html) that contains the following properties:
 
-* **PdfDocumentTemplate** – Species the header and footer template for the exported PDF.
+* **PdfDocumentTemplate** – Specifies the header and footer template for the exported PDF.
 
 The following code example illustrates how to customize the header and footer of the exported PDF document.
 
