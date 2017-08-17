@@ -29,7 +29,6 @@ Android\Syncfusion.SfPicker.Android.dll
 
 
 
-{% tabs %}
 
 
 {% highlight C# %}
@@ -37,67 +36,64 @@ Android\Syncfusion.SfPicker.Android.dll
 [Activity(Label = "PickerAndroidDemoSample", MainLauncher = true, Icon = "@mipmap/icon")]
 public class MainActivity : Activity
 {
-protected override void OnCreate(Bundle savedInstanceState)
-{
-base.OnCreate(savedInstanceState);
-
-SfPicker sfpicker = new SfPicker(con);
-sfpicker.ShowHeader = true;
-sfpicker.ItemsSource = GetSource();
-sfpicker.PickerMode = PickerMode.Default;
-sfpicker.ShowColumnHeader = false;
-sfpicker.UnSelectedItemTextColor = Color.Black;
-sfpicker.SelectedIndex = 6;
-sfpicker.ShowFooter = false;
-sfpicker.HeaderText = "PICK A COLOR";
-sfpicker.BorderColor = Color.Red;
-sfpicker.ColumnHeaderText = "COLOR";
-float height = this.Resources.DisplayMetrics.HeightPixels; ;
-sfpicker.LayoutParameters = new ViewGroup.LayoutParams(Android.Views.ViewGroup.LayoutParams.MatchParent, (int)(height * 0.60));
-
-SetContentView(sfpicker);
-}
-List<String> GetSource()
-{
-List<String> source = new List<string>();
-source.Add("Yellow");
-source.Add("Green");
-source.Add("Orange");
-source.Add("Lime");
-source.Add("LightBlue");
-source.Add("Pink");
-source.Add("Aqua");
-source.Add("SkyBlue");
-source.Add("Red");
-return source;
-}
+    protected override void OnCreate(Bundle savedInstanceState)
+    {
+        base.OnCreate(savedInstanceState);
+        SfPicker sfpicker = new SfPicker(con);
+        sfpicker.ShowHeader = true;
+        sfpicker.ItemsSource = GetSource();
+        sfpicker.PickerMode = PickerMode.Default;
+        sfpicker.ShowColumnHeader = false;
+        sfpicker.UnSelectedItemTextColor = Color.Black;
+        sfpicker.SelectedIndex = 6;
+        sfpicker.ShowFooter = false;
+        sfpicker.HeaderText = "PICK A COLOR";
+        sfpicker.BorderColor = Color.Red;
+        sfpicker.ColumnHeaderText = "COLOR";
+        float height = this.Resources.DisplayMetrics.HeightPixels; ;
+        sfpicker.LayoutParameters = new ViewGroup.LayoutParams(Android.Views.ViewGroup.LayoutParams.MatchParent, (int)(height * 0.60));
+        SetContentView(sfpicker);
+    }
+    List<String> GetSource()
+    {
+        List<String> source = new List<string>();
+        source.Add("Yellow");
+        source.Add("Green");
+        source.Add("Orange");
+        source.Add("Lime");
+        source.Add("LightBlue");
+        source.Add("Pink");
+        source.Add("Aqua");
+        source.Add("SkyBlue");
+        source.Add("Red");
+        return source;
+    }
 }
 
 {% endhighlight %}
 
-{% endtabs %}
+
 
 
 3)You can also set the Header and Footer of Picker by enabling ShowHeader and ShowFooter property.The following code illustrates this.
 
 
-{% tabs %}
+
 
 {% highlight C# %}
 
-SfPicker sfpicker = new SfPicker(this);
-sfpicker.ItemsSource = GetSource();
-sfpicker.ShowHeader = true;
-sfpicker.ShowColumnHeader = true;
-sfpicker.UnSelectedItemTextColor = Color.Black;
-sfpicker.SelectedIndex = 6;
-sfpicker.ShowFooter = true;
-sfpicker.HeaderText = "PICK A COLOR";
-sfpicker.ColumnHeaderText = "COLOR";
+    SfPicker sfpicker = new SfPicker(this);
+    sfpicker.ItemsSource = GetSource();
+    sfpicker.ShowHeader = true;
+    sfpicker.ShowColumnHeader = true;
+    sfpicker.UnSelectedItemTextColor = Color.Black;
+    sfpicker.SelectedIndex = 6;
+    sfpicker.ShowFooter = true;
+    sfpicker.HeaderText = "PICK A COLOR";
+    sfpicker.ColumnHeaderText = "COLOR";
 
 {% endhighlight %}
 
-{% endtabs %}
 
 
 
