@@ -37,7 +37,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 </table>
 
-In order to use export to excel and export to pdf functionalities of SfDataGrid, add the below assembly to your project.
+In order to use export to excel and export to PDF functionalities of SfDataGrid, add the below assembly to your project.
 
 <table>
 <tr>
@@ -172,10 +172,10 @@ public class OrderInfoRepository
     private void GenerateOrders ()
     {
         orderInfo.Add (new OrderInfo (1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
-        orderInfo.Add (new OrderInfo (1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
-        orderInfo.Add (new OrderInfo (1003, "Ant Fuller", "Mexico", "ANTON", "México D.F."));
+        orderInfo.Add (new OrderInfo (1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
+        orderInfo.Add (new OrderInfo (1003, "Ant Fuller", "Mexico", "ANTON", "Mexico D.F."));
         orderInfo.Add (new OrderInfo (1004, "Thomas Hardy", "UK", "AROUT", "London"));
-        orderInfo.Add (new OrderInfo (1005, "Tim Adams", "Sweden", "BERGS", "Luleå"));
+        orderInfo.Add (new OrderInfo (1005, "Tim Adams", "Sweden", "BERGS", "Lulea"));
         orderInfo.Add (new OrderInfo (1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
         orderInfo.Add (new OrderInfo (1007, "Andrew Fuller", "France", "BLONP", "Strasbourg"));
         orderInfo.Add (new OrderInfo (1008, "Martin King", "Spain", "BOLID", "Madrid"));
