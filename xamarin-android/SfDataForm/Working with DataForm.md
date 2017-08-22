@@ -457,7 +457,7 @@ public class DataFormItemManagerExt : DataFormItemManager
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ColumnSpan.png)
+![](SfDataForm_images/DataFormDictionary.png)
 
 Here, data form is loaded with field from dictionary.
 
