@@ -19,14 +19,28 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
 
 {% highlight c# %}
 
-FrameLayout ContentFrame=new FrameLayout(this); 
-ContentFrame.SetBackgroundColor(Color.WHITE);
-ImageView img1 = new ImageView(this);
-img1.SetImageResource(R.drawable._menu_);
-img1.SetScaleType(ImageView.ScaleType._FIT_XY_);
-ContentFrame.SetBackgroundColor(Color.WHITE);
-ContentFrame.AddView(img1);
-navigationDrawer.ContentView=ContentFrame;
+namespace navigationDrawerSample
+{
+	[Activity(Label = "navigationDrawerSample", MainLauncher = true, Icon = "@mipmap/icon")]
+	public class MainActivity : Activity
+	{
+           SfNavigationDrawer navigationDrawer;
+           protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            
+            navigationDrawer = new SfNavigationDrawer(this);
+            FrameLayout ContentFrame=new FrameLayout(this); 
+            ContentFrame.SetBackgroundColor(Android.Graphics.Color.White);
+            ImageView userImg = new ImageView(this);
+            userImg.SetImageResource(Resource.Drawable.Icon);
+            userImg.SetBackgroundColor(Android.Graphics.Color.ParseColor("#1aa1d6"));
+            ContentFrame.AddView(userImg);
+            navigationDrawer.ContentView=ContentFrame;
+			SetContentView(navigationDrawer);
+		}
+	}
+}
 	
 {% endhighlight %}
 

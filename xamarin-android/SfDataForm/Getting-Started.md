@@ -15,11 +15,11 @@ SfDataForm control helps to edit data fields of any data object. It can be used 
 * Caption Customization - Support to load images as captions for editor.
 * Editors - Built-in support for text, numeric, numeric up-down, picker, date picker, time picker, switch and checkbox editors. 
 * Custom Editor - Support for loading custom editors.
-* Validation - Built-in support to validate data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx# ""), [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx# ""), and data annotations. And also, supports to handle validation programmatically.
+* Validation - Built-in support to validate data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx), [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx), and data annotations. And also, supports to handle validation programmatically.
 
 # Getting Started
 
-The section explains you the quick overview to use `SfDataFrom` for Xamarin.Android in your application.
+The section explains you the quick overview to use [SfDataForm](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm.html) for Xamarin.Android in your application.
 
 ## Assembly Deployment
 
@@ -62,7 +62,7 @@ Create new Android application in Xamarin Studio or Visual Studio for Xamarin.An
 To add SfDataForm to your application, do the following steps.
 
 1. Add required assemblies as discussed in Assembly Deployment section.
-2. Import the `SfDataForm` namespace `Syncfusion.Android.DataForm`.
+2. Import the `SfDataForm` namespace [Syncfusion.Android.DataForm](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/webtoc.html).
 3. Create instance of SfDataForm control and add as a view to a LinearLayout.
 
 {% tabs %}
@@ -191,7 +191,7 @@ public class ContactsInfo
 
 ## Setting DataObject
 
-To populate labels and editors in SfDataForm, set `DataObject` property of SfDataForm.
+To populate labels and editors in SfDataForm, set [DataObject](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~DataObject.html) property of `SfDataForm`.
 
 {% tabs %}
 {% highlight c# %}
@@ -207,7 +207,7 @@ Now run the application to render the `SfDataForm` to edit the data object as li
 
 ## Defining Editors
 
-SfDataForm control generates DataFormItems (which has UI settings of data field), automatically when data object set to `SfDataForm.DataObject` property. `DataFormItem` encapsulates the layout and editor setting for a data field appearing in DataForm. When the `DataFormItems` are generated, you can handle the SfDataForm.AutoGeneratingDataFormItem event to customize or cancel the DataFormItem. 
+SfDataForm control generates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItems.html) (which has UI settings of data field), automatically when data object set to `SfDataForm.DataObject` property. [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem.html) encapsulates the layout and editor setting for a data field appearing in DataForm. When the `DataFormItems` are generated, you can handle the SfDataForm.AutoGeneratingDataFormItem event to customize or cancel the `DataFormItem`. 
 The type of input editor generated for data field depends on the type and attribute settings of the property. The following table lists the `DataFormItem` and its constraints for generation.
 
 <table>
@@ -217,7 +217,7 @@ The type of input editor generated for data field depends on the type and attrib
 </tr>
 <tr>
 <td>
-DataFormTextItem
+{{'[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTextItem.html)'| markdownify }}
 </td>
 <td>
 Generated for property of type string and any other type apart from below specified cases.
@@ -225,7 +225,7 @@ Generated for property of type string and any other type apart from below specif
 </tr>
 <tr>
 <td>
-DataFormNumericItem
+{{'[DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the property of type Int or Double.
@@ -235,7 +235,7 @@ Generated for the property of type Int or Double.
 </tr>
 <tr>
 <td>
-DataFormDateItem
+{{'[DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDateItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the property of type DateTime.
@@ -245,7 +245,7 @@ Generated for the property of type DateTime.
 </tr>
 <tr>
 <td>
-DataFormTimeItem
+{{'[DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTimeItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the property of type DateTime
@@ -254,7 +254,7 @@ Generated for the property of type DateTime
 </tr>
 <tr>
 <td>
-DataFormPickerItem
+{{'[DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the property of type enum.
@@ -345,7 +345,7 @@ SfDatePicker
 Time
 </td>
 <td>
-Property of type DateTime with time value.
+Property with below attribute.
 [DataType(DataType.Time)].
 </td>
 <td>
@@ -426,7 +426,7 @@ Spinner
 
 ### Label Position
 
-By default, DataForm arrange the label at left side and input control at the right side. You can change the label position by setting SfDataForm.LabelPosition property. You can position the label from left to top of input control by setting `LabelPosition` as Top.
+By default, DataForm arrange the label at left side and input control at the right side. You can change the label position by setting [SfDataForm.LabelPosition](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~LabelPosition.html) property. You can position the label from left to top of input control by setting `LabelPosition` as Top.
 
 {% tabs %}
 {% highlight c# %}
@@ -440,7 +440,7 @@ dataForm.LabelPosition = LabelPosition.Top;
 
 ### Grid Layout
 
-By default, DataForm arrange one data field per row. It is possible to have more than one date field per row by setting `ColumnCount` property which provide Grid like layout for DataForm.
+By default, DataForm arrange one data field per row. It is possible to have more than one date field per row by setting [ColumnCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ColumnCount.html) property which provides Grid like layout for DataForm.
 
 {% tabs %}
 {% highlight c# %}
@@ -453,5 +453,5 @@ dataForm.ColumnCount = 2;
 
 ## Editing
 
-By default, SfDataForm enable editing of data field. You can disable editing by setting `IsReadOnly` property of SfDataForm. You can enable or disable editing for particular data field by setting `IsReadOnly` property of `DataFormItem` in `AutoGeneratingDataFormItem` event. Data field editing behavior can be defined by using [EditableAttribute](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx# "") also.
+By default, SfDataForm enable editing of data field. You can disable editing by setting [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~IsReadOnly.html) property of SfDataForm. You can enable or disable editing for particular data field by setting [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem~IsReadOnly.html) property of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem.html) in `AutoGeneratingDataFormItem` event. Data field editing behavior can be defined by using [EditableAttribute](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx) also.
 

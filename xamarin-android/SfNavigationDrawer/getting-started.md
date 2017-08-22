@@ -44,7 +44,7 @@ using Com.Syncfusion.NavigationDrawer;
 {% tabs %}
 
 {% highlight c# %}
-
+ 
 SfNavigationDrawer navigationDrawer = new SfNavigationDrawer(this);
 SetContentView(navigationDrawer);
 	
@@ -60,25 +60,39 @@ The sliding main content of the SfNavigationDrawer which is a part of DrawerPane
 
 {% highlight c# %}
 
-	List<String> list = new List<String>();
-	list.Add("Home");
-	list.Add("Profile");
-	list.Add("Inbox");
-	list.Add("Outbox");
-	list.Add("Sent Items");
-	list.Add("Trash");
-	ArrayAdapter<String> arrayAdapter =new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1,list);
-	listView.Adapter=arrayAdapter;
-	listView.SetBackgroundColor(Color.White);
-	listView.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,ViewGroup.LayoutParams.MatchParent);
-	contentLayout.AddView(listView);
-	contentLayout.Orientation=Orientation.Vertical;
-	FrameLayout frame = new FrameLayout (this);
-	frame.LayoutParameters = new ViewGroup.LayoutParams (ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
-	frame.SetBackgroundColor(Color.White);
-	frame.AddView (contentLayout);
-	//Add Drawer content view to Navigation
-	navigationDrawer.DrawerContentView=frame;	
+namespace NavigationDrawerSample
+{
+    [Activity(Label = "NavigationDrawerSample", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        ListView viewItem;
+        ArrayAdapter<string> arrayAdapter;
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            SfNavigationDrawer navigationDrawer;
+            
+            navigationDrawer = new SfNavigationDrawer(this);
+            List<string> positionlist = new List<string>();
+            positionlist.Add("Home");
+            positionlist.Add("Profile");
+            positionlist.Add("Inbox");
+            positionlist.Add("Outbox");
+            positionlist.Add("Sent Items");
+            positionlist.Add("Trash");
+            arrayAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, positionlist);
+            viewItem = new ListView(this);
+            viewItem.Adapter = arrayAdapter;
+            viewItem.SetBackgroundColor(Android.Graphics.Color.ParseColor("#1aa1d6"));
+            viewItem.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);FrameLayout frameLayout = new FrameLayout(this);
+            frameLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
+            frameLayout.AddView(viewItem);
+            navigationDrawer.DrawerContentView = frameLayout;
+			SetContentView(navigationDrawer);
+		}
+	}
+}
 
 {% endhighlight %}
 
@@ -95,23 +109,38 @@ This can be done using `DrawerHeaderView` property in SfNavigationDrawer.
 
 {% highlight c# %}
 
-	ImageView userImg= new ImageView(this);
-	userImg.SetImageResource(R.drawable.user);
-	userImg.SetBackgroundColor(Color.parseColor("#1aa1d6"));
-	TextView userName= new TextView(this);
-	userName.Text="James Pollock";
-	userName.SetGravity(Gravity.CENTER);
-	userName.TextSize=20;
-	userName.SetBackgroundColor(Color.TRANSPARENT);
-	userName.TextColor=Color.WHITE;
-	LinearLayout headerLayout = new LinearLayout(this);
-	headerLayout.Orientation=LinearLayout.VERTICAL;
-	headerLayout.SetBackgroundColor(Color.parseColor("#1aa1d6"));
-	headerLayout.SetGravity(Gravity.CENTER);
-	headerLayout.SetPadding(0, 20, 0, 0);
-	headerLayout.addView(userImg);
-	headerLayout.AddView(userName);
-	navigationDrawer.DrawerHeaderView=headerLayout;
+	namespace navigationDrawerSample
+{
+	[Activity(Label = "navigationDrawerSample", MainLauncher = true, Icon = "@mipmap/icon")]
+	public class MainActivity : Activity
+	{
+           SfNavigationDrawer navigationDrawer;
+           protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            
+            navigationDrawer = new SfNavigationDrawer(this);
+
+            ImageView userImg = new ImageView(this);
+            userImg.SetImageResource(Resource.Drawable.Icon);
+            userImg.SetBackgroundColor(Android.Graphics.Color.ParseColor("#1aa1d6"));
+            TextView userName = new TextView(this);
+            userName.Text = "James Pollock";
+            userName.TextSize = 20;
+            userName.SetBackgroundColor(Android.Graphics.Color.Transparent);
+            userName.SetTextColor(Android.Graphics.Color.White);
+            LinearLayout headerLayout = new LinearLayout(this);
+            headerLayout.Orientation = Orientation.Vertical;
+            headerLayout.SetBackgroundColor(Android.Graphics.Color.ParseColor("#1aa1d6"));
+            headerLayout.SetPadding(0, 20, 0, 0);
+            headerLayout.AddView(userImg);
+            headerLayout.AddView(userName);
+            navigationDrawer.DrawerHeaderView = headerLayout;
+            SetContentView(navigationDrawer);
+    }
+}
+}
+ 
  
 {% endhighlight %}
 
@@ -124,15 +153,29 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
 {% tabs %}
 
 {% highlight c# %}
+	namespace navigationDrawerSample
+{
+	[Activity(Label = "navigationDrawerSample", MainLauncher = true, Icon = "@mipmap/icon")]
+	public class MainActivity : Activity
+	{
+           SfNavigationDrawer navigationDrawer;
+           protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            
+            navigationDrawer = new SfNavigationDrawer(this);
+            FrameLayout ContentFrame=new FrameLayout(this); 
+            ContentFrame.SetBackgroundColor(Android.Graphics.Color.White);
+            ImageView userImg = new ImageView(this);
+            userImg.SetImageResource(Resource.Drawable.Icon);
+            userImg.SetBackgroundColor(Android.Graphics.Color.ParseColor("#1aa1d6"));
+            ContentFrame.AddView(userImg);
+            navigationDrawer.ContentView=ContentFrame;
+			SetContentView(navigationDrawer);
+		}
+	}
+}
 
-FrameLayout ContentFrame=new FrameLayout(this); 
-ContentFrame.SetBackgroundColor(Color.WHITE);
-ImageView img1 = new ImageView(this);
-img1.SetImageResource(R.drawable.menu);
-img1.SetScaleType(ImageView.ScaleType._FIT_XY_);
-ContentFrame.SetBackgroundColor(Color.WHITE);
-ContentFrame.AddView(img1);
-navigationDrawer.ContentView=ContentFrame;
 
 {% endhighlight %}
 
@@ -179,7 +222,9 @@ N> The default transition is SlideOnTop.
 
 {% highlight c# %} 
 
-navigationDrawer.Transition=Transition.SlideOnTop;
+    Transition sliderTransition = Transition.SlideOnTop;
+	navigationDrawer.Transition = sliderTransition;
+
 
 {% endhighlight %}
 
