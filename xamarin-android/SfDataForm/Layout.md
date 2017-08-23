@@ -587,7 +587,7 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
 
 Here, LastName padding is customized.
 
-![](SfDataForm_images/ImageLabel.png)
+![](SfDataForm_images/ImageLabel1.png)
 
 ## Label width customization
 
