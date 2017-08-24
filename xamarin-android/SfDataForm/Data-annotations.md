@@ -31,7 +31,7 @@ Specifies label text
 GroupName
 </td>
 <td>
-Specifies the group name which is used to group fields in DataForm. Refer here for more details.
+Specifies the group name which is used to group fields in DataForm. Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/layout#grouping-data-fields)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -48,7 +48,7 @@ AutoGenerateField
 </td>
 <td>
 Specifies whether the field should be auto generated or not.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#cancel-dataformitem-generation-of-data-field)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -56,7 +56,7 @@ Refer here for more details.
 Prompt
 </td>
 <td>
-Specifies watermark text for editor. Refer here for more details.
+Specifies watermark text for editor. Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#setting-watermark)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -65,7 +65,7 @@ Order
 </td>
 <td>
 Specifies the order of the field in data form.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/layout#changing-order-of-the-dataformitem)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
@@ -88,7 +88,7 @@ MinLenth
 </td>
 <td>
 Specifies the minimum required length.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -98,7 +98,7 @@ MaxLength
 </td>
 <td>
 Specifies the maximum required length.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -108,7 +108,7 @@ Required
 </td>
 <td>
 Specifies data field value is required.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -118,7 +118,7 @@ RegularExpression
 </td>
 <td>
 Specified value must match the specific pattern.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -128,18 +128,18 @@ Range
 </td>
 <td>
 Specifies the maximum and minimum value.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
 
 ## Bindable Attribute
 
-It specifies whether the field should be auto generated or not. Refer here for more details.
+It specifies whether the field should be auto generated or not. Refer [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#cancel-dataformitem-generation-of-data-field) for more details.
 
 ## Editable Attribute
 
-It specifies data field is editable or not. Refer here for more details. Refer here for more details.
+It specifies data field is editable or not. Refer here for more details. 
 
 ## ReadOnly Attribute
 
@@ -153,11 +153,11 @@ It specifies enum type for data field. Refer here for more details.
 
 It specifies data type for the field.
 Supported data types - Text, MultilineText, Date, DateTime, Time, Currency.
-Refer here for more details.
+Refer [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#auto-generating-dataformitems-for-data-field) for more details.
 
 ## CustomDataType Attribute
 
-Percent data type is supported. Refer here for more details.
+Percent data type is supported. Refer [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#auto-generating-dataformitems-for-data-field) for more details.
 
 ### DisplayOptions Attribute
 
@@ -176,7 +176,7 @@ RowSpan
 </td>
 <td>
 Specifies the row span for the data form item.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/layout#rowspan)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@ ColumnSpan
 </td>
 <td>
 Specifies the column span for the data form item.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/layout#columnspan)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ Refer here for more details.
 ValidMessage
 </td>
 <td>
-Specifies positive message to be shown when validation is passed. Refer here for more details.
+Specifies positive message to be shown when validation is passed. Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/validation#valid-or-positive-message)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@ ImageSource
 </td>
 <td>
 Specifies the image source for loading image instead of label.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/layout#loading-images-for-label)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -211,7 +211,7 @@ ShowLabel
 </td>
 <td>
 Specifies whether label should be visible or not.
-Refer here for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/layout#label-visibility)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
@@ -299,4 +299,4 @@ Specifies required maximum day
 </tr>
 </table>
 
-Refer here for more details.
+Refer [here](https://help.syncfusion.com/xamarin-android/sfdataform/validation#data-annotations) for more details.
