@@ -124,8 +124,8 @@ There are three built-in events in the PullToRefresh control namely:
 				{
 					handler.PostDelayed(() =>
 					 {
-						 System.Random rnd = new System.Random();
-						 int i = rnd.Next(20, 50);
+						 System.Random random = new System.Random();
+						 int i = random.Next(20, 50);
 						 textView3 = (TextView)view.FindViewById(Resource.Id.text);
 						 textView3.Text = i + "°".ToString() + "/12";
 						 pullToRefresh.Refresh();
