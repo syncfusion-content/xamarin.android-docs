@@ -116,7 +116,7 @@ private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
         //Checks whether the entered string is empty or has only space character.
         if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
         {
-            searchText = searchView.Text;
+            var searchText = searchView.Text;
             //Initiates text search.
             pdfViewer.SearchText(searchText);
         }
@@ -212,7 +212,7 @@ private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
         //Checks whether the entered string is empty or has only space character.
         if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
         {
-            searchText = searchView.Text;
+            var searchText = searchView.Text;
             //Initiates text search.
             pdfViewer.SearchText(searchText);
         }
@@ -328,7 +328,7 @@ private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
         //Checks whether the entered string is empty or has only space character.
         if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
         {
-            searchText = searchView.Text;
+            var searchText = searchView.Text;
             //Initiates text search.
             pdfViewer.SearchText(searchText);
         }
@@ -444,7 +444,7 @@ private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
         //Checks whether the entered string is empty or has only space character.
         if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
         {
-            searchText = searchView.Text;
+            var searchText = searchView.Text;
             //Initiates text search.
             pdfViewer.SearchText(searchText);
         }
@@ -554,7 +554,7 @@ private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
         //Checks whether the entered string is empty or has only space character.
         if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
         {
-            searchText = searchView.Text;
+            var searchText = searchView.Text;
             //Initiates text search.
             pdfViewer.SearchText(searchText);
         }
@@ -656,7 +656,7 @@ private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
         //Checks whether the entered string is empty or has only space character.
         if (!string.IsNullOrWhiteSpace(searchView.Text) && !string.IsNullOrEmpty(searchView.Text))
         {
-            searchText = searchView.Text;
+            var searchText = searchView.Text;
             //Initiates text search.
             pdfViewer.SearchText(searchText);
         }
