@@ -17,14 +17,14 @@ SfDataForm provides support for several built-in editors.
 <th>Editor name</th>
 <th>Editor class</th>
 <th>Data Type/Attribute</th>
-<th>Input control loaded</td>
+<th>Input control loaded</th>
 </tr>
 <tr>
 <td>
 Text
 </td>
 <td>
-{{'[DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormTextEditor.html#"")'| markdownify }}
+{{'[DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormTextEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type string and any other type apart from below specified cases.
@@ -38,7 +38,7 @@ EditText
 MultilineText
 </td>
 <td>
-{{'[DataFormMultiLineTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormMultiLineTextEditor.html#"")'| markdownify }}
+{{'[DataFormMultiLineTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormMultiLineTextEditor.html)'| markdownify }}
 </td>
 <td>
 Property of string type with Multiline text.
@@ -53,7 +53,7 @@ EditText
 Numeric
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html#"")'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes.
@@ -67,7 +67,7 @@ SfNumericTextBox
 Percent
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html#"")'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes. [DataType(“Percent”)].
@@ -81,7 +81,7 @@ SfNuemricTextBox
 Currency
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html#"")'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes. [DataType(DataType.Currency)].
@@ -95,7 +95,7 @@ SfNumericTextBox
 Date
 </td>
 <td>
-{{'[DataFormDateEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormDateEditor.html#"")'| markdownify }}
+{{'[DataFormDateEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormDateEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type DateTime and Property with below attribute
@@ -111,7 +111,7 @@ SfDatePicker
 Time
 </td>
 <td>
-{{'[DataFormTimeEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormTimeEditor.html#"")'| markdownify }}
+{{'[DataFormTimeEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormTimeEditor.html)'| markdownify }}
 </td>
 <td>
 Property with below attribute.
@@ -126,7 +126,7 @@ SfTimePicker
 NumericUpDown
 </td>
 <td>
-{{'[DataFormNumericUpDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericUpDownEditor.html#"")'| markdownify }}
+{{'[DataFormNumericUpDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericUpDownEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type Int or Double.
@@ -140,7 +140,7 @@ SfNumericUpDown
 Segment
 </td>
 <td>
-{{'[DataFormSegmentedEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormSegmentedEditor.html#"")'| markdownify }}
+{{'[DataFormSegmentedEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormSegmentedEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type enum.
@@ -154,7 +154,7 @@ RadioGroup
 Bool
 </td>
 <td>
-{{'[DataFormCheckBoxEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormCheckBoxEditor.html#"")'| markdownify }}
+{{'[DataFormCheckBoxEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormCheckBoxEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type bool
@@ -168,7 +168,7 @@ CheckBox
 Switch
 </td>
 <td>
-{{'[DataFormSwitchEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormSwitchEditor.html#"")'| markdownify }}
+{{'[DataFormSwitchEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormSwitchEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type bool
@@ -182,7 +182,7 @@ Switch
 Picker
 </td>
 <td>
-{{'[DataFormPickerEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormPickerEditor.html#"")'| markdownify }}
+{{'[DataFormPickerEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormPickerEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type enum and list. 
@@ -197,7 +197,7 @@ SfPicker
 DropDown
 </td>
 <td>
-{{'[DataFormDropDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormDropDownEditor.html#"")'| markdownify }}
+{{'[DataFormDropDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormDropDownEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type enum and list
@@ -240,6 +240,7 @@ Here, Switch editor will be loaded for `IsAvailable` property (bool type) instea
 ## Customizing existing editor
 
 You can customize the existing editors defined in above table, by overriding default editors. 
+
 Here,[DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormTextEditor.html) is customized to set different foreground for FirstName property text editor.
 
 {% tabs %}
