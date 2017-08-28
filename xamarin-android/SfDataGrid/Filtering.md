@@ -28,11 +28,11 @@ The following code example illustrates the delegate, properties, and methods use
 
 #region Fields
 
-private string filtertext = "";
-private string selectedcolumn = "All Columns";
-private string selectedcondition = "Equals";
+private string filterText = "";
+private string selectedColumn = "All Columns";
+private string selectedCondition = "Equals";
 internal delegate void FilterChanged();
-internal FilterChanged filtertextchanged;
+internal FilterChanged filterTextChanged;
 
 #endregion
 
@@ -40,10 +40,10 @@ internal FilterChanged filtertextchanged;
 
 public string FilterText
 {
-    get { return filtertext; }
+    get { return filterText; }
     set
     {
-        filtertext = value;
+        filterText = value;
         OnFilterTextChanged();
         RaisePropertyChanged("FilterText");
     }
@@ -51,14 +51,14 @@ public string FilterText
 
 public string SelectedCondition
 {
-    get { return selectedcondition; }
-    set { selectedcondition = value; }
+    get { return selectedCondition; }
+    set { selectedCondition = value; }
 }
 
 public string SelectedColumn
 {
-    get { return selectedcolumn; }
-    set { selectedcolumn = value; }
+    get { return selectedColumn; }
+    set { selectedColumn = value; }
 }
 
 #endregion
@@ -67,7 +67,7 @@ public string SelectedColumn
 
 private void OnFilterTextChanged()
 {
-    filtertextchanged();
+    filterTextChanged();
 }
 
 private bool MakeStringFilter(OrderInfo o, string option, string condition)
@@ -212,7 +212,7 @@ Once you create a `SearchView` and a view model, you can perform filtering by se
 {% highlight c# %}
 // Code-Behind
 
-viewModel.filtertextchanged = OnFilterChanged; //where ‘filtertextchanged’ is a delegate declared in ViewModel class.
+viewModel.filterTextChanged = OnFilterChanged; //where ‘filterTextChanged’ is a delegate declared in ViewModel class.
 
 private void OnFilterChanged()
 {

@@ -84,15 +84,15 @@ public class RowDragDropTemplate : LinearLayout
         this.AddView(label4);
     }
 
-    public RowDragDropTemplate(Context context, IAttributeSet attrs) : base(context, attrs)
+    public RowDragDropTemplate(Context context, IAttributeSet attribute) : base(context, attribute)
     {
     }
 
-    public RowDragDropTemplate(Context context, IAttributeSet attrs, int defStyleAttr) : base(context, attrs, defStyleAttr)
+    public RowDragDropTemplate(Context context, IAttributeSet attribute, int defStyleAttr) : base(context, attribute, defStyleAttr)
     {
     }
 
-    public RowDragDropTemplate(Context context, IAttributeSet attrs, int defStyleAttr, int defStyleRes) : base(context, attrs, defStyleAttr, defStyleRes)
+    public RowDragDropTemplate(Context context, IAttributeSet attribute, int defStyleAttr, int defStyleRes) : base(context, attribute, defStyleAttr, defStyleRes)
     {
     }
 
