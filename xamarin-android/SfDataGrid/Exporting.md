@@ -213,10 +213,10 @@ private void pdfExport_HeaderAndFooterExporting(object sender, PdfHeaderFooterEv
 
     PdfPageTemplateElement header = new PdfPageTemplateElement(width, 60);
     var assembly = Assembly.GetExecutingAssembly();
-    var imagestream = assembly.GetManifestResourceStream("ExportToExcel.SyncfusionLogo.jpg");
-    if (imagestream != null)
+    var imageStream = assembly.GetManifestResourceStream("ExportToExcel.SyncfusionLogo.jpg");
+    if (imageStream != null)
     {
-        PdfImage pdfImage = PdfImage.FromStream(imagestream);
+        PdfImage pdfImage = PdfImage.FromStream(imageStream);
         header.Graphics.DrawImage(pdfImage, new RectangleF(0, 0, width, 50));
         e.PdfDocumentTemplate.Top = header;
     }
@@ -338,8 +338,8 @@ private void pdfExport_HeaderAndFooterExporting(object sender, PdfHeaderFooterEv
     var width = e.PdfPage.GetClientSize().Width;
     PdfPageTemplateElement header = new PdfPageTemplateElement(width, 60);
     var assembly = Assembly.GetExecutingAssembly();
-    var imagestream = assembly.GetManifestResourceStream("GettingStarted.SyncfusionLogo.jpg");
-    PdfImage pdfImage = PdfImage.FromStream(imagestream);
+    var imageStream = assembly.GetManifestResourceStream("GettingStarted.SyncfusionLogo.jpg");
+    PdfImage pdfImage = PdfImage.FromStream(imageStream);
     header.Graphics.DrawImage(pdfImage, new RectangleF(0, 0, width, 50));
     e.PdfDocumentTemplate.Top = header;
 }
