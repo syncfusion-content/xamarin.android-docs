@@ -66,7 +66,7 @@ public class Dark : DataGridStyle
         return Color.FromRgb (255, 255, 255);
     }
 
-    public override Color GetBordercolor ()
+    public override Color GetBorderColor ()
     {
         return Color.FromRgb (81, 83, 82);
     }
