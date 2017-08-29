@@ -19,7 +19,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Add the following assembly references to the Android project,
 
-android\Syncfusion.SfRangeSlider.Andriod.dll
+android\Syncfusion.SfRangeSlider.Android.dll
 
 ## Add SfRangeSlider
 
