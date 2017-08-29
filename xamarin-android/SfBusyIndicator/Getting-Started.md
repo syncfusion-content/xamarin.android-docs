@@ -19,7 +19,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Add the following assembly references to the Android project,
 
-android\Syncfusion.SfBusyIndicator.Andriod.dll
+android\Syncfusion.SfBusyIndicator.Android.dll
 
 ## Add SfBusyIndicator
 
@@ -31,7 +31,7 @@ The following steps helps to add a SfBusyIndicator control through code.
 
 {% highlight c# %}
 
-using Com.Syncfusion.Sfbusyindicator;
+using Com.Syncfusion.SfBusyIndicator;
 
 {% endhighlight %}
 
