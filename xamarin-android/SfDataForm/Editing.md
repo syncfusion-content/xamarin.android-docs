@@ -73,7 +73,7 @@ Percent
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes. [DataType(“Percent”)].
 </td>
 <td>
-SfNuemricTextBox
+SfNumericTextBox
 </td>
 </tr>
 <tr>
@@ -274,7 +274,7 @@ Property settings, commit, data validation can be handled by overriding required
 {% highlight c# %}
 public class CustomSliderEditor : DataFormEditor<SeekBar>
 {
-    public CustomSliderEditor(SfDataForm dataform) : base(dataform)
+    public CustomSliderEditor(SfDataForm dataForm) : base(dataForm)
     {
     }
 

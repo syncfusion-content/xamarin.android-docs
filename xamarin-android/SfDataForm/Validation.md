@@ -319,7 +319,7 @@ bool isPropertyValid = dataForm.Validate("Property");
 {% endhighlight %}
 {% endtabs %}
 
-If DataForm or poperty is valid, `true` will be returned. Else `false` will be returned.
+If DataForm or property is valid, `true` will be returned. Else `false` will be returned.
 
 N> For validating value, new value should be committed in data object. So `ValidationMode` takes higher priority than `CommitMode`.
 

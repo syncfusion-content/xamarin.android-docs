@@ -101,8 +101,8 @@ Here data object named **ContactsInfo** created with properties.
 public class ContactsInfo
 {
     private string firstName;
-    private string middelName;
-    private string lastname;
+    private string middleName;
+    private string lastName;
     private string contactNo;
     private string email;
     private string address;
@@ -125,18 +125,18 @@ public class ContactsInfo
 
     public string MiddleName
     {
-        get { return this.middelName; }
+        get { return this.middleName; }
         set
         {
-            this.middelName = value;
+            this.middleName = value;
         }
     }
     public string LastName
     {
-        get { return this.lastname; }
+        get { return this.lastName; }
         set
         {
-            this.lastname = value;
+            this.lastName = value;
         }
     }
 

@@ -83,7 +83,7 @@ Details
 </tr>
 <tr>
 <td>
-MinLenth
+MinLength
 
 </td>
 <td>
