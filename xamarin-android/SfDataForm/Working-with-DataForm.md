@@ -120,7 +120,7 @@ You can cancel the specific [DataFormItem](https://help.syncfusion.com/cr/cref_f
 
 ### Using attributes
 
-You can use [Bindable](https://msdn.microsoft.com/en-us/library/system.componentmodel.bindableattribute.aspx) attribute or set [AutoGenerateField](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.autogeneratefield.aspx) as `false` for cancelling `DataFormItem` generation.
+You can use [Bindable](https://msdn.microsoft.com/en-us/library/system.componentmodel.bindableattribute.aspx) attribute or set [AutoGenerateField](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.autogeneratefield.aspx) as `false` for canceling  `DataFormItem` generation.
 
 {% tabs %}
 {% highlight c# %}
@@ -268,7 +268,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Adding or removing Data field displayed in DataForm at runtime
 
-If you want to remove or add data fields item at runtime, you can use [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~RefreshLayout.html) method which auto-generates the DataFormItem’s where you can skip certain item from display. By default, it will generate the items that was cancelled initially. If you want to regenerate all the items, you need to pass argument as `true`.
+If you want to remove or add data fields item at runtime, you can use [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~RefreshLayout.html) method which auto-generates the DataFormItem’s where you can skip certain item from display. By default, it will generate the items that was canceled initially. If you want to regenerate all the items, you need to pass argument as `true`.
 In the below code snippet, items are auto generated based on ` refreshLayout` flag where you can change flag at runtime and call `RefreshLayout` method to add or remove items being displayed in DataForm at runtime.
 
 {% tabs %}
@@ -392,17 +392,17 @@ To create `DataFormItems` from dictionary , you need to override [GenerateDataFo
 {% highlight c# %}
 public class DataFormItemManagerExt : DataFormItemManager
 {
-    Dictionary<string, object> dataFormDict;
-    public DataFormItemManagerExt(SfDataForm dataForm, Dictionary<string, object> dict) : base(dataForm)
+    Dictionary<string, object> dataFormDictionary;
+    public DataFormItemManagerExt(SfDataForm dataForm, Dictionary<string, object> dictionary) : base(dataForm)
     {
-        dataFormDict = dict;
+        dataFormDictionary = dictionary;
     }
 
 
     protected override List<DataFormItemBase> GenerateDataFormItems(PropertyDescriptorCollection itemProperties, List<DataFormItemBase> dataFormItems)
     {
         var items = new List<DataFormItemBase>();
-        foreach (var key in dataFormDict.Keys)
+        foreach (var key in dataFormDictionary.Keys)
         {
             DataFormItem dataFormItem;
             if (key == "ID")
@@ -436,21 +436,21 @@ Here, value is reading and writing from/to dictionary instead of data object.
 {% highlight c# %}
 public class DataFormItemManagerExt : DataFormItemManager
 {
-    Dictionary<string, object> dataFormDict;
-    public DataFormItemManagerExt(SfDataForm dataForm, Dictionary<string, object> dict) : base(dataForm)
+    Dictionary<string, object> dataFormDictionary;
+    public DataFormItemManagerExt(SfDataForm dataForm, Dictionary<string, object> dictionary) : base(dataForm)
     {
-        dataFormDict = dict;
+        dataFormDictionary = dictionary;
     }
 
     public override object GetValue(DataFormItem dataFormItem)
     {
-        var value = dataFormDict[dataFormItem.Name];
+        var value = dataFormDictionary[dataFormItem.Name];
         return value;
     }
 
     public override void SetValue(DataFormItem dataFormItem, object value)
     {
-        dataFormDict[dataFormItem.Name] = value;
+        dataFormDictionary[dataFormItem.Name] = value;
     }
 
 }
