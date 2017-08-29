@@ -33,7 +33,7 @@ N> By default the minimum property value is 0 and maximum property value is 100.
 {% highlight C# %}
 
 sfNumericUpDown.Minimum = 10;
-sfNumerucUpDown.Maximum = 50
+sfNumericUpDown.Maximum = 50
 
 {% endhighlight %}
 

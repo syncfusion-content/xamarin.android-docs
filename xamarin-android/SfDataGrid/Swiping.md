@@ -123,7 +123,7 @@ public class Swiping : SamplePage
     LinearLayout editView;
     LinearLayout deleteView;
     
-    private int swipedRowindex;
+    private int swipedRowIndex;
     
     public Swiping()
     {
@@ -319,7 +319,7 @@ public class Swiping : SamplePage
     
     private void commitValues()
     {
-        if (swipedRowindex > 0)
+        if (swipedRowIndex > 0)
         {
             var swipedRowData = this.viewModel.OrdersInfo[this.swipedRowindex - 1];
             swipedRowData.OrderID = Convert.ToInt32(this.orderIDText.Text);
@@ -331,7 +331,7 @@ public class Swiping : SamplePage
     
     private void initializeTextFields()
     {
-        if (swipedRowindex > 0)
+        if (swipedRowIndex > 0)
         {
             var swipedRowData = this.viewModel.OrdersInfo[this.swipedRowindex - 1];
             orderIDText.Text = swipedRowData.OrderID.ToString();
@@ -352,12 +352,12 @@ public class Swiping : SamplePage
     
     private void sfGrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
     {
-        swipedRowindex = e.RowIndex;
+        swipedRowIndex = e.RowIndex;
     }
     
     void swipeViewImage_Click(object sender, EventArgs e)
     {
-        viewModel.OrdersInfo.RemoveAt(swipedRowindex - 1);
+        viewModel.OrdersInfo.RemoveAt(swipedRowIndex - 1);
     }
 }
 {% endhighlight %}
@@ -397,7 +397,7 @@ rightSwipeView.AddView(deleteRight, ViewGroup.LayoutParams.MatchParent, (int)sfG
 //Code to delete() when swipe is ended
 private void sfGrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 {
-    swipedRowindex = e.RowIndex;
+    swipedRowIndex = e.RowIndex;
     if (Math.Abs(e.SwipeOffset) >= sfGrid.Width)
     {
         doDeleting();
