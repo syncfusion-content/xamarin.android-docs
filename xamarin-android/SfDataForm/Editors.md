@@ -72,7 +72,7 @@ Percent
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes. [DataType(“Percent”)].
 </td>
 <td>
-SfNuemricTextBox
+SfNumericTextBox
 </td>
 </tr>
 <tr>
@@ -303,7 +303,7 @@ In drop down editor, [Spinner](https://developer.xamarin.com/guides/android/user
 
 ### Customizing ItemsSource of spinner
 
-By default, `ItemsSouce` for spinner is auto-generated for enum types and collection type properties. For other types, you can set `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~SourceProvider.html).
+By default, `ItemsSource` for spinner is auto-generated for enum types and collection type properties. For other types, you can set `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~SourceProvider.html).
 
 **Using SourceProvider**
 
@@ -365,7 +365,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![](SfDataForm_images/DropDownItems.png)
 
-You can also change the `ItemsSouce` at runtime.
+You can also change the `ItemsSource` at runtime.
 
 {% tabs %}
 {% highlight c# %}
@@ -411,7 +411,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Customizing ItemsSource of SfPicker
 
-By default, `ItemsSouce` for picker is auto-generated for enum type and collection type properties. For other types, you can set `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~SourceProvider.html).
+By default, `ItemsSource` for picker is auto-generated for enum type and collection type properties. For other types, you can set `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~SourceProvider.html).
 
 **Using SourceProvider**
 
@@ -469,7 +469,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the itemssource at runtime.
+You can also change the `ItemsSource` at runtime.
 
 {% tabs %}
 {% highlight c# %}

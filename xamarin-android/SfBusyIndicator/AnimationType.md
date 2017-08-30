@@ -22,7 +22,7 @@ The `AnimationType` property of SfBusyIndicator allows to set anyone of the anim
 
 {% endtabs %}
 
-N> For getting animation types of busyindicator, need to add the `using Com.Syncfusion.Sfbusyindicator.Enums` namespace.
+N> For getting animation types of BusyIndicator, need to add the `using Com.Syncfusion.Sfbusyindicator.Enums` namespace.
 
 ![](images/Ball.png)
                                           

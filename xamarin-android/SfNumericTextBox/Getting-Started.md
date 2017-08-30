@@ -21,7 +21,7 @@ N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Android project,
 
-android\Syncfusion.SfNumericTextBox.Andriod.dll
+android\Syncfusion.SfNumericTextBox.Android.dll
 
 ## Add SfNumericTextBox
 
