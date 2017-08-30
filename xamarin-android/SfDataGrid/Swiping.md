@@ -206,7 +206,7 @@ public class Swiping : SamplePage
         delete.SetBackgroundColor(Color.ParseColor("#DC595F"));
         
         viewModel = new ViewModel();
-        viewModel.SetRowstoGenerate(100);
+        viewModel.SetRowsToGenerate(100);
         sfGrid = new SfDataGrid(BaseContext);
         sfGrid.AutoGenerateColumns = false;
         sfGrid.ItemsSource = (viewModel.OrdersInfo);
