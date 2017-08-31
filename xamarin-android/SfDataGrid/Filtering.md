@@ -190,7 +190,7 @@ public bool FilerRecords(object o)
 #endregion
 {% endhighlight %}
 
-The following code example illustrates how to create a `SearchView` and apply the filtered records to `ViewModel.FilterText` property in `SearchView.QuertTextChange` event.
+The following code example illustrates how to create a `SearchView` and apply the filtered records to `ViewModel.FilterText` property in `SearchView.QueryTextChange` event.
 
 {% highlight c# %}
 // Code-Behind

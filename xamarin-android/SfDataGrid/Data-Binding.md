@@ -39,7 +39,7 @@ public class ViewModel
 {        
     public ViewModel()
     {
-        SetRowstoGenerate(50);
+        SetRowsToGenerate(50);
     }
         
     private DataTable dataTable;
@@ -50,7 +50,7 @@ public class ViewModel
         set { this.dataTable = value; }
     }
 
-    public void SetRowstoGenerate (int count)
+    public void SetRowsToGenerate (int count)
     {
         dataTable = new DataTable();
         dataTable.Columns.Add("Name");
@@ -83,7 +83,7 @@ public class ViewModel
 {        
     public ViewModel()
     {
-        SetRowstoGenerate(50);
+        SetRowsToGenerate(50);
     }
         
     private ObservableCollection<ExpandoObject> collection;
@@ -94,7 +94,7 @@ public class ViewModel
         set { this.collection = value; }
     }
 
-    public void SetRowstoGenerate (int count)
+    public void SetRowsToGenerate (int count)
     {
         collection = new ObservableCollection<ExpandoObject>();
         for (int i = 1; i < count; i++)
