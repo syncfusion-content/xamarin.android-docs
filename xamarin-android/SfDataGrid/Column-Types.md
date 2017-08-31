@@ -485,7 +485,7 @@ public class ViewModel
         {
             var order = new OrderInfo()
             {
-                Image = Imagehelper.ToUIImage(new ImageMapStream(LoadResource("Image" + (i % 29) + ".png").ToArray())),// Need to give the image path properly
+                Image = ImageHelper.ToUIImage(new ImageMapStream(LoadResource("Image" + (i % 29) + ".png").ToArray())),// Need to give the image path properly
             };
             orderDetails.Add(order);
         }
@@ -701,7 +701,7 @@ public class ViewModel
 	{
 		public ViewModel ()
 		{
-			SetRowstoGenerate (100);
+			SetRowsToGenerate (100);
             this.PickerInfo = OrdersInfo.ToList();
 		}
 
@@ -727,7 +727,7 @@ public class ViewModel
 
 		#region ItemSource Generator
 
-		public void SetRowstoGenerate (int count)
+		public void SetRowsToGenerate (int count)
 		{
 			order = new OrderInfoRepository ();
 			ordersInfo = order.GetOrderDetails (count);
