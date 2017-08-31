@@ -20,7 +20,7 @@ N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Android project,
 
-android\Syncfusion.SfImageEditor.Andriod.dll
+android\Syncfusion.SfImageEditor.Android.dll
 
 # Add and configure the image editor
 

@@ -19,7 +19,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Add the following assembly references to the Android project,
 
-android\Syncfusion.SfLinearGauge.Andriod.dll
+android\Syncfusion.SfLinearGauge.Android.dll
 
 ## Add SfLinearGauge
 
