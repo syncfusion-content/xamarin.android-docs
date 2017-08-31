@@ -158,15 +158,15 @@ public class Label : TextView
         this.SetWillNotDraw(false);
     }
 
-    public Label(Context context, IAttributeSet attrs) : base(context, attrs)
+    public Label(Context context, IAttributeSet attribute) : base(context, attribute)
     {
     }
 
-    public Label(Context context, IAttributeSet attrs, int defStyleAttr) : base(context, attrs, defStyleAttr)
+    public Label(Context context, IAttributeSet attribute, int defStyleAttr) : base(context, attribute, defStyleAttr)
     {
     }
 
-    public Label(Context context, IAttributeSet attrs, int defStyleAttr, int defStyleRes) : base(context, attrs, defStyleAttr, defStyleRes)
+    public Label(Context context, IAttributeSet attribute, int defStyleAttr, int defStyleRes) : base(context, attribute, defStyleAttr, defStyleRes)
     {
     }
 
