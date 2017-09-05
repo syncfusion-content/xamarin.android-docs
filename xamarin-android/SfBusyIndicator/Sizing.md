@@ -9,7 +9,7 @@ documentation: ug
 
 # Sizing
 
-Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxWidth` properties can be used to set height and width of the Busyindicator.
+Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxWidth` properties can be used to set height and width of the SfBusyIndicator.
 
 {% tabs %}
 

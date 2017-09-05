@@ -34,7 +34,7 @@ SetContentView(carousel);
 
 {% endhighlight %}
 
-## DataSource with collection of customview
+## DataSource with collection of custom view
 
 `ContentView` property used to populate with a collection of custom view.
 

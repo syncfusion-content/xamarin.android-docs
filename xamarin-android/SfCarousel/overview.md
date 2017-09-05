@@ -13,7 +13,7 @@ Essential SfCarousel control for Xamarin.Android is a user interface providing r
 
 ![](images/carousel.png)
 
-## Key Featues:
+## Key Features:
 
 * `Offset` - Options to specify the space between the unselected carousel items.
 * `Rotation Angle` - Support to rotate the items to a specified angle.

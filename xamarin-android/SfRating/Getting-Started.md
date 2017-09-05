@@ -51,7 +51,7 @@ rating.Precision = SFRatingPrecision.Half;
 rating.ToolTipPlacement= SFRatingToolTipPlacement.None;
 rating.ItemSize=10;
 rating.Readonly=true;
-rating.Value=(nfloat)3.5;
+rating.Value=(float)3.5;
 rating.ItemSpacing = 5;
 
 {% endhighlight %}

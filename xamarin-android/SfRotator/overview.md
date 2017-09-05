@@ -17,4 +17,4 @@ The SfRotator is a data control used to display image data and navigate through 
 
 * `Modes` - Options to navigate data using dots or thumbnail navigation modes.
 * `Position` - Support to decide the placement position of dots or thumbnail items in any of the four sides.
-* `Autoplay and Items Looping` - Options for autoplaying items and navigate items in loop.
+* `Autoplay and Items Looping` - Options for autoplay items and navigate items in loop.
