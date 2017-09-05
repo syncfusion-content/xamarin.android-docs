@@ -21,7 +21,7 @@ N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Android project,
 
-android\Syncfusion.SfRotator.Andriod.dll
+android\Syncfusion.SfRotator.Android.dll
 
 ## Initializing the SfRotator
 
@@ -48,7 +48,7 @@ SfRotator items can be populated with a collection of image data or any other cu
 
 ## Through RotatorItem 
 
-* `ImageConetent` - Populating the RotatorItem with collection of Image data.
+* `ImageContent` - Populating the RotatorItem with collection of Image data.
 
 * `Content` - Populating the RotatorItem with custom view.
 
@@ -95,11 +95,11 @@ List<SfRotatorItem> collection = new List<SfRotatorItem>();
 
 // Resource of ImageView in RotatorItem's Content
 
-int[] prgmImages = { Resource.Drawable.movie1, Resource.Drawable.movie2, Resource.Drawable.movie3, Resource.Drawable.movie4, Resource.Drawable.movie5 };
+int[] images = { Resource.Drawable.movie1, Resource.Drawable.movie2, Resource.Drawable.movie3, Resource.Drawable.movie4, Resource.Drawable.movie5 };
 
 // Resource of Button in RotatorItem's Content
 
-string[] prgmStrings = { "ImageView1", "ImageView2", "ImageView3", "ImageView4", "ImageView5" };
+string[] strings = { "ImageView1", "ImageView2", "ImageView3", "ImageView4", "ImageView5" };
 
 for (int i = 0; i < 5; i++)
 {
@@ -107,9 +107,9 @@ for (int i = 0; i < 5; i++)
 	LinearLayout linearLayout = new LinearLayout(context);
 	linearLayout.Orientation = Orientation.Vertical;
 	ImageView imageView = new ImageView(context);
-	imageView.SetImageResource(prgmImages[i]);
+	imageView.SetImageResource(images[i]);
 	Button button = new Button(context);
-	button.Text = prgmStrings[i];
+	button.Text = strings[i];
 	button.TextSize = 33;
 	button.SetBackgroundColor(Android.Graphics.Color.BurlyWood);
 	linearLayout.AddView(button);
@@ -180,7 +180,7 @@ public class MainActivity : Activity
 	collection.Add(new SfRotatorItem(this));
 	collection.Add(new SfRotatorItem(this));
 	
-	// Determines the count of customview will reflect on Rotator control
+	// Determines the count of custom view will reflect on Rotator control
 
 	rotator.DataSource = collection;
 
@@ -188,11 +188,11 @@ public class MainActivity : Activity
 
 	// Resources of used custom view in Adapter
 
-	int[] prgmImages = { Resource.Drawable.movie1, Resource.Drawable.movie2, Resource.Drawable.movie3, Resource.Drawable.movie4, Resource.Drawable.movie5 };
+	int[] images = { Resource.Drawable.movie1, Resource.Drawable.movie2, Resource.Drawable.movie3, Resource.Drawable.movie4, Resource.Drawable.movie5 };
 
 	// RotatorAdapter usage
 
-	rotator.Adapter = new AdapterClass(this,prgmImages);
+	rotator.Adapter = new AdapterClass(this,images);
 
 	SetContentView(rotator);
 
@@ -205,7 +205,7 @@ public class MainActivity : Activity
 
 ## Set Navigation Mode
 
-SfRoator provides option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using `NavigationStripMode` property.
+SfRotator provides option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using `NavigationStripMode` property.
 
 {% highlight C# %}	
 

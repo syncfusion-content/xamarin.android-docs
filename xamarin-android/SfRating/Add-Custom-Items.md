@@ -55,9 +55,9 @@ N> SfRatingItem keeps both selected and unselected view respectively.
 
 {% highlight C# %}
 
-	List<SfRatingItem> listof = new List<SfRatingItem>();
-	listof.Add(item);
-	rating.Items = listof;
+	List<SfRatingItem> list = new List<SfRatingItem>();
+	list.Add(item);
+	rating.Items = list;
 
 {% endhighlight %}
 
@@ -108,13 +108,13 @@ When `EnableCustomItems` property is enabled, it will display the custom items a
 		iv9.SetImageResource(Resource.Drawable.Excited_Unselected);
 		item4.UnSelectedView = iv9;
 
-	List<SfRatingItem> listof = new List<SfRatingItem>();
-		listof.Add(item);
-		listof.Add(item1);
-		listof.Add(item2);
-		listof.Add(item3);
-		listof.Add(item4);
-	rating.Items = listof;
+	List<SfRatingItem> list = new List<SfRatingItem>();
+		list.Add(item);
+		list.Add(item1);
+		list.Add(item2);
+		list.Add(item3);
+		list.Add(item4);
+	rating.Items = list;
 	rating.EnableCustomView = true;
 
 {% endhighlight %}

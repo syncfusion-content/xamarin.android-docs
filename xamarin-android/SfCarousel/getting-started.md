@@ -19,11 +19,11 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Add the following assembly references to the Android project,
 
-android\Syncfusion.SfCarousel.Andriod.dll
+android\Syncfusion.SfCarousel.Android.dll
 
 and 
 
-Xamarin.Android.Support.v17.Leanback library (from Nuget Packages)
+Xamarin.Android.Support.v17.Leanback library (from NuGet Packages)
 
 ## Add SfCarousel
 
