@@ -61,7 +61,7 @@ sfCalendar.YearNavigated += (object sender, SfCalendar.YearNavigatedEventArgs e)
 
 # How to Customize Cell or Month View?
 
-`DrawMonthCell` event allows us to customize the monthview in SfCalendar control. It returns MonthCell args
+`DrawMonthCell` event allows us to customize the month view in SfCalendar control. It returns MonthCell args
 
 {% highlight c# %}
 
@@ -74,7 +74,7 @@ sfCalendar.DrawMonthCell += (object sender, SfCalendar.DrawMonthCellEventArgs e)
 
 # How to Customize Year View?
 
-`DrawYearCell` event allows us to customize the yearview in  SfCalendar control. It returns YearCell args
+`DrawYearCell` event allows us to customize the year view in  SfCalendar control. It returns YearCell args
 
 {% highlight c# %}
 

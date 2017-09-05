@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Events
 
-SfCalendar control has an inbuilt capability to display the events based on the calendar events collection provided to `DataSource` property. For events to be listed for a particular day, enable the inline feature in month view cell.
+SfCalendar control has an built-in capability to display the events based on the calendar events collection provided to `DataSource` property. For events to be listed for a particular day, enable the inline feature in month view cell.
 
 The default UI of the inline view with events will be like list of events with a Gray background
 
