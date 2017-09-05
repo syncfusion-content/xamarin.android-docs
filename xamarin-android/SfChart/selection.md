@@ -43,12 +43,12 @@ N> For Accumulation series like pie, doughnut, pyramid and funnel, when you sele
 
 **SelectionChanging**
 
-The [`SelectionChanging`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~SelectionChanging_EV.html) event of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) is used to subscribe the selection changing event and this is triggered before the data point is selected. You can restrict a data point from being selected, by cancelling this event, by using [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionChangingEvent~Cancel.html) property of the event argument. The argument contains the following information,
+The [`SelectionChanging`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~SelectionChanging_EV.html) event of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) is used to subscribe the selection changing event and this is triggered before the data point is selected. You can restrict a data point from being selected, by canceling this event, by using [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionChangingEvent~Cancel.html) property of the event argument. The argument contains the following information,
 
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~SelectedSeries.html) – used to get the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~SelectedDataPointIndex.html) – used to get the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~PreviousSelectedIndex.html) – used to get the previous selected data point index.
-* [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionChangingEvent~Cancel.html) – used to set the value indicating whether the selection should be cancelled.
+* [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionChangingEvent~Cancel.html) – used to set the value indicating whether the selection should be canceled.
 
 **SelectionChanged**
 
