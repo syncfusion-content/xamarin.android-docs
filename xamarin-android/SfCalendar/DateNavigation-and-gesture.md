@@ -70,7 +70,7 @@ sfCalendar.NavigationEnable=false;
 
 ## Transition modes
 
-Dates can be navigated by using swipe gesture as well as using inbuilt methods `forward` and `backward`. By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using  TransitionMode property of SfCalendar control.
+Dates can be navigated by using swipe gesture as well as using built-in methods `forward` and `backward`. By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using  TransitionMode property of SfCalendar control.
 
 {% highlight c# %}
 
