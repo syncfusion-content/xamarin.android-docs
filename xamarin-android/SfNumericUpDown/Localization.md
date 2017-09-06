@@ -16,7 +16,7 @@ N> Default `Culture` property value is en-US.
 
 {% highlight C# %}
 
-	numericupdown.Culture = new System.Globalization.CultureInfo("en-US");
+	numeric.Culture = new System.Globalization.CultureInfo("en-US");
 	
 {% endhighlight %}
 
