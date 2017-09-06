@@ -20,14 +20,14 @@ The label color can be changed using the `LabelColor` property. The labels can b
 {% highlight c# %}
 
         ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
-        SfCircularGauge circularGauge = new SfCircularGauge(this);
+        SfCircularGauge circular = new SfCircularGauge(this);
         CircularScale scale = new CircularScale();
         scale.LabelColor = Color.Gray;
         scale.LabelOffset = 0.1;
         scale.LabelTextSize = 10;
         circularScales.Add(scale);
-        circularGauge.CircularScales = circularScales;
-        SetContentView(circularGauge);
+        circular.CircularScales = circularScales;
+        SetContentView(circular);
 
 {% endhighlight %}
 
@@ -38,12 +38,12 @@ The `NumberOfDecimalDigits` property is used to set the number of decimal digits
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge(this);
+    SfCircularGauge circular = new SfCircularGauge(this);
         CircularScale scale = new CircularScale();
         scale.NumberOfDecimalDigits = 1;
         circularScales.Add(scale);  
-        circularGauge.CircularScales = circularScales;
-        SetContentView(circularGauge);
+        circular.CircularScales = circularScales;
+        SetContentView(circular);
 
 {% endhighlight %}
 
@@ -59,11 +59,11 @@ This property allows you to set the postfix values to the scale labels.
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge(this);
+    SfCircularGauge circular = new SfCircularGauge(this);
         CircularScale scale = new CircularScale();
         scale.LabelPostfix = "%";
-        circularGauge.CircularScales = circularScales;
-        SetContentView(circularGauge);
+        circular.CircularScales = circularScales;
+        SetContentView(circular);
 
 {% endhighlight %}
 
@@ -75,11 +75,11 @@ This property allows you to set the prefix values to the scale labels.
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge(this);
+    SfCircularGauge circular = new SfCircularGauge(this);
         CircularScale scale = new CircularScale();
         scale.LabelPrefix = "$";
-        circularGauge.CircularScales = circularScales;
-        SetContentView(circularGauge);
+        circular.CircularScales = circularScales;
+        SetContentView(circular);
 
 {% endhighlight %}
 
@@ -91,13 +91,13 @@ ShowLabels property is a Boolean property which is used to enable or disable fea
 
 {% highlight c# %}
 
-            SfCircularGauge circulargauge = new SfCircularGauge();    
+            SfCircularGauge circular = new SfCircularGauge();    
             ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();   
             CircularScale scale = new CircularScale();     
             scale.ShowLabels = false;
             circularScales.Add(scale);
-            circularGauge.CircularScales = circularScales;
-            SetContentView(circularGauge);
+            circular.CircularScales = circularScales;
+            SetContentView(circular);
    
     
 {% endhighlight %}
