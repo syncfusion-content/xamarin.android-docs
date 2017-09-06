@@ -24,7 +24,7 @@ The Major and Minor ticks can be positioned far away from the rim by using the `
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge(this);  
+    SfCircularGauge circular = new SfCircularGauge(this);  
         TickSetting minor = new TickSetting();
         minor.Size = 6;
         minor.Color = Color.ParseColor("#2bbfb8");
@@ -38,8 +38,8 @@ The Major and Minor ticks can be positioned far away from the rim by using the `
         major.Width = 3;
         major.Offset = 0.5;
         scale.MajorTickSettings = major;
-        circularGauge.CircularScales = circularScales;
-        SetContentView(circularGauge);
+        circular.CircularScales = circularScales;
+        SetContentView(circular);
 
 {% endhighlight %}
 
@@ -47,17 +47,17 @@ The Major and Minor ticks can be positioned far away from the rim by using the `
 
 ## ShowTicks
 
-ShowTicks property is a Boolean property which is used to enable or disable feature of ticks in CircularGauge
+ShowTicks property is a Boolean property which is used to enable or disable feature of ticks in circulargauge.
 
 {% highlight c# %}
 
-            SfCircularGauge circulargauge = new SfCircularGauge();    
+            SfCircularGauge circular = new SfCircularGauge();    
             ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();   
             CircularScale scale = new CircularScale();     
             scale.ShowTicks = false;
             circularScales.Add(scale);
-            circularGauge.CircularScales = circularScales;
-            SetContentView(circularGauge);
+            circular.CircularScales = circularScales;
+            SetContentView(circular);
    
     
 {% endhighlight %}

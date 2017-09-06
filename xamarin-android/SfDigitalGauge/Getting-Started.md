@@ -43,8 +43,8 @@ using Com.Syncfusion.Digitalgauge;
 
 {% highlight c# %}
 
-SfDigitalGauge digitalGauge = new SfDigitalGauge(this);
-SetContentView(digitalGauge);
+SfDigitalGauge digital = new SfDigitalGauge(this);
+SetContentView(digital);
 	
 {% endhighlight %}
 
@@ -58,10 +58,10 @@ User can customize the height, width and segment type in SfDigitalGauge.
 
 {% highlight c# %}
 
-digitalGauge.Value=”Syncfusion”;
-digitalGauge.CharacterHeight=50;
-digitalGauge.CharacterWidth=50;
-digitalGauge.CharacterType=CharacterTypes.SegmentSeven;
+digital.Value=”Syncfusion”;
+digital.CharacterHeight=50;
+digital.CharacterWidth=50;
+digital.CharacterType=CharacterTypes.SegmentSeven;
 
 {% endhighlight %}
 

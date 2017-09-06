@@ -99,7 +99,7 @@ An arrow head that points to the value is called the Symbol Pointer which can be
 
 ObservableCollection<LinearPointer> pointers = new ObservableCollection<LinearPointer> ();
 SymbolPointer outerScale_needlePointer = new SymbolPointer ();
-outerScale_needlePointer.Value = pointervalue;
+outerScale_needlePointer.Value = value;
 outerScale_needlePointer.StrokeWidth = 0;
 outerScale_needlePointer.Offset = 0.3f;
 outerScale_needlePointer.Color = Color.ParseColor ("#414D4F");
@@ -118,7 +118,7 @@ A flat solid bar that points to the current value can be added by instantiating 
 {% highlight c# %}
 		
 BarPointer rangePointer = new BarPointer ();
-rangePointer.Value = barvalue;
+rangePointer.Value = _value;
 rangePointer.Color = Color.ParseColor ("#CE4545");
 rangePointer.StrokeWidth = 20;
 pointers.Add (rangePointer);
