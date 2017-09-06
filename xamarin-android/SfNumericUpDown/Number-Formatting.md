@@ -24,7 +24,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight C# %}
 	
-	numericupdown.FormatString="c";
+	numeric.FormatString="c";
 	 
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight C# %}
 	
-	numericupdown.FormatString="n";
+	numeric.FormatString="n";
 	 
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight C# %}
 
-	numericupdown.FormatString="p";
+	numeric.FormatString="p";
 	 
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight C# %}
 
-numericupdown.ParserMode=ParserMode.Decimal;
+numeric.ParserMode=ParserMode.Decimal;
 	  
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ It provides the following options
 
 {% highlight C# %}
 
-	numericupdown.PercentDisplayMode=PercentDisplayMode.Value;
+	numeric.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
 
@@ -106,7 +106,7 @@ It provides the following options
 
 {% highlight C# %}
 
-	numericupdown.PercentDisplayMode=PercentDisplayMode.Compute;
+	numeric.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}
 
