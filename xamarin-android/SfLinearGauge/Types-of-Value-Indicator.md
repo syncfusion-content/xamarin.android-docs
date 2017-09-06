@@ -13,7 +13,7 @@ This section explains about different types of Pointers available in SfLinearGau
 
 ## Through Bar Pointer
 
-Barpointer is an accenting line or colored bar that is placed on the SfLinearGauge to mark the values. 
+Bar pointer is an accenting line or colored bar that is placed on the SfLinearGauge to mark the values. 
 
 {% tabs %}
 
