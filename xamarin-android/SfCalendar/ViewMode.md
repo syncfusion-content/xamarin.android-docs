@@ -16,7 +16,7 @@ By default SfCalendar control is assigned with month view. Based on the user’s
 
 ## MonthView
 
-This displays entire dates of a particular month, by default current month will be displayed on Loading. The current date is provided with seperate color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
+This displays entire dates of a particular month, by default current month will be displayed on Loading. The current date is provided with unique color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
 
 The dates in month view can be selected by three ways such as single, multiple and range which can be modified using `SelectionMode`
 

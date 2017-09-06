@@ -13,7 +13,7 @@ SfRotator items can be populated with a collection of image data or any other cu
 
 To get the view of Rotator, we have two ways with SfRotatorItem
 
-* `ImageConetent` - Populating the RotatorItem with collection of Image data.
+* `ImageContent` - Populating the RotatorItem with collection of Image data.
 
 * `Content` - Populating the RotatorItem with custom view.
 
@@ -65,11 +65,11 @@ List<SfRotatorItem> collection = new List<SfRotatorItem>();
 
 // Resource of ImageView in RotatorItem's Content
 
-int[] prgmImages = { Resource.Drawable.movie1, Resource.Drawable.movie2, Resource.Drawable.movie3, Resource.Drawable.movie4, Resource.Drawable.movie5 };
+int[] images = { Resource.Drawable.movie1, Resource.Drawable.movie2, Resource.Drawable.movie3, Resource.Drawable.movie4, Resource.Drawable.movie5 };
 
 // Resource of Button in RotatorItem's Content
 
-string[] prgmStrings = { "ImageView1", "ImageView2", "ImageView3", "ImageView4", "ImageView5" };
+string[] strings = { "ImageView1", "ImageView2", "ImageView3", "ImageView4", "ImageView5" };
 
 for (int i = 0; i < 5; i++)
 {
@@ -77,9 +77,9 @@ for (int i = 0; i < 5; i++)
 	LinearLayout linearLayout = new LinearLayout(context);
 	linearLayout.Orientation = Orientation.Vertical;
 	ImageView imageView = new ImageView(context);
-	imageView.SetImageResource(prgmImages[i]);
+	imageView.SetImageResource(images[i]);
 	Button button = new Button(context);
-	button.Text = prgmStrings[i];
+	button.Text = strings[i];
 	button.TextSize = 33;
 	button.SetBackgroundColor(Android.Graphics.Color.BurlyWood);
 	linearLayout.AddView(button);
@@ -106,8 +106,8 @@ RotatorAdapter object acts as a bridge between an RotatorAdapterView and the und
 
 Needed things to achieve this,
 
-* `DataSource` - Determines the count of customview will reflect on Rotator control
-* `Adapter` - This property will carry the customview on Rotator.
+* `DataSource` - Determines the count of custom view will reflect on Rotator control
+* `Adapter` - This property will carry the custom view on Rotator.
 * `CustomAdapter Class`- Which inherits the RotatorAdapter class and use the GetItemView and GetThumbnailView method.
 
 ### CustomAdapter Class
@@ -168,19 +168,19 @@ public class MainActivity : Activity
 	collection.Add(new SfRotatorItem(this));
 	collection.Add(new SfRotatorItem(this));
 
-	// Determines the count of customview will reflect on Rotator control
+	// Determines the count of custom view will reflect on Rotator control
 
 	rotator.DataSource = collection;
 
 	// Resources of used custom view in Adapter
 
-	int[] prgmImages = { Resource.Drawable.movie1, Resource.Drawable.movie2, Resource.Drawable.movie3, Resource.Drawable.movie4, Resource.Drawable.movie5 };
+	int[] images = { Resource.Drawable.movie1, Resource.Drawable.movie2, Resource.Drawable.movie3, Resource.Drawable.movie4, Resource.Drawable.movie5 };
 
 	rotator.SelectedIndex = 2;
 
 	// RotatorAdapter usage
 
-	rotator.Adapter = new AdapterClass(this,prgmImages);
+	rotator.Adapter = new AdapterClass(this,images);
 
 	SetContentView(rotator);
 

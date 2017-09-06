@@ -46,9 +46,9 @@ public class MainActivity : Activity
 
         Context context = this;
 
-        SfRotator sfRottaor = (SfRotator)FindViewById(Resource.Id.rotator);
+        SfRotator rotator = (SfRotator)FindViewById(Resource.Id.rotator);
 
-        sfRottaor.SelectedIndex = 2;
+        rotator.SelectedIndex = 2;
 
         List<SfRotatorItem> collection = new List<SfRotatorItem>();
 
@@ -56,7 +56,7 @@ public class MainActivity : Activity
         {
             collection.Add(new SfRotatorItem(context) { ImageContent = "movie" + i.ToString() });
         }
-        sfRottaor.DataSource = collection;
+        rotator.DataSource = collection;
     }
 }
 
@@ -78,7 +78,7 @@ We can perform operation while the changing the Rotator's item using `SelectionC
 
 {% highlight C# %}
 
-sfRottaor.SelectionChanged += (object sender, SfRotator.SelectionChangedEventArgs e) =>
+rotator.SelectionChanged += (object sender, SfRotator.SelectionChangedEventArgs e) =>
 {
     // Perform the operation when Rotator's Item changed.
 };
