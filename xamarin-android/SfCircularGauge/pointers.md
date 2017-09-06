@@ -28,7 +28,7 @@ It is `enum` and includes the following option.
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge(this);
+    SfCircularGauge circular = new SfCircularGauge(this);
         CircularScale scale = new CircularScale();
         List<CircularPointer> pointers = new List<CircularPointer>();
         NeedlePointer needlePointer = new NeedlePointer();
@@ -42,7 +42,7 @@ It is `enum` and includes the following option.
         pointers.Add(needlePointer);
         scale.CircularPointers = pointers;
         circularScales.Add(scale);
-        circularGauge.CircularScales = circularScales;
+        circular.CircularScales = circularScales;
 
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ The `RangePointer` in the scale can be placed inside the scale or outside the sc
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge(this);
+    SfCircularGauge circular = new SfCircularGauge(this);
         CircularScale scale = new CircularScale();
         List<CircularPointer> pointers = new List<CircularPointer>();
         RangePointer rangePointer = new RangePointer();
@@ -68,7 +68,7 @@ The `RangePointer` in the scale can be placed inside the scale or outside the sc
         pointers.Add(rangePointer);
         scale.CircularPointers = pointers;
         circularScales.Add(scale);
-        circularGauge.CircularScales = circularScales;
+        circular.CircularScales = circularScales;
 
 {% endhighlight %}
 
@@ -76,7 +76,7 @@ The `RangePointer` in the scale can be placed inside the scale or outside the sc
 
 ## Pointer Animation
 
-EnableAnimation property is a Boolean property that enables or disables the animation of the pointers in circularGauge.
+EnableAnimation property is a Boolean property that enables or disables the animation of the pointers in circulargauge.
 
 {% highlight c# %}
 
@@ -86,6 +86,6 @@ EnableAnimation property is a Boolean property that enables or disables the anim
             pointers.Add(needlePointer);
             scale.CircularPointers = pointers;
             circularScales.Add(scale);
-            circularGauge.CircularScales = circularScales;
+            circular.CircularScales = circularScales;
 
 {% endhighlight  %}
