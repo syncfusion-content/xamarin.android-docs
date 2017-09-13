@@ -48,7 +48,7 @@ You can assign a unique header to `SfCircularGauge` by making use of `Header` pr
 
     SfCircularGauge circularGauge = new SfCircularGauge(this);
     Header header = new Header();
-    header.Text = "Speedmeter";
+    header.Text = "Speedometer";
     header.TextSize = 20;
     header.Position = new PointF((float)0.5, (float)0.7);
     header.TextColor = Color.Gray;
