@@ -21,7 +21,7 @@ Add the following assembly references to the Android project,
 
 android\Syncfusion.SfDigitalGauge.Android.dll
 
-## Add SfDigitalgauge
+## Add SfDigitalGauge
 
 The following steps explain on how to create a SfDigitalGauge and configure its elements.
 
@@ -31,7 +31,7 @@ The following steps explain on how to create a SfDigitalGauge and configure its 
 
 {% highlight c# %}
 
-using Com.Syncfusion.Digitalgauge; 
+using Com.Syncfusion.SfDigitalGauge; 
 
 {% endhighlight %}
 
