@@ -76,7 +76,7 @@ The `RangePointer` in the scale can be placed inside the scale or outside the sc
 
 ## Pointer Animation
 
-EnableAnimation property is a Boolean property that enables or disables the animation of the pointers in circulargauge.
+EnableAnimation property is a Boolean property that enables or disables the animation of the pointers in CircularGauge.
 
 {% highlight c# %}
 
