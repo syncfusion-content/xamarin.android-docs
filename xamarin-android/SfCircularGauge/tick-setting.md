@@ -47,7 +47,7 @@ The Major and Minor ticks can be positioned far away from the rim by using the `
 
 ## ShowTicks
 
-ShowTicks property is a Boolean property which is used to enable or disable feature of ticks in circulargauge.
+ShowTicks property is a Boolean property which is used to enable or disable feature of ticks in CircularGauge.
 
 {% highlight c# %}
 
