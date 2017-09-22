@@ -29,7 +29,7 @@ For creating a PDF Viewer for android, the following assemblies need to be refer
 
 Create a new blank application for Android using Visual Studio and name it as “GettingStartedDroid”. Refer the above-mentioned assemblies to the project. 
 
-Add a PDF document you need to display in the PDF Viewer (here GIS Succinctly.pdf is used) and set the build action property as “AndroidAssest”.
+Add a PDF document you need to display in the PDF Viewer (here GIS Succinctly.pdf is used) and set the build action property as “AndroidAsset”.
 
 Add the below code in the Main.axml to include PDF Viewer control.
    
@@ -152,15 +152,15 @@ protected override void OnCreate(Bundle bundle)
     pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
     pageNumberEntry = FindViewById<EditText>(Resource.Id.pagenumberentry);
 
-    //Wireup PageChanged event with PdfViewer_PageChanged
+    //Wire up PageChanged event with PdfViewer_PageChanged
     pdfViewer.PageChanged += PdfViewer_PageChanged;
-    //Wireup KeyPress event with PageNumberEntry_KeyPress
+    //Wire up KeyPress event with PageNumberEntry_KeyPress
     pageNumberEntry.KeyPress += PageNumberEntry_KeyPress;
 }
 
 private void PdfViewer_PageChanged(object sender, PageChangedEventArgs args)
 {
-    //Set the text of PageNumerEntry EditText control to the PageNumber event argument of PageChanged event.
+    //Set the text of PageNumberEntry EditText control to the PageNumber event argument of PageChanged event.
     pageNumberEntry.Text = args.PageNumber.ToString();
 }
 
@@ -170,7 +170,7 @@ private void PageNumberEntry_KeyPress(object sender, Android.Views.View.KeyEvent
     if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
     {
         int pageNumber = 0;
-        //Validated the entered text input is interger or validate.
+        //Validated the entered text input is integer or validate.
         if (int.TryParse((pageNumberEntry.Text), out pageNumber))
         {
             if ((pageNumber > 0) && (pageNumber <= pdfViewer.PageCount))
@@ -247,7 +247,7 @@ protected override void OnCreate(Bundle bundle)
     pdfViewer = FindViewById<SfPdfViewer>(Resource.Id.pdfviewercontrol);
     pageCountText = FindViewById<TextView>(Resource.Id.pagecounttext);
 
-    //Wireup DocumentLoaded event with PdfViewer_DocumentLoaded
+    //Wire up DocumentLoaded event with PdfViewer_DocumentLoaded
     pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
 }
 
@@ -437,7 +437,7 @@ namespace GettingStartedDroid
             pageUpButton = FindViewById<ImageButton>(Resource.Id.pageupbutton);
             mainView = FindViewById<LinearLayout>(Resource.Id.parentview);
 
-            //Wireup events.
+            //Wire up events.
             pageNumberEntry.KeyPress += PageNumberEntry_KeyPress;
             pageDownButton.Click += PageDownButton_Click;
             pageUpButton.Click += PageUpButton_Click;
@@ -480,7 +480,7 @@ namespace GettingStartedDroid
                 int pageNumber = 0;
                 if (int.TryParse((pageNumberEntry.Text), out pageNumber))
                 {
-                    //Validated the entered text input is interger or validate.
+                    //Validated the entered text input is integer or validate.
                     if ((pageNumber > 0) && (pageNumber <= pdfViewer.PageCount))
                         pdfViewer.GoToPage(pageNumber);
                     else
