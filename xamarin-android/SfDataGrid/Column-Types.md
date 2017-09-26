@@ -184,6 +184,16 @@ employeeId.TextMargin = new Thickness(0, 0, 25, 0);
 
 {% endhighlight %}
 
+### LoadUIView
+[GridColumn.LoadUIView](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~LoadUIView.html) property denoting whether to load UIView or draw cell value in android platform. The default value of the LoadUIView is false. so draw the grid cells content in canvas. While setting the LoadUIView to true, it will load a TextView inside the GridCells and instead of drawing the content in canvas, the content of the TextView is set and hence the contents are wrapped. 
+
+{% highlight c# %}
+
+GridTextColumn customerID = new GridTextColumn();
+customerID.MappingName = "Description";
+customerID.LoadUIView = true;
+
+{% endhighlight %}
 
 ## GridTextColumn
 
@@ -808,5 +818,8 @@ dataGrid.Columns.Add(numericColumn);
 * [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn~NumberGroupSizes.html) - You can change the number of digits in each group before the decimal point on numeric values using `GridNumericColumn.NumberGroupSizes` property.
 
 * [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
+
+* [MinValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridEditorColumn~MinValue.html) - you can set the minimum value for the numericColumn using `GridNumericColumn.MinValue` property.
+* [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridEditorColumn~MaxValue.html) - you can set the maximum value for the numericColumn using `GridNumericColumn.MaxValue` property.
 
 ![](SfDataGrid_images/NumericColumn.png)

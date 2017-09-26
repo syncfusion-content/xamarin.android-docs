@@ -199,6 +199,40 @@ The `QueryRowDragging` event provides following properties in [QueryRowDragging
 * [CurrentRowData](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~CurrentRowData.html) – Returns the corresponding row data, over which the row drag view is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
+### Customizing row drag and drop indicators
+
+SfDataGrid allows you to customize the row drag and drop indicators by writing a Style class overriding from DataGridStyle and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
+
+The below code example illustrate how to customize the row drag and drop indicators.
+
+{% highlight c#%}
+
+dataGrid.GridStyle = new CustomGridStyle();
+
+{% endhighlight %}
+
+{% highlight c#%}
+
+// Custom style class
+public class CustomGridStyle : DataGridStyle
+{
+    public CustomGridStyle()
+    {
+    }
+        public override int GetRowDragUpIndicator()
+        {
+            return Resource.Drawable.RedUp;
+        }
+        public override int GetRowDragDownIndicator()
+        {
+            return Resource.Drawable.RedDown;
+        }
+}
+
+{% endhighlight %}
+
+![](SfDataGrid_images/CustomizeRowDragAndDrop.png)
+
 ## Disable dragging for particular row 
 
 Dragging can be disabled for a particular row by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to disable dragging for particular row.
