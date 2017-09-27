@@ -31,7 +31,7 @@ The `QueryColumnDragging` event provides following properties in [QueryColumnDr
 
 ![](SfDataGrid_images/ColumnDragAndDrop.png)
 
-### Customize column drag and drop indicators
+## Customize column drag and drop indicators
 
 SfDataGrid allows you to customize the column drag and drop indicators by writing a Style class overriding from DataGridStyle and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
 

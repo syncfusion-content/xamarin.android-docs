@@ -24,34 +24,6 @@ The following code example illustrates how to customize header row height in SfD
 dataGrid.HeaderRowHeight = 50;  
 {% endhighlight %}
 
-### GridRowSizingOptions
-
-SfDataGrid allows you to customize the grid row's height with various customizing options while auto row height, by passing the `RowIndex` and `GridRowSizingOptions` as arguments to the `GetRowHeight` method.
-
-SfDataGrid allows you to calculate the row height, include with hidden columns using [GridRowSizingOptions.CanIncludeHiddenColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridRowSizingOptions~CanIncludeHiddenColumns.html) property and calculate the row height with exclude certain columns using [GridRowSizingOptions.ExcludeColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridRowSizingOptions~ExcludeColumns.html) property.
-
-The following code example illustrates this.
-
-{% highlight c# %}
- 
- private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
-{
-    GridRowSizingOptions options = new GridRowSizingOptions();
-    options.CanIncludeHiddenColumns = true;
-    options.ExcludeColumns.Add("Description");
-    options.ExcludeColumns.Add("CustomerID");
-    if (e.RowIndex == 0)
-    {
-        e.Height = 50;
-    }
-    else
-    {
-        e.Height = dataGrid.GetRowHeight(e.RowIndex, options);
-    }
-    e.Handled = true;
-}
-{% endhighlight %}
-
 ## Customize RowHeight for all rows
 
 SfDataGrid allows you to customize the height of the grid rows in the scrolling region by setting the [SfDataGrid.RowHeight](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~HeaderRowHeight.html) property. The default value of this property is 50. This property responds to runtime changes and hence you can customize it based on your requirement. Setting this property will change the height of all the rows in the body region with the common value. Setting `SfDataGrid.RowHeight` to zero will collapse all the rows in the grid.
@@ -91,6 +63,34 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
         e.Handled = true;
     }
 } 
+{% endhighlight %}
+
+### GridRowSizingOptions
+
+SfDataGrid allows you to customize the grid row's height with various customizing options while auto row height, by passing the `RowIndex` and `GridRowSizingOptions` as arguments to the `GetRowHeight` method.
+
+SfDataGrid allows you to calculate the row height, include with hidden columns using [GridRowSizingOptions.CanIncludeHiddenColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridRowSizingOptions~CanIncludeHiddenColumns.html) property and calculate the row height with exclude certain columns using [GridRowSizingOptions.ExcludeColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridRowSizingOptions~ExcludeColumns.html) property.
+
+The following code example illustrates this.
+
+{% highlight c# %}
+ 
+ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    GridRowSizingOptions options = new GridRowSizingOptions();
+    options.CanIncludeHiddenColumns = true;
+    options.ExcludeColumns.Add("Description");
+    options.ExcludeColumns.Add("CustomerID");
+    if (e.RowIndex == 0)
+    {
+        e.Height = 50;
+    }
+    else
+    {
+        e.Height = dataGrid.GetRowHeight(e.RowIndex, options);
+    }
+    e.Handled = true;
+}
 {% endhighlight %}
 
 ## Auto fit the grid rows based on content

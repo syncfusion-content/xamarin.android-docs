@@ -10,7 +10,7 @@ documentation: UG
 # Styles
 
 SfDataGrid allows you to apply style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
-  
+
 The following example explains you how to apply custom style to SfDataGrid.
 
 {% highlight c# %}
@@ -91,11 +91,10 @@ public class Dark : DataGridStyle
 The following picture shows the grid loaded in different styles.
 
 ![](SfDataGrid_images/Styles.png)
-![](SfDataGrid_images/AlternatingStyle1.png)
 
 ## Applying alternate row style
 
-SfDataGrid allows you to apply the alternative row style by writing a Style class overriding from DataGridStyle and assigning it to the SfDataGrid.GridStyle property.
+SfDataGrid allows you to apply the alternative row style by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
 
 {% highlight c# %}
 //Apply alternative row style
@@ -117,9 +116,9 @@ public class CustomGridStyle : DataGridStyle
 
 ![](SfDataGrid_images/AlternateRowStyle.png)
 
-## Customizing the alternate row style
+## Customizing the alernation count
 
-SfDataGrid allows you to customize the alternate row style using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AlternationCountProperty.html) property.
+SfDataGrid allows you to customize the alternate row count using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AlternationCountProperty.html) property.
 
 The below code illustrates how to set the alternate row count.
 

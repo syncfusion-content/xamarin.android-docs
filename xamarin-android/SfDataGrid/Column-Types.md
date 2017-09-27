@@ -185,7 +185,7 @@ employeeId.TextMargin = new Thickness(0, 0, 25, 0);
 {% endhighlight %}
 
 ### LoadUIView
-[GridColumn.LoadUIView](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~LoadUIView.html) property denoting whether to load UIView or draw cell value in android platform. The default value of the LoadUIView is false. so draw the grid cells content in canvas. While setting the LoadUIView to true, it will load a TextView inside the GridCells and instead of drawing the content in canvas, the content of the TextView is set and hence the contents are wrapped. 
+[GridColumn.LoadUIView](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~LoadUIView.html) property denotes whether to load element or draw cell value in android platform. The default value of the LoadUIView is false. so draw the grid cells content in canvas. While setting the LoadUIView to true, it will load a element inside the GridCells and instead of drawing the content in canvas, the content of the TextView is set and hence the contents are wrapped. 
 
 {% highlight c# %}
 
