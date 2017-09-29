@@ -100,7 +100,7 @@ protected override void OnCreate(Bundle bundle)
     searchView.TextSize = 18;
     searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
     searchView.TextAlignment = TextAlignment.Center;
-    //Wireup KeyPress event with SearchView_KeyPress
+    //Wire up KeyPress event with SearchView_KeyPress
     searchView.KeyPress += SearchView_KeyPress;
 
     //Access the document in the resource as stream and load it in the PDF viewer.
@@ -194,9 +194,9 @@ protected override void OnCreate(Bundle bundle)
     searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
     searchView.TextAlignment = TextAlignment.Center;
 
-    //Wireup KeyPress event with SearchView_KeyPress
+    //Wire up KeyPress event with SearchView_KeyPress
     searchView.KeyPress += SearchView_KeyPress;
-    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    //Wire up SearchCompleted event with PdfViewer_SearchCompleted
     pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
 
     //Access the document in the resource as stream and load it in the PDF viewer.
@@ -308,11 +308,11 @@ protected override void OnCreate(Bundle bundle)
     searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
     searchView.TextAlignment = TextAlignment.Center;
 
-    //Wireup KeyPress event with SearchView_KeyPress
+    //Wire up KeyPress event with SearchView_KeyPress
     searchView.KeyPress += SearchView_KeyPress;
-    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    //Wire up SearchCompleted event with PdfViewer_SearchCompleted
     pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
-    //Wireup Click event with TextSearchButton_Click
+    //Wire up Click event with TextSearchButton_Click
     textSearchButton.Click += TextSearchButton_Click;
     
     //Access the document in the resource as stream and load it in the PDF viewer.
@@ -424,11 +424,11 @@ protected override void OnCreate(Bundle bundle)
     searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
     searchView.TextAlignment = TextAlignment.Center;
 
-    //Wireup KeyPress event with SearchView_KeyPress
+    //Wire up KeyPress event with SearchView_KeyPress
     searchView.KeyPress += SearchView_KeyPress;
-    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    //Wire up SearchCompleted event with PdfViewer_SearchCompleted
     pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
-    //Wireup Click event with TextSearchButton_Click
+    //Wire up Click event with TextSearchButton_Click
     textSearchButton.Click += TextSearchButton_Click;
     
     //Access the document in the resource as stream and load it in the PDF viewer.
@@ -536,9 +536,9 @@ protected override void OnCreate(Bundle bundle)
     searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
     searchView.TextAlignment = TextAlignment.Center;
 
-    //Wireup KeyPress event with SearchView_KeyPress
+    //Wire up KeyPress event with SearchView_KeyPress
     searchView.KeyPress += SearchView_KeyPress;
-    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    //Wire up SearchCompleted event with PdfViewer_SearchCompleted
     pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
 
     //Access the document in the resource as stream and load it in the PDF viewer.
@@ -636,11 +636,11 @@ protected override void OnCreate(Bundle bundle)
     searchView.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
     searchView.TextAlignment = TextAlignment.Center;
 
-    //Wireup KeyPress event with SearchView_KeyPress
+    //Wire up KeyPress event with SearchView_KeyPress
     searchView.KeyPress += SearchView_KeyPress;
-    //Wireup SearchCompleted event with PdfViewer_SearchCompleted
+    //Wire up SearchCompleted event with PdfViewer_SearchCompleted
     pdfViewer.SearchCompleted += PdfViewer_SearchCompleted;
-    //Wireup Click event with ClearSearchButton_Click
+    //Wire up Click event with ClearSearchButton_Click
     clearSearchButton.Click += ClearSearchButton_Click;
 
     //Access the document in the resource as stream and load it in the PDF viewer.
@@ -873,7 +873,7 @@ namespace GettingStartedDroid
             backButton = FindViewById<ImageButton>(Resource.Id.backButton);
             clearSearchButton = FindViewById<ImageButton>(Resource.Id.clearSearchResult);
 
-            //Wireup events.
+            //Wire up events.
             pageNumberEntry.KeyPress += PageNumberEntry_KeyPress;
             pageDownButton.Click += PageDownButton_Click;
             pageUpButton.Click += PageUpButton_Click;
