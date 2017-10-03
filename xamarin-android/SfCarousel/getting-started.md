@@ -116,4 +116,4 @@ carousel.SelectedIndex=2;
 
 ![](images/carousel.png)
 
-You can find the complete getting started sample from this [Link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSampleCarousel-2146470185.zip)
+You can find the complete getting started sample from this [Link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSampleCarousel39791457)
