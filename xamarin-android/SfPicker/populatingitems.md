@@ -27,8 +27,8 @@ To bind the data source in SfPicker, set the `SfPicker.ItemsSource` property as 
         {
             SfPicker picker = new SfPicker(this);
             base.OnCreate(savedInstanceState);
-            ColorInfo colorinfo = new ColorInfo();
-            picker.ItemsSource = colorinfo.Colors;
+            ColorInfo info = new ColorInfo();
+            picker.ItemsSource = info.Colors;
             SetContentView(picker);
         }
 {% endhighlight %}
@@ -70,12 +70,12 @@ The following code example illustrates about to populate Month, Day and Year val
         {
             #region Public Properties
 
-            // Months api is used to modify the Day collection as per change in Month
+            // Months API is used to modify the Day collection as per change in Month
 
             internal Dictionary<string, string> Months { get; set; }
 
             /// <summary>
-            /// Date is the acutal DataSource for SfPicker control which will holds the collection of Day ,Month and Year
+            /// Date is the actual DataSource for SfPicker control which will holds the collection of Day ,Month and Year
             /// </summary>
             /// <value>The date.</value>
             public ObservableCollection<object> Date { get; set; }
@@ -90,7 +90,7 @@ The following code example illustrates about to populate Month, Day and Year val
             internal ObservableCollection<object> Year { get; set; }
 
             /// <summary>
-            /// Headers api is holds the column name for every column in date picker
+            /// Headers API is holds the column name for every column in date picker
             /// </summary>
             /// <value>The Headers.</value>
             public ObservableCollection<string> Headers { get; set; }
@@ -101,17 +101,17 @@ The following code example illustrates about to populate Month, Day and Year val
             public DatePicker(Context context) : base(context)
             {
 
-                ObservableCollection<object> todaycollection = new ObservableCollection<object>();
+                ObservableCollection<object> collection = new ObservableCollection<object>();
 
                 //Select today dates
-                todaycollection.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(DateTime.Now.Date.Month).Substring(0, 3));
+                collection.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(DateTime.Now.Date.Month).Substring(0, 3));
                 if (DateTime.Now.Date.Day < 10)
-                    todaycollection.Add("0" + DateTime.Now.Date.Day);
+                    collection.Add("0" + DateTime.Now.Date.Day);
                 else
-                    todaycollection.Add(DateTime.Now.Date.Day.ToString());
-                todaycollection.Add(DateTime.Now.Date.Year.ToString());
+                    collection.Add(DateTime.Now.Date.Day.ToString());
+                collection.Add(DateTime.Now.Date.Year.ToString());
 
-                this.StartDate = todaycollection;
+                this.StartDate = collection;
 
                 Months = new Dictionary<string, string>();
                 Date = new ObservableCollection<object>();
@@ -196,7 +196,7 @@ Selected item text color can be customized by setting `SfPicker.SelectedItemText
         {
             SfPicker picker = new SfPicker(this);
             base.OnCreate(savedInstanceState);
-            picker.SelectedItemTextcolor = Color.Red;
+            picker.SelectedItemTextColor = Color.Red;
             SetContentView(picker);
         }
 {% endhighlight %}

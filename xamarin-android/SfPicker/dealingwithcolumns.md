@@ -15,7 +15,7 @@ This section explains about the customization of SfPicker Columns
 
 SfPicker allows user to adjust the column width by hooking `SfPicker.OnColumnLoaded` event and then check the column using `ColumnLoadedEventArgs.Column` property and then adjust width of column by setting `ColumnLoadedEventArgs.ColumnWidth` property.
 
-We have prepared below code snippets to demonstarted DateTimePicker sample using `OnColumnLoaded` event.
+We have prepared below code snippets to demonstrate DateTimePicker sample using `OnColumnLoaded` event.
 
 *MainPage*
 
@@ -77,7 +77,7 @@ Column width of the each and every column can be adjusted by the use of OnColumn
 
         private void Picker_OnColumnLoaded(object sender, ColumnLoadedEventArgs e)
         {
-            if (e.Coulmn == 0)
+            if (e.Column == 0)
                  e.ColumnWidth = 1050;
             
         }
@@ -139,12 +139,12 @@ The below code illustrate assign the ColumnHeaderText for SfPicker
         {
             #region Public Properties
 
-            // Months api is used to modify the Day collection as per change in Month
+            // Months API is used to modify the Day collection as per change in Month
 
             internal Dictionary<string, string> Months { get; set; }
 
             /// <summary>
-            /// Date is the acutal DataSource for SfPicker control which will holds the collection of Day ,Month and Year
+            /// Date is the actual DataSource for SfPicker control which will holds the collection of Day ,Month and Year
             /// </summary>
             /// <value>The date.</value>
             
@@ -163,7 +163,7 @@ The below code illustrate assign the ColumnHeaderText for SfPicker
             internal ObservableCollection<object> Year { get; set; }
 
             /// <summary>
-            /// Headers api is holds the column name for every column in date picker
+            /// Headers API is holds the column name for every column in date picker
             /// </summary>
             /// <value>The Headers.</value>
             
@@ -175,19 +175,19 @@ The below code illustrate assign the ColumnHeaderText for SfPicker
             public DatePicker(Context context) : base(context)
             {
 
-                ObservableCollection<object> todaycollection = new ObservableCollection<object>();
+                ObservableCollection<object> collection = new ObservableCollection<object>();
 
                 //Select today dates
-                todaycollection.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(DateTime.Now.Date.Month).Substring(0, 3));
+                collection.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(DateTime.Now.Date.Month).Substring(0, 3));
                 
                 if (DateTime.Now.Date.Day < 10)
-                    todaycollection.Add("0" + DateTime.Now.Date.Day);
+                    collection.Add("0" + DateTime.Now.Date.Day);
                 else
-                    todaycollection.Add(DateTime.Now.Date.Day.ToString());
+                    collection.Add(DateTime.Now.Date.Day.ToString());
                 
-                todaycollection.Add(DateTime.Now.Date.Year.ToString());
+                collection.Add(DateTime.Now.Date.Year.ToString());
 
-                this.StartDate = todaycollection;
+                this.StartDate = collection;
 
                 Months = new Dictionary<string, string>();
                 
