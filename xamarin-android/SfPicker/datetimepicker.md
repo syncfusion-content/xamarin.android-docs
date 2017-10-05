@@ -10,7 +10,7 @@ documentation: ug
 
 # Date Time Picker
 
-In our Xamarin Forms, SfPicker control has multi column support. Using this we can populate day, month, year, hour and minute values of collection in SfPicker control. 
+In our Xamarin.Forms, SfPicker control has multi column support. Using this we can populate day, month, year, hour and minute values of collection in SfPicker control. 
 
 We have demonstrated how to create custom DateTimePicker using Picker control in the following steps.
 
@@ -56,7 +56,7 @@ The below code demonstrates Date collection creation.
 
       #region Public Properties
 
-      // Months api is used to modify the Day collection as per change in Month
+      // Months API is used to modify the Day collection as per change in Month
 
       internal Dictionary<string, string> Months { get; set; }
 
@@ -242,7 +242,7 @@ The below code demonstrates Date collection creation.
             UpdateDays(Date, e);
     }
 
-    //Updatedays method is used to alter the Date collection as per selection change in Month column(if feb is Selected day collection has value from 1 to 28)
+    //Update days method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
 
     public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
 
@@ -252,7 +252,7 @@ The below code demonstrates Date collection creation.
 
       {
 
-        bool isupdate = false;
+        bool update = false;
 
         if (e.OldValue != null && e.NewValue != null && (e.OldValue as IList).Count>0 && (e.NewValue as IList).Count>0)
 
@@ -262,7 +262,7 @@ The below code demonstrates Date collection creation.
 
           {
 
-            isupdate = true;
+            update = true;
 
           }
 
@@ -270,13 +270,13 @@ The below code demonstrates Date collection creation.
 
           {
 
-            isupdate = true;
+            update = true;
 
           }
 
         }
 
-        if (isupdate)
+        if (update)
 
         {
 
@@ -340,7 +340,7 @@ The below code demonstrates Date collection creation.
 
       /// <summary>
 
-      /// Headers api is holds the column name for every column in date picker
+      /// Headers API is holds the column name for every column in date picker
 
       /// </summary>
 

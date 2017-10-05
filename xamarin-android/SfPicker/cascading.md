@@ -43,7 +43,7 @@ The below code demonstrates Area collection creation.
 
         /// <summary>
 
-        /// Area is the acutal DataSource for SfPicker control which will holds the collection of Country and State
+        /// Area is the actual DataSource for SfPicker control which will holds the collection of Country and State
 
         /// </summary>
 
@@ -61,7 +61,7 @@ The below code demonstrates Area collection creation.
 
         /// <summary>
 
-        /// Headers api is holds the column name for every column in cascading picker
+        /// Headers API is holds the column name for every column in cascading picker
 
         /// </summary>
 
@@ -69,7 +69,7 @@ The below code demonstrates Area collection creation.
 
         public ObservableCollection<string> Header { get; set; }
 
-        private object _selectedarea;
+        private object _selected;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -81,9 +81,9 @@ The below code demonstrates Area collection creation.
 
         {
 
-            get { return _selectedarea; }
+            get { return _selected; }
 
-            set { _selectedarea = value; RaisePropertyChanged("SelectedArea"); }
+            set { _selected = value; RaisePropertyChanged("SelectedArea"); }
 
         }
 
@@ -133,7 +133,7 @@ The below code demonstrates Area collection creation.
 
         }
 
-        //Hooked when changes occured 
+        //Hooked when changes occurred 
 
         public void RaisePropertyChanged(string name)
 
@@ -178,7 +178,7 @@ The below code demonstrates Area collection creation.
 
     /// <summary>
 
-    /// Headers api is holds the column name for every column in cascading picker
+    /// Headers API is holds the column name for every column in cascading picker
 
     /// </summary>
 

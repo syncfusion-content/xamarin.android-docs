@@ -28,11 +28,11 @@ The Android launches the SfPicker without any initialization and is enough to on
 
 This section explains how to create simple SfPicker control and configure it. SfPicker can configure using C# code. 
 
-### Create the Xamarin Android project 
+### Create the Xamarin.Android project 
 
-Create new blank project (Xamarin.Android ) using Visual Studio or Xamarin Studio for Xamarin Android. 
+Create new blank project (Xamarin.Android ) using Visual Studio or Xamarin Studio for Xamarin.Android. 
 
-### Adding SfPicker in Xamarin Android project
+### Adding SfPicker in Xamarin.Android project
 
 1. Add the required assembly reference in Android and other renderer projects as discussed in **Adding** **SfPicker** **reference** section.
 2. Add SfPicker control C#.
@@ -184,8 +184,8 @@ SfPicker allow you to bind collection of data’s by setting `SfPicker.ItemsSour
         {
             SfPicker picker = new SfPicker(this);
             base.OnCreate(savedInstanceState);
-            ColorInfo colorinfo = new ColorInfo();
-            picker.ItemsSource = colorinfo.Colors;
+            ColorInfo info = new ColorInfo();
+            picker.ItemsSource = info.Colors;
             SetContentView(picker);
         }
 {% endhighlight %}
@@ -254,7 +254,7 @@ In SfPickerSfPicker can be rendered as a dialog by setting `SfPicker.PickerMode`
 
 {% endtabs %}
 
-The picker can be opened programatically by setting by setting `SfPicker.IsOpen` property to True. Default value of `SfPicker.IsOpen` is False.
+The picker can be opened programmatically by setting by setting `SfPicker.IsOpen` property to True. Default value of `SfPicker.IsOpen` is False.
 
 Note: This property automatically changed to False when close the dialog by click outside of dialog SfPicker.
 

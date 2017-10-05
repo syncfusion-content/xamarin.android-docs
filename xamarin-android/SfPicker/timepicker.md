@@ -46,7 +46,7 @@ The below code demonstrates Time collection creation.
         
     {
         /// <summary>
-        /// Header api is holds the column name for every column in time picker
+        /// Header API is holds the column name for every column in time picker
         /// </summary>
         
         public ObservableCollection<string> Headers { get; set; }
@@ -81,7 +81,7 @@ The below code demonstrates Time collection creation.
 
         /// <summary>
 
-        /// Header api is holds the column name for every column in time picker
+        /// Header API is holds the column name for every column in time picker
 
         /// </summary>
 
