@@ -69,7 +69,7 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 
 SfDataGrid allows you to customize the grid row's height with various customizing options while auto calculating the row height based on content using the `GridRowSizingOptions`.
 
-### Calculate height based on certain columns
+### Calculate row height based on certain columns
 
 SfDataGrid allows you to calculate the RowHeight with exclude certain columns using `ExcludeColumns` property.
 
@@ -93,7 +93,7 @@ The following code example illustrates calculating the height of the grid rows b
 }
 {% endhighlight %}
 
-### Calculate row height including hidden column's content 
+### Calculate row height including hidden columns' content 
 
 SfDataGrid allows you to calculate the row height based on content by including/excluding the hidden columns using the `CanIncludeHiddenColumns` property.
 The following code example illustrates how to calculate Height include with hidden columns .
