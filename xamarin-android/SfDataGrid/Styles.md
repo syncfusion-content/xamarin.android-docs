@@ -94,7 +94,7 @@ The following picture shows the grid loaded in different styles.
 
 ## Applying alternate row style
 
-SfDataGrid allows you to apply the alternative row style by writing a Style class overriding from DataGridStyle and assigning it to the  [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) property.
+SfDataGrid allows you to apply the alternative row style by writing a custom grid style deriving from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
 
 {% highlight c# %}
 //Apply alternative row style

@@ -36,7 +36,7 @@ dataGrid.RowHeight = 60;
 {% endhighlight %}
 
 
-## Reset Row Height at runtime
+## Reset row height at runtime
 
 SfDataGrid allows you to customize the height of a grid row on demand by handling the [SfDataGrid.QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGridHelpers~QueryRowHeights.html) event. This event is raised for the grid rows whenever they come to view and hence you can customize the height of a particular row on demand by using the row index. Setting height to zero will collapse all the row in the grid.
 
@@ -69,7 +69,7 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 
 SfDataGrid allows you to customize the grid row's height with various customizing options while auto calculating the row height based on content using the `GridRowSizingOptions`.
 
-### Calculate Height based on certain columns
+### Calculate height based on certain columns
 
 SfDataGrid allows you to calculate the RowHeight with exclude certain columns using `ExcludeColumns` property.
 
@@ -93,7 +93,7 @@ The following code example illustrates calculating the height of the grid rows b
 }
 {% endhighlight %}
 
-### Calculate Height include with hidden columns 
+### Calculate row height including hidden column's content 
 
 SfDataGrid allows you to calculate the row height based on content by including/excluding the hidden columns using the `CanIncludeHiddenColumns` property.
 The following code example illustrates how to calculate Height include with hidden columns .
