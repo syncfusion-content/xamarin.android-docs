@@ -183,7 +183,20 @@ employeeId.MappingName = "EmployeeID";
 employeeId.TextMargin = new Thickness(0, 0, 25, 0);
 
 {% endhighlight %}
+ 
+### LoadUIView
+[GridColumn.LoadUIView](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~LoadUIView.html) property denotes whether to load `UIElement` inside the `GridCell` or to draw the cell value directly in the `canvas` of the `GridCell` in Android platform. 
 
+* When `LoadUIView` is set as `false`, the cell value of the column is directly drawn in the `canvas` of the grid cells for improving performance. 
+* While setting the `LoadUIView` to `true`, a `UIElement` is loaded inside the `GridCell`s. Hence, instead of drawing the cell value in the canvas, the content of the `TextView` is set and hence the contents are wrapped. 
+
+{% highlight c# %}
+
+GridTextColumn customerID = new GridTextColumn();
+customerID.MappingName = "Description";
+customerID.LoadUIView = true;
+
+{% endhighlight %}
 
 ## GridTextColumn
 
@@ -808,5 +821,8 @@ dataGrid.Columns.Add(numericColumn);
 * [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn~NumberGroupSizes.html) - You can change the number of digits in each group before the decimal point on numeric values using `GridNumericColumn.NumberGroupSizes` property.
 
 * [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
+
+* [MinValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridEditorColumn~MinValue.html) - You can set the minimum value for the numeric column using `GridNumericColumn.MinValue` property.
+* [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridEditorColumn~MaxValue.html) - You can set the maximum value for the numeric column using `GridNumericColumn.MaxValue` property.
 
 ![](SfDataGrid_images/NumericColumn.png)
