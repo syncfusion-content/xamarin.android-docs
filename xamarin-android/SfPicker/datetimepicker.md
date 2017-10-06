@@ -62,7 +62,7 @@ The below code demonstrates Date collection creation.
 
       /// <summary>
 
-      /// Date is the acutal DataSource for SfPicker control which will holds the collection of Day ,Month and Year
+      /// Date is the actual DataSource for SfPicker control which will holds the collection of Day ,Month and Year
 
       /// </summary>
 
