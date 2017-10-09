@@ -1,6 +1,6 @@
 node('content')
 { 
-String platform='Xamarin-Android'
+String platform='Xamarin-Android';
    try
 	{   
 		//Clone scm repository in Workspace source directory
