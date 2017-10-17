@@ -65,8 +65,8 @@ lineSeries.DataMarker.LabelStyle.MarginBottom = 5;
 
 You can customize the content of the label using [`LabelContent`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~LabelContent.html) property. Following are the two options that are supported now,
 
-* [`Percentage`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.LabelContent~Percentage.html) – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
-* [`YValue`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Enums.LabelContent~YValue.html) – This will show the corresponding Y value.
+* `Percentage` – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
+* `YValue` – This will show the corresponding Y value.
 
 {% highlight c# %} 
 [C#]
