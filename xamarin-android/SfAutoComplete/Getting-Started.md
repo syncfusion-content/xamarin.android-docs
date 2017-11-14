@@ -99,3 +99,40 @@ countryAutoComplete.MinimumPrefixCharacters = 2;
 {% endtabs %}
 
 ![](images/gettingstarted.png)
+
+## AXML code to set Layout
+
+Using Android's XML codes, we can quickly design UI layouts in Xamarin Android.
+
+Each layout file must contain exactly one root element, which must be a View or ViewGroup object. Once we have defined the root element, we can add additional layout objects as child elements to gradually build a View hierarchy that defines the layout.
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"> 
+
+    <com.syncfusion.autocomplete.SfAutoComplete
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/autocomplete" />
+</LinearLayout>
+	
+{% endhighlight %}
+
+
+
+{% highlight MainActivity %}
+
+SfAutoComplete auto = FindViewById<SfAutoComplete>(Resource.Id.autocomplete);
+
+auto.Text = "AutoComplete";
+
+{% endhighlight %}
+
+{% endtabs %}
