@@ -102,7 +102,7 @@ countryAutoComplete.MinimumPrefixCharacters = 2;
 
 ## AXML code to set Layout
 
-Using Android's XML codes, we can quickly design UI layouts in Xamarin Android.
+Using Android's XML codes, we can quickly design UI layouts in Xamarin.Android.
 
 Each layout file must contain exactly one root element, which must be a View or ViewGroup object. Once we have defined the root element, we can add additional layout objects as child elements to gradually build a View hierarchy that defines the layout.
 
