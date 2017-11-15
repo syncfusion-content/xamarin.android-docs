@@ -43,8 +43,14 @@ using Com.Syncfusion.Autocomplete;
 
 {% highlight C# %}
 
-SfAutoComplete countryAutoComplete = new SfAutoComplete(con);
-SetContentView(countryAutoComplete);
+            LinearLayout linearlayout = new LinearLayout(this);
+            linearlayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+            linearlayout.SetBackgroundColor(Android.Graphics.Color.Black);
+
+            SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
+            countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
+            linearlayout.AddView(countryAutoComplete);
+            SetContentView(linearlayout);
 	
 {% endhighlight %}
 
@@ -61,16 +67,25 @@ You can set the suggestion list to the SfAutoComplete using the property `AutoCo
 
 {% highlight C# %}
 
-SfAutoComplete countryAutoComplete = new SfAutoComplete(con);
-List<String> countryList = new List<String>(); 	
-countryList.Add("Uganda");
-countryList.Add("Ukraine");
-countryList.Add("United Arab Emirates");
-countryList.Add("United Kingdom");
-countryList.Add("United States");
-ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-countryAutoComplete.AutoCompleteMode=AutoCompleteMode.Suggest;
+            LinearLayout linearlayout = new LinearLayout(this);
+            linearlayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+            linearlayout.SetBackgroundColor(Android.Graphics.Color.Black);
+
+            SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
+            countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
+
+            List<String> countryList = new List<String>();
+            countryList.Add("Uganda");
+            countryList.Add("Ukraine");
+            countryList.Add("United Arab Emirates");
+            countryList.Add("United Kingdom");
+            countryList.Add("United States");
+            ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, countryList);
+            countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
+            countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
+
+            linearlayout.AddView(countryAutoComplete);
+            SetContentView(linearlayout);
 
 {% endhighlight %}
 
@@ -86,13 +101,31 @@ The following example shows the SfAutoComplete control which suggest the country
 
 {% highlight C# %}
 
-SfAutoComplete countryAutoComplete = new SfAutoComplete(con);
-countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
-countryAutoComplete.MaximumDropDownHeight = 200;
-countryAutoComplete.Watermark = "Enter a country name";
-countryAutoComplete.PopUpDelay = 100;
-countryAutoComplete.AutoCompleteMode=AutoCompleteMode.Append;
-countryAutoComplete.MinimumPrefixCharacters = 2;
+            LinearLayout linearlayout = new LinearLayout(this);
+            linearlayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+            linearlayout.SetBackgroundColor(Android.Graphics.Color.Black);
+
+            SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
+            countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
+
+            List<String> countryList = new List<String>();
+            countryList.Add("Uganda");
+            countryList.Add("Ukraine");
+            countryList.Add("United Arab Emirates");
+            countryList.Add("United Kingdom");
+            countryList.Add("United States");
+            ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, countryList);
+            countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
+
+            countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
+            countryAutoComplete.MaximumDropDownHeight = 200;
+            countryAutoComplete.Watermark = "Enter a country name";
+            countryAutoComplete.PopUpDelay = 100;
+            countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Append;
+
+            linearlayout.AddView(countryAutoComplete);
+            SetContentView(linearlayout);
+
 	
 {% endhighlight %}
 
