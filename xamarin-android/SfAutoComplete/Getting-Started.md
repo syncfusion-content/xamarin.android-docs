@@ -123,8 +123,8 @@ The following example shows the SfAutoComplete control which suggest the country
             countryAutoComplete.PopUpDelay = 100;
             countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Append;
 
-            linearlayout.AddView(countryAutoComplete);
-            SetContentView(linearlayout);
+            linearLayout.AddView(countryAutoComplete);
+            SetContentView(linearLayout);
 
 	
 {% endhighlight %}
@@ -139,10 +139,9 @@ Using Android's XML codes, we can quickly design UI layouts in Xamarin.Android.
 
 Each layout file must contain exactly one root element, which must be a View or ViewGroup object. Once we have defined the root element, we can add additional layout objects as child elements to gradually build a View hierarchy that defines the layout.
 
+In Main.XML page enter the below codes.
 
 {% tabs %}
-
-{% highlight C# %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -156,16 +155,14 @@ Each layout file must contain exactly one root element, which must be a View or 
         android:id="@+id/autocomplete" />
 </LinearLayout>
 	
-{% endhighlight %}
+{% endtabs %}
 
+In MainActivity.cs page enter the below given code to get the instance of our control. Also we can use any of the property related to SfAutoComplete control here.
 
-
-{% highlight MainActivity %}
+{% tabs %}
 
 SfAutoComplete auto = FindViewById<SfAutoComplete>(Resource.Id.autocomplete);
 
 auto.Text = "AutoComplete";
-
-{% endhighlight %}
 
 {% endtabs %}
