@@ -43,14 +43,14 @@ using Com.Syncfusion.Autocomplete;
 
 {% highlight C# %}
 
-            LinearLayout linearlayout = new LinearLayout(this);
-            linearlayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
-            linearlayout.SetBackgroundColor(Android.Graphics.Color.Black);
+            LinearLayout linearLayout = new LinearLayout(this);
+            linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+            linearLayout.SetBackgroundColor(Android.Graphics.Color.Black);
 
             SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
             countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
-            linearlayout.AddView(countryAutoComplete);
-            SetContentView(linearlayout);
+            linearLayout.AddView(countryAutoComplete);
+            SetContentView(linearLayout);
 	
 {% endhighlight %}
 
@@ -67,9 +67,9 @@ You can set the suggestion list to the SfAutoComplete using the property `AutoCo
 
 {% highlight C# %}
 
-            LinearLayout linearlayout = new LinearLayout(this);
-            linearlayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
-            linearlayout.SetBackgroundColor(Android.Graphics.Color.Black);
+            LinearLayout linearLayout = new LinearLayout(this);
+            linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+            linearLayout.SetBackgroundColor(Android.Graphics.Color.Black);
 
             SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
             countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
@@ -84,8 +84,8 @@ You can set the suggestion list to the SfAutoComplete using the property `AutoCo
             countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
             countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
 
-            linearlayout.AddView(countryAutoComplete);
-            SetContentView(linearlayout);
+            linearLayout.AddView(countryAutoComplete);
+            SetContentView(linearLayout);
 
 {% endhighlight %}
 
@@ -101,9 +101,9 @@ The following example shows the SfAutoComplete control which suggest the country
 
 {% highlight C# %}
 
-            LinearLayout linearlayout = new LinearLayout(this);
-            linearlayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
-            linearlayout.SetBackgroundColor(Android.Graphics.Color.Black);
+            LinearLayout linearLayout = new LinearLayout(this);
+            linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+            linearLayout.SetBackgroundColor(Android.Graphics.Color.Black);
 
             SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
             countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
