@@ -138,7 +138,7 @@ sunburstChart.Legend.IsVisible = true;
 
 ![SfSunburstChart](Sunburst_images/Legend.png)
 
-## Add data labels
+## Add Data Labels
 
 You can add data labels to improve the readability of the SunburstChart. This can be achieved by using [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~DataLabel.html) property as shown below.
 
@@ -149,7 +149,3 @@ sunburstChart.DataLabel.ShowLabel = true;
 ![SfSunburstChart](Sunburst_images/DataLabel.png)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Android/Samples/SunburstChart_GettingStarted.zip)
-
-Following screenshot illustrates the final output,
-
-![SfSunburstChart](Sunburst_images/gettingstarted.png)
