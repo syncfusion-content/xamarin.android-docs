@@ -270,3 +270,24 @@ Run the application to render the following output.
 SfDataGrid allows you to select the row/rows by setting the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property. You can set the `SfDataGrid.SelectionMode` property to single, multiple, single deselect or none based on your requirements. Information about the row/rows selected can be tracked using [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedItem.html) and [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedItems.html) properties.
 
 You can handle the selection operations with the help of [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanging_EV.html) and [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanging_EV.html) events of the SfDataGrid.
+
+## Loading SfDataGrid with specified Height and Width
+
+SfDataGrid can be load with specific height and width inside different layouts by specifying the height and width of the grid when adding it in its parent.The following code example illustrates how this can be done.
+
+{% highlight c# %}
+protected override void OnCreate(Bundle bundle)
+{
+    base.OnCreate(bundle);
+    linearLayout = new LinearLayout(this);
+    datagrid = new SfDataGrid(this);
+    viewModel = new ViewModel();
+    datagrid.ItemsSource = viewModel.OrdersInfo;
+    linearLayout.AddView(datagrid, 500, 500);
+    SetContentView(linearLayout);
+} 
+{% endhighlight %}
+
+The following screenshot shows how the SfdataGrid is loaded with specific height and width.
+
+![](SfDataGrid_images/Loading_with specific_height_and_width.png)

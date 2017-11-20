@@ -111,3 +111,106 @@ private async void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
     progressDialog.Hide();
 }
 {% endhighlight %}
+
+## Create custom Context Menu using Grid Events
+
+SfDataGrid allows you to create a custom context menu by loading the number of buttons in different layouts in the `GridLongPressed` event. 
+
+The following code illustrates how to create a custom context menu using Grid events.
+
+{% highlight c# %}
+ public class MainActivity : Activity
+    {
+        LinearLayout contextMenu;
+        Button sortButton;
+        Button clearSortButton;
+        SfDataGrid dataGrid;
+        ViewModel viewModel;
+        RelativeLayout relativeLayout;
+        private bool isContextMenuDisplayed = false;
+        private string currentColumnName;
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            dataGrid = new SfDataGrid(this);
+            viewModel = new ViewModel();
+            relativeLayout = new RelativeLayout(this);
+            CreateContextMenu();
+            dataGrid.ColumnSizer = ColumnSizer.Star;
+            dataGrid.ItemsSource = viewModel.Collection;
+            dataGrid.AutoGenerateColumns = true;
+            dataGrid.GridLongPressed += DataGrid_GridLongPressed;
+            dataGrid.GridTapped += DataGrid_GridTapped;            
+            SetContentView (relativeLayout);
+        }
+
+        public void CreateContextMenu()
+        {
+            contextMenu = new LinearLayout(this);
+            contextMenu.Orientation = Orientation.Vertical;
+            sortButton = new Button(this);
+            sortButton.Text = "Sort";
+            sortButton.SetBackgroundColor(Color.Black);
+            sortButton.SetTextColor(Color.White);
+            sortButton.Touch += SortButton_Touch;
+
+            clearSortButton = new Button(this);
+            clearSortButton.Text = "Clear sort";
+            clearSortButton.SetBackgroundColor(Color.Black);
+            clearSortButton.SetTextColor(Color.White);
+            clearSortButton.Touch += ClearSortButton_Touch;
+
+            contextMenu.AddView(sortButton);
+            contextMenu.AddView(clearSortButton);
+
+            var SortButtonlayoutParams = (LinearLayout.LayoutParams)sortButton.LayoutParameters;
+            SortButtonlayoutParams.BottomMargin = 20;
+            var CLearSortButtonlayoutParams = (LinearLayout.LayoutParams)clearSortButton.LayoutParameters;
+            CLearSortButtonlayoutParams.TopMargin = 20;
+        }
+
+        private void ClearSortButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
+        {
+            relativeLayout.RemoveView(contextMenu);
+            isContextMenuDisplayed = false;
+            dataGrid.SortColumnDescriptions.Clear();
+        }
+
+        private void SortButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
+        {
+            relativeLayout.RemoveView(contextMenu);
+            isContextMenuDisplayed = false;
+            dataGrid.SortColumnDescriptions.Clear();
+            dataGrid.SortColumnDescriptions.Add(new SortColumnDescription()
+            {
+                ColumnName = currentColumnName
+            });
+        }
+
+        private void DataGrid_GridLongPressed(object sender, GridLongPressedEventArgs e)
+        {
+            if (!isContextMenuDisplayed)
+            {
+                currentColumnName = dataGrid.Columns[e.RowColumnIndex.ColumnIndex].MappingName;
+                var point = dataGrid.RowColumnIndexToPoint(e.RowColumnIndex);
+                contextMenu.SetX(point.X);
+                contextMenu.SetY(point.Y);
+                relativeLayout.AddView(contextMenu,330,400);
+                isContextMenuDisplayed = true;
+            }
+            else
+            {
+                relativeLayout.RemoveView(contextMenu);
+                isContextMenuDisplayed = false;
+            }
+        }
+
+        private void DataGrid_GridTapped(object sender, GridTappedEventArgs e)
+        {
+            relativeLayout.RemoveView(contextMenu); ;
+            isContextMenuDisplayed = false;
+        }
+    }
+    {% endhighlight %}
+
+    On executing the above code example, the below output will appear.
