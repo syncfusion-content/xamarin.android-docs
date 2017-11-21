@@ -190,7 +190,7 @@ private void RemoveGroupingButton_Clicked(object sender, EventArgs e)
 
 ### Removing the Group based on group index 
 
-SfDataGrid allows you to remove the grouping by removing index of the group column from `SfDataGrid.GroupColumnDescriptions` in a button click.
+SfDataGrid allows you to remove the grouping by removing the index of group column from `SfDataGrid.GroupColumnDescriptions` in a button click.
 
 The following code example illustrates how to remove grouping in SfDataGrid.
 
