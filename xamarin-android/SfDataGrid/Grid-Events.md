@@ -114,7 +114,7 @@ private async void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 
 ## Create custom Context Menu using Grid Events
 
-SfDataGrid allows you to create a custom context menu by loading the number of buttons in different layouts in the `GridLongPressed` event. 
+SfDataGrid allows you to display any custom view like a context menu that can act similar to a pop using the `GridLongPressed` event and `GridTappedEvent` event.
 
 The following code illustrates how to create a custom context menu using Grid events.
 
@@ -129,18 +129,21 @@ The following code illustrates how to create a custom context menu using Grid ev
         RelativeLayout relativeLayout;
         private bool isContextMenuDisplayed = false;
         private string currentColumnName;
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             dataGrid = new SfDataGrid(this);
             viewModel = new ViewModel();
             relativeLayout = new RelativeLayout(this);
+            // Creates the view for the ContextMenu
             CreateContextMenu();
             dataGrid.ColumnSizer = ColumnSizer.Star;
             dataGrid.ItemsSource = viewModel.Collection;
             dataGrid.AutoGenerateColumns = true;
             dataGrid.GridLongPressed += DataGrid_GridLongPressed;
-            dataGrid.GridTapped += DataGrid_GridTapped;            
+            dataGrid.GridTapped += DataGrid_GridTapped;
+            relativeLayout.AddView(dataGrid);               
             SetContentView (relativeLayout);
         }
 
@@ -160,6 +163,7 @@ The following code illustrates how to create a custom context menu using Grid ev
             clearSortButton.SetTextColor(Color.White);
             clearSortButton.Touch += ClearSortButton_Touch;
 
+            // A custom view hosting two buttons are now created
             contextMenu.AddView(sortButton);
             contextMenu.AddView(clearSortButton);
 
@@ -169,13 +173,15 @@ The following code illustrates how to create a custom context menu using Grid ev
             clearSortButtonLayoutParams.TopMargin = 20;
         }
 
+        // Removes the sorting applied to the SfDataGrid
         private void ClearSortButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             relativeLayout.RemoveView(contextMenu);
             isContextMenuDisplayed = false;
             dataGrid.SortColumnDescriptions.Clear();
         }
-
+        
+        // Sorts the SfDataGrid data based on the column selected in the context menu
         private void SortButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             relativeLayout.RemoveView(contextMenu);
@@ -195,11 +201,13 @@ The following code illustrates how to create a custom context menu using Grid ev
                 var point = dataGrid.RowColumnIndexToPoint(e.RowColumnIndex);
                 contextMenu.SetX(point.X);
                 contextMenu.SetY(point.Y);
+                // Display the ContextMenu when the SfDataGrid is long pressed
                 relativeLayout.AddView(contextMenu,330,400);
                 isContextMenuDisplayed = true;
             }
             else
             {
+                // Hides the context menu when SfDataGrid is long pressed when the context menu is already visible in screen
                 relativeLayout.RemoveView(contextMenu);
                 isContextMenuDisplayed = false;
             }
@@ -207,10 +215,11 @@ The following code illustrates how to create a custom context menu using Grid ev
 
         private void DataGrid_GridTapped(object sender, GridTappedEventArgs e)
         {
+            // Hides the context menu when SfDataGrid is tapped anywhere outside the context menu view
             relativeLayout.RemoveView(contextMenu); ;
             isContextMenuDisplayed = false;
         }
     }
     {% endhighlight %}
 
-    On executing the above code example, the below output will appear.
+    Please refer the below GIF for the final rendering on execution of the above code example.

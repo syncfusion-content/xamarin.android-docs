@@ -134,11 +134,7 @@ The below screenshot shows the comparison between the two Group modes. GroupMode
 
 ## Clearing or Removing Group
 
-### Clearing the Group
-
-SfDataGrid allows you to clear the grouping by clearing the `SfDataGrid.GroupColumnDescriptions` in a button click.
-
-The following code example illustrates how to clear grouping in SfDataGrid.
+ You can clear the grouping applied to the SfDataGrid by removing the items from the `SfDataGrid.GroupColumnDescriptions` collection or clearing the collection. Please refer the below code snippets to remove the grouping applied to the SfDataGrid.
 
 {% highlight c# %}
 public class MainActivity : Activity
@@ -169,35 +165,16 @@ public class MainActivity : Activity
 
     private void ClearGroupingButton_Click(object sender, System.EventArgs e)
     {
+        //Clearing the Group
         dataGrid.GroupColumnDescriptions.Clear();
+
+        //Removing the Group based on group item
+        //var groupColumn = dataGrid.GroupColumnDescriptions[0];
+        //dataGrid.GroupColumnDescriptions.Remove(groupColumn);
+        
+        //Removing the Group based on group index
+        //dataGrid.GroupColumnDescriptions.RemoveAt(0);
     }
-}
-{% endhighlight %}
-
-### Removing the Group based on group item
-
-SfDataGrid allows you to remove the grouping by removing the group column from `SfDataGrid.GroupColumnDescriptions` in a button click.
-
-The following code example illustrates how to remove grouping in SfDataGrid.
-
-{% highlight c# %}
-private void RemoveGroupingButton_Clicked(object sender, EventArgs e)
-{
-    var groupColumn = dataGrid.GroupColumnDescriptions[0];
-    dataGrid.GroupColumnDescriptions.Remove(groupColumn);
-}
-{% endhighlight %}
-
-### Removing the Group based on group index 
-
-SfDataGrid allows you to remove the grouping by removing the index of group column from `SfDataGrid.GroupColumnDescriptions` in a button click.
-
-The following code example illustrates how to remove grouping in SfDataGrid.
-
-{% highlight c# %}
-private void RemoveGroupingButton_Clicked(object sender, EventArgs e)
-{
-   dataGrid.GroupColumnDescriptions.RemoveAt(0);
 }
 {% endhighlight %}
 
