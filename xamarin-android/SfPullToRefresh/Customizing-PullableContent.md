@@ -46,7 +46,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-The example code of the adapter and the template of the list view are not displayed here, however you can download the source code of this sample [here](#sample-link-of-sfpulltorefresh-adapting-listview).
+The example code of the adapter and the template of the list view are not displayed here, however you can download the source code of this sample here.
 
 ### Adapting ListView in SfPullToRefresh
 
@@ -111,17 +111,13 @@ The final output of the sample, SfPullToRefresh adapting ListView as its pullabl
 ![](customizing_pullableContent_images/ListView_Push.png)
 </div>
 
-### Sample link of SfPullToRefresh adapting ListView
-
-You can download the source code of the sample, SfPullToRefresh adapting list view as its pullable content here.
-
 ## SfDataGrid
 
 SfPullToRefresh can host the `SfDataGrid` as its pullable content and refresh it.
 
 ### SfDataGrid customizations
 
-Refer the below code example to create a SfDataGrid and customize it. To explore about SfDataGrid click [here](https://help.syncfusion.com/xamarin-android/sfdatagrid/getting-started).
+Refer the below code example to create a SfDataGrid and customize it. Click [here](https://help.syncfusion.com/xamarin-android/sfdatagrid/getting-started) to explore SfDataGrid.
 
 {% highlight c# %}
 
@@ -155,7 +151,7 @@ void GridGenerateColumns()
 
 {% endhighlight %}
 
-The example code of the ViewModel are not displayed here, however you can download the source code of this sample [here](#sample-link-of-sfpulltorefresh-adapting-sfdatagrid).
+The example code of the ViewModel are not displayed here, however you can download the source code of this sample here.
 
 ### Adapting SfDataGrid in SfPullToRefresh
 
@@ -193,10 +189,6 @@ The final output of the sample, SfPullToRefresh adapting SfDataGrid as its pulla
 <div style="text-align:center" markdown="1">
 ![](customizing_pullableContent_images/SfDataGrid_SlideOnTop.png)
 </div>
-
-### Sample link of SfPullToRefresh adapting SfDataGrid
-
-You can download the source code of the sample, SfPullToRefresh adapting SfDataGrid as its pullable content here.
 
 ## Custom layout
 
@@ -328,6 +320,12 @@ The final output of the above sample is below.
 ![](overview_images/WeatherData_Push.png)
 </div>
 
-### Sample link of custom layout
+## Samples
 
-You can download the source code of the customized complex layout sample here.
+You can download the source code of the sample from the below link.
+
+* ListView
+
+* SfDataGrid
+
+* Custom layout
