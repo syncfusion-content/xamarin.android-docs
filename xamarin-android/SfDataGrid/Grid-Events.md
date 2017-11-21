@@ -163,10 +163,10 @@ The following code illustrates how to create a custom context menu using Grid ev
             contextMenu.AddView(sortButton);
             contextMenu.AddView(clearSortButton);
 
-            var SortButtonlayoutParams = (LinearLayout.LayoutParams)sortButton.LayoutParameters;
-            SortButtonlayoutParams.BottomMargin = 20;
-            var CLearSortButtonlayoutParams = (LinearLayout.LayoutParams)clearSortButton.LayoutParameters;
-            CLearSortButtonlayoutParams.TopMargin = 20;
+            var sortButtonLayoutParams = (LinearLayout.LayoutParams)sortButton.LayoutParameters;
+            sortButtonLayoutParams.BottomMargin = 20;
+            var clearSortButtonLayoutParams = (LinearLayout.LayoutParams)clearSortButton.LayoutParameters;
+            clearSortButtonLayoutParams.TopMargin = 20;
         }
 
         private void ClearSortButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
