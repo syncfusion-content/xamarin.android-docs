@@ -114,114 +114,115 @@ private async void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 
 ## Create custom Context Menu using Grid Events
 
-SfDataGrid allows you to display any custom view like a context menu that can act similar to a pop using the `GridLongPressed` event and `GridTappedEvent` event.
+SfDataGrid allows you to display any custom view like a context menu that can act similar to a pop using the `GridLongPressed` event and `GridTapped` event.
 
 The following code illustrates how to create a custom context menu using Grid events.
 
 {% highlight c# %}
- public class MainActivity : Activity
+public class MainActivity : Activity
+{
+    LinearLayout contextMenu;
+    Button sortButton;
+    Button clearSortButton;
+    SfDataGrid dataGrid;
+    ViewModel viewModel;
+    RelativeLayout relativeLayout;
+    private bool isContextMenuDisplayed = false;
+    private string currentColumnName;
+       
+    protected override void OnCreate(Bundle bundle)
     {
-        LinearLayout contextMenu;
-        Button sortButton;
-        Button clearSortButton;
-        SfDataGrid dataGrid;
-        ViewModel viewModel;
-        RelativeLayout relativeLayout;
-        private bool isContextMenuDisplayed = false;
-        private string currentColumnName;
+        base.OnCreate(bundle);
+        dataGrid = new SfDataGrid(this);
+        viewModel = new ViewModel();
+        relativeLayout = new RelativeLayout(this);
+        // Creates the view for the ContextMenu
+        CreateContextMenu();
+        dataGrid.ColumnSizer = ColumnSizer.Star;
+        dataGrid.ItemsSource = viewModel.Collection;
+        dataGrid.AutoGenerateColumns = true;
+        dataGrid.GridLongPressed += DataGrid_GridLongPressed;
+        dataGrid.GridTapped += DataGrid_GridTapped;
+        relativeLayout.AddView(dataGrid);               
+        SetContentView (relativeLayout);
+    }
+
+    public void CreateContextMenu()
+    {
+        contextMenu = new LinearLayout(this);
+        contextMenu.Orientation = Orientation.Vertical;
+
+        sortButton = new Button(this);
+        sortButton.Text = "Sort";
+        sortButton.SetBackgroundColor(Color.Black);
+        sortButton.SetTextColor(Color.White);
+        sortButton.Touch += SortButton_Touch;
+
+        clearSortButton = new Button(this);
+        clearSortButton.Text = "Clear sort";
+        clearSortButton.SetBackgroundColor(Color.Black);
+        clearSortButton.SetTextColor(Color.White);
+        clearSortButton.Touch += ClearSortButton_Touch;
+
+        // A custom view hosting two buttons are now created
+        contextMenu.AddView(sortButton);
+        contextMenu.AddView(clearSortButton);
+
+        var sortButtonLayoutParams = (LinearLayout.LayoutParams)sortButton.LayoutParameters;
+        sortButtonLayoutParams.BottomMargin = 20;
+        var clearSortButtonLayoutParams = (LinearLayout.LayoutParams)clearSortButton.LayoutParameters;
+        clearSortButtonLayoutParams.TopMargin = 20;
+    }
+
+    // Removes the sorting applied to the SfDataGrid
+    private void ClearSortButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
+    {
+        relativeLayout.RemoveView(contextMenu);
+        isContextMenuDisplayed = false;
+        dataGrid.SortColumnDescriptions.Clear();
+    }
         
-        protected override void OnCreate(Bundle bundle)
+    // Sorts the SfDataGrid data based on the column selected in the context menu
+    private void SortButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
+    {
+        relativeLayout.RemoveView(contextMenu);
+        isContextMenuDisplayed = false;
+        dataGrid.SortColumnDescriptions.Clear();
+        dataGrid.SortColumnDescriptions.Add(new SortColumnDescription()
         {
-            base.OnCreate(bundle);
-            dataGrid = new SfDataGrid(this);
-            viewModel = new ViewModel();
-            relativeLayout = new RelativeLayout(this);
-            // Creates the view for the ContextMenu
-            CreateContextMenu();
-            dataGrid.ColumnSizer = ColumnSizer.Star;
-            dataGrid.ItemsSource = viewModel.Collection;
-            dataGrid.AutoGenerateColumns = true;
-            dataGrid.GridLongPressed += DataGrid_GridLongPressed;
-            dataGrid.GridTapped += DataGrid_GridTapped;
-            relativeLayout.AddView(dataGrid);               
-            SetContentView (relativeLayout);
+            ColumnName = currentColumnName
+        });
         }
 
-        public void CreateContextMenu()
+    private void DataGrid_GridLongPressed(object sender, GridLongPressedEventArgs e)
+    {
+        if (!isContextMenuDisplayed)
         {
-            contextMenu = new LinearLayout(this);
-            contextMenu.Orientation = Orientation.Vertical;
-            sortButton = new Button(this);
-            sortButton.Text = "Sort";
-            sortButton.SetBackgroundColor(Color.Black);
-            sortButton.SetTextColor(Color.White);
-            sortButton.Touch += SortButton_Touch;
-
-            clearSortButton = new Button(this);
-            clearSortButton.Text = "Clear sort";
-            clearSortButton.SetBackgroundColor(Color.Black);
-            clearSortButton.SetTextColor(Color.White);
-            clearSortButton.Touch += ClearSortButton_Touch;
-
-            // A custom view hosting two buttons are now created
-            contextMenu.AddView(sortButton);
-            contextMenu.AddView(clearSortButton);
-
-            var sortButtonLayoutParams = (LinearLayout.LayoutParams)sortButton.LayoutParameters;
-            sortButtonLayoutParams.BottomMargin = 20;
-            var clearSortButtonLayoutParams = (LinearLayout.LayoutParams)clearSortButton.LayoutParameters;
-            clearSortButtonLayoutParams.TopMargin = 20;
+            currentColumnName = dataGrid.Columns[e.RowColumnIndex.ColumnIndex].MappingName;
+            var point = dataGrid.RowColumnIndexToPoint(e.RowColumnIndex);
+            contextMenu.SetX(point.X);
+            contextMenu.SetY(point.Y);
+            // Display the ContextMenu when the SfDataGrid is long pressed
+            relativeLayout.AddView(contextMenu,330,400);
+            isContextMenuDisplayed = true;
         }
-
-        // Removes the sorting applied to the SfDataGrid
-        private void ClearSortButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
+        else
         {
+            // Hides the context menu when SfDataGrid is long pressed when the context menu is already visible in screen
             relativeLayout.RemoveView(contextMenu);
-            isContextMenuDisplayed = false;
-            dataGrid.SortColumnDescriptions.Clear();
-        }
-        
-        // Sorts the SfDataGrid data based on the column selected in the context menu
-        private void SortButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
-        {
-            relativeLayout.RemoveView(contextMenu);
-            isContextMenuDisplayed = false;
-            dataGrid.SortColumnDescriptions.Clear();
-            dataGrid.SortColumnDescriptions.Add(new SortColumnDescription()
-            {
-                ColumnName = currentColumnName
-            });
-        }
-
-        private void DataGrid_GridLongPressed(object sender, GridLongPressedEventArgs e)
-        {
-            if (!isContextMenuDisplayed)
-            {
-                currentColumnName = dataGrid.Columns[e.RowColumnIndex.ColumnIndex].MappingName;
-                var point = dataGrid.RowColumnIndexToPoint(e.RowColumnIndex);
-                contextMenu.SetX(point.X);
-                contextMenu.SetY(point.Y);
-                // Display the ContextMenu when the SfDataGrid is long pressed
-                relativeLayout.AddView(contextMenu,330,400);
-                isContextMenuDisplayed = true;
-            }
-            else
-            {
-                // Hides the context menu when SfDataGrid is long pressed when the context menu is already visible in screen
-                relativeLayout.RemoveView(contextMenu);
-                isContextMenuDisplayed = false;
-            }
-        }
-
-        private void DataGrid_GridTapped(object sender, GridTappedEventArgs e)
-        {
-            // Hides the context menu when SfDataGrid is tapped anywhere outside the context menu view
-            relativeLayout.RemoveView(contextMenu); ;
             isContextMenuDisplayed = false;
         }
     }
-    {% endhighlight %}
 
-    Please refer the below GIF for the final rendering on execution of the above code example.
+    private void DataGrid_GridTapped(object sender, GridTappedEventArgs e)
+    {
+        // Hides the context menu when SfDataGrid is tapped anywhere outside the context menu view
+        relativeLayout.RemoveView(contextMenu); 
+        isContextMenuDisplayed = false;
+    }
+}
+{% endhighlight %}
 
-    ![](SfDataGrid_images/CustomContextMenu.gif)
+Please refer the below GIF for the final rendering on execution of the above code example.
+
+![](SfDataGrid_images/CustomContextMenu.gif)

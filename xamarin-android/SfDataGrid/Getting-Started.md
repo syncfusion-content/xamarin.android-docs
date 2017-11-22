@@ -273,7 +273,9 @@ You can handle the selection operations with the help of [SelectionChanging](htt
 
 ## Loading SfDataGrid with specified Height and Width
 
-SfDataGrid can be loaded with specific height and width inside different layouts by specifying the height and width of the SfDataGrid when adding it as a child to its parent.The following code example illustrates how this can be done.
+SfDataGrid can be loaded with specific height and width inside different layouts by specifying the height and width of the SfDataGrid when adding it as a child to its parent.
+
+ The following code example illustrates how this can be done.
 
 {% highlight c# %}
 protected override void OnCreate(Bundle bundle)
