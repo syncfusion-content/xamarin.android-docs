@@ -232,4 +232,4 @@ The below GIF demonstrates the final output of the sample.
 
 ### Sample Link
 
-You can download the source code of this sample here.
+You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.Android/Samples/SfPullToRefresh_GettingStarted.zip).
