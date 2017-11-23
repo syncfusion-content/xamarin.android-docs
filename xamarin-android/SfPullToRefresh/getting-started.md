@@ -227,7 +227,7 @@ protected override void OnCreate(Bundle bundle)
 The below GIF demonstrates the final output of the sample.
 
 <div style="text-align:center" markdown="1">
-![](getting_started_images/GettingStarted.gif)
+![](getting_started_images/GettingStarted_Refresh_Android.gif)
 </div>
 
 ### Sample Link
