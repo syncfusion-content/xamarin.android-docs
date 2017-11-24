@@ -17,13 +17,13 @@ This section explains how to refresh the following views by hosting as a pullabl
 * [SfDataGrid](#sfdatagrid) 
 * [Custom layout](#custom-layout) 
 
-## List view
+## ListView
 
-SfPullToRefresh can host the list view as its pullable content and refresh the view. 
+SfPullToRefresh can host the ListView as its pullable content and refresh the view. 
 
-### List view customizations
+### ListView customizations
 
-Refer to the following code example for creating and customizing a list view: 
+Refer to the following code example for creating and customizing a ListView: 
 
 {% highlight c# %}
 
@@ -46,11 +46,11 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-The example code of the adapter and the template of the list view are not displayed here. However, the source code of this sample can be downloaded here.
+The example code of the adapter and the template of the ListView are not displayed here. However, the source code of this sample can be downloaded here.
 
 ### Adapting ListView in SfPullToRefresh
 
-To add list view as a pullable content and to refresh the pullable content, refer to the following code example:
+To add ListView as a pullable content and to refresh the pullable content, refer to the following code example:
 
 {% highlight c# %}
 
@@ -101,7 +101,7 @@ public void RefreshItemSource()
 
 {% endhighlight %}
 
-The final output of the sample of SfPullToRefresh adapting list view as its pullable content is as follows:
+The final output of the sample of SfPullToRefresh adapting ListView as its pullable content is as follows:
 
 <div style="text-align:center" markdown="1">
 ![](customizing_pullableContent_images/ListView_Refresh_Android.gif)
