@@ -73,7 +73,7 @@ pullToRefresh.RefreshContentThreshold = 20;
 
 ### PullingThreshold
 
-The [SfPullToRefresh.PullingThreshold](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullingThreshold.html) property indicates the maximum pullable position of the progress view to reach 100 %. Refreshing will be started in the view only when the pulling progress reaches 100 % and touch is released. If the touch is released before the refresh content reaches 100 % of pulling progress, pulling will be canceled and refreshing will not occur.
+The [SfPullToRefresh.PullingThreshold](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullingThreshold.html) property indicates the maximum pullable position of the progress view to reach 100 % of pulling progress. Refreshing will be started in the view only when the pulling progress reaches 100 % and touch is released. If the touch is released before the refresh content reaches 100 % of pulling progress, pulling will be canceled and refreshing will not occur.
 
 Refer to the following code example to set the [SfPullToRefresh.PullingThreshold](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullingThreshold.html) property:
 
@@ -240,7 +240,7 @@ private void PullToRefresh_Refreshed(object sender, EventArgs e)
 
 ## Programmatic refresh
 
-SfPullToRefresh supports refreshing the pullable content programmatically without interaction. To refresh the pullable content programmatically, call the [SfPullToRefresh.StartRefreshing()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~StartRefreshing.html) method. To programmatically end refreshing, call the [SfPullToRefresh.EndRefreshing()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~EndRefreshing.html) method.
+SfPullToRefresh supports refreshing the pullable content programmatically without interaction. To refresh the pullable content programmatically, call the [SfPullToRefresh.StartRefreshing()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~StartRefreshing.html) method. To end programmatic refreshing, call the [SfPullToRefresh.EndRefreshing()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~EndRefreshing.html) method.
 
 Refer to the following code example to refresh the pullable content programmatically:
 
