@@ -260,7 +260,7 @@ The code example of the customized layout is as follows:
 
 ### Adapting custom layout in SfPullToRefresh
 
-To add the above customn layout as a pullable content and to refresh the pullable content, refer to the following code example:
+To add the above custom layout as a pullable content and to refresh the pullable content, refer to the following code example:
 
 {% highlight c# %}
 
