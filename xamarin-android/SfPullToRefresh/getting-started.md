@@ -82,9 +82,9 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 1. Add the required assembly references to the project as mentioned in the [Assembly deployment](#assembly-deployment) section or install the NuGet as mentioned in the [NuGet installation](#nuget-installation) section.
 
-2. Imports SfPullToRefresh control under the namespace `Syncfusion.SfPullToRefresh`.
+2. Import SfPullToRefresh control under the namespace `Syncfusion.SfPullToRefresh`.
 
-3. Creates an instance and set as the ContentView of the Activity. Refer to the following code example to add the SfPullToRefresh control to the application:
+3. Create an instance of SfPullToRefresh control and set as the ContentView of the Activity. Refer to the following code example to add this control to the application:
 
 {% highlight c# %}
 
@@ -106,7 +106,7 @@ public class MainActivity : Activity
 
 ### Adding a simple layout as the PullableContent
 
-Any view can be added as the pullable content, use the [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullableContent.html) property to refresh it. Refer to the following code example in which a simple linear layout is added as pullable content:
+Any view can be added as the pullable content using the [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullableContent.html) property to refresh it. Refer to the following code example in which a simple linear layout is added as pullable content:
 
 {% highlight c# %}
 
