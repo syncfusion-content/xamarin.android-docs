@@ -224,16 +224,12 @@ protected override void OnCreate(Bundle bundle)
 
 ### Final output of the sample
 
-The below image demonstrates the final output of the sample.
+The below GIF demonstrates the final output of the sample.
 
 <div style="text-align:center" markdown="1">
-![](getting_started_images/GettingStarted_SlideOnTop.png)
-</div>
-
-<div style="text-align:center" markdown="1">
-![](getting_started_images/GettingStarted_Push.png)
+![](getting_started_images/GettingStarted_Refresh_Android.gif)
 </div>
 
 ### Sample Link
 
-You can download the source code of this sample here.
+You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.Android/Samples/SfPullToRefresh_GettingStarted.zip).

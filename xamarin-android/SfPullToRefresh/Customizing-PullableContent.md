@@ -104,11 +104,7 @@ public void RefreshItemSource()
 The final output of the sample, SfPullToRefresh adapting ListView as its pullable content is below.
 
 <div style="text-align:center" markdown="1">
-![](customizing_pullableContent_images/ListView_SlideOnTop.png)
-</div>
-
-<div style="text-align:center" markdown="1">
-![](customizing_pullableContent_images/ListView_Push.png)
+![](customizing_pullableContent_images/ListView_Refresh_Android.gif)
 </div>
 
 ## SfDataGrid
@@ -187,7 +183,7 @@ private async void PullToRefresh_Refreshing(object sender, RefreshingEventArgs e
 The final output of the sample, SfPullToRefresh adapting SfDataGrid as its pullable content is below.
 
 <div style="text-align:center" markdown="1">
-![](customizing_pullableContent_images/SfDataGrid_SlideOnTop.png)
+![](customizing_pullableContent_images/SfDataGrid_Refresh_Android.gif)
 </div>
 
 ## Custom layout
@@ -313,19 +309,15 @@ protected override void OnCreate (Bundle bundle)
 The final output of the above sample is below.
 
 <div style="text-align:center" markdown="1">
-![](overview_images/WeatherData_SlideOnTop.png)
-</div>
-
-<div style="text-align:center" markdown="1">
-![](overview_images/WeatherData_Push.png)
+![](overview_images/WeatherData_Refresh_Android.gif)
 </div>
 
 ## Samples
 
 You can download the source code of the sample from the below link.
 
-* ListView
+* [ListView](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListView_Refresh_UG-904322401)
 
-* SfDataGrid
+* [SfDataGrid](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGrid_Refresh_UG-1130051554)
 
-* Custom layout
+* [Custom layout](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WeatherDataRefresh_UG-1906644392)
