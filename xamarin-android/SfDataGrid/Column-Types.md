@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Column Types | SfDataGrid | Xamarin.Android | Syncfusion
 description: What are all the different types of column and it's properties and customizations in a SfDataGrid.
@@ -437,6 +437,18 @@ public class ViewModel
 } 
 {% endhighlight %}
 ![](SfDataGrid_images/SwitchColumn.png)
+
+### Editing for switch column
+
+SfDatagrid allows you to edit the switch column by setting the [AllowEditing](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditingProperty.html) property as `true`. By default, `AllowEditing` is `true`. If you set `AllowEditing` as `false` you cannot check or uncheck the Switch column.
+
+The below code illustrates how to set the `AllowEditing`.
+
+{% highlight c#%}
+GridSwitchColumn column = new GridSwitchColumn();
+column.MappingName = "IsClosed";
+column.AllowEditing = true;
+{% endhighlight%}
 
 ## GridImageColumn
 
