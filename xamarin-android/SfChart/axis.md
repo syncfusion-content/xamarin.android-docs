@@ -580,10 +580,10 @@ chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
 
 This event is triggered when the axis range is changed. The argument contains the following information.
 
-* [`ActualMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ActualRangeChangedEventArgs~ActualMinimum.html) - used to get the axis actual minimum value
-* [`ActualMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ActualRangeChangedEventArgs~ActualMaximum.html) - used to get the axis actual maximum value
-* [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ActualRangeChangedEventArgs~VisibleMinimum.html) - used to get the axis visible minimum value
-* [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ActualRangeChangedEventArgs~VisibleMaximum.html) - used to get the axis visible maximum value
+* [`ActualMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~ActualMinimum.html) - used to get the axis actual minimum value
+* [`ActualMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~ActualMaximum.html) - used to get the axis actual maximum value
+* [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~VisibleMinimum.html) - used to get the axis visible minimum value
+* [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~VisibleMaximum.html) - used to get the axis visible maximum value
 
 N> Actual range and visible range are similar unless the range is changed by specifying the [`ZoomPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~ZoomPosition.html) and [`ZoomFactor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~ZoomFactor.html) property or zoom the chart interactively. Visible range is always the range which you see visually in the screen.
 
