@@ -1,137 +1,235 @@
 ---
 layout: post
-title: Getting Started | PullToRefresh |Xamarin.Android | Syncfusion
-description: getting started
+title: Getting Started | SfPullToRefresh |Xamarin.Android | Syncfusion
+description: Getting Started with SfPullToRefresh
 platform: Xamarin.Android
-control: PullToRefresh
+control: SfPullToRefresh
 documentation: ug
 --- 
 
 # Getting Started
 
-## Create your first SfPullToRefresh in Xamarin.Android
+This section provides a quick overview for working with SfPullToRefresh in Xamarin.Android. You will walk through the entire process of creating a simple application with SfPullToRefresh.
 
-This section encompasses on how to create a PullToRefresh that lets you to refresh the current content of the application. 
+## Assembly deployment
 
-### Referring Essential Studio components in your solution
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+{Syncfusion Essential Studio Installed location}\Essential Studio\15.4.0.17\Xamarin\lib
 
-{Installed location}\Essential Studio\12.4.0.24\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib
 
-Add the following assembly references to the Android project,
+N> Assemblies can be found in unzipped package location in Mac
 
- [android\<.SfPullToRefresh.Andriod.dll]
+### SfPullToRefresh for Xamarin.Android
 
-### Initializing PullToRefresh   
-Refer to the following code to add the SfPullToRefresh control:
+The following assembly need to be added as reference from the "lib" folder to use SfPullToRefresh in your application.
 
-{% tabs %}
+<table>
+<tr>
+<th> Project </th>
+<th> Required assemblies </th>
+</tr>
+<tr>
+<td> Xamarin.Android </td>
+<td> android\Syncfusion.SfPullToRefresh.Android.dll </td>
+</tr>
+</table>
+
+## NuGet installation
+
+You need to configure the NuGet package of Syncfusion components, to install the SfPullToRefresh control in your application. Refer the below KB to configure the NuGet package of Syncfusion components. 
+
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+
+### SfPullToRefresh for Xamarin.Android
+
+The following NuGet package need to be added to use SfPullToRefresh control in your application.
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required packages </th>
+</tr>
+<tr>
+<td> Xamarin.Android </td>
+<td> Syncfusion.Xamarin.SfPullToRefresh.Android </td>
+</tr>
+</table>
+
+Refer the below screenshot in which the Syncfusion.Xamarin.SfPullToRefresh.Android package is highlighted.
+
+![](getting_started_images/NuGetInstall.png)
+
+## Create a sample application with SfPullToRefresh
+
+This section explains how to create a sample with SfPullToRefresh and configure it. The SfPullToRefresh control can be configured entirely in C# code. 
+
+In this walk through, you will create a new application with SfPullToRefresh.
+
+* [Creating the project](#creating-the-project)  
+* [Adding SfPullToRefresh in Xamarin.Android](#adding-sfpulltorefresh-in-xamarinandroid) 
+* [Adding a simple layout as the PullableContent](#adding-a-simple-layout-as-the-pullablecontent) 
+* [Refreshing the view](#refreshing-the-view) 
+* [TransitionType Customization](#transitiontype-customization)
+* [Final Output of the sample](#final-output-of-the-sample)
+* [Sample Link](#sample-link)
+
+### Creating the project
+
+Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
+
+### Adding SfPullToRefresh in Xamarin.Android
+
+1. Add the required assembly references to the project as mentioned in the [Assembly deployment](#assembly-deployment) section or install the SfPullToRefresh NuGet as mentioned in the [NuGet installation](#nuget-installation) section.
+
+2. Import SfPullToRefresh control under the namespace `Syncfusion.SfPullToRefresh`.
+
+3. Create an instance of SfPullToRefresh control and set as the ContentView of the Activity. Refer the below code example to add the SfPullToRefresh control to the application.
 
 {% highlight c# %}
- 
-    protected override void OnCreate (Bundle savedInstanceState)
+
+using Syncfusion.SfPullToRefresh; 
+
+public class MainActivity : Activity 
+{
+    SfPullToRefresh pullToRefresh; 
+
+    protected override void OnCreate (Bundle bundle) 
     {
-    base.OnCreate (savedInstanceState);
-    SfPullToRefresh pullToRefresh = new SfPullToRefresh();
-    SetContentView (pullToRefresh);
+        base.OnCreate (bundle); 
+        pullToRefresh = new SfPullToRefresh (this); 
+        SetContentView (pullToRefresh); 
+    } 
+} 
+
+{% endhighlight %}
+
+### Adding a simple layout as the PullableContent
+
+You can add any view, as the pullable content of SfPullToRefresh using [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullableContent.html) property to refresh it. Refer the below code example in which a simple linear layout is added as pullable content of SfPullToRefresh.
+
+{% highlight c# %}
+
+//MainActivity.cs
+
+protected override void OnCreate(Bundle bundle)
+{
+	....
+	LinearLayout linearLayout = (LinearLayout)LayoutInflater.Inflate(Resource.Layout.pullToRefresh, null);
+	//Setting the PullableContent of the SfPullToRefresh.
+	pullToRefresh.PullableContent = linearLayout;
+	....
+}
+
+{% endhighlight %}
+
+{% highlight xml %}
+
+//pullToRefresh.xml
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:id="@+id/linearLayout">
+    <TextView
+        android:layout_marginTop="65dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morrisville Temperature"
+        android:textSize="20sp"
+        android:textColor="#0079ff"
+        android:layout_gravity="center_horizontal" />
+  <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:id="@+id/weatherImage"
+        android:src="@drawable/cloudy"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23.11° degrees"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:id="@+id/weatherData"
+        android:textColor="#0079ff"
+        android:layout_gravity="center" />
+</LinearLayout>
+
+{% endhighlight %}
+
+### Refreshing the view
+
+To refresh the view, the user should hook the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event. The [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event will be fired, once the pulling progress reaches 100% and the touch is released. The user can do the required operations to refresh the view and once the view is refreshed, set the [RefreshingEventArgs.Refreshed](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.RefreshingEventArgs~Refreshed.html) as <b>true</b> to stop the refreshing animation. 
+
+Refer the below code example illustrating hooking of the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event and refreshing the view.
+
+{% highlight c# %}
+
+public class MainActivity : Activity 
+{
+    ImageView weatherImage;
+    TextView weatherData;
+    Random random;
+    string[] temperatures = new string[] { "22.01°", "23.11°", "22.50°", "22.77°", "22.20°", "22.00°", "24.01°" };
+    int[] weatherImages = new int[] { Resource.Drawable.Cloudy, Resource.Drawable.Humid, Resource.Drawable.Rainy, Resource.Drawable.Warm, Resource.Drawable.Windy };
+
+    protected override void OnCreate(Bundle bundle)
+    {
+	    ....
+	    weatherImage = linearLayout.FindViewById<ImageView>(Resource.Id.weatherImage);
+        weatherData = linearLayout.FindViewById<TextView>(Resource.Id.weatherData);
+	    //Hooking the Refreshing event.
+	    pullToRefresh.Refreshing += PullToRefresh_Refreshing;
+	    random = new Random();
+	    ....
     }
 
-
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-## Customizing a simple SfPullToRefresh sample
-
-To develop an application with Android PullToRefresh is simple. The following steps explains how to create and configure its properties.
-
-1. Create the `PullableContent` for the `SfPullToRefresh`
-
-You can set the `PullableContent` for the `SfPullToRefresh` by adding the desired UIElement.
-
-{% tabs %}
-
-{% highlight c# %}
-   
-    LinearLayout layout = new LinearLayout (context);
-    layout.SetBackgroundColor (Color.AliceBlue);
-    pullToRefresh.PullableContent = layout;
+    private async void PullToRefresh_Refreshing(object sender, RefreshingEventArgs e)
+    {
+        await Task.Delay(3000);
+        weatherImage.SetImageResource(weatherImages[random.Next(0, 4)]);
+        weatherData.Text = temperatures[random.Next(1, 5)].ToString() + " degrees";
+	    //Setting the e.Refreshed = true, to indicate that the view is refreshed and the SfPullToRefresh can stop the refreshing animation.
+        e.Refreshed = true;
+    }
+}
 
 {% endhighlight %}
 
-{% endtabs %}
+### TransitionType Customization
 
-## Events
+SfPullToRefresh supports two types of transition. By default, `TransitionType.SlideOnTop` is enabled. 
 
-The pulling event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, Refreshing event will be triggered. Now user can proceed to fetching the data from web or database. Once the data is fetched, we should call Refresh to method to complete all animations.
+Refer the topic `TransitionType` under `Built-in Customization` section, for more details regarding [SfPullToRefresh.TransitionType](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~TransitionType.html) property.
 
-There are three built-in events in the PullToRefresh control namely:
-
-1. `Pulling`
-2. `Refreshing`
-3. `Refreshed`
-
-### Pulling
-
-`Pulling` event is triggered when we start pulling down the PullableContent. It is triggered as long as the pointer or finger is pressed and the progress is less than 100 and not equal to 0 . The arguments for the event are:
-
-* SfPullToRefresh
-* Progress
-
-{% tabs %}
+Refer the below code example to switch to the `TransitionType.Push` mode of transition.
 
 {% highlight c# %}
 
-    pullToRefresh.Pulling+= (object sender, SfPullToRefresh.PullingEventArgs e) => {
-				
-			};
-			
-{% endhighlight %}
-
-{% endtabs %}
-
-### Refreshing
-
-`Refreshing` event is triggered once the content is pulled through the PullingThreshold or Progress reaches 100. This event is triggered till the Refresh() method is called.
-
-{% tabs %}
-
-{% highlight c# %}
-
-    pullToRefresh.Refreshing += (object sender, EventArgs e) => {
-				
-			};
+protected override void OnCreate(Bundle bundle)
+{
+	....
+	pullToRefresh.TransitionType = TransitionType.Push;
+	....
+}
 
 {% endhighlight %}
 
-{% endtabs %}
+### Final output of the sample
 
-### Refreshed
+The below GIF demonstrates the final output of the sample.
 
-`Refreshed` event is triggered once the refreshing and all the animations associated with the control are completed.
+<div style="text-align:center" markdown="1">
+![](getting_started_images/GettingStarted_Refresh_Android.gif)
+</div>
 
-{% tabs %}
+### Sample Link
 
-{% highlight c# %}
-
-    pullToRefresh.Refreshed += (object sender, EventArgs e) =>
-			 {
-  
-				 if (selectedLayout != null)
-				{
-					handler.PostDelayed(() =>
-					 {
-						 System.Random random = new System.Random();
-						 int i = random.Next(20, 50);
-						 textView3 = (TextView)view.FindViewById(Resource.Id.text);
-						 textView3.Text = i + "°".ToString() + "/12";
-						 pullToRefresh.Refresh();
-					 }, 2000);
-				 }
-			 };
-{% endhighlight %}
-
-{% endtabs %}
+You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.Android/Samples/SfPullToRefresh_GettingStarted.zip).
