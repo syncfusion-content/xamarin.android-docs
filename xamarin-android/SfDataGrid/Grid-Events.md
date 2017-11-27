@@ -112,11 +112,11 @@ private async void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 }
 {% endhighlight %}
 
-## Create custom Context Menu using Grid Events
+## Create custom context menu using grid events
 
-SfDataGrid allows you to display any custom view like a context menu that can act similar to a pop using the `GridLongPressed` event and `GridTapped` event.
+SfDataGrid allows to display any custom view like a context menu that can act similar to a pop using the `GridLongPressed` event and the `GridTapped` event.
 
-The following code illustrates how to create a custom context menu using Grid events.
+To create a custom context menu using grid events, follow the code example:
 
 {% highlight c# %}
 public class MainActivity : Activity
@@ -223,6 +223,6 @@ public class MainActivity : Activity
 }
 {% endhighlight %}
 
-Please refer the below GIF for the final rendering on execution of the above code example.
+Refer to the following GIF for final rendering on execution of the above code example:
 
 ![](SfDataGrid_images/CustomContextMenu.gif)
