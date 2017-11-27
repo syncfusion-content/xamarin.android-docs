@@ -11,7 +11,7 @@ documentation: ug
 
 SfPullToRefresh supports various layouts as its pullable content. 
 
-This section explains how to refresh the following views by hosting as a pullable content of SfPullToRefresh.
+This section explains how to refresh the following views by hosting as a pullable content of SfPullToRefresh:
 
 * [ListView](#listview) 
 * [SfDataGrid](#sfdatagrid) 
@@ -23,7 +23,7 @@ SfPullToRefresh can host the ListView as its pullable content and refresh the vi
 
 ### ListView customizations
 
-Refer the below code example for creating a list view and customizing it. 
+Refer to the following code example for creating and customizing a ListView: 
 
 {% highlight c# %}
 
@@ -46,11 +46,11 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-The example code of the adapter and the template of the list view are not displayed here, however you can download the source code of this sample here.
+The example code of the adapter and the template of the ListView are not displayed here. However, the source code of this sample can be downloaded here.
 
 ### Adapting ListView in SfPullToRefresh
 
-Refer the below code example, in which the list view is added as a pullable content of SfPullToRefresh and refreshing of the pullable content is handled.
+To add ListView as a pullable content and to refresh the pullable content, refer to the following code example:
 
 {% highlight c# %}
 
@@ -101,7 +101,7 @@ public void RefreshItemSource()
 
 {% endhighlight %}
 
-The final output of the sample, SfPullToRefresh adapting ListView as its pullable content is below.
+The final output of the sample of SfPullToRefresh adapting ListView as its pullable content is as follows:
 
 <div style="text-align:center" markdown="1">
 ![](customizing_pullableContent_images/ListView_Refresh_Android.gif)
@@ -113,7 +113,7 @@ SfPullToRefresh can host the `SfDataGrid` as its pullable content and refresh it
 
 ### SfDataGrid customizations
 
-Refer the below code example to create a SfDataGrid and customize it. Click [here](https://help.syncfusion.com/xamarin-android/sfdatagrid/getting-started) to explore SfDataGrid.
+Click [here](https://help.syncfusion.com/xamarin-android/sfdatagrid/getting-started) to explore SfDataGrid. Refer to the following code example to create and customize a SfDataGrid:
 
 {% highlight c# %}
 
@@ -147,11 +147,11 @@ void GridGenerateColumns()
 
 {% endhighlight %}
 
-The example code of the ViewModel are not displayed here, however you can download the source code of this sample here.
+The example code of the ViewModel is not displayed here. However, the source code of this sample can be downloaded here.
 
 ### Adapting SfDataGrid in SfPullToRefresh
 
-Refer the below code example, in which SfDataGrid is added as a pullable content of SfPullToRefresh and refreshing of the pullable content is handled.
+To add SfDataGrid as a pullable content and to refresh the pullable content, refer to the following code example: 
 
 {% highlight c# %}
 
@@ -180,7 +180,7 @@ private async void PullToRefresh_Refreshing(object sender, RefreshingEventArgs e
 
 {% endhighlight %}
 
-The final output of the sample, SfPullToRefresh adapting SfDataGrid as its pullable content is below.
+The final output of the sample of SfPullToRefresh adapting SfDataGrid as its pullable content is as follows:
 
 <div style="text-align:center" markdown="1">
 ![](customizing_pullableContent_images/SfDataGrid_Refresh_Android.gif)
@@ -188,9 +188,9 @@ The final output of the sample, SfPullToRefresh adapting SfDataGrid as its pulla
 
 ## Custom layout
 
-A layout is customized and added as the pullable content of SfPullToRefresh. 
+A layout can be customized and added as the pullable content of SfPullToRefresh. 
 
-The code example of the customized layout is below:
+The code example of the customized layout is as follows:
 
 {% highlight xaml %}
 
@@ -260,7 +260,7 @@ The code example of the customized layout is below:
 
 ### Adapting custom layout in SfPullToRefresh
 
-Refer the below code example, in which the above custom layout is added as a pullable content of SfPullToRefresh and refreshing of the pullable content is handled.
+To add the above custom layout as a pullable content and to refresh the pullable content, refer to the following code example:
 
 {% highlight c# %}
 
@@ -306,7 +306,7 @@ protected override void OnCreate (Bundle bundle)
 
 {% endhighlight %}
 
-The final output of the above sample is below.
+The final output of the above sample is as follows:
 
 <div style="text-align:center" markdown="1">
 ![](overview_images/WeatherData_Refresh_Android.gif)
@@ -314,7 +314,7 @@ The final output of the above sample is below.
 
 ## Samples
 
-You can download the source code of the sample from the below link.
+Download the source code of the sample from the below link:
 
 * [ListView](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListView_Refresh_UG-904322401)
 
