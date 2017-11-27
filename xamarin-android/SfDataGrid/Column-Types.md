@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Types | SfDataGrid | Xamarin.Android | Syncfusion
 description: What are all the different types of column and it's properties and customizations in a SfDataGrid.
