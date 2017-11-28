@@ -64,7 +64,7 @@ this.dataGrid.CollapseAllGroup();
 {% endhighlight %}
 {% endtabs %}
 
-### Expand or collapse the specific group
+### Expand or collapse a specific group
 
 You can expand or collapse specific group by using `SfDataGrid.ExpandGroup` and `SfDataGrid.CollapseGroup` methods.
 
@@ -134,7 +134,7 @@ The below screenshot shows the comparison between the two Group modes. GroupMode
 
 ![](SfDataGrid_images/GroupMode.png)
 
-## Clearing or removing group
+## Clearing or removing a group
 
 To clear grouping applied to SfDataGrid, remove the items from the `SfDataGrid.GroupColumnDescriptions` collection or clear the collection. 
  
