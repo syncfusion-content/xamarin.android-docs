@@ -219,7 +219,7 @@ zoomPan.ZoomByRange(axis, 20, 25);
 
 {% endhighlight %}
 
-**ZoomByRange(dateTimeAxis,start,end)**
+**ZoomByRange(dateTimeAxis, start, end)**
 
 This method is used to zoom the given axis to given date time range.
 
@@ -232,7 +232,7 @@ zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
 
 {% endhighlight %}
 
-### ZoomToFactor(chartAxis,zoomPosition,zoomFactor)
+### ZoomToFactor(chartAxis, zoomPosition, zoomFactor)
 
 [`ZoomToFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomToFactor.html) method is used to change the zoom level by using zoom position and zoom factor. Zoom position value specifies the starting point of zooming, and zoom factor value specifies the level of zooming.
 
