@@ -141,7 +141,7 @@ Zooming and panning can be performed programmatically with the following methods
 
 [`ZoomIn`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomIn.html) method is used to increase the magnification of the plot area to view the data clearly.
 
-{ % highlight c# %}
+{% highlight c# %}
 [C#]
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
@@ -154,7 +154,7 @@ zoomPan.ZoomIn();
 
 [`ZoomOut`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomOut.html) is used to decrease the magnification of the plot area to reset the default view.
 
-{ % highlight c# %}
+{% highlight c# %}
 [C#]
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
@@ -169,7 +169,7 @@ zoomPan.ZoomOut();
 
 This method is used to change the zoom level by using zoom factor.
 
-{ % highlight c# %}
+{% highlight c# %}
 [C#]
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
@@ -182,7 +182,7 @@ zoomPan.Zoom(0.5f);
 
 This method is used to zoom the chart for a given rectangle value.
 
-{ % highlight c# %}
+{% highlight c# %}
 [C#]
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
@@ -195,7 +195,7 @@ zoomPan.Zoom(new RectF(10, 10, 200, 350));
 
 This method is used to change the zoom level of given axis to the specified level and origin.
 
-{ % highlight c# %}
+{% highlight c# %}
 [C#]
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
@@ -210,7 +210,7 @@ zoomPan.Zoom(0.5f, 0.5f, axis);
 
 This method is used to zoom the given axis to given range.
 
-{ % highlight c# %}
+{% highlight c# %}
 [C#]
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
@@ -223,7 +223,7 @@ zoomPan.ZoomByRange(axis, 20, 25);
 
 This method is used to zoom the given axis to given date time range.
 
-{ % highlight c# %}
+{% highlight c# %}
 [C#]
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior(); 
@@ -236,7 +236,7 @@ zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
 
 [`ZoomToFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomToFactor.html) method is used to change the zoom level by using zoom position and zoom factor. Zoom position value specifies the starting point of zooming, and zoom factor value specifies the level of zooming.
 
-{ % highlight c# %}
+{% highlight c# %}
 [C#]
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior(); 
@@ -249,7 +249,7 @@ zoomPan.ZoomToFactor(axis, 0.5f, 0.5f);
 
 [`Reset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~Reset.html) method is used to return the plot area back to its original position after zooming. 
 
-{ % highlight c# %}
+{% highlight c# %}
 [C#]
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior(); 
@@ -257,6 +257,3 @@ ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 zoomPan.Reset();
 
 {% endhighlight %}
-
-
-
