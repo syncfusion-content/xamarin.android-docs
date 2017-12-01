@@ -595,3 +595,9 @@ This event is triggered when the axis label is created. The argument contains th
 * [`LabelContent`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~LabelContent.html) - used to get or set the content of label
 * [`Position`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~Position.html) - used to get or set the position of the label
 * [`IsVisible`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~IsVisible.html) - used to set the axis label visibility
+
+**LabelClicked**
+
+This event is triggered when the axis label is clicked. The argument contains the following information.
+
+* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabelClickedEventArgs~Label.html) - Used to get the ChartAxisLabel, which contains axis label position and text.
