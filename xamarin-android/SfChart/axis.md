@@ -561,6 +561,22 @@ chart.SecondaryAxis.MaximumLabels = 5;
 
 ![](axis_images/axis_img26.png)
 
+### AutoScrollingMode
+
+[`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AutoScrollingMode.html) is [`End`].
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+      AutoScrollingDelta = 3,
+	  
+      AutoScrollingMode = ChartAutoScrollingMode.Start
+};
+
+{% endhighlight %}
+
 ## Smart Axis Labels
 
 Axis labels may overlap with each other based on chart dimensions and label size. The [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) is `None`. Other available values of [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) are `MultipleRows`and `Hide`.
