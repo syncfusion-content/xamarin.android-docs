@@ -784,99 +784,43 @@ radarSeries.Closed = false;
 
 ### Radar start angle for primary axis
 
-The start position of the radar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PolarAngle.html) property is Rotate270. [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart.PrimaryAxis>
-
-    <chart:CategoryAxis PolarAngle = “Rotate0” />
-
-</chart:SfChart.PrimaryAxis >
- 
-<chart:SfChart.SecondaryAxis>
-
-    <chart:NumericalAxis/>
-
-</chart:SfChart.SecondaryAxis >
- 
-{% endhighlight %}
+The start position of the radar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PolarAngle.html) property is `Rotate270`. [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes.
 
 {% highlight c# %}
+[C#]
 
-    chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
-
-    chart.SecondaryAxis =  new NumericalAxis(); 
+chart.PrimaryAxis = new CategoryAxis()
+{
+    PolarAngle = ChartPolarAngle.Rotate0
+};
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](charttypes_images/radarangle_img1.png)
 
 ### Radar start angle for secondary axis
 
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart.PrimaryAxis>
-
-    <chart:CategoryAxis/>
-
-</chart:SfChart.PrimaryAxis >
- 
-<chart:SfChart.SecondaryAxis>
-
-    <chart:NumericalAxis PolarAngle = “Rotate0” />
-
-</chart:SfChart.SecondaryAxis >
- 
-{% endhighlight %}
-
 {% highlight c# %}
+[C#]
 
-    chart.PrimaryAxis  = new CategoryAxis();
+chart.PrimaryAxis  = new CategoryAxis();
 
-    chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
+chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](charttypes_images/radarangle_img2.png)
 
 ### Radar start angle for both axis
 
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart.PrimaryAxis>
-
-    <chart:CategoryAxis PolarAngle = “Rotate0”/>
-
-</chart:SfChart.PrimaryAxis >
- 
-<chart:SfChart.SecondaryAxis>
-
-    <chart:NumericalAxis  PolarAngle = “Rotate0”/>
-
-</chart:SfChart.SecondaryAxis >
- 
-{% endhighlight %}
-
 {% highlight c# %}
+[C#]
 
-    chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
+chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
 
-    chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
+chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](charttypes_images/radarangle_img3.png)
 
@@ -963,61 +907,25 @@ polarSeries.Closed = false;
 
 The start position of the polar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PolarAngle.html) property is Rotate270. [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes.
 
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart.PrimaryAxis>
-
-    <chart:CategoryAxis PolarAngle = “Rotate0” />
-
-</chart:SfChart.PrimaryAxis >
- 
-<chart:SfChart.SecondaryAxis>
-
-    <chart:NumericalAxis/>
-
-</chart:SfChart.SecondaryAxis >
- 
-{% endhighlight %}
-
 {% highlight c# %}
+[C#]
 
-    chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
+chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
 
-    chart.SecondaryAxis =  new NumericalAxis(); 
+chart.SecondaryAxis = new NumericalAxis(); 
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](charttypes_images/polarangle_img1.png)
 
 ### Polar start angle for secondary axis
 
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart.PrimaryAxis>
-
-    <chart:CategoryAxis/>
-
-</chart:SfChart.PrimaryAxis >
- 
-<chart:SfChart.SecondaryAxis>
-
-    <chart:NumericalAxis PolarAngle = “Rotate0” />
-
-</chart:SfChart.SecondaryAxis >
- 
-{% endhighlight %}
-
 {% highlight c# %}
+[C#]
 
-    chart.PrimaryAxis  = new CategoryAxis();
+chart.PrimaryAxis  = new CategoryAxis();
 
-    chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
+chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
 
 {% endhighlight %}
 
@@ -1027,33 +935,14 @@ The start position of the polar series can be set by using [`PolarAngle`](http:/
 
 ### Polar start angle for both axis
 
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart.PrimaryAxis>
-
-    <chart:CategoryAxis PolarAngle = “Rotate0”/>
-
-</chart:SfChart.PrimaryAxis >
- 
-<chart:SfChart.SecondaryAxis>
-
-    <chart:NumericalAxis  PolarAngle = “Rotate0”/>
-
-</chart:SfChart.SecondaryAxis >
- 
-{% endhighlight %}
-
 {% highlight c# %}
+[C#]
 
-    chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
+chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
 
-    chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
+chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](charttypes_images/polarangle_img3.png)
 
