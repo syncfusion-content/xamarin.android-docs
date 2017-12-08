@@ -577,6 +577,110 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endhighlight %}
 
+## Axis Crossing
+
+Axis can be positioned anywhere in the chart area by using [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property. This property specifies where the horizontal axis should intersect or cross the vertical axis or vice-versa. Default value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property is null.
+
+{% highlight c# %}
+[C#]
+
+chart.PrimaryAxis  = new CategoryAxis() { CrossesAt = 0 };
+
+chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = 8 };
+
+{% endhighlight %}
+
+![](axis_images/axiscrossing_img1.png)
+
+### Crossing a specific axis
+
+[`CrossingAxisName`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossingAxisName.html) property takes axis name as input and determines the axis that used for crossing. By default, all the horizontal axes cross in primary Y axis, and all the vertical axes cross in primary X axis.
+
+{% highlight c# %}
+[C#]
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    CrossesAt = 0,
+
+    Name = "PrimaryAxis",
+
+    CrossingAxisName = "SecondaryAxis"
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+    CrossesAt = 8,
+
+    Name = "YAxis",
+
+    CrossingAxisName = "PrimaryAxis",
+};
+
+BubbleSeries series = new BubbleSeries()
+{
+    ...
+
+    YAxis = new NumericalAxis()
+    {
+        CrossesAt = 8,
+
+        Name = "SecondaryAxis",
+
+        CrossingAxisName = "PrimaryAxis",
+    }
+};
+
+{% endhighlight %}
+
+![](axis_images/axiscrossing_img2.png)
+
+### Crossing value below or above the visible range
+
+Axis will be placed in the opposite side if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property is greater than the maximum value of crossing axis. Axis will be placed in the default position if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property is less than the minimum value of crossing axis.
+
+{% highlight c# %}
+[C#]
+
+    chart.PrimaryAxis  = new CategoryAxis() { CrossesAt = 150 };
+
+    chart.SecondaryAxis =  new NumericalAxis(){ CrossesAt = -2 };
+
+{% endhighlight %}
+
+### Crossing in date time axis
+
+For crossing in date time horizontal axis, date object should be provided as value for [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property of vertical axis.
+
+{% highlight c# %}
+[C#]
+
+    chart.PrimaryAxis  = new DateTimeAxis() { CrossesAt = 0 };
+
+    chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = new DateTime(2003, 1, 1) };
+
+{% endhighlight %}
+
+![](axis_images/axiscrossing_img3.png)
+
+### Positioning the axis elements while crossing
+
+The [`RenderNextToCrossingValue`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~RenderNextToCrossingValue.html) property is used to determine whether the crossing axis should be placed at crossing position or not. The default value of [`RenderNextToCrossingValue`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~RenderNextToCrossingValue.html) property is true.
+
+{% highlight c# %}
+[C#]
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    CrossesAt = 0,
+
+    RenderNextToCrossingValue = false,
+};
+
+{% endhighlight %}
+
+![](axis_images/axiscrossing_img4.png)
+
 ## Smart Axis Labels
 
 Axis labels may overlap with each other based on chart dimensions and label size. The [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) is `None`. Other available values of [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) are `MultipleRows`and `Hide`.
