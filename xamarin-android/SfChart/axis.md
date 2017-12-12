@@ -674,12 +674,12 @@ chart.PrimaryAxis = new CategoryAxis()
 {
     CrossesAt = 0,
 
-    RenderNextToCrossingValue = false,
+    RenderNextToCrossingValue = false
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-    CrossesAt = 5;
+    CrossesAt = 5
 };
 
 {% endhighlight %}
