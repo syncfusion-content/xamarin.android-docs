@@ -677,6 +677,11 @@ chart.PrimaryAxis = new CategoryAxis()
     RenderNextToCrossingValue = false,
 };
 
+chart.SecondaryAxis = new NumericalAxis()
+{
+    CrossesAt = 5;
+};
+
 {% endhighlight %}
 
 ![](axis_images/axiscrossing_img4.png)
