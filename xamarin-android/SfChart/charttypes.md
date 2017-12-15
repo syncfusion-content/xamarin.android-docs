@@ -929,8 +929,6 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![](charttypes_images/polarangle_img2.png)
 
 ### Polar start angle for both axis
