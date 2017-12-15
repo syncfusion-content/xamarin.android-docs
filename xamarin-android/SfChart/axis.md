@@ -635,19 +635,6 @@ BubbleSeries series = new BubbleSeries()
 
 ![](axis_images/axiscrossing_img2.png)
 
-### Crossing value below or above the visible range
-
-Axis will be placed in the opposite side if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property is greater than the maximum value of crossing axis. Axis will be placed in the default position if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property is less than the minimum value of crossing axis.
-
-{% highlight c# %}
-[C#]
-
-    chart.PrimaryAxis  = new CategoryAxis() { CrossesAt = 150 };
-
-    chart.SecondaryAxis =  new NumericalAxis(){ CrossesAt = -2 };
-
-{% endhighlight %}
-
 ### Crossing in date time axis
 
 For crossing in date time horizontal axis, date object should be provided as value for [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property of vertical axis.
