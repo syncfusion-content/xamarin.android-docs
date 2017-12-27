@@ -34,7 +34,7 @@ Programmatically, you can make use of the `Save` method in the SfImageEditor con
 
 ## Events
 
-The SfImageEditor has Events when performing Save opeation namely,  ImageSaving and ImageSaved events.
+The SfImageEditor has Events when performing Save operation namely,  ImageSaving and ImageSaved events.
 
 ### ImageSaving
 
