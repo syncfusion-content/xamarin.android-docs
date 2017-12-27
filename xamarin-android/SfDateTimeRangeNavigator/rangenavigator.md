@@ -46,7 +46,7 @@ sfDateTimeRangeNavigator.Maximum = new GregorianCalendar(2016, 01, 01).Time;
 
 In real time, other controls like chart, grid etc., are updated in response to the range selection performed in `SfDateTimeRangeNavigator`. You can handle the selection using `RangeChanged` event and update other controls based on the selected date time or perform some other tasks using the selected data.
 
-N> You can get the selected date time using `P0` and `P1`.
+N> You can get the selected date time using `ViewRangeStart` and `ViewRangeEnd`.
 
 Following code example illustrates how to handle range selection and update chart's date time axis range,
 
@@ -58,8 +58,8 @@ sfDateTimeRangeNavigator.RangeChanged += sfDateTimeRangeNavigator_RangeChanged;
 void sfDateTimeRangeNavigator_RangeChanged(object sender, SfDateTimeRangeNavigator.RangeChangedEventArgs e)
 {
     //Updating chart's date time range
-    dateTimeAxis.Minimum = e.P0;
-    dateTimeAxis.Maximum = e.P1;
+    dateTimeAxis.Minimum = e.ViewRangeStart;
+    dateTimeAxis.Maximum = e.ViewRangeEnd;
 }
 
 {% endhighlight %}
