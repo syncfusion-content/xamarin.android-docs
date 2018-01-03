@@ -13,19 +13,67 @@ documentation: ug
 
 By using the following IDEs, you can develop Xamarin.Android apps:
 
-* Visual Studio 2012 (.Net 4.5)
 * Visual Studio 2013
 * Visual Studio 2015
-* Xamarin Studio
+* Visual Studio 2017
+
+N> For installing and configuring Xamarin in Visual Studio, please refer this [`link`](https://developer.xamarin.com/guides/android/getting_started/installation/windows/).
 
 **Integrated** **Development** **Environment** **for** **Mac**
 
-By using the following IDE, you can develop Xamarin.Android apps:
+By using Visual Studio for Mac, you can develop iOS and Android applications.
 
-* Xamarin Studio
-
-* Visual Studio for Mac
+N> For installing and configuring Xamarin in Visual Studio for Mac, please refer this [`link`](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
 
 **Supported** **Platforms**
 
-Supports Android 4.1 (API level 16) and later versions.
+The following table lists the platforms supported by our Xamarin.Android controls.
+
+<table>
+    <tr>
+        <td>
+            Platform
+            <br/>
+            <br/>
+        </td>
+          <td>
+            Controls
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Supported versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td rowspan="2">
+            Android
+            <br/>
+            <br/>
+        </td>
+        <td>
+            SfPdfViewer
+            <br/>
+            <br/>
+        </td>
+         <td>
+            API level 21 and later versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            All other controls 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            API level 17 and later versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
