@@ -143,7 +143,7 @@ The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.c
 
     chart.Legend.OverflowMode = ChartLegendOverflowMode.Wrap;
 
-    chart.Legend.MaxWidth = 1200;
+    chart.Legend.MaxWidth = 420;
 
 {% endhighlight %}
 
