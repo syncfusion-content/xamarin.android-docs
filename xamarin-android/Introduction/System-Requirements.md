@@ -11,7 +11,7 @@ documentation: ug
 
 **Integrated** **Development** **Environment** **for** **Windows**
 
-By using the following IDEs, you can develop Xamarin.Android apps:
+By using the following IDEs, you can develop Xamarin.Android applications:
 
 * Visual Studio 2013
 * Visual Studio 2015
@@ -21,7 +21,7 @@ N> For installing and configuring Xamarin in Visual Studio, please refer this [`
 
 **Integrated** **Development** **Environment** **for** **Mac**
 
-By using Visual Studio for Mac, you can develop iOS and Android applications.
+By using Visual Studio for Mac, you can develop Xamarin.Android applications.
 
 N> For installing and configuring Xamarin in Visual Studio for Mac, please refer this [`link`](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
 
