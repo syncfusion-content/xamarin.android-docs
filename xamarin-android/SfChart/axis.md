@@ -610,7 +610,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-    CrossesAt = 8,
+    CrossesAt = 2,
 
     Name = "YAxis",
 
@@ -648,6 +648,8 @@ For crossing in date time horizontal axis, date object should be provided as val
 
 {% endhighlight %}
 
+N> Axis will be placed in the opposite side if the value of CrossesAt property is greater than the maximum value of crossing axis. Axis will be placed in the default position if the value of CrossesAt property is less than the minimum value of crossing axis.
+
 ![](axis_images/axiscrossing_img3.png)
 
 ### Positioning the axis elements while crossing
@@ -659,7 +661,7 @@ The [`RenderNextToCrossingValue`](http://help.syncfusion.com/cr/cref_files/xamar
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-    CrossesAt = 0,
+    CrossesAt = 20,
 
     RenderNextToCrossingValue = false
 };
