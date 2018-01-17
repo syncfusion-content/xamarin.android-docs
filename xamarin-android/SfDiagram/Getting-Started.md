@@ -125,7 +125,7 @@ The flow chart will get displayed in the SfDiagram as follows
 ![](images/Getting-Started_img1.jpeg)
 
 This demo project can be downloaded from the following link.
-[GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/GettingStarted_Android.zip)
+[GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/GettingStarted_Android_SfDiagram.zip)
 
 ## Create a simple organizational chart
 
@@ -155,7 +155,8 @@ Define Employee Information as a Collection. The below code example shows an emp
 •ParentId is used to identify the person to whom an employee report to, in the organization.
 {% tabs %}
 {% highlight c# %}
-//Initializes the employee collection
+
+//Initializes the employee collection
 ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
 employees.Add(new Employee() { Name = "Elizabeth", EmployeeId = "1", ParentId = "", Designation = "CEO" });
 employees.Add(new Employee() { Name = "Christina", EmployeeId = "2", ParentId = "1", Designation = "Manager" });
@@ -178,4 +179,4 @@ The Employee data is displayed in the SfDiagram as follows
 
 
 This demo project can be downloaded from the following link.
-[OrganizationalChart_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/OrganizationalChart_Android.zip)
+[OrganizationalChart_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/OrganizationalChart_Android_SfDiagram.zip)
