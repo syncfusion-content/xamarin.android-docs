@@ -44,8 +44,8 @@ Add the below code in the Main.axml to include PDF Viewer control.
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8"?> 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-android:id="@+id/linearlayout"> 
-<Syncfusion.SfDiagram.Android.SfDiagram android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/diagramcontrol" /> </LinearLayout>
+android:id="@+id/linear_layout"> 
+<Syncfusion.SfDiagram.Android.SfDiagram android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/diagram_control" /> </LinearLayout>
 {% endhighlight %}
 {% endtabs %}
 Please add the below code snippet in the MainActivity class
@@ -63,7 +63,7 @@ namespace GettingStarted
        {
                base.OnCreate(bundle);
                SetContentView(Resource.Layout.Main);
-               Diagram = FindViewById<SfDiagram>(Resource.Id.diagramcontrol);
+               Diagram = FindViewById<SfDiagram>(Resource.Id.diagram_control);
         }
     }
 }
@@ -79,7 +79,7 @@ base.OnCreate(bundle);
 
 // Set our view from the "main" layout resource
 SetContentView(Resource.Layout.Main);
-LinearLayout linearLayout = FindViewById<LinearLayout>(Resource.Id.linearlayout);
+LinearLayout linear_Layout = FindViewById<LinearLayout>(Resource.Id.linear_layout);
 SfDiagram diagram = new SfDiagram(this);
 diagram.LayoutParameters = new LayoutParams(LayoutParams.MatchParent, LayoutParams.MatchParent);
 Node Begin = AddNode("Begin", 300, 120, 240, 80, "Begin", ShapeType.Ellipse);
@@ -164,7 +164,7 @@ employees.Add(new Employee() { Name = "Yang", EmployeeId = "3", ParentId = "1", 
 employees.Add(new Employee() { Name = "Yoshi", EmployeeId = "4", ParentId = "2", Designation = "Team Lead" });
 employees.Add(new Employee() { Name = "Philip", EmployeeId = "5", ParentId = "2", Designation = "S/w Developer" });
 employees.Add(new Employee() { Name = "Roland", EmployeeId = "6", ParentId = "3", Designation = "TeamLead" });
-employees.Add(new Employee() { Name = "Yuonne", EmployeeId = "7", ParentId = "3", Designation = "Testing Engineer" });
+employees.Add(new Employee() { Name = "Yuonne's", EmployeeId = "7", ParentId = "3", Designation = "Testing Engineer" });
 //Initializes the DataSourceSettings
 diagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "EmployeeId", ParentId = "ParentId" };
 //Initializes the Layout
