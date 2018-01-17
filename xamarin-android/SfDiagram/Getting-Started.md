@@ -164,7 +164,7 @@ employees.Add(new Employee() { Name = "Yang", EmployeeId = "3", ParentId = "1", 
 employees.Add(new Employee() { Name = "Yoshi", EmployeeId = "4", ParentId = "2", Designation = "Team Lead" });
 employees.Add(new Employee() { Name = "Philip", EmployeeId = "5", ParentId = "2", Designation = "S/w Developer" });
 employees.Add(new Employee() { Name = "Roland", EmployeeId = "6", ParentId = "3", Designation = "TeamLead" });
-employees.Add(new Employee() { Name = "Yuonne's", EmployeeId = "7", ParentId = "3", Designation = "Testing Engineer" });
+employees.Add(new Employee() { Name = "Yvonne", EmployeeId = "7", ParentId = "3", Designation = "Testing Engineer" });
 //Initializes the DataSourceSettings
 diagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "EmployeeId", ParentId = "ParentId" };
 //Initializes the Layout
