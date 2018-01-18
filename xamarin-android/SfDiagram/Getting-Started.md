@@ -44,8 +44,8 @@ Add the below code in the Main.axml to include PDF Viewer control.
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8"?> 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-android:id="@+id/linearlayout"> 
-<Syncfusion.SfDiagram.Android.SfDiagram android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/diagramcontrol" /> </LinearLayout>
+android:id="@+id/linear_layout"> 
+<Syncfusion.SfDiagram.Android.SfDiagram android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/diagram_control" /> </LinearLayout>
 {% endhighlight %}
 {% endtabs %}
 Please add the below code snippet in the MainActivity class
@@ -63,7 +63,7 @@ namespace GettingStarted
        {
                base.OnCreate(bundle);
                SetContentView(Resource.Layout.Main);
-               Diagram = FindViewById<SfDiagram>(Resource.Id.diagramcontrol);
+               Diagram = FindViewById<SfDiagram>(Resource.Id.diagram_control);
         }
     }
 }
@@ -79,7 +79,7 @@ base.OnCreate(bundle);
 
 // Set our view from the "main" layout resource
 SetContentView(Resource.Layout.Main);
-LinearLayout linearLayout = FindViewById<LinearLayout>(Resource.Id.linearlayout);
+LinearLayout linear_Layout = FindViewById<LinearLayout>(Resource.Id.linear_layout);
 SfDiagram diagram = new SfDiagram(this);
 diagram.LayoutParameters = new LayoutParams(LayoutParams.MatchParent, LayoutParams.MatchParent);
 Node Begin = AddNode("Begin", 300, 120, 240, 80, "Begin", ShapeType.Ellipse);
@@ -125,7 +125,7 @@ The flow chart will get displayed in the SfDiagram as follows
 ![](images/Getting-Started_img1.jpeg)
 
 This demo project can be downloaded from the following link.
-[GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/GettingStarted_Android.zip)
+[GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/GettingStarted_Android_SfDiagram.zip)
 
 ## Create a simple organizational chart
 
@@ -155,7 +155,8 @@ Define Employee Information as a Collection. The below code example shows an emp
 •ParentId is used to identify the person to whom an employee report to, in the organization.
 {% tabs %}
 {% highlight c# %}
-//Initializes the employee collection
+
+//Initializes the employee collection
 ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
 employees.Add(new Employee() { Name = "Elizabeth", EmployeeId = "1", ParentId = "", Designation = "CEO" });
 employees.Add(new Employee() { Name = "Christina", EmployeeId = "2", ParentId = "1", Designation = "Manager" });
@@ -163,7 +164,7 @@ employees.Add(new Employee() { Name = "Yang", EmployeeId = "3", ParentId = "1", 
 employees.Add(new Employee() { Name = "Yoshi", EmployeeId = "4", ParentId = "2", Designation = "Team Lead" });
 employees.Add(new Employee() { Name = "Philip", EmployeeId = "5", ParentId = "2", Designation = "S/w Developer" });
 employees.Add(new Employee() { Name = "Roland", EmployeeId = "6", ParentId = "3", Designation = "TeamLead" });
-employees.Add(new Employee() { Name = "Yuonne", EmployeeId = "7", ParentId = "3", Designation = "Testing Engineer" });
+employees.Add(new Employee() { Name = "Yvonne", EmployeeId = "7", ParentId = "3", Designation = "Testing Engineer" });
 //Initializes the DataSourceSettings
 diagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "EmployeeId", ParentId = "ParentId" };
 //Initializes the Layout
@@ -178,4 +179,4 @@ The Employee data is displayed in the SfDiagram as follows
 
 
 This demo project can be downloaded from the following link.
-[OrganizationalChart_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/OrganizationalChart_Android.zip)
+[OrganizationalChart_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/OrganizationalChart_Android_SfDiagram.zip)
