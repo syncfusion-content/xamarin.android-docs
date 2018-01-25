@@ -75,7 +75,7 @@ We can set the Up Down button of SfNumericUpDown control by using any of the bel
 2. Image
 3. FontIconText
 
-N> For image and Fonticon we need to add the the respective image and TTF file.
+N> For image and FontIcon we need to add the the respective image and TTF file.
 		For android: Add image at Resource/Drawable/{Image} and .ttf file at Asserts/{.ttf}
 		
 
@@ -85,8 +85,8 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 
 {% highlight C# %}
 
-			LinearLayout mainlayout = new LinearLayout(this);
-            mainlayout.Orientation = Orientation.Vertical;
+			LinearLayout MainLayout = new LinearLayout(this);
+            MainLayout.Orientation = Orientation.Vertical;
 
             SfNumericUpDown numeric;
 
@@ -120,9 +120,9 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
             numeric.DecrementButtonSettings = DownButton;
             numeric.IncrementButtonSettings = UpButton;
 
-            mainlayout.AddView(numeric);
+            MainLayout.AddView(numeric);
 
-            SetContentView(mainlayout);
+            SetContentView(MainLayout);
 
 {% endhighlight %}
 
@@ -134,8 +134,8 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 
 {% highlight C# %}
 
-			LinearLayout mainlayout = new LinearLayout(this);
-            mainlayout.Orientation = Orientation.Vertical;
+			LinearLayout MainLayout = new LinearLayout(this);
+            MainLayout.Orientation = Orientation.Vertical;
 
             SfNumericUpDown numeric;
 
@@ -157,9 +157,9 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
             numeric.DecrementButtonSettings = DownButton;
             numeric.IncrementButtonSettings = UpButton;
 
-            mainlayout.AddView(numeric);
+            MainLayout.AddView(numeric);
 
-            SetContentView(mainlayout);
+            SetContentView(MainLayout);
 
 {% endhighlight %}
 
@@ -171,8 +171,8 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 
 {% highlight C# %}
 
-			LinearLayout mainlayout = new LinearLayout(this);
-            mainlayout.Orientation = Orientation.Vertical;
+			LinearLayout MainLayout = new LinearLayout(this);
+            MainLayout.Orientation = Orientation.Vertical;
 
             SfNumericUpDown numeric;
 
@@ -199,9 +199,9 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
             numeric.DecrementButtonSettings = DownButton;
             numeric.IncrementButtonSettings = UpButton;
 
-            mainlayout.AddView(numeric);
+            MainLayout.AddView(numeric);
 
-            SetContentView(mainlayout);
+            SetContentView(MainLayout);
 
 {% endhighlight %}
 
