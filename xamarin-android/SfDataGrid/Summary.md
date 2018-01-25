@@ -56,7 +56,7 @@ The following screenshot shows the outcome of the previous code:
 ![](SfDataGrid_images/Summary4.PNG)
 
 
-### Defining summary in a row
+### Displaying summary in a row
 
 Displays the summary information in a row by setting the [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~ShowSummaryInRow.html) to `true` and by defining summary columns. You have to define the [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~Title.html) based on the [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Name.html) property to format summary columns value in a row.
 
@@ -86,7 +86,7 @@ The following screenshot shows the final outcome for both values of `ShowSummary
 ![](SfDataGrid_images/Summary5.PNG)
 
 
-### Defining summary in a column
+### Displaying summary in a column
 
 Displays the summary information in a column by setting the `GridSummaryRow.ShowSummaryInRow` to `false` and by defining summary columns. The `SfDataGrid.GridSummaryColumn` is the object of the [GridSummaryRow.SummaryColumns](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~SummaryColumns.html) collection that contains the following important properties:
 
