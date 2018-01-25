@@ -9,56 +9,56 @@ documentation: UG
 
 # Summary
 
-SfDataGrid provides support to display the concise information about the bound data objects using summaries. SfDataGrid provides below summary types.
+The data grid supports to display the concise information about the bound data objects using summaries. It provides the following summary types:
 
-* **Caption Summary** - Used to display the summary information in the caption of the group.
-
-* **Table Summary** - Used to display the summary information at top and/or bottom in SfDataGrid.
+* **Caption Summary**: Used to display the summary information in the caption of the group.
+* **Table Summary**: Used to display the summary information at top and/or bottom in the data grid.
 
 ![](SfDataGrid_images/Summary_img1.png)
 
-Summary rows are represented by using [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow.html) and each `GridSummaryRow` hold summary information of columns in [SummaryColumns](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~SummaryColumns.html) property . The `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn.html) which carries the name of column, format and its summary aggregate type.
+Summary rows are represented by using the [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow.html). Each `GridSummaryRow` hold the summary information of columns in the [SummaryColumns](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~SummaryColumns.html) property . `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn.html) which carries name, format, and summary aggregate type of the column.
 
-You can derive additional information from your data like sum, average, maximum, minimum and count using summaries in SfDataGrid. These summary values can be computed for groups or for the entire SfDataGrid using `GridSummaryRow` and `GridSummaryColumn` that implements [ISummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.ISummaryRow.html) and [ISummaryColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.ISummaryColumn.html) interface.
+Derive additional information from your data like sum, average, maximum, minimum, and count using summaries in the data grid. These summary values can be computed for groups or for the entire control using `GridSummaryRow` and `GridSummaryColumn` that implements [ISummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.ISummaryRow.html) and [ISummaryColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.ISummaryColumn.html) interfaces.
 
-N> Summary does not refresh with data. To update the summary for the newly added row or if any values in the summary column is modified, set the [SfDataGrid.View.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.CollectionViewAdv~LiveDataUpdateMode.html) to `LiveDataUpdateMode.AllowDataShaping` or `LiveDataUpdateMode.AllowSummaryUpdate`.
+N> The Summary does not refresh with data. To update the summary for the newly added row, or if any values in the summary column is modified, set the [SfDataGrid.View.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.CollectionViewAdv~LiveDataUpdateMode.html) to `LiveDataUpdateMode.AllowDataShaping` or `LiveDataUpdateMode.AllowSummaryUpdate`.
 
 
-## Caption Summaries
+## Caption summaries
 
-SfDataGrid provides built-in support for caption summaries. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of a group.
+The data grid provides built-in support for caption summaries. The caption summary value is calculated based on the records in a group. The summary information will be displayed in the caption of a group.
 
-Below screenshot shows the built-in caption summary of a group.
+The following screenshot shows the built-in caption summary of a group:
 
 ![](SfDataGrid_images/Summary2.PNG)
 
 
 ### Formatting built-in caption summary
 
-By default, the summary value displayed in caption summary rows based on [SfDataGrid.GroupCaptionTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GroupCaptionTextFormat.html) property.
-The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
+By default, the summary value displayed in caption summary rows based on the [SfDataGrid.GroupCaptionTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GroupCaptionTextFormat.html) property.
 
-*  **ColumnName** - Displays the name of the column currently grouped.
-*  **Key** - Displays the key value of the group.
-*  **ItemsCount** - Displays the number of items in a group.
+Default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
+
+*  **ColumnName**: Displays the name of the currently grouped column.
+*  **Key**: Displays the key value of the group.
+*  **ItemsCount**: Displays the number of items in a group.
 
 ![](SfDataGrid_images/Summary3.PNG)
 
-You can customize this group caption text format by setting the `SfDataGrid.GroupCaptionTextFormat` property. The following code example illustrates how to customize group caption text in SfDataGrid.
+Customize the group caption text format by setting the `SfDataGrid.GroupCaptionTextFormat` property. The following code example illustrates how to customize group caption text in the data grid:
 
 {% highlight c# %}
 //Customized group caption text
 dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key}";
 {% endhighlight %}
 
-Below screenshot shows the final outcome of the above code.
+The following screenshot shows the outcome of the previous code:
 
 ![](SfDataGrid_images/Summary4.PNG)
 
 
-### Defining summary for row
+### Defining summary in a row
 
-You can display summary information in a row by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to define [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Name.html) property to format summary columns values in a row.
+Displays the summary information in a row by setting the [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~ShowSummaryInRow.html) to `true` and by defining summary columns. You have to define the [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~Title.html) based on the [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Name.html) property to format summary columns value in a row.
 
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
@@ -81,32 +81,32 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-The following screenshot shows the final outcome for both values of `ShowSummaryInRow` to `true`.
+The following screenshot shows the final outcome for both values of `ShowSummaryInRow` to `true`:
 
 ![](SfDataGrid_images/Summary5.PNG)
 
 
-### Defining summary for column
+### Defining summary in a column
 
-You can display summary information in the column by setting `GridSummaryRow.ShowSummaryInRow` to `false` and defining summary columns. `SfDataGrid.GridSummaryColumn` is the object of [GridSummaryRow.SummaryColumns](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~SummaryColumns.html) collection that contains the following important properties:
+Displays the summary information in a column by setting the `GridSummaryRow.ShowSummaryInRow` to `false` and by defining summary columns. The `SfDataGrid.GridSummaryColumn` is the object of the [GridSummaryRow.SummaryColumns](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~SummaryColumns.html) collection that contains the following important properties:
 
-* [Name](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Name.html): Defines name of the `GridSummaryColumn` that helps to denote the `GridSummaryColumn` in `GridSummaryRow` with Title.
-
-* [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~MappingName.html): The corresponding column name that is used for the summary calculation.
-
-* [SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~SummaryType.html): It is the SummaryType (enum) property that helps to define the aggregate type for the summary calculation. `DataGrid` control provides the following predefined aggregates.
+* [Name](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Name.html): Defines the name of the `GridSummaryColumn` to denote the `GridSummaryColumn` in `GridSummaryRow` with the Title.
+* [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~MappingName.html): Defines the corresponding column name used for the summary calculation.
+* [SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~SummaryType.html): Defines the SummaryType (enum) property to define the aggregate type for the summary calculation. 
+ 
+The `data grid` control provides the following predefined aggregates:
 
   * CountAggregate
   * Int32Aggregate
   * DoubleAggregate
 
-* [CustomAggregate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~CustomAggregate.html): Defines the `CustomAggregate` class object when the summary type is set as Custom that calculates the custom summaries.
+The [CustomAggregate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~CustomAggregate.html) defines the `CustomAggregate` class object when the summary type is set as custom that calculate custom summaries.
 
-* [Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Format.html): `string` property that formats the summary value and displays it. `Format` property may contains two parts that are separated by a colon (:). First part denotes the aggregate function name and second part denotes display format of the summary value.
+The [Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Format.html) property formats the summary value and displays it. It may contain two parts separated by a colon (:). First part denotes the aggregate function name, and second part denotes display format of the summary value.
 
-Refer [Formatting Summary](#_Formatting_Summary) section to know more about how to format summary and [Aggregate Types](#_Aggregate_Types) section to know about different summary types.
+Refer to [Formatting Summary](#_Formatting_Summary) section to know more about how to format summary and [Aggregate Types](#_Aggregate_Types) section to know about different summary types.
 
-In the below code snippet,the summary is defined for `Salary` column.
+In the following code snippet,the summary is defined for `Salary` column:
 
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
@@ -123,17 +123,15 @@ dataGrid.CaptionSummaryRow= summaryRow;
 
 ![](SfDataGrid_images/Summary6.PNG)
 
-## Table Summaries
+## Table summaries
 
-SfDataGrid provides built-in support for table summaries. The table summary value is calculated based on all the records in SfDataGrid. SfDataGrid allows you to add multiple table summary rows either at top or bottom or at both positions.
+The data grid provides built-in support for table summaries. The table summary value is calculated based on all records in the control. 
 
-You can add table summary row in SfDataGrid by adding [GridTableSummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryRow.html) to the [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~TableSummaryRows.html) collection.
+Add the table summary row in the data grid by adding [GridTableSummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryRow.html) to the [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~TableSummaryRows.html) collection.
 
-Below screenshot illustrates the table summary rows in SfDataGrid.
+The following screenshot illustrates table summary rows in the data grid:
 
 ![](SfDataGrid_images/Summary7.PNG)
-
-You can add more than one table summary rows either at top or bottom or at both positions in SfDataGrid.
 
 {% highlight c#%}
 GridTableSummaryRow summaryRow1 = new GridTableSummaryRow();
@@ -171,9 +169,9 @@ sfGrid.TableSummaryRows.Add(summaryRow2);
 
 ![](SfDataGrid_images/Summary8.PNG)
 
-### Displaying summary for row
+### Displaying summary in a row
 
-You can display summary information in a row by setting [GridTableSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to define [GridTableSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~Name.html) property to format summary columns values in a row.
+Displays the summary information in a row by setting the [GridTableSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~ShowSummaryInRow.html) to `true` and by defining summary columns. You have to define the [GridTableSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~Title.html) based on the [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~Name.html) property to format summary columns value in a row.
 
 {% highlight c#%}
 GridTableSummaryRow summaryRow = new GridTableSummaryRow();
@@ -196,32 +194,31 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 sfGrid.TableSummaryRows.Add(summaryRow);
 {% endhighlight %}
 
-The following screenshot shows the table summary row if `ShowSummaryInRow` is `true`.
+The following screenshot shows the table summary row if `ShowSummaryInRow` is `true`:
 
 ![](SfDataGrid_images/Summary9.PNG)
 
-### Displaying summary for column
+### Displaying summary in a column
 
-You can display summary information in the column by setting `GridTableSummaryRow.ShowSummaryInRow` to `false` and defining summary columns. `GridSummaryColumn` is the object of [GridTableSummaryRow.SummaryColumns](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~SummaryColumns.html) collection that contains the following important properties:
+Displays the summary information in a column by setting the `GridTableSummaryRow.ShowSummaryInRow` to `false` and by defining summary columns. The `GridSummaryColumn` is the object of [GridTableSummaryRow.SummaryColumns](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~SummaryColumns.html) collection that contains the following important properties:
 
-* [Name](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Name.html): Defines name of the `GridSummaryColumn` that helps to denote the `GridSummaryColumn` in `GridTableSummaryRow` with Title.
+* [Name](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Name.html): Defines the name of the `GridSummaryColumn` to denote the `GridSummaryColumn` in `GridTableSummaryRow` with the Title.
+* [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~MappingName.html): Defines the corresponding column name used for the summary calculation.
+* [SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~SummaryType.html): Defines the `SummaryType` (enum) property to define the aggregate type for the summary calculation.
 
-* [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~MappingName.html): The corresponding column name that is used for the summary calculation.
-
-* [SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~SummaryType.html): It is the `SummaryType` (enum) property that helps to define the aggregate type for the summary calculation. SfDataGrid
-control provides the following predefined aggregates.
+The data grid control provides the following predefined aggregates:
 
   * CountAggregate
   * Int32Aggregate
   * DoubleAggregate
 
-* [CustomAggregate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~CustomAggregate.html): Defines the `CustomAggregate` class object when the summary type is set as `Custom` that calculates the custom summaries.
+The [CustomAggregate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~CustomAggregate.html) defines the `CustomAggregate` class object when the summary type is set as `custom` that calculate custom summaries.
 
-* [Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Format.html): `string` property that formats the summary value and displays it. `Format` property may contains two parts that are separated by a colon (:). First part denotes the aggregate function name and second part denotes display format of the summary value.
+The [Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Format.html) `string` property formats the summary value and displays it. It may contain two parts that are separated by a colon (:). First part denotes the aggregate function name, and second part denotes display format of the summary value.
 
-Refer [Formatting Summary](#_Formatting_Summary) section to know more about how to format summary and [Aggregate Types](#_Aggregate_Types) section to know about different summary types.
+Refer to [Formatting Summary](#_Formatting_Summary) section to know more about how to format summary and [Aggregate Types](#_Aggregate_Types) section to know about different summary types.
 
-In the below code snippet, summary is defined for `Salary` column.
+In the following code snippet, summary is defined for the `Salary` column:
 
 {% highlight c#%}
 GridTableSummaryRow summaryRow = new GridTableSummaryRow();
@@ -236,13 +233,13 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 sfGrid.TableSummaryRows.Add(summaryRow);
 {% endhighlight c#%}
 
-The following screenshot shows the table summary row if `ShowSummaryInRow` is `false`.
+The following screenshot shows the table summary row if `ShowSummaryInRow` is `false`:
 
 ![](SfDataGrid_images/Summary10.PNG)
 
 ### Positioning TableSummaryRows
 
-SfDataGrid allows you to add table summary rows either at top or bottom positions using [GridTableSummaryRow.Position](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryRow~Position.html) property.
+The data grid add table summary rows either at top or bottom positions using the [GridTableSummaryRow.Position](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryRow~Position.html) property.
 
 {% highlight c#%}
 GridTableSummaryRow topSummaryRow = new GridTableSummaryRow();
@@ -278,21 +275,21 @@ bottomSummaryRow.SummaryColumns.Add(new GridSummaryColumn()
 sfGrid.TableSummaryRows.Add(bottomSummaryRow);
 {% endhighlight %}
 
-The below screenshot illustrates the positioning of table summary rows in SfDataGrid.
+The following screenshot illustrates the positioning of table summary rows in the data grid:
 
 ![](SfDataGrid_images/Summary11.PNG)
 
 
-## Formatting Summary
+## Formatting summary
 
-In the below sections formatting is explained using `CaptionSummary`.
+In the following sections, formatting is explained using `CaptionSummary`:
 
 
-### Defining Summary Function
+### Defining summary function
 
-In the below code snippet `Format` property is defined to display the sum of `Salary` by specifying the function name inside curly braces.
+In the below code snippet, the `Format` property is defined to display the sum of `Salary` by specifying the function name inside curly braces.
 
-N> `DoubleAggregate` is used as `SummaryType` which has the count, max, min, average and sum functions.
+N> `DoubleAggregate` is used as `SummaryType` which has the count, max, min, average, and sum functions.
 
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
@@ -309,11 +306,11 @@ dataGrid.CaptionSummaryRow= summaryRow;
 
 ![](SfDataGrid_images/Summary12.PNG)
 
-### Formatting Summary Value
+### Formatting summary value
 
-You can format the summary value by setting the appropriate format after the aggregate function followed by a colon(:) in [GridSummaryColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Format.html) property.
+Format the summary value by setting the appropriate format after the aggregate function followed by a colon(:) in the [GridSummaryColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~Format.html) property.
 
-In the below code snippet `Salary` column summary is formatted using `c` format specifier. Refer [here](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx?f=255&MSPPError=-2147217396) to know about how to set different format.
+In the following code snippet, the `Salary` column summary is formatted using `c` format specifier. Refer to [here](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx?f=255&MSPPError=-2147217396) to know about how to set different formats.
 
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
@@ -331,11 +328,11 @@ dataGrid.CaptionSummaryRow= summaryRow;
 ![](SfDataGrid_images/Summary13.PNG)
 
 
-### Displaying additional Content in Summary
+### Displaying additional content in summary
 
-You can append additional content with summary value using `GridSummaryColumn.Format` property.
+Appends additional content with summary value using the `GridSummaryColumn.Format` property.
 
-In the below code snippet `Total :` text is appended before summary value.
+In the following code snippet `Total:` text is appended before summary value:
 
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
@@ -353,9 +350,9 @@ dataGrid.CaptionSummaryRow= summaryRow;
 ![](SfDataGrid_images/Summary14.PNG)
 
 
-### Formatting Summary for Row using Title property
+### Formatting summary for row using Title property
 
-You can format the summary value for a row using [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~Title.html) when `ShowSummaryInRow` is set to `true`.
+Format the summary value for a row using the [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~Title.html) when `ShowSummaryInRow` is set to `true`.
 
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
@@ -380,13 +377,13 @@ dataGrid.CaptionSummaryRow= summaryRow;
 
 ![](SfDataGrid_images/Summary15.PNG)
 
-N> The above formatting section is explained using `CaptionSummary` but the formatting can be applied for `TableSummaries` also.
+N> The above formatting section is explained using `CaptionSummary` but the formatting can also be applied for `TableSummaries`.
 
-## Aggregate Types
+## Aggregate types
 
-You can specify the different summary aggregate types by using [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~SummaryType.html) property and use the built-in function in `GridSummaryColumn.Format`.
+Specify the different summary aggregate types by using the [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~SummaryType.html) property and use the built-in function in the `GridSummaryColumn.Format`.
 
-The following are the list of predefined aggregate types and its built-in functions.
+List of predefined aggregate types and its built-in functions are as follows:
 
 <table>
 <tr>
@@ -410,7 +407,7 @@ Count
 Int32Aggregate
 </td>
 <td>
-Count, Max, Min, Average and Sum
+Count, max, min, average, and sum.
 </td>
 </tr>
 <tr>
@@ -418,7 +415,7 @@ Count, Max, Min, Average and Sum
 DoubleAggregate
 </td>
 <td>
-Count, Max, Min, Average and Sum
+Count, max, min, average, and sum.
 </td>
 </tr>
 <tr>
@@ -426,25 +423,25 @@ Count, Max, Min, Average and Sum
 Custom
 </td>
 <td>
-Used for Custom Summaries
+Used for custom summaries
 </td>
 </tr>
 </table>
 
 N> The above aggregate types can be applied for both `CaptionSummaries` and `TableSummaries`.
 
-## Custom Summaries
+## Custom summaries
 
-SfDataGrid allows you to implement your own aggregate functions when the built-in aggregate functions do not meet your requirement.
-You can calculate the summary values based on custom logic using [GridSummaryColumn.CustomAggregate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~CustomAggregate.html) property.
+The data grid implements your own aggregate functions when the built-in aggregate functions do not meet your requirement.
 
+Calculate summary values based on custom logic using the [GridSummaryColumn.CustomAggregate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn~CustomAggregate.html) property.
 
 ### Implementing custom aggregate
 
-1. Create a custom aggregate class by deriving from [ISummaryAggregate](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.ISummaryAggregate.html) interface.
+1. Create a custom aggregate class by deriving from the [ISummaryAggregate](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.ISummaryAggregate.html) interface.
 2. In the `CalculateAggregateFunc` method, you have to calculate the summary and assign it to the property.
 
-In the below code snippet, the `Standard Deviation` is calculated for quantity of products.
+In the following code snippet, the `Standard Deviation` is calculated for quantity of products:
 
 {% highlight c# %}
 public class CustomAggregate : ISummaryAggregate
@@ -489,7 +486,7 @@ public static class LinqExtensions
 }
 {% endhighlight %}
 
-Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the `SummaryType` as `Custom`. `GridSummaryColumn.Format` property is defined based on property name in custom aggregate `StdDev`.
+Assign the custom aggregate to the `GridSummaryColumn.CustomAggregate` property and set the `SummaryType` as `Custom`. The `GridSummaryColumn.Format` property is defined based on property name in custom aggregate `StdDev`.
 
 {% highlight c# %}
 GridSummaryRow summaryRow = new GridSummaryRow();
@@ -508,13 +505,13 @@ dataGrid.CaptionSummaryRow = summaryRow;
 
 ![](SfDataGrid_images/Summary16.PNG)
 
-N> The above custom summaries section is explained using `CaptionSummary` but the custom summaries can be applied for `TableSummaries` also.
+N> The above custom summaries section is explained using `CaptionSummary` but the custom summaries can also be applied for `TableSummaries`.
 
+## Overriding summary renderer
 
-## Overriding Summary Renderer
-Each summary cell in SfDataGrid is associated with its own renderer and it can be customized by overriding the available virtual methods in the corresponding renderer.
+Each summary cell in the data grid is associated with its own renderer. It can be customized by overriding the available virtual methods in the corresponding renderer.
 
-Each summary has a specific key using which you can register the custom summary renderer to the [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CellRenderers.html) collection. Remove the key from collection and add a new entry with the same key along with the instance of custom renderer to register.
+Each summary has a specific key which you can register the custom summary renderer to the [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CellRenderers.html) collection. Remove the key from collection and add a new entry with the same key along with the instance of custom renderer to register.
 
 <table>
 
@@ -544,11 +541,11 @@ Each summary has a specific key using which you can register the custom summary 
 
 </table>
 
-### Customizing Table Summary
+### Customizing table summary
 
-SfDataGrid allows you to customize the table summary by overriding [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html).
+The data grid customizes the table summary by overriding the [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html).
 
-To customize the table summary follows the code example:
+To customize the table summary, follow the code example:
 
 {% highlight c#%}
 
@@ -581,14 +578,13 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
     }
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code.
+The following screenshot shows the final outcome upon execution of the above code:
 
 ![](SfDataGrid_images/Summary17.PNG)
 
-### Customizing Caption Summary
+### Customizing caption summary
 
-SfDataGrid allows you to customize the Caption summary by overriding [GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html).
-
+The data grid customizes the caption summary by overriding the [GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html).
 
 {% highlight c#%}
 
