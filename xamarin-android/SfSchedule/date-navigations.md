@@ -102,7 +102,7 @@ Visible dates can be restricted between certain range of dates, using [MinDispla
 
 {% endhighlight %}
 
-### VisibleDatesChanged event
+## VisibleDatesChanged event
 
 You can get the visible dates of the Schedule using [VisibleDatesChanged](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~VisibleDatesChanged_EV.html) event in `SfSchedule`. It is applicable in all the schedule views.The event handler receives an argument of type [VisibleDatesChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.VisibleDatesChangedEventArgs.html) containing [VisibleDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.VisibleDatesChangedEventArgs~VisibleDates.html).
 
