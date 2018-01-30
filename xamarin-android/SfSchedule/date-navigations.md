@@ -100,7 +100,56 @@ Visible dates can be restricted between certain range of dates, using [MinDispla
             maxDate.Set(2025, 11, 12);
             schedule.MaxDisplayDate = maxDate;
 
-{% endhighlight %}   
+{% endhighlight %}
 
+## VisibleDatesChanged event
 
+You can get the visible dates of the Schedule using [VisibleDatesChanged](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~VisibleDatesChanged_EV.html) event in `SfSchedule`. It is applicable in all the schedule views.The event handler receives an argument of type [VisibleDatesChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.VisibleDatesChangedEventArgs.html) containing [VisibleDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.VisibleDatesChangedEventArgs~VisibleDates.html).
 
+{% highlight c# %} 
+
+    schedule.VisibleDatesChanged += Schedule_VisibleDatesChanged;
+
+    void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
+	{
+	    var visibleDates = e.VisibleDates;
+	} 
+
+{% endhighlight %}  
+
+`VisibleDatesChanged` event will be triggered when view is swiped back or forth and also when schedule view is switched dynamically.
+
+You can add appointments on demand based on the visible date range in this event by setting Appointments property to schedule in the VisibleDatesChanged event.
+
+{% highlight c# %} 
+
+    void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
+	{
+		schedule.Appointments = scheduleAppointmentCollection;
+	} 
+
+{% endhighlight %}  
+
+You can also move to specific time of the day or current time of day when view is swiped by setting specific time in MoveToDate property in the VisibleDatesChanged event. Such that when the schedule view is swiped, it moves to the mentioned time.  
+
+{% highlight c# %}
+
+        schedule.VisibleDatesChangedEvent += Schedule_VisibleDatesChangedEvent;
+        void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs e)
+    {
+        var visibleDate = e.VisibleDates[0];
+        Calendar moveToSpecificTime = (Calendar)visibleDate.Clone();
+
+        //setting start time for the event
+        moveToSpecificTime.Set(
+            visibleDate.Get(CalendarField.Year),
+            visibleDate.Get(CalendarField.Month),
+            visibleDate.Get(CalendarField.DayOfMonth),
+            visibleDate.Get(CalendarField.HourOfDay),
+            visibleDate.Get(CalendarField.Minute),
+            visibleDate.Get(CalendarField.Second)
+        );
+        schedule.MoveToDate = moveToSpecificTime;
+    }
+
+{% endhighlight %} 
