@@ -509,9 +509,9 @@ N> The above custom summaries section is explained using `CaptionSummary` but th
 
 ## Overriding summary renderer
 
-Each summary cell in the data grid is associated with its own renderer. It can be customized by overriding the available virtual methods in the corresponding renderer.
+Each summary cell in the data grid is associated with its own cell renderer. The data grid allows to extend this renderer to customize the grid cells based on your requirement. Customization can be applied by overriding the available virtual methods in the each cell renderer.
 
-Each summary has a specific key which you can register the custom summary renderer to the [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CellRenderers.html) collection. Remove the key from collection and add a new entry with the same key along with the instance of custom renderer to register.
+Each summary has a specific key using which the custom summary renderer can be registered to the [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CellRenderers.html) collection. Remove the key from collection and add a new entry with the same key along with the instance of custom renderer to register.
 
 <table>
 
@@ -543,7 +543,7 @@ Each summary has a specific key which you can register the custom summary render
 
 ### Customizing table summary
 
-The data grid customizes the table summary by overriding the [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html).
+The data grid  allows customizing the table summary by extending the [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html).
 
 To customize the table summary, follow the code example:
 
@@ -584,7 +584,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Customizing caption summary
 
-The data grid customizes the caption summary by overriding the [GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html).
+The data grid allows customizing the caption summary by extending the [GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html).
 
 {% highlight c#%}
 
