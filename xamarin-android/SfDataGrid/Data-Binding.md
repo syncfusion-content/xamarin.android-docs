@@ -146,7 +146,7 @@ The following property is associated with `View`.
 
 ### LiveDataUpdateMode
 
-SfDataGrid provides support to update the view during data manipulation operations and property changes using [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
+SfDataGrid provides support to update the view during data manipulation operations and property changes using [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.LiveDataUpdateMode` property.
 
 <table>
 <tr>
@@ -171,7 +171,7 @@ SfDataGrid provides support to update the view during data manipulation operatio
 dataGrid.GridViewCreated += DataGrid_GridViewCreated;
 private void DataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
 {
-    dataGrid.View.LiveDataUpdateMode = LiveDataUpdateMode.Default;
+    dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.Default;
 }
 {% endhighlight %}
 
