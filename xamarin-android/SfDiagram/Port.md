@@ -45,7 +45,7 @@ The following code illustrates how to access a port from the node instance:
 {% tabs %}
 {% highlight c# %}
 Node node = diagram.Nodes[0];
-//Accessing the port by index from the Portcollection in node
+//Accessing the port by index from the port collection in node
 Port port = node.Ports[0];
 {% endhighlight %}
 {% endtabs %}
@@ -56,7 +56,7 @@ The following code illustrates how to remove a port from the node:
 {% tabs %}
 {% highlight c# %}
 Node node = diagram.Nodes[0];
-//Accessing the port by index from the Portcollection in node
+//Accessing the port by index from the port collection in node
 Port port = node.Ports[0];
 //Removing the port for the node 
 node.Ports.Remove(port);

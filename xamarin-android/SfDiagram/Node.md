@@ -45,7 +45,7 @@ SolidBrush brush = new SolidBrush(Android.Graphics.Color.Yellow);
 brush.FillColor = Android.Graphics.Color.Yellow;
 pen.Brush = brush;
 graphics.DrawRectangle(pen, new System.Drawing.Rectangle(0, 0, 50, 50));
-//Update the Sfgraphics to the node
+//Update the SfGraphics to the node
 node.UpdateSfGraphics(graphics);
 {% endhighlight %}
 {% endtabs %}

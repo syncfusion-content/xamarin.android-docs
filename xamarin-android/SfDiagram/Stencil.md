@@ -45,15 +45,15 @@ brush1.FillColor = Color.Blue;
 pen1.Brush = brush1;
 
 Node custom = new Node(this);
-SfGraphics grap = new SfGraphics();
+SfGraphics graph = new SfGraphics();
 Pen pen2 = new Pen();
 pen2.StrokeBrush = new SolidBrush(Color.Blue);
 pen2.StrokeWidth = 2;
 SolidBrush brush2 = new SolidBrush(Color.Black);
 brush2.FillColor = Color.Blue;
 pen2.Brush = brush2;
-grap.DrawRectangle(pen2, new System.Drawing.Rectangle(0, 0, 50, 50));
-custom.UpdateSfGraphics(grap);
+graph.DrawRectangle(pen2, new System.Drawing.Rectangle(0, 0, 50, 50));
+custom.UpdateSfGraphics(graph);
 
 Node custom1 = new Node(this);
 SfGraphics grap4 = new SfGraphics();
@@ -150,7 +150,7 @@ SymbolCollection con1 = new SymbolCollection();
 con1.Add(new Connector(this) { SegmentType = SegmentType.OrthoSegment, SourcePoint = new System.Drawing.Point(0, 0), TargetPoint = new System.Drawing.Point(50, 50) });
 con1.Add(new Connector(this) { SegmentType = SegmentType.StraightSegment, SourcePoint = new System.Drawing.Point(0, 0), TargetPoint = new System.Drawing.Point(50, 50) });
 
-//Add category of symbolgroup with heading text
+//Add category of symbol group with heading text
 stencil.SymbolGroups.Add(new SymbolGroup() { Items = coll, Header = "BasicShapes" });
 stencil.SymbolGroups.Add(new SymbolGroup() { Items = coll1, Header = "Flow Chart" });
 stencil.SymbolGroups.Add(new SymbolGroup() { Items = CustomShapeCollection, Header = "CustomShapes" });
