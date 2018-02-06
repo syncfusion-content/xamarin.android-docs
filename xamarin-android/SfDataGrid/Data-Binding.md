@@ -168,11 +168,7 @@ SfDataGrid provides support to update the view during data manipulation operatio
 </table>
 
 {% highlight c# %}
-dataGrid.GridViewCreated += DataGrid_GridViewCreated;
-private void DataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
-{
-    dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.Default;
-}
+dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.Default;
 {% endhighlight %}
 
 The following events are associated with `View`.
