@@ -14,7 +14,7 @@ The data grid supports to display the concise information about the bound data o
 * **Caption Summary**: Used to display the summary information in the caption of the group.
 * **Table Summary**: Used to display the summary information at top and/or bottom in the data grid.
 
-![](SfDataGrid_images/Summary_img1.png)
+![](SfDataGrid_images/Summary.PNG)
 
 Summary rows are represented by using the [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow.html). Each `GridSummaryRow` hold the summary information of columns in the [SummaryColumns](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow~SummaryColumns.html) property . `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn.html) which carries name, format, and summary aggregate type of the column.
 
@@ -29,7 +29,7 @@ The data grid provides built-in support for caption summaries. The caption summa
 
 The following screenshot shows the built-in caption summary of a group:
 
-![](SfDataGrid_images/Summary2.PNG)
+![](SfDataGrid_images/Captionsummaries.PNG)
 
 
 ### Formatting built-in caption summary
@@ -42,7 +42,7 @@ Default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 *  **Key**: Displays the key value of the group.
 *  **ItemsCount**: Displays the number of items in a group.
 
-![](SfDataGrid_images/Summary3.PNG)
+![](SfDataGrid_images/Formattingbuiltincaptionsummary.PNG)
 
 Customize the group caption text format by setting the `SfDataGrid.GroupCaptionTextFormat` property. The following code example illustrates how to customize group caption text in the data grid:
 
@@ -53,7 +53,7 @@ dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key}";
 
 The following screenshot shows the outcome of the previous code:
 
-![](SfDataGrid_images/Summary4.PNG)
+![](SfDataGrid_images/Formattingbuiltincaptionsummary_1.PNG)
 
 
 ### Displaying summary in a row
@@ -83,7 +83,7 @@ dataGrid.CaptionSummaryRow= summaryRow;
 
 The following screenshot shows the final outcome for both values of `ShowSummaryInRow` to `true`:
 
-![](SfDataGrid_images/Summary5.PNG)
+![](SfDataGrid_images/Displayingsummaryinarow.PNG)
 
 
 ### Displaying summary in a column
@@ -121,7 +121,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](SfDataGrid_images/Summary6.PNG)
+![](SfDataGrid_images/Displayingsummaryinacolumn.PNG)
 
 ## Table summaries
 
@@ -131,7 +131,7 @@ Add the table summary row in the data grid by adding [GridTableSummaryRow](https
 
 The following screenshot illustrates table summary rows in the data grid:
 
-![](SfDataGrid_images/Summary7.PNG)
+![](SfDataGrid_images/Tablesummaries1.PNG)
 
 {% highlight c#%}
 GridTableSummaryRow summaryRow1 = new GridTableSummaryRow();
@@ -167,7 +167,7 @@ summaryRow2.SummaryColumns.Add(new GridSummaryColumn()
 sfGrid.TableSummaryRows.Add(summaryRow2);
 {% endhighlight %}
 
-![](SfDataGrid_images/Summary8.PNG)
+![](SfDataGrid_images/Tablesummaries2.PNG)
 
 ### Displaying summary in a row
 
@@ -196,7 +196,7 @@ sfGrid.TableSummaryRows.Add(summaryRow);
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `true`:
 
-![](SfDataGrid_images/Summary9.PNG)
+![](SfDataGrid_images/TableDisplayingsummaryinarow.PNG)
 
 ### Displaying summary in a column
 
@@ -235,7 +235,7 @@ sfGrid.TableSummaryRows.Add(summaryRow);
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `false`:
 
-![](SfDataGrid_images/Summary10.PNG)
+![](SfDataGrid_images/TableDisplayingsummaryinacolumn.PNG)
 
 ### Positioning TableSummaryRows
 
@@ -277,7 +277,7 @@ sfGrid.TableSummaryRows.Add(bottomSummaryRow);
 
 The following screenshot illustrates the positioning of table summary rows in the data grid:
 
-![](SfDataGrid_images/Summary11.PNG)
+![](SfDataGrid_images/PositioningTableSummaryRows.PNG)
 
 
 ## Formatting summary
@@ -304,7 +304,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](SfDataGrid_images/Summary12.PNG)
+![](SfDataGrid_images/Definingsummaryfunction.PNG)
 
 ### Formatting summary value
 
@@ -325,7 +325,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](SfDataGrid_images/Summary13.PNG)
+![](SfDataGrid_images/Formattingsummaryvalue.PNG)
 
 
 ### Displaying additional content in summary
@@ -347,7 +347,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](SfDataGrid_images/Summary14.PNG)
+![](SfDataGrid_images/Displayingadditionalcontentinsummary.PNG)
 
 
 ### Formatting summary for row using Title property
@@ -375,7 +375,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![](SfDataGrid_images/Summary15.PNG)
+![](SfDataGrid_images/FormattingsummaryforrowusingTitleproperty.PNG)
 
 N> The above formatting section is explained using `CaptionSummary` but the formatting can also be applied for `TableSummaries`.
 
@@ -503,7 +503,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn
 dataGrid.CaptionSummaryRow = summaryRow;
 {% endhighlight %}
 
-![](SfDataGrid_images/Summary16.PNG)
+![](SfDataGrid_images/Customsummaries.PNG)
 
 N> The above custom summaries section is explained using `CaptionSummary` but the custom summaries can also be applied for `TableSummaries`.
 
@@ -580,7 +580,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 
 The following screenshot shows the final outcome upon execution of the above code:
 
-![](SfDataGrid_images/Summary17.PNG)
+![](SfDataGrid_images/Customizingtablesummary.PNG)
 
 ### Customizing caption summary
 
@@ -617,6 +617,6 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
     }
 {% endhighlight %}
 
-![](SfDataGrid_images/Summary18.PNG)
+![](SfDataGrid_images/Customizingcaptionsummary.PNG)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo-1751321675).
