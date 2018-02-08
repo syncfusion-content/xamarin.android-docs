@@ -67,6 +67,7 @@ You can customize the interval height of timeslots in `DayView` by setting [Time
 ![](daymodule_images/dayview_height.png)
 
 ## Change Working hours:
+You can hide the time slots by setting [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DayViewSettings~EndHour.html) properties of [DayViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~DayViewSettings.html). Default value for StartHour and EndHour will be 0 to 24 hours. 
 Working hours in `DayView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DayViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DayViewSettings~WorkEndHour.html) properties of [DayViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~DayViewSettings.html).
 
 {% highlight C# %}
@@ -74,8 +75,10 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
             schedule.ScheduleView = ScheduleView.DayView;
 			//Create new instance of DayViewSettings
 			DayViewSettings dayViewSettings = new DayViewSettings();
-			dayViewSettings.WorkStartHour = 10;
-			dayViewSettings.WorkEndHour = 18;
+			dayViewSettings.StartHour = 08;
+			dayViewSettings.EndHour = 15;	
+			dayViewSettings.WorkStartHour = 09;
+			dayViewSettings.WorkEndHour = 16;
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 
