@@ -58,4 +58,4 @@ The procedure for creating strings.xml files is as follows:
 
 ![](Localization_images/localization_img2.jpeg)
 
->**Note:** The correspondings values folder loads only depends on the device configuration and locale.
+>**Note:** The corresponding values folder loads only depends on the device configuration and locale.
