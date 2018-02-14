@@ -8,21 +8,21 @@ documentation: UG
 ---
 # Load More
 
-SfDataGrid lets you to enable the LoadMore option by setting the [SfDataGrid.AllowLoadMore](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowLoadMore.html) property to `true` and by setting the [SfDataGrid.LoadMoreCommand](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreCommand.html) property. When the LoadMore is enabled, the SfDataGrid provides an option of loading a subset of data to its data source in the runtime using the [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreView.html). 
+The data grid enables the LoadMore option by setting the [SfDataGrid.AllowLoadMore](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowLoadMore.html) property to `true` and by setting the [SfDataGrid.LoadMoreCommand](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreCommand.html) property. When the LoadMore is enabled, the control provides the option to load a subset of data to its data source at runtime using the [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreView.html). 
 
-On scrolling down, when the grid reaches the maximum offset an interactive load more view is displayed in view. On tapping the load more view it triggers a command to add more data to the data source of the grid in runtime.
+On scrolling down, when the grid reaches the maximum offset, an interactive load-more view is displayed in the view. Tapping the load-more view triggers a command to add more data to the data source of the grid at runtime.
 
 
 ## LoadMoreCommand
 
-SfDataGrid lets you load records to its data source in runtime by triggering an `ICommand` binded to the `SfDataGrid.LoadMoreCommand` property. When you tap the load more view, if the `CanExecute` of the `ICommand` returns true, then this command is triggered to load the records in runtime.
+The data grid load records to its data source at runtime by triggering an `ICommand` bound to the `SfDataGrid.LoadMoreCommand` property. When tapping the load more view, if the `CanExecute` of the `ICommand` returns true, this command is triggered to load the records at runtime.
  
-You need to set the [SfDataGrid.IsBusy](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~IsBusy.html) property to true before loading the items to notify the grid that more items are loaded to it and set the property to false after loading the items to the grid. When loading the items, you can also alter the time for the LoadMore animation from the sample by setting a delay based on your requirement.
+Set the [SfDataGrid.IsBusy](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~IsBusy.html) property to true before loading items. This notifies the grid that more items are being loaded to it. Set the property to false after loading items to the grid. When loading items, you can also alter the timing for the LoadMore animation from the sample by setting a delay.
 
-The following code example illustrates how to enable and load items in the runtime.
+The following code example illustrates how to enable and load items at runtime:
 
 {% highlight c# %}
-//Enable load more in SfDataGrid
+//Enable load more in the data grid
 dataGrid.AllowLoadMore = true;
 dataGrid.LoadMoreCommand = new Command(ExecuteLoadMoreCommand);
  
@@ -74,29 +74,29 @@ public class Command : ICommand
 }
 {% endhighlight %}
 
-## Customize Load More Display Text
+## Customize load-more display text
 
-You can customize the text displayed in the `LoadMoreView` by setting the [SfDataGrid.LoadMoreText](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreText.html) property as below.
+Customize the text displayed in the `LoadMoreView` by setting the [SfDataGrid.LoadMoreText](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreText.html) property as follows:
 
 {% highlight c# %}
-//setting load more text in SfDataGrid
+//setting load more text in the data grid
 dataGrid.LoadMoreText = "Load More Items"; 
 {% endhighlight %}
 
-## Customize LoadMoreView Position
+## Customize load-more view position
 
-You can also customize the position in which the `LoadMoreView` is displayed to either `top` or `bottom` based on your requirements.
+Customize the position in which the `LoadMoreView` is displayed to either `top` or `bottom`.
  
 {% highlight c# %}
 //Enable load more in SfDataGrid
 dataGrid.LoadMorePosition = LoadMoreViewPosition.Bottom;  
 {% endhighlight %}
 
-## Customize LoadMoreView
+## Customize load-more view
 
-SfDataGrid also allows you to customize the `LoadMoreView` based on your requirements. To do this you need to write your custom `LoadMoreView` class inheriting from the `LoadMoreView` and perform the LoadMoreOperation based on your requirement.
+The data grid also customizes the `LoadMoreView` by writing your custom `LoadMoreView` class inheriting from the `LoadMoreView`, and performing the LoadMoreOperation.
 
-The following code example illustrates how to customize the `LoadMoreView` in SfDataGrid.
+The following code example illustrates how to customize the `LoadMoreView` in the data grid:
  
 {% highlight c# %}
 public class CustomLoadMoreView : LoadMoreView
@@ -127,6 +127,6 @@ public class CustomLoadMoreView : LoadMoreView
 }
 {% endhighlight %}
 
-Running the application renders the following output.
+Running the application renders the following output:
 
 ![](SfDataGrid_images/LoadMore.png)
