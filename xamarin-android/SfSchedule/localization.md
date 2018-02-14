@@ -48,7 +48,7 @@ You can localize the custom strings used in the schedule control. You can locali
 	 
 {% endhighlight %}   
 
-Android can select and load resources from different directories, based on the device configuration and locale. For an example, if an application requires multiple languages we can follow the below steps.
+Android can select and load resources from different directories, based on the device configuration and locale, refer [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Android-352507966.zip). For an example, if an application requires multiple languages we can follow the below steps.
 
 The procedure for creating strings.xml files is as follows:
 
