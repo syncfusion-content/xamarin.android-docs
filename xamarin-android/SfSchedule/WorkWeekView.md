@@ -87,7 +87,7 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
 >**Note**:
 *	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
 *	`StartHour` must be greater than 0 and `EndHour` must be lesser than 24, otherwise `InvalidDataException` will be thrown.
-*	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataxception` will be thrown.
+*	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
 *	 Before `StartHour` and after `EndHour` values, Schedule UI such as Appointments and NonAccessibleBlocks will be clipped.
 
 ## Timeslot Appearance:
