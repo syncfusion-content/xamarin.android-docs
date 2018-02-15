@@ -56,9 +56,9 @@ The procedure for creating strings.xml files is as follows:
 *	Create new folders under resource as values-`ar`, values-`de`, values-`en` and values-`fr` (The original values folder already exists).
 *	Place the translated strings.xml files in the respective folders.
 
+You can download the entire source code of this demo for Xamarin.Android from
+here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Android-352507966.zip).
+
 ![](Localization_images/localization_img2.jpeg)
 
 >**Note:** The corresponding values folder loads only depends on the device configuration and locale.
-
-You can download the entire source code of this demo for Xamarin.Android from
-here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Android-352507966.zip).
