@@ -65,10 +65,28 @@ You can customize the interval height of timeslots in `WorkWeekView` by setting 
 
 ![](daymodule_images/workweekview_height.png)
 
+>**Note**:
+	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+
 ## Change Working hours:
 
-You can hide the time slots by setting [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekViewSettings~EndHour.html) properties of [WorkWeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~WorkWeekViewSettings.html). Default value for StartHour and EndHour will be 0 to 24 hours.
 Working hours in `WorkWeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekViewSettings~WorkEndHour.html) properties of [WorkWeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~WorkWeekViewSettings.html).
+
+{% highlight C# %}
+
+           schedule.ScheduleView = ScheduleView.WorkWeekView;
+			//Create new instance of WorkWeekViewSettings
+			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+			workWeekViewSettings.WorkStartHour = 09;
+			workWeekViewSettings.WorkEndHour = 16;
+			schedule.WorkWeekViewSettings = workWeekViewSettings;
+{% endhighlight %}
+
+![](daymodule_images/changeworkinghours_workweek.png)
+
+## Change StartHour and EndHour:
+
+Change the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekViewSettings~StartHour.html) display in `WorkWeekView` to show only the required time duration for end users.
 
 {% highlight C# %}
 
@@ -77,18 +95,15 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
 			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
 		    workWeekViewSettings.StartHour = 08;
             workWeekViewSettings.EndHour = 15;
-			workWeekViewSettings.WorkStartHour = 09;
-			workWeekViewSettings.WorkEndHour = 16;
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
-![](daymodule_images/changeworkinghours_workweek.png)
+![](daymodule_images/changestartendhour_workweek.png)
 
 >**Note**:
-*	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
 *	`StartHour` must be greater than 0 and `EndHour` must be lesser than 24, otherwise `InvalidDataException` will be thrown.
 *	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
-*	 Before `StartHour` and after `EndHour` values, Schedule UI such as Appointments and NonAccessibleBlocks will be clipped.
+*	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
 ## Timeslot Appearance:
 You can customize the appearance of timeslots in `WorkWeekView`.
