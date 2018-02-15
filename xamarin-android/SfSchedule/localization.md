@@ -48,7 +48,7 @@ You can localize the custom strings used in the schedule control. You can locali
 	 
 {% endhighlight %}   
 
-Android can select and load resources from different directories, based on the device configuration and locale, refer [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Android-352507966.zip). For an example, if an application requires multiple languages we can follow the below steps.
+Android can select and load resources from different directories, based on the device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages we can follow the below steps.
 
 The procedure for creating strings.xml files is as follows:
 
@@ -59,3 +59,6 @@ The procedure for creating strings.xml files is as follows:
 ![](Localization_images/localization_img2.jpeg)
 
 >**Note:** The corresponding values folder loads only depends on the device configuration and locale.
+
+You can download the entire source code of this demo for Xamarin.Android from
+here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Android-352507966.zip).
