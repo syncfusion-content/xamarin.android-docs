@@ -151,7 +151,7 @@ chart.Series.Add(stackingColumnSeries4);
 
 ![](chartseries_images/chartseries_img4.png)
 
-##Vertical Chart
+## Vertical Chart
 
 [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) allows you to change the orientation of the rendered chart by setting [`Transposed`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~Transposed.html) property to true.
 
