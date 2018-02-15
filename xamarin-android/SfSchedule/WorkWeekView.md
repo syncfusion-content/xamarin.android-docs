@@ -77,8 +77,8 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
            schedule.ScheduleView = ScheduleView.WorkWeekView;
 			//Create new instance of WorkWeekViewSettings
 			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-			workWeekViewSettings.WorkStartHour = 09;
-			workWeekViewSettings.WorkEndHour = 16;
+			workWeekViewSettings.WorkStartHour = 10;
+			workWeekViewSettings.WorkEndHour = 18;
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
@@ -101,7 +101,7 @@ Change the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-android
 ![](daymodule_images/changestartendhour_workweek.png)
 
 >**Note**:
-*	`StartHour` must be greater than 0 and `EndHour` must be lesser than 24, otherwise `InvalidDataException` will be thrown.
+*	`StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
 *	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
 *	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
