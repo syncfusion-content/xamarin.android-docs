@@ -227,6 +227,7 @@ By using [MonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-and
 			...
 			void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
 		{
+			e.CellStyle = new CellStyle():
 			if (e.IsToday)
 			{
 				e.CellStyle.TextSize = 15;
