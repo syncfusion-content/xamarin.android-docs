@@ -67,7 +67,7 @@ numeric.SpinButtonAlignment = SpinButtonAlignment.Both;
 
 N> By default the property value is Right.
 
-##UpDownButtonSetting Customization
+## UpDownButtonSetting Customization
 
 We can set the Up Down button of SfNumericUpDown control by using any of the below given ways.
 
@@ -79,7 +79,7 @@ N> For image and FontIcon we need to add the the respective image and TTF file.
 		For android: Add image at Resource/Drawable/{Image} and .ttf file at Asserts/{.ttf}
 		
 
-#By using View
+### By using View
 
 {% tabs %}
 
@@ -128,7 +128,7 @@ N> For image and FontIcon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-#By using Image
+### By using Image
 
 {% tabs %}
 
@@ -165,7 +165,7 @@ N> For image and FontIcon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-#By using FontIconText
+### By using FontIconText
 
 {% tabs %}
 
