@@ -84,7 +84,7 @@ Details
 MinLength
 </td>
 <td>
-Specifies the required minimum lenght. Refer to {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Specifies the required minimum length. Refer to {{'[here](https://help.syncfusion.com/xamarin-android/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
