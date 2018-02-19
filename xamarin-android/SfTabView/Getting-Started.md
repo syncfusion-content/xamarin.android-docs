@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion TabView control for Xamarin.Android 
 description: A quick tour to initial users on Syncfusion TabView control for Xamarin.Android platform
-platform: Xamarin
+platform: Xamarin.Android
 control: TabView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout : post
 title : Overview of Syncfusion TabView control for Xamarin.Android
 description : Overview and key features of tabview control
-platform : xamarin
+platform : Xamarin.Android
 control : SfTabView
 documentation : ug
 ---
