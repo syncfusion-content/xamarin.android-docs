@@ -9,17 +9,17 @@ documentation: ug
 
 # Chart Annotation
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) supports Annotations which allows you to mark the specific area of interest in the chart area. You can add text, images and custom views; drawing custom shapes also can be done by using Annotations.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) supports annotations, which allows you to mark the specific area of interest in the chart area. You can add text, images and custom views. Drawing custom shapes also can be done by using annotations.
 
 The following annotations are supported in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html)
 
-* Text Annotation
-* Shape Annotation
-* View Annotation
+* Text annotation
+* Shape annotation
+* View annotation
 
-## Adding Annotation
+## Adding Annotations
 
-You can create an instance for any type of Annotation and it can be added to [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Annotations.html) collection. Here for instance, the [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation.html) is added.
+You can create an instance for any type of annotation and add this to [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Annotations.html) collection. Here for an instance, the [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation.html) is added.
 
 {% highlight c# %} 
 [C#]
@@ -46,13 +46,13 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image1.png)
 
-## Positioning the Annotation
+## Positioning the annotation
 
-Annotations can be positioned in plot area based on X1 and Y1 properties. For shape annotations, specify X2 and Y2 properties, if needed. These X and Y values can be specified with axis units or pixel units, and this can be identified by using [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) property.
+Annotations can be positioned in plot area based on X1 and Y1 properties. For shape annotations, specify X2 and Y2 properties, if needed. The X and Y values can be specified with axis units or pixel units, and these can be identified by using [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) property.
 
-### Positioning based on CoordinateUnit as Axis
+### Positioning based on CoordinateUnit as axis
 
-To position the Annotation based on axis, set the X1 and Y1, X2 and Y2 properties based on axis range values, if needed; set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) value as `Axis`.
+To position the annotation based on an axis, set the X1 and Y1, X2 and Y2 properties based on axis range values, if needed, and then set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) value as `Axis`.
 
 {% highlight c# %} 
 [C#]
@@ -81,9 +81,9 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image2.png)
 
-### Positioning based on CoordinateUnit as Pixels
+### Positioning based on CoordinateUnit as pixels
 
-To position based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) value as `Pixels`, and the pixel values in X1 and Y1, X2 and Y2 properties of Annotation are shown in the below code snippet,
+To position the annotations based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) value as `Pixels`. The pixel values in X1 and Y1, X2 and Y2 properties of an annotation are shown in the following code snippet,
 
 {% highlight c# %} 
 [C#]
@@ -112,9 +112,9 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image3.png)
 
-## Adding Annotation for Multiple Axes
+## Adding annotation for multiple axes
 
-When there are multiple axes, annotation can be added for a particular axis by using [`XAxisName`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~XAxisName.html) and [`YAxisName`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~YAxisName.html) properties; it is shown in the below code snippet,
+When there are multiple axes, annotations can be added for a particular axis by using [`XAxisName`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~XAxisName.html) and [`YAxisName`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~YAxisName.html) properties. The following code snippet illustrates this,
 
 {% highlight c# %} 
 [C#]
@@ -158,7 +158,7 @@ chart.Series.Add(series);
 
 ![](chartannotation_images/image4.png)
 
-## Text Annotation
+## Text annotation
 
 [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation.html) is used to add simple text in specific points over the chart area.
 
@@ -183,12 +183,12 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image5.png)
 
-### Customizing Text Annotation
+### Customizing text annotation
 
-The [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation.html) can be customized by using [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation~LabelStyle.html) property. Following properties are used to customize the text:
+The [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation.html) can be customized by using [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation~LabelStyle.html) property. The following properties are used to customize the text:
 
 * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html) – Used to change the color of the text.
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – Used to change the text background color.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – Used to change the background color of the text.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeColor.html) – Used to change the border color.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeWidth.html) – Used to change the width of the border.
 * [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextSize.html) – Used to change the text size.
@@ -243,7 +243,7 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image6.png)
 
-## Shape Annotation
+## Shape annotation
 
 [`ShapeAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation.html) allows you to add annotations in the form of shapes such as rectangle, ellipse, horizontal line, vertical line, etc., at the specific area of interest in the chart area.
 
@@ -253,20 +253,20 @@ chart.Annotations.Add(annotation);
 * [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation.html) – Used to draw a vertical line across the chart area.
 * [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation.html) – Used to draw a horizontal line across the chart area.
 
-The following API’s are commonly used in all [`ShapeAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation.html):
+The following APIs are commonly used in all [`ShapeAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation.html):
 
-* [`X2`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~X2.html) – Represents the X2 coordinate of the Shape Annotation.
-* [`Y2`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~Y2.html) – Represents the Y2 coordinate of the Shape Annotation.
-* [`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~FillColor.html) – Represents the background color inside of the Shape Annotation.
-* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~StrokeColor.html) – Represents the stroke color of the Shape Annotation.
-* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~StrokeWidth.html) – Represents the stroke width of the Shape Annotation.
-* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~StrokeDashArray.html) – Represents the stroke dashes of the Shape Annotation.
-* [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~Text.html) – Represents the annotation text of the Shape Annotation.
-* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~LabelStyle.html) – Represents the style for customizing the annotation text of Shape Annotation.
+* [`X2`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~X2.html) – Represents the X2 coordinate of the shape annotation.
+* [`Y2`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~Y2.html) – Represents the Y2 coordinate of the shape annotation.
+* [`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~FillColor.html) – Represents the inside background color of the shape annotation.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~StrokeColor.html) – Represents the stroke color of the shape annotation.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~StrokeWidth.html) – Represents the stroke width of the shape annotation.
+* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~StrokeDashArray.html) – Represents the stroke dashes of the shape annotation.
+* [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~Text.html) – Represents the text of the shape annotation.
+* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~LabelStyle.html) – Represents the style for customizing the annotation text of shape annotation.
 
-### Rectangle Annotation
+### Rectangle annotation
 
-[`RectangleAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RectangleAnnotation.html) is used to draw a rectangle or a square in specific points over the chart area.
+The [`RectangleAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RectangleAnnotation.html) is used to draw a rectangle or a square in specific points over the chart area.
 
 {% highlight c# %} 
 [C#]
@@ -291,9 +291,9 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image7.png)
 
-### Ellipse Annotation
+### Ellipse annotation
 
-[`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation.html) is used to draw an oval or a circle in specific points over the chart area. You can also specify the height and width of [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation.html) by using [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation~Height.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation~Width.html) properties, respectively.
+The [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation.html) is used to draw an oval or a circle in specific points over the chart area. You can also specify the height and width of [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation.html) by using [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation~Height.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation~Width.html) properties, respectively.
 
 {% highlight c# %} 
 [C#]
@@ -318,11 +318,11 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image8.png)
 
-N> When [`X2`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~X2.html) and [`Y2`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~Y2.html) properties of [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation.html) are set,  [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation~Height.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation~Width.html) properties do not work.
+N> When [`X2`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~X2.html) and [`Y2`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~Y2.html) properties of [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation.html) are set, the [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation~Height.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EllipseAnnotation~Width.html) properties do not work.
 
-### Line Annotation
+### Line annotation
 
-[`LineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation.html) is used to draw a line in specific points over the chart area. 
+The [`LineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation.html) is used to draw a line in specific points over the chart area. 
 
 {% highlight c# %} 
 [C#]
@@ -350,9 +350,9 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image9.png)
 
-**Adding Arrow to Line Annotation**
+**Adding arrow to line annotation**
 
-To display the single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property to `Arrow`. By default, the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property value is `None`.
+To display the single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property to `Arrow`. The default value of the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property is `None`.
 
 {% highlight c# %} 
 [C#]
@@ -379,9 +379,9 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image10.png)
 
-### Vertical and Horizontal Line Annotations
+### Vertical and horizontal line annotations
 
-[`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation.html) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation.html) are used to draw the vertical and horizontal lines in specific points over the chart area.
+The [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation.html) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation.html) properties are used to draw the vertical and horizontal lines in specific points over the chart area.
 
 {% highlight c# %} 
 [C#]
@@ -407,9 +407,9 @@ chart.Annotations.Add(horizontal);
 
 ![](chartannotation_images/image11.png)                                                
 
-**Displaying Axis Label for Vertical and Horizontal Line Annotations**
+**Displaying axis labels for vertical and horizontal line annotations**
 
-[`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation.html) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation.html) display the axis labels in which the line is placed. This feature can be enabled by setting [`ShowAxisLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation~ShowAxisLabel.html) property to true as in the below code snippet,
+The [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation.html) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation.html) properties display the axis labels in which the line is placed. This feature can be enabled by setting [`ShowAxisLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation~ShowAxisLabel.html) property to true as shown in the following code snippet,
 
 {% highlight c# %} 
 [C#]
@@ -439,12 +439,12 @@ chart.Annotations.Add(horizontal);
 
 ![](chartannotation_images/image12.png)  
 
-**Customizing axis label**
+**Customizing the axis label**
 
-The default appearance of the axis label can be customized by using [`AxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation~AxisLabelStyle.html) property. Following properties are used to customize the axis label:
+The default appearance of the axis labels can be customized by using [`AxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation~AxisLabelStyle.html) property. The following properties are used to customize the axis label:
 
 * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html) – Used to change the color of the text.
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – Used to change the text background color.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – Used to change the background color of the text.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeColor.html) – Used to change the border color.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeWidth.html) – Used to change the width of the border.
 * [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextSize.html) – Used to change the text size.
@@ -524,7 +524,7 @@ chart.Annotations.Add(horizontal);
 
 **Adding arrow to vertical and horizontal line annotations**
 
-To display the single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property to `Arrow`. By default, the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property value is `None`.
+To display the single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property to `Arrow`. The default value of the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property is `None`.
 
 {% highlight c# %} 
 [C#]
@@ -554,16 +554,16 @@ chart.Annotations.Add(horizontal);
 
 ![](chartannotation_images/image14.png)  
 
-## Adding Text in Shape Annotation 
+## Adding text in shape annotation 
 
-For all the shape annotations, the text can be displayed by using [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~Text.html) property.
+For all the shape annotations, the text can be displayed by using the [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~Text.html) property.
 
-### Customizing Text in Shape Annotation
+### Customizing text in shape annotation
 
-The `Text` in Shape Annotation also can be customized by using [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~LabelStyle.html) property. Following properties are used to customize the text:
+The `Text` in shape annotation also can be customized by using the [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ShapeAnnotation~LabelStyle.html) property. The following properties are used to customize the text:
             
 * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html) – Used to change the color of the text.
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – Used to change the text background color.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – Used to change the background color of the text.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeColor.html) – Used to change the border color.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeWidth.html) – Used to change the width of the border.
 * [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextSize.html) – Used to change the text size.
@@ -620,9 +620,9 @@ chart.Annotations.Add(annotation);
 
 ![](chartannotation_images/image15.png) 
             
-## View Annotation
+## View annotation
 
-[`ViewAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation.html) allows you to add annotations in the form of own custom view at the specific area of interest in the chart area. The [`ViewAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation.html) also can be aligned by using [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation~VerticalAlignment.html) and [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation~HorizontalAlignment.html) properties.
+The [`ViewAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation.html) allows you to add annotations in the form of own custom view at the specific area of interest in the chart area. The [`ViewAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation.html) also can be aligned by using the [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation~VerticalAlignment.html) and [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation~HorizontalAlignment.html) properties.
 
 {% highlight c# %} 
 [C#]
