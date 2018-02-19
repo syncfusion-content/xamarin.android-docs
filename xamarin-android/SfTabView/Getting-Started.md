@@ -175,7 +175,7 @@ public class ContactsViewModel
 
 ## Binding data to list view
 
-Create a custom adapter for ListView and customie the appearance of each item by overriding `GetView` method in the inherited class of BaseAdapter<T>. Where the list view can be hosted within the content region of tab item. 
+Create a custom adapter for ListView and customize the appearance of each item by overriding `GetView` method in the inherited class of BaseAdapter<T>. Where the list view can be hosted within the content region of tab item. 
 
 {% highlight c# %}
 
