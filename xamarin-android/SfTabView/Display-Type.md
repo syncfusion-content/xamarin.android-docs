@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Types 
+title: Display Type
 description: Different display types available in Syncfusion TabView control for Xamarin.Android platform
 platform: Xamarin.Android
 control: TabView
@@ -82,7 +82,7 @@ var tabViewItem = new SfTabItem()
 
 Add the font file into your application by following the below steps.
 
-**Adding font file for Android**
+**Adding font file into the Android project**
 
 * Add the font file to the `Assets` folder in the application project and set Build Action: `AndroidAsset`.
 
