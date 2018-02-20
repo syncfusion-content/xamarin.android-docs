@@ -64,6 +64,64 @@ documentation: ug
 
 ![](PopulatingAppointments_images/appointment.png)
 
+## Minimum Appointment Height
+To make the appointments bigger, so that the subject can be readable. Setting Height for a [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment.html) when it has minimum duration. Using [MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MinHeight.html) property to set the height of the appointment.
+
+{% highlight c# %}
+
+		SfSchedule schedule = new SfSchedule();
+		ScheduleAppointmentCollection scheduleAppointmentCollection  =  new ScheduleAppointmentCollection();
+		Calendar currentDate = Calendar.Instance;
+		Calendar startTime = (Calendar)currentDate.Clone();
+		Calendar endTime = (Calendar)currentDate.Clone();
+		startTime.Set(
+			currentDate.Get(CalendarField.Year),
+			currentDate.Get(CalendarField.Month),
+			currentDate.Get(CalendarField.DayOfMonth),
+			9,0,0
+			);
+		endTime.Set(
+			currentDate.Get(CalendarField.Year),
+			currentDate.Get(CalendarField.Month),
+			currentDate.Get(CalendarField.DayOfMonth),
+			9,0,0
+			);
+		Calendar startTime1 = (Calendar)currentDate.Clone();
+		Calendar endTime1 = (Calendar)currentDate.Clone();
+		startTime1.Set(
+			currentDate.Get(CalendarField.Year),
+			currentDate.Get(CalendarField.Month),
+			currentDate.Get(CalendarField.DayOfMonth),
+			11,0,0
+			);
+		endTime1.Set(
+			currentDate.Get(CalendarField.Year),
+			currentDate.Get(CalendarField.Month),
+			currentDate.Get(CalendarField.DayOfMonth),
+			12,0,0
+			);
+		scheduleAppointmentCollection.Add(new ScheduleAppointment()
+			{
+				StartTime = startTime,
+				EndTime = endTime,
+				Subject = "Client Meeting",
+				MinHeight = 30,
+				Color = Color.FromHex("#FFD80073")
+			});
+		scheduleAppointmentCollection.Add(new ScheduleAppointment()
+			{
+				StartTime = startTime1,
+				EndTime = endTime1,
+				Subject = "Anniversary",
+				Color = Color.FromHex("#FFA2C139")
+			});
+		schedule.Appointments= scheduleAppointmentCollection;
+
+		SetContentView(schedule);
+{% endhighlight %}
+
+![](PopulatingAppointments_images/minheight.png)
+
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
