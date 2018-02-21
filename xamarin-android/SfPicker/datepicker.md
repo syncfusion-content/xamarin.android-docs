@@ -383,5 +383,5 @@ Screen shot for the above code.
 
 We have attached DatePicker sample for reference. Please download the sample from the following link.
 
-Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/DATEPI~1-1024070091.ZIP)
+Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker1036782726.zip)
 
