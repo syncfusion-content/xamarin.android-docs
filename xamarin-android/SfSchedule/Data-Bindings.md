@@ -70,12 +70,12 @@ documentation: ug
 
 {% highlight c# %}
 
-		SfSchedule schedule = new SfSchedule();
-		ScheduleAppointmentCollection scheduleAppointmentCollection  =  new ScheduleAppointmentCollection();
-		Calendar currentDate = Calendar.Instance;
-		Calendar startTime = (Calendar)currentDate.Clone();
-		Calendar endTime = (Calendar)currentDate.Clone();
-		startTime.Set(
+ SfSchedule schedule = new SfSchedule(this);
+        ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+        Calendar currentDate = Calendar.Instance;
+        Calendar startTime = (Calendar)currentDate.Clone();
+        Calendar endTime = (Calendar)currentDate.Clone();
+        startTime.Set(
 			currentDate.Get(CalendarField.Year),
 			currentDate.Get(CalendarField.Month),
 			currentDate.Get(CalendarField.DayOfMonth),
@@ -88,8 +88,8 @@ documentation: ug
 			9,0,0
 			);
 		Calendar startTime1 = (Calendar)currentDate.Clone();
-		Calendar endTime1 = (Calendar)currentDate.Clone();
-		startTime1.Set(
+        Calendar endTime1 = (Calendar)currentDate.Clone();
+        startTime1.Set(
 			currentDate.Get(CalendarField.Year),
 			currentDate.Get(CalendarField.Month),
 			currentDate.Get(CalendarField.DayOfMonth),
@@ -102,23 +102,26 @@ documentation: ug
 			12,0,0
 			);
 		scheduleAppointmentCollection.Add(new ScheduleAppointment()
-			{
-				StartTime = startTime,
+      	     {
+                StartTime = startTime,
 				EndTime = endTime,
 				Subject = "Client Meeting",
 				MinHeight = 30,
 				Color = Color.FromHex("#FFD80073")
-			});
+
+            });
 		scheduleAppointmentCollection.Add(new ScheduleAppointment()
-			{
-				StartTime = startTime1,
+       		 {
+                StartTime = startTime1,
 				EndTime = endTime1,
 				Subject = "Anniversary",
 				Color = Color.FromHex("#FFA2C139")
-			});
+
+            });
 		schedule.Appointments= scheduleAppointmentCollection;
 
-		SetContentView(schedule);
+
+        SetContentView(schedule);
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/minheight.png)
