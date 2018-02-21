@@ -366,4 +366,74 @@ You can customize the Month inline view Appointment by using [MonthInlineAppoint
 
 ![](monthview_images/inlinecustomview.png)
 
+## Selection:
+You can customize the default appearance of selection UI in the month cells.
 
+* [Selection customization using style](#selection-customization-using-style)
+* [Selection customization using custom View](#selection-customization-using-custom-view)
+
+### Selection customization using style:
+You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
+
+{% highlight C# %}
+
+    schedule.ScheduleView = ScheduleView.MonthView;
+    //Create new instance of SelectionStyle
+    SelectionStyle selectionStyle = new SelectionStyle();
+    selectionStyle.BackgroundColor = Color.Blue;
+    selectionStyle.BorderColor = Color.Black;
+    selectionStyle.BorderThickness = 5;
+    selectionStyle.CornerRadius = 5;
+    schedule.SelectionStyle = selectionStyle;
+    
+{% endhighlight %}
+
+![](monthview_images/SelectionStyle_Month.png)
+
+### Selection customization using custom View:
+You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionView.html) property of `SfSchedule`.
+{% highlight C# %}
+
+    schedule.ScheduleView = ScheduleView.MonthView;
+    //Add the CustomView
+    Button customView = new Button(this);
+    customView.Text = "+NewEvent";
+    customView.SetBackgroundColor(Color.Rgb(255, 152, 0));
+    customView.SetTextColor(Color.White);
+    schedule.SelectionView = customView;
+    
+{% endhighlight %}
+
+![](monthview_images/SelectionView_Month.png)
+
+### Programmatic selection
+You can programmatically select the specific cell by setting corresponding date to [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
+
+{% highlight C# %}
+
+    // Creating instance of calendar
+    Calendar calendar = Calendar.Instance;
+
+    // Setting a date and time to select
+    currentDate.Set(2017, 09, 04);
+    schedule.SelectedDate = currentDate;
+
+{% endhighlight %}
+
+You can clear the selection by setting [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) as null.
+
+{% highlight C# %}
+
+    // Setting null value to deselect
+    schedule.SelectedDate = null;
+
+{% endhighlight %}
+
+You can download the entire source code of this demo for Xamarin.Android from
+here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection-303833588.zip)
+
+>**Note**:
+* `SfSchedule` does not support multiple selection.
+* `SfSchedule` supports two-way binding of `SelectedDate` property.
+
+![](monthview_images/selection_Month.png)
