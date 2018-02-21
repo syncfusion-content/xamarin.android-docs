@@ -377,27 +377,29 @@ You can customize the month cell selection by using [SelectionStyle](https://hel
 
 {% highlight C# %}
 
-schedule.ScheduleView = ScheduleView.MonthView;
-//Create new instance of SelectionStyle
-SelectionStyle selectionStyle = new SelectionStyle();
-selectionStyle.BackgroundColor = Color.Blue;
-selectionStyle.BorderColor = Color.Black;
-selectionStyle.BorderThickness = 5;
-selectionStyle.CornerRadius = 5;
-schedule.SelectionStyle = selectionStyle;
+    schedule.ScheduleView = ScheduleView.MonthView;
+    //Create new instance of SelectionStyle
+    SelectionStyle selectionStyle = new SelectionStyle();
+    selectionStyle.BackgroundColor = Color.Blue;
+    selectionStyle.BorderColor = Color.Black;
+    selectionStyle.BorderThickness = 5;
+    selectionStyle.CornerRadius = 5;
+    schedule.SelectionStyle = selectionStyle;
+    
 {% endhighlight %}
 
 ### Selection customization using custom View:
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionView.html) property of `SfSchedule`.
 {% highlight C# %}
 
-schedule.ScheduleView = ScheduleView.MonthView;
-//Add the CustomView
-Button customView = new Button(this);
-customView.Text = "+NewEvent";
-customView.SetBackgroundColor(Color.Rgb(255, 152, 0));
-customView.SetTextColor(Color.White);
-schedule.SelectionView = customView;
+    schedule.ScheduleView = ScheduleView.MonthView;
+    //Add the CustomView
+    Button customView = new Button(this);
+    customView.Text = "+NewEvent";
+    customView.SetBackgroundColor(Color.Rgb(255, 152, 0));
+    customView.SetTextColor(Color.White);
+    schedule.SelectionView = customView;
+    
 {% endhighlight %}
 
 ### Programmatic selection
