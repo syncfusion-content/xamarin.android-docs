@@ -238,25 +238,31 @@ You can replace the default selection UI with your custom view by setting [Selec
 
 ![](daymodule_images/selectioncustomview_week.png)
 
->**Note:**
-Selection customization is applicable for time slots alone.
+### Programmatic selection
+You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
 
+{% highlight C# %}
 
+    // Creating instance of calendar
+    Calendar calendar = Calendar.Instance;
 
+    // Setting a date and time to select
+    calendar.Set(2017, 09, 04, 10, 0, 0);
+    schedule.SelectedDate = calendar;
 
+{% endhighlight %}
 
+You can clear the selection by setting [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) as null.
 
+{% highlight C# %}
 
+    // Setting null value to deselect
+    schedule.SelectedDate = null
 
+{% endhighlight %}
 
+You can download the entire source code of this demo for Xamarin.Android from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection-303833588.zip)
 
-
-
-
-
-
-
-
-
-
+>**Note**: `SfSchedule` does not support multiple selection.
+>**Note**: `SfSchedule` supports two-way binding of `SelectedDate` property.
 
