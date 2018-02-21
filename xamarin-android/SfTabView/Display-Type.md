@@ -44,10 +44,10 @@ Selected index can be differentiated by setting `SelectionColor` property of `Sf
 {% highlight C# %}
 
 var tabViewItem = new SfTabItem()
-			{
-				Title = "Calls",
-				TitleFontColor = Color.Green,
-			}
+{
+Title = "Calls",
+TitleFontColor = Color.Green,
+}
 			
 {% endhighlight %}
 
@@ -66,13 +66,13 @@ Further customizations of header are discussed in the below sections.
 {% highlight C# %}
 
 var tabViewItem = new SfTabItem()
-			{
-				Title = "Calls",
-				Content = allContactsGrid,
-				TitleFontStyle = Typeface.DefaultBold,
-				TitleFontColor = Color.Red,
-				TitleFontSize = 22
-			}
+{
+Title = "Calls",
+Content = allContactsGrid,
+TitleFontStyle = Typeface.DefaultBold,
+TitleFontColor = Color.Red,
+TitleFontSize = 22
+}
 			
 {% endhighlight %}
 
@@ -93,14 +93,14 @@ Add the font file into your application by following the below steps.
 {% highlight C# %}
 
 var tabViewItem = new SfTabItem
-		{
-			Title = "Calls",
-			Content = allContactsGrid,
-			IconFont = "a", // setting value for font icons as mentioned in *.ttf.
-			FontIconStyle = Typeface.CreateFromAsset(context.Assets, "TabIcons.ttf"),
-			FontIconFontColor = Color.LightBlue,
-			FontIconFontSize =  20
-		};
+{
+Title = "Calls",
+Content = allContactsGrid,
+IconFont = "a", // setting value for font icons as mentioned in *.ttf.
+FontIconStyle = Typeface.CreateFromAsset(context.Assets, "TabIcons.ttf"),
+FontIconFontColor = Color.LightBlue,
+FontIconFontSize =  20
+};
 
 			
 {% endhighlight %}

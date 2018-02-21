@@ -69,11 +69,11 @@ Set the tab view control as content view in the `OnCreate` method.
 
 private SfTabView tabView;
 protected override void OnCreate(Bundle savedInstanceState)
-    {
-        base.OnCreate(savedInstanceState);
-        tabView = new SfTabView(this.ApplicationContext);
-        SetContentView(tabView);
-    }
+{
+base.OnCreate(savedInstanceState);
+tabView = new SfTabView(this.ApplicationContext);
+SetContentView(tabView);
+}
 		
 {% endhighlight %}
 
@@ -87,33 +87,33 @@ Tab items can be configured in tab view through the Items property of `SfTabView
 
 {% highlight C# %}
 
-        var allContactsGrid = new FrameLayout(ApplicationContext);
-            var favoritesGrid = new FrameLayout(ApplicationContext);
-            var contactsGrid = new FrameLayout(ApplicationContext);
-            allContactsGrid.SetBackgroundColor(Color.Red);
-            favoritesGrid.SetBackgroundColor(Color.Green);
-            contactsGrid.SetBackgroundColor(Color.Blue);
-            var tabItems = new TabItemCollection
-            {
-                new SfTabItem()
-                {
-                    Title = "Calls",
-                    Content = allContactsGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Favorites",
-                    Content = favoritesGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Contacts",
-                    Content = contactsGrid
-                }
-            };
+var allContactsGrid = new FrameLayout(ApplicationContext);
+var favoritesGrid = new FrameLayout(ApplicationContext);
+var contactsGrid = new FrameLayout(ApplicationContext);
+allContactsGrid.SetBackgroundColor(Color.Red);
+favoritesGrid.SetBackgroundColor(Color.Green);
+contactsGrid.SetBackgroundColor(Color.Blue);
+var tabItems = new TabItemCollection
+{
+new SfTabItem()
+{
+Title = "Calls",
+Content = allContactsGrid
+},
+new SfTabItem()
+{
+Title = "Favorites",
+Content = favoritesGrid
+},
+new SfTabItem()
+{
+Title = "Contacts",
+Content = contactsGrid
+}
+};
 
-            tabView.Items = tabItems;
-            SetContentView(tabView);
+tabView.Items = tabItems;
+SetContentView(tabView);
 
 {% endhighlight %}
 
@@ -145,30 +145,30 @@ Create a view model class with ContactsInfo collection property, initialized wit
 
 public class ContactInfo
 {
-	public string Name { get; set; }
-	public long Number { get; set; }
+public string Name { get; set; }
+public long Number { get; set; }
 }
 
 public class ContactsViewModel
 {
-	private ObservableCollection<ContactInfo> contactList;
+private ObservableCollection<ContactInfo> contactList;
 
-	public ObservableCollection<ContactInfo> ContactList
-	{
-		get { return contactList; }
-		set { contactList = value; }
-	}
-	public ContactsViewModel()
-	{
-		ContactList = new ObservableCollection<ContactInfo>();
-		ContactList.Add(new ContactInfo{Name = "Aaron",Number = 7363750});
-		ContactList.Add(new ContactInfo { Name = "Adam", Number = 7323250 });
-		ContactList.Add(new ContactInfo { Name = "Adrian", Number = 7239121 });
-		ContactList.Add(new ContactInfo { Name = "Alwin", Number = 2329823 });
-		ContactList.Add(new ContactInfo { Name = "Alex", Number = 8013481 });
-		ContactList.Add(new ContactInfo { Name = "Alexander", Number = 7872329 });
-		ContactList.Add(new ContactInfo { Name = "Barry", Number = 7317750 });
-	}
+public ObservableCollection<ContactInfo> ContactList
+{
+get { return contactList; }
+set { contactList = value; }
+}
+public ContactsViewModel()
+{
+ContactList = new ObservableCollection<ContactInfo>();
+ContactList.Add(new ContactInfo{Name = "Aaron",Number = 7363750});
+ContactList.Add(new ContactInfo { Name = "Adam", Number = 7323250 });
+ContactList.Add(new ContactInfo { Name = "Adrian", Number = 7239121 });
+ContactList.Add(new ContactInfo { Name = "Alwin", Number = 2329823 });
+ContactList.Add(new ContactInfo { Name = "Alex", Number = 8013481 });
+ContactList.Add(new ContactInfo { Name = "Alexander", Number = 7872329 });
+ContactList.Add(new ContactInfo { Name = "Barry", Number = 7317750 });
+}
 }
 
 {% endhighlight %}
@@ -180,9 +180,9 @@ Create a custom adapter for ListView and customize the appearance of each item b
 {% highlight c# %}
 
 
-    var listView = new ListView(Context);
-    TabContentListAdapter tabContentListAdapter = new TabContentListAdapter(data);
-    listView.SetAdapter(tabContentListAdapter);
+var listView = new ListView(Context);
+TabContentListAdapter tabContentListAdapter = new TabContentListAdapter(data);
+listView.SetAdapter(tabContentListAdapter);
     
 {% endhighlight %}
 

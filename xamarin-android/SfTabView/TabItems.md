@@ -17,32 +17,32 @@ Tab items can be configured in tab view through the Items property of `SfTabView
 {% highlight C# %}
 
 var allContactsGrid = new FrameLayout(ApplicationContext);
-            var favoritesGrid = new FrameLayout(ApplicationContext);
-            var contactsGrid = new FrameLayout(ApplicationContext);
-            allContactsGrid.SetBackgroundColor(Color.Red);
-            favoritesGrid.SetBackgroundColor(Color.Green);
-            contactsGrid.SetBackgroundColor(Color.Blue);
-            var tabItems = new TabItemCollection
-            {
-                new SfTabItem()
-                {
-                    Title = "Calls",
-                    Content = allContactsGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Favorites",
-                    Content = favoritesGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Contacts",
-                    Content = contactsGrid
-                }
-            };
+var favoritesGrid = new FrameLayout(ApplicationContext);
+var contactsGrid = new FrameLayout(ApplicationContext);
+allContactsGrid.SetBackgroundColor(Color.Red);
+favoritesGrid.SetBackgroundColor(Color.Green);
+contactsGrid.SetBackgroundColor(Color.Blue);
+var tabItems = new TabItemCollection
+{
+new SfTabItem()
+{
+Title = "Calls",
+Content = allContactsGrid
+},
+new SfTabItem()
+{
+Title = "Favorites",
+Content = favoritesGrid
+},
+new SfTabItem()
+{
+Title = "Contacts",
+Content = contactsGrid
+}
+};
 
-            tabView.Items = tabItems;
-            SetContentView(tabView);
+tabView.Items = tabItems;
+SetContentView(tabView);
 
 {% endhighlight %}
 
