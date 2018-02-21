@@ -34,12 +34,12 @@ Appearance of the text can be customized through the APIs available `OverflowBut
 {% highlight C# %}
 
 var overflowButtonSettings = new OverflowButtonSettings();
-		overflowButtonSettings.BackgroundColor = Color.Red;
-		overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
-		overflowButtonSettings.Title = "...";
-		overflowButtonSettings.TitleFontSize = 30;
-		overflowButtonSettings.TitleFontColor = Color.Yellow;
-		tabView.OverflowButtonSettings = overflowButtonSettings;
+overflowButtonSettings.BackgroundColor = Color.Red;
+overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
+overflowButtonSettings.Title = "...";
+overflowButtonSettings.TitleFontSize = 30;
+overflowButtonSettings.TitleFontColor = Color.Yellow;
+tabView.OverflowButtonSettings = overflowButtonSettings;
 			
 {% endhighlight %}
 

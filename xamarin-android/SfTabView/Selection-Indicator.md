@@ -20,12 +20,12 @@ Selection indicator can be positioned below the title or above the title or else
 
 {% highlight C# %}
 
-		var selectionIndicatorSettings = new SelectionIndicatorSettings();
-		selectionIndicatorSettings.Color = Color.Yellow;
-		selectionIndicatorSettings.Position = SelectionIndicatorPosition.Top;
-		selectionIndicatorSettings.StrokeThickness = 10;
+var selectionIndicatorSettings = new SelectionIndicatorSettings();
+selectionIndicatorSettings.Color = Color.Yellow;
+selectionIndicatorSettings.Position = SelectionIndicatorPosition.Top;
+selectionIndicatorSettings.StrokeThickness = 10;
 
-		tabView.SelectionIndicatorSettings = selectionIndicatorSettings;
+tabView.SelectionIndicatorSettings = selectionIndicatorSettings;
 
 			
 {% endhighlight %}
