@@ -244,7 +244,7 @@ You can clear the selection by setting [SelectedDate]( https://help.syncfusion.c
 {% highlight C# %}
 
     // Setting null value to deselect
-    schedule.SelectedDate = null
+    schedule.SelectedDate = null;
 
 {% endhighlight %}
 
@@ -252,3 +252,5 @@ You can download the entire source code of this demo for Xamarin.Android from he
 
 >**Note**: `SfSchedule` does not support multiple selection.
 >**Note**: `SfSchedule` supports two-way binding of `SelectedDate` property.
+
+![](daymodule_images/selection_Day.png)
