@@ -9,17 +9,17 @@ documentation: UG
 
 # Filtering
 
-SfDataGrid provides support for view filtering.
+The data grid supports view filtering.
 
-## View Filtering
+## View filtering
 
-SfDataGrid provides support to filter the records in view by setting `SfDataGrid.View.Filter` property where `Filter` is a `predicate`.
+The data grid supports filtering the records in the view by setting the `SfDataGrid.View.Filter` property where `Filter` is a `predicate`.
 
-In order to filter the records in SfDataGrid, you have to assign the filtered strings to the `ViewModel.FilterText` property which will be later applied in `Filter predicate` that is assigned to `SfDataGrid.View.Filter` in OnFilterChanged() method.
+To filter the records in the data grid, assign the filtered strings to the `ViewModel.FilterText` property which will be applied later in `Filter predicate` that is assigned to `SfDataGrid.View.Filter` in the OnFilterChanged() method.
 
 N> To update the filtering for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
-The following code example illustrates the delegate, properties, and methods used in the `ViewModel` class in order to perform the filtering operation.
+The following code example illustrates the delegate, properties, and methods used in the `ViewModel` class perform the filtering operation.
 
 {% highlight c# %}
 // ViewModel.cs
@@ -190,7 +190,7 @@ public bool FilerRecords(object o)
 #endregion
 {% endhighlight %}
 
-The following code example illustrates how to create a `SearchView` and apply the filtered records to `ViewModel.FilterText` property in `SearchView.QueryTextChange` event.
+The following code example illustrates how to create a `SearchView` and apply the filtered records to the `ViewModel.FilterText` property in `SearchView.QueryTextChange` event.
 
 {% highlight c# %}
 // Code-Behind
@@ -207,7 +207,7 @@ private void OnFilterTextChanged(object sender, SearchView.QueryTextChangeEventA
 
 ![](SfDataGrid_images/Filtering_img1.png)
 
-Once you create a `SearchView` and a view model, you can perform filtering by setting `SfDataGrid.View.Filter` property. You have to call the `SfDataGrid.View.RefreshFilter()` method after you set the filtered records to the `SfDataGrid.View.Filter` property as like in below code example.
+Once you create the `SearchView` and a view model, you can perform filtering by setting the `SfDataGrid.View.Filter` property. You have to call the `SfDataGrid.View.RefreshFilter()` method after setting the filtered records to the `SfDataGrid.View.Filter` property as in the following code example.
 
 {% highlight c# %}
 // Code-Behind
@@ -224,11 +224,11 @@ private void OnFilterChanged()
 }
 {% endhighlight %}
 
-### Column based filtering
+### Column-based filtering
 
-You can filter the records in all the columns or in particular column using the codes in OnColumnSelected() method.
+You can filter the records in all the columns or in a particular column using the code in the OnColumnSelected() method.
 
-For example, you can filter the records in `OrderID` or any other particular column alone.The following code example illustrates how to create a `Spinner` for columns. Also, it illustrates how the records will be filtered based on the column selected.
+For example, you can filter the records in `OrderID` or any other particular column alone.The following code example illustrates how to create a `Spinner` for columns. It also illustrates how the records will be filtered based on the selected column.
 
 {% highlight c# %}
 // Code-Behind
@@ -304,17 +304,17 @@ private void OnColumnSelected(object sender, AdapterView.ItemSelectedEventArgs e
 
 ![](SfDataGrid_images/Filtering_img2.png)
 
-### Condition based filtering
+### Condition-based filtering
 
-In addition to the column based filtering, you can filter the records based on some conditions. For example, you can filter the records based on the input you given or you can filter the records contrast to your input. You can achieve the condition based filtering for all the columns or any particular column.
+In addition to the column-based filtering, you can filter the records based on conditions. For example, you can filter the records based on the given input or you can filter the records in contrast to your input. You can perform the condition-based filtering for all columns or any particular column.
 
-You can filter the records in the view based on any of the below conditions,
+You can filter the records in the view based on any of the following conditions:
 
 * Equals
 * NotEquals
 * Contains
 
-The above conditions are the mostly used conditions. However, you can add any other conditions based on your requirement and alter the below code example based on your condition.
+These conditions are the mostly used conditions. However, you can add any other conditions and alter the following code example.
 
 {% highlight c#%}
 // ViewModel.cs
@@ -431,7 +431,7 @@ private bool MakeNumericFilter(OrderInfo o, string option, string condition)
 }
 {% endhighlight %}
 
-The following code example illustrates how to create a `Spinner` for conditions and add appropriate strings to that `Spinner`. Also, it illustrates how the records will be filtered based on the condition selected.
+The following code example illustrates how to create a `Spinner` for conditions and add appropriate strings to that `Spinner`. It also illustrates how the records will be filtered based on the selected condition.
 
 {% highlight c# %}
 // Code-Behind
@@ -464,9 +464,9 @@ private void OnConditionSelected(object sender, AdapterView.ItemSelectedEventArg
 
 ## Clear filtering
 
-SfDataGrid allows you to clear the applied filtering by setting the `SfDataGrid.View.Filter` property to `null`.
+The data grid allows clearing the applied filtering by setting the `SfDataGrid.View.Filter` property to `null`.
 
-The below code example illustrates how to clear the applied filtering in SfDataGrid.
+The following code example illustrates how to clear the applied filtering in the data grid.
 
 {% highlight c# %}
 // Code-Behind
