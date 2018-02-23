@@ -7,15 +7,15 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Annotation
+# Annotation
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) supports annotations, which allows you to mark the specific area of interest in the chart area. You can add text, images and custom views. Drawing custom shapes also can be done by using annotations.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) supports annotations, which allows you to mark the specific area of interest in the chart area. You can add text, images and custom views.
 
 The following annotations are supported in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html)
 
-* Text annotation
-* Shape annotation
-* View annotation
+*   Text annotation
+*   Shape annotation
+*   View annotation
 
 ## Adding Annotations
 
@@ -93,17 +93,17 @@ SfChart chart = new SfChart(this);
 
 RectangleAnnotation annotation = new RectangleAnnotation()
 {
-    X1 = 4,
+    X1 = 1,
 
-    Y1 = 40,
+    Y1 = 1,
 
-    X2 = 8,
+    X2 = 150,
 
-    Y2 = 45,
+    Y2 = 150,
 
-    Text = "Axis Value",
+    Text = "Pixel Value",
 
-    CoordinateUnit = ChartCoordinateUnit.Axis
+    CoordinateUnit = ChartCoordinateUnit.Pixels
 };
 
 chart.Annotations.Add(annotation);

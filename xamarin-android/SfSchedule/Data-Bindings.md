@@ -107,7 +107,7 @@ documentation: ug
 				EndTime = endTime,
 				Subject = "Client Meeting",
 				MinHeight = 30,
-				Color = Color.FromHex("#FFD80073")
+				Color = Color.ParseColor("#FFD80073")
 
             });
 		scheduleAppointmentCollection.Add(new ScheduleAppointment()
@@ -115,7 +115,7 @@ documentation: ug
                 StartTime = startTime1,
 				EndTime = endTime1,
 				Subject = "Anniversary",
-				Color = Color.FromHex("#FFA2C139")
+				Color = Color.ParseColor("#FFA2C139")
 
             });
 		schedule.Appointments= scheduleAppointmentCollection;
