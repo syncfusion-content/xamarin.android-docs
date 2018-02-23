@@ -54,6 +54,11 @@ You can customize the interval of timeslots in `WorkWeekView` by setting [TimeIn
 
 ![](daymodule_images/timeinterval_workweek.png)
 
+
+>**Note:**
+
+If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"h a"`. You can refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/workweekview#time-label-formatting) for changing TimeFormat value.
+
 ## Change Time Interval Height
 You can customize the interval height of timeslots in `WorkWeekView` by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~TimeIntervalHeight.html)  property of `SfSchedule`.
 
