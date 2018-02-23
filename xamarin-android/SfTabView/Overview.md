@@ -18,6 +18,6 @@ The tab view control is available in Xamarin.Forms, Xamarin.Android, and Xamarin
 * Top and bottom placements of header.
 * Layout option for overflow tabs.
 
-N> Creently, tab view control for Xamarin.Forms(UWP) is not available.
+N> Currently, tab view control for Xamarin.Forms(UWP) is not available.
 
 ![](images/Overview/xamarin_android_tabview.png)
