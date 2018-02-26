@@ -28,19 +28,18 @@ The following assembly should be added as reference from the "lib" folder to use
 <th> Project </th>
 <th> Required assemblies </th>
 </tr>
+<th
 <tr>
 <td> Xamarin.Android </td>
 <td> android\Syncfusion.SfPopupLayout.Android.dll </td>
 </tr>
 </table>
 
-## NuGet installation
+## NuGet Configuration
 
 To install SfPopupLayout control in the application, configure the NuGet package of the Syncfusion components. Refer to the following KB to configure the NuGet package of the Syncfusion components:
 
 [How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
-
-### SfPopupLayout for Xamarin.Android
 
 The following NuGet package should be added to use SfPopupLayout control in the application:
 
@@ -59,7 +58,7 @@ Refer to the following screenshot in which the Syncfusion.Xamarin.SfPopupLayout.
 
 ![](GettingStarted_images/NuGetInstall.png)
 
-## Create a sample application with SfPopupLayout
+## Create a simple popup
 
 SfPopupLayout control can be configured entirely in C# code. To create a sample application for this control, follow the topics: 
 
@@ -79,15 +78,22 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 ### Adding SfPopupLayout in Xamarin.Android
 
-1. Add the required assembly references to the project as mentioned in the [Assembly deployment](#assembly-deployment) section or install the NuGet as mentioned in the [NuGet installation](#nuget-installation) section.
+1. Add the required assembly references to the project as mentioned in the [Assembly deployment](#assembly-deployment) section or install the NuGet as mentioned in the [NuGet Configuration](#nuget-configuration) section.
 
 2. Import SfPopupLayout control under the namespace `Syncfusion.Android.PopupLayout`.
 
-3. Set the hosting view of the SfPopupLayout as a content of the SfPopupLayout using [SfPopupLayout.Content]() property.
+3. The SfPopupLayout can be displayed by the following methods. 
+    
+    * The SfPopupLayout can be displayed by making it as the base view or content view of the activity. We will refer this approach as Type A throughout this page.
 
-4. Create an instance of SfPopupLayout control and set as the ContentView of the Activity. Refer to the following code example to add this control to the application:
+    * You can continue to keep your view as the content view of the activity and still display popup over your view by simply calling the SfPopupLayout.Show() method. We will refer this approach as Type B throughout this page.
+
+4. For Type A, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using [SfPopupLayout.Content]() property.
+
+5. Create an instance of SfPopupLayout control and set it as ContentView of that Activity. Refer to the following code example to add this control to the application:
 
 #### Type A:
+
 
 {% highlight c# %}
 
@@ -99,30 +105,30 @@ namespace GettingStarted
     {
        SfPopupLayout popupLayout;
        Button showPopupButton;
-       LinearLayout layout;
+       LinearLayout mainLayout;
 
         protected override void OnCreate (Bundle bundle) 
         {
             base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
+            mainLayout = new LinearLayout(this);
+            mainLayout.Orientation = Orientation.Vertical;
+            mainLayout.SetBackgroundColor(Color.White);
 
             showPopupButton = new Button(this);
             showPopupButton.Click += ShowPopupButton_Click;
             showPopupButton.SetTextColor(Color.White);
             showPopupButton.Text = "Click to show Popup";
 
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
+            mainLayout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
             popupLayout = new SfPopupLayout(this);
-            popupLayout.Content = layout;
+            popupLayout.Content = mainLayout;
 
             SetContentView(popupLayout);
         } 
 
         private void ShowPopupButton_Click(object sender, System.EventArgs e)
         {
-           popupLayout.Show();
+            popupLayout.Show();
         }
     } 
 }
@@ -141,28 +147,28 @@ namespace GettingStarted
     {
        SfPopupLayout popupLayout;
        Button showPopupButton;
-       LinearLayout layout;
+       LinearLayout mainLayout;
 
         protected override void OnCreate (Bundle bundle) 
         {
             base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
+            mainLayout = new LinearLayout(this);
+            mainLayout.Orientation = Orientation.Vertical;
+            mainLayout.SetBackgroundColor(Color.White);
 
             showPopupButton = new Button(this);
             showPopupButton.Click += ShowPopupButton_Click;
             showPopupButton.SetTextColor(Color.White);
             showPopupButton.Text = "Click to show Popup";
 
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
+            mainLayout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
             popupLayout = new SfPopupLayout(this);
-            SetContentView(layout);
+            SetContentView(mainLayout);
         } 
 
         private void ShowPopupButton_Click(object sender, System.EventArgs e)
         {
-           popupLayout.Show(layout);
+            popupLayout.Show(mainLayout);
         }
     } 
 }
@@ -172,13 +178,33 @@ namespace GettingStarted
 If we run the above sample, the below output will appears on Android device as shown below.
 ![](GettingStarted_images/DefaultAppearance.png)
 
-### Adding a TextView as the ContentView of the SfPopupLayout
+### Customizing Positioning
+
+SfPopupLayout allows you to show the Popup content at various position based on the requirement.
+
+Following are the list of options available to position the SfPopupLayout in your desired position
+
+* SfPopupLayout.IsOpen property - Shows SfPopupLayout at the center.
+* SfPopupLayout.Show() - It is similar to SfPopupLayout.IsOpen property.
+* SfPopupLayout.Show(x-position, y-position) - Shows SfPopupLayout at the specified X and y position.
+* SfPopupLayout.ShowAtTouchPoint() - Shows SfPopupLayout at the touch point.
+* SfPopupLayout.ShowRelativeToView(View, RelativePosition) - Choose to show SfPopupLayout at any of the 8 positions relative to the specified view.
+
+### Customizing Layouts
+
+By default, you can choose from the following layouts available in SfPopupLayout using the property `SfPopupLayout.AppearanceMode`.
+
+* OneButton - Shows SfPopupLayout with OneButton in the FooterView. This is the default value.
+* TwoButton - Shows SfPopupLayout with TwoButtons in the FooterView.
+* You can also customize the entire view of the popup by loading templates or custom views individually for the header, body and footer of the popup.
+
+#### Adding a TextView as the ContentView of the SfPopupLayout
 
 Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentView]() property to refresh it.
 
 Refer to the following code example in which a text view is added as popup content:
 
-{% highlight c# %}
+{% highlight c# %}}
 
 //MainActivity.cs
 
@@ -190,7 +216,7 @@ protected override void OnCreate(Bundle bundle)
      popupContentView.SetTextColor(Color.Black);
      popupContentView.SetBackgroundColor(Color.LightSkyBlue);
       
-     //Adding ContentView of the SfPopupLayout
+     // Adding ContentView of the SfPopupLayout
      popupLayout.PopupView.ContentView = popupContentView;
 	....
 }
@@ -200,783 +226,18 @@ protected override void OnCreate(Bundle bundle)
 N> Setting of ContentView is same for both Type A and Type B
 
 If we run the above sample, the below output will appears on Android device as shown below.
-![](GettingStarted_images/ContentView.png)
+![]GettingStarted_images/ContentView.png)
 
-### AppearanceMode
-
-SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](). By default, "AppearanceMode.OneButton" is set. You can change the appearance of the SfPopupLayout by using `SfPopupLayout.PopupView.AppearanceMode` property.
-Two different appearance mode in SfPopupLayout as listed below.
-
-<table>
-<tr>
-<th> Modes </th>
-<th> Description </th>
-</tr>
-<tr>
-<td> {{'[OneButton]()'| markdownify }} </td>
-<td> Shows SfPopupLayout with OneButton in the FooterView. This is the default value.</td>
-</tr>
-<tr>
-<td> {{'[TwoButton]()'| markdownify }} </td>
-<td> Shows SfPopupLayout with TwoButtons in the FooterView.</td>
-</tr>
-</table>
-
-#### OneButton
-
-In the below code example we have set `SfPopupLayout.PopupView.AppearanceMode` property as “OneButton” which displays only AcceptButton in the FooterView.
-
-##### Type A:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
-
-            // Setting the AppearanceMode as OneButton
-            popupLayout.PopupView.AppearanceMode = AppearanceMode.OneButton;
-            popupLayout = new SfPopupLayout(this);
-            popupLayout.Content = layout;
-
-            SetContentView(popupLayout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-            popupLayout.Show();
-        }
-    }
-} 
-
-{% endhighlight %}
-
-##### Type B:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
-
-            // Setting the AppearanceMode as OneButton
-            popupLayout.PopupView.AppearanceMode = AppearanceMode.OneButton;
-            popupLayout = new SfPopupLayout(this);
-           
-            SetContentView(layout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-            popupLayout.Show(layout);
-        }
-    }
-} 
-
-{% endhighlight %}
-
-If we run the above sample with `AppearanceMode` as `OneButton`, the output will look like on Android device as shown below.
-![](GettingStarted_images/AppearanceMode_OneButton.png)
-
-#### TwoButton
-
-In the below code example we have set `SfPopupLayout.PopupView.AppearanceMode` property as `TwoButton` which displays both DeclineButton and AcceptButton in the FooterView.
-
-##### Type A:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
-
-            // Setting the AppearanceMode as TwoButton
-            popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;
-            popupLayout = new SfPopupLayout(this);
-            popupLayout.Content = layout;
-
-            SetContentView(popupLayout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-            popupLayout.Show();
-        }
-    }
-} 
-
-{% endhighlight %}
-
-##### Type B:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
-
-            // Setting the AppearanceMode as TwoButton
-            popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;
-            popupLayout = new SfPopupLayout(this);
-            
-            SetContentView(layout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-             popupLayout.Show(layout);
-        }
-    }
-} 
-
-{% endhighlight %}
-
-If we run the above sample with `AppearanceMode` as `TwoButton`, the output will look like on Android device as shown below.
-![](GettingStarted_images/AppearanceMode_TwoButton.png)
-
-### Showing SfPopupLayout at various position
-
-SfPopupLayout allows you to show the Popup content at various position based on the requirement.
-
-Following are the list of options available to show SfPopupLayout at various position.
-
-<table>
-<tr>
-<th> Methods / Property </th>
-<th> Description </th>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.IsOpen]()'| markdownify }} </td>
-<td> Shows SfPopupLayout at the center.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.Show()]()'| markdownify }} </td>
-<td> It is similar to SfPopupLayout.IsOpen property.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.Show(x-position, y-position)]()'| markdownify }} </td>
-<td> Shows SfPopupLayout at the specified X and y position.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.ShowAtTouchPoint()]()'| markdownify }} </td>
-<td> Shows SfPopupLayout at the touch point.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition)]()'| markdownify }} </td>
-<td> Shows SfPopupLayout at the position relative to the specified view.</td>
-</tr>
-</table>
-
-#### IsOpen Property
-
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.IsOpen` property.
-
-##### Type A:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);          
-            popupLayout = new SfPopupLayout(this);
-            popupLayout.Content = layout;
-
-            SetContentView(popupLayout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-            // Shows SfPopupLayout at the center of the view.
-            popupLayout.IsOpen = true;
-        }
-    }
-} 
-
-{% endhighlight %}
-
-N > SfPopupLayout.IsOpen property is not applicable for Type B.
-
-If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/IsOpen_Property.png)
-
-#### SfPopupLayout.Show()
-
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.Show()`.
-
-##### Type A:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);           
-            popupLayout = new SfPopupLayout(this);
-            popupLayout.Content = layout;
-
-            SetContentView(popupLayout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-               // Shows SfPopupLayout at the center of the view.
-               popupLayout.Show();
-        }
-    }
-} 
-
-{% endhighlight %}
-
-##### Type B:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);      
-            popupLayout = new SfPopupLayout(this);
-           
-            SetContentView(layout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-               // Shows SfPopupLayout at the center of the view.
-               popupLayout.Show(layout);
-        }
-    }
-} 
-
-{% endhighlight %}
-
-If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/ShowPopup.png)
-
-#### SfPopupLayout.Show(x-position, y-position)
-
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.Show(x-position, y-position)`.
-
-##### Type A:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);       
-            popupLayout = new SfPopupLayout(this);
-            popupLayout.Content = layout;
-
-            SetContentView(popupLayout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-               // Shows SfPopupLayout at x-position 100 and y position 100.
-               popupLayout.Show(100, 100);
-        }
-    }
-} 
-
-{% endhighlight %}
-
-##### Type B:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);          
-            popupLayout = new SfPopupLayout(this);
-            
-            SetContentView(layout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-               // Shows SfPopupLayout at x-position 100 and y position 100.
-               popupLayout.Show(100, 100, layout);
-        }
-    }
-} 
-
-{% endhighlight %}
-
-If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/ShowAtXYPosition.png)
-
-#### SfPopupLayout.ShowAtTouchPoint()
-
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.ShowAtTouchPoint()`.
-
-##### Type A:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);         
-            popupLayout = new SfPopupLayout(this);
-            popupLayout.Content = layout;
-
-            SetContentView(popupLayout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-               // Shows SfPopupLayout at the touch point.
-               popupLayout.ShowAtTouchPoint();
-        }
-    }
-} 
-
-{% endhighlight %}
-
-N > SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
-
-If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/ShowAtTouchPoint.png)
-
-#### SfPopupLayout.ShowRelativeToView(View, RelativePosition)
-
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.ShowRelativeToView(View, RelativePosition)`.
-
-##### Type A:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       TextView textView;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            textView = new TextView(this) { Text = "This is SfPopupLayout" };
-            textView.SetTextColor(Color.Black);
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, 150);
-            layout.AddView(textView, ViewGroup.LayoutParams.MatchParent, 150);
-
-            popupLayout = new SfPopupLayout(this);
-            popupLayout.Content = layout;
-
-            SetContentView(popupLayout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-            // Shows SfPopupLayout at the bottom of the text view.
-            popupLayout.ShowRelativeToView(textView, RelativePosition.AlignBottom);
-        }
-    }
-} 
-
-{% endhighlight %}
-
-##### Type B:
-
-{% highlight c# %}
-
-using Syncfusion.Android.PopupLayout;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       Button showPopupButton;
-       TextView textView;
-       LinearLayout layout;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            layout = new LinearLayout(this);
-            layout.Orientation = Orientation.Vertical;
-            layout.SetBackgroundColor(Color.White);
-
-            showPopupButton = new Button(this);
-            showPopupButton.Click += ShowPopupButton_Click;
-            showPopupButton.SetTextColor(Color.White);
-            showPopupButton.Text = "Click to show Popup";
-
-            textView = new TextView(this) { Text = "This is SfPopupLayout" };
-            textView.SetTextColor(Color.Black);
-
-            layout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, 150);
-            layout.AddView(textView, ViewGroup.LayoutParams.MatchParent, 150);
-
-            popupLayout = new SfPopupLayout(this);
-           
-            SetContentView(layout);
-        } 
-
-        private void ShowPopupButton_Click(object sender, System.EventArgs e)
-        {
-            // Shows SfPopupLayout at the bottom of the text view.
-            popupLayout.ShowRelativeToView(textView, RelativePosition.AlignBottom, layout);
-        }
-    }
-} 
-
-{% endhighlight %}
-
-If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/RelativeToBottom.png)
-
-### AnimationMode
+### Customizing Animations
 
 Built-in animations are available in SfPopupLayout, which is applied when the PopupView opens and closes in the screen.
-SfPopupLayout has different animation modes as listed below.
+By default, you can choose from the following Animations available in SfPopupLayout using the property `SfPopupLayout.AnimationMode`.
 
-<table>
-<tr>
-<th> Modes </th>
-<th> Description </th>
-</tr>
-<tr>
-<td> {{'[Zoom]()'| markdownify }} </td>
-<td>  Zoom-out animation will be applied if the PopupView opens and zoom-in animation will be applied if the PopupView closes. This is the default AnimationMode</td>
-</tr>
-<tr>
-<td> {{'[Fade]()'| markdownify }} </td>
-<td>  Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes</td>
-</tr>
-<tr>
-<td> {{'[SlideOnLeft]()'| markdownify }} </td>
-<td>  PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.</td>
-</tr>
-<tr>
-<td> {{'[SlideOnTop]()'| markdownify }} </td>
-<td>  PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.</td>
-</tr>
-<tr>
-<td> {{'[None]()'| markdownify }} </td>
-<td>  Animation will not be applied.</td>
-</tr>
-</table>
-
-N> Setting of AnimationMode is same for both TypeA and TypeB.
-
-#### Zoom Animation
-
-Zoom-out animation will be applied if the PopupView opens and Zoom-in animation will be applied if the PopupView closes.
-
-{% highlight c# %}
-
-//MainActivity.cs
-
-protected override void OnCreate(Bundle bundle)
-{
-	....
-    popupLayout.PopupView.AnimationMode = AnimationMode.Zoom;
-    SetContentView(popupLayout);
-    ....
-}
-
-{% endhighlight %}
-
-If we run the above sample with `AnimationMode` as `Zoom`, the output will look like on Android device as shown below.
-![](GettingStarted_images/ZoomAnimation.gif)
-
-#### Fade Animation
-
-Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes
-
-{% highlight c# %}
-
-//MainActivity.cs
-
-protected override void OnCreate(Bundle bundle)
-{
-	....
-    popupLayout.PopupView.AnimationMode = AnimationMode.Fade;
-    SetContentView(popupLayout);
-    ....
-}
-
-{% endhighlight %}
-
-If we run the above sample with `AnimationMode` as `Fade`, the output will look like on Android device as shown below.
-![](GettingStarted_images/FadeAnimation.gif)
-
-#### SlideOnLeft Animation
-
-PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.
-
-{% highlight c# %}
-
-//MainActivity.cs
-
-protected override void OnCreate(Bundle bundle)
-{
-	....
-    popupLayout.PopupView.AnimationMode = AnimationMode.SlideOnLeft;
-    SetContentView(popupLayout);
-    ....
-}
-
-{% endhighlight %}
-
-If we run the above sample with `AnimationMode` as `SlideOnLeft`, the output will look like on Android device as shown below.
-![](GettingStarted_images/SlideOnLeftAnimation.gif)
-
-#### SlideOnTop Animation
-
-PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.
-
-{% highlight c# %}
-
-//MainActivity.cs
-
-protected override void OnCreate(Bundle bundle)
-{
-	....
-    popupLayout.PopupView.AnimationMode = AnimationMode.SlideOnTop;
-    SetContentView(popupLayout);
-    ....
-}
-
-{% endhighlight %}
-
-If we run the above sample with `AnimationMode` as `SlideOnTop`, the output will look like on Android device as shown below.
-![](GettingStarted_images/SlideOnTopAnimation.gif)
-
-#### None
-
-Animation will not be applied.
-
-{% highlight c# %}
-
-//MainActivity.cs
-
-protected override void OnCreate(Bundle bundle)
-{
-	....
-    popupLayout.PopupView.AnimationMode = AnimationMode.None;
-    SetContentView(popupLayout);
-    ....
-}
-
-{% endhighlight %}
-
-If we run the above sample with `AnimationMode` as `None`, the output will look like on Android device as shown below.
-![](GettingStarted_images/AnimationMode_None.gif)
+* Zoom - Zoom-out animation will be applied if the PopupView opens and zoom-in animation will be applied if the PopupView closes. This is the default AnimationMode
+* Fade - Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes.
+* SlideOnLeft - PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.
+* SlideOnTop - PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.
+* None - Animation will not be applied.
 
 ### Sample link
 
