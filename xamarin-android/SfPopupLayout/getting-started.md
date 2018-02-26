@@ -170,7 +170,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If we run the above sample, the below output will appears on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/DefaultAppearance.png)
 
 ### Adding a TextView as the ContentView of the SfPopupLayout
 
@@ -198,6 +198,9 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 N> Setting of ContentView is same for both Type A and Type B
+
+If we run the above sample, the below output will appears on Android device as shown below.
+![](GettingStarted_images/ContentView.png)
 
 ### AppearanceMode
 
@@ -313,7 +316,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If we run the above sample with `AppearanceMode` as `OneButton`, the output will look like on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/AppearanceMode_OneButton.png)
 
 #### TwoButton
 
@@ -409,7 +412,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If we run the above sample with `AppearanceMode` as `TwoButton`, the output will look like on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
 ### Showing SfPopupLayout at various position
 
@@ -494,7 +497,7 @@ namespace GettingStarted
 N > SfPopupLayout.IsOpen property is not applicable for Type B.
 
 If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/IsOpen_Property.png)
 
 #### SfPopupLayout.Show()
 
@@ -586,7 +589,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/ShowPopup.png)
 
 #### SfPopupLayout.Show(x-position, y-position)
 
@@ -678,7 +681,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/ShowAtXYPosition.png)
 
 #### SfPopupLayout.ShowAtTouchPoint()
 
@@ -730,7 +733,7 @@ namespace GettingStarted
 N > SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
 
 If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/ShowAtTouchPoint.png)
 
 #### SfPopupLayout.ShowRelativeToView(View, RelativePosition)
 
@@ -834,7 +837,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If we run the above sample, the below output will appear on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/RelativeToBottom.png)
 
 ### AnimationMode
 
@@ -889,7 +892,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `Zoom`, the output will look like on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/ZoomAnimation.gif)
 
 #### Fade Animation
 
@@ -910,7 +913,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `Fade`, the output will look like on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/FadeAnimation.gif)
 
 #### SlideOnLeft Animation
 
@@ -931,7 +934,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `SlideOnLeft`, the output will look like on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
 #### SlideOnTop Animation
 
@@ -952,7 +955,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `SlideOnTop`, the output will look like on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/SlideOnTopAnimation.gif)
 
 #### None
 
@@ -973,7 +976,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `None`, the output will look like on Android device as shown below.
-![](GettingStarted_images/NuGetInstall.png)
+![](GettingStarted_images/AnimationMode_None.gif)
 
 ### Sample link
 
