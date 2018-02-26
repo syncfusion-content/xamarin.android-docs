@@ -66,7 +66,7 @@ documentation: ug
 
 ## Minimum Appointment Height
 
-[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
 
 {% highlight c# %}
 
@@ -107,7 +107,7 @@ documentation: ug
 				EndTime = endTime,
 				Subject = "Client Meeting",
 				MinHeight = 30,
-				Color = Color.FromHex("#FFD80073")
+				Color = Color.ParseColor("#FFD80073")
 
             });
 		scheduleAppointmentCollection.Add(new ScheduleAppointment()
@@ -115,7 +115,7 @@ documentation: ug
                 StartTime = startTime1,
 				EndTime = endTime1,
 				Subject = "Anniversary",
-				Color = Color.FromHex("#FFA2C139")
+				Color = Color.ParseColor("#FFA2C139")
 
             });
 		schedule.Appointments= scheduleAppointmentCollection;
