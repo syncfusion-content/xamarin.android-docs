@@ -55,7 +55,7 @@ You can customize the interval of timeslots in `DayView` by setting [TimeInterva
 
 ![](daymodule_images/timeinterval_day.png)
 
->**Note:**
+>**Note**:
 
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"h a"`. You can refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#time-label-formatting) for changing TimeFormat value.
 
