@@ -59,9 +59,9 @@ documentation : ug
         void LoadStream()
         {
 
-            using (StreamReader str = new StreamReader(Assets.Open("Chart.txt")))
+            using (StreamReader src = new StreamReader(Assets.Open("Chart.txt")))
             {
-                string content = str.ReadToEnd();
+                string content = src.ReadToEnd();
                 byte[] byteArray = Encoding.ASCII.GetBytes(content);
                 MemoryStream stream = new MemoryStream(byteArray);
                 if (stream != null)
