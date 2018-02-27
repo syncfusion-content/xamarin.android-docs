@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 --- 
 
-### AppearanceMode
+# AppearanceMode
 
 SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AppearanceMode.html). By default, "AppearanceMode.OneButton" is set. You can change the appearance of the SfPopupLayout by using `SfPopupLayout.PopupView.AppearanceMode` property.
 Two different appearance mode in SfPopupLayout as listed below.
@@ -27,11 +27,11 @@ Two different appearance mode in SfPopupLayout as listed below.
 </tr>
 </table>
 
-#### OneButton
+## OneButton
 
 In the below code example we have set `SfPopupLayout.PopupView.AppearanceMode` property as “OneButton” which displays only AcceptButton in the FooterView.
 
-##### Type A:
+### Type A:
 
 {% highlight c# %}
 
@@ -79,11 +79,11 @@ namespace GettingStarted
 If we run the above sample with `AppearanceMode` as `OneButton`, the output will look like on Android device as shown below.
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
-#### TwoButton
+## TwoButton
 
 In the below code example we have set `SfPopupLayout.PopupView.AppearanceMode` property as `TwoButton` which displays both DeclineButton and AcceptButton in the FooterView.
 
-##### Type A:
+### Type A:
 
 {% highlight c# %}
 
