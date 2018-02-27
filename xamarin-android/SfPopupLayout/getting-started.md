@@ -239,4 +239,4 @@ By default, you can choose from the following Animations available in SfPopupLay
 
 ### Sample link
 
-You can download the source code of this sample [here]().
+You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1414679923).
