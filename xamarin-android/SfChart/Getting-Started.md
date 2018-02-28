@@ -181,6 +181,44 @@ series.TooltipEnabled = true;
 
 Refer this [link](https://help.syncfusion.com/xamarin-android/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) to customize tooltip.
 
+The following code example gives you the complete code for creating a chart.
+
+{% highlight C# %} 
+
+ SfChart chart = new SfChart(this);
+ chart.Title.Text = "Chart";
+ chart.SetBackgroundColor(Color.White);
+
+//Initializing primary axis
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.Title.Text = "Name";
+chart.PrimaryAxis = primaryAxis;
+
+//Initializing secondary Axis
+NumericalAxis secondaryAxis = new NumericalAxis();
+secondaryAxis.Title.Text = "Height (in cm)";
+chart.SecondaryAxis = secondaryAxis;
+
+ViewModel viewModel = new ViewModel();
+
+//Initializing column series
+ColumnSeries series = new ColumnSeries();    
+series.ItemsSource = viewModel.Data;
+series.XBindingPath = "Name";
+series.YBindingPath = "Height";
+series.Label = "Heights";
+            
+series.DataMarker.ShowLabel = true;
+series.TooltipEnabled = true;
+chart.Legend.Visibility = Visibility.Visible;
+
+chart.Series.Add(series);
+SetContentView(chart);
+
+{% endhighlight %}
+
+The following chart is created as a result of the above codes.
+
 ![](Getting-Started_images/img2.png)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Android/Samples/Chart_GettingStarted.zip)
