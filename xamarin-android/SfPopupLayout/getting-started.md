@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides a quick overview for working with SfPopupLayout in Xamarin.Android. Walk through the entire process of creating a simple application with this control.
 
-## Assembly deployment
+## Assembly Deployment
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib this installation folders.
 
@@ -202,7 +202,7 @@ Any view can be added as the popup content using the [SfPopupLayout.PopupView.Co
 
 Refer to the following code example in which a text view is added as popup content:
 
-{% highlight c# %}}
+{% highlight c# %}
 
 //MainActivity.cs
 
@@ -224,7 +224,7 @@ protected override void OnCreate(Bundle bundle)
 N> Setting of ContentView is same for both Type A and Type B
 
 If we run the above sample, the below output will appears on Android device as shown below.
-![]GettingStarted_images/ContentView.png)
+![](GettingStarted_images/ContentView.png)
 
 ### Customizing Animations
 
