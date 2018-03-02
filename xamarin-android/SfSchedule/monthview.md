@@ -204,8 +204,7 @@ schedule.MonthViewSettings = monthViewSettings;
 ![](monthview_images/DateFormat_Month.png)
 
 ### ViewHeader Tapped Event
-We can handle single tapped action for `ViewHeader` by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
-[Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) contains date time value of selected date in `ViewHeader`.
+We can handle single tap action of `ViewHeader` by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
 
 {% highlight c# %}
 //Creating  new instance of Schedule
@@ -217,6 +216,7 @@ schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
 {% highlight c# %}
 void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
 {
+var calendar = e.Calendar;
 }
 {% endhighlight %}
 
@@ -401,13 +401,13 @@ You can customize the Month inline view Appointment by using [MonthInlineAppoint
 
 ![](monthview_images/inlinecustomview.png)
 
-## Selection:
+## Selection
 You can customize the default appearance of selection UI in the month cells.
 
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 
-### Selection customization using style:
+### Selection customization using style
 You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
 
 {% highlight C# %}
@@ -425,7 +425,7 @@ You can customize the month cell selection by using [SelectionStyle](https://hel
 
 ![](monthview_images/SelectionStyle_Month.png)
 
-### Selection customization using custom View:
+### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionView.html) property of `SfSchedule`.
 {% highlight C# %}
 
@@ -464,8 +464,7 @@ You can clear the selection by setting [SelectedDate]( https://help.syncfusion.c
 
 {% endhighlight %}
 
-You can download the entire source code of this demo for Xamarin.Android from
-here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection-303833588.zip)
+You can download the entire source code of this demo for Xamarin.Android from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection-303833588.zip)
 
 >**Note**:
 * `SfSchedule` does not support multiple selection.
