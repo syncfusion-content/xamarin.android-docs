@@ -67,4 +67,34 @@ You can collapse the default header of schedule by setting `HeaderHeight` proper
 
 {% endhighlight %}
 
-You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Android_Sample-935057749.zip) 
+You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Android_Sample-935057749.zip)
+
+## Header Date Format
+
+We can customize the date format of SfSchedule Header by using [ScheduleDateHeaderFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ScheduleDateHeaderFormat.html) property of `SfSchedule`.
+
+{% highlight c# %}
+//Creating instance of Schedule
+SfSchedule schedule = new SfSchedule();
+//Customizing date format
+schedule.ScheduleDateHeaderFormat = "LLL yy";
+{% endhighlight %}
+
+![](Header_images/HeaderDateFormat.png)
+
+## Header Tapped Event
+
+We can handle single tap action of `Header` by using [HeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~HeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when `Header` is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
+
+{% highlight c# %}
+//Creating  new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.HeaderTapped += Handle_HeaderTapped;
+{% endhighlight %}
+
+{% highlight c# %}
+void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
+{
+var calendar = e.Calendar;
+}
+{% endhighlight %}
