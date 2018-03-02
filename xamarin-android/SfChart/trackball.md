@@ -159,9 +159,9 @@ Following screenshot illustrates the customization of trackball elements.
 
 ![](trackball_images/trackball_img3.png)
 
-**Custom Trackball Template**
+**Custom View**
 
-You can customize the appearance of Trackball label with your own template by overriding [`GetView`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~GetView(ChartSeries,Object,Int32).html) method of [`ChartTrackballBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html).
+You can customize the appearance of Trackball label with your own view by overriding [`GetView`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~GetView(ChartSeries,Object,Int32).html) method of [`ChartTrackballBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html). You can get the respective series, underlying object and index of the data point from argument of [`GetView`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~GetView(ChartSeries,Object,Int32).html) method.
 
 {% highlight c# %} 
 [C#]
