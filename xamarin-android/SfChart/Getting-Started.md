@@ -181,6 +181,59 @@ series.TooltipEnabled = true;
 
 Refer this [link](https://help.syncfusion.com/xamarin-android/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) to customize tooltip.
 
+The following code example gives you the complete code for creating a chart.
+
+{% highlight C# %} 
+
+using Com.Syncfusion.Charts;
+
+namespace Chart_GettingStarted
+{
+    [Activity( MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            SfChart chart = new SfChart(this);
+            chart.Title.Text = "Chart";
+            chart.SetBackgroundColor(Color.White);
+	
+			//Initializing view model
+			ViewModel model = new ViewModel();
+
+            //Initializing primary axis
+            CategoryAxis primaryAxis = new CategoryAxis();
+            primaryAxis.Title.Text = "Name";
+            chart.PrimaryAxis = primaryAxis;
+
+            //Initializing secondary Axis
+            NumericalAxis secondaryAxis = new NumericalAxis();
+            secondaryAxis.Title.Text = "Height (in cm)";
+            chart.SecondaryAxis = secondaryAxis;
+
+            //Initializing column series
+            ColumnSeries series = new ColumnSeries();
+            series.ItemsSource = viewModel.Data;
+            series.XBindingPath = "Name";
+            series.YBindingPath = "Height";
+          
+            series.DataMarker.ShowLabel = true;
+            series.Label = "Heights";
+            series.TooltipEnabled = true;
+
+            chart.Series.Add(series);
+            chart.Legend.Visibility = Visibility.Visible;    
+            SetContentView(chart);
+        }
+    }
+}
+
+{% endhighlight %}
+
+The following chart is created as a result of the above codes.
+
 ![](Getting-Started_images/img2.png)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Android/Samples/Chart_GettingStarted.zip)
