@@ -181,7 +181,7 @@ series.TooltipEnabled = true;
 
 Refer this [link](https://help.syncfusion.com/xamarin-android/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) to customize tooltip.
 
-The following code example gives you the complete code for creating a chart.
+The following code example gives you the complete code of above configurations.
 
 {% highlight C# %} 
 
