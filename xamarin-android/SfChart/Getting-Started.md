@@ -185,35 +185,50 @@ The following code example gives you the complete code for creating a chart.
 
 {% highlight C# %} 
 
- SfChart chart = new SfChart(this);
- chart.Title.Text = "Chart";
- chart.SetBackgroundColor(Color.White);
+using Com.Syncfusion.Charts;
 
-//Initializing primary axis
-CategoryAxis primaryAxis = new CategoryAxis();
-primaryAxis.Title.Text = "Name";
-chart.PrimaryAxis = primaryAxis;
+namespace Chart_GettingStarted
+{
+    [Activity( MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
 
-//Initializing secondary Axis
-NumericalAxis secondaryAxis = new NumericalAxis();
-secondaryAxis.Title.Text = "Height (in cm)";
-chart.SecondaryAxis = secondaryAxis;
+            SfChart chart = new SfChart(this);
+            chart.Title.Text = "Chart";
+            chart.SetBackgroundColor(Color.White);
+	
+			//Initializing view model
+			ViewModel model = new ViewModel();
 
-ViewModel viewModel = new ViewModel();
+            //Initializing primary axis
+            CategoryAxis primaryAxis = new CategoryAxis();
+            primaryAxis.Title.Text = "Name";
+            chart.PrimaryAxis = primaryAxis;
 
-//Initializing column series
-ColumnSeries series = new ColumnSeries();    
-series.ItemsSource = viewModel.Data;
-series.XBindingPath = "Name";
-series.YBindingPath = "Height";
-series.Label = "Heights";
-            
-series.DataMarker.ShowLabel = true;
-series.TooltipEnabled = true;
-chart.Legend.Visibility = Visibility.Visible;
+            //Initializing secondary Axis
+            NumericalAxis secondaryAxis = new NumericalAxis();
+            secondaryAxis.Title.Text = "Height (in cm)";
+            chart.SecondaryAxis = secondaryAxis;
 
-chart.Series.Add(series);
-SetContentView(chart);
+            //Initializing column series
+            ColumnSeries series = new ColumnSeries();
+            series.ItemsSource = viewModel.Data;
+            series.XBindingPath = "Name";
+            series.YBindingPath = "Height";
+          
+            series.DataMarker.ShowLabel = true;
+            series.Label = "Heights";
+            series.TooltipEnabled = true;
+
+            chart.Series.Add(series);
+            chart.Legend.Visibility = Visibility.Visible;    
+            SetContentView(chart);
+        }
+    }
+}
 
 {% endhighlight %}
 
