@@ -158,3 +158,48 @@ chart.Behaviors.Add(trackballBehavior);
 Following screenshot illustrates the customization of trackball elements.
 
 ![](trackball_images/trackball_img3.png)
+
+**Custom Trackball Template**
+
+You can customize the appearance of Trackball label with your own template by overriding [`GetView`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~GetView(ChartSeries,Object,Int32).html) method of [`ChartTrackballBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html).
+
+{% highlight c# %} 
+[C#]
+
+protected override View GetView(ChartSeries series, object data, int index)
+        {
+            LinearLayout parentLayout = new LinearLayout(Chart.Context);
+            parentLayout.SetPadding(2, 2, 2, 2);
+            parentLayout.Orientation = Orientation.Horizontal;
+            LinearLayout layout = new LinearLayout(Chart.Context);
+            layout.Orientation = Orientation.Vertical;
+
+            ImageView image = new ImageView(Chart.Context);
+            image.LayoutParameters = new ViewGroup.LayoutParams(new LinearLayout.LayoutParams
+                ((int)(Chart.Context.Resources.DisplayMetrics.Density * 40), (int)(Chart.Context.Resources.DisplayMetrics.Density * 40)));
+            image.SetPadding(0, 2, 0, 2);
+            image.SetImageResource(Resource.Drawable.grain);
+
+            TextView text1 = new TextView(Chart.Context);
+            text1.SetTextColor(Color.White);
+            text1.Text = (data as Model).YValue + "%";
+            text1.TextSize = 12;
+            text1.SetTypeface(Typeface.SansSerif, TypefaceStyle.Bold);
+            layout.AddView(text1);
+
+            TextView text2 = new TextView(Chart.Context);
+            text2.Text = "Efficiency";
+            text2.TextSize = 10;
+            text2.SetTextColor(Color.White);
+            layout.AddView(text2);
+            layout.SetPadding(5, (int)(Chart.Context.Resources.DisplayMetrics.Density * 5), 2, 0);
+
+            parentLayout.AddView(image);
+            parentLayout.AddView(layout);
+
+            return parentLayout;
+        }
+
+{% endhighlight %}
+
+![](trackball_images/trackball_img5.png)
