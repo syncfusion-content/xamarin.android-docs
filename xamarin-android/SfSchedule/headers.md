@@ -71,13 +71,13 @@ You can get the complete sample for customizing the Header of Schedule [here](ht
 
 ## Header Date Format
 
-We can customize the date format of SfSchedule Header by using [ScheduleHeaderDateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ScheduleDateHeaderFormat.html) property of `SfSchedule`.
+We can customize the date format of SfSchedule Header by using [ScheduleDateHeaderFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ScheduleDateHeaderFormat.html) property of `SfSchedule`.
 
 {% highlight c# %}
 //Creating instance of Schedule
 SfSchedule schedule = new SfSchedule();
 //Customizing date format
-schedule.ScheduleHeaderDateFormat = "LLL yy";
+schedule.ScheduleDateHeaderFormat = "LLL yy";
 {% endhighlight %}
 
 ![](Header_images/HeaderDateFormat.png)
@@ -85,8 +85,7 @@ schedule.ScheduleHeaderDateFormat = "LLL yy";
 ## Header Tapped Event
 
 We can handle single tap action for `Header` by using [HeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~HeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when `Header` is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
-
-[Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) contains date time value visible date, first date time value of visible dates or first date time value of visible Month. 
+[Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) contains date time value of visible date. 
 
 {% highlight c# %}
 //Creating  new instance of Schedule
