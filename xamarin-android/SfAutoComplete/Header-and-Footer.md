@@ -21,10 +21,11 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
 {% highlight C# %}
 	
 	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
+	countryList.Add ("Uganda");
+	countryList.Add ("Ukraine");
+	countryList.Add ("United Arab Emirates");
+	countryList.Add ("United Kingdom");
+	countryList.Add ("United States");
 	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
@@ -32,7 +33,7 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
 
 
 	 TextView textView = new TextView(context);
-            textView.Text = "Search for"
+            textView.Text = "Search for U"
             textView.TextSize = 16;
             textView.SetPadding(20, 0, 20, 0);
 			DropDownHeaderView header = new DropDownHeaderView();
@@ -50,15 +51,17 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
 The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
 
 List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
+	countryList.Add ("Uganda");
+	countryList.Add ("Ukraine");
+	countryList.Add ("United Arab Emirates");
+	countryList.Add ("United Kingdom");
+	countryList.Add ("United States");
 	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 	countryAutoComplete.DropDownHeaderViewHeight=50;
 	countryAutoComplete.ShowDropDownHeaderView=true;
+	
 
 ![](images/Header.png)
 
@@ -71,10 +74,11 @@ We can provide Footer Content at the bottom of the AutoComplete's Suggestion box
 {% highlight C# %}
 	
 	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
+	countryList.Add ("Uganda");
+	countryList.Add ("Ukraine");
+	countryList.Add ("United Arab Emirates");
+	countryList.Add ("United Kingdom");
+	countryList.Add ("United States");
 	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
 	countryAutoComplete.ShowDropDownFooterView=true;
@@ -97,10 +101,11 @@ We can provide Footer Content at the bottom of the AutoComplete's Suggestion box
 The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownFooterViewHeight`.
 	
 List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
+    countryList.Add ("Uganda");
+	countryList.Add ("Ukraine");
+	countryList.Add ("United Arab Emirates");
+	countryList.Add ("United Kingdom");
+	countryList.Add ("United States");
 	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
     countryAutoComplete.DropDownFooterViewHeight= 50;

@@ -23,7 +23,7 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
 	countryAutoComplete.MaximumSuggestion="2";
-	countryAutoComplete.LoadMoreText="Load More";
+	countryAutoComplete.LoadMoreText="LOAD MORE";
 	 
 {% endhighlight %}
 
