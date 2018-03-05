@@ -23,16 +23,14 @@ By default, schedule control is available with en locale, which is English.
           //creating new instance for schedule
             SfSchedule schedule = new SfSchedule(this);
           //setting schedule view
-            schedule.ScheduleView = ScheduleView.DayView;
+            schedule.ScheduleView = ScheduleView.WeekView;
           //setting locale for the control
-            schedule.Locale = new Locale("fr");
+            schedule.Locale = new Locale("ja");
  
 {% endhighlight %}   
    
 
->**Note:** AM/PM in the timeline will not be localized in the Schedule views
-
-![](Localization_images/Localization.png)   
+![](Localization_images/Localization_Android.png)   
 
 ## Change custom texts in the control.
 
@@ -48,3 +46,17 @@ You can localize the custom strings used in the schedule control. You can locali
 	 
 {% endhighlight %}   
 
+Android can select and load resources from different directories, based on the device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages we can follow the below steps.
+
+The procedure for creating strings.xml files is as follows:
+
+*	Translate the strings.xml file to each language.
+*	Create new folders under resource as values-`ar`, values-`de`, values-`en` and values-`fr` (The original values folder already exists).
+*	Place the translated strings.xml files in the respective folders.
+
+You can download the entire source code of this demo for Xamarin.Android from
+here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Android-352507966.zip).
+
+![](Localization_images/localization_img2.jpeg)
+
+>**Note:** The corresponding values folder loads only depends on the device configuration and locale.
