@@ -184,7 +184,7 @@ Suppose, you want to draw a strip line that should not stretch along its associa
 * [`SegmentEnd`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentEnd.html) – Used to change the segment end value. Value correspond to associated axis.
 * [`SegmentAxisName`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentAxisName.html) – Specify the name of the associated axis name.
 
-N> You can set the double or DateTime value for SegmentStart and SegmentEnd properties based on the associated axis type.
+N> You can set the double or DateTime value for [`SegmentStart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentStart.html) and [`SegmentEnd`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~SegmentEnd.html) properties based on the associated axis type.
 
 Following code snippet shows how to set the segment start and end value if the associated axis type is numerical.
 
