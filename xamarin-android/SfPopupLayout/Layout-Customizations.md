@@ -176,6 +176,8 @@ namespace GettingStarted
 
             popupLayout = new SfPopupLayout(this);
             popupLayout.Content = layout;
+
+            // Adding Header view of the SfPopupLayout.
             popupLayout.PopupView.HeaderView = headerView;
 
             SetContentView(popupLayout);
@@ -235,6 +237,8 @@ namespace GettingStarted
 
             popupLayout = new SfPopupLayout(this);
             popupLayout.Content = layout;
+
+            // Adding Footer view of the SfPopupLayout
             popupLayout.PopupView.FooterView = footerView;
 
             SetContentView(popupLayout);

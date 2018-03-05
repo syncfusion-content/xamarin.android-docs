@@ -63,15 +63,12 @@ SfPopupLayout control can be configured entirely in C# code. To create a sample 
 
 In this walk through, you will create a new application with SfPopupLayout.
 
-* [Creating the project](#creating-the-project)  
 * [Adding SfPopupLayout in Xamarin.Android](#adding-sfpopuplayout-in-xamarin.android) 
 * [Adding a TextView as the ContentView of the SfPopupLayout](#adding-a-textview-as-the-contentview-of-the-sfpopuplayout) 
 * [AppearanceMode](#appearancemode) 
 * [Showing SfPopupLayout at various position](#showing-sfPopupLayout-at-various-position)
 * [AnimationMode](#animationmode)
 * [Sample Link](#sample-link)
-
-### Creating the project
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
@@ -91,7 +88,7 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 5. Create an instance of SfPopupLayout control and set it as ContentView of that Activity. Refer to the following code example to add this control to the application:
 
-#### Type A:
+#### Displaying Popup when SfPopupLayout is set as root view :
 
 {% highlight c# %}
 
@@ -133,7 +130,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-#### Type B:
+#### Displaying Popup when SfPopupLayout is not set as root view :
 
 {% highlight c# %}
 
@@ -182,11 +179,12 @@ SfPopupLayout allows you to show the Popup content at various position based on 
 
 Following are the list of options available to position the SfPopupLayout in your desired position
 
-* [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~IsOpen.html) property - Shows SfPopupLayout at the center.
-* [SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Show.html) - It is similar to SfPopupLayout.IsOpen property.
-* [SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Show.html) - Shows SfPopupLayout at the specified X and y position.
-* [SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) - Shows SfPopupLayout at the touch point.
-* [SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~ShowRelativeToView.html) - Choose to show SfPopupLayout at any of the 8 positions relative to the specified view.
+* Center Positioning - Use [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~IsOpen.html) property or [SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Show.html) to display SfPopupLayout at the center.
+* Absolute Positioning - Use [SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Show.html) to display SfPopupLayout at the specified X and y position.
+* OnTouch - Use [SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) to display SfPopupLayout at the touch point.
+* Relative Positioning - Use [SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~ShowRelativeToView.html) to display SfPopupLayout at any of the 8 positions relative to the specified view.
+
+More information on positioning the popup in this [link](https://help.syncfusion.com/xamarin-android/sfpopuplayout/popup-positioning)
 
 ### Customizing Layouts
 
@@ -196,11 +194,13 @@ By default, you can choose from the following layouts available in SfPopupLayout
 * [TwoButton](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AppearanceMode.html) - Shows SfPopupLayout with TwoButtons in the FooterView.
 * You can also customize the entire view of the popup by loading templates or custom views individually for the header, body and footer of the popup.
 
-#### Adding a TextView as the ContentView of the SfPopupLayout
+#### Load a View as ContentView of the SfPopupLayout
 
 Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ContentView.html) property to refresh it.
 
 Refer to the following code example in which a text view is added as popup content:
+
+##### Displaying Popup when SfPopupLayout is set as root view:
 
 {% highlight c# %}
 
@@ -229,13 +229,15 @@ If we run the above sample, the below output will appears on Android device as s
 ### Customizing Animations
 
 Built-in animations are available in SfPopupLayout, which is applied when the PopupView opens and closes in the screen.
-By default, you can choose from the following Animations available in SfPopupLayout using the property [SfPopupLayout.AnimationMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AnimationMode.html).
+By default, you can choose from the following animations available in SfPopupLayout using the property [SfPopupLayout.AnimationMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AnimationMode.html).
 
 * [Zoom](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AnimationMode.html) - Zoom-out animation will be applied if the PopupView opens and zoom-in animation will be applied if the PopupView closes. This is the default AnimationMode
 * [Fade](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AnimationMode.html) - Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes.
 * [SlideOnLeft](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AnimationMode.html) - PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.
 * [SlideOnTop](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AnimationMode.html) - PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.
 * [None](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AnimationMode.html) - Animation will not be applied.
+
+More information on animations of popup in this [link](https://help.syncfusion.com/xamarin-android/sfpopuplayout/popup-animations)
 
 ### Sample link
 
