@@ -115,6 +115,20 @@ diagram.AddConnector(connector);
 {% endtabs %}
 ![](Connector_images/Connector_img4.jpeg)
 
+## Curve
+Curve segments are used to create links between two points, nodes or ports with curve segments. The following code example illustrates how to create a default curve segment.
+{% tabs %}
+{% highlight c# %}
+// creating connector instance with define its segment type
+Connector connector = new Connector(this);
+connector.SourcePoint = new System.Drawing.PointF(100, 100);
+connector.TargetPoint = new System.Drawing.PointF(300, 300);
+connector.SegmentType = SegmentType.CurveSegment;
+diagram.AddConnector(connector);
+{% endhighlight %}
+{% endtabs %}
+![](Connector_images/Connector_img5.jpeg)
+
 ## Decorator
 The start and end points of a connector can be decorated with some customizable shapes like arrow, circle, diamond, and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of connector.
 The SourceDecoratorStyle and TargetDecoratorStyle properties define the shape of the decorators. The following code example illustrates how to create decorators of various shapes:
@@ -130,7 +144,7 @@ connector.SegmentType = SegmentType.StraightSegment;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img5.jpeg)
+![](Connector_images/Connector_img6.jpeg)
 
 ## Remove Connector
 There are two ways to remove connector from the connection, they are the following:
@@ -183,7 +197,7 @@ StrokeWidth = 4
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
+![](Connector_images/Connector_img7.jpeg)
 
 ## Decorator Appearance
 The following code example illustrates how to customize the appearance of the decorator:
@@ -215,5 +229,5 @@ Size = 12
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![](Connector_images/Connector_img8.jpeg)
 
