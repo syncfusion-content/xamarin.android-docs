@@ -84,9 +84,9 @@ documentation : ug
 
         void LoadEdits_Click(object sender, EventArgs e)
         {
-            using (StreamReader sr = new StreamReader(Assets.Open("Chart.txt")))
+            using (StreamReader str = new StreamReader(Assets.Open("Chart.txt")))
             {
-                string content = sr.ReadToEnd();
+                string content = str.ReadToEnd();
                 byte[] byteArray = Encoding.ASCII.GetBytes(content);
                 MemoryStream stream = new MemoryStream(byteArray);
                 if (stream != null)
