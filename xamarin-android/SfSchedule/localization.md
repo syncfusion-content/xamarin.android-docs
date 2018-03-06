@@ -23,16 +23,14 @@ By default, schedule control is available with en locale, which is English.
           //creating new instance for schedule
             SfSchedule schedule = new SfSchedule(this);
           //setting schedule view
-            schedule.ScheduleView = ScheduleView.DayView;
+            schedule.ScheduleView = ScheduleView.WeekView;
           //setting locale for the control
-            schedule.Locale = new Locale("fr");
+            schedule.Locale = new Locale("ja");
  
 {% endhighlight %}   
    
 
->**Note:** AM/PM in the timeline will not be localized in the Schedule views
-
-![](Localization_images/Localization.png)   
+![](Localization_images/Localization_Android.png)   
 
 ## Change custom texts in the control.
 

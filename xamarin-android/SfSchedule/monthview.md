@@ -185,6 +185,41 @@ You can customize the View Header appearance by using [ViewHeaderStyle](https://
 
 ![](monthview_images/viewheaderstyle.png)
 
+### ViewHeader Date Format
+We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DateFormat.html) and [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DayFormat.html) properties of `MonthLabelSettings`.
+
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.MonthView;
+//Creating new instance of MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+//Creating new instance of MonthLabelSettings
+MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
+//Customizing date format
+monthLabelSettings.DateFormat = "dd";
+monthLabelSettings.DayFormat = "EEEE";
+monthViewSettings.MonthLabelSettings = monthLabelSettings;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+
+![](monthview_images/DateFormat_Month.png)
+
+### ViewHeader Tapped Event
+We can handle single tap action of `ViewHeader` by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
+
+{% highlight c# %}
+//Creating  new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.ScheduleView = ScheduleView.MonthView;
+schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+{% endhighlight %}
+
+{% highlight c# %}
+void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+{
+var calendar = e.Calendar;
+}
+{% endhighlight %}
+
 ## MonthCell Appearance 
 You can customize the Month view cell in three ways,
 
@@ -366,4 +401,87 @@ You can customize the Month inline view Appointment by using [MonthInlineAppoint
 
 ![](monthview_images/inlinecustomview.png)
 
+## Selection
+You can customize the default appearance of selection UI in the month cells.
 
+* [Selection customization using style](#selection-customization-using-style)
+* [Selection customization using custom View](#selection-customization-using-custom-view)
+
+### Selection customization using style
+You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
+
+{% highlight C# %}
+
+    schedule.ScheduleView = ScheduleView.MonthView;
+    //Create new instance of SelectionStyle
+    SelectionStyle selectionStyle = new SelectionStyle();
+    selectionStyle.BackgroundColor = Color.Blue;
+    selectionStyle.BorderColor = Color.Black;
+    selectionStyle.BorderThickness = 5;
+    selectionStyle.CornerRadius = 5;
+    schedule.SelectionStyle = selectionStyle;
+    
+{% endhighlight %}
+
+![](monthview_images/SelectionStyle_Month.png)
+
+### Selection customization using custom View
+You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionView.html) property of `SfSchedule`.
+{% highlight C# %}
+
+    schedule.ScheduleView = ScheduleView.MonthView;
+    //Add the CustomView
+    Button customView = new Button(this);
+    customView.Text = "+NewEvent";
+    customView.SetBackgroundColor(Color.Rgb(255, 152, 0));
+    customView.SetTextColor(Color.White);
+    schedule.SelectionView = customView;
+    
+{% endhighlight %}
+
+![](monthview_images/SelectionView_Month.png)
+
+### Programmatic selection
+You can programmatically select the specific cell by setting corresponding date to [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
+
+{% highlight C# %}
+
+    // Creating instance of calendar
+    Calendar calendar = Calendar.Instance;
+
+    // Setting a date and time to select
+    currentDate.Set(2017, 09, 04);
+    schedule.SelectedDate = currentDate;
+
+{% endhighlight %}
+
+You can clear the selection by setting [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) as null.
+
+{% highlight C# %}
+
+    // Setting null value to deselect
+    schedule.SelectedDate = null;
+
+{% endhighlight %}
+
+You can download the entire source code of this demo for Xamarin.Android from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection-303833588.zip)
+
+>**Note**:
+* `SfSchedule` does not support multiple selection.
+* `SfSchedule` supports two-way binding of `SelectedDate` property.
+
+![](monthview_images/selection_Month.png)
+
+## Today Background Color
+We can customize the current date background of  `SfSchedule`  by using [TodayBackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~TodayBackground.html) property of `MonthViewSettings`.
+
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.MonthView;
+//Creating new instance of MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+//Customizing background color
+monthViewSettings.TodayBackgroundColor = Color.Red;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+
+![](monthview_images/TodayBackground.png)
