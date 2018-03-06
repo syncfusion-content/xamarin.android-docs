@@ -9,11 +9,11 @@ documentation: ug
 
 # Validation 
 
-SfDataForm allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error message is shown at the bottom of the editor.
+The data form validates the data and displays hints in the case of validation is not passed. In case of invalid data, the error message is shown at the bottom of the editor.
 
 ## Built in validations
 
-Below are the supported built in validations.
+The supported built in validations are as follows:
 
 * IDataErrorInfo
 * INotifyDataErrorInfo
@@ -188,7 +188,8 @@ public class EmployeeInfo : INotifyDataErrorInfo, INotifyPropertyChanged
 ### Data annotations
 
 You can validate the data using data annotation attributes.
-The numeric type like int, double, decimal properties can be validated using [Range](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx) attributes.
+
+The numeric type like Int, Double, Decimal properties can be validated using the [Range](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx) attribute.
 
 {% tabs %}
 {% highlight c# %}
@@ -206,7 +207,7 @@ public int EmployeeID
 {% endhighlight %}
 {% endtabs %}
 
-The string type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute.aspx), [StringLength](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx) attributes.
+The String type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute.aspx) and [StringLength](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx) attributes.
 
 {% tabs %}
 {% highlight c# %}
@@ -227,7 +228,7 @@ public string Name
 {% endhighlight %}
 {% endtabs %}
 
-The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx).
+The data that has heterogeneous type (combination of number, special character) can be validated using the [RegularExpressions](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx).
 
 {% tabs %}
 {% highlight c# %}
@@ -242,9 +243,9 @@ public string CustomerID
 {% endhighlight %}
 {% endtabs %}
 
-**Date range attribute**
+#### Date range attribute
 
-You can validate date time value using date range attribute.
+You can validate the date time value using date range attribute.
 
 {% tabs %}
 {% highlight c# %}
@@ -268,9 +269,9 @@ public DateTime JoinDate
 
 ## Validation mode
 
-[ValidationMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.ValidationMode.html) determines when the value should be validated.
+The [ValidationMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.ValidationMode.html) determines when the value should be validated.
 
-Below are the supported validation modes.
+The supported validation modes are as follows:
 
 * LostFocus
 * PropertyChanged
@@ -282,19 +283,19 @@ dataForm.ValidationMode = ValidationMode.LostFocus;
 {% endhighlight %}
 {% endtabs %}
 
-**LostFocus**
+### LostFocus
 
-If the commit mode is LostFocus, value will be validated when the editor lost its focus.
+If the commit mode is LostFocus, the value will be validated when the editor lost its focus.
 
-**PropertyChanged**
+### PropertyChanged
 
-Value will be validated immediately when it is changed.
+The value will be validated immediately when it is changed.
 
-**Explicit**
+### Explicit
 
-Value should be validated manually by calling [SfDataForm.Validate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate().html) or [SfDataForm.Validate (propertyName)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate(String).html) method.
+The value should be validated manually by calling the [SfDataForm.Validate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate().html) or [SfDataForm.Validate (propertyName)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate(String).html) method.
 
-Below code validates the value of all the properties in data object.
+The following code validates the value of all the properties in the data object:
 
 {% tabs %}
 {% highlight c# %}
@@ -302,7 +303,7 @@ dataForm.Validate();
 {% endhighlight %}
 {% endtabs %}
 
-If you want to validate specific property value, you need to pass property name as argument.
+To validate the specific property value, pass the property name as argument.
 
 {% tabs %}
 {% highlight c# %}
@@ -310,7 +311,7 @@ dataForm.Validate("Name");
 {% endhighlight %}
 {% endtabs %}
 
-You can determine whether DataForm or property is valid or not by using `Validate` method.
+You can determine whether the data form or property is valid or not by using the `Validate` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -319,13 +320,13 @@ bool isPropertyValid = dataForm.Validate("Property");
 {% endhighlight %}
 {% endtabs %}
 
-If DataForm or property is valid, `true` will be returned. Else `false` will be returned.
+If the data form or property is valid, `true` will be returned. Or else `false` will be returned.
 
-N> For validating value, new value should be committed in data object. So `ValidationMode` takes higher priority than `CommitMode`.
+N> For validating value, the new value should be committed in data object. So, `ValidationMode` takes higher priority than `CommitMode`.
 
-**Custom validation through events**
+#### Custom validation through events
 
-You can validate the data using [Validating](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validating_EV.html) event of SfDataForm.
+You can validate the data using the [Validating](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validating_EV.html) event of the data form.
 
 {% tabs %}
 {% highlight c# %}
@@ -344,7 +345,7 @@ private void DataForm_Validating(object sender, ValidatingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the notification after completing validation using [Validated](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validated_EV.html) event of SfDataForm.
+You can get the notification after completing validation using the [Validated](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validated_EV.html) event of the data form.
 
 {% tabs %}
 {% highlight c# %}
@@ -357,9 +358,9 @@ private void DataForm_Validated(object sender, ValidatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Valid or Positive message
+## Valid or positive message
 
-If the value meets the desired criteria, you can show [valid or positive message](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DisplayOptionsAttribute~ValidMessage.html).  Like error message, valid message also will be displayed in the bottom of the editor.
+If the value meets the desired criteria, you can show the [valid or positive message](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DisplayOptionsAttribute~ValidMessage.html). As error message, the valid message will also be displayed at the bottom of the editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -380,9 +381,10 @@ public string Name
 
 ![](SfDataForm_images/ValidMessage.png)
 
-## How to validate property value based on another value
+## How to validate the property value based on another value
 
-If you want to validate one property value based on another property value, you need to use [property changed event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) and [Validate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate(String).html) method.
+To validate one property value based on another property value, use the [property changed event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) and [Validate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate(String).html) methods.
+
 Here, AccountNumber and AccountNumber1 fields are validated.
 
 {% tabs %}
