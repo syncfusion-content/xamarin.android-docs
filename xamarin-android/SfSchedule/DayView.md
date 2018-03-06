@@ -328,7 +328,7 @@ We can change the appearance of Font by setting the TextStyle property of follow
 [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) - Using text style property, customize the month inline view style. 
 [WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) - Using text style property, customize the week number style.
 
-Following steps explain how to configure cusutom fonts.
+Following steps explain how to configure custom fonts.
 
 ### Custom Font Setting in Xamarin.Android
 
