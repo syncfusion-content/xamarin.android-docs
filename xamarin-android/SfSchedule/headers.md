@@ -31,7 +31,7 @@ You can change the background color,text style and text size using properties su
 
 	HeaderStyle headerStyle = new HeaderStyle();
 	headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
-	headerStyle.TextStyle = Font.Default;
+	headerStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
 	headerStyle.TextSize = 15;
 	headerStyle.TextColor=Color.White;
 	schedule.HeaderStyle = headerStyle;
@@ -98,3 +98,7 @@ void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 var calendar = e.Calendar;
 }
 {% endhighlight %}
+
+##Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font) 

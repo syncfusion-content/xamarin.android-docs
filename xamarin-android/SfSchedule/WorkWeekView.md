@@ -26,8 +26,8 @@ You can customize the default appearance of view header in [WorkWeekView](https:
 			viewHeaderStyle.BackgroundColor = Color.Rgb(0, 150, 136);
 			viewHeaderStyle.DayTextColor = Color.Rgb(255, 255, 255);
 			viewHeaderStyle.DateTextColor = Color.Rgb(255, 255, 255);
-			viewHeaderStyle.DayTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);
-			viewHeaderStyle.DateTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);
+			viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+			viewHeaderStyle.DateTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 
@@ -333,3 +333,7 @@ You can download the entire source code of this demo for Xamarin.Android from he
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_WorkWeek.png)
+
+##Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font)

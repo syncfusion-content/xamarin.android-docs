@@ -27,8 +27,8 @@ You can customize the default appearance of view header in [DayView](https://hel
 			viewHeaderStyle.BackgroundColor = Color.Rgb(0, 150, 136);
 			viewHeaderStyle.DayTextColor = Color.Rgb(255, 255, 255);
 			viewHeaderStyle.DateTextColor = Color.Rgb(255, 255, 255);
-			viewHeaderStyle.DayTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);
-			viewHeaderStyle.DateTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);
+			viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular");
+			viewHeaderStyle.DateTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular");
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 
@@ -317,3 +317,13 @@ You can download the entire source code of this demo for Xamarin.Android from he
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_Day.png)
+
+## Custom Font
+
+We have a Text Style property for HeaderStyle, ViewHeaderStyle, AppointmentStyle, MonthInlineViewStyle, MonthCellStyle, WeekNumberStyle. Setting the custom font for the above styles, use the following steps.
+
+### Custom Font Setting in Xamarin.Android
+1.Download the Custom Font(e.g. Lobster-Regular.ttf) 
+2.Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
+3.Then, use the Custom Font name as text style.
+

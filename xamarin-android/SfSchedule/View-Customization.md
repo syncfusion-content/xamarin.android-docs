@@ -28,7 +28,7 @@ Schedule Appointment can be customized in two ways,
 
 	AppointmentStyle appointmentStyle = new AppointmentStyle();
 	appointmentStyle.TextColor = Color.Red;
-	appointmentStyle.TextStyle = Font.SystemFontOfSize(15,FontAttributes.Bold);
+	appointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
 	appointmentStyle.BorderColor = Color.Blue;
 	appointmentStyle.BorderCornerRadius = 12;
 	appointmentStyle.BorderWidth = 10;
@@ -54,7 +54,7 @@ ScheduleAppointment can be customized using the `appointmentStyle` property as f
 	e.P0.AppointmentStyle.SelectionBorderColor = Color.Blue;
 	e.P0.AppointmentStyle.SelectionTextColor = Color.Yellow;
 	e.P0.AppointmentStyle.TextColor = Color.Brown;
-	e.P0.AppointmentStyle.TextStyle = Typeface.DefaultBold;
+	e.P0.AppointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
 	};
 
 {% endhighlight %}
@@ -97,7 +97,7 @@ MonthView can be customized by setting monthCellStyle properties such as TextCol
 	monthCellStyle.BackgroundColor = Color.Gray;
 	monthCellStyle.TextColor = Color.Blue;
 	monthCellStyle.TextSize = 12;
-	monthCellStyle.TextStyle = Typeface.DefaultBold;
+	monthCellStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
 	schedule.MonthCellStyle = monthCellStyle;
 
 {% endhighlight %}
@@ -117,7 +117,7 @@ Month cells can be customized using the `CellStyle` property as follows,
 	e.P0.CellStyle.BackgroundColor = Color.Gray;
 	e.P0.CellStyle.TextColor = Color.Blue;
 	e.P0.CellStyle.TextSize = 12;
-	e.P0.CellStyle.TextStyle = Typeface.DefaultBold;
+	e.P0.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
 	}
 	};
 
@@ -206,3 +206,9 @@ Also custom view can be passed using the `SelectionView` in Schedule.
 {% endhighlight %}
 
 ![](ViewCustomization_images/Selection.png)
+
+##Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font)
+
+

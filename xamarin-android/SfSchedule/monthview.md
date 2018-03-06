@@ -136,7 +136,7 @@ You can customize the Week Number appearance by using [WeekNumberStyle](https://
 
 			//creating new instance for WeekNumberStyle
 			WeekNumberStyle weekNumberStyle = new WeekNumberStyle();
-			weekNumberStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
+			weekNumberStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 			weekNumberStyle.BackgroundColor = Color.Blue;
 			weekNumberStyle.TextColor = Color.White;
 			weekNumberStyle.TextSize = 12;
@@ -174,7 +174,7 @@ You can customize the View Header appearance by using [ViewHeaderStyle](https://
 
 			//creating new instance for viewHeaderStyle 
 			ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-			viewHeaderStyle.DayTextStyle = Typeface.Create("Arial", TypefaceStyle.Italic);
+			viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 			viewHeaderStyle.DayTextSize = 15;
 			viewHeaderStyle.DayTextColor = Color.White;
 			viewHeaderStyle.BackgroundColor = Color.Blue;
@@ -237,7 +237,7 @@ By using [MonthCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin-andr
             MonthCellStyle monthCellStyle = new MonthCellStyle();
 			monthCellStyle.TextSize = 15;
 			monthCellStyle.TextColor = Color.White;
-			monthCellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
+			monthCellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 			monthCellStyle.BackgroundColor = Color.Blue;
 			monthCellStyle.TodayTextColor = Color.White;
 			monthCellStyle.TodayBackgroundColor = Color.Red;
@@ -268,35 +268,35 @@ By using [MonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-and
 				e.CellStyle.TextSize = 15;
 				e.CellStyle.BackgroundColor = Color.Red;
 				e.CellStyle.TextColor = Color.White;
-				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Bold);
+				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 			}
 			else if (e.IsNextMonthDate)
 			{
 				e.CellStyle.TextSize = 12;
 				e.CellStyle.BackgroundColor = Color.White;
 				e.CellStyle.TextColor = Color.Gray;
-				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal);
+				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 			}
 			else if (e.IsPreviousMonthDate)
 			{
 				e.CellStyle.TextSize = 12;
 				e.CellStyle.BackgroundColor = Color.White;
 				e.CellStyle.TextColor = Color.Gray;
-				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal);
+				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 			}
 			else if (e.IsBlackoutDate)
 			{
 				e.CellStyle.TextSize = 15;
 				e.CellStyle.BackgroundColor = Color.Black;
 				e.CellStyle.TextColor = Color.White;
-				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Bold);
+				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 			}
 			else
 			{
 				e.CellStyle.TextSize = 15;
 				e.CellStyle.BackgroundColor = Color.Blue;
 				e.CellStyle.TextColor = Color.White;
-				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
+				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 			}
 		}
 
@@ -366,7 +366,7 @@ By using [MonthInlineLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-a
 			monthInlineViewStyle.TextSize = 20;
 			monthInlineViewStyle.BackgroundColor = Color.Blue;
 			monthInlineViewStyle.TextColor = Color.Green;
-			monthInlineViewStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
+			monthInlineViewStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 			monthInlineViewStyle.TimeTextColor = Color.Red;
 			monthInlineViewStyle.TimeTextSize = 12;
 			monthInlineViewStyle.TimeTextFormat = "hh a";
@@ -485,3 +485,10 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 
 ![](monthview_images/TodayBackground.png)
+
+##Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font) 
+
+
+

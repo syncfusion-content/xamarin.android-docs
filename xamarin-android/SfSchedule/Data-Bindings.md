@@ -372,7 +372,7 @@ Schedule appointment can be customized by setting appointment style properties s
         //Creating appointment style 
         AppointmentStyle appointmentStyle = new AppointmentStyle();
         appointmentStyle.TextColor = Color.Red;
-        appointmentStyle.TextStyle = Typeface.Create("Calibri", TypefaceStyle.Bold); 
+        appointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
         appointmentStyle.BorderColor = Color.Blue;
         appointmentStyle.BorderCornerRadius = 12;
         appointmentStyle.BorderWidth = 10;
@@ -482,3 +482,8 @@ N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/selection.png)
+
+##Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font) 
+
