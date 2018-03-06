@@ -84,7 +84,7 @@ schedule.ScheduleDateHeaderFormat = "LLL yy";
 
 ## Header Tapped Event
 
-We can handle single tap action of `Header` by using [HeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~HeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when `Header` is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
+We can handle single tap action of Header by using [HeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~HeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the Header is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
 
 {% highlight c# %}
 //Creating  new instance of Schedule
@@ -95,6 +95,6 @@ schedule.HeaderTapped += Handle_HeaderTapped;
 {% highlight c# %}
 void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 {
-var calendar = e.Calendar;
+    var calendar = e.Calendar;
 }
 {% endhighlight %}
