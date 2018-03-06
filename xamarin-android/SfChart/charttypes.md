@@ -194,7 +194,7 @@ SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries()
 	XBindingPath = "XValue", 
 	High = "High", 
 	Low = "Low" 
-} 
+};
 chart.Series.Add(splineRangeAreaSeries);
 
 {% endhighlight %}
