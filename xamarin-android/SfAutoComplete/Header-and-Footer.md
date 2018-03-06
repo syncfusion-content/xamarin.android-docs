@@ -50,6 +50,9 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
 
 The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
 
+{% tabs %}
+
+{% highlight C# %}
 List<String> countryList = new List<String>(); 
 	countryList.Add ("Uganda");
 	countryList.Add ("Ukraine");
@@ -61,6 +64,10 @@ List<String> countryList = new List<String>();
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 	countryAutoComplete.DropDownHeaderViewHeight=50;
 	countryAutoComplete.ShowDropDownHeaderView=true;
+
+{% endhighlight %}
+
+{% endtabs %}
 	
 
 ![](images/Header.png)
