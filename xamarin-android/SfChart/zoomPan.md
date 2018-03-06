@@ -167,7 +167,7 @@ zoomPan.ZoomOut();
 
 **Zoom(factor)**
 
-This method is used to change the zoom level by using zoom factor.
+[`Zoom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~Zoom(Single).html) method is used to change the zoom level by using zoom factor.
 
 {% highlight c# %}
 [C#]
@@ -180,7 +180,7 @@ zoomPan.Zoom(0.5f);
 
 **Zoom(RectF)**
 
-This method is used to zoom the chart for a given rectangle value.
+[`Zoom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~Zoom(RectF).html) method is used to zoom the chart for a given rectangle value.
 
 {% highlight c# %}
 [C#]
@@ -193,7 +193,7 @@ zoomPan.Zoom(new RectF(10, 10, 200, 350));
 
 **Zoom(cumulativeLevel, origin, chartAxis)**
 
-This method is used to change the zoom level of given axis to the specified level and origin.
+[`Zoom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~Zoom(Single,Single,ChartAxis).html) method is used to change the zoom level of given axis to the specified level and origin.
 
 {% highlight c# %}
 [C#]
@@ -208,7 +208,7 @@ zoomPan.Zoom(0.5f, 0.5f, axis);
 
 **ZoomByRange(chartAxis, start, end)**
 
-This method is used to zoom the given axis to given range.
+[`ZoomByRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomByRange(ChartAxis,Double,Double).html) method is used to zoom the given axis to given range.
 
 {% highlight c# %}
 [C#]
@@ -221,7 +221,7 @@ zoomPan.ZoomByRange(axis, 20, 25);
 
 **ZoomByRange(dateTimeAxis, start, end)**
 
-This method is used to zoom the given axis to given date time range.
+[`ZoomByRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomByRange(DateTimeAxis,DateTime,DateTime).html) method is used to zoom the given axis to given date time range.
 
 {% highlight c# %}
 [C#]
