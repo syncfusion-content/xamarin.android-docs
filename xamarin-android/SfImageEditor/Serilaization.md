@@ -8,60 +8,85 @@ documentation : ug
 ---
 
 # Serialization And Deserialization
- ImageEditor provides support to serialize and deserialize the shapes(Circle,Arrow,Rectangle), free hand drawing,Text and Toolbar settings. Save the current state of the Image Editor and Load it back when its needed.
+ ImageEditor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. Save the current state of the Image Editor and Load it back when its needed.
 
 ## Serialization
-  To serialize the shapes like circle,arrow,rectangle,text ,freehand drawing and toolbar settings by calling SaveEdits() method.Serialized object will be return in the form of JSON stream.
+  SaveEdits() method used to serialize the current edits of shapes. Serialized object will be return in the form of JSON stream.
 
 {% tabs %}
 
 {% highlight C# %}
     
-	 SfImageEditor editor = new   SfImageEditor(this);
-	 Stream stream=editor.SaveEdits();
-     SetContentView(editor);
-    
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-   convert the stream into string and save as .txt format file and add into a asset folder and also set as AndroidAsset.
-   In Xamarin.Android.Text file like this
-  [Chart.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
-       
-
-
-## Deserialization
-   To deserialize serialized objects by calling LoadEdits(stream) method .Deserialize the object by using loaded JSON stream.
-
-{% tabs %}
-
-{% highlight C# %}
-        
-		 public class MainActivity : Activity
+	 public class MainActivity : Activity
     {
 
         SfImageEditor editor;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            LinearLayout layout = new LinearLayout(this);
+            layout.Orientation = Android.Widget.Orientation.Vertical;
+            layout.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
+            Button saveEdits = new Button(this);
+            saveEdits.Text = "Serialize";
+            saveEdits.SetWidth(100);
+            saveEdits.SetHeight(100);
+            saveEdits.Click += SaveEdits_Click;
             editor = new SfImageEditor(this);
-            DelayActionAsync(1500, LoadStream);
-            SetContentView(editor);
-        }
-        public async Task DelayActionAsync(int delay, Action action)
-        {
-            await Task.Delay(delay);
-            action();
+            layout.AddView(saveEdits);
+            layout.AddView(editor);
+            SetContentView(layout);
         }
 
-        void LoadStream()
+        void SaveEdits_Click(object sender, EventArgs e)
         {
+            Stream stream = editor.SaveEdits();
+        }
+    }
+    
+	
+{% endhighlight %}
 
-            using (StreamReader src = new StreamReader(Assets.Open("Chart.txt")))
+{% endtabs %}
+  
+  you can save stream into .txt format file. if you saved as .txt format file in asset folder to deserialize the shapes then set as AndroidAsset in project.
+  
+  Please find sample text file shown below
+
+  [Chart.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
+       
+
+
+## Deserialization
+   LoadEdits() method used to deserialize the shapes.
+
+{% tabs %}
+
+{% highlight C# %}
+        
+	 SfImageEditor editor;
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            LinearLayout layout = new LinearLayout(this);
+            layout.Orientation = Android.Widget.Orientation.Vertical;
+            layout.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
+            Button loadEdits = new Button(this);
+            loadEdits.Text = "Deserialize";
+            loadEdits.SetWidth(100);
+            loadEdits.SetHeight(100);
+            loadEdits.Click += LoadEdits_Click;
+            editor = new SfImageEditor(this);
+            layout.AddView(loadEdits);
+            layout.AddView(editor);
+            SetContentView(layout);
+        }
+
+        void LoadEdits_Click(object sender, EventArgs e)
+        {
+            using (StreamReader sr = new StreamReader(Assets.Open("Chart.txt")))
             {
-                string content = src.ReadToEnd();
+                string content = sr.ReadToEnd();
                 byte[] byteArray = Encoding.ASCII.GetBytes(content);
                 MemoryStream stream = new MemoryStream(byteArray);
                 if (stream != null)
@@ -69,10 +94,9 @@ documentation : ug
 
             }
         }
-    }
+    
 		
         
-
 {% endhighlight %}
 
 {% endtabs %}
