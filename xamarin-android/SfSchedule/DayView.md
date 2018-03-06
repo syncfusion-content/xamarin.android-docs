@@ -319,10 +319,19 @@ You can download the entire source code of this demo for Xamarin.Android from he
 ![](daymodule_images/selection_Day.png)
 
 ## Custom Font
+We can change the appearance of Font by setting the TextStyle property of following classes.
 
-We have a Text Style property for HeaderStyle, ViewHeaderStyle, AppointmentStyle, MonthInlineViewStyle, MonthCellStyle, WeekNumberStyle. Setting the custom font for the above styles, use the following steps.
+[HeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/headers#appearance) - Using text style property, customize the header style.
+[ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) - Using text style property, customize the view header style.
+[AppointmentStyle](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#appearance-customization) - Using text style property, customize the appointment style.
+[MonthCellStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#monthcell-appearance) - Using text style property, customize the month cell style.
+[MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) - Using text style property, customize the month inline view style. 
+[WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) - Using text style property, customize the week number style.
+
+Following steps explain how to configure cusutom fonts.
 
 ### Custom Font Setting in Xamarin.Android
+
 1.Download the Custom Font(e.g. Lobster-Regular.ttf) 
 2.Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
 3.Then, use the Custom Font name as text style.
