@@ -20,7 +20,7 @@ The text highlight can be indicated with various customizing styles by enabling 
 
 * HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
 
-* HighlightTextFontAttributes - sets the FontAttributes of the highlighted text.
+* HighlightedTextFontAttributes - sets the FontAttributes of the highlighted text.
 
 ## FirstOccurrence
 
@@ -39,10 +39,15 @@ It highlights the first position of the matching characters in the suggestion li
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
+	countryNameAutoComplete.HighlightedTextColor = Color.Red; 
+	countryNameAutoComplete.HighlightedTextFontAttributes = HighlightedTextFontAttributes.Bold;
 	 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The default Color of HighlightedTextColor is Red.
+   The default FontAttribute of HighlightedTextFontAttributes is None.
 	
 ![](images/FirstOccurrence.png)
 
@@ -63,6 +68,8 @@ It highlights the matching character that are present everywhere in the suggesti
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
 	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
+	countryNameAutoComplete.HighlightedTextColor = Color.Red; 
+	countryNameAutoComplete.HighlightedTextFontAttributes = HighlightedTextFontAttributes.Bold;
 	 
 {% endhighlight %}
 
