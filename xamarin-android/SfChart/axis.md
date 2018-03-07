@@ -216,7 +216,7 @@ chart.PrimaryAxis = dateTimeAxis;
 
 ### Date time intervals
 
-Date time intervals can be customized using [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~IntervalType.html) properties of the [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis.html). For example, setting [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) as 2 and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~IntervalType.html) as `Years` will consider 2 years as interval.
+Date time intervals can be customized using [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~IntervalType.html) properties of the [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis.html). For example, setting [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) as 2 and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~IntervalType.html) as [`Years`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeIntervalType.html) will consider 2 years as interval.
 
 Essential Chart supports the following types of interval for date time axis
 
@@ -692,7 +692,7 @@ chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
 
 **ActualRangeChanged**
 
-This event is triggered when the axis range is changed. The argument contains the following information.
+The [`ActualRangeChanged`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~ActualRangeChanged_EV.html) event is triggered when the axis range is changed. The argument contains the following information.
 
 * [`ActualMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~ActualMinimum.html) - used to get the axis actual minimum value
 * [`ActualMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~ActualMaximum.html) - used to get the axis actual maximum value
@@ -703,7 +703,7 @@ N> Actual range and visible range are similar unless the range is changed by spe
 
 **LabelCreated**
 
-This event is triggered when the axis label is created. The argument contains the following information.
+The [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelCreated_EV.html) event is triggered when the axis label is created. The argument contains the following information.
 
 * index - used to get the index of the axis label
 * [`LabelContent`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~LabelContent.html) - used to get or set the content of label
@@ -712,6 +712,6 @@ This event is triggered when the axis label is created. The argument contains th
 
 **LabelClicked**
 
-This event is triggered when the axis label is clicked. The argument contains the following information.
+The [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelClicked_EV.html) event is triggered when the axis label is clicked. The argument contains the following information.
 
 * [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabelClickedEventArgs~Label.html) - Used to get the ChartAxisLabel, which contains axis label position and text.
