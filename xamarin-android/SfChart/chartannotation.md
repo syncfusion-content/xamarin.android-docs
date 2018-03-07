@@ -160,7 +160,7 @@ chart.Series.Add(series);
 
 ## Text annotation
 
-[`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation.html) is used to add simple [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation~Text.html) in specific points over the chart area.
+[`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation.html) is used to add simple text in specific points over the chart area.
 
 {% highlight c# %} 
 [C#]
