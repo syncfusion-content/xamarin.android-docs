@@ -23,11 +23,7 @@ Selected items will be displayed with a customizable token representation and th
 
 {% highlight C# %}
 	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
+	
 	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
 	countryAutoComplete.MultiSelectMode=MultiSelectMode.Token;
@@ -48,17 +44,78 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.MultiSelectMode=MultiSelectMode.Token;
-	countryAutoComplete.TokensWrapMode=TokensWrapMode.Wrap;
+
+public class Student
+	{
+		string Name;
+		string Image;
+		public Student(string name,string image)
+		{
+			this.Name = name;
+			this.Image = image;
+
+		}
+		public string getName()
+		{
+			return Name;
+		}
+		public string getImage()
+		{
+			return Image;
+		}
+	}
+
+public NSMutableArray StudentDetails
+		{
+			get;
+			set;
+		}
+
+		void GetStudentData()
+		{
+			NSMutableArray array = new NSMutableArray();
+			array.Add(getDictionary("John", "a1.png"));
+			array.Add(getDictionary("James", "a2.png"));
+			array.Add(getDictionary("Jacob", "a3.png"));
+			array.Add(getDictionary("Joy", "a4.png"));
+			array.Add(getDictionary("Victoria", "a5.png"));
+			array.Add(getDictionary("James", "a6.png"));
+
+			StudentDetails = array;
+		}
+
+		NSDictionary getDictionary(string name, string image)
+		{
+
+			object[] objects = new object[2];
+			object[] keys = new object[2];
+			keys.SetValue("Name", 0);
+			keys.SetValue("Image", 1);
+			objects.SetValue((NSString)name, 0);
+			objects.SetValue((NSString)image, 1);
+			return NSDictionary.FromObjectsAndKeys(objects, keys);
+		}
 	 
+	
+	ArrayAdapter<Object> arrayDataAdapters = new ArrayAdapter<Object>(context,Android.Resource.Layout.SimpleListItem1, array);
+	StudentDetails.MultiSelectMode=MultiSelectMode.Token;
+	studentAutoComplete.DataSource = arrayDataAdapters;
+
+// Set the TokensWrapMode into Wrap.
+
+	StudentDetails.TokensWrapMode=TokensWrapMode.Wrap;
+
+	TokensSetting token = new TokensSetting();
+	token.FontSize=15;
+	token.CornerRadius=5;
+	token.SetTextColor(Color.Red);
+	token.SetBackgroundColor(Color.Gray);
+	token.SelectedBackgroundColor(Color.Yellow);
+	token.SetDeleteButtonColor(Color.Maroon);
+    token.IsCloseButtonVisible=true;
+	StudentDetails.TokensSetting= token;
+
+	
 {% endhighlight %}
 
 {% endtabs %}
@@ -90,15 +147,62 @@ token.
 
 {% highlight C# %}
 	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.MultiSelectMode=MultiSelectMode.Token;
-	countryAutoComplete.TokensWrapMode=TokensWrapMode.Wrap;
+	public class Student
+	{
+		string Name;
+		string Image;
+		public Student(string name,string image)
+		{
+			this.Name = name;
+			this.Image = image;
+
+		}
+		public string getName()
+		{
+			return Name;
+		}
+		public string getImage()
+		{
+			return Image;
+		}
+	}
+	
+public NSMutableArray StudentDetails
+		{
+			get;
+			set;
+		}
+
+		void GetStudentData()
+		{
+			NSMutableArray array = new NSMutableArray();
+			array.Add(getDictionary("John", "image1.png"));
+			array.Add(getDictionary("James", "image2.png"));
+			array.Add(getDictionary("Jacob", "image33.png"));
+			array.Add(getDictionary("Joy", "image4.png"));
+			array.Add(getDictionary("Victoria", "image5.png"));
+			array.Add(getDictionary("James", "image6.png"));
+			StudentDetails = array;
+		}
+
+		NSDictionary getDictionary(string name, string image)
+		{
+
+			object[] objects = new object[2];
+			object[] keys = new object[2];
+			keys.SetValue("Name", 0);
+			keys.SetValue("Image", 1);
+			objects.SetValue((NSString)name, 0);
+			objects.SetValue((NSString)image, 1);
+			return NSDictionary.FromObjectsAndKeys(objects, keys);
+		}
+	 
+	
+	ArrayAdapter<Object> arrayDataAdapters = new ArrayAdapter<Object>(context,Android.Resource.Layout.SimpleListItem1, array);
+	StudentDetails.MultiSelectMode=MultiSelectMode.Token;
+	studentAutoComplete.DataSource = arrayDataAdapters;
+
+	// Token Customization
 
 	TokensSetting token = new TokensSetting();
 	token.FontSize=15;
@@ -106,8 +210,9 @@ token.
 	token.SetTextColor(Color.Red);
 	token.SetBackgroundColor(Color.Gray);
 	token.SelectedBackgroundColor(Color.Yellow);
-	token.SetDeleteButtonColor(Color.Blue);
+	token.SetDeleteButtonColor(Color.Maroon);
     token.IsCloseButtonVisible=true;
+	StudentDetails.TokensSetting= token;
 
 	 
 {% endhighlight %}
@@ -127,15 +232,19 @@ When selecting the multiple items, the selected items can be divided with a desi
 {% highlight C# %}
 	
 	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
+	countryList.Add ("Andorra");
 	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
+	countryList.Add ("Angola");
 	countryList.Add ("Algeria");
+	countryList.Add ("Argentina");
+	countryList.Add ("Antarctica");
+	countryList.Add ("Armenia");
+	countryList.Add ("Aruba");
 	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
 	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
 	countryAutoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
-	countryAutoComplete.Delimiter="*";
+	countryAutoComplete.Delimiter="#";
 	 
 {% endhighlight %}
 
