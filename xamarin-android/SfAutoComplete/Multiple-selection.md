@@ -125,15 +125,14 @@ token.
             employeeAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
  
             employeeDetails = new ObservableCollection<Employee>();
-            employeeDetails.Add(new Employee("Jack", "a0.png"));
-            employeeDetails.Add(new Employee("John", "a1.png"));
-            employeeDetails.Add(new Employee("James", "a2.png"));
-            employeeDetails.Add(new Employee("Jacob", "a3.png"));
-            employeeDetails.Add(new Employee("Joy", "a4.png"));
-            employeeDetails.Add(new Employee("Victoria", "a5.png"));
+            employeeDetails.Add(new Employee("Jack", "jack.png"));
+            employeeDetails.Add(new Employee("John", "john.png"));
+            employeeDetails.Add(new Employee("James", "james.png"));
+            employeeDetails.Add(new Employee("Jacob", "jacob.png"));
+            employeeDetails.Add(new Employee("Joy", "joy.png"));
+            employeeDetails.Add(new Employee("Victoria", "Victoria.png"));
 
             employeeAutoComplete.DisplayMemberPath = "Name";
-            employeeAutoComplete.hei
             employeeAutoComplete.DataSource = employeeDetails;
             employeeAutoComplete.MultiSelectMode = MultiSelectMode.Token;
             employeeAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
