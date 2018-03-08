@@ -383,7 +383,7 @@ This is how the final output will look like on Android device.
 
 ## Customizing footer elements
 
-The SfPopupLayout allows customizing the footer elements with various avialable footer customizations as follows:
+The SfPopupLayout allows customizing the footer elements with various available footer customizations as follows:
 
 <table>
 <tr>
