@@ -81,7 +81,7 @@ You can set the suggestion list to the SfAutoComplete using the property `AutoCo
             countryList.Add("United Kingdom");
             countryList.Add("United States");
             ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, countryList);
-            countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
+           countryAutoComplete.AutoCompleteSource = countryListDataAdapters;
             countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
 
             linearLayout.AddView(countryAutoComplete);
@@ -115,7 +115,7 @@ The following example shows the SfAutoComplete control which suggest the country
             countryList.Add("United Kingdom");
             countryList.Add("United States");
             ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, countryList);
-            countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
+           countryAutoComplete.AutoCompleteSource = countryListDataAdapters;
 
             countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
             countryAutoComplete.MaximumDropDownHeight = 200;

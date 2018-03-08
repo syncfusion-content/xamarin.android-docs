@@ -35,8 +35,8 @@ It highlights the first position of the matching characters in the suggestion li
 	countryList.Add ("Akrotiri");
 	countryList.Add ("Albania");
 	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
+	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this,Android.Resource.Layout.SimpleListItem1, countryList);
+	countryAutoComplete.AutoCompleteSource = countryListDataAdapters;
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
 	countryNameAutoComplete.HighlightedTextColor = Color.Red; 
@@ -64,8 +64,8 @@ It highlights the matching character that are present everywhere in the suggesti
 	countryList.Add ("Akrotiri");
 	countryList.Add ("Albania");
 	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
+	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this,Android.Resource.Layout.SimpleListItem1, countryList);
+    countryAutoComplete.AutoCompleteSource = countryListDataAdapters;
 	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
 	countryNameAutoComplete.HighlightedTextColor = Color.Red; 

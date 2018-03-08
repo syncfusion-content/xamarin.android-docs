@@ -58,8 +58,8 @@ When the entered item is not in the suggestion list, SfAutoComplete displays a t
 	countryList.Add ("Akrotiri");
 	countryList.Add ("Albania");
 	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
+	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this,Android.Resource.Layout.SimpleListItem1, countryList);
+	countryAutoComplete.AutoCompleteSource = countryListDataAdapters;
 	countryAutoComplete.NoResultsFoundText="No Results Found";
 	 
 {% endhighlight %}

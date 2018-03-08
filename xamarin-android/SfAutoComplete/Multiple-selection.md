@@ -19,6 +19,8 @@ Select multiple items from a suggestion list. There are two ways to perform mult
 
 Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button.
 
+<<<<<<< HEAD
+=======
 {% tabs %}
 
 {% highlight C# %}
@@ -33,6 +35,7 @@ Selected items will be displayed with a customizable token representation and th
 
 {% endtabs %}
 
+>>>>>>> a1bddc8d8a9e60b257759106021bfa6c9492311a
 ### Wrap Mode of Token
 
 The selected item can be displayed as token inside SfAutoComplete in two ways. They are
@@ -45,6 +48,46 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 
 {% highlight C# %}
 
+<<<<<<< HEAD
+public class Employee
+{
+    public string Name { get; set; }
+    public string Image { get; set; }
+    public Employee(string name, string image)
+{
+	this.Name = name;
+	this.Image = image;
+
+}
+}
+    ObservableCollection<Employee> employeeDetails;
+    LinearLayout linearLayout = new LinearLayout(this);
+	linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+	linearLayout.SetBackgroundColor(Android.Graphics.Color.White);
+
+	SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
+	countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
+
+    employeeDetails = new ObservableCollection<Employee>();
+	employeeDetails.Add(new Employee("Jack", "jack.png"));
+	employeeDetails.Add(new Employee("John", "john.png"));
+	employeeDetails.Add(new Employee("James", "james.png"));
+	employeeDetails.Add(new Employee("Jacob", "jacob.png"));
+	employeeDetails.Add(new Employee("Joy", "joy.png"));
+	employeeDetails.Add(new Employee("Victoria", "victoria.png"));
+
+	countryAutoComplete.DisplayMemberPath = "Name";
+	countryAutoComplete.DataSource = employeeDetails;
+	countryAutoComplete.MultiSelectMode = MultiSelectMode.Token;
+	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
+	countryAutoComplete.MaximumDropDownHeight = 200;
+	countryAutoComplete.DropDownItemHeight = 50;
+	countryAutoComplete.ImageMemberPath = "Image";
+	countryAutoComplete.TokensWrapMode = TokensWrapMode.Wrap;
+
+	linearLayout.AddView(countryAutoComplete);
+	SetContentView(linearLayout);
+=======
 public class Student
 	{
 		string Name;
@@ -114,6 +157,7 @@ public NSMutableArray StudentDetails
 	token.SetDeleteButtonColor(Color.Maroon);
     token.IsCloseButtonVisible=true;
 	StudentDetails.TokensSetting= token;
+>>>>>>> a1bddc8d8a9e60b257759106021bfa6c9492311a
 
 	
 {% endhighlight %}
@@ -147,6 +191,61 @@ token.
 
 {% highlight C# %}
 	
+<<<<<<< HEAD
+	public class Employee
+    {
+        public string Name { get; set; }
+        public string Image { get; set; }
+        public Employee(string name, string image)
+        {
+            this.Name = name;
+            this.Image = image;
+
+        }
+    }
+
+	ObservableCollection<Employee> employeeDetails;
+
+	LinearLayout linearLayout = new LinearLayout(this);
+            linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+            linearLayout.SetBackgroundColor(Android.Graphics.Color.White);
+
+
+            SfAutoComplete employeeAutoComplete = new SfAutoComplete(this);
+            employeeAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
+ 
+            employeeDetails = new ObservableCollection<Employee>();
+            employeeDetails.Add(new Employee("Jack", "a0.png"));
+            employeeDetails.Add(new Employee("John", "a1.png"));
+            employeeDetails.Add(new Employee("James", "a2.png"));
+            employeeDetails.Add(new Employee("Jacob", "a3.png"));
+            employeeDetails.Add(new Employee("Joy", "a4.png"));
+            employeeDetails.Add(new Employee("Victoria", "a5.png"));
+
+            employeeAutoComplete.DisplayMemberPath = "Name";
+            employeeAutoComplete.hei
+            employeeAutoComplete.DataSource = employeeDetails;
+            employeeAutoComplete.MultiSelectMode = MultiSelectMode.Token;
+            employeeAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
+            employeeAutoComplete.MaximumDropDownHeight = 200;
+            employeeAutoComplete.DropDownItemHeight = 50;
+            employeeAutoComplete.ImageMemberPath = "Image";
+            employeeAutoComplete.TokensWrapMode = TokensWrapMode.Wrap;
+
+
+            TokenSettings token = new TokenSettings();
+            token.BackgroundColor = Color.ParseColor("#f5ffbe");
+            token.TextSize = 16;
+            token.TextColor = Color.Red;
+            token.SelectedBackgroundColor = Color.ParseColor("#ffffe0");
+            token.DeleteButtonColor = Color.Brown;
+            token.IsCloseButtonVisible = true;
+            token.CornerRadius = 15;
+            employeeAutoComplete.TokenSettings = token;
+            linearLayout.AddView(employeeAutoComplete);
+            SetContentView(linearLayout);
+ 
+=======
 	public class Student
 	{
 		string Name;
@@ -214,6 +313,7 @@ public NSMutableArray StudentDetails
     token.IsCloseButtonVisible=true;
 	StudentDetails.TokensSetting= token;
 
+>>>>>>> a1bddc8d8a9e60b257759106021bfa6c9492311a
 	 
 {% endhighlight %}
 
@@ -240,8 +340,13 @@ When selecting the multiple items, the selected items can be divided with a desi
 	countryList.Add ("Antarctica");
 	countryList.Add ("Armenia");
 	countryList.Add ("Aruba");
+<<<<<<< HEAD
+	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this,Android.Resource.Layout.SimpleListItem1, countryList);
+    countryAutoComplete.AutoCompleteSource = countryListDataAdapters;
+=======
 	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
 	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
+>>>>>>> a1bddc8d8a9e60b257759106021bfa6c9492311a
 	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
 	countryAutoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
 	countryAutoComplete.Delimiter="#";
