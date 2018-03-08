@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Android platform 
+title: Formatting clipboard text of SfMaskedEit in Xamarin.Android plarform
+description: Learn how to format the clipboard text during cut and copy operation of SfMaskedEdit control
 platform: Xamarin.Android
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
+
 ---
 
 

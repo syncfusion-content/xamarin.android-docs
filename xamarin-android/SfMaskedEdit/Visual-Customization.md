@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Android platform 
+title: Visual appearence customization of SfMaskedEdit control for Xamarin.Android Platform
+description: Learn how to customize the visual appearence of SfMaskedEdit control
 platform: Xamarin.Android
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
+
 ---
 
 
@@ -70,4 +72,4 @@ maskedEdit.TextSize = 20;
 
 ![](SfMaskedEditImages/Visual_TextColor.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualCustomize30014455.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_VisualCustomize.zip).
