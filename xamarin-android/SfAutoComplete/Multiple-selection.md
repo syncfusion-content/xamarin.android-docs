@@ -31,44 +31,55 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 
 {% highlight C# %}
 
+// Create a class which holds the data source data
 public class Employee
 {
-    public string Name { get; set; }
-    public string Image { get; set; }
-    public Employee(string name, string image)
+public string Name { get; set; }
+public string Image { get; set; }
+public Employee(string name, string image)
 {
-	this.Name = name;
-	this.Image = image;
-
+this.Name = name;
+this.Image = image;
 }
 }
-    ObservableCollection<Employee> employeeDetails;
-    LinearLayout linearLayout = new LinearLayout(this);
-	linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
-	linearLayout.SetBackgroundColor(Android.Graphics.Color.White);
 
-	SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
-	countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
+//Create a new Linear Layout
+LinearLayout linearLayout = new LinearLayout(this);
+linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+linearLayout.SetBackgroundColor(Android.Graphics.Color.White);
+SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
+countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
 
-    employeeDetails = new ObservableCollection<Employee>();
-	employeeDetails.Add(new Employee("Jack", "jack.png"));
-	employeeDetails.Add(new Employee("John", "john.png"));
-	employeeDetails.Add(new Employee("James", "james.png"));
-	employeeDetails.Add(new Employee("Jacob", "jacob.png"));
-	employeeDetails.Add(new Employee("Joy", "joy.png"));
-	employeeDetails.Add(new Employee("Victoria", "victoria.png"));
+//Crete the data source
+ObservableCollection<Employee> employeeDetails = new ObservableCollection<Employee>();
+employeeDetails.Add(new Employee("Jack", "jack.png"));
+employeeDetails.Add(new Employee("John", "john.png"));
+employeeDetails.Add(new Employee("James", "james.png"));
+employeeDetails.Add(new Employee("Jacob", "jacob.png"));
+employeeDetails.Add(new Employee("Joy", "joy.png"));
+employeeDetails.Add(new Employee("Victoria", "victoria.png"));
 
-	countryAutoComplete.DisplayMemberPath = "Name";
-	countryAutoComplete.DataSource = employeeDetails;
-	countryAutoComplete.MultiSelectMode = MultiSelectMode.Token;
-	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
-	countryAutoComplete.MaximumDropDownHeight = 200;
-	countryAutoComplete.DropDownItemHeight = 50;
-	countryAutoComplete.ImageMemberPath = "Image";
-	countryAutoComplete.TokensWrapMode = TokensWrapMode.Wrap;
+//To display the Name set the DisplayMemberPath
+countryAutoComplete.DisplayMemberPath = "Name";
 
-	linearLayout.AddView(countryAutoComplete);
-	SetContentView(linearLayout);
+//To display the Image set the ImageMemberPath
+countryAutoComplete.ImageMemberPath = "Image";
+
+//Add the data source
+countryAutoComplete.DataSource = employeeDetails;
+
+//Set the MultiSelectMode
+countryAutoComplete.MultiSelectMode = MultiSelectMode.Token;
+countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
+countryAutoComplete.MaximumDropDownHeight = 200;
+countryAutoComplete.DropDownItemHeight = 50;
+
+//Set the TokensWrapMode
+countryAutoComplete.TokensWrapMode = TokensWrapMode.Wrap;
+
+//Add the SfAutoComplete view to the linear layout
+linearLayout.AddView(countryAutoComplete);
+SetContentView(linearLayout);
 
 	
 {% endhighlight %}
@@ -94,73 +105,29 @@ Customization can be done for Token. There are various ways to customize the tok
 * `IsCloseButtonVisible` - Enables and disables the close button inside SfAutoComplete.
 
 * `DeleteButtonColor` - sets the color of the close button inside SfAutoComplete.
-token.
+
 * `CornerRadius` - sets the corner radius for the token.
 
 
 {% tabs %}
 
 {% highlight C# %}
-	
-	public class Employee
-    {
-        public string Name { get; set; }
-        public string Image { get; set; }
-        public Employee(string name, string image)
-        {
-            this.Name = name;
-            this.Image = image;
 
-        }
-    }
-
-	ObservableCollection<Employee> employeeDetails;
-
-	LinearLayout linearLayout = new LinearLayout(this);
-            linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
-            linearLayout.SetBackgroundColor(Android.Graphics.Color.White);
-
-
-            SfAutoComplete employeeAutoComplete = new SfAutoComplete(this);
-            employeeAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
- 
-            employeeDetails = new ObservableCollection<Employee>();
-            employeeDetails.Add(new Employee("Jack", "jack.png"));
-            employeeDetails.Add(new Employee("John", "john.png"));
-            employeeDetails.Add(new Employee("James", "james.png"));
-            employeeDetails.Add(new Employee("Jacob", "jacob.png"));
-            employeeDetails.Add(new Employee("Joy", "joy.png"));
-            employeeDetails.Add(new Employee("Victoria", "Victoria.png")); 
-
-            employeeAutoComplete.DisplayMemberPath = "Name";
-            employeeAutoComplete.DataSource = employeeDetails;
-            employeeAutoComplete.MultiSelectMode = MultiSelectMode.Token;
-            employeeAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
-            employeeAutoComplete.MaximumDropDownHeight = 200;
-            employeeAutoComplete.DropDownItemHeight = 50;
-            employeeAutoComplete.ImageMemberPath = "Image";
-            employeeAutoComplete.TokensWrapMode = TokensWrapMode.Wrap;
-
-
-            TokenSettings token = new TokenSettings();
-            token.BackgroundColor = Color.ParseColor("#f5ffbe");
-            token.TextSize = 16;
-            token.TextColor = Color.Red;
-            token.SelectedBackgroundColor = Color.ParseColor("#ffffe0");
-            token.DeleteButtonColor = Color.Brown;
-            token.IsCloseButtonVisible = true;
-            token.CornerRadius = 15;
-            employeeAutoComplete.TokenSettings = token;
-            linearLayout.AddView(employeeAutoComplete);
-            SetContentView(linearLayout);
- 
+//Create an object to do Token Customization 
+TokenSettings token = new TokenSettings();
+token.BackgroundColor = Color.ParseColor("#f5ffbe");
+token.TextSize = 16;
+token.TextColor = Color.Red;
+token.SelectedBackgroundColor = Color.ParseColor("#ffffe0");
+token.DeleteButtonColor = Color.Brown;
+token.IsCloseButtonVisible = true;
+token.CornerRadius = 15;
+employeeAutoComplete.TokenSettings = token;
 	 
 {% endhighlight %}
 
 {% endtabs %}
 
-
-	
 ![](images/TokenRepresentation.png)
 
 ## Delimiter
@@ -170,21 +137,10 @@ When selecting the multiple items, the selected items can be divided with a desi
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Andorra");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Angola");
-	countryList.Add ("Algeria");
-	countryList.Add ("Argentina");
-	countryList.Add ("Antarctica");
-	countryList.Add ("Armenia");
-	countryList.Add ("Aruba");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this,Android.Resource.Layout.SimpleListItem1, countryList);
-    countryAutoComplete.AutoCompleteSource = countryListDataAdapters;
-	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
-	countryAutoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
-	countryAutoComplete.Delimiter="#";
+
+//Set the MultiSelectMode
+countryAutoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
+countryAutoComplete.Delimiter="#";
 	 
 {% endhighlight %}
 
