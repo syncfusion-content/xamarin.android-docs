@@ -26,20 +26,12 @@ The control does not stick with one type of keyboard, so you can populate items 
 		diacritic.Add("Hów tó mâké â róbót?");
 		diacritic.Add("Whât timé nów in Indiâ?");
 
-<<<<<<< HEAD
 	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, diacritic);
 	countryAutoComplete.AutoCompleteSource = countryListDataAdapters;
 	countryAutoComplete.SuggestionMode = SuggestionMode.Contains;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
 	countryNameAutoComplete.HighlightedTextColor = Color.Red; 
 	countryAutoComplete.IgnoreDiacritic=false;
-=======
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, diacritic);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
-	countryNameAutoComplete.HighlightedTextColor = Color.Red; 
-	countryAutoComplete.IgnoreDiacritic=false;;
->>>>>>> a1bddc8d8a9e60b257759106021bfa6c9492311a
 	 
 {% endhighlight %}
 
