@@ -63,8 +63,6 @@ private void MaskedEdit_OnValueChanged(object sender, ValueChangedEventArgs e)
 
 ![](SfMaskedEditImages/ValueChangedevent.png)
 
-This demo can be downloaded from this link.
-
 ## MaskInputRejected event
 
 Occurs when your input or assigned character does not match the corresponding format element of the input mask. The event arguments are type of MaskInputRejectedEventArgs and expose the following properties:
