@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Android platform 
+title: Mask Types of SfMaskedEdit control for Xamarin.Android platform
+description: Learn the different types of mask characters available in SfMaskedEdit control to restrict the user input
 platform: Xamarin.Android
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
+
 ---
 
 
@@ -231,4 +233,4 @@ This mask expression '\d{3}' and '\d{6}' allows only numeric, where {n} is the c
 
 ![](SfMaskedEditImages/MaskType.png)
 
-You can find the complete mask type sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MaskType-1009613306.zip).
+You can find the complete mask type sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_MaskType.zip).

@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Android platform 
+title: Input validation in SfMaskedEdit control for Xamarin.Android platform
+description: Learn how and when to validate the input characters with the given Mask of SfMaskedEdit control.
 platform: Xamarin.Android
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
+
 ---
 
 
@@ -67,4 +69,4 @@ Refer this [link](Events#valuechanged-event) to know more about the `ValueChange
 
 ![](SfMaskedEditImages/Validation.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Validation-266360707.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_Validation.zip).

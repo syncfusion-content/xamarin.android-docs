@@ -85,4 +85,4 @@ Run the project and check if you get the following output to make sure that you 
 
 ![](SfMaskedEditImages/GettingStarted.png)
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1902914709.zip).
+You can find the complete getting started sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_GettingStarted.zip).

@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Android platform 
+title: Using Mask Characters as Literals in SfMaskedEdit control for Xamarin.Android platform
+description: Learn how to use mask characters as literals in SfMaskedEdit control for Xamarin.Forms platform
 platform: Xamarin.Android
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
+
 ---
 
 
@@ -24,4 +26,4 @@ This will produce a mask that displays a dollar sign ($) followed by the prompt 
 
 ![](SfMaskedEditImages/MaskAsLiterals.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MaskCharactersAsLiterals-405194990.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_UsingMaskCharactersAsLiterals.zip).

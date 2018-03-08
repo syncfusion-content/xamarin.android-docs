@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Android platform 
+title: Basic features in SfMaskedEdit for Xamarin.Android platform
+description: Learn how to customize the basic features of SfMaskedEdit
 platform: Xamarin.Android
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
+
 ---
 
 # Basic Features
@@ -62,4 +64,4 @@ maskedEdit.HintTextSize = 20;
 
 ![](SfMaskedEditImages/BF_Hint.png)
 
-You can find the complete basic features sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BasicFeatures257393758.zip).
+You can find the complete basic features sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_BasicFeatures.zip).
