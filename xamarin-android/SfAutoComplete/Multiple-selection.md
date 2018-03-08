@@ -19,20 +19,6 @@ Select multiple items from a suggestion list. There are two ways to perform mult
 
 Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button.
 
-{% tabs %}
-
-{% highlight C# %}
-	
-	
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.MultiSelectMode=MultiSelectMode.Token;
-	countryAutoComplete.TokensWrapMode=TokensWrapMode.Wrap;
-	 
-{% endhighlight %}
-
-{% endtabs %}
-
 ### Wrap Mode of Token
 
 The selected item can be displayed as token inside SfAutoComplete in two ways. They are
@@ -45,75 +31,55 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 
 {% highlight C# %}
 
-public class Student
-	{
-		string Name;
-		string Image;
-		public Student(string name,string image)
-		{
-			this.Name = name;
-			this.Image = image;
+// Create a class which holds the data source data
+public class Employee
+{
+public string Name { get; set; }
+public string Image { get; set; }
+public Employee(string name, string image)
+{
+this.Name = name;
+this.Image = image;
+}
+}
 
-		}
-		public string getName()
-		{
-			return Name;
-		}
-		public string getImage()
-		{
-			return Image;
-		}
-	}
+//Create a new Linear Layout
+LinearLayout linearLayout = new LinearLayout(this);
+linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+linearLayout.SetBackgroundColor(Android.Graphics.Color.White);
+SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
+countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
 
-public NSMutableArray StudentDetails
-		{
-			get;
-			set;
-		}
+//Crete the data source
+ObservableCollection<Employee> employeeDetails = new ObservableCollection<Employee>();
+employeeDetails.Add(new Employee("Jack", "jack.png"));
+employeeDetails.Add(new Employee("John", "john.png"));
+employeeDetails.Add(new Employee("James", "james.png"));
+employeeDetails.Add(new Employee("Jacob", "jacob.png"));
+employeeDetails.Add(new Employee("Joy", "joy.png"));
+employeeDetails.Add(new Employee("Victoria", "victoria.png"));
 
-		void GetStudentData()
-		{
-			NSMutableArray array = new NSMutableArray();
-			array.Add(getDictionary("John", "a1.png"));
-			array.Add(getDictionary("James", "a2.png"));
-			array.Add(getDictionary("Jacob", "a3.png"));
-			array.Add(getDictionary("Joy", "a4.png"));
-			array.Add(getDictionary("Victoria", "a5.png"));
-			array.Add(getDictionary("James", "a6.png"));
+//To display the Name set the DisplayMemberPath
+countryAutoComplete.DisplayMemberPath = "Name";
 
-			StudentDetails = array;
-		}
+//To display the Image set the ImageMemberPath
+countryAutoComplete.ImageMemberPath = "Image";
 
-		NSDictionary getDictionary(string name, string image)
-		{
+//Add the data source
+countryAutoComplete.DataSource = employeeDetails;
 
-			object[] objects = new object[2];
-			object[] keys = new object[2];
-			keys.SetValue("Name", 0);
-			keys.SetValue("Image", 1);
-			objects.SetValue((NSString)name, 0);
-			objects.SetValue((NSString)image, 1);
-			return NSDictionary.FromObjectsAndKeys(objects, keys);
-		}
-	 
-	
-	ArrayAdapter<Object> arrayDataAdapters = new ArrayAdapter<Object>(context,Android.Resource.Layout.SimpleListItem1, array);
-	StudentDetails.MultiSelectMode=MultiSelectMode.Token;
-	studentAutoComplete.DataSource = arrayDataAdapters;
+//Set the MultiSelectMode
+countryAutoComplete.MultiSelectMode = MultiSelectMode.Token;
+countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
+countryAutoComplete.MaximumDropDownHeight = 200;
+countryAutoComplete.DropDownItemHeight = 50;
 
-// Set the TokensWrapMode into Wrap.
+//Set the TokensWrapMode
+countryAutoComplete.TokensWrapMode = TokensWrapMode.Wrap;
 
-	StudentDetails.TokensWrapMode=TokensWrapMode.Wrap;
-
-	TokensSetting token = new TokensSetting();
-	token.FontSize=15;
-	token.CornerRadius=5;
-	token.SetTextColor(Color.Red);
-	token.SetBackgroundColor(Color.Gray);
-	token.SelectedBackgroundColor(Color.Yellow);
-	token.SetDeleteButtonColor(Color.Maroon);
-    token.IsCloseButtonVisible=true;
-	StudentDetails.TokensSetting= token;
+//Add the SfAutoComplete view to the linear layout
+linearLayout.AddView(countryAutoComplete);
+SetContentView(linearLayout);
 
 	
 {% endhighlight %}
@@ -139,88 +105,29 @@ Customization can be done for Token. There are various ways to customize the tok
 * `IsCloseButtonVisible` - Enables and disables the close button inside SfAutoComplete.
 
 * `DeleteButtonColor` - sets the color of the close button inside SfAutoComplete.
-token.
+
 * `CornerRadius` - sets the corner radius for the token.
 
 
 {% tabs %}
 
 {% highlight C# %}
-	
-	public class Student
-	{
-		string Name;
-		string Image;
-		public Student(string name,string image)
-		{
-			this.Name = name;
-			this.Image = image;
 
-		}
-		public string getName()
-		{
-			return Name;
-		}
-		public string getImage()
-		{
-			return Image;
-		}
-	}
-	
-public NSMutableArray StudentDetails
-		{
-			get;
-			set;
-		}
-
-		void GetStudentData()
-		{
-			NSMutableArray array = new NSMutableArray();
-			array.Add(getDictionary("John", "image1.png"));
-			array.Add(getDictionary("James", "image2.png"));
-			array.Add(getDictionary("Jacob", "image33.png"));
-			array.Add(getDictionary("Joy", "image4.png"));
-			array.Add(getDictionary("Victoria", "image5.png"));
-			array.Add(getDictionary("James", "image6.png"));
-			StudentDetails = array;
-		}
-
-		NSDictionary getDictionary(string name, string image)
-		{
-
-			object[] objects = new object[2];
-			object[] keys = new object[2];
-			keys.SetValue("Name", 0);
-			keys.SetValue("Image", 1);
-			objects.SetValue((NSString)name, 0);
-			objects.SetValue((NSString)image, 1);
-			return NSDictionary.FromObjectsAndKeys(objects, keys);
-		}
-	 
-	
-	ArrayAdapter<Object> arrayDataAdapters = new ArrayAdapter<Object>(context,Android.Resource.Layout.SimpleListItem1, array);
-	StudentDetails.MultiSelectMode=MultiSelectMode.Token;
-	studentAutoComplete.DataSource = arrayDataAdapters;
-
-	// Token Customization
-
-	TokensSetting token = new TokensSetting();
-	token.FontSize=15;
-	token.CornerRadius=5;
-	token.SetTextColor(Color.Red);
-	token.SetBackgroundColor(Color.Gray);
-	token.SelectedBackgroundColor(Color.Yellow);
-	token.SetDeleteButtonColor(Color.Maroon);
-    token.IsCloseButtonVisible=true;
-	StudentDetails.TokensSetting= token;
-
+//Create an object to do Token Customization 
+TokenSettings token = new TokenSettings();
+token.BackgroundColor = Color.ParseColor("#f5ffbe");
+token.TextSize = 16;
+token.TextColor = Color.Red;
+token.SelectedBackgroundColor = Color.ParseColor("#ffffe0");
+token.DeleteButtonColor = Color.Brown;
+token.IsCloseButtonVisible = true;
+token.CornerRadius = 15;
+employeeAutoComplete.TokenSettings = token;
 	 
 {% endhighlight %}
 
 {% endtabs %}
 
-
-	
 ![](images/TokenRepresentation.png)
 
 ## Delimiter
@@ -230,21 +137,10 @@ When selecting the multiple items, the selected items can be divided with a desi
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Andorra");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Angola");
-	countryList.Add ("Algeria");
-	countryList.Add ("Argentina");
-	countryList.Add ("Antarctica");
-	countryList.Add ("Armenia");
-	countryList.Add ("Aruba");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
-	countryAutoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
-	countryAutoComplete.Delimiter="#";
+
+//Set the MultiSelectMode
+countryAutoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
+countryAutoComplete.Delimiter="#";
 	 
 {% endhighlight %}
 
