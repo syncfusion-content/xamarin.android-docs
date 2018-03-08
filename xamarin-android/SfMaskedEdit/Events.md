@@ -24,8 +24,7 @@ Occurs when the value of the `Value` property is changed by either entering the 
 * `Value`: The new value of the `Value` property.
 
 > Your valid input character is updated to `Value` property based on the `ValidationMode` property.
-
-Refer to this [link](Validation#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
+> Refer to this [link](Validation#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
 
 {% tabs %}
 {% highlight c# %}
