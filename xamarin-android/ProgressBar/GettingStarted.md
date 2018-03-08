@@ -35,7 +35,7 @@ There are two variants of progress bar: SfLinearProgressBar and SfCircularProgre
 
 {% highlight C# %} 
 
-            //// Using linear progress bar. 
+            // Using linear progress bar. 
             LinearLayout linearLayout = new LinearLayout(this);
             linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
                 this.Resources.DisplayMetrics.WidthPixels - 120,
@@ -48,7 +48,7 @@ There are two variants of progress bar: SfLinearProgressBar and SfCircularProgre
             sfLinearProgressBar.Progress = 75;
             linearLayout.AddView(sfLinearProgressBar);
 
-            //// Using circular progress bar.
+            // Using circular progress bar.
             SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
             circularProgressBar.Progress = 75;
             circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
@@ -74,7 +74,7 @@ When the progress of a task cannot be shown determinately, you can enable indete
 
 {% highlight C# %} 
 
-             //// Using linear progress bar. 
+             // Using linear progress bar. 
             LinearLayout linearLayout = new LinearLayout(this);
             linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
                 this.Resources.DisplayMetrics.WidthPixels - 120,
@@ -88,7 +88,7 @@ When the progress of a task cannot be shown determinately, you can enable indete
             sfLinearProgressBar.IsIndeterminate = true;
             linearLayout.AddView(sfLinearProgressBar);
 
-            //// Using circular progress bar.
+            // Using circular progress bar.
             SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
             circularProgressBar.Progress = 75;
             circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
@@ -106,7 +106,7 @@ To visualize the progress of a multiple sequential task, split the progress bar 
 
 {% highlight C# %} 
 
-             //// Using linear progress bar. 
+             // Using linear progress bar. 
             LinearLayout linearLayout = new LinearLayout(this);
             linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
                 this.Resources.DisplayMetrics.WidthPixels - 120,
@@ -120,7 +120,7 @@ To visualize the progress of a multiple sequential task, split the progress bar 
             sfLinearProgressBar.SegmentCount = 4;
             linearLayout.AddView(sfLinearProgressBar);
 
-            //// Using circular progress bar.
+            // Using circular progress bar.
             SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
             circularProgressBar.Progress = 75;
             circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
@@ -146,7 +146,7 @@ You can customize the color of the progress indicator and track by defining the 
                 this.Resources.DisplayMetrics.HeightPixels / 2);
             linearLayout.Orientation = Orientation.Vertical;
 
-            //// Using linear progress bar. 
+            // Using linear progress bar. 
             SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);           
             sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
                 this.Resources.DisplayMetrics.WidthPixels - 120,
@@ -156,7 +156,7 @@ You can customize the color of the progress indicator and track by defining the 
             sfLinearProgressBar.ProgressColor = Color.Rgb(255, 183, 63);
             linearLayout.AddView(sfLinearProgressBar);
 
-            //// Using linear progress bar. 
+            // Using linear progress bar. 
             SfLinearProgressBar linearProgressBar = new SfLinearProgressBar(this);
             linearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
                 this.Resources.DisplayMetrics.WidthPixels - 120,
@@ -166,7 +166,7 @@ You can customize the color of the progress indicator and track by defining the 
             linearProgressBar.ProgressColor = Color.Rgb(82, 69, 57);
             linearLayout.AddView(linearProgressBar);
 
-            //// Using circular progress bar.
+            // Using circular progress bar.
             SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
             circularProgressBar.Progress = 75;
             circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
@@ -177,7 +177,7 @@ You can customize the color of the progress indicator and track by defining the 
             linearLayout.AddView(circularProgressBar);            
             SetContentView(linearLayout);
 
-            //// Using circular progress bar.
+            // Using circular progress bar.
             SfCircularProgressBar SfCircularProgressBar = new SfCircularProgressBar(this);
             SfCircularProgressBar.Progress = 75;
             SfCircularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
@@ -192,4 +192,4 @@ You can customize the color of the progress indicator and track by defining the 
 ![](overview_images/style.png)
 
 
-You can find the complete Getting Started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar_Android-166812374).
+You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar_Android-166812374).
