@@ -130,7 +130,7 @@ token.
             employeeDetails.Add(new Employee("James", "james.png"));
             employeeDetails.Add(new Employee("Jacob", "jacob.png"));
             employeeDetails.Add(new Employee("Joy", "joy.png"));
-            employeeDetails.Add(new Employee("Victoria", "Victoria.png"));
+            employeeDetails.Add(new Employee("Victoria", "Victoria.png")); 
 
             employeeAutoComplete.DisplayMemberPath = "Name";
             employeeAutoComplete.DataSource = employeeDetails;
