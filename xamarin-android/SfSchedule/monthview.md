@@ -275,7 +275,7 @@ By using [MonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-and
 				e.CellStyle.TextSize = 12;
 				e.CellStyle.BackgroundColor = Color.White;
 				e.CellStyle.TextColor = Color.Gray;
-				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal)
+				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal);
 			}
 			else if (e.IsPreviousMonthDate)
 			{
@@ -366,7 +366,7 @@ By using [MonthInlineLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-a
 			monthInlineViewStyle.TextSize = 20;
 			monthInlineViewStyle.BackgroundColor = Color.Blue;
 			monthInlineViewStyle.TextColor = Color.Green;
-			monthCellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
+			monthInlineViewStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
 			monthInlineViewStyle.TimeTextColor = Color.Red;
 			monthInlineViewStyle.TimeTextSize = 12;
 			monthInlineViewStyle.TimeTextFormat = "hh a";
@@ -486,7 +486,7 @@ schedule.MonthViewSettings = monthViewSettings;
 
 ![](monthview_images/TodayBackground.png)
 
-##Custom Font
+## Custom Font
 
 We can change the appearance of Font by setting the TextStyle property of following classes.
 
