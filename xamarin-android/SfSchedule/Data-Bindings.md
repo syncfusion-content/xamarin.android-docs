@@ -394,40 +394,69 @@ Schedule appointment can be customized during runtime using [AppointmentLoadedEv
 •	[View](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~View.html) -  Sets the Custom UI for Appointments.
 •	[Bounds](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~Bounds.html) – Contains the UI bounds of appointment.
 
-{% highlight c# %} 
- 
-          schedule.AppointmentLoaded += schedule_AppointmentLoaded ;
+{% highlight c# %}  
+schedule.AppointmentLoaded += schedule_AppointmentLoaded ;
 
-    void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
-    {
-		 args.AppointmentStyle = new AppointmentStyle();
-    if (args.Appointment != null && args.Appointment.Subject == "Client Meeting")
-	    {
-		    args.AppointmentStyle.BorderColor = Color.Blue;
-		    args.AppointmentStyle.BorderCornerRadius = 12;
-		    args.AppointmentStyle.BorderWidth = 10;
-	    }
-    }
+private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
+{
+	args.AppointmentStyle = new AppointmentStyle();
 
- 
+	if(args.Appointment != null && args.Appointment.IsAllDay)
+	{
+		args.AppointmentStyle.BorderColor = Color.Red;
+		args.AppointmentStyle.BorderCornerRadius = 12;
+		args.AppointmentStyle.TextColor= Color.White;
+		args.AppointmentStyle.BorderWidth = 10;
+	}
+	else	
+	{
+		args.AppointmentStyle.BorderColor = Color.Blue;
+		args.AppointmentStyle.BorderCornerRadius = 12;
+		args.AppointmentStyle.TextColor= Color.Red;
+		args.AppointmentStyle.BorderWidth = 10;
+	}
+}
+
 {% endhighlight %}
+
+![](PopulatingAppointments_images/appointmentstyle_event.png)
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
 
 {% highlight c# %} 
  
-     schedule.AppointmentLoaded += schedule_AppointmentLoaded;
+schedule.AppointmentLoaded += schedule_AppointmentLoaded;
 
-    void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
-        {
-	        Button button = new Button(this);
-	        button.SetBackgroundColor(Color.Green);
-	        if (args.Appointment != null)
-		        button.Text = args.Appointment.Subject;
-	        args.View = button;
-        }
+private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
+{
+	if (args.Appointment == null)
+		return;
+	if(args.Appointment.IsAllDay)
+	{
+		TextView textView = new TextView(this);
+		textView.SetTextColor(Color.Black);
+		textView.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
+		textView.Text = arg.Appointment.Subject;
+		arg.View = textView;
+	}
+	else if (args.Appointment.Subject == "Retrospective")
+	{
+		ImageButton button = new ImageButton(this);
+		button.SetImageResource(Resource.Drawable.Meeting); // Meeting as Image name
+		button.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
+		arg.View = button;
+	}
+	else
+	{
+		ImageButton button = new ImageButton(this);
+		button.SetImageResource(Resource.Drawable.Cake); // Cake as Image name
+		button.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
+		arg.View = button;
+	}	
+}
 
+![](PopulatingAppointments_images/custom.png)
  
 {% endhighlight %}
 
