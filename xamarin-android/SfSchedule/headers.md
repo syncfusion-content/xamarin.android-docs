@@ -31,7 +31,7 @@ You can change the background color,text style and text size using properties su
 
 	HeaderStyle headerStyle = new HeaderStyle();
 	headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
-	headerStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+	headerStyle.TextStyle = Font.Default;
 	headerStyle.TextSize = 15;
 	headerStyle.TextColor=Color.White;
 	schedule.HeaderStyle = headerStyle;
@@ -101,4 +101,20 @@ var calendar = e.Calendar;
 
 ##Custom Font
 
-For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font) 
+We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderStyle~TextStyle.html) property of [HeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/headers#appearance) property in Schedule.
+{% highlight c# %}
+
+	headerStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+
+{% endhighlight %}
+
+![](Header_images/customfontheader.png)
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.Android
+
+* Download the Custom Font(e.g. Lobster-Regular.ttf) 
+* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
+* Then, use the Custom Font name as text style.
+

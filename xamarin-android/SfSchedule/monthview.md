@@ -136,7 +136,7 @@ You can customize the Week Number appearance by using [WeekNumberStyle](https://
 
 			//creating new instance for WeekNumberStyle
 			WeekNumberStyle weekNumberStyle = new WeekNumberStyle();
-			weekNumberStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+			weekNumberStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
 			weekNumberStyle.BackgroundColor = Color.Blue;
 			weekNumberStyle.TextColor = Color.White;
 			weekNumberStyle.TextSize = 12;
@@ -174,7 +174,7 @@ You can customize the View Header appearance by using [ViewHeaderStyle](https://
 
 			//creating new instance for viewHeaderStyle 
 			ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-			viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+			viewHeaderStyle.DayTextStyle = Typeface.Create("Arial", TypefaceStyle.Italic);
 			viewHeaderStyle.DayTextSize = 15;
 			viewHeaderStyle.DayTextColor = Color.White;
 			viewHeaderStyle.BackgroundColor = Color.Blue;
@@ -237,7 +237,7 @@ By using [MonthCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin-andr
             MonthCellStyle monthCellStyle = new MonthCellStyle();
 			monthCellStyle.TextSize = 15;
 			monthCellStyle.TextColor = Color.White;
-			monthCellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+			monthCellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
 			monthCellStyle.BackgroundColor = Color.Blue;
 			monthCellStyle.TodayTextColor = Color.White;
 			monthCellStyle.TodayBackgroundColor = Color.Red;
@@ -268,35 +268,35 @@ By using [MonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-and
 				e.CellStyle.TextSize = 15;
 				e.CellStyle.BackgroundColor = Color.Red;
 				e.CellStyle.TextColor = Color.White;
-				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+		    	e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Bold);
 			}
 			else if (e.IsNextMonthDate)
 			{
 				e.CellStyle.TextSize = 12;
 				e.CellStyle.BackgroundColor = Color.White;
 				e.CellStyle.TextColor = Color.Gray;
-				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal)
 			}
 			else if (e.IsPreviousMonthDate)
 			{
 				e.CellStyle.TextSize = 12;
 				e.CellStyle.BackgroundColor = Color.White;
 				e.CellStyle.TextColor = Color.Gray;
-				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+			    e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal);
 			}
 			else if (e.IsBlackoutDate)
 			{
 				e.CellStyle.TextSize = 15;
 				e.CellStyle.BackgroundColor = Color.Black;
 				e.CellStyle.TextColor = Color.White;
-				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+			    e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Bold);
 			}
 			else
 			{
 				e.CellStyle.TextSize = 15;
 				e.CellStyle.BackgroundColor = Color.Blue;
 				e.CellStyle.TextColor = Color.White;
-				e.CellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
 			}
 		}
 
@@ -366,7 +366,7 @@ By using [MonthInlineLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-a
 			monthInlineViewStyle.TextSize = 20;
 			monthInlineViewStyle.BackgroundColor = Color.Blue;
 			monthInlineViewStyle.TextColor = Color.Green;
-			monthInlineViewStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+			monthCellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
 			monthInlineViewStyle.TimeTextColor = Color.Red;
 			monthInlineViewStyle.TimeTextSize = 12;
 			monthInlineViewStyle.TimeTextFormat = "hh a";
@@ -488,7 +488,69 @@ schedule.MonthViewSettings = monthViewSettings;
 
 ##Custom Font
 
-For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font) 
+We can change the appearance of Font by setting the TextStyle property of following classes.
+
+* [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) - We can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html) properties of Schedule `ViewHeaderStyle`.
+* [MonthCellStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#monthcell-appearance) - We can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#monthcell-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthCellStyle~TextStyle.html) property of Schedule `MonthCellStyle`.
+* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) - We can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthCellStyle~TextStyle.html) property of Schedule `MonthInlineViewStyle`.
+* [WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
+
+{% tabs %}
+{% highlight c# %}
+
+			viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/cusomfontviewheader_month.png)
+
+{% tabs %}
+{% highlight c# %}
+
+			monthCellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/customfontmonthcell.png)
+
+{% tabs %}
+{% highlight c# %}
+
+			schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
+			...
+			void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
+		{
+			MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
+			monthInlineViewStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+			e.MonthInlineViewStyle = monthInlineViewStyle;
+		}
+
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/customfontmonthinline.png)
+
+{% tabs %}
+{% highlight c# %}
+
+			weekNumberStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");		
+
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/customfontweeknumber.png)
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.Android
+
+* Download the Custom Font(e.g. Lobster-Regular.ttf) 
+* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
+* Then, use the Custom Font name as text style.
+
+
 
 
 

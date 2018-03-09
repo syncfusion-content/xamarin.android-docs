@@ -372,7 +372,7 @@ Schedule appointment can be customized by setting appointment style properties s
         //Creating appointment style 
         AppointmentStyle appointmentStyle = new AppointmentStyle();
         appointmentStyle.TextColor = Color.Red;
-        appointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+		appointmentStyle.TextStyle = Typeface.Create("Calibri", TypefaceStyle.Bold); 
         appointmentStyle.BorderColor = Color.Blue;
         appointmentStyle.BorderCornerRadius = 12;
         appointmentStyle.BorderWidth = 10;
@@ -485,5 +485,23 @@ N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
 ##Custom Font
 
-For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font) 
+We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#appearance-customization) property in Schedule.
+
+{% highlight c# %}
+
+        appointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");     
+
+{% endhighlight %}
+
+![](PopulatingAppointments_images/customfontappointment.png)
+
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.Android
+
+* Download the Custom Font(e.g. Lobster-Regular.ttf) 
+* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
+* Then, use the Custom Font name as text style.
+
 

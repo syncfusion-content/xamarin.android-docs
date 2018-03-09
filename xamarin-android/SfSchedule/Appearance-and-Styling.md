@@ -46,7 +46,7 @@ You can change the background color,text style and text size using properties su
 
 	HeaderStyle headerStyle = new HeaderStyle();
 	headerStyle.BackgroundColor = Color.Rgb(251, 211, 201);
-	headerStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+	headerStyle.TextStyle = Typeface.DefaultBold;
 	headerStyle.TextSize= 12;
     headerStyle.TextColor = Color.White;
 	schedule.HeaderStyle = headerStyle;
@@ -71,8 +71,8 @@ You can change the background color,text style and text size using properties su
 	viewHeaderStyle.DateTextColor= Color.White;
 	viewHeaderStyle.DateTextSize = 15;
 	viewHeaderStyle.DayTextSize = 10;
-	viewHeaderStyle.DateTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
-	viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+	viewHeaderStyle.DateTextStyle = Typeface.Default;
+	viewHeaderStyle.DayTextStyle = Typeface.DefaultBold;
 	schedule.ViewHeaderStyle = viewHeaderStyle;
 
 {% endhighlight %}
@@ -479,7 +479,3 @@ You can change the time interval and time interval height using `TimeInterval` a
 >**NOTE** : `TimeInterval` value should be given in minutes.
 
 ![](Appearance_images/TimeInterval.png)
-
-##Custom Font
-
-For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font) 

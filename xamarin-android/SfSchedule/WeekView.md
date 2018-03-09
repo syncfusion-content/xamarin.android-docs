@@ -25,9 +25,9 @@ You can customize the default appearance of view header in [WeekView](https://he
 			ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
 			viewHeaderStyle.BackgroundColor = Color.Rgb(0, 150, 136);
 			viewHeaderStyle.DayTextColor = Color.Rgb(255, 255, 255);
-			viewHeaderStyle.DateTextColor = Color.Rgb(255, 255, 255);			
-			viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
-			viewHeaderStyle.DateTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+			viewHeaderStyle.DateTextColor = Color.Rgb(255, 255, 255);		
+			viewHeaderStyle.DayTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);
+			viewHeaderStyle.DateTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);	
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 
@@ -334,4 +334,23 @@ You can download the entire source code of this demo for Xamarin.Android from he
 
 ##Custom Font
 
-For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#custom font)
+We can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html)  properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) property in Schedule.
+
+{% highlight c# %}
+	
+			viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+			viewHeaderStyle.DateTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+			
+{% endhighlight %}
+
+![](daymodule_images/customfontviewheader_week.png)
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.Android
+
+* Download the Custom Font(e.g. Lobster-Regular.ttf) 
+* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
+* Then, use the Custom Font name as text style.
+
+
