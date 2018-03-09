@@ -417,8 +417,9 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 	}
 }
 
- 
 {% endhighlight %}
+
+![](PopulatingAppointments_images/appointmentstyle_event.png)
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
@@ -455,6 +456,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 	}	
 }
 
+![](PopulatingAppointments_images/custom.png)
  
 {% endhighlight %}
 
