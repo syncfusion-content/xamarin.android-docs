@@ -9,17 +9,17 @@ documentation: ug
 
 # Display Type
 
-Tab view will display the title of each tab item by default. It can be changed to any of the below type.
+Tab view displays the title of each tab item by default. This can be changed to any of the following types.
 
-* Text only.
-* Image only.
-* Image with text.
-* No header.
+* Text only
+* Image only
+* Image with text
+* No header
 
 ![](images/Display-Type/xamarin_android_tabstyle01.png)
 
 
-It can be changed by settings the `DisplayMode` property of `SfTabView`.
+Display type be changed by setting the `DisplayMode` property of `SfTabView`.
 
 {% tabs %}
 
@@ -31,13 +31,13 @@ tabView.DisplayMode = TabDisplayMode.ImageWithText;
 
 {% endtabs %}
 
-`No header` can be used when header is not needed for the tab view control, so content space will be occupied in the entire available height.
+The "no header" type can be used when the header is not needed for the tab view control, so the content space will be occupied in the entire available height.
 
 N> Image appearance in the header can be achieved through font icons.
 
 ## How to change the selection color for text and font icons?
 
-Selected index can be differentiated by setting `SelectionColor` property of `SfTabItem`.
+The selected index can be differentiated by setting the `SelectionColor` property of `SfTabItem`.
 
 {% tabs %}
 
@@ -53,11 +53,7 @@ TitleFontColor = Color.Green,
 
 {% endtabs %}
 
-Further customizations of header are discussed in the below sections.
-
-* How to customize text appearance of the header title?
-* How to set and customize font icons appearance in the header?
-* Setting font file for font icons.
+The further customizations of header are discussed in the following sections.
 
 ## How to customize text appearance of the header title?
 
@@ -78,13 +74,13 @@ TitleFontSize = 22
 
 {% endtabs %}
 
-## How to set and customize font icons appearance in the header?
+## How to set and customize the font icons' appearance in the header?
 
-Add the font file into your application by following the below steps.
+Add the font file to your application by using the following steps.
 
-**Adding font file into the Android project**
+**Adding font file to the Android project**
 
-* Add the font file to the `Assets` folder in the application project and set Build Action: `AndroidAsset`.
+* Add the font file to the `Assets` folder in the application project, and set the `AndroidAsset` build action.
 
 **Setting font file for font icons**
 
