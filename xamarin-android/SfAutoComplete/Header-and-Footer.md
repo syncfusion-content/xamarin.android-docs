@@ -13,119 +13,69 @@ We can provide Header and Footer content in the SfAutoComplete by enabling `Show
 
 ## Header Content
 
-We can provide Header Content at the top of the AutoComplete's Suggestion box. `DropDownHeaderView` property is used to set the content of the header. The following code example illustrate how to set Header content in SfAutoComplete.
+We can provide Header Content at the top of the AutoComplete's Suggestion box. `DropDownHeaderView` property is used to set the content of the header. The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
 
+ The following code example illustrate how to set Header content in SfAutoComplete.
 
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Uganda");
-	countryList.Add ("Ukraine");
-	countryList.Add ("United Arab Emirates");
-	countryList.Add ("United Kingdom");
-	countryList.Add ("United States");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.ShowDropDownHeaderView=true;
+
+countryAutoComplete.ShowDropDownHeaderView = true;
+countryAutoComplete.DropDownItemHeight = 30;
+countryAutoComplete.DropDownTextSize = 16;
+
+// set the Height for the HeaderView
+countryAutoComplete.DropDownHeaderViewHeight = 50;
 
 
-	 TextView textView = new TextView(context);
-            textView.Text = "Search for U"
-            textView.TextSize = 16;
-            textView.SetPadding(20, 0, 20, 0);
-			DropDownHeaderView header = new DropDownHeaderView();
-			header.AddView(textView);
-			countryAutoComplete.DropDownHeaderView=header;
-
-
+TextView textView = new TextView(this);
+textView.Text = "Search For U";
+textView.SetBackgroundColor(Color.LightGray);
+textView.Gravity = GravityFlags.CenterVertical;
+textView.SetTextColor(Color.ParseColor("#2B7CC5"));
+textView.TextSize = 16;
+textView.SetPadding(20, 0, 20, 0);
+countryAutoComplete.DropDownHeaderView = textView;
 	 
 {% endhighlight %}
 
 {% endtabs %}
-	
-## Header Height
-
-The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
-
-{% tabs %}
-
-{% highlight C# %}
-List<String> countryList = new List<String>(); 
-	countryList.Add ("Uganda");
-	countryList.Add ("Ukraine");
-	countryList.Add ("United Arab Emirates");
-	countryList.Add ("United Kingdom");
-	countryList.Add ("United States");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.DropDownHeaderViewHeight=50;
-	countryAutoComplete.ShowDropDownHeaderView=true;
-
-{% endhighlight %}
-
-{% endtabs %}
-	
 
 ![](images/Header.png)
 
 ## Footer Content
 
-We can provide Footer Content at the bottom of the AutoComplete's Suggestion box. `DropDownFooterView` property is used to set the content of the footer. The following code example illustrate how to set Footer content in SfAutoComplete.
+We can provide Footer Content at the bottom of the AutoComplete's Suggestion box. `DropDownFooterView` property is used to set the content of the footer. The height of the Footer in the SfAutoComplete can be adjusted by the property `DropDownFooterViewHeight`.
+
+The following code example illustrate how to set Footer content in SfAutoComplete.
 
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Uganda");
-	countryList.Add ("Ukraine");
-	countryList.Add ("United Arab Emirates");
-	countryList.Add ("United Kingdom");
-	countryList.Add ("United States");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.ShowDropDownFooterView=true;
 
+countryAutoComplete.ShowDropDownHeaderView = true;
+countryAutoComplete.DropDownItemHeight = 30;
+countryAutoComplete.DropDownTextSize = 16;
 
-	TextView textView = new TextView(context);
-            textView.Text = "Add New"
-            textView.TextSize = 16;
-            textView.SetPadding(20, 0, 20, 0);
-			DropDownFooterView footer = new DropDownFooterView();
-			footer.AddView(textView);
-			countryAutoComplete.DropDownFooterView=footer;
+// set the Height for the FooterView
+countryAutoComplete.DropDownFooterViewHeight = 50;
+
+TextView textView = new TextView(this);
+textView.Text = "Add New";
+textView.SetBackgroundColor(Color.LightGray);
+textView.Gravity = GravityFlags.CenterVertical;
+textView.SetTextColor(Color.ParseColor("#2B7CC5"));
+textView.TextSize = 16;
+textView.SetPadding(20, 0, 20, 0);
+countryAutoComplete.DropDownFooterView = textView;
 	 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Footer Height
-
-The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownFooterViewHeight`.
-	
-List<String> countryList = new List<String>(); 
-    countryList.Add ("Uganda");
-	countryList.Add ("Ukraine");
-	countryList.Add ("United Arab Emirates");
-	countryList.Add ("United Kingdom");
-	countryList.Add ("United States");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-    countryAutoComplete.DropDownFooterViewHeight= 50;
-
-		TextView textView = new TextView(context);
-            textView.Text = "Add New"
-            textView.TextSize = 16;
-            textView.SetPadding(20, 0, 20, 0);
-			DropDownFooterView footer = new DropDownFooterView();
-			footer.AddView(textView);
-			countryAutoComplete.DropDownFooterView=footer;
-
 ![](images/Footer.png)
 
 
 
+ 
