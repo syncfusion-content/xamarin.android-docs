@@ -12,9 +12,7 @@ documentation: ug
 
 {% tabs %}
 {% highlight c# %}
-
-			schedule.ScheduleView = ScheduleView.MonthView;
-
+schedule.ScheduleView = ScheduleView.MonthView;
 {% endhighlight %}
 {% endtabs %}
 
@@ -24,12 +22,10 @@ documentation: ug
 In `MonthView`, appointments are not viewed in the month cell instead appointment indicators are drawn. You can customize the number of appointment indicators displayed in month cell using  [AppointmentIndicatorCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings~AppointmentIndicatorCount.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings.html) in `SfSchedule`, by default Appointment indicator count is 3.
 
 {% highlight c# %}
-
-			//creating new instance for MonthViewSettings
-			MonthViewSettings monthViewSettings = new MonthViewSettings();
-			monthViewSettings.AppointmentIndicatorCount = 2;
-			schedule.MonthViewSettings = monthViewSettings;
-
+//creating new instance for MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.AppointmentIndicatorCount = 2;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 
 ![](monthview_images/appointmentindicator.png)
@@ -458,10 +454,8 @@ You can programmatically select the specific cell by setting corresponding date 
 You can clear the selection by setting [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) as null.
 
 {% highlight C# %}
-
-    // Setting null value to deselect
-    schedule.SelectedDate = null;
-
+// Setting null value to deselect
+schedule.SelectedDate = null;
 {% endhighlight %}
 
 You can download the entire source code of this demo for Xamarin.Android from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection-303833588.zip)
@@ -495,50 +489,35 @@ We can change the appearance of Font by setting the TextStyle property of follow
 * [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) - We can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthCellStyle~TextStyle.html) property of Schedule `MonthInlineViewStyle`.
 * [WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
 
-{% tabs %}
 {% highlight c# %}
-
-			viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
-
+viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 {% endhighlight %}
-{% endtabs %}
 
 ![](monthview_images/cusomfontviewheader_month.png)
 
-{% tabs %}
 {% highlight c# %}
-
-			monthCellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
-
+monthCellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 {% endhighlight %}
-{% endtabs %}
 
 ![](monthview_images/customfontmonthcell.png)
 
-{% tabs %}
 {% highlight c# %}
-
-			schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
-			...
-			void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
-		{
-			MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
-			monthInlineViewStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
-			e.MonthInlineViewStyle = monthInlineViewStyle;
-		}
-
+schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
+...
+void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
+{
+	MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
+	monthInlineViewStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
+	e.MonthInlineViewStyle = monthInlineViewStyle;
+}
 {% endhighlight %}
-{% endtabs %}
 
 ![](monthview_images/customfontmonthinline.png)
 
-{% tabs %}
+
 {% highlight c# %}
-
-			weekNumberStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");		
-
+weekNumberStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");		
 {% endhighlight %}
-{% endtabs %}
 
 ![](monthview_images/customfontweeknumber.png)
 
@@ -546,7 +525,7 @@ Following steps will explain how to configure the custom fonts.
 
 ### Custom Font Setting in Xamarin.Android
 
-* Download the Custom Font(e.g. Lobster-Regular.ttf) 
+* Download the Custom Font(e.g. Lobster-Regular.ttf).
 * Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
 * Then, use the Custom Font name as text style.
 
