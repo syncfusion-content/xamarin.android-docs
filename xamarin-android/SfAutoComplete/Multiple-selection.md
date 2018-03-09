@@ -59,10 +59,10 @@ employeeDetails.Add(new Employee("Jacob", "jacob.png"));
 employeeDetails.Add(new Employee("Joy", "joy.png"));
 employeeDetails.Add(new Employee("Victoria", "victoria.png"));
 
-//To display the Name set the DisplayMemberPath
+//To display the Name, set the DisplayMemberPath
 countryAutoComplete.DisplayMemberPath = "Name";
 
-//To display the Image set the ImageMemberPath
+//To display the Image, set the ImageMemberPath
 countryAutoComplete.ImageMemberPath = "Image";
 
 //Add the data source
