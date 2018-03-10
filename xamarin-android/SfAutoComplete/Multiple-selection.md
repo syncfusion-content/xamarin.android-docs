@@ -115,9 +115,9 @@ Customization can be done for Token. There are various ways to customize the tok
 
 //Create an object to do Token Customization 
 TokenSettings token = new TokenSettings();
-token.BackgroundColor = Color.ParseColor("#f5ffbe");
+token.BackgroundColor = Color.ParseColor("#66ccff");
 token.TextSize = 16;
-token.TextColor = Color.Red;
+token.TextColor = Color.White;
 token.SelectedBackgroundColor = Color.ParseColor("#ffffe0");
 token.DeleteButtonColor = Color.Brown;
 token.IsCloseButtonVisible = true;
