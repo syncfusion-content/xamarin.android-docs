@@ -57,7 +57,7 @@ employeeDetails.Add(new Employee("John", "john.png"));
 employeeDetails.Add(new Employee("James", "james.png"));
 employeeDetails.Add(new Employee("Jacob", "jacob.png"));
 employeeDetails.Add(new Employee("Joy", "joy.png"));
-employeeDetails.Add(new Employee("Victoria", "victoria.png"));
+employeeDetails.Add(new Employee("Victoria", "Victoria.png"));
 
 //To display the Name, set the DisplayMemberPath
 countryAutoComplete.DisplayMemberPath = "Name";
