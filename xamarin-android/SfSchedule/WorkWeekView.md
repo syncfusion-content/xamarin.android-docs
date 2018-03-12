@@ -18,17 +18,17 @@ You can customize the default appearance of view header in [WorkWeekView](https:
 
 {% highlight c# %}
 
-           //Create new instance of Schedule
-			SfSchedule schedule = new SfSchedule(this);
-			schedule.ScheduleView = ScheduleView.WorkWeekView;
-			//Customize the schedule view header
-			ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-			viewHeaderStyle.BackgroundColor = Color.Rgb(0, 150, 136);
-			viewHeaderStyle.DayTextColor = Color.Rgb(255, 255, 255);
-			viewHeaderStyle.DateTextColor = Color.Rgb(255, 255, 255);
-			viewHeaderStyle.DayTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);
-			viewHeaderStyle.DateTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);
-			schedule.ViewHeaderStyle = viewHeaderStyle;
+//Create new instance of Schedule
+SfSchedule schedule = new SfSchedule(this);
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Customize the schedule view header
+ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
+viewHeaderStyle.BackgroundColor = Color.Rgb(0, 150, 136);
+viewHeaderStyle.DayTextColor = Color.Rgb(255, 255, 255);
+viewHeaderStyle.DateTextColor = Color.Rgb(255, 255, 255);
+viewHeaderStyle.DayTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);
+viewHeaderStyle.DateTextStyle = Typeface.DefaultFromStyle(TypefaceStyle.Italic);
+schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 
 ![](daymodule_images/viewheaderappearance_workweek.png)
@@ -158,15 +158,15 @@ You can customize the appearance of the working hour timeslots by its color usin
 
 {% highlight C# %}
 
-            schedule.ScheduleView = ScheduleView.WorkWeekView;
-			//Create new instance of WorkWeekViewSettings
-			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-			workWeekViewSettings.TimeSlotBorderColor = Color.Aqua;
-			workWeekViewSettings.VerticalLineColor = Color.Blue;
-			workWeekViewSettings.TimeSlotColor = Color.Yellow;
-			workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
-			workWeekViewSettings.VerticalLineStrokeWidth = 5;
-			schedule.WorkWeekViewSettings = workWeekViewSettings;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Create new instance of WorkWeekViewSettings
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+workWeekViewSettings.TimeSlotBorderColor = Color.Aqua;
+workWeekViewSettings.VerticalLineColor = Color.Blue;
+workWeekViewSettings.TimeSlotColor = Color.Yellow;
+workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
+workWeekViewSettings.VerticalLineStrokeWidth = 5;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
 ![](daymodule_images/timeslotappearance_workweek.png)
@@ -177,7 +177,6 @@ You can customize the appearance of the non-working hour timeslots by its color 
 
 
 {% highlight C# %}
-
            schedule.ScheduleView = ScheduleView.WorkWeekView;
 			//Create new instance of WorkWeekViewSettings
 			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
@@ -236,13 +235,12 @@ By default, schedule control will be rendered with Sunday as the first day of th
 You can customize the format for the labels which are mentioning the time, by setting [TimeFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekLabelSettings~TimeFormat.html) property of [WorkWeekLabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekViewSettings~WorkWeekLabelSettings.html) in `WorkWeekViewSettings`.
 
 {% highlight C# %}
-
-            schedule.ScheduleView = ScheduleView.WorkWeekView;
-			WorkWeekViewSettings workweekViewSettings = new WorkWeekViewSettings();
-			WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
-			workWeekLabelSettings.TimeFormat = "hh mm";
-			workweekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
-			schedule.WorkWeekViewSettings = workweekViewSettings;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+WorkWeekViewSettings workweekViewSettings = new WorkWeekViewSettings();
+WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
+workWeekLabelSettings.TimeFormat = "hh mm";
+workweekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
+schedule.WorkWeekViewSettings = workweekViewSettings;
 {% endhighlight %}
 
 ![](daymodule_images/timelabelformat_workweek.png)
@@ -333,3 +331,22 @@ You can download the entire source code of this demo for Xamarin.Android from he
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_WorkWeek.png)
+
+## Custom Font
+
+We can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html) properties of  [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) property in Schedule.
+{% highlight c# %}
+viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+viewHeaderStyle.DateTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");		
+{% endhighlight %}
+
+![](daymodule_images/customfontviewheader_workweek.png)
+
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.Android
+
+* Download the Custom Font(e.g. Lobster-Regular.ttf).
+* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
+* Then, use the Custom Font name as text style.
