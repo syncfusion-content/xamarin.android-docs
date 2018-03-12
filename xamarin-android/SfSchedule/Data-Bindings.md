@@ -64,6 +64,75 @@ documentation: ug
 
 ![](PopulatingAppointments_images/appointment.png)
 
+## Minimum Appointment Height
+
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+
+{% highlight c# %}
+
+ SfSchedule schedule = new SfSchedule(this);
+        ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+        Calendar currentDate = Calendar.Instance;
+        Calendar startTime = (Calendar)currentDate.Clone();
+        Calendar endTime = (Calendar)currentDate.Clone();
+        startTime.Set(
+			currentDate.Get(CalendarField.Year),
+			currentDate.Get(CalendarField.Month),
+			currentDate.Get(CalendarField.DayOfMonth),
+			9,0,0
+			);
+		endTime.Set(
+			currentDate.Get(CalendarField.Year),
+			currentDate.Get(CalendarField.Month),
+			currentDate.Get(CalendarField.DayOfMonth),
+			9,0,0
+			);
+		Calendar startTime1 = (Calendar)currentDate.Clone();
+        Calendar endTime1 = (Calendar)currentDate.Clone();
+        startTime1.Set(
+			currentDate.Get(CalendarField.Year),
+			currentDate.Get(CalendarField.Month),
+			currentDate.Get(CalendarField.DayOfMonth),
+			11,0,0
+			);
+		endTime1.Set(
+			currentDate.Get(CalendarField.Year),
+			currentDate.Get(CalendarField.Month),
+			currentDate.Get(CalendarField.DayOfMonth),
+			12,0,0
+			);
+		scheduleAppointmentCollection.Add(new ScheduleAppointment()
+      	     {
+                StartTime = startTime,
+				EndTime = endTime,
+				Subject = "Client Meeting",
+				MinHeight = 30,
+				Color = Color.ParseColor("#FFD80073")
+
+            });
+		scheduleAppointmentCollection.Add(new ScheduleAppointment()
+       		 {
+                StartTime = startTime1,
+				EndTime = endTime1,
+				Subject = "Anniversary",
+				Color = Color.ParseColor("#FFA2C139")
+
+            });
+		schedule.Appointments= scheduleAppointmentCollection;
+
+
+        SetContentView(schedule);
+{% endhighlight %}
+
+![](PopulatingAppointments_images/minheight.png)
+
+>**Note**:
+* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
+* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
+* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration). 
+* `MinHeight` has ScheduleAppointmentMapping Support. 
+* All day Appointment does not support `MinHeight`.
+
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
@@ -303,7 +372,7 @@ Schedule appointment can be customized by setting appointment style properties s
         //Creating appointment style 
         AppointmentStyle appointmentStyle = new AppointmentStyle();
         appointmentStyle.TextColor = Color.Red;
-        appointmentStyle.TextStyle = Typeface.Create("Calibri", TypefaceStyle.Bold); 
+		appointmentStyle.TextStyle = Typeface.Create("Calibri", TypefaceStyle.Bold); 
         appointmentStyle.BorderColor = Color.Blue;
         appointmentStyle.BorderCornerRadius = 12;
         appointmentStyle.BorderWidth = 10;
@@ -325,40 +394,69 @@ Schedule appointment can be customized during runtime using [AppointmentLoadedEv
 •	[View](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~View.html) -  Sets the Custom UI for Appointments.
 •	[Bounds](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~Bounds.html) – Contains the UI bounds of appointment.
 
-{% highlight c# %} 
- 
-          schedule.AppointmentLoaded += schedule_AppointmentLoaded ;
+{% highlight c# %}  
+schedule.AppointmentLoaded += schedule_AppointmentLoaded ;
 
-    void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
-    {
-		 args.AppointmentStyle = new AppointmentStyle();
-    if (args.Appointment != null && args.Appointment.Subject == "Client Meeting")
-	    {
-		    args.AppointmentStyle.BorderColor = Color.Blue;
-		    args.AppointmentStyle.BorderCornerRadius = 12;
-		    args.AppointmentStyle.BorderWidth = 10;
-	    }
-    }
+private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
+{
+	args.AppointmentStyle = new AppointmentStyle();
 
- 
+	if(args.Appointment != null && args.Appointment.IsAllDay)
+	{
+		args.AppointmentStyle.BorderColor = Color.Red;
+		args.AppointmentStyle.BorderCornerRadius = 12;
+		args.AppointmentStyle.TextColor= Color.White;
+		args.AppointmentStyle.BorderWidth = 10;
+	}
+	else	
+	{
+		args.AppointmentStyle.BorderColor = Color.Blue;
+		args.AppointmentStyle.BorderCornerRadius = 12;
+		args.AppointmentStyle.TextColor= Color.Red;
+		args.AppointmentStyle.BorderWidth = 10;
+	}
+}
+
 {% endhighlight %}
+
+![](PopulatingAppointments_images/appointmentstyle_event.png)
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
 
 {% highlight c# %} 
  
-     schedule.AppointmentLoaded += schedule_AppointmentLoaded;
+schedule.AppointmentLoaded += schedule_AppointmentLoaded;
 
-    void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
-        {
-	        Button button = new Button(this);
-	        button.SetBackgroundColor(Color.Green);
-	        if (args.Appointment != null)
-		        button.Text = args.Appointment.Subject;
-	        args.View = button;
-        }
+private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
+{
+	if (args.Appointment == null)
+		return;
+	if(args.Appointment.IsAllDay)
+	{
+		TextView textView = new TextView(this);
+		textView.SetTextColor(Color.Black);
+		textView.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
+		textView.Text = arg.Appointment.Subject;
+		arg.View = textView;
+	}
+	else if (args.Appointment.Subject == "Retrospective")
+	{
+		ImageButton button = new ImageButton(this);
+		button.SetImageResource(Resource.Drawable.Meeting); // Meeting as Image name
+		button.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
+		arg.View = button;
+	}
+	else
+	{
+		ImageButton button = new ImageButton(this);
+		button.SetImageResource(Resource.Drawable.Cake); // Cake as Image name
+		button.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
+		arg.View = button;
+	}	
+}
 
+![](PopulatingAppointments_images/custom.png)
  
 {% endhighlight %}
 
@@ -413,3 +511,24 @@ N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/selection.png)
+
+## Custom Font
+
+We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#appearance-customization) property in Schedule.
+
+{% highlight c# %}
+ appointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");     
+{% endhighlight %}
+
+![](PopulatingAppointments_images/customfontappointment.png)
+
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.Android
+
+* Download the Custom Font(e.g. Lobster-Regular.ttf).
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Android project.
+* Then, use the Custom Font name as text style.
+
+
