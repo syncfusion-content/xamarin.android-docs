@@ -140,4 +140,20 @@ countryAutoComplete.SuggestionMode = SuggestionMode.EndsWithCaseSensitive;
 ![](images/endswithcasesensitive.png)
 
 
+### Custom filter
+
+Displays the list of suggestions based on the custom words in the SfAutoComplete.
+{% tabs %}
+
+{% highlight C# %}
+	
+countryAutoComplete.SuggestionMode = SuggestionMode.Custom;
+	 
+{% endhighlight %}
+
+{% endtabs %}
+	
+![](images/customfilter.png)
+
+
 
