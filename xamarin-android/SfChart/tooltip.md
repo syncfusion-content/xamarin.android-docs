@@ -95,10 +95,13 @@ You can show or hide the chart tooltip programmatically by using the show or hid
 
 ### Show method
 
-This method is used to [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~Show.html) the tooltip programmatically at the mentioned coordinator points of the chart area.
+The  [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~Show.html) method is used to activate the tooltip at the specified location.
 
 {% highlight c# %}
 
+
+	//Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
+	
 	tooltip.Show(pointX, pointY, true);
 
 {% endhighlight %}
@@ -108,10 +111,12 @@ The tooltip will be shown based on the chart area where the pointX and pointY co
 
 ## Hide method
 
-This method is used to [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~Hide.html)  the tooltip programmatically in the chart area. The bool value decides whether the tooltip needs to be animated or not.
+The  [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~Hide.html)  method is used to hide the tooltip programmatically.
 
 {% highlight c# %}
 
+	//The argument determines whether the tooltip should be animated while hiding.
+	
  	tooltip.Hide(true);
 
 {% endhighlight %}
