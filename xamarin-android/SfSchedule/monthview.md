@@ -493,7 +493,7 @@ We can change the appearance of Font by setting the TextStyle property of follow
 viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 {% endhighlight %}
 
-![](monthview_images/cusomfontviewheader_month.png)
+![](monthview_images/customfontviewheader_month.png)
 
 {% highlight c# %}
 monthCellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
@@ -512,7 +512,7 @@ void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
 }
 {% endhighlight %}
 
-![](monthview_images/customfontmonthinline.png)
+![](monthview_images/customfontinline.png)
 
 
 {% highlight c# %}
