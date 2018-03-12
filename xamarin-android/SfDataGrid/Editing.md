@@ -61,7 +61,7 @@ N> Editing supports UserCellTypeColumn, and GridUnboundColumn are not provided y
 
 The SfDataGrid supports committing and rolling back the changes in row level when the underlying data object implements the [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
 
-The editing changes in a row will be committed only when moveing to the next row by tapping.
+The editing changes in a row will be committed only when moving to the next row by tapping.
 
 `IEditableObject` has the following methods to capture editing:
 
