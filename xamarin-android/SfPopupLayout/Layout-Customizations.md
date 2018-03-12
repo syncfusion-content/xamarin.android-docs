@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Customizations
 
-The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AppearanceMode.html). By default, "AppearanceMode.OneButton" is set. You can change the appearance of the SfPopupLayout by using the `SfPopupLayout.PopupView.AppearanceMode` property.
+The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AppearanceMode.html). By default,`AppearanceMode.OneButton` is set. You can change the appearance of the SfPopupLayout by using the `SfPopupLayout.PopupView.AppearanceMode` property.
 
 The two different appearance modes in the SfPopupLayout are as follows:
 
@@ -30,7 +30,7 @@ The two different appearance modes in the SfPopupLayout are as follows:
 
 ## Pop-up with one button in the footer
 
-In the following code example, the `SfPopupLayout.PopupView.AppearanceMode` property is set as “OneButton” which displays only the Accept button in the footer view.
+In the following code example, the `SfPopupLayout.PopupView.AppearanceMode` property is set as `OneButton` which displays only the Accept button in the footer view.
 
 {% highlight c# %}
 
@@ -76,6 +76,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If the above sample run with the `AppearanceMode` as `OneButton`, the output will look like on Android device as follows.
+
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
 ## Pop-up with two buttons in the footer
@@ -126,6 +127,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If the above sample run with the `AppearanceMode` as `TwoButton`, the output will look like on Android device as follows.
+
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
 ## Customizing pop-up layouts
@@ -134,7 +136,9 @@ You can customize the entire view of the pop-up by loading the templates or cust
 
 ### Header customization
 
-Any view can be added as the header content using the [SfPopupLayout.PopupView.HeaderView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~HeaderView.html) property to refresh it. Refer to the following code example in which a TextView is added as a header content.
+Any view can be added as the header content using the [SfPopupLayout.PopupView.HeaderView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~HeaderView.html) property to refresh it.
+
+Refer to the following code example in which a TextView is added as a header content.
 
 {% highlight c# %}
 
@@ -166,10 +170,11 @@ namespace GettingStarted
             headerView = new TextView(this) { Text = "Customized Header"};
             headerView.Gravity = GravityFlags.Center;
             headerView.TextSize = 16;
-            headerView.SetBackgroundColor(Color.LightSeaGreen);
+            headerView.SetBackgroundColor(Color.Rgb(0, 0, 255));
             headerView.SetTextColor(Color.Black);
 
             popupLayout = new SfPopupLayout(this);
+            popupLayout.PopupView.ShowCloseButton = false;
             popupLayout.Content = layout;
 
             // Adding Header view of the SfPopupLayout.
@@ -188,12 +193,14 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on Android device.
-![](PopupLayout_images/HeaderTemplate.png)
 
+![](PopupLayout_images/HeaderTemplate.png)
 
 ### Footer customization
 
-Any view can be added as the footer content using the [SfPopupLayout.PopupView.FooterView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~FooterView.html) property to refresh it. Refer to the following code example in which a TextView is added as a footer content.
+Any view can be added as the footer content using the [SfPopupLayout.PopupView.FooterView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~FooterView.html) property to refresh it.
+
+Refer to the following code example in which a TextView is added as a footer content.
 
 {% highlight c# %}
 
@@ -225,13 +232,13 @@ namespace GettingStarted
             footerView = new TextView(this) { Text = "Customized Footer"};
             footerView.Gravity = GravityFlags.Center;
             footerView.TextSize = 16;
-            footerView.SetBackgroundColor(Color.LightSeaGreen);
+            footerView.SetBackgroundColor(Color.Rgb(0,0,255));
             footerView.SetTextColor(Color.Black);
 
             popupLayout = new SfPopupLayout(this);
             popupLayout.Content = layout;
 
-            // Adding footer view of the SfPopupLayout.
+            // Adding Footer view of the SfPopupLayout
             popupLayout.PopupView.FooterView = footerView;
 
             SetContentView(popupLayout);
@@ -247,9 +254,11 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on Android device.
+
 ![](PopupLayout_images/FooterTemplate.png)
 
 ## How to 
+
 ### Hide the header in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the header by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
@@ -271,6 +280,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 This is how the final output will look like on Android device.
+
 ![](PopupLayout_images/ShowHeader_False.png)
 
 ### Hide the footer in the SfPopupLayout 
@@ -294,6 +304,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 This is how the final output will look like on Android device.
+
 ![](PopupLayout_images/ShowFooter_False.png)
 
 ### Hide the Close button in the SfPopupLayout 
@@ -317,6 +328,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 This is how the final output will look like on Android device.
+
 ![](PopupLayout_images/ShowCloseButton_False.png)
 
 ## Styles
@@ -366,9 +378,9 @@ Refer to the following code example for customizing the header elements.
 protected override void OnCreate(Bundle bundle)
 {
 	....
-    popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = Color.LightSeaGreen;
+    popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = Color.DarkGray;
     popupLayout.PopupView.PopupStyle.HeaderTypeface = Typeface.DefaultBold;
-    popupLayout.PopupView.PopupStyle.HeaderTypefaceStyle = TypefaceStyle.Italic;
+    popupLayout.PopupView.PopupStyle.HeaderTypefaceStyle = TypefaceStyle.Bold;
     popupLayout.PopupView.PopupStyle.HeaderTextSize = 25;
     popupLayout.PopupView.PopupStyle.HeaderTextGravity = GravityFlags.Center;
     popupLayout.PopupView.PopupStyle.HeaderTextColor = Color.White;
@@ -379,9 +391,10 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 This is how the final output will look like on Android device.
+
 ![](PopupLayout_images/HeaderCustomization.png)
 
-## Customizing footer elements
+### Customizing footer elements
 
 The SfPopupLayout allows customizing the footer elements with various available footer customizations as follows:
 
@@ -437,9 +450,10 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 This is how the final output will look like on Android device.
+
 ![](PopupLayout_images/FooterCustomization.png)
 
-## Border customization
+### Border customization
 
 The SfPopupLayout allows customizing the border appearance with various available border customizations as follows:
 
@@ -481,4 +495,5 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 This is how the final output will look like on Android device.
+
 ![](PopupLayout_images/BorderCustomization.png)

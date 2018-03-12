@@ -13,7 +13,9 @@ This section provides a quick overview for working with the SfPopupLayout in Xam
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib installation folders. E.g. C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+After installing Essential Studio for Xamarin, all the required assemblies can be found in the {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib installation folders. 
+
+E.g. C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 
 N> Assemblies can be found in an unzipped package location in Mac.
 
@@ -60,15 +62,14 @@ Refer to the following screenshot in which the Syncfusion.Xamarin.SfPopupLayout.
 The SfPopupLayout control can be configured entirely in C# code. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
 
 * [Adding SfPopupLayout in Xamarin.Android](#adding-sfpopuplayout-in-xamarin.android) 
-* [Adding a TextView as the ContentView of the SfPopupLayout](#adding-a-textview-as-the-contentview-of-the-sfpopuplayout) 
-* [AppearanceMode](#appearancemode) 
-* [Showing SfPopupLayout at various position](#showing-sfPopupLayout-at-various-position)
-* [AnimationMode](#animationmode)
+* [Customize positioning](#Customize-positioning) 
+* [Customizing layouts](#Customizing-layouts) 
+* [Customizing animations](#Customizing-animations)
 * [Sample link](#sample-link)
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
-### Adding SfPopupLayout in Xamarin.Android
+## Adding SfPopupLayout in Xamarin.Android
 
 1. Add the required assembly references to the project as mentioned in the [Assembly deployment](#assembly-deployment) section or install the NuGet as mentioned in the [NuGet Configuration](#nuget-configuration) section.
 
@@ -77,8 +78,17 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 3. The SfPopupLayout can be displayed by the following cases: 
     
     * The SfPopupLayout can be displayed by making it as the base view or content view of the activity.
+    * You can continue to keep your view as the content view of the activity and still display pop-up over your view by simply calling the SfPopupLayout.Show() method. 
 
-#### Displaying Popup when SfPopupLayout is set as root view 
+4. For first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Content.html) property.
+
+5. Create an instance of the SfPopupLayout control and set it as content view of that activity. 
+
+### Displaying Popup when SfPopupLayout is set as root view 
+
+The SfPopupLayout can be displayed by making it as the base view or content view of the activity.
+
+Refer to the following code example for displaying popup.
 
 {% highlight c# %}
 
@@ -120,9 +130,11 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-    * You can continue to keep your view as the content view of the activity and still display pop-up over your view by simply calling the SfPopupLayout.Show() method. 
+### Displaying pop-up when SfPopupLayout is not set as root view 
 
-#### Displaying pop-up when SfPopupLayout is not set as root view 
+ You can continue to keep your view as the content view of the activity and still display pop-up over your view by simply calling the SfPopupLayout.Show() method. 
+
+ Refer to the following code example for displaying popup.
 
 {% highlight c# %}
 
@@ -162,14 +174,10 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-4. For first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Content.html) property.
-
-5. Create an instance of the SfPopupLayout control and set it as content view of that activity. 
-
 Run the previous sample to get the following output on Android device.
 ![](GettingStarted_images/DefaultAppearance.png)
 
-### Customize positioning
+## Customize positioning
 
 The SfPopupLayout allows showing the pop-up content at various positions.
 
@@ -182,7 +190,7 @@ The following list of options are available to position the SfPopupLayout in the
 
 More information for pop-up positioning is in this [link](https://help.syncfusion.com/xamarin-android/sfpopuplayout/popup-positioning).
 
-### Customizing layouts
+## Customizing layouts
 
 By default, you can choose from the following layouts available in the SfPopupLayout using the property [SfPopupLayout.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AppearanceMode.html).
 
@@ -191,13 +199,13 @@ By default, you can choose from the following layouts available in the SfPopupLa
 
 You can also customize the entire view of the pop-up by loading the templates or custom views individually for the header, body, and footer.
 
-#### Load a view as content view of the SfPopupLayout
+### Load a view as content view of the SfPopupLayout
 
 Any view can be added as the pop-up content using the [SfPopupLayout.PopupView.ContentView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ContentView.html) property to refresh it.
 
 Refer to the following code example in which a text view is added as pop-up content.
 
-##### Displaying pop-up when the SfPopupLayout is set as root view
+#### Displaying pop-up when the SfPopupLayout is set as root view
 
 {% highlight c# %}
 
@@ -223,7 +231,7 @@ N> Setting the content view is same for both cases i.e. displaying the pop-up wh
 Run the previous sample to get the following output on Android devices.
 ![](GettingStarted_images/ContentView.png)
 
-### Customizing animations
+## Customizing animations
 
 Built-in animations are available in the SfPopupLayout applied when the PopupView opens and closes in the screen.
 
@@ -237,6 +245,6 @@ By default, you can choose from the following animations available in the SfPopu
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin-android/sfpopuplayout/popup-animations).
 
-### Sample link
+## Sample link
 
 You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1414679923).

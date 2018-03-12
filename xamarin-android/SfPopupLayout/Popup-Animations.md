@@ -60,6 +60,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `Zoom`, the output will look like on Android device as shown below.
+
 ![](GettingStarted_images/ZoomAnimation.gif)
 
 ## Fade 
@@ -81,6 +82,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `Fade`, the output will look like on Android device as shown below.
+
 ![](GettingStarted_images/FadeAnimation.gif)
 
 ## SlideOnLeft 
@@ -102,6 +104,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `SlideOnLeft`, the output will look like on Android device as shown below.
+
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
 ## SlideOnTop 
@@ -123,6 +126,7 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `SlideOnTop`, the output will look like on Android device as shown below.
+
 ![](GettingStarted_images/SlideOnTopAnimation.gif)
 
 ## None
@@ -144,4 +148,5 @@ protected override void OnCreate(Bundle bundle)
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `None`, the output will look like on Android device as shown below.
+
 ![](GettingStarted_images/AnimationMode_None.gif)
