@@ -15,7 +15,7 @@ You can use the pop-up layout as model window by using the built-in Close icon a
 
 Modal does not require any action to open. It opens in the same window and gives callback when closing or opening the window.
 
-Refer to the following code example in which pop-up will close only if you click Close icon with a toast message displayed from the pop-up closed event.
+Refer to the following code example in which pop-up will close only if you click on Close icon with a toast message displayed from the pop-up closed event.
 
 {% highlight c# %}
 
@@ -68,7 +68,7 @@ namespace GettingStarted
 
         private void ShowPopupButton_Click(object sender, System.EventArgs e)
         {
-            // Below code ensures that the popup doesnot collapse when user interacts outside the popup.
+            // Below code ensures that the popup doesn't collapse when user interacts outside the popup.
             popupLayout.PopupView.ShowCloseButton = true;
             popupLayout.StaysOpen = true;
             popupLayout.IsOpen = true;
