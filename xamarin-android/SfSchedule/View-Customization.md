@@ -25,17 +25,15 @@ Schedule Appointment can be customized in two ways,
 `ScheduleAppointment` can be customized by setting appointment style properties such as TextColor,TextStyle,BorderColor,BorderCornerRadius,BorderWidth,SelectionBorderColor,SelectionTextColor to the `AppointmentStyle` property of schedule.
 
 {% highlight C# %}
-
-	AppointmentStyle appointmentStyle = new AppointmentStyle();
-	appointmentStyle.TextColor = Color.Red;
-	appointmentStyle.TextStyle = Font.SystemFontOfSize(15,FontAttributes.Bold);
-	appointmentStyle.BorderColor = Color.Blue;
-	appointmentStyle.BorderCornerRadius = 12;
-	appointmentStyle.BorderWidth = 10;
-	appointmentStyle.SelectionBorderColor = Color.Yellow;
-	appointmentStyle.SelectionTextColor = Color.Yellow;
-	schedule.AppointmentStyle = appointmentStyle;
-
+AppointmentStyle appointmentStyle = new AppointmentStyle();
+appointmentStyle.TextColor = Color.Red;
+appointmentStyle.TextStyle = Font.SystemFontOfSize(15,FontAttributes.Bold);
+appointmentStyle.BorderColor = Color.Blue;
+appointmentStyle.BorderCornerRadius = 12;
+appointmentStyle.BorderWidth = 10;
+appointmentStyle.SelectionBorderColor = Color.Yellow;
+appointmentStyle.SelectionTextColor = Color.Yellow;
+schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 
 **Using AppointmentLoaded Event**
@@ -45,18 +43,16 @@ Schedule appointment view can be customized during runtime using `AppointmentLoa
 ScheduleAppointment can be customized using the `appointmentStyle` property as follows,
 
 {% highlight C# %}
-
-	schedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
-	{
+schedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
+{
 	e.P0.AppointmentStyle.BorderColor = Color.AliceBlue;
 	e.P0.AppointmentStyle.BorderCornerRadius = 5;
 	e.P0.AppointmentStyle.BorderWidth = 10;
 	e.P0.AppointmentStyle.SelectionBorderColor = Color.Blue;
 	e.P0.AppointmentStyle.SelectionTextColor = Color.Yellow;
 	e.P0.AppointmentStyle.TextColor = Color.Brown;
-	e.P0.AppointmentStyle.TextStyle = Typeface.DefaultBold;
-	};
-
+	e.P0.AppointmentStyle.TextStyle = Font.SystemFontOfSize(15,FontAttributes.Bold);
+};
 {% endhighlight %}
 
 ### Appointment Custom View
@@ -64,14 +60,12 @@ ScheduleAppointment can be customized using the `appointmentStyle` property as f
 You can also add an object in the appointment view using `view` property passed through `AppointmentLoadedEventArgs`.
 
 {% highlight C# %}
-
-	schedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
-	{
+schedule.AppointmentLoaded += (object sender, SfSchedule.AppointmentLoadedEventArgs e) =>
+{
 	Button button = new Button(this);
 	button.SetBackgroundColor(Color.Red);
 	e.P0.View = button;
-	};
-
+};
 {% endhighlight %}
 
 ![](ViewCustomization_images/AppointmentStyle.png)
@@ -97,7 +91,7 @@ MonthView can be customized by setting monthCellStyle properties such as TextCol
 	monthCellStyle.BackgroundColor = Color.Gray;
 	monthCellStyle.TextColor = Color.Blue;
 	monthCellStyle.TextSize = 12;
-	monthCellStyle.TextStyle = Typeface.DefaultBold;
+	monthCellStyle.TextStyle = Font.SystemFontOfSize(15,FontAttributes.Bold);
 	schedule.MonthCellStyle = monthCellStyle;
 
 {% endhighlight %}
@@ -117,7 +111,7 @@ Month cells can be customized using the `CellStyle` property as follows,
 	e.P0.CellStyle.BackgroundColor = Color.Gray;
 	e.P0.CellStyle.TextColor = Color.Blue;
 	e.P0.CellStyle.TextSize = 12;
-	e.P0.CellStyle.TextStyle = Typeface.DefaultBold;
+	e.P0.CellStyle.TextStyle = Font.SystemFontOfSize(15,FontAttributes.Bold);
 	}
 	};
 
@@ -206,3 +200,5 @@ Also custom view can be passed using the `SelectionView` in Schedule.
 {% endhighlight %}
 
 ![](ViewCustomization_images/Selection.png)
+
+

@@ -19,24 +19,6 @@ Select multiple items from a suggestion list. There are two ways to perform mult
 
 Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button.
 
-{% tabs %}
-
-{% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.MultiSelectMode=MultiSelectMode.Token;
-	countryAutoComplete.TokensWrapMode=TokensWrapMode.Wrap;
-	 
-{% endhighlight %}
-
-{% endtabs %}
-
 ### Wrap Mode of Token
 
 The selected item can be displayed as token inside SfAutoComplete in two ways. They are
@@ -48,17 +30,58 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 {% tabs %}
 
 {% highlight C# %}
+
+// Create a class which holds the data source data
+public class Employee
+{
+public string Name { get; set; }
+public string Image { get; set; }
+public Employee(string name, string image)
+{
+this.Name = name;
+this.Image = image;
+}
+}
+
+//Create a new Linear Layout
+LinearLayout linearLayout = new LinearLayout(this);
+linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+linearLayout.SetBackgroundColor(Android.Graphics.Color.White);
+SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
+countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
+
+//Crete the data source
+ObservableCollection<Employee> employeeDetails = new ObservableCollection<Employee>();
+employeeDetails.Add(new Employee("Jack", "jack.png"));
+employeeDetails.Add(new Employee("John", "john.png"));
+employeeDetails.Add(new Employee("James", "james.png"));
+employeeDetails.Add(new Employee("Jacob", "jacob.png"));
+employeeDetails.Add(new Employee("Joy", "joy.png"));
+employeeDetails.Add(new Employee("Victoria", "Victoria.png"));
+
+//To display the Name, set the DisplayMemberPath
+countryAutoComplete.DisplayMemberPath = "Name";
+
+//To display the Image, set the ImageMemberPath
+countryAutoComplete.ImageMemberPath = "Image";
+
+//Add the data source
+countryAutoComplete.DataSource = employeeDetails;
+
+//Set the MultiSelectMode
+countryAutoComplete.MultiSelectMode = MultiSelectMode.Token;
+countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
+countryAutoComplete.MaximumDropDownHeight = 200;
+countryAutoComplete.DropDownItemHeight = 50;
+
+//Set the TokensWrapMode
+countryAutoComplete.TokensWrapMode = TokensWrapMode.Wrap;
+
+//Add the SfAutoComplete view to the linear layout
+linearLayout.AddView(countryAutoComplete);
+SetContentView(linearLayout);
+
 	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.MultiSelectMode=MultiSelectMode.Token;
-	countryAutoComplete.TokensWrapMode=TokensWrapMode.Wrap;
-	 
 {% endhighlight %}
 
 {% endtabs %}
@@ -82,40 +105,29 @@ Customization can be done for Token. There are various ways to customize the tok
 * `IsCloseButtonVisible` - Enables and disables the close button inside SfAutoComplete.
 
 * `DeleteButtonColor` - sets the color of the close button inside SfAutoComplete.
-token.
+
 * `CornerRadius` - sets the corner radius for the token.
 
 
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.MultiSelectMode=MultiSelectMode.Token;
-	countryAutoComplete.TokensWrapMode=TokensWrapMode.Wrap;
 
-	TokensSetting token = new TokensSetting();
-	token.FontSize=15;
-	token.CornerRadius=5;
-	token.SetTextColor(Color.Red);
-	token.SetBackgroundColor(Color.Gray);
-	token.SelectedBackgroundColor(Color.Yellow);
-	token.SetDeleteButtonColor(Color.Blue);
-    token.IsCloseButtonVisible=true;
-
+//Create an object to do Token Customization 
+TokenSettings token = new TokenSettings();
+token.BackgroundColor = Color.ParseColor("#66ccff");
+token.TextSize = 16;
+token.TextColor = Color.White;
+token.SelectedBackgroundColor = Color.ParseColor("#ffffe0");
+token.DeleteButtonColor = Color.Brown;
+token.IsCloseButtonVisible = true;
+token.CornerRadius = 15;
+employeeAutoComplete.TokenSettings = token;
 	 
 {% endhighlight %}
 
 {% endtabs %}
 
-
-	
 ![](images/TokenRepresentation.png)
 
 ## Delimiter
@@ -125,17 +137,10 @@ When selecting the multiple items, the selected items can be divided with a desi
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
-	countryAutoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
-	countryAutoComplete.Delimiter="*";
+
+//Set the MultiSelectMode
+countryAutoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
+countryAutoComplete.Delimiter="#";
 	 
 {% endhighlight %}
 
