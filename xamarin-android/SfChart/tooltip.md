@@ -107,7 +107,7 @@ The  [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/
 {% endhighlight %}
 
 
-The tooltip will be shown based on the chart area where the pointX and pointY coordinates are passed. The bool value is used to decide whether the tooltip needs to be animated or not.
+N>The tooltip will be activated at the specified location only if there is any data point under the specified location.
 
 ## Hide method
 
@@ -116,7 +116,7 @@ The  [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/
 {% highlight c# %}
 
 	//The argument determines whether the tooltip should be animated while hiding.
-	
+
  	tooltip.Hide(true);
 
 {% endhighlight %}
