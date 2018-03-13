@@ -310,7 +310,7 @@ option.TopTableSummaryStyle = new ExportCellStyle()
 
 #### StartColumnIndex
 
-By default SfDataGrid will eb export to excel from the column index value 0. But it allow the user to export the data grid start column index in excel sheet based on our requirement by using `StartColumnIndex` property.
+By default SfDataGrid will be export to excel from the column index value 0. But it allow the user to export the data grid start column index in excel sheet based on our requirement by using `StartColumnIndex` property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -319,7 +319,7 @@ option.StartColumnIndex = 4;
 
 #### StartRowIndex
 
-By default SfDataGrid will eb export to excel from the row index value 0. But it allow the user to export the data grid start row index in excel sheet based on our requirement by using `StartRowIndex` property.
+By default SfDataGrid will be export to excel from the row index value 0. But it allow the user to export the data grid start row index in excel sheet based on our requirement by using `StartRowIndex` property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();

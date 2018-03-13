@@ -285,8 +285,7 @@ option.BottomTableSummaryStyle = new PdfGridCellStyle()
 };
 {% endhighlight %}
 
-![](SfDataGrid_images/PDF/Bottom_Summarystyle.png)
-Bottom_Summarystyle
+![](SfDataGrid_images/PDF/Bottom_SummaryStyle.png)
 
 #### GroupCaptionStyle
 
@@ -491,7 +490,7 @@ option.PdfDocument = pdfDocument;
 
 ### Setting Header and Footer
 
-SfDataGrid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while exporting to PDF. This can be achieved by hadling `DataGridPdfExportingController.HeaderAndFooterExporting` event.
+SfDataGrid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while exporting to PDF. This can be achieved by handling `DataGridPdfExportingController.HeaderAndFooterExporting` event.
 
 You can insert the string in header and footer in PdfHeaderFooterEventHandler. Setting `PdfPageTemplateElement` to `PdfHeaderFooterEventArgs.PdfDocumentTemplate.Top` loads the content at top of the page and setting the `PdfPageTemplateElement` to  `PdfHeaderFooterEventArgs.PdfDocumentTemplate.Bottom` loads the content at bottom of the page.
 
