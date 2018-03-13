@@ -44,6 +44,19 @@ You can customize the height of the ViewHeader in `DayView` by setting [ViewHead
 
 ![](daymodule_images/viewheaderheight_day.png)
 
+### Customize Font Appearance
+
+you can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html) properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) property in Schedule.
+
+{% highlight c# %}
+viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular");
+viewHeaderStyle.DateTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular");
+{% endhighlight %}
+
+![](daymodule_images/customfontviewheader_day.png)
+
+Refer [this](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#custom-font-setting-in-xamarinandroid) to configure the custom fonts in Xamarin.Android.
+
 ### ViewHeader Date Format
 We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DayLabelSettings~DateFormat.html) and [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DayLabelSettings~DayFormat.html) properties of `DayLabelSettings`.
 
@@ -317,22 +330,4 @@ You can download the entire source code of this demo for Xamarin.Android from he
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_Day.png)
-
-## Custom Font
-We can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html) properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) property in Schedule.
-
-{% highlight c# %}
-viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular");
-viewHeaderStyle.DateTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular");
-{% endhighlight %}
-
-![](daymodule_images/customfontviewheader_day.png)
-
-Following steps will explain how to configure the custom fonts.
-
-### Custom Font Setting in Xamarin.Android
-
-* Download the Custom Font(e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
-* Then, use the Custom Font name as text style.
 

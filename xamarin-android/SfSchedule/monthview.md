@@ -482,7 +482,7 @@ schedule.MonthViewSettings = monthViewSettings;
 
 ## Custom Font
 
-We can change the appearance of Font by setting the TextStyle property of following classes.
+you can change the appearance of Font by setting the TextStyle property of following classes.
 
 * [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) - We can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html) properties of Schedule `ViewHeaderStyle`.
 * [MonthCellStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#monthcell-appearance) - We can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#monthcell-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthCellStyle~TextStyle.html) property of Schedule `MonthCellStyle`.
@@ -525,8 +525,7 @@ Following steps will explain how to configure the custom fonts.
 
 ### Custom Font Setting in Xamarin.Android
 
-* Download the Custom Font(e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
+* Add your Custom Font[e.g. Lobster-Regular.ttf] to the Assets folder of the  Xamarin.Android project.
 * Then, use the Custom Font name as text style.
 
 
