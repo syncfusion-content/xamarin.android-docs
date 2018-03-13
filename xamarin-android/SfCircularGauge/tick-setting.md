@@ -9,55 +9,123 @@ documentation: ug
 
 ---
 
-# TICK SETTING
+# Tick Setting
 
-TickSetting help you identify the gauge's data value by marking the gauge scale in regular increments.
+The `TickSetting    ` property helps you to identify the gauge’s data value by marking the gauge scale in regular increments.
 
-## Tick Customization  
+## Show ticks for scale
 
-The `Interval` property is used to calculate the tick count for a scale. Like ticks, minor ticks are calculated using the `MinorTicksPerInterval` property.
-
-A tick's length, color, and thickness are set by the `Length`, `Color` and  `Thickness` UI properties.
-
-The Major and Minor ticks can be positioned far away from the rim by using the `Offset` property
-
+The [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~ShowTicks.html) property allows you to enable or disable the ticks of circular gauge.
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge(this);  
-        TickSetting minor = new TickSetting();
-        minor.Size = 6;
-        minor.Color = Color.ParseColor("#2bbfb8");
-        minor.Width = 3;
-        minor.Offset = 0.5;
-        scale.MinorTickSettings = minor;
-    	
-        TickSetting major = new TickSetting();
-        major.Size = 12;
-        major.Color = Color.ParseColor("#2bbfb8");
-        major.Width = 3;
-        major.Offset = 0.5;
-        scale.MajorTickSettings = major;
-        circular.CircularScales = circularScales;
-        SetContentView(circular);
-
-{% endhighlight %}
-
-![](tick-setting_images/tick-setting_img1.png)
-
-## ShowTicks
-
-ShowTicks property is a Boolean property which is used to enable or disable feature of ticks in CircularGauge.
-
-{% highlight c# %}
-
-            SfCircularGauge circular = new SfCircularGauge();    
-            ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();   
-            CircularScale scale = new CircularScale();     
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
             scale.ShowTicks = false;
-            circularScales.Add(scale);
-            circular.CircularScales = circularScales;
-            SetContentView(circular);
-   
-    
+            circularGauge.CircularScales.Add(scale);
+
 {% endhighlight %}
+
+![](tick-setting_images/show-ticks.png)
+
+## Ticks customization 
+
+The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~Interval.html) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~MinorTicksPerInterval.html) property.
+
+Color and thickness of the tick are set by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~Width.html) UI properties. You can also customize the length of the ticks by using the  [`Size`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~Size.html) property. First, you should set the `Offset` property for ticks, then increase the size of the ticks.
+
+## Customize major ticks for scale  
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            TickSetting majorTicks = new TickSetting();
+            majorTicks.Size = 15;
+            majorTicks.Color = Color.Brown;
+            majorTicks.Width = 4;
+            majorTicks.Offset = 0.97;
+            scale.MajorTickSettings = majorTicks;
+            circularGauge.CircularScales.Add(scale);
+  
+{% endhighlight %}
+
+![](tick-setting_images/majortick-customise.png)
+
+## Customize minor ticks for scale
+
+{% highlight c# %}
+
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            TickSetting minorTicks = new TickSetting();
+            minorTicks.Size = 4;
+            minorTicks.Color = Color.SkyBlue;
+            minorTicks.Width = 4;
+            minorTicks.Offset = 0.97;
+            scale.MinorTickSettings = minorTicks;
+            circularGauge.CircularScales.Add(scale);
+  
+{% endhighlight %}
+
+![](tick-setting_images/minortick-customise.png)
+
+## Setting position for ticks
+
+The major and minor ticks can be positioned far away from the rim by using the following two ways:
+
+1.[`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~Offset.html) property. 
+2.[`StartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~StartOffset.html) and [`EndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~EndOffset.html) properties.
+
+### Setting offset for scale
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            TickSetting majorTicks = new TickSetting();
+            majorTicks.Offset = 0.5;
+            scale.MajorTickSettings = majorTicks;
+            TickSetting minorTicks = new TickSetting();
+            minorTicks.Offset = 0.5;
+            scale.MinorTickSettings = minorTicks;
+            circularGauge.CircularScales.Add(scale);
+
+{% endhighlight %}
+
+![](tick-setting_images/offset.png)
+
+### Setting scale start and end offset for scale
+
+{% highlight c# %}
+
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            TickSetting majorTicks = new TickSetting();
+            majorTicks.StartOffset = 0.3;
+            majorTicks.EndOffset = 0.4;
+            scale.MajorTickSettings = majorTicks;
+            TickSetting minorTicks = new TickSetting();
+            minorTicks.StartOffset = 0.3;
+            minorTicks.EndOffset = 0.35;
+            scale.MinorTickSettings = minorTicks;
+            circularGauge.CircularScales.Add(scale);
+  
+{% endhighlight %}
+
+![](tick-setting_images/start-end-offset.png)
