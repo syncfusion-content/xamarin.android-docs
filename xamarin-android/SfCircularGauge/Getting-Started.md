@@ -153,7 +153,5 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin-an
             circularGauge.CircularScales = scales;
 	
 {% endhighlight %}
-       
-{% endtabs %}
  
 ![](getting-started_images/default.png)
