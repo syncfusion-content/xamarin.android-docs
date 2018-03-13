@@ -36,6 +36,17 @@ schedule.HeaderStyle = headerStyle;
 
 ![](Header_images/HeaderStyle.png) 
 
+### Customize Font Appearance
+
+you can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderStyle~TextStyle.html) property of [HeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/headers#appearance) property in Schedule.
+{% highlight c# %}
+headerStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+{% endhighlight %}
+
+![](Header_images/customfontheader.png)
+
+Refer [this](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#custom-font-setting-in-xamarinandroid) to configure the custom fonts in Xamarin.Android.
+
 ## Loading Custom Headers
 
 You can collapse the default header of schedule by setting `HeaderHeight` property of `SfSchedule` as 0. Instead you can use your own custom header for it. While navigating views in schedule, text labels available in the header will be changed based on it visible dates, so while using custom header, respective text value can be obtained from the `VisibleDatesChanged` event of `SfSchedule`.
@@ -92,21 +103,4 @@ void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
     var calendar = e.Calendar;
 }
 {% endhighlight %}
-
-## Custom Font
-
-We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderStyle~TextStyle.html) property of [HeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/headers#appearance) property in Schedule.
-{% highlight c# %}
-headerStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
-{% endhighlight %}
-
-![](Header_images/customfontheader.png)
-
-Following steps will explain how to configure the custom fonts.
-
-### Custom Font Setting in Xamarin.Android
-
-* Download the Custom Font(e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
-* Then, use the Custom Font name as text style.
 

@@ -462,6 +462,19 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 
 ![](PopulatingAppointments_images/custom.png)
 
+### Customize Font Appearance
+
+you can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#appearance-customization) property in Schedule.
+
+{% highlight c# %}
+ appointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");     
+{% endhighlight %}
+
+![](PopulatingAppointments_images/customfontappointment.png)
+
+Refer [this](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#custom-font-setting-in-xamarinandroid) to configure the custom fonts in Xamarin.Android.
+
+
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
 
@@ -511,24 +524,3 @@ N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/selection.png)
-
-## Custom Font
-
-We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#appearance-customization) property in Schedule.
-
-{% highlight c# %}
- appointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");     
-{% endhighlight %}
-
-![](PopulatingAppointments_images/customfontappointment.png)
-
-
-Following steps will explain how to configure the custom fonts.
-
-### Custom Font Setting in Xamarin.Android
-
-* Download the Custom Font(e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Assets folder of the Xamarin.Android project.
-* Then, use the Custom Font name as text style.
-
-
