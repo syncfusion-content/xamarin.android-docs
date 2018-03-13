@@ -11,30 +11,258 @@ documentation: ug
 
 # Annotations
 
-`SfCircularGauge` supports `Annotations`, and it allows you to mark the specific area of interest in circular gauge. Custom shapes can be drawn, and text and images also can be added by using `Annotations`.
+[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge~Annotations.html), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge~Annotations.html) property.
 
-## Sub Gauge
+##  Setting sub gauge for annotation
 
-When the annotation allows to place custom elements, a gauge can be initialized to the element, and it can be used to place that in another gauge. The Following properties are used to customize the `Annotations`:-
+When the annotation allows you to place custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the `Annotations`:
 
-* `Angle` - Used to place the `View` at the given `Angle`. 
-* `Offset` - Used to move the `View` from center to edge of the circular gauge. The value should be range from 0 to 1.
+* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.GaugeAnnotation~Angle.html): Used to place the `View` at the given `Angle`. 
+* [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.GaugeAnnotation~Offset.html): Used to move the `View` from the center to edge of the circular gauge. The value should be range from 0 to 1.
 
 The following code is used to create the `Annotations`.
 
 {% highlight c# %}
+  var density = this.Resources.DisplayMetrics.Density;
 
-    SfCircularGauge circular = new SfCircularGauge();
-    SfCircularGauge gauge = new SfCircularGauge();
-    CircularGaugeAnnotationCollection annotations = new CircularGaugeAnnotationCollection();
-    GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
-    gaugeAnnotation.Angle = 180;
-    gaugeAnnotation.Offset = 0.5;
-    gaugeAnnotation.View = gauge;
-    annotations.Add(gaugeAnnotation);
-    circularGauge.Annotations = annotations;
-    this.Content = circular;
-    
+            TextView LabelAnnotation1 = new TextView(this);
+            LabelAnnotation1.Text = "4:55PM";
+            LabelAnnotation1.TextSize = 14;
+            LabelAnnotation1.SetHeight(25);
+            LabelAnnotation1.SetWidth(75);
+            LabelAnnotation1.SetTextColor(Color.Black);
+            LabelAnnotation1.TextAlignment = Android.Views.TextAlignment.Center;
+
+            TextView LabelAnnotation2 = new TextView(this);
+            LabelAnnotation2.Text = "10s";
+            LabelAnnotation2.TextSize = 12;
+            LabelAnnotation2.SetHeight(20);
+            LabelAnnotation2.SetWidth(35);
+            LabelAnnotation2.SetTextColor(Color.Black);
+            LabelAnnotation2.TextAlignment = Android.Views.TextAlignment.Center;
+
+            TextView LabelAnnotation3 = new TextView(this);
+            LabelAnnotation3.Text = "55M";
+            LabelAnnotation3.TextSize = 12;
+            LabelAnnotation3.SetHeight(20);
+            LabelAnnotation3.SetWidth(35);
+            LabelAnnotation3.SetTextColor(Color.Black);
+            LabelAnnotation3.TextAlignment = Android.Views.TextAlignment.Center;
+
+            SfCircularGauge Annotation1 = new SfCircularGauge(this);
+
+            CircularGaugeAnnotationCollection annotations = new CircularGaugeAnnotationCollection();
+
+            GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
+            gaugeAnnotation.View = LabelAnnotation2;
+            gaugeAnnotation.Angle = 250;
+            gaugeAnnotation.Offset = (float)0.7;
+            annotations.Add(gaugeAnnotation);
+            Annotation1.Annotations = annotations;
+
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartAngle = 270;
+            scale.SweepAngle = 360;
+            scale.ShowLabels = false;
+            scale.StartValue = 0;
+            scale.EndValue = 60;
+            scale.Interval = 5;
+            scale.RimColor = Color.Rgb(237, 238, 239);
+            scale.MajorTickSettings.Color = Color.Black;
+            scale.MajorTickSettings.StartOffset = 1;
+            scale.MajorTickSettings.EndOffset = .85;
+            scale.MajorTickSettings.Width = 2;
+            scale.MinorTickSettings.Color = Color.Black;
+            scale.MinorTickSettings.StartOffset = 1;
+            scale.MinorTickSettings.EndOffset = .90;
+            scale.MinorTickSettings.Width = 0.5;
+
+            ObservableCollection<CircularRange> ranges = new ObservableCollection<CircularRange>();
+            CircularRange range = new CircularRange();
+            range.StartValue = 0;
+            range.EndValue = 30;
+            range.Color = Color.Gray;
+            range.InnerStartOffset = 0.925;
+            range.OuterStartOffset = 1;
+            range.InnerEndOffset = 0.925;
+            range.OuterEndOffset = 1;
+            ranges.Add(range);
+            scale.CircularRanges = ranges;
+
+            ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer>();
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Triangle;
+            needlePointer.KnobRadius = 4;
+            needlePointer.Width = 3;
+            needlePointer.EnableAnimation = false;
+            needlePointer.KnobColor = Color.Black;
+            needlePointer.Color = Color.Black;
+            pointers.Add(needlePointer);
+            scale.CircularPointers = pointers;
+
+            scales.Add(scale);
+            Annotation1.CircularScales = scales;
+
+            LinearLayout layout1 = new LinearLayout(this);
+            layout1.LayoutParameters = new LinearLayout.LayoutParams((int)(80 * density), (int)(80 * density));
+            layout1.AddView(Annotation1);
+
+            SfCircularGauge Annotation2 = new SfCircularGauge(this);
+
+            CircularGaugeAnnotationCollection annotations1 = new CircularGaugeAnnotationCollection();
+            GaugeAnnotation gaugeAnnotation1 = new GaugeAnnotation();
+            gaugeAnnotation1.View = LabelAnnotation3;
+            gaugeAnnotation1.Angle = 245;
+            gaugeAnnotation1.Offset = (float)0.7;
+            annotations1.Add(gaugeAnnotation1);
+            Annotation2.Annotations = annotations1;
+
+            ObservableCollection<CircularScale> scales1 = new ObservableCollection<CircularScale>();
+            CircularScale scale1 = new CircularScale();
+            scale1.StartAngle = 270;
+            scale1.SweepAngle = 360;
+            scale1.StartValue = 0;
+            scale1.EndValue = 60;
+            scale1.Interval = 5;
+            scale1.ShowLabels = false;
+            scale1.RimColor = Color.Rgb(237, 238, 239);
+            scale1.MajorTickSettings.Color = Color.Black;
+            scale1.MajorTickSettings.StartOffset = 1;
+            scale1.MajorTickSettings.EndOffset = 0.85;
+            scale1.MajorTickSettings.Width = 2;
+            scale1.MinorTickSettings.Color = Color.Black;
+            scale1.MinorTickSettings.StartOffset = 1;
+            scale1.MinorTickSettings.EndOffset = 0.90;
+            scale1.MinorTickSettings.Width = 0.5;
+
+            ObservableCollection<CircularRange> ranges1 = new ObservableCollection<CircularRange>();
+            CircularRange range1 = new CircularRange();
+            range1.StartValue = 0;
+            range1.EndValue = 30;
+            range1.Color = Color.Gray;
+            range1.InnerStartOffset = 0.925;
+            range1.OuterStartOffset = 1;
+            range1.InnerEndOffset = 0.925;
+            range1.OuterEndOffset = 1;
+            ranges1.Add(range1);
+            scale1.CircularRanges = ranges1;
+
+            ObservableCollection<CircularPointer> pointers1 = new ObservableCollection<CircularPointer>();
+            NeedlePointer needlePointer1 = new NeedlePointer();
+            needlePointer1.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Triangle;
+            needlePointer1.KnobRadius = 4;
+            needlePointer1.Width = 3;
+            needlePointer1.EnableAnimation = false;
+            needlePointer1.KnobColor = Color.Black;
+            needlePointer1.Color = Color.Black;
+            pointers1.Add(needlePointer1);
+            scale1.CircularPointers = pointers1;
+
+            scales1.Add(scale1);
+            Annotation2.CircularScales = scales1;
+
+            LinearLayout layout2 = new LinearLayout(this);
+            layout2.LayoutParameters = new LinearLayout.LayoutParams((int)(80 * density), (int)(80 * density));
+            layout2.AddView(Annotation2);
+
+            SfCircularGauge gauge = new SfCircularGauge(this);
+            gauge.SetBackgroundColor(Color.White);
+            CircularGaugeAnnotationCollection annotations3 = new CircularGaugeAnnotationCollection();
+
+            GaugeAnnotation gaugeAnnotation2 = new GaugeAnnotation();
+            gaugeAnnotation2.View = layout1;
+            gaugeAnnotation2.Angle = 90;
+            gaugeAnnotation2.Offset = (float)0.5;
+            annotations3.Add(gaugeAnnotation2);
+
+            GaugeAnnotation gaugeAnnotation3 = new GaugeAnnotation();
+            gaugeAnnotation3.View = LabelAnnotation1;
+            gaugeAnnotation3.Angle = 00;
+            gaugeAnnotation3.Offset = (float)0.3;
+            annotations3.Add(gaugeAnnotation3);
+
+            GaugeAnnotation gaugeAnnotation4 = new GaugeAnnotation();
+            gaugeAnnotation4.View = layout2;
+            gaugeAnnotation4.Angle = 180;
+            gaugeAnnotation4.Offset = (float)0.5;
+            annotations3.Add(gaugeAnnotation4);
+            gauge.Annotations = annotations3;
+
+            ObservableCollection<CircularScale> scales2 = new ObservableCollection<CircularScale>();
+            CircularScale scale2 = new CircularScale();
+            scale2.StartValue = 0;
+            scale2.EndValue = 12;
+            scale2.Interval = 1;
+            scale2.MinorTicksPerInterval = 4;
+            scale2.RimColor = Color.Rgb(237, 238, 239);
+            scale2.LabelColor = Color.Gray;
+            scale2.LabelOffset = 0.8;
+            scale2.ScaleEndOffset = .925;
+            scale2.StartAngle = 270;
+            scale2.SweepAngle = 360;
+            scale2.LabelTextSize = 14;
+            scale2.ShowFirstLabel = false;
+            scale2.MinorTickSettings.Color = Color.Black;
+            scale2.MinorTickSettings.StartOffset = 1;
+            scale2.MinorTickSettings.EndOffset = 0.95;
+            scale2.MinorTickSettings.Width = 1;
+            scale2.MajorTickSettings.Color = Color.Black;
+            scale2.MajorTickSettings.StartOffset = 1;
+            scale2.MajorTickSettings.EndOffset = 0.9;
+            scale2.MajorTickSettings.Width = 3;
+
+            ObservableCollection<CircularRange> ranges2 = new ObservableCollection<CircularRange>();
+            CircularRange range2 = new CircularRange();
+            range2.StartValue = 0;
+            range2.EndValue = 3;
+            range2.Color = Color.Gray;
+            range2.InnerStartOffset = 0.925;
+            range2.OuterStartOffset = 1;
+            range2.InnerEndOffset = 0.925;
+            range2.OuterEndOffset = 1;
+            ranges2.Add(range2);
+            scale2.CircularRanges = ranges2;
+
+            ObservableCollection<CircularPointer> pointers2 = new ObservableCollection<CircularPointer>();
+            NeedlePointer needlePointer2 = new NeedlePointer();
+            needlePointer2.EnableAnimation = false;
+            needlePointer2.KnobRadius = 6;
+            needlePointer2.LengthFactor = .75;
+            needlePointer2.KnobColor = Color.White;
+            needlePointer2.Color = Color.Black;
+            needlePointer2.Width = 3.5;
+            needlePointer2.KnobStrokeColor = Color.Black;
+            needlePointer2.KnobStrokeWidth = 5;
+            needlePointer2.TailLengthFactor = 0.20;
+            needlePointer2.TailColor = Color.Black;
+            pointers2.Add(needlePointer2);
+
+            NeedlePointer needlePointer3 = new NeedlePointer();
+            needlePointer3.EnableAnimation = false;
+            needlePointer3.KnobRadius = 6;
+            needlePointer3.LengthFactor = .4;
+            needlePointer3.KnobColor = Color.White;
+            needlePointer3.Color = Color.Black;
+            needlePointer3.Width = 5;
+            needlePointer3.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Triangle;
+            pointers2.Add(needlePointer3);
+
+            NeedlePointer needlePointer4 = new NeedlePointer();
+            needlePointer4.EnableAnimation = false;
+            needlePointer4.KnobRadius = 6;
+            needlePointer4.LengthFactor = .65;
+            needlePointer4.KnobColor = Color.White;
+            needlePointer4.Color = Color.Black;
+            needlePointer4.Width = 5;
+            needlePointer4.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Triangle;
+            pointers2.Add(needlePointer4);
+
+            scale2.CircularPointers = pointers2;
+
+            scales2.Add(scale2);
+            gauge.CircularScales = scales2;
+     
 {% endhighlight %}
 
-![](annotations_images/annotations-img1.png)
+![](annotations_images/annotations.png)
