@@ -17,17 +17,16 @@ Based on the `Locale` specified the strings in the control such as Date, time, d
 
 By default, schedule control is available with en locale, which is English.
 
-
-{% highlight c# %}   
-    
-          //creating new instance for schedule
-            SfSchedule schedule = new SfSchedule(this);
-          //setting schedule view
-            schedule.ScheduleView = ScheduleView.WeekView;
-          //setting locale for the control
-            schedule.Locale = new Locale("ja");
- 
-{% endhighlight %}   
+{% tabs %}
+{% highlight c# %}
+//creating new instance for schedule
+SfSchedule schedule = new SfSchedule(this);
+//setting schedule view
+schedule.ScheduleView = ScheduleView.WeekView;
+//setting locale for the control
+schedule.Locale = new Locale("ja");
+{% endhighlight %}
+{% endtabs %}
    
 
 ![](Localization_images/Localization_Android.png)   
@@ -36,15 +35,14 @@ By default, schedule control is available with en locale, which is English.
 
 You can localize the custom strings used in the schedule control. You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
 
- 
-{% highlight xml %} 
-       
-     <resources>
-    	<string name="No_Appointments">Aucun événement</string>
-     	<string name="all_day">Toute la journée</string>
-     </resources>
-	 
-{% endhighlight %}   
+{% tabs %}
+{% highlight xml %}
+ <resources>
+    <string name="No_Appointments">Aucun événement</string>
+    <string name="all_day">Toute la journée</string>
+ </resources>
+{% endhighlight %}
+{% endtabs %}
 
 Android can select and load resources from different directories, based on the device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages we can follow the below steps.
 
