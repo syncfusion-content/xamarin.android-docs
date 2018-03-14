@@ -17,8 +17,6 @@ Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_fi
 
 [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html) contains sub elements such as ticks, labels, [`Ranges`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Ranges.html), and [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Pointers.html). 
 
-{% endhighlight %}
-
 {% highlight c# %}
 
              SfLinearGauge linearGauge = new SfLinearGauge(this);
