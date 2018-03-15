@@ -153,5 +153,72 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin-an
             circularGauge.CircularScales = scales;
 	
 {% endhighlight %}
+
+The following code example gives you the complete code of above configurations.
+
+{% highlight c# %}  
+   
+using Com.Syncfusion.Gauges.SfCircularGauge;
+
+namespace Gauge_GettingStarted
+{
+    [Activity(Label = "Gauge_GettingStarted", MainLauncher = true)]
+    public class MainActivity : Activity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+            //Initializing circular gauge 
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            circularGauge.SetBackgroundColor(Color.White);
+            circularGauge.SetPadding(20,10,20,10);
+
+            //Adding header 
+            Header header = new Header();
+            header.Text = "Speedometer";
+            header.TextSize = 20;
+            header.TextColor = Color.Black;
+            circularGauge.Headers.Add(header);
+
+            //Initializing scales for circular gauge
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+
+            //Adding range
+            CircularRange range = new CircularRange();
+            range.StartValue = 0;
+            range.EndValue = 40;
+            scale.CircularRanges.Add(range);
+
+            //Adding needle pointer
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;
+            scale.CircularPointers.Add(needlePointer);
+
+            //Adding range pointer
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.Value = 60;
+            scale.CircularPointers.Add(rangePointer);
+
+            //Adding marker pointer
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 70;
+            scale.CircularPointers.Add(markerPointer);
+
+            circularGauge.CircularScales = scales;
+            SetContentView(circularGauge);
+        }
+    }
+}
+	
+{% endhighlight %}
  
+ The following circular gauge is created as a result of the above codes.
+
 ![](getting-started_images/default.png)
+
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Android_Gauge_GettingStarted1223477742.zip).
