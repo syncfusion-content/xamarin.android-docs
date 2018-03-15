@@ -44,7 +44,7 @@ You can localize the custom strings used in the schedule control. You can locali
 {% endhighlight %}
 {% endtabs %}
 
-Android can select and load resources from different directories, based on the device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages we can follow the below steps.
+Android can select and load resources from different directories, based on the device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages you can follow the below steps.
 
 The procedure for creating strings.xml files is as follows:
 
