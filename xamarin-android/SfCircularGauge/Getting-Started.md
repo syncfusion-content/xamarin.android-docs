@@ -12,141 +12,213 @@ documentation: ug
 
 # Getting Started
 
-## Create your first Circular Gauge in Xamarin.Android Studio
-
-You can configure an Xamarin.Android Circular Gauge in simple steps. In this section, you can learn how to configure a Circular Gauge control in a real-time scenario and also provides a walk-through on some of the customization features available in Circular Gauge control.
-
-## Initialize the Circular Gauge
-
-Create a Circular Gauge instance in Main Page and set Circular Gauge as a ContentView in onCreate() overridden method.
+This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html), and also explains the steps required to add basic elements to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) through various APIs available within it.
 
 
-{% highlight c# %}
+## Create your first circular gauge in Xamarin.Android studio
 
-    
-	using Com.Syncfusion.Gauges.SfCircularGauge;
-
-
-	  protected override void OnCreate(Bundle bundle)
-		 {
-			base.OnCreate(bundle);
-			SfCircularGauge circularGauge = new SfCircularGauge(this);
-			// Set our view from the "main" layout resource
-			SetContentView(circularGauge);
-		 }
-    
-{% endhighlight %}
-
-![](getting-started_images/getting-started_img2.png)
-
-## Adding Header
-
-You can assign a unique header to `SfCircularGauge` by making use of `Header` property and you can positioned it wherever you want using `Position` property.
-
+You can configure an Xamarin.Android circular gauge in simple steps. In this section, you can learn how to configure a circular gauge control in a real-time scenario and also provides a walk-through on some of the customization features available in circular gauge control.
+ 
+### Adding namespace for the assemblies
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge(this);
-    Header header = new Header();
-    header.Text = "Speedometer";
-    header.TextSize = 20;
-    header.Position = new PointF((float)0.5, (float)0.7);
-    header.TextColor = Color.Gray;
-    circularGauge.Headers.Add(header); 
-    SetContentView(circularGauge);
+    using Com.Syncfusion.Gauges.SfCircularGauge;
 
 {% endhighlight %}
 
-## Configuring Scales
 
-You can configure the `CircularScale` elements by making use of following API's available in SfCircularGage.
+## Initialize gauge 
 
-They are:
-
-* StartAngle
-* SweepAngle
-* StartValue
-* EndValue
-* Interval
-* RimThickness
-* RimColor
+You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) control with a required optimal name by using the included namespace.
 
 {% highlight c# %}
 
-     ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
-         CircularScale scale = new CircularScale();
+      protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            SetContentView(circularGauge);
+        }
+
+{% endhighlight %}
+
+## Adding header
+
+You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) by using the [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header.html) property and position it by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header~Position.html) property as you want.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            Header header = new Header();
+            header.Text = "Speedometer";
+            header.TextColor = Color.Black;
+            circularGauge.Headers.Add(header);
+            SetContentView(circularGauge); 
+	
+{% endhighlight %}
+
+## Configuring scales
+
+You can configure the [`CircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html) elements by using following APIs, which are available in [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html):
+
+* `StartAngle`
+* `SweepAngle`
+* `StartValue`
+* `EndValue`
+* `Interval`
+* `RimThickness`
+* `RimColor`
+
+{% highlight c# %}
+
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
             scale.StartValue = 0;
             scale.EndValue = 100;
-            scale.Interval = 10;
-            scale.StartAngle = 135;
-            scale.SweepAngle = 270;
-            scale.RimWidth = 10;
-            scale.RimColor = Color.Gray;
-            scale.MinorTicksPerInterval = 0;
-            circularScales.Add(scale);
-            circularGauge.CircularScales = circularScales;
-        circularGauge.CircularScales = circularScales;
-        SetContentView(circularGauge);
-
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+	
 {% endhighlight %}
 
-## Adding Ranges
+## Adding ranges
 
-You can add ranges to SfCircularGauge by creating ranges collection using `Ranges`.
+You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange.html) property.
 
 {% highlight c# %}
 
-    ...
-    CircularRange range = new CircularRange();
-    range.StartValue = 0;
-    range.EndValue = 80;
-    range.Color = Color.ParseColor("#2bbfb8");
-    range.Width = 10;
-    circularRanges.Add(range);
-    scale.CircularRanges = circularRanges;
-    circularGauge.CircularScales = circularScales;
-    SetContentView(circularGauge);
-
+           ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+            CircularRange range = new CircularRange();
+            range.StartValue = 0;
+            range.EndValue = 40;
+            scale.CircularRanges.Add(range);
+            circularGauge.CircularScales = scales;
+	
 {% endhighlight %}
 
-## Adding a Needle Pointer
+## Adding a needle pointer
 
-You can create a needle pointer and associate it with a scale to display the current value.
+Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer.html), and associate it with a scale that is to be displayed the current value.
 
 {% highlight c# %}
 
-    List<CircularPointer> pointers = new List<CircularPointer>();
-    NeedlePointer needlePointer = new NeedlePointer();
-    needlePointer.Value = 60;
-    needlePointer.Color = Color.White;
-    needlePointer.KnobColor = Color.White;
-    needlePointer.Width = 5;
-    needlePointer.KnobRadius = 20;
-    needlePointer.LengthFactor = 0.8;
-    pointers.Add(needlePointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circularGauge.CircularScales = circularScales;
-   
-
+           ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);         
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;
+            scale.CircularPointers.Add(needlePointer);
+            circularGauge.CircularScales = scales;
+	
 {% endhighlight %}
 
-## Adding a Range Pointer
+## Adding a range pointer
 
-A range pointer provides an alternative way of indicating the current value.
+[`Range Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.RangePointer.html) provides an alternative way to indicate the current value.
 
-{% highlight c# %}
+{% highlight c# %}    
 
-     List<CircularPointer> pointers = new List<CircularPointer>();
+           ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
             RangePointer rangePointer = new RangePointer();
-            rangePointer.Value = 70;
-            rangePointer.Color = Color.ParseColor("#2bbfb8");
-            rangePointer.Width = 10;
-            pointers.Add(rangePointer);
-            scale.CircularPointers = pointers;
-            circularScales.Add(scale);
-            circularGauge.CircularScales = circularScales;
-
+            rangePointer.Value = 60;
+            scale.CircularPointers.Add(rangePointer);
+            circularGauge.CircularScales = scales;
+	
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img3.png)
+## Adding a marker pointer
+
+[`Marker Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer.html) points the current value in scale.
+
+{% highlight c# %}  
+   
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 70;
+            scale.CircularPointers.Add(markerPointer);
+            circularGauge.CircularScales = scales;
+	
+{% endhighlight %}
+
+The following code example gives you the complete code of above configurations.
+
+{% highlight c# %}  
+   
+using Com.Syncfusion.Gauges.SfCircularGauge;
+
+namespace Gauge_GettingStarted
+{
+    [Activity(Label = "Gauge_GettingStarted", MainLauncher = true)]
+    public class MainActivity : Activity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+            //Initializing circular gauge 
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            circularGauge.SetBackgroundColor(Color.White);
+            circularGauge.SetPadding(20,10,20,10);
+
+            //Adding header 
+            Header header = new Header();
+            header.Text = "Speedometer";
+            header.TextSize = 20;
+            header.TextColor = Color.Black;
+            circularGauge.Headers.Add(header);
+
+            //Initializing scales for circular gauge
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+
+            //Adding range
+            CircularRange range = new CircularRange();
+            range.StartValue = 0;
+            range.EndValue = 40;
+            scale.CircularRanges.Add(range);
+
+            //Adding needle pointer
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;
+            scale.CircularPointers.Add(needlePointer);
+
+            //Adding range pointer
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.Value = 60;
+            scale.CircularPointers.Add(rangePointer);
+
+            //Adding marker pointer
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 70;
+            scale.CircularPointers.Add(markerPointer);
+
+            circularGauge.CircularScales = scales;
+            SetContentView(circularGauge);
+        }
+    }
+}
+	
+{% endhighlight %}
+ 
+ The following circular gauge is created as a result of the above codes.
+
+![](getting-started_images/default.png)
+
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Android_Gauge_GettingStarted1223477742.zip).

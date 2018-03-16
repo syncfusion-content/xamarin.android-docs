@@ -21,12 +21,14 @@ schedule.ScheduleView = ScheduleView.MonthView;
 ## Month Appointment indicator
 In `MonthView`, appointments are not viewed in the month cell instead appointment indicators are drawn. You can customize the number of appointment indicators displayed in month cell using  [AppointmentIndicatorCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings~AppointmentIndicatorCount.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings.html) in `SfSchedule`, by default Appointment indicator count is 3.
 
+{% tabs %}
 {% highlight c# %}
 //creating new instance for MonthViewSettings
 MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.AppointmentIndicatorCount = 2;
 schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/appointmentindicator.png)
 
@@ -35,14 +37,14 @@ schedule.MonthViewSettings = monthViewSettings;
 ## Month Inline View
 You can use [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings~ShowAppointmentsInline.html) bool property in [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings.html) to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 
 
+{% tabs %}
 {% highlight c# %}
-
-			//creating new instance for MonthViewSettings
-			MonthViewSettings monthViewSettings = new MonthViewSettings();
-			monthViewSettings.ShowAppointmentsInline = true;
-			schedule.MonthViewSettings = monthViewSettings;
-
+//creating new instance for MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAppointmentsInline = true;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/appointmentindicator.png)
 
@@ -53,9 +55,7 @@ MonthView of Schedule can be navigated in both horizontal and vertical direction
 
 {% tabs %}
 {% highlight c# %}
-
-			monthViewSettings.MonthNavigationDirection = MonthNavigationDirections.Vertical;
-
+monthViewSettings.MonthNavigationDirection = MonthNavigationDirections.Vertical;
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,34 +64,32 @@ You can disable the interaction for certain date in Month view by using [Blackou
 
 {% tabs %}
 {% highlight c# %}
+//creating new instance for MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+//setting black out dates
+ObservableCollection<Calendar> blackoutDateCollection = new ObservableCollection<Calendar>();
 
-			//creating new instance for MonthViewSettings 
-			MonthViewSettings monthViewSettings = new MonthViewSettings();
-			//setting black out dates
-			ObservableCollection<Calendar> blackoutDateCollection = new ObservableCollection<Calendar>();
+Calendar currentDate = Calendar.Instance;
+Calendar blockedDate1 = (Calendar)currentDate.Clone();
+blockedDate1.Set(currentDate.Get(CalendarField.Year),
+                 currentDate.Get(CalendarField.Month),
+                 currentDate.Get(CalendarField.Date) + 1);
 
-			Calendar currentDate = Calendar.Instance;
-			Calendar blockedDate1 = (Calendar)currentDate.Clone();
-			blockedDate1.Set(currentDate.Get(CalendarField.Year),
-							 currentDate.Get(CalendarField.Month),
-							 currentDate.Get(CalendarField.Date) + 1);
+Calendar blockedDate2 = (Calendar)currentDate.Clone();
+blockedDate2.Set(currentDate.Get(CalendarField.Year),
+                 currentDate.Get(CalendarField.Month),
+                 currentDate.Get(CalendarField.Date) + 2);
 
-			Calendar blockedDate2 = (Calendar)currentDate.Clone();
-			blockedDate2.Set(currentDate.Get(CalendarField.Year),
-							 currentDate.Get(CalendarField.Month),
-							 currentDate.Get(CalendarField.Date) + 2);
+Calendar blockedDate3 = (Calendar)currentDate.Clone();
+blockedDate3.Set(currentDate.Get(CalendarField.Year),
+                 currentDate.Get(CalendarField.Month),
+                 currentDate.Get(CalendarField.Date) + 3);
 
-			Calendar blockedDate3 = (Calendar)currentDate.Clone();
-			blockedDate3.Set(currentDate.Get(CalendarField.Year),
-							 currentDate.Get(CalendarField.Month),
-							 currentDate.Get(CalendarField.Date) + 3);
-
-			blackoutDateCollection.Add(blockedDate1);
-			blackoutDateCollection.Add(blockedDate2);
-			blackoutDateCollection.Add(blockedDate3);
-			monthViewSettings.BlackoutDates = blackoutDateCollection;
-			schedule.MonthViewSettings = monthViewSettings;
-
+blackoutDateCollection.Add(blockedDate1);
+blackoutDateCollection.Add(blockedDate2);
+blackoutDateCollection.Add(blockedDate3);
+monthViewSettings.BlackoutDates = blackoutDateCollection;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -102,10 +100,8 @@ You can set First day of week using [FirstDayOfWeek](https://help.syncfusion.com
 
 {% tabs %}
 {% highlight c# %}
-
-			//setting FirstDayOfWeek
-			schedule.FirstDayOfWeek = 2; // Monday
-
+//setting FirstDayOfWeek
+schedule.FirstDayOfWeek = 2; // Monday
 {% endhighlight %}
 {% endtabs %}
 
@@ -116,9 +112,7 @@ You can display the Week Number of the year in Month View by setting [ShowWeekNu
 
 {% tabs %}
 {% highlight c# %}
-
-			monthViewSettings.ShowWeekNumber = true;
-
+monthViewSettings.ShowWeekNumber = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,16 +123,14 @@ You can customize the Week Number appearance by using [WeekNumberStyle](https://
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for WeekNumberStyle
-			WeekNumberStyle weekNumberStyle = new WeekNumberStyle();
-			weekNumberStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
-			weekNumberStyle.BackgroundColor = Color.Blue;
-			weekNumberStyle.TextColor = Color.White;
-			weekNumberStyle.TextSize = 12;
-			monthViewSettings.WeekNumberStyle = weekNumberStyle;
-			schedule.MonthViewSettings = monthViewSettings;
-
+//creating new instance for WeekNumberStyle
+WeekNumberStyle weekNumberStyle = new WeekNumberStyle();
+weekNumberStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
+weekNumberStyle.BackgroundColor = Color.Blue;
+weekNumberStyle.TextColor = Color.White;
+weekNumberStyle.TextSize = 12;
+monthViewSettings.WeekNumberStyle = weekNumberStyle;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -149,14 +141,12 @@ You can change the Format of the Month date and day labels string in the Schedul
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for MonthLabelSettings
-			MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
-			monthLabelSettings.DayFormat = "EEEE";
-			monthLabelSettings.DateFormat = "dd";
-			monthLabelSettings.DateLabelSize = 15;
-			monthViewSettings.MonthLabelSettings = monthLabelSettings;
-
+//creating new instance for MonthLabelSettings
+MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
+monthLabelSettings.DayFormat = "EEEE";
+monthLabelSettings.DateFormat = "dd";
+monthLabelSettings.DateLabelSize = 15;
+monthViewSettings.MonthLabelSettings = monthLabelSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,23 +157,22 @@ You can customize the View Header appearance by using [ViewHeaderStyle](https://
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for viewHeaderStyle 
-			ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-			viewHeaderStyle.DayTextStyle = Typeface.Create("Arial", TypefaceStyle.Italic);
-			viewHeaderStyle.DayTextSize = 15;
-			viewHeaderStyle.DayTextColor = Color.White;
-			viewHeaderStyle.BackgroundColor = Color.Blue;
-			schedule.ViewHeaderStyle = viewHeaderStyle;
-
+//creating new instance for viewHeaderStyle
+ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
+viewHeaderStyle.DayTextStyle = Typeface.Create("Arial", TypefaceStyle.Italic);
+viewHeaderStyle.DayTextSize = 15;
+viewHeaderStyle.DayTextColor = Color.White;
+viewHeaderStyle.BackgroundColor = Color.Blue;
+schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 
 ![](monthview_images/viewheaderstyle.png)
 
 ### ViewHeader Date Format
-We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DateFormat.html) and [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DayFormat.html) properties of `MonthLabelSettings`.
+You can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DateFormat.html) and [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DayFormat.html) properties of `MonthLabelSettings`.
 
+{% tabs %}
 {% highlight c# %}
 schedule.ScheduleView = ScheduleView.MonthView;
 //Creating new instance of MonthViewSettings
@@ -196,25 +185,28 @@ monthLabelSettings.DayFormat = "EEEE";
 monthViewSettings.MonthLabelSettings = monthLabelSettings;
 schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/DateFormat_Month.png)
 
 ### ViewHeader Tapped Event
-We can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
+You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
 
+{% tabs %}
 {% highlight c# %}
 //Creating  new instance of Schedule
 SfSchedule schedule = new SfSchedule();
 schedule.ScheduleView = ScheduleView.MonthView;
 schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
-{% endhighlight %}
 
-{% highlight c# %}
+...
+
 void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
 {
     var calendar = e.Calendar;
 }
 {% endhighlight %}
+{% endtabs %}
 
 ## MonthCell Appearance 
 You can customize the Month view cell in three ways,
@@ -228,21 +220,19 @@ By using [MonthCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin-andr
    
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for MonthCellStyle 
-            MonthCellStyle monthCellStyle = new MonthCellStyle();
-			monthCellStyle.TextSize = 15;
-			monthCellStyle.TextColor = Color.White;
-			monthCellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
-			monthCellStyle.BackgroundColor = Color.Blue;
-			monthCellStyle.TodayTextColor = Color.White;
-			monthCellStyle.TodayBackgroundColor = Color.Red;
-			monthCellStyle.PreviousMonthTextColor = Color.White;
-			monthCellStyle.PreviousMonthBackgroundColor = Color.LightGray;
-			monthCellStyle.NextMonthTextColor = Color.White;
-			monthCellStyle.NextMonthBackgroundColor = Color.LightGray;
-			schedule.MonthCellStyle = monthCellStyle;
-
+//creating new instance for MonthCellStyle
+MonthCellStyle monthCellStyle = new MonthCellStyle();
+monthCellStyle.TextSize = 15;
+monthCellStyle.TextColor = Color.White;
+monthCellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
+monthCellStyle.BackgroundColor = Color.Blue;
+monthCellStyle.TodayTextColor = Color.White;
+monthCellStyle.TodayBackgroundColor = Color.Red;
+monthCellStyle.PreviousMonthTextColor = Color.White;
+monthCellStyle.PreviousMonthBackgroundColor = Color.LightGray;
+monthCellStyle.NextMonthTextColor = Color.White;
+monthCellStyle.NextMonthBackgroundColor = Color.LightGray;
+schedule.MonthCellStyle = monthCellStyle;
 {% endhighlight %}
 {% endtabs %}
 
@@ -253,50 +243,49 @@ By using [MonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-and
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
 
-			schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
-			...
-			void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
-		{
-			e.CellStyle = new CellStyle():
-			if (e.IsToday)
-			{
-				e.CellStyle.TextSize = 15;
-				e.CellStyle.BackgroundColor = Color.Red;
-				e.CellStyle.TextColor = Color.White;
-		    	e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Bold);
-			}
-			else if (e.IsNextMonthDate)
-			{
-				e.CellStyle.TextSize = 12;
-				e.CellStyle.BackgroundColor = Color.White;
-				e.CellStyle.TextColor = Color.Gray;
-				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal);
-			}
-			else if (e.IsPreviousMonthDate)
-			{
-				e.CellStyle.TextSize = 12;
-				e.CellStyle.BackgroundColor = Color.White;
-				e.CellStyle.TextColor = Color.Gray;
-			    e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal);
-			}
-			else if (e.IsBlackoutDate)
-			{
-				e.CellStyle.TextSize = 15;
-				e.CellStyle.BackgroundColor = Color.Black;
-				e.CellStyle.TextColor = Color.White;
-			    e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Bold);
-			}
-			else
-			{
-				e.CellStyle.TextSize = 15;
-				e.CellStyle.BackgroundColor = Color.Blue;
-				e.CellStyle.TextColor = Color.White;
-				e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
-			}
-		}
+...
 
-
+void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
+{
+    e.CellStyle = new CellStyle():
+    if (e.IsToday)
+    {
+        e.CellStyle.TextSize = 15;
+        e.CellStyle.BackgroundColor = Color.Red;
+        e.CellStyle.TextColor = Color.White;
+        e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Bold);
+    }
+    else if (e.IsNextMonthDate)
+    {
+        e.CellStyle.TextSize = 12;
+        e.CellStyle.BackgroundColor = Color.White;
+        e.CellStyle.TextColor = Color.Gray;
+        e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal);
+    }
+    else if (e.IsPreviousMonthDate)
+    {
+        e.CellStyle.TextSize = 12;
+        e.CellStyle.BackgroundColor = Color.White;
+        e.CellStyle.TextColor = Color.Gray;
+        e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Normal);
+    }
+    else if (e.IsBlackoutDate)
+    {
+        e.CellStyle.TextSize = 15;
+        e.CellStyle.BackgroundColor = Color.Black;
+        e.CellStyle.TextColor = Color.White;
+        e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.Bold);
+    }
+    else
+    {
+        e.CellStyle.TextSize = 15;
+        e.CellStyle.BackgroundColor = Color.Blue;
+        e.CellStyle.TextColor = Color.White;
+        e.CellStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -307,23 +296,23 @@ You can set the Custom UI for the month cell using [View](https://help.syncfusio
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
 
-			schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
-			...
-			void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
-		{
-			Button button = new Button(this);
-			button.Text = e.Calendar.Time.GetDate().ToString();
-			button.SetTextColor(Color.White);
-			button.SetBackgroundColor(Color.Blue);
-			e.View = button;
-			if (e.IsToday)
-			{
-				button.SetBackgroundColor(Color.Red);
-				button.SetTextColor(Color.White);
-			}
-		}
+...
 
+void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
+{
+    Button button = new Button(this);
+    button.Text = e.Calendar.Time.GetDate().ToString();
+    button.SetTextColor(Color.White);
+    button.SetBackgroundColor(Color.Blue);
+    e.View = button;
+    if (e.IsToday)
+    {
+        button.SetBackgroundColor(Color.Red);
+        button.SetTextColor(Color.White);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -334,15 +323,15 @@ Using [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-an
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthInlineAppointmentTapped += Schedule_MonthInlineAppointmentTapped;
 
-			schedule.MonthInlineAppointmentTapped += Schedule_MonthInlineAppointmentTapped;
-			...
-			void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineAppointmentTappedEventArgs e)
-		{
-			var appointment = (e.ScheduleAppointment as ScheduleAppointment);
-			Toast.MakeText(this, appointment.Subject + " * " + appointment.StartTime.Time.ToString(), ToastLength.Long).Show();
-		}
+...
 
+void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineAppointmentTappedEventArgs e)
+{
+    var appointment = (e.ScheduleAppointment as ScheduleAppointment);
+    Toast.MakeText(this, appointment.Subject + " * " + appointment.StartTime.Time.ToString(), ToastLength.Long).Show();
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -353,22 +342,22 @@ By using [MonthInlineLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-a
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
 
-			schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
-			...
-			void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
-		{
-			MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
-			monthInlineViewStyle.TextSize = 20;
-			monthInlineViewStyle.BackgroundColor = Color.Blue;
-			monthInlineViewStyle.TextColor = Color.Green;
-			monthInlineViewStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
-			monthInlineViewStyle.TimeTextColor = Color.Red;
-			monthInlineViewStyle.TimeTextSize = 12;
-			monthInlineViewStyle.TimeTextFormat = "hh a";
-			e.MonthInlineViewStyle = monthInlineViewStyle;
-		}
+...
 
+void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
+{
+    MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
+    monthInlineViewStyle.TextSize = 20;
+    monthInlineViewStyle.BackgroundColor = Color.Blue;
+    monthInlineViewStyle.TextColor = Color.Green;
+    monthInlineViewStyle.TextStyle = Typeface.Create("Arial", TypefaceStyle.BoldItalic);
+    monthInlineViewStyle.TimeTextColor = Color.Red;
+    monthInlineViewStyle.TimeTextSize = 12;
+    monthInlineViewStyle.TimeTextFormat = "hh a";
+    e.MonthInlineViewStyle = monthInlineViewStyle;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -379,19 +368,19 @@ You can customize the Month inline view Appointment by using [MonthInlineAppoint
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthInlineAppointmentLoaded += Schedule_MonthInlineAppointmentLoaded;
 
-			schedule.MonthInlineAppointmentLoaded += Schedule_MonthInlineAppointmentLoaded;
-			...
-			void Schedule_MonthInlineAppointmentLoaded(object sender, MonthInlineAppointmentLoadedEventArgs e)
-		{
-			var appointment = (e.Appointment as ScheduleAppointment);
-			Button button = new Button(this);
-			button.Text = "Appointment :" + appointment.Subject;
-			button.SetBackgroundColor(Color.Blue);
-			button.SetTextColor(Color.White);
-			e.View = button;
-		}
+...
 
+void Schedule_MonthInlineAppointmentLoaded(object sender, MonthInlineAppointmentLoadedEventArgs e)
+{
+    var appointment = (e.Appointment as ScheduleAppointment);
+    Button button = new Button(this);
+    button.Text = "Appointment :" + appointment.Subject;
+    button.SetBackgroundColor(Color.Blue);
+    button.SetTextColor(Color.White);
+    e.View = button;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -406,57 +395,60 @@ You can customize the default appearance of selection UI in the month cells.
 ### Selection customization using style
 You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
 
+{% tabs %}
 {% highlight C# %}
-
-    schedule.ScheduleView = ScheduleView.MonthView;
-    //Create new instance of SelectionStyle
-    SelectionStyle selectionStyle = new SelectionStyle();
-    selectionStyle.BackgroundColor = Color.Blue;
-    selectionStyle.BorderColor = Color.Black;
-    selectionStyle.BorderThickness = 5;
-    selectionStyle.CornerRadius = 5;
-    schedule.SelectionStyle = selectionStyle;
-    
+schedule.ScheduleView = ScheduleView.MonthView;
+//Create new instance of SelectionStyle
+SelectionStyle selectionStyle = new SelectionStyle();
+selectionStyle.BackgroundColor = Color.Blue;
+selectionStyle.BorderColor = Color.Black;
+selectionStyle.BorderThickness = 5;
+selectionStyle.CornerRadius = 5;
+schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/SelectionStyle_Month.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionView.html) property of `SfSchedule`.
-{% highlight C# %}
 
-    schedule.ScheduleView = ScheduleView.MonthView;
-    //Add the CustomView
-    Button customView = new Button(this);
-    customView.Text = "+NewEvent";
-    customView.SetBackgroundColor(Color.Rgb(255, 152, 0));
-    customView.SetTextColor(Color.White);
-    schedule.SelectionView = customView;
-    
+{% tabs %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.MonthView;
+//Add the CustomView
+Button customView = new Button(this);
+customView.Text = "+NewEvent";
+customView.SetBackgroundColor(Color.Rgb(255, 152, 0));
+customView.SetTextColor(Color.White);
+schedule.SelectionView = customView;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/SelectionView_Month.png)
 
 ### Programmatic selection
 You can programmatically select the specific cell by setting corresponding date to [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
 
+{% tabs %}
 {% highlight C# %}
+// Creating instance of calendar
+Calendar calendar = Calendar.Instance;
 
-    // Creating instance of calendar
-    Calendar calendar = Calendar.Instance;
-
-    // Setting a date and time to select
-    currentDate.Set(2017, 09, 04);
-    schedule.SelectedDate = currentDate;
-
+// Setting a date and time to select
+currentDate.Set(2017, 09, 04);
+schedule.SelectedDate = currentDate;
 {% endhighlight %}
+{% endtabs %}
 
 You can clear the selection by setting [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) as null.
 
+{% tabs %}
 {% highlight C# %}
 // Setting null value to deselect
 schedule.SelectedDate = null;
 {% endhighlight %}
+{% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.Android from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection-303833588.zip)
 
@@ -467,8 +459,9 @@ You can download the entire source code of this demo for Xamarin.Android from he
 ![](monthview_images/selection_Month.png)
 
 ## Today Background Color
-We can customize the current date background of  `SfSchedule`  by using [TodayBackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~TodayBackground.html) property of `MonthViewSettings`.
+You can customize the current date background of  `SfSchedule`  by using [TodayBackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~TodayBackground.html) property of `MonthViewSettings`.
 
+{% tabs %}
 {% highlight c# %}
 schedule.ScheduleView = ScheduleView.MonthView;
 //Creating new instance of MonthViewSettings
@@ -477,33 +470,41 @@ MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.TodayBackgroundColor = Color.Red;
 schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/TodayBackground.png)
 
 ## Custom Font
 
-We can change the appearance of Font by setting the TextStyle property of following classes.
+You can change the appearance of Font by setting the TextStyle property of following classes.
 
-* [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) - We can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html) properties of Schedule `ViewHeaderStyle`.
-* [MonthCellStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#monthcell-appearance) - We can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#monthcell-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthCellStyle~TextStyle.html) property of Schedule `MonthCellStyle`.
-* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) - We can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthCellStyle~TextStyle.html) property of Schedule `MonthInlineViewStyle`.
-* [WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
+* [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) - You can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html) properties of Schedule `ViewHeaderStyle`.
+* [MonthCellStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#monthcell-appearance) - You can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#monthcell-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthCellStyle~TextStyle.html) property of Schedule `MonthCellStyle`.
+* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) - You can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#inlineview-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthCellStyle~TextStyle.html) property of Schedule `MonthInlineViewStyle`.
+* [WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) - You can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#week-number-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
 
+{% tabs %}
 {% highlight c# %}
 viewHeaderStyle.DayTextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/customfontviewheader_month.png)
 
+{% tabs %}
 {% highlight c# %}
 monthCellStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/customfontmonthcell.png)
 
+{% tabs %}
 {% highlight c# %}
 schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
+
 ...
+
 void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
 {
 	MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
@@ -511,13 +512,15 @@ void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
 	e.MonthInlineViewStyle = monthInlineViewStyle;
 }
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/customfontinline.png)
 
-
+{% tabs %}
 {% highlight c# %}
 weekNumberStyle.TextStyle = Typeface.CreateFromAsset(Assets,"Lobster-Regular.ttf");		
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/customfontweeknumber.png)
 
@@ -525,8 +528,7 @@ Following steps will explain how to configure the custom fonts.
 
 ### Custom Font Setting in Xamarin.Android
 
-* Download the Custom Font(e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
+* Add your Custom Font[e.g. Lobster-Regular.ttf] to the Assets folder of the  Xamarin.Android project.
 * Then, use the Custom Font name as text style.
 
 

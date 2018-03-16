@@ -14,53 +14,49 @@ documentation: ug
 
 [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Color.html), [Notes](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Location.html), [All Day](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~IsAllDay.html), [Recurring properties](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceProperties.html).
 
+{% tabs %}
 {% highlight c# %}
+using Com.Syncfusion.Schedule;
+using Java.Util;
 
-        using Com.Syncfusion.Schedule;
-    using Java.Util;
+//Creating an instance for SfSchedule Control
+SfSchedule schedule = new SfSchedule(this);
 
-    //Creating an instance for SfSchedule Control
-        SfSchedule schedule = new SfSchedule(this);
+// Creating an instance for schedule appointment Collection
+ScheduleAppointmentCollection scheduleAppointmentCollection = new   ScheduleAppointmentCollection();
 
-    // Creating an instance for schedule appointment Collection
-        ScheduleAppointmentCollection scheduleAppointmentCollection = new   ScheduleAppointmentCollection();
+Calendar currentDate = Calendar.Instance;
+Calendar startTime = (Calendar)currentDate.Clone();
 
-        Calendar currentDate = Calendar.Instance;
-        Calendar startTime = (Calendar)currentDate.Clone();
+//setting start time for the event
+startTime.Set(currentDate.Get(CalendarField.Year),
+              currentDate.Get(CalendarField.Month),
+              currentDate.Get(CalendarField.DayOfMonth),
+              10, 0, 0);
 
-    //setting start time for the event
-        startTime.Set(
-            currentDate.Get(CalendarField.Year),
+Calendar endTime = (Calendar)currentDate.Clone();
+
+//setting end time for the event
+endTime.Set(currentDate.Get(CalendarField.Year),
             currentDate.Get(CalendarField.Month),
             currentDate.Get(CalendarField.DayOfMonth),
-            10, 0, 0
-            );
+            12, 0, 0);
 
-        Calendar endTime = (Calendar)currentDate.Clone();
+//Adding Schedule appointment in schedule appointment collection
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime,
+    EndTime = endTime,
+    Subject = "Client Meeting",
+    Color = Color.Red,
+    Location = "Hutchison road",
+});
 
-    //setting end time for the event
-        endTime.Set(
-            currentDate.Get(CalendarField.Year),
-            currentDate.Get(CalendarField.Month),
-            currentDate.Get(CalendarField.DayOfMonth),
-            12, 0, 0
-            );
-
-    //Adding Schedule appointment in schedule appointment collection 
-        scheduleAppointmentCollection.Add(new ScheduleAppointment()
-            {
-	            StartTime = startTime,
-                EndTime = endTime,
-                Subject = "Client Meeting",
-                Color = Color.Red,
-                Location = "Hutchison road",
-            });
-
-     //Adding schedule appointment collection to SfSchedule appointments
-            schedule.Appointments = scheduleAppointmentCollection;
-			SetContentView(schedule);
-
+//Adding schedule appointment collection to SfSchedule appointments
+schedule.Appointments = scheduleAppointmentCollection;
+SetContentView(schedule);
 {% endhighlight %}
+{% endtabs %}
 
 ![](PopulatingAppointments_images/appointment.png)
 
@@ -68,61 +64,51 @@ documentation: ug
 
 [MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
 
+{% tabs %}
 {% highlight c# %}
+SfSchedule schedule = new SfSchedule(this);
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+Calendar currentDate = Calendar.Instance;
+Calendar startTime = (Calendar)currentDate.Clone();
+Calendar endTime = (Calendar)currentDate.Clone();
 
- SfSchedule schedule = new SfSchedule(this);
-        ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-        Calendar currentDate = Calendar.Instance;
-        Calendar startTime = (Calendar)currentDate.Clone();
-        Calendar endTime = (Calendar)currentDate.Clone();
-        startTime.Set(
-			currentDate.Get(CalendarField.Year),
-			currentDate.Get(CalendarField.Month),
-			currentDate.Get(CalendarField.DayOfMonth),
-			9,0,0
-			);
-		endTime.Set(
-			currentDate.Get(CalendarField.Year),
-			currentDate.Get(CalendarField.Month),
-			currentDate.Get(CalendarField.DayOfMonth),
-			9,0,0
-			);
-		Calendar startTime1 = (Calendar)currentDate.Clone();
-        Calendar endTime1 = (Calendar)currentDate.Clone();
-        startTime1.Set(
-			currentDate.Get(CalendarField.Year),
-			currentDate.Get(CalendarField.Month),
-			currentDate.Get(CalendarField.DayOfMonth),
-			11,0,0
-			);
-		endTime1.Set(
-			currentDate.Get(CalendarField.Year),
-			currentDate.Get(CalendarField.Month),
-			currentDate.Get(CalendarField.DayOfMonth),
-			12,0,0
-			);
-		scheduleAppointmentCollection.Add(new ScheduleAppointment()
-      	     {
-                StartTime = startTime,
-				EndTime = endTime,
-				Subject = "Client Meeting",
-				MinHeight = 30,
-				Color = Color.ParseColor("#FFD80073")
-
-            });
-		scheduleAppointmentCollection.Add(new ScheduleAppointment()
-       		 {
-                StartTime = startTime1,
-				EndTime = endTime1,
-				Subject = "Anniversary",
-				Color = Color.ParseColor("#FFA2C139")
-
-            });
-		schedule.Appointments= scheduleAppointmentCollection;
-
-
-        SetContentView(schedule);
+startTime.Set(currentDate.Get(CalendarField.Year),
+              currentDate.Get(CalendarField.Month),
+              currentDate.Get(CalendarField.DayOfMonth),
+              9,0,0);
+endTime.Set(currentDate.Get(CalendarField.Year),
+            currentDate.Get(CalendarField.Month),
+            currentDate.Get(CalendarField.DayOfMonth),
+            9,0,0);
+Calendar startTime1 = (Calendar)currentDate.Clone();
+Calendar endTime1 = (Calendar)currentDate.Clone();
+startTime1.Set(currentDate.Get(CalendarField.Year),
+               currentDate.Get(CalendarField.Month),
+               currentDate.Get(CalendarField.DayOfMonth),
+               11,0,0);
+endTime1.Set(currentDate.Get(CalendarField.Year),
+             currentDate.Get(CalendarField.Month),
+             currentDate.Get(CalendarField.DayOfMonth),
+             12,0,0);
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime,
+    EndTime = endTime,
+    Subject = "Client Meeting",
+    MinHeight = 30,
+    Color = Color.ParseColor("#FFD80073")
+});
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime1,
+    EndTime = endTime1,
+    Subject = "Anniversary",
+    Color = Color.ParseColor("#FFA2C139")
+});
+schedule.Appointments= scheduleAppointmentCollection;
+SetContentView(schedule);
 {% endhighlight %}
+{% endtabs %}
 
 ![](PopulatingAppointments_images/minheight.png)
 
@@ -136,97 +122,93 @@ documentation: ug
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
+{% tabs %}
 {% highlight c# %}
+using Com.Syncfusion.Schedule;
+using Java.Util;
 
-        using Com.Syncfusion.Schedule;
-    using Java.Util;
+//Creating an instance for SfSchedule Control
+SfSchedule schedule = new SfSchedule(this);
 
-    //Creating an instance for SfSchedule Control
-        SfSchedule schedule = new SfSchedule(this);
+// Creating an instance for schedule appointment Collection
+ScheduleAppointmentCollection scheduleAppointmentCollection = new   ScheduleAppointmentCollection();
 
-    // Creating an instance for schedule appointment Collection
-        ScheduleAppointmentCollection scheduleAppointmentCollection = new   ScheduleAppointmentCollection();
+Calendar currentDate = Calendar.Instance;
+Calendar startTime = (Calendar)currentDate.Clone();
 
-        Calendar currentDate = Calendar.Instance;
-        Calendar startTime = (Calendar)currentDate.Clone();
+//setting start time for the event
+startTime.Set(currentDate.Get(CalendarField.Year),
+              currentDate.Get(CalendarField.Month),
+              currentDate.Get(CalendarField.DayOfMonth),
+              10, 0, 0);
 
-    //setting start time for the event
-        startTime.Set(
-            currentDate.Get(CalendarField.Year),
-            currentDate.Get(CalendarField.Month),
-            currentDate.Get(CalendarField.DayOfMonth),
-            10, 0, 0
-            );
+Calendar endTime = (Calendar)currentDate.Clone();
 
-        Calendar endTime = (Calendar)currentDate.Clone();
-
-    //setting end time for the event
-        endTime.Set(
-            currentDate.Get(CalendarField.Year),
+//setting end time for the event
+endTime.Set(currentDate.Get(CalendarField.Year),
             currentDate.Get(CalendarField.Month),
             currentDate.Get(CalendarField.DayOfMonth)+2,
-            12, 0, 0
-            );
+            12, 0, 0);
 
-        //Adding Schedule appointment in schedule appointment collection 
-        scheduleAppointmentCollection.Add(new ScheduleAppointment()
-            {
-	            StartTime = startTime,
-                EndTime = endTime,
-                Subject = "Client Meeting",
-                Color = Color.Red,
-                Location = "Hutchison road",
-            });
+//Adding Schedule appointment in schedule appointment collection
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime,
+    EndTime = endTime,
+    Subject = "Client Meeting",
+    Color = Color.Red,
+    Location = "Hutchison road",
+});
 
-     //Adding schedule appointment collection to SfSchedule appointments
-            schedule.Appointments = scheduleAppointmentCollection;
-			SetContentView(schedule);
-
+//Adding schedule appointment collection to SfSchedule appointments
+schedule.Appointments = scheduleAppointmentCollection;
+SetContentView(schedule);
 {% endhighlight %}
+{% endtabs %}
 
 ![](PopulatingAppointments_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
 
+{% tabs %}
 {% highlight c# %}
-
-    //Adding Schedule appointment in schedule appointment collection 
-        scheduleAppointmentCollection.Add(new ScheduleAppointment()
-            {
-	            StartTime = startTime,
-                EndTime = endTime,
-                Subject = "Client Meeting",
-                Color = Color.Red,
-                Location = "Hutchison road",
-                IsAllDay = true
-            });
-
-{% endhighlight %} 
+//Adding Schedule appointment in schedule appointment collection
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime,
+    EndTime = endTime,
+    Subject = "Client Meeting",
+    Color = Color.Red,
+    Location = "Hutchison road",
+    IsAllDay = true
+});
+{% endhighlight %}
+{% endtabs %}
 
 ### All-Day Appointment Panel
 All-day appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting `ShowAllDay` property of `DayViewSettings`, `WeekViewSettings` and `WorkWeekViewSettings` of `DayView`, `WeekView` and `WorkWeekView` respectively.
 
+{% tabs %}
 {% highlight c# %}
+//Setting schedule view
+schedule.ScheduleView = ScheduleView.WeekView;
 
-            //Setting schedule view 
-            schedule.ScheduleView = ScheduleView.WeekView;
-
-   	    //Creating week view settings for SfSchedule WeekView 
-            WeekViewSettings weekViewSettings = new WeekViewSettings();
-            weekViewSettings.ShowAllDay = true;
-            schedule.WeekViewSettings = weekViewSettings; 
-
-{% endhighlight %} 
+//Creating week view settings for SfSchedule WeekView
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+weekViewSettings.ShowAllDay = true;
+schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
+{% endtabs %}
 
 All-Day panel background can be customized by setting `AllDayAppointmentBackgroundColor` 
 of the respective view settings.
 
+{% tabs %}
 {% highlight c# %}
-
-            weekViewSettings.AllDayAppointmentBackgroundColor = Color.Silver; 
-
-{% endhighlight %} 
+weekViewSettings.AllDayAppointmentBackgroundColor = Color.Silver;
+{% endhighlight %}
+{% endtabs %}
 
 ![](PopulatingAppointments_images/allday.png)
 
@@ -318,42 +300,42 @@ N> `SfSchedule` does not support Editing and Deleting of Recurring appointment's
 ### Adding Recurrence Appointment using Recurrence Builder
 Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceRule.html) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
 
+{% tabs %}
 {% highlight c# %}
-
-			
-        // Creating instance for schedule appointment collection
-        ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+// Creating instance for schedule appointment collection
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 
 
-    //Adding schedule appointment in schedule appointment collection 
-        var scheduleAppointment = new ScheduleAppointment()
-            {
-        	StartTime = startTime,
-        	EndTime = endTime,
-        	Subject = "Client Meeting",
-        	Location = "Hutchison road",
-        	IsRecursive = true
-            };
+//Adding schedule appointment in schedule appointment collection
+var scheduleAppointment = new ScheduleAppointment()
+{
+    StartTime = startTime,
+    EndTime = endTime,
+    Subject = "Client Meeting",
+    Location = "Hutchison road",
+    IsRecursive = true
+};
 
 
-    //Adding schedule appointment in schedule appointment collection
-        scheduleAppointmentCollection.Add(scheduleAppointment);
+//Adding schedule appointment in schedule appointment collection
+scheduleAppointmentCollection.Add(scheduleAppointment);
 
-     // Creating recurrence rule
-        RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
-            recurrenceProperties.RecurrenceType = RecurrenceType.Daily;
-            recurrenceProperties.IsRangeRecurrenceCount = true;
-            recurrenceProperties.DailyNDays = 2;
-            recurrenceProperties.IsDailyEveryNDays = true;
-            recurrenceProperties.RangeRecurrenceCount = 10;
-            recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
+// Creating recurrence rule
+RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
+recurrenceProperties.RecurrenceType = RecurrenceType.Daily;
+recurrenceProperties.IsRangeRecurrenceCount = true;
+recurrenceProperties.DailyNDays = 2;
+recurrenceProperties.IsDailyEveryNDays = true;
+recurrenceProperties.RangeRecurrenceCount = 10;
+recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
 
-            // Setting recurrence rule to schedule appointment
-            scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule;
+// Setting recurrence rule to schedule appointment
+scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule;
 
-            //Adding Schedule appointment collection to SfSchedule appointments
-            schedule.Appointments = scheduleAppointmentCollection;
-{% endhighlight %} 
+//Adding Schedule appointment collection to SfSchedule appointments
+schedule.Appointments = scheduleAppointmentCollection;
+{% endhighlight %}
+{% endtabs %}
 
 ![](PopulatingAppointments_images/recurrence.png)
 
@@ -367,20 +349,20 @@ The default appearance of the appointment can be customized by using the [Appoi
 ### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderWidth.html) to the `AppointmentStyle` property of `SfSchedule`.
 
+{% tabs %}
 {% highlight c# %}
+//Creating appointment style
+AppointmentStyle appointmentStyle = new AppointmentStyle();
+appointmentStyle.TextColor = Color.Red;
+appointmentStyle.TextStyle = Typeface.Create("Calibri", TypefaceStyle.Bold);
+appointmentStyle.BorderColor = Color.Blue;
+appointmentStyle.BorderCornerRadius = 12;
+appointmentStyle.BorderWidth = 10;
 
-        //Creating appointment style 
-        AppointmentStyle appointmentStyle = new AppointmentStyle();
-        appointmentStyle.TextColor = Color.Red;
-		appointmentStyle.TextStyle = Typeface.Create("Calibri", TypefaceStyle.Bold); 
-        appointmentStyle.BorderColor = Color.Blue;
-        appointmentStyle.BorderCornerRadius = 12;
-        appointmentStyle.BorderWidth = 10;
-     
-     //Setting appointment style 
-        schedule.AppointmentStyle = appointmentStyle; 
-
+//Setting appointment style
+schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
+{% endtabs %}
 
 ![](PopulatingAppointments_images/style.png)
 
@@ -394,73 +376,91 @@ Schedule appointment can be customized during runtime using [AppointmentLoadedEv
 •	[View](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~View.html) -  Sets the Custom UI for Appointments.
 •	[Bounds](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~Bounds.html) – Contains the UI bounds of appointment.
 
+{% tabs %}
 {% highlight c# %}  
 schedule.AppointmentLoaded += schedule_AppointmentLoaded ;
 
+...
+
 private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
 {
-	args.AppointmentStyle = new AppointmentStyle();
-
-	if(args.Appointment != null && args.Appointment.IsAllDay)
-	{
-		args.AppointmentStyle.BorderColor = Color.Red;
-		args.AppointmentStyle.BorderCornerRadius = 12;
-		args.AppointmentStyle.TextColor= Color.White;
-		args.AppointmentStyle.BorderWidth = 10;
-	}
-	else	
-	{
-		args.AppointmentStyle.BorderColor = Color.Blue;
-		args.AppointmentStyle.BorderCornerRadius = 12;
-		args.AppointmentStyle.TextColor= Color.Red;
-		args.AppointmentStyle.BorderWidth = 10;
-	}
+    args.AppointmentStyle = new AppointmentStyle();
+    
+    if(args.Appointment != null && args.Appointment.IsAllDay)
+    {
+        args.AppointmentStyle.BorderColor = Color.Red;
+        args.AppointmentStyle.BorderCornerRadius = 12;
+        args.AppointmentStyle.TextColor= Color.White;
+        args.AppointmentStyle.BorderWidth = 10;
+    }
+    else
+    {
+        args.AppointmentStyle.BorderColor = Color.Blue;
+        args.AppointmentStyle.BorderCornerRadius = 12;
+        args.AppointmentStyle.TextColor= Color.Red;
+        args.AppointmentStyle.BorderWidth = 10;
+    }
 }
-
 {% endhighlight %}
+{% endtabs %}
 
 ![](PopulatingAppointments_images/appointmentstyle_event.png)
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
 
-{% highlight c# %} 
- 
+{% tabs %}
+{% highlight c# %}
 schedule.AppointmentLoaded += schedule_AppointmentLoaded;
+
+...
 
 private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs args)
 {
-	if (args.Appointment == null)
-		return;
-	if(args.Appointment.IsAllDay)
-	{
-		TextView textView = new TextView(this);
-		textView.SetTextColor(Color.Black);
-		textView.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
-		textView.Text = arg.Appointment.Subject;
-		arg.View = textView;
-	}
-	else if (args.Appointment.Subject == "Retrospective")
-	{
-		ImageButton button = new ImageButton(this);
-		button.SetImageResource(Resource.Drawable.Meeting); // Meeting as Image name
-		button.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
-		arg.View = button;
-	}
-	else
-	{
-		ImageButton button = new ImageButton(this);
-		button.SetImageResource(Resource.Drawable.Cake); // Cake as Image name
-		button.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
-		arg.View = button;
-	}	
+    if (args.Appointment == null)
+        return;
+    if(args.Appointment.IsAllDay)
+    {
+        TextView textView = new TextView(this);
+        textView.SetTextColor(Color.Black);
+        textView.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
+        textView.Text = arg.Appointment.Subject;
+        arg.View = textView;
+    }
+    else if (args.Appointment.Subject == "Retrospective")
+    {
+        ImageButton button = new ImageButton(this);
+        button.SetImageResource(Resource.Drawable.Meeting); // Meeting as Image name
+        button.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
+        arg.View = button;
+    }
+    else
+    {
+        ImageButton button = new ImageButton(this);
+        button.SetImageResource(Resource.Drawable.Cake); // Cake as Image name
+        button.SetBackgroundColor(GetAndroidColorFromInt(args.Appointment.Color));
+        arg.View = button;
+    }
 }
-
-![](PopulatingAppointments_images/custom.png)
- 
 {% endhighlight %}
+{% endtabs %}
 
 ![](PopulatingAppointments_images/custom.png)
+
+### Customize Font Appearance
+
+You can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#appearance-customization) property in Schedule.
+
+{% tabs %}
+{% highlight c# %}
+ appointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");     
+{% endhighlight %}
+{% endtabs %}
+
+![](PopulatingAppointments_images/customfontappointment.png)
+
+Refer [this](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#custom-font-setting-in-xamarinandroid) to configure the custom fonts in Xamarin.Android.
+
 
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
@@ -474,61 +474,42 @@ These events will be triggered while perform respective touch actions in timeslo
 • [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs~SelectedAppointment.html) -  Contains the selected appointment value, it will be null, if any time slots selected.
 • [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs~Calendar.html) - Contains selected time slot DateTime value.
 
-{% highlight c# %} 
- 
-        schedule.CellTapped += Schedule_CellTapped;
-	schedule.CellDoubleTapped += Schedule_CellDoubleTapped;
-	schedule.CellLongPressed += Schedule_CellLongPressed;
+{% tabs %}
+{% highlight c# %}
+schedule.CellTapped += Schedule_CellTapped;
+schedule.CellDoubleTapped += Schedule_CellDoubleTapped;
+schedule.CellLongPressed += Schedule_CellLongPressed;
 
+...
 
-	private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
-		{
-		}
-	private void Schedule_CellDoubleTapped(object sender, CellTappedEventArgs e)
-		{
-		}
-	private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
-		{
-		}
- 
+private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
+{
+}
+private void Schedule_CellDoubleTapped(object sender, CellTappedEventArgs e)
+{
+}
+private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
+{
+}
+
 {% endhighlight %}
+{% endtabs %}
 
 ### Selection customization
 The default selection of an appointment can be customized by using [SelectionBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~SelectionBorderColor.html), [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~SelectionTextColor.html) properties in `AppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 
 N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
-{% highlight c# %} 
- 
-        //Creating an appointment style 
-        AppointmentStyle appointmentStyle = new AppointmentStyle();
-        appointmentStyle.SelectionBorderColor = Color.Yellow;
-        appointmentStyle.SelectionTextColor = Color.Yellow;
+{% tabs %}
+{% highlight c# %}
+//Creating an appointment style
+AppointmentStyle appointmentStyle = new AppointmentStyle();
+appointmentStyle.SelectionBorderColor = Color.Yellow;
+appointmentStyle.SelectionTextColor = Color.Yellow;
 
-		//Setting an appointment style 
-        schedule.AppointmentStyle = appointmentStyle;
- 
+//Setting an appointment style
+schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
+{% endtabs %}
 
 ![](PopulatingAppointments_images/selection.png)
-
-## Custom Font
-
-We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#appearance-customization) property in Schedule.
-
-{% highlight c# %}
- appointmentStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");     
-{% endhighlight %}
-
-![](PopulatingAppointments_images/customfontappointment.png)
-
-
-Following steps will explain how to configure the custom fonts.
-
-### Custom Font Setting in Xamarin.Android
-
-* Download the Custom Font(e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Assets folder of the Xamarin.Android project.
-* Then, use the Custom Font name as text style.
-
-
