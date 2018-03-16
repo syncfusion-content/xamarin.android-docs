@@ -37,10 +37,10 @@ You can localize the custom strings used in the schedule control. You can locali
 
 {% tabs %}
 {% highlight xml %}
- <resources>
-    <string name="No_Appointments">Aucun événement</string>
-    <string name="all_day">Toute la journée</string>
- </resources>
+<resources>
+	<string name="No_Appointments">Aucun événement</string>
+	<string name="all_day">Toute la journée</string>
+</resources>
 {% endhighlight %}
 {% endtabs %}
 
