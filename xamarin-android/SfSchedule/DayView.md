@@ -48,7 +48,7 @@ schedule.ViewHeaderHeight = 50;
 
 ### Customize Font Appearance
 
-you can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html) properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) property in Schedule.
+You can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderStyle~DateTextStyle.html) properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/dayview#viewheader-appearance) property in Schedule.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,9 +90,9 @@ You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https
 SfSchedule schedule = new SfSchedule();
 schedule.ScheduleView = ScheduleView.DayView;
 schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
-{% endhighlight %}
 
-{% highlight c# %}
+...
+
 void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
 {
     var calendar = e.Calendar;
