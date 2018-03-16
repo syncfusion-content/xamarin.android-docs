@@ -15,9 +15,11 @@ You can customize the header of the Schedule using [HeaderStyle](https://help.sy
 
 You can customize the height for the Header in Schedule using `HeaderHeight` in schedule.
 
+{% tabs %}
 {% highlight c# %}
 schedule.HeaderHeight = 50;
 {% endhighlight %}
+{% endtabs %}
 
 ## Appearance
 
@@ -25,6 +27,7 @@ You can change the header format and style using `HeaderStyle` property in sched
 
 You can change the background color,text style and text size using properties such as [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderStyle~BackgroundColor.html),[TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderStyle~TextStyle.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderStyle~TextSize.html),[TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderStyle~TextColor.html) of Header using `HeaderStyle` property in schedule.
 
+{% tabs %}
 {% highlight c# %}
 HeaderStyle headerStyle = new HeaderStyle();
 headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
@@ -33,13 +36,28 @@ headerStyle.TextSize = 15;
 headerStyle.TextColor=Color.White;
 schedule.HeaderStyle = headerStyle;
 {% endhighlight %}
+{% endtabs %}
 
 ![](Header_images/HeaderStyle.png) 
+
+### Customize Font Appearance
+
+You can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderStyle~TextStyle.html) property of [HeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/headers#appearance) property in Schedule.
+{% tabs %}
+{% highlight c# %}
+headerStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
+{% endhighlight %}
+{% endtabs %}
+
+![](Header_images/customfontheader.png)
+
+Refer [this](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#custom-font-setting-in-xamarinandroid) to configure the custom fonts in Xamarin.Android.
 
 ## Loading Custom Headers
 
 You can collapse the default header of schedule by setting `HeaderHeight` property of `SfSchedule` as 0. Instead you can use your own custom header for it. While navigating views in schedule, text labels available in the header will be changed based on it visible dates, so while using custom header, respective text value can be obtained from the `VisibleDatesChanged` event of `SfSchedule`.
 
+{% tabs %}
 {% highlight c# %}
 //triggering visible dates changed event.
 schedule.VisibleDatesChanged += Schedule_VisibleDatesChanged;
@@ -60,53 +78,40 @@ void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
 	}
 }
 {% endhighlight %}
+{% endtabs %}
 
 You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Android_Sample-935057749.zip)
 
 ## Header Date Format
 
-We can customize the date format of SfSchedule Header by using [ScheduleDateHeaderFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ScheduleDateHeaderFormat.html) property of `SfSchedule`.
+You can customize the date format of SfSchedule Header by using [ScheduleDateHeaderFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ScheduleDateHeaderFormat.html) property of `SfSchedule`.
 
+{% tabs %}
 {% highlight c# %}
 //Creating instance of Schedule
 SfSchedule schedule = new SfSchedule();
 //Customizing date format
 schedule.ScheduleDateHeaderFormat = "LLL yy";
 {% endhighlight %}
+{% endtabs %}
 
 ![](Header_images/HeaderDateFormat.png)
 
 ## Header Tapped Event
 
-We can handle single tap action of Header by using [HeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~HeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the Header is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
+You can handle single tap action of Header by using [HeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~HeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the Header is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
 
+{% tabs %}
 {% highlight c# %}
 //Creating  new instance of Schedule
 SfSchedule schedule = new SfSchedule();
 schedule.HeaderTapped += Handle_HeaderTapped;
-{% endhighlight %}
 
-{% highlight c# %}
+...
+
 void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 {
     var calendar = e.Calendar;
 }
 {% endhighlight %}
-
-## Custom Font
-
-We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderStyle~TextStyle.html) property of [HeaderStyle](https://help.syncfusion.com/xamarin-android/sfschedule/headers#appearance) property in Schedule.
-{% highlight c# %}
-headerStyle.TextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regular.ttf");
-{% endhighlight %}
-
-![](Header_images/customfontheader.png)
-
-Following steps will explain how to configure the custom fonts.
-
-### Custom Font Setting in Xamarin.Android
-
-* Download the Custom Font(e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Assets folder of the  Xamarin.Android project.
-* Then, use the Custom Font name as text style.
-
+{% endtabs %}
