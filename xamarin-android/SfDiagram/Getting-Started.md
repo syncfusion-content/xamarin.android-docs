@@ -17,6 +17,16 @@ Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\li
 For creating a diagram for android, the following assemblies need to be referenced in your Android project.
 •	Syncfusion.SfDiagram.Android
 
+**Installing assemblies through Package Manager Console**
+Open Package Manager console by clicking Tools >> NuGet Package Manager >> Package Manager Console options in Visual Studio.
+<table>
+<tr>
+<td>
+PM> Get-Project -All | Install-Package Syncfusion.Xamarin.SfDiagram.Android -source{{'[http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin#"")'| markdownify }}
+</td>
+</tr>
+</table>
+
 ## Basic building blocks of Diagram
 
 • **Diagram-** It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and connectors to represent the  graphical diagram.
