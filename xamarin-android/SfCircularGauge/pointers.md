@@ -361,7 +361,7 @@ The marker can be customized in terms of color, width, and height by using the [
 
 ## Setting multiple pointers
 
-In addition to the default pointer, you can add n number of pointers to a scale by using the [`CircularPointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.CircularScales~CircularPointers.html) property.
+In addition to the default pointer, you can add n number of pointers to a scale by using the [`CircularPointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~CircularPointers.html) property.
 
 {% highlight c# %}
 
