@@ -123,11 +123,11 @@ Following are the two events available in the Footer.
 
 ### AcceptButtonClicked
 
-SfPopupLayout.PopupView.AcceptButtonClicked will be fired when the accept button in the footer is clicked. 
+SfPopupLayout.PopupView.AcceptButtonClicked will be fired when the accept button in the footer is clicked in the application with `CancelEventArgs` that contains the following property.. 
 
-Derive a class from `ICommand` and implement the neccessary interface. Return true in the `CanExecute()` method to close the popup and return false to prevent popup from closing.
+* [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Based on this value, you can cancel the popup closing.
 
-Refer to the following code example in which the pop-up closing will be canceled based on the return value of `CanExecute()` method.
+Refer to the following code example in which the pop-up closing will be canceled based on the `e.Cancel` value.
 
 {% highlight c# %}
 public MainPage()
@@ -135,37 +135,24 @@ public MainPage()
     ....
     InitializeComponent();
     popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;
-    popupLayout.PopupView.AcceptCommand = new AcceptButtonCustomCommand();
+    popupLayout.PopupView.AcceptButtonClicked += PopupView_AcceptButtonClicked;
     ....
 }
-{% endhighlight %}
 
-{% highlight c# %}
-//Accept Button Event handler
-
-public class AcceptButtonCustomCommand : ICommand
+private void PopupView_AcceptButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
 {
-    public event EventHandler CanExecuteChanged;
-
-    public bool CanExecute(object parameter)
-    {
-        return true;
-    }
-
-    public void Execute(object parameter)
-    {
-       
-    }
+     e.Cancel = true;
 }
+
 {% endhighlight %}
 
 ### DeclineButtonClicked
 
-[SfPopupLayout.PopupView.DeclineButtonClicked](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~DeclineCommand.html) will be fired when the decline button in the footer is clicked.  
+SfPopupLayout.PopupView.DeclineButtonClicked will be fired when the decline button in the footer is clicked in the application with `CancelEventArgs` that contains the following property.. 
 
-Derive a class from `ICommand` and implement the neccessary interface. Return true in the `CanExecute()` method to close the popup and return false to prevent popup from closing.
+* [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Based on this value, you can cancel the popup closing.
 
-Refer to the following code example in which the pop-up closing will be canceled based on the return value of `CanExecute()` method.
+Refer to the following code example in which the pop-up closing will be canceled based on the `e.Cancel` value.
 
 {% highlight c# %}
 public MainPage()
@@ -173,26 +160,13 @@ public MainPage()
     ....
     InitializeComponent();
     popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;
-    popupLayout.PopupView.DeclineCommand = new DeclineButtonCustomCommand();
+    popupLayout.PopupView.DeclineButtonClicked += PopupView_DeclineButtonClicked;
     ....
 }
-{% endhighlight %}
 
-{% highlight c# %}
-//Decline Button Event handler
-
-public class DeclineButtonCustomCommand : ICommand
+private void PopupView_DeclineButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
 {
-    public event EventHandler CanExecuteChanged;
-
-    public bool CanExecute(object parameter)
-    {
-        return true;
-    }
-
-    public void Execute(object parameter)
-    {
-       
-    }
+    e.Cancel = true;
 }
+
 {% endhighlight %}

@@ -245,6 +245,49 @@ By default, you can choose from the following animations available in the SfPopu
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin-android/sfpopuplayout/popup-animations).
 
+## How to 
+
+### Loading SfPopupLayout in GridTappedEvent of SfDataGrid
+
+SfPopupLayout allows you to open it in the GridTapped event of SfDataGrid.
+
+Refer the below code example to show the popup in Grid tapped event.
+
+{% highlight c# %}
+using Syncfusion.Android.PopupLayout;
+using Syncfusion.SfDataGrid;
+
+namespace GettingStarted
+{
+    public class MainActivity : Activity 
+    {
+       SfPopupLayout popupLayout;
+       SfDataGrid dataGrid;
+       ViewModel viewModel;
+
+        protected override void OnCreate (Bundle bundle) 
+        {
+            base.OnCreate (bundle); 
+            
+            dataGrid = new SfDataGrid(this);
+            viewModel = new ViewModel();
+            dataGrid.ItemsSource = viewModel.OrdersInfo;
+            dataGrid.GridTapped += DataGrid_GridTapped;
+
+            popupLayout = new SfPopupLayout(this);
+            popupLayout.Content = dataGrid;
+            SetContentView(popupLayout);
+        } 
+
+        private void DataGrid_GridTapped(object sender, GridTappedEventArgs e)
+        {
+            popupLayout.Show();
+        }
+    } 
+}
+
+{% endhighlight %}
+
 ## Sample link
 
 You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1414679923).
