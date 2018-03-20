@@ -14,8 +14,9 @@ This section provides a quick overview for working with Diagram for Xamarin.Andr
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
 {Syncfusion Essential Studio Installed location}\Essential Studio{Essential Studio version}\Xamarin\lib\android\
 Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib\android
-For creating a PDF Viewer for android, the following assemblies need to be referenced in your Android project.
+For creating a diagram for android, the following assemblies need to be referenced in your Android project.
 •	Syncfusion.SfDiagram.Android
+
 **Installing assemblies through Package Manager Console**
 Open Package Manager console by clicking Tools >> NuGet Package Manager >> Package Manager Console options in Visual Studio.
 <table>
