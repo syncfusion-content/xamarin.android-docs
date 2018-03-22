@@ -151,26 +151,6 @@ chart.Series.Add(stackingColumnSeries4);
 
 ![](chartseries_images/chartseries_img4.png)
 
-## Vertical Chart
-
-[`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) allows you to change the orientation of the rendered chart by setting [`Transposed`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~Transposed.html) property to true.
-
-{% highlight c# %}
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-LineSeries lineSeries = new LineSeries();
-
-lineSeries.Transposed = true;
-
-chart.Series.Add(lineSeries);
-
-{% endhighlight %}
-
-![](chartseries_images/chartseries_img5.png)
-
 ## Animation
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) provides animation support for data series. Series will be animated whenever the ItemsSource changes. Animation can be enabled by using the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~EnableAnimation.html) property. You can also control the duration of the animation using [`AnimationDuration`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~AnimationDuration.html) property. 
@@ -191,3 +171,24 @@ columnSeries.EnableAnimation = true;
 columnSeries.AnimationDuration = 2;
 
 {% endhighlight %}
+
+## Transpose the Series
+
+
+The [`Transposed`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~Transposed.html) property of [`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~Transposed.html) is used to plot the chart in the vertical direction and this helps to view the data in different perspective.
+
+{% highlight c# %}
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+LineSeries lineSeries = new LineSeries();
+
+lineSeries.Transposed = true;
+
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
+
+![](chartseries_images/chartseries_img5.png)
