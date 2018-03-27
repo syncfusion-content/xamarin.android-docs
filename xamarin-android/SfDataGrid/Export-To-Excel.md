@@ -384,9 +384,11 @@ option.ExportAllPages = true;
 {% endtabs %}
 
 * ExportAllPages is false
+
 ![](SfDataGrid_images/Excel/CurrentPage.png)  
 
 * ExportAllPages is true
+
 ![](SfDataGrid_images/Excel/AllPageExport.png)  
 
 ### Events
@@ -587,4 +589,5 @@ sfGrid.Columns.Add(unboundColumn);
 {% endtabs %}
 
 The below screenshot shows that the unbound column is exported to excel sheet along with text columns.
+
 ![](SfDataGrid_images/Exporting_img8.png)
