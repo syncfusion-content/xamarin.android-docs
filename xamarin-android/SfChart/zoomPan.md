@@ -74,7 +74,7 @@ zoomPanBehavior.ZoomMode = ZoomMode.X;
 
 The [`ZoomStart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~ZoomStart_EV.html) event is triggered when the user starts zooming the chart through pinch gesture, and this is a cancelable event. The argument contains the following information.
 
-* [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html) – the zoom start event will be triggered for all the axis in the Chart.
+* [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ChartZoomEventArgs~ChartAxis.html) – the zoom start event will be triggered for all the axis in the Chart.
 * [`CurrentZoomFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ChartZoomEventArgs~CurrentZoomFactor.html) – used to get the new zoom factor of the corresponding axis.
 * [`CurrentZoomPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ChartZoomEventArgs~CurrentZoomPosition.html)– used to get the new zoom position of the corresponding axis.
 * [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ZoomStartEventArgs~Cancel.html) – used to set the value indicating whether the zooming should be canceled.
@@ -83,7 +83,7 @@ The [`ZoomStart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfch
 
 The [`ZoomDelta`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~ZoomDelta_EV.html) event is triggered while zooming, and this is a cancelable event. The argument contains the following information.
 
-* [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html) – Instance of the axis whose range is changed because of zooming. This event is triggered for each axis in the chart.
+* [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ChartZoomEventArgs~ChartAxis.html) – Instance of the axis whose range is changed because of zooming. This event is triggered for each axis in the chart.
 * [`PreviousZoomFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ZoomDeltaEventArgs~PreviousZoomFactor.html) – used to get the previous zoom factor of the axis.
 * [`PreviousZoomPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ZoomDeltaEventArgs~PreviousZoomPosition.html) – used to get the previous zoom position of the axis.
 * [`CurrentZoomFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ChartZoomEventArgs~CurrentZoomFactor.html) – used to get the current zoom factor of the axis.
@@ -94,7 +94,7 @@ The [`ZoomDelta`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfch
 
 The [`ZoomEnd`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~ZoomEnd_EV.html) event is triggered after the zooming is stopped. The argument contains the following information.
 
-* [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html) – Instance of the axis whose range is changed because of zooming. This event is triggered for each axis in the chart.
+* [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ChartZoomEventArgs~ChartAxis.html) – Instance of the axis whose range is changed because of zooming. This event is triggered for each axis in the chart.
 * [`CurrentZoomFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ChartZoomEventArgs~CurrentZoomFactor.html) – the axis zoom factor after zoom.
 * [`CurrentZoomPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ChartZoomEventArgs~CurrentZoomPosition.html) - the axis zoom position after zoom.
 
@@ -121,7 +121,7 @@ The [`SelectionZoomEnd`](https://help.syncfusion.com/cr/cref_files/xamarin-andro
 
 The [`Scroll`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~Scroll_EV.html) event is triggered while panning, and this is a cancelable event. The argument contains the following information.
 
-* [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html) – Instance of the axis whose range is changed while panning. This event is triggered for each axis in the chart.
+* [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ScrollEventArgs~ChartAxis.html) – Instance of the axis whose range is changed while panning. This event is triggered for each axis in the chart.
 * [`ZoomPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ScrollEventArgs~ZoomPosition.html) – the current zoom position of the axis.
 * [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ScrollEventArgs~Cancel.html) – used to set a value indicating whether the scrolling should be canceled.
 
@@ -129,7 +129,7 @@ The [`Scroll`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart
 
 The [`ResetZoom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~ResetZoom_EV.html) event is triggered after the chart is reset on double tap. The argument contains the following information.
 
-* [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html) – Instance of the axis whose range is changed because of this event. This event is triggered for each axis in the chart.
+* [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ResetZoomEventArgs~ChartAxis.html) – Instance of the axis whose range is changed because of this event. This event is triggered for each axis in the chart.
 * [`PreviousZoomFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ResetZoomEventArgs~PreviousZoomFactor.html) – used to get the previous zoom factor.
 * [`PreviousZoomPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+ResetZoomEventArgs~PreviousZoomPosition.html) – used to get the previous zoom position.
 
@@ -167,7 +167,7 @@ zoomPan.ZoomOut();
 
 **Zoom(factor)**
 
-This method is used to change the zoom level by using zoom factor.
+[`Zoom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~Zoom(Single).html) method is used to change the zoom level by using zoom factor.
 
 {% highlight c# %}
 [C#]
@@ -180,7 +180,7 @@ zoomPan.Zoom(0.5f);
 
 **Zoom(RectF)**
 
-This method is used to zoom the chart for a given rectangle value.
+[`Zoom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~Zoom(RectF).html) method is used to zoom the chart for a given rectangle value.
 
 {% highlight c# %}
 [C#]
@@ -193,7 +193,7 @@ zoomPan.Zoom(new RectF(10, 10, 200, 350));
 
 **Zoom(cumulativeLevel, origin, chartAxis)**
 
-This method is used to change the zoom level of given axis to the specified level and origin.
+[`Zoom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~Zoom(Single,Single,ChartAxis).html) method is used to change the zoom level of given axis to the specified level and origin.
 
 {% highlight c# %}
 [C#]
@@ -208,7 +208,7 @@ zoomPan.Zoom(0.5f, 0.5f, axis);
 
 **ZoomByRange(chartAxis, start, end)**
 
-This method is used to zoom the given axis to given range.
+[`ZoomByRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomByRange(ChartAxis,Double,Double).html) method is used to zoom the given axis to given range.
 
 {% highlight c# %}
 [C#]
@@ -221,7 +221,7 @@ zoomPan.ZoomByRange(axis, 20, 25);
 
 **ZoomByRange(dateTimeAxis, start, end)**
 
-This method is used to zoom the given axis to given date time range.
+[`ZoomByRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomByRange(DateTimeAxis,DateTime,DateTime).html) method is used to zoom the given axis to given date time range.
 
 {% highlight c# %}
 [C#]
