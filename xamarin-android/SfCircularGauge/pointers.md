@@ -9,281 +9,480 @@ documentation: ug
 
 ---
 
-# POINTERS
+# Pointers
 
-You can add multiple pointers to the gauge to point at multiple values on the same scale. This can be useful for showing a low and a high value at the same time. The value of the pointer is set using the Value property. There are two types of pointers. You can choose a pointer using the `PointerType` property.
+You can add multiple pointers to the gauge to point multiple values on the same scale. It is used to show low and high values at the same time. The value of the pointer is set by using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularPointer~Value.html) property.
 
-## Needle Pointer
+## Needle pointer
 
-A needle pointer contains two parts, the needle and the knob that can be placed on a gauge to mark values. The needle length is controlled by the `LengthFactor` property. The `LengthFactor` property’s minimum and maximum bounds are 0 and 1. The needle’s UI is customized by the `Color` and `Thickness` properties. The user can modify the Knob’s size by changing the `KnobRadius` property.
-
-### NeedlePointerType
-
-NeedlePointer appearance can be customized by using the Type property . The default value of this property is Bar.
-
-It is `enum` and includes the following option.
-
-* Bar
-* Triangle
+[`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer.html) contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge(this);
-    CircularScale scale = new CircularScale();
-    List<CircularPointer> pointers = new List<CircularPointer>();
-    NeedlePointer needlePointer = new NeedlePointer();
-    needlePointer.Value = 60;
-    needlePointer.Color = Color.Gray;
-    needlePointer.KnobRadius = 10;
-    needlePointer.KnobColor = Color.ParseColor("#2bbfb8");
-    needlePointer.Width = 5;
-    needlePointer.LengthFactor = 0.8;
-    needlePointer.Type = NeedleType.Bar;
-    pointers.Add(needlePointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 70;
+            scale.CircularPointers.Add(needlePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
 
 {% endhighlight %}
 
-![](pointers_images/pointers_img1.png)
+![](pointers_images/needle-pointer/default.png)
 
-### Knob Customization
+## Setting needle pointer type
 
-Knob of `NeedlePointer` can be customized by using `KnobColor`, `KnobRadius`, `KnobRadiusFactor`, `KnobStrokeColor`, and `KnobStrokeWidth` properties. You can set the radius of knob as pixel value by using `KnobRadius` property, and as percentage value by using `KnobRadiusFactor` property.
+The appearance of the needle pointer can be customized by using the [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~Type.html) property. The default value of this property is `Triangle`. This is an enum property, and it has the following options:
+
+1. Bar
+2. Triangle
+
+## Setting bar pointer type
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge();
-    ObservableCollection<Scale> circularScales = new ObservableCollection<Scale>();
-    CircularScale scale = new CircularScale();
-    ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer();
-    NeedlePointer needlePointer = new NeedlePointer();
-    needlePointer.Value = 90;
-    needlePointer.KnobColor = Color.White;
-    needlePointer.KnobRadius = 15;
-    needlePointer.KnobStrokeColor = Color.Blue;
-    needlePointer.KnobStrokeWidth = 8;
-    pointers.Add(needlePointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
-    this.Content=circular;
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;
+            needlePointer.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Bar;
+            scale.CircularPointers.Add(needlePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
 
 {% endhighlight %}
 
-![](pointers_images/pointers_img3.png)
+![](pointers_images/needle-pointer/bar-pointer.png)
 
-### Tail Support
-
-Tail of `NeedlePointer` can be customized by using `TailColor`, `TailLengthFactor`, `TailStrokeColor`, and `TailStrokeWidth` properties.
+## Setting needle pointer type
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge();
-    ObservableCollection<Scale> circularScales = new ObservableCollection<Scale>();
-    CircularScale scale = new CircularScale();
-    ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer();
-    NeedlePointer needlePointer = new NeedlePointer();
-    needlePointer.Value = 90;
-    needlePointer.TailColor = Color.DarkGray;
-    needlePointer.TailLengthFactor = 0.2;
-    needlePointer.TailStrokeWidth = 1;
-    needlePointer.TailStrokeColor = Color.DarkGray;
-    pointers.Add(needlePointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
-    this.Content=circular;
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;
+            needlePointer.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Triangle;
+            scale.CircularPointers.Add(needlePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
 
 {% endhighlight %}
 
-![](pointers_images/pointers_img4.png)
+![](pointers_images/needle-pointer/needle-pointer.png)
 
-## Range Pointer
+## Needle pointer customization
 
-A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark values. The range pointer’s UI is customized by the `Color` and `Thickness` properties.
-
-### RangePointerPosition
-
-The `RangePointer` in the scale can be placed inside the scale or outside the scale by setting `Offset` property.
+The length of the needle is controlled by using the [`LengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~LengthFactor.html) property. The [`LengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~LengthFactor.html) property’s minimum and maximum bounds are 0 and 1. The needle’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularPointer~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularPointer~Width.html) properties.
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge(this);
-    CircularScale scale = new CircularScale();
-    List<CircularPointer> pointers = new List<CircularPointer>();
-    RangePointer rangePointer = new RangePointer();
-    rangePointer.Value = 70;
-    rangePointer.Color = Color.ParseColor("#2bbfb8");
-    rangePointer.Width = 10;
-    pointers.Add(rangePointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;
+            needlePointer.Color = Color.DeepSkyBlue;
+            needlePointer.Width = 7;
+            needlePointer.LengthFactor = 0.7;
+            scale.CircularPointers.Add(needlePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
 
 {% endhighlight %}
 
-![](pointers_images/pointers_img2.png)
+![](pointers_images/needle-pointer/needle-customization.png)
 
-### Range Cap
+## Knob customization
 
-`RangeCap` is an enum property that provides the position options for range cap of the `RangePointer`, which contains Start, End, Both, and None options.
+Knob of the needle pointer can be customized by using the [`KnobColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~KnobColor.html), [`KnobRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~KnobRadius.html), [`KnobRadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~KnobRadiusFactor.html), [`KnobStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~KnobStrokeColor.html), and [`KnobStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~KnobStrokeWidth.html) properties. You can set the radius of knob to pixel and percentage values by using the [`KnobRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~KnobRadius.html) and [`KnobRadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~KnobRadiusFactor.html) properties.
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge();
-    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale();
-    CircularScale scale = new CircularScale();
-    ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer();
-    RangePointer rangePointer = new RangePointer();
-    rangePointer.Value = 80;
-    rangePointer.RangeCap = Com.Syncfusion.Gauges.SfCircularGauge.Enums.RangeCap.Both
-    pointers.Add(rangePointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
-    this.Content=circularGauge;
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 10;
+            needlePointer.KnobRadius = 15;
+            needlePointer.KnobStrokeColor = Color.ParseColor("#007DD1");
+            needlePointer.KnobColor = Color.White;
+            needlePointer.KnobStrokeWidth = 8;
+            scale.CircularPointers.Add(needlePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
 
 {% endhighlight %}
 
-![](pointers_images/pointers_img5.png)
+![](pointers_images/needle-pointer/knob-customization.png)
 
-## Marker Pointer
+## Setting tail for needle pointer
 
-Different types of marker shape can be used to mark the pointer value in scale. You can change the marker shape by using `MarkerShape` property in pointer. Gauge supports the following types of  marker shape:-
+Tail of the needle pointer can be customized by using the [`TailColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~TailColor.html), [`TailLengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~TailLengthFactor.html), [`TailStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~TailStrokeColor.html), and [`TailStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer~TailStrokeWidth.html) properties.
+
+{% highlight c# %}
+
+             SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 90;
+            needlePointer.KnobRadius = 15;
+            needlePointer.TailColor = Color.ParseColor("#757575");
+            needlePointer.TailLengthFactor = 0.2;
+            needlePointer.TailStrokeWidth = 1;
+            needlePointer.TailStrokeColor = Color.ParseColor("#757575");
+            scale.CircularPointers.Add(needlePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+
+{% endhighlight %}
+
+![](pointers_images/needle-pointer/tail.png)
+
+## Range pointer
+
+A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark the values. The [`RangeStart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.RangePointer~RangeStart.html) property allows you to set the starting value of the range pointer.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.RangeStart = 15;
+            rangePointer.Value = 85;
+            scale.CircularPointers.Add(rangePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+
+{% endhighlight %}
+
+![](pointers_images/range-pointer/range-pointer.png)
+
+## Range pointer customization
+
+The range pointer’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularPointer~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularPointer~Width.html) properties. First, you should set the `Offset` property for range pointer, and then increase the thickness of the range pointer.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.Value = 60;
+            rangePointer.Color = Color.DarkCyan;
+            rangePointer.Width = 30;
+            rangePointer.Offset = 0.7;
+            scale.CircularPointers.Add(rangePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+
+{% endhighlight %}
+
+![](pointers_images/range-pointer/rangepointer-customization.png)
+
+## Setting position for range pointer
+
+The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.RangePointer.html) in the scale can be placed inside or outside of the scale by using the following two ways:
+
+1. The [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.RangePointer~Offset.html) property.
+2. The [`StartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.RangePointer~StartOffset.html) and [`EndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.RangePointer~EndOffset.html) properties.
+
+### Setting offset for range pointer
+
+{% highlight c# %}
+
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.Value = 100;
+            rangePointer.Offset = 0.5;
+            rangePointer.Width = 30;
+            scale.CircularPointers.Add(rangePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales; 
+
+{% endhighlight %}
+
+![](pointers_images/range-pointer/rangepointer-offset.png)
+
+### Setting start and end offset for range pointer
+
+{% highlight c# %}
+
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.RangeStart = 15;
+            rangePointer.Value = 85;
+            rangePointer.StartOffset = 0.5;
+            rangePointer.EndOffset = 0.7;
+            scale.CircularPointers.Add(rangePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales; 
+
+{% endhighlight %}
+
+![](pointers_images/range-pointer/rangepointer-start-end-offset.png)
+
+## Setting range cap for range pointer
+
+The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.RangePointer~RangeCap.html) property provides options to position the range cap of the [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.RangePointer.html), which contains the start, end, both, and none options. The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.RangePointer~RangeCap.html) property is an enum property.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.MajorTickSettings.Offset = 0.9;
+            scale.MinorTickSettings.Offset = 0.9;
+            scale.LabelOffset = 0.75;
+            scale.ScaleStartOffset = 0.9;
+            scale.ScaleEndOffset = 1;
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.RangeStart = 20;
+            rangePointer.StartOffset = 0.9;
+            rangePointer.EndOffset = 1;
+            rangePointer.Value = 80;
+            rangePointer.RangeCap = Com.Syncfusion.Gauges.SfCircularGauge.Enums.RangeCap.End;
+            scale.CircularPointers.Add(rangePointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+
+{% endhighlight %}
+
+![](pointers_images/range-pointer/range-cap.png)
+
+## Marker pointer
+
+The different types of marker shapes are used to mark the pointer values in a scale. You can change the marker shape by using the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer~MarkerShape.html) property. Gauge supports the following types of marker shapes:
 
 * Circle
 * Rectangle
 * Triangle
-* InvertedTriangle
+* Inverted triangle
 * Diamond
 * Image
 
-The image can be used instead of rendering marker shape to denote the pointer value. It can be achieved by setting `MarkerShape` to Image, and assigning image path to `ImageSource` in pointer.
+The image is used to denote the pointer value instead of rendering the marker shape. It can be achieved by setting the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer~MarkerShape.html) to `Image`, and assigning the image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer~ImageSource.html) in pointer.
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge(this);
-    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale();
-    CircularScale scale = new CircularScale();
-    ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer>();
-    MarkerPointer markerPointer = new MarkerPointer();
-    markerPointer.Value = 80;
-    markerPointer.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.Triangle;
-    markerPointer.Color = Color.Green;
-    pointers.Add(markerPointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
-    this.Content=circularGauge;
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 70;
+            markerPointer.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.Triangle;
+            scale.CircularPointers.Add(markerPointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
 
 {% endhighlight %}
 
-![](pointers_images/pointers_img6.png)
+![](pointers_images/marker-pointer/marker-pointer.png)
 
-### Marker Pointer Customization
-
-The marker can be customized in terms of color, width, and height by using `Color`, `MarkerWidth`, and `MarkerHeight` property in pointer.
+## Setting image marker shape
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge(this);
-    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale();
-    CircularScale scale = new CircularScale();
-    ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer>();
-    MarkerPointer markerPointer = new MarkerPointer();
-    markerPointer.Value = 80;
-    markerPointer.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.Triangle;
-    markerPointer.Color = Color.Red;
-    markerPointer.MarkerHeight = 30;
-    markerPointer.MarkerWidth = 30;
-    pointers.Add(markerPointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
-    this.Content=circularGauge;
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 40;
+            markerPointer.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.Image;
+            markerPointer.ImageSource = "icon.png";
+            scale.CircularPointers.Add(markerPointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
 
 {% endhighlight %}
 
-![](pointers_images/pointers_img7.png)
+![](pointers_images/marker-pointer/image.png)
 
-### Multiple Pointers
+## Marker pointer customization
 
-In addition to the default pointer, you can add n number of pointers to a scale by using `Pointers` property.
+The marker can be customized in terms of color, width, and height by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularPointer~Color.html), [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer~MarkerWidth.html), and [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer~MarkerHeight.html) properties in pointer. First, you should set the `Offset` property for marker pointer, then increase the height and width of the marker pointer.
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge(this);
-    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale();
-    CircularScale scale = new CircularScale();
-    ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer>();
-    MarkerPointer markerPointer = new MarkerPointer();
-    markerPointer.Value = 80;
-    markerPointer.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.Triangle;
-    markerPointer.Color = Color.Green;
-    markerPointer.Offset = 0.79;
-    pointers.Add(markerPointer);
-    NeedlePointer needlePointer = new NeedlePointer();
-    needlePointer.Value = 80;
-    needlePointer.Color = Color.Purple;
-    needlePointer.LengthFactor = 0.5;
-    needlePointer.KnobColor = Color.White;
-    needlePointer.KnobStrokeColor = Color.DarkGray;
-    needlePointer.KnobStrokeWidth = 2;
-    needlePointer.Width = 10;
-    needlePointer.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Triangle;
-    pointers.Add(needlePointer);
-    RangePointer rangePointer = new RangePointer();
-    rangePointer.Value = 80;
-    rangePointer.Color = Color.Yellow;
-    rangePointer.Offset = 0.5;
-    rangePointer.Width = 10;
-    pointers.Add(rangePointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
-    this.Content=circularGauge;
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 70;
+            markerPointer.Color = Color.Pink;
+            markerPointer.MarkerHeight = 20;
+            markerPointer.MarkerWidth = 20;
+            markerPointer.Offset = 1;
+            scale.CircularPointers.Add(markerPointer);
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
 
 {% endhighlight %}
 
-![](pointers_images/pointers_img8.png)
+![](pointers_images/marker-pointer/markerpointer-customization.png)
 
-## Pointer Animation
+## Setting multiple pointers
 
-EnableAnimation property is a Boolean property that enables or disables the animation of the pointers in CircularGauge.
-
-{% highlight c# %}
-
-    NeedlePointer needlePointer = new NeedlePointer();
-    needlePointer.Value = 60;    
-    needlePointer.EnableAnimation = true;          
-    pointers.Add(needlePointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
-
-{% endhighlight  %}
-
-### Pointer Drag
-
-Pointers can be dragged over the scale value. This can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use `EnableDragging` property.
+In addition to the default pointer, you can add n number of pointers to a scale by using the [`CircularPointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~CircularPointers.html) property.
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge(this);
-    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale();
-    CircularScale scale = new CircularScale();
-    ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer>();
-    NeedlePointer needlePointer = new NeedlePointer();
-    needlePointer.Value = 90;
-    needlePointer.Color = Color.DarkGray;
-    needlePointer.KnobColor = Color.DarkGray;
-    needlePointer.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Triangle;
-    needlePointer.EnableDragging = true;
-    pointers.Add(needlePointer);
-    scale.CircularPointers = pointers;
-    circularScales.Add(scale);
-    circular.CircularScales = circularScales;
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer>();
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 40;
+            pointers.Add(markerPointer);
 
-{% endhighlight  %}
+            CircularScale scale1 = new CircularScale();
+            scale1.StartValue = 0;
+            scale1.EndValue = 100;
+            scale1.ShowLabels = false;
+            scale1.ShowTicks = false;
+            scale1.ScaleStartOffset = 0.5;
+            scale1.ScaleEndOffset = 0.6;
+
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;
+            needlePointer.LengthFactor = 0.3;
+            pointers.Add(needlePointer);
+
+            scale1.CircularPointers = pointers;
+            scale.CircularPointers = pointers;
+            scales.Add(scale1);
+
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+
+{% endhighlight %}
+
+![](pointers_images/marker-pointer/multiple-pointers.png)
+
+## Setting animation for pointer
+
+The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularPointer~EnableAnimation.html) property is a Boolean property that enables or disables the animation of the pointers in circular gauge.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.RimColor = Color.LightGray;
+            scale.RimWidth = 30;
+            scale.RadiusFactor = 1;
+            scale.ShowTicks = false;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.LabelOffset = 0.75;
+            scale.LabelColor = Color.ParseColor("#424242");
+            scale.LabelTextSize = 15;
+
+            RangePointer pointer1 = new RangePointer();
+            pointer1.Color = Color.Orange;
+            pointer1.Width = 30;
+            pointer1.Offset = 1;
+            pointer1.EnableAnimation = true;
+            pointer1.AnimationDuration = 5;
+            pointer1.Value = 80;
+            scale.CircularPointers.Add(pointer1);
+
+            NeedlePointer pointer2 = new NeedlePointer();
+            pointer2.Width = 7;
+            pointer2.LengthFactor = 0.55;
+            pointer2.Color = Color.LightGray;
+            pointer2.KnobColor = Color.White;
+            pointer2.TailColor = Color.LightGray;
+            pointer2.TailLengthFactor = 0.2;
+            pointer2.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Triangle;
+            pointer2.KnobRadius = 15;
+            pointer2.KnobRadius = 12;
+            pointer2.Value = 80;
+            pointer2.AnimationDuration = 5;
+            pointer2.TailStrokeWidth = 2;
+            pointer2.TailStrokeColor = Color.LightGray;
+            pointer2.KnobStrokeColor = Color.LightGray;
+            pointer2.KnobStrokeWidth = 8;
+            scale.CircularPointers.Add(pointer2);
+            circularGauge.CircularScales.Add(scale);
+
+{% endhighlight %}
+
+![](pointers_images/marker-pointer/animation.gif)
+
+## Setting pointer drag
+
+Pointers can be dragged over the scale value. It can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use the `EnableDragging` property.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.RimColor = Color.DeepSkyBlue;
+            scale.RimWidth = 20;
+            scale.RadiusFactor = 1;
+            scale.ShowTicks = false;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.LabelOffset = 0.75;
+            scale.LabelColor = Color.ParseColor("#424242");
+            scale.LabelTextSize = 15;
+
+            MarkerPointer pointer1 = new MarkerPointer();
+            pointer1.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.Triangle;
+            pointer1.Color = Color.DarkBlue;
+            pointer1.MarkerHeight = 18;
+            pointer1.MarkerWidth = 18;
+            pointer1.Value = 30;
+            pointer1.EnableAnimation = false;
+            pointer1.EnableDragging = true;
+            scale.CircularPointers.Add(pointer1);
+
+            circularGauge.CircularScales.Add(scale);
+
+{% endhighlight %}
+
+![](pointers_images/marker-pointer/pointer-interaction.gif)

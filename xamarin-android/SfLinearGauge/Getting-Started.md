@@ -9,161 +9,125 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the SfLinearGauge and configure its properties. It walks through the entire process of creating a SfLinearGauge for Xamarin.Android.
+This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control.
 
-## Referencing Essential Studio Components in Your Solution
-
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
-
-{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
-
-Add the following assembly references to the Android project,
-
-android\Syncfusion.SfLinearGauge.Android.dll
-
-## Add SfLinearGauge
-
-The SfLinearGauge control is configured entirely in C# code. The following steps explain on how to create a SfLinearGauge and configure its elements.
-
-* Adding namespace for the added assemblies.
-
-{% tabs %}
+**Adding namespace for the added assemblies**
 
 {% highlight c# %}
 
-using Com.Syncfusion.LinearGauge; 
+	      using Com.Syncfusion.Gauges.SfLinearGauge;
 
 {% endhighlight %}
 
-{% endtabs %}
+## Initialize gauge
 
-* Now add the SfLinearGauge control with a required optimal name by using the included namespace.
-
-{% tabs %}
+You can initialize the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control with a required optimal name by using the included namespace.
 
 {% highlight c# %}
 
-SfLinearGauge linearGauge = new SfLinearGauge (this);
-SetContentView(linearGauge);
+		 protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            SfLinearGauge linearGauge = new SfLinearGauge(this);        
+            SetContentView(linearGauge);
+        }
+
+{% endhighlight %}
+
+## Adding header
+
+You can assign a unique header to [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) by using the [`LinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel.html) property and position it wherever as you desired by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~Offset.html) property.
+
+{% highlight c# %}
+
+		    SfLinearGauge linearGauge = new SfLinearGauge(this);
+            linearGauge.SetBackgroundColor(Color.White);
+            LinearLabel linearHeader = new LinearLabel();
+            linearHeader.Text = "Thermometer";
+            linearHeader.TextSize = 20;
+            linearHeader.FontStyle = Typeface.Create("Helvetica", TypefaceStyle.Bold);
+            linearHeader.TextColor = Color.Black;
+            linearHeader.Offset = new PointF((float)0.35,(float) 0.35);
+            linearGauge.Header = linearHeader;
+
+{% endhighlight %}
+
+## Configuring scales
+
+Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html), which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub elements of a scale. 
+
+The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Maximum.html) properties allow you to set the scale range.
+
+{% highlight c# %}
+
+	        LinearScale linearScale = new LinearScale();
+            linearScale.ScaleBarColor = Color.ParseColor("#e0e0e0");
+            linearScale.LabelColor = Color.ParseColor("#424242");
+            linearScale.MajorTickSettings.StrokeWidth = 1;
+            linearScale.MinorTickSettings.StrokeWidth = 1;
+            linearScale.MajorTickSettings.Length = 20;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 10;
+            linearGauge.Scales.Add(linearScale);
 	
 {% endhighlight %}
 
-{% endtabs %}
+## Adding a symbol pointer
 
-* Configure the properties of SfLinearGauge
-
-{% tabs %}
+[`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) is a shape that can be placed to mark the pointer value in gauge.
 
 {% highlight c# %}
 
-linearGauge.SetOrientation (SfLinearGauge.Orientation.Vertical);
+	        SymbolPointer symbolPointer = new SymbolPointer();
+            symbolPointer.Value = 60;
+            symbolPointer.Offset = 50;
+            symbolPointer.Color = Color.ParseColor("#757575");
+            linearScale.Pointers.Add(symbolPointer);
 
 {% endhighlight %}
 
-{% endtabs %}
+## Adding a bar pointer
 
-## Add Scales
+[`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
 
-The scale that point out to the values can be added by instantiating LinearScale class and setting minimum values, maximum values, scale intervals and colors etc.
+{% highlight C# %}
 
-{% tabs %}
-
-{% highlight c# %}
-
-ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale> ();
-LinearScale outerScale = new LinearScale ();
-outerScale.Minimum = 0;
-outerScale.Maximum = 100;
-outerScale.ScaleBarSize = 50;
-outerScale.ScaleBarLength = 100;
-outerScale.Interval = 20;
-outerScale.ScaleBarColor = Color.ParseColor ("#FAECEC");
-outerScale.MinorTicksPerInterval = 2;
-outerScale.LabelFontSize = 17;
-outerScale.LabelColor = Color.ParseColor ("#545454");
-outerScale.LabelPostfix = "%";
-			
+		    BarPointer barPointer = new BarPointer();
+            barPointer.Value = 50;
+            barPointer.Color = Color.ParseColor("#757575");
+            linearScale.Pointers.Add(barPointer);
+	
 {% endhighlight %}
 
-{% endtabs %}
+## Adding ranges
 
-Before adding scales to Array list, Add range value to Scale.
+You can categorize the scale values using the start and end values properties in [`LinearRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearRange.html). You can add multiple ranges for a scale using the `ranges` property.
 
-## Add Symbol Pointer
+{% highlight c# %}    
+	
+		   LinearRange linearRange = new LinearRange();
+            linearRange.StartValue = 0;
+            linearRange.EndValue = 40;
+            linearRange.Color = Color.ParseColor("#27beb7");
+            linearRange.Offset = -20;
+            linearRange.StartWidth = 10;
+            linearRange.EndWidth = 10;
+            linearScale.Ranges.Add(linearRange);
 
-An arrow head that points to the value is called the Symbol Pointer which can be added by instantiating the SymbolPointer class and assigning it to the Pointers collection.
+            LinearRange linearRange1 = new LinearRange();
+            linearRange1.StartValue = 40;
+            linearRange1.EndValue = 100;
+            linearRange1.Color = Color.LightCyan;
+            linearRange1.Offset = -20;
+            linearRange1.StartWidth = 10;
+            linearRange1.EndWidth = 10;
+            linearScale.Ranges.Add(linearRange1);
+           linearGauge.Scales.Add(linearScale);
 
-{% tabs %}
-
-{% highlight c# %}
-
-ObservableCollection<LinearPointer> pointers = new ObservableCollection<LinearPointer> ();
-SymbolPointer outerScale_needlePointer = new SymbolPointer ();
-outerScale_needlePointer.Value = value;
-outerScale_needlePointer.StrokeWidth = 0;
-outerScale_needlePointer.Offset = 0.3f;
-outerScale_needlePointer.Color = Color.ParseColor ("#414D4F");
-pointers.Add (outerScale_needlePointer);
-			
 {% endhighlight %}
 
-{% endtabs %}
-
-## Add a Bar Pointer
-
-A flat solid bar that points to the current value can be added by instantiating BarPointer and it can be added to pointers collection.
-
-{% tabs %}
-
-{% highlight c# %}
-		
-BarPointer rangePointer = new BarPointer ();
-rangePointer.Value = _value;
-rangePointer.Color = Color.ParseColor ("#CE4545");
-rangePointer.StrokeWidth = 20;
-pointers.Add (rangePointer);
-outerScale.Pointers = pointers;
-			
-{% endhighlight %}
-
-{% endtabs %}
-
-## Add a Range
-
-We can improve the readability of data by including ranges that quickly display when values fall within specific ranges.
-
-{% tabs %}
-
-{% highlight c# %}
-
-ObservableCollection<LinearRange> ranges = new ObservableCollection<LinearRange> ();
-LinearRange lowerRange = new LinearRange ();
-lowerRange.StartWidth = 30;
-lowerRange.EndWidth = 30;
-lowerRange.Color = Color.ParseColor ("#67d6db");
-lowerRange.StartValue = 0;
-lowerRange.EndValue = 50;
-lowerRange.Offset = -0.3;
-ranges.Add (lowerRange);
-
-LinearRange higherRange = new LinearRange ();
-higherRange.StartWidth = 30;
-higherRange.EndWidth = 30;
-higherRange.Color = Color.ParseColor ("#32B8C6");
-higherRange.StartValue = 50;
-higherRange.EndValue = 100;
-higherRange.Offset = -0.3;
-ranges.Add (higherRange);
-
-outerScale.Ranges = ranges;
-scales.Add (outerScale);
-linearGauge.Scales = scales;
-			
-{% endhighlight %}
-
-{% endtabs %}
-
-![](images/Studio.png)
+![](getting-started_images/getting-started.png)
 
 
 

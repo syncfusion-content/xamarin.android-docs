@@ -11,10 +11,10 @@ documentation: ug
 
 The `MinorScaleStyle` and `MajorScaleStyle` properties of `SfDateTimeRangeNavigator` used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
 
-* `ShowGridLines` – used to set the visibility of grid lines.
-* `GridLineWidth` – used to set the width for grid lines.
-* `GridLineColor` – used to set the color for grid lines.
-* `GridLinePathEffect` – used to set dashes for grid lines.
+* [`ShowGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~ShowGridLines.html) – used to set the visibility of grid lines.
+* [`GridLineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~GridLineWidth.html) – used to set the width for grid lines.
+* [`GridLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~GridLineColor.html) – used to set the color for grid lines.
+* [`GridLinePathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~GridLinePathEffect.html) – used to set dashes for grid lines.
 
 {% highlight c# %}
 [C#]

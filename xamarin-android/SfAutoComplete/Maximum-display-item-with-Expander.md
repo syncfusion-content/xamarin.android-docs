@@ -11,19 +11,13 @@ documentation : ug
 
 Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
 
+
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.MaximumSuggestion="2";
-	countryAutoComplete.LoadMoreText="LOAD MORE";
+
+countryAutoComplete.MaximumSuggestion="4";
+countryAutoComplete.LoadMoreText="LOAD MORE";
 	 
 {% endhighlight %}
 
@@ -33,34 +27,17 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 
 ### Restricting the maximum display of item dynamically
 
-We can restrict the maximum display of items dynamically by calling `LoadMore` method. The method is of two types.
-
-* LoadMore method with argument.
-
-* LoadMore method without arguments.
-
-The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
-
-## No Results Found
-
-When the entered item is not in the suggestion list, SfAutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the `NoResultsFoundText` property.
-
-
+We can restrict the maximum display of items dynamically by calling `LoadMore` method. The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
+ 
 {% tabs %}
 
-{% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.NoResultsFoundText="No Results Found";
-	 
+{% highlight c# %}
+ 
+// without passing arguments
+autoComplete.LoadMore();
+ 
+// with passing arguments
+autoComplete.LoadMore(5);
+ 
 {% endhighlight %}
-
 {% endtabs %}
-
-![](images/NoResultsFound.png)

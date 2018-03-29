@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started for Essential Xamarin.Android ImageEditor
 description: getting started
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfImageEditor
 documentation: ug
 ---

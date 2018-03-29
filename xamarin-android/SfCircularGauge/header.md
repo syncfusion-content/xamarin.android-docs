@@ -9,31 +9,77 @@ documentation: ug
 
 ---
 
-# HEADER
+# Header
 
-Header support allows you to show text inside the Gauge control. A circular gauge can be made self-descriptive about the data it is measuring through the use of a header.
+The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header.html) support allows you to show text, image, or any UI content inside the gauge control. A circular gauge can be made self-descriptive about the data. It can be  measured with use of the header.
 
-## Adding Header in Circular Gauge
+## Adding header in circular gauge
 
 ###  Header
 
-The `Header` can be used to set a unique header for the Circular Gauge. You can add text as headers in a circular gauge, multiple headers can be added in a circular gauge.
-
-### Position
-
-This property places the header in a circular gauge. The value for `Position` should be specified in offset value. By default, it is placed at (50,70).
+The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header.html) can be used to set a unique header for the circular gauge. You can add text as headers in a circular gauge. Multiple headers also can be added in a circular gauge.
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge(this);
-    Header header = new Header();
-    header.Text = "Speedometer";
-    header.TextSize = 20;
-    header.Position = new PointF((float)0.5, (float)0.7);
-    header.TextColor = Color.Gray;
-    circularGauge.Headers.Add(header);
-    SetContentView(circularGauge);
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            Header header = new Header();
+            header.Text = "Speedometer";
+            header.TextColor = Color.Black;
+            circularGauge.Headers.Add(header);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
 
 {% endhighlight %}
 
-![](header_images/header_img.png)
+![](header_images/header.png)
+
+##  Setting position for header
+
+The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header~Position.html) property is used to place the header in a circular gauge. The value for [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header~Position.html) should be specified in offset value. In the Point value, which has been given for the `Position`, first value represent x-coordinate and second value represents y-coordinate. By default, it is placed at (0.5, 0.7).
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            Header header = new Header();
+            header.Text = "Speedometer";
+            header.TextColor = Color.Black;
+            header.Position = new PointF((float)0.5,(float) 0.5);
+            circularGauge.Headers.Add(header);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+    
+{% endhighlight %}
+
+![](header_images/header-position.png)
+
+##  Customization of header
+
+You can customize the header's text by using the [`TextStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header~TextStyle.html), [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header~TextColor.html) and [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header~TextSize.html) properties.
+
+{% highlight c# %}
+
+             SfCircularGauge circularGauge = new SfCircularGauge(this);
+            Header header = new Header();
+            header.Text = "Speedometer";
+            header.TextSize = 20;
+            header.TextStyle = Typeface.Create("calibri", TypefaceStyle.Italic);
+            header.TextColor = Color.Blue;
+            circularGauge.Headers.Add(header);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+    
+{% endhighlight %}
+
+![](header_images/header-customise.png)
