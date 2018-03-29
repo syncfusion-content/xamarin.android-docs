@@ -9,68 +9,257 @@ documentation: ug
 
 ---
 
-# RANGES
+# Ranges
 
-A range is a visual element which begins and ends at specified values within a scale.
+Range is a visual element, which begins and ends at specified values within a scale.
 
-## Ranges Customization
+## Setting start and end values for range
 
-Ranges start and end values are set by the `StartValue` and `EndValue` properties of the range. A range's UI is customized by the `Color` and `Thickness` properties.
-
-
-{% highlight c# %}
-
-    SfCircularGauge circularGauge = new SfCircularGauge(this);
-    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
-        CircularScale scale = new CircularScale();
-        CircularRange range1 = new CircularRange();
-        range1.StartValue = 0;
-        range1.EndValue = 70;
-        range1.Color = Color.ParseColor("#d14646");
-        range1.Width = 10;
-        scale.CircularRanges.Add(range1);
-        CircularRange range2 = new CircularRange();
-        range2.StartValue = 70;
-        range2.EndValue = 100;
-        range2.Color = Color.ParseColor("#444444");
-        range2.Width = 10;
-        scale.CircularRanges.Add(range2);
-        circularScales.Add(scale);
-        circularGauge.CircularScales = circularScales;
-        SetContentView(circularGauge);
-
-{% endhighlight %}
-
-![](ranges_images/ranges_img1.png)
-
-## Range Offset
-
-The range can be placed inside the scale, outside the scale, or on the scale by setting `Offset` property.
-
+Start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~EndValue.html) properties. 
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge(this);
-    ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
-        CircularScale scale = new CircularScale();
-        CircularRange range1 = new CircularRange();
-        range1.StartValue = 0;
-        range1.EndValue = 70;
-        range1.Color = Color.ParseColor("#2bbfb8");
-        range1.Width = 10;
-        range1.Offset = 0.3;
-        scale.CircularRanges.Add(range1);
-        CircularRange range2 = new CircularRange();
-        range2.StartValue = 70;
-        range2.EndValue = 100;
-        range2.Color = Color.ParseColor("#d14646");
-        range2.Width = 10;
-        range2.Offset = 0.3;
-        scale.CircularRanges.Add(range2);
-        circularScales.Add(scale);
-        circularGauge.CircularScales = circularScales;
-        SetContentView(circularGauge);
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();   
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            CircularRange range = new CircularRange();
+            range.StartValue = 0;
+            range.EndValue = 50;
+            scale.CircularRanges.Add(range);
+            circularGauge.CircularScales.Add(scale);
 
 {% endhighlight %}
 
-![](ranges_images/ranges_img2.png)
+![](ranges_images/default-range.png)
+
+## Range customization
+
+An UI of a range is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~Width.html) properties. First, you should set the `Offset` property for range, then increase the width of the range. 
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();   
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.RimWidth = 10;
+            scale.RimColor = Color.ParseColor("#E0E0E0");
+            scale.LabelColor = Color.ParseColor("#424242");
+            scale.MajorTickSettings.Width = 3;
+            scale.LabelOffset = 0.9;
+            scale.MinorTickSettings.Size = 5;
+            scale.MajorTickSettings.Size = 10;
+            scale.MajorTickSettings.Offset = 0.8;
+            scale.MinorTickSettings.Offset = 0.8;
+            scale.MinorTicksPerInterval = 3;
+            CircularRange range = new CircularRange();
+            range.StartValue = 0;
+            range.EndValue = 50;
+            range.Width = 70;
+            range.Offset = 0.8;
+            range.Color = Color.Pink;
+            scale.CircularRanges.Add(range);
+            circularGauge.CircularScales.Add(scale); 
+
+{% endhighlight %}
+
+![](ranges_images/range-customization.png)
+
+## Setting position for range
+
+The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
+
+1.The [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~Offset.html) property with the [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~Width.html) property.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();   
+            scale.StartValue = 0;
+            scale.EndValue = 100;   
+            CircularRange range = new CircularRange();
+            range.StartValue = 0;
+            range.EndValue = 100;
+            range.Offset = 0.5;
+            range.Width = 20;
+            scale.CircularRanges.Add(range);
+            circularGauge.CircularScales.Add(scale);
+
+{% endhighlight %}
+
+![](ranges_images/range-offset.png)
+
+2.The [`InnerStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~InnerStartOffset.html), [`InnerEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~InnerEndOffset.html), [`OuterStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~OuterStartOffset.html), and [`OuterEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularRange~OuterEndOffset.html) properties.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();   
+            scale.StartValue = 0;
+            scale.EndValue = 100;   
+            CircularRange range = new CircularRange();
+            range.StartValue = 10;
+            range.EndValue = 80;
+            range.InnerStartOffset = 0.83;
+            range.InnerEndOffset = 0.6;
+            range.OuterStartOffset = 0.85;
+            range.OuterEndOffset = 0.8;
+            scale.CircularRanges.Add(range);
+            circularGauge.CircularScales.Add(scale);
+
+{% endhighlight %}
+
+![](ranges_images/range-inner-outer-offset.png)
+
+## Setting multiple ranges
+
+In addition to the default range, you can add n number of ranges to a scale by using the [`CircularRanges`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~CircularRanges.html) property.
+
+{% highlight c# %}
+
+           SfCircularGauge gauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.StartAngle = 180;
+            scale.SweepAngle = 180;
+            scale.Interval = 10;
+            scale.ShowLabels = false;
+            scale.ShowTicks = false;
+            scale.ShowRim = false;
+            scale.RimWidth = 40;
+            scale.RadiusFactor = 0.9;
+            scale.RimColor = Color.ParseColor("#e0e0e0");
+
+            Header header1 = new Header();
+            header1.Text = "Poor";
+            header1.TextSize = 20;
+            header1.Position = new PointF((float)0.1, (float)0.55);
+            header1.TextColor = Color.ParseColor("#F03E3E");
+            header1.TextStyle = Typeface.Create("Helvetica", TypefaceStyle.Bold);
+            gauge.Headers.Add(header1);
+
+            Header header2 = new Header();
+            header2.Text = "Good";
+            header2.TextSize = 20;
+            header2.Position = new PointF((float)0.87, (float)0.55);
+            header2.TextColor = Color.ParseColor("#27beb7");
+            header2.TextStyle = Typeface.Create("Helvetica", TypefaceStyle.Bold);
+            gauge.Headers.Add(header2);
+
+            //Poor
+            CircularRange range = new CircularRange();
+            range.StartValue = 0;
+            range.EndValue = 35;
+            range.Offset = 0.9;
+            range.Width = 40;
+            range.Color = Color.ParseColor("#F03E3E");
+            scale.CircularRanges.Add(range);
+
+            //Average
+            CircularRange range1 = new CircularRange();
+            range1.StartValue = 35;
+            range1.EndValue = 75;
+            range1.Offset = 0.9;
+            range1.Width = 40;
+            range1.Color = Color.ParseColor("#FFDD00");
+            scale.CircularRanges.Add(range1);
+
+            //Good
+            CircularRange range2 = new CircularRange();
+            range2.StartValue = 75;
+            range2.EndValue = 100;
+            range2.Offset = 0.9;
+            range2.Width = 40;
+            range2.Color = Color.ParseColor("#27beb7");
+            scale.CircularRanges.Add(range2);
+
+            NeedlePointer pointer = new NeedlePointer();
+            pointer.Width = 10;
+            pointer.LengthFactor = 0.66;
+            pointer.Color = Color.OrangeRed;
+            pointer.KnobColor = Color.White;
+            pointer.Type = Com.Syncfusion.Gauges.SfCircularGauge.Enums.NeedleType.Triangle;
+            pointer.KnobRadius = 0;
+            pointer.Value = 70;
+            pointer.KnobStrokeColor = Color.ParseColor("#0682F6");
+            pointer.KnobStrokeWidth = 6;
+            scale.CircularPointers.Add(pointer);
+            scales.Add(scale);
+            gauge.CircularScales = scales;
+
+
+{% endhighlight %}
+
+![](ranges_images/multiple-range.png)
+
+## Setting gradient color for range
+
+You can give smooth color transition to range by specifying the different colors based on range value.
+
+{% highlight c# %}
+
+            SfCircularGauge gauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.LabelTextSize = 16;
+            scale.LabelOffset = 0.95;
+            scale.RimWidth = 28;
+            scale.ShowRim = false;
+            scale.MinorTicksPerInterval = 4;
+
+            TickSetting major = new TickSetting();
+            major.Width = 1;
+            major.EndOffset = 0.83;
+            major.StartOffset = 0.75;
+            major.Size = 8;
+            scale.MajorTickSettings = major;
+
+            TickSetting minor = new TickSetting();
+            minor.Width = 0.7;
+            minor.EndOffset = 0.79;
+            minor.StartOffset = 0.75;
+            scale.MinorTickSettings = minor;
+            scales.Add(scale);
+            gauge.CircularScales = scales;
+
+            CircularRange range = new CircularRange();
+            range.Offset = 0.6;
+            range.Width = 30;
+            range.StartValue = 0;
+            range.EndValue = 100;
+            scale.CircularRanges.Add(range);
+
+            ObservableCollection<GaugeGradientStop> gradientColor1 = new ObservableCollection<GaugeGradientStop>();
+
+            GaugeGradientStop gaugeGradientStop = new GaugeGradientStop();
+            gaugeGradientStop.Value = 0;
+            gaugeGradientStop.Color = Color.ParseColor("#30B32D");
+            gradientColor1.Add(gaugeGradientStop);
+
+            GaugeGradientStop gaugeGradientStop1 = new GaugeGradientStop();
+            gaugeGradientStop1.Value = 50;
+            gaugeGradientStop1.Color = Color.ParseColor("#FFDD00");
+            gradientColor1.Add(gaugeGradientStop1);
+
+            GaugeGradientStop gaugeGradientStop2 = new GaugeGradientStop();
+            gaugeGradientStop2.Value = 80;
+            gaugeGradientStop2.Color = Color.ParseColor("#F03E3E");
+            gradientColor1.Add(gaugeGradientStop2);
+
+            range.GradientStops = gradientColor1;
+
+            gauge.CircularScales = scales;
+
+{% endhighlight %}
+
+![](ranges_images/gradient.png)

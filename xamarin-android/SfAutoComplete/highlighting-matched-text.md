@@ -12,57 +12,50 @@ documentation : ug
 Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 
 
-* FirstOccurrence
+* First Occurrence
 
-* MultipleOccurrence
+* Multiple Occurrence
 
 The text highlight can be indicated with various customizing styles by enabling the below properties. They are
 
 * HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
 
-* HighlightTextFontAttributes - sets the FontAttributes of the highlighted text.
+* HighlightedTextFontAttributes - sets the FontAttributes of the highlighted text.
 
-## FirstOccurrence
+## First Occurrence
 
 It highlights the first position of the matching characters in the suggestion list.
 
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
+
+countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
+countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
+countryNameAutoComplete.HighlightedTextColor = Color.Red; 
+countryNameAutoComplete.HighlightedTextFontAttributes = HighlightedTextFontAttributes.Bold;
 	 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The default Color of HighlightedTextColor is Red.
+   The default FontAttribute of HighlightedTextFontAttributes is None.
 	
 ![](images/FirstOccurrence.png)
 
-## MultipleOccurrence
+## Multiple Occurrence
 
 It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
 
 {% tabs %}
 
 {% highlight C# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Afghanistan");
-	countryList.Add ("Akrotiri");
-	countryList.Add ("Albania");
-	countryList.Add ("Algeria");
-	ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(context,Android.Resource.Layout.SimpleListItem1, countryList);
-	countryAutoComplete.SetAutoCompleteSource(countryListDataAdapters);
-	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
+
+countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
+countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
+countryNameAutoComplete.HighlightedTextColor = Color.Red; 
+countryNameAutoComplete.HighlightedTextFontAttributes = HighlightedTextFontAttributes.Bold;
 	 
 {% endhighlight %}
 

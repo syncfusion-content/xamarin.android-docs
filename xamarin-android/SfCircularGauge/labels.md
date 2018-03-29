@@ -9,96 +9,187 @@ documentation: ug
 
 ---
 
-# LABELS
+# Labels
 
-Scale labels associate a numeric value with major scale tick marks.
+The [`CircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html) labels associate a numeric value with major scale tick marks.
 
-## Label Customization
+## Label color customization
 
-The label color can be changed using the `LabelColor` property. The labels can be positioned far away from the ticks by using the `LabelOffset` property. The size of the Labels can be changed by using the `LabelFontSize` property.
-
-{% highlight c# %}
-
-        ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
-        SfCircularGauge circular = new SfCircularGauge(this);
-        CircularScale scale = new CircularScale();
-        scale.LabelColor = Color.Gray;
-        scale.LabelOffset = 0.1;
-        scale.LabelTextSize = 10;
-        circularScales.Add(scale);
-        circular.CircularScales = circularScales;
-        SetContentView(circular);
-
-{% endhighlight %}
-
-## Number of Decimal Digits
-
-The `NumberOfDecimalDigits` property is used to set the number of decimal digits to be displayed in the scale labels.
-
+The label color can be changed using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~LabelColor.html) property.
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge(this);
-        CircularScale scale = new CircularScale();
-        scale.NumberOfDecimalDigits = 1;
-        circularScales.Add(scale);  
-        circular.CircularScales = circularScales;
-        SetContentView(circular);
-
-{% endhighlight %}
-
-![](labels_images/labels_img1.png)
-
-## Label Postfix and Prefix
-
-You can set the Postfix/Prefix values to the scale labels using `LabelPostfix` and `LabelPrefix` properties respectively.
-
-### LabelPostfix 
-
-This property allows you to set the postfix values to the scale labels.
-
-{% highlight c# %}
-
-    SfCircularGauge circular = new SfCircularGauge(this);
-        CircularScale scale = new CircularScale();
-        scale.LabelPostfix = "%";
-        circular.CircularScales = circularScales;
-        SetContentView(circular);
-
-{% endhighlight %}
-
-![](labels_images/labels_img2.png)
-
-### LabelPrefix 
-
-This property allows you to set the prefix values to the scale labels.
-
-{% highlight c# %}
-
-    SfCircularGauge circular = new SfCircularGauge(this);
-        CircularScale scale = new CircularScale();
-        scale.LabelPrefix = "$";
-        circular.CircularScales = circularScales;
-        SetContentView(circular);
-
-{% endhighlight %}
-
-![](labels_images/labels_img3.png)
-
-### ShowLabels
-
-ShowLabels property is a Boolean property which is used to enable or disable feature of labels in CircularGauge
-
-{% highlight c# %}
-
-            SfCircularGauge circular = new SfCircularGauge();    
-            ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();   
-            CircularScale scale = new CircularScale();     
-            scale.ShowLabels = false;
-            circularScales.Add(scale);
-            circular.CircularScales = circularScales;
-            SetContentView(circular);
-   
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.LabelColor = Color.Blue;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
     
 {% endhighlight %}
+
+![](labels_images/label-color-customization.png)
+
+## Label font customization
+
+The label font can be customized by using the [`LabelTextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~LabelTextSize.html), [`LabelTextStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~LabelTextStyle.html) properties. 
+
+{% highlight c# %}
+
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.LabelTextStyle = Typeface.Create("calibri", TypefaceStyle.Italic);
+            scale.LabelTextSize = 20;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales; 
+    
+{% endhighlight %}
+
+![](labels_images/label-font-customization.png)
+
+## Setting position for labels
+
+The labels can be positioned far away from the ticks by using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~LabelOffset.html) property.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.LabelOffset = 0.4;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+    
+{% endhighlight %}
+
+![](labels_images/label-offset.png)
+
+## Setting number of decimal digits for labels
+
+The [`NumberOfDecimalDigits`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~NumberOfDecimalDigits.html) property is used to set the number of decimal digits to be displayed in the scale labels.
+
+{% highlight c# %}
+
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.NumberOfDecimalDigits = 3;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+    
+{% endhighlight %}
+
+![](labels_images/number-of-decimal-digits.png)
+
+## Setting postfix and prefix for labels
+
+You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~LabelPrefix.html) properties, respectively.
+
+### Label postfix
+
+`LabelPostfix` property allows you to postfix the values to the scale labels.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.LabelPostfix = "$";
+            scales.Add(scale);
+            circularGauge.CircularScales = scales; 
+    
+{% endhighlight %}
+
+![](labels_images/label-postfix.png)
+
+### Label prefix
+
+`LabelPrefix` property allows you to prefix the values to the scale labels.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.LabelPrefix = "$";
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+    
+{% endhighlight %}
+
+![](labels_images/label-prefix.png)
+
+## Edge label customization
+
+You can customize the edge label by using the [`ShowFirstLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~ShowFirstLabel.html) and [`ShowLastLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~ShowLastLabel.html) properties, which are Boolean properties. The [`ShowFirstLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~ShowFirstLabel.html) property is used to enable or disable first label, and the [`ShowLastLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~ShowLastLabel.html) property is used to enable or disable the last label in circular gauge.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.Interval = 1;
+            scale.MinorTicksPerInterval = 5;
+            scale.EndValue = 12;
+            scale.StartAngle = 270;
+            scale.SweepAngle = 360;
+            scale.ShowFirstLabel = false;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+    
+{% endhighlight %}
+
+![](labels_images/label-edge-customization.png)
+
+## Show labels
+
+The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~ShowLabels.html) property is a Boolean property, which is used to enable or disable the labels in circular gauge.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.ShowLabels = false;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+    
+{% endhighlight %}
+
+![](labels_images/show-labels.png)
+
+## Setting auto angle for label
+
+Scale labels can be rotated automatically based on the current angle. To enable or disable the auto angle, use the [`EnableAutoAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~EnableAutoAngle.html) property.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.EnableAutoAngle = true;
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;  
+    
+{% endhighlight %}
+
+![](labels_images/auto-angle.png)
 
