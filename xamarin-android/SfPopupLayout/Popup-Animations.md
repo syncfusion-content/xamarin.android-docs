@@ -39,7 +39,7 @@ SfPopupLayout has different animation modes as listed below.
 </tr>
 </table>
 
-N> Setting of AnimationMode is same for both TypeA and TypeB.
+N> Setting of AnimationMode is same for both `Displaying pop-up when the SfPopupLayout is set as root view`and `Displaying pop-up when the SfPopupLayout is not set as root view` 
 
 ## Zoom 
 
@@ -59,7 +59,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `Zoom`, the output will look like on Android device as shown below.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](GettingStarted_images/ZoomAnimation.gif)
 
@@ -81,7 +81,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `Fade`, the output will look like on Android device as shown below.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](GettingStarted_images/FadeAnimation.gif)
 
@@ -103,7 +103,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `SlideOnLeft`, the output will look like on Android device as shown below.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
@@ -125,7 +125,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `SlideOnTop`, the output will look like on Android device as shown below.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](GettingStarted_images/SlideOnTopAnimation.gif)
 
@@ -147,6 +147,6 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `None`, the output will look like on Android device as shown below.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](GettingStarted_images/AnimationMode_None.gif)

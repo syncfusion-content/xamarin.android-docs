@@ -75,18 +75,11 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 2. Import the SfPopupLayout control under the namespace `Syncfusion.Android.PopupLayout`.
 
-3. The SfPopupLayout can be displayed by the following cases: 
-    
-    * The SfPopupLayout can be displayed by making it as the base view or content view of the activity.
-    * You can continue to keep your view as the content view of the activity and still display pop-up over your view by simply calling the SfPopupLayout.Show() method. 
-
-4. For first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Content.html) property.
-
-5. Create an instance of the SfPopupLayout control and set it as content view of that activity. 
+3. The SfPopupLayout can be displayed by the following cases.
 
 ### Displaying Popup when SfPopupLayout is set as root view 
 
-The SfPopupLayout can be displayed by making it as the base view or content view of the activity.
+The SfPopupLayout can be displayed by making it as the base view or content view of the activity. For first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Content.html) property. Create an instance of the SfPopupLayout control and set it as content view of that activity. 
 
 Refer to the following code example for displaying popup.
 
@@ -174,8 +167,11 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Run the previous sample to get the following output on Android device.
+Executing the above codes renders the following output in Android device respectively.
+
 ![](GettingStarted_images/DefaultAppearance.png)
+
+You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1414679923).
 
 ## Customize positioning
 
@@ -183,10 +179,10 @@ The SfPopupLayout allows showing the pop-up content at various positions.
 
 The following list of options are available to position the SfPopupLayout in the desired position:
 
-* Center positioning: Use the [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~IsOpen.html) property or [SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the center.
-* Absolute positioning: Use the [SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the specified X and y positions.
-* OnTouch: Use the [SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) to display the SfPopupLayout at the touch point.
-* Relative positioning: Use the [SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~ShowRelativeToView.html) to display the SfPopupLayout at any of the 8 positions relative to the specified view.
+* `Center positioning`: Use the [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~IsOpen.html) property or [SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the center.
+* `Absolute positioning`: Use the [SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the specified X and y positions.
+* `OnTouch`: Use the [SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) to display the SfPopupLayout at the touch point.
+* `Relative positioning`: Use the [SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~ShowRelativeToView.html) to display the SfPopupLayout at any of the 8 positions relative to the specified view.
 
 More information for pop-up positioning is in this [link](https://help.syncfusion.com/xamarin-android/sfpopuplayout/popup-positioning).
 
@@ -201,11 +197,7 @@ You can also customize the entire view of the pop-up by loading the templates or
 
 ### Load a view as content view of the SfPopupLayout
 
-Any view can be added as the pop-up content using the [SfPopupLayout.PopupView.ContentView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ContentView.html) property to refresh it.
-
-Refer to the following code example in which a text view is added as pop-up content.
-
-#### Displaying pop-up when the SfPopupLayout is set as root view
+Any view can be added as the pop-up content using the [SfPopupLayout.PopupView.ContentView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ContentView.html) property to refresh it. Refer to the following code example in which a text view is added as pop-up content and  displaying pop-up when the SfPopupLayout is set as root view
 
 {% highlight c# %}
 
@@ -226,10 +218,11 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-N> Setting the content view is same for both cases i.e. displaying the pop-up when the SfPopupLayout is set as root view and vice versa.
+Executing the above codes renders the following output in Android device respectively.
 
-Run the previous sample to get the following output on Android devices.
 ![](GettingStarted_images/ContentView.png)
+
+N> Setting the content view is same for both cases i.e. displaying the pop-up when the SfPopupLayout is set as root view and vice versa.
 
 ## Customizing animations
 
@@ -244,50 +237,3 @@ By default, you can choose from the following animations available in the SfPopu
 * [None](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AnimationMode.html): Animation will not be applied.
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin-android/sfpopuplayout/popup-animations).
-
-## How to 
-
-### Loading SfPopupLayout in GridTappedEvent of SfDataGrid
-
-SfPopupLayout allows you to open it in the GridTapped event of SfDataGrid.
-
-Refer the below code example to show the popup in Grid tapped event.
-
-{% highlight c# %}
-using Syncfusion.Android.PopupLayout;
-using Syncfusion.SfDataGrid;
-
-namespace GettingStarted
-{
-    public class MainActivity : Activity 
-    {
-       SfPopupLayout popupLayout;
-       SfDataGrid dataGrid;
-       ViewModel viewModel;
-
-        protected override void OnCreate (Bundle bundle) 
-        {
-            base.OnCreate (bundle); 
-            
-            dataGrid = new SfDataGrid(this);
-            viewModel = new ViewModel();
-            dataGrid.ItemsSource = viewModel.OrdersInfo;
-            dataGrid.GridTapped += DataGrid_GridTapped;
-
-            popupLayout = new SfPopupLayout(this);
-            popupLayout.Content = dataGrid;
-            SetContentView(popupLayout);
-        } 
-
-        private void DataGrid_GridTapped(object sender, GridTappedEventArgs e)
-        {
-            popupLayout.Show();
-        }
-    } 
-}
-
-{% endhighlight %}
-
-## Sample link
-
-You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1414679923).

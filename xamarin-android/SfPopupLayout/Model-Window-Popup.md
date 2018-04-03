@@ -9,7 +9,7 @@ documentation: ug
 
 # Modal Window Pop-up
 
-You can use the pop-up layout as model window by using the built-in Close icon and [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~StaysOpen.html) property prevents interaction with your application until you close the window.
+You can use the pop-up layout as modal window by using the built-in Close icon and [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~StaysOpen.html) property prevents interaction with your application until you close the window.
 
 `Modal`: Modal window will load under the parent window surrounded by the overlay which prevents you to click anywhere else on the screen apart from the content of the modal.
 
@@ -78,6 +78,6 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Run the previous sample to get the following output on Android device.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](GettingStarted_images/ModelWindow.png)

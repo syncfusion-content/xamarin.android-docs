@@ -75,7 +75,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-If the above sample run with the `AppearanceMode` as `OneButton`, the output will look like on Android device as follows.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
@@ -126,7 +126,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-If the above sample run with the `AppearanceMode` as `TwoButton`, the output will look like on Android device as follows.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
@@ -192,7 +192,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-This is how the final output will look like on Android device.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](PopupLayout_images/HeaderTemplate.png)
 
@@ -253,83 +253,9 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-This is how the final output will look like on Android device.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](PopupLayout_images/FooterTemplate.png)
-
-## How to 
-
-### Hide the header in the SfPopupLayout 
-
-The SfPopupLayout allows hiding the header by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
-
-To hide the header in the SfPopupLayout, follow the code example.
-
-{% highlight c# %}
-
-//MainActivity.cs
-
-protected override void OnCreate(Bundle bundle)
-{
-	....
-    popupLayout.PopupView.ShowHeader = false;
-    SetContentView(popupLayout);
-    ....
-}
-
-{% endhighlight %}
-
-This is how the final output will look like on Android device.
-
-![](PopupLayout_images/ShowHeader_False.png)
-
-### Hide the footer in the SfPopupLayout 
-
-The SfPopupLayout allows hiding the footer by using the [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ShowFooter.html) property. The default value of this property is `true`.
-
-To hide the footer in the SfPopupLayout, follow the code example.
-
-{% highlight c# %}
-
-//MainActivity.cs
-
-protected override void OnCreate(Bundle bundle)
-{
-	....
-    popupLayout.PopupView.ShowFooter = false;
-    SetContentView(popupLayout);
-    ....
-}
-
-{% endhighlight %}
-
-This is how the final output will look like on Android device.
-
-![](PopupLayout_images/ShowFooter_False.png)
-
-### Hide the Close button in the SfPopupLayout 
-
-The SfPopupLayout allows hiding the Close button by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
-
-To hide the Close button in the SfPopupLayout, follow the code example.
-
-{% highlight c# %}
-
-//MainActivity.cs
-
-protected override void OnCreate(Bundle bundle)
-{
-	....
-    popupLayout.PopupView.ShowCloseButton = false;
-    SetContentView(popupLayout);
-    ....
-}
-
-{% endhighlight %}
-
-This is how the final output will look like on Android device.
-
-![](PopupLayout_images/ShowCloseButton_False.png)
 
 ## Styles
 
@@ -390,7 +316,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-This is how the final output will look like on Android device.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](PopupLayout_images/HeaderCustomization.png)
 
@@ -449,7 +375,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-This is how the final output will look like on Android device.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](PopupLayout_images/FooterCustomization.png)
 
@@ -494,6 +420,6 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-This is how the final output will look like on Android device.
+Executing the above codes renders the following output in Android device respectively.
 
 ![](PopupLayout_images/BorderCustomization.png)
