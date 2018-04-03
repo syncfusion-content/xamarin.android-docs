@@ -13,7 +13,7 @@ The tooltip is used to show the selected range start and end value of the `SfDat
 
 ## Tooltip Visibility
 
-The `TooltipEnabled` property of `SfDateTimeRangeNavigator` is used to control the visibility of the left and right tooltip. It is true by default.
+The [`TooltipEnabled`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~TooltipEnabled.html) property of `SfDateTimeRangeNavigator` is used to control the visibility of the left and right tooltip. It is true by default.
 
 {% highlight c# %}
 [C#]
@@ -26,7 +26,7 @@ rangeNavigator.TooltipEnabled = false;
 
 ## Tooltip Format
 
-You can format the date value of the tooltip using `TooltipFormat` property of `SfDateTimeRangeNavigator`.
+You can format the date value of the tooltip using [`TooltipFormat`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~TooltipFormat.html) property of `SfDateTimeRangeNavigator`.
 
 {% highlight c# %}
 [C#]
@@ -37,18 +37,18 @@ dateTimeRangeNavigator.TooltipFormat = "yyyy/MM";
 
 ## Appearance Customization
 
-The `LeftTooltipStyle` and `RightTooltipStyle` properties of `SfDateTimeRangeNavigator` are used to customize the left and right tooltip. Following properties are available in each tooltip style to customize the appearance of the tooltip.
+The [`LeftTooltipStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~LeftTooltipStyle.html) and [`RightTooltipStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~RightTooltipStyle.html) properties of `SfDateTimeRangeNavigator` are used to customize the left and right tooltip. Following properties are available in each tooltip style to customize the appearance of the tooltip.
 
-* `TextColor` – used to change the color of the tooltip text.
-* `TextSize` - used to change the text size of the tooltip.
-* `BackgroundColor` – used to change the background color of the tooltip.
-* `StrokeColor` – used to change the border color of the tooltip.
-* `StrokeWidth` – used to change the thickness of the tooltip border.
-* `Typeface` – used to change the font family and font weight
-* `MarginLeft` - used to change the left margin of the tooltip text.
-* `MarginTop` - used to change the top margin of the tooltip text.
-* `MarginRight` - used to change the right margin of the tooltip text.
-* `MarginBottom` - used to change the bottom margin of the tooltip text.
+* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~TextColor.html) – used to change the color of the tooltip text.
+* [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~TextSize.html) - used to change the text size of the tooltip.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~BackgroundColor.html) – used to change the background color of the tooltip.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~StrokeColor.html) – used to change the border color of the tooltip.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~StrokeWidth.html) – used to change the thickness of the tooltip border.
+* [`Typeface`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~Typeface.html) – used to change the font family and font weight
+* [`MarginLeft`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~MarginLeft.html) - used to change the left margin of the tooltip text.
+* [`MarginTop`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~MarginTop.html) - used to change the top margin of the tooltip text.
+* [`MarginRight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~MarginRight.html) - used to change the right margin of the tooltip text.
+* [`MarginBottom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipStyle~MarginBottom.html) - used to change the bottom margin of the tooltip text.
 
 {% highlight c# %}
 [C#]

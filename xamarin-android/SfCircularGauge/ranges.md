@@ -118,7 +118,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 ## Setting multiple ranges
 
-In addition to the default range, you can add n number of ranges to a scale by using the [`CircularRanges`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.CircularScales~CircularRanges.html) property.
+In addition to the default range, you can add n number of ranges to a scale by using the [`CircularRanges`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~CircularRanges.html) property.
 
 {% highlight c# %}
 
