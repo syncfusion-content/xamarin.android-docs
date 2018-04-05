@@ -94,6 +94,8 @@ chart.Behaviors.Add(trackballBehavior);
 
 **Customize Trackball Marker**
 
+The [`MarkerStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~MarkerStyle.html) property provides options to customize the trackball markers.
+
 Following properties are used to customize the trackball marker.
 
 * [`ShowMarker`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~ShowMarker.html) – used to enable / disable the marker. Default value is true.
@@ -102,6 +104,7 @@ Following properties are used to customize the trackball marker.
 * [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~StrokeWidth.html) – used to change the width of the marker stroke.
 * [`Width`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~Width.html) – used to change the width of the marker.
 * [`Height`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~Height.html) – used to change the height of the marker.
+* [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~MarkerType.html) - used to change the type of the marker.
 
 {% highlight c# %} 
 
