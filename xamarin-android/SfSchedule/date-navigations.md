@@ -33,7 +33,8 @@ schedule.MoveToDate = moveToSpecificDate;
 {% endtabs %}
 
 
->**NOTE:**  The specified date should lies between `MinDisplayDate` and `MaxDisplayDate` , if  the specified date is greater than `MaxDisplayDate` then the view moved to `MaxDisplayDate` similarly if the specified date is lesser than the `MinDisplayDate` then the view moved to `MinDisplayDate`.
+>**NOTE**
+The specified date should lies between `MinDisplayDate` and `MaxDisplayDate` , if  the specified date is greater than `MaxDisplayDate` then the view moved to `MaxDisplayDate` similarly if the specified date is lesser than the `MinDisplayDate` then the view moved to `MinDisplayDate`.
 
 ## Programmatically change to adjacent dates.
 By default the date can be navigated to next and previous view using touch gesture, by swiping the control in right to left and right to left direction. The view can be also changed programmatically using [Forward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~Forward.html) and [Backward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~Backward.html) method available in `SfSchedule`. 
@@ -52,7 +53,8 @@ schedule.Forward();
 {% endtabs %}
 
 
->**NOTE:**  It can be navigated until it reaches the Min Max dates.
+>**NOTE**
+It can be navigated until it reaches the Min Max dates.
 
 ### Backward
 You can use the `Backward` method for viewing the previous immediate visible dates in the `SfSchedule`. It will move to previous month if the schedule view is month, similarly it will move to previous week for week view and previous day for day view.
@@ -65,7 +67,8 @@ schedule.Backward();
 {% endtabs %}
 
 
->**NOTE:**  It can be navigated until it reaches the Min Max dates.
+>**NOTE**
+It can be navigated until it reaches the Min Max dates.
 
 ## Range for visible dates
 Visible dates can be restricted between certain range of dates, using [MinDisplayDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~MinDisplayDate.html)  and [MaxDisplayDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~MaxDisplayDate.html)  property in `SfSchedule`. It is applicable in all the schedule views.
