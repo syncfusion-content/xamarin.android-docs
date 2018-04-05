@@ -38,7 +38,7 @@ The [`DataMarkerLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-androi
 * [`LabelPadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~LabelPadding.html) - used to change the padding value of label.
 * [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~OffsetX.html) - used to set the offset value of X.
 * [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~OffsetY.html) - used to set the offset value of Y.
-* [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~UseSeriesPalette.html) - used to set the series color to the data marker's label background.
+* [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~UseSeriesPalette.html) - used to bind the series color to the background color of data marker labels.
 
 Following code snippet illustrates the customization of label and its background,
 
@@ -181,7 +181,7 @@ lineSeries.DataMarker.MarkerStrokeWidth = 2;
 
 ## Connector Line
 
-This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. The [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~ConnectorLineStyle.html) property used to customize the connector line.
+This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. The [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~ConnectorLineStyle.html) property is used to customize the connector line.
 
 
 * [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineStyle~StrokeColor.html) – used to change the color of the line.
