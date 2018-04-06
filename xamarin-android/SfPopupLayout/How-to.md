@@ -135,13 +135,13 @@ public class MainActivity : Activity
 {
     ListView listView;
     SfPopupLayout popupLayout;
-    ContatsViewModel viewModel;
+    ContactsViewModel viewModel;
     float density;
     protected override void OnCreate(Bundle savedInstanceState)
     {
         base.OnCreate(savedInstanceState);
         density = this.Resources.DisplayMetrics.Density;
-        viewModel = new ContatsViewModel();
+        viewModel = new ContactsViewModel();
         popupLayout = new SfPopupLayout(this);
        
         listView = new ListView(this);
@@ -173,13 +173,13 @@ public class MainActivity : Activity
 
 public class CustomPopupAdapter : BaseAdapter
 {
-    ContatsViewModel viewModel;
+    ContactsViewModel viewModel;
     SfPopupLayout popupLayout;
     Context context;
-    public CustomPopupAdapter(ContatsViewModel viewmodel, Context contxt, SfPopupLayout popup) : base()
+    public CustomPopupAdapter(ContactsViewModel viewModel, Context context, SfPopupLayout popup) : base()
     {
-        this.viewModel = viewmodel;
-        this.context = contxt;
+        this.viewModel = viewModel;
+        this.context = context;
         this.popupLayout = popup;
     }
     public override int Count
@@ -215,7 +215,7 @@ public class CustomPopupAdapter : BaseAdapter
     private View GetCustomPopupView(Context context)
     {
         TextView messageView = new TextView(context);
-        messageView.Text = "Listview items are tapped";
+        messageView.Text = "List view items are tapped";
         messageView.SetBackgroundColor(Color.White);
         messageView.SetTextColor(Color.Black);
         messageView.TextSize = 16;
@@ -333,9 +333,9 @@ public class ContactsLists : ObservableCollection<Contacts>
     public ContactsLists()
     {
         Random r = new Random();
-        foreach (var cusName in CustomerNames)
+        foreach (var CustomerName in CustomerNames)
         {
-            var contact = new Contacts(cusName, r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
+            var contact = new Contacts(CustomerName, r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
             contact.ContactColor = Color.Rgb(r.Next(40, 255), r.Next(40, 255), r.Next(40, 255));
             this.Add(contact);
         }
@@ -360,11 +360,11 @@ public class ContactsLists : ObservableCollection<Contacts>
 
 {% highlight c# %}
 
-// ContatsViewModel.cs
+// ContactsViewModel.cs
 
-public class ContatsViewModel
+public class ContactsViewModel
 {
-    public ContatsViewModel()
+    public ContactsViewModel()
     {
         ContactsList = new ContactsLists();
     }
@@ -389,7 +389,7 @@ public class ContatsViewModel
 }
 {% endhighlight %}
 
-## Loading ListView as a contentview of SfPopupLayout
+## Loading ListView as a content view of SfPopupLayout
 
 SfPopupLayout allows you to load ListView as a content view.
 
@@ -403,7 +403,7 @@ public class MainActivity : Activity
 {
     ListView listView;
     SfPopupLayout popupLayout;
-    ContatsViewModel viewModel;
+    ContactsViewModel viewModel;
     Button showPopupButton;
     LinearLayout mainLayout;
     float density;
@@ -411,7 +411,7 @@ public class MainActivity : Activity
     {
         base.OnCreate(savedInstanceState);
         density = this.Resources.DisplayMetrics.Density;
-        viewModel = new ContatsViewModel();
+        viewModel = new ContactsViewModel();
         popupLayout = new SfPopupLayout(this);
         mainLayout = new LinearLayout(this);
         mainLayout.Orientation = Orientation.Vertical;
@@ -451,13 +451,13 @@ public class MainActivity : Activity
 
 public class CustomPopupAdapter : BaseAdapter
 {
-    ContatsViewModel viewModel;
+    ContactsViewModel viewModel;
     SfPopupLayout popupLayout;
     Context context;
-    public CustomPopupAdapter(ContatsViewModel viewmodel, Context contxt, SfPopupLayout popup) : base()
+    public CustomPopupAdapter(ContatsViewModel viewModel, Context context, SfPopupLayout popup) : base()
     {
-        this.viewModel = viewmodel;
-        this.context = contxt;
+        this.viewModel = viewModel;
+        this.context = context;
         this.popupLayout = popup;
     }
     public override int Count
