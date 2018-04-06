@@ -65,7 +65,6 @@ The SfPopupLayout control can be configured entirely in C# code. In this walk th
 * [Customize positioning](#Customize-positioning) 
 * [Customizing layouts](#Customizing-layouts) 
 * [Customizing animations](#Customizing-animations)
-* [Sample link](#sample-link)
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
@@ -195,7 +194,7 @@ By default, you can choose from the following layouts available in the SfPopupLa
 
 You can also customize the entire view of the pop-up by loading the templates or custom views individually for the header, body, and footer.
 
-### Load a view as content view of the SfPopupLayout
+### Load a view as content view  in the popup body
 
 Any view can be added as the pop-up content using the [SfPopupLayout.PopupView.ContentView](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ContentView.html) property to refresh it. Refer to the following code example in which a text view is added as pop-up content and  displaying pop-up when the SfPopupLayout is set as root view
 
