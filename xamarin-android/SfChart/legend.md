@@ -156,6 +156,7 @@ You can position the legend anywhere inside the chart. Following properties are 
 * [`DockPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~DockPosition.html)– used to position the legend relatively. Options available are: Left, Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
 * [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~OffsetX.html) – used to move the legend on x coordinate by the given offset value, this will work only if the dock position is Floating.
 * [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~OffsetY.html) - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is Floating.
+* [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~LegendPosition.html) - used to position the legend items inside or outside of the chart series. The default position is outside.
 
 {% highlight c# %} 
 [C#]
@@ -170,7 +171,7 @@ chart.Legend.OffsetY = 30;
 
 ## Legend Orientation
 
-By default, the legend items will be oriented based on the legend dock position for better readability of the legend. However, you can change the orientation of the legend items using ChartOrientation.
+By default, the legend items will be oriented based on the legend dock position for better readability of the legend.However, you can change the orientation of the legend items using [`Orientation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~Orientation.html) property.
 
 {% highlight c# %} 
 [C#]
