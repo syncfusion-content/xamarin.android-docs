@@ -89,7 +89,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/IsOpen_Property.png)
 
@@ -140,7 +140,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/ShowPopup.png)
 
@@ -193,7 +193,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/ShowAtXYPosition.png)
 
@@ -242,7 +242,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
@@ -302,6 +302,6 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/RelativeToBottom.png)

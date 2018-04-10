@@ -166,7 +166,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/DefaultAppearance.png)
 
@@ -217,7 +217,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/ContentView.png)
 

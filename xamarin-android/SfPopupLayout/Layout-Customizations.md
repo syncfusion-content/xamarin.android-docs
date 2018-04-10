@@ -75,7 +75,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
@@ -126,7 +126,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
@@ -192,7 +192,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/HeaderTemplate.png)
 
@@ -253,7 +253,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/FooterTemplate.png)
 
@@ -316,7 +316,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/HeaderCustomization.png)
 
@@ -375,7 +375,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/FooterCustomization.png)
 
@@ -420,6 +420,6 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/BorderCustomization.png)

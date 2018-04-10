@@ -59,7 +59,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/ZoomAnimation.gif)
 
@@ -81,7 +81,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/FadeAnimation.gif)
 
@@ -103,7 +103,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
@@ -125,7 +125,7 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/SlideOnTopAnimation.gif)
 
@@ -147,6 +147,6 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/AnimationMode_None.gif)
