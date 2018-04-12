@@ -9,12 +9,11 @@ documentation: ug
 
 # How to 
 
-## Hide the header in the SfPopupLayout 
+## hide the header in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the header by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
 
-To hide the header in the SfPopupLayout, follow the code example.
-
+{% tabs %}
 {% highlight c# %}
 
 //MainActivity.cs
@@ -28,17 +27,15 @@ protected override void OnCreate(Bundle bundle)
 }
 
 {% endhighlight %}
-
-Executing the above codes renders the following output in an android device.
+{% endtabs %}
 
 ![](PopupLayout_images/ShowHeader_False.png)
 
-## Hide the footer in the SfPopupLayout 
+## hide the footer in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the footer by using the [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ShowFooter.html) property. The default value of this property is `true`.
 
-To hide the footer in the SfPopupLayout, follow the code example.
-
+{% tabs %}
 {% highlight c# %}
 
 //MainActivity.cs
@@ -52,17 +49,15 @@ protected override void OnCreate(Bundle bundle)
 }
 
 {% endhighlight %}
-
-Executing the above codes renders the following output in an android device.
+{% endtabs %}
 
 ![](PopupLayout_images/ShowFooter_False.png)
 
-## Hide the Close button in the SfPopupLayout 
+## hide the Close button in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the Close button by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
 
-To hide the Close button in the SfPopupLayout, follow the code example.
-
+{% tabs %}
 {% highlight c# %}
 
 //MainActivity.cs
@@ -76,17 +71,15 @@ protected override void OnCreate(Bundle bundle)
 }
 
 {% endhighlight %}
-
-Executing the above codes renders the following output in an android device.
+{% endtabs %}
 
 ![](PopupLayout_images/ShowCloseButton_False.png)
 
-## Load SfPopupLayout in GridTappedEvent of SfDataGrid
+## load SfPopupLayout in GridTappedEvent of SfDataGrid
 
-SfPopupLayout allows you to open popup in the grid tapped event of SfDataGrid.
+The SfPopupLayout allows opening pop-up in the grid tapped event of the SfDataGrid.
 
-Refer the below code example to show the popup in Grid tapped event.
-
+{% tabs %}
 {% highlight c# %}
 using Syncfusion.Android.PopupLayout;
 using Syncfusion.SfDataGrid;
@@ -121,17 +114,15 @@ namespace GettingStarted
 }
 
 {% endhighlight %}
-
-Executing the above codes renders the following output in an android device.
+{% endtabs %}
 
 ![](PopupLayout_images/DataGridWithPopup.png)
 
-## Load SfPopupLayout in ItemClick event of ListView
+## load SfPopupLayout in ItemClick event of ListView
 
-SfPopupLayout allows you to open it in the ItemClick event of ListView.
+The SfPopupLayout allows opening it in the ItemClick event of the ListView.
 
-Refer the below code example to show the popup in ItemClicked event.
-
+{% tabs %}
 {% highlight c# %}
 //MainActivity.cs
 
@@ -167,7 +158,9 @@ public class MainActivity : Activity
     
 }
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 
 // CustomPopupAdapter.cs
@@ -225,17 +218,15 @@ public class CustomPopupAdapter : BaseAdapter
     }
 }
 {% endhighlight %}
-
-Executing the above codes renders the following output in an android device.
+{% endtabs %}
 
 ![](PopupLayout_images/PopupInListView.png)
 
-## Show ListView as a popup
+## show ListView as a pop-up
 
-SfPopupLayout allows you to load ListView as a content of the popup.
+The SfPopupLayout allows loading the ListView as a content of the pop-up.
 
-Refer the below code example to load ListView in SfPopupLayout.
-
+{% tabs %}
 {% highlight c# %}
 
 // MainActivity.cs
@@ -285,7 +276,6 @@ public class MainActivity : Activity
     
 }
 {% endhighlight %}
-
-Executing the above codes renders the following output in an android device.
+{% endtabs %}
 
 ![](PopupLayout_images/ListViewInPopup.png)
