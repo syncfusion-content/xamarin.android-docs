@@ -13,7 +13,7 @@ SfDateTimeRangeNavigator displays major and minor scales at the top and bottom p
 
 ## Intervals
 
-By default, best possible interval component will be chosen for both major and minor scales based on the available size of the view. For example, if the available space is sufficient to show only year labels without overlapping, interval will be displayed in years. However, you can also set specific `DateTimeIntervalType` components using `Intervals` property as demonstrated in the below code snippet.
+By default, best possible interval component will be chosen for both major and minor scales based on the available size of the view. For example, if the available space is sufficient to show only year labels without overlapping, interval will be displayed in years. However, you can also set specific [`DateTimeIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.DateTimeIntervalType.html) components using [`Intervals`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~Intervals.html) property as demonstrated in the below code snippet.
 
 {% highlight c# %}
 [C#]
