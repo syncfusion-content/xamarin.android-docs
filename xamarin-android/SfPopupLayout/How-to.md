@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to | SfPopupLayout |Xamarin.Android | Syncfusion
-description: How to topics in SfPopupLayout
+description: Explains how to achieve various requirements with SfPopupLayout
 platform: Xamarin.Android
 control: SfPopupLayout
 documentation: ug
@@ -81,7 +81,7 @@ Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/ShowCloseButton_False.png)
 
-## Loading SfPopupLayout in GridTappedEvent of SfDataGrid
+## Load SfPopupLayout in GridTappedEvent of SfDataGrid
 
 SfPopupLayout allows you to open popup in the grid tapped event of SfDataGrid.
 
@@ -126,11 +126,11 @@ Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/DataGridWithPopup.png)
 
-## Loading SfPopupLayout in ItemTapped event of ListView
+## Load SfPopupLayout in ItemClick event of ListView
 
 SfPopupLayout allows you to open it in the ItemTapped event of ListView.
 
-Refer the below code example to show the popup in ItemTapped event.
+Refer the below code example to show the popup in ItemClicked event.
 
 {% highlight c# %}
 //MainActivity.cs
@@ -230,7 +230,7 @@ Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/PopupInListView.png)
 
-## Loading ListView as a content view of SfPopupLayout
+## Show ListView as a popup
 
 SfPopupLayout allows you to load ListView as a content of the popup.
 
