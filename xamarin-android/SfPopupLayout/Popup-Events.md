@@ -110,7 +110,7 @@ protected override void OnCreate(Bundle bundle)
 
 private void PopupLayout_Closed(object sender, EventArgs e)
 {
-    // Codes that needs to be executed once popup is completly closed
+    // Codes that needs to be executed once popup is completely closed
 }
 {% endhighlight %}
 
