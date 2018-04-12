@@ -128,7 +128,7 @@ Executing the above codes renders the following output in an android device.
 
 ## Load SfPopupLayout in ItemClick event of ListView
 
-SfPopupLayout allows you to open it in the ItemTapped event of ListView.
+SfPopupLayout allows you to open it in the ItemClick event of ListView.
 
 Refer the below code example to show the popup in ItemClicked event.
 
