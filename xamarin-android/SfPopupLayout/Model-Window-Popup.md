@@ -9,9 +9,9 @@ documentation: ug
 
 # Modal Window Pop-up
 
-You can use the pop-up layout as model window by using the built-in Close icon and [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~StaysOpen.html) property prevents interaction with your application until you close the window.
+You can use the pop-up layout as modal window by using the built-in Close icon and [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~StaysOpen.html) property prevents interaction with your application until you close the window.
 
-`Modal`: Modal window will load under the parent window surrounded by the overlay which prevents you to click anywhere else on the screen apart from the content of the modal.
+`Modal`:Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal.
 
 Modal does not require any action to open. It opens in the same window and gives callback when closing or opening the window.
 
@@ -42,7 +42,7 @@ namespace GettingStarted
             showPopupButton.SetTextColor(Color.White);
             showPopupButton.Text = "Click to show Popup";
 
-            popupContent = new TextView(this) { Text = "Window which loads under the parent window surrounded by an overlay which prevents users to click anywhere else on screen other then the content of the modal.Modal also doesn't require any user action to open.Modal opens in the same window.Modal gives callbacks when you close or open the modal." };
+            popupContent = new TextView(this) { Text = "Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal. Modal opens in the same window. It also does not require any user action to open, and give callbacks when closing or opening the modal." };
             popupContent.TextAlignment = TextAlignment.ViewStart;
             popupContent.SetTextColor(Color.Black);
             popupContent.SetPadding(30, 0, 0, 0);
@@ -78,6 +78,6 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Run the previous sample to get the following output on Android device.
+Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/ModelWindow.png)
