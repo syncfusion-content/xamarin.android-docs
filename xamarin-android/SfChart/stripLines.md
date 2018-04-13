@@ -26,7 +26,7 @@ Following properties are used to configure the strip line.
 * [`FillColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~FillColor.html) – used to change the fill color of the strip line.
 * [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~StrokeWidth.html) – used to change the stroke width of the strip line.
 * [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~StrokeColor.html) – used to change the stroke color of the strip line.
-*[`StrokePathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~StrokePathEffect.html) - used to render the strip line with dashes.
+* [`StrokePathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~StrokePathEffect.html) - used to render the strip line with dashes.
 
 **NumericalStripLine**
 
