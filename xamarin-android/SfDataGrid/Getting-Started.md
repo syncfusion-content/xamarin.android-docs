@@ -22,33 +22,15 @@ Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}
 
 N> Assemblies can be found in unzipped package location in Mac
 
-### SfDataGrid for Xamarin.Android
+### Adding SfDataGrid Reference
 
-The following list of assemblies need to be added as reference from the lib folder to use SfDataGrid in your application.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid.Android/#), and then install it.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>Xamarin.Android</td>
-<td>Syncfusion.Linq.Android.dll<br/>Syncfusion.SfDataGrid.Android.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/></td>
-</tr>
-</table>
+![](SfDataGrid_images/SfDataGrid_NuGet_Android.png)
 
-In order to use export to excel and export to PDF functionalities of SfDataGrid, add the below assembly to your project.
+To export the SfDataGrid to Excel and PDF formats, search for [Syncfusion.Xamarin.SfGridConverter](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGridConverter.Android/) in the NuGet package manager, and then install it.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>Xamarin.Android</td>
-<td>Syncfusion.SfGridConverter.Android.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
-</tr>
-</table>
+![](SfDataGrid_images/SfGridConverter_Android.png)
 
 ## Create a simple SfDataGrid
 
