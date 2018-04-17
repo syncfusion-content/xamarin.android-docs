@@ -80,7 +80,7 @@ protected override void OnCreate(Bundle bundle)
 	annotationButton.TextSize = 18;
 	annotationButton.Click += AnnotationButton_Click;   
 	
-	annotationBackButton =(Button)mainView.FindViewById(Resource.Id.annotationbackbutton);
+	annotationBackButton =(Button)mainView.FindViewById(Resource.Id.annotationBackButton);
 	annotationBackButton.SetTextColor(Android.Graphics.Color.Rgb(103, 103, 103));
 	annotationBackButton.TextSize = 18;
 	annotationBackButton.Click += AnnotationBackButton_Click;             
@@ -376,14 +376,14 @@ Refer to the following code sample to perform undo and redo operations:
        android:layout_width="match_parent"
        android:layout_height="50dp">
     <GridLayout
-        android:id="@+id/toolbargrid"
+        android:id="@+id/toolbarGrid"
         android:background="#E9E9E9"
         android:layout_width="match_parent"
         android:columnCount="5"
         android:layout_height="50dp">
       
        <Button
-        android:id="@+id/undoannotationbutton"
+        android:id="@+id/undoAnnotationButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginLeft="55dip"
@@ -393,7 +393,7 @@ Refer to the following code sample to perform undo and redo operations:
         android:background="#E9E9E9"/>
       
        <Button
-        android:id="@+id/redoannotationbutton"
+        android:id="@+id/redoAnnotationButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_centerHorizontal="true"      
@@ -424,9 +424,9 @@ protected override void OnCreate(Bundle bundle)
 	base.OnCreate(bundle);
 	SetContentView(Resource.Layout.Main);
 	pdfViewerControl = (SfPdfViewer)mainView.FindViewById(Resource.Id.pdfviewercontrol);
-	undoButton = mainView.FindViewById<Button>(Resource.Id.undoannotationbutton);
+	undoButton = mainView.FindViewById<Button>(Resource.Id.undoAnnotationButton);
 	undoButton.Click += UndoButton_Click;
-	redoButton = mainView.FindViewById<Button>(Resource.Id.redoannotationbutton);
+	redoButton = mainView.FindViewById<Button>(Resource.Id.redoAnnotationButton);
     redoButton.Click += RedoButton_Click;
 }
 

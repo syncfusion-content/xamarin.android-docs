@@ -58,7 +58,7 @@ protected override void OnCreate(Bundle bundle)
     Stream PdfStream = Assets.Open("GIS Succinctly.pdf");
 	//Load the PDF document stream to SfPdfViewer
 	pdfViewer.LoadDocument(PdfStream);
-	//Wireup the hyperlink clicked event
+	//Wire up the hyperlink clicked event
 	pdfViewer.HyperlinkClicked += PdfViewer_HyperlinkClicked;
 
 }
