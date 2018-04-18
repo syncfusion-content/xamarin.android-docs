@@ -26,7 +26,7 @@ The PDF viewer supports text selection and copy feature, which allows user to se
 </table>
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -67,7 +67,7 @@ The PDF viewer supports text selection and copy feature, which allows user to se
 By default, PDF viewer comes with a context menu that will be displayed above the selected text in the PDF document, which has a button (option) to copy the selected text. The display of the context menu can be disabled by setting ShowContextMenu property of the TextSelectionSettings class to false. The below code illustrates the same. By default, context menu will be enabled in the PDF viewer. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -107,7 +107,7 @@ By default, PDF viewer comes with a context menu that will be displayed above th
 The color used for text selection and the color of the handle can be customized based on the developer’s requirements. The properties TextSelectionColor and TextSelectionHandleColor of the TextSelectionSettings class can be used to customize them. The below code snippet illustrates the same.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -151,7 +151,7 @@ The color used for text selection and the color of the handle can be customized 
 The completion of the text selection action would trigger TextSelectionCompleted event.  The event argument of this event will contain a copy of the selected text in the String format. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -202,7 +202,7 @@ private void PdfViewer_TextSelectionCompleted(object sender, TextSelectionComple
 The completion of the text selection action would trigger TextSelectionCompleted event.  The event argument would contain details about the page number in which the selection operation is performed, bounds of the page and the selection region. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
