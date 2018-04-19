@@ -85,7 +85,7 @@ textColumn.ColumnSizer = ColumnSizer.Auto;
 
 The `SfDataGrid` allows filling the remaining width in view for any column using the [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~ColumnSizer.html) property.
 
-The `GridColumn.ColumnSizer` has higher priority than the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) property. Hence, the individual columns having the `GridColumn.ColumnSizer` property set will not be included in the column sizer calculations of the `SfDataGrid`. To fill the column with remaining width in view, set the `GridColumn.ColumnSizer` property as [ColumnSizer.LastColumnFill](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ColumnSizer.html). Refer to the following code example to acheive the same.
+The `GridColumn.ColumnSizer` has higher priority than the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) property. Hence, the individual columns having the `GridColumn.ColumnSizer` property set will not be included in the column sizer calculations of the `SfDataGrid`. To fill the column with remaining width in view, set the `GridColumn.ColumnSizer` property as [ColumnSizer.LastColumnFill](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ColumnSizer.html). Refer to the following code example to achieve the same.
 
 In the following code snippet, the SfDataGrid is applied with `ColumnSizer.Star`, and the second column is applied with `ColumnSizer.LastColumnFill`. Hence, the second column will take up the remaining space after the other columns are rendered with star size.
 
@@ -292,10 +292,10 @@ public class CustomColumnSizer : GridColumnSizer
         var column = columns.ToList();
         var totalRemainingStarValue = columnsWidth;
         double removedWidth = 0;
-        bool isremoved;
+        bool isRemoved;
         while (column.Count > 0)
         {
-            isremoved = false;
+            isRemoved = false;
             removedWidth = 0;
             var columnsCount = 0;
             foreach (var data in column)
@@ -314,7 +314,7 @@ public class CustomColumnSizer : GridColumnSizer
 
             if (starWidth != computeWidth && starWidth > 0)
             {
-                isremoved = true;
+                isRemoved = true;
                 column.Remove(col);
                 foreach (var remColumn in removedColumn)
                 {
@@ -328,7 +328,7 @@ public class CustomColumnSizer : GridColumnSizer
                 totalRemainingStarValue += removedWidth;
             }
             totalRemainingStarValue = totalRemainingStarValue - computeWidth;
-            if (!isremoved)
+            if (!isRemoved)
             {
                 column.Remove(col);
                 if (!removedColumn.Contains(col))
@@ -347,7 +347,7 @@ public class ViewModel : INotifyPropertyChanged
     public Dictionary<string, int> ColumnRatio;
     public ViewModel()
     {
-        SetRowstoGenerate(50);
+        SetRowsToGenerate(50);
         ColumnRatio = new Dictionary<string, int>();
     }
 
@@ -373,7 +373,7 @@ public class ViewModel : INotifyPropertyChanged
 
     #region ItemSource Generator
 
-    public void SetRowstoGenerate(int count)
+    public void SetRowsToGenerate(int count)
     {
         OrderInfoRepository order = new OrderInfoRepository();
         ordersInfo = order.GetOrderDetails(count);
