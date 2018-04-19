@@ -40,7 +40,7 @@ PDF Viewer provides support to find and highlight texts in the PDF document and 
 SearchText method can be used to initiate text search operation. The text to be searched is provided as a parameter to this method.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -134,7 +134,7 @@ private void SearchView_KeyPress(object sender, View.KeyEventArgs e)
 SearchCompleted event in the PDF viewer can be used to track the completion of the text search operation, NoMatchFound property of TextSearchEventArgs (event argument of this event) can be used to find if no match of text is being found.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -234,7 +234,7 @@ private void PdfViewer_SearchCompleted(object sender, TextSearchEventArgs args)
 SearchNext method of PDF viewer can be used to navigate to the successive match of the text in the PDF document. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -351,7 +351,7 @@ private void TextSearchButton_Click(object sender, System.EventArgs e)
 SearchPrevious method of PDF viewer can be used to navigate to the previous match of the text in the PDF document. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -476,7 +476,7 @@ For example, consider a PDF document which consists of 20 pages and the user ini
 When we manually scroll the PDF document while navigating using the SearchNext() or SearchPrevious(), the search cycle will get restarted from the first matching instance of current page. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -576,7 +576,7 @@ private void PdfViewer_SearchCompleted(object sender, TextSearchEventArgs args)
 CancelSearch method can be used to cancel the text search progress. When the text search is in progress this method can be used to cancel the same, when text search is completed, this command can be used to clear all the highlighted texts in the PDF viewer.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -703,7 +703,7 @@ With the continuation of the getting started sample, you can extend the UI desig
 After the adding the search toolbar, the Main.axml file will look as like the below code snippet.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
