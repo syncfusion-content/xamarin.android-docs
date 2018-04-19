@@ -19,6 +19,11 @@ Following properties are used to configure the zooming feature,
 * [`DoubleTapEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~DoubleTapEnabled.html) – when you enable this property, you can double tap on the chart to reset it to the original size or zoom in by one level.
 * [`SelectionZoomingEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~SelectionZoomingEnabled.html) – when this property is set to true, you can double tap and drag to select a range on the chart to be zoomed in.
 * [`ScrollingEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ScrollingEnabled.html) – used to enable/disable the panning. Default value is true.
+* [`MaximumZoomLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~MaximumZoomLevel.html) - used to determine the maximum zoom level of the chart.
+* [`SelectionRectStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~SelectionRectStrokeWidth.html) - used to change the stroke width of selection rectangle
+* [`SelectionRectStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~SelectionRectStrokeColor.html) - used to change the stroke color of selection rectangle.
+* [`SelectionRectPathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~SelectionRectPathEffect.html) - used to change the stroke dashes of selection rectangle.
+* [`SelectionRectFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~SelectionRectFillColor.html) - used to change the stroke fill color of selection rectangle.
 
 Following code snippet illustrates how to enable zooming.
 

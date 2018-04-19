@@ -11,13 +11,13 @@ documentation: UG
 
 ## GridTapped event
 
-The event will be triggered whenever you tap the SfDataGrid with [GridTappedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTappedEventsArgs.html) that contains the following properties.
+This event will be triggered whenever the data grid with [GridTappedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTappedEventsArgs.html) containing the following properties is tapped:
 
-* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowColumnIndex.html) - Gets the row index of the row on which you tapped
-* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowColumnIndex.html) - Gets the column index of the column on which you tapped
-* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowData.html) - Gets the row data of the row on which you tapped
+* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowColumnIndex.html): Gets the row index of the tapped row.
+* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowColumnIndex.html): Gets the column index of the tapped column.
+* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowData.html): Gets the row data of the tapped row.
 
-The following code illustrates how to hook the `GridTapped` event and get the row and column details based on where you tapped on SfDataGrid.
+The following code illustrates how to hook the `GridTapped` event and get the tapped row and column details:
 
 {% highlight c# %}
 dataGrid.GridTapped += DataGrid_GridTapped;
@@ -32,13 +32,13 @@ private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
 
 ## GridDoubleTapped event
 
-The event will be triggered whenever you double tap the SfDataGrid with [GridDoubleTappedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs.html) that contains the following properties. 
+This event will be triggered whenever the data grid with [GridDoubleTappedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs.html) containing the following properties is double tapped: 
 
-* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowColumnIndex.html) - Gets the row index of the row on which you double tapped
-* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowColumnIndex.html) - Gets the column index of the column on which you double tapped
-* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowData.html) - Gets the row data of the row on which you double tapped
+* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowColumnIndex.html): Gets the row index of the double tapped row.
+* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowColumnIndex.html): Gets the column index of the double tapped column.
+* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowData.html): Gets the row data of the double tapped row.
 
-The following code illustrates how to hook the `GridDoubleTapped` event and get the row and column details based on where you double tapped on SfDataGrid.
+The following code illustrates how to hook the `GridDoubleTapped` event and get the double tapped row and column details:
 
 {% highlight c# %}
 dataGrid.GridDoubleTapped += DataGrid_GridDoubleTapped;
@@ -53,13 +53,13 @@ private void DataGrid_GridDoubleTapped(object sender, GridDoubleTappedEventsArgs
 
 ## GridLongPressed event
 
-The event will be triggered whenever you long press the SfDataGrid with [GridLongPressedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLongPressedEventsArgs.html) that contains the following properties.
+This event will be triggered whenever the data grid with [GridLongPressedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLongPressedEventsArgs.html) containing the following properties is long pressed:
 
-* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowColumnIndex.html) - Gets the row index of the row on which you long pressed
-* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowColumnIndex.html) - Gets the column index of the column on which you long pressed
-* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowData.html) - Gets the row data of the row on which you long pressed
+* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowColumnIndex.html): Gets the row index of the long pressed row.
+* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowColumnIndex.html): Gets the column index of the long pressed column.
+* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowData.html): Gets the row data of the long pressed row.
 
-The following code illustrates how to hook the `GridLongPressed` event and get the row and column details based on where you long pressed on SfDataGrid. 
+The following code illustrates how to hook the `GridLongPressed` event and get the long pressed row and column details: 
 
 {% highlight c# %}
 dataGrid.GridLongPressed += DataGrid_GridLongPressed;
@@ -74,9 +74,9 @@ private void DataGrid_GridLongPressed(object sender, GridLongPressedEventsArgs e
 
 ## GridViewCreated event
 
-The event will be triggered once the [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~View.html) is created with [GridViewCreatedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridViewCreatedEventArgs.html).
+This event will be triggered once the [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~View.html) is created with [GridViewCreatedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridViewCreatedEventArgs.html).
 
-The following code illustrates how to hook the `GridViewCreated` event and how to set alternate row colors in SfDataGrid.
+The following code illustrates how to hook the `GridViewCreated` event and how to set alternate row colors in the data grid:
 
 {% highlight c# %}
 dataGrid.GridViewCreated += DataGrid_GridViewCreated;
@@ -97,9 +97,9 @@ internal class CustomGridStyle : DataGridStyle
 
 ## GridLoaded event
 
-The event will be triggered once the components in the SfDataGrid are initialized and rendered with [GridLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLoadedEventArgs.html).
+This event will be triggered once the components in the data grid are initialized and rendered with [GridLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridLoadedEventArgs.html).
 
-The following code illustrates how to hook the `GridLoaded` event and how to show the `ProgressDialog` until the grid comes to view.
+The following code illustrates how to hook the `GridLoaded` event and how to show the `ProgressDialog` until the grid comes to view:
 
 {% highlight c# %}
 dataGrid.GridLoaded += DataGrid_GridLoaded;
@@ -223,6 +223,6 @@ public class MainActivity : Activity
 }
 {% endhighlight %}
 
-Refer to the following GIF for final rendering on execution of the above code example:
+Refer to the following GIF for the final rendering on execution of the above code example:
 
 ![](SfDataGrid_images/CustomContextMenu.gif)
