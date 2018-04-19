@@ -57,12 +57,12 @@ employeeDetails.Add(new Employee("John", "john.png"));
 employeeDetails.Add(new Employee("James", "james.png"));
 employeeDetails.Add(new Employee("Jacob", "jacob.png"));
 employeeDetails.Add(new Employee("Joy", "joy.png"));
-employeeDetails.Add(new Employee("Victoria", "victoria.png"));
+employeeDetails.Add(new Employee("Victoria", "Victoria.png"));
 
-//To display the Name set the DisplayMemberPath
+//To display the Name, set the DisplayMemberPath
 countryAutoComplete.DisplayMemberPath = "Name";
 
-//To display the Image set the ImageMemberPath
+//To display the Image, set the ImageMemberPath
 countryAutoComplete.ImageMemberPath = "Image";
 
 //Add the data source
@@ -115,9 +115,9 @@ Customization can be done for Token. There are various ways to customize the tok
 
 //Create an object to do Token Customization 
 TokenSettings token = new TokenSettings();
-token.BackgroundColor = Color.ParseColor("#f5ffbe");
+token.BackgroundColor = Color.ParseColor("#66ccff");
 token.TextSize = 16;
-token.TextColor = Color.Red;
+token.TextColor = Color.White;
 token.SelectedBackgroundColor = Color.ParseColor("#ffffe0");
 token.DeleteButtonColor = Color.Brown;
 token.IsCloseButtonVisible = true;

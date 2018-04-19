@@ -2,7 +2,7 @@
 layout : post
 title : Text in Syncfusion SfImageEditor control in Xamarin.Android
 description : Learn how to add text in ImageEditor for Xamarin.Android.
-platform : Xamarin.Android
+platform : xamarin.android
 control : ImageEditor
 documentation : ug
 ---

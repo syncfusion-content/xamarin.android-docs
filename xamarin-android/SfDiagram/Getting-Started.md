@@ -9,33 +9,19 @@ keywords:
 # Getting Started
 This section provides a quick overview for working with Diagram for Xamarin.Android. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
-## Assemblies Required
+## Adding diagram reference 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram.Android”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram.Android), and then install it. 
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
-{Syncfusion Essential Studio Installed location}\Essential Studio{Essential Studio version}\Xamarin\lib\android\
-Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib\android
-For creating a PDF Viewer for android, the following assemblies need to be referenced in your Android project.
-•	Syncfusion.SfDiagram.Android
-**Installing assemblies through Package Manager Console**
-Open Package Manager console by clicking Tools >> NuGet Package Manager >> Package Manager Console options in Visual Studio.
-<table>
-<tr>
-<td>
-PM> Get-Project -All | Install-Package Syncfusion.Xamarin.SfDiagram.Android -source{{'[http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin#"")'| markdownify }}
-</td>
-</tr>
-</table>
+![](images/Getting-Started_img1.jpeg)
 
 ## Basic building blocks of Diagram
-
-• **Diagram-** It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and connectors to represent the  graphical diagram.
-• **Nodes-** This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc. 
-• **Connectors-** These are the objects used to create link between two nodes, to represent the relationships between them in the diagram. 
-• **Ports-** It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
-• **Annotation-** It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
+• **Diagram-**It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and connectors to represent the  graphical diagram.
+• **Nodes-**This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc.
+• **Connectors-**These are the objects used to create link between two nodes, to represent the relationships between them in the diagram.
+• **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
+• **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
 
 ## Creating a Simple Flow Chart
-
 Create a new cross platform app (Xamarin.Android) with portable class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assemblies to the respective projects.
 **Adding SfDiagram in Xamarin.Android**
 1.Create a new blank application for Android using Visual Studio and name it as “GettingStartedDroid”. Refer the above-mentioned assemblies to the project.
@@ -67,7 +53,6 @@ namespace GettingStarted
         }
     }
 }
-
 {% endhighlight %}
 {% endtabs %}
 The following code snippet illustrates the creation of Nodes and Connectors in the diagram.
@@ -76,7 +61,6 @@ The following code snippet illustrates the creation of Nodes and Connectors in t
 protected override void OnCreate(Bundle bundle)
 {
 base.OnCreate(bundle);
-
 // Set our view from the "main" layout resource
 SetContentView(Resource.Layout.Main);
 LinearLayout linear_Layout = FindViewById<LinearLayout>(Resource.Id.linear_layout);
@@ -104,7 +88,6 @@ diagram.AddConnector(connector1);
 diagram.AddConnector(connector2);
 linearLayout.AddView(diagram);
 }
-
 //Create Node
 public Node AddNode(string id, float offsetX, float offsetY, float width, float height, string text, ShapeType shape)
 {
@@ -118,17 +101,15 @@ node.Style.Brush = new SolidBrush(Color.Rgb(100, 149, 237));
 node.Annotations.Add(new Annotation() { Content = text, FontSize = 18, TextBrush = new SolidBrush(Color.White) });
 return node;
 }
-
 {% endhighlight %}
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
-![](images/Getting-Started_img1.jpeg)
+![](images/Getting-Started_img2.jpeg)
 
 This demo project can be downloaded from the following link.
 [GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/GettingStarted_Android_SfDiagram.zip)
 
 ## Create a simple organizational chart
-
 SfDiagram provides support to auto-arrange the nodes based on hierarchical relation. Organization chart is an example of displaying hierarchical information.
 Now, you have to create a class named “Employee” to store the employee’s information like name, designation, ID, reporting person ID, etc. Also, create a collection class that stores a collection of the employees.
 {% tabs %}
@@ -144,9 +125,7 @@ public class Employee
 //Employee Collection
 public class Employees : ObservableCollection<Employee>  
 {
-
 }
-
 {% endhighlight %}
 {% endtabs %}
 **Initialize Employee data**
@@ -155,7 +134,6 @@ Define Employee Information as a Collection. The below code example shows an emp
 •ParentId is used to identify the person to whom an employee report to, in the organization.
 {% tabs %}
 {% highlight c# %}
-
 //Initializes the employee collection
 ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
 employees.Add(new Employee() { Name = "Elizabeth", EmployeeId = "1", ParentId = "", Designation = "CEO" });
@@ -169,14 +147,11 @@ employees.Add(new Employee() { Name = "Yvonne", EmployeeId = "7", ParentId = "3"
 diagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "EmployeeId", ParentId = "ParentId" };
 //Initializes the Layout
 DirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 80, VerticalSpacing = 50, TreeOrientation = TreeOrientation.TopToBottom };
-
 diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
-
 {% endhighlight %}
 {% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
-![](images/Getting-Started_img2.jpeg)
-
+![](images/Getting-Started_img3.jpeg)
 
 This demo project can be downloaded from the following link.
 [OrganizationalChart_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/OrganizationalChart_Android_SfDiagram.zip)

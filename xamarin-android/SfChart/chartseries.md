@@ -151,9 +151,31 @@ chart.Series.Add(stackingColumnSeries4);
 
 ![](chartseries_images/chartseries_img4.png)
 
-## Vertical Chart
+## Animation
 
-[`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) allows you to change the orientation of the rendered chart by setting [`Transposed`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~Transposed.html) property to true.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) provides animation support for data series. Series will be animated whenever the ItemsSource changes. Animation can be enabled by using the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~EnableAnimation.html) property. You can also control the duration of the animation using [`AnimationDuration`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~AnimationDuration.html) property. 
+
+{% highlight c# %}
+[C#]
+
+ColumnSeries columnSeries = new ColumnSeries();
+
+columnSeries.ItemsSource = dataPoints;
+
+columnSeries.XBindingPath = "XValue";
+
+columnSeries.YBindingPath = "YValue";
+
+columnSeries.EnableAnimation = true;
+
+columnSeries.AnimationDuration = 2;
+
+{% endhighlight %}
+
+## Transpose the Series
+
+
+The [`Transposed`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~Transposed.html) property of [`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~Transposed.html) is used to plot the chart in the vertical direction and this helps to view the data in different perspective.
 
 {% highlight c# %}
 [C#]
