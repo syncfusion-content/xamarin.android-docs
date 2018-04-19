@@ -9,22 +9,22 @@ documentation: UG
 
 # Grouping 
 
-A group represents a collection of records that belong to a particular category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CaptionSummaryRow.html) to get the underlying records in view.
+A group represents a collection of records of a category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CaptionSummaryRow.html) to get the underlying records in view.
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
-N> When `BeginInit` method is called it suspends all the updates until `EndInit` method is called.
+N> When `BeginInit` method is called, it suspends all the updates until `EndInit` method is called.
 
 ## Programmatic Grouping
 
-SfDataGrid also allows to perform grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription.html) object and adding it in the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescriptions.html) collection. SfDataGrid groups the data based on the `GroupColumnDescription` object that is added to this collection.
+The data grid also performs grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription.html) object and adding it in the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescriptions.html) collection. The data grid groups the data based on the `GroupColumnDescription` object added to this collection.
 
-`GroupColumnDescription` object holds following two properties:
+The `GroupColumnDescription` object holds following two properties:
 
-* [ColumnName](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription~ColumnName.html): Name of the grouped column.
+* [ColumnName](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription~ColumnName.html): Gets the name of the grouped column.
 * [Converter](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription~Converter.html): Get the `IValueConverter` as input that helps to apply the custom grouping.
 
-The following code example illustrates how to apply grouping by a column in SfDataGrid.
+The following code example illustrates how to apply grouping to a column in the data grid:
 
 {% highlight c# %}
     dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
@@ -32,13 +32,13 @@ The following code example illustrates how to apply grouping by a column in SfDa
 }); 
 {% endhighlight %}
 
-The following screenshot shows the output rendered when grouping is applied.
+The following screenshot shows the output rendered when grouping is applied:
 
 ![](SfDataGrid_images/Grouping.png)
 
 ## Expand groups while grouping
  
-You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoExpandGroups.html) to `true`. So, when user group any column, then all groups will be in expanded state. 
+You can expand all the groups while grouping by setting the [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoExpandGroups.html) to `true`. So, when grouping any column, all groups will be in expanded states. 
 
 {% highlight c# %}
 this.dataGrid.AutoExpandGroups = true;
@@ -47,7 +47,7 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 
 ## Expand or collapse the groups
 
-By default, the groups will be in expanded state in a SfDataGrid. However, you can expand or collapse a group in runtime by setting the [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowGroupExpandCollapse.html) as `true`.
+By default, the groups will be in expanded state in the data grid. However, you can expand or collapse a group at runtime by setting the [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowGroupExpandCollapse.html) to `true`.
 
 {% highlight c# %}
 this.dataGrid.AllowGroupExpandCollapse = true;
@@ -55,7 +55,7 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 
 ### Expand or collapse all the groups
 
-You can expand or collapse all the groups at programmatically at runtime by using `SfDataGrid.ExpandAllGroup` and `SfDataGrid.CollapseAllGroup` methods.
+You can expand or collapse all the groups programmatically at runtime by using the `SfDataGrid.ExpandAllGroup` and `SfDataGrid.CollapseAllGroup` methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ this.dataGrid.CollapseAllGroup();
 
 ### Expand or collapse a specific group
 
-You can expand or collapse specific group by using `SfDataGrid.ExpandGroup` and `SfDataGrid.CollapseGroup` methods.
+You can expand or collapse a specific group by using the `SfDataGrid.ExpandGroup` and `SfDataGrid.CollapseGroup` methods.
 
 {% highlight c# %}
 var group = (dataGrid.View.Groups[0] as Group);
@@ -76,11 +76,11 @@ this.dataGrid.CollapseGroup(group);
 
 ![](SfDataGrid_images/GroupExpandCollapse.png)
 
-## Custom Grouping
+## Custom grouping
 
-SfDataGrid allows you to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve the custom grouping, you need to write a converter that implements `IValueConverter` with your custom grouping logic and assign that converter to the [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription~Converter.html) property,
+The data grid groups a column based on custom logic. To use the custom grouping, write a converter that implements `IValueConverter` with your custom grouping logic and assign that converter to the [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription~Converter.html) property.
 
-The following code example illustrates how to set the custom grouping converter for the group description that is added to group the Freight column.
+The following code example illustrates how to set the custom grouping converter for the group description added to group the freight column.
 
 {% highlight c# %}
 dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
@@ -121,7 +121,7 @@ public class GroupConverter : IValueConverter
 
 ## Display based grouping using group mode property
 
-By default column grouping occurs based on the value in the underlying collection thereby creating a new group for each new value of that column. However, you can also group a column based on the display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~GroupMode.html) property as `Display`. In the below code example we have set [GridColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Format.html) property as "#" which displays only the rounded off value in the `GridCell`.  
+By default, column grouping occurs based on the value in the underlying collection, thereby creating a new group for each new value of that column. However, you can also group a column based on the display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~GroupMode.html) property as `Display`. In the following code example, set [GridColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Format.html) property as "#" which displays only the rounded off value in the `GridCell`:  
 
 {% highlight c# %}
 GridNumericColumn cargoWeight = new GridTextColumn();
@@ -130,13 +130,13 @@ cargoWeight.GroupMode = Syncfusion.Data.DataReflectionMode.Display;
 cargoWeight.Format = "#";
 {% endhighlight%} 
 
-The below screenshot shows the comparison between the two Group modes. GroupMode.Value on the left and GroupMode.Display on the right.
+The following screenshot shows the comparison between the two group modes. GroupMode.Value on the left and GroupMode.Display on the right.
 
 ![](SfDataGrid_images/GroupMode.png)
 
 ## Clearing or removing a group
 
-To clear grouping applied to SfDataGrid, remove the items from the `SfDataGrid.GroupColumnDescriptions` collection or clear the collection. 
+To clear the grouping applied to the data grid, remove the items from the `SfDataGrid.GroupColumnDescriptions` collection or clear the collection. 
  
 Refer to the following code snippets to remove grouping:
 
@@ -182,7 +182,7 @@ public class MainActivity : Activity
 }
 {% endhighlight %}
 
-Run the application to render the following output. 
+Run the application to render the following output:
 
 ![](SfDataGrid_images/Remove_Grouping.png)
 
@@ -194,13 +194,13 @@ N> You can also clear or remove grouping on [GridTapped event](https://help.sync
 
 The `SfDataGrid.GroupExpanding` event occurs when the group is being expanded.
  
-The `GroupChangingEventArgs` of the `GroupExpanding` event provides the information about the expanding group and it has the following members.
+The `GroupChangingEventArgs` of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
 
-`Syncfusion.Data.Group` - Gets the group that’s being expanded.
+`Syncfusion.Data.Group`: Gets the being expanded group.
 
-`Cancel` – Decides whether to cancel the group expansion.
+`Cancel`: Decides to cancel the group expansion.
  
-You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) to `true`.
+You can cancel the group expansion by setting the [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) to `true`.
 
 {% highlight c# %}
 this.dataGrid.GroupExpanding += dataGrid_GroupExpanding;
@@ -216,21 +216,21 @@ void dataGrid_GroupExpanding(object sender, Syncfusion.SfDataGrid.GroupChangingE
 
 The `SfDataGrid.GroupExpanded` event occurs after the group is expanded.
 
-The `GroupChangedEventArgs` of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
+The `GroupChangedEventArgs` of the `GroupExpanded` event provides the information about the expanded group and it has the following member:
 
-`Syncfusion.Data.Group` - Gets the expanded group.
+`Syncfusion.Data.Group`: Gets the expanded group.
 
 ### GroupCollapsing event 
 
 The `SfDataGrid.GroupCollapsing` event occurs when the group is being collapsed.
 
-The `GroupChangingEventArgs` of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
+The `GroupChangingEventArgs` of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following members:
 
-`Syncfusion.Data.Group` - Gets the group that’s being collapsed.
+`Syncfusion.Data.Group`: Gets the being collapsed group.
 
-`Cancel` – Decides whether to cancel the group collapsing.
+`Cancel`: Decides to cancel the group collapsing.
 
-You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `GroupCollapsing` event.
+You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of the `GroupCollapsing` event.
 
 {% highlight c# %}
 this.dataGrid.GroupCollapsing += dataGrid_GroupCollapsing;
@@ -246,20 +246,20 @@ void dataGrid_GroupCollapsing(object sender, Syncfusion.SfDataGrid.GroupChanging
  
 The `SfDataGrid.GroupCollapsed` event occurs after the group is collapsed.
  
-`GroupChangedEventArgs` of the `GroupCollapsed` event  provides the information about collapsed group and it contains the following member.
+The `GroupChangedEventArgs` of the `GroupCollapsed` event  provides the information about collapsed group and it contains the following member:
 
-`Syncfusion.Data.Group` - Gets the collapsed group.
+`Syncfusion.Data.Group`: Gets the collapsed group.
 
-## Animate group expand/collapse icon
+## Animate the group expand/collapse icon
 
-SfDatagrid loads two different icons for denoting the group expanded and collapsed state. However, SfDataGrid allows you to rotate the expander icon animatedly for denoting the collapsed status by overriding the `DataGridStyle.GetGroupCollapseIcon` method and returning `0`.
+The data grid loads two different icons denoting the group expanded and collapsed state. However, the control rotates the expander icon animatedly for denoting the collapsed status by overriding the `DataGridStyle.GetGroupCollapseIcon` method and returning `0`.
 
-The below code example illustrates how to enable the group/expand collapse icons animation by writing a custom style. 
+The following code example illustrates how to enable the group/expand collapse icons animation by writing a custom style: 
 
 {% tabs %}
 {% highlight c# %}
 
-//Apply custom style to SfDataGrid from code 
+//Apply custom style to the data grid from code 
 
 dataGrid.GridStyle = new CustomStyle ();
 
@@ -282,7 +282,7 @@ public class CustomStyle : DataGridStyle
 
 ## Hiding the column when grouped
 
-In SfDataGrid a column will be generated with the default column width by default. In order to group by a column that should not be visible in view, add the column to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection and set its width as 0. Thus the column will be grouped and will not be visually seen. Please refer the below code example.
+In the data grid, a column will be generated with the default column width. In order to group by a column that should not be visible in the view, add the column to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection and set its width as 0. Thus, the column will be grouped but will not be visually seen. Refer to the following code example:
 
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
