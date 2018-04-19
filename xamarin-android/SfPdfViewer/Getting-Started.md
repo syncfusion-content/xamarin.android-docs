@@ -21,9 +21,16 @@ Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.28\Xamarin\li
 
 For creating a PDF Viewer for android, the following assemblies need to be referenced in your Android project.
 
-* Syncfusion.Compression.Portable
-* Syncfusion.Pdf.Portable
-* Syncfusion.SfPdfViewer.Android
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>Xamarin.Android</td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/></td>
+</tr>
+</table>
 
 ## Create a simple PDF Viewer
 

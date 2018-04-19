@@ -57,4 +57,5 @@ here [Localization](http://www.syncfusion.com/downloads/support/directtrac/gener
 
 ![](Localization_images/localization_img2.jpeg)
 
->**Note:** The corresponding values folder loads only depends on the device configuration and locale.
+>**NOTE**
+The corresponding values folder loads only depends on the device configuration and locale.

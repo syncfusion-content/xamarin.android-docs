@@ -2,7 +2,7 @@
 layout : post
 title : Cropping Image in Syncfusion SfImageEditor control in Xamarin.Android
 description : Learn how to crop an image in ImageEditor for Xamarin.Android
-platform : Xamarin.Android
+platform : xamarin.android
 control : ImageEditor
 documentation : ug
 ---

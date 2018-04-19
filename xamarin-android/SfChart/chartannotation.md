@@ -48,11 +48,11 @@ chart.Annotations.Add(annotation);
 
 ## Positioning the annotation
 
-Annotations can be positioned in plot area based on X1 and Y1 properties. For shape annotations, specify X2 and Y2 properties, if needed. The X and Y values can be specified with axis units or pixel units, and these can be identified by using [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) property.
+Annotations can be positioned in plot area based on [`X1`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~X1.html) and [`Y1`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~Y1.html) properties. For shape annotations, specify X2 and Y2 properties, if needed. The X and Y values can be specified with axis units or pixel units, and these can be identified by using [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) property.
 
 ### Positioning based on CoordinateUnit as axis
 
-To position the annotation based on an axis, set the X1 and Y1, X2 and Y2 properties based on axis range values, if needed, and then set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) value as `Axis`.
+To position the annotation based on an axis, set the X1 and Y1, X2 and Y2 properties based on axis range values, if needed, and then set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) value as [`Axis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartCoordinateUnit.html).
 
 {% highlight c# %} 
 [C#]
@@ -83,7 +83,7 @@ chart.Annotations.Add(annotation);
 
 ### Positioning based on CoordinateUnit as pixels
 
-To position the annotations based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) value as `Pixels`. The pixel values in X1 and Y1, X2 and Y2 properties of an annotation are shown in the following code snippet,
+To position the annotations based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation~CoordinateUnit.html) value as [`Pixels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartCoordinateUnit.html). The pixel values in X1 and Y1, X2 and Y2 properties of an annotation are shown in the following code snippet,
 
 {% highlight c# %} 
 [C#]
@@ -352,7 +352,7 @@ chart.Annotations.Add(annotation);
 
 **Adding arrow to line annotation**
 
-To display the single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property to `Arrow`. The default value of the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property is `None`.
+To display the single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property to [`Arrow`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineCap.html). The default value of the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineAnnotation~LineCap.html) property is [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineCap.html).
 
 {% highlight c# %} 
 [C#]
@@ -622,7 +622,7 @@ chart.Annotations.Add(annotation);
             
 ## View annotation
 
-The [`ViewAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation.html) allows you to add annotations in the form of own custom view at the specific area of interest in the chart area. The [`ViewAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation.html) also can be aligned by using the [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation~VerticalAlignment.html) and [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation~HorizontalAlignment.html) properties.
+The [`ViewAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation.html) allows you to add annotations in the form of own custom view with the help of [`View`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation~View.html) property at the specific area of interest in the chart area. The [`ViewAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation.html) also can be aligned by using the [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation~VerticalAlignment.html) and [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ViewAnnotation~HorizontalAlignment.html) properties.
 
 {% highlight c# %} 
 [C#]
