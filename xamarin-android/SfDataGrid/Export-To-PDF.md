@@ -541,7 +541,7 @@ option.PdfDocument = pdfDocument;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/Landscape.png)
+![](SfDataGrid_images/PDF/Landscape.jpg)
 
 ### Setting Header and Footer
 
