@@ -21,14 +21,12 @@ Following properties are used to configure the strip line.
 
 * [`Start`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalStripLine~Start.html) – used to change the start position of the strip line.
 * [`Width`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~Width.html) – used to change how long strip line should expand.
-* [`WidthType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeStripLine~WidthType.html) - used to change the date time unit of the value specified in the width property.
 * [`PixelWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~PixelWidth.html) - used to specify the unit type for Width property, whether it is screen point or chart value.
 * [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~Text.html) – used to change the text of the strip line.
 * [`FillColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~FillColor.html) – used to change the fill color of the strip line.
 * [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~StrokeWidth.html) – used to change the stroke width of the strip line.
 * [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~StrokeColor.html) – used to change the stroke color of the strip line.
 * [`StrokePathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~StrokePathEffect.html) - used to render the strip line with dashes.
-* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartStripLine~CornerRadius.html) - used to customize the corner radius of the rectangle.
 
 **NumericalStripLine**
 

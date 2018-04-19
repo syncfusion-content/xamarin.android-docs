@@ -9,17 +9,17 @@ documentation: ug
 
 # Scrolling 
 
-## ScrollingMode
+## Scrolling mode
 
-SfDataGrid provides three types of scrolling mode which can be customized using the [SfDataGrid.ScrollingMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property. By default, the SfDataGrid will scroll its content based on pixel values.
+The data grid provides three types of scrolling modes, which can be customized using the [SfDataGrid.ScrollingMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property. By default, the data grid scrolls its content based on the pixel values.
 
 * PixelLine
 * Line
 * Pixel
 
-### PixelLine
+### Pixel line
 
-`ScrollingMode.PixelLine`, will allow to scroll its contents like an excel sheet. i.e., whenever a row or a column is clipped on the top, the particular row or column will be auto scrolled to display fully in view.
+The `ScrollingMode.PixelLine` scrolls its contents like an Excel sheet. i.e., whenever a row or a column is clipped on top, the particular row or column will be auto scrolled to display fully in view.
 
 {% highlight c# %}
 dataGrid.ScrollingMode = ScrollingMode.PixelLine; 
@@ -29,7 +29,7 @@ dataGrid.ScrollingMode = ScrollingMode.PixelLine;
 
 ### Line
 
-`ScrollingMode.Line`, will allow to scroll its contents based on lines. i.e., the view will be updated only when the offset values reaches the origin of a row or column in the bound collection
+The `ScrollingMode.Line` scrolls its contents based on lines. i.e., the view will be updated only when the offset values reaches the origin of a row or column in the bound collection.
 
 {% highlight c# %}
 dataGrid.ScrollingMode = ScrollingMode.Line; 
@@ -39,7 +39,7 @@ dataGrid.ScrollingMode = ScrollingMode.Line;
 
 ### Pixel
 
-`ScrollingMode.Pixel`, will allow to scroll its contents based on pixel values. i.e., the view will be updated each pixel change of the offsets and rows or columns will appear clipped when offset exceeds the origin of the row or column.
+The `ScrollingMode.Pixel` scrolls its contents based on pixel values. i.e., the view will update each pixel change of the offsets, and rows or columns will appear clipped when offset exceeds the origin of the row or column.
 
 {% highlight c# %}
 dataGrid.ScrollingMode = ScrollingMode.Pixel; 
@@ -47,13 +47,13 @@ dataGrid.ScrollingMode = ScrollingMode.Pixel;
 
 ![](SfDataGrid_images/Pixel.gif)
 
-## Programmatic Scrolling
+## Programmatic scrolling
 
-SfDataGrid allow you to scroll to particular Row and Column index from programmatically
+The data grid scrolls to a particular row and column index programmatically.
 
-### Scroll to Row and Column Index
+### Scroll to the row and column Index
 
-* You can scroll programmatically to particular Row and Column using [SfDataGrid.ScrollToRowColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowColumnIndex.html) method by passing row and column index.
+Scroll programmatically to a particular row and column using the [SfDataGrid.ScrollToRowColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowColumnIndex.html) method by passing row and column index.
 
 {% highlight C# %}
 
@@ -66,9 +66,9 @@ dataGrid.ScrollToRowColumnIndex(20, 6);
 
 ![](SfDataGrid_images/ScrollToRowColumnIndex.gif)
 
-### Scroll to Row Index
+### Scroll to the row Index
 
-* You can scroll programmatically to particular Row [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowIndex.html) method by passing row index.
+Scroll programmatically to a particular row using the [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowIndex.html) method by passing the row index.
 
 {% highlight C# %}
 
@@ -81,9 +81,9 @@ dataGrid.ScrollToRowIndex(20);
 
 ![](SfDataGrid_images/ScrollToRowIndex.gif)
 
-### Scroll to Column Index
+### Scroll to the column Index
 
-* You can scroll programmatically to particular Column [SfDataGrid.ScrollToColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToColumnIndex.html) method by passing column index.
+Scroll programmatically to a particular column using the [SfDataGrid.ScrollToColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToColumnIndex.html) method by passing the column index.
 
 {% highlight C# %}
 
@@ -96,14 +96,18 @@ dataGrid.ScrollToColumnIndex(7);
 
 ![](SfDataGrid_images/ScrollToColumnIndex.gif)
 
-## Vertical Over Scroll Mode
-[SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~VerticalOverScrollMode.html) property allows you to customize the bouncing behavior of the SfDataGrid.
+## Vertical over scroll mode
 
- `SfDataGrid.VerticalOverScrollMode` is of type `VerticalScrollMode` which has the below two modes. 
- ### Bounce 
- Bounce allows the SfDataGrid to have bouncing effect. The default value of `SfDataGrid.VerticalOverScrollMode` is `Bounce` 
+The [SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~VerticalOverScrollMode.html) property allows customizing the bouncing behavior of the data grid.
 
-The below code example illustrates the how to customize the bouncing effect in SfDataGrid. 
+The `SfDataGrid.VerticalOverScrollMode` is of type `VerticalScrollMode` which has the following two modes:
+
+### Bounce 
+
+Bounce allows the data grid to have bouncing effect. The default value of `SfDataGrid.VerticalOverScrollMode` is `Bounce`. 
+
+The following code example illustrates how to customize the bouncing effect in the data grid:
+
 {% highlight C# %}
 
 dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.Bounce;
@@ -113,9 +117,10 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.Bounce;
 ![](SfDataGrid_images/VerticalOverScrollMode_Bounce.gif)
 
 ### None
-None disables the bouncing effect in SfDataGrid.
 
-The below code example illustrates the how to customize the bouncing effect in SfDataGrid. 
+None disables the bouncing effect in the data grid.
+
+The following code example illustrates how to customize the bouncing effect in the data grid: 
 {% highlight C# %}
 
 dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
