@@ -16,7 +16,44 @@ The SfDataGrid allows you to create and add columns in two ways:
 
 ## Automatic columns generation
 
-The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html). It is a binding property and it decides columns generation for the SfDataGrid based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumnsMode.html) property. 
+The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html).Columns are generated based on type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn.html) is added for int type property. Below table shows the column type created for the respective data type. For remaining types, [GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTextColumn.html) will be created. 
+
+<table>
+<tr>
+<th> Data Tye </th>
+<th> Column </th>
+</tr>
+<tr>
+<td> string, object </td>
+<td> GridTextColumn </td>
+</tr>
+<tr>
+<td> int, float, double, decimal and it’s respective nullable types </td>
+<td> GridNumericColumn </td>
+</tr>
+<tr>
+<td> DateTime </td>
+<td> GridDateTimeColumn </td>
+</tr>
+<tr>
+<td> bool </td>
+<td> GridSwitchColumn </td>
+</tr>
+<tr>
+<td> enum </td>
+<td> GridPickerColumn </td>
+</tr>
+<tr>
+<td> Bitmap </td>
+<td> GridImageColumn </td>
+</tr>
+</table>
+
+You can refer the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoGenerateColumn_Android327676174) to get to know the codes for defining properties in the Model class and populating data for generating different types of column automatically. 
+
+### AutoGenerateColumns with different modes
+
+The auto generation of the columns in SfDataGrid is based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumnsMode.html) property. 
 
 The `SfDataGrid.AutoGenerateColumnsMode` decides a way to create columns when the `SfDataGrid.AutoGenerateColumns` is set to `true`. It also decides to retain the grouping and sorting when the ItemsSource is changed. 
 
@@ -61,6 +98,7 @@ The `AutoGeneratingColumnArgs` object contains the following properties.
 
 * [Column](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs~Column.html): This property returns the created column using which can be customized.
 * [Cancel](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs_members.html#): This property cancels the column creation.
+* PropertyType: This property provides the type of underlying model property for which the column is created.
 
 You can skip generating a column by handling the `SfDataGrid.AutoGeneratingColumn` event as follows.
 
@@ -96,6 +134,19 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
         e.Column.Format = "dd/MM/yyyy";
 } 
 {% endhighlight %}
+
+You can perform any desired operation based on the property type of the underlying model object as follows.
+
+{% highlight c# %}
+void GridAutoGeneratingColumns(object sender,AutoGeneratingColumnEventArgs e)
+{
+    if(e.PropertyType == typeof(string))
+    {
+        // Here we have hidden the columns if the underlying property type is string.
+        e.Column.IsHidden = true;
+    }
+}
+{% endhighlight c# %}
 
 You can also customize the header text, sorting, alignment, padding, etc. of a column by handling the `SfDataGrid.AutoGeneratingEvent`.
 
