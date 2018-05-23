@@ -532,7 +532,7 @@ Schedule allows you to create appointments in various time zones, and the appoin
 {%tabs%}
 {% highlight c#}
 schedule.TimeZone = "GMT Standard Time";
-appointment.StartTimeZone = "Indian Standard Time";
-appointment.EndTimeZone = "Indian Standard Time";
+appointment.StartTimeZone = "India Standard Time";
+appointment.EndTimeZone = "India Standard Time";
 {% endhighlight%}
 {%endtabs%}
