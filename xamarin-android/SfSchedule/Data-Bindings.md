@@ -514,20 +514,20 @@ schedule.AppointmentStyle = appointmentStyle;
 
 ![](PopulatingAppointments_images/selection.png)
 
-### Timezone 
+### TimeZone 
 
 Schedule allows you to create appointments in various time zones, and the appointments to be displayed in the user's time zone and any other time zone. Appointments should be rendered by recalculating Start and End time zone based on give time zone
 
-1. Set Schedule to the specific Time zone using TimeZoneone property of schedule
-2. Set Appointment to the specific timezone using StartTimeZone and EndTimeZone property of scheduleAppointment
-3. Use InternalStartTime and InternalEndTime property of scheduleAppointment to get the exact appointment start time and end time
-4. If scheudle Time zone and Appointment's start time zone and end time zone are not set then the appointment shoule render based on the device local time zone
-5. If schedule Time zone was set ant Appointment's start time zone and end time zone are not set then appointment's start time and end time value should be converted into schedule time zone for specified time zone
-6. If schedule Time zone was not set and Appointment's start time zone and end time zone are set the appointment's start time and end time value should be converted into device local time zone for specified time zone
-7. If the recurring appointment is converted to another time zone then the whole sequence is recalculated according to the new time zone information
-8. No need to handle time zone for All day appointments
-9. Dynamic changes of Schedule time zone and Appointment's start time zone and end time zone supported 
-10. Custom Appointment supported for scheduleAppointment's StartTimeZone and EndTimeZone properties
+• Set Schedule to the specific Time zone using TimeZoneone property of schedule
+• Set Appointment to the specific timezone using StartTimeZone and EndTimeZone property of ScheduleAppointment
+• Use InternalStartTime and InternalEndTime property of ScheduleAppointment to get the exact appointment start time and end time
+• If scheudle Time zone and Appointment's start time zone and end time zone are not set then the appointment shoule render based on the device local time zone
+• If schedule Time zone was set ant Appointment's start time zone and end time zone are not set then appointment's start time and end time value should be converted into schedule time zone for specified time zone
+• If schedule Time zone was not set and Appointment's start time zone and end time zone are set the appointment's start time and end time value should be converted into device local time zone for specified time zone
+• If the recurring appointment is converted to another time zone then the whole sequence is recalculated according to the new time zone information
+• No need to handle time zone for All day appointments
+• Dynamic changes of Schedule time zone and Appointment's start time zone and end time zone supported 
+• Custom Appointment supported for ScheduleAppointment's StartTimeZone and EndTimeZone properties
 
 {%tabs%}
 {% highlight c#}
