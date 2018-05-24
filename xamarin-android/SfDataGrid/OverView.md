@@ -9,9 +9,9 @@ documentation: ug
 
 # SfDataGrid
 
-The data grid control is available in Xamarin.Forms, Xamarin.Android, Xamarin.iOS. It creates entirely customizable features to display and manipulate a large amounts of data in a tabular view. The following table lists the key features of the data grid in Xamarin.Forms, Xamarin.Android, Xamarin.iOS.
+The data grid control is available in Xamarin.Forms, Xamarin.Android and Xamarin.iOS. It creates entirely customizable features to display and manipulate a large amounts of data in a tabular view. The following table lists the key features of the data grid in Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
 
-I> Xamarin.Forms is unique by offering a single language(C#) and runtime that works across all the three mobile platforms of iOS, Android, UWP and macOS as well. So, the data grid for Xamarin.Forms works in all the three platforms.
+I> Xamarin.Forms is unique by offering a single language(C#) and runtime that works across all the three mobile platforms of iOS, Android, UWP and macOS platform as well. So, the data grid for Xamarin.Forms works in all the three platforms.
 
 <table>
 <tr>
