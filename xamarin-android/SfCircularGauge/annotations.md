@@ -322,17 +322,17 @@ Annotations provide options to add any image over the gauge control with respect
             header2.TextSize = 20;
             gauge.Headers.Add(header2);
 
-            GaugeAnnotation annottaion = new GaugeAnnotation();
+            GaugeAnnotation annotation = new GaugeAnnotation();
             ImageView image = new ImageView(this);
             image.SetImageResource(Resource.Drawable.weather);
             LinearLayout layout1 = new LinearLayout(this);
             layout1.LayoutParameters = new LinearLayout.LayoutParams((int)(100 * density), 200);
             layout1.SetGravity(GravityFlags.Center);
             layout1.AddView(image);
-            annottaion.View = layout1;
-            annottaion.Angle = 270;
-            annottaion.Offset = 0.2f;
-            gauge.Annotations.Add(annottaion);
+            annotation.View = layout1;
+            annotation.Angle = 270;
+            annotation.Offset = 0.2f;
+            gauge.Annotations.Add(annotation);
             gauge.CircularScales = scales;
 
 {% endhighlight %}
