@@ -58,10 +58,6 @@ pdfViewer.FreeTextAnnotationAdded += PdfViewer_FreeTextAnnotationAdded;
 
 You can select a freetext annotation by tapping it. When a freetext is selected the `FreeTextAnnotationSelected` event will be raised. 
 
-### Changing the properties of the selected freetext
-
-You can change the properties of the selected annotation by casting the `sender` object parameter of the `FreeTextAnnotationSelected` event's handler to FreeTextAnnotation and modifying its properties.  The following code shows how to change the properties. 
-
 {% tabs %}
 {% highlight c# %}
 
@@ -71,19 +67,58 @@ pdfViewer.FreeTextAnnotationSelected += PdfViewer_FreeTextAnnotationSelected;
 {% endhighlight %}
 {% endtabs %}
 
+When the event is raised the properties of the selected freetext can be obtained from the `args` parameter of the event handler.
+
 {% tabs %}
-{% highlight c# %}
+{% highlight c# %} 
 
 private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotationSelectedEventArgs args)
 {
-	//Cast the sender object to FreeTextAnnotation
-    FreeTextAnnotation selectedFreeTextAnnotation = sender as FreeTextAnnotation;
+	//Obtain the bounds of the annotation
+	Rect bounds = args.Bounds;
 
-    //Change the text color
-    selectedFreeTextAnnotation.Settings.TextColor = Color.Red;
+	//Obtain the text in the annotation
+	string text = args.Text;
 
-    //Change the text size
-    selectedFreeTextAnnotation.Settings.TextSize = 4;
+	//Obtain the size of the text in the annotation
+	float textSize = args.FontSize;
+
+	//Obtain the color of the text
+	Color textColor = args.TextColor;
+
+	//Obtain the page number in which the selected annotation is
+	int pageNumber = args.PageNumber;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+### Changing the properties of the selected freetext
+
+You can change the properties of the selected annotation by casting the `sender` object parameter of the `FreeTextAnnotationSelected` event's handler to FreeTextAnnotation and modifying its properties.  The following code shows how to change the properties. 
+
+{% tabs %}
+{% highlight c# %} 
+
+SfPdfViewer pdfViewer = new SfPdfViewer(ApplicationContext);
+pdfViewer.FreeTextAnnotationSelected += PdfViewer_FreeTextAnnotationSelected;
+changeFreeTextPropertiesButton.Clicked += ChangeFreeTextPropertiesButton_Clicked;
+FreeTextAnnotation selectedFreeTextAnnotation;
+
+private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotationSelectedEventArgs args)
+{
+	//Cast the sender object to freetext annotation
+	selectedFreeTextAnnotation = sender as FreeTextAnnotation;
+}
+
+private void ChangeFreeTextPropertiesButton_Clicked(object sender, EventArgs e)
+{
+	//Change the color of the text
+    selectedFreeTextAnnotation.Settings.TextColor = Color.Purple;
+
+    //Change the size of the text
+    selectedFreeTextAnnotation.Settings.TextSize = 6;
 }
 
 {% endhighlight %}
@@ -97,6 +132,7 @@ You can customize the default text color and text size of all freetext annotatio
 
 You can set the default text color of the freetext annotations by using the `SfPdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextColor` property. Refer to the following code. 
  
+{% tabs %}
 {% highlight c# %}
 
 SfPdfViewer pdfViewer = new SfPdfViewer(ApplicationContext);
@@ -106,11 +142,13 @@ pdfViewer.AnnotationMode = AnnotationMode.FreeText;
 pdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextColor = Color.Red;
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Setting the default text size
 
 You can set the default text size of the freetext annotations by using the `SfPdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextSize` property. Refer to the following code example. 
 
+{% tabs %}
 {% highlight c# %}
 
 SfPdfViewer pdfViewer = new SfPdfViewer(ApplicationContext);
@@ -120,6 +158,7 @@ pdfViewer.AnnotationMode = AnnotationMode.FreeText;
 pdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextSize = 4; 
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Deleting freetext annotations
 
@@ -199,32 +238,6 @@ pdfViewer.FreeTextAnnotationDeselected += PdfViewer_FreeTextAnnotationDeselected
 {% endhighlight %}
 {% endtabs %}
 
-The following code shows how to retrieve the properties of the deselected freetext annotation.
-
-{% tabs %}
-{% highlight c# %}
-
-private void PdfViewer_FreeTextAnnotationDeselected(object sender, FreeTextAnnotationDeselectedEventArgs args)
-{ 
-   //Get the bounds
-   Rect bounds = args.Bounds;
-
-   //Get the page number on which the deselected freetext is
-   int pageNumber = args.PageNumber;
-
-   //Get the text of the freetext annotation
-   string text = args.Text;
-
-   //Get the text color
-   Color textColor = args.TextColor;
-
-   //Get the text size
-   float textSize = args.FontSize;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Moving or resizing the selected freetext annotation
 
 Tap and drag the annotation to move it. It can be resized by selecting it and dragging the bubbles at the corners.  
@@ -241,6 +254,8 @@ pdfViewer.FreeTextAnnotationMovedOrResized += PdfViewer_FreeTextAnnotationMovedO
 
 {% endhighlight %}
 {% endtabs %}
+
+The properties of the moved or resized freetext can be obtained from the `args` parameter of the event's handler. 
 
 {% tabs %}
 {% highlight c# %}
