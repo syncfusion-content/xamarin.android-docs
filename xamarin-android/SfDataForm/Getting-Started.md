@@ -422,6 +422,17 @@ Enum and List type property.
 Spinner
 </td>
 </tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+The String type property with [DataType(DataType.Password)] attribute.
+</td>
+<td>
+EditText
+</td>
+</tr>
 </table>
 
 ## Layout options
