@@ -13,7 +13,7 @@ documentation: ug
 
 [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge~Annotations.html), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge~Annotations.html) property.
 
-##  Setting sub gauge for annotation
+##  Setting view annotation
 
 When the annotation allows you to place custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the `Annotations`:
 
@@ -23,7 +23,7 @@ When the annotation allows you to place custom elements, a gauge can be initiali
 The following code is used to create the `Annotations`.
 
 {% highlight c# %}
-  var density = this.Resources.DisplayMetrics.Density;
+            var density = this.Resources.DisplayMetrics.Density;
 
             TextView LabelAnnotation1 = new TextView(this);
             LabelAnnotation1.Text = "4:55PM";
@@ -266,3 +266,145 @@ The following code is used to create the `Annotations`.
 {% endhighlight %}
 
 ![](annotations_images/annotations.png)
+
+##  Setting image annotation
+
+Annotations provide options to add any image over the gauge control with respect to its offset position. You can add multiple images in single control.
+
+{% highlight c# %}
+
+            SfCircularGauge gauge = new SfCircularGauge(this);
+            gauge.SetBackgroundColor(Color.White);
+
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.ShowLabels = false;
+            scale.ShowTicks = false;
+            scale.RimWidth = 20;
+            scale.RadiusFactor = 1;
+            scale.RimColor = Color.ParseColor("#e0e0e0");
+            scale.StartAngle = 90;
+            scale.SweepAngle = 360;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+
+            RangePointer pointer = new RangePointer();
+            pointer.Value = 73.2;
+            pointer.Offset = 1;
+            pointer.Width = 20;
+            pointer.RangeCap = Com.Syncfusion.Gauges.SfCircularGauge.Enums.RangeCap.Both;
+            pointer.Color = Color.Rgb(252, 251, 72);
+            scale.CircularPointers.Add(pointer);
+            scales.Add(scale);
+
+            Header header = new Header();
+            header.Text = "73.2";
+            header.Position = new PointF((float)0.48, (float)0.6);
+            header.TextColor = Color.ParseColor("#424242");
+            header.TextStyle = Typeface.Create("calibri", TypefaceStyle.Bold);
+            header.TextSize = 20;
+            gauge.Headers.Add(header);
+
+            Header header1 = new Header();
+            header1.Text = "o";
+            header1.Position = new PointF((float)0.55, (float)0.58);
+            header1.TextColor = Color.ParseColor("#424242");
+            header1.TextStyle = Typeface.Create("calibri", TypefaceStyle.Bold);
+            header1.TextSize = 12;
+            gauge.Headers.Add(header1);
+
+            Header header2 = new Header();
+            header2.Text = "F";
+            header2.Position = new PointF((float)0.58, (float)0.6);
+            header2.TextColor = Color.ParseColor("#424242");
+            header2.TextStyle = Typeface.Create("calibri", TypefaceStyle.Bold);
+            header2.TextSize = 20;
+            gauge.Headers.Add(header2);
+
+            GaugeAnnotation annotation = new GaugeAnnotation();
+            ImageView image = new ImageView(this);
+            image.SetImageResource(Resource.Drawable.weather);
+            LinearLayout layout1 = new LinearLayout(this);
+            layout1.LayoutParameters = new LinearLayout.LayoutParams((int)(100 * density), 200);
+            layout1.SetGravity(GravityFlags.Center);
+            layout1.AddView(image);
+            annotation.View = layout1;
+            annotation.Angle = 270;
+            annotation.Offset = 0.2f;
+            gauge.Annotations.Add(annotation);
+            gauge.CircularScales = scales;
+
+{% endhighlight %}
+
+![](annotations_images/image_annotation.PNG)
+
+##  Setting text annotation
+
+You can add any text over the gauge control to enhance the readability. You can add multiple text instances in single control.  
+
+{% highlight c# %}
+
+            SfCircularGauge gauge = new SfCircularGauge(this);
+            gauge.SetBackgroundColor(Color.White);
+
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+
+            CircularScale scale = new CircularScale();
+            scale.StartAngle = 160;
+            scale.SweepAngle = 270;
+            scale.StartValue = 0;
+            scale.EndValue = 15;
+            scale.ShowLabels = false;
+            scale.ShowRim = false;
+            scale.ShowTicks = false;
+            RangePointer range = new RangePointer();
+            range.Color = Color.ParseColor("#0682F6");
+            range.Offset = 0.8;
+            range.Value = 13;
+            range.RangeCap = Com.Syncfusion.Gauges.SfCircularGauge.Enums.RangeCap.Start;
+            range.Width = 30;
+            scale.CircularPointers.Add(range);
+
+            CircularScale scale1 = new CircularScale();
+            scale1.StartAngle = 0;
+            scale1.SweepAngle = 360;
+            scale1.RimColor = Color.ParseColor("#e0e0e0");
+            scale1.RadiusFactor = 0.8;
+            scale1.RimWidth = 30;
+            scale1.ShowTicks = false;
+            scale1.ShowRim = false;
+            scale1.ShowLabels = false;
+            scales.Add(scale1);
+
+            Header header = new Header();
+            header.TextStyle = Typeface.Create("calibri", TypefaceStyle.Bold);
+            header.TextSize = 20;
+            header.Text = "13M";
+            header.Position = new PointF((float)0.5, (float)0.5);
+            header.TextColor = Color.ParseColor("#0682F6");
+            gauge.Headers.Add(header);
+
+            MarkerPointer pointer1 = new MarkerPointer();
+            pointer1.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.Image;
+            pointer1.ImageSource = "shot.jpg";
+            pointer1.MarkerWidth = 60;
+            pointer1.MarkerHeight = 60;
+            pointer1.Value = 0;
+            pointer1.Offset = 0.8;
+            scale.CircularPointers.Add(pointer1);
+
+            MarkerPointer pointer2 = new MarkerPointer();
+            pointer2.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.Circle;
+            pointer2.MarkerWidth = 40;
+            pointer2.MarkerHeight = 40;
+            pointer2.Color = Color.ParseColor("#9e9e9e");
+            pointer2.Value = 13;
+            pointer2.Offset = 0.8;
+            scale.CircularPointers.Add(pointer2);
+            scales.Add(scale);
+            gauge.CircularScales = scales;
+
+{% endhighlight %}
+
+![](annotations_images/text_annotation.PNG)
