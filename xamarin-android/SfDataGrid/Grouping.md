@@ -47,7 +47,7 @@ this.dataGrid.GroupingMode = GroupingMode.Multiple;
 {% endhighlight %}
 
 The following screenshot shows the output rendered when above code is executed:
-![](SfDataGrid_images/MultiColumnGrouping.jpg)
+![](SfDataGrid_images/MultiColumnGrouping.png)
 
 ## Indent column customizations
 
