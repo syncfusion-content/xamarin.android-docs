@@ -514,41 +514,39 @@ schedule.AppointmentStyle = appointmentStyle;
 
 ![](PopulatingAppointments_images/selection.png)
 
-### TimeZone
+## TimeZone
 
 Schedule allows you to create appointments in various time zones, and the appointments to be displayed in the user's time zone and any other time zone. Appointments to be rendered by recalculating Start and End time zone based on give time zone
+Consider the following scenario you are in North Carolina and you want to set up an appointment for 10 am on North Carolina time. You have a colleague in London and another in Chennai that need to participate. The time for this appointment will be 3 pm (15:00) in London and 5.30 am in Chennai. 
+When you each view your calendar you need to see the appointment displayed relative to your local time zone 5.30 am, 10 am, 3 pm respectively
 
-Schedule Has three time zone properties
+If you set an appointment as all day appointment then it's start time and tne times are set default as 12 am to 12 am so there is no need to use time zone for all day appointments
 
-1. TimeZone
-	* Set Schedule to the specific Time zone using 'TimeZone' property of schedule
 
-    {%tabs%}
-    {% highlight c# %}
-    schedule.TimeZone = "GMT Standard Time";
-    {% endhighlight %}
-    {% endtabs %}
-
-2. StartTimeZone
-	* Set Appointmnet start time to the specific timezone using StartTimeZone property of ScheduleAppointment
-	* Use ExactStartTime property of ScheduleAppointment to get the exact appointment start time
+### Schedule TimeZone 
+	Set schedule to a specific time zone by using "TimeZone" Property of schedule by setting schedule to a default time zone schedule takes that time zone as the local time zone and appointment's start time and end time calculated based on schedule time zone
 
     {%tabs%}
     {% highlight c# %}
-    appointment.StartTimeZone = "India Standard Time";
+     schedule.TimeZone = "GMT Standard Time";
     {% endhighlight %}
     {% endtabs %}
 
-3. EndTimeZone
-	* Set Appointment end time to specific timezone using EndTimeZone property of ScheduleAppointment
-	* Use ExactEndTime property of ScheduleAppointment to get the exact appointment end time
+### Appointment's Time Zone
+	Set Appointment to specif time zone using StartTimeZone and EndTimeZone property of the Appointment the appointment's start time and end time calculated based the given time zone infromation for start time and end time, you can give different time zone's for start time and end time property.
+	Use ActualStartTime and ActualEndTime Property to get the exact Local Start Time and End Time of the appointment
 
     {%tabs%}
     {% highlight c# %}
-    appointment.EndTimeZone = "India Standard Time";
+     appointment.StartTimeZone = "India Standard Time";
+	 appointment.EndTimeZone = "India Standard Time";
+	 
+	 Calendar localStartTime = appointmetn.ActualStartTime;
+	 Calendar localEndTime = appointmetn.ActualEndTime;
     {% endhighlight %}
     {% endtabs %}
 
+>**NOTE**
 * If schedule Time zone and Appointment's start time zone and end time zone are not set then the appointment to be render based on the device local time zone
 * If schedule Time zone was set and Appointment's start time zone and end time zone are not set then appointment's start time and end time value to be converted into schedule time zone for device local time zone
 * If schedule Time zone was not set and Appointment's start time zone and end time zone are set the appointment's start time and end time value to be converted into device local time zone for specified time zone
