@@ -586,8 +586,14 @@ The following screenshot shows the outcome upon execution of the above code:
 
 The data grid allows customizing the caption summary by extending the [GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html).
 
+N> By default, `LoadUIView` property of `GridColumn` is `false` for android. Hence, `OnInitializeDisplayView()` will not be called.
+
 {% highlight c#%}
 
+  GridTextColumn orderIdColumn = new GridTextColumn();
+  orderIdColumn.MappingName = "OrderID";
+  orderIdColumn.LoadUIView = true;
+  
 // To remove default summary and Add custom summary.
 
 public class Summary : ContentPage
