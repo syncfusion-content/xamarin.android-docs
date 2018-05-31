@@ -119,6 +119,98 @@ SetContentView(schedule);
 * `MinHeight` has ScheduleAppointmentMapping Support. 
 * All day Appointment does not support `MinHeight`.
 
+## Mapping
+Schedule supports full data binding to any type of IEnumerable source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
+
+| PropertyName | Description |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~StartTime.html) | This property is to map the property name of custom class which is equivalent for StartTime of ScheduleAppointment. |
+| [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~EndTime.html)| This property is to map the property name of custom class which is equivalent for EndTime of ScheduleAppointment. |
+| [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Subject.html) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
+| [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Color.html) | This property is to map the property name of custom class which is equivalent for Color of ScheduleAppointment. |
+| [IsAllDay](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~IsAllDay.html) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
+| [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~RecurrenceRule.html) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
+| [Notes](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Notes.html) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
+| [Location](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Location.html) | This  property is to map the property name of custom class which is  equivalent for Location of ScheduleAppointment. |
+| [MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~MinHeight.html) | This property is to map the property name of custom class which is equivalent for MinHeight of ScheduleAppointment. |
+| [StartTimeZone](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~StartTimeZone.html) | This property is to map the property name of custom class which is equivalent for StartTimeZone of ScheduleAppointment. |
+| [EndTimeZone](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~EndTimeZone.html) | This property is to map the property name of custom class which is equivalent for EndTimeZone of ScheduleAppointment. |
+ 
+>**Note**
+CustomAppointment class should contain two Calendar fields and a string field as mandatory.
+
+### Creating custom Appointments
+You can create custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
+
+{% tabs %}
+{% highlight c# %}
+/// <summary>   
+/// Represents custom data properties.   
+/// </summary> 
+public class Meeting
+{
+	public string EventName { get; set; }
+	public Calendar	 From { get; set; }
+	public Calendar To { get; set; }
+	public int Color { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+>**Note**
+You can inherit this class from INotifyPropertyChanged for dynamic changes in custom data.
+
+You can map those properties of `Meeting` class with our SfSchedule control by using [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-Android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.SfSchedule~AppointmentMapping.html).
+
+{% tabs %}
+{% highlight c# %}
+/// <summary>   
+/// Represents custom data properties.   
+/// </summary> 
+ AppointmentMapping dataMapping = new AppointmentMapping();
+ dataMapping.Subject = "EventName";
+ dataMapping.StartTime = "From";
+ dataMapping.EndTime = "To";
+ dataMapping.Color = "Color";
+ sschedule.AppointmentMapping = dataMapping;
+{% endhighlight %}
+{% endtabs %}
+
+
+You can schedule meetings for a day by setting `From` and `To` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `ItemsSource` property which is of `IEnumerable` type.
+
+Calendar currentDate = Calendar.Instance;
+Calendar startTime = (Calendar)currentDate.Clone();
+Calendar endTime = (Calendar)currentDate.Clone();
+//setting start time for the event
+startTime.Set(currentDate.Get(CalendarField.Year),
+			  currentDate.Get(CalendarField.Month),
+			  currentDate.Get(CalendarField.DayOfMonth),
+			  10, 0, 0);
+//setting end time for the event
+endTime.Set(currentDate.Get(CalendarField.Year),
+			currentDate.Get(CalendarField.Month),
+			currentDate.Get(CalendarField.DayOfMonth),
+			11, 0, 0);
+
+// Creating instance for custom appointment class
+Meeting meeting = new Meeting();
+// Setting start time of an event
+meeting.From = startTime;
+// Setting end time of an event
+meeting.To = endTime;
+// Setting start time for an event
+meeting.EventName = "Anniversary";
+// Setting color for an event
+meeting.Color = Color.Green;
+// Creating instance for collection of custom appointments
+var Meetings = new ObservableCollection<Meeting>();
+// Adding a custom appointment in CustomAppointmentCollection
+Meetings.Add(meeting);
+// Adding custom appointments in DataSource of SfSchedule
+schedule.ItemsSource = Meetings;
+
+
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
