@@ -524,7 +524,7 @@ Schedule Has three time zone properties
 3. EndTimeZone
 
     1. TimeZone
-    * Set Schedule to the specific Time zone using 'TimeZone' property of schedule
+		* Set Schedule to the specific Time zone using 'TimeZone' property of schedule
 
     {%tabs%}
     {% highlight c# %}
@@ -533,8 +533,8 @@ Schedule Has three time zone properties
     {% endtabs %}
 
     2. StartTimeZone
-    * Set Appointmnet start time to the specific timezone using StartTimeZone property of ScheduleAppointment
-    * Use ExactStartTime property of ScheduleAppointment to get the exact appointment start time
+		* Set Appointmnet start time to the specific timezone using StartTimeZone property of ScheduleAppointment
+		* Use ExactStartTime property of ScheduleAppointment to get the exact appointment start time
 
     {%tabs%}
     {% highlight c# %}
@@ -543,8 +543,8 @@ Schedule Has three time zone properties
     {% endtabs %}
 
     3. EndTimeZone
-    * Set Appointment end time to specific timezone using EndTimeZone property of ScheduleAppointment
-    * Use ExactEndTime property of ScheduleAppointment to get the exact appointment end time
+		* Set Appointment end time to specific timezone using EndTimeZone property of ScheduleAppointment
+		* Use ExactEndTime property of ScheduleAppointment to get the exact appointment end time
 
     {%tabs%}
     {% highlight c# %}
