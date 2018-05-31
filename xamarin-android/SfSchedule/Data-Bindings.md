@@ -519,9 +519,6 @@ schedule.AppointmentStyle = appointmentStyle;
 Schedule allows you to create appointments in various time zones, and the appointments to be displayed in the user's time zone and any other time zone. Appointments to be rendered by recalculating Start and End time zone based on give time zone
 
 Schedule Has three time zone properties
-1. ScheduleTimeZone
-2. StartTimeZone
-3. EndTimeZone
 
 1. TimeZone
 	* Set Schedule to the specific Time zone using 'TimeZone' property of schedule
