@@ -66,13 +66,13 @@ Right click the font file and open properties, in that Change the "Build Action"
     
 ![SfImageEditor](ImageEditor_images/AndroidCustomFont2.png)
     
-Finally use the below code snippet to apply custom font family for Xamarin Android.
+Finally use the below code snippet to apply custom font family for Xamarin.Android.
 
 {% tabs %}
 
 {% highlight C# %}
 
-    editor.AddText("New Xefus Text",new TextSettings() { FontFamily=Typeface.CreateFromAsset(this.Assets,"pacifico.ttf")});
+    editor.AddText("New pacifico Text",new TextSettings() { FontFamily=Typeface.CreateFromAsset(this.Assets,"pacifico.ttf")});
 
 {% endhighlight %}
 
