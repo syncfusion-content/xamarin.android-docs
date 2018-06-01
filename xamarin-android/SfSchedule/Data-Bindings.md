@@ -179,6 +179,8 @@ You can map those properties of `Meeting` class with our SfSchedule control by u
 
 You can schedule meetings for a day by setting `From` and `To` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `ItemsSource` property which is of `IEnumerable` type.
 
+{% tabs %}
+{% highlight c# %}
 Calendar currentDate = Calendar.Instance;
 Calendar startTime = (Calendar)currentDate.Clone();
 Calendar endTime = (Calendar)currentDate.Clone();
@@ -209,6 +211,8 @@ var Meetings = new ObservableCollection<Meeting>();
 Meetings.Add(meeting);
 // Adding custom appointments in DataSource of SfSchedule
 schedule.ItemsSource = Meetings;
+{% endhighlight %}
+{% endtabs %}
 
 
 ## Spanned Appointments
