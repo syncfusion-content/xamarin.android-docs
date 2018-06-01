@@ -43,3 +43,39 @@ TextSettings is defined to set the values for `Color` and `FontSize`.
 
 ![SfImageEditor](ImageEditor_images/text.png)
 
+# Custom Font Family
+
+We can able to change the font family of selected text from default font family into custom font family.
+
+   * From Toolbar
+   * Using Code
+
+### From Toolbar
+
+After adding text we can able to change the font family of the selected text from toolbar, Select the desired text and click the font family buttons available in the sub menu.
+   
+Now the font family of the selected text has been changed.
+
+### Using Code
+
+Download the custom fonts file in ttf file format and add these fonts into "Assets" folder in sample project. Refer the below screen shot.
+
+![SfImageEditor](ImageEditor_images/AndroidCustomFont1.png)
+   
+Right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
+    
+![SfImageEditor](ImageEditor_images/AndroidCustomFont2.png)
+    
+Finally use the below code snippet to apply custom font family for Xamarin Android.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.AddText("New Xefus Text",new TextSettings() { FontFamily=Typeface.CreateFromAsset(this.Assets,"pacifico.ttf")});
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfImageEditor](ImageEditor_images/FontFamily.png)
