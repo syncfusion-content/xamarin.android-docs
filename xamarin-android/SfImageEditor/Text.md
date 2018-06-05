@@ -45,17 +45,9 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 # Custom Font Family
 
-After adding text we can able to change the font family of the selected text from toolbar, Select the desired text and click the font family buttons available in the sub menu.
-   
-Now the font family of the selected text has been changed.
+Using a font other than the built-in typefaces is also available in Android. Download the custom fonts file in ttf file format and add these fonts into "Assets" folder in sample project.
 
-Download the custom fonts file in ttf file format and add these fonts into "Assets" folder in sample project.
-   
-Right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
-    
-![SfImageEditor](ImageEditor_images/CustomFont.png)
-    
-Finally use the below code snippet to apply custom font family.
+Use the below code snippet to apply custom fonts.
 
 {% tabs %}
 
@@ -68,3 +60,10 @@ Finally use the below code snippet to apply custom font family.
 {% endtabs %}
 
 ![SfImageEditor](ImageEditor_images/FontFamily.png)
+
+Right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
+    
+![SfImageEditor](ImageEditor_images/CustomFont.png)
+
+
+
