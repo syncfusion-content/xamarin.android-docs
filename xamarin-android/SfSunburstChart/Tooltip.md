@@ -93,11 +93,11 @@ The sunburst chart provides options to design your own template for tooltip usin
             yLabel.Typeface = Typeface.DefaultBold;
 
             LinearLayout layout = new LinearLayout(tooltipContext);           
-            LinearLayout.LayoutParams linearlayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent,
+            LinearLayout.LayoutParams linearLayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent,
             LinearLayout.LayoutParams.MatchParent);
 
             layout.Orientation = Orientation.Vertical;
-            layout.LayoutParameters = linearlayoutParams;
+            layout.LayoutParameters = linearLayoutParams;
 
             layout.AddView(xLabel);
             layout.AddView(yLabel);
