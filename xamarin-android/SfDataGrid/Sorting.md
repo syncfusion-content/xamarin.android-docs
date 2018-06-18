@@ -9,18 +9,18 @@ documentation: UG
 
 # Sorting 
  
-The dataGrid allows sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~AllowSorting.html) property to `true`. It allows sorting the data against one or more columns. When sorting is applied, the data grid automatically rearranges the data to match with the current sort criteria. When the `SfDataGrid.AllowSorting` is `true`, you can sort the data simply by tapping the column header. Once sorting is applied, the data grid shows a sort icon in the respective column header indicating the direction of sorting.
+The dataGrid allows sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~AllowSorting.html) property to `true`. It allows sorting the data against one or more columns. When sorting is applied, the data grid automatically rearranges the data to match with the current sort criteria. When the `SfDataGrid.AllowSorting` is `true`, you can sort the data simply by tapping the column header. Once sorting is applied, the data grid shows a sort icon in the respective column header indicating the direction of sorting.
 
-N> To update sorting for newly added row or column, set the [SfDataGrid.View.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/linq/Syncfusion.Linq.Android~Syncfusion.Data.LiveDataUpdateMode.html) to `LiveDataUpdateMode.AllowDataShaping`.
+N> To update sorting for newly added row or column, set the [SfDataGrid.View.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Linq.Android~Syncfusion.Data.LiveDataUpdateMode.html) to `LiveDataUpdateMode.AllowDataShaping`.
 
 ## Programmatic sorting
 
-The data grid also allows sorting from the code. This requires to manually define the [SortColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortColumnDescription.html) objects and add it in the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortColumnDescriptions.html) collection. The data grid sorts the data based on the `SortColumnDescription` objects added to this collection.
+The data grid also allows sorting from the code. This requires to manually define the [SortColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortColumnDescription.html) objects and add it in the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortColumnDescriptions.html) collection. The data grid sorts the data based on the `SortColumnDescription` objects added to this collection.
 
 `SortColumnDescription` object holds following two properties:
 
-* [ColumnName](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortColumnDescription~ColumnName.html): Defines the name of the sorted column.
-* [SortDirection](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortColumnDescription~SortDirection.html): Defines an object of type ListSortDirection that defines the sorting direction.
+* [ColumnName](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortColumnDescription~ColumnName.html): Defines the name of the sorted column.
+* [SortDirection](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortColumnDescription~SortDirection.html): Defines an object of type ListSortDirection that defines the sorting direction.
 
 The following code example illustrates this:
 
@@ -36,7 +36,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
 
 ## Tri-state sorting
 
-In addition to sort the data in ascending/descending orders, the data grid also allows you to unsort the data in the original order by clicking the header again after sorting to descending order by setting the [SfDataGrid.AllowTriStateSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowTriStateSorting.html) property to `true`. When this property is set, sorting in each column iterates through three sorting states; ascending, descending, and unsorted.
+In addition to sort the data in ascending/descending orders, the data grid also allows you to unsort the data in the original order by clicking the header again after sorting to descending order by setting the [SfDataGrid.AllowTriStateSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowTriStateSorting.html) property to `true`. When this property is set, sorting in each column iterates through three sorting states; ascending, descending, and unsorted.
 
 The following code example shows how to enable tri-state sorting in the data grid:
 
@@ -48,7 +48,7 @@ dataGrid.AllowTriStateSorting = true;
 
 ## Multi-column sorting
 
-The data grid allows sorting the data against more than one columns by setting the [SfDataGrid.AllowMultiSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowMultiSorting.html) property to `true`. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the `AllowMultiSorting` property.
+The data grid allows sorting the data against more than one columns by setting the [SfDataGrid.AllowMultiSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowMultiSorting.html) property to `true`. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the `AllowMultiSorting` property.
 
 The following code example shows how to enable multi-sorting in the data grid:
 
@@ -60,7 +60,7 @@ dataGrid.AllowMultiSorting = true;
 
 ## Sort column by double click
 
-By default, columns are sorted when the column header clicked. You can change this behavior to sort the column in double click action by setting the [SfDataGrid.SortTapAction](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SortTapAction.html) property as [DoubleTap](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortTapAction.html).
+By default, columns are sorted when the column header clicked. You can change this behavior to sort the column in double click action by setting the [SfDataGrid.SortTapAction](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SortTapAction.html) property as [DoubleTap](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortTapAction.html).
 
 The following code example shows how to set `SortTapAction` is `DoubleTap` in the data grid:
 
@@ -77,13 +77,13 @@ The following screenshot shows the sorting functionality in the data grid:
 
 The data grid provides the following events for the sorting functionality:
 
-* [SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortTapAction.html): Raised while sorting the column at execution time before the column gets sorted. It helps to cancel the sorting action by setting the Cancel property of [DataGridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridSortColumnsChangingEventArgs.html).
-* [SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SortColumnsChanged_EV.html): Raised after the column is sorted.
+* [SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SortTapAction.html): Raised while sorting the column at execution time before the column gets sorted. It helps to cancel the sorting action by setting the Cancel property of [DataGridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridSortColumnsChangingEventArgs.html).
+* [SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SortColumnsChanged_EV.html): Raised after the column is sorted.
 
-These two events are triggered with `DataGridSortColumnsChangingEventArgs` and [DataGridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridSortColumnsChangedEventArgs.html) that contain the following properties:
+These two events are triggered with `DataGridSortColumnsChangingEventArgs` and [DataGridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridSortColumnsChangedEventArgs.html) that contain the following properties:
 
-* [AddedItems](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridSortColumnsChangingEventArgs~AddedItems.html): Gets the collection of `SortColumnDescription` objects added to `SortColumnDescriptions` collection for Sorting.
-* [RemovedItems](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridSortColumnsChangingEventArgs~RemovedItems.html): Gets the collection of `SortColumnDescription` objects removed from `SortColumnDescriptions` collection.
+* [AddedItems](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridSortColumnsChangingEventArgs~AddedItems.html): Gets the collection of `SortColumnDescription` objects added to `SortColumnDescriptions` collection for Sorting.
+* [RemovedItems](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridSortColumnsChangingEventArgs~RemovedItems.html): Gets the collection of `SortColumnDescription` objects removed from `SortColumnDescriptions` collection.
 
 The following code example illustrates how to hook the `SortColumnsChanging` event and cancel the sorting of a column:
 
@@ -104,7 +104,7 @@ void DataGrid_SortColumnsChanging (object sender, DataGridSortColumnsChangin
 
 ## Custom sorting
 
-The data grid allows sorting the columns based on custom logic when the standard sorting techniques do not meet the requirements. For each column, you can apply different sorting criteria by adding SortComparer objects to [SfDataGrid.SortComparers](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SortComparers.html) collection.
+The data grid allows sorting the columns based on custom logic when the standard sorting techniques do not meet the requirements. For each column, you can apply different sorting criteria by adding SortComparer objects to [SfDataGrid.SortComparers](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SortComparers.html) collection.
 
 A SortComparer object has the following properties:
 
@@ -198,7 +198,7 @@ public class CustomStyle : DataGridStyle
 
 ## How to disable sorting for an individual column
 
-The data grid allows disabling sorting for an individual column by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~AllowSorting.html) property. The default value of this property is `true`. Hence, all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection can be sorted when `SfDataGrid.AllowSorting` is set to `true`.
+The data grid allows disabling sorting for an individual column by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~AllowSorting.html) property. The default value of this property is `true`. Hence, all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection can be sorted when `SfDataGrid.AllowSorting` is set to `true`.
 
 The following code example illustrate how to disable sorting for an individual column:
 

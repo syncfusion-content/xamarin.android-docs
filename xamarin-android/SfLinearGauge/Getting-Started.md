@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control.
+This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control.
 
 **Adding namespace for the added assemblies**
 
@@ -21,7 +21,7 @@ This section explains the steps required to configure a [`SfLinearGauge`](https:
 
 ## Initialize gauge
 
-You can initialize the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control with a required optimal name by using the included namespace.
+You can initialize the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control with a required optimal name by using the included namespace.
 
 {% highlight c# %}
 
@@ -36,7 +36,7 @@ You can initialize the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_fil
 
 ## Adding header
 
-You can assign a unique header to [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) by using the [`LinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel.html) property and position it wherever as you desired by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~Offset.html) property.
+You can assign a unique header to [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) by using the [`LinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel.html) property and position it wherever as you desired by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~Offset.html) property.
 
 {% highlight c# %}
 
@@ -54,9 +54,9 @@ You can assign a unique header to [`SfLinearGauge`](https://help.syncfusion.com/
 
 ## Configuring scales
 
-Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html), which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub elements of a scale. 
+Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html), which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub elements of a scale. 
 
-The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Maximum.html) properties allow you to set the scale range.
+The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Maximum.html) properties allow you to set the scale range.
 
 {% highlight c# %}
 
@@ -75,7 +75,7 @@ The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgaug
 
 ## Adding a symbol pointer
 
-[`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) is a shape that can be placed to mark the pointer value in gauge.
+[`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) is a shape that can be placed to mark the pointer value in gauge.
 
 {% highlight c# %}
 
@@ -89,7 +89,7 @@ The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgaug
 
 ## Adding a bar pointer
 
-[`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
+[`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
 
 {% highlight C# %}
 
@@ -102,7 +102,7 @@ The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgaug
 
 ## Adding ranges
 
-You can categorize the scale values using the start and end values properties in [`LinearRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearRange.html). You can add multiple ranges for a scale using the `ranges` property.
+You can categorize the scale values using the start and end values properties in [`LinearRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearRange.html). You can add multiple ranges for a scale using the `ranges` property.
 
 {% highlight c# %}    
 	
