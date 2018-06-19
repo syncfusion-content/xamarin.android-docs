@@ -9,7 +9,7 @@ documentation: ug
 
 # Unbound Column
 
-The dataGrid adds additional columns which are not bound with data object from the underlying data source. Add unbound column using [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumn.html) class.
+The dataGrid adds additional columns which are not bound with data object from the underlying data source. Add unbound column using [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumn.html) class.
 
 {% highlight c# %}
 SfDataGrid dataGrid = new SfDataGrid(context);
@@ -38,15 +38,15 @@ dataGrid.Columns.Add(TotalColumn);
 
 ![](SfDataGrid_images/UnboundColumn.png)
 
-N> It is mandatory to specify the [GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~MappingName.html) for `SfDataGrid.GridUnboundColumn` with some name to identify the column. It is not necessary to define the name of the field in the data object.
+N> It is mandatory to specify the [GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~MappingName.html) for `SfDataGrid.GridUnboundColumn` with some name to identify the column. It is not necessary to define the name of the field in the data object.
 
 ## Populating data for unbound column
 
-You can populate the data for unbound column by setting [Expression](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumn~Expression.html) or [Format](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Format.html) property.
+You can populate the data for unbound column by setting [Expression](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumn~Expression.html) or [Format](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Format.html) property.
 
 ### Using Expression
 
-Specifies the arithmetic or logic expression using `Expression` property to compute the display value. By default, `GridUnboundColumn` evaluates the expression with casing. Disable the casing while evaluate the expression by setting the [CaseSensitive](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumn~CaseSensitive.html) property to `false`.
+Specifies the arithmetic or logic expression using `Expression` property to compute the display value. By default, `GridUnboundColumn` evaluates the expression with casing. Disable the casing while evaluate the expression by setting the [CaseSensitive](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumn~CaseSensitive.html) property to `false`.
 
 Following list of arithmetic and logical operations supported:
 
@@ -217,15 +217,15 @@ dataGrid.Columns.Add(TotalColumn);
 
 ### Using QueryUnboundColumnValue event
 
-The [QueryUnboundColumnValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryUnboundColumnValue_EV.html) event is fired when value for the unbound column is queried. It provides information about the cell triggered this event so, you can set the desired value for the grid cells of the unbound column. This event is triggered with [GridUnboundColumnEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs.html).
+The [QueryUnboundColumnValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryUnboundColumnValue_EV.html) event is fired when value for the unbound column is queried. It provides information about the cell triggered this event so, you can set the desired value for the grid cells of the unbound column. This event is triggered with [GridUnboundColumnEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs.html).
 
 The `GridUnboundColumnEventsArgs` provides the following properties:
 
-* [Column](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Column.html): Gets the `GridColumn` of the cell that triggers this event.  
-* [OriginalSender](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridEventArgs~OriginalSender.html): Gets the data grid raising this event.
-* [Record](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Record.html): Gets the underlying row data. 
-* [UnboundAction](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~UnboundAction.html): Defines the action for triggering this event.
-* [Value](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Value.html): Gets or sets the value for `GridUnboundColumn` cell based on `UnboundAction`.
+* [Column](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Column.html): Gets the `GridColumn` of the cell that triggers this event.  
+* [OriginalSender](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridEventArgs~OriginalSender.html): Gets the data grid raising this event.
+* [Record](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Record.html): Gets the underlying row data. 
+* [UnboundAction](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~UnboundAction.html): Defines the action for triggering this event.
+* [Value](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Value.html): Gets or sets the value for `GridUnboundColumn` cell based on `UnboundAction`.
 
 N> `UnboundActions.CommitData` and `UnboundActions.PasteData` are currently not supported and likely to be supported in future.    
 

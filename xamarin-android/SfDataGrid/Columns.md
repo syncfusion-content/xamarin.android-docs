@@ -16,7 +16,7 @@ The SfDataGrid allows you to create and add columns in two ways:
 
 ## Automatic columns generation
 
-The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html).Columns are generated based on type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn.html) is added for int type property. Below table shows the column type created for the respective data type. For remaining types, [GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTextColumn.html) will be created. 
+The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html).Columns are generated based on type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn.html) is added for int type property. Below table shows the column type created for the respective data type. For remaining types, [GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTextColumn.html) will be created. 
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ You can refer the sample from [here](http://www.syncfusion.com/downloads/support
 
 ### AutoGenerateColumns with different modes
 
-The auto generation of the columns in SfDataGrid is based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumnsMode.html) property. 
+The auto generation of the columns in SfDataGrid is based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumnsMode.html) property. 
 
 The `SfDataGrid.AutoGenerateColumnsMode` decides a way to create columns when the `SfDataGrid.AutoGenerateColumns` is set to `true`. It also decides to retain the grouping and sorting when the ItemsSource is changed. 
 
@@ -65,39 +65,39 @@ The `SfDataGrid.AutoGenerateColumnsMode` is of type `AutoGenerateColumnsMode` wh
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[None](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }} </td>
+<td> {{'[None](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }} </td>
 <td> Stores only the columns defined in the SfDataGrid.Columns collection.<br/> When changing the ItemsSource, the grouping and sorting for explicitly defined SfDataGrid.Columns alone will be retained. </td>
 </tr>
 <tr>
-<td> {{'[Reset](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }}</td>
+<td> {{'[Reset](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }}</td>
 <td> Retains the columns defined explicitly in the application level and creates columns newly for all the other properties in a data source.<br/> When changing the ItemsSource, the grouping and sorting for explicitly defined SfDataGrid.Columns alone will be retained. </td>
 </tr>
 <tr>
-<td> {{'[ResetAll](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }} </td>
+<td> {{'[ResetAll](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }} </td>
 <td> When changing the ItemsSource, the columns for the previous data source are cleared and the columns will be created newly for the new data source. Even when columns are explicitly defined it does not consider the defined columns and creates the column based on the underlying collection.<br/> Further, when changing the ItemsSource, the grouping and sorting for all the columns will be cleared. </td>
 </tr>
 <tr>
-<td> {{'[RetainOld](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }}  </td>
+<td> {{'[RetainOld](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }}  </td>
 <td> When changing the ItemsSource, creates columns for all fields in a data source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, the defined columns alone are retained and new columns are not created.<br/> Similarly, when changing the ItemsSource and when the grid have any explicit definition for columns, the grouping and sorting are retained as it is. </td>
 </tr>
 <tr>
-<td> {{'[SmartReset](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }} </td>
+<td> {{'[SmartReset](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGenerateColumnsMode.html)'| markdownify }} </td>
 <td> Retains the columns defined explicitly in the application level and the columns with MappingName identical to the properties in the new data source. Creates columns newly for all the other properties in the data source.<br/> Similarly, it retains the grouping and sorting of the columns that are defined explicitly in application level and the columns with MappingName identical to the properties in the new data source. </td>
 </tr>
 </table>
 
 The default value of `SfDataGrid.AutoGenerateColumns` property is `true` and `SfDataGrid.AutoGenerateColumnsMode` is `Reset`. Hence by default, the SfDataGrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its `ItemsSource` property.
 
-N> When changing the items source for the SfDataGrid ar runtime, the columns are generated on the basis of option set for `SfDataGrid.AutoGenerateColumnsMode`.
+N> When changing the items source for the SfDataGrid at runtime, the columns are generated on the basis of option set for `SfDataGrid.AutoGenerateColumnsMode`.
 
 ### Customize auto generated columns
 
-When the `SfDataGrid.AutoGenerateColumns` is `true`, the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each GridColumn. This event receives two arguments namely, sender that is SfDataGrid and [AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs.html).
+When the `SfDataGrid.AutoGenerateColumns` is `true`, the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each GridColumn. This event receives two arguments namely, sender that is SfDataGrid and [AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs.html).
 
 The `AutoGeneratingColumnArgs` object contains the following properties.
 
-* [Column](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs~Column.html): This property returns the created column using which can be customized.
-* [Cancel](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs_members.html#): This property cancels the column creation.
+* [Column](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs~Column.html): This property returns the created column using which can be customized.
+* [Cancel](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs_members.html#): This property cancels the column creation.
 * PropertyType: This property provides the type of underlying model property for which the column is created.
 
 You can skip generating a column by handling the `SfDataGrid.AutoGeneratingColumn` event as follows.
@@ -152,7 +152,7 @@ You can also customize the header text, sorting, alignment, padding, etc. of a c
 
 ## Manually generating columns
 
-The SfDataGrid also allows defining the columns manually by adding the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs_members.html) objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection. In case, if you want only the manually defined columns to be in view, set the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html) property to `false`. There are different types of columns available in the SfDataGrid and you can create any column through code.
+The SfDataGrid also allows defining the columns manually by adding the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs_members.html) objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection. In case, if you want only the manually defined columns to be in view, set the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html) property to `false`. There are different types of columns available in the SfDataGrid and you can create any column through code.
  
 The following code example illustrates about creating columns manually in the SfDataGrid.
 
@@ -182,7 +182,7 @@ dataGrid.Columns.Add (countryColumn);
 
 ## Resizing columns
 
-The SfDataGrid allows resizing the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting the [SfDataGrid.AllowResizingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowResizingColumn.html) property. A resizing indicator is displayed while resizing a column.
+The SfDataGrid allows resizing the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting the [SfDataGrid.AllowResizingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowResizingColumn.html) property. A resizing indicator is displayed while resizing a column.
 
 N> Resizing considers 'GridColumn.MinimumWidth' and 'GridColumn.MaximumWidth' of the column and will not resize the minimum and maximum width constraints.
 
@@ -203,8 +203,8 @@ You can interactively hide a column by setting the `GridColumn.MinimumWidth` pro
 
 The SfDataGrid allows two modes of resizing set by using the 'SfDataGrid.ResizingMode' property. 
 
-* [OnMoved](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ResizingMode.html): The resizing indicator is moved based on the touch point and the width of the column is updated as the resizing indicator moves.
-* [OnTouchUp](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ResizingMode.html): The resizing indicator is moved based on the touch point. However, the width of the column is updated only on a touch up operation.
+* [OnMoved](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ResizingMode.html): The resizing indicator is moved based on the touch point and the width of the column is updated as the resizing indicator moves.
+* [OnTouchUp](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ResizingMode.html): The resizing indicator is moved based on the touch point. However, the width of the column is updated only on a touch up operation.
 
 N> The default resizing mode is OnMoved.
 
@@ -218,13 +218,13 @@ The following image shows the resizing mode OnTouchUp.
 
 ### Resizing events
 
-The resizing operation can be handled using the [SfDataGrid.ColumnResizing](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ColumnResizing_EV.html) event. The `SfDataGrid.ColumnResizing` event is fired upon resizing a column and will be continuously fired till the resizing operation ends. By handling the `SfDataGrid.ColumnResizing` event, you can also cancel the resizing of a particular column.
+The resizing operation can be handled using the [SfDataGrid.ColumnResizing](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ColumnResizing_EV.html) event. The `SfDataGrid.ColumnResizing` event is fired upon resizing a column and will be continuously fired till the resizing operation ends. By handling the `SfDataGrid.ColumnResizing` event, you can also cancel the resizing of a particular column.
 
-The `SfDataGrid.ColumnResizing` event provides the following properties through [GridResizingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridResizingEventArgs.html).
+The `SfDataGrid.ColumnResizing` event provides the following properties through [GridResizingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridResizingEventArgs.html).
 
-* [Index](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridResizingEventArgs~Index.html): Returns the index of the resizing column.
-* [NewValue](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridResizingEventArgs~Index.html): Returns the current width of the resizing column.
-* [ResizingState](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridResizingEventArgs~ResizingState.html): Returns the current state of the user-interaction through a value from the ProgressStates enum.
+* [Index](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridResizingEventArgs~Index.html): Returns the index of the resizing column.
+* [NewValue](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridResizingEventArgs~Index.html): Returns the current width of the resizing column.
+* [ResizingState](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridResizingEventArgs~ResizingState.html): Returns the current state of the user-interaction through a value from the ProgressStates enum.
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Returns the Boolean property to cancel the event and the resizing operation. 
 
 ### Cancel resizing for a column
