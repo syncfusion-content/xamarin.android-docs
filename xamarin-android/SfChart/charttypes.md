@@ -1153,6 +1153,10 @@ PieSeries pieSeries = new PieSeries()
 
 ![](charttypes_images/charttypes_img26.png)
 
+## Group small data points into “others”
+
+The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`]() and [`GroupMode`]() properties of PieSeries. The [`GroupMode`]() property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`]() property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`]() property is [`double.NAN`], and [`GroupMode']() property is Value.
+
 ## Doughnut Chart
 
 To render a doughnut chart, create an instance of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the doughnut segment appearance.
@@ -1275,6 +1279,10 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 {% endhighlight %}
 
 ![](charttypes_images/charttypes_img32.png)
+
+## Group small data points into “others”
+
+The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`]() and [`GroupMode`]() properties of DoughnutSeries. The [`GroupMode`]() property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`]() property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`]() property is [`double.NAN`], and [`GroupMode']() property is Value.
 
 ## Pyramid Chart
 
