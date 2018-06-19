@@ -11,11 +11,11 @@ documentation: ug
 
 # Scales
 
-Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html), which integrates labels, tick marks, ranges, and pointers to customize the basic look and feel of the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html).
+Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html), which integrates labels, tick marks, ranges, and pointers to customize the basic look and feel of the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html).
 
 ## Linear scale
 
-[`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html) contains sub elements such as ticks, labels, [`Ranges`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Ranges.html), and [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Pointers.html). 
+[`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html) contains sub elements such as ticks, labels, [`Ranges`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Ranges.html), and [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Pointers.html). 
 
 {% highlight c# %}
 
@@ -39,7 +39,7 @@ Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_fi
 
 ## Setting minimum and maximum values for scale
 
-To change minimum and maximum values of linear scale, use the [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Maximum.html) properties as shown in the following code snippet.
+To change minimum and maximum values of linear scale, use the [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Maximum.html) properties as shown in the following code snippet.
 
 {% highlight c# %}
 
@@ -65,7 +65,7 @@ To change minimum and maximum values of linear scale, use the [`Minimum`](https:
 
 ## Setting interval for scale
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Interval.html) property allows  you to set the intervals for scale. The default [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Interval.html) property of scale is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
+The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Interval.html) property allows  you to set the intervals for scale. The default [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Interval.html) property of scale is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
 
 {% highlight c# %}
 
@@ -92,7 +92,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgau
 
 ## Setting maximum labels
 
-The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~MaximumLabels.html) property defines the count of the scale labels in the 100 pixels. By default, the maximum labels for 100 pixels is 3.
+The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~MaximumLabels.html) property defines the count of the scale labels in the 100 pixels. By default, the maximum labels for 100 pixels is 3.
 
 {% highlight c# %}
 
@@ -118,7 +118,7 @@ The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/
 
 ## Scale customization
 
-You can customize the color, length, size, and position of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html) by using the [`ScaleBarColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ScaleBarColor.html), [`ScaleBarLength`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ScaleBarLength.html), [`ScaleBarSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ScaleBarSize.html), and [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Offset.html) properties, respectively.
+You can customize the color, length, size, and position of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html) by using the [`ScaleBarColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ScaleBarColor.html), [`ScaleBarLength`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ScaleBarLength.html), [`ScaleBarSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ScaleBarSize.html), and [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Offset.html) properties, respectively.
 
 {% highlight c# %}
 
@@ -147,7 +147,7 @@ You can customize the color, length, size, and position of the [`LinearScale`](h
 
 ## Setting opposite position
 
-To place the scale at opposite to its original position, set the [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~OpposedPosition.html) property to true in the scale.
+To place the scale at opposite to its original position, set the [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~OpposedPosition.html) property to true in the scale.
 
 {% highlight c# %}
 
@@ -173,7 +173,7 @@ To place the scale at opposite to its original position, set the [`OpposedPositi
 
 ## Setting scale direction
 
-You can set the scale position to its forward and backward using the [`ScaleDirection`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ScaleDirection.html) property.
+You can set the scale position to its forward and backward using the [`ScaleDirection`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ScaleDirection.html) property.
 
 {% highlight c# %}
 
@@ -199,8 +199,8 @@ You can set the scale position to its forward and backward using the [`ScaleDire
 
 ## Setting corner radius type for scale
 
-Corners of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html) can be customized by setting the value to the [`CornerRadiusType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~CornerRadiusType.html) property. All corners of linear scale can be customized using the `Start`, `End`, `Both`, and `None` options.
- [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~CornerRadius.html) property used to reduce the radius of the corners.
+Corners of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html) can be customized by setting the value to the [`CornerRadiusType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~CornerRadiusType.html) property. All corners of linear scale can be customized using the `Start`, `End`, `Both`, and `None` options.
+ [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~CornerRadius.html) property used to reduce the radius of the corners.
 
 {% highlight c# %}
 
@@ -227,7 +227,7 @@ Corners of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 ## Multiple scales 
 
-It helps you to add multiple scales to the same linear gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge~Scales.html) collection.
+It helps you to add multiple scales to the same linear gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge~Scales.html) collection.
 
 {% highlight c# %}
 
@@ -298,7 +298,7 @@ It helps you to add multiple scales to the same linear gauge and customize all t
 
 ## Setting gradient color for scale
 
-You can give smooth color transition to scale to specifying the different colors based on scale value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~GradientStops.html) property.
+You can give smooth color transition to scale to specifying the different colors based on scale value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~GradientStops.html) property.
 
 {% highlight c# %}
 
