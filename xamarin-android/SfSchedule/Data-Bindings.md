@@ -12,7 +12,7 @@ documentation: ug
 
 # Appointments
 
-[ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Color.html), [Notes](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Location.html), [All Day](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~IsAllDay.html), [Recurring properties](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceProperties.html).
+[ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Color.html), [Notes](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~Location.html), [All Day](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~IsAllDay.html), [Recurring properties](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceProperties.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -62,7 +62,7 @@ SetContentView(schedule);
 
 ## Minimum Appointment Height
 
-[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
 
 {% tabs %}
 {% highlight c# %}
@@ -120,21 +120,21 @@ SetContentView(schedule);
 * All day Appointment does not support `MinHeight`.
 
 ## Mapping
-Schedule supports full data binding to any type of IEnumerable source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
+Schedule supports full data binding to any type of IEnumerable source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
 | PropertyName | Description |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~StartTime.html) | This property is to map the property name of custom class which is equivalent for StartTime of ScheduleAppointment. |
-| [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~EndTime.html)| This property is to map the property name of custom class which is equivalent for EndTime of ScheduleAppointment. |
-| [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Subject.html) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
-| [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Color.html) | This property is to map the property name of custom class which is equivalent for Color of ScheduleAppointment. |
-| [IsAllDay](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~IsAllDay.html) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
-| [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~RecurrenceRule.html) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
-| [Notes](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Notes.html) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
-| [Location](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Location.html) | This  property is to map the property name of custom class which is  equivalent for Location of ScheduleAppointment. |
-| [MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~MinHeight.html) | This property is to map the property name of custom class which is equivalent for MinHeight of ScheduleAppointment. |
-| [StartTimeZone](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~StartTimeZone.html) | This property is to map the property name of custom class which is equivalent for StartTimeZone of ScheduleAppointment. |
-| [EndTimeZone](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~EndTimeZone.html) | This property is to map the property name of custom class which is equivalent for EndTimeZone of ScheduleAppointment. |
+| [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~StartTime.html) | This property is to map the property name of custom class which is equivalent for StartTime of ScheduleAppointment. |
+| [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~EndTime.html)| This property is to map the property name of custom class which is equivalent for EndTime of ScheduleAppointment. |
+| [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Subject.html) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
+| [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Color.html) | This property is to map the property name of custom class which is equivalent for Color of ScheduleAppointment. |
+| [IsAllDay](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~IsAllDay.html) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
+| [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~RecurrenceRule.html) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
+| [Notes](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Notes.html) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
+| [Location](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Location.html) | This  property is to map the property name of custom class which is  equivalent for Location of ScheduleAppointment. |
+| [MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~MinHeight.html) | This property is to map the property name of custom class which is equivalent for MinHeight of ScheduleAppointment. |
+| [StartTimeZone](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~StartTimeZone.html) | This property is to map the property name of custom class which is equivalent for StartTimeZone of ScheduleAppointment. |
+| [EndTimeZone](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~EndTimeZone.html) | This property is to map the property name of custom class which is equivalent for EndTimeZone of ScheduleAppointment. |
  
 >**Note**
 CustomAppointment class should contain two Calendar fields and a string field as mandatory.
@@ -160,7 +160,7 @@ public class Meeting
 >**Note**
 You can inherit this class from INotifyPropertyChanged for dynamic changes in custom data.
 
-You can map those properties of `Meeting` class with our SfSchedule control by using [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-Android/sfschedule/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.SfSchedule~AppointmentMapping.html).
+You can map those properties of `Meeting` class with our SfSchedule control by using [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.SfSchedule~AppointmentMapping.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -333,32 +333,32 @@ The `RecurrenceRule` is a string value, that contains the details of the recurre
 | BYSETPOS | This property is used to store the index value of the week. For example, when you create the monthly appointment in second week of the month, the index value of the second week (2) is stored in BYSETPOS. Example: FREQ=MONTHLY;BYDAY=MO;BYSETPOS=2;UNTIL=8/11/2014 |
 
 ### Recurrence Pattern
-Recurrence pattern used in the control are in iCal standard. Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties.html).
+Recurrence pattern used in the control are in iCal standard. Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties.html).
 
 | RecurrenceType | RecurrenceProperties | Description                                                                                 |
 |----------------|----------------------|---------------------------------------------------------------------------------------------|
-| Daily | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Interval.html)    | Gets or sets the day interval on which recurrence has to be set.|
-|  | [IsDailyEveryNDays](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~IsDailyEveryNDays.html) | Checks whether the event occurs Daily Every N days.                                         |
-| Weekly  | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Interval.html)  | Gets or sets the day interval on which recurrence has to be set.|
-|                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfWeek.html) | Gets or sets the day of week on which recurrence has to be set.|
-|                | [WeekDays](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~WeekDays.html)  | Gets or sets the day/days in a week on which recurrence has to be set.|
-|				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Week.html) | Gets or sets the week of month on which recurrence has to be set.|
-| Monthly        | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Interval.html) | Gets or sets the day interval on which  recurrence has to be set.|
-|                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfWeek.html)  | Gets or sets the day of week on which  recurrence has to be set.|
-|				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Week.html) | Gets or sets the week of month on which recurrence has to be set.|
-|                | [DayOfMonth](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfMonth.html) | Gets or sets the day on which recurrence has to be set for every month.|
-|				 | [IsMonthlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~IsMonthlySpecific.html) | Checks whether the event is Monthly specific event.|
-| Yearly         | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Interval.html) | Gets or sets the day interval on which recurrence has to be set.|
-|                | [DayOfMonth](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfMonth.html) | Gets or sets the day on which recurrence has to be set for every month.|
-|                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfWeek.html) | Gets or sets the day of week on which  recurrence has to be set.|
-|				 | [Month](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Month.html)				| Gets or sets the specific month of year on which recurrence has to be set.|
-|				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Week.html) | Gets or sets the week of month on which recurrence has to be set.|
-|				 | [IsYearlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~IsYearlySpecific.html) | Checks whether the event is Yearly Specific.|
-| Common         | [RecurrenceRange](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~RecurrenceRange.html) | Gets or sets the type of the recurrence range for the time limit of recurrence appointment. |
-|                | [RecurrenceCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~RecurrenceCount.html) | Gets or sets the count for recurring appointment.|
-|                | [StartDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~StartDate.html) | Gets or sets the date to start the recurrence appointment.|
-|                | [EndDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~EndDate.html) | Gets or sets the date to end the recurrence appointment.|
-| 				 | [IsSpecific](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~IsSpecific.html) | Checks whether the event occurs in specific recurrence type.|
+| Daily | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Interval.html)    | Gets or sets the day interval on which recurrence has to be set.|
+|  | [IsDailyEveryNDays](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~IsDailyEveryNDays.html) | Checks whether the event occurs Daily Every N days.                                         |
+| Weekly  | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Interval.html)  | Gets or sets the day interval on which recurrence has to be set.|
+|                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfWeek.html) | Gets or sets the day of week on which recurrence has to be set.|
+|                | [WeekDays](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~WeekDays.html)  | Gets or sets the day/days in a week on which recurrence has to be set.|
+|				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Week.html) | Gets or sets the week of month on which recurrence has to be set.|
+| Monthly        | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Interval.html) | Gets or sets the day interval on which  recurrence has to be set.|
+|                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfWeek.html)  | Gets or sets the day of week on which  recurrence has to be set.|
+|				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Week.html) | Gets or sets the week of month on which recurrence has to be set.|
+|                | [DayOfMonth](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfMonth.html) | Gets or sets the day on which recurrence has to be set for every month.|
+|				 | [IsMonthlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~IsMonthlySpecific.html) | Checks whether the event is Monthly specific event.|
+| Yearly         | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Interval.html) | Gets or sets the day interval on which recurrence has to be set.|
+|                | [DayOfMonth](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfMonth.html) | Gets or sets the day on which recurrence has to be set for every month.|
+|                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~DayOfWeek.html) | Gets or sets the day of week on which  recurrence has to be set.|
+|				 | [Month](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Month.html)				| Gets or sets the specific month of year on which recurrence has to be set.|
+|				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~Week.html) | Gets or sets the week of month on which recurrence has to be set.|
+|				 | [IsYearlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~IsYearlySpecific.html) | Checks whether the event is Yearly Specific.|
+| Common         | [RecurrenceRange](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~RecurrenceRange.html) | Gets or sets the type of the recurrence range for the time limit of recurrence appointment. |
+|                | [RecurrenceCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~RecurrenceCount.html) | Gets or sets the count for recurring appointment.|
+|                | [StartDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~StartDate.html) | Gets or sets the date to start the recurrence appointment.|
+|                | [EndDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~EndDate.html) | Gets or sets the date to end the recurrence appointment.|
+| 				 | [IsSpecific](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.RecurrenceProperties~IsSpecific.html) | Checks whether the event occurs in specific recurrence type.|
 
 Find the following `RecurrenceRule` possibilities available in the Schedule control while creating the recurrence appointment.
 
@@ -389,7 +389,7 @@ N> `SfSchedule` does not support Editing and Deleting of Recurring appointment's
 
 
 ### Adding Recurrence Appointment using Recurrence Builder
-Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceRule.html) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
+Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceRule.html) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
 
 {% tabs %}
 {% highlight c# %}
@@ -428,15 +428,240 @@ schedule.Appointments = scheduleAppointmentCollection;
 
 ![](PopulatingAppointments_images/recurrence.png)
 
+## Drag and Drop Appointments
+Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AllowAppointmentDrag.html) property of `SfSchedule`.
+
+{% tabs %}
+{% highlight c# %}
+schedule.AllowAppointmentDrag = true;
+{% endhighlight %}
+{% endtabs %}
+
+![](PopulatingAppointments_images/draganddrop.gif)
+
+### Handle dragging based on the appointment
+Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragStarting_EV.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragStartingEventArgs.html) argument contains the following properties.
+
+[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragStartingEventArgs~Appointment.html) - Gets the dragged appointment details.
+[Cancel](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragStartingEventArgs~Cancel.html) - Appointment dragging can be handled (enable/disable) using this boolean property.
+
+{% tabs %}
+{% highlight c# %}
+schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
+
+...
+
+private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
+{
+var appointment = e.Appointment;
+e.Cancel = false;
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Disabling dragging when the appointment is AllDay appointment
+Using `Cancel` property in the `AppointmentDragStartingEventArgs` argument of Schedule `AppointmentDragStarting` event, you can enable/disable the appointment dragging based on the requirement. In the below, we have disabled the appointment dragging when the appointment is AllDay appointment.
+
+{% tabs %}
+{% highlight c# %}
+schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
+
+...
+
+private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
+{
+var appointment = e.Appointment as ScheduleAppointment;
+
+if (appointment.IsAllDay)
+{
+e.Cancel = true;
+}
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Get the dragging appointment position
+Using [AppointmentDragOver](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragOver_EV.html) event, you can get the dragging appointment details, position and time of the particular location. The event will be continuously triggered when the appointment is being dragged. The [AppointmentDragEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragEventArgs.html) argument contains the following properties.
+
+[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragEventArgs~Appointment.html) - Gets the dragging appointment details.
+[DraggingPoint](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragEventArgs~DraggingPoint.html) - Gets the dragging point (X, Y) of the appointment in Schedule.
+[DraggingTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragEventArgs~DraggingTime.html) - Gets the dragging time of the appointment in Schedule
+
+{% tabs %}
+{% highlight c# %}
+schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
+
+...
+
+private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
+{
+var appointment = e.Appointment;
+var draggingPoint = e.DraggingPoint;
+var draggingTime = e.DraggingTime;
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Displaying alert while dragging appointment over the blocked time slots
+Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below, we have indicated the message while dragging over the Schedule `NonAccessibleBlock`.
+
+{% tabs %}
+{% highlight c# %}
+schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
+
+...
+
+private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
+{
+//// Comparing the NonAccessibleBlock Start hour with the dragging time
+NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSDateComponents draggingTime = calendar.Components(NSCalendarUnit.Year |
+NSCalendarUnit.Month |
+NSCalendarUnit.Day |
+NSCalendarUnit.Hour |
+NSCalendarUnit.Minute |
+NSCalendarUnit.Second, e.DraggingTime);
+if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == draggingTime.Hour
+|| schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour - 1 == draggingTime.Hour && draggingTime.Hour > 0)
+{
+label.Text = "Cannot be moved to blocked time slots";
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Handle appointment dropping
+Using [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDrop_EV.html) event you can get the dropping appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDropEventArgs.html) argument contains the following properties.
+
+[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.Appointment.html) - Gets the details of the appointment to be dropped.
+[Cancel](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDropEventArgs~Cancel.html) - Appointment dropping can be handled (enable / disable) using this Boolean property.
+[DropTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDropEventArgs~DropTime.html) - Gets the dropped time of the appointment in Schedule
+
+{% tabs %}
+{% highlight c# %}
+schedule.AppointmentDrop += Schedule_AppointmentDrop;
+
+...
+
+private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
+{
+var appointment = e.Appointment;
+e.Cancel = false;
+var dropTime = e.DropTime;
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Disabling dropping when dropping appointment within the Non-Accessible region
+Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below, we have disabled the appointment dropping while dropping in the Non-Accessible block region.
+
+{% tabs %}
+{% highlight c# %}
+schedule.AppointmentDrop += Schedule_AppointmentDrop;
+
+...
+
+private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
+{
+//// Comparing the NonAccessibleBlock Start hour with the dragging time
+NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSDateComponents dropTime = calendar.Components(NSCalendarUnit.Year |
+NSCalendarUnit.Month |
+NSCalendarUnit.Day |
+NSCalendarUnit.Hour |
+NSCalendarUnit.Minute |
+NSCalendarUnit.Second, e.DropTime);
+if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == dropTime.Hour
+|| schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour - 1 == dropTime.Hour && dropTime.Hour > 0)
+{
+e.Cancel = true;
+}
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing the Drag and Drop environment
+Using [DragDropSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings.html) property of schedule, you can handle the behavior of drag and drop in Schedule.
+
+{% tabs %}
+{% highlight c# %}
+DragDropSettings dragDropSettings = new DragDropSettings();
+dragDropSettings.AllowNavigate = true;
+dragDropSettings.AllowScroll = false;
+var timeSpan = new TimeSpan(0, 0, 0, 1, 0);
+dragDropSettings.AutoNavigationDelay = timeSpan;
+dragDropSettings.ShowTimeIndicator = true;
+dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
+schedule.DragDropSettings = dragDropSettings;
+{% endhighlight %}
+{% endtabs %}
+
+#### Disabling navigation when dragging appointment
+Using [AllowNavigate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~AllowNavigate.html) boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment the endpoint of the current view.
+
+{% tabs %}
+{% highlight c# %}
+dragDropSettings.AllowNavigate = false;
+{% endhighlight %}
+{% endtabs %}
+
+#### Handling navigation delay while holding dragged appointment
+Using [AutoNavigationDelay](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~AutoNavigationDelay.html)  `TimeSpan` property can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
+
+{% tabs %}
+{% highlight c# %}
+var timeSpan = new TimeSpan(0, 0, 0, 1, 0);
+dragDropSettings.AutoNavigationDelay = timeSpan;
+{% endhighlight %}
+{% endtabs %}
+
+#### Disabling scroll when dragging appointment
+Using [AllowScroll](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~AllowScroll.html) boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
+
+{% tabs %}
+{% highlight c# %}
+dragDropSettings.AllowScroll = false;
+{% endhighlight %}
+{% endtabs %}
+
+#### Disabling dragging time indicator
+[ShowTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~ShowTimeIndicator.html) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots. Default value of the `ShowTimeIndicator` property is true.
+
+{% tabs %}
+{% highlight c# %}
+dragDropSettings.ShowTimeIndicator = false;
+{% endhighlight %}
+{% endtabs %}
+
+### Customize appearance of dragging Time Indicator
+Using [TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~TimeIndicatorStyle.html) property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimeIndicatorStyle~TextColor.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimeIndicatorStyle~TextSize.html) and [TextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimeIndicatorStyle~TextFormat.html).
+
+{% tabs %}
+{% highlight c# %}
+TimeIndicatorStyle timeIndicatorStyle = new TimeIndicatorStyle();
+timeIndicatorStyle.TextColor = UIColor.Red;
+timeIndicatorStyle.TextSize = 15;
+timeIndicatorStyle.TextFormat = (NSString)"hh : mm";
+dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
+schedule.DragDropSettings = dragDropSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](PopulatingAppointments_images/timeindicator.png)
+
+>**Notes**
+* While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
+* While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.
+* Doesn't support control to control drag and drop.
+
 ## Appearance Customization
-The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
+The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 
 •	[Customize appearance using Style](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#customize-appearance-using-style) 
 •	[Customize appearance using Event](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#customize-appearance-using-event)
 •	[Customize appearance using Custom View](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#customize-appearance-using-custom-view)
 
 ### Customize appearance using Style
-Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderWidth.html) to the `AppointmentStyle` property of `SfSchedule`.
+Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~BorderWidth.html) to the `AppointmentStyle` property of `SfSchedule`.
 
 {% tabs %}
 {% highlight c# %}
@@ -456,14 +681,14 @@ schedule.AppointmentStyle = appointmentStyle;
 ![](PopulatingAppointments_images/style.png)
 
 ### Customize appearance using Event
-Schedule appointment can be customized during runtime using [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `AppointmentStyle` property.
+Schedule appointment can be customized during runtime using [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `AppointmentStyle` property.
 
-[AppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html) has below properties,
+[AppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html) has below properties,
 
-•	[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~Appointment.html) – Contains the appointments values.
-•	[AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~AppointmentStyle.html) – Gets and sets the appointments style.
-•	[View](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~View.html) -  Sets the Custom UI for Appointments.
-•	[Bounds](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~Bounds.html) – Contains the UI bounds of appointment.
+•	[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~Appointment.html) – Contains the appointments values.
+•	[AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~AppointmentStyle.html) – Gets and sets the appointments style.
+•	[View](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~View.html) -  Sets the Custom UI for Appointments.
+•	[Bounds](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs~Bounds.html) – Contains the UI bounds of appointment.
 
 {% tabs %}
 {% highlight c# %}  
@@ -538,7 +763,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 
 ### Customize Font Appearance
 
-You can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#appearance-customization) property in Schedule.
+You can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-android/sfschedule/data-bindings#appearance-customization) property in Schedule.
 
 {% tabs %}
 {% highlight c# %}
@@ -554,14 +779,14 @@ Refer [this](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#cu
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
 
-•	[CellTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs.html)
-•	[CellDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs.html)
-•	[CellLongPressed](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs.html)
+•	[CellTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs.html)
+•	[CellDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs.html)
+•	[CellLongPressed](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs.html)
 
-These events will be triggered while perform respective touch actions in timeslots, month cells and in appointments. All the three events contain the same argument [CellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs.html) which holds selected appointment and date time details in it.
+These events will be triggered while perform respective touch actions in timeslots, month cells and in appointments. All the three events contain the same argument [CellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs.html) which holds selected appointment and date time details in it.
 
-• [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs~SelectedAppointment.html) -  Contains the selected appointment value, it will be null, if any time slots selected.
-• [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs~Calendar.html) - Contains selected time slot DateTime value.
+• [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs~SelectedAppointment.html) -  Contains the selected appointment value, it will be null, if any time slots selected.
+• [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs~Calendar.html) - Contains selected time slot DateTime value.
 
 {% tabs %}
 {% highlight c# %}
@@ -585,7 +810,7 @@ private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
 {% endtabs %}
 
 ### Selection customization
-The default selection of an appointment can be customized by using [SelectionBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~SelectionBorderColor.html), [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~SelectionTextColor.html) properties in `AppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
+The default selection of an appointment can be customized by using [SelectionBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~SelectionBorderColor.html), [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle~SelectionTextColor.html) properties in `AppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 
 N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
