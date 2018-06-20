@@ -11,7 +11,7 @@ documentation: ug
 
 # Header
 
-You can add a title to gauge using the [`LinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel.html) option to provide information to users about the data that is being plotted in the linear gauge.
+You can add a title to gauge using the [`LinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel.html) option to provide information to users about the data that is being plotted in the linear gauge.
 
 ## Adding header to linear gauge
 
@@ -45,7 +45,7 @@ You can add a title to gauge using the [`LinearLabel`](https://help.syncfusion.c
 
 ##  Positioning the header
 
-To change the position of header, use the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~Offset.html)  property in the linear header. It ranges from 0 to 1. By default, the header will be positioned on the top of linear gauge.
+To change the position of header, use the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~Offset.html)  property in the linear header. It ranges from 0 to 1. By default, the header will be positioned on the top of linear gauge.
 
 {% highlight c# %}
 
@@ -76,7 +76,7 @@ To change the position of header, use the [`Offset`](https://help.syncfusion.com
 
 ##  Customizing header text
 
-You can customize the text of [`LinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel.html) by using the [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~TextColor.html), [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~TextSize.html) and [`FontStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~FontStyle.html) properties as shown in the following code snippet.
+You can customize the text of [`LinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel.html) by using the [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~TextColor.html), [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~TextSize.html) and [`FontStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearLabel~FontStyle.html) properties as shown in the following code snippet.
 
 {% highlight c# %}
 

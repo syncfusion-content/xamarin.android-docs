@@ -9,11 +9,11 @@ documentation: ug
 
 # Pointers
 
-[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) provides support to mark the values using [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer.html) and [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html).
+[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) provides support to mark the values using [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer.html) and [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html).
 
 ## Adding bar pointer to scale
 
-[`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
+[`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
 
 {% highlight c# %}
 	
@@ -43,7 +43,7 @@ documentation: ug
 
 ## Bar pointer customization
 
-The bar pointer’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearPointer~Color.html) and [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearPointer~StrokeWidth.html) properties.
+The bar pointer’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearPointer~Color.html) and [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearPointer~StrokeWidth.html) properties.
 
 {% highlight c# %}
 	
@@ -74,8 +74,8 @@ The bar pointer’s UI is customized by using the [`Color`](https://help.syncfus
 
 ## Setting corner radius type for bar pointer
 
-Corners of the [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer.html) can be customized by setting the value to the [`CornerRadiusType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer~CornerRadiusType.html) property. All corners of bar pointer can be customized using the `Start`, `End`, `Both`, and `None` options.
- [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer~CornerRadius.html) property used to reduce the radius of the corners.
+Corners of the [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer.html) can be customized by setting the value to the [`CornerRadiusType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer~CornerRadiusType.html) property. All corners of bar pointer can be customized using the `Start`, `End`, `Both`, and `None` options.
+ [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer~CornerRadius.html) property used to reduce the radius of the corners.
 
 {% highlight c# %}
 
@@ -110,7 +110,7 @@ Corners of the [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-
 
 ## Setting gradient color for bar pointer
 
-You can give smooth color transition to bar pointer to specifying the different colors based on bar pointer’s value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer~GradientStops.html) property.
+You can give smooth color transition to bar pointer to specifying the different colors based on bar pointer’s value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.BarPointer~GradientStops.html) property.
 
 {% highlight c# %}
 
@@ -166,7 +166,7 @@ You can give smooth color transition to bar pointer to specifying the different 
 
 ## Adding symbol pointer to scale
 
-In [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html), the value is pointed by a symbol on the scale.
+In [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html), the value is pointed by a symbol on the scale.
 
 {% highlight c# %}
 
@@ -209,7 +209,7 @@ In [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/S
 
 ## Symbol pointer customization
 
-You can modify the symbol pointer’s size using the [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearPointer~StrokeWidth.html) property. The color of the symbol pointer is changed using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearPointer~Color.html) property.
+You can modify the symbol pointer’s size using the [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearPointer~StrokeWidth.html) property. The color of the symbol pointer is changed using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearPointer~Color.html) property.
 
 {% highlight c# %}
 
@@ -238,11 +238,11 @@ You can modify the symbol pointer’s size using the [`StrokeWidth`](https://hel
 
 ## Positioning symbol pointer
 
-You can position the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) by using the following two ways:
+You can position the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) by using the following two ways:
 
 ## Setting symbol pointer position
 
-You can customize the position of the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) by using the [`SymbolPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~SymbolPosition.html). The default symbol pointer position is `Far`.
+You can customize the position of the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) by using the [`SymbolPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~SymbolPosition.html). The default symbol pointer position is `Far`.
 
 {% highlight c# %}
 
@@ -283,7 +283,7 @@ You can customize the position of the [`SymbolPointer`](https://help.syncfusion.
 
 ## Setting offset for symbol pointer
 
-You can move  the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~Offset.html) property. 
+You can move  the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~Offset.html) property. 
 
 {% highlight c# %}
 
@@ -325,7 +325,7 @@ You can move  the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xa
 
 ## Change symbol pointer shapes
 
-Different types of shapes are used in [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) to mark the pointer value in scale. You can change the shape of [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) by using the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~MarkerShape.html) property in pointer. 
+Different types of shapes are used in [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) to mark the pointer value in scale. You can change the shape of [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html) by using the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~MarkerShape.html) property in pointer. 
 
 {% highlight c# %}
 
@@ -367,7 +367,7 @@ Different types of shapes are used in [`SymbolPointer`](https://help.syncfusion.
 
 ## Setting image shape for symbol pointer
 
-You can achieve the image shape  by setting the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~MarkerShape.html) property to `Image` and setting image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~ImageSource.html) property in [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html).
+You can achieve the image shape  by setting the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~MarkerShape.html) property to `Image` and setting image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer~ImageSource.html) property in [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SymbolPointer.html).
 
 {% highlight c# %}
 
@@ -411,7 +411,7 @@ You can achieve the image shape  by setting the [`MarkerShape`](https://help.syn
 
 ## Adding multiple pointers
 
-In addition to the default pointer, you can add n number of pointers to a linear scale by using the [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Pointers.html) property.
+In addition to the default pointer, you can add n number of pointers to a linear scale by using the [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Pointers.html) property.
 
 {% highlight c# %}
 
