@@ -453,8 +453,8 @@ schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
 
 private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
 {
-var appointment = e.Appointment;
-e.Cancel = false;
+        var appointment = e.Appointment;
+        e.Cancel = false;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -470,12 +470,12 @@ schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
 
 private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
 {
-var appointment = e.Appointment as ScheduleAppointment;
+        var appointment = e.Appointment as ScheduleAppointment;
 
-if (appointment.IsAllDay)
-{
-e.Cancel = true;
-}
+      if (appointment.IsAllDay)
+      {
+            e.Cancel = true;
+      }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -495,9 +495,9 @@ schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
 
 private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
 {
-var appointment = e.Appointment;
-var draggingPoint = e.DraggingPoint;
-var draggingTime = e.DraggingTime;
+        var appointment = e.Appointment;
+        var draggingPoint = e.DraggingPoint;
+        var draggingTime = e.DraggingTime;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -513,18 +513,11 @@ schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
 
 private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
 {
-//// Comparing the NonAccessibleBlock Start hour with the dragging time
-NSCalendar calendar = NSCalendar.CurrentCalendar;
-NSDateComponents draggingTime = calendar.Components(NSCalendarUnit.Year |
-NSCalendarUnit.Month |
-NSCalendarUnit.Day |
-NSCalendarUnit.Hour |
-NSCalendarUnit.Minute |
-NSCalendarUnit.Second, e.DraggingTime);
-if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == draggingTime.Hour
-|| schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour - 1 == draggingTime.Hour && draggingTime.Hour > 0)
-{
-label.Text = "Cannot be moved to blocked time slots";
+        //// checking whether dragging appointment time within NonAccessibleBlock
+        if (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DraggingTime.Get(CalendarField.HourOfDay) || (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DraggingTime.Get(CalendarField.HourOfDay) && e.DraggingTime.Get(CalendarField.Minute) > 0))
+        {
+                label.Text = "Cannot be moved to blocked time slots";
+        }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -544,9 +537,9 @@ schedule.AppointmentDrop += Schedule_AppointmentDrop;
 
 private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 {
-var appointment = e.Appointment;
-e.Cancel = false;
-var dropTime = e.DropTime;
+        var appointment = e.Appointment;
+        e.Cancel = false;
+        var dropTime = e.DropTime;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -562,19 +555,11 @@ schedule.AppointmentDrop += Schedule_AppointmentDrop;
 
 private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 {
-//// Comparing the NonAccessibleBlock Start hour with the dragging time
-NSCalendar calendar = NSCalendar.CurrentCalendar;
-NSDateComponents dropTime = calendar.Components(NSCalendarUnit.Year |
-NSCalendarUnit.Month |
-NSCalendarUnit.Day |
-NSCalendarUnit.Hour |
-NSCalendarUnit.Minute |
-NSCalendarUnit.Second, e.DropTime);
-if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == dropTime.Hour
-|| schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour - 1 == dropTime.Hour && dropTime.Hour > 0)
-{
-e.Cancel = true;
-}
+        //// checking whether dropping appointment time within NonAccessibleBlock
+        if (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DropTime.Get(CalendarField.HourOfDay) || (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DropTime.Get(CalendarField.HourOfDay) && e.DropTime.Get(CalendarField.Minute) > 0))
+        {
+                e.Cancel = true;
+        }
 }
 {% endhighlight %}
 {% endtabs %}
