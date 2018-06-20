@@ -125,9 +125,7 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 | PropertyName | Description |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~StartTime.html) | This property is to map the property name of custom class which is equivalent for StartTime of ScheduleAppointment. |
-| [StartTimeZone] (https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~StartTimeZone.html) | This property is to map the property name of custom class which is equivalent for Start Time Zone of ScheduleAppointment. |
 | [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~EndTime.html)| This property is to map the property name of custom class which is equivalent for EndTime of ScheduleAppointment. |
-| [EndTimeZone] (https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~EndTimeZone.html) | This property is to map the property name of custom class which is equivalent for End Time Zone of ScheduleAppointment. |
 | [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Subject.html) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
 | [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~Color.html) | This property is to map the property name of custom class which is equivalent for Color of ScheduleAppointment. |
 | [IsAllDay](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping~IsAllDay.html) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
@@ -837,7 +835,6 @@ Consider the following scenario you are in North Carolina and you want to set up
 When you each view your calendar, you need to see the appointment displayed relative to your local time zone 5.30 am, 10 am, 3 pm respectively and it can be achieved by setting schedule time zone to default and Appointments time zone to Eastern Standard Time (North Carolina)
 
 If you create all day appointment, then it's start time and end times are set default as 12 am to 12 am so time zone is not applicable for all day appointments
-Standard Time(North Carolina)
 
 Set schedule to a specific time zone by using "TimeZone" Property of schedule by setting schedule to a default time zone schedule takes that time zone as the local time zone and appointment's start time and end time calculated based on schedule time zone
 
@@ -848,8 +845,8 @@ Set schedule to a specific time zone by using "TimeZone" Property of schedule by
     {% endtabs %}
 
 ### Creating Appointment's in different Timezone
-	Set Appointment to specif time zone using StartTimeZone and EndTimeZone property of the Appointment the appointment's start time and end time calculated based the given time zone information for start time and end time, you can give different time zone's for start time and end time property.
-	Use ActualStartTime and ActualEndTime Property to get the exact Local Start Time and End Time of the appointment
+Set Appointment to specif time zone using StartTimeZone and EndTimeZone property of the Appointment the appointment's start time and end time calculated based the given time zone information for start time and end time, you can give different time zone's for start time and end time property.
+Use ActualStartTime and ActualEndTime Property to get the exact Local Start Time and End Time of the appointment
 
     {%tabs%}
     {% highlight c# %}
@@ -867,5 +864,5 @@ Set schedule to a specific time zone by using "TimeZone" Property of schedule by
 * After rescheduling an appointment using drag and drop, if ScheduleTimeZone has set then the appointment's start time and end time recalculated based on Schedule Time Zone. Otherwise, the appointment's start time and end time recalculated based on Local Time Zone.
 Schedule's ActualStartTime and ActualEndTime properties has the local start time and local end time of the appointment.
 
-For an example,consider, your local time zone is IndianStandardTime and appointment's start time zone and end time zone has set as default, if you drag an appointment from 9 AM and drop this on 1 PM and you set the schedule Time zone as AUS Central Time Zone (Darwin) then the appointment's start time and end time will be calculated from the schedule time zone and the appoitment will be rendered on 5 PM on your schedule,
+For an example,consider, your local time zone is IndianStandardTime and appointment's start time zone and end time zone has set as default, if you drag an appointment from 9 AM and drop this on 1 PM and you set the schedule Time zone as AUS Central Time Zone (Darwin) then the appointment's start time and end time will be calculated from the schedule time zone and the appointment will be rendered on 5 PM on your schedule,
 if you don't set the schedule Time Zone and it was set as default then the appointment rendered based on the device local time zone.
