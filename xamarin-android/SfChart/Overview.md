@@ -22,4 +22,4 @@ Essential Chart for Xamarin.Android
 * Chart supports more than 25 different types of series, ranging from simple bar series to complex financial charts. Each type of chart represents a unique style of representing data that is very user-friendly and has greater UI visualization.
 * Data can be plotted against multiple scales to visualize the mixed types of data in a single chart.
 * Chart provides support to render multiple series at the same time, with options to compare and visualize two different chart series, simultaneously.
-* User-friendly customization support. [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) provides various options for you to customize chart with features like axis, labels, legends, series and visualizes them accordingly. 
+* User-friendly customization support. [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) provides various options for you to customize chart with features like axis, labels, legends, series and visualizes them accordingly. 

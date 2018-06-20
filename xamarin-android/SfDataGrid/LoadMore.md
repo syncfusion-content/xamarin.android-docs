@@ -8,7 +8,7 @@ documentation: UG
 ---
 # Load More
 
-The data grid enables the LoadMore option by setting the [SfDataGrid.AllowLoadMore](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowLoadMore.html) property to `true` and by setting the [SfDataGrid.LoadMoreCommand](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreCommand.html) property. When the LoadMore is enabled, the control provides the option to load a subset of data to its data source at runtime using the [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreView.html). 
+The data grid enables the LoadMore option by setting the [SfDataGrid.AllowLoadMore](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowLoadMore.html) property to `true` and by setting the [SfDataGrid.LoadMoreCommand](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreCommand.html) property. When the LoadMore is enabled, the control provides the option to load a subset of data to its data source at runtime using the [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreView.html). 
 
 On scrolling down, when the grid reaches the maximum offset, an interactive load-more view is displayed in the view. Tapping the load-more view triggers a command to add more data to the data source of the grid at runtime.
 
@@ -17,7 +17,7 @@ On scrolling down, when the grid reaches the maximum offset, an interactive load
 
 The data grid load records to its data source at runtime by triggering an `ICommand` bound to the `SfDataGrid.LoadMoreCommand` property. When tapping the load more view, if the `CanExecute` of the `ICommand` returns true, this command is triggered to load the records at runtime.
  
-Set the [SfDataGrid.IsBusy](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~IsBusy.html) property to true before loading items. This notifies the grid that more items are being loaded to it. Set the property to false after loading items to the grid. When loading items, you can also alter the timing for the LoadMore animation from the sample by setting a delay.
+Set the [SfDataGrid.IsBusy](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~IsBusy.html) property to true before loading items. This notifies the grid that more items are being loaded to it. Set the property to false after loading items to the grid. When loading items, you can also alter the timing for the LoadMore animation from the sample by setting a delay.
 
 The following code example illustrates how to enable and load items at runtime:
 
@@ -76,7 +76,7 @@ public class Command : ICommand
 
 ## Customize load-more display text
 
-Customize the text displayed in the `LoadMoreView` by setting the [SfDataGrid.LoadMoreText](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreText.html) property as follows:
+Customize the text displayed in the `LoadMoreView` by setting the [SfDataGrid.LoadMoreText](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~LoadMoreText.html) property as follows:
 
 {% highlight c# %}
 //setting load more text in the data grid
