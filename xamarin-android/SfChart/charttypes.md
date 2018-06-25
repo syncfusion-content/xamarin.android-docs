@@ -684,6 +684,7 @@ ScatterSeries scatterSeries = new ScatterSeries()
 {
     ScatterHeight = 15,
     ScatterWidth = 15,
+	ShapeType = ChartScatterShapeType.Ellipse,
     ItemsSource = Data,
 	XBindingPath = "XValue",
     YBindingPath = "YValue"
