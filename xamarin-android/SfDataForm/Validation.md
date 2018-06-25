@@ -269,7 +269,7 @@ public DateTime JoinDate
 
 ## Validation mode
 
-The [ValidationMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.ValidationMode.html) determines when the value should be validated.
+The [ValidationMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.ValidationMode.html) determines when the value should be validated.
 
 The supported validation modes are as follows:
 
@@ -293,7 +293,7 @@ The value will be validated immediately when it is changed.
 
 ### Explicit
 
-The value should be validated manually by calling the [SfDataForm.Validate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate().html) or [SfDataForm.Validate (propertyName)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate(String).html) method.
+The value should be validated manually by calling the [SfDataForm.Validate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate().html) or [SfDataForm.Validate (propertyName)](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate(String).html) method.
 
 The following code validates the value of all the properties in the data object:
 
@@ -326,7 +326,7 @@ N> For validating value, the new value should be committed in data object. So, `
 
 #### Custom validation through events
 
-You can validate the data using the [Validating](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validating_EV.html) event of the data form.
+You can validate the data using the [Validating](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validating_EV.html) event of the data form.
 
 {% tabs %}
 {% highlight c# %}
@@ -345,7 +345,7 @@ private void DataForm_Validating(object sender, ValidatingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the notification after completing validation using the [Validated](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validated_EV.html) event of the data form.
+You can get the notification after completing validation using the [Validated](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validated_EV.html) event of the data form.
 
 {% tabs %}
 {% highlight c# %}
@@ -360,7 +360,7 @@ private void DataForm_Validated(object sender, ValidatedEventArgs e)
 
 ## Valid or positive message
 
-If the value meets the desired criteria, you can show the [valid or positive message](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DisplayOptionsAttribute~ValidMessage.html). As error message, the valid message will also be displayed at the bottom of the editor.
+If the value meets the desired criteria, you can show the [valid or positive message](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DisplayOptionsAttribute~ValidMessage.html). As error message, the valid message will also be displayed at the bottom of the editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -383,7 +383,7 @@ public string Name
 
 ## How to validate the property value based on another value
 
-To validate one property value based on another property value, use the [property changed event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) and [Validate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate(String).html) methods.
+To validate one property value based on another property value, use the [property changed event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) and [Validate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate(String).html) methods.
 
 Here, AccountNumber and AccountNumber1 fields are validated.
 

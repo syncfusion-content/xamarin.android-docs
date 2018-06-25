@@ -11,7 +11,7 @@ documentation: UG
 
 This section explains how to enable selection in the data grid and the selection modes, properties, events involved in selection and customizations available for selection in the data grid.
 
-The data grid selects a specific row or group of rows either programmatically or by touch interactions. To enable the selection in the data grid, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property to `None`. The data grid has different selection modes to perform selection operation as listed as follows:
+The data grid selects a specific row or group of rows either programmatically or by touch interactions. To enable the selection in the data grid, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property to `None`. The data grid has different selection modes to perform selection operation as listed as follows:
 
 ## Selection modes 
 
@@ -21,19 +21,19 @@ The data grid selects a specific row or group of rows either programmatically or
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[None](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SelectionMode.html)'| markdownify }} </td>
+<td> {{'[None](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SelectionMode.html)'| markdownify }} </td>
 <td>Disables selection and no rows can be selected. This is the default value.</td>
 </tr>
 <tr>
-<td> {{'[Single](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SelectionMode.html)'| markdownify }} </td>
+<td> {{'[Single](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SelectionMode.html)'| markdownify }} </td>
 <td> Selects a single row. Upon selecting the next row the selection in the previous row is cleared. </td>
 </tr>
 <tr>
-<td> {{'[Multiple](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SelectionMode.html)'| markdownify }}  </td>
+<td> {{'[Multiple](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SelectionMode.html)'| markdownify }}  </td>
 <td> Selects more than one row. The selection is not cleared when selecting more than one records. When you click on a selected row for the second time, the selection will be cleared. </td>
 </tr>
 <tr>
-<td>  {{'[SingleDeselect](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SelectionMode.html)'| markdownify }}  </td>
+<td>  {{'[SingleDeselect](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SelectionMode.html)'| markdownify }}  </td>
 <td> Selects only a single row. However, upon tapping the row again the selection is cleared. Similar to the single mode, upon selecting the next row the selection in the previous row is cleared. </td>
 </tr>
 </table>
@@ -46,7 +46,7 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 
 ## Programmatic selection
 
-When the `SfDataGrid.SelectionMode` is set as `None`, select the row/rows in the data grid from the code by setting the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedIndex.html), [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedItem.html), or [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedItems.html) property based on the selection mode. The following code example illustrates how to enable selection from code in the data grid:
+When the `SfDataGrid.SelectionMode` is set as `None`, select the row/rows in the data grid from the code by setting the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedIndex.html), [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedItem.html), or [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedItems.html) property based on the selection mode. The following code example illustrates how to enable selection from code in the data grid:
 
 When the selection mode is `single`, programmatically select a row in two ways, either by setting the row index to the `SfDataGrid.SelectedIndex` property or by setting the underlying object to be selected to the `SfDataGrid.SelectedItem` property. 
 
@@ -75,7 +75,7 @@ The following screenshot shows the selection functionality in SfDataGrid.
 
 ### Current item
 
-The [SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CurrentItem.html) property holds the underlying data of the last selected row in the data grid. 
+The [SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CurrentItem.html) property holds the underlying data of the last selected row in the data grid. 
 
 Get the current item in the `SfDataGrid.SelectionChanged` event, by setting the `SfDataGrid.SelectionMode` as `Multiple` or `SingleDeselect`. If the `SelectionMode` is `single` the currentItem and selectedItem are same.
 
@@ -98,10 +98,10 @@ void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 
 The data grid provides the following events for the selection:
 
-* [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanging_EV.html): This event is raised while selecting a row at the execution time. Hence, it allows canceling the selection action by setting the Cancel property of [GridSelectionChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionChangingEventArgs.html).
-* [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanged_EV.html): This event is raised after the column is selected.
+* [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanging_EV.html): This event is raised while selecting a row at the execution time. Hence, it allows canceling the selection action by setting the Cancel property of [GridSelectionChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionChangingEventArgs.html).
+* [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanged_EV.html): This event is raised after the column is selected.
 
-These two events are triggered with `GridSelectionChangingEventArgs` and [GridSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionChangedEventArgs.html) that contains the following properties:
+These two events are triggered with `GridSelectionChangingEventArgs` and [GridSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionChangedEventArgs.html) that contains the following properties:
 
 * AddedItems: Gets the collection of the underlying data objects added to selection.
 * RemovedItems: Gets the collection of the underlying data objects removed from selection.
@@ -131,7 +131,7 @@ private void DataGrid_SelectionChanged (object sender, GridSelectionChangedEvent
 
 ## Row header selection
 
-The data grid selects the grid row(s) upon tapping over the grid cells. It also allows selecting the grid rows when tapping the row header cells. To enable selection in the data grid, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property to `None`.
+The data grid selects the grid row(s) upon tapping over the grid cells. It also allows selecting the grid rows when tapping the row header cells. To enable selection in the data grid, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property to `None`.
 
 ### Select records in the data grid when tapping only on the row header cells
 
@@ -163,7 +163,7 @@ N> To enable the row header in the data grid, set the `SfDataGrid.ShowRowHeader`
 
 ## Clear selection
 
-The data grid allows clearing the selection applied in the grid rows in two ways, either by setting the `SfDataGrid.SelectionMode` to `None` or by calling the [SfDataGrid.SelectionController.ClearSelection ()](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionController~ClearSelection.html) method.
+The data grid allows clearing the selection applied in the grid rows in two ways, either by setting the `SfDataGrid.SelectionMode` to `None` or by calling the [SfDataGrid.SelectionController.ClearSelection ()](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionController~ClearSelection.html) method.
 
 The following code example illustrates how to clear selection in the data grid:
 
@@ -179,7 +179,7 @@ N> Selected items and the selections will be cleared whenever the ItemsSource ch
 
 ## Multiple selection colors
 
-The data grid supports selecting one or more rows either programmatically or by touch interactions. By default, the data grid applies a common background color for the selected rows based on the current theme. However, it also provides extensibility to have multiple selection colors when touching the rows by writing a custom [SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionController.html) derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionController.html) and, assigning it to the `SfDataGrid.SelectionController` property. Override the GetSelectionColor() method to apply different colors for selection at runtime.
+The data grid supports selecting one or more rows either programmatically or by touch interactions. By default, the data grid applies a common background color for the selected rows based on the current theme. However, it also provides extensibility to have multiple selection colors when touching the rows by writing a custom [SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionController.html) derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionController.html) and, assigning it to the `SfDataGrid.SelectionController` property. Override the GetSelectionColor() method to apply different colors for selection at runtime.
 
 The following code example illustrates how to set different colors for the selected rows in the data grid:
 
@@ -230,9 +230,9 @@ The following screenshot shows the outcome upon execution of the above code:
 
 The data grid supports selecting one or more rows programmatically or by touch interactions. In addition, the data grid also provides extensibility to animate the selected rows. 
 
-It can be done by extending the [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionController.html ).
+It can be done by extending the [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSelectionController.html ).
 
-Refer the below example in which a CustomSelectionController derived from `GridSelectionController` and an instance of it is assigned to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-android/sfdatagrid/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionController.html ) property to achieve selection animation.
+Refer the below example in which a CustomSelectionController derived from `GridSelectionController` and an instance of it is assigned to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionController.html ) property to achieve selection animation.
 
 {% highlight c# %}
 dataGrid.SelectionController = new CustomSelectionController(dataGrid);
