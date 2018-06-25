@@ -1293,10 +1293,14 @@ Any view can be added to the center of doughnut chart using the [`CenterView`]()
 {% highlight C# %}
 [C#]
 
+TextView label = new TextView(this);
+label.Text = "CenterView";
 DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
-	...
-	CenterView = new Label() { Text = "CenterView" };
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
+	CenterView = label
 }
 
 {% endhighlight %}
