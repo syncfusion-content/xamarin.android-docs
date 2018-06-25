@@ -9,20 +9,20 @@ documentation: ug
 
 # Overview
 
-[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) displays a range of values graphically along the linear scale, which is considered as the linear form of the linear gauge. It measures the values of the scale and it is present in the horizontal, vertical sliding, or meter. 
+[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) displays a range of values graphically along the linear scale, which is considered as the linear form of the linear gauge. It measures the values of the scale and it is present in the horizontal, vertical sliding, or meter. 
 
-[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) is used to visualize the numerical values of a scale in linear manner. It is rendered as a canvas image. By using the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control, it is possible to render the thermometer.
+[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) is used to visualize the numerical values of a scale in linear manner. It is rendered as a canvas image. By using the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) control, it is possible to render the thermometer.
 
 
 ## Key Features
 
-* [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge~Scales.html): Supports to adding multiple scales on linear gauge by horizontal and vertical orientations.
+* [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge~Scales.html): Supports to adding multiple scales on linear gauge by horizontal and vertical orientations.
 
-* [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Pointers.html): Supports to add multiple pointers (bar and symbol) on the linear scale.
+* [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Pointers.html): Supports to add multiple pointers (bar and symbol) on the linear scale.
 
-* [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Ranges.html): Highlights the desired range of values in the gauge scale.
+* [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Ranges.html): Highlights the desired range of values in the gauge scale.
 
-* [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge~Annotations.html): Annotations are used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
+* [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge~Annotations.html): Annotations are used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
 ![](overview_images/overview.png)
 

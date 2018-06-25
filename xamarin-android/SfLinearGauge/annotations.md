@@ -11,11 +11,11 @@ documentation: ug
 
 # Annotations
 
-[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge~Annotations.html), which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
+[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge~Annotations.html), which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
 ##  Annotation
 
-By using the [`View`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~View.html) property of annotation object, you can specify the new element that needs to be displayed in the gauge area.
+By using the [`View`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~View.html) property of annotation object, you can specify the new element that needs to be displayed in the gauge area.
 
 {% highlight c# %}
     
@@ -53,7 +53,7 @@ You can place the annotation anywhere in gauge area by using the `Offset` or `Sc
 
 ### Change annotation position by using offset
 
-You can position the annotation anywhere in the linear gauge by using the [`OffsetX`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~OffsetX.html) and [`OffsetY`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~OffsetY.html) properties. It ranges from 0 to 1.
+You can position the annotation anywhere in the linear gauge by using the [`OffsetX`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~OffsetX.html) and [`OffsetY`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~OffsetY.html) properties. It ranges from 0 to 1.
 
 {% highlight c# %}
     
@@ -87,7 +87,7 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
 
 ### Change annotation position by using scale value
 
-You can also place the annotation by specifying the [`ScaleValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~ScaleValue.html) property.
+You can also place the annotation by specifying the [`ScaleValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~ScaleValue.html) property.
 
 {% highlight c# %}
               
@@ -134,7 +134,7 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
 
 ## Set margin to the annotation
 
-You can adjust the annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~ViewMargin.html) property in pixel, which adjusts the annotation element from its current position. 
+You can adjust the annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~ViewMargin.html) property in pixel, which adjusts the annotation element from its current position. 
 
 {% highlight c# %}
     
@@ -181,7 +181,7 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
 
 ## Alignment of annotation
 
-You can align the annotation using the [`HorizontalViewAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~HorizontalViewAlignment.html) and [`VerticalViewAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~VerticalViewAlignment.html) properties.
+You can align the annotation using the [`HorizontalViewAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~HorizontalViewAlignment.html) and [`VerticalViewAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~VerticalViewAlignment.html) properties.
 
 ### Setting horizontal view alignment
 
@@ -275,7 +275,7 @@ You can align the annotation using the [`HorizontalViewAlignment`](https://help.
 
 ## Setting scale index for annotation
 
-You can set the index for the scale by using [`ScaleIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~ScaleIndex.html)
+You can set the index for the scale by using [`ScaleIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation~ScaleIndex.html)
 
 {% highlight c# %}
 
