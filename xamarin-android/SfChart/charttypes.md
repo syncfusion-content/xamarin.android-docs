@@ -1288,8 +1288,6 @@ The small segments in the doughnut chart can be grouped into “others” catego
 
 ## Add view to the center of doughnut chart
 
-Any view can be added to the center of doughnut chart using the [`CenterView`]() property of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html). The binding context of the [`CenterView`]() will be the respective [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html).
-
 {% highlight C# %}
 [C#]
 
