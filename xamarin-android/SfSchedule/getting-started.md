@@ -24,7 +24,12 @@ Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.1.0.41\Xamarin\lib
 >**NOTE**
 Assemblies can be found in unzipped package location in Mac
  
-The following assembly is need to be added as reference from the lib folder to use SfSchedule in your application. 
+## Adding SfSchedule Reference
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSchedule to your project, open the NuGet package manager in Visual Studio, and search for Syncfusion.Xamarin.SfSchedule, and then install it.  
+
+![](GettingStarted_images/installation_image.png)
+
+To know more about obtaining our components, refer this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet,refer the assembly mentioned in the table below.
  
 <table> 
 <tr> 
@@ -36,6 +41,9 @@ The following assembly is need to be added as reference from the lib folder to u
 <td>android\Syncfusion.SfSchedule.Android.dll<br/></td> 
 </tr> 
 </table> 
+
+>**Important**
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
  
 ## Create a simple application with SfSchedule 
  
