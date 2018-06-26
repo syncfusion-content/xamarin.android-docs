@@ -38,7 +38,13 @@ Following are the list of options available to show SfPopupLayout at various pos
 <td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpopuplayout/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~ShowRelativeToView.html)'| markdownify }} </td>
 <td> Shows SfPopupLayout at the position relative to the specified view.</td>
 </tr>
-</table>
+<tr>
+<td> `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x position,y position)` </td>
+<td> Shows the SfPopupLayout at the desired position depends on the relative to the specified view while giving absolute point.</td>
+</tr>
+</table
+
+N> Root view is not required to show the pop-up content at various available positions.
 
 ## Center Positioning
 
@@ -92,8 +98,6 @@ namespace GettingStarted
 Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/IsOpen_Property.png)
-
-N> SfPopupLayout.IsOpen property is not applicable for displaying pop-up when the SfPopupLayout is not set as root view.
 
 ### SfPopupLayout.Show()
 
@@ -246,8 +250,6 @@ Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
-N> SfPopupLayout.ShowAtTouchPoint() is not applicable for displaying pop-up when the SfPopupLayout is not set as root view .
-
 ## Relative Positioning
 
 SfPopupLayout can be shown at the relative position by using the following method.
@@ -305,3 +307,67 @@ namespace GettingStarted
 Executing the above codes renders the following output in an android device.
 
 ![](GettingStarted_images/RelativeToBottom.png)
+
+### Absolute relative positioning
+
+Along with the relative positioning additionally SfPopupLayout allows to add the absolute relative position by using the following method.
+
+By using absolute relative position pop-up content can be shown at the desired point depends on the relative position.
+
+#### SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)
+
+To open the SfPopupLayout in specific X,Y coordinates depends on the relative to a view, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)` property as in the following code sample.
+
+To open the SfPopupLayout relative to a view without absolute position, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x position,y position)` property by passing X,Y coordinates as 0. 
+
+{% highlight c# %}
+
+using Syncfusion.Android.PopupLayout;
+
+namespace GettingStarted
+{
+    public class MainActivity : Activity 
+    {
+       SfPopupLayout popupLayout;
+       Button showPopupButton;
+       LinearLayout layout;
+
+        protected override void OnCreate (Bundle bundle) 
+        {
+            base.OnCreate (bundle); 
+            layout = new LinearLayout(this);
+            layout.Orientation = Orientation.Vertical;
+            layout.SetBackgroundColor(Color.White);
+
+            showPopupButton = new Button(this);
+            showPopupButton.Click += ShowPopupButton_Click;
+            showPopupButton.SetTextColor(Color.White);
+            showPopupButton.Text = "Click to show Popup";
+            showPopupButton.Gravity = GravityFlags.Center;
+            showPopupButton.SetBackgroundColor(Color.Blue);
+            showPopupButton.SetX(150);
+            showPopupButton.SetY(800);
+
+            layout.AddView(showPopupButton, 700, 250);
+          
+            popupLayout = new SfPopupLayout(this);
+            popupLayout.Content = layout;
+
+            SetContentView(popupLayout);
+        } 
+
+        private void ShowPopupButton_Click(object sender, System.EventArgs e)
+        {
+            // Shows SfPopupLayout at the bottom of the text view with absolute relative position.
+            popupLayout.ShowRelativeToView(showPopupButton, RelativePosition.AlignBottom,30,30);
+        }
+    }
+} 
+
+{% endhighlight %}
+
+Executing the above codes renders the following output in an android device.
+
+![](GettingStarted_images/AbsoluteRelativePosition.png)
+
+N> SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position) also allows to provide the negative value of absolute relative position.
