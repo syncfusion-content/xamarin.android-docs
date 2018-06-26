@@ -1286,6 +1286,25 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`]() and [`GroupMode`]() properties of DoughnutSeries. The [`GroupMode`]() property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`]() property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`]() property is [`double.NAN`], and [`GroupMode']() property is Value.
 
+## Add view to the center of doughnut chart
+
+Any view can be added to the center of doughnut chart using the [`CenterView`]() property of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html).
+
+{% highlight C# %}
+[C#]
+
+TextView label = new TextView(this);
+label.Text = "CenterView";
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
+	CenterView = label
+}
+
+{% endhighlight %}
+
 ## Pyramid Chart
 
 To render a pyramid chart, create an instance of [`PyramidSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.PyramidSeries.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the pyramid segment appearance.
