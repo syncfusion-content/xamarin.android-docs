@@ -320,6 +320,7 @@ To open the SfPopupLayout in specific X,Y coordinates depends on the relative to
 
 To open the SfPopupLayout relative to a view without absolute position, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x position,y position)` property by passing X,Y coordinates as 0. 
 
+{% tabs %}
 {% highlight c# %}
 
 using Syncfusion.Android.PopupLayout;
@@ -365,6 +366,7 @@ namespace GettingStarted
 } 
 
 {% endhighlight %}
+{% endtabs %}
 
 Executing the above codes renders the following output in an android device.
 
