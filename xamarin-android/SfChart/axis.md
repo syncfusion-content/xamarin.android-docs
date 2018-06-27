@@ -314,7 +314,7 @@ chart.PrimaryAxis = xAxis;
 
 {% endhighlight %}
 
-![](axis_images/DateTimeCategoryAxis.png
+![](axis_images/DateTimeCategoryAxis.png)
 
 ## Logarithmic Axis
 
