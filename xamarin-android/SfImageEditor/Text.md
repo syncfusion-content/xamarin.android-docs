@@ -28,42 +28,18 @@ You can also add the desired text elements over the image from the code programm
 
 #### TextSettings
 
-TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
-`Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
+TextSettings is defined to set the values for `Color` and `FontSize`.
+
 
 {% tabs %}
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings() { Color = Color.Black, FontSize = 16d, FontFamily=Typeface.CreateFromAsset(this.Assets,"Noteworthy.ttf"});
+    editor.AddText("New Text", new TextSettings() { Color = Color.Green, FontSize = 16d});
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![SfImageEditor](ImageEditor_images/text.png)
-
-# Custom Font Family
-
-Using a font other than the built-in typefaces is also available in Android. Download the custom fonts file in ttf file format and add these fonts into "Assets" folder in sample project.
-
-Right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
-    
-![SfImageEditor](ImageEditor_images/CustomFont.png)
-
-Use the below code snippet to apply custom fonts.
-
-{% tabs %}
-
-{% highlight C# %}
-
-    editor.AddText("New pacifico Text",new TextSettings() { FontFamily=Typeface.CreateFromAsset(this.Assets,"pacifico.ttf")});
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![SfImageEditor](ImageEditor_images/FontFamily.png)
-
-
 

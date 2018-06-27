@@ -223,7 +223,7 @@ The type of input editor generated for the data field depends on the type and at
 {{'[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTextItem.html)'| markdownify }}
 </td>
 <td>
-Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)], [DataType(DataType.MultilineText)] and [DataType(DataType.Password)] attributes. 
+Generated for the String type property and any other type apart from the following specified cases.
 </td>
 </tr>
 <tr>
@@ -420,17 +420,6 @@ Enum and List type property.
 </td>
 <td>
 Spinner
-</td>
-</tr>
-<tr>
-<td>
-Password
-</td>
-<td>
-The String type property with [DataType(DataType.Password)] attribute.
-</td>
-<td>
-EditText
 </td>
 </tr>
 </table>
