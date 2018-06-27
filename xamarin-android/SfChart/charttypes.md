@@ -1277,6 +1277,27 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 ![](charttypes_images/charttypes_img32.png)
 
+### Add view to the center of doughnut chart
+
+Any view can be added to the center of doughnut chart using the [`CenterView`]() property of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html).
+
+{% highlight C# %}
+[C#]
+
+TextView label = new TextView(this);
+label.Text = "CenterView";
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
+	CenterView = label
+}
+
+{% endhighlight %}
+
+![](charttypes_images/charttypes_img48.png)
+
 ## Pyramid Chart
 
 To render a pyramid chart, create an instance of [`PyramidSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.PyramidSeries.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfchart/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the pyramid segment appearance.
