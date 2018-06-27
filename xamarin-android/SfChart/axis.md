@@ -314,6 +314,8 @@ chart.PrimaryAxis = xAxis;
 
 {% endhighlight %}
 
+![](axis_images/DateTimeCategoryAxis.png
+
 ## Logarithmic Axis
 
 Logarithmic axis uses logarithmic scale and displays numbers as axis labels. 
