@@ -92,8 +92,10 @@ The following code example illustrates how to programmatically select more than 
 {% tabs %}
 {% highlight c# %} 
 //Perform multiple selection using selected item
-dataGrid.SelectedItems.Add (viewModel.OrdersInfo [4]);
-dataGrid.SelectedItems.Add (viewModel.OrdersInfo [5]);
+dataGrid.SelectedItems.Add (viewModel.OrdersInfo [5]);
+dataGrid.SelectedItems.Add (viewModel.OrdersInfo [8]);
+dataGrid.SelectedItems.Add (viewModel.OrdersInfo [10]);
+dataGrid.SelectedItems.Add (viewModel.OrdersInfo [12]);
 {% endhighlight %}
 {% endtabs %}
 
