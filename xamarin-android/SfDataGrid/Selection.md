@@ -52,7 +52,7 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 
 The SfDataGrid provides `SelectedIndex`,`SelectedItem` and `CurrentItem` properties to get details of the selected rows when the selection mode is `Single`, `Multiple` and `SingleDeselect`.
 
-[SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedItem.html): Provides the underlying data object of the selected row. Denotes the first selected row in multiple selectio
+[SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedItem.html): Provides the underlying data object of the selected row. Denotes the first selected row in multiple selection.
 [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedIndex.html): Provides the index of `SfDataGrid.SelectedItem`.
 [SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CurrentItem.html):  Provides the underlying data object of the currently selected row in the data grid. Denotes the first selected row in multiple selection.
 
