@@ -663,11 +663,11 @@ chart.Annotations.Add(annotation);
 
 **AnnotationClicked**
 
-The [`AnnotationClicked`]() event is triggered when the user has clicked the annotation. The argument contains the following information.
+The [`AnnotationClicked`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AnnotationClicked_EV.html) event is triggered when the user has clicked the annotation. The argument contains the following information.
 
-* [`Annotation`]() – used to get the instance of annotation which is clicked.
-* [`X`]() – used to get the x position of touch point on annotation.
-* [`Y`]() – used to get the y position of touch point on annotation..
+* [`Annotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotationClickedEventArgs~Annotation.html) – used to get the instance of annotation which is clicked.
+* [`X`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotationClickedEventArgs~X.html) – used to get the x position of touch point on annotation.
+* [`Y`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotationClickedEventArgs~Y.html) – used to get the y position of touch point on annotation..
 
 ## Get the touch position in annotation
 
