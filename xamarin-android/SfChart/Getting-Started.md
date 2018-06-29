@@ -31,7 +31,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ![](Getting-Started_images/designer.gif)
 
-You can get the chart instance from xaml page in MainActivity using the following code.
+You can get the chart instance from axml page in MainActivity using the following code.
 
 {% highlight C# %}
 
