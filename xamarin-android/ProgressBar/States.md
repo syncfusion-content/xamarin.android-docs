@@ -45,4 +45,4 @@ sfLinearProgressBar.SecondaryProgress = 25;
 
 {% endhighlight %}
 
-![](overview_images/Buffer.png)
+![](overview_images/buffer.png)
