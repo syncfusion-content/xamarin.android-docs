@@ -31,7 +31,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ![](Getting-Started_images/designer.gif)
 
-You can get the chart instance from axml page in MainActivity by using the below code.
+You can get the chart instance from xaml page in MainActivity using the following code.
 
 {% highlight C# %}
 
@@ -39,7 +39,7 @@ SfChart chart = FindViewById<SfChart>(Resource.Id.sfChart1);
 
 {% endhighlight %}
 
-You can also create the chart through code behind. The following steps helps to add Chart in code behind.
+You can create chart using code behind also. The following steps help to add chart using code behind.
 
 Import the [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) namespace as shown below in your respective Page,
 
