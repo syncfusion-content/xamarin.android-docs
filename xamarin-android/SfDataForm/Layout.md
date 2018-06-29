@@ -508,7 +508,7 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 
 ### Changing label style
 
-You can set bold for the label text by overriding the [GenerateViewForLabel](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~GenerateViewForLabel.html) method in the `DataFormLayoutManager`.
+By using DataFormLayoutManager class, you can set bold for the label text by overriding the [GenerateViewForLabel](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~GenerateViewForLabel.html) method and also you can customize the editor by overriding the `OnEditorCreated` method.Here, BackgroundColor and TextColor of editor is customized.
 
 {% tabs %}
 {% highlight c# %}
@@ -527,6 +527,13 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
             textView.SetTypeface(null, TypefaceStyle.Bold);
         }
         return textView;
+    }
+
+    protected override void OnEditorCreated(DataFormItem dataFormItem, View editor)
+    {
+        if (editor is EditText)
+            (editor as EditText).SetTextColor(Color.Orange);
+        editor.SetBackgroundColor(Color.Blue);
     }
 }
 dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
