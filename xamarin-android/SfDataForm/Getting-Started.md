@@ -29,7 +29,13 @@ Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\15.3.0.26\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location in Mac.
 
-The following list of assemblies should be added as reference from the lib folder to use the `SfDataForm` in your application:
+### Adding SfDataForm Reference
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm.Android/#), and then install it.
+
+![](SfDataForm_images/SfDataForm_NuGet_Android.png)
+
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). The following list of assemblies should be added as reference from the lib folder to use the `SfDataForm` in your application:
 
 <table>
 <tr>
@@ -44,6 +50,9 @@ Xamarin.Android
 Syncfusion.SfNumericUpDown.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/>Syncfusion.SfDataForm.Android.dll<br/></td>
 </tr>
 </table>
+
+>**Important** 
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Creating the data form
 
@@ -78,13 +87,8 @@ public class MainActivity : Activity
     {
         base.OnCreate(bundle);
             
-        SetContentView(Resource.Layout.Main);
-        var layOut = FindViewById<LinearLayout>(Resource.Id.linearLayout1);
-
         var dataForm = new SfDataForm(this);
-        dataForm.DataObject = new ContactsInfo();
-
-        layOut.AddView(dataForm);
+        SetContentView(dataForm);
     }
 }
 
@@ -206,6 +210,8 @@ dataForm.DataObject = new ContactsInfo();
 Now, run the application to render the `data form` to edit the data object as in the following screenshot:
 
 ![](SfDataForm_images/Overview.png)
+
+You can download the entire source code of this demo for Xamarin.Android from here [DataFormGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormSample-696015926.zip).
 
 ## Defining editors
 
