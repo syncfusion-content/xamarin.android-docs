@@ -9,7 +9,7 @@ documentation : ug
 
 # Getting started
 
-This section explains the steps required to create combo box, populate it with data, and filter  suggestions.Here we create a simple sample for changing the resolution and this section covers only the minimal features that are needed to get started ith the ComboBox.  
+This section explains the steps required to create combo box, populate it with data, and filter  suggestions.Here we create a simple sample for changing the resolution and this section covers only the minimal features that are needed to get started with the ComboBox.  
 
 ## Referencing Essential Studio components in your solution
 
@@ -66,7 +66,7 @@ The following screenshot depicts view of the control after adding SfComboBox.
 
 A list of string with resolution list are created and added to the combo box source. This list is populated as suggestion list by setting the `ComboBoxSource` property based on text entry.
 
-You can set the suggestion list to the SfComboBox using the `ComboBoxSource` property and you can customize the dropdownheight using  the `MaximumDropDownHeight` property.Add the ComboBoxSource for the SfComboBox as  in the following.
+You can set the suggestion list to the SfComboBox using the `ComboBoxSource` property and you can customize the dropdown height using  the `MaximumDropDownHeight` property.Add the ComboBoxSource for the SfComboBox as  in the following.
 
 {% tabs %}
 
@@ -298,7 +298,7 @@ comboBox.SelectionChanged += (object sender, SelectionChangedEventArgs e) =>
     //Show the Alert
     alertDialogue.Create().Show();
 };
-//Set Ok button
+//Set OK button
 alertDialogue.SetPositiveButton("OK", (object sender, DialogClickEventArgs e) =>
 {
     

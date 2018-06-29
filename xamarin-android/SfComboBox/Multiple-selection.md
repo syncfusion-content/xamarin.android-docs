@@ -150,7 +150,7 @@ comboBox.TokenSettings = token;
 
 When selecting the multiple items, the selected items can be divided with a desired character given for delimiter. The delimiter character can be set using the `Delimiter` property.
 
-N> The Default Delimiter Charater is ",".
+N> The Default Delimiter Character is ",".
 
 {% tabs %}
 
