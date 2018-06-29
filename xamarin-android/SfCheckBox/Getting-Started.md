@@ -10,7 +10,7 @@ keywords: button, SfCheckBox, CheckBox
 ---
 
 # Getting Started
-This section explains you the steps required to configure a `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
+This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
 
 ## Add SfCheckBox reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maskededit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.android](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android)", and then install it. 
@@ -59,7 +59,7 @@ namespace SfCheckBox_Sample
 {% endtabs %}
 
 ## Setting caption
-The check box caption can be defined using `Text` property of `SfCheckBox`. This caption normally describes the meaning of the check box and it displays next to check box.
+The check box caption can be defined using the `Text` property of `SfCheckBox`. This caption normally describes the meaning of the check box and it displays next to check box.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,10 +71,10 @@ checkBox.Text = "CheckBox";
 
 ![](Images/Caption.png) 
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1943049844.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_GettingStarted.zip ).
 
 ## Change the check box state
-The `SfCheckBox` contains 3 different states visually, they are:
+The three visual states of `SfCheckBox` are: 
 
 * Checked
 * Unchecked
@@ -82,7 +82,7 @@ The `SfCheckBox` contains 3 different states visually, they are:
 
 ![](Images/States.png) 
 
-You can change the state of the check box using `Checked` property of `SfCheckBox`. In checked state, a tick mark will be added to the visualization of check box.
+You can change the state of the check box using the `Checked` property of `SfCheckBox`. In checked state, a tick mark is added to the visualization of check box.
 
 <table>
 <tr>
@@ -131,9 +131,9 @@ null
 </tr>
 </table>
 
-N>For the check box to report the indeterminate state, you must set the `IsThreeState` property to true.
+N>For the check box, to report the indeterminate state,set the `IsThreeState` property to true.
 
-Check box can be used as a single or as a group. A single check box mostly used for a binary yes/no choice, such as with a "Remember me?" login scenario or with a terms of service agreement.
+Check box can be used as a single or as a group. A single check box mostly used for a binary yes/no choice, such as "Remember me?", login scenario, or a terms of service agreement.
 
 {% tabs %}
 {% highlight c# %}
@@ -145,7 +145,7 @@ checkBox.Checked = true;
 
 ![](Images/Agree.png)
 
-Multiple check boxes can be used as a group for multi-select scenarios in which a user chooses one or more items from a group of choices that are not mutually exclusive.
+Multiple check boxes can be used as a group for multi-select scenarios in which a user chooses one or more items from the group of choices that are not mutually exclusive.
 
 {% tabs %}
 {% highlight c# %}
@@ -166,15 +166,15 @@ onion.Checked = true;
 
 ![](Images/StateChange.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_VisualCustomize.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_StateChanging.zip).
 
 ## Indeterminate
 
 The `SfCheckBox` allows an indeterminate state in addition to the checked and unchecked state. The indeterminate state of the check box is enabled by setting the `IsThreeState` property of the control to `True`.
 
-N>When `IsThreeState` property is set to `False` and `Checked` property is set to `null` then the check box will be in unchecked state.
+N>When the `IsThreeState` property is set to `False` and `Checked` property is set to `null` then the check box will be in unchecked state.
 
-The indeterminate state is used when a group of sub-choices has both checked and unchecked states. In the following example, the "Select all" checkbox has its `IsThreeState` property set to `true`. The "Select all" checkbox is checked if all child elements are checked, unchecked if all child elements are unchecked, and indeterminate otherwise.
+The indeterminate state is used when a group of sub-choices has both checked and unchecked states. In the following example, the "Select all" checkbox has the `IsThreeState` property set to `true`. The "Select all" checkbox is checked if all child elements are checked, unchecked if all the child elements are unchecked, and indeterminate otherwise.
 
 {% tabs %}
 {% highlight c# %}
@@ -229,4 +229,4 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 ![](Images/Inter1.png)
 ![](Images/Inter2.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_VisualCustomize.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_IndeterminateState.zip).
