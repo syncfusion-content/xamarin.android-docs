@@ -46,7 +46,7 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/MultipleSelection.PNG)
+![](SfDataGrid_images/MultipleSelection.jpg)
 
 ## Getting selected rows
 
@@ -101,7 +101,7 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [12]);
 
 The following screenshot shows the selection functionality in SfDataGrid.
 
-![](SfDataGrid_images/MultipleSelection.PNG)
+![](SfDataGrid_images/MultipleSelection.jpg)
 
 ### Scroll to Selected Item
 
@@ -314,7 +314,7 @@ public class CustomSelectionController : GridSelectionController
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/AddingColors.PNG)
+![](SfDataGrid_images/AddingColors.jpg)
 
 ### Changing selection background and foreground color
 
@@ -349,7 +349,7 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/SelectionColor.PNG)
+![](SfDataGrid_images/Selectionbackground.jpg)
 
 ## Changing current cell border color
 
@@ -379,4 +379,4 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CurrentcellBorderColor.PNG)
+![](SfDataGrid_images/CurrentCellBorder.jpg)
