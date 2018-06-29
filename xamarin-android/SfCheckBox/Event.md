@@ -12,7 +12,7 @@ keywords: button, SfCheckBox, CheckBox
 # Event
 
 ## StateChanged event
-Occurs when the value(state) of the `Checked` property is changed by either touching the check box or setting the value to the `Checked` property through C# code. The event arguments are of type `StateChangedEventArgs` and expose the following property:
+Occurs when the value(state) of the `Checked` property is changed by either touching the check box or setting the value to the `Checked` property using C# code. The event arguments are of type `StateChangedEventArgs` and expose the following property:
 
 * `IsChecked`: The new value(state) of the `Checked` property.
 
@@ -35,7 +35,7 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
     }
     else
     {
-    checkBox.Text = "Indeterminate State";
+        checkBox.Text = "Indeterminate State";
     }
 }
 		
@@ -46,4 +46,4 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 ![](Images/Event2.png)
 ![](Images/Event3.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Event1605323609.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_Event.zip ).

@@ -12,7 +12,7 @@ keywords: button, SfCheckBox, CheckBox
 # Visual Customization
 
 ## Customizing shape
-The check box shape can be customized using `CornerRadius` property. This property specifies uniform radius value for every corner of the check box.
+The check box shape can be customized using the `CornerRadius` property. This property specifies uniform radius value for every corner of the check box.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ checkBox.CornerRadius = 5.0f;
 ![](Images/Radius.png)
 
 ## Customizing state color
-The default state colors can be customized using `ButtonTintList` property. The checked/unchecked/indeterminate state color is updated with `ColorStateList`.
+The default state colors can be customized using the `ButtonTintList` property. The checked/unchecked/indeterminate state color is updated with `ColorStateList` to the `ButtonTintList`.
 {% tabs %}
 {% highlight c# %}
 int[][] states ={new int[]{ Android.Resource.Attribute.StateChecked },                            
@@ -51,8 +51,8 @@ indeterminate.ButtonTintList = new ColorStateList(states, colors);
 
 ![](Images/StateColor.png)
 
-## Setting appearance of caption text
-You can customize the display text appearance of `SfCheckBox` control using the following properties:
+## Setting caption text appearance 
+You can customize the display text appearance of the `SfCheckBox` control using the following properties:
 
 * `SetTextColor`: Changes the color of the text.
 * `TextAlignment`: Changes the horizontal alignment of the caption text.
@@ -73,4 +73,4 @@ caption.TextSize = 20;
 
 ![](Images/CaptionAppearance.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_VisualCustomize.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_VisualCustomization.zip).
