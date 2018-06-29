@@ -27,6 +27,20 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Initialize Chart
 
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) control is allowing you to drag and drop on the designer screen from toolbox; the properties window displayed which you are changing the necessary functionalities to customize the chart in the designer.
+
+![](Getting-Started_images/designer.gif)
+
+You can get the chart instance from axml page in MainActivity by using the below code.
+
+{% highlight C# %}
+
+SfChart chart = FindViewById<SfChart>(Resource.Id.sfChart1);
+
+{% endhighlight %}
+
+You can also create the chart through code behind. The following steps helps to add Chart in code behind.
+
 Import the [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) namespace as shown below in your respective Page,
 
 {% highlight C# %}
