@@ -63,4 +63,4 @@ editor.Redo();
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/UndoRedo.png)
+![SfImageEditor](ImageEditor_images/undoredo.gif)
