@@ -60,12 +60,12 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 Using a font other than the built-in typefaces can be applied for image editor text style with the help of custom font family support. Download the custom fonts file in ttf file format and add these fonts into required folder in particular project file.
 
-Add the custom fonts into Assets folder in sample.Droid project.
-   
-Right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
+Add the custom fonts into Assets folder and right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
+
+![SfImageEditor](ImageEditor_images/AndroidCustomFont.png)   
 
 {% highlight C# %}
 
-  var typeface = Typeface.CreateFromAsset(this.im.Context.Assets, (string)shapeproperty.Value+".ttf");
+  var typeface = Typeface.CreateFromAsset(this.Context.Assets, "Admiration Pains.ttf");
 
 {% endhighlight %}
