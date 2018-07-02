@@ -780,4 +780,4 @@ The below given code can be included on the Custom view viewModel to get the cli
 {% endhighlight %}
 
 
-Note: Getting started sample can be downloaded from [this link](Sample link)
+Note: Getting started sample can be downloaded from [this link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SegmentedGettingStarted1199664579)
