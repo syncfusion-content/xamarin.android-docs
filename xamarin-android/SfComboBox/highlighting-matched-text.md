@@ -17,9 +17,9 @@ An item can be picked with more clarity by highlight the matching characters in 
 
 Highlighting the text can be indicated with various customizing styles by enabling the following properties:
 
-* HighlightedTextColor - sets the color of the highlighted text for differentiating the highlighted characters.
+* `HighlightedTextColor` - sets the color of the highlighted text for differentiating the highlighted characters.
 
-* HighlightedTextFontAttributes - sets the FontAttributes of the highlighted text.
+* `HighlightedTextFontTypeFace` - sets the FontAttributes of the highlighted text.
 
 N> The drop-down text can be highlighted only when the AllowFiltering is set to true.
 

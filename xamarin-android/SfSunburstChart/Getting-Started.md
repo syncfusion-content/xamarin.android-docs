@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the steps required to configure the `SfSunburstChart` and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
+This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 
 ## Add sunburst chart references
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
-{Syncfusion Installed location}\Essential Studio\16.2.0.39\lib
+{Syncfusion Installed location}\Essential Studio\16.2.0.41\lib
 
 Add the following SunburstChart assembly reference in the Xamarin.Android project,
 
@@ -26,7 +26,7 @@ Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 {% highlight C# %}
 
-using Syncfusion.SfSunburstChart.Android;
+  using Syncfusion.SfSunburstChart.Android;
 
 {% endhighlight %}
 
@@ -34,9 +34,9 @@ Then initialize an empty SunburstChart.
 
 {% highlight C# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
 
-SetContentView(sunburstChart);
+  SetContentView(sunburstChart);
 
 {% endhighlight %}
 
@@ -484,11 +484,11 @@ Define a data model that represents the above data in [`SfSunburstChart`](https:
 
 public class SunburstModel
 {
-        public string JobDescription { get; set; }
-        public string JobGroup { get; set; }
-        public string JobRole { get; set; }
-        public double EmployeesCount { get; set; }
-        public string Country { get; set; }
+    public string JobDescription { get; set; }
+    public string JobGroup { get; set; }
+    public string JobRole { get; set; }
+    public double EmployeesCount { get; set; }
+    public string Country { get; set; }
 }
 
 {% endhighlight %} 
@@ -546,18 +546,18 @@ Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
 
-            SunburstViewModel dataModel = new SunburstViewModel();
-            sunburstChart.ItemsSource = dataModel.DataSource;          
-            sunburstChart.ValueMemberPath = "EmployeesCount";                    
+  SunburstViewModel dataModel = new SunburstViewModel();
+  sunburstChart.ItemsSource = dataModel.DataSource;          
+  sunburstChart.ValueMemberPath = "EmployeesCount";                    
 
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-            SetContentView(sunburstChart); 
+  SetContentView(sunburstChart); 
 
 {% endhighlight %}
 
@@ -583,7 +583,7 @@ You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusi
 
 {% highlight C# %} 
 
-sunburstChart.Legend.IsVisible = true; 
+  sunburstChart.Legend.IsVisible = true; 
 
 {% endhighlight %}
 
@@ -595,7 +595,7 @@ You can add data labels to improve the readability of the sunburst chart. Data l
 
 {% highlight C# %} 
 
-sunburstChart.DataLabel.ShowLabel = true;
+  sunburstChart.DataLabel.ShowLabel = true;
 
 {% endhighlight %}
 
@@ -605,24 +605,24 @@ Below is the complete code for generating the following output.
 
 {% highlight C# %} 
 
-            SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
 
-            sunburstChart.Title.IsVisible = true;
-            sunburstChart.Title.Text = "Employees Count";
+  sunburstChart.Title.IsVisible = true;
+  sunburstChart.Title.Text = "Employees Count";
 
-            sunburstChart.Legend.IsVisible = true;
-            sunburstChart.DataLabel.ShowLabel = true;
+  sunburstChart.Legend.IsVisible = true;
+  sunburstChart.DataLabel.ShowLabel = true;
 
-            SunburstViewModel dataModel = new SunburstViewModel();
-            sunburstChart.ItemsSource = dataModel.DataSource;
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SunburstViewModel dataModel = new SunburstViewModel();
+  sunburstChart.ItemsSource = dataModel.DataSource;
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-            SetContentView(sunburstChart);
+  SetContentView(sunburstChart);
 
 {% endhighlight %}
 
@@ -630,4 +630,4 @@ The following screenshot depicts the final output.
 
 ![SfSunburstChart](Getting-Started_images/GettingStarted.png)
 
-You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Android/Samples/SunburstChart_GettingStarted.zip)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SunburstAndroid-1491173469)

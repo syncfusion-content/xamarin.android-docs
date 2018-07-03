@@ -14,10 +14,8 @@ The combo box enables filer option for filtering the suggestions in drop-down.
 {% tabs %}
 
 {% highlight C# %}
-	
-  comboBox.AllowFiltering = true;
-  comboBox.IsEditableMode = true;
-	 
+comboBox.AllowFiltering = true;
+comboBox.IsEditableMode = true;	 
 {% endhighlight %}
 
 {% endtabs %}
@@ -43,7 +41,6 @@ The phenomenon of string comparison for filtering suggestions can be changed usi
 *	EndsWithCaseSensitive
 
 *	Custom
-
 
 ## Words that starts with input text
 

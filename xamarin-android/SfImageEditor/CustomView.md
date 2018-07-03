@@ -2,7 +2,7 @@
 layout : post
 title : Custom view of Syncfusion SfImageEditor control in Xamarin.Android
 description : Learn how to add custom view in ImageEditor for Xamarin.Android
-platform : xamarin.Android
+platform : xamarin.android
 control : ImageEditor
 documentation : ug
 ---
@@ -13,11 +13,10 @@ You can add any custom shapes or views on the image by using the `AddCustomView`
 
 {% highlight C# %}
 
-ImageView customView = new ImageView(this);
-customView.LayoutParameters = new Android.Views.ViewGroup.LayoutParams(200, 200);
-customView.SetImageResource(Resource.Drawable.sample);
-imageEditor.AddCustomView(customView, new CustomViewSettings());
-  
+            ImageView view = new ImageView(this);            
+            view.SetImageBitmap(BitmapFactory.DecodeResource(Resources, Resource.Drawable.Icon));
+            editor.AddCustomView(view, new CustomViewSettings());
+
 {% endhighlight %}
 
 ## CustomViewSettings
@@ -28,11 +27,11 @@ CustomViewSettings is defined to set the values for `CanMaintainAspectRatio` and
 
 {% highlight C# %}
 
-CustomViewSettings customViewSettings = new CustomViewSettings()
-{
-    CanMaintainAspectRatio = false,
-    Bounds = new System.Drawing.RectangleF(0,0,100,100)
-};
+        CustomViewSettings customViewSettings = new CustomViewSettings()
+            {
+                CanMaintainAspectRatio = false,
+                Bounds = new Rectangle(0, 0, 100, 100)
+            };
 
 {% endhighlight %}
 

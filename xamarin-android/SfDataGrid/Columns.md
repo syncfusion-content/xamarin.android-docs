@@ -88,7 +88,7 @@ The `SfDataGrid.AutoGenerateColumnsMode` is of type `AutoGenerateColumnsMode` wh
 
 The default value of `SfDataGrid.AutoGenerateColumns` property is `true` and `SfDataGrid.AutoGenerateColumnsMode` is `Reset`. Hence by default, the SfDataGrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its `ItemsSource` property.
 
-N> When changing the items source for the SfDataGrid at runtime, the columns are generated on the basis of option set for `SfDataGrid.AutoGenerateColumnsMode`.
+N> When changing the items source for the SfDataGrid ar runtime, the columns are generated on the basis of option set for `SfDataGrid.AutoGenerateColumnsMode`.
 
 ### Customize auto generated columns
 

@@ -15,26 +15,15 @@ The SfComboBox supports both editable and non-editable text boxes to choose sele
 
 In editable mode, the combo box allows users to edit in the text box that shows the suggestion in drop-down list based on the input.
 
-
 {% tabs %}
 
-{% highlight C# %}
-	
-    List<String> countryList = new List<String>();
-    countryList.Add("Uganda");
-    countryList.Add("Ukraine");
-    countryList.Add("United Arab Emirates");
-    countryList.Add("United Kingdom");
-    countryList.Add("United States");
-    comboBox.DataSource = countryList;
-    comboBox.IsEditableMode = true; 
-	 
+{% highlight C# %}	
+comboBox.IsEditableMode = true; 	 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](images/editable.png)
-
 	
 ## Non-editable combo box
 
@@ -43,16 +32,7 @@ Non-editable mode is used to prevent users from typing and allows them select fr
 {% tabs %}
 
 {% highlight C# %}
-	
-    List<String> countryList = new List<String>();
-    countryList.Add("Uganda");
-    countryList.Add("Ukraine");
-    countryList.Add("United Arab Emirates");
-    countryList.Add("United Kingdom");
-    countryList.Add("United States");
-    comboBox.DataSource = countryList;
-    comboBox.IsEditableMode = false; 
-	 
+comboBox.IsEditableMode = false;  
 {% endhighlight %}
 
 {% endtabs %}

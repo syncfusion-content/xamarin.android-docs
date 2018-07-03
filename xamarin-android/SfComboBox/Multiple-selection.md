@@ -15,6 +15,8 @@ Select multiple items from a suggestion list. In the combo box, you can perform 
 
 * Delimiter
 
+N> The default mode of multiple selection is None.
+
 ## Token representation
 
 Selected items will be displayed with a customizable token representation, and the users can remove each tokenized item with the close button.
@@ -22,11 +24,9 @@ Selected items will be displayed with a customizable token representation, and t
 {% tabs %}
 
 {% highlight C# %}
-	
-    comboBox.MultiSelectMode = MultiSelectMode.Token;
-    comboBox.TokensWrapMode = TokensWrapMode.Wrap;
-    comboBox.IsSelectedItemsVisibleInDropDown = false;
-
+comboBox.MultiSelectMode = MultiSelectMode.Token;
+comboBox.TokensWrapMode = TokensWrapMode.Wrap;
+comboBox.IsSelectedItemsVisibleInDropDown = false;
 {% endhighlight %}
 
 {% endtabs %}
@@ -45,48 +45,48 @@ The selected item can be displayed as token inside the combo box in two ways. Th
 
 // Create a Employee Class Which holds the Name and Image
 public class Employee
-    {
-        private string image;
-        public string Image
-        {
-            get { return image; }
-            set { image = value; }
-        }
+{
+private string image;
+public string Image
+{
+    get { return image; }
+    set { image = value; }
+}
 
-        private string name;
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-    }
+private string name;
+public string Name
+{
+    get { return name; }
+    set { name = value; }
+}
+}
 
 // Create EmployeeViewModel class holds the Collection of employee date
-    public class EmployeeViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Employee> employeeCollection;
-        public ObservableCollection<Employee> EmployeeCollection
-        {
-            get { return employeeCollection; }
-            set { employeeCollection = value; }
-        }
-        public EmployeeViewModel()
-        {
-            employeeCollection = new ObservableCollection<Employee>();
-            employeeCollection.Add(new Employee() { Image ="Frank.png", Name = "Frank" });
-            employeeCollection.Add(new Employee() { Image = "James.png", Name = "James" });
-            employeeCollection.Add(new Employee() { Image = "Steve.png", Name = "Steve" });
-            employeeCollection.Add(new Employee() { Image = "Lucas.png", Name = "Lucas" });
-            employeeCollection.Add(new Employee() { Image = "Mark.png", Name = "Mark" });
-        }
+public class EmployeeViewModel : INotifyPropertyChanged
+{
+private ObservableCollection<Employee> employeeCollection;
+public ObservableCollection<Employee> EmployeeCollection
+{
+    get { return employeeCollection; }
+    set { employeeCollection = value; }
+}
+public EmployeeViewModel()
+{
+    employeeCollection = new ObservableCollection<Employee>();
+    employeeCollection.Add(new Employee() { Image ="Frank.png", Name = "Frank" });
+    employeeCollection.Add(new Employee() { Image = "James.png", Name = "James" });
+    employeeCollection.Add(new Employee() { Image = "Steve.png", Name = "Steve" });
+    employeeCollection.Add(new Employee() { Image = "Lucas.png", Name = "Lucas" });
+    employeeCollection.Add(new Employee() { Image = "Mark.png", Name = "Mark" });
+}
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void RaisePropertyChanged(String name)
-        {
-            if (PropertyChanged != null)
-                this.PropertyChanged(this, new PropertyChangedEventArgs(name));
-        }
-    } 
+public event PropertyChangedEventHandler PropertyChanged;
+private void RaisePropertyChanged(String name)
+{
+    if (PropertyChanged != null)
+        this.PropertyChanged(this, new PropertyChangedEventArgs(name));
+}
+} 
 	
 {% endhighlight %}
 
@@ -99,10 +99,8 @@ The combo box control is populated with the list of employees. But, the Employee
 {% tabs %}
 
 {% highlight C# %}
-
- comboBox.DisplayMemberPath = "Name";
- comboBox.ImageMemberPath = "Image"; 
-	 
+comboBox.DisplayMemberPath = "Name";
+comboBox.ImageMemberPath = "Image"; 	 
 {% endhighlight %}
 
 {% endtabs %}
@@ -129,11 +127,9 @@ Token can be customized in the following ways:
 
 * `CornerRadius` - sets the corner radius for the token.
 
-
 {% tabs %}
 
 {% highlight C# %}
-
 //Create an object to do Token Customization 
 TokenSettings token = new TokenSettings();
 token.BackgroundColor = Color.ParseColor("#f49e42");
@@ -143,8 +139,7 @@ token.SelectedBackgroundColor = Color.ParseColor("#ffffe0");
 token.DeleteButtonColor = Color.Brown;
 token.IsCloseButtonVisible = true;
 token.CornerRadius = 15;
-comboBox.TokenSettings = token; 
-	 
+comboBox.TokenSettings = token; 	 
 {% endhighlight %}
 
 {% endtabs %}
@@ -155,21 +150,32 @@ comboBox.TokenSettings = token;
 
 When selecting the multiple items, the selected items can be divided with a desired character given for delimiter. The delimiter character can be set using the `Delimiter` property.
 
+N> The Default Delimiter Character is ",".
+
 {% tabs %}
 
 {% highlight C# %}
-
 //Set the MultiSelectMode
 comboBox.MultiSelectMode = MultiSelectMode.Delimiter;
-comboBox.Delimiter = '#'; 
-	 
+{% endhighlight %}
+
+{% endtabs %}
+	
+![](images/defaultdelimiter.png)
+
+We can add the custom delimiter character by `Delimiter` property.
+	
+{% tabs %}
+
+{% highlight C# %}
+//Set the MultiSelectMode
+comboBox.MultiSelectMode = MultiSelectMode.Delimiter;
+comboBox.Delimiter = '#'; 	 
 {% endhighlight %}
 
 {% endtabs %}
 	
 ![](images/delimiter.png)
-	
-
 
 
 

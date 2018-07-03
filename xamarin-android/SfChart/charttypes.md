@@ -673,7 +673,7 @@ To render a scatter chart, create an instance of [`ScatterSeries`](https://help.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ScatterSeries~StrokeColor.html) – used to change the stroke color of the series.
 * [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ScatterSeries~ScatterWidth.html) – used to change the width of the series.
 * [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ScatterSeries~ScatterHeight.html) – used to change the height of the series.
-* [`ShapeType`]() - used to change the rendering shape of scatter series. The available shapes are cross, diamond, ellipse, hexagon, inverted triangle, pentagon, plus, rectangle and triangle.
+* [`ShapeType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ScatterSeries~ShapeType.html) - used to change the rendering shape of scatter series. The available shapes are cross, diamond, ellipse, hexagon, inverted triangle, pentagon, plus, rectangle and triangle.
 
 {% highlight c# %} 
 [C#]
@@ -1155,9 +1155,9 @@ PieSeries pieSeries = new PieSeries()
 
 ![](charttypes_images/charttypes_img26.png)
 
-## Group small data points into “others”
+### Group small data points into “others”
 
-The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`]() and [`GroupMode`]() properties of PieSeries. The [`GroupMode`]() property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`]() property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`]() property is [`double.NAN`], and [`GroupMode']() property is Value.
+The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupTo.html) and [`GroupMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupMode.html) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupMode.html) property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupTo.html) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupTo.html) property is [`double.NAN`], and [`GroupMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupMode.html) property is Value.
 
 ## Doughnut Chart
 
@@ -1282,9 +1282,30 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 ![](charttypes_images/charttypes_img32.png)
 
-## Group small data points into “others”
+### Group small data points into “others”
 
-The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`]() and [`GroupMode`]() properties of DoughnutSeries. The [`GroupMode`]() property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`]() property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`]() property is [`double.NAN`], and [`GroupMode']() property is Value.
+The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupTo.html) and [`GroupMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupMode.html) properties of DoughnutSeries. The [`GroupMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupMode.html) property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupTo.html) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupTo.html) property is [`double.NAN`], and [`GroupMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~GroupMode.html) property is Value.
+
+### Add view to the center of doughnut chart
+
+Any view can be added to the center of doughnut chart using the [`CenterView`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries~CenterView.html) property of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html).
+
+{% highlight C# %}
+[C#]
+
+TextView label = new TextView(this);
+label.Text = "CenterView";
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue",
+	CenterView = label
+}
+
+{% endhighlight %}
+
+![](charttypes_images/charttypes_img48.png)
 
 ## Pyramid Chart
 
