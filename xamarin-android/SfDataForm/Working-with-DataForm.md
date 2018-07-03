@@ -29,7 +29,7 @@ The [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
 Text
 </td>
 <td>
-Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)] and [DataType(DataType.MultilineText)] attributes. 
+Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)], [DataType(DataType.MultilineText)] and [DataType(DataType.Password)] attributes.
 
 </td>
 </tr>
