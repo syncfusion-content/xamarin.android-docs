@@ -204,6 +204,22 @@ Enum and List type property.
 Spinner
 </td>
 </tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
+</td>
+<td>
+The String type property and property with 
+[DataType(DataType.Password)] attribute.
+</td>
+<td>
+EditText
+</td>
+</tr>
+
 </table>
 
 ## Changing editor for type
@@ -313,23 +329,6 @@ dataForm.RegisterEditor("Salary", "Slider");
 {% endtabs %}
 
 ![](SfDataForm_images/SeekBarEditor.png)
-
-## Support for password editor
-
-You can load the password editor by customizing the [DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormTextEditor.html) and setting `InputType` in the ‘AutoGeneratingDataFormItem’ event.
-
-{% tabs %}
-{% highlight c# %}
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
-{
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Password")
-        (e.DataFormItem as DataFormTextItem).InputType = Android.Text.InputTypes.ClassText | Android.Text.InputTypes.TextVariationPassword;
-}
-{% endhighlight %}
-{% endtabs %}
-
-![](SfDataForm_images/PasswordEditor.png)
 
 ## Support for Email editor
 

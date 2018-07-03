@@ -203,6 +203,21 @@ Enum and List type property.
 Spinner
 </td>
 </tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
+</td>
+<td>
+The String type property and property with 
+[DataType(DataType.Password)] attribute.
+</td>
+<td>
+EditText
+</td>
+</tr>
 </table>
 
 ## Text editor
@@ -615,4 +630,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ![](SfDataForm_images/NumericUpDownCulture.png)
+
+## Password editor
+
+In the password editor, the [EditText](https://developer.xamarin.com/guides/android/user_interface/form_elements/edit_text/) is loaded.
 
