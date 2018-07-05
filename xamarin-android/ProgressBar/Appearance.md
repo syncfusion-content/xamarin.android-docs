@@ -49,13 +49,13 @@ SfLinearProgressBar linearProgressBar = new SfLinearProgressBar(this);
 
 linearProgressBar.Progress = 100;
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.ParseColor("#00bdaf"), Start = 0, End = 25 });
+linearProgressBar.RangeColors.Add(new RangeColor() { Color = Android.Graphics.Color.ParseColor("#00bdaf"), Start = 0, End = 25 });
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.ParseColor("#2f7ecc"), Start = 25, End = 50 });
+linearProgressBar.RangeColors.Add(new RangeColor() { Color = Android.Graphics.Color.ParseColor("#2f7ecc"), Start = 25, End = 50 });
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.ParseColor("#e9648e"), Start = 50, End = 75 });
+linearProgressBar.RangeColors.Add(new RangeColor() { Color = Android.Graphics.Color.ParseColor("#e9648e"), Start = 50, End = 75 });
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.ParseColor ("#fbb78a"), Start = 75, End = 100 });
+linearProgressBar.RangeColors.Add(new RangeColor() { Color = Android.Graphics.Color.ParseColor ("#fbb78a"), Start = 75, End = 100 });
 
 {% endhighlight %} 
 
@@ -71,19 +71,19 @@ linearProgressBar.Progress = 100;
 
 linearProgressBar.RangeColors.Add(
 
-new RangeColor() { Color = Color.ParseColor("#88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
+new RangeColor() { Color = Android.Graphics.Color.ParseColor("#88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
 
 linearProgressBar.RangeColors.Add(
 
-new RangeColor() { Color = Color.ParseColor("#AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
+new RangeColor() { Color = Android.Graphics.Color.ParseColor("#AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
 
 linearProgressBar.RangeColors.Add(
 
-new RangeColor() { Color = Color.ParseColor("#DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
+new RangeColor() { Color = Android.Graphics.Color.ParseColor("#DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
 
 linearProgressBar.RangeColors.Add(
 
-new RangeColor() { Color = Color.ParseColor("#FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
+new RangeColor() { Color = Android.Graphics.Color.ParseColor("#FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
 
 {% endhighlight %} 
 
@@ -170,9 +170,9 @@ SfLinearProgressBar linearProgressBar = new SfLinearProgressBar(this);
 
 linearProgressBar.Progress = 75;
 
-linearProgressBar.ProgressColor = Color.ParseColor("#FF51483a");
+linearProgressBar.ProgressColor = Android.Graphics.Color.ParseColor("#FF51483a");
 
-linearProgressBar.TrackColor = Color.ParseColor("#3351483a");
+linearProgressBar.TrackColor = Android.Graphics.Color.ParseColor("#3351483a");
 
 {% endhighlight %} 
 
@@ -188,7 +188,7 @@ linearProgressBar.Progress = 25;
 
 linearProgressBar.SecondaryProgress = 75;
 
-linearProgressBar.SecondaryProgressColor = Color.CornflowerBlue;
+linearProgressBar.SecondaryProgressColor = Android.Graphics.Color.CornflowerBlue;
 
 {% endhighlight %} 
 

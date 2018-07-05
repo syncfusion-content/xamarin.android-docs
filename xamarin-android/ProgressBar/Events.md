@@ -28,11 +28,11 @@ private void ProgressBarBase_OnValueChanged(object sender, ProgressValueEventArg
 {   
     if (e.Progress < 50)
     {
-        this.linearProgressBar.ProgressColor = Color.Red;
+        this.linearProgressBar.ProgressColor = Android.Graphics.Color.Red;
     }
     else if (e.Progress >= 50)
     {
-        this.linearProgressBar.ProgressColor = Color.Green; 
+        this.linearProgressBar.ProgressColor = Android.Graphics.Color.Green; 
     }
 }
 
