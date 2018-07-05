@@ -35,7 +35,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.o
 
 ![](SfDataForm_images/SfDataForm_NuGet_Android.png)
 
-To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). The following list of assemblies should be added as reference from the lib folder to use the `SfDataForm` in your application:
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
 <table>
 <tr>
