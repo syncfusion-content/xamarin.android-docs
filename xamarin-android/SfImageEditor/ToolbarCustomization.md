@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# ToolbarCustomization
+## ToolbarCustomization
 
 You can customize color palette, toolbar visibility and appearance of each toolbar item.
 
@@ -34,7 +34,8 @@ You can customize each toolbar item with the help of `Text` and `Icon` propertie
 
 {% endhighlight %}
 
-N> The list of available built-in toolbar item names are "back,Text,Add,TextColor,FontFamily,Arial,Noteworthy,Marker Felt,Bradley Hand,SignPainter,Opacity,Path,StrokeThickness,Colors,Opacity,Shape,Rectangle,StrokeThickness,Circle,Arrow,Transform,Crop,free,original,square,3:1,3:2,4:3,5:4,16:9,Rotate,Flip,Reset,Undo,Redo,Save"
+N> The list of available built-in toolbar item names are "back, Text, Add, TextColor, FontFamily, Arial, Noteworthy, Marker Felt,
+Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shape, Rectangle, StrokeThickness, Circle, Arrow, Transform, Crop, free, original, square, 3:1, 3:2, 4:3, 5:4, 16:9, Rotate, Flip, Reset, Undo, Redo, Save"
 
 N> We can't modify the name of existing built-in toolbar item and also can't create toolbar item with these list
 
@@ -44,7 +45,7 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 2.FooterToolbarItem
 3.SubItems
 
-### Adding HeaderToolbarItem
+## Adding HeaderToolbarItem
 
 `HeaderToolbarItem` will be arranged on top of the image editor and you can customize header toolbar item with the help of Icon and Text as like below,
 
@@ -54,7 +55,7 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 
 {% endhighlight %}
 
-### Adding FooterToolbarItem   
+## Adding FooterToolbarItem   
 
  `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footer toolbar item with the help of Icon and Text along with sub items.
 
@@ -67,7 +68,7 @@ Refer to the below code snippet to customize footer toolbar item,
 
 {% endhighlight %}
 
-### Adding SubItems to the FooterToolbarItem
+## Adding SubItems to the FooterToolbarItem
 
 `SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footer toolbar item. SubItems will be arranged above the footer toolbar item layout and you can also customize sub items appearance as like main toolbar items. 
 
@@ -91,7 +92,7 @@ Refer to the below code snippet to customize sub items of footer toolbar item,
 
 {% endhighlight %}
 
-N> You can remove existing toolbar items(Text,Path,Shape,Transform,Reset,Undo,Redo and Save) from the image editor toolbarItems collection based on the index value. 
+N> You can remove existing toolbar items [name](/xamarin-android/sfimageeditor/toolbarcustomization#name) from the image editor toolbarItems collection based on the index value. 
 
 You can change icon and text value dynamically for any of already added toolbar item based on the index as like below,
 
@@ -103,7 +104,7 @@ editor.ToolbarSettings.ToolbarItems[3].Icon = BitmapFactory.DecodeResource(Resou
 {% endhighlight %}
 
 
-### ToolbarItemSelected event 
+## ToolbarItemSelected event 
 
 Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered and you can get the respective tapped toolbar item as an argument as shown below, 
 
@@ -125,7 +126,7 @@ Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be 
 
 {% endhighlight %}
 
-#### MoveSubItemsToFooterToolbar 
+### MoveSubItemsToFooterToolbar 
 
 `MoveSubItemsToFooterToolbar` boolean property of ToolbarItemSelected event argument decides the placement of each sub items of respective footer toolbar item. 
 
@@ -193,7 +194,7 @@ N> This is not applicable for built-in footer toolbar items .
 
 You can hide or show the toolbar items by specifying its icon name and set boolean value to false or true.
 
-N> You can customize icon by specifying its names like text, path, shapes, transform, rectangle, circle, arrow, flip, crop, rotate, reset, undo, Redo and save.
+N> You can customize icon by specifying its [names](/xamarin-android/sfimageeditor/toolbarcustomization#name)
 
 
 {% tabs %}
@@ -234,7 +235,7 @@ You can change default colors of the ColorPalette in toolbar.
 
 You can customize `height of the toolbar` and also toolbar items `icon` and `text`.
 
-### Customize Toolbar Height 
+## Customize Toolbar Height 
 
 SfImageEditor control supports to customize the default height of `Header`, `Footer` and `Sub item` Toolbar by using following properties,
 1.	HeaderToolbarHeight
@@ -258,7 +259,7 @@ Toolbar items will be resize based on the toolbar height. To change Height of th
 
 ![SfImageEditor](ImageEditor_images/ToolbarHeight.png)
 
-### Individual Toolbar Item Height Customization
+## Individual Toolbar Item Height Customization
 
 To arrange toolbar items aspect fit based on the toolbar height by using following properties  
 
