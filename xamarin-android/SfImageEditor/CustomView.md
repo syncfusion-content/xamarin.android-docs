@@ -7,15 +7,16 @@ control : ImageEditor
 documentation : ug
 ---
 
-# CustomView
+## CustomView
 
 You can add any custom shapes or views on the image by using the `AddCustomView` method in the SfImageEditor control. To add the custom view, specify any view and its desired `CustomViewSettings` as shown in the following code snippet.
 
 {% highlight C# %}
 
-            ImageView view = new ImageView(this);            
-            view.SetImageBitmap(BitmapFactory.DecodeResource(Resources, Resource.Drawable.Icon));
-            editor.AddCustomView(view, new CustomViewSettings());
+            ImageView customView = new ImageView(this);
+            customView.LayoutParameters = new Android.Views.ViewGroup.LayoutParams(200, 200);
+            customView.SetImageResource(Resource.Drawable.sample);
+            imageEditor.AddCustomView(customView, new CustomViewSettings());
 
 {% endhighlight %}
 

@@ -7,11 +7,11 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Localization
+## Localization
 
 The image editor control provides support for localization.You can localize ImageEditor contents by adding equivalent localized string.
 
-### Change default control language
+## Change default control language
 
 Based on the resource strings in the project the contents are localized accordingly.
 

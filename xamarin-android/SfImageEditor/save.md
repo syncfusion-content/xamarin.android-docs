@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Save
+## Save
 
 You can save the image along with the changes to the device. Saving the image can be done in two ways:
 
@@ -32,7 +32,7 @@ Programmatically, you can make use of the `Save` method in the SfImageEditor con
 
 {% endtabs %}
 
-## Events
+## Save Events
 
 The SfImageEditor has Events when performing Save operation namely,  ImageSaving and ImageSaved events.
 
@@ -64,7 +64,7 @@ This event occurs after the image has been saved. To get the location of the sav
 
 {% endtabs %}
 
-# Reset
+## Reset
 
 You can reset the changes and load the initial loaded image.
 
@@ -87,7 +87,7 @@ The `Reset` method resets the complete set of changes made in the image and rese
 
 {% endtabs %}
 
-## Events
+## Reset Events
 
 The SfImageEditor has Events when performing Reset operation namely BeginReset and EndReset.
 
@@ -110,7 +110,7 @@ This event occurs before resetting the changes made in an image. You can control
 This event occurs when reset has been completed.
 
 
-### ImageLoaded Event
+## ImageLoaded Event
 
 This event will be triggered once the image is loaded. By using this event we can add any shapes, text or crop over an image while initially loading the image. 
 
@@ -133,7 +133,7 @@ This event will be triggered once the image is loaded. By using this event we ca
 {% endhighlight %}
 
 
-### ItemSelected Event
+## ItemSelected Event
 
 This event will be triggered whenever you tap the image editor selected shapes (Rectangle, Circle and Arrow) and Text. You can get the settings of each selected shapes and text with the help of ItemSelected argument. Also we can change the settings which will affect the selected shape.
 
