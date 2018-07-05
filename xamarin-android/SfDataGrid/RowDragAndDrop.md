@@ -51,7 +51,23 @@ Refer the following code example that shows how to load row like view in templa
 {% highlight c# %}
 
 //Assigning custom view to row drag and drop template.
-sfGrid.RowDragDropTemplate = new RowDragDropTemplate(context);
+sfGrid.RowDragDropTemplate = new RowDragDropTemplate(BaseContext);
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+     if (e.Reason == QueryRowDraggingReason.DragStarted)
+     {
+        (sfGrid.RowDragDropTemplate as RowDragDropTemplate).UpdateRow(e.RowData);
+     }         
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -82,9 +98,17 @@ public class RowDragDropTemplate : LinearLayout
         this.Orientation = Orientation.Horizontal;
         paint.Color = Color.Black;
         label1 = new Label(context) { Gravity = GravityFlags.Center };
+        label1.Text = "OrderID";
+        label1.SetTextColor(Color.Black);
         label2 = new Label(context) { Gravity = GravityFlags.Center };
+        label2.Text = "CustomerID";
+        label2.SetTextColor(Color.Black);
         label3 = new Label(context) { Gravity = GravityFlags.Center };
+        label3.Text = "Freight";
+        label3.SetTextColor(Color.Black);
         label4 = new Label(context) { Gravity = GravityFlags.Center, IsLastLabel = true };
+        label4.Text = "Country";
+        label4.SetTextColor(Color.Black);
         this.AddView(label1);
         this.AddView(label2);
         this.AddView(label3);
@@ -193,6 +217,8 @@ public class Label : TextView
 {% endtabs %}
 
 ![](SfDataGrid_images/.png)
+
+You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomTemplate-1341433818)
 
 ## Events in row drag-and-drop
 
