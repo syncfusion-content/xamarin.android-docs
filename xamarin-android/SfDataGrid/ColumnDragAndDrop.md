@@ -198,4 +198,4 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/.png)
+![](SfDataGrid_images/CustomizedIndicator_Column.jpg)
