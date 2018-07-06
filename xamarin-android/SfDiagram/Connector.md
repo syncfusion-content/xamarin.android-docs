@@ -129,6 +129,20 @@ diagram.AddConnector(connector);
 {% endtabs %}
 ![](Connector_images/Connector_img5.jpeg)
 
+## Bezier 
+Bezier curve are cubic curve segments, which are configurable with the control points. The “SourceControlPoint” and “TargetControlPoint” of bezier segment, which allows to modify the control points. The following code example illustrates how to create and modify a bezier curve segment via control points.
+{% tabs %}
+{% highlight c# %}
+Connector connector = new Connector(this);
+connector.SourcePoint = new System.Drawing.PointF(100, 100);
+connector.TargetPoint = new System.Drawing.PointF(300, 300);
+connector.SegmentType = SegmentType.BezierSegment;
+diagram.AddConnector(connector);
+
+{% endhighlight %}
+{% endtabs %}
+![](Connector_images/Connector_img6.jpeg)
+
 ## Decorator
 The start and end points of a connector can be decorated with some customizable shapes like arrow, circle, diamond, and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of connector.
 The SourceDecoratorStyle and TargetDecoratorStyle properties define the shape of the decorators. The following code example illustrates how to create decorators of various shapes:
@@ -144,7 +158,7 @@ connector.SegmentType = SegmentType.StraightSegment;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
+![](Connector_images/Connector_img7.jpeg)
 
 ## Remove Connector
 There are two ways to remove connector from the connection, they are the following:
@@ -197,7 +211,7 @@ StrokeWidth = 4
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![](Connector_images/Connector_img8.jpeg)
 
 ## Decorator Appearance
 The following code example illustrates how to customize the appearance of the decorator:
@@ -229,5 +243,5 @@ Size = 12
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img8.jpeg)
+![](Connector_images/Connector_img9.jpeg)
 
