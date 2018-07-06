@@ -23,10 +23,10 @@ The following code example shows how to add custom text content.
         SetContentView(circularProgressBar);
         private  Android.Views.View GetCustomContentTextView(double content)
         {
-            string custContent = content + "%";
+            string customContent = content + "%";
             TextView textView = new TextView(this)
             {
-                Text = custContent,
+                Text = customContent,
                 TextSize = 20,
                 TextAlignment = Android.Views.TextAlignment.Center,
                 Gravity = Android.Views.GravityFlags.Center
