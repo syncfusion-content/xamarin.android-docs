@@ -192,7 +192,7 @@ Defined node style collection is applied from branch wise by setting the “Appl
 {% highlight c# %}
 private void UpdateTheme()
         {
-            bool m_repeatmode = true;
+            bool repeat_mode = true;
             nodeStyleCollection.Clear();
             nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#d7ebf6")), Color.ParseColor("#d7ebf6"), objShape1, StrokeStyle.Default,
             new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
@@ -201,7 +201,7 @@ private void UpdateTheme()
             nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#ffcdcd")), Color.ParseColor("#ffcdcd"), objShape3, StrokeStyle.Default,
              new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
             lineStyle = new LineStyle(segment, StrokeStyle.Default, 2, connLineApplyColorFrom, Dectype, connDecApplyColorFrom, connDecApplyColorFrom) { Color = connColor };
-            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy. Branch, m_repeatmode));
+            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy. Branch, repeat_mode));
         }
         private void Diagram_Loaded(object sender)
         { 
@@ -217,7 +217,7 @@ Defined node style collection is applied from level wise by setting the “Apply
 {% highlight c# %}
 private void UpdateTheme()
         {
-            bool m_repeatmode = true;
+            bool repeat_mode = true;
             nodeStyleCollection.Clear();
             nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#d7ebf6")), Color.ParseColor("#d7ebf6"), objShape1, StrokeStyle.Default,
             new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
@@ -226,7 +226,7 @@ private void UpdateTheme()
             nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#ffcdcd")), Color.ParseColor("#ffcdcd"), objShape3, StrokeStyle.Default,
              new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
             lineStyle = new LineStyle(segment, StrokeStyle.Default, 2, connLineApplyColorFrom, Dectype, connDecApplyColorFrom, connDecApplyColorFrom) { Color = connColor };
-            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy.Level, m_repeatmode));
+            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy.Level, repeat_mode));
         }
         private void Diagram_Loaded(object sender)
         { 
