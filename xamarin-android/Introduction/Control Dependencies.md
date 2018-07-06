@@ -16,7 +16,7 @@ This page lists the assemblies required for each control to be referred in Andro
 <dl>
 <dt>NuGet</dt>
 <dd>Syncfusion.Xamarin.SfAutoComplete.Android</dd>
-<dd></dd>
+&nbsp;
 <dt> Assemblies</dt>
 <dd> Syncfusion.SfAutoComplete.Android.dll </dd>
 <dd> Syncfusion.Licensing.dll</dd>
