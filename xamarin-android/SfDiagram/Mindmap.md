@@ -24,7 +24,7 @@ SfDiagram diagram;
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-            LinearLayout linearLayout = FindViewById<LinearLayout>(Resource.Id.linearlayout);
+            LinearLayout linearLayout = FindViewById<LinearLayout>(Resource.Id.linearLayout);
             diagram = new SfDiagram(this);
             diagram.LayoutParameters = new LayoutParams(LayoutParams.MatchParent, LayoutParams.MatchParent);
 
