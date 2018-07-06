@@ -9,7 +9,7 @@ documentation: ug
 
 # Control Dependencies
 
-This page lists the assemblies required for each control to be referred in Android project.
+This page lists the assemblies required for each control to be referred in Xamarin.Android project.
 
 ## SfAutoComplete
 
