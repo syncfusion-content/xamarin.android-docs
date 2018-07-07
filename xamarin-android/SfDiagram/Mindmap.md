@@ -10,7 +10,7 @@ keywords:
 A mind map is a diagram used to visually organize the information. It is hierarchical and shows relationship of the whole idea. It consists of a central ideas, related ideas, and lines connecting them together.  It is used for brainstorming, planning, and information gathering etc. The following code example illustrates how to create and mind map layout:
 {% tabs %}
 {% highlight c# %}
-        SfDiagram diagram;
+SfDiagram diagram;
         string x;
         List<Color> FColor = new List<Color>();
         List<Color> SColor = new List<Color>();
@@ -24,7 +24,7 @@ A mind map is a diagram used to visually organize the information. It is hierarc
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-            LinearLayout linearLayout = FindViewById<LinearLayout>(Resource.Id.linearlayout);
+            LinearLayout linearLayout = FindViewById<LinearLayout>(Resource.Id.linearLayout);
             diagram = new SfDiagram(this);
             diagram.LayoutParameters = new LayoutParams(LayoutParams.MatchParent, LayoutParams.MatchParent);
 
@@ -182,4 +182,60 @@ private void Diagram_Loaded(object sender)
 {% endhighlight %}
 {% endtabs %}
 ![](Mindmap_images/Mindmap_img1.jpeg)
+
+## Mind map layout style
+Mind map styles are defined as a collection of node style with a single connector style. Collection of node style is applied from root node to leaf node either through branch wise or level wise.
+
+## Branch wise node style
+Defined node style collection is applied from branch wise by setting the “ApplyNodeStyleBy” property to branch. The following code example illustrates how to apply style for mind map branch wise.
+{% tabs %}
+{% highlight c# %}
+private void UpdateTheme()
+        {
+            bool repeat_mode = true;
+            nodeStyleCollection.Clear();
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#d7ebf6")), Color.ParseColor("#d7ebf6"), objShape1, StrokeStyle.Default,
+            new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#ffebc4")), Color.ParseColor("#ffebc4"), objShape2, StrokeStyle.Default,
+                new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#ffcdcd")), Color.ParseColor("#ffcdcd"), objShape3, StrokeStyle.Default,
+             new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            lineStyle = new LineStyle(SegmentType.CurveSegment, StrokeStyle.Default, 3, ApplyColorFrom.TargetFill, DecoratorType.None, ApplyColorFrom.None, ApplyColorFrom.None);
+            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy.Branch, repeat_mode));
+        }
+        private void Diagram_Loaded(object sender)
+        { 
+            UpdateTheme();
+        }
+{% endhighlight %}
+{% endtabs %}
+![](Mindmap_images/Mindmap_img2.jpeg)
+
+## Level wise node style
+Defined node style collection is applied from level wise by setting the “ApplyNodeStyleBy” property to level. The following code example illustrates how to apply style for mind map level wise.
+{% tabs %}
+{% highlight c# %}
+private void UpdateTheme()
+        {
+            bool repeat_mode = true;
+            nodeStyleCollection.Clear();
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#d7ebf6")), Color.ParseColor("#d7ebf6"), objShape1, StrokeStyle.Default,
+            new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#ffebc4")), Color.ParseColor("#ffebc4"), objShape2, StrokeStyle.Default,
+                new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.ParseColor("#ffcdcd")), Color.ParseColor("#ffcdcd"), objShape3, StrokeStyle.Default,
+             new Syncfusion.SfDiagram.Android.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            lineStyle = new LineStyle(SegmentType.CurveSegment, StrokeStyle.Default, 3, ApplyColorFrom.TargetFill, DecoratorType.None, ApplyColorFrom.None, ApplyColorFrom.None);
+            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy.Level, repeat_mode));
+        }
+        private void Diagram_Loaded(object sender)
+        { 
+            UpdateTheme();
+        }
+{% endhighlight %}
+{% endtabs %}
+![](Mindmap_images/Mindmap_img3.jpeg)
+
+## Repeat mode
+When style collection ends, the next level or branch can have styles. To be cyclic, enable repeat mode or disable it to continue with last style.
 
