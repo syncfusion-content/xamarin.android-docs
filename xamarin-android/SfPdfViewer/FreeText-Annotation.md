@@ -163,7 +163,7 @@ FreeTextAnnotation selectedFreeTextAnnotation;
 
 private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotationSelectedEventArgs args)
 {
-	//Cast the sender object to freetext annotation
+	//Cast the sender object to free text annotation
 	selectedFreeTextAnnotation = sender as FreeTextAnnotation;
 }
 
@@ -241,13 +241,13 @@ FreeTextAnnotation selectedFreeTextAnnotation;
 
 private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotationSelectedEventArgs args)
 {
-	//Cast the sender object to freetext annotation.
+	//Cast the sender object to free text annotation.
 	selectedFreeTextAnnotation = sender as FreeTextAnnotation;
 }
 
 private void deleteFreeTextAnnotationButton_Clicked(object sender, EventArgs e)
 {
-	//Delete the selected freetext annotation
+	//Delete the selected free text annotation
 	pdfViewer.RemoveAnnotation(selectedFreeTextAnnotation);
 }
 
