@@ -36,7 +36,7 @@ editor.Rotate();
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/Rotate.png)
+![SfImageEditor](ImageEditor_images/transform.gif)
 
 ## Flip
 

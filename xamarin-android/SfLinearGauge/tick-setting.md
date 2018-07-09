@@ -9,11 +9,11 @@ documentation: ug
 
 # Tick Setting 
 
-The [`TickSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting.html) property is used to identify the gauge’s data value by marking the gauge scale in regular increments.
+The [`TickSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting.html) property is used to identify the gauge’s data value by marking the gauge scale in regular increments.
 
 ## Ticks visibility
 
-Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ShowTicks.html) property of linear scale.
+Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~ShowTicks.html) property of linear scale.
 
 {% highlight C# %}
 
@@ -33,7 +33,7 @@ Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusi
 
 ## Tick customization
 
-You can customize the color and thickness of ticks by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearTickSettings~Color.html) and [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearTickSettings~StrokeWidth.html) properties. The ticks length also can be customized using the [`Length`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearTickSettings~Length.html) property as demonstrated below.
+You can customize the color and thickness of ticks by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearTickSettings~Color.html) and [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearTickSettings~StrokeWidth.html) properties. The ticks length also can be customized using the [`Length`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearTickSettings~Length.html) property as demonstrated below.
 
 ### Major tick customization
 
@@ -82,7 +82,7 @@ You can customize the color and thickness of ticks by using the [`Color`](https:
 
 ## Setting minor ticks per interval
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Interval.html) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are also calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~MinorTicksPerInterval.html) property.
+The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~Interval.html) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are also calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale~MinorTicksPerInterval.html) property.
 
 {% highlight C# %}
 
@@ -104,7 +104,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgau
 
 ## Setting position for ticks
 
-The major and minor ticks can be positioned far away from the scale by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfgauge/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearTickSettings~Offset.html) property.
+The major and minor ticks can be positioned far away from the scale by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearTickSettings~Offset.html) property.
 
 {% highlight C# %}
 

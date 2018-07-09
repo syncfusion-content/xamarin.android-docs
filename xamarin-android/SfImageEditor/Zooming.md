@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Zooming
+## Zooming
 
 The image editor control provides support for zooming and panning.You can Zoom in and Zoom out image  in image editor control.
 
@@ -16,7 +16,7 @@ The following properties are related to the zooming feature of the image editor 
 * EnableZooming
 * Maximum ZoomLevel
 
-### EnableZooming
+## EnableZooming
 
  You can Enable or Disable zooming by setting Enable Zooming to either true or false.
 
@@ -30,7 +30,7 @@ The following properties are related to the zooming feature of the image editor 
 
 {% endtabs %}
 
-### Maximum ZoomLevel
+## Maximum ZoomLevel
 
 You can customize maximum zoom level  by setting value to Maximum ZoomLevel property in image editor control.
 
@@ -45,10 +45,27 @@ You can customize maximum zoom level  by setting value to Maximum ZoomLevel prop
 
 {% endtabs %}
 
-## Panning
+## PanningMode
 
-Image editor control provides support for panning.Image editor allows to pan image with only two fingers to identify touch interaction between panning and Resizing or shifting shapes.
+Image editor control provides support for panning. Image editor allows you to pan the image with two fingers or single finger by setting the PanningMode in image editor.
 
+The following properties are used in the panning.
+
+* Single Finger – You can zoom or pan the image but it restrict the select or move the shapes.
+
+* Two Finger – You can zoom or pan the image and also select or move the shapes.
+
+By default, PanningMode value as TwoFinger.
+
+{% tabs %}
+
+{% highlight C# %}
+
+editor.PanningMode = PanningMode.TwoFinger;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![SfImageEditor](ImageEditor_images/zoom.png)

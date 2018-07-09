@@ -35,27 +35,25 @@ There are two variants of progress bar: SfLinearProgressBar and SfCircularProgre
 
 {% highlight C# %} 
 
-            // Using linear progress bar. 
-            LinearLayout linearLayout = new LinearLayout(this);
-            linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 2);
-            linearLayout.Orientation = Orientation.Vertical;
-            SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
-            sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels/18);
-            sfLinearProgressBar.Progress = 75;
-            linearLayout.AddView(sfLinearProgressBar);
-
-            // Using circular progress bar.
-            SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
-            circularProgressBar.Progress = 75;
-            circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 2);
-            linearLayout.AddView(circularProgressBar);            
-            SetContentView(linearLayout);
+// Using linear progress bar. 
+LinearLayout linearLayout = new LinearLayout(this);
+linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels / 2);
+linearLayout.Orientation = Orientation.Vertical;
+SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
+sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels/18);
+sfLinearProgressBar.Progress = 75;
+linearLayout.AddView(sfLinearProgressBar);// Using circular progress bar.
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
+circularProgressBar.Progress = 75;
+circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels / 2);
+linearLayout.AddView(circularProgressBar);            
+SetContentView(linearLayout);
 
 {% endhighlight %}
  
@@ -69,124 +67,118 @@ Run the project, and check if you get following output to make sure that you hav
 
 ## Enable indeterminate state
 
-When the progress of a task cannot be shown determinately, you can enable indeterminate state using [IsIndeterminate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfprogressbar/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.ProgressBarBase~IsIndeterminate.html) property to let user know that some progress is happening in the background.
+When the progress of a task cannot be shown determinately, you can enable indeterminate state using [IsIndeterminate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.ProgressBarBase~IsIndeterminate.html) property to let user know that some progress is happening in the background.
 
 
 {% highlight C# %} 
 
-             // Using linear progress bar. 
-            LinearLayout linearLayout = new LinearLayout(this);
-            linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 2);
-            linearLayout.Orientation = Orientation.Vertical;
-            SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
-            sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels/18);
-            sfLinearProgressBar.Progress = 75;
-            sfLinearProgressBar.IsIndeterminate = true;
-            linearLayout.AddView(sfLinearProgressBar);
-
-            // Using circular progress bar.
-            SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
-            circularProgressBar.Progress = 75;
-            circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 2);
-            circularProgressBar.IsIndeterminate = true;
-            linearLayout.AddView(circularProgressBar);            
-            SetContentView(linearLayout);
+ // Using linear progress bar. 
+LinearLayout linearLayout = new LinearLayout(this);
+linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels / 2);
+linearLayout.Orientation = Orientation.Vertical;
+SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
+sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels/18);
+sfLinearProgressBar.Progress = 75;
+sfLinearProgressBar.IsIndeterminate = true;
+linearLayout.AddView(sfLinearProgressBar);
+// Using circular progress bar.
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
+circularProgressBar.Progress = 75;
+circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels / 2);
+circularProgressBar.IsIndeterminate = true;
+linearLayout.AddView(circularProgressBar);            
+SetContentView(linearLayout);
 {% endhighlight %}
 
 
 ## Enable segments
 
-To visualize the progress of a multiple sequential task, split the progress bar into the multiple segments by defining the [SegmentCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfprogressbar/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.ProgressBarBase~SegmentCount.html) property as shown in the following code.
+To visualize the progress of a multiple sequential task, split the progress bar into the multiple segments by defining the [SegmentCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.ProgressBarBase~SegmentCount.html) property as shown in the following code.
 
 {% highlight C# %} 
 
-             // Using linear progress bar. 
-            LinearLayout linearLayout = new LinearLayout(this);
-            linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 2);
-            linearLayout.Orientation = Orientation.Vertical;
-            SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
-            sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels/18);
-            sfLinearProgressBar.Progress = 75;
-            sfLinearProgressBar.SegmentCount = 4;
-            linearLayout.AddView(sfLinearProgressBar);
-
-            // Using circular progress bar.
-            SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
-            circularProgressBar.Progress = 75;
-            circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 2);            
-            circularProgressBar.SegmentCount = 4;
-            linearLayout.AddView(circularProgressBar);            
-            SetContentView(linearLayout);
+ // Using linear progress bar. 
+LinearLayout linearLayout = new LinearLayout(this);
+linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels / 2);
+linearLayout.Orientation = Orientation.Vertical;
+SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
+sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels/18);
+sfLinearProgressBar.Progress = 75;
+sfLinearProgressBar.SegmentCount = 4;
+linearLayout.AddView(sfLinearProgressBar);
+// Using circular progress bar.
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
+circularProgressBar.Progress = 75;
+circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels / 2);            
+circularProgressBar.SegmentCount = 4;
+linearLayout.AddView(circularProgressBar);            
+SetContentView(linearLayout);
  {% endhighlight %}
 ![](overview_images/indeterminate.png)
 
 
 ## Apply colors
 
-You can customize the color of the progress indicator and track by defining the [ProgressColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfprogressbar/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.ProgressBarBase~ProgressColor.html) and [TrackColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfprogressbar/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.ProgressBarBase~TrackColor.html) properties respectively.
+You can customize the color of the progress indicator and track by defining the [ProgressColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.ProgressBarBase~ProgressColor.html) and [TrackColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.ProgressBarBase~TrackColor.html) properties respectively.
 
 {% highlight C# %} 
 
-            LinearLayout linearLayout = new LinearLayout(this);
-            linearLayout.SetPadding(50, 0, 0, 0);
-            linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 300,
-                this.Resources.DisplayMetrics.HeightPixels / 2);
-            linearLayout.Orientation = Orientation.Vertical;
-
-            // Using linear progress bar. 
-            SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);           
-            sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels/18);            
-            sfLinearProgressBar.Progress = 75;
-            sfLinearProgressBar.TrackColor = Color.Rgb(255, 241, 203);
-            sfLinearProgressBar.ProgressColor = Color.Rgb(255, 183, 63);
-            linearLayout.AddView(sfLinearProgressBar);
-
-            // Using linear progress bar. 
-            SfLinearProgressBar linearProgressBar = new SfLinearProgressBar(this);
-            linearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 18);
-            linearProgressBar.Progress = 75;
-            linearProgressBar.TrackColor = Color.Rgb(218, 218, 218);
-            linearProgressBar.ProgressColor = Color.Rgb(82, 69, 57);
-            linearLayout.AddView(linearProgressBar);
-
-            // Using circular progress bar.
-            SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
-            circularProgressBar.Progress = 75;
-            circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 4);                        
-            circularProgressBar.TrackColor = Color.Rgb(237, 224, 224);
-            circularProgressBar.ProgressColor = Color.Rgb(150, 84, 81);
-            linearLayout.AddView(circularProgressBar);            
-            SetContentView(linearLayout);
-
-            // Using circular progress bar.
-            SfCircularProgressBar SfCircularProgressBar = new SfCircularProgressBar(this);
-            SfCircularProgressBar.Progress = 75;
-            SfCircularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 4);           
-            SfCircularProgressBar.TrackColor = Color.Rgb(231,232,227);
-            SfCircularProgressBar.ProgressColor = Color.Rgb(168, 179, 127);
-            linearLayout.AddView(SfCircularProgressBar);
-            SetContentView(linearLayout);
+LinearLayout linearLayout = new LinearLayout(this);
+linearLayout.SetPadding(50, 0, 0, 0);
+linearLayout.LayoutParameters=new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 300,
+    this.Resources.DisplayMetrics.HeightPixels / 2);
+linearLayout.Orientation = Orientation.Vertical;
+// Using linear progress bar. 
+SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);           
+sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels/18);            
+sfLinearProgressBar.Progress = 75;
+sfLinearProgressBar.TrackColor = Color.Rgb(255, 241, 203);
+sfLinearProgressBar.ProgressColor = Color.Rgb(255, 183, 63);
+linearLayout.AddView(sfLinearProgressBar);
+// Using linear progress bar. 
+SfLinearProgressBar linearProgressBar = new SfLinearProgressBar(this);
+linearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels / 18);
+linearProgressBar.Progress = 75;
+linearProgressBar.TrackColor = Color.Rgb(218, 218, 218);
+linearProgressBar.ProgressColor = Color.Rgb(82, 69, 57);
+linearLayout.AddView(linearProgressBar);
+// Using circular progress bar.
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
+circularProgressBar.Progress = 75;
+circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels / 4);                        
+circularProgressBar.TrackColor = Color.Rgb(237, 224, 224);
+circularProgressBar.ProgressColor = Color.Rgb(150, 84, 81);
+linearLayout.AddView(circularProgressBar);            
+SetContentView(linearLayout);
+// Using circular progress bar.
+SfCircularProgressBar SfCircularProgressBar = new SfCircularProgressBar(this);
+SfCircularProgressBar.Progress = 75;
+SfCircularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
+    this.Resources.DisplayMetrics.WidthPixels - 120,
+    this.Resources.DisplayMetrics.HeightPixels / 4);           
+SfCircularProgressBar.TrackColor = Color.Rgb(231,232,227);
+SfCircularProgressBar.ProgressColor = Color.Rgb(168, 179, 127);
+linearLayout.AddView(SfCircularProgressBar);
+SetContentView(linearLayout);
 {% endhighlight %}
  
 ![](overview_images/style.png)

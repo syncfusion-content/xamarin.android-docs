@@ -8,144 +8,626 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains you the steps required to populate the SunburstChart with data, data labels, legend and title. This section covers only the minimal features that you need to know to get started with the SunburstChart. 
+This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 
-## Adding SunburstChart Reference
+## Add sunburst chart references
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
-{Syncfusion Installed location}\Essential Studio\15.4.0.17\lib
+{Syncfusion Installed location}\Essential Studio\16.2.0.41\lib
 
 Add the following SunburstChart assembly reference in the Xamarin.Android project,
 
 lib\android\Syncfusion.SfSunburstChart.Android.dll
 
-## Initialize SunburstChart
+## Initialize sunburst chart
 
-Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart.html) namespace as shown below in your respective Page,
+Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart.html) namespace as shown below.
 
 {% highlight C# %}
 
-using Syncfusion.SfSunburstChart.Android;
+  using Syncfusion.SfSunburstChart.Android;
 
 {% endhighlight %}
 
-Then initialize an empty SunburstChart as shown below,
+Then initialize an empty SunburstChart.
 
 {% highlight C# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
 
-SetContentView(sunburstChart);
+  SetContentView(sunburstChart);
 
 {% endhighlight %}
 
 ## Initialize view model
 
-Now, let us define a data model that represents data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart.html).
+In this section, data in the following table is used for demonstration.
+
+<table>
+<tr>
+<th>
+Country
+</th>
+<th>
+Job description
+</th>
+<th>
+Job group
+</th>
+<th>
+Job role
+</th>
+<th>
+Employees count
+</th>
+</tr>
+<tr>
+<td>
+United States
+</td>
+<td>
+Sales
+</td>
+<td>
+Executive
+</td>
+<td>
+</td>
+<td>
+50
+</td>
+</tr>
+<tr>
+<td>
+United States
+</td>
+<td>
+Sales
+</td>
+<td>
+Analyst
+</td>
+<td>
+</td>
+<td>
+40
+</td>
+</tr>
+<tr>
+<td>
+United States
+</td>
+<td>
+Marketing
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+40
+</td>
+</tr>
+<tr>
+<td>
+United States
+</td>
+<td>
+Technical
+</td>
+<td>
+Testers
+</td>
+<td>
+</td>
+<td>
+35
+</td>
+</tr>
+<tr>
+<td>
+United States
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Windows
+</td>
+<td>
+175
+</td>
+</tr>
+<tr>
+<td>
+United States
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Web
+</td>
+<td>
+70
+</td>
+</tr>
+<tr>
+<td>
+United States
+</td>
+<td>
+Management
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+40
+</td>
+</tr>
+<tr>
+<td>
+United States
+</td>
+<td>
+Accounts
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+60
+</td>
+</tr>
+<tr>
+<td>
+India
+</td>
+<td>
+Technical
+</td>
+<td>
+Testers
+</td>
+<td>
+</td>
+<td>
+33
+</td>
+</tr>
+<tr>
+<td>
+India
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Windows
+</td>
+<td>
+125
+</td>
+</tr>
+<tr>
+<td>
+India
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Web
+</td>
+<td>
+60
+</td>
+</tr>
+<tr>
+<td>
+India
+</td>
+<td>
+HR Executives
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+70
+</td>
+</tr>
+<tr>
+<td>
+India
+</td>
+<td>
+Accounts
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+45
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Sales
+</td>
+<td>
+Executive
+</td>
+<td>
+</td>
+<td>
+30
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Sales
+</td>
+<td>
+Analyst
+</td>
+<td>
+</td>
+<td>
+40
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Marketing
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+50
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Technical
+</td>
+<td>
+Testers
+</td>
+<td>
+</td>
+<td>
+40
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Windows
+</td>
+<td>
+65
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Web
+</td>
+<td>
+27
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Management
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+33
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Accounts
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+55
+</td>
+</tr>
+<tr>
+<td>
+UK
+</td>
+<td>
+Technical
+</td>
+<td>
+Testers
+</td>
+<td>
+</td>
+<td>
+25
+</td>
+</tr>
+<tr>
+<td>
+UK
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Windows
+</td>
+<td>
+96
+</td>
+</tr>
+<tr>
+<td>
+UK
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Web
+</td>
+<td>
+55
+</td>
+</tr>
+<tr>
+<td>
+UK
+</td>
+<td>
+HR executives
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+60
+</td>
+</tr>
+<tr>
+<td>
+UK
+</td>
+<td>
+Accounts
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+30
+</td>
+</tr>
+</table>
+
+Define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart.html).
 
 {% highlight c# %}
-public class Model   
-{   
-    public string Quarter { get; set; }
-        
-    public string Month { get; set; }
-        
-    public string Week { get; set; }
-        
-    public double Sales { get; set; }
-}
-{% endhighlight %} 
 
-Next, create a view model class and initialize a list of `Model` objects as shown below,
-
-{% highlight c# %}
-public class DataModel
+public class SunburstModel
 {
-    public ObservableCollection<Model> Data { get; set; }
-
-    public DataModel()
-    {
-        Data = new ObservableCollection<Model>();
-
-        Data.Add(new Model() { Quarter = "Q1", Month = "Jan", Sales = 11 });
-        Data.Add(new Model() { Quarter = "Q1", Month = "Feb", Sales = 8 });
-        Data.Add(new Model() { Quarter = "Q1", Month = "Mar", Sales = 5 });
-
-        Data.Add(new Model() { Quarter = "Q2", Month = "Apr", Sales = 13 });
-        Data.Add(new Model() { Quarter = "Q2", Month = "May", Sales = 12 });
-        Data.Add(new Model() { Quarter = "Q2", Month = "Jun", Sales = 17 });
-
-        Data.Add(new Model() { Quarter = "Q3", Month = "Jul", Sales = 5 });
-        Data.Add(new Model() { Quarter = "Q3", Month = "Aug", Sales = 4 });
-        Data.Add(new Model() { Quarter = "Q3", Month = "Sep", Sales = 5 });
-
-        Data.Add(new Model() { Quarter = "Q4", Month = "Oct", Sales = 7 });
-        Data.Add(new Model() { Quarter = "Q4", Month = "Nov", Sales = 18 });
-        Data.Add(new Model() { Quarter = "Q4", Month = "Dec", Week = "W1", Sales = 5 });
-        Data.Add(new Model() { Quarter = "Q4", Month = "Dec", Week = "W2", Sales = 5 });
-        Data.Add(new Model() { Quarter = "Q4", Month = "Dec", Week = "W3", Sales = 5 });
-        Data.Add(new Model() { Quarter = "Q4", Month = "Dec", Week = "W4", Sales = 5 });
-    }
+    public string JobDescription { get; set; }
+    public string JobGroup { get; set; }
+    public string JobRole { get; set; }
+    public double EmployeesCount { get; set; }
+    public string Country { get; set; }
 }
 
 {% endhighlight %} 
 
-## Populate SunburstChart with data
+Then, create a view model class, and initialize a list of SunburstModel objects as follows.
 
-Now, set the Data property of the above DataModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~ItemsSource.html) property. 
-Add [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Levels.html) property. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~ValueMemberPath.html).
+{% highlight c# %}
+
+public class SunburstViewModel
+{
+        public ObservableCollection<SunburstModel> DataSource { get; set; }
+        public SunburstViewModel()
+        {
+            this.DataSource = new ObservableCollection<SunburstModel>
+            {
+                new SunburstModel { Country = "USA", JobDescription = "Sales", JobGroup="Executive", EmployeesCount = 50 },
+                new SunburstModel { Country = "USA", JobDescription = "Sales", JobGroup = "Analyst", EmployeesCount = 40 },
+                new SunburstModel { Country = "USA", JobDescription = "Marketing", EmployeesCount = 40 },
+                new SunburstModel { Country = "USA", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 35 },
+                new SunburstModel { Country = "USA", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 175 },
+                new SunburstModel { Country = "USA", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 70 },
+                new SunburstModel { Country = "USA", JobDescription = "Management", EmployeesCount = 40 },
+                new SunburstModel { Country = "USA", JobDescription = "Accounts", EmployeesCount = 60 },
+
+                new SunburstModel { Country = "India", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 33 },
+                new SunburstModel { Country = "India", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 125 },
+                new SunburstModel { Country = "India", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 60 },
+                new SunburstModel { Country = "India", JobDescription = "HR Executives", EmployeesCount = 70 },
+                new SunburstModel { Country = "India", JobDescription = "Accounts", EmployeesCount = 45 },
+
+                new SunburstModel { Country = "Germany", JobDescription = "Sales", JobGroup = "Executive", EmployeesCount = 30 },
+                new SunburstModel { Country = "Germany", JobDescription = "Sales", JobGroup = "Analyst", EmployeesCount = 40 },
+                new SunburstModel { Country = "Germany", JobDescription = "Marketing", EmployeesCount = 50 },
+                new SunburstModel { Country = "Germany", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 40 },
+                new SunburstModel { Country = "Germany", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 65 },
+                new SunburstModel { Country = "Germany", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 27 },
+                new SunburstModel { Country = "Germany", JobDescription = "Management", EmployeesCount = 33 },
+                new SunburstModel { Country = "Germany", JobDescription = "Accounts", EmployeesCount = 55 },
+
+                new SunburstModel { Country = "UK", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 25 },
+                new SunburstModel { Country = "UK", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 96 },
+                new SunburstModel { Country = "UK", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 55 },
+                new SunburstModel { Country = "UK", JobDescription = "HR Executives", EmployeesCount = 60 },
+                new SunburstModel { Country = "UK", JobDescription = "Accounts", EmployeesCount = 30 }
+            };
+        }
+}
+
+{% endhighlight %} 
+
+## Populate sunburst chart with data
+
+Now, set the DataSource property of the above SunburstViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~ItemsSource.html) property. 
+Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Levels.html) collection. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using the [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~ValueMemberPath.html) property.
 
 {% highlight C# %}
-SfSunburstChart sunburstChart = new SfSunburstChart(this);
 
-DataModel dataModel = new DataModel();
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
 
-sunburstChart.ItemsSource = dataModel.Data;
+  SunburstViewModel dataModel = new SunburstViewModel();
+  sunburstChart.ItemsSource = dataModel.DataSource;          
+  sunburstChart.ValueMemberPath = "EmployeesCount";                    
 
-sunburstChart.ValueMemberPath = "Sales";
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Quarter" });
+  SetContentView(sunburstChart); 
 
-sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Month" });
-
-sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Week" });
-
-SetContentView(sunburstChart);
 {% endhighlight %}
 
-![SfSunburstChart](Sunburst_images/DataSource.png)
+![SfSunburstChart](Getting-Started_images/DataSource.png)
 
-## Add Title
+## Add title
 
-You can add title to SunburstChart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Title.html) property as shown below.
+You can add title to the sunburst chart to provide information to users about the data being plotted in the chart. You can set title using the [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Title.html) property.
 
 {% highlight C# %} 
-sunburstChart.Title.IsVisible = true;
 
-sunburstChart.Title.Text = "Sales Performance";
+  sunburstChart.Title.IsVisible = true;
+
+  sunburstChart.Title.Text= "Employees Count";
+
 {% endhighlight %}
 
-![SfSunburstChart](Sunburst_images/Title.png)
+![SfSunburstChart](Getting-Started_images/Title.png)
 
-## Add Legend
+## Add legend
 
-You can enable legend by using [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Legend.html) property as shown below,
+You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Legend.html) property.
 
 {% highlight C# %} 
-sunburstChart.Legend.IsVisible = true; 
+
+  sunburstChart.Legend.IsVisible = true; 
+
 {% endhighlight %}
 
-![SfSunburstChart](Sunburst_images/Legend.png)
+![SfSunburstChart](Getting-Started_images/Legend.png)
 
-## Add Data Labels
+## Add data labels
 
-You can add data labels to improve the readability of the SunburstChart. This can be achieved by using [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~DataLabel.html) property as shown below.
+You can add data labels to improve the readability of the sunburst chart. Data labels can be added using the [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~DataLabel.html) property.
 
 {% highlight C# %} 
-sunburstChart.DataLabel.ShowLabel = true;
+
+  sunburstChart.DataLabel.ShowLabel = true;
+
 {% endhighlight %}
 
-![SfSunburstChart](Sunburst_images/DataLabel.png)
+![SfSunburstChart](Getting-Started_images/DataLabel.png)
 
-You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Android/Samples/SunburstChart_GettingStarted.zip)
+Below is the complete code for generating the following output.
+
+{% highlight C# %} 
+
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
+
+  sunburstChart.Title.IsVisible = true;
+  sunburstChart.Title.Text = "Employees Count";
+
+  sunburstChart.Legend.IsVisible = true;
+  sunburstChart.DataLabel.ShowLabel = true;
+
+  SunburstViewModel dataModel = new SunburstViewModel();
+  sunburstChart.ItemsSource = dataModel.DataSource;
+  sunburstChart.ValueMemberPath = "EmployeesCount";
+
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+
+  SetContentView(sunburstChart);
+
+{% endhighlight %}
+
+The following screenshot depicts the final output.
+
+![SfSunburstChart](Getting-Started_images/GettingStarted.png)
+
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SunburstAndroid-1491173469)
