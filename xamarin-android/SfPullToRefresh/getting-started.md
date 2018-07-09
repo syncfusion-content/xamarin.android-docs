@@ -13,7 +13,7 @@ This section provides a quick overview for working with SfPullToRefresh in Xamar
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, all the required assemblies can be found in {Syncfusion Essential Studio Installed location}\Essential Studio\1{{ site.releaseversion }}\Xamarin\lib this installation folders.
+After installing Essential Studio for Xamarin, all the required assemblies can be found in {Syncfusion Essential Studio Installed location}\Essential Studio\1{{ site.releaseversion }}\Xamarin\lib this installation folder.
 
 
 e.g., C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
@@ -37,13 +37,13 @@ The following assembly should be added as reference from the "lib" folder to use
 
 ## NuGet installation
 
-To install the required NuGet for the SfPullToRefresh control in the application, first you have to configure the NuGet packages of the Syncfusion components.
+To install the required NuGet for the SfPullToRefresh control in the application, configure the NuGet packages of the Syncfusion components.
 
 [How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
 
 ### SfPullToRefresh for Xamarin.Android
 
-The following NuGet package should be installed to use SfPullToRefresh control in the application:
+The following NuGet package should be installed to use the SfPullToRefresh control in the application.
 
 <table>
 <tr>
