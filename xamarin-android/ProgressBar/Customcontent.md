@@ -16,46 +16,45 @@ The following code example shows how to add custom text content.
 
 {% highlight c# %}
 
-        SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
-        circularProgressBar.Progress = 75;
-        circularProgressBar.AnimationDuration = 0;
-        SetCustomContentProgress();
-        SetContentView(circularProgressBar);
-        private  Android.Views.View GetCustomContentTextView(double content)
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
+circularProgressBar.Progress = 75;
+circularProgressBar.AnimationDuration = 0;
+SetCustomContentProgress();
+SetContentView(circularProgressBar);
+
+private  Android.Views.View GetCustomContentTextView(double content)
+{
+    string customContent = content + "%";
+    TextView textView = new TextView(this)
+    {
+        Text = customContent,
+        TextSize = 20,
+        TextAlignment = Android.Views.TextAlignment.Center,
+        Gravity = Android.Views.GravityFlags.Center
+    };
+    
+    return textView;
+}
+
+private async void SetCustomContentProgress()
+{
+    double progress = 0;
+    while(progress < 75)
+    {
+        circularProgressBar.Progress = progress += 5;
+        linearLayout = new LinearLayout(this) { Orientation = Orientation.Vertical };
+        linearLayout.AddView(GetCustomContentTextView(progress));
+        TextView textView = new TextView(this)
         {
-            string customContent = content + "%";
-            TextView textView = new TextView(this)
-            {
-                Text = customContent,
-                TextSize = 20,
-                TextAlignment = Android.Views.TextAlignment.Center,
-                Gravity = Android.Views.GravityFlags.Center
-
-            };
-            
-            return textView;
-        }
-
-        private async void SetCustomContentProgress()
-        {
-            double progress = 0;
-            while(progress < 75)
-            {
-                circularProgressBar.Progress = progress += 5;
-                linearLayout = new LinearLayout(this) { Orientation = Orientation.Vertical };
-                linearLayout.AddView(GetCustomContentTextView(progress));
-                TextView textView = new TextView(this)
-                {
-                    Text = "used",
-                    TextAlignment = Android.Views.TextAlignment.Center,
-                    Gravity = Android.Views.GravityFlags.Center
-                };
-                linearLayout.AddView(textView);
-
-            }
-            circularProgressBar.Content = linearLayout;
-            await System.Threading.Tasks.Task.Delay(50);
-        }
+            Text = "used",
+            TextAlignment = Android.Views.TextAlignment.Center,
+            Gravity = Android.Views.GravityFlags.Center
+        };
+        linearLayout.AddView(textView);
+    }
+    circularProgressBar.Content = linearLayout;
+    await System.Threading.Tasks.Task.Delay(50);
+}
 
 {% endhighlight %}
 
