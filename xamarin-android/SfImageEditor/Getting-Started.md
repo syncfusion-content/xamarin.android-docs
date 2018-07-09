@@ -24,7 +24,7 @@ android\Syncfusion.SfImageEditor.Android.dll
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
-# Add and configure the image editor
+## Initialize the image editor
 
 The following steps explain on how to create a image editor  and configure its elements,
 
@@ -42,8 +42,8 @@ The following steps explain on how to create a image editor  and configure its e
 {% highlight C# %}
 
     SfImageEditor editor = new SfImageEditor();
-    editor.Bitmap = */ Your Bitmap */
-
+    editor.Bitmap = BitmapFactory.DecodeResource(Resources, Resource.Drawable.screenshot);
+ 
 {% endhighlight %}
 
 

@@ -18,22 +18,20 @@ The `TextColor`, `TextSize`, `FontAttributes`, `FontFamily` and `BorderColor` pr
 {% tabs %}
 
 {% highlight C# %}
+LinearLayout linearLayout = new LinearLayout(this);
+linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
+linearLayout.SetBackgroundColor(Android.Graphics.Color.White);
 
-     LinearLayout linearLayout = new LinearLayout(this);
-     linearLayout.LayoutParameters = new ViewGroup.LayoutParams(500, ViewGroup.LayoutParams.MatchParent);
-     linearLayout.SetBackgroundColor(Android.Graphics.Color.White);
+SfComboBox comboBox = new SfComboBox(this);
+comboBox.Text = "Sample Text";
+comboBox.TextColor = Color.ParseColor("#1976d2");
+comboBox.TextSize = 20;
+comboBox.FontTypeface = Typeface.DefaultBold;
+comboBox.BorderColor = Color.Brown;
+comboBox.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
 
-     SfComboBox comboBox = new SfComboBox(this);
-     comboBox.Text = "Sample Text";
-     comboBox.TextColor = Color.ParseColor("#1976d2");
-     comboBox.TextSize = 20;
-     comboBox.FontTypeface = Typeface.DefaultBold;
-     comboBox.BorderColor = Color.Brown;
-     comboBox.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
-
-     linearLayout.AddView(comboBox);
-     SetContentView(linearLayout);
-	 
+linearLayout.AddView(comboBox);
+SetContentView(linearLayout);	 
 {% endhighlight %}
 
 {% endtabs %}
@@ -49,16 +47,14 @@ The `DropDownItemHeight` property is used to modify the height of suggestion ite
 {% tabs %}
 
 {% highlight C# %}
-
-      List<String> countryList = new List<String>();
-      countryList.Add("Uganda");
-      countryList.Add("Ukraine");
-      countryList.Add("United Arab Emirates");
-      countryList.Add("United Kingdom");
-      countryList.Add("United States");
-      comboBox.DataSource = countryList; 
-      comboBox.DropDownItemHeight = 70;
-	
+List<String> countryList = new List<String>();
+countryList.Add("Uganda");
+countryList.Add("Ukraine");
+countryList.Add("United Arab Emirates");
+countryList.Add("United Kingdom");
+countryList.Add("United States");
+comboBox.DataSource = countryList; 
+comboBox.DropDownItemHeight = 70;	
 {% endhighlight %}
 
 {% endtabs %}
@@ -72,18 +68,16 @@ Suggestion box items can be customized using the `DropDownItemFontAttributes`, `
 {% tabs %}
 
 {% highlight C# %}
-
-        List<String> countryList = new List<String>();
-        countryList.Add("Uganda");
-        countryList.Add("Ukraine");
-        countryList.Add("United Arab Emirates");
-        countryList.Add("United Kingdom");
-        countryList.Add("United States");
-        comboBox.DataSource = countryList;
-        comboBox.DropDownTextSize = 16;
-        comboBox.DropDownTextColor = Color.ParseColor("#1976d2");
-        comboBox.DropDownItemFontTypeface = Typeface.DefaultBold; 
-	 
+List<String> countryList = new List<String>();
+countryList.Add("Uganda");
+countryList.Add("Ukraine");
+countryList.Add("United Arab Emirates");
+countryList.Add("United Kingdom");
+countryList.Add("United States");
+comboBox.DataSource = countryList;
+comboBox.DropDownTextSize = 16;
+comboBox.DropDownTextColor = Color.ParseColor("#1976d2");
+comboBox.DropDownItemFontTypeface = Typeface.DefaultBold;       
 {% endhighlight %}
 
 {% endtabs %}
@@ -119,11 +113,9 @@ The drop-down button can be customized using the `DropDownButtonSettings` proper
 {% tabs %}
 
 {% highlight C# %}
-
-        DropDownButtonSettings buttonSettings = new DropDownButtonSettings();
-        buttonSettings.Image = "date.png";
-        comboBox.DropDownButtonSettings = buttonSettings; 
-	 
+DropDownButtonSettings buttonSettings = new DropDownButtonSettings();
+buttonSettings.Image = "date.png";
+comboBox.DropDownButtonSettings = buttonSettings; 	 
 {% endhighlight %}
 
 {% endtabs %}
@@ -137,9 +129,7 @@ This property is used to customize the watermark text that is displayed when the
 {% tabs %}
 
 {% highlight C# %}
-
-     comboBox.Watermark = "Enter a Country Name";
-	 
+comboBox.Watermark = "Enter a Country Name"; 
 {% endhighlight %}
 
 {% endtabs %}
@@ -153,9 +143,7 @@ The text color of watermark can be customized using the `WatermarkColor` propert
 {% tabs %}
 
 {% highlight C# %}
-
-    comboBox.WatermarkColor= Color.ParseColor("#1976d2");	 
-
+comboBox.WatermarkColor= Color.ParseColor("#1976d2");	 
 {% endhighlight %}
 
 {% endtabs %}

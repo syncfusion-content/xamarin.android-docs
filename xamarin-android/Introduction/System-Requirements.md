@@ -54,7 +54,7 @@ The following table lists the platforms supported by our Xamarin.Android control
             <br/>
         </td>
         <td>
-            SfPdfViewer
+            SfPdfViewer,SfCheckBox
             <br/>
             <br/>
         </td>

@@ -208,7 +208,7 @@ Spinner
 Password
 </td>
 <td>
-{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
+{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
 </td>
 <td>
 The String type property and property with 
@@ -634,3 +634,22 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 ## Password editor
 
 In the password editor, the [EditText](https://developer.xamarin.com/guides/android/user_interface/form_elements/edit_text/) is loaded.
+
+{% highlight c# %}
+private string password;
+
+[Display(ShortName = "Transaction password", Prompt = "Enter password")]
+[DataType(DataType.Password)]
+public string Password
+{
+    get { return this.password; }
+    set
+    {
+        this.password = value;
+        RaisePropertyChanged("Password");
+        this.RaiseErrorChanged("Password");
+    }
+}
+{% endhighlight %}
+
+![](SfDataForm_images/DataFormPasswordEditor.png)

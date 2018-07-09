@@ -17,9 +17,9 @@ The following code explains how to initialize data labels.
 
 {% highlight C# %} 
 
-            SfSunburstChart sunburstChart = new SfSunburstChart(this);
-            sunburstChart.DataLabel.ShowLabel = true;  
-            SetContentView(sunburstChart);         
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  sunburstChart.DataLabel.ShowLabel = true;  
+  SetContentView(sunburstChart);         
 
 {% endhighlight %}
 
@@ -39,10 +39,10 @@ The following code shows trimming the data labels.
 
 {% highlight C# %} 
 
-            SfSunburstChart sunburstChart = new SfSunburstChart(this);
-            sunburstChart.DataLabel.ShowLabel = true; 
-            sunburstChart.DataLabel.OverflowMode = SunburstLabelOverflowMode.Trim; 
-            SetContentView(sunburstChart);  
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  sunburstChart.DataLabel.ShowLabel = true; 
+  sunburstChart.DataLabel.OverflowMode = SunburstLabelOverflowMode.Trim; 
+  SetContentView(sunburstChart);  
 
 {% endhighlight %}
 
@@ -58,10 +58,10 @@ The following code shows hiding the data labels.
 
 {% highlight C# %} 
 
-            SfSunburstChart sunburstChart = new SfSunburstChart(this);
-            sunburstChart.DataLabel.ShowLabel = true; 
-            sunburstChart.DataLabel.OverflowMode = SunburstLabelOverflowMode.Hide; 
-            SetContentView(sunburstChart);           
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  sunburstChart.DataLabel.ShowLabel = true; 
+  sunburstChart.DataLabel.OverflowMode = SunburstLabelOverflowMode.Hide; 
+  SetContentView(sunburstChart);           
 
 {% endhighlight %}
 
@@ -81,10 +81,10 @@ The following code shows rotating a data label to an angle.
 
 {% highlight C# %} 
 
-            SfSunburstChart sunburstChart = new SfSunburstChart(this);
-            sunburstChart.DataLabel.ShowLabel = true; 
-            sunburstChart.DataLabel.RotationMode = SunburstLabelRotationMode.Angle;           
-            SetContentView(sunburstChart);         
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  sunburstChart.DataLabel.ShowLabel = true; 
+  sunburstChart.DataLabel.RotationMode = SunburstLabelRotationMode.Angle;           
+  SetContentView(sunburstChart);         
 
 {% endhighlight %}
 
@@ -100,10 +100,10 @@ The following code shows normal mode of data labels.
 
 {% highlight C# %} 
 
-            SfSunburstChart sunburstChart = new SfSunburstChart(this);
-            sunburstChart.DataLabel.ShowLabel = true; 
-            sunburstChart.DataLabel.RotationMode = SunburstLabelRotationMode.Normal;         
-            SetContentView(sunburstChart);              
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  sunburstChart.DataLabel.ShowLabel = true; 
+  sunburstChart.DataLabel.RotationMode = SunburstLabelRotationMode.Normal;         
+  SetContentView(sunburstChart);              
 
 {% endhighlight %}
 
@@ -122,11 +122,11 @@ Data labels can be customized using the properties available in [`LabelStyle`](h
 
 {% highlight C# %} 
 
-            SfSunburstChart sunburstChart = new SfSunburstChart(this);
-            sunburstChart.DataLabel.ShowLabel = true;           
-            sunburstChart.DataLabel.LabelStyle.TextSize = 10;
-            sunburstChart.DataLabel.LabelStyle.Typeface = Typeface.Serif;
-            SetContentView(sunburstChart);  
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  sunburstChart.DataLabel.ShowLabel = true;           
+  sunburstChart.DataLabel.LabelStyle.TextSize = 10;
+  sunburstChart.DataLabel.LabelStyle.Typeface = Typeface.Serif;
+  SetContentView(sunburstChart);  
 
 {% endhighlight %}
 
@@ -144,9 +144,9 @@ In the following code `Pineapple` palette is applied, hence data label takes the
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart(this);
-            sunburstChart.DataLabel.ShowLabel = true;  
-            sunburstChart.ColorModel.Palette = SunburstColorPalette.Pineapple;
+  SfSunburstChart sunburstChart = new SfSunburstChart(this);
+  sunburstChart.DataLabel.ShowLabel = true;  
+  sunburstChart.ColorModel.Palette = SunburstColorPalette.Pineapple;
 
 {% endhighlight %}
 

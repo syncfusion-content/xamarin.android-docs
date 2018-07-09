@@ -29,7 +29,7 @@ The [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
 Text
 </td>
 <td>
-Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)], [DataType(DataType.MultilineText)] and [DataType(DataType.Password)] attributes. 
+Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)], [DataType(DataType.MultilineText)] and [DataType(DataType.Password)] attributes.
 
 </td>
 </tr>
@@ -254,9 +254,9 @@ attribute or using the `AutoGeneratingDataFormItem` event.
  
 Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
  
-Based on the culture, specify the corresponding culture string value of display attribute in Resource (.Resx) file.
-
-### Using attribute
+Based on the culture specifies the corresponding culture string value of display attribute in Resource (.Resx) file as mentioned in document.
+ 
+### Using attribute.
  
 ResourceType [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of Name, ShortName, GroupName and Prompt values.
  
@@ -275,7 +275,7 @@ public string ContactName
 }
 {% endhighlight %}
  
-### Using event
+### Using event.
  
 You can localize the Name, GroupName and Prompt display attribute in the editor by using the Resources (.Resx) file in the `AutoGeneratingDataFormItem` event.
  

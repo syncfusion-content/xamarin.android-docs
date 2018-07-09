@@ -21,28 +21,12 @@ By enabling the [`IsIndeterminate`](https://help.syncfusion.com/cr/cref_files/xa
 
 {% highlight c# %}
 
-            // Using linear progress bar. 
-            LinearLayout linearLayout = new LinearLayout(this);
-            linearLayout.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 2);
-            linearLayout.Orientation = Orientation.Vertical;
-            SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
-            sfLinearProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 18);
-            sfLinearProgressBar.IsIndeterminate = true;
-            linearLayout.AddView(sfLinearProgressBar);
-
-            // Using circular progress bar.
-            SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);
-            circularProgressBar.LayoutParameters = new LinearLayout.LayoutParams(
-                this.Resources.DisplayMetrics.WidthPixels - 120,
-                this.Resources.DisplayMetrics.HeightPixels / 2);
-            circularProgressBar.IsIndeterminate = true;
-            linearLayout.AddView(circularProgressBar);
-
-            SetContentView(linearLayout);
+// Using linear progress bar. 
+SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);            
+sfLinearProgressBar.IsIndeterminate = true;            
+// Using circular progress bar.
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);            
+circularProgressBar.IsIndeterminate = true;            
 
 {% endhighlight %} 
 
@@ -50,20 +34,14 @@ By enabling the [`IsIndeterminate`](https://help.syncfusion.com/cr/cref_files/xa
 
 The secondary task’s progress can be defined by using the [`SecondaryProgress`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfprogressbar/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfLinearProgressBar~SecondaryProgress.html) property as shown in the following code example.
 
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<progressBar:SfLinearProgressBar x:Name="LinearProgressBar" Progress="25" SecondaryProgress="75"/>
-
-{% endhighlight %}
-
 {% highlight c# %}
 
-this.LinearProgressBar.Progress = 75;
+SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
 
-this.LinearProgressBar.SecondaryProgress = 25;
+sfLinearProgressBar.Progress = 75;
+
+sfLinearProgressBar.SecondaryProgress = 25;
 
 {% endhighlight %}
 
-![](overview_images/Buffer.png)
+![](overview_images/buffer.png)

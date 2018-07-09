@@ -20,7 +20,7 @@ The following code example illustrate how to set Header content in SfComboBox.
 {% tabs %}
 
 {% highlight C# %}
-
+//Create header view
 TextView headerView = new TextView(this);
 headerView.TextAlignment = TextAlignment.Center;
 headerView.TextSize = 20;
@@ -31,8 +31,9 @@ headerView.SetBackgroundColor(Color.ParseColor("#f0f0f0"));
 comboBox.IsEditableMode = true;
 comboBox.ShowDropDownHeaderView = true;
 comboBox.DropDownHeaderViewHeight = 50;
-comboBox.DropDownHeaderView = headerView;
 comboBox.SelectedDropDownItemColor = Color.Transparent;
+//set header view
+comboBox.DropDownHeaderView = headerView;
 
 comboBox.TextChanged += (object sender, TextChangedEventArgs e) => 
  {
@@ -54,7 +55,7 @@ The following code example illustrate how to set Footer content in SfComboBox.
 {% tabs %}
 
 {% highlight C# %}
-
+//create footer view
 TextView footerView = new TextView(this);
 footerView.Text = "Add New";
 footerView.TextAlignment = TextAlignment.Center;
@@ -66,8 +67,9 @@ footerView.Gravity = GravityFlags.Center;
 comboBox.IsEditableMode = true;
 comboBox.ShowDropDownFooterView = true;
 comboBox.DropDownFooterViewHeight = 50;
-comboBox.DropDownFooterView = footerView;
 comboBox.SelectedDropDownItemColor = Color.Transparent;
+//set footer view
+comboBox.DropDownFooterView = footerView;
 
 {% endhighlight %}
 

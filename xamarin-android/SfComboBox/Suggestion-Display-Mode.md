@@ -21,7 +21,7 @@ N> The default option is suggest mode.
 
 ## Suggest in drop-down 
 
-* Suggest - - Displays suggestions in the drop-down.
+* Suggest - Displays suggestions in the drop-down.
 
 {% tabs %}
 

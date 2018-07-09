@@ -506,9 +506,9 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 {% endhighlight %}
 {% endtabs %}
 
-### Changing label style
+### Customizing label and editor
 
-You can set bold for the label text by overriding the [GenerateViewForLabel](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~GenerateViewForLabel.html) method in the `DataFormLayoutManager`.
+By using DataFormLayoutManager class , you can customize the generated label by overriding the [GenerateViewForLabel](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~GenerateViewForLabel.html) method and also you can customize the editor by overriding the `OnEditorCreated` method.Here, BackgroundColor and TextColor of label and editor is customized.
 
 {% tabs %}
 {% highlight c# %}
@@ -520,20 +520,27 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
     }
     protected override View GenerateViewForLabel(DataFormItem dataFormItem)
     {
-        var view= base.GenerateViewForLabel(dataFormItem);
-        TextView textView = view as TextView;
-        if(textView!=null)
+        var label = base.GenerateViewForLabel(dataFormItem);
+        if (label is TextView)
         {
-            textView.SetTypeface(null, TypefaceStyle.Bold);
+            (label as TextView).SetBackgroundColor(Color.Rgb(255, 149, 34));
+            (label as TextView).SetTextColor(Color.White);
         }
-        return textView;
+        return label;
+    }
+
+    protected override void OnEditorCreated(DataFormItem dataFormItem, View editor)
+    {
+        if (editor is EditText)
+            (editor as EditText).SetTextColor (Color.White);
+        editor.SetBackgroundColor(Color.Rgb(0, 115, 220));
     }
 }
 dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/LabelBold.png)
+![](SfDataForm_images/LabelCustomization.png)
 
 ### Changing editor padding
 

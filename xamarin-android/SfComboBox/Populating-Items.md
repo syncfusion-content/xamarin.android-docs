@@ -20,17 +20,15 @@ Create an instance of the string list, and populate items as shown below.
 {% tabs %}
 
 {% highlight C# %}
-	
-	    List<String> countryList = new List<String>();
-        countryList.Add("Afghanistan");
-        countryList.Add("Akrotiri");
-        countryList.Add("Albania");
-        countryList.Add("Algeria");
-        countryList.Add("American Samoa");
-        countryList.Add("Andorra"); 
-        comboBox.DataSource = countryList;
-        comboBox.ComboBoxMode= ComboBoxMode.Suggest; 
-
+List<String> countryList = new List<String>();
+countryList.Add("Afghanistan");
+countryList.Add("Akrotiri");
+countryList.Add("Albania");
+countryList.Add("Algeria");
+countryList.Add("American Samoa");
+countryList.Add("Andorra"); 
+comboBox.DataSource = countryList;
+comboBox.ComboBoxMode= ComboBoxMode.Suggest; 
 {% endhighlight %}
 
 {% endtabs %}
@@ -41,11 +39,12 @@ Create an instance of the string list, and populate items as shown below.
  
 Apart from string data, the SfComboBox can deal with business object data also. Now, create Model and ViewModel classes to populate the combo box with employee details.
 
- ### Create and initialize business models
+### Create and initialize business models
 
 Define a simple model class “Employee” with fields ID, and name. Then, populate employee data in ViewModel. 
 
 {% tabs %}
+
 {% highlight C# %}
 
 // Create a class which holds the data source data
@@ -67,7 +66,6 @@ set { name = value; }
 } 
 
 // Create the ViewModel Class
-
 public class EmployeeViewModel 
 { 
 
@@ -103,18 +101,15 @@ employeeCollection.Add(new Employee() { ID = 9, Name = "Howard" });
 
 ### Setting DisplayMemberPath
 
-The control is populated with list of employees. But, the Employee model contains two properties: ID and Name. So, you should intimate by which property it should filter suggestions. The `DisplayMemberPath` property specifies the property path with which filtering is done on business objects.
+The control is populated with list of employees. But, the Employee model contains two properties: ID and Name. So, you should intimate by which property it should filter suggestions. The `DisplayMemberPath` property specifies the property path with which filtering is done on business objects.In this case, make the control to provide suggestions based on Name.
 
 {% tabs %}
 
 {% highlight C# %}
-
-    //To display the Name, set the DisplayMemberPath
-	comboBox.DisplayMemberPath = "Name";
-
-	//Add the data source
-    comboBox.DataSource = new EmployeeViewModel().EmployeeCollection; 
-
+//To display the Name, set the DisplayMemberPath
+comboBox.DisplayMemberPath = "Name";
+//Add the data source
+comboBox.DataSource = new EmployeeViewModel().EmployeeCollection; 
 {% endhighlight %}
 
 {% endtabs %}
