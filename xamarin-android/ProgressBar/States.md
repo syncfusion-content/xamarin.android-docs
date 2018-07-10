@@ -21,13 +21,12 @@ By enabling the [`IsIndeterminate`](https://help.syncfusion.com/cr/cref_files/xa
 
 {% highlight c# %}
 
-            // Using linear progress bar. 
-            SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);            
-            sfLinearProgressBar.IsIndeterminate = true;            
-
-            // Using circular progress bar.
-            SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);            
-            circularProgressBar.IsIndeterminate = true;            
+// Using linear progress bar. 
+SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);            
+sfLinearProgressBar.IsIndeterminate = true;            
+// Using circular progress bar.
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar(this);            
+circularProgressBar.IsIndeterminate = true;            
 
 {% endhighlight %} 
 
@@ -37,7 +36,7 @@ The secondary task’s progress can be defined by using the [`SecondaryProgress`
 
 {% highlight c# %}
 
- SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
+SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(this);
 
 sfLinearProgressBar.Progress = 75;
 

@@ -38,6 +38,4 @@ circularProgressBar.GapWidth = 10;
 
 {% endhighlight %}
 
-{% endtabs %} 
-
 ![](overview_images/Gap.png)
