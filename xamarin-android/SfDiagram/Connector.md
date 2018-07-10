@@ -137,7 +137,7 @@ Connector connector = new Connector(this);
 connector.SourcePoint = new System.Drawing.PointF(100, 100);
 connector.TargetPoint = new System.Drawing.PointF(300, 300);
 connector.SourceControlPoint = new System.Drawing.PointF(100, 175);
-connector.TargetControlPoint = new System.Drawing.PointF(400, 175);
+connector.TargetControlPoint = new System.Drawing.PointF(316, 175);
 connector.SegmentType = SegmentType.BezierSegment;
 diagram.AddConnector(connector);
 
