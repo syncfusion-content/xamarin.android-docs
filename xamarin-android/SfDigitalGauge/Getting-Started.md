@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion DigitalGauge control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Forms platform
+description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Android platform
 platform: Xamarin.Android
 control: DigitalGauge
 documentation: ug
@@ -12,7 +12,7 @@ This section explains the steps required to configure the [`SfDigitalGauge`](htt
 
 ## Adding digital gauge reference
 
-Syncfusion components for Xamarin.Forms are available in nuget.org. To add [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfGauge, and then install it.
+Syncfusion components for Xamarin.Android are available in nuget.org. To add [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfGauge, and then install it.
 
 To learn more about obtaining our components, refer to these links: Mac and Windows. Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this link to learn about the dependent assemblies for digital gauge.
 
