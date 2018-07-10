@@ -17,9 +17,9 @@ You have to create a class for data, employee with the properties to store emplo
 //Employee Business Object
 public class Employee
 {
-public string Team { get; set; }
-public string Role { get; set; }
-public int EmployeeId { get; set; }
+  public string Team { get; set; }
+  public string Role { get; set; }
+  public int EmployeeId { get; set; }
 }
 //Employee Collection
 public class Employees : ObservableCollection<Employee>
