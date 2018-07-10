@@ -1,71 +1,172 @@
 ---
 layout: post
 title: Getting Started with Syncfusion DigitalGauge control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Android platform 
+description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Android platform
 platform: Xamarin.Android
 control: DigitalGauge
 documentation: ug
 ---
-
 # Getting Started
 
-This section provides overview for working with SfDigitalGauge for Xamarin.Android. It walks through the entire process of creating a SfDigitalGauge.
+This section explains the steps required to configure the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) and add basic elements to it using various APIs.
 
-## Referencing Essential Studio Components in Your Solution
+## Adding digital gauge reference
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+Syncfusion components for Xamarin.Android are available in nuget.org. To add [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfGauge, and then install it.
 
-{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+To learn more about obtaining our components, refer to these links: Mac and Windows. Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this link to learn about the dependent assemblies for digital gauge.
 
-Add the following assembly references to the Android project,
+I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the SfGaugeRenderer in iOS and UWP projects as shown in this KB article.
 
-android\Syncfusion.SfDigitalGauge.Android.dll
+I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this KB article for more details.
 
-## Add SfDigitalGauge
-
-The following steps explain on how to create a SfDigitalGauge and configure its elements.
-
-* Adding namespace for the added assemblies. 
-
-{% tabs %}
+## Adding namespace for the assemblies
 
 {% highlight c# %}
 
-using Com.Syncfusion.SfDigitalGauge; 
+using Com.Syncfusion.Gauges.SfDigitalGauge;
 
 {% endhighlight %}
 
-{% endtabs %}
+## Initialize gauge
 
-* Now add the SfDigitalGauge control with a required optimal name by using the included namespace.
-
-{% tabs %}
+You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) control with a required optimal name using the included namespace.
 
 {% highlight c# %}
 
-SfDigitalGauge digital = new SfDigitalGauge(this);
-SetContentView(digital);
-	
+     protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+            SfDigitalGauge sfDigitalGauge = new SfDigitalGauge(this);
+
+            SetContentView(sfDigitalGauge);
+        }
+
 {% endhighlight %}
 
-{% endtabs %}
+## Setting value for digital gauge
 
-## Configure the properties of SfDigitalGauge
-
-User can customize the height, width and segment type in SfDigitalGauge.
-
-{% tabs %}
+The [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) control provides options to display special characters or values using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~Value.html) property.
 
 {% highlight c# %}
 
-digital.Value=”Syncfusion”;
-digital.CharacterHeight=50;
-digital.CharacterWidth=50;
-digital.CharacterType=CharacterTypes.SegmentSeven;
+    SfDigitalGauge sfDigitalGauge = new SfDigitalGauge(this);
+
+    sfDigitalGauge.Value = "11:59:50 PM";
 
 {% endhighlight %}
 
-{% endtabs %}
+## Setting character type for digital gauge
 
-![](images/Studio.png)
+By using the [`CharacterType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterType.html) property, you can set the segments for digital gauge. The digital characters can be drawn in the following four different segments:
+
+•	EightCrossEightDotMatrix
+
+•	SegmentFourteen
+
+•	SegmentSeven
+
+•	SegmentSixteen
+
+{% highlight c# %}
+
+    SfDigitalGauge sfDigitalGauge = new SfDigitalGauge(this);
+
+    sfDigitalGauge.CharacterType = CharacterTypes.EightCrossEightDotMatrix;
+
+{% endhighlight %}
+
+## Configuring properties
+
+The [`CharacterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterHeight.html), [`CharacterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterWidth.html), and [`CharacterStroke`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterStroke.html)properties are used to display characters, which can be customized as shown in the following code snippets:
+
+{% highlight c# %}
+
+            SfDigitalGauge sfDigitalGauge = new SfDigitalGauge(this);
+
+            sfDigitalGauge.CharacterHeight = 60;
+
+            sfDigitalGauge.CharacterWidth = 25;
+
+            sfDigitalGauge.CharacterStroke = Color.ParseColor("#146CED");
+
+{% endhighlight %}
+
+The following code example is the complete code of the previous configurations.
+
+{% highlight c# %}
+
+using Android.App;
+
+using Android.Widget;
+
+using Android.OS;
+
+using Com.Syncfusion.Gauges.SfDigitalGauge;
+
+using Android.Graphics;
+
+using Android.Views;
+
+namespace Gauge_GettingStarted
+{
+    [Activity(Label = "Gauge_GettingStarted", MainLauncher = true)]
+    public class MainActivity : Activity
+    {
+        LinearLayout linearLayout;
+
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+           int totalHeight = this.Resources.DisplayMetrics.HeightPixels;
+
+            SfDigitalGauge sfDigitalGauge = new SfDigitalGauge(this);
+
+            sfDigitalGauge.SetBackgroundColor(Color.White);
+
+            sfDigitalGauge.CharacterStroke = Color.Rgb(20, 108, 237);
+
+            sfDigitalGauge.CharacterHeight = 60;
+
+            sfDigitalGauge.CharactersSpacing = 2;
+
+            sfDigitalGauge.CharacterWidth = 15;
+
+            sfDigitalGauge.SegmentStrokeWidth = 2;
+
+            sfDigitalGauge.CharacterType = CharacterTypes.EightCrossEightDotMatrix;
+
+            sfDigitalGauge.Value = "11:59:50 PM";
+
+            sfDigitalGauge.DimmedSegmentColor = Color.Gray;
+
+            sfDigitalGauge.DimmedSegmentAlpha = 25;
+
+            sfDigitalGauge.LayoutParameters = (new LinearLayout.LayoutParams((int)1000, (int)350));
+
+            linearLayout = new LinearLayout(this);
+
+            linearLayout.LayoutParameters = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MatchParent, (int)(totalHeight * 0.1));
+
+            linearLayout.SetGravity(GravityFlags.Center);
+
+            linearLayout.AddView(sfDigitalGauge);
+
+            linearLayout.SetBackgroundColor(Color.White);
+
+            SetContentView(linearLayout);
+        }
+    }
+}
+
+{% endhighlight %}
+
+The following screenshot illustrates the result of the previous codes.
+
+![](Getting-Started_images/Getting-Started_img1.png)
+
+
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted325239782).
 
