@@ -59,7 +59,7 @@ The values of digital characters are scaled by altering the height and width of 
 
 ## Setting character spacing
 
-The values of digital characters are spaced by altering the space of digital characters. It is achieved by setting the [`CharacterSpacing`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfDigitalGauge~CharacterSpacing.html) property.
+The values of digital characters are spaced by altering the space of digital characters. It is achieved by setting the [`CharacterSpacing`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharactersSpacing.html) property.
 
 {% highlight c# %}
 
