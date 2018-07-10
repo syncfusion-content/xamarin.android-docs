@@ -13,7 +13,7 @@ The characters of a digital gauge can be customized in terms of [`CharacterWidth
 
 ## customize character size
 
-The values of digital characters are scaled by altering the height and width of digital characters. It is achieved by setting the [`CharacterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterHeight.html) and [`CharacterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterWidth.html) properties in the digital gauge.
+The values of digital characters are scaled by altering the height and width of digital characters. It is achieved by setting the [`CharacterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterHeight.html) and [`CharacterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterWidth.html) properties in the digital gauge. Default value of `CharacterHeight` and `CharacterWidth` is 25.
 
 {% highlight c# %}
 
@@ -102,8 +102,6 @@ The values of digital characters are spaced by altering the space of digital cha
             SetContentView(linearLayout);
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](Customize-Character-Segments_images/Customize-Character-Segments_img2.png)
 
@@ -200,7 +198,5 @@ You can customize the color and opacity of disabled segments using the [`DimmedS
             SetContentView(linearLayout);
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](Customize-Character-Segments_images/Customize-Character-Segments_img4.png)
