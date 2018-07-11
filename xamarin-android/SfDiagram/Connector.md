@@ -136,6 +136,8 @@ Bezier curve has cubic curve segments that are configurable with the control poi
 Connector connector = new Connector(this);
 connector.SourcePoint = new System.Drawing.PointF(100, 100);
 connector.TargetPoint = new System.Drawing.PointF(300, 300);
+connector.SourceControlPoint = new System.Drawing.PointF(100, 175);
+connector.TargetControlPoint = new System.Drawing.PointF(316, 175);
 connector.SegmentType = SegmentType.BezierSegment;
 diagram.AddConnector(connector);
 
@@ -204,9 +206,9 @@ connector.TargetPoint = new System.Drawing.PointF(300, 300);
 //defining connector styles
 connector.Style = new Style()
 {
-StrokeBrush = new SolidBrush(Color.Gray),
-StrokeStyle = StrokeStyle.Dashed,
-StrokeWidth = 4
+  StrokeBrush = new SolidBrush(Color.Gray),
+  StrokeStyle = StrokeStyle.Dashed,
+  StrokeWidth = 4
 };
 diagram.AddConnector(connector);
 {% endhighlight %}
@@ -227,18 +229,18 @@ connector.TargetDecoratorType = DecoratorType.Diamond;
 // defining decorator style for a connector
 connector.TargetDecoratorStyle = new DecoratorStyle()
 {
-Fill = Color.Yellow,
-StrokeColor = Color.Brown,
-StrokeWidth = 4,
-Size = 12
+  Fill = Color.Yellow,
+  StrokeColor = Color.Brown,
+  StrokeWidth = 4,
+  Size = 12
 };
 // defining decorator style for a connector
 connector.SourceDecoratorStyle = new DecoratorStyle()
 {
-Fill = Color.Green,
-StrokeColor = Color.Gray,
-StrokeWidth = 5,
-Size = 12
+  Fill = Color.Green,
+  StrokeColor = Color.Gray,
+  StrokeWidth = 5,
+  Size = 12
 };
 diagram.AddConnector(connector);
 {% endhighlight %}
