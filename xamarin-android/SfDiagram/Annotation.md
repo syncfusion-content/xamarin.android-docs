@@ -76,10 +76,10 @@ node.Width = 100;
 node.ShapeType = ShapeType.Rectangle;
 var label = new Annotation()
 {
-Content = "Label",
-FontFamily = "Arial",
-FontSize = 14,
-TextBrush = new SolidBrush(Color.Red)
+  Content = "Label",
+  FontFamily = "Arial",
+  FontSize = 14, 
+  TextBrush = new SolidBrush(Color.Red)
 };
 node.Annotations.Add(label);
 diagram.AddNode(node);
@@ -89,10 +89,10 @@ connector.SourcePoint = new System.Drawing.PointF(100, 100);
 connector.TargetPoint = new System.Drawing.PointF(200, 200);
 var con_label = new Annotation()
 {
-Content = "Label",
-FontFamily = "Arial",
-FontSize = 14,
-TextBrush = new SolidBrush(Color.Red)
+  Content = "Label",
+  FontFamily = "Arial",
+  FontSize = 14,
+  TextBrush = new SolidBrush(Color.Red)
 };
 connector.Annotations.Add(con_label);
 diagram.AddConnector(connector);
@@ -113,9 +113,9 @@ node.Width = 100;
 node.ShapeType = ShapeType.Rectangle;
 Annotation label = new Annotation()
 {
-Content = "Label",
-HorizontalAlignment = HorizontalAlignment.Center,
-VerticalAlignment = VerticalAlignment.Top
+  Content = "Label",
+  HorizontalAlignment = HorizontalAlignment.Center,
+  VerticalAlignment = VerticalAlignment.Top
 };
 node.Annotations.Add(label);
 diagram.AddNode(node);
@@ -126,9 +126,9 @@ connector.SourcePoint = new System.Drawing.PointF(100, 100);
 connector.TargetPoint = new System.Drawing.PointF(200, 200);
 connector.Annotations.Add(new Annotation()
 {
-Content = "Label",
-HorizontalAlignment = HorizontalAlignment.Center,
-VerticalAlignment = VerticalAlignment.Center
+  Content = "Label",
+  HorizontalAlignment = HorizontalAlignment.Center,
+  VerticalAlignment = VerticalAlignment.Center
 });
 diagram.AddConnector(connector);
 
