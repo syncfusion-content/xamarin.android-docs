@@ -328,7 +328,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Cancel dragging between frozen and non-frozen rows
 
-Dragging between frozen and non-frozen rows can be canceled by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and e.From index will be one of the frozen row index. Refer to the following code sample to cancel dragging between frozen and non-frozen rows:
+Dragging between frozen and non-frozen rows can be canceled using the `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. Refer to the following code sample to cancel dragging between frozen and non-frozen rows:
 
 {% tabs %}
 {% highlight c# %}
@@ -339,7 +339,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
      //e.From returns the index of the dragged frozen row.
      //e.To returns the index of the current row.
-      if ((e.From > 2 && e.To < 6) && e.Reason == QueryRowDraggingReason.DragStarted)
+      if if (e.From > sfGrid.GetHeaderIndex() && e.From <= sfGrid.FrozenRowsCount && e.Reason == QueryRowDraggingReason.DragStarted)
         e.Cancel = true;
 }
 
@@ -348,7 +348,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Cancel dropping between frozen and non-frozen rows
 
-Dropping between frozen and non-frozen rows can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and e.From index will be one of the frozen row index. Refer to the following code sample to cancel dropping between frozen and non-frozen rows:
+Dropping between frozen and non-frozen rows can be canceled using the `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. Refer to the following code sample to cancel dropping between frozen and non-frozen rows:
 
 {% tabs %}
 {% highlight c# %}
@@ -359,7 +359,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
      //e.From returns the index of the dragged frozen row.
      //e.To returns the index of the current row.
-      if ((e.From > 2 && e.To < 6) && e.Reason == QueryRowDraggingReason.DragEnded)
+      if (e.From >sfGrid.GetHeaderIndex() && e.From <= sfGrid.FrozenRowsCount && e.Reason == QueryRowDraggingReason.DragEnded)
         e.Cancel = true;
 }
 
