@@ -27,7 +27,7 @@ diagram.UserHandles.Add(new Syncfusion.SfDiagram.Android.UserHandle("SfGraphicsP
 //Add image into user handle
 var image = new ImageView(this);
 image.SetImageResource(Resource.Drawable.delete);
-diagram.UserHandles.Add(new Syncfusion.SfDiagram.Android.UserHandle("delete", UserHandlePosition.Bottom, image));
+diagram.UserHandles.Add(new Syncfusion.SfDiagram.Android.UserHandle("Delete", UserHandlePosition.Bottom, image));
 
 //Add View into user handle
 var view = new View(this);
@@ -46,12 +46,12 @@ The following code illustrate how to define user handles clicked event and its a
 diagram.UserHandleClicked += Diagram_UserHandleClicked;
 
 private void Diagram_UserHandleClicked(object sender, UserHandleClickedEventArgs args)
-        {
-            if (args.Item.Name == "Image")
-            {
-                diagram.Delete();
-            }
-        }
+{
+    if (args.Item.Name == "Delete")
+    {
+        diagram.Delete();
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 ![](Userhandle_images/Userhandle_img1.jpeg)
