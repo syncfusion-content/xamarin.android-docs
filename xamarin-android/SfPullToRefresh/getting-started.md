@@ -15,7 +15,6 @@ This section provides a quick overview for working with SfPullToRefresh in Xamar
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in {Syncfusion Essential Studio Installed location}\Essential Studio\1{{ site.releaseversion }}\Xamarin\lib this installation folder.
 
-
 e.g., C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location in Mac.
