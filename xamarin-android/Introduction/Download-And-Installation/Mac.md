@@ -11,7 +11,7 @@ documentation: ug
 
 ## Download directly from website
 
-You can also download the complete Xamarin.Android component from [here](https://www.syncfusion.com/downloads/latest-version).
+You can download the complete Xamarin.Android component from [here](https://www.syncfusion.com/downloads/latest-version).
 
 **MAC Installer (pkg)**
 
