@@ -218,7 +218,7 @@ public class Label : TextView
 
 ![](SfDataGrid_images/CustomizedTemplate.png)
 
-You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomTemplate-1341433818)
+You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomTemplate-1341433818).
 
 ## Events in row drag-and-drop
 
@@ -316,7 +316,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Cancel dropping of a particular row in a position
 
-Dropping of a particular row in a position can be canceled using the `QueryRowDraggingReason` and `Position` arguments of the `QueryRowDragging` event handler. Refer the following code sample to cancel dropping of a particular row in a position:
+Dropping of a particular row in a position can be canceled using `QueryRowDraggingReason` and `Position` arguments of the `QueryRowDragging` event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -338,7 +338,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Cancel dragging between frozen and non-frozen rows
 
-Dragging between frozen and non-frozen rows can be canceled using the `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. Refer to the following code sample to cancel dragging between frozen and non-frozen rows:
+Dragging between frozen and non-frozen rows can be canceled using `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. 
 
 {% tabs %}
 {% highlight c# %}
@@ -360,7 +360,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Cancel dropping between frozen and non-frozen rows
 
-Dropping between frozen and non-frozen rows can be canceled using the `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. Refer to the following code sample to cancel dropping between frozen and non-frozen rows:
+Dropping between frozen and non-frozen rows can be canceled using `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. 
 
 {% tabs %}
 {% highlight c# %}
@@ -431,11 +431,9 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing row drag and drop indicators
+## Customizing row drag-and-drop indicators
 
-SfDataGrid allows you to customize the row drag and drop indicators by writing a custom grid style deriving from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
-
-The below code example illustrate how to customize the row drag and drop indicators.
+The SfDataGrid allows you to customize the row drag-and-drop indicators by writing a custom grid style, deriving from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
 
 {% tabs %}
 {% highlight c#%}
