@@ -13,9 +13,13 @@ SfDataGrid allows you to drag and drop a row by setting the [SfDataGrid.AllowD
 
 The following code example illustrates how to enable row drag and drop in SfDataGrid.
 
+{% tabs %}
 {% highlight c# %}
 sfGrid.AllowDraggingRow = true;
 {% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/RowDragandDrop.gif)
 
 ## Dragging scenarios
 
@@ -35,7 +39,7 @@ SfDataGrid allows you to load a desired content when performing row drag and dro
 
 Default template will be loaded, if template is not explicitly assigned for row drag and drop operations. 
 
-![](SfDataGrid_images/RowDragAndDropDefaultTemplate.png)
+![](SfDataGrid_images/DefaultTemplate.jpg)
 
 ## Customizing row drag and drop template
 
@@ -43,13 +47,32 @@ You can load any type of custom view inside `SfDataGrid.RowDragDropTemplate` ba
 
 Refer the following code example that shows how to load row like view in template.
 
+{% tabs %}
 {% highlight c# %}
 
 //Assigning custom view to row drag and drop template.
-sfGrid.RowDragDropTemplate = new RowDragDropTemplate(context);
+sfGrid.RowDragDropTemplate = new RowDragDropTemplate(BaseContext);
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
 
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
+{% highlight c# %}
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+     if (e.Reason == QueryRowDraggingReason.DragStarted)
+     {
+        (sfGrid.RowDragDropTemplate as RowDragDropTemplate).UpdateRow(e.RowData);
+     }         
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight c# %}
 //Row template a custom view which represent row.
 
@@ -75,9 +98,17 @@ public class RowDragDropTemplate : LinearLayout
         this.Orientation = Orientation.Horizontal;
         paint.Color = Color.Black;
         label1 = new Label(context) { Gravity = GravityFlags.Center };
+        label1.Text = "OrderID";
+        label1.SetTextColor(Color.Black);
         label2 = new Label(context) { Gravity = GravityFlags.Center };
+        label2.Text = "CustomerID";
+        label2.SetTextColor(Color.Black);
         label3 = new Label(context) { Gravity = GravityFlags.Center };
+        label3.Text = "Freight";
+        label3.SetTextColor(Color.Black);
         label4 = new Label(context) { Gravity = GravityFlags.Center, IsLastLabel = true };
+        label4.Text = "Country";
+        label4.SetTextColor(Color.Black);
         this.AddView(label1);
         this.AddView(label2);
         this.AddView(label3);
@@ -183,10 +214,13 @@ public class Label : TextView
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-![](SfDataGrid_images/RowDragAndDrop.png)
+![](SfDataGrid_images/CustomizedTemplate.png)
 
-## Row drag and drop event
+You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomTemplate-1341433818).
+
+## Events in row drag-and-drop
 
 [QueryRowDragging](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryRowDragging_EV.html) event is fired upon starting to drag a row and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryRowDragging` event you can also cancel the dragging of a particular row.
 
@@ -199,18 +233,217 @@ The `QueryRowDragging` event provides following properties in [QueryRowDragging
 * [CurrentRowData](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~CurrentRowData.html) – Returns the corresponding row data, over which the row drag view is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
-## Customizing row drag and drop indicators
+## Cancel dragging of a particular row 
 
-SfDataGrid allows you to customize the row drag and drop indicators by writing a custom grid style deriving from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
+Dragging of a particular row can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
 
-The below code example illustrate how to customize the row drag and drop indicators.
+{% tabs %}
+{% highlight c# %}
 
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+    //e.From returns the index of the dragged row.
+    //e.Reason returns the dragging status of the row.
+    if (e.From == 1 && e.Reason == QueryRowDraggingReason.DragStarted)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel dropping when dragging over particular rows
+
+Dropping when dragging over particular rows can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
+
+{% tabs %}
+{% highlight c# %}
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+    //e.To returns the index of the current row.
+    //e.Reason returns the dragging status of the row.
+    if ((e.To > 5 || e.To < 10) &&
+    (e.Reason == QueryRowDraggingReason.DragEnded || e.Reason == QueryRowDraggingReason.Dragging))
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel dropping of a particular row
+
+Dropping of a particular row can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
+
+{% tabs %}
+{% highlight c# %}
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+    //e.From returns the index of the dragged row.
+    //e.Reason returns the dragging status of the row.
+    if (e.From == 1 && e.Reason == QueryRowDraggingReason.DragEnded)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel dropping at a particular position 
+
+Dropping at a particular position can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
+
+{% tabs %}
+{% highlight c# %}
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+    //e.To returns the index of the current row.
+    //e.Reason returns the dragging status of the row.
+    if ((e.To == 5 || e.To == 7) && e.Reason == QueryRowDraggingReason.DragEnded)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel dropping of a particular row in a position
+
+Dropping of a particular row in a position can be canceled using `QueryRowDraggingReason` and `Position` arguments of the `QueryRowDragging` event handler. 
+
+{% tabs %}
+{% highlight c# %}
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+     //e.To returns the index of the current row.
+     //e.Position returns the x and y position of the current row
+      if ((e.To == 3) && e.Position == new Point(966,871) && e.Reason == QueryRowDraggingReason.DragEnded)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel drag and drop between frozen and non-frozen rows
+
+### Cancel dragging between frozen and non-frozen rows
+
+Dragging between frozen and non-frozen rows can be canceled using `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. 
+
+{% tabs %}
+{% highlight c# %}
+
+sfGrid.FrozenRowsCount = 4;
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+     //e.From returns the index of the dragged frozen row.
+     //e.To returns the index of the current row.
+      if if (e.From > sfGrid.GetHeaderIndex() && e.From <= sfGrid.FrozenRowsCount && e.Reason == QueryRowDraggingReason.DragStarted)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Cancel dropping between frozen and non-frozen rows
+
+Dropping between frozen and non-frozen rows can be canceled using `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. 
+
+{% tabs %}
+{% highlight c# %}
+
+sfGrid.FrozenRowsCount = 4;
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+     //e.From returns the index of the dragged frozen row.
+     //e.To returns the index of the current row.
+      if (e.From >sfGrid.GetHeaderIndex() && e.From <= sfGrid.FrozenRowsCount && e.Reason == QueryRowDraggingReason.DragEnded)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Reorder the underlying data
+
+Reordering changes directly on the underlying data can be done using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler. Refer following code sample to make permanent reordering changes.
+
+{% tabs %}
+{% highlight c# %}
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+    //e.To returns the index of the current row.
+    //e.From returns the index of the dragged row.
+    if (e.Reason == QueryRowDraggingReason.DragEnded)
+    {
+        var collection = (sender as SfDataGrid).ItemsSource as IList;
+        collection.RemoveAt(e.From - 1);
+        collection.Insert(e.To - 1, e.RowData);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Drop a grid row in the last position
+
+The `To` property of the `QueryRowDraggingEventArgs` denotes the current drop index of the dragged row when dragging over the grid rows. It returns the same index when you drag a row over the rows in last position or last but one. In order to programmatically track whether the dragged row is dropped at the last position or last but one, SfDataGrid provides the [Position](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~Position.html) property in `QueryRowDraggingEventArgs` which denotes the position of the RowDragView.
+
+Refer the following code example in which the `Position` property is used to determine whether the row is dropped in the last position.
+
+{% tabs %}
+{% highlight c# %}
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+    var totalHeight = dataGrid.RowColumnIndexToPoint(new RowColumnIndex(viewModel.OrdersInfo.Count, 0)).Y + this.dataGrid.RowHeight;
+    if (e.Reason == QueryRowDraggingReason.DragEnded)
+    {
+        if (Math.Ceiling(e.Position.Y + (dataGrid.RowHeight / 2)) > totalHeight && e.To == viewModel.OrdersInfo.Count)
+        {
+            // Will hit if the row is dropped at the last position                 
+            Toast.MakeText(this,"The row is dropped in the last position",ToastLength.Short).Show();  
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Customizing row drag-and-drop indicators
+
+The SfDataGrid allows you to customize the row drag-and-drop indicators by writing a custom grid style, deriving from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
+
+{% tabs %}
 {% highlight c#%}
 
 dataGrid.GridStyle = new CustomGridStyle();
 
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c#%}
 
 // Custom style class
@@ -230,116 +463,9 @@ public class CustomGridStyle : DataGridStyle
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-![](SfDataGrid_images/CustomizeRowDragAndDrop.png)
-
-## Disable dragging for particular row 
-
-Dragging can be disabled for a particular row by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to disable dragging for particular row.
-
-{% highlight c# %}
-
-private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
-{
-    //e.From returns the index of the dragged row.
-    //e.Reason returns the dragging status of the row.
-    if (e.From == 1 && e.Reason == QueryRowDraggingReason.DragStarted)
-        e.Cancel = true;
-}
-
-{% endhighlight %}
-
-## Disable dropping when dragging over particular rows
-
-Dropping can be disabled for particular rows while dragging a row.Refer following code sample to cancel dropping of particular row.
-
-{% highlight c# %}
-
-private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
-{
-    //e.To returns the index of the current row.
-    //e.Reason returns the dragging status of the row.
-    if ((e.To > 5 || e.To < 10) &&
-    (e.Reason == QueryRowDraggingReason.DragEnded || e.Reason == QueryRowDraggingReason.Dragging))
-        e.Cancel = true;
-}
-
-{% endhighlight %}
-
-## Disable dropping of particular row
-
-Dropping can be canceled for particular row by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping of particular row.
-
-{% highlight c# %}
-
-private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
-{
-    //e.From returns the index of the dragged row.
-    //e.Reason returns the dragging status of the row.
-    if (e.From == 1 && e.Reason == QueryRowDraggingReason.DragEnded)
-        e.Cancel = true;
-}
-
-{% endhighlight %}
-
-## Disable dropping at a particular position 
-
-Dropping at a particular position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping at particular position.
-
-{% highlight c# %}
-
-private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
-{
-    //e.To returns the index of the current row.
-    //e.Reason returns the dragging status of the row.
-    if ((e.To == 5 || e.To == 7) && e.Reason == QueryRowDraggingReason.DragEnded)
-        e.Cancel = true;
-}
-
-{% endhighlight %}
-
-## Reorder the underlying data
-
-Reordering changes directly on the underlying data can be done by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to make permanent reordering changes.
-
-{% highlight c# %}
-
-private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
-{
-    //e.To returns the index of the current row.
-    //e.From returns the index of the dragged row.
-    if (e.Reason == QueryRowDraggingReason.DragEnded)
-    {
-        var collection = (sender as SfDataGrid).ItemsSource as IList;
-        collection.RemoveAt(e.From - 1);
-        collection.Insert(e.To - 1, e.RowData);
-    }
-}
-
-{% endhighlight %}
-
-## Drop a grid row in the last position
-
-The `To` property of the `QueryRowDraggingEventArgs` denotes the current drop index of the dragged row when dragging over the grid rows. It returns the same index when you drag a row over the rows in last position or last but one. In order to programmatically track whether the dragged row is dropped at the last position or last but one, SfDataGrid provides the [Position](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~Position.html) property in `QueryRowDraggingEventArgs` which denotes the position of the RowDragView.
-
-Refer the following code example in which the `Position` property is used to determine whether the row is dropped in the last position.
-
-{% highlight c# %}
-
-private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
-{
-    var totalHeight = dataGrid.RowColumnIndexToPoint(new RowColumnIndex(viewModel.OrdersInfo.Count, 0)).Y + this.dataGrid.RowHeight;
-    if (e.Reason == QueryRowDraggingReason.DragEnded)
-    {
-        if (Math.Ceiling(e.Position.Y + (dataGrid.RowHeight / 2)) > totalHeight && e.To == viewModel.OrdersInfo.Count)
-        {
-            // Will hit if the row is dropped at the last position                 
-            Toast.MakeText(this,"The row is dropped in the last position",ToastLength.Short).Show();  
-        }
-    }
-}
-
-{% endhighlight %}
+![](SfDataGrid_images/CustomizedIndicator_Row.png)
 
 ## Updating summaries when dragging and dropping a row between groups
 
@@ -347,6 +473,7 @@ Grouping and summaries of items in SfDataGrid are manipulated based on group key
 
 Hence, in order to update the summaries when a row is dragged and dropped between groups you need to call the `UpdateCaptionSummaries` and `Refresh` methods in the `QueryRowDragging` event.
 
+{% tabs %}
 {% highlight c#%}
 public class MainActivity : Activity
 {
@@ -389,7 +516,8 @@ public class MainActivity : Activity
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot shows the output rendered when executing the above code example.
 
-![](SfDataGrid_images/SummaryUpdate.png)
+![](SfDataGrid_images/UpdatedSummary_Android.png)
