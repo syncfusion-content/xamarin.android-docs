@@ -779,6 +779,6 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/Customizingcaptionsummary.jpg)
+![](SfDataGrid_images/Customizinggroupsummary.jpg)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo-1751321675).
