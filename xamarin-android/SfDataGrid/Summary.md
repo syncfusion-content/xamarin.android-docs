@@ -705,45 +705,80 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 
 ### Customizing Group summary
 
-The data grid allows customizing the caption summary by extending the [GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridGroupSummaryCellRenderer.html).
+The data grid allows customizing the group summary by extending the [GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridGroupSummaryCellRenderer.html).
 
 N> By default, `LoadUIView` property of `GridColumn` is `false` for android. Hence, `OnInitializeDisplayView()` will not be called.
 
 {% highlight c#%}
 
-  GridTextColumn orderIdColumn = new GridTextColumn();
-  orderIdColumn.MappingName = "OrderID";
-  orderIdColumn.LoadUIView = true;
-  
-// To remove default summary and Add custom summary.
-
-public class Summary : ContentPage
+public class MainActivity : Activity
 {
-    public Summary()
+    SfDataGrid dataGrid;
+    ViewModel viewModel;
+    protected override void OnCreate(Bundle bundle)
     {
-        InitializeComponent();
-        dataGrid.CellRenderers.Remove("CaptionSummary");
-        dataGrid.CellRenderers.Add("CaptionSummary", new GridCaptionSummaryCellRendererExt());
+        base.OnCreate(bundle);
+        dataGrid = new SfDataGrid(this);
+        viewModel = new ViewModel();
+        dataGrid.ItemsSource = viewModel.OrdersInfo;
+        dataGrid.AutoGenerateColumns = false;
+        dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", Width= 85, LoadUIView = true });
+        dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Salary", Width= 90, LoadUIView = true });
+        dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID", Width= 150, LoadUIView = true });
+        dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Country", Width = 90, LoadUIView = true });
+     
+        // To remove default summary and Add custom summary.
+        dataGrid.CellRenderers.Remove("GroupSummary");
+        dataGrid.CellRenderers.Add("GroupSummary", new GridGroupSummaryCellRendererExt());
+
+        dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+        {
+            ColumnName = "Salary"
+        });
+
+        dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
+        {
+            ShowSummaryInRow = true,
+            Title = "Total Salary: {Salary} for {customerID} members",
+            SummaryColumns = new ObservableCollection<ISummaryColumn>()
+            {
+                new GridSummaryColumn()
+                {
+                    Name="Salary",
+                    MappingName="Salary",
+                    SummaryType=SummaryType.DoubleAggregate,
+                    Format="{Sum}"
+                },
+                new GridSummaryColumn()
+                {
+                    Name="customerID",
+                    MappingName="customerID",
+                    Format="{Count}",
+                    SummaryType=SummaryType.CountAggregate
+                }
+            }   
+        });
+        SetContentView (dataGrid);
     }
 }
 
+// Custom CellRenderer
 public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
+{
+    public GridCaptionSummaryCellRendererExt() { }
+
+    public override void OnInitializeDisplayView(DataColumnBase dataColumn, TextView view)
     {
-        public GridCaptionSummaryCellRendererExt() { }
-
-        public override void OnInitializeDisplayView(DataColumnBase dataColumn, TextView view)
-        {
-            base.OnInitializeDisplayView(dataColumn, view);
-            view.SetTextColor(Color.White);
-            view.TextSize = 20;
-            view.TextAlignment= TextAlignment.Center;
-            view.Typeface = Typeface.Create("GillSans-Italic", Android.Graphics.TypefaceStyle.BoldItalic);
-            view.SetBackgroundColor(Color.Gray);
-
-        }
+        base.OnInitializeDisplayView(dataColumn, view);
+        view.SetTextColor(Color.White);
+        view.TextSize = 20;
+        view.TextAlignment= TextAlignment.Center;
+        view.Typeface = Typeface.Create("GillSans-Italic", Android.Graphics.TypefaceStyle.BoldItalic);
+        view.SetBackgroundColor(Color.Gray);
     }
+}
 {% endhighlight %}
 
-![](SfDataGrid_images/Customizingcaptionsummary.PNG)
+![](SfDataGrid_images/Customizingcaptionsummary.jpg)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo-1751321675).
