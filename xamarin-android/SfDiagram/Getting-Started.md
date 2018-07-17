@@ -65,25 +65,25 @@ protected override void OnCreate(Bundle bundle)
 base.OnCreate(bundle);
 // Set our view from the "main" layout resource
 SetContentView(Resource.Layout.Main);
-LinearLayout linear_Layout = FindViewById<LinearLayout>(Resource.Id.linear_layout);
+LinearLayout linearLayout = FindViewById<LinearLayout>(Resource.Id.linear_layout);
 SfDiagram diagram = new SfDiagram(this);
 diagram.LayoutParameters = new LayoutParams(LayoutParams.MatchParent, LayoutParams.MatchParent);
-Node Begin = AddNode("Begin", 300, 120, 240, 80, "Begin", ShapeType.Ellipse);
-Node Process = AddNode("Process", 300, 280, 240, 120, "Process", ShapeType.Rectangle);
-Node End = AddNode("End", 380, 450, 80, 80, "End", ShapeType.Ellipse);
+Node begin = AddNode("Begin", 300, 120, 240, 80, "begin", ShapeType.Ellipse);
+Node process = AddNode("Process", 300, 280, 240, 120, "process", ShapeType.Rectangle);
+Node end = AddNode("End", 380, 450, 80, 80, "end", ShapeType.Ellipse);
 //Add nodes to the SfDiagram
-diagram.AddNode(Begin);
-diagram.AddNode(Process);
-diagram.AddNode(End);
+diagram.AddNode(begin);
+diagram.AddNode(process);
+diagram.AddNode(end);
 Connector connector1 = new Connector(this)
 {
-SourceNode = Begin,
-TargetNode = Process,
+  SourceNode = begin,
+  TargetNode = process,
 };
 Connector connector2 = new Connector(this)
 {
-SourceNode = Process,
-TargetNode = End,
+  SourceNode = process,
+  TargetNode = end,
 };
 //Add connectors to the SfDiagram
 diagram.AddConnector(connector1);
@@ -93,15 +93,15 @@ linearLayout.AddView(diagram);
 //Create Node
 public Node AddNode(string id, float offsetX, float offsetY, float width, float height, string text, ShapeType shape)
 {
-Node node = new Node(this);
-node.OffsetX = offsetX;
-node.OffsetY = offsetY;
-node.Height = height;
-node.Width = width;
-node.ShapeType = shape;
-node.Style.Brush = new SolidBrush(Color.Rgb(100, 149, 237));
-node.Annotations.Add(new Annotation() { Content = text, FontSize = 18, TextBrush = new SolidBrush(Color.White) });
-return node;
+  Node node = new Node(this);
+  node.OffsetX = offsetX;
+  node.OffsetY = offsetY;
+  node.Height = height;
+  node.Width = width;
+  node.ShapeType = shape;
+  node.Style.Brush = new SolidBrush(Color.Rgb(100, 149, 237));
+  node.Annotations.Add(new Annotation() { Content = text, FontSize = 18, TextBrush = new SolidBrush(Color.White) });
+  return node;
 }
 {% endhighlight %}
 {% endtabs %}
