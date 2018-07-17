@@ -623,6 +623,8 @@ Each summary has a specific key using which the custom summary renderer can be r
 
 The data grid allows customizing the table summary by extending the [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html).
 
+N> By default, `LoadUIView` property of `GridColumn` is `false` for android. Hence, `OnInitializeDisplayView()` will not be called.
+
 To customize the table summary, follow the code example:
 
 {% highlight c#%}
@@ -763,9 +765,9 @@ public class MainActivity : Activity
 }
 
 // Custom CellRenderer
-public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
+public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
 {
-    public GridCaptionSummaryCellRendererExt() { }
+    public GridGroupSummaryCellRendererExt() { }
 
     public override void OnInitializeDisplayView(DataColumnBase dataColumn, TextView view)
     {
