@@ -19,28 +19,13 @@ E.g. C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 
 N> Assemblies can be found in an unzipped package location in Mac.
 
-### SfPopupLayout for Xamarin.Android
-
-The following assembly should be added as reference from the "lib" folder to use the SfPopupLayout in the application.
-
-<table>
-<tr>
-<th> Project </th>
-<th> Required assembly </th>
-</tr>
-<tr>
-<td> Xamarin.Android </td>
-<td> android\Syncfusion.SfPopupLayout.Android.dll </td>
-</tr>
-</table>
-
 ## NuGet configuration
 
-To install the required NuGet for the SfPopupLayout control in the application, configure the NuGet packages of the Syncfusion components.
+To install the required NuGet for the SfPopupLayout control in the application, first you have to configure the NuGet packages of the Syncfusion components.
 
 [How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
 
-The following NuGet package should be installed to use the SfPopupLayout control in the application.
+The following NuGet package should be installed to use the SfPopupLayout control in the application:
 
 <table>
 <tr>
@@ -53,9 +38,24 @@ The following NuGet package should be installed to use the SfPopupLayout control
 </tr>
 </table>
 
-Refer to the following screenshot in which the Syncfusion.Xamarin.SfPopupLayout.Android package is highlighted.
+### Adding SfPopupLayout Reference
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPopupLayout to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPopupLayout.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPopUpLayout.Android), and then install it.
 
 ![](GettingStarted_images/NuGetInstall.png)
+
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required assembly </th>
+</tr>
+<tr>
+<td> Xamarin.Android </td>
+<td> android\Syncfusion.SfPopupLayout.Android.dll </td>
+</tr>
+</table>
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
