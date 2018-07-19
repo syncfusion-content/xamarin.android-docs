@@ -42,7 +42,7 @@ The following NuGet package should be installed to use SfPullToRefresh control i
 
 ### Adding SfPullToRefresh Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPullToRefresh](https://www.nuget.org/packages/Syncfusion.Xamarin.SFPullTORefresh.Android),and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPullToRefresh.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.SFPullTORefresh.Android),and then install it.
 
 ![](getting_started_images/NuGetInstall.png)
 
