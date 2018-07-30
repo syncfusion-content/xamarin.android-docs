@@ -19,30 +19,15 @@ e.g., C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion 
 
 N> Assemblies can be found in unzipped package location in Mac.
 
-### SfPullToRefresh for Xamarin.Android
+## NuGet configuration
 
-The following assembly should be added as reference from the "lib" folder to use SfPullToRefresh in the application.
+To install the required NuGet for the SfPullToRefresh control in the application, first you have to configure the NuGet packages of the Syncfusion components.
 
-<table>
-<tr>
-<th> Project </th>
-<th> Required assemblies </th>
-</tr>
-<tr>
-<td> Xamarin.Android </td>
-<td> android\Syncfusion.SfPullToRefresh.Android.dll </td>
-</tr>
-</table>
-
-## NuGet installation
-
-To install the required NuGet for the SfPullToRefresh control in the application, configure the NuGet packages of the Syncfusion components.
+Refer to the following KB to configure the NuGet package of the Syncfusion components:
 
 [How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
 
-### SfPullToRefresh for Xamarin.Android
-
-The following NuGet package should be installed to use the SfPullToRefresh control in the application.
+The following NuGet package should be installed to use SfPullToRefresh control in the application:
 
 <table>
 <tr>
@@ -55,9 +40,25 @@ The following NuGet package should be installed to use the SfPullToRefresh contr
 </tr>
 </table>
 
-Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh.Android package is highlighted:
+### Adding SfPullToRefresh Reference
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPullToRefresh.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.SFPullTORefresh.Android),and then install it.
 
 ![](getting_started_images/NuGetInstall.png)
+
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
+
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required assemblies </th>
+</tr>
+<tr>
+<td> Xamarin.Android </td>
+<td> Syncfusion.Xamarin.SfPullToRefresh.Android </td>
+</tr>
+</table>
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
