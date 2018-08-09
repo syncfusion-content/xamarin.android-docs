@@ -460,6 +460,8 @@ dataForm.RegisterEditor("ItemName", "Picker");
 {% endhighlight %}
 {% endtabs %}
 
+### Using event
+
 You can also set `ItemsSource` for picker editor by using the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem~ItemsSource.html) property in the [DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem.html).
 
 {% tabs %}
@@ -481,6 +483,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
+### Changing ItemSource at runtime
+
 You can also change the `ItemsSource` at runtime.
 
 {% tabs %}
@@ -500,6 +504,59 @@ private void Button_Click(object sender, EventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+### Loading complex type properties as Picker
+
+You can display the complex type property values in picker by overriding the SourceProvider class and set it to `SourceProvider` property of SfDataForm and you need to use `AutoGeneratingDataFormItem` event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem~ValueMemberPath.html) property value DataFormPickerItem for complex type property. 
+
+{% tabs %}
+{% highlight c# %}
+dataForm.SourceProvider = new SourceProviderExt();
+dataForm.RegisterEditor("City", "Picker");
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+ 
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "City")
+    {
+        (e.DataFormItem as DataFormPickerItem).DisplayMemberPath = "City";
+        (e.DataFormItem as DataFormPickerItem).ValueMemberPath = "PostalCode";
+    }
+} 
+ 
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        if (sourceName == "City")
+        {
+            List<Address> details = new List<Address>();
+            details.Add(new Address() { City = "Chennai", PostalCode = 1 });
+            details.Add(new Address() { City = "Paris", PostalCode = 2 });
+            details.Add(new Address() { City = "Vatican", PostalCode = 3 });
+
+            return details;
+        }
+       return new List<string>();
+    }
+}
+
+public class ContactInfo
+{
+    public String FirstName { get; set; } 
+    public string City { get; set; }
+}
+
+public class Address
+{
+    public int PostalCode { get; set; }
+    public string City { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataForm_images/ComplexPropertyPicker.png)
 
 ## NumericUpDown editor
 
@@ -635,6 +692,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 In the password editor, the [EditText](https://developer.xamarin.com/guides/android/user_interface/form_elements/edit_text/) is loaded.
 
+{% tabs %}
 {% highlight c# %}
 private string password;
 
@@ -651,5 +709,6 @@ public string Password
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfDataForm_images/DataFormPasswordEditor.png)
