@@ -519,7 +519,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ### Binding using dynamic object
 
-DynamicObject supports in Xamarin Android and data form item will be created.
+DynamicObject supports in Xamarin.Android and data form item will be created.
 
 {% tabs %}
 {% highlight c# %}
