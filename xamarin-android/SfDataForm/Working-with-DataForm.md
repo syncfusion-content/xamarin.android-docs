@@ -515,35 +515,41 @@ Here, the data form is loaded with field from dictionary.
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormDictionary837700264).
 
-## DynamicObject
+## Binding using dynamic object
 
-### Binding using dynamic object
-
-DynamicObject supports in Xamarin.Android and data form item will be created.
+You can also load the dynamic object in SfDataForm DataObject and by default DataFormTextItem will be generated based on data object property.
+You can change the editor of the DataFormItem in the AutoGeneratingDataFormItem event. You can find details about this [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#changing-editor-type)
 
 {% tabs %}
 {% highlight c# %}
 
-dataForm.DataObject =new DynamicDataModel().DynamicDataModel1;
+dataForm.DataObject =new DynamicDataModel().ExpandoObject;
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "DateOfBirth")
+        e.DataFormItem.Editor = "Date";
+}
 
 public class DynamicDataModel
 {
-    public dynamic DynamicDataModel1;
+    public dynamic ExpandoObject;
 
-    public dynamic DynamicDataModel2;
+    public dynamic DynamicObject;
     public DynamicDataModel()
     {
-        DynamicDataModel1 = new ExpandoObject();
-        DynamicDataModel1.FirstName = "John";
-        DynamicDataModel1.LastName = "";
-        DynamicDataModel1.Address = "";
-        DynamicDataModel1.Email = "";
+        ExpandoObject = new ExpandoObject();
+		ExpandoObject.FirstName = "John";
+		ExpandoObject.LastName = "";
+        ExpandoObject.DateOfBirth = DateTime.Now.Date;
+        ExpandoObject.Email = "";
 
-        DynamicDataModel2 = new Data();
-        DynamicDataModel2.FirstName = "John";
-        DynamicDataModel2.LastName = "";
-        DynamicDataModel2.Address = "";
-        DynamicDataModel2.Email = "";
+        DynamicObject = new Data();
+        DynamicObject.FirstName = "John";
+        DynamicObject.LastName = "";
+        DynamicObject.DateOfBirth = DateTime.Now.Date;
+        DynamicObject.Email = "";
     }
 }
 
