@@ -517,8 +517,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ## Binding using dynamic object
 
-You can also load the dynamic object in SfDataForm DataObject and by default DataFormTextItem will be generated based on data object property.
-You can change the editor of the DataFormItem in the AutoGeneratingDataFormItem event. You can find details about this [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#changing-editor-type)
+You can also load the dynamic object in SfDataForm DataObject and by default text editor will be generated for dynamic object property. You can change the editor of DataFormItem for dynamic object property data type (default string) by using the AutoGeneratingDataFormItem event. You can find details about this [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#changing-editor-type)
 
 {% tabs %}
 {% highlight c# %}
