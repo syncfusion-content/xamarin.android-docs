@@ -10,8 +10,7 @@ documentation: ug
 # Localization 
 
 You can localize the DataFormItem [Display](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute.html
-) attribute values and validation ( [Required](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.RequiredAttribute) ,[StringLength](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.StringLengthAttribute) ) attributes values by using ResourceType display
-attribute or using the `AutoGeneratingDataFormItem` event.
+) attribute values and validation ( [Required](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.RequiredAttribute) ,[StringLength](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.StringLengthAttribute) ) attributes values by using ResourceType display attribute or using the `AutoGeneratingDataFormItem` event.
  
 Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
  
