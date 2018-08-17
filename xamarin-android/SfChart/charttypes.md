@@ -86,9 +86,10 @@ chart.Series.Add(splineAreaSeries);
 
 ![](charttypes_images/charttypes_img3.png)
 
-### Spline Area Series Types
+### Spline Area Series Type
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries~SplineType.html) allows you to change the spline area curve in series. 
+
 The following types are used in [`SplineAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries.html) as
 
 * Natural
