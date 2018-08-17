@@ -160,7 +160,7 @@ chart.Series.Add(series);
 
 ## Text annotation
 
-[`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation.html) is used to add simple text in specific points over the chart area.
+[`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation.html) is used to add simple text with the help of [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAnnotation~Text.html) property in specific points over the chart area.
 
 {% highlight c# %} 
 [C#]
@@ -409,7 +409,7 @@ chart.Annotations.Add(horizontal);
 
 **Displaying axis labels for vertical and horizontal line annotations**
 
-The [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation.html) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation.html) properties display the axis labels in which the line is placed. This feature can be enabled by setting [`ShowAxisLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation~ShowAxisLabel.html) property to true as shown in the following code snippet,
+The [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation.html) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation.html) properties display the axis labels in which the line is placed. This feature can be enabled by setting [`ShowAxisLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation~ShowAxisLabel.html) property of [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation.html) and [`ShowAxisLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation~ShowAxisLabel.html) property of [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation.html) to true as shown in the following code snippet,
 
 {% highlight c# %} 
 [C#]
