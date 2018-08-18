@@ -86,6 +86,35 @@ chart.Series.Add(splineAreaSeries);
 
 ![](charttypes_images/charttypes_img3.png)
 
+### Spline Area Series Type
+
+[`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries~SplineType.html) allows you to change the spline area curve in series. 
+
+The following types are used in [`SplineAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries.html) as
+
+* Natural
+* Monotonic
+* Cardinal
+* Clamped
+
+By default [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries~SplineType.html) value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineType.html). 
+
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries~SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineType.html)
+
+{% highlight c# %} 
+[C#]
+
+SplineAreaSeries splineAreaSeries = new SplineAreaSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value",
+	SplineType = SplineType.Cardinal
+};
+chart.Series.Add(splineAreaSeries);
+
+{% endhighlight %}
+
 ## Step Area Chart
 
 To render a step area chart, create an instance of [`StepAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.StepAreaSeries.html) and add to the Series collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the step area appearance.
@@ -252,6 +281,37 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endhighlight %}
 
+### Spline Range Area Series Type
+
+[`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineRangeAreaSeries~SplineType.html) property allows you to change the spline range area curve in series.
+
+The following types can be used for [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineRangeAreaSeries.html)
+
+* Natural 
+* Monotonic
+* Cardinal
+* Clamped
+
+By default SplineType value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineType.html).
+
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineRangeAreaSeries~SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineType.html)
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value",
+	SplineType = SplineType.Cardinal
+};
+chart.Series.Add(splineRangeAreaSeries);
+
+{% endhighlight %}
 
 ## Column Chart
 
@@ -561,6 +621,38 @@ chart.Series.Add(splineSeries);
 {% endhighlight %}
 
 ![](charttypes_images/charttypes_img13.png)
+
+### SplineSeries Types
+
+[`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
+
+The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineSeries.html) as
+
+* Natural
+* Monotonic
+* Cardinal
+* Clamped
+
+By default [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineSeries~SplineType.html) value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineType.html).
+
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineSeries~SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineType.html)
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+SplineSeries splineSeries = new SplineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value",
+	SplineType = SplineType.Cardinal
+};
+chart.Series.Add(splineSeries);
+
+{% endhighlight %}
 
 ## Fast Line Chart
 
