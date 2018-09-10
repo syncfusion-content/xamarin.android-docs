@@ -273,7 +273,7 @@ This event is triggered whenever the "OK" or "Cancel" button in Picker editor or
 
 * [OldValue] : Gets the old value of the picker.
 * [NewValue] : Gets the new value of the picker.
-* [Action]   : Gets the action performed either value committed or cancelled.
+* [Action]   : Gets the action performed either value committed or canceled.
 
 The following code illustrates how to hook the Closed event and get the new value, old value and action performed details:
 
@@ -292,7 +292,7 @@ The following code illustrates how to hook the Closed event and get the new valu
             private void Closed_Method(object sender, PickerClosedEventArgs e)
             {
               var newValue = e.NewValue;
-              var oldValur = e.OldValue;
+              var oldValue = e.OldValue;
               var action = e.Action;
             }
 
