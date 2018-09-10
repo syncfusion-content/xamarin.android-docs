@@ -303,4 +303,4 @@ Refer the below code snippet to customize the width of the grid cells and header
 
     }
 
-{Endhighlight}
+{endhighlight}
