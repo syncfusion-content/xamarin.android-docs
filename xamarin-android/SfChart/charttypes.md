@@ -345,7 +345,7 @@ chart.Series.Add(columnSeries);
 
 ## Histogram Chart
 
-To render a column chart, create an instance of [`HistogramSeries`]() and add to the series collection of [`SfChart`]().
+To render a histogram chart, create an instance of [`HistogramSeries`]() and add to the series collection of [`SfChart`]().
 
 Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form.
 
