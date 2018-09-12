@@ -134,15 +134,15 @@ SetContentView(linearLayout);
 
 ![](images/gettingstarted.png)
 
-## AXML code to set Layout
+## Creating AutoComplete control in AXML layout
 
-Using Android's XML codes, we can quickly design UI layouts in Xamarin.Android.
+Create a new blank application for Android using Visual Studio. Add reference to the required assemblies in project.
 
-Each layout file must contain exactly one root element, which must be a View or ViewGroup object. Once we have defined the root element, we can add additional layout objects as child elements to gradually build a View hierarchy that defines the layout.
-
-In Main.XML page enter the below codes.
+Add the below code in the Main.axml file to include SfAutoComplete control.
 
 {% tabs %}
+
+{% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -155,15 +155,32 @@ android:layout_width="300dp"
 android:layout_height="40dp"
 android:id="@+id/autocomplete" />
 </LinearLayout>
+
+{% endhighlight %}
 	
 {% endtabs %}
 
-In MainActivity.cs page enter the below given code to get the instance of our control. Also we can use any of the property related to SfAutoComplete control here.
+Add the below code in MainActivity.cs file.
+
+Declare an instance of SfAutoComplete to access the control and its properties.
 
 {% tabs %}
 
-SfAutoComplete auto = FindViewById<SfAutoComplete>(Resource.Id.autocomplete);
+{% highlight C# %}
 
-auto.Text = "AutoComplete";
+public class MainActivity : Activity 
+{ 
+protected override void OnCreate(Bundle savedInstanceState) 
+{ 
+base.OnCreate(savedInstanceState);
+SetContentView(Resource.Layout.Main); 
+SfAutoComplete autocomplete = FindViewById<SfAutoComplete>(Resource.Id.autocomplete);
+autocomplete.Text = “AutoComplete”;
+}
+}
+
+{% endhighlight %}
 
 {% endtabs %}
+
+N> Each layout file should contain only one root element, which must be a View or ViewGroup object. After defining the root element, additional layout objects can be added as children to it.
