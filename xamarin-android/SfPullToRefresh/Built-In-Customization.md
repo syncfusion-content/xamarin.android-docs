@@ -137,7 +137,7 @@ pullToRefresh.ProgressBackgroundColor = Android.Graphics.Color.Yellow;
 
 ### ProgressShadowColor
 
-The shadow color of the progress view can be customized using the [SfPullToRefresh.ProgressShadowColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~ProgressShadowColor.html) property. The default background color of the progress view is "Android.Graphics.Color.Rgb(242, 242, 242)". 
+The shadow color of the progress view can be customized using the [SfPullToRefresh.ProgressShadowColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~ProgressShadowColor.html) property. The default shadow color of the progress view is "Android.Graphics.Color.Rgb(0, 0, 0)" . 
 
 In cases, where the background color of the pullable content and the progress view are same, use the [SfPullToRefresh.ProgressShadowColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~ProgressShadowColor.html) to separate the progress view from the pullable content view to enhance the visual appearance of the application. 
 
