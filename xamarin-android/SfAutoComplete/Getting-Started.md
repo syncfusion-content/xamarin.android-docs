@@ -136,9 +136,9 @@ SetContentView(linearLayout);
 
 ## Creating AutoComplete control in AXML layout
 
-Create a new blank application for Android using Visual Studio. Add reference to the required assemblies in project.
+Create a new blank application for Android using Visual Studio. Add reference to the required assemblies in the project.
 
-Add the below code in the Main.axml file to include SfAutoComplete control.
+Add the following code in the Main.axml file to include SfAutoComplete control.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ android:id="@+id/autocomplete" />
 	
 {% endtabs %}
 
-Add the below code in MainActivity.cs file.
+Add the following code in MainActivity.cs file.
 
 Declare an instance of SfAutoComplete to access the control and its properties.
 
@@ -183,4 +183,4 @@ autocomplete.Text = “AutoComplete”;
 
 {% endtabs %}
 
-N> Each layout file should contain only one root element, which must be a View or ViewGroup object. After defining the root element, additional layout objects can be added as children to it.
+N> Each layout file should contain only one root element, which must be a View or ViewGroup object. After defining the root element, additional layout objects can be added as child elements to it.
