@@ -175,7 +175,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 base.OnCreate(savedInstanceState);
 SetContentView(Resource.Layout.Main); 
 SfAutoComplete autocomplete = FindViewById<SfAutoComplete>(Resource.Id.autocomplete);
-autocomplete.Text = “AutoComplete”;
+autocomplete.Text = “Autocomplete”;
 }
 }
 
