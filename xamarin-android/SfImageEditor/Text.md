@@ -28,7 +28,7 @@ You can also add the desired text elements over the image from the code programm
 
 ## TextSettings
 
-TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
+TextSettings is defined to set the values for `Color`, `FontSize`, `FontFamily` and `Angle`. By default there are six types of font family has been given in toolbar that are 
 `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
 
 
@@ -36,7 +36,7 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 {% highlight C# %}
 
-            editor.AddText("New Text", new TextSettings() { Color = Color.Black, FontSize = 16d, FontFamily = Typeface.Create("Arial", TypefaceStyle.Normal) });
+            editor.AddText("New Text", new TextSettings() { Color = Color.Black, FontSize = 16d, FontFamily = Typeface.Create("Arial", TypefaceStyle.Normal), Angle=45 });
 
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 {% highlight C# %}
 
-  edit.AddText("New Text", new TextSettings() { Bounds = new Rectangle(20, 20, 35, 35) });
+  editor.AddText("New Text", new TextSettings() { Bounds = new Rectangle(20, 20, 35, 35) });
 
 {% endhighlight %}
 
@@ -69,3 +69,33 @@ Add the custom fonts into Assets folder and right click the font file and open p
   var typeface = Typeface.CreateFromAsset(this.Context.Assets, "Admiration Pains.ttf");
 
 {% endhighlight %}
+
+## Text Rotation
+
+You can rotate and resize the text by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text, CustomView and None as shown in the following code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.RotatableElements = ImageEditorElements.Text;   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The default value for RotatableElements is `None`.
+
+You can rotate the text based on a particular angle using `Angle` property in `TextSettings` as shown in the following code snippet. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.AddText("New Text", new TextSettings(){Angle = 45});    
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfImageEditor](ImageEditor_images/rotation.png)
