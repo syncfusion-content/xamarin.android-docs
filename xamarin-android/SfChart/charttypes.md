@@ -347,9 +347,9 @@ chart.Series.Add(columnSeries);
 
 To render a histogram chart, create an instance of [`HistogramSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
 
-Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or data grid form.
+Histogram chart provides a visual display of large amount of data that are difficult to understand in a tabular or data grid form.
 
-You can customize interval using [`Interval`]() property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`]().  You can use the following properties to customize the appearance.
+You can customize intervals using the [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries~Interval.html) property and collapse the normal distribution curve using the [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries~ShowNormalDistributionCurve.html) property.  You can use the following properties to customize the appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) – used to change the color of the series.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
@@ -366,7 +366,7 @@ HistogramSeries histogramSeries = new HistogramSeries()
 {
 	ItemsSource = Data,
 	XBindingPath = "XValue",
-    YBindingPath = "YValue",
+	YBindingPath = "YValue",   
 	Interval = 20
 };
 chart.Series.Add(histogramSeries);
