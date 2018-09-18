@@ -347,7 +347,7 @@ chart.Series.Add(columnSeries);
 
 To render a histogram chart, create an instance of [`HistogramSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
 
-Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form.
+Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or data grid form.
 
 You can customize interval using [`Interval`]() property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`]().  You can use the following properties to customize the appearance.
 
