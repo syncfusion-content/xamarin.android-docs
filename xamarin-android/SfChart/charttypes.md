@@ -373,7 +373,7 @@ chart.Series.Add(histogramSeries);
 
 {% endhighlight %}
 
-![](charttypes_images/charttypes_img49.png)
+![Histogram chart type in Xamarin.Android](charttypes_images/charttypes_img49.png)
 
 ## Range Column Chart
 
