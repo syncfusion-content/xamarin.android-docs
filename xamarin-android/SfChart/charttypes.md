@@ -345,16 +345,16 @@ chart.Series.Add(columnSeries);
 
 ## Histogram Chart
 
-To render a histogram chart, create an instance of [`HistogramSeries`]() and add to the series collection of [`SfChart`]().
+To render a histogram chart, create an instance of [`HistogramSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
 
 Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form.
 
 You can customize interval using [`Interval`]() property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`]().  You can use the following properties to customize the appearance.
 
-* [`Color`]() – used to change the color of the series.
-* [`StrokeWidth`]() – used to change the stroke width of the series.
-* [`StrokeColor`]() – used to change the stroke color of the series.
-* [`CurveColor`]() – used to change the color of the normal distribution curve.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) – used to change the color of the series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries~StrokeColor.html) – used to change the stroke color of the series.
+* [`CurveColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries~CurveColor.html) – used to change the color of the normal distribution curve.
 
 {% highlight c# %} 
 [C#]
