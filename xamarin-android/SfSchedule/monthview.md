@@ -459,6 +459,8 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
+![](monthview_images/selectiontextcolor.png)
+
 ### Selection customization using style
 You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
 
