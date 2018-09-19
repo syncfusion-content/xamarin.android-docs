@@ -27,7 +27,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Initialize Chart
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) control is allowing you to drag and drop on the designer screen from toolbox; the properties window displayed which you are changing the necessary functionalities to customize the chart in the designer.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the chart in designer.
 
 ![](Getting-Started_images/designer.gif)
 

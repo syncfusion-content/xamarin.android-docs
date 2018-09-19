@@ -25,6 +25,21 @@ android\Syncfusion.SfChart.Android.dll
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [`link`](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
+## Initialize DateTimeRangeNavigator
+
+[`SfDateTimeRangeNavigator`]() allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the chart in designer.
+
+![](gettingstarted_images/gettingstarted_img6.gif)
+
+You can get the date time range navigator instance from axml page in MainActivity using the following code.
+
+{% highlight C# %}
+
+SfDateTimeRangeNavigator dateTimeRangeNavigator = FindViewById<SfDateTimeRangeNavigator>(Resource.Id.sfDateTimeRangeNavigator1);
+
+{% endhighlight %}
+
+
 ## Add and configure the SfDateTimeRangeNavigator 
 
 First, let us initialize the control with major and minor date time scales by specifying the minimum and maximum date to be visualized in the control using [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~Maximum.html) properties.
