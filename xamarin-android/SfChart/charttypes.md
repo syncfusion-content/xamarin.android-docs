@@ -1341,7 +1341,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endhighlight %}
 
-![](charttypes_images/stacked_doughnut.png)
+![Stacked doughnut for Xamarin Forms](charttypes_images/stacked_doughnut.png)
 
 ### Changing Doughnut inner radius
 
