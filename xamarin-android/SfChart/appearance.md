@@ -184,9 +184,9 @@ Following code snippet and screenshot illustrates how to apply the gradient colo
 
 ## Plotting Area Customization
 
-[`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) provides the properties like [`AreaBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AreaBorderColor.html), [`AreaBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AreaBorderWidth.html) and [`AreaBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AreaBackgroundColor.html) for customizing the plot area.
+[`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) provides the [`AreaBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AreaBorderColor.html), [`AreaBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AreaBorderWidth.html), and [`AreaBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AreaBackgroundColor.html) properties to customize the plot area.
 
-The following code examples illustrates the usage of these properties:
+The following code samples demonstrate the usage of these properties:
 
 {% highlight c# %} 
 [C#]
