@@ -192,8 +192,8 @@ The following code examples illustrates the usage of these properties:
 [C#]
 
 SfChart chart = new SfChart();
-chart.AreaBackground = Color.Cyan;
-chart.AreaBorderBrush = Color.Gray;
-chart.AreaBorderThickness = 3;
+chart.AreaBackgroundColor = Color.Cyan;
+chart.AreaBorderColor = Color.Gray;
+chart.AreaBorderWidth = 3;
 
 {% endhighlight %}
