@@ -181,3 +181,19 @@ Following code snippet and screenshot illustrates how to apply the gradient colo
 {% endhighlight %}
 
 ![](appearance_images/gradient_chart.png)
+
+## Plotting Area Customization
+
+[`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) provides the properties like [`AreaBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AreaBorderColor.html), [`AreaBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AreaBorderWidth.html) and [`AreaBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~AreaBackgroundColor.html) for customizing the plot area.
+
+The following code examples illustrates the usage of these properties:
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+chart.AreaBackground = Color.Cyan;
+chart.AreaBorderBrush = Color.Gray;
+chart.AreaBorderThickness = 3;
+
+{% endhighlight %}
