@@ -56,4 +56,41 @@ linearLayout.AddView(diagram);
 {% endhighlight %}
 {% endtabs %}
 
+## Diagram style settings
+It is easier to apply default rendering styles to all shapes, connectors, stencil symbol, and stencil header in a diagram. Pass the following arguments to diagram style setting constructor: 
+ * DefaultNodeStyle argument: Defines the node style properties. 
+ * DefaultConnectorStyle argument: Defines the connector style properties.
+ * DefaultSymbolStyle argument: Defines the symbol style properties. 
+ * DefaultHeaderStyle argument: Define the header style properties. 
+The following code illustrates how to define the diagram style settings for diagram object.
+
+{% tabs %}
+{% highlight c# %}
+// Diagram style settings 
+Style NodeStyle = new Style() { Brush = new SolidBrush(Color.Blue), StrokeBrush = new SolidBrush(Color.Brown), StrokeWidth = 2, StrokeStyle = StrokeStyle.Dashed };
+
+Style ConnectorStyle = new Style() { StrokeBrush = new SolidBrush(Color.DeepSkyBlue), StrokeWidth = 3, StrokeStyle = StrokeStyle.Dotted };
+
+SymbolStyle SymbolStyle = new SymbolStyle() { Width = 70, Height = 70, StrokeWidth = 3, StrokeColor = Color.Red };
+
+HeaderStyle HeaderStyle = new HeaderStyle() { FontSize = 24, TextBrush = Color.White, Fill = Color.SteelBlue, FontStyle = FontStyle.Italic, HorizontalAlignment = HorizontalAlignment.Center };
+
+DiagramStyleSettings diagramStyleSettings = new DiagramStyleSettings(NodeStyle, ConnectorStyle, SymbolStyle, HeaderStyle);
+
+//Pass diagram style settings instance to SfDiagram constructor argument  
+SfDiagram diagram = new SfDiagram(this ,diagramStyleSettings);
+{% endhighlight %}
+{% endtabs %}
+
+## Zooming enhancement 
+Support for customizing the zoom levels. You can set minimum zoom level value as 0.01f and maximum to ‘infinite’ for diagram. The following  code illustrates this.
+{% tabs %}
+{% highlight c# %}
+// Define the minimum and maximum zoom factor value 
+
+  diagram.MinimumZoomFactor = 0.01f;
+  diagram.MaximumZoomFactor = 5.00f;
+
+{% endhighlight %}
+{% endtabs %}
 
