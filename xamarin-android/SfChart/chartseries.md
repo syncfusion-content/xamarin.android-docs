@@ -11,7 +11,7 @@ documentation: ug
 
 ## Multiple Series
 
-You can add multiple series using [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) class.
+You can add multiple series using [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) class. By default, all the series rendered based on the [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~SecondaryAxis.html) of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). But if you want to plot different unit or value that is specific to particular series, you can specify the separate axis for that series using [`XAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~XAxis.html) and [`YAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~YAxis.html) properties of [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html).
 
 {% highlight c# %} 
 [C#]
@@ -46,6 +46,45 @@ chart.Series.Add(columnSeries3);
 {% endhighlight %}
 
 ![](chartseries_images/chartseries_img1.png)
+
+Following code snippet shows how to apply the Y axis to individual series to plot different values.
+
+{% highlight c# %} 
+[C#]
+
+ColumnSeries series = new ColumnSeries();
+
+series.ItemsSource = model.Demands;
+
+series.XBindingPath = "XValue";
+
+series.YBindingPath = "YValue";
+
+series.Label = "Revenue";
+
+chart.Series.Add(series);
+
+LineSeries lineSeries = new LineSeries();
+
+lineSeries.ItemsSource = model.Demands;
+
+lineSeries.XBindingPath = "XValue";
+
+lineSeries.YBindingPath = "YValue";
+
+lineSeries.Label = "Customers";
+
+NumericalAxis yAxis = new NumericalAxis();
+
+yAxis.OpposedPosition = true;
+
+yAxis.Title.Text = "Number of Customers";
+
+lineSeries.YAxis = yAxis;
+
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
 
 ## Combination Series
 
