@@ -16,12 +16,12 @@ The following code illustrates how to create the overview panel in diagram.
 
 {% tabs %}
 {% highlight c# %}
-//Define over view panel 
-OverviewPanel overviewpanel = new OverviewPanel(diagram.Context);
-overviewpanel.Width = 500;
-overviewpanel.Height = 500;
-overviewpanel.IsVisible = true;
-diagram.OverviewPanel = overviewpanel;
+//Define overview panel 
+OverviewPanel overview = new OverviewPanel(diagram.Context);
+overview.Width = 500;
+overview.Height = 500;
+overview.IsVisible = true;
+diagram.OverviewPanel = overview;
 {% endhighlight %}
 {% endtabs %}
  
@@ -31,8 +31,8 @@ diagram.OverviewPanel = overviewpanel;
 Prevents the diagram to be updated in overview panel if any interaction takes place in the diagram layer. Prevents the diagram update for the entire actions till it turns true. It will be helpful when there is no need of frequent refreshing in the overview panel whenever diagram changes.
 {% tabs %}
 {% highlight c# %}
-//Define preventrefresh property 
-   overviewpanel.PreventRefresh = true;
+//Define prevent refresh property 
+   overview.PreventRefresh = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -40,8 +40,8 @@ Prevents the diagram to be updated in overview panel if any interaction takes pl
 Method to force refresh the diagram in overview panel. When the overview panel is prevented from updating diagram interaction by enabling PreventRefresh, force refresh is used to update the diagram in the overview panel. 
 {% tabs %}
 {% highlight c# %}
-  //Define forerefresh method 
-   overviewpanel.ForceRefresh();
+  //Define force refresh method 
+   overview.ForceRefresh();
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,7 +50,7 @@ The “StartX” and “StartY” properties are used to define the start positi
 {% tabs %}
 {% highlight c# %}
  //Customize the view port rect 
-  ViewportRect ViewportRect = new ViewportRect(overviewpanel);
+  ViewportRect ViewportRect = new ViewportRect(overview);
   ViewportRect.StrokeColor = Color.Black;
   ViewportRect.StartX = 300;
   ViewportRect.StartY = 100;
