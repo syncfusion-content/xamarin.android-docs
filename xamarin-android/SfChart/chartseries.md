@@ -192,3 +192,28 @@ chart.Series.Add(lineSeries);
 {% endhighlight %}
 
 ![](chartseries_images/chartseries_img5.png)
+
+## Methods
+
+Following methods are available in [`ChartSeries`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html)
+
+* [`FindNearestChartPoint(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~FindNearestChartPoint.html) - used to get the nearest data point for the particular touch point. 
+* [`FindNearestChartPoints(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~FindNearestChartPoints.html) - used to get the list of nearest data points for the particular touch point.
+
+## Adding separate view for series
+
+The SeriesRender view is used to render the [`ChartSeries`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) with the help of the GetView method. Following is the code snippet 
+
+{% highlight c# %}
+[C#]
+
+public class CustomColumnSeries : ColumnSeries
+    {
+        protected override SeriesRenderer GetView()
+        {
+            var view = new SeriesRenderer(Android.App.Application.Context);
+            return view;
+        }
+    }
+
+{% endhighlight %}

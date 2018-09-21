@@ -206,3 +206,36 @@ protected override View GetView(ChartSeries series, object data, int index)
 {% endhighlight %}
 
 ![](trackball_images/trackball_img5.png)
+
+## Methods
+
+### Show method
+
+The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~Show.html) method is used to activate the trackball at the specified location.
+
+{% highlight c# %} 
+[C#]
+
+trackball.Show(pointX, pointY);
+
+{% endhighlight %}
+
+### Hide method
+
+The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~Hide.html) method is used to hide the trackball programmatically.
+
+{% highlight c# %} 
+[C#]
+
+trackball.Hide();
+
+{% endhighlight %}
+
+### Get the touch position
+
+There are following methods are available in [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) that can be override to get the touch points while doing interactions
+
+* [`OnTouchUp(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnTouchUp.html) 
+* [`OnTouchDown(float pointX, float pointY)`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnTouchDown.html)
+* [`OnTouchMove(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnTouchMove.html)
+* [`OnLongPress(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnLongPress.html)

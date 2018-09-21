@@ -684,3 +684,21 @@ public class TextAnnotationExt : TextAnnotation
 }
 
 {% endhighlight  %}
+
+## Adding separate view for annotation
+
+The ChartAnnotationView is used to render the annotation with the help of the GetView method. Following is the code snippet
+
+{% highlight c# %} 
+[C#]
+
+ public class CustomEllipseAnnotation : EllipseAnnotation
+        {
+            protected override ChartAnnotationView GetView()
+            {
+                var view = new ChartAnnotationView(Android.App.Application.Context);
+                return view;
+            }
+        }
+
+{% endhighlight  %}
