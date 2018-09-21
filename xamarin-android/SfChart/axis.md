@@ -183,7 +183,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![](axis_images/axis_img10.png)
 
-### Auto Interval Calculation on Zooming 
+### Auto Interval On Zooming 
 
 [`AutoIntervalOnZoomingEnabled`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AutoIntervalOnZoomingEnabled.html)property determines the update of axis interval based on the current visible range while zooming the chart. Default value of this property is true. If this property is false, the nice interval will not be calculated for new range after zoom in and actual [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) will be sustained.
 
@@ -191,9 +191,9 @@ chart.SecondaryAxis = new NumericalAxis()
 [C#]
 
 NumericalAxis primaryAxis = new NumericalAxis()
-            {
-                AutoIntervalOnZoomingEnabled = true
-            };
+{
+    AutoIntervalOnZoomingEnabled = true
+};
 
 {% endhighlight %}
 
