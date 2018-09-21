@@ -388,8 +388,8 @@ Find the following `RecurrenceRule` possibilities available in the Schedule cont
 N> `SfSchedule` does not support Editing and Deleting of Recurring appointment's occurrences.
 
 
-### Adding Recurrence Appointment using RRuleGenerator
-Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceRule.html) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through RRuleGenerator method of ScheduleHelper class.
+### Adding Recurrence Appointment using Recurrence Builder
+Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceRule.html) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
 
 {% tabs %}
 {% highlight c# %}
