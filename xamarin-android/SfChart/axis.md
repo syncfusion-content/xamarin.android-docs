@@ -183,6 +183,20 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![](axis_images/axis_img10.png)
 
+### Auto Interval On Zooming 
+
+[`AutoIntervalOnZoomingEnabled`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AutoIntervalOnZoomingEnabled.html)property determines the update of axis interval based on the current visible range while zooming the chart. Default value of this property is true. If this property is false, the nice interval will not be calculated for new range after zoom in and actual [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) will be sustained.
+
+{% highlight c# %} 
+[C#]
+
+NumericalAxis primaryAxis = new NumericalAxis()
+{
+    AutoIntervalOnZoomingEnabled = true
+};
+
+{% endhighlight %}
+
 ## Date Time Axis
 
 Date time axis uses date time scale and displays date time values as axis labels in specified format. 
