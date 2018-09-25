@@ -199,6 +199,7 @@ Following methods are available in [`ChartSeries`](https://help.syncfusion.com/c
 
 * [`FindNearestChartPoint(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~FindNearestChartPoint.html) - used to get the nearest data point for the particular touch point. 
 * [`FindNearestChartPoints(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~FindNearestChartPoints.html) - used to get the list of nearest data points for the particular touch point.
+* [`CreateSegment()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~CreateSegment.html) and [`CreateSegments()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~CreateSegments.html) - Overriding these methods, we can customize the rendering of segments.
 
 ## Adding separate view for series
 
