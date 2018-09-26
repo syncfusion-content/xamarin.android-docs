@@ -15,7 +15,7 @@ Strip lines are used to shade the different ranges in plot area in different col
 
 ## How to add strip lines?
 
-Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** based on the type of input you provide to draw the strip line. Since strip lines are drawn based on the axis, you have to add strip line instance using [`StripLines`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CategoryAxis~StripLines.html) property of the respective axis. You can also add multiple strip lines to an axis.
+Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** based on the type of input you provide to draw the strip line. Since [`StripLines`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LogarithmicAxis~StripLines.html) are drawn based on the axis, you have to add strip line instance using [`StripLines`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CategoryAxis~StripLines.html) property of the respective axis. You can also add multiple [`StripLines`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeCategoryAxis~StripLines.html) to an axis.
 
 Following properties are used to configure the strip line.
 
