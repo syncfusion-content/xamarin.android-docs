@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markers
-description: This section describes about Map marker.
+description: This section describes about map marker.
 platform: Xamarin.Android
 control: SfMaps
 documentation: ug
@@ -12,8 +12,8 @@ Markers provide some messages on the map.
 
 Markers are set to map by using the following two ways:
 
-1. Adding marker objects to map.
-2. Defining custom marker.
+* Adding marker objects to map.
+* Defining custom marker.
 
 ## Adding marker
 
@@ -54,9 +54,114 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 A map marker can be customized using the [`MarkerSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MapLayer~MarkerSetting.html) property in shape file layer.
 
-### Icon customization
+### Customizing marker icons
 
-Shape, size, and color of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~MarkerIcon.html) , [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~IconSize.html), and [`MarkerIconColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~MarkerIconColor.html) properties. 
+The size and color of marker icons can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~IconSize.html) and [`MarkerIconColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~MarkerIconColor.html) properties.
+
+
+### Icon types
+
+The shape of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~MarkerIcon.html) property. The maps control supports the following types of marker icons:
+
+* Circle
+* Diamond
+* Image
+* Rectangle
+* Square
+
+{% tabs %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps(this);
+         
+            ShapeFileLayer layer = new ShapeFileLayer();
+
+            layer.Uri = "usa_state.shp";
+
+            MapMarker mapMarker = new MapMarker();
+
+            mapMarker.Label = "California";
+
+            mapMarker.Latitude = 37;
+
+            mapMarker.Longitude = -120;
+
+            layer.Markers.Add(mapMarker);
+
+            MarkerSetting markerSetting = new MarkerSetting();
+
+            markerSetting.MarkerIcon = MarkerIcon.Square;
+
+            markerSetting.MarkerIconColor = Color.DarkGreen;
+
+            markerSetting.LabelColor = Color.Black;
+
+            layer.MarkerSetting = markerSetting;
+
+            maps.Layers.Add(layer);
+
+            SetContentView(maps);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/Marker_icon_type.png)
+
+### Setting image marker icon
+
+You can pin an image as marker icon by setting the icon type as `Image`. Set [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~ImageSource.html) to get the image from local path.
+
+{% tabs %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps(this);
+         
+            ShapeFileLayer layer = new ShapeFileLayer();
+
+            layer.Uri = "usa_state.shp";
+
+            MapMarker marker = new MapMarker();
+
+            marker.Label = "Texas";
+
+            marker.Latitude = 31.267153;
+
+            marker.Longitude = -97.7430608;
+
+            layer.Markers.Add(marker);
+
+            MapMarker marker1 = new MapMarker();
+
+            marker1.Label = "California";
+
+            marker1.Latitude = 37;
+
+            marker1.Longitude = -120;
+
+            layer.Markers.Add(marker1);
+
+            MarkerSetting markerSetting = new MarkerSetting();
+
+            markerSetting.MarkerIcon = MarkerIcon.Image;
+
+            markerSetting.ImageSource = "pin.png";
+
+            markerSetting.LabelColor = Color.Black;
+
+            layer.MarkerSetting = markerSetting;
+
+            maps.Layers.Add(layer);
+
+            SetContentView(maps);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/Marker_icon_type_image.png) 
 
 ### Label customization
 
@@ -108,7 +213,7 @@ The following code explains the marker customization.
 
 {% endtabs %}
 
-![](Images/Markers_img2.jpeg)
+![](Images/Markers_img4.jpeg)
 
 ## Custom marker
 
@@ -163,7 +268,7 @@ Below snippet explains on how to define custom marker with image support.
 
 {% endtabs %}
 
-![](Images/Markers_img3.png)
+![](Images/Markers_img5.png)
 
 ## Events
 
@@ -195,5 +300,5 @@ Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/cref_files/xa
 
 {% endtabs %}
 
-![](Images/Markers_img4.png)
+![](Images/Markers_img6.png)
 
