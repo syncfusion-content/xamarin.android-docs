@@ -233,9 +233,4 @@ trackball.Hide();
 
 ### Get the touch position
 
-There are following methods are available in [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) that can be override to get the touch points while doing interactions
-
-* [`OnTouchUp(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnTouchUp.html) 
-* [`OnTouchDown(float pointX, float pointY)`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnTouchDown.html)
-* [`OnTouchMove(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnTouchMove.html)
-* [`OnLongPress(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnLongPress.html)
+The [`OnLongPress(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnLongPress.html) method of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) can be override to get the touch points while doing interactions

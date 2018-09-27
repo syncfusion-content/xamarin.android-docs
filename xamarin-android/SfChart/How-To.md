@@ -9,6 +9,25 @@ documentation: ug
 
 # How to
 
+##  Get the data point collection based on region
+
+[`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries.html) provides the following methods to get the visible range data points. 
+
+* [`GetDataPoints(RectangleF rect)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~GetDataPoints(RectangleF).html) - Gets the collection of data that fall inside the given rectangle region.
+* [`GetDataPoints(double startX, double endX, double startY, double endY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~GetDataPoints(Double,Double,Double,Double).html) - Gets the collection of data from the given ChartAxis visible range.
+
+N> You can get the visible plotting region of the series in the chart [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~SeriesClipRect.html).
+
+{% highlight c# %}
+
+List<object> dataPoints = Series.GetDataPoints(rectangle);
+
+or
+
+List<object> dataPoints = Series.GetDataPoints(startX, endX, startY, endY);
+
+{% endhighlight  %}
+
 ## Transform axis value to pixel value and vice-versa
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) offers two utility methods to transform the pixel to chart point and vice-versa.
@@ -38,20 +57,3 @@ Following methods are available to refresh the chart.
 
 * [`ReloadChart()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~ReloadChart.html) - used to reload the chart.
 * [`RedrawChart()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~RedrawChart.html) - used to redraw the chart.
-
-##  Get the data point collection based on region
-
-[`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries.html) provides the following methods to get the visible range data points. 
-
-* [`GetDataPoints(RectangleF rect)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~GetDataPoints(RectangleF).html) - Gets the collection of data that fall inside the given rectangle region. We can get the visible region of chart using [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~SeriesClipRect.html).
-* [`GetDataPoints(double startX, double endX, double startY, double endY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~GetDataPoints(Double,Double,Double,Double).html) - Gets the collection of data from the given ChartAxis visible range.
-
-{% highlight c# %}
-
-List<object> dataPoints = Series.GetDataPoints(rectangle);
-
-or
-
-List<object> dataPoints = Series.GetDataPoints(startX, endX, startY, endY);
-
-{% endhighlight  %}

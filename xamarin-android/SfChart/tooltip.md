@@ -120,11 +120,3 @@ The  [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusi
 tooltip.Hide(true);
 
 {% endhighlight %}
-
-### Get the touch position
-
-There are following methods are available in [`ChartTooltipBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior.html) that can be override to get the touch points while doing interactions
-
-* [`OnTouchUp(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~OnTouchUp.html) 
-* [`OnTouchDown(float pointX, float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~OnTouchDown.html)
-* [`OnTouchMove(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~OnTouchMove.html)
