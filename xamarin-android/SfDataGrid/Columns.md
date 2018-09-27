@@ -269,11 +269,11 @@ The below code example shows how to cancel resizing for a column using the `SfDa
 
 ## Picker closed event
 
-This event is available for both the `GridPickerColumn` and the `GridDateTimeColumn`.The [GridPickerColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~Closed_EV.html) and the [GridDateTimeColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~Closed_EV.html) events will be triggered whenever the "OK" or "Cancel" button is pressed in Picker editor and DateTime editor of the `GridPickerColumn` and `GridDateTimeColumn` respectively. This event handler contains the parameter of type [PickerClosedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs.html) that contains the following properties.
+This event is available for both the `GridPickerColumn` and the `GridDateTimeColumn`.The [GridPickerColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridPickerColumn~Closed_EV.html) and the [GridDateTimeColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDateTimeColumn~Closed_EV.html) events will be triggered whenever the "OK" or "Cancel" button is pressed in Picker editor and DateTime editor of the `GridPickerColumn` and `GridDateTimeColumn` respectively. This event handler contains the parameter of type [PickerClosedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.PickerClosedEventArgs.html) that contains the following properties.
 
-* [OldValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs~OldValue.html) : Gets the old value of the picker.
-* [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs~NewValue.html) : Gets the newly selected value of the picker.
-* [Action](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs~Action.html)   : Returns string value "Commit" when "Ok" button is pressed or "Cancel" when the "Cancel" button is pressed or the picker view is collapsed by touching outside the picker.
+* [OldValue](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.PickerClosedEventArgs~OldValue.html) : Gets the old value of the picker.
+* [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.PickerClosedEventArgs~NewValue.html) : Gets the newly selected value of the picker.
+* [Action](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.PickerClosedEventArgs~Action.html)   : Returns string value "Commit" when "Ok" button is pressed or "Cancel" when the "Cancel" button is pressed or the picker view is collapsed by touching outside the picker.
 
 {% highlight c# %}
 
@@ -293,27 +293,5 @@ This event is available for both the `GridPickerColumn` and the `GridDateTimeCol
               var oldValue = e.OldValue;
               var action = e.Action;
             }
-
-{% endhighlight%}
-
-## Value changed event
-This event is triggered whenever the values has been changed in GridTextColumn, GridNumericColumn and GridSwitchColumn respectively. ValueChangedEventArgs contains the following properties:
-
-* [Column]        : Gets the Column.
-* [NewValue]      : Gets a value indicating whether the value is new value.
-* [RowColIndex]   : Gets the RowColumnIndex.
-* [RowData]       : Gets the RowData.
-
-{% highlight c# %}
-
-        dataGrid.ValueChanged += DataGrid_ValueChanged;
-
-        private void DataGrid_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            var column = e.Column;
-            var newValue = e.NewValue;
-            var rowColIndex = e.RowColIndex;
-            var rowData = e.RowData;
-        }
 
 {% endhighlight%}
