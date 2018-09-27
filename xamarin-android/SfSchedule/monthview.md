@@ -443,11 +443,11 @@ void Schedule_MonthInlineAppointmentLoaded(object sender, MonthInlineAppointment
 ## Selection
 You can customize the default appearance of selection UI in the month cells.
 
-* [Month cell selection text color customization](#month-cell-selection-text-color-customization)
+* [Selection text color customization](#Selection-text-color-customization)
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 
-### Month cell selection text color customization
+### Selection text color customization
 Month cell Selection Text Color can be customized using [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings~SelectionTextColor.html) property of `MonthViewSettings`.
 
 {% tabs %}
