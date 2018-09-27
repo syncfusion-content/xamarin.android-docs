@@ -125,6 +125,8 @@ Specifies the maximum and minimum values. Refer to {{'[here](https://help.syncfu
 </tr>
 </table>
 
+N> For Xamarin.Android platform, `System.ComponentModel.DataAnnotations` assembly should be referred manually in order to set [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute in SfDataForm.  
+
 ## Bindable attribute
 
 It specifies whether the field should be auto generated or not. Refer to [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#cancel-dataformitem-generation-of-data-field) for more details.
