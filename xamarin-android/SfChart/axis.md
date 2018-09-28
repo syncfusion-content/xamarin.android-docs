@@ -504,9 +504,9 @@ The visibility of the edge labels in an axis can be controlled using [`EdgeLabel
 
 The following options are available in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~EdgeLabelsVisibilityMode.html),
 
-*	Default - used to display the edge label based on auto interval calculations
-*	Visible - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
-*	AlwaysVisible - used to always display the edge labels even while zooming the chart.
+*	[`Default`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to display the edge label based on auto interval calculations
+*	[`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+*	[`AlwaysVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to always display the edge labels even while zooming the chart.
 
 The following code example demonstrates the AlwaysVisible option while zooming.
 
@@ -673,7 +673,7 @@ By adding [`ChartZoomPanBehavior`](http://help.syncfusion.com/cr/cref_files/xama
 
 ### AutoScrollingDeltaType
 
-In DateTimeAxis, you can apply auto scrolling delta value in Years, Months, Days, Hours, Minutes, Seconds and Milliseconds by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~AutoScrollingDeltaType.html) property. Default value of this property is Auto and the delta will be calculated automatically based on range.
+In DateTimeAxis, you can apply auto scrolling delta value in Years, Months, Days, Hours, Minutes, Seconds and Milliseconds by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~AutoScrollingDeltaType.html) property. Default value of this property is [`Auto`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeDeltaType.html) and the delta will be calculated automatically based on range.
 
 {% highlight c# %} 
 [C#]
