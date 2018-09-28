@@ -23,6 +23,9 @@ dataForm.ColumnCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
+N> Setting `ColumnCount` to SfDataForm does not arrange the elements in a group according to the column count.To set ColumCount for DataFormGroupItem refer [here](https://help.syncfusion.com/xamarin-android/sfdataform/layout?cs-save-lang=1&cs-lang=csharp#loading-different-layout-for-group)
+
+
 When the label position is Left, the grid layout is shown as follows:
 
 ![](SfDataForm_images/LabelLeft.png)
@@ -384,7 +387,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/GroupItemOder.png)
+![](SfDataForm_images/GroupItemOrder.png)
 
 ### Changing group name for group
 
