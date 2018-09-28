@@ -206,7 +206,7 @@ lineSeries.DataMarker.ConnectorLineStyle.PathEffect = new DashPathEffect(new flo
 
 ![](datamarker_images/datamarker_img9.png)
 
-N> For Pie and Doughnut series, you can set the Bezier curve for connector line using [`ConnectorType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~ConnectorType.html) property of Pie and Doughnut series.
+N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ConnectorType.html) curve for connector line using [`ConnectorType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~ConnectorType.html) property of Pie and Doughnut series.
 
 ## Event
 
