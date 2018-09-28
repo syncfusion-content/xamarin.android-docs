@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Labels Customization
+# Customizing labels
 
 ## ShowValueLabel
 
@@ -104,3 +104,42 @@ Available options for this property are:
 {% endhighlight %}
 
 {% endtabs %}
+
+## Customizing label font
+
+The range slider control provides the `TypeFace` and `TextSize` properties to customize the value text and custom label text.
+
+{% highlight c# %}
+
+namespace GettingStarted
+{
+      [Activity(Label = "GettingStarted", MainLauncher = true, Icon = "@mipmap/icon")]
+      public class MainActivity : Activity
+      {
+            protected override void OnCreate(Bundle savedInstanceState)
+            {
+                  base.OnCreate(savedInstanceState);
+                  LinearLayout linearLayout = new LinearLayout(this);
+                  linearLayout.LayoutParameters = new LayoutParams(LayoutParams.MatchParent,LayoutParams.MatchParent);
+                  SfRangeSlider rangeSlider = new SfRangeSlider(this);
+                  rangeSlider.ShowValueLabel = true;
+                  rangeSlider.Typeface = Typeface.Create("Times New Roman", TypefaceStyle.Italic);
+                  rangeSlider.TextSize = 15;
+                  rangeSlider.ShowCustomLabel = true;
+                  rangeSlider.CustomLabels = new List<Items>()
+                  {
+                        new Items() { Value = 0, Label = "Min" },
+                        new Items() { Value = 50, Label = "Mid" },
+                        new Items() { Value = 100, Label = "Max" }
+                  };
+                  rangeSlider.Orientation = Com.Syncfusion.Sfrangeslider.Orientation.Horizontal;
+                  linearLayout.AddView(rangeSlider);
+                  SetContentView(linearLayout);
+            }
+      }
+}
+
+
+{% endhighlight %}
+
+![](images/FontItalicCustom.png)
