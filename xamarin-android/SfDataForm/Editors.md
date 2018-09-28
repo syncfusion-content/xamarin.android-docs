@@ -556,6 +556,8 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code of this demo for Xamarin.Forms from here [DataFormSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataForm_AndroidPicker1618036890.zip)
+
 ![](SfDataForm_images/ComplexPropertyPicker.png)
 
 ## NumericUpDown editor
