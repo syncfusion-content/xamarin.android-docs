@@ -9,13 +9,14 @@ documentation: ug
 
 # Kanban
 
-The Kanban control is an efficient way to visualize a workflow at each stage of completion.
+The kanban control is used to visualize a workflow at each stage of completion in an efficient way.
 
 ![Spacing](kanban_images/kanban.png)
 
-## Key Features
-* Visualize the workflow of any process.
-* Limit a work in progress (WIP).
-* Manage workflow transitions.
-* Customize at a high level.
-* Transition smoothly within processes.
+## Key features
+
+* Visualizes the workflow of any process.
+* Limits a work in progress (WIP).
+* Manages workflow transitions.
+* Customizes workflows at a high level.
+* Allows smooth transitions within processes.
