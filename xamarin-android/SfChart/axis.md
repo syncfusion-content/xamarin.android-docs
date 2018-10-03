@@ -559,7 +559,7 @@ The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
             {
                PlotOffset = 20
             };
-   chart.SecondaryAxis = new CategoryAxis()
+   chart.SecondaryAxis = new NumericalAxis()
             {
                PlotOffset = 20
             };
