@@ -47,5 +47,5 @@ kanban.IndicatorColorPalette = colorModels;
 
 {% endhighlight %}
 
-![](Kanban_images/CardCustomization.png)
+![CardCustomization](Kanban_images/CardCustomization.png)
 
