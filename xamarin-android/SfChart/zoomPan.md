@@ -50,12 +50,12 @@ zoomPanBehavior.SelectionZoomingEnabled = true;
 
 Following screenshot shows the box selection on chart area,
 
-![](zoompan_images/zoompan_img1.png)
+![Box selection support in Xamarin.Android Chart](zoompan_images/zoompan_img1.png)
 
 
 Following screenshot shows the zoomed area,
 
-![](zoompan_images/zoompan_img2.png)
+![Zoomed area in Xamarin.Android Chart](zoompan_images/zoompan_img2.png)
 
 ## Zoom Mode
 
@@ -71,7 +71,7 @@ zoomPanBehavior.ZoomMode = ZoomMode.X;
 
 {% endhighlight %}
 
-![](zoompan_images/zoompan_img3.png)
+![Zoom mode support in Xamarin.Android Chart](zoompan_images/zoompan_img3.png)
 
 ## Events
 
