@@ -81,7 +81,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a simple data grid
 
-This section explains how to create a data grid and configure it. The data grid control can be configured entirely in C# code. The following figure shows how the output will look on Android devices.
+This section explains how to create a data grid and configure it. The data grid control can be configured entirely in C# code or via axml. The following figure shows how the output will look on Android devices.
 
 ![](SfDataGrid_images/GettingStarted.png)
 
@@ -102,13 +102,96 @@ In this walk through, you will create a new application that contains the data g
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
-## Adding the data grid in Xamarin.Android
+##Adding the data grid in Xamarin.Android using desinger page
+
+1. Add a new axml file inside the layout folder.
+
+2. Open the newly added file and switch to designer tab. 
+
+3. Drag the SfDataGrid control from the tool box and drop into designer page.
+
+4. Preview for SfDataGrid will be shown.
+
+5. Open the properties window of SfDataGrid and set the required properties.
+
+![SfDataGrid Android Previewer](SfDataGrid_images/custom_designer2_SfDataGrid_Android_Preview.gif)
+
+### Setting the SfDataGrid properties in designer page
+
+{% tabs %}
+
+{% highlight axml %}
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/linearLayout1">
+    <Syncfusion.SfDataGrid.DataPager.SfDataPager
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/sfDataPager1"
+        p1:layout_width="match_parent"
+        p1:layout_height="50.0dp"
+        custom:numericButtonCount="5"
+		custom:pageSize="15"
+		custom:pageCount="5" />
+    <Syncfusion.SfDataGrid.SfDataGrid
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/sfDataGrid1"
+		custom:allowEditing="true"
+		custom:allowSorting="true"
+		custom:allowResizingColumn="true"
+		custom:selectionMode="single" />
+</LinearLayout>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+namespace Cus_Designer
+{
+[Activity(Label = "MainActivity", MainLauncher = true)]
+	public class MainActivity : Activity
+	{	
+		OrderInfoRespository viewModel;
+		SfDataGrid sfgrid;
+		SfDataPager sfpager;
+		protected override void OnCreate(Bundle savedInstanceState)
+		{	
+			base.OnCreate(savedInstanceState);
+			SetContentView(Resource.Layout.Main);
+			viewModel = new OrderInfoRespository();
+			sfgrid = FindViewById<SfDataGrid>(Resource.Id.sfDataGrid1);
+			sfpager = FindViewById<SfDataPager>(Resource.Id.sfDataPager1);
+			sfpager.Source = viewModel.OrderInfoCollection;
+			sfgrid.ItemSource = sfpager.PagedSource;
+		 }
+	 }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can download the entire source code of this demo for Xamarin.Android from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/custom_designer_sfdatagrid_android-2009059427).
+
+Refer this link to know the properties that can be configured via designer for SfDataGrid
+
+## Adding the data grid in Xamarin.Android using C# code
 
 1. Add the required assembly references to the project as discussed in the [Assembly deployment](#assembly-deployment) section.
 
 2. Import the data grid control namespace Syncfusion.SfDataGrid.
 
 3. Create an instance of the data grid control and add it as a child to the view hosted in the activity.
+
+
+{% tabs %}
 
 {% highlight c# %}
 using Syncfusion.SfDataGrid; 
@@ -120,13 +203,36 @@ public class MainActivity : Activity
     protected override void OnCreate (Bundle bundle)
     {
         base.OnCreate (bundle);
-        SetContentView (Resource.Layout.Main);
         RelativeLayout layout = (RelativeLayout)FindViewById (Resource.Id.Relative);
         dataGrid = new SfDataGrid (BaseContext);
+		
+		// If creating SfDataGrid instance via axml comment the above line of code and uncomment the below line of code.
+		// dataGrid = FindViewById<SfDataGrid>(Resource.Id.sfDataGrid1);
+		
         layout.AddView (dataGrid);
+		 SetContentView (layout);
     }
 }
 {% endhighlight %}
+
+{% highlight axml %}
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/linearLayout1">
+    <Syncfusion.SfDataGrid.SfDataGrid
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/sfDataGrid1" />
+</LinearLayout>
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Create a data model for the SfDataGrid
 
@@ -224,10 +330,24 @@ To bind the data source of the data grid, set the [SfDataGrid.ItemsSource](http
 
 The following code example binds the collection created in the previous step to the`SfDataGrid.ItemsSource` property.
 
+
+{% tabs %}
 {% highlight c# %}
 OrderInfoRepository viewModel = new OrderInfoRepository ();
 dataGrid.ItemsSource = viewModel.OrderInfoCollection; 
+//If binding data to SfDataGrid instance via axml comment the above line code and uncomment the below line code
+// dataGrid = FindViewById<SfDataGrid>(Resource.Id.sfDataGrid1);
+dataGrid.ItemSource = viewModel.OrderInfoCollection;
 {% endhighlight %}
+{% highlight axml %}
+ <Syncfusion.SfDataGrid.SfDataGrid
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/sfDataGrid1" />
+{% endhighlight %}
+{% endtabs %}
 
 Now, run the application to render the following output.
 
@@ -268,10 +388,20 @@ dataGrid.Columns.Add (countryColumn);
 
 The data grid applies sorting to its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowSorting.html) property to true.
  
+ {% tabs %}
 {% highlight c# %}
 dataGrid.AllowSorting = true; 
 {% endhighlight %}
-
+{% highlight axml %}
+ <Syncfusion.SfDataGrid.SfDataGrid
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/sfDataGrid1"
+		custom: allowSorting = "true" />
+{% endhighlight %}
+{% endtabs %}
 Run the application and touch the header cell to sort the data and the following output will be displayed.
  
 ![](SfDataGrid_images/Sorting.png)
@@ -306,6 +436,7 @@ The data grid can be loaded with specific height and width inside different layo
 
 The following code example illustrates how this can be done.
 
+{% tabs %}
 {% highlight c# %}
 protected override void OnCreate(Bundle bundle)
 {
@@ -320,7 +451,78 @@ protected override void OnCreate(Bundle bundle)
     SetContentView(linearLayout);
 } 
 {% endhighlight %}
-
+{% highlight axml %}
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/linearLayout1"
+	p1:paddingTop="250dp"
+	p1:paddingTop="80dp"
+	p1:paddingTop="250dp"
+	p1:paddingTop="80dp">
+<Syncfusion.SfDataGrid.SfDataGrid 
+	p1:minWidth = "25px"
+	p1:minHeight = "25px"
+	p1:layout_width="500dp"
+	p1:layout_height="500dp"
+	p1:id="@+id/sfDataGrid"/>
+</LinearLayout>
+{% endhighlight %}
+{% endtabs %}
 The following screenshot shows how the data grid is loaded with specific height and width.
 
 ![](SfDataGrid_images/Loading_with specific_height_and_width.png)
+
+## Properties that can be configured via designer
+
+<table>
+<tr>
+<th> Properties</th>
+<th> Attribute Name</th>
+</tr>
+<tr><td>AutoGenerateColumns</td> <td>autoGenerateColumns</td></tr>
+<tr><td>IndentColumnWidth</td><td>indentColumnWidth</td></tr>
+<tr><td>AllowResizingColumn</td><td>allowResizingColumn</td></tr>
+<tr><td>ResizingMode</td><td>resizingMode</td></tr>
+<tr><td>RowHeaderWidth</td><td>rowHeaderWidth</td></tr>
+<tr><td>ShowRowHeader</td><td>showRowHeader</td></tr>
+<tr><td>AllowSorting</td><td>allowSorting</td></tr>
+<tr><td>AllowTriStateSorting</td><td>allowTriStateSorting</td></tr>
+<tr><td>AllowMultiSorting</td><td>allowMultiSorting</td></tr>
+<tr><td>SortTapAction</td><td>sortTapAction</td></tr>
+<tr><td>GroupingMode</td><td>groupingMode</td></tr>
+<tr><td>AutoExpandGroups</td><td>autoExpandGroups</td></tr>
+<tr><td>AllowGroupExpandCollapse</td><td>allowGroupExpandCollapse</td></tr>
+<tr><td>AllowEditing</td><td>allowEditing</td></tr>
+<tr><td>EditTapAction</td><td>editTapAction</td></tr>
+<tr><td>EditorSelectionBehavior</td><td>editorSelectionBehavior</td></tr>
+<tr><td>SelectionMode</td><td>selectionMode</td></tr>
+<tr><td>SelectedIndex</td><td>selectedIndex</td></tr>
+<tr><td>ScrollingMode</td><td>scrollingMode</td></tr>
+<tr><td>VerticalOverScrollMode</td><td>verticalOverScrollMode</td></tr>
+<tr><td>AlternationCount</td><td>alternationCount</td></tr>
+<tr><td>AllowLoadMore</td><td>allowLoadMore</td></tr>
+<tr><td>LoadMoreText</td><td>loadMoreText</td></tr>
+<tr><td>LoadMorePosition</td><td>loadMorePosition</td></tr>
+<tr><td>AllowPullToRefresh</td><td>allowPullToRefresh</td></tr>
+<tr><td>AllowDraggingColumn</td><td>allowDraggingColumn</td></tr>
+<tr><td>FrozenColumnsCount</td><td>frozenColumnsCount</td></tr>
+<tr><td>AllowDraggingRow</td><td>allowDraggingRow</td></tr>
+<tr><td>FrozenRowsCount</td><td>frozenRowsCount</td></tr>
+<tr><td>AllowSwiping</td><td>allowSwiping</td></tr>
+<tr><td>MaxSwipeOffset</td><td>maxSwipeOffset</td></tr>
+<tr><td>ColumnSizer</td><td>columnSizer</td></tr>
+<tr><td>RowHeight</td><td>rowHeight</td></tr>
+<tr><td>HeaderRowHeight</td><td>headerRowHeight</td></tr>
+<tr><td>NumericButtonCount</td><td>numericButtonCount</td></tr>
+<tr><td>PageSize</td><td>pageSize</td></tr>
+<tr><td>PageCount</td><td>pageCount</td></tr>
+<tr><td>Orientation</td><td>orientation</td></tr>
+<tr><td>UseOnDemandPaging</td><td>useOnDemandPaging</td></tr>
+<tr><td>NumericButtonBackground</td><td>numericButtonBackground</td></tr>
+<tr><td>SelectionForeground</td><td>selectionForeground</td></tr>
+</table>
+
+

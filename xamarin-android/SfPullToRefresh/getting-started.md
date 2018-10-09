@@ -80,7 +80,74 @@ In this walk through, you will create a new application with SfPullToRefresh.
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
-### Adding SfPullToRefresh in Xamarin.Android
+### Adding SfPullToRefresh using designer page
+
+1. Add a new axml file inside layout folder. 
+
+2. Open the newly added file and switch to designer tab. 
+
+3. Drag the SfPullToRefresh control from tool box and drop into designer page.
+
+4. Since this is hosting control so it does not has preview on designer page. You can see the SfPullToRefresh only when deploy on device.
+
+5. Open the properties window of SfPullToRefresh and set the required properties.
+
+
+{% tabs %}
+{% highlight axml %}
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Syncfusion.SfPullToRefresh.SfPullToRefresh xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sfPullToRefresh1"
+        app:transitionType="push"/>
+</LinearLayout>
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.SfDataGrid;
+using Syncfusion.SfPullToRefresh;
+namespace Designer_PullToRefresh
+{
+    [Activity(Label = "Designer_PullToRefresh", MainLauncher = true, Icon = "@mipmap/icon")]
+    public class MainActivity : Activity
+    {
+        SfDataGrid sfDataGrid;
+        SfPullToRefresh sfPullToRefresh;
+        OrderInfoRepository viewModel;
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+            viewModel = new OrderInfoRepository();
+            sfDataGrid = new SfDataGrid(this);
+            sfDataGrid.ItemsSource = viewModel.OrderInfoCollection;
+            sfPullToRefresh = FindViewById<SfPullToRefresh>(Resource.Id.sfPullToRefresh1);
+            sfPullToRefresh.PullableContent = sfDataGrid;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+You can download the entire source code for this sample [here]().
+
+Refer this link to know the properties that can be configured via designer for SfPullToRefresh
+
+
+### Adding SfPullToRefresh in Xamarin.Android using C# code
 
 1. Add the required assembly references to the project as mentioned in the [Assembly deployment](#assembly-deployment) section or install the NuGet as mentioned in the [NuGet installation](#nuget-installation) section.
 
@@ -88,6 +155,7 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 3. Create an instance of SfPullToRefresh control and set as the ContentView of the Activity. Refer to the following code example to add this control to the application:
 
+{% tabs %}
 {% highlight c# %}
 
 using Syncfusion.SfPullToRefresh; 
@@ -105,11 +173,13 @@ public class MainActivity : Activity
 } 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Adding a simple layout as the PullableContent
 
 Any view can be added as the pullable content using the [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullableContent.html) property to refresh it. Refer to the following code example in which a simple linear layout is added as pullable content:
 
+{% tabs %}
 {% highlight c# %}
 
 //MainActivity.cs
@@ -118,9 +188,12 @@ protected override void OnCreate(Bundle bundle)
 {
 	....
 	LinearLayout linearLayout = (LinearLayout)LayoutInflater.Inflate(Resource.Layout.pullToRefresh, null);
+	//For Axml you can get the LinearLayout from axml using Identity name of the view.
+	LinearLayout linearLayout = FindViewById<LinearLayout>(Resource.id.linearLayout);
 	//Setting the PullableContent of the SfPullToRefresh.
 	pullToRefresh.PullableContent = linearLayout;
 	....
+	
 }
 
 {% endhighlight %}
@@ -165,12 +238,15 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Refreshing the view
 
 To refresh the view, hook the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event. The [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event will be fired, once the pulling progress reaches 100% and touch is released. You can do the required operations to refresh the view and once the view is refreshed, set the [RefreshingEventArgs.Refreshed](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.RefreshingEventArgs~Refreshed.html) as <b>true</b> to stop the refreshing animation. 
 
 Refer to the following code example illustrating hooking of the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event and refreshing the view:
 
+{% tabs %}
 {% highlight c# %}
 
 public class MainActivity : Activity 
@@ -203,6 +279,7 @@ public class MainActivity : Activity
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ### TransitionType customization
 
@@ -210,8 +287,11 @@ SfPullToRefresh support two types of transitions. By default, `TransitionType.Sl
 
 Refer to the topic `TransitionType` under `Built-in Customization` section for more details regarding [SfPullToRefresh.TransitionType](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~TransitionType.html) property.
 
-Refer to the following code example to switch to the `TransitionType.Push` mode of transition:
+Refer to the following code example to switch to the `TransitionType.Push` mode of transition in c# tab
 
+As we discussed in this [link](). You can also set the TransitionType to SfPullToRefresh via axml refer the code below. 
+
+{% tabs %}
 {% highlight c# %}
 
 protected override void OnCreate(Bundle bundle)
@@ -223,6 +303,16 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 
+{% highlight axml %}
+<Syncfusion.SfPullToRefresh.SfPullToRefresh xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sfPullToRefresh1"
+        app:transitionType="push"/>
+{% endhighlight %}
+{% endtabs %}
 ### Final output of the sample
 
 The following GIF demonstrates the final output of the sample:
@@ -234,3 +324,20 @@ The following GIF demonstrates the final output of the sample:
 ### Sample link
 
 You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.Android/Samples/SfPullToRefresh_GettingStarted.zip).
+
+## Properties that can be configured via designer
+
+<table>
+<tr>
+<th> Properties</th>
+<th> Attribute Name</th>
+</tr>
+<tr><td>PullingThreshold</td> <td>pullingThreshold</td></tr>
+<tr><td>ProgressStrokeWidth</td><td>progressStrokeWidth</td></tr>
+<tr><td>ProgressStrokeColor</td><td>progressStrokeColor</td></tr>
+<tr><td>ProgressBackgroundColor</td><td>progressBackgroundColor</td></tr>
+<tr><td>ProgressShadowColor</td><td>progressShadowColor</td></tr>
+<tr><td>RefreshContentRadius</td><td>refreshContentRadius</td></tr>
+<tr><td>RefreshContentThreshold</td><td>refreshContentThreshold</td></tr>
+<tr><td>TransitionType</td><td>transitionType</td></tr>
+</table>
