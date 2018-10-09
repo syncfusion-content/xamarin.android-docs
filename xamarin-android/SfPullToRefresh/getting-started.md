@@ -287,9 +287,8 @@ SfPullToRefresh support two types of transitions. By default, `TransitionType.Sl
 
 Refer to the topic `TransitionType` under `Built-in Customization` section for more details regarding [SfPullToRefresh.TransitionType](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~TransitionType.html) property.
 
-Refer to the following code example to switch to the `TransitionType.Push` mode of transition in c# tab
+Refer to the following code example to switch to the `TransitionType.Push` mode of transition.
 
-As we discussed in this [link](). You can also set the TransitionType to SfPullToRefresh via axml refer the code below. 
 
 {% tabs %}
 {% highlight c# %}

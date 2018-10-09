@@ -102,7 +102,7 @@ In this walk through, you will create a new application that contains the data g
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
-##Adding the data grid in Xamarin.Android using desinger page
+##Adding the data grid in Xamarin.Android using designer page
 
 1. Add a new axml file inside the layout folder.
 

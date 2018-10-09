@@ -176,7 +176,7 @@ namespace GettingStarted
             mainLayout.SetBackgroundColor(Color.White);
 
             showPopupButton = new Button(this);
-			// If creating button insance via axml refer the below code block
+			// If creating button instance via axml uncomment the below line code and comment the above line code
 			// showPopupButton = FindViewById<Button>(Resource.Id.button1);
             showPopupButton.Click += ShowPopupButton_Click;
             showPopupButton.SetTextColor(Color.White);
