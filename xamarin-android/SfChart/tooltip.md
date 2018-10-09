@@ -31,7 +31,7 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img1.png)
+![Tooltip support in Xamarin.Android Chart](tooltip_images/tooltip_img1.png)
 
 ## Customizing appearance
 
@@ -87,7 +87,7 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img2.png)
+![Customizing the appearance of tooltip in Xamarin.Android Chart](tooltip_images/tooltip_img2.png)
 
 ## Methods
 

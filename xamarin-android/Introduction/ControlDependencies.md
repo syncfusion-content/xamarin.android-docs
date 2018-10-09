@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Control Dependencies
-description: Control Dependencies
+title: Control Dependencies of Xamarin.Android
+description: Contains control dependencies of Syncfusion Xamarin.Android components for each control to be referred in Android project
 platform: Xamarin.Android
 control: Introduction
 documentation: ug
