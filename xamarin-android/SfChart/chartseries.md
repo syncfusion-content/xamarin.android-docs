@@ -45,7 +45,7 @@ chart.Series.Add(columnSeries3);
 
 {% endhighlight %}
 
-![](chartseries_images/chartseries_img1.png)
+![Multiple series support in Xamarin.Android Chart](chartseries_images/chartseries_img1.png)
 
 ## Combination Series
 
@@ -74,7 +74,7 @@ LineSeries lineSeries = new LineSeries()
 
 {% endhighlight %}
 
-![](chartseries_images/chartseries_img2.png)
+![Combination of series support in Xamarin.Android Chart](chartseries_images/chartseries_img2.png)
 
 **Limitation of Combination Chart**
 
@@ -106,7 +106,7 @@ chart.Series.Add(pieSeries);
 
 {% endhighlight %}
 
-![](chartseries_images/chartseries_img3.png)
+![Limitation of Xamarin.Android Chart series combination](chartseries_images/chartseries_img3.png)
 
 ## Grouping Stacked Series
 
@@ -149,7 +149,7 @@ chart.Series.Add(stackingColumnSeries4);
 
 {% endhighlight %}
 
-![](chartseries_images/chartseries_img4.png)
+![Grouping support for stacked series in Xamarin.Android Chart](chartseries_images/chartseries_img4.png)
 
 ## Animation
 
@@ -191,4 +191,4 @@ chart.Series.Add(lineSeries);
 
 {% endhighlight %}
 
-![](chartseries_images/chartseries_img5.png)
+![Series transpose support in Xamarin.Android Chart](chartseries_images/chartseries_img5.png)

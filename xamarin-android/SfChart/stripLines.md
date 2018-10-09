@@ -62,7 +62,7 @@ chart.SecondaryAxis = numericalAxis;
 
 {% endhighlight %}
 
-![](striplines_images/stripline_img1.png)
+![Numerical strip lines support in Xamarin.Android Chart](striplines_images/stripline_img1.png)
 
 **DateTimeStripLine**
 
@@ -103,7 +103,7 @@ chart.PrimaryAxis = dateTimeAxis;
 
 {% endhighlight %}
 
-![](striplines_images/stripline_img2.png)
+![DateTime strip lines support in Xamarin.Android Chart](striplines_images/stripline_img2.png)
 
 ## Strip Line Recurrence
 
@@ -135,7 +135,7 @@ numericalStripLines.LabelStyle.TextColor = Color.Red;
 
 {% endhighlight %}
 
-![](striplines_images/stripline_img3.png)
+![Strip lines recurrence support in Xamarin.Android Chart](striplines_images/stripline_img3.png)
 
 ## Customize Text
 
@@ -175,7 +175,7 @@ numericalAxis.StripLines.Add(numericalStripLines);
 
 {% endhighlight %}
 
-![](striplines_images/stripline_img4.png)
+![Strip lines text customization support in Xamarin.Android Chart](striplines_images/stripline_img4.png)
 
 ## Segmented Strip Line
 
@@ -228,7 +228,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
-![](striplines_images/stripline_img5.png)
+![Segmented strip lines support in Xamarin.Android Chart](striplines_images/stripline_img5.png)
 
 Following code snippet shows how to set the segment start and end value if the associated axis type is date time. 
 
@@ -276,4 +276,4 @@ chart.SecondaryAxis = numericalAxis;
 
 {% endhighlight %}
 
-![](striplines_images/stripline_img6.png)
+![Segmented support for DateTime strip lines in Xamarin.Android Chart](striplines_images/stripline_img6.png)
