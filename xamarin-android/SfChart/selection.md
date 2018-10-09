@@ -17,7 +17,7 @@ ColumnSeries columnSeries = new ColumnSeries();
 columnSeries.DataPointSelectionEnabled = true;
 {% endhighlight %}
 
-![](selection_images/selection_img1.png)
+![Data point selection support in Xamarin.Android Chart](selection_images/selection_img1.png)
 
 Following properties are used to configure the selection feature,
 
@@ -34,7 +34,7 @@ columnSeries.SelectedDataPointColor = Color.Red;
 
 {% endhighlight %}
 
-![](selection_images/selection_img2.png)
+![Selecting data point and data point color support in Xamarin.Android Chart](selection_images/selection_img2.png)
 
 
 N> For Accumulation series like pie, doughnut, pyramid and funnel, when you select a data point, the corresponding legend item also will be selected.
