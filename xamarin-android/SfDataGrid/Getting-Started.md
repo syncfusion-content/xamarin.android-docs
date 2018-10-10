@@ -81,7 +81,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a simple data grid
 
-This section explains how to create a data grid and configure it. The data grid control can be configured entirely in C# code or through designer. The following figure shows how the output will look on Android devices.
+This section explains how to create a data grid and configure it. The data grid control can be configured entirely in C# code or using designer. The following figure shows how the output will look on Android devices.
 
 ![SfDataGrid in Xamarin.Android](SfDataGrid_images/GettingStarted.png)
 
@@ -102,7 +102,7 @@ In this walk through, you will create a new application that contains the data g
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
-## Adding the data grid in Xamarin.Android through designer
+## Adding the data grid in Xamarin.Android using designer
 
 To add the data grid through designer, follow the steps:
 
@@ -472,7 +472,7 @@ The following screenshot shows how the data grid is loaded with specific height 
 
 ![SfDataGrid with specific height and width](SfDataGrid_images/Loading_with specific_height_and_width.png)
 
-## Properties configured through designer
+## Properties configured using designer
 
 <table>
 <tr>
