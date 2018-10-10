@@ -97,18 +97,21 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 {% highlight axml %}
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <Syncfusion.SfPullToRefresh.SfPullToRefresh xmlns:app="http://schemas.android.com/apk/res-auto"
+    <Syncfusion.SfPullToRefresh.SfPullToRefresh 
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/sfPullToRefresh1"
-        app:transitionType="push"/>
+        custom:transitionType="push"
+        custom:progressStrokeColor="@android:color/holo_red_dark"
+        custom:progressBackgroundColor="@android:color/holo_blue_light" />
 </LinearLayout>
 {% endhighlight %}
 
@@ -142,7 +145,7 @@ namespace Designer_PullToRefresh
 {% endtabs %}
 
 
-You can download the entire source code for this sample [here]().
+You can download the entire source code for this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Designer_Support_SfPullToRefresh_Android1034602329).
 
 Refer this link to know the properties that can be configured via designer for SfPullToRefresh
 

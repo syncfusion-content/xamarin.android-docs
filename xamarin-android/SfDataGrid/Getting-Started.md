@@ -178,7 +178,7 @@ namespace Cus_Designer
 
 {% endtabs %}
 
-You can download the entire source code of this demo for Xamarin.Android from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/custom_designer_sfdatagrid_android-2009059427).
+You can download the entire source code of this demo for Xamarin.Android from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Designer_Support_SfDataGrid_Android429337173).
 
 Refer this link to know the properties that can be configured via designer for SfDataGrid
 
