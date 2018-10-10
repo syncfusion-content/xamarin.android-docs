@@ -62,7 +62,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a simple pop-up
 
-The SfPopupLayout control can be configured entirely in C# code or via designer. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
+The SfPopupLayout control can be configured entirely in C# code or using designer. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
 
 * [Adding SfPopupLayout in Xamarin.Android](#adding-sfpopuplayout-in-xamarin.android) 
 * [Customize positioning](#Customize-positioning) 
@@ -73,17 +73,11 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 ## Adding SfPopupLayout in Xamarin.Android using designer
 
-1. Add a new axml file inside the layout folder. 
-
-2. Open the newly added file and switch to designer tab. 
-
-3. Drag the SfPopupLayout control from the tool box and drop it into the designer page.
-
-4. Since this is hosting control it does not show a preview on the designer page and you can only see the PopupView when deployed in the device.
-
-5. Drag Button control from tool box and drop it inside the SfPopupLayout in designer page.
-
-6. Open the properties window of SfPopupLayout and set the required properties.
+1. Add a new xaml file inside the layout folder. 
+2. Open the newly added file and switch to designer tab.
+3. Drag the SfPopupLayout control from toolbox and drop it into the designer page. Preview will not be shown since this is a hosting control. You can only see the PopupView when deployed in the device.
+4. Drag the Button control from toolbox and drop it inside the SfPopupLayout in designer page.
+5. Open the properties window of SfPopupLayout and set the required properties.
 
 The following code example illustrates how to display SfPopupLayout when set as a root view.
 
@@ -143,7 +137,7 @@ namespace Custom_designer_SfPopupLayout_android
 
 You can download the entire source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_designer_sfpopuplayout_android1468892514).
 
-Refer this link to know the properties that can be configured via designer for SfPopupLayout.
+Refer to this link to know the properties that can be configured using designer for SfPopupLayout.
 
 ## Adding SfPopupLayout in Xamarin.Android using C# code
 
@@ -351,7 +345,7 @@ By default, you can choose from the following animations available in the SfPopu
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin-android/sfpopuplayout/popup-animations).
 
-## Properties that can be configured via designer
+## Properties configured using designer
 
 <table>
 <tr>
