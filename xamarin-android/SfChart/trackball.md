@@ -31,7 +31,7 @@ chart.Behaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
-![](trackball_images/trackball_img1.png)
+![Trackball support in Xamarin.Android Chart](trackball_images/trackball_img1.png)
 
 ## Label Display Mode
 
@@ -50,7 +50,7 @@ trackballBehavior.LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint;
 
 In the following screenshot, trackball label is shown for only single data point,
 
-![](trackball_images/trackball_img2.png)
+![Label display mode support for trackball in Xamarin.Android Chart](trackball_images/trackball_img2.png)
 
 ## Customizing appearance
 
@@ -160,7 +160,7 @@ chart.Behaviors.Add(trackballBehavior);
 
 Following screenshot illustrates the customization of trackball elements.
 
-![](trackball_images/trackball_img3.png)
+![Customizing the appearance of trackball label in Xamarin.Android Chart](trackball_images/trackball_img3.png)
 
 **Custom View**
 
@@ -205,7 +205,7 @@ protected override View GetView(ChartSeries series, object data, int index)
 
 {% endhighlight %}
 
-![](trackball_images/trackball_img5.png)
+![Customizing the view of trackball label in Xamarin.Android Chart](trackball_images/trackball_img5.png)
 
 ### Show/hide the trackball label in axis
 

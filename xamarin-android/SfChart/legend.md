@@ -20,7 +20,7 @@ chart.Legend.Visibility = Visibility.Visible;
 
 {% endhighlight %}
 
-![](legend_images/legend_img1.png)
+![Legend support in Xamarin.Android Chart](legend_images/legend_img1.png)
 
 ## Customizing Labels
 
@@ -47,7 +47,7 @@ chart.Legend.LabelStyle.MarginTop = 5;
 
 {% endhighlight %}
 
-![](legend_images/legend_img2.png)
+![Legend labels customization support in Xamarin.Android Chart](legend_images/legend_img2.png)
 
 ## Legend Icons
 
@@ -63,7 +63,7 @@ pieSeries.LegendIcon = ChartLegendIcon.SeriesType;
 
 {% endhighlight %}
 
-![](legend_images/legend_img3.png)
+![Legend icons in Xamarin.Android Chart](legend_images/legend_img3.png)
 
 ## Legend Title
 
@@ -92,7 +92,7 @@ chart.Legend.Title.TextAlignment = TextAlignment.Center;
 
 {% endhighlight %}
 
-![](legend_images/legend_img4.png)
+![Title for legend in Xamarin.Android Chart](legend_images/legend_img4.png)
 
 ## Toggle the series visibility
 
@@ -130,7 +130,7 @@ The legend items can be placed in multiple rows by using [`OverflowMode`](http:/
 
 {% endhighlight %}
 
-![](legend_images/legendwrap_img1.png)
+![Legend wrapping support in Xamarin.Android Chart](legend_images/legendwrap_img1.png)
 
 ### Legend Width
 
@@ -147,7 +147,7 @@ The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.c
 
 {% endhighlight %}
 
-![](legend_images/legendwrap_img2.png)
+![Providing width for legend in Xamarin.Android Chart](legend_images/legendwrap_img2.png)
 
 ## Positioning the Legend
 
@@ -171,7 +171,7 @@ chart.Legend.OffsetY = 30;
 
 {% endhighlight %}
 
-![](legend_images/legend_img5.png)
+![Legend positioning support in Xamarin.Android Chart](legend_images/legend_img5.png)
 
 ## Legend Orientation
 
