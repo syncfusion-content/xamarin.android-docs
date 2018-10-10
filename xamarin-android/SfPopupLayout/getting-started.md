@@ -62,7 +62,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a simple pop-up
 
-The SfPopupLayout control can be configured entirely in C# code or via designer. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
+The SfPopupLayout control can be configured entirely in C# code. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
 
 * [Adding SfPopupLayout in Xamarin.Android](#adding-sfpopuplayout-in-xamarin.android) 
 * [Customize positioning](#Customize-positioning) 
@@ -77,11 +77,11 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 2. Open the newly added file and switch to designer tab. 
 
-3. Drag the SfPopupLayout control from tool box and drop it into the designer page.
+3. Drag the SfPopupLayout control from tool box and drop into designer page.
 
-4. Since this is a hosting control it does not show a preview on the designer page and you can only see the Popupview when deployed in the device.
+4. Since this is hosting control so it does not has preview on designer page. You can see the Popupview only when deploy on the device.
 
-5. Drag Button control from tool box and drop into inside of SfPopupLayout in designer page to load a button inside the PopupLayout.
+5. Drag Button control from tool box and drop into inside of SfPopupLayout in designer page.
 
 6. Open the properties window of SfPopupLayout and set the required properties.
 
@@ -91,6 +91,7 @@ The following code example illustrates to display SfPopupLayout when set as a ro
 {% highlight Axml %}
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -100,7 +101,11 @@ The following code example illustrates to display SfPopupLayout when set as a ro
         android:layout_width="match_parent"
         android:layout_height="59.0dp"
         android:id="@+id/sfPopupLayout1"
-        android:layout_marginBottom="65.0dp">
+        android:layout_marginBottom="65.0dp"
+		custom:animationMode="slideOnBottom"
+        custom:appearanceMode="twoButton"
+        custom:popupViewDeclineButtonText="Cancel"
+        custom:popupViewAcceptButtonText="Install">
         <Button
             android:layout_width="177.0dp"
             android:layout_height="wrap_content"
