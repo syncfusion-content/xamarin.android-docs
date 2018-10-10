@@ -32,7 +32,7 @@ sfChart.Title.SetTextColor( Color.Blue);
 
 {% endhighlight %}
 
-![](charttitle_images/charttitle_img1.png)
+![Title for Xamarin.Android Chart](charttitle_images/charttitle_img1.png)
 
 ## Text Alignment
 
@@ -51,4 +51,4 @@ sfChart.Title.SetTextColor( Color.Blue);
 
 {% endhighlight %}
 
-![](charttitle_images/charttitle_img2.png)
+![Text alignment support for title in Xamarin.Android Chart](charttitle_images/charttitle_img2.png)

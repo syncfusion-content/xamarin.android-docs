@@ -18,7 +18,7 @@ lineSeries.DataMarker.ShowLabel = true;
 
 {% endhighlight %}
 
-![](datamarker_images/datamarker_img1.png)
+![Data markers support in Xamarin.Android Chart](datamarker_images/datamarker_img1.png)
 
 ## Customizing Labels
 
@@ -60,7 +60,7 @@ lineSeries.DataMarker.LabelStyle.MarginBottom = 5;
 
 {% endhighlight %}
 
-![](datamarker_images/datamarker_img2.png)
+![Customizing the labels of data markers in Xamarin.Android Chart](datamarker_images/datamarker_img2.png)
 
 ## Formatting Label Content
 
@@ -76,7 +76,7 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 {% endhighlight %}
 
-![](datamarker_images/datamarker_img3.png)
+![Formatting the label content of data markers in Xamarin.Android Chart](datamarker_images/datamarker_img3.png)
 
 ## Label Position
 
@@ -84,7 +84,7 @@ This feature is used to position the data marker labels at [`Center`](https://he
 
 The following screenshot illustrates the default position of data marker labels,
 
-![](datamarker_images/datamarker_img4.png)
+![Positioning the data marker labels support in Xamarin.Android Chart](datamarker_images/datamarker_img4.png)
 
 
 The following code sample illustrates the center position of data marker labels,
@@ -96,7 +96,7 @@ columnSeries.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Cente
 
 {% endhighlight %}
 
-![](datamarker_images/datamarker_img5.png)
+![Positioning the data marker labels support in Xamarin.Android Chart](datamarker_images/datamarker_img5.png)
 
 The following code sample illustrates the Inner position of data marker labels,
 
@@ -107,7 +107,7 @@ columnSeries.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Inner
 
 {% endhighlight %}
 
-![](datamarker_images/datamarker_img6.png)
+![Positioning the data marker labels support in Xamarin.Android Chart](datamarker_images/datamarker_img6.png)
 
 
 The following code sample illustrates the outer position of data marker labels, 
@@ -119,7 +119,7 @@ columnSeries.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer
 
 {% endhighlight %}
 
-![](datamarker_images/datamarker_img7.png)
+![Positioning the data marker labels support in Xamarin.Android Chart](datamarker_images/datamarker_img7.png)
 
 ## Smart Labels
 
@@ -148,7 +148,7 @@ chart.Series.Add(pieSeries);
 
 {% endhighlight %}
 
-![](datamarker_images/datamarker_img10.png)
+![Smart labels support for data markers in Xamarin.Android Chart](datamarker_images/datamarker_img10.png)
 
 ## Customizing Marker Shapes
 
@@ -176,7 +176,7 @@ lineSeries.DataMarker.MarkerStrokeWidth = 2;
 
 {% endhighlight %}
 
-![](datamarker_images/datamarker_img8.png)
+![Data markers shape customization support in Xamarin.Android Chart](datamarker_images/datamarker_img8.png)
 
 
 ## Connector Line
@@ -204,7 +204,7 @@ lineSeries.DataMarker.ConnectorLineStyle.PathEffect = new DashPathEffect(new flo
 
 {% endhighlight %}
 
-![](datamarker_images/datamarker_img9.png)
+![Connector line support for data markers in Xamarin.Android Chart](datamarker_images/datamarker_img9.png)
 
 N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ConnectorType.html) curve for connector line using [`ConnectorType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~ConnectorType.html) property of Pie and Doughnut series.
 
