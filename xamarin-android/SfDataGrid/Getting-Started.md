@@ -44,7 +44,7 @@ The following NuGet package should be installed to use the SfDataGrid control in
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid.Android/#), and then install it.
 
-![](SfDataGrid_images/SfDataGrid_NuGet_Android.png)
+![SfDataGrid in nuget.org](SfDataGrid_images/SfDataGrid_NuGet_Android.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -62,7 +62,7 @@ To know more about obtaining our components, refer to this [link](https://help.s
 
 To export the SfDataGrid to Excel and PDF formats, search for [Syncfusion.Xamarin.SfGridConverter](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGridConverter.Android/) in the NuGet package manager, and then install it.
 
-![](SfDataGrid_images/SfGridConverter_Android.png)
+![DataGridExport in nuget.org](SfDataGrid_images/SfGridConverter_Android.png)
 
 If you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -83,7 +83,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 This section explains how to create a data grid and configure it. The data grid control can be configured entirely in C# code or via designer. The following figure shows how the output will look on Android devices.
 
-![](SfDataGrid_images/GettingStarted.png)
+![SfDataGrid in Xamarin.Android](SfDataGrid_images/GettingStarted.png)
 
 You can download the entire source code of this demo for Xamarin.Android from [here](http://files2.syncfusion.com/Xamarin.Android/Samples/DataGrid_GettingStartedAndroid.zip).
  
@@ -153,23 +153,23 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 {% endhighlight %}
 
 {% highlight c# %}
-namespace Cus_Designer
+namespace Custom_Designer
 {
 [Activity(Label = "MainActivity", MainLauncher = true)]
 	public class MainActivity : Activity
 	{	
-		OrderInfoRespository viewModel;
-		SfDataGrid sfgrid;
-		SfDataPager sfpager;
+		OrderInfoRepository viewModel;
+		SfDataGrid sfGrid;
+		SfDataPager sfPager;
 		protected override void OnCreate(Bundle savedInstanceState)
 		{	
 			base.OnCreate(savedInstanceState);
 			SetContentView(Resource.Layout.Main);
-			viewModel = new OrderInfoRespository();
-			sfgrid = FindViewById<SfDataGrid>(Resource.Id.sfDataGrid1);
-			sfpager = FindViewById<SfDataPager>(Resource.Id.sfDataPager1);
-			sfpager.Source = viewModel.OrderInfoCollection;
-			sfgrid.ItemSource = sfpager.PagedSource;
+			viewModel = new OrderInfoRepository();
+			sfGrid = FindViewById<SfDataGrid>(Resource.Id.sfDataGrid1);
+			sfPager = FindViewById<SfDataPager>(Resource.Id.sfDataPager1);
+			sfPager.Source = viewModel.OrderInfoCollection;
+			sfGrid.ItemSource = sfPager.PagedSource;
 		 }
 	 }
 }
@@ -351,7 +351,7 @@ dataGrid.ItemSource = viewModel.OrderInfoCollection;
 
 Now, run the application to render the following output.
 
-![](SfDataGrid_images/Overview.png)
+![Data Virtualization in SfDataGrid for Xamarin.Android](SfDataGrid_images/Overview.png)
 
 ## Defining columns
 
@@ -404,7 +404,7 @@ dataGrid.AllowSorting = true;
 {% endtabs %}
 Run the application and touch the header cell to sort the data and the following output will be displayed.
  
-![](SfDataGrid_images/Sorting.png)
+![Sorting in SfDataGrid for Xamarin.Android](SfDataGrid_images/Sorting.png)
 
 You can also configure sorting by adding the column to the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SortColumnDescriptions.html) collection as follows.
 
@@ -422,7 +422,7 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { Column
 
 Run the application to render the following output. 
 
-![](SfDataGrid_images/Grouping.png)
+![Grouping in SfDataGrid for Xamarin.Android](SfDataGrid_images/Grouping.png)
 
 ## Selection
 
@@ -473,7 +473,7 @@ protected override void OnCreate(Bundle bundle)
 {% endtabs %}
 The following screenshot shows how the data grid is loaded with specific height and width.
 
-![](SfDataGrid_images/Loading_with specific_height_and_width.png)
+![SfDataGrid with specific height and width](SfDataGrid_images/Loading_with specific_height_and_width.png)
 
 ## Properties that can be configured via designer
 

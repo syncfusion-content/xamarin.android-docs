@@ -42,7 +42,7 @@ The following NuGet package should be installed to use the SfPopupLayout control
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPopupLayout to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPopupLayout.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPopUpLayout.Android), and then install it.
 
-![](GettingStarted_images/NuGetInstall.png)
+![SfPopupLayout in nuget.org](GettingStarted_images/NuGetInstall.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -62,7 +62,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a simple pop-up
 
-The SfPopupLayout control can be configured entirely in C# code. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
+The SfPopupLayout control can be configured entirely in C# code or via designer. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
 
 * [Adding SfPopupLayout in Xamarin.Android](#adding-sfpopuplayout-in-xamarin.android) 
 * [Customize positioning](#Customize-positioning) 
@@ -71,21 +71,21 @@ The SfPopupLayout control can be configured entirely in C# code. In this walk th
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
-## Adding SfPopupLayout in Xamarin.Android using designer page
+## Adding SfPopupLayout in Xamarin.Android using designer
 
 1. Add a new axml file inside the layout folder. 
 
 2. Open the newly added file and switch to designer tab. 
 
-3. Drag the SfPopupLayout control from tool box and drop into designer page.
+3. Drag the SfPopupLayout control from the tool box and drop it into the designer page.
 
-4. Since this is hosting control so it does not has preview on designer page. You can see the Popupview only when deploy on the device.
+4. Since this is hosting control it does not show a preview on the designer page and you can only see the PopupView when deployed in the device.
 
-5. Drag Button control from tool box and drop into inside of SfPopupLayout in designer page.
+5. Drag Button control from tool box and drop it inside the SfPopupLayout in designer page.
 
 6. Open the properties window of SfPopupLayout and set the required properties.
 
-The following code example illustrates to display SfPopupLayout when set as a root view.
+The following code example illustrates how to display SfPopupLayout when set as a root view.
 
 {% tabs %}
 {% highlight Axml %}
@@ -116,7 +116,7 @@ The following code example illustrates to display SfPopupLayout when set as a ro
 {% endhighlight %}
 
 {% highlight c# %}
-namespace Custom_designer_sfpopuplayout_android
+namespace Custom_designer_SfPopupLayout_android
 {
     [Activity(Label = "Custom_designer_sfpopuplayout_android", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : Activity
@@ -277,7 +277,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/DefaultAppearance.png)
+![SfPopupLayout Default Appearance](GettingStarted_images/DefaultAppearance.png)
 
 You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1414679923).
 
@@ -331,7 +331,7 @@ protected override void OnCreate(Bundle bundle)
 
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/ContentView.png)
+![Popup with custom view](GettingStarted_images/ContentView.png)
 
 N> Setting the content view is same for both cases i.e. displaying the pop-up when the SfPopupLayout is set as root view and vice versa.
 

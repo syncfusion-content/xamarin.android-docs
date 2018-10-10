@@ -44,7 +44,7 @@ The following NuGet package should be installed to use SfPullToRefresh control i
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPullToRefresh.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.SFPullTORefresh.Android),and then install it.
 
-![](getting_started_images/NuGetInstall.png)
+![SfPullToRefresh in nuget.org](getting_started_images/NuGetInstall.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -110,8 +110,8 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
         android:layout_height="wrap_content"
         android:id="@+id/sfPullToRefresh1"
         custom:transitionType="push"
-        custom:progressStrokeColor="@android:color/holo_red_dark"
-        custom:progressBackgroundColor="@android:color/holo_blue_light" />
+		custom:progressStrokeColor="@android:color/black"
+        custom:progressBackgroundColor="@android:color/blue"/>
 </LinearLayout>
 {% endhighlight %}
 
@@ -320,7 +320,7 @@ protected override void OnCreate(Bundle bundle)
 The following GIF demonstrates the final output of the sample:
 
 <div style="text-align:center" markdown="1">
-![](getting_started_images/GettingStarted_Refresh_Android.gif)
+![Tranistion types in PullToRefresh](getting_started_images/GettingStarted_Refresh_Android.gif)
 </div>
 
 ### Sample link
