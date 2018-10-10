@@ -12,7 +12,7 @@ documentation: ug
 Essential Chart for Xamarin.Android provides the perfect way to visualize data, with a high level of user interactivity that focuses on development, productivity and simplicity of use. Essential Chart also provides a wide variety of charting features that are used to visualize large quantities of data, flexible data binding and user customization.
 
 
-![](Overview_images/Overview_img1.png)                                                                                          
+![Overview of Xamarin.Android Chart](Overview_images/Overview_img1.png)                                                                                          
 
 Essential Chart for Xamarin.Android
 {:.caption}
