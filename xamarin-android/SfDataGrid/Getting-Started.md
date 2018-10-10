@@ -81,7 +81,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a simple data grid
 
-This section explains how to create a data grid and configure it. The data grid control can be configured entirely in C# code or via designer. The following figure shows how the output will look on Android devices.
+This section explains how to create a data grid and configure it. The data grid control can be configured entirely in C# code or through designer. The following figure shows how the output will look on Android devices.
 
 ![SfDataGrid in Xamarin.Android](SfDataGrid_images/GettingStarted.png)
 
@@ -102,17 +102,14 @@ In this walk through, you will create a new application that contains the data g
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
-##Adding the data grid in Xamarin.Android using designer
+## Adding the data grid in Xamarin.Android through designer
 
-1. Add a new axml file inside the layout folder.
+To add the data grid through designer, follow the steps:
 
+1. Add a new xaml file inside the layout folder.
 2. Open the newly added file and switch to designer tab. 
-
-3. Drag the SfDataGrid control from the tool box and drop it into the designer page.
-
-4. Preview for SfDataGrid will be shown.
-
-5. Open the properties window of SfDataGrid and set the required properties.
+3. Drag the SfDataGrid control from toolbox and drop it into the designer page. Preview for SfDataGrid will be shown.
+4. Open the properties window of SfDataGrid and set the required properties.
 
 ![SfDataGrid Android Previewer](SfDataGrid_images/custom_designer2_SfDataGrid_Android_Preview.gif)
 
@@ -178,9 +175,9 @@ namespace Custom_Designer
 
 {% endtabs %}
 
-You can download the entire source code of this demo for Xamarin.Android from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Designer_Support_SfDataGrid_Android429337173).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Designer_Support_SfDataGrid_Android429337173).
 
-Refer this link to know the properties that can be configured via designer for SfDataGrid
+Refer to this link to know the properties that can be configured through designer for SfDataGrid.
 
 ## Adding the data grid in Xamarin.Android using C# code
 
@@ -475,12 +472,12 @@ The following screenshot shows how the data grid is loaded with specific height 
 
 ![SfDataGrid with specific height and width](SfDataGrid_images/Loading_with specific_height_and_width.png)
 
-## Properties that can be configured via designer
+## Properties configured through designer
 
 <table>
 <tr>
 <th> Properties</th>
-<th> Attribute Name</th>
+<th> Attribute name</th>
 </tr>
 <tr><td>AutoGenerateColumns</td> <td>autoGenerateColumns</td></tr>
 <tr><td>IndentColumnWidth</td><td>indentColumnWidth</td></tr>
@@ -524,5 +521,3 @@ The following screenshot shows how the data grid is loaded with specific height 
 <tr><td>NumericButtonBackground</td><td>numericButtonBackground</td></tr>
 <tr><td>SelectionForeground</td><td>selectionForeground</td></tr>
 </table>
-
-
