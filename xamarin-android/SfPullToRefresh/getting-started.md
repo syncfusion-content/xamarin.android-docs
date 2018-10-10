@@ -86,9 +86,9 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 2. Open the newly added file and switch to designer tab. 
 
-3. Drag the SfPullToRefresh control from tool box and drop into designer page.
+3. Drag the SfPullToRefresh control from the tool box and drop it into the designer page.
 
-4. Since this is hosting control so it does not has preview on designer page. You can see the SfPullToRefresh only when deploy on device.
+4. Since this is a hosting control it does not show a preview on the designer page and you can only see the PullToRefresh when deployed in the device.
 
 5. Open the properties window of SfPullToRefresh and set the required properties.
 
