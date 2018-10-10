@@ -82,15 +82,10 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 ### Adding SfPullToRefresh using designer page
 
-1. Add a new axml file inside layout folder. 
-
-2. Open the newly added file and switch to designer tab. 
-
-3. Drag the SfPullToRefresh control from the tool box and drop it into the designer page.
-
-4. Since this is a hosting control it does not show a preview on the designer page and you can only see the PullToRefresh when deployed in the device.
-
-5. Open the properties window of SfPullToRefresh and set the required properties.
+1. Add a new xaml file inside the layout folder. 
+2. Open the newly added file and switch to designer tab.
+3. Drag the SfPullToRefresh control from toolbox and drop it into the designer page. Preview will not be shown since it is a hosting control. You can only see the PullToRefresh when deployed in the device.
+4. Open the properties window of SfPullToRefresh and set the required properties.
 
 
 {% tabs %}
@@ -147,7 +142,7 @@ namespace Designer_PullToRefresh
 
 You can download the entire source code for this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Designer_Support_SfPullToRefresh_Android1034602329).
 
-Refer this link to know the properties that can be configured via designer for SfPullToRefresh
+Refer this link to know the properties that can be configured using designer for SfPullToRefresh.
 
 
 ### Adding SfPullToRefresh in Xamarin.Android using C# code
@@ -327,12 +322,12 @@ The following GIF demonstrates the final output of the sample:
 
 You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.Android/Samples/SfPullToRefresh_GettingStarted.zip).
 
-## Properties that can be configured via designer
+## Properties configured using designer
 
 <table>
 <tr>
 <th> Properties</th>
-<th> Attribute Name</th>
+<th> Attribute name</th>
 </tr>
 <tr><td>PullingThreshold</td> <td>pullingThreshold</td></tr>
 <tr><td>ProgressStrokeWidth</td><td>progressStrokeWidth</td></tr>
