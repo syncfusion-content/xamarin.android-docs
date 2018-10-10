@@ -62,7 +62,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a simple pop-up
 
-The SfPopupLayout control can be configured entirely in C# code. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
+The SfPopupLayout control can be configured entirely in C# code or via designer. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
 
 * [Adding SfPopupLayout in Xamarin.Android](#adding-sfpopuplayout-in-xamarin.android) 
 * [Customize positioning](#Customize-positioning) 
@@ -77,11 +77,11 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 
 2. Open the newly added file and switch to designer tab. 
 
-3. Drag the SfPopupLayout control from tool box and drop into designer page.
+3. Drag the SfPopupLayout control from tool box and drop it into the designer page.
 
-4. Since this is hosting control so it does not has preview on designer page. You can see the Popupview only when deploy on the device.
+4. Since this is a hosting control it does not show a preview on the designer page and you can only see the Popupview when deployed in the device.
 
-5. Drag Button control from tool box and drop into inside of SfPopupLayout in designer page.
+5. Drag Button control from tool box and drop into inside of SfPopupLayout in designer page to load a button inside the PopupLayout.
 
 6. Open the properties window of SfPopupLayout and set the required properties.
 
