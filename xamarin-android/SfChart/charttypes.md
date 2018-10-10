@@ -375,7 +375,7 @@ chart.Series.Add(series2);
 
 {% endhighlight %}
 
-![](charttypes_images/SideBySide-false.png)
+![Overlapped placement support in Xamarin.Android Chart](charttypes_images/SideBySide-false.png)
 
 ## Histogram Chart
 
