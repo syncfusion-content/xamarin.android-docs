@@ -71,7 +71,7 @@ SetContentView(chart);
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`.](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html)
 
-![](Getting-Started_images/img1.png)
+![Adding Xamarin.Android Chart reference](Getting-Started_images/img1.png)
 
 ## Initialize view model
 
@@ -250,6 +250,6 @@ namespace Chart_GettingStarted
 
 The following chart is created as a result of the above codes.
 
-![](Getting-Started_images/img2.png)
+![Tooltip support in Xamarin.Android Chart](Getting-Started_images/img2.png)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Android/Samples/Chart_GettingStarted.zip)
