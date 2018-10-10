@@ -27,22 +27,69 @@ The legends can be made visible by setting the [`ShowLegend`](https://help.syncf
 
 {% endtabs %}
 
+## Legend type
+
+The [`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~LegendType.html) property is used to display the shapes and bubble legends in maps.
+
+* Layers
+* Bubbles
+
 ## Legend position
 
-Based on the margin values of x and y-axes, the legends can be positioned using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~LegendPosition.html) property of [`LegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting.html) class.
+Based on the values of x and y, the legends can be positioned using the  [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~LegendPosition.html) property of the [`LegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting.html) lass. Legends will be positioned in the range of 0 to 100 (screen size ratio). By default, the *LegendPosition* is (50,10).
+
+The legend items will be placed in multiple rows if size of the total legend exceeds the available size.  
 
 {% tabs %}
 
 {% highlight c# %}
 
-  LegendSetting legendSetting = new LegendSetting();
-  legendSetting.ShowLegend = true;
-  legendSetting.LegendPosition = new Point(75, 90);
-  layer.LegendSetting = legendSetting;
+            LegendSetting legendSetting = new LegendSetting();
+
+            legendSetting.ShowLegend = true;
+
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            legendSetting.LegendPosition = new Point(80, 60);
+
+            legendSetting.HorizontalAlignment = HorizontalAlignment.Start;
+
+            layer.LegendSetting = legendSetting;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/LegendWrapping.jpg)
+
+## Legend alignment
+
+Legends can be aligned using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~VerticalAlignment.html) Properties. By default, the legends will be aligned in center.
+
+{% tabs %}
+
+{% highlight c# %}
+
+            LegendSetting legendSetting = new LegendSetting();
+
+            legendSetting.ShowLegend = true;
+
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            legendSetting.LegendPosition = new Point(5, 20);
+
+            legendSetting.HorizontalAlignment = HorizontalAlignment.Start;
+
+            legendSetting.VerticalAlignment = VerticalAlignment.Center;
+
+            layer.LegendSetting = legendSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/LegendAlignment.jpg)
+
 
 ## Icon customization
 
@@ -63,23 +110,80 @@ The icon size of a legend can be customized using the [`IconHeight`](https://hel
 
 {% endtabs %}
 
-## Legend label
-
-[`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ColorMapping~LegendLabel.html) provides an information about the map content. It is specified under color mapping.
+The icon shape can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~LegendIcon.html) property. By default, this property is set to circle for bubbles and rectangle for shapes.
 
 {% tabs %}
 
 {% highlight c# %}
 
-  EqualColorMapping colorMapping = new EqualColorMapping();
-  colorMapping.Color = Color.ParseColor("#D84444");
-  colorMapping.LegendLabel = "Romney";
-  colorMapping.Value = "Romney";
+LegendSetting legendSetting = new LegendSetting();
 
-  EqualColorMapping colorMapping1 = new EqualColorMapping();
-  colorMapping1.Color = Color.ParseColor("#316DB5");
-  colorMapping1.LegendLabel = "Obama";
-  colorMapping1.Value = "Obama";
+legendSetting.ShowLegend = true;
+
+legendSetting.LegendType = LegendType.Bubbles;
+
+legendSetting.LegendIcon = LegendIcon.Diamond;
+
+layer.LegendSetting = legendSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/LegendIconCustomization.jpg)
+
+## Item margin
+
+The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~ItemMargin.html) property is used to set spacing between the legend items.
+
+{% tabs %}
+
+{% highlight c# %}
+
+            LegendSetting legendSetting = new LegendSetting();
+
+            legendSetting.ShowLegend = true;
+
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            legendSetting.ItemMargin = 30;
+            
+            layer.LegendSetting = legendSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/LegendItemMargin.jpg)
+
+
+## Legend label
+
+The[`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ColorMapping~LegendLabel.html)  provides an information about the maps. It is specified under color mapping. If *LegendLabel* is not specified, ColorMapping values will be applied as legend label.
+
+The following properties are used to customize the label of the legends:
+
+ * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~TextColor.html) : used to change the color of the legend text.
+
+ * [`Typeface`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~Typeface.html) : used to change the font family,font weight of the legend label.
+
+ * [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~TextSize.html) : used to change the text size of the legend label.
+
+{% tabs %}
+
+{% highlight c# %}
+
+            LegendSetting legendSetting = new LegendSetting();
+
+            legendSetting.ShowLegend = true;
+
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            legendSetting.Typeface = Typeface.CreateFromAsset(Assets, "Algerian.ttf");
+
+            legendSetting.TextColor = Color.Maroon;
+            
+            layer.LegendSettings = legendSetting;
 
 {% endhighlight %}
 
@@ -87,48 +191,160 @@ The icon size of a legend can be customized using the [`IconHeight`](https://hel
 
 The following code snippet explains the complete code for adding legend along with its customization.
 
+### Legend for bubbles
+
 {% tabs %}
 
 {% highlight c# %}
 
-  SfMaps maps = new SfMaps(this);
-  maps.SetBackgroundColor(Color.White);
+            ViewModel viewModel = new ViewModel();
 
-  ShapeFileLayer layer = new ShapeFileLayer();
-  layer.Uri = "usa_state.shp";
-  layer.DataSource = viewModel.Data;
-  layer.ShapeIdTableField = "STATE_NAME";
-  layer.ShapeIdPath = "State";
-  maps.Layers.Add(layer);
+            SfMaps maps = new SfMaps(this);
+            maps.SetBackgroundColor(Color.White);
 
-  LegendSetting legendSetting = new LegendSetting();
-  legendSetting.ShowLegend = true;
-  legendSetting.LegendPosition = new Point(75, 90);
-  legendSetting.IconHeight = 20;
-  legendSetting.IconWidth = 20;
-  layer.LegendSetting = legendSetting;
+            ShapeFileLayer layer = new ShapeFileLayer();
+            layer.Uri = "usa_state.shp";
+            layer.DataSource = viewModel.DataSource;
+            layer.ShapeIdTableField = "STATE_NAME";
+            layer.ShapeIdPath = "Name";
+            maps.Layers.Add(layer);
 
-  EqualColorMapping colorMapping = new EqualColorMapping();
-  colorMapping.Color = Color.ParseColor("#D84444");
-  colorMapping.LegendLabel = "Romney";
-  colorMapping.Value = "Romney";
+            BubbleMarkerSetting bubbleSetting = new BubbleMarkerSetting();
+            bubbleSetting.ValuePath = "index";
+            bubbleSetting.ColorValuePath = "index";
+            RangeColorMapping colorMapping1 = new RangeColorMapping() { Color = Color.ParseColor("#2E769F"), From = 0, To = 15 };
+            RangeColorMapping colorMapping2 = new RangeColorMapping() { Color = Color.ParseColor("#D84444"), From = 15, To = 30 };
+            RangeColorMapping colorMapping3 = new RangeColorMapping() { Color = Color.ParseColor("#816F28"), From = 30, To = 45 };
+            RangeColorMapping colorMapping4 = new RangeColorMapping() { Color = Color.ParseColor("#7F38A0"), From = 45, To = 50 };
+            bubbleSetting.ColorMapping.Add(colorMapping1);
+            bubbleSetting.ColorMapping.Add(colorMapping2);
+            bubbleSetting.ColorMapping.Add(colorMapping3);
+            bubbleSetting.ColorMapping.Add(colorMapping4);
+            layer.BubbleMarkerSetting = bubbleSetting;
 
-  EqualColorMapping colorMapping1 = new EqualColorMapping();
-  colorMapping1.Color = Color.ParseColor("#316DB5");
-  colorMapping1.LegendLabel = "Obama";
-  colorMapping1.Value = "Obama";
+            LegendSetting legendSetting = new LegendSetting();
+            legendSetting.ShowLegend = true;
+            legendSetting.LegendPosition = new Point(5, 20);
+            legendSetting.LegendType = LegendType.Bubbles;
+            legendSetting.Typeface = Typeface.CreateFromAsset(Assets, "Algerian.ttf");
+            legendSetting.TextColor = Color.Maroon;
+            legendSetting.ItemMargin = 30;
+            legendSetting.LegendIcon = LegendIcon.Diamond;
+            legendSetting.HorizontalAlignment = HorizontalAlignment.Start;
+            layer.LegendSetting = legendSetting;
 
-  ShapeSetting shapeSetting = new ShapeSetting();
-  shapeSetting.ShapeValuePath = "Candidate";
-  shapeSetting.ShapeColorValuePath = "Candidate";
-  shapeSetting.ColorMapping.Add(colorMapping);
-  shapeSetting.ColorMapping.Add(colorMapping1);
+            ShapeSetting shapeSetting = new ShapeSetting();
+            shapeSetting.ShapeFill = Color.LightBlue;
+            layer.ShapeSettings = shapeSetting;
 
-  layer.ShapeSettings = shapeSetting;           
-  SetContentView(maps);
+            map.Layers.Add(layer);
 
+            SetContentView(maps);
+
+    public class AgricultureData
+    {
+        public AgricultureData(string name, string type, int count)
+        {
+            Name = name;
+            Type = type;
+            index = count;
+        }
+
+        public string Name
+        {
+            get;
+            set;
+        }
+
+        public string Type
+        {
+            get;
+            set;
+        }
+
+        public int index
+        {
+            get;
+            set;
+        }
+    }
+
+    public class ViewModel
+    {
+        public ViewModel()
+        {
+            DataSource = new ObservableCollection<AgricultureData>();
+          
+            DataSource.Add(new AgricultureData("Alaska", "Vegetables", 0));
+            DataSource.Add(new AgricultureData("Arizona", "Rice", 36));          
+            DataSource.Add(new AgricultureData("California", "Wheat", 24));
+            DataSource.Add(new AgricultureData("Colorado", "Rice", 31));
+            DataSource.Add(new AgricultureData("North Dakota", "Grains", 4));
+            DataSource.Add(new AgricultureData("Connecticut", "Wheat", 18));          
+            DataSource.Add(new AgricultureData("District of Columbia", "Grains", 27));
+            DataSource.Add(new AgricultureData("Florida", "Wheat", 48));
+            DataSource.Add(new AgricultureData("New Mexico", "Vegetables", 41));        
+            DataSource.Add(new AgricultureData("Idaho", "Rice", 8));
+          
+        }
+        public ObservableCollection<AgricultureData> DataSource { get; set; }
+
+    }
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Images/Legend_img1.jpeg)
+![](Images/LegendForBubble.jpg)
+
+### Legend for shapes
+
+ViewModel can be retrieved from [`Populate data`](https://help.syncfusion.com/xamarin-android/sfmaps/populate-data)
+
+{% tabs %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps(this);
+            maps.SetBackgroundColor(Color.White);
+            ViewModel viewModel = new ViewModel();
+            ShapeFileLayer layer = new ShapeFileLayer();
+            layer.Uri = "usa_state.shp";
+            layer.DataSource = viewModel.Data;
+            layer.ShapeIdTableField = "STATE_NAME";
+            layer.ShapeIdPath = "State";
+
+            LegendSetting legendSetting = new LegendSetting();
+            legendSetting.ShowLegend = true;
+            legendSetting.LegendPosition = new Point(50, 20);
+            legendSetting.LegendType = LegendType.Layers;
+            legendSetting.Typeface = Typeface.CreateFromAsset(Assets, "Algerian.ttf");
+            legendSetting.TextColor = Color.Maroon;
+            legendSetting.ItemMargin = 30;
+            legendSetting.LegendIcon = LegendIcon.Diamond;
+            layer.LegendSetting = legendSetting;
+
+            EqualColorMapping colorMapping = new EqualColorMapping();
+            colorMapping.Color = Color.ParseColor("#D84444");
+            colorMapping.LegendLabel = "Romney";
+            colorMapping.Value = "Romney";
+
+            EqualColorMapping colorMapping1 = new EqualColorMapping();
+            colorMapping1.Color = Color.ParseColor("#316DB5");
+            colorMapping1.LegendLabel = "Obama";
+            colorMapping1.Value = "Obama";
+
+            ShapeSetting shapeSetting = new ShapeSetting();
+            shapeSetting.ShapeValuePath = "Candidate";
+            shapeSetting.ShapeColorValuePath = "Candidate";
+            shapeSetting.ColorMapping.Add(colorMapping);
+            shapeSetting.ColorMapping.Add(colorMapping1);
+
+            layer.ShapeSettings = shapeSetting;        
+            maps.Layers.Add(layer);
+            SetContentView(maps);
+            
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/LegendForShapes.png)
