@@ -498,6 +498,74 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 ![Axis edge labels placement support in Xamarin.Android Chart](axis_images/axis_img21.png)
 
+### Edge labels visibility
+
+The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~EdgeLabelsVisibilityMode.html) property.
+
+The following options are available in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~EdgeLabelsVisibilityMode.html),
+
+*	[`Default`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to display the edge label based on auto interval calculations
+*	[`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+*	[`AlwaysVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to always display the edge labels even while zooming the chart.
+
+The following code example demonstrates the AlwaysVisible option while zooming.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+    EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible
+};
+
+{% endhighlight %}
+
+### Axis line offset
+
+[`AxisLineOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AxisLineOffset.html) property can be used to set offset value for the axis line.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+    AxisLineOffset = 15,
+};
+			
+{% endhighlight %}
+
+### Label extent
+
+The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelExtent.html) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    LabelExtent = 50
+};
+
+{% endhighlight %}
+
+### Offset the rendering
+
+The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PlotOffset.html) property is used to offset the rendering of the axis at start and end position. The following code snippet demonstrates to apply the plot offset to both x and y axes.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    PlotOffset = 20
+};
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PlotOffset = 20
+};
+
+{% endhighlight %}
+
 ### Axis Line Customization
 
 The [`LineStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LineStyle.html) properties are used to customize the axis line. The axis line can be customized using following properties:
@@ -539,7 +607,7 @@ chart.SecondaryAxis.MinorTicksPerInterval = 2;
 
 ### Tick Lines Customization
 
-The [`MajorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~MajorTickStyle.html) and [`MinorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisTickStyle~StrokeWidth.html), [`Size`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisTickStyle~TickSize.html), [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisTickStyle~StrokeColor.html) and Visibility of tick lines. By default minor tick lines will not be visible.
+The [`MajorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~MajorTickStyle.html) and [`MinorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisTickStyle~StrokeWidth.html), [`Size`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisTickStyle~TickSize.html), [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisTickStyle~StrokeColor.html) and Visibility of tick lines. By default minor tick lines will not be visible. [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~MinorTicksPerInterval.html) property can be used to specify the number of minor ticks per interval that resided between the adjacent major ticks. 
 
 {% highlight c# %} 
 [C#]
@@ -597,6 +665,26 @@ chart.SecondaryAxis.MaximumLabels = 5;
 {% endhighlight %}
 
 ![Maximum axis labels support in Xamarin.Android Chart](axis_images/axis_img26.png)
+
+### AutoScrollingDelta
+
+[`AutoScrollingDelta`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AutoScrollingDelta.html) is used to ensure that the specified range of data is always visible in the chart. It always shows the recently added data points at the end and scrolling will be reset to the end of the range whenever a new point is added.
+By adding [`ChartZoomPanBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior.html) to the chart, you can scroll to see the previous datapoints.
+
+### AutoScrollingDeltaType
+
+In DateTimeAxis, you can apply auto scrolling delta value in Years, Months, Days, Hours, Minutes, Seconds and Milliseconds by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~AutoScrollingDeltaType.html) property. Default value of this property is [`Auto`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeDeltaType.html) and the delta will be calculated automatically based on range.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+                AutoScrollingDelta = 3,
+                AutoScrollingDeltaType = DateTimeDeltaType.Days
+};
+
+{% endhighlight %}
 
 ### AutoScrollingMode
 

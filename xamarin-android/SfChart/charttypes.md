@@ -944,6 +944,25 @@ You can use the following properties to customize the candle segment appearance.
 
 ![Candle chart type in Xamarin.Android](charttypes_images/charttypes_img20.png)
 
+## EnableSolidCandles
+
+In Candle Series, [`EnableSolidCandles`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CandleSeries~EnableSolidCandles.html) property is used to specify whether the candle segment should be filled or hollow. The default value of this property is false.
+
+{% highlight c# %}
+[C#]
+
+CandleSeries series = new CandleSeries();
+series.ItemsSource = viewModel.FinancialData;
+series.XBindingPath = "Date";
+series.High = "High";
+series.Low = "Low";
+series.Open = "Open";
+series.Close = "Close";
+series.EnableSolidCandles = true;
+chart.Series.Add(series);
+
+{% endhighlight %}
+
 ### Bull and Bear Color
 
 In Candle chart, [`BullFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.FinancialSeriesBase~BullFillColor.html) property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and [`BearFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.FinancialSeriesBase~BearFillColor.html) property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
@@ -1270,7 +1289,6 @@ PieSeries pieSeries = new PieSeries()
 };
 
 {% endhighlight %}
-
 
 ![Exploding a pie segment support in Xamarin.Android Chart](charttypes_images/charttypes_img24.png)
 
