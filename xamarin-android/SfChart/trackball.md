@@ -37,7 +37,7 @@ chart.Behaviors.Add(trackballBehavior);
 
 [`LabelDisplayMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~LabelDisplayMode.html) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the three options you can set to this property,
 
-* `FloatAllPoints` – Displays label for all the data points along the vertical line.
+* [`FloatAllPoints`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TrackballLabelDisplayMode.html) – Displays label for all the data points along the vertical line.
 * `NearestPoint` – Displays label for single data point that is nearer to the touch contact position.
 * `GroupAllPoints` - Displays label for all the data points are grouped and positioned at the top of the chart area.
 
@@ -56,7 +56,7 @@ In the following screenshot, trackball label is shown for only single data point
 
 **Customize Trackball Labels**
 
-Following properties are used to customize the trackball labels.
+The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~LabelStyle.html) property provides options to customize the trackball labels.
 
 * [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html) – used to change the color of the labels.
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – used to change the label background color.
@@ -131,7 +131,7 @@ chart.Behaviors.Add(trackballBehavior);
 
 **Customize Trackball Line**
 
-Following properties are used to customize the trackball line.
+The [`LineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~LineStyle.html) property provides options to customize the trackball line.
 
 * [`ShowLine`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~ShowLine.html) – used to enable / disable the line. Default value is true.
 * [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineStyle~StrokeWidth.html) – used to change the stroke width of the line.

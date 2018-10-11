@@ -29,7 +29,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 {% endhighlight %}
 
-![](axis_images/axis_img1.png)
+![Category axis support in Xamarin.Android Chart](axis_images/axis_img1.png)
 
 ### Placing labels between ticks
 
@@ -45,7 +45,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img2.png)
+![Axis labels between ticks support in Xamarin.Android Chart](axis_images/axis_img2.png)
 
 ### Displaying labels after a fixed interval
 
@@ -62,7 +62,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img3.png)
+![Enable or disable the axis auto-interval support in Xamarin.Android Chart](axis_images/axis_img3.png)
 
 ## Numeric Axis
 
@@ -75,7 +75,7 @@ chart.PrimaryAxis = new NumericalAxis();
 
 {% endhighlight %}
 
-![](axis_images/axis_img4.png)
+![Numerical axis support in Xamarin.Android Chart](axis_images/axis_img4.png)
 
 ### Customizing numeric range
 
@@ -92,7 +92,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img5.png)
+![NumericalAxis range customization support in Xamarin.Android Chart](axis_images/axis_img5.png)
 
 ### Customizing numeric interval
 
@@ -108,7 +108,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img6.png)
+![NumericalAxis interval customization support in Xamarin.Android Chart](axis_images/axis_img6.png)
 
 ### Apply padding to the range
 
@@ -133,7 +133,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img7.png)
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/axis_img7.png)
 
 **Round**
 
@@ -149,7 +149,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img8.png)
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/axis_img8.png)
 
 **Additional**
 
@@ -165,7 +165,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img9.png)
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/axis_img9.png)
 
 **Normal**
 
@@ -181,7 +181,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img10.png)
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/axis_img10.png)
 
 ### Auto Interval On Zooming 
 
@@ -208,7 +208,7 @@ chart.PrimaryAxis = new DateTimeAxis();
 
 {% endhighlight %}
 
-![](axis_images/axis_img11.png)
+![DateTime axis support in Xamarin.Android Chart](axis_images/axis_img11.png)
 
 ### Customizing date time range
 
@@ -226,7 +226,7 @@ chart.PrimaryAxis = dateTimeAxis;
 
 {% endhighlight %}
 
-![](axis_images/axis_img12.png)
+![DateTimeAxis range customization support in Xamarin.Android Chart](axis_images/axis_img12.png)
 
 ### Date time intervals
 
@@ -234,7 +234,7 @@ Date time intervals can be customized using [`Interval`](http://help.syncfusion.
 
 Essential Chart supports the following types of interval for date time axis
 
-* Years
+* [`Years`]( [`Years`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeIntervalType.html))
 * Months
 * Days
 * Hours
@@ -253,7 +253,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img13.png)
+![DateTimeAxis interval support in Xamarin.Android Chart](axis_images/axis_img13.png)
 
 ### Apply padding to the range
 
@@ -277,7 +277,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img14.png)
+![DateTimeAxis range padding support in Xamarin.Android Chart](axis_images/axis_img14.png)
 
 **Round**
 
@@ -293,7 +293,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img15.png)
+![DateTimeAxis range padding support in Xamarin.Android Chart](axis_images/axis_img15.png)
 
 **Additional**
 
@@ -309,7 +309,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img16.png)
+![DateTimeAxis range padding support in Xamarin.Android Chart](axis_images/axis_img16.png)
 
 ## Date-time category axis
 
@@ -328,7 +328,7 @@ chart.PrimaryAxis = xAxis;
 
 {% endhighlight %}
 
-![](axis_images/DateTimeCategoryAxis.png)
+![DateTimeCategory axis support in Xamarin.Android Chart](axis_images/DateTimeCategoryAxis.png)
 
 ## Logarithmic Axis
 
@@ -341,7 +341,7 @@ chart.SecondaryAxis = new LogarithmicAxis();
 
 {% endhighlight %}
 
-![](axis_images/axis_img28.png)
+![Logarithmic axis support in Xamarin.Android Chart](axis_images/axis_img28.png)
 
 ### Customizing the logarithmic range
 
@@ -358,7 +358,7 @@ chart.SecondaryAxis = new LogarithmicAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img29.png)
+![LogarithmicAxis range customization support in Xamarin.Android Chart](axis_images/axis_img29.png)
 
 ### Logarithmic Base
 
@@ -374,7 +374,7 @@ chart.SecondaryAxis = new LogarithmicAxis()
 
 {% endhighlight %}
 
-![](axis_images/axis_img30.png)
+![LogarithmicAxis base support in Xamarin.Android Chart](axis_images/axis_img30.png)
 
 ## Common Axis Features
 
@@ -391,7 +391,7 @@ chart.SecondaryAxis.Visibility = Visibility.Gone;
 
 {% endhighlight %}
 
-![](axis_images/axis_img17.png)
+![Axis visibility support in Xamarin.Android Chart](axis_images/axis_img17.png)
 
 ### Axis Title
 
@@ -422,7 +422,7 @@ chart.PrimaryAxis.Title.Typeface = Typeface.DefaultBold;
 
 {% endhighlight %}
 
-![](axis_images/axis_img18.png)
+![Axis title support in Xamarin.Android Chart](axis_images/axis_img18.png)
 
 ### Label customization
 
@@ -438,7 +438,7 @@ The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Sync
 * [`MarginBottom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginBottom.html) - used to change the bottom margin of the labels.
 * [`MarginLeft`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginLeft.html) - used to change the left margin of the labels.
 * [`MarginRight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginRight.html) - used to change the right margin of the labels.
-* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~LabelAlignment.html) - Used to align the label at the start, center, or end.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~LabelAlignment.html) - Used to align the label at the [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelAlignment.html), [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelAlignment.html), or [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelAlignment.html).
 * [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~CornerRadius.html) - Used to change the corner radius of the background of labels.
 * [`MaxWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~MaxWidth.html) - Provides the maximum text width of the axis label and wraps into the next line when exceeds the maximum width.
 * [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~WrappedLabelAlignment.html) - Positions the wrapped text at the start, center, or end. The default value of the [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~WrappedLabelAlignment.html) property is `Start`.
@@ -452,7 +452,7 @@ chart.PrimaryAxis.LabelStyle.Typeface = Typeface.DefaultBold;
 
 {% endhighlight %}
 
-![](axis_images/axis_img19.png)
+![Axis label customization support in Xamarin.Android Chart](axis_images/axis_img19.png)
 
 ### Format the Labels
 
@@ -470,7 +470,7 @@ chart.PrimaryAxis.TickPosition = AxisElementPosition.Inside;
 
 {% endhighlight %}
 
-![](axis_images/axis_img20.png)
+![Axis labels and ticks positioning support in Xamarin.Android Chart](axis_images/axis_img20.png)
 
 ### Axis Label Rotation
 
@@ -483,11 +483,11 @@ chart.PrimaryAxis.LabelRotationAngle = 315;
 
 {% endhighlight %}
 
-![](axis_images/axis_img32.png)
+![Axis label rotation support in Xamarin.Android Chart](axis_images/axis_img32.png)
 
 ### Edge Labels Placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners.
+Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners. Default mode is [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsDrawingMode.html).
 
 {% highlight c# %} 
 [C#]
@@ -496,7 +496,7 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 {% endhighlight %}
 
-![](axis_images/axis_img21.png)
+![Axis edge labels placement support in Xamarin.Android Chart](axis_images/axis_img21.png)
 
 ### Axis Line Customization
 
@@ -515,7 +515,7 @@ chart.PrimaryAxis.LineStyle.PathEffect = new DashPathEffect(new float[] { 4, 4 }
 
 {% endhighlight %}
 
-![](axis_images/axis_img31.png)
+![Axis line customization support in Xamarin.Android Chart](axis_images/axis_img31.png)
 
 ### Grid Lines Customization
 
@@ -535,7 +535,7 @@ chart.SecondaryAxis.MinorTicksPerInterval = 2;
 
 {% endhighlight %}
 
-![](axis_images/axis_img22.png)
+![Axis grid lines customization support in Xamarin.Android Chart](axis_images/axis_img22.png)
 
 ### Tick Lines Customization
 
@@ -557,7 +557,7 @@ chart.SecondaryAxis = numericalAxis;
 
 {% endhighlight %}
 
-![](axis_images/axis_img23.png)
+![Axis tick lines customization support in Xamarin.Android Chart](axis_images/axis_img23.png)
 
 ### Inversing Axis
 
@@ -570,7 +570,7 @@ chart.SecondaryAxis.Inversed = true;
 
 {% endhighlight %}
 
-![](axis_images/axis_img24.png)
+![Axis inverse support in Xamarin.Android Chart](axis_images/axis_img24.png)
 
 ### Placing Axes at the Opposite side
 
@@ -583,7 +583,7 @@ chart.SecondaryAxis.OpposedPosition = true;
 
 {% endhighlight %}
 
-![](axis_images/axis_img25.png)
+![Opposed axis support in Xamarin.Android Chart](axis_images/axis_img25.png)
 
 ### Maximum number of labels per 100 pixels
 
@@ -596,7 +596,7 @@ chart.SecondaryAxis.MaximumLabels = 5;
 
 {% endhighlight %}
 
-![](axis_images/axis_img26.png)
+![Maximum axis labels support in Xamarin.Android Chart](axis_images/axis_img26.png)
 
 ### AutoScrollingMode
 
@@ -627,7 +627,7 @@ chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = 8 };
 
 {% endhighlight %}
 
-![](axis_images/axiscrossing_img1.png)
+![AxisCrossing support in Xamarin.Android Chart](axis_images/axiscrossing_img1.png)
 
 ### Crossing a specific axis
 
@@ -670,7 +670,7 @@ BubbleSeries series = new BubbleSeries()
 
 {% endhighlight %}
 
-![](axis_images/axiscrossing_img2.png)
+![Crossing at Specific axis support in Xamarin.Android Chart](axis_images/axiscrossing_img2.png)
 
 ### Crossing in date time axis
 
@@ -687,7 +687,7 @@ For crossing in date time horizontal axis, date object should be provided as val
 
 N> Axis will be placed in the opposite side if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property is greater than the maximum value of crossing axis. Axis will be placed in the default position if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossesAt.html) property is less than the minimum value of crossing axis.
 
-![](axis_images/axiscrossing_img3.png)
+![DateTimeAxis crosses at support in Xamarin.Android Chart](axis_images/axiscrossing_img3.png)
 
 ### Positioning the axis elements while crossing
 
@@ -710,7 +710,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
-![](axis_images/axiscrossing_img4.png)
+![Positioning axis elements while crossing support in Xamarin.Android Chart](axis_images/axiscrossing_img4.png)
 
 ## Smart Axis Labels
 
@@ -723,7 +723,7 @@ chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
 
 {% endhighlight %}
 
-![](axis_images/axis_img27.png)
+![Smart axis labels support in Xamarin.Android Chart](axis_images/axis_img27.png)
 
 ## Events
 
