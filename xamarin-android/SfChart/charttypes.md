@@ -1256,8 +1256,6 @@ PieSeries pieSeries = new PieSeries()
 
 {% endhighlight %}
 
-Also, the segments can be exploded by touch using [`ExplodableOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AccumulationSeries~ExplodableOnTouch.html) property of [`PieSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.PieSeries.html). Default value of this property is false.
-
 ![Exploding a pie segment support in Xamarin.Android Chart](charttypes_images/charttypes_img24.png)
 
 ### Exploding all the segments
@@ -1418,8 +1416,6 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endhighlight %}
 
-Also, the segments can be exploded by touch using [`ExplodableOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AccumulationSeries~ExplodableOnTouch.html) property of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html). Default value of this property is false.
-
 ![Exploding a doughnut segment support in Xamarin.Android Chart](charttypes_images/charttypes_img30.png)
 
 ### Exploding all the segments
@@ -1567,8 +1563,6 @@ PyramidSeries pyramidSeries = new PyramidSeries()
 
 {% endhighlight %}
 
-Also, the segments can be exploded by touch using [`ExplodableOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AccumulationSeries~ExplodableOnTouch.html) property of [`PyramidSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.PyramidSeries.html). Default value of this property is false.
-
 ![Exploding a pyramid segment support in Xamarin.Android Chart](charttypes_images/charttypes_img36.png)
 
 ## Funnel Chart
@@ -1632,8 +1626,6 @@ FunnelSeries funnelSeries = new FunnelSeries()
 };
 
 {% endhighlight %}
-
-Also, the segments can be exploded by touch using [`ExplodableOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AccumulationSeries~ExplodableOnTouch.html) property of [`FunnelSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.FunnelSeries.html). Default value of this property is false.
 
 ![Exploding a funnel segment support in Xamarin.Android Chart](charttypes_images/charttypes_img39.png)
 
