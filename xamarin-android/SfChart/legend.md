@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend
 
-Legend contains list of chart series/data points in the chart. The information provided in each legend item helps in identifying the corresponding data series in chart.
+Legend contains list of chart series/data points in the chart. The information provided in each legend item helps in identifying the corresponding data series in chart. The [`Visibility`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~Visibility.html) property is used to control the visibility of legend.
 
 Following code example shows how to enable legend in a chart,
 

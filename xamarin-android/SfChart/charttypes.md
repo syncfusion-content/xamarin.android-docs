@@ -97,7 +97,7 @@ The following types are used in [`SplineAreaSeries`](https://help.syncfusion.com
 * Cardinal
 * Clamped
 
-By default [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries~SplineType.html) value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineType.html). 
+By default [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries~SplineType.html) value is [`Natural`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineType.html). 
 
 The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries~SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineType.html)
 
@@ -342,6 +342,40 @@ chart.Series.Add(columnSeries);
 {% endhighlight %}
 
 ![Column chart type in Xamarin.Android](charttypes_images/charttypes_img6.png)
+
+## Overlapped placement
+
+By default, all the column series which has the same x and y axes are placed side by side in a chart. If you want place the series one over the other (overlapped), set the [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~SideBySideSeriesPlacement.html) property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) to false and configure the Width property to differentiate the series. The following code snippet and screenshot illustrate the overlapped placement of column series.
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart()
+  {
+      SideBySideSeriesPlacement = false
+  };
+ chart.PrimaryAxis = new CategoryAxis();
+ chart.SecondaryAxis = new NumericalAxis();
+ ColumnSeries series1 = new ColumnSeries()
+ {
+                ItemsSource = view.Data1,
+                XBindingPath = "Month",
+                YBindingPath = "Year2014"
+ };
+ ColumnSeries series2 = new ColumnSeries()
+ {
+                ItemsSource = view.Data2,
+                XBindingPath = "Month",
+                YBindingPath = "Year2015",
+                 Width="0.5"
+ };
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+![Overlapped placement support in Xamarin.Android Chart](charttypes_images/SideBySide-false.png)
 
 ## Histogram Chart
 
