@@ -51,7 +51,7 @@ chart.Legend.LabelStyle.MarginTop = 5;
 
 ## Legend Icons
 
-Legend icons are enabled by default, however, you can control its visibility using [`IconVisibility`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~IconVisibility.html) property. Also you can specify the icon type using [`LegendIcon`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~LegendIcon.html) property in ChartSeries. [`IconWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~IconWidth.html) and [`IconHeight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~IconHeight.html) properties are used to adjust the width and height of the legend icons respectively.
+Legend icons are enabled by default, however, you can control its visibility using [`IconVisibility`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~IconVisibility.html) property. Also you can specify the icon type using [`LegendIcon`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~LegendIcon.html) property in ChartSeries. Default legend icon is [`Circle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendIcon.html). [`IconWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~IconWidth.html) and [`IconHeight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~IconHeight.html) properties are used to adjust the width and height of the legend icons respectively.
 
 {% highlight c# %} 
 [C#]
@@ -153,10 +153,10 @@ The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.c
 
 You can position the legend anywhere inside the chart. Following properties are used to customize the legend positions.
 
-* [`DockPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~DockPosition.html)– used to position the legend relatively. Options available are: Left, Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
+* [`DockPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~DockPosition.html)– used to position the legend relatively. Options available are:  [`Left`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDock.html), Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
 * [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~OffsetX.html) – used to move the legend on x coordinate by the given offset value, this will work only if the dock position is Floating.
 * [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~OffsetY.html) - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is Floating.
-* [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~LegendPosition.html) - used to position the legend items inside or outside of the chart series. The default position is outside.
+* [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~LegendPosition.html) - used to position the legend items [`Inside`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LegendPosition.html) or [`Outside`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LegendPosition.html) of the chart series. The default position is Outside.
 * [`ItemMarginTop`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~ItemMarginTop.html) - used to change the top margin of the legend item.
 * [`ItemMarginBottom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~ItemMarginBottom.html) - used to change the bottom margin of the legend item.
 * [`ItemMarginLeft`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~ItemMarginLeft.html) - used to change the left margin of the legend item.
@@ -175,7 +175,7 @@ chart.Legend.OffsetY = 30;
 
 ## Legend Orientation
 
-By default, the legend items will be oriented based on the legend dock position for better readability of the legend.However, you can change the orientation of the legend items using [`Orientation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~Orientation.html) property.
+By default, the legend items will be oriented based on the legend dock position for better readability of the legend. However, you can change the [`Horizontal`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartOrientation.html) or [`Vertical`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartOrientation.html) orientation of the legend items using [`Orientation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~Orientation.html) property.
 
 {% highlight c# %} 
 [C#]
