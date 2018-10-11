@@ -214,10 +214,10 @@ This feature is used to highlight the respective axis label when the trackball i
 {% highlight c# %} 
 [C#]
 
-   chart.PrimaryAxis = new NumericalAxis()
-            {
-                ShowTrackballInfo = true
-            };
+chart.PrimaryAxis = new NumericalAxis()
+{
+    ShowTrackballInfo = true
+};
 			
 {% endhighlight %}
 

@@ -514,9 +514,9 @@ The following code example demonstrates the AlwaysVisible option while zooming.
 [C#]
 
 chart.PrimaryAxis = new NumericalAxis()
-            {
-               EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible
-            };
+{
+    EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible
+};
 
 {% endhighlight %}
 
@@ -528,9 +528,9 @@ chart.PrimaryAxis = new NumericalAxis()
 [C#]
 
 chart.PrimaryAxis = new NumericalAxis()
-            {
-              AxisLineOffset = 15,
-            };
+{
+    AxisLineOffset = 15,
+};
 			
 {% endhighlight %}
 
@@ -542,9 +542,9 @@ The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Sy
 [C#]
 
 chart.PrimaryAxis = new CategoryAxis()
-            {
-               LabelExtent = 50
-            };
+{
+    LabelExtent = 50
+};
 
 {% endhighlight %}
 
@@ -555,14 +555,14 @@ The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
 {% highlight c# %} 
 [C#]
 
-   chart.PrimaryAxis = new CategoryAxis()
-            {
-               PlotOffset = 20
-            };
-   chart.SecondaryAxis = new NumericalAxis()
-            {
-               PlotOffset = 20
-            };
+chart.PrimaryAxis = new CategoryAxis()
+{
+    PlotOffset = 20
+};
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PlotOffset = 20
+};
 
 {% endhighlight %}
 
@@ -679,10 +679,10 @@ In DateTimeAxis, you can apply auto scrolling delta value in Years, Months, Days
 [C#]
 
 chart.PrimaryAxis = new DateTimeAxis()
-            {
+{
                 AutoScrollingDelta = 3,
                 AutoScrollingDeltaType = DateTimeDeltaType.Days
-            };
+};
 
 {% endhighlight %}
 

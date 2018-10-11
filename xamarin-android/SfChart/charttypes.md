@@ -917,15 +917,15 @@ In Candle Series, [`EnableSolidCandles`](https://help.syncfusion.com/cr/cref_fil
 {% highlight c# %}
 [C#]
 
-            CandleSeries series = new CandleSeries();
-            series.ItemsSource = viewModel.FinancialData;
-            series.XBindingPath = "Date";
-            series.High = "High";
-            series.Low = "Low";
-            series.Open = "Open";
-            series.Close = "Close";
-            series.EnableSolidCandles = true;
-            chart.Series.Add(series);
+CandleSeries series = new CandleSeries();
+series.ItemsSource = viewModel.FinancialData;
+series.XBindingPath = "Date";
+series.High = "High";
+series.Low = "Low";
+series.Open = "Open";
+series.Close = "Close";
+series.EnableSolidCandles = true;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
