@@ -15,6 +15,7 @@ To render a line chart, create an instance of [`LineSeries`](https://help.syncfu
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) – used to change the color of the line.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) – used to change the stroke width of the line.
+* [`Alpha`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Alpha.html) - Controls the transparency of the chart series.
 
 {% highlight c# %}
 [C#] 
@@ -1309,6 +1310,8 @@ PieSeries pieSeries = new PieSeries()
 
 {% endhighlight %}
 
+Also, the segments can be exploded by touch using [`ExplodableOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AccumulationSeries~ExplodableOnTouch.html) property of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html). Default value of this property is false.
+
 ![Exploding all the segments of pie series in Xamarin.Android Chart](charttypes_images/charttypes_img25.png)
 
 ### Sector of Pie
@@ -1469,6 +1472,8 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endhighlight %}
 
+Also, the segments can be exploded by touch using [`ExplodableOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AccumulationSeries~ExplodableOnTouch.html) property of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html). Default value of this property is false.
+
 ![Exploding all the segments of doughnut series in Xamarin.Android Chart](charttypes_images/charttypes_img31.png)
 
 ### Sector of Doughnut
@@ -1597,6 +1602,9 @@ PyramidSeries pyramidSeries = new PyramidSeries()
 
 {% endhighlight %}
 
+
+Also, the segments can be exploded by touch using [`ExplodableOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AccumulationSeries~ExplodableOnTouch.html) property of [`PyramidSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.PyramidSeries.html). Default value of this property is false.
+
 ![Exploding a pyramid segment support in Xamarin.Android Chart](charttypes_images/charttypes_img36.png)
 
 ## Funnel Chart
@@ -1660,6 +1668,8 @@ FunnelSeries funnelSeries = new FunnelSeries()
 };
 
 {% endhighlight %}
+
+Also, the segments can be exploded by touch using [`ExplodableOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AccumulationSeries~ExplodableOnTouch.html) property of [`FunnelSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.FunnelSeries.html). Default value of this property is false.
 
 ![Exploding a funnel segment support in Xamarin.Android Chart](charttypes_images/charttypes_img39.png)
 
