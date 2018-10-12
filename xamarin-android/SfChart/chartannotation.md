@@ -687,7 +687,7 @@ public class TextAnnotationExt : TextAnnotation
 
 ## Adding separate view for annotation
 
-The ChartAnnotationView is used to render the annotation with the help of the GetView method. Following is the code snippet
+The ChartAnnotationView is used to render the annotation using the GetView method. The following code sample demonstrates how to add separate view for annotation.
 
 {% highlight c# %} 
 [C#]

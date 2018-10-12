@@ -200,7 +200,7 @@ chart.AreaBorderWidth = 3;
 
 ## Methods
 
-Following methods are available in chart to get the brushes
+The following methods are available in chart to get the brushes
 
-* [`GetColor(int colorIndex)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~GetColor.html) - returns the brush at the specified index for current palette.
-* [`GetColors(ChartColorPalette palette)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~GetColors.html) - returns the collection of brushes for specified palette.
+* [`GetColor(int colorIndex)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~GetColor.html) - Returns the brush at the specified index for current palette.
+* [`GetColors(ChartColorPalette palette)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartColorModel~GetColors.html) - Returns a collection of brushes for specified palette.
