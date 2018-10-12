@@ -275,3 +275,29 @@ To customize the appearance of trackball label based on condition, override the 
 * [`XPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartPointInfo~XPosition.html) - Gets the x-position of trackball label.
 * [`YPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartPointInfo~YPosition.html) - Gets the y-position of trackball label.
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartPointInfo~Color.html) - Gets the default color of trackball label.
+
+### Show method
+
+The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~Show.html) method is used to activate the trackball at the specified location.
+
+{% highlight c# %} 
+[C#]
+
+trackball.Show(pointX, pointY);
+
+{% endhighlight %}
+
+### Hide method
+
+The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~Hide.html) method is used to hide the trackball programmatically.
+
+{% highlight c# %} 
+[C#]
+
+trackball.Hide();
+
+{% endhighlight %}
+
+### Get the touch position
+
+The [`OnLongPress(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnLongPress.html) method of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) can be override to get the touch points while doing interactions.

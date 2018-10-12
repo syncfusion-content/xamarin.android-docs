@@ -231,3 +231,29 @@ chart.Series.Add(lineSeries);
 {% endhighlight %}
 
 ![Series transpose support in Xamarin.Android Chart](chartseries_images/chartseries_img5.png)
+
+## Methods
+
+The following methods are available in [`ChartSeries`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html)
+
+* [`FindNearestChartPoint(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~FindNearestChartPoint.html) - Gets the nearest data point for a particular touch point. 
+* [`FindNearestChartPoints(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~FindNearestChartPoints.html) - Gets the list of nearest data points for a particular touch point.
+* [`CreateSegment()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~CreateSegment.html) and [`CreateSegments()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~CreateSegments.html) - Overriding these methods, we can customize the rendering of segments.
+
+## Adding separate view for series
+
+The SeriesRenderer view is used to render [`ChartSeries`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) using the GetView method. The following code sample demonstrates how to add separate view for series. 
+
+{% highlight c# %}
+[C#]
+
+public class CustomColumnSeries : ColumnSeries
+{
+    protected override SeriesRenderer GetView()
+    {
+        var view = new SeriesRenderer(Android.App.Application.Context);
+        return view;
+    }
+}
+
+{% endhighlight %}
