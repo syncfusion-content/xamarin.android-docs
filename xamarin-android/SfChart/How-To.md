@@ -53,7 +53,7 @@ N> You can convert the actual axis value to 0 to 1 coefficient using the [`Value
 
 ## Refreshing the chart
 
-Following methods are available to refresh the chart.
+The following methods are available to refresh the chart.
 
 * [`ReloadChart()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~ReloadChart.html) - Reloads the chart.
 * [`RedrawChart()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~RedrawChart.html) - Redraws the chart.

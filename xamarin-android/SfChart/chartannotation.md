@@ -687,18 +687,18 @@ public class TextAnnotationExt : TextAnnotation
 
 ## Adding separate view for annotation
 
-The ChartAnnotationView is used to render the annotation using the GetView method. The following code sample demonstrates how to add separate view for annotation.
+The [`ChartAnnotationView`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotationView.html) is used to render the [`Annotation`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotationView~Annotation.html) using the GetView method. The following code sample demonstrates how to add separate view for annotation.
 
 {% highlight c# %} 
 [C#]
 
- public class CustomEllipseAnnotation : EllipseAnnotation
-        {
-            protected override ChartAnnotationView GetView()
-            {
-                var view = new ChartAnnotationView(Android.App.Application.Context);
-                return view;
-            }
-        }
+public class CustomEllipseAnnotation : EllipseAnnotation
+{
+    protected override ChartAnnotationView GetView()
+    {
+        var view = new ChartAnnotationView(Android.App.Application.Context);
+        return view;
+    }
+}
 
 {% endhighlight  %}

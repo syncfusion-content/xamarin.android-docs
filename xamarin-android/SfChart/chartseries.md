@@ -242,18 +242,18 @@ The following methods are available in [`ChartSeries`](https://help.syncfusion.c
 
 ## Adding separate view for series
 
-The SeriesRender view is used to render [`ChartSeries`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) using the GetView method. The following code sample demonstrates how to add separate view for series. 
+The SeriesRenderer view is used to render [`ChartSeries`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) using the GetView method. The following code sample demonstrates how to add separate view for series. 
 
 {% highlight c# %}
 [C#]
 
 public class CustomColumnSeries : ColumnSeries
+{
+    protected override SeriesRenderer GetView()
     {
-        protected override SeriesRenderer GetView()
-        {
-            var view = new SeriesRenderer(Android.App.Application.Context);
-            return view;
-        }
+        var view = new SeriesRenderer(Android.App.Application.Context);
+        return view;
     }
+}
 
 {% endhighlight %}
