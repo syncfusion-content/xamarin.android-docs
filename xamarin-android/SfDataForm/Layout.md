@@ -132,7 +132,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ImageLabel.png)
+![](SfDataForm_images/LabelCustomized.png)
 
 ## Changing order of the DataFormItem
 
@@ -680,7 +680,7 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
 
 Here, the LastName padding is customized.
 
-![](SfDataForm_images/ImageLabel1.png)
+![](SfDataForm_images/EditorPadding.png)
 
 ## Label width customization
 
