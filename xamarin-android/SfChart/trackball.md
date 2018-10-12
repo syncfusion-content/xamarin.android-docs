@@ -9,7 +9,7 @@ documentation: ug
 
 # Trackball
 
-Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBehavior.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
+Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Behaviors.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
 
 You can use the following properties to show/hide the line and labels.
 
@@ -206,3 +206,56 @@ protected override View GetView(ChartSeries series, object data, int index)
 {% endhighlight %}
 
 ![Customizing the view of trackball label in Xamarin.Android Chart](trackball_images/trackball_img5.png)
+
+### Show/hide the trackball label in axis
+
+This feature is used to highlight the respective axis label when the trackball is moving across the axis. [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~ShowTrackballInfo.html) property is used to show/hide the trackball label of the axis. [`TrackballLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~TrackballLabelStyle.html) property is used to customize its appearance. Default value of [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~ShowTrackballInfo.html) is False.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+    ShowTrackballInfo = true
+};
+			
+{% endhighlight %}
+
+### Axis label alignment
+
+The position of trackball’s axis label can be changed using the [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballAxisLabelStyle~LabelAlignment.html) property of [`ChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballAxisLabelStyle.html). The following options are available in [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballAxisLabelStyle~LabelAlignment.html).
+
+* [`Far`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelAlignment.html) - The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis.
+* [`Near`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelAlignment.html) - The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
+* [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelAlignment.html) - The label will be positioned at the center of tick. This is the default value.
+
+The following code snippet demonstrate the placement of label at the left to tick line.
+
+{% highlight c# %} 
+[C#]
+
+  primaryAxis.TrackballLabelStyle.LabelAlignment = ChartLabelAlignment.Near;
+  
+{% endhighlight %}
+
+### Show/hide the series label
+
+This feature is used to show/hide the trackball label of the series by using [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~ShowTrackballInfo.html) property. Default value of [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~ShowTrackballInfo.html) property is True.
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+LineSeries lineSeries = new LineSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value",
+    ShowTrackballInfo = false
+
+};
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
