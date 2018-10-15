@@ -20,7 +20,7 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 The following APIs are available in ChartAxis:
 
 * [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~VisibleLabels.html) - Represents the axis label collection, which is visible in axis.
-* [`VisibleRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~VisibleRange.html) - Represents the axis [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~End.html) range of an axis. The [`Delta`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Delta.html) property of VisibleRange represents the delta value.
+* [`VisibleRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~VisibleRange.html) - Represents the [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~End.html) range of an axis. The [`Delta`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Delta.html) property of VisibleRange represents the delta value.
 
 ## Category Axis
 
