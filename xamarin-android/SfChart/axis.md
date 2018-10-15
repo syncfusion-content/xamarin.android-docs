@@ -17,10 +17,10 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 * Numeric
 * Date time
 
-The following are the API’s in ChartAxis 
+The following APIs are available in ChartAxis:
 
-* [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~VisibleLabels.html) - Represents the axis label collection which are visible in axis.
-* [`VisibleRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~VisibleRange.html) - Represents the axis [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~End.html) values. [`Delta`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Delta.html) property of VisibleRange represents the difference between [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~End.html) values. [`Median`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Median.html) property represents the axis mid value. 
+* [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~VisibleLabels.html) - Represents the axis label collection, which is visible in axis.
+* [`VisibleRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~VisibleRange.html) - Represents the axis [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~End.html) range of an axis. The [`Delta`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Delta.html) property of VisibleRange represents the delta value.
 
 ## Category Axis
 
@@ -259,8 +259,6 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% endhighlight %}
 
 ![DateTimeAxis interval support in Xamarin.Android Chart](axis_images/axis_img13.png)
-
-N> The [`ActualIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~ActualIntervalType.html) property can be used to get the interval type that is calculated from actual data in [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis.html). 
 
 ### Apply padding to the range
 
