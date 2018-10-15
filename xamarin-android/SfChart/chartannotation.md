@@ -441,7 +441,7 @@ chart.Annotations.Add(horizontal);
 
 **Customizing the axis label**
 
-The default appearance of the axis labels can be customized by using [`AxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation~AxisLabelStyle.html) property. The following properties are used to customize the axis label:
+The default appearance of the axis labels can be customized by using [`AxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.VerticalLineAnnotation~AxisLabelStyle.html) property. The following properties of [`AxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HorizontalLineAnnotation~AxisLabelStyle.html) are used to customize the axis label:
 
 * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html) – Used to change the color of the text.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – Used to change the background color of the text.
