@@ -24,7 +24,7 @@ chart.Legend.Visibility = Visibility.Visible;
 
 ## Customizing Labels
 
-[`Label`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Label.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) is used to define the label for the corresponding series legend item. The following properties are used to customize the legend items label appearance.
+[`Label`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Label.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) is used to define the label for the corresponding series legend item. The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~LabelStyle.html) property can be used to customize the legend items label appearance.
 
 * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendLabelStyle~TextColor.html) – used to change the color of the label.
 * [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendLabelStyle~TextSize.html) – used to change the text size.
@@ -67,7 +67,7 @@ pieSeries.LegendIcon = ChartLegendIcon.SeriesType;
 
 ## Legend Title
 
-Following properties are used to define and customize the legend title.
+Following properties are used to define and customize the legend [`Title`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~Title.html).
 
 * [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendTitleView~Text.html) – used to set the title for legend.
 * [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendTitleView~TextColors.html) – used to change the color of the title text.
