@@ -149,7 +149,7 @@ void Diagram_NodeClicked(object sender, NodeClickedEventArgs args)
   }
 {% endhighlight %}
 {% endtabs %}
-![Expand and collpase](Layout_images/Layout_img1.jpeg)
+![Expand and collpase in Xamarin.Andorid diagram](Layout_images/Layout_img1.jpeg)
 
 ## Drag-and-drop support for directed tree layout
 It is easier to drag a child or parent node to some other node in the directed tree layout.The following code shows how to enable draggable option in layout.
@@ -239,7 +239,7 @@ The following code shows how to add the child of the dropped node while dragging
         }
 {% endhighlight %}
 {% endtabs %}
-![Drag and drop](Layout_images/Layout_img2.gif)
+![Drag and drop in Xamarin.Android diagram](Layout_images/Layout_img2.gif)
 
 ## Layout sibling spacing
 It is easier to provide spacing between sibling nodes of any branch on the directed tree layout. Nodes can also be excluded from the layout. You can provide space for each node by customizing the “SiblingSpace” property of the node. The following code illustrates how to add space to nodes using sibling spacing class instance.
@@ -258,5 +258,5 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
         }
 {% endhighlight %}
 {% endtabs %}
-![LayoutSpacing](Layout_images/LayoutSpacing_img3.png)
+![LayoutSpacing in Xamarin.Android diagram](Layout_images/LayoutSpacing_img3.png)
 
