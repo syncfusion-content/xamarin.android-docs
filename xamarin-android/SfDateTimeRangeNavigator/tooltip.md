@@ -22,7 +22,9 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator(this);
 rangeNavigator.TooltipEnabled = false;
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img1.png)
+![Tooltip visibility in Xamarin.Android DateTimeRangeNavigator](tooltip_images/tooltip_img1.png)
+
+N> The [`TooltipDisplayMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~TooltipDisplayMode.html) property is used to determine whether the tooltip should be [`Always`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipDisplayMode.html) visible or [`On_Demand`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.TooltipDisplayMode.html) while selecting range.	
 
 ## Tooltip Format
 
@@ -33,7 +35,7 @@ You can format the date value of the tooltip using [`TooltipFormat`](https://hel
 dateTimeRangeNavigator.TooltipFormat = "yyyy/MM";
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img2.png)
+![Format for tooltip in Xamarin.Android DateTimeRangeNavigator](tooltip_images/tooltip_img2.png)
 
 ## Appearance Customization
 
@@ -72,6 +74,6 @@ dateTimeRangeNavigator.RightTooltipStyle.MarginRight = 15;
 dateTimeRangeNavigator.RightTooltipStyle.MarginBottom = 15;
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img3.png)
+![Customization of tooltip in Xamarin.Android DateTimeRangeNavigator](tooltip_images/tooltip_img3.png)
 
 

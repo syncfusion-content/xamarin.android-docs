@@ -124,7 +124,7 @@ tooltip.Show(pointX, pointY, true);
 
 N>The tooltip will be activated at the specified location only if there is any data point under the specified location.
 
-## Hide method
+### Hide method
 
 The  [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~Hide.html)  method is used to hide the tooltip programmatically.
 
@@ -135,3 +135,8 @@ The  [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusi
 tooltip.Hide(true);
 
 {% endhighlight %}
+
+## Event
+
+* [`TooltipCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~TooltipCreated_EV.html) - Triggered when the tooltip is activated. 
+* [`TooltipDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~TooltipDismiss_EV.html) - Triggered when the tooltip gets hide.  
