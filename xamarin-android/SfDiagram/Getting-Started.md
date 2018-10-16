@@ -23,7 +23,7 @@ I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial set
 • **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
 • **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
 
-## Creating a Simple Flow Chart
+## Creating a simple flow chart
 Create a new cross platform app (Xamarin.Android) with portable class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assemblies to the respective projects.
 **Adding SfDiagram in Xamarin.Android**
 1.Create a new blank application for Android using Visual Studio and name it as “GettingStartedDroid”. Refer the above-mentioned assemblies to the project.
