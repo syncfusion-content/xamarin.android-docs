@@ -54,7 +54,7 @@ private void Diagram_UserHandleClicked(object sender, UserHandleClickedEventArgs
 }
 {% endhighlight %}
 {% endtabs %}
-![](Userhandle_images/Userhandle_img1.jpeg)
+![Userhandle](Userhandle_images/Userhandle_img1.jpeg)
 
 ## Customizing user handle position
 User handle position can be moved or adjusted from its default position. The following code shows how to adjust the position using the “MoveBy” method.

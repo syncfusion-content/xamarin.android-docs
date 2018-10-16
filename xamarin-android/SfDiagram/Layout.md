@@ -149,7 +149,7 @@ void Diagram_NodeClicked(object sender, NodeClickedEventArgs args)
   }
 {% endhighlight %}
 {% endtabs %}
-![](Layout_images/Layout_img1.jpeg)
+![Expand and collpase](Layout_images/Layout_img1.jpeg)
 
 ## Drag-and-drop support for directed tree layout
 It is easier to drag a child or parent node to some other node in the directed tree layout.The following code shows how to enable draggable option in layout.
