@@ -21,7 +21,7 @@ SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator(this);
 dateTime.Intervals = EnumSet.Of(DateTimeIntervalType.Year, DateTimeIntervalType.Month);
 {% endhighlight %}
 
-![](majorandminorscale_images/minorandmajorscale_img1.png)
+![Interval support for major and minor scales in Xamarin.Android DateTimeRangeNavigator](majorandminorscale_images/minorandmajorscale_img1.png)
 
 ## Appearance Customization
 
@@ -48,7 +48,7 @@ The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-androi
 * [`SelectedLabelMarginLeft`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~SelectedLabelMarginLeft.html) - used to change the left margin of the selected label.
 * [`SelectedLabelMarginTop`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~SelectedLabelMarginTop.html) - used to change the top margin of the selected label.
 * [`SelectedLabelMarginRight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~SelectedLabelMarginRight.html) - used to change the right margin of the selected label.
-* [`SelectedLabelMarginBottom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~SelectedLabelMarginBottom.html) - used to change the bottom margin of the selected label
+* [`SelectedLabelMarginBottom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~SelectedLabelMarginBottom.html) - used to change the bottom margin of the selected label.
 * [`TickLineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~TickLineWidth.html) - used to change the thickness of the tick line.
 * [`TickLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.ScaleStyle~TickLineColor.html) - used to change the color of the tick line.
 
