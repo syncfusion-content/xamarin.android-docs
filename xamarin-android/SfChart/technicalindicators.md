@@ -208,7 +208,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an ATR indicator.
 
-![](technicalindicators_images/averagetruerange.png)
+![Average true range indicator type in Xamarin.Android Chart](technicalindicators_images/averagetruerange.png)
 
 ## Simple moving average indicator
 
@@ -244,7 +244,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an SMA indicator.
 
-![](technicalindicators_images/simplemovingaverage.png)
+![Simple moving average indicator type in Xamarin.Android Chart](technicalindicators_images/simplemovingaverage.png)
 
 ## Relative strength index indicator
 
@@ -284,7 +284,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an RSI technical indicator.
 
-![](technicalindicators_images/relativestrengthindex.png)
+![Relative strength index indicator type in Xamarin.Android Chart](technicalindicators_images/relativestrengthindex.png)
 
 ## Accumulation distribution indicator
 
@@ -321,7 +321,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an accumulation distribution indicator.
 
-![](technicalindicators_images/accumulationdistribution.png)
+![Accumulation distribution indicator type in Xamarin.Android Chart](technicalindicators_images/accumulationdistribution.png)
 
 
 ## Momentum indicator
@@ -358,7 +358,7 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-![](technicalindicators_images/momentum.png)
+![Momentum indicator type in Xamarin.Android Chart](technicalindicators_images/momentum.png)
 
 ## Stochastic indicator
 
@@ -396,7 +396,7 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-![](technicalindicators_images/stochastic.png)
+![Stochastic indicator type in Xamarin.Android Chart](technicalindicators_images/stochastic.png)
 
 ## Exponential moving average indicator
 
@@ -429,7 +429,7 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-![](technicalindicators_images/exponentialmovingavg.png)
+![Exponential moving average indicator type in Xamarin.Android Chart](technicalindicators_images/exponentialmovingavg.png)
 
 ## Triangular moving average indicator
 
@@ -464,7 +464,7 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-![](technicalindicators_images/triangularmovingavg.png)
+![Triangular moving average indicator type in Xamarin.Android Chart](technicalindicators_images/triangularmovingavg.png)
 
 ## Bollinger band indicator
 
@@ -502,14 +502,14 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-![](technicalindicators_images/bollingerband.png)
+![Bollinger band indicator type in Xamarin.Android Chart](technicalindicators_images/bollingerband.png)
 
 ## MACD indicator
 
 This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDIndicator~ShortPeriod.html) and [`LongPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDIndicator~LongPeriod.html) for defining the motion of the indicator.
-Also you can draw line, histogram MACD or both using the [`MACDType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDType.html) property, which defines the type of MACD to be drawn.
+Also you can draw [`Line`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDType.html), [`Histogram`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDType.html) MACD or [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDType.html) using the [`MACDType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDIndicator~MACDType.html) property, which defines the type of MACD to be drawn.
 
-The [`MACDLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDIndicator~MACDLineColor.html) property is used to define the color for the MACD line  and the  [`HistogramColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDIndicator~HistogramColor.html) property is used to define the color for the MACD histogram.
+The [`MACDLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDIndicator~MACDLineColor.html) property is used to define the color for the MACD line  and the  [`HistogramColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDIndicator~HistogramColor.html) property is used to define the color for the MACD histogram. The [`Trigger`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.MACDIndicator~Trigger.html) property is used to define the trigger period for the indicator.
 You can specify the MACD indicator using the following code example.
 
 {% highlight c# %}
@@ -543,4 +543,4 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-![](technicalindicators_images/macd.png)
+![MACD indicator type in Xamarin.Android Chart](technicalindicators_images/macd.png)

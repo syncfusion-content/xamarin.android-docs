@@ -32,11 +32,11 @@ sfChart.Title.SetTextColor( Color.Blue);
 
 {% endhighlight %}
 
-![](charttitle_images/charttitle_img1.png)
+![Title for Xamarin.Android Chart](charttitle_images/charttitle_img1.png)
 
 ## Text Alignment
 
-You can align the title text content to the Start, Center or End of the title using the [`TextAlignment`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~TextAlignment.html) property of the [`ChartTitle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle.html).
+You can align the title text content to the Start, [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TextAlignment.html) or End of the title using the [`TextAlignment`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle~TextAlignment.html) property of the [`ChartTitle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTitle.html).
 
 {% highlight c# %}
 [C#]
@@ -51,4 +51,4 @@ sfChart.Title.SetTextColor( Color.Blue);
 
 {% endhighlight %}
 
-![](charttitle_images/charttitle_img2.png)
+![Text alignment support for title in Xamarin.Android Chart](charttitle_images/charttitle_img2.png)

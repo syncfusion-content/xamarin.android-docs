@@ -42,7 +42,7 @@ The following NuGet package should be installed to use the SfPopupLayout control
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPopupLayout to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPopupLayout.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPopUpLayout.Android), and then install it.
 
-![](GettingStarted_images/NuGetInstall.png)
+![SfPopupLayout in nuget.org](GettingStarted_images/NuGetInstall.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -62,7 +62,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a simple pop-up
 
-The SfPopupLayout control can be configured entirely in C# code. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
+The SfPopupLayout control can be configured entirely in C# code or using designer. In this walk through, you will create a new application with SfPopupLayout. To create a sample application, follow the topics: 
 
 * [Adding SfPopupLayout in Xamarin.Android](#adding-sfpopuplayout-in-xamarin.android) 
 * [Customize positioning](#Customize-positioning) 
@@ -71,7 +71,75 @@ The SfPopupLayout control can be configured entirely in C# code. In this walk th
 
 Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
 
-## Adding SfPopupLayout in Xamarin.Android
+## Adding SfPopupLayout in Xamarin.Android using designer
+
+1. Add a new xaml file inside the layout folder. 
+2. Open the newly added file and switch to designer tab.
+3. Drag the SfPopupLayout control from toolbox and drop it into the designer page. Preview will not be shown since this is a hosting control. You can only see the PopupView when deployed in the device.
+4. Drag the Button control from toolbox and drop it inside the SfPopupLayout in designer page.
+5. Open the properties window of SfPopupLayout and set the required properties.
+
+The following code example illustrates how to display SfPopupLayout when set as a root view.
+
+{% tabs %}
+{% highlight Axml %}
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Syncfusion.Android.PopupLayout.SfPopupLayout
+        android:layout_width="match_parent"
+        android:layout_height="59.0dp"
+        android:id="@+id/sfPopupLayout1"
+        android:layout_marginBottom="65.0dp"
+		custom:animationMode="slideOnBottom"
+        custom:appearanceMode="twoButton"
+        custom:popupViewDeclineButtonText="Cancel"
+        custom:popupViewAcceptButtonText="Install">
+        <Button
+            android:layout_width="177.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:text="Click To Show Popup" />
+    </Syncfusion.Android.PopupLayout.SfPopupLayout>
+</LinearLayout>
+{% endhighlight %}
+
+{% highlight c# %}
+namespace Custom_designer_SfPopupLayout_android
+{
+    [Activity(Label = "Custom_designer_sfpopuplayout_android", MainLauncher = true, Icon = "@mipmap/icon")]
+    public class MainActivity : Activity
+    {
+        SfPopupLayout Popup;
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+            Popup = FindViewById<SfPopupLayout>(Resource.Id.sfPopupLayout1);
+            Button button = FindViewById<Button>(Resource.Id.button1);
+            button.Click += button_clicked;
+        }
+        void button_clicked(object sender,EventArgs args)
+        {
+            Popup.Show();
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_designer_sfpopuplayout_android1468892514).
+
+Refer to this link to know the properties that can be configured using designer for SfPopupLayout.
+
+## Adding SfPopupLayout in Xamarin.Android using C# code
 
 1. Add the required assembly references to the project as mentioned in the [Assembly deployment](#assembly-deployment) section or install the NuGet as mentioned in the [NuGet Configuration](#nuget-configuration) section.
 
@@ -84,7 +152,9 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamari
 The SfPopupLayout can be displayed by making it as base view or content view of the activity. For first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.SfPopupLayout~Content.html) property. Create an instance of the SfPopupLayout control and set it as content view of that activity. 
 
 Refer to the following code example for displaying popup.
+ 
 
+{% tabs %}
 {% highlight c# %}
 
 using Syncfusion.Android.PopupLayout;
@@ -105,12 +175,17 @@ namespace GettingStarted
             mainLayout.SetBackgroundColor(Color.White);
 
             showPopupButton = new Button(this);
+			// If creating button instance via axml uncomment the below line code and comment the above line code
+			// showPopupButton = FindViewById<Button>(Resource.Id.button1);
             showPopupButton.Click += ShowPopupButton_Click;
             showPopupButton.SetTextColor(Color.White);
             showPopupButton.Text = "Click to show Popup";
 
             mainLayout.AddView(showPopupButton, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
             popupLayout = new SfPopupLayout(this);
+			//if creating SfPopupLayout instance via axml uncomment the below line code and comment the above line code.
+			// popupLayout = FindViewById<SfPopupLayout>(Resource.Id.sfPopupLayout1);
+           
             popupLayout.Content = mainLayout;
 
             SetContentView(popupLayout);
@@ -125,12 +200,35 @@ namespace GettingStarted
 
 {% endhighlight %}
 
+{% highlight  axml %}
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Syncfusion.Android.PopupLayout.SfPopupLayout
+        android:layout_width="match_parent"
+        android:layout_height="59.0dp"
+        android:id="@+id/sfPopupLayout1">
+        <Button
+            android:layout_width="375.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:text="Click To Show Popup" />
+    </Syncfusion.Android.PopupLayout.SfPopupLayout>
+</LinearLayout>
+{% endhighlight %}
+{% endtabs %}
+
 ### Displaying pop-up when SfPopupLayout is not set as root view 
 
  You can continue to keep your view as the content view of the activity and still display pop-up over your view by simply calling the SfPopupLayout.Show() method. 
 
  Refer to the following code example for displaying popup.
-
+ 
+{% tabs %}
 {% highlight c# %}
 
 using Syncfusion.Android.PopupLayout;
@@ -169,9 +267,11 @@ namespace GettingStarted
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/DefaultAppearance.png)
+![SfPopupLayout Default Appearance](GettingStarted_images/DefaultAppearance.png)
 
 You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1414679923).
 
@@ -202,6 +302,7 @@ You can also customize the entire view of the pop-up by loading the templates or
 
 Any view can be added as the pop-up content using the [SfPopupLayout.PopupView.ContentView](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.PopupView~ContentView.html) property to refresh it. Refer to the following code example in which a text view is added as pop-up content and  displaying pop-up when the SfPopupLayout is set as root view
 
+{% tabs %}
 {% highlight c# %}
 
 //MainActivity.cs
@@ -220,10 +321,11 @@ protected override void OnCreate(Bundle bundle)
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/ContentView.png)
+![Popup with custom view](GettingStarted_images/ContentView.png)
 
 N> Setting the content view is same for both cases i.e. displaying the pop-up when the SfPopupLayout is set as root view and vice versa.
 
@@ -242,3 +344,40 @@ By default, you can choose from the following animations available in the SfPopu
 * [None](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPopupLayout.Android~Syncfusion.Android.PopupLayout.AnimationMode.html): Animation will not be applied.
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin-android/sfpopuplayout/popup-animations).
+
+## Properties configured using designer
+
+<table>
+<tr>
+<th> Properties</th>
+<th> Attribute Name</th>
+</tr>
+<tr><td>AcceptButtonBackGroundColor</td><td>popupViewAcceptButtonBackGroundColor</td></tr>
+<tr><td>AcceptButtonTextColor</td><td>popupViewAcceptButtonTextColor</td></tr>
+<tr><td>AcceptButtonText</td><td>popupViewAcceptButtonText</td></tr>
+<tr><td>AnimationDuration</td><td>popupViewAnimationDuration</td></tr>
+<tr><td>AnimationMode</td><td>AnimationMode</td></tr>
+<tr><td>AppearanceMode</td><td>appearanceMode</td></tr>
+<tr><td>BorderColor</td><td>popupViewBorderColor</td></tr>
+<tr><td>BorderThickness</td><td>popupViewBorderThickness</td></tr>
+<tr><td>CornerRadius</td><td>popupViewCornerRadius</td></tr>
+<tr><td>DeclineButtonBackGroundColor</td><td>popupViewDeclineButtonBackGroundColor</td></tr>
+<tr><td>DeclineButtonTextColor</td><td>DeclineButtonTextColor</td></tr>
+<tr><td>DeclineButtonText</td><td>popupViewDeclineButtonText</td></tr>
+<tr><td>FooterBackGroundColor</td><td>popupViewFooterBackGroundColor</td></tr>
+<tr><td>FooterHeight</td><td>popupViewFooterHeight</td></tr>
+<tr><td>HeaderHeight</td><td>popupViewHeaderHeight</td></tr>
+<tr><td>HeaderTitle</td><td>popupViewHeaderTitle</td></tr>
+<tr><td>HeaderTextGravity</td><td>popupViewHeaderTextGravity</td></tr>
+<tr><td>HeightRequest</td><td>popupViewHeightRequest</td></tr>
+<tr><td>IsOpen</td> <td>popupIsOpen</td></tr>
+<tr><td>MessageBackGroundColor</td><td>popupViewMessageBackGroundColor</td></tr>
+<tr><td>MessageTextColor</td><td>popupViewMessageTextColor</td></tr>
+<tr><td>MessageTextSize</td><td>popupViewMessageTextSize</td></tr>
+<tr><td>PopupMessage</td><td>popupViewPopupMessage</td></tr>
+<tr><td>ShowCloseButton</td><td>showPopupViewCloseButton</td></tr>
+<tr><td>ShowHeader</td><td>showPopupViewHeader</td></tr>
+<tr><td>ShowFooter</td><td>showPopupViewFooter</td></tr>
+<tr><td>StaysOpen</td><td>staysOpen</td></tr>
+<tr><td>WidthRequest</td><td>popupViewWidthRequest</td></tr>
+</table>

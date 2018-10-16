@@ -31,7 +31,7 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img1.png)
+![Tooltip support in Xamarin.Android Chart](tooltip_images/tooltip_img1.png)
 
 ## Customizing appearance
 
@@ -50,6 +50,10 @@ For customizing the tooltip appearance, you need to add an instance of [`ChartTo
 * [`Duration`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~Duration.html) – used to set the duration of the tooltip.
 * [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~OffsetX.html) - used to move the label horizontally.
 * [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~OffsetY.html) - used to move the label vertically.
+* [`PointerLength`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~PointerLength.html) - used to change the pointer length of the tooltip.
+* [`TooltipPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~TooltipPosition.html) - used to change the position of the tooltip([`Left`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartElementPosition.html), [`Top`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartElementPosition.html), [`Right`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartElementPosition.html) ,[`Bottom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartElementPosition.html)). 
+* [`AnimationType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~AnimationType.html) - used to change the animation type of the tooltip([`Fade`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipAnimation.html), [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipAnimation.html), [`Pop`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipAnimation.html)).
+* [`TypeFace`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~Typeface.html) - used to change the font family and font weight.
 
 {% highlight c# %} 
 [C#]
@@ -87,7 +91,17 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![](tooltip_images/tooltip_img2.png)
+![Customizing the appearance of tooltip in Xamarin.Android Chart](tooltip_images/tooltip_img2.png)
+
+## Customizing the appearance of tooltip view 
+
+The following properties are used to customize the appearance of tooltip view. You can customize the appearance of a tooltip by overriding the [`GetView`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~GetView.html) method of [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior.html). 
+
+* [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView~Series.html) - Returns the series at the tapped location.
+* [`XPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView~XPosition.html) - Returns the x position of the tooltip.
+* [`YPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView~YPosition.html) - Returns the y position of the tooltip.
+* [`LabelRect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView~LabelRect.html) - Returns the tooltip label rect.
+* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView~CornerRadius.html) - Changes the corner radius of the tooltip. 
 
 ## Methods
 
