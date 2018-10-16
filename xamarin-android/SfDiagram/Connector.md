@@ -9,7 +9,7 @@ keywords:
 # Connector
 The connectors are objects used to create link between two points. Nodes or ports are used to represent the relationship between them.
 
-## Create Connector
+## Create connector
 The connector can be created by defining the start and end points.
 {% tabs %}
 {% highlight c# %}
@@ -21,7 +21,7 @@ diagram.AddConnector(Connector1);
 {% endhighlight %}
 {% endtabs %}
 
-## Connections with Nodes
+## Connections with nodes
 The SourceNode and TargetNode properties allows to define the nodes to be connected. The following code example illustrates how to connect two nodes:
 {% tabs %}
 {% highlight c# %}
@@ -45,12 +45,12 @@ connector.TargetNode = node2;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img1.jpeg)
+![Connections with nodes in Xamarin.Android diagram](Connector_images/Connector_img1.jpeg)
 
-## Connections with Ports
+## Connections with ports
 The SourcePort and TargetPort properties allows to create connections between some specific points of source or target nodes.
 
-## Using Port
+## Using port
 The following code example illustrates how to create and connect the ports:
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ connector.SegmentType = SegmentType.OrthoSegment;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img2.jpeg)
+![Using port in Xamarin.Android diagram](Connector_images/Connector_img2.jpeg)
 
 ## Segments
 The path of the connector is defined with a collection of segments.
@@ -98,7 +98,7 @@ connector.SegmentType = SegmentType.StraightSegment;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img3.jpeg)
+![Straight connector in Xamarin.Android diagram](Connector_images/Connector_img3.jpeg)
 
 ## Orthogonal
 The orthogonal segments are used to create segments that are perpendicular to each other.
@@ -113,7 +113,7 @@ connector.SegmentType = SegmentType.OrthoSegment;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img4.jpeg)
+![Orthogonal connector in Xamarin.Android diagram](Connector_images/Connector_img4.jpeg)
 
 ## Curve
 Curve segments are used to create links between two points, nodes or ports with curve segments. The following code example illustrates how to create a default curve segment.
@@ -127,7 +127,7 @@ connector.SegmentType = SegmentType.CurveSegment;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img5.jpeg)
+![Curve connector in Xamarin.Android diagram](Connector_images/Connector_img5.jpeg)
 
 ## Bezier 
 Bezier curve has cubic curve segments that are configurable with the control points. The “SourceControlPoint” and “TargetControlPoint” of bezier segment allow you to modify the control points. The following code example illustrates how to create and modify a bezier curve segment via control points.
@@ -143,7 +143,7 @@ diagram.AddConnector(connector);
 
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
+![BEzier connector in Xamarin.Android diagram](Connector_images/Connector_img6.jpeg)
 
 ## Decorator
 The start and end points of a connector can be decorated with some customizable shapes like arrow, circle, diamond, and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of connector.
@@ -160,9 +160,9 @@ connector.SegmentType = SegmentType.StraightSegment;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![Connector Decorator in Xamarin.Android diagram](Connector_images/Connector_img7.jpeg)
 
-## Remove Connector
+## Remove connector
 There are two ways to remove connector from the connection, they are the following:
 1.Passing the connector as parameter to remove connector method in the diagram.
 The following code example illustrates how to remove a connector from the connection:
@@ -195,7 +195,7 @@ diagram.Connectors.RemoveAt(0);
 ## Appearance
 The StrokeThickness, Stroke are the set of properties. The style of line connectors  and decorators can be customized with that properties.
 
-## Connector Appearance
+## Connector appearance
 The following code example illustrates how to customize the connector appearance.
 {% tabs %}
 {% highlight c# %}
@@ -213,9 +213,9 @@ connector.Style = new Style()
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img8.jpeg)
+![Connector appearance in Xamarin.Android diagram](Connector_images/Connector_img8.jpeg)
 
-## Decorator Appearance
+## Decorator appearance
 The following code example illustrates how to customize the appearance of the decorator:
 {% tabs %}
 {% highlight c# %}
@@ -245,5 +245,5 @@ connector.SourceDecoratorStyle = new DecoratorStyle()
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img9.jpeg)
+![Decorator appearance in Xamarin.Android diagram](Connector_images/Connector_img9.jpeg)
 
