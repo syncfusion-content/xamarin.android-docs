@@ -249,9 +249,9 @@ The SeriesRenderer view is used to render [`ChartSeries`](https://help.syncfusio
 
 public class CustomColumnSeries : ColumnSeries
 {
+    SeriesRenderer view = new SeriesRenderer(Android.App.Application.Context); 
     protected override SeriesRenderer GetView()
     {
-        var view = new SeriesRenderer(Android.App.Application.Context);
         return view;
     }
 }
