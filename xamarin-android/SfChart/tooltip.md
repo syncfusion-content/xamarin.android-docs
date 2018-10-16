@@ -102,6 +102,7 @@ The following properties are used to customize the appearance of tooltip view. Y
 * [`YPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView~YPosition.html) - Returns the y position of the tooltip.
 * [`LabelRect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView~LabelRect.html) - Returns the tooltip label rect.
 * [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView~CornerRadius.html) - Changes the corner radius of the tooltip. 
+* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView~Label.html) - Used to provide text for tooltip label.
 
 ## Methods
 

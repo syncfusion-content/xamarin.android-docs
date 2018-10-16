@@ -390,7 +390,7 @@ You can customize intervals using the [`Interval`](https://help.syncfusion.com/c
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries~StrokeColor.html) – used to change the stroke color of the series.
 * [`CurveColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries~CurveColor.html) – used to change the color of the normal distribution curve.
-
+* [`DataMarkerPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HistogramSeries~DataMarkerPosition.html) - used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerPosition.html), Top and Center of the rectangle.
 {% highlight c# %} 
 [C#]
 
