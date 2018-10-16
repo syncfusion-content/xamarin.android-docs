@@ -23,7 +23,7 @@ node.Width = 100;
 diagram.AddNode(node);
 {% endhighlight %}
 {% endtabs %}
-![](Node_images/Node_img1.jpeg)
+![Node in Xamarin.Android diagram](Node_images/Node_img1.jpeg)
 
 ## Create a node with custom path/shape
 A node can be created with different custom shapes and paths using SfGraphics.

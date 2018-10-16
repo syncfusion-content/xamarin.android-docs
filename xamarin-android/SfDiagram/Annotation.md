@@ -30,7 +30,7 @@ connector.Annotations.Add(new Annotation() { Content = "Label" });
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img1.jpeg)
+![Annotation in Xamarin.Android diagram](Annotation_images/Annotation_img1.jpeg)
 
 ## Accessing an annotation form node and connector instance
 You can access the node or connector annotation using annotation name. The following code illustrates how to access annotation:
@@ -98,7 +98,7 @@ connector.Annotations.Add(con_label);
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img2.jpeg)
+![Annotation customization in Xamarin.Android diagram](Annotation_images/Annotation_img2.jpeg)
 
 ## Alignment
 Annotation can be aligned relatively with node boundaries. It has horizontal and vertical alignment settings. It will be complex when using four alignments together but gives you more control.
@@ -134,5 +134,5 @@ diagram.AddConnector(connector);
 
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img3.jpeg)
+![Annotation alignment in Xamarin.Android diagram](Annotation_images/Annotation_img3.jpeg)
 
