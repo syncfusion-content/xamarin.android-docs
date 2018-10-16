@@ -9,7 +9,7 @@ keywords:
 # Connector
 The connectors are objects used to create link between two points. Nodes or ports are used to represent the relationship between them.
 
-## Create Connector
+## Create connector
 The connector can be created by defining the start and end points.
 {% tabs %}
 {% highlight c# %}
@@ -21,7 +21,7 @@ diagram.AddConnector(Connector1);
 {% endhighlight %}
 {% endtabs %}
 
-## Connections with Nodes
+## Connections with nodes
 The SourceNode and TargetNode properties allows to define the nodes to be connected. The following code example illustrates how to connect two nodes:
 {% tabs %}
 {% highlight c# %}
@@ -47,10 +47,10 @@ diagram.AddConnector(connector);
 {% endtabs %}
 ![](Connector_images/Connector_img1.jpeg)
 
-## Connections with Ports
+## Connections with ports
 The SourcePort and TargetPort properties allows to create connections between some specific points of source or target nodes.
 
-## Using Port
+## Using port
 The following code example illustrates how to create and connect the ports:
 {% tabs %}
 {% highlight c# %}
@@ -162,7 +162,7 @@ diagram.AddConnector(connector);
 {% endtabs %}
 ![](Connector_images/Connector_img7.jpeg)
 
-## Remove Connector
+## Remove connector
 There are two ways to remove connector from the connection, they are the following:
 1.Passing the connector as parameter to remove connector method in the diagram.
 The following code example illustrates how to remove a connector from the connection:
@@ -195,7 +195,7 @@ diagram.Connectors.RemoveAt(0);
 ## Appearance
 The StrokeThickness, Stroke are the set of properties. The style of line connectors  and decorators can be customized with that properties.
 
-## Connector Appearance
+## Connector appearance
 The following code example illustrates how to customize the connector appearance.
 {% tabs %}
 {% highlight c# %}
@@ -215,7 +215,7 @@ diagram.AddConnector(connector);
 {% endtabs %}
 ![](Connector_images/Connector_img8.jpeg)
 
-## Decorator Appearance
+## Decorator appearance
 The following code example illustrates how to customize the appearance of the decorator:
 {% tabs %}
 {% highlight c# %}
