@@ -9,11 +9,11 @@ documentation : ug
 
 ## ToolbarCustomization
 
-You can customize color palette, toolbar visibility and appearance of each toolbar item.
+You can customize the color palette, toolbar visibility and appearance of each toolbar item.
 
 ## Customize toolbar items
 
-SfImageEditor control supports to customize and configure the appearance of toolbar menu. You can customize image editor toolbar by adding respective FooterToolbarItem and HeaderToolbarItem 
+The SfImageEditor control supports to customize and configure the appearance of toolbar menu. You can customize image editor toolbar by adding respective FooterToolbarItem and HeaderToolbarItem 
 
 #### ToolbarItem
 
@@ -25,19 +25,18 @@ You can customize each toolbar item with the help of `Text` and `Icon` propertie
 
 {% highlight C# %}
 
-        	protected override void OnCreate(Bundle bundle)
-            {			
-                InitializeComponent();
-                SfImageEditor editor = new SfImageEditor();
-                var itemName = editor.ToolbarSettings.ToolbarItems[2].Name;
-            }
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            SfImageEditor editor = new SfImageEditor(this);
+            var itemName = editor.ToolbarSettings.ToolbarItems[2].Name;            
+        }
 
 {% endhighlight %}
 
-N> The list of available built-in toolbar item names are "back, Text, Add, TextColor, FontFamily, Arial, Noteworthy, Marker Felt,
-Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shape, Rectangle, StrokeThickness, Circle, Arrow, Transform, Crop, free, original, square, 3:1, 3:2, 4:3, 5:4, 16:9, Rotate, Flip, Reset, Undo, Redo, Save"
+N> The following built-in toolbar item names are available in image editor: `Back`, `Text`, `Add`, `TextColor`, `FontFamily`, `Arial`, `Noteworthy`, `Marker Felt`, `Bradley Hand`, `SignPainter`, `Opacity`, `Path`, `StrokeThickness`, `Colors`, `Opacity`, `Shape`, `Rectangle`, `StrokeThickness`, `Circle`, `Arrow`, `Transform`, `Crop`, `free`, `original`, `square`, `3:1`, `3:2`, `4:3`, `5:4`, `16:9`, `Rotate`, `Flip`, `Reset`, `Undo`, `Redo`, and `Save`.
 
-N> We can't modify the name of existing built-in toolbar item and also can't create toolbar item with these list
+N> You cannot modify the names of existing built-in toolbar items and cannot create toolbar item with these list.
 
 ImageEditor Toolbar menu contains set of header and footer menu items which helps to perform image editor actions and this can be categorized into the following types,
 
@@ -47,7 +46,7 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 
 ## Adding HeaderToolbarItem
 
-`HeaderToolbarItem` will be arranged on top of the image editor and you can customize header toolbar item with the help of Icon and Text as like below,
+`HeaderToolbarItem` is palced on top of the image editor and you can customize header toolbar item with the help of `Icon` and `Text` properties.
 
 {% highlight C# %}
 
@@ -57,9 +56,9 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 
 ## Adding FooterToolbarItem   
 
- `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footer toolbar item with the help of Icon and Text along with sub items.
+The `FooterToolbarItem` is placed on the bottom of the image editor, and you can customize the footer toolbar item using the `Icon` and `Text` properties.
 
-Refer to the below code snippet to customize footer toolbar item,
+Refer to the below code snippet to customize the footer toolbar item,
 
 {% highlight C# %}
 
@@ -110,7 +109,7 @@ Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be 
 
 {% highlight C# %}
 
-        protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
 			   . . .
 
@@ -128,13 +127,13 @@ Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be 
 
 ### MoveSubItemsToFooterToolbar 
 
-`MoveSubItemsToFooterToolbar` boolean property of ToolbarItemSelected event argument decides the placement of each sub items of respective footer toolbar item. 
+The `MoveSubItemsToFooterToolbar` boolean property of ToolbarItemSelected event argument decides the placement of each sub items of respective footer toolbar item. 
 
 If you set the value to `true`, the respective sub items of footer item will be placed on footer toolbar layout. If you set `false`, then the sub items will be placed above the footer toolbar layout.
 
 {% highlight C# %}
 
-        protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle savedInstanceState)
             {
                         . . .
 
@@ -174,7 +173,7 @@ N> This is not applicable for built-in footer toolbar items .
 
 ## To Hide/Show toolbar
  
- To show or hide toolbar by setting toolbar IsVisible property to either true or false. By default toolbar IsVisible property is set to true.
+ To show or hide toolbar by setting toolbar `IsVisible` property to either true or false. By default toolbar `IsVisible` property is set to true.
 
 {% tabs %}
 
@@ -194,7 +193,7 @@ N> This is not applicable for built-in footer toolbar items .
 
 You can hide or show the toolbar items by specifying its icon name and set boolean value to false or true.
 
-N> You can customize icon by specifying its [names](/xamarin-android/sfimageeditor/toolbarcustomization#name)
+N> You can customize an icon by specifying its [names](/xamarin-android/sfimageeditor/toolbarcustomization#name)
 
 
 {% tabs %}
@@ -261,7 +260,7 @@ Toolbar items will be resize based on the toolbar height. To change Height of th
 
 ## Individual Toolbar Item Height Customization
 
-To arrange toolbar items aspect fit based on the toolbar height by using following properties  
+You can arrange the toolbar items based on the toolbar height using the following properties:
 
 1.  TextHeight
 2.  IconHeight
@@ -285,5 +284,3 @@ To change the toolbar item Text and Icon height as like below,
 {% endhighlight %}
 
 {% endtabs %}
-
-

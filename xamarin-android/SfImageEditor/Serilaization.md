@@ -7,11 +7,12 @@ control : ImageEditor
 documentation : ug
 ---
 
-## Serialization And Deserialization
- ImageEditor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. Save the current state of the Image Editor and Load it back when its needed.
+## Serialization and Deserialization
+ ImageEditor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. You can save the current state of the Image Editor and Load it back when its needed.
 
 ## Serialization
-  SaveEdits() method used to serialize the current edits of shapes. Serialized object will be return in the form of JSON stream.
+
+The SaveEdits() method is used to serialize the current edits of shapes. The serialized object will be returned in the form of JSON stream.
 
 {% tabs %}
 
@@ -49,16 +50,13 @@ documentation : ug
 
 {% endtabs %}
   
-  you can save stream into .txt format file. if you saved as .txt format file in asset folder to deserialize the shapes then set as AndroidAsset in project.
+You can save stream into .txt format file. if you saved as .txt format file in asset folder to deserialize the shapes then set the Build action to `AndroidAsset` in project.
   
-  Please find sample text file shown below
-
-  [Chart.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
-       
-
+Sample text file: [Chart.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
 
 ## Deserialization
-   LoadEdits() method used to deserialize the shapes.
+
+The LoadEdits() method is used to deserialize the edits over an image.
 
 {% tabs %}
 
@@ -91,12 +89,10 @@ documentation : ug
                 MemoryStream stream = new MemoryStream(byteArray);
                 if (stream != null)
                     editor.LoadEdits(stream);
-
             }
         }
     
 		
-        
 {% endhighlight %}
 
 {% endtabs %}
