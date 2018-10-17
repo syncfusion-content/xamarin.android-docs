@@ -138,5 +138,10 @@ tooltip.Hide(true);
 
 ## Event
 
-* [`TooltipCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~TooltipCreated_EV.html) - Triggered when the tooltip is activated. 
-* [`TooltipDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~TooltipDismiss_EV.html) - Triggered when the tooltip gets hide.  
+### TooltipCreated
+
+The [`TooltipCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~TooltipCreated_EV.html) event occurs when a tooltip is activated. This argument contains [`P1`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+TooltipCreatedEventArgs~P1.html), which is the object of [`TooltipView`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView.html). You can customize the appearance of tooltip view using the properties of P1, which is referred in this [`link`](https://help.syncfusion.com/xamarin-android/sfchart/tooltip#customizing-the-appearance-of-tooltip-view). 
+ 
+### TooltipDismiss
+
+The [`TooltipDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~TooltipDismiss_EV.html) event occurs when  a tooltip is hidden. This argument contains [`P1`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart+TooltipDismissEventArgs~P1.html) which is the object of [`TooltipView`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TooltipView.html).
