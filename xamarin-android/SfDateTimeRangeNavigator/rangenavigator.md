@@ -57,7 +57,7 @@ sfDateTimeRangeNavigator.Maximum = new GregorianCalendar(2016, 01, 01).Time;
 
 {% endhighlight %}
 
-![](gettingstarted_images/gettingstarted_img1.jpeg)
+![Configuring the Xamarin.Android DateTimeRangeNavigator](gettingstarted_images/gettingstarted_img1.jpeg)
 
 ## Handle range selection
 
@@ -81,4 +81,6 @@ void sfDateTimeRangeNavigator_RangeChanged(object sender, SfDateTimeRangeNavigat
 
 {% endhighlight %}
 
-![](gettingstarted_images/gettingstarted_img3.jpeg)
+N> Though the [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~Content.html) property’s data type is View and it can accept any View as its value, but currently [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) can accept only [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) as its content.
+
+![Range selection in Xamarin.Android DateTimeRangeNavigator](gettingstarted_images/gettingstarted_img3.jpeg)
