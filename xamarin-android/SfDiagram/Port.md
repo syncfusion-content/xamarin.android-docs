@@ -37,7 +37,7 @@ Connector connector = new Connector(this) { SourceNode = node1, TargetNode = nod
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Port_images/Port_img1.jpeg)
+![Port in Xamarin.Android diagram](Port_images/Port_img1.jpeg)
 
 ## Accessing a port from the node instance
 You can access the port by its index from the ports property in a node.

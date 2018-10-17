@@ -6,13 +6,13 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Getting Started
+# Getting started
 This section provides a quick overview for working with Diagram for Xamarin.Android. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
 ## Adding diagram reference 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram.Android”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram.Android), and then install it. 
 
-![](images/Getting-Started_img1.jpeg)
+![Diagram reference in Xamarin.Android diagram](images/Getting-Started_img1.jpeg)
 
 I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -23,7 +23,7 @@ I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial set
 • **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
 • **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
 
-## Creating a Simple Flow Chart
+## Creating a simple flow chart
 Create a new cross platform app (Xamarin.Android) with portable class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assemblies to the respective projects.
 **Adding SfDiagram in Xamarin.Android**
 1.Create a new blank application for Android using Visual Studio and name it as “GettingStartedDroid”. Refer the above-mentioned assemblies to the project.
@@ -106,7 +106,7 @@ public Node AddNode(string id, float offsetX, float offsetY, float width, float 
 {% endhighlight %}
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
-![](images/Getting-Started_img2.jpeg)
+![Getting started demo in Xamarin.Android diagram](images/Getting-Started_img2.jpeg)
 
 This demo project can be downloaded from the following link.
 [GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/GettingStarted_Android_SfDiagram.zip)
@@ -153,7 +153,7 @@ diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 {% endhighlight %}
 {% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
-![](images/Getting-Started_img3.jpeg)
+![Organization chart demo in Xamarin.Android diagram](images/Getting-Started_img3.jpeg)
 
 This demo project can be downloaded from the following link.
 [OrganizationalChart_Demo](http://files2.syncfusion.com/Xamarin.Android/Samples/OrganizationalChart_Android_SfDiagram.zip)
