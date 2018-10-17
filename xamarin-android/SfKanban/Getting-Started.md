@@ -147,7 +147,7 @@ The [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Sy
 
 Set the required property name to [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnMappingPath.html). It is essential to add data to the respective columns.
 
-In the following code sample, the data whose [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanModel~Category.html) property’s value is set to `Open` will be added to the openColumn and other data will be added to the respective columns.
+In the following code sample, the data whose [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanModel~Category.html) property’s value is set to `Open` will be added to the openColumn, [`Title`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~Title.html) and other data will be added to the respective columns.
 
 The following code sample demonstrates how to define columns.
 
@@ -178,6 +178,73 @@ kanban.Columns.Add(doneColumn);
 Set the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~AutoGenerateColumns.html) property to true, in which you don't need to define the columns as mentioned in the previous code sample. This will create columns depending on the [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnMappingPath.html) property for all the distinct values in [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ItemsSource.html).
 
 When the columns are auto-generated, you can handle the [`ColumnsGenerated`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnsGenerated_EV.html) event to customize the columns after they are added to the [`ActualColumns`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ActualColumns.html) collection in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html).
+
+## Customizing Column Size
+
+By default, columns are sized smartly to arrange the default elements of the cards with better readability. However, you can define the minimum and maximum width for the columns in SfKanban using [`SfKanban.MinColumnWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~MinColumnWidth.html) and [`SfKanban.MaxColumnWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~MaxColumnWidth.html) properties respectively.
+
+{% highlight C# %}
+
+kanban.MaxColumnWidth = 300;
+kanban.MinColumnWidth = 340;
+
+{% endhighlight %}
+
+You can also define the exact column width using [`SfKanban.ColumnWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnWidth.html) property.
+
+{% highlight C# %}
+
+kanban.ColumnWidth = 250;
+	
+{% endhighlight %}
+
+## Expand/Collapse Column
+
+Columns can be expanded/collapsed by tapping the toggle button which is placed at top right corner of the Kanban header. [`IsExpanded`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~IsExpanded.html) property is used to programmatically expand/collapse the Kanban column. The following code example describes the above behavior.
+
+{% highlight C# %}
+
+KanbanColumn openColumn = new KanbanColumn();
+openColumn.IsExpanded = false; 
+KanbanColumn progressColumn = new KanbanColumn();
+progressColumn.IsExpanded = false;
+
+kanban.Columns.Add(openColumn);
+kanban.Columns.Add(progressColumn);
+
+{% endhighlight %}
+
+## Enable/Disable Drag & Drop
+
+You can enable and disable the drag and drop operation of the cards for particular column using [`KanbanColumn.AllowDrag`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~AllowDrag.html) and [`KanbanColumn.AllowDrop`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~AllowDrop.html) properties.
+
+The following code is used to disable the drag operation from progress column.
+
+{% highlight C# %}
+
+KanbanColumn progressColumn = new KanbanColumn();
+progressColumn.AllowDrag = false;
+
+{% endhighlight %}
+
+The following code is used to disable the drop operation of the cards into the progress column.
+
+{% highlight C# %}
+
+KanbanColumn progressColumn = new KanbanColumn();
+progressColumn.AllowDrop = false;
+
+{% endhighlight %}
+
+## Items Count
+
+[`ItemsCount`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~ItemsCount.html) property is used to get the total cards count in each column.
+
+{% highlight C# %}
+
+int count = openColumn.ItemsCount;         
+
+{% endhighlight %}
 
 ## Working with workflows
 
@@ -217,12 +284,12 @@ openColumn.MinimumLimit = 5;
 openColumn.MaximumLimit = 10;   
 {% endhighlight %}
 
-The following properties are used to customize the appearance of error bar:
+The following properties of [`ErrorBarSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~ErrorBarSettings.html) are used to customize the appearance of error bar:
 
-* Color: Changes the default color of the error bar.
-* MaxValidationColor: Changes the maximum validation color of the error bar.
-* MinValidationColor: Changes the minimum validation color of the error bar.
-* Height: Changes the height of the error bar.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanErrorBarSettings~Color.html): Changes the default color of the error bar.
+* [`MaxValidationColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanErrorBarSettings~MaxValidationColor.html): Changes the maximum validation color of the error bar.
+* [`MinValidationColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanErrorBarSettings~MinValidationColor.html): Changes the minimum validation color of the error bar.
+* [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanErrorBarSettings~Height.html): Changes the height of the error bar.
 
 {% highlight C# %}
 openColumn.ErrorBarSettings.Color = Color.Green; 
