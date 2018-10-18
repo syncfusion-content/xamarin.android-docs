@@ -9,22 +9,13 @@ documentation : ug
 
 # Transformation
 
-The image editor control is capable of performing the image transformations such as `rotation` and `flip`. The transformations can be achieved in two ways:
-
-* From Toolbar
-* Using Code
+The image editor control is capable of performing the image transformations such as `rotation` and `flip`.
 
 ## Rotation
 
-### From Toolbar
+You can use the `Rotate` method of the image editor to rotate a image. For each rotation, image will be rotated to 90 degrees towards clockwise direction.
 
-You can rotate the image from the toolbar by clicking on the `Rotate` button available in the submenu of the `Transforms` button in the toolbar. The button click results in rotating the image to 90 degrees clockwise from the current state.
-
-### Using Code
-
-Programmatically, you can make use of the `Rotate` method in the SfImageEditor control to rotate the image.
-
-N> Angle cannot be specified in code to alter the rotation angle of the image
+N> Angle cannot be specified in code to alter the rotation angle of the image.
 
 {% tabs %}
 
@@ -36,17 +27,9 @@ editor.Rotate();
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/transform.gif)
-
 ## Flip
 
-### From Toolbar
-
-The Image Editor control has the capability of showing the mirror image. You can get the mirror image of the loaded image by clicking on the `Flip` button available in the submenu of the `Transforms` button in the toolbar. The button click results in the image being flipped horizontally.
-
-### Using Code
-
-The `Flip` method flips the image horizontally or vertically based on the `FlipDirection` specified as argument for the Flip method.
+The image editor control is capable of showing the mirror image. The `Flip` method flips the image horizontally or vertically based on the `FlipDirection` specified as argument of the flip method.
 
 N> The default flip direction is horizontal.
 
@@ -60,3 +43,4 @@ editor.Flip(FlipDirection.Horizontal);
 
 {% endtabs %}
 
+![SfImageEditor](ImageEditor_images/transform.gif)
