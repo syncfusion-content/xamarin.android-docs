@@ -44,16 +44,21 @@ style.DashWidth = 1;
 style.StrokeColor = Color.Blue;
 style.StrokeWidth = 2;
 style.TextSize = 20;
-style.TextColor = Color.Red;
+style.TextColor = Color.Green;
 
-style.SelectedBackgroundColor = Color.Rgb(239, 89, 123);
+style.SelectedBackgroundColor = Color.Rgb(0, 255, 0);
 style.SelectedDashGap = 2;
 style.SelectedDashWidth = 1;
 style.SelectedStrokeColor = Color.Yellow;
 style.SelectedStrokeWidth = 2;
 style.SelectedTextSize = 20;
-style.SelectedTextColor = Color.Green;
+style.SelectedTextColor = Color.Red;
 
 kanban.PlaceholderStyle = style;
 
 {% endhighlight %}
+
+The following output demonstrates the above code example.
+
+![PlaceholderStyle support for Xamarin.Android Kanban](SfKanban_images/PlaceholderStyle.png)
+
