@@ -13,9 +13,7 @@ The image editor control provides support for localization.You can localize Imag
 
 ## Change default control language
 
-Based on the resource strings in the project the contents are localized accordingly.
-
-By default,ImageEditor control is available in English.
+Based on the resource strings in the project the contents are localized. By default,ImageEditor control is available in English.
 
 You can localize the text available in the control by adding equivalent localized string in the resource file.
 
@@ -30,4 +28,3 @@ In below screenshot we have localized the text to French language.
 ![SfImageEditor](ImageEditor_images/androidresources.png)
 
 ![SfImageEditor](ImageEditor_images/localization.png)
-
