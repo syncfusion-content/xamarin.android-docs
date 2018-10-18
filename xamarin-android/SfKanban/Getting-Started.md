@@ -7,44 +7,37 @@ control: SfKanban
 documentation: ug
 ---
 
-#<a id="KanbanAndroid"></a>Kanban for Xamarin.Android
+# Getting Started
 
-This section provides a quick overview for working with Essential Kanban for Xamarin.Android. It’s an efficient way to visualize the workflow at each stage along its path to completion.
+This section provides a quick overview for working with the kanban control for Xamarin.Android. Using the kanban control is an efficient way to visualize the workflows along with their paths at each stage of completion.
 
-**Referencing Essential Studio Components in your Solution**
+## Referencing Essential Studio components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
 
 {Syncfusion Installed location}\Essential Studio{14.2.0.26}\lib
 
-Note: Assemblies are available in unzipped package location in Mac.
+Note: Assemblies are available in an unzipped package location in Mac.
 
-You have to add the following assembly reference to the android project
+Add the following assembly reference to your Android project.
 
 android\Syncfusion.SfKanban.Android.dll
 
-**Create a simple SfKanban**
+## Creating a simple kanban
 
-This section explains how to create a SfKanban and configure it. 
+This section explains how to create a SfKanban and configure it.
 
-This is how the final output will look like on Android devices. You can download the entire source code of this demo for Xamarin.Android from [here](http://files2.syncfusion.com/Xamarin.Android/Samples/Kanban_GettingStarted.zip).
+The following screenshot illustrates the final output of SfKanban on Android devices. You can download the entire [source code](http://files2.syncfusion.com/Xamarin.Android/Samples/Kanban_GettingStarted.zip) of this demo for Xamarin.Android.
 
 ![Kanban](kanban_images/KanbanGettingStared.jpeg)
 
-In this walk through, you will create a new application that contains the SfKanban which includes the below topics.
+The following section describes how to create a new kanban application.
 
-* Adding SfKanban in Xamarin.Android
-* Create data model
-* Binding data
-* Defining columns
-* Working with Workflows
-* Work In-Progress Limit
+## Adding SfKanban in Xamarin.Android
 
-**Adding SfKanban in Xamarin.Android**
-
-1. Add the required assembly references to the project as discussed in the _Reference Essential Studio Components in your Solution_ section.
-2. Import [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html) control namespace [`Syncfusion.SfKanban.Android`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android.html).
-3. Create an instance of [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html) control and set as a content view of Activity.
+1. Add the required assembly references to the project as discussed in the _Referencing Essential Studio Components in your solution_ section.
+2. Import [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html) control namespace in [`Syncfusion.SfKanban.Android`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android.html).
+3. Create an instance of [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html) control, and set is as content view of the activity.
 
 
 {% highlight C# %}
@@ -66,7 +59,7 @@ public  class MainActivity : Activity
 }
 {% endhighlight %}
 
-**Create KanbanModel for the SfKanban**
+## Creating KanbanModel for the SfKanban
 
 Create a collection of [`KanbanModel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanModel.html) objects for populating [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html).
 
@@ -137,24 +130,26 @@ public class MainActivity : Activity
 }     
 }
 {% endhighlight %}
-**Binding data to SfKanban**
 
-In order to bind the data source of the [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html), set [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ItemsSource.html) property as shown below. The following code binds the collection created in previous step to [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ItemsSource.html) property.
+## Binding data to SfKanban
+
+To bind the data source of the [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html), set the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ItemsSource.html) property. The following code binds the collection created in previous step to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ItemsSource.html) property.
 
 {% highlight C# %}
 kanban.ItemsSource = ItemsSourceCards();
 {% endhighlight %}
-**Defining Columns**
 
-By default, we need to define the columns manually by adding the [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn.html) object to the [`Columns`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~Columns.html) collection property in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html). 
+## Defining columns
 
-[`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ItemsSource.html) which was bound to the kanban will be added to the respective columns using [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnMappingPath.html) property in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html) and [`Categories`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~Categories.html) collection property in [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn.html).
+Define the columns manually by adding the [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn.html) objects to the [`Columns`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~Columns.html) collection property in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html).
 
-We need to set the required property name to [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnMappingPath.html) which will be essential to add the data to the respective columns.
+The [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ItemsSource.html) bound to the kanban will be added to the respective columns using the [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnMappingPath.html) property in the [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html) and [`Categories`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~Categories.html) collection properties in [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn.html).
 
-In this example, data whose [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanModel~Category.html) property’s value is set as `Open` will be added to the openColumn and other data will be added to the respective columns.
+Set the required property name to [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnMappingPath.html). It is essential to add data to the respective columns.
 
-The following code example illustrates how this can be done.
+In the following code sample, the data whose [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanModel~Category.html) property’s value is set to `Open` will be added to the openColumn, [`Title`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~Title.html) and other data will be added to the respective columns.
+
+The following code sample demonstrates how to define columns.
 
 {% highlight C# %}
 kanban.ColumnMappingPath = "Category"; 
@@ -180,21 +175,88 @@ doneColumn.Categories = new List<object>() { "Done" };
 kanban.Columns.Add(doneColumn); 
 {% endhighlight %}
 
-You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~AutoGenerateColumns.html) property to true in which you don't need to define the columns as mentioned in the above example.  This will create columns depending on the [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnMappingPath.html) property for all the distinct values in [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ItemsSource.html).
+Set the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~AutoGenerateColumns.html) property to true, in which you don't need to define the columns as mentioned in the previous code sample. This will create columns depending on the [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnMappingPath.html) property for all the distinct values in [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ItemsSource.html).
 
 When the columns are auto-generated, you can handle the [`ColumnsGenerated`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnsGenerated_EV.html) event to customize the columns after they are added to the [`ActualColumns`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ActualColumns.html) collection in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html).
 
-**Working with workflows**
+## Customizing Column Size
 
-A Kanban workflow is a set of [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~Category.html) and  [`AllowedTransitions`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~AllowedTransitions.html), that an item moves through during its life cycle and typically represents processes within your organization.
+By default, columns are sized smartly to arrange the default elements of the cards with better readability. However, you can define the minimum and maximum width for the columns in SfKanban using [`SfKanban.MinColumnWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~MinColumnWidth.html) and [`SfKanban.MaxColumnWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~MaxColumnWidth.html) properties respectively.
+
+{% highlight C# %}
+
+kanban.MaxColumnWidth = 340;
+kanban.MinColumnWidth = 300;
+
+{% endhighlight %}
+
+You can also define the exact column width using [`SfKanban.ColumnWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ColumnWidth.html) property.
+
+{% highlight C# %}
+
+kanban.ColumnWidth = 250;
+	
+{% endhighlight %}
+
+## Expand/Collapse Column
+
+Columns can be expanded/collapsed by tapping the toggle button which is placed at top right corner of the Kanban header. [`IsExpanded`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~IsExpanded.html) property is used to programmatically expand/collapse the Kanban column. The following code example describes the above behavior.
+
+{% highlight C# %}
+
+KanbanColumn openColumn = new KanbanColumn();
+openColumn.IsExpanded = false; 
+KanbanColumn progressColumn = new KanbanColumn();
+progressColumn.IsExpanded = false;
+
+kanban.Columns.Add(openColumn);
+kanban.Columns.Add(progressColumn);
+
+{% endhighlight %}
+
+## Enable/Disable Drag & Drop
+
+You can enable and disable the drag and drop operation of the cards for particular column using [`KanbanColumn.AllowDrag`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~AllowDrag.html) and [`KanbanColumn.AllowDrop`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~AllowDrop.html) properties.
+
+The following code is used to disable the drag operation from progress column.
+
+{% highlight C# %}
+
+KanbanColumn progressColumn = new KanbanColumn();
+progressColumn.AllowDrag = false;
+
+{% endhighlight %}
+
+The following code is used to disable the drop operation of the cards into the progress column.
+
+{% highlight C# %}
+
+KanbanColumn progressColumn = new KanbanColumn();
+progressColumn.AllowDrop = false;
+
+{% endhighlight %}
+
+## Items Count
+
+[`ItemsCount`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~ItemsCount.html) property is used to get the total cards count in each column.
+
+{% highlight C# %}
+
+int count = openColumn.ItemsCount;         
+
+{% endhighlight %}
+
+## Working with workflows
+
+A kanban workflow is a set of [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~Category.html) and  [`AllowedTransitions`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~AllowedTransitions.html) that an item moves through during its life cycle and typically represents processes within your organization.
 
 [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~Category.html) represents a state of an item at a particular point in a specific workflow. An item can be in only one category at a specific point of time.
 
 [`AllowedTransitions`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow~AllowedTransitions.html) is a list of categories to where the card can be moved from the current category. 
 
-**Creating the workflows**
+## Creating workflows
 
-Initialize [`Workflows`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~Workflows.html) property with a list of [`KanbanWorkflow`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow.html) instances. Each instance represents a workflow in Kanban. The following code example illustrates how this can be done.
+Initialize the [`Workflows`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~Workflows.html) property with a list of [`KanbanWorkflow`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanWorkflow.html) instances. Each instance represents a workflow in Kanban. The following code sample demonstrates how to create a workflow.
 
 {% highlight C# %}
 var workflows = new List<KanbanWorkflow>();
@@ -213,21 +275,21 @@ workflows.Add(progressWorkflow);
 kanban.Workflows = workflows;  
 {% endhighlight %}
 
-**Work In-Progress Limit**
+## Work in-progress limit
 
-In column, you can set minimum and maximum items limit by using the [`MinimumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~MaximumLimit.html) properties. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the color of the error bar. 
+In a column, you can set the minimum and maximum items limit by using the [`MinimumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~MaximumLimit.html) properties. However, this will not restrict moving the items from one column to another column. But, the violation of the limit can be indicated by changing the color of the error bar.
 
 {% highlight C# %}
 openColumn.MinimumLimit = 5; 
 openColumn.MaximumLimit = 10;   
 {% endhighlight %}
 
-Following properties are used to customize its appearance.
+The following properties of [`ErrorBarSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanColumn~ErrorBarSettings.html) are used to customize the appearance of error bar:
 
-* Color – used to change the default color of the error bar
-* MaxValidationColor – used to change the maximum validation color of the error bar
-* MinValidationColor – used to change the minimum validation color of the error bar
-* Height – used to change the height of the error bar
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanErrorBarSettings~Color.html): Changes the default color of the error bar.
+* [`MaxValidationColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanErrorBarSettings~MaxValidationColor.html): Changes the maximum validation color of the error bar.
+* [`MinValidationColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanErrorBarSettings~MinValidationColor.html): Changes the minimum validation color of the error bar.
+* [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanErrorBarSettings~Height.html): Changes the height of the error bar.
 
 {% highlight C# %}
 openColumn.ErrorBarSettings.Color = Color.Green; 
@@ -235,4 +297,5 @@ openColumn.ErrorBarSettings.MinValidationColor = Color.Orange;
 openColumn.ErrorBarSettings.MaxValidationColor = Color.Red; 
 openColumn.ErrorBarSettings.Height = 4;    
 {% endhighlight %}
+
 

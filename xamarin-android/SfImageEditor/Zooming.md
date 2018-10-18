@@ -9,22 +9,23 @@ documentation : ug
 
 ## Zooming
 
-The image editor control provides support for zooming and panning.You can Zoom in and Zoom out image  in image editor control.
+The image editor control provides support for zooming and panning.You can Zoom in and Zoom out image in image editor control.
 
-The following properties are related to the zooming feature of the image editor control:
+The following properties are used for zooming feature of the image editor control:
 
 * EnableZooming
 * Maximum ZoomLevel
+* PanningMode
 
 ## EnableZooming
 
- You can Enable or Disable zooming by setting Enable Zooming to either true or false.
+You can enable or disable the zooming functionality by setting the `EnableZooming` value to true or false. By default, the `EnableZooming` value is set to true.
 
 {% tabs %}
 
 {% highlight C# %}
 
-     editor.EnableZooming = true;
+     editor.EnableZooming = false;
 
 {% endhighlight %}
 
@@ -32,7 +33,7 @@ The following properties are related to the zooming feature of the image editor 
 
 ## Maximum ZoomLevel
 
-You can customize maximum zoom level  by setting value to Maximum ZoomLevel property in image editor control.
+You can set the maximum zoom level to image using the `MaximumZoomLevel` property.
 
 {% tabs %}
 
@@ -47,15 +48,15 @@ You can customize maximum zoom level  by setting value to Maximum ZoomLevel prop
 
 ## PanningMode
 
-Image editor control provides support for panning. Image editor allows you to pan the image with two fingers or single finger by setting the PanningMode in image editor.
+Image editor control provides support for panning. Image editor allows you to pan the image with two fingers or single finger by setting the `PanningMode`.
 
 The following properties are used in the panning.
 
-* Single Finger – You can zoom or pan the image but it restrict the select or move the shapes.
+* `SingleFinger`: Zooms or pans the image with single finger, but shapes and text selection cannot be performed with this mode.
 
-* Two Finger – You can zoom or pan the image and also select or move the shapes.
+* `TwoFinger`: Zooms or pans the image with two finger. The shapes and text selection can be performed with this mode.
 
-By default, PanningMode value as TwoFinger.
+By default, `PanningMode` value as `TwoFinger`.
 
 {% tabs %}
 
@@ -67,7 +68,4 @@ editor.PanningMode = PanningMode.TwoFinger;
 
 {% endtabs %}
 
-
 ![SfImageEditor](ImageEditor_images/zoom.png)
-
-
