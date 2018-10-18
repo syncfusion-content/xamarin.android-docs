@@ -46,7 +46,7 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 
 ## Adding HeaderToolbarItem
 
-`HeaderToolbarItem` is palced on top of the image editor and you can customize header toolbar item with the help of `Icon` and `Text` properties.
+`HeaderToolbarItem` is placed on top of the image editor and you can customize the header toolbar item using the `Icon` and `Text` properties.
 
 {% highlight C# %}
 
@@ -69,13 +69,13 @@ Refer to the below code snippet to customize the footer toolbar item,
 
 ## Adding SubItems to the FooterToolbarItem
 
-`SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footer toolbar item. SubItems will be arranged above the footer toolbar item layout and you can also customize sub items appearance as like main toolbar items. 
+The `SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footer toolbar item. The subItems will be placed above the footer toolbar item layout and you can also customize appearance of sub items as main toolbar items. 
 
-Refer to the below code snippet to customize sub items of footer toolbar item,
+Refer to the following code snippet to customize sub items of footer toolbar item,
 
 {% highlight C# %}
 
- 	 editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem()
+            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem()
             {
                 Text = "More",
                 Icon = BitmapFactory.DecodeResource(Resources, Resource.Drawable.more),
@@ -91,9 +91,7 @@ Refer to the below code snippet to customize sub items of footer toolbar item,
 
 {% endhighlight %}
 
-N> You can remove existing toolbar items [name](/xamarin-android/sfimageeditor/toolbarcustomization#name) from the image editor toolbarItems collection based on the index value. 
-
-You can change icon and text value dynamically for any of already added toolbar item based on the index as like below,
+N> You can remove existing toolbar items [name](/xamarin-android/sfimageeditor/toolbarcustomization#name) from image editor toolbarItems collection based on the index value and change the icon and text value dynamically for any of already added toolbar item based on the index as shown in the following code snippet.
 
 {% highlight C# %}
 
@@ -105,7 +103,7 @@ editor.ToolbarSettings.ToolbarItems[3].Icon = BitmapFactory.DecodeResource(Resou
 
 ## ToolbarItemSelected event 
 
-Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered and you can get the respective tapped toolbar item as an argument as shown below, 
+Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered and you can get the respective tapped toolbar item as an argument as shown in the following code snippet, 
 
 {% highlight C# %}
 

@@ -50,7 +50,7 @@ Using a font other than the built-in typefaces can be applied for image editor t
 
 Add the custom fonts into Assets folder and right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to `Copy Always`.
 
-![SfImageEditor](ImageEditor_images/AndroidCustomFont.png)   
+![SfImageEditor](ImageEditor_images/CustomFont.png)   
 
 {% highlight C# %}
 
