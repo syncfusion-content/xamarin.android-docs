@@ -185,8 +185,8 @@ By default, columns are sized smartly to arrange the default elements of the car
 
 {% highlight C# %}
 
-kanban.MaxColumnWidth = 300;
-kanban.MinColumnWidth = 340;
+kanban.MaxColumnWidth = 340;
+kanban.MinColumnWidth = 300;
 
 {% endhighlight %}
 
