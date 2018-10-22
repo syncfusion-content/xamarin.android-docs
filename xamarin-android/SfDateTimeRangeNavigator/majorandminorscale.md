@@ -87,4 +87,23 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 
 ![Customizing the appearance of ticks and labels in Xamarin.Android DateTimeRangeNavigator](majorandminorscale_images/minorandmajorscale_img2.png)
 
+## Events
+
+### MajorScaleLabelsCreate
+
+The [`MajorScaleLabelsCreate`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~MajorScaleLabelsCreate_EV.html) event is triggered when the major scale label is created. The argument contains [`MajorScaleLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator+MajorScaleLabelsCreateEventArgs~MajorScaleLabels.html) of [`RangeNavigatorLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html) which contains following properties:
+
+* [`GridLinePosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel~GridLinePosition.html) - Used to get the position of grid lines. 
+* [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel~IsVisible.html) - Used to define the visibility of labels.
+* [`LabelContent`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel~LabelContent.html) - Used to determine the content of labels.
+* [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel~LabelPosition.html) - Used to get the position of labels. 
+
+### MinorScaleLabelsCreate
+
+The [`MinorScaleLabelsCreate`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator~MinorScaleLabelsCreate_EV.html) event is triggered when the minor scale label is created. The argument contains [`MinorScaleLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator+MinorScaleLabelsCreateEventArgs~MinorScaleLabels.html) of [`RangeNavigatorLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html) which contains following properties:
+
+* [`GridLinePosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel~GridLinePosition.html) - Used to get the position of grid lines. 
+* [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel~IsVisible.html) - Used to define the visibility of labels.
+* [`LabelContent`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel~LabelContent.html) - Used to determine the content of labels.
+* [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Rangenavigator.RangeNavigatorLabel~LabelPosition.html) - Used to get the position of labels. 
 
