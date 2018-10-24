@@ -449,8 +449,17 @@ This page lists the assemblies required for each control to be referred in Xamar
 <dd>Syncfusion.Licensing.dll</dd> 
 </dl>
 
+## SfTreeView
 
-
+<dl>
+<dt>NuGet</dt>
+<dd>Syncfusion.Xamarin.SfTreeView.Android</dd>
+&nbsp;
+<dt>Assemblies</dt>
+<dd>Syncfusion.SfTreeView.Android.dll</dd>
+<dd> Syncfusion.GridCommon.Portable.dll </dd>
+<dd>Syncfusion.Licensing.dll</dd> 
+</dl>
 
 
 
