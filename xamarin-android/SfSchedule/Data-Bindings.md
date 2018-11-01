@@ -604,6 +604,12 @@ You should map this custom property (`RecurrenceExceptionDates`) of custom class
 // Create the new exception date.
              var exceptionDate = Calendar.Instance;
              exceptionDate.Set(2017, 08, 07);
+             var startTime = Calendar.Instance;
+            //setting start time for the event
+            startTime.Set(2017, 08, 03, 10, 0, 0);
+            var endTime = Calendar.Instance;
+            //setting end time for the event
+            endTime.Set(2017, 08, 03, 12, 0, 0);
              var recurrenceAppointment = new Meeting
             {
                 From = startTime,
@@ -626,7 +632,7 @@ You can also delete any occurrence from the recurrence pattern appointment by ad
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            var exceptionDate = (Calendar)currentDate.Clone();
+            var exceptionDate = Calendar.Instance;
             exceptionDate.Set(2017, 08, 08, 10, 0, 0);
             recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
 {% endhighlight %}
@@ -701,7 +707,9 @@ You should add the created exception recurrence appointment to the schedule `Dat
                 To = exceptionEndTime,
                 EventName = "Meeting",
                 Color = Color.Red,
+                // set the parent appointment to recurrence Id.
                 RecurrenceID = recurrenceAppointment,
+                //Actual occurrence date
                 ActualDate = exceptionDate
             };
 {% endhighlight %}
@@ -718,7 +726,6 @@ You can also add exception appointment dynamically for added exception date by a
 
 {% tabs %}
 {% highlight c# %}
-var recurrenceAppointment = eventCollection[0];
             var recurrenceAppointment = scheduleAppointmentCollection[0];
             // Set exception dates.
             var exceptionDate = Calendar.Instance;
@@ -733,7 +740,9 @@ var recurrenceAppointment = eventCollection[0];
                 To = exceptionEndTime,
                 EventName = "Meeting",
                 Color = Color.Red,
+                // set the parent appointment to recurrence Id.
                 RecurrenceID = recurrenceAppointment,
+                //Actual occurrence date
                 ActualDate = exceptionDate
             };
            
