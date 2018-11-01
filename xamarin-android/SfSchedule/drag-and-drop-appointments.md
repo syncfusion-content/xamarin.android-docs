@@ -18,7 +18,7 @@ schedule.AllowAppointmentDrag = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/draganddrop.gif)
+![Drag and Drop appointments in schedule Xamarin Android](PopulatingAppointments_images/draganddrop.gif)
 
 ## Handle dragging based on the appointment
 Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~AppointmentDragStarting_EV.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragStartingEventArgs.html) argument contains the following properties.
@@ -212,7 +212,7 @@ schedule.DragDropSettings = dragDropSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/timeindicator.png)
+![Time Indicator in schedule Xamarin Android](PopulatingAppointments_images/timeindicator.png)
 
 >**Notes**
 * While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.

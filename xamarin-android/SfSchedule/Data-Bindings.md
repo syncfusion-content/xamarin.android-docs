@@ -58,7 +58,7 @@ SetContentView(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointment.png)
+![Creating Appointment in schedule Xamarin Android](PopulatingAppointments_images/appointment.png)
 
 ## Minimum Appointment Height
 
@@ -110,7 +110,7 @@ SetContentView(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/minheight.png)
+![Minimum Appointment height support in schedule Xamarin Android](PopulatingAppointments_images/minheight.png)
 
 >**NOTE**
 * `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
@@ -262,7 +262,7 @@ SetContentView(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/span.png)
+![spanning or multiday appointments in schedule Xamarin Android](PopulatingAppointments_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
@@ -312,7 +312,7 @@ weekViewSettings.AllDayAppointmentBackgroundColor = Color.Silver;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/allday.png)
+![All day appointments in schedule Xamarin Android](PopulatingAppointments_images/allday.png)
 
 ## Recurrence Appointment
 Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting `RecurrenceRule` property in Schedule appointments.
@@ -426,7 +426,7 @@ schedule.Appointments = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/recurrence.png)
+![Recurrence appointment support in schedule Xamarin Android](PopulatingAppointments_images/recurrence.png)
 
 ### Recurrence Pattern Exceptions 
 You can delete or change any recurrence pattern appointment by handling exception dates and appointments of the recurring appointments. 
@@ -791,7 +791,7 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/style.png)
+![Appointments styling support in schedule Xamarin Android](PopulatingAppointments_images/style.png)
 
 ### Customize appearance using Event
 Schedule appointment can be customized during runtime using [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `AppointmentStyle` property.
@@ -831,7 +831,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointmentstyle_event.png)
+![Appointments customization in schedule Xamarin Android](PopulatingAppointments_images/appointmentstyle_event.png)
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
@@ -872,7 +872,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/custom.png)
+![Custom view support for appointments in schedule Xamarin Android](PopulatingAppointments_images/custom.png)
 
 ### Customize Font Appearance
 
@@ -884,7 +884,7 @@ You can change the appearance of Font by setting the [TextStyle](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/customfontappointment.png)
+![custom font support in schedule Xamarin Android](PopulatingAppointments_images/customfontappointment.png)
 
 Refer [this](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#custom-font-setting-in-xamarinandroid) to configure the custom fonts in Xamarin.Android.
 
@@ -939,4 +939,4 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/selection.png)
+![Selection customization in schedule Xamarin Android](PopulatingAppointments_images/selection.png)
