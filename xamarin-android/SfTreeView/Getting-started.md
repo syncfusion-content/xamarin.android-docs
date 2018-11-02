@@ -46,7 +46,7 @@ The following NuGet package should be installed to use the TreeView control in t
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add TreeView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTreeView.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView.Android/), and then install it. 
 
-![Add TreeView](Images/TreeView_Add.png)
+![Add TreeView in Xamarin Android](Images/TreeView_Add.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/control-dependencies#sftreeview) to know about the dependent assemblies for TreeView or refer the list of assemblies mentioned in the table below.
 
@@ -67,7 +67,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 This section explains how to create a TreeView and configure it. The TreeView control can be configured entirely in C# code or using designer. The following figure shows how the output will look on Android devices.
 
-![Create TreeView](Images/TreeView_Templating.png)
+![Create TreeView in Xamarin Android](Images/TreeView_Templating.png)
 
 You can download the entire source code of this demo for Xamarin.Android from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1294397808).
 
@@ -96,7 +96,7 @@ To add the TreeView through designer, follow the steps:
 3. Drag the TreeView control from toolbox and drop it into the designer page. Preview for TreeView will be shown.
 4. Open the properties window of TreeView and set the required properties.
 
-![TreeView Android Previewer](Images/TreeView_Designer.png)
+![Xamarin Android TreeView Designer Previewer](Images/TreeView_Designer.png)
 
 ### Setting the TreeView properties in designer
 
@@ -138,7 +138,7 @@ public class MainActivity : Activity
 {% endhighlight %}
 {% endtabs %}
 
-![TreeView Android Previewer](Images/TreeView_Properties.png)
+![Xamarin Android TreeView Designer Properties](Images/TreeView_Properties.png)
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1294397808).
 
@@ -239,6 +239,8 @@ protected override void OnCreate(Bundle savedInstanceState)
 {% endtabs %}
 
 Now, run the application to render the below output:
+
+![Xamarin Android TreeView Unbound Mode](Images/TreeView_UnBound.png)
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound1093615327).
 
@@ -557,7 +559,7 @@ It is also applicable for both Unbound Mode data items. Now, run the application
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1294397808).
 
-![TreeView Bound Mode](Images/TreeView_Templating.png)
+![Xamarin Android TreeView Bound Mode](Images/TreeView_Templating.png)
 
 ## Interacting with TreeView
 

@@ -271,4 +271,6 @@ protected override void OnCreate(Bundle savedInstanceState)
 
 Now, run the application to render the below output:
 
+![Xamarin Android TreeView Unbound Mode](Images/TreeView_UnBound.png)
+
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound1093615327).
