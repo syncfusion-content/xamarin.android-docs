@@ -224,7 +224,7 @@ private void OnFilterChanged()
 }
 {% endhighlight %}
 
-### Column-based filtering
+## Filter individual columns
 
 You can filter the records in all the columns or in a particular column using the code in the OnColumnSelected() method.
 
@@ -304,7 +304,7 @@ private void OnColumnSelected(object sender, AdapterView.ItemSelectedEventArgs e
 
 ![](SfDataGrid_images/Filtering_img2.png)
 
-### Condition-based filtering
+## Filter based on conditions
 
 In addition to the column-based filtering, you can filter the records based on conditions. For example, you can filter the records based on the given input or you can filter the records in contrast to your input. You can perform the condition-based filtering for all columns or any particular column.
 
