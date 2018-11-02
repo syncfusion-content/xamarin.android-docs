@@ -205,7 +205,7 @@ private void OnFilterTextChanged(object sender, SearchView.QueryTextChangeEventA
 }
 {% endhighlight %}
 
-![SfDataGrid_Filtering_img1](SfDataGrid_images/Filtering_img1.png)
+![DataGrid with filtered data](SfDataGrid_images/Filtering_img1.png)
 
 Once you create the `SearchView` and a view model, you can perform filtering by setting the `SfDataGrid.View.Filter` property. You have to call the `SfDataGrid.View.RefreshFilter()` method after setting the filtered records to the `SfDataGrid.View.Filter` property as in the following code example.
 
@@ -302,7 +302,7 @@ private void OnColumnSelected(object sender, AdapterView.ItemSelectedEventArgs e
 }
 {% endhighlight %}
 
-![SfDataGrid_Filtering_img2](SfDataGrid_images/Filtering_img2.png)
+![DataGrid with data filtered based on columns](SfDataGrid_images/Filtering_img2.png)
 
 ## Filter based on conditions
 
@@ -460,7 +460,7 @@ private void OnConditionSelected(object sender, AdapterView.ItemSelectedEventArg
 }
 {% endhighlight %}
 
-![SfDataGrid_Filtering_img3](SfDataGrid_images/Filtering_img3.png)
+![DataGrid with data filtered based on conditions](SfDataGrid_images/Filtering_img3.png)
 
 ## Clear filtering
 
