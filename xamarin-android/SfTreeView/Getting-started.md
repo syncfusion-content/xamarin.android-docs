@@ -74,13 +74,13 @@ You can download the entire source code of this demo for Xamarin.Android from [
 In this walk through, you will create a new application with the TreeView that includes the following topics:
 
 * [Creating the project](#creating-the-project)
-* [Adding the TreeView in Xamarin.Android using designer](#adding-treeview-in-xamarin.android-using-designer)
-* [Adding the TreeView in Xamarin.Android using C# code](#adding-treeview-in-xamarin.android-using-c#-code) 
+* [Adding the TreeView in Xamarin.Android using designer](#adding-the-treeview-in-xamarin.android-using-designer)
+* [Adding the TreeView in Xamarin.Android using C# code](#adding-the-treeview-in-xamarin.android-using-c#-code) 
 * [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source-unbound-mode) 
-* [Creating Data Model](#creating-data-model-for-the-treeview)  
+* [Creating Data Model](#creating-data-model)  
 * [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source-bound-mode)
 * [Defining a adapter to expander and content view](#defining-a-template-to-expander-and-content-view)
-* [Interacting with a tree view](#interacting-with-a-treeview)
+* [Interacting with tree view](#interacting-with-treeview)
 * [Selection](#selection)
 
 ## Creating the Project
@@ -91,7 +91,7 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.
 
 To add the TreeView through designer, follow the steps:
 
-1. Add a new xaml file inside the layout folder.
+1. Add a new axml file inside the layout folder.
 2. Open the newly added file and switch to designer tab. 
 3. Drag the TreeView control from toolbox and drop it into the designer page. Preview for TreeView will be shown.
 4. Open the properties window of TreeView and set the required properties.
@@ -242,7 +242,7 @@ Now, run the application to render the below output:
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound1093615327).
 
-## Creating Data Model for the tree view
+## Creating Data Model
 
 Create a data model to bind it to the control. 
 
@@ -254,19 +254,19 @@ public class FileManager : INotifyPropertyChanged
 {
    private string fileName;
    private int imageIcon;
-   private ObservableCollection<FileManager> subFolder;
+   private ObservableCollection<FileManager> subFiles;
 
-   public ObservableCollection<FileManager> SubFolder
+   public ObservableCollection<FileManager> SubFiles
    {
        get
        {
-            return subFolder;
+            return subFiles;
        }
 
         set
        {
-            subFolder = value;
-            RaisedOnPropertyChanged("SubFolder");
+            subFiles = value;
+            RaisedOnPropertyChanged("SubFiles");
        }
     }
 
@@ -415,7 +415,7 @@ public class FileManagerViewModel
 
 ## Bind to a hierarchical data source - Bound Mode
 
-You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ItemsSource.html) to a hierarchical data source. To create a tree view using data binding, set a hierarchical collection to the `ItemsSource` property.
+You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ItemsSource.html) to a hierarchical data source.  And set the child object name to the [ChildPropertyName](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ChildPropertyName.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -429,7 +429,7 @@ protected override void OnCreate(Bundle savedInstanceState)
     SetContentView(Resource.Layout.activity_main);
     SfTreeView treeView = FindViewById<SfTreeView>(Resource.Id.sfTreeView1);
     FileManagerViewModel viewModel = new FileManagerViewModel();
-    treeView.ChildPropertyName = "SubFolder";
+    treeView.ChildPropertyName = "SubFiles";
     treeView.ItemsSource = viewModel.Folders;
     treeView.Adapter = new NodeImageAdapter();
 }
@@ -513,6 +513,7 @@ internal class ImageViewExt : ImageView
 {% endtabs %}
 
 ### Creating custom adapters to display the data items.
+
 {% tabs %}
 {% highlight c# %}
 // Adapter extension class
@@ -558,7 +559,7 @@ You can also download the entire source code of this demo from [here](http://www
 
 ![TreeView Bound Mode](Images/TreeView_Templating.png)
 
-## Interacting with a tree view
+## Interacting with TreeView
 
 The `TreeView` allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. The expanding and collapsing interactions can be handled with the help of [NodeCollapsing](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~NodeCollapsing_EV.html) and [NodeExpanding](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~NodeExpanding_EV.html) events.
 
@@ -580,7 +581,7 @@ protected override void OnCreate(Bundle savedInstanceState)
     FileManagerViewModel viewModel = new FileManagerViewModel();
     treeView.AutoExpandMode = AutoExpandMode.AllNodesExpanded;
     treeView.ExpanderActionTarget = ExpanderActionTarget.Node; 
-    treeView.ChildPropertyName = "SubFolder";
+    treeView.ChildPropertyName = "SubFiles";
     treeView.ItemsSource = viewModel.Folders;
     treeView.Adapter = new NodeImageAdapter();
 }
