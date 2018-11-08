@@ -443,7 +443,6 @@ You can delete any of occurrence which is exception from recurrence pattern appo
  // Create the new exception date.
             var exceptionDate = Calendar.Instance;
             exceptionDate.Set(2017, 08, 07);
-            
              var startTime = Calendar.Instance;
             //setting start time for the event
             startTime.Set(2017, 08, 03, 10, 0, 0);
@@ -516,7 +515,6 @@ You should add the created exception recurrence appointment to the schedule `Dat
                 Color = Color.Blue,
                 RecurrenceRule = "FREQ=DAILY;COUNT=20"
             };
-            
             // Add exception appointment to the current recurrence pattern
             var exceptionDate = Calendar.Instance;
             exceptionDate.Set(2017, 08, 08, 10, 0, 0);
@@ -524,7 +522,6 @@ You should add the created exception recurrence appointment to the schedule `Dat
             exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
             var exceptionEndTime = Calendar.Instance;
             exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
-
             var exceptionAppointment = new ScheduleAppointment
             {
                 StartTime = exceptionStartTime,
@@ -753,7 +750,6 @@ You can also add exception appointment dynamically for added exception date by a
                 //Actual occurrence date
                 ActualDate = exceptionDate
             };
-           
             scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
