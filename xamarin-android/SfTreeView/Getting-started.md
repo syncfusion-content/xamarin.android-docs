@@ -189,7 +189,7 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/xama
 `ItemsSource` is an alternative mechanism to `Nodes` for putting content into the TreeView control. You cannot set both `ItemsSource` and `Nodes` at the same time. When you use `ItemsSource`, nodes created for you, and you can access them from `Nodes` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight axml %}
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
