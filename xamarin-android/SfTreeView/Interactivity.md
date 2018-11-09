@@ -25,12 +25,7 @@ private void TreeView_Loaded(object sender, TreeViewLoadedEventArgs e)
 {
     Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
     Android.App.AlertDialog alert = dialog.Create();
-    alert.SetTitle("TreeView");
     alert.SetMessage("Loaded");
-    alert.SetButton("OK", (c, ev) =>
-    {
-        // Ok button click task  
-    });
     alert.Show();
 }
 {% endhighlight %}
@@ -57,12 +52,7 @@ private void TreeView_ItemTapped(object sender, ItemTappedEventArgs e)
 {
     Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
     Android.App.AlertDialog alert = dialog.Create();
-    alert.SetTitle("TreeView");
     alert.SetMessage("ItemTapped");
-    alert.SetButton("OK", (c, ev) =>
-    {
-        // Ok button click task  
-    });
     alert.Show();
 }
 
@@ -86,12 +76,7 @@ private void TreeView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs 
 {
     Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
     Android.App.AlertDialog alert = dialog.Create();
-    alert.SetTitle("TreeView");
     alert.SetMessage("ItemDoubleTapped");
-    alert.SetButton("OK", (c, ev) =>
-    {
-        // Ok button click task  
-    });
     alert.Show();
 }
 
@@ -115,12 +100,7 @@ private void TreeView_ItemHolding(object sender, ItemHoldingEventArgs e)
 {
     Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
     Android.App.AlertDialog alert = dialog.Create();
-    alert.SetTitle("TreeView");
     alert.SetMessage("ItemHolding");
-    alert.SetButton("OK", (c, ev) =>
-    {
-        // Ok button click task  
-    });
     alert.Show();
 }
 

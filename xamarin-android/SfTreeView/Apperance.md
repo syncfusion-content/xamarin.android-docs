@@ -129,7 +129,7 @@ treeView.ExpanderWidth = 40;
 {% endhighlight %}
 {% endtabs %}
 
-## Level based Customisation
+## Level based Customization
 
 ### Level based views
 
@@ -210,7 +210,7 @@ You can also download the entire source code of this demo from [here](http://www
 
 ### Level based styling.
 
-The TreeView allows you to customize the style of `TreeViewItem` based on different levels by customising the adapter by using `UpdateContentView` and  `UpdateExpanderView` override methods.
+The TreeView allows you to customize the style of `TreeViewItem` based on different levels by customizing the adapter by using `UpdateContentView` and  `UpdateExpanderView` override methods.
 
  You can customize the content view and expander view by overriding the `CreateContentView`, `CreateExpanderView`, `UpdateContentView` and `UpdateExpanderView` methods of `TreeViewAdapter`.
 
