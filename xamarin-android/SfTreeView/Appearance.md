@@ -15,7 +15,7 @@ The TreeView allows customizing appearance of the underlying data, and provides 
 
 An Adapter can be used to present the data in a way that makes sense for the application by using different controls.
 
-The TreeView allows you to customize the appearance of content view and expander view by setting the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) property.You can customize the content view and expander view by overriding the `CreateContentView`, `CreateExpanderView`, `UpdateContentView` and `UpdateExpanderView` methods of `TreeViewAdapter`.
+The TreeView allows you to customize the appearance of content view and expander view by setting the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) property.You can customize the content view and expander view by overriding the `CreateContentView`, `CreateExpanderView` methods and update its content in the `UpdateContentView` and `UpdateExpanderView` methods of `TreeViewAdapter`.
                                       
 {% tabs %}
 {% highlight c# %}
@@ -88,6 +88,7 @@ public class CustomAdapter : TreeViewAdapter
 
 ![Xamarin Android TreeView Customized adapter](Images/TreeView_CustomAdapter.png)
 
+To create custom view to use in adapter, refer this [link](https://help.syncfusion.com/xamarin-android/sftreeview/getting-started#creating-custom-view-for-adapter).
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomizedAdapter-1866983821)
 
 ## Indentation
@@ -95,9 +96,6 @@ You can also download the entire source code of this demo from [here](http://www
 The TreeView allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Indentation.html) property. The default value of this property is `40`. This property can be customized at runtime.
 
 {% tabs %}
-{% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView" Indentation="40">
-{% endhighlight %}
 {% highlight c# %}
 SfTreeView treeView = new SfTreeView();
 treeView.Indentation = 40; 
@@ -109,9 +107,6 @@ treeView.Indentation = 40;
 The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ItemHeight.html) property. The default value of this property is `40`. This property can be customized at runtime.
 
 {% tabs %}
-{% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView" ItemHeight="40">
-{% endhighlight %}
 {% highlight c# %}
 SfTreeView treeView = new SfTreeView();
 treeView.ItemHeight = 40; 
@@ -212,7 +207,43 @@ You can also download the entire source code of this demo from [here](http://www
 
 The TreeView allows you to customize the style of `TreeViewItem` based on different levels by customizing the adapter by using `UpdateContentView` and  `UpdateExpanderView` override methods.
 
- You can customize the content view and expander view by overriding the `CreateContentView`, `CreateExpanderView`, `UpdateContentView` and `UpdateExpanderView` methods of `TreeViewAdapter`.
+ You can customize the content view and expander view by overriding the `CreateContentView`, `CreateExpanderView` methods and update its content in the `UpdateContentView` and `UpdateExpanderView` methods of `TreeViewAdapter`.
+
+{% tabs %}
+{% highlight c# %}
+protected override void UpdateContentView(View view, TreeViewItemInfoBase itemInfo)
+{
+    var grid = view as TemplateView;
+    var treeViewNode = itemInfo.Node;
+    var typeface = Android.Graphics.Typeface.Default;
+    if (grid != null)
+    {
+        var label = grid.GetChildAt(0) as ContentLabel;
+        if (label != null)
+        {
+            label.Text = (treeViewNode.Content as MailFolder).FolderName;
+            if (treeViewNode.Level == 0)
+            {
+                label.SetTypeface(typeface, Android.Graphics.TypefaceStyle.Bold);
+            }
+            else
+                label.SetTypeface(typeface, Android.Graphics.TypefaceStyle.Italic);
+        }
+
+        var label1 = grid.GetChildAt(1) as ContentLabel;
+        if (label1 != null)
+        {
+            if ((treeViewNode.Content as MailFolder).MailsCount > 0)
+            {
+                label1.Text = (treeViewNode.Content as MailFolder).MailsCount.ToString();
+                label1.SetTextColor(Android.Graphics.Color.White);
+                label1.SetBackgroundColor(Android.Graphics.Color.ParseColor("#FF6377EB"));
+            }
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 You can download the example for level based styling demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-1430010482).
 

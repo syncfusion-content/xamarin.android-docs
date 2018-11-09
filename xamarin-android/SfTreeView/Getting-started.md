@@ -76,10 +76,10 @@ In this walk through, you will create a new application with the TreeView that i
 * [Creating the project](#creating-the-project)
 * [Adding the TreeView in Xamarin.Android using designer](#adding-the-treeview-in-xamarin.android-using-designer)
 * [Adding the TreeView in Xamarin.Android using C# code](#adding-the-treeview-in-xamarin.android-using-c#-code) 
-* [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source-unbound-mode) 
+* [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source---unbound-mode) 
 * [Creating Data Model](#creating-data-model)  
-* [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source-bound-mode)
-* [Defining a adapter to expander and content view](#defining-a-template-to-expander-and-content-view)
+* [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source---bound-mode)
+* [Defining a adapter to expander and content view](#defining-a-adapter-to-expander-and-content-view)
 * [Interacting with tree view](#interacting-with-treeview)
 * [Selection](#selection)
 
