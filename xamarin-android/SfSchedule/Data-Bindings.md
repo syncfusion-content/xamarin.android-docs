@@ -591,7 +591,7 @@ var exceptionAppointment = scheduleAppointmentCollection[1];
 {% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.Android from
-here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-add-Recurrence-Exceptions-to-SfSchedule-recurring-appointments-in-Xamarin.Android).
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-create-Recurrence-Exceptions-to-SfSchedule-recurring-appointments-in-Xamarin.Android).
 
 ### Create recurrence exceptions for custom appointment
 
