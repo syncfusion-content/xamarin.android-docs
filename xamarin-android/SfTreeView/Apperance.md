@@ -88,6 +88,7 @@ public class CustomAdapter : TreeViewAdapter
 
 ![Xamarin Android TreeView Customized adapter](Images/TreeView_CustomAdapter.png)
 
+You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomizedAdapter-1866983821)
 
 ## Indentation
 
@@ -204,7 +205,8 @@ public class NodeImageAdapter : TreeViewAdapter
 {% endtabs %}
 
 ![Xamarin Android TreeView with Level based Views](Images/TreeView_LevelBasedView.png)
-You can also download the entire source code of this demo from [here]()
+
+You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedViews-1568238571)
 
 ### Level based styling.
 
@@ -212,6 +214,6 @@ The TreeView allows you to customize the style of `TreeViewItem` based on differ
 
  You can customize the content view and expander view by overriding the `CreateContentView`, `CreateExpanderView`, `UpdateContentView` and `UpdateExpanderView` methods of `TreeViewAdapter`.
 
-You can download the example for level based styling demo from [here]().
+You can download the example for level based styling demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-1430010482).
 
 ![Xamarin Android TreeView with styling](Images/TreeView_LevelStyle.png)
