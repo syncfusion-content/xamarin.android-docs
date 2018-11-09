@@ -19,8 +19,9 @@ It also enables and disables the scrolling animation when changing the view. By 
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.Android.TreeView;
-using Syncfusion.TreeView.Engine;
+
+SfTreeView treeView;
+FileManagerViewModel viewModel;
 
 protected override void OnCreate(Bundle savedInstanceState)
 {

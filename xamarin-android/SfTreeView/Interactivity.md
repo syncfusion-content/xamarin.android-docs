@@ -23,11 +23,19 @@ treeView.Loaded += TreeView_Loaded;
 
 private void TreeView_Loaded(object sender, TreeViewLoadedEventArgs e)
 {
-   DisplayAlert("Message", "TreeView is Loaded", "Done");
+    Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
+    Android.App.AlertDialog alert = dialog.Create();
+    alert.SetTitle("TreeView");
+    alert.SetMessage("Loaded");
+    alert.SetButton("OK", (c, ev) =>
+    {
+        // Ok button click task  
+    });
+    alert.Show();
 }
 {% endhighlight %}
 {% endtabs %}
-
+ 
 The `Loaded` event is used for the following use case:
 
 * To scroll the desired item by using the [BringIntoView](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~NodeCollapsed_EV.html).
@@ -47,7 +55,15 @@ treeView.ItemTapped += TreeView_ItemTapped;
 
 private void TreeView_ItemTapped(object sender, ItemTappedEventArgs e)
 {
-    DisplayAlert("Item Tapped", "TreeView item tapped", "Close");
+    Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
+    Android.App.AlertDialog alert = dialog.Create();
+    alert.SetTitle("TreeView");
+    alert.SetMessage("ItemTapped");
+    alert.SetButton("OK", (c, ev) =>
+    {
+        // Ok button click task  
+    });
+    alert.Show();
 }
 
 {% endhighlight %}
@@ -68,7 +84,15 @@ treeView.ItemDoubleTapped += TreeView_ItemDoubleTapped;
 
 private void TreeView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs e)
 {
-    DisplayAlert("Item DoubleTapped", "TreeView item double tapped", "Close");
+    Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
+    Android.App.AlertDialog alert = dialog.Create();
+    alert.SetTitle("TreeView");
+    alert.SetMessage("ItemDoubleTapped");
+    alert.SetButton("OK", (c, ev) =>
+    {
+        // Ok button click task  
+    });
+    alert.Show();
 }
 
 {% endhighlight %}
@@ -89,7 +113,15 @@ The [ItemHolding](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTr
 treeView.ItemHolding += TreeView_ItemHolding;
 private void TreeView_ItemHolding(object sender, ItemHoldingEventArgs e)
 {
-    DisplayAlert("Item Hold", "TreeView item is holding","Close");   
+    Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
+    Android.App.AlertDialog alert = dialog.Create();
+    alert.SetTitle("TreeView");
+    alert.SetMessage("ItemHolding");
+    alert.SetButton("OK", (c, ev) =>
+    {
+        // Ok button click task  
+    });
+    alert.Show();
 }
 
 {% endhighlight %}
