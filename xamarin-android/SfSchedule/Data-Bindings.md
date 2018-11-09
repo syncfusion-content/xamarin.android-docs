@@ -428,36 +428,42 @@ schedule.Appointments = scheduleAppointmentCollection;
 
 ![Recurrence appointment support in schedule Xamarin Android](PopulatingAppointments_images/recurrence.png)
 
-### Recurrence Pattern Exceptions 
+## Recurrence Pattern Exceptions 
 You can delete or change any recurrence pattern appointment by handling exception dates and appointments of the recurring appointments. 
 
-#### Recurrence Exception Dates
-You can delete any occurrence appointment which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.  
-#### Recurrence Exception appointment
+### Recurrence Exception Dates
+You can delete any occurrence appointment which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment. 
+ 
+### Recurrence Exception appointment
 You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment in the schedule DataSource.
-### Create recurrence exceptions for ScheduleAppointment
+
+### Create recurrence exceptions for schedule appointment
+
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 You can delete any of occurrence which is exception from recurrence pattern appointment by using [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceExceptionDates.html) property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
 {% tabs %}
 {% highlight c# %}
  // Create the new exception date.
-            var exceptionDate = Calendar.Instance;
-            exceptionDate.Set(2017, 08, 07);
-             var startTime = Calendar.Instance;
-            //setting start time for the event
-            startTime.Set(2017, 08, 03, 10, 0, 0);
-            var endTime = Calendar.Instance;
-            //setting end time for the event
-            endTime.Set(2017, 08, 03, 12, 0, 0);
-             var recurrenceAppointment = new ScheduleAppointment
-            {
-                StartTime = startTime,
-                EndTime = endTime,
-                Subject = "Daily Occurs",
-                Color = Color.Blue,
-                RecurrenceRule = "FREQ=DAILY;COUNT=20",
-                RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
-            };
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07);
+
+var startTime = Calendar.Instance;
+ 
+//setting start time for the event
+startTime.Set(2017, 08, 03, 10, 0, 0);
+var endTime = Calendar.Instance;
+
+//setting end time for the event
+endTime.Set(2017, 08, 03, 12, 0, 0);
+var recurrenceAppointment = new ScheduleAppointment
+{
+	StartTime = startTime,
+	EndTime = endTime,
+	Subject = "Daily Occurs",
+	Color = Color.Blue,
+	RecurrenceRule = "FREQ=DAILY;COUNT=20",
+	RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -472,10 +478,10 @@ You can also delete any occurrence from the recurrence pattern appointment by ad
 
 {% tabs %}
 {% highlight c# %}
-  var exceptionDate = Calendar.Instance;
-            exceptionDate.Set(2017, 08, 08, 10, 0, 0);
-            var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 08, 10, 0, 0);
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
 {% endhighlight %}
 {% endtabs %}
 
@@ -485,7 +491,7 @@ You can also add the deleted occurrence to the recurrence pattern appointment by
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
+recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
@@ -498,42 +504,43 @@ You can also add all deleted occurrences to the recurrence pattern appointment b
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Clear();
+recurrenceAppointment.RecurrenceExceptionDates.Clear();
 {% endhighlight %}
 {% endtabs %}
 
-### Add exception appointment to recurrence pattern
-
+#### Add exception appointment to recurrence pattern
 You can change any occurrence appointment which is an exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of `ScheduleAppointment`.
 You should add the created exception recurrence appointment to the schedule `DataSource`.
 {% tabs %}
 {% highlight c# %}
   var recurrenceAppointment = new ScheduleAppointment
-            {
-                StartTime = startTime,
-                EndTime = endTime,
-                Subject = "Daily Occurs",
-                Color = Color.Blue,
-                RecurrenceRule = "FREQ=DAILY;COUNT=20"
-            };
-            // Add exception appointment to the current recurrence pattern
-            var exceptionDate = Calendar.Instance;
-            exceptionDate.Set(2017, 08, 08, 10, 0, 0);
-            var exceptionStartTime = Calendar.Instance;
-            exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
-            var exceptionEndTime = Calendar.Instance;
-            exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
-            var exceptionAppointment = new ScheduleAppointment
-            {
-                StartTime = exceptionStartTime,
-                EndTime = exceptionEndTime,
-                Subject = "Meeting",
-                Color = Color.Red,
-                // Recurrence Id should be parent appointment object
-                RecurrenceId = recurrenceAppointment,
-                //Actual occurrence date
-                ExceptionOccurrenceActualDate = exceptionDate
-            };
+{
+	StartTime = startTime,
+	EndTime = endTime,
+	Subject = "Daily Occurs",
+	Color = Color.Blue,
+	RecurrenceRule = "FREQ=DAILY;COUNT=20"
+};
+
+// Add exception appointment to the current recurrence pattern
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 08, 10, 0, 0);
+var exceptionStartTime = Calendar.Instance;
+exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
+var exceptionEndTime = Calendar.Instance;
+exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
+
+var exceptionAppointment = new ScheduleAppointment
+{
+	StartTime = exceptionStartTime,
+	EndTime = exceptionEndTime,
+	Subject = "Meeting",
+	Color = Color.Red,
+	// Recurrence Id should be parent appointment object
+	RecurrenceId = recurrenceAppointment,
+	//Actual occurrence date
+	ExceptionOccurrenceActualDate = exceptionDate
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -551,25 +558,27 @@ You can also add exception appointment dynamically for added exception date by a
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
 var exceptionDate = Calendar.Instance;
-            exceptionDate.Set(2017, 08, 08, 10, 0, 0);
-            var exceptionStartTime = Calendar.Instance;
-            exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
-            var exceptionEndTime = Calendar.Instance;
-            exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
+exceptionDate.Set(2017, 08, 08, 10, 0, 0);
+var exceptionStartTime = Calendar.Instance;
+exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
+var exceptionEndTime = Calendar.Instance;
+exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
+
 // Add exception appointment to the current recurrence series
-            var exceptionAppointment = new ScheduleAppointment
-            {
-                StartTime = exceptionStartTime,
-                EndTime = exceptionEndTime,
-                Subject = "Meeting",
-                Color = Color.Red,
-                // set the parent appointment to recurrence Id
-                RecurrenceId = recurrenceAppointment,
-                 //Actual occurrence date
-                ExceptionOccurrenceActualDate = exceptionDate
-            };
-            //Adding exception appointment in schedule appointment collection
-            scheduleAppointmentCollection.Add(exceptionAppointment);
+var exceptionAppointment = new ScheduleAppointment
+{
+	StartTime = exceptionStartTime,
+	EndTime = exceptionEndTime,
+	Subject = "Meeting",
+	Color = Color.Red,
+	// set the parent appointment to recurrence Id
+	RecurrenceId = recurrenceAppointment,
+	 //Actual occurrence date
+	ExceptionOccurrenceActualDate = exceptionDate
+};
+
+//Adding exception appointment in schedule appointment collection
+scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 >**NOTE**
@@ -584,11 +593,15 @@ You can directly remove the added exception appointment for recurrence pattern b
 {% highlight c# %}
 var exceptionAppointment = scheduleAppointmentCollection[1];
 //Remove exception appointment from schedule appointment collection
-            scheduleAppointmentCollection.Remove(exceptionAppointment);
+scheduleAppointmentCollection.Remove(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code of this demo for Xamarin.Android from
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-create-Recurrence-Exceptions-to-SfSchedule-recurring-appointments-in-Xamarin.Android).
+
 ### Create recurrence exceptions for custom appointment
+
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 You can delete any occurrence which is exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception dates.
 To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class (`Meeting`).
@@ -604,26 +617,28 @@ You should map this custom property (`RecurrenceExceptionDates`) of custom class
 {% tabs %}
 {% highlight c# %}
 // data mapping for custom appointments.
-            dataMapping.RecurrenceExceptionDates = "RecurrenceExceptionDates";
+dataMapping.RecurrenceExceptionDates = "RecurrenceExceptionDates";
             
 // Create the new exception date.
-             var exceptionDate = Calendar.Instance;
-             exceptionDate.Set(2017, 08, 07);
-             var startTime = Calendar.Instance;
-            //setting start time for the event
-            startTime.Set(2017, 08, 03, 10, 0, 0);
-            var endTime = Calendar.Instance;
-            //setting end time for the event
-            endTime.Set(2017, 08, 03, 12, 0, 0);
-             var recurrenceAppointment = new Meeting
-            {
-                From = startTime,
-                To = endTime,
-                EventName = "Daily Occurs",
-                Color = Color.Blue,
-                RecurrenceRule = "FREQ=DAILY;COUNT=20",
-                RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate}
-            };
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07);
+var startTime = Calendar.Instance;
+ 
+//setting start time for the event
+startTime.Set(2017, 08, 03, 10, 0, 0);
+var endTime = Calendar.Instance;
+
+//setting end time for the event
+endTime.Set(2017, 08, 03, 12, 0, 0);
+var recurrenceAppointment = new Meeting
+{
+	From = startTime,
+	To = endTime,
+	EventName = "Daily Occurs",
+	Color = Color.Blue,
+	RecurrenceRule = "FREQ=DAILY;COUNT=20",
+	RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate}
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -639,9 +654,9 @@ You can also delete any occurrence from the recurrence pattern appointment by ad
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            var exceptionDate = Calendar.Instance;
-            exceptionDate.Set(2017, 08, 08, 10, 0, 0);
-            recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 08, 10, 0, 0);
+recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
 {% endhighlight %}
 {% endtabs %}
 
@@ -651,7 +666,7 @@ You can also add the deleted occurrence to the recurrence pattern appointment by
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
+recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
@@ -664,7 +679,7 @@ You can also add all deleted occurrence to the recurrence pattern appointment by
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Clear();
+recurrenceAppointment.RecurrenceExceptionDates.Clear();
 {% endhighlight %}
 {% endtabs %}
 
@@ -685,40 +700,45 @@ You should add the created exception recurrence appointment to the schedule `Dat
 
 {% tabs %}
 {% highlight c# %}
- Calendar startTime = Calendar.Instance;
-            //setting start time for the event
-            startTime.Set(2017, 08, 03, 10, 0, 0);
-            Calendar endTime = Calendar.Instance;
-            //setting end time for the event
-            endTime.Set(2017, 08, 03, 12, 0, 0);
-            //Adding schedule appointment in schedule appointment collection 
-            var recurrenceAppointment = new Meeting
-            {
-                From = startTime,
-                To = endTime,
-                EventName = "Daily Occurs",
-                Color = Color.Blue,
-                RecurrenceRule = "FREQ=DAILY;COUNT=20",
-            };
-            // Set exception date.
-            var exceptionDate = Calendar.Instance;
-            exceptionDate.Set(2017, 08, 07);
-           // Add exception appointment to the current recurrence series
-            var exceptionStartTime = Calendar.Instance;
-            exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
-            var exceptionEndTime = Calendar.Instance;
-            exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
-            var exceptionAppointment = new Meeting
-            {
-                From = exceptionStartTime,
-                To = exceptionEndTime,
-                EventName = "Meeting",
-                Color = Color.Red,
-                // set the parent appointment to recurrence Id.
-                RecurrenceID = recurrenceAppointment,
-                //Actual occurrence date
-                ActualDate = exceptionDate
-            };
+Calendar startTime = Calendar.Instance;
+ 
+//setting start time for the event
+startTime.Set(2017, 08, 03, 10, 0, 0);
+Calendar endTime = Calendar.Instance;
+
+//setting end time for the event
+endTime.Set(2017, 08, 03, 12, 0, 0);
+
+//Adding schedule appointment in schedule appointment collection 
+var recurrenceAppointment = new Meeting
+{
+	From = startTime,
+	To = endTime,
+	EventName = "Daily Occurs",
+	Color = Color.Blue,
+	RecurrenceRule = "FREQ=DAILY;COUNT=20",
+};
+
+// Set exception date.
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07);
+
+// Add exception appointment to the current recurrence series
+var exceptionStartTime = Calendar.Instance;
+exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
+var exceptionEndTime = Calendar.Instance;
+exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
+var exceptionAppointment = new Meeting
+{
+	From = exceptionStartTime,
+	To = exceptionEndTime,
+	EventName = "Meeting",
+	Color = Color.Red,
+	// set the parent appointment to recurrence Id.
+	RecurrenceID = recurrenceAppointment,
+	//Actual occurrence date
+	ActualDate = exceptionDate
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -735,26 +755,28 @@ You can also add exception appointment dynamically for added exception date by a
 
 {% tabs %}
 {% highlight c# %}
-            var recurrenceAppointment = scheduleAppointmentCollection[0];
-            // Set exception dates.
-            var exceptionDate = Calendar.Instance;
-            exceptionDate.Set(2017, 08, 07);
-            var exceptionStartTime = Calendar.Instance;
-            exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
-            var exceptionEndTime = Calendar.Instance;
-            exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
-            var exceptionAppointment = new Meeting
-            {
-                From = exceptionStartTime,
-                To = exceptionEndTime,
-                EventName = "Meeting",
-                Color = Color.Red,
-                // set the parent appointment to recurrence Id.
-                RecurrenceID = recurrenceAppointment,
-                //Actual occurrence date
-                ActualDate = exceptionDate
-            };
-            scheduleAppointmentCollection.Add(exceptionAppointment);
+   var recurrenceAppointment = scheduleAppointmentCollection[0];
+
+// Set exception dates.
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07);
+var exceptionStartTime = Calendar.Instance;
+exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
+var exceptionEndTime = Calendar.Instance;
+exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
+var exceptionAppointment = new Meeting
+{
+	From = exceptionStartTime,
+	To = exceptionEndTime,
+	EventName = "Meeting",
+	Color = Color.Red,
+	// set the parent appointment to recurrence Id.
+	RecurrenceID = recurrenceAppointment,
+	//Actual occurrence date
+	ActualDate = exceptionDate
+};
+           
+scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 
@@ -770,9 +792,12 @@ You can directly remove the added exception appointment for recurrence pattern b
 {% tabs %}
 {% highlight c# %}
 var exceptionAppointment = scheduleAppointmentCollection[1];
-            scheduleAppointmentCollection.Remove(exceptionAppointment);
+scheduleAppointmentCollection.Remove(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
+
+You can download the entire source code of this demo for Xamarin.Android from
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-add-Recurrence-Exceptions-to-SfSchedule-for-custom-recurring-appointments-in-Xamarin.Android).
 
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
