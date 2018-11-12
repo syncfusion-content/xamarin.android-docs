@@ -60,65 +60,6 @@ SetContentView(schedule);
 
 ![Creating Appointment in schedule Xamarin Android](PopulatingAppointments_images/appointment.png)
 
-## Minimum Appointment Height
-
-[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
-
-{% tabs %}
-{% highlight c# %}
-SfSchedule schedule = new SfSchedule(this);
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-Calendar currentDate = Calendar.Instance;
-Calendar startTime = (Calendar)currentDate.Clone();
-Calendar endTime = (Calendar)currentDate.Clone();
-
-startTime.Set(currentDate.Get(CalendarField.Year),
-              currentDate.Get(CalendarField.Month),
-              currentDate.Get(CalendarField.DayOfMonth),
-              9,0,0);
-endTime.Set(currentDate.Get(CalendarField.Year),
-            currentDate.Get(CalendarField.Month),
-            currentDate.Get(CalendarField.DayOfMonth),
-            9,0,0);
-Calendar startTime1 = (Calendar)currentDate.Clone();
-Calendar endTime1 = (Calendar)currentDate.Clone();
-startTime1.Set(currentDate.Get(CalendarField.Year),
-               currentDate.Get(CalendarField.Month),
-               currentDate.Get(CalendarField.DayOfMonth),
-               11,0,0);
-endTime1.Set(currentDate.Get(CalendarField.Year),
-             currentDate.Get(CalendarField.Month),
-             currentDate.Get(CalendarField.DayOfMonth),
-             12,0,0);
-scheduleAppointmentCollection.Add(new ScheduleAppointment()
-{
-    StartTime = startTime,
-    EndTime = endTime,
-    Subject = "Client Meeting",
-    MinHeight = 30,
-    Color = Color.ParseColor("#FFD80073")
-});
-scheduleAppointmentCollection.Add(new ScheduleAppointment()
-{
-    StartTime = startTime1,
-    EndTime = endTime1,
-    Subject = "Anniversary",
-    Color = Color.ParseColor("#FFA2C139")
-});
-schedule.Appointments= scheduleAppointmentCollection;
-SetContentView(schedule);
-{% endhighlight %}
-{% endtabs %}
-
-![Minimum Appointment height support in schedule Xamarin Android](PopulatingAppointments_images/minheight.png)
-
->**NOTE**
-* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
-* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
-* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration). 
-* `MinHeight` has ScheduleAppointmentMapping Support. 
-* All day Appointment does not support `MinHeight`.
-
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
@@ -429,18 +370,20 @@ schedule.Appointments = scheduleAppointmentCollection;
 ![Recurrence appointment support in schedule Xamarin Android](PopulatingAppointments_images/recurrence.png)
 
 ## Recurrence Pattern Exceptions 
-You can delete or change any recurrence pattern appointment by handling exception dates and appointments of the recurring appointments. 
+You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
 ### Recurrence Exception Dates
 You can delete any occurrence appointment which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment. 
  
 ### Recurrence Exception appointment
-You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment in the schedule DataSource.
+You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment in the schedule `ItemsSource`.
 
 ### Create recurrence exceptions for schedule appointment
 
+You can add/remove the recurrence exception appointments and recurrence exception dates to `ScheduleAppointment` by using its property, [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceExceptionDates.html), [RecurrenceId](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceId.html), [ExceptionOccurrenceActualDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~ExceptionOccurrenceActualDate.html).
+
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
-You can delete any of occurrence which is exception from recurrence pattern appointment by using [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceExceptionDates.html) property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
+You can delete any of occurrence which is exception from recurrence pattern appointment by using `RecurrenceExceptionDates` property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
 {% tabs %}
 {% highlight c# %}
  // Create the new exception date.
@@ -496,7 +439,7 @@ recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endtabs %}
 
 >**NOTE**
-If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with [RecurrenceId](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceId.html) and [ExceptionOccurrenceActualDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~ExceptionOccurrenceActualDate.html) from Schedule `DataSource` and recurrence pattern appointment created for that exception date.
+If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with `RecurrenceId` and `ExceptionOccurrenceActualDate` from Schedule `ItemsSource` and recurrence pattern appointment created for that exception date.
 
 #### Add all deleted occurrences to recurrence pattern dynamically or clear exception dates from recurrence pattern dynamically
 You can also add all deleted occurrences to the recurrence pattern appointment by clearing the exception dates from the RecurrenceExceptionDates collection.
@@ -510,7 +453,7 @@ recurrenceAppointment.RecurrenceExceptionDates.Clear();
 
 #### Add exception appointment to recurrence pattern
 You can change any occurrence appointment which is an exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of `ScheduleAppointment`.
-You should add the created exception recurrence appointment to the schedule `DataSource`.
+You should add the created exception recurrence appointment to the schedule `ItemsSource`.
 {% tabs %}
 {% highlight c# %}
   var recurrenceAppointment = new ScheduleAppointment
@@ -552,7 +495,7 @@ var exceptionAppointment = new ScheduleAppointment
 ![Add Recurrence exception appointment support in schedule Xamarin Android](PopulatingAppointments_images/exception_appointment.png)
 
 #### Add exception appointment to recurrence pattern dynamically
-You can also add exception appointment dynamically for added exception date by adding exception appointment to the schedule `DataSource` which is exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of the `ScheduleAppointment` class.
+You can also add exception appointment dynamically for added exception date by adding exception appointment to the schedule `ItemsSource` which is exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of the `ScheduleAppointment` class.
 
 {% tabs %}
 {% highlight c# %}
@@ -587,7 +530,7 @@ scheduleAppointmentCollection.Add(exceptionAppointment);
 •	`ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
 #### Remove exception appointment from recurrence pattern
-You can directly remove the added exception appointment for recurrence pattern by removing it from schedule `DataSource`.
+You can directly remove the added exception appointment for recurrence pattern by removing it from schedule `ItemsSource`.
 
 {% tabs %}
 {% highlight c# %}
@@ -602,8 +545,10 @@ here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-create-
 
 ### Create recurrence exceptions for custom appointment
 
+You can add/remove the recurrence exception appointments and recurrence exception dates to the CustomAppointment, You can create a custom class [Meeting](#mapping) with mandatory fields `RecurrenceExceptionDates`, `ActualDate`, `RecurrenceId`.
+
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
-You can delete any occurrence which is exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception dates.
+You can delete any occurrence which is exception from the recurrence pattern appointment by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentMapping~RecurrenceExceptionDates.html) property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception dates.
 To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class `Meeting`.
 
 {% tabs %}
@@ -671,7 +616,7 @@ recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endtabs %}
 
 >**NOTE**
-If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with `RecurrenceId` and `ActualDate` from the schedule `DataSource` and recurrence pattern appointment created for that exception date.
+If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with `RecurrenceId` and `ActualDate` from the schedule `ItemsSource` and recurrence pattern appointment created for that exception date.
 
 #### Add all deleted occurrence to recurrence pattern dynamically or clear exception dates from recurrence pattern dynamically
 You can also add all deleted occurrence to the recurrence pattern appointment by clearing the exception dates from the `RecurrenceExceptionDates` custom property collection.
@@ -684,7 +629,7 @@ recurrenceAppointment.RecurrenceExceptionDates.Clear();
 {% endtabs %}
 
 #### Add exception appointment to recurrence pattern
-You can change any occurrence appointment which is exception from the recurrence pattern appointment by using the `RecurrenceId` property of `AppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and `ExceptionOccurrenceActualDate` property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
+You can change any occurrence appointment which is exception from the recurrence pattern appointment by using the [RecurrenceId](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentMapping~RecurrenceId.html) property of `AppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and [ExceptionOccurrenceActualDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentMapping~ExceptionOccurrenceActualDate.html) property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
 For adding custom exception appointment to the recurrence series, add the `ActualDate` and `RecurrenceID` properties to custom class `Meeting`.
 
 {% tabs %}
@@ -696,7 +641,7 @@ public object RecurrenceID { get; set; }
 
 You should map this custom property `RecurrenceID` of `Meeting` with the `RecurrenceId` property of `AppointmentMapping` class which is used to map the exception appointment with schedule recurrence series appointment `Meeting`.
 You should also map this custom property `ActualDate` of `Meeting` with the `ExceptionOccurrenceActualDate` property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment with schedule recurrence appointment.
-You should add the created exception recurrence appointment to the schedule `DataSource`.
+You should add the created exception recurrence appointment to the schedule `ItemsSource`.
 
 {% tabs %}
 {% highlight c# %}
@@ -751,7 +696,7 @@ var exceptionAppointment = new Meeting
 
 #### Add exception appointment to recurrence pattern dynamically
 
-You can also add exception appointment dynamically for added exception date by adding exception appointment to the schedule `DataSource` by using the `RecurrenceId` property of `AppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and `ExceptionOccurrenceActualDate` property of the `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
+You can also add exception appointment dynamically for added exception date by adding exception appointment to the schedule `ItemsSource` by using the `RecurrenceId` property of `AppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and `ExceptionOccurrenceActualDate` property of the `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
 
 {% tabs %}
 {% highlight c# %}
@@ -787,7 +732,7 @@ scheduleAppointmentCollection.Add(exceptionAppointment);
 
 
 #### Remove exception appointment from recurrence pattern
-You can directly remove the added exception appointment for recurrence pattern by removing from the schedule `DataSource`.
+You can directly remove the added exception appointment for recurrence pattern by removing from the schedule `ItemsSource`.
 
 {% tabs %}
 {% highlight c# %}
@@ -973,3 +918,62 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endtabs %}
 
 ![Selection customization in schedule Xamarin Android](PopulatingAppointments_images/selection.png)
+
+## Minimum Appointment Height
+
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+
+{% tabs %}
+{% highlight c# %}
+SfSchedule schedule = new SfSchedule(this);
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+Calendar currentDate = Calendar.Instance;
+Calendar startTime = (Calendar)currentDate.Clone();
+Calendar endTime = (Calendar)currentDate.Clone();
+
+startTime.Set(currentDate.Get(CalendarField.Year),
+              currentDate.Get(CalendarField.Month),
+              currentDate.Get(CalendarField.DayOfMonth),
+              9,0,0);
+endTime.Set(currentDate.Get(CalendarField.Year),
+            currentDate.Get(CalendarField.Month),
+            currentDate.Get(CalendarField.DayOfMonth),
+            9,0,0);
+Calendar startTime1 = (Calendar)currentDate.Clone();
+Calendar endTime1 = (Calendar)currentDate.Clone();
+startTime1.Set(currentDate.Get(CalendarField.Year),
+               currentDate.Get(CalendarField.Month),
+               currentDate.Get(CalendarField.DayOfMonth),
+               11,0,0);
+endTime1.Set(currentDate.Get(CalendarField.Year),
+             currentDate.Get(CalendarField.Month),
+             currentDate.Get(CalendarField.DayOfMonth),
+             12,0,0);
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime,
+    EndTime = endTime,
+    Subject = "Client Meeting",
+    MinHeight = 30,
+    Color = Color.ParseColor("#FFD80073")
+});
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime1,
+    EndTime = endTime1,
+    Subject = "Anniversary",
+    Color = Color.ParseColor("#FFA2C139")
+});
+schedule.Appointments= scheduleAppointmentCollection;
+SetContentView(schedule);
+{% endhighlight %}
+{% endtabs %}
+
+![Minimum Appointment height support in schedule Xamarin Android](PopulatingAppointments_images/minheight.png)
+
+>**NOTE**
+* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
+* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
+* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration). 
+* `MinHeight` has ScheduleAppointmentMapping Support. 
+* All day Appointment does not support `MinHeight`.
