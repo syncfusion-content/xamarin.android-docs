@@ -60,65 +60,6 @@ SetContentView(schedule);
 
 ![Creating Appointment in schedule Xamarin Android](PopulatingAppointments_images/appointment.png)
 
-## Minimum Appointment Height
-
-[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
-
-{% tabs %}
-{% highlight c# %}
-SfSchedule schedule = new SfSchedule(this);
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-Calendar currentDate = Calendar.Instance;
-Calendar startTime = (Calendar)currentDate.Clone();
-Calendar endTime = (Calendar)currentDate.Clone();
-
-startTime.Set(currentDate.Get(CalendarField.Year),
-              currentDate.Get(CalendarField.Month),
-              currentDate.Get(CalendarField.DayOfMonth),
-              9,0,0);
-endTime.Set(currentDate.Get(CalendarField.Year),
-            currentDate.Get(CalendarField.Month),
-            currentDate.Get(CalendarField.DayOfMonth),
-            9,0,0);
-Calendar startTime1 = (Calendar)currentDate.Clone();
-Calendar endTime1 = (Calendar)currentDate.Clone();
-startTime1.Set(currentDate.Get(CalendarField.Year),
-               currentDate.Get(CalendarField.Month),
-               currentDate.Get(CalendarField.DayOfMonth),
-               11,0,0);
-endTime1.Set(currentDate.Get(CalendarField.Year),
-             currentDate.Get(CalendarField.Month),
-             currentDate.Get(CalendarField.DayOfMonth),
-             12,0,0);
-scheduleAppointmentCollection.Add(new ScheduleAppointment()
-{
-    StartTime = startTime,
-    EndTime = endTime,
-    Subject = "Client Meeting",
-    MinHeight = 30,
-    Color = Color.ParseColor("#FFD80073")
-});
-scheduleAppointmentCollection.Add(new ScheduleAppointment()
-{
-    StartTime = startTime1,
-    EndTime = endTime1,
-    Subject = "Anniversary",
-    Color = Color.ParseColor("#FFA2C139")
-});
-schedule.Appointments= scheduleAppointmentCollection;
-SetContentView(schedule);
-{% endhighlight %}
-{% endtabs %}
-
-![Minimum Appointment height support in schedule Xamarin Android](PopulatingAppointments_images/minheight.png)
-
->**NOTE**
-* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
-* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
-* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration). 
-* `MinHeight` has ScheduleAppointmentMapping Support. 
-* All day Appointment does not support `MinHeight`.
-
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
@@ -977,3 +918,62 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endtabs %}
 
 ![Selection customization in schedule Xamarin Android](PopulatingAppointments_images/selection.png)
+
+## Minimum Appointment Height
+
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+
+{% tabs %}
+{% highlight c# %}
+SfSchedule schedule = new SfSchedule(this);
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+Calendar currentDate = Calendar.Instance;
+Calendar startTime = (Calendar)currentDate.Clone();
+Calendar endTime = (Calendar)currentDate.Clone();
+
+startTime.Set(currentDate.Get(CalendarField.Year),
+              currentDate.Get(CalendarField.Month),
+              currentDate.Get(CalendarField.DayOfMonth),
+              9,0,0);
+endTime.Set(currentDate.Get(CalendarField.Year),
+            currentDate.Get(CalendarField.Month),
+            currentDate.Get(CalendarField.DayOfMonth),
+            9,0,0);
+Calendar startTime1 = (Calendar)currentDate.Clone();
+Calendar endTime1 = (Calendar)currentDate.Clone();
+startTime1.Set(currentDate.Get(CalendarField.Year),
+               currentDate.Get(CalendarField.Month),
+               currentDate.Get(CalendarField.DayOfMonth),
+               11,0,0);
+endTime1.Set(currentDate.Get(CalendarField.Year),
+             currentDate.Get(CalendarField.Month),
+             currentDate.Get(CalendarField.DayOfMonth),
+             12,0,0);
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime,
+    EndTime = endTime,
+    Subject = "Client Meeting",
+    MinHeight = 30,
+    Color = Color.ParseColor("#FFD80073")
+});
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime1,
+    EndTime = endTime1,
+    Subject = "Anniversary",
+    Color = Color.ParseColor("#FFA2C139")
+});
+schedule.Appointments= scheduleAppointmentCollection;
+SetContentView(schedule);
+{% endhighlight %}
+{% endtabs %}
+
+![Minimum Appointment height support in schedule Xamarin Android](PopulatingAppointments_images/minheight.png)
+
+>**NOTE**
+* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
+* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
+* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration). 
+* `MinHeight` has ScheduleAppointmentMapping Support. 
+* All day Appointment does not support `MinHeight`.
