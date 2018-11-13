@@ -456,23 +456,25 @@ You can change any occurrence appointment which is an exception from the recurre
 You should add the created exception recurrence appointment to the schedule `ItemsSource`.
 {% tabs %}
 {% highlight c# %}
-  var recurrenceAppointment = new ScheduleAppointment
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07, 10, 0, 0);
+
+// Add Recurrence appointment 
+var recurrenceAppointment = new ScheduleAppointment
 {
 	StartTime = startTime,
 	EndTime = endTime,
 	Subject = "Daily Occurs",
 	Color = Color.Blue,
-	RecurrenceRule = "FREQ=DAILY;COUNT=20"
+	RecurrenceRule = "FREQ=DAILY;COUNT=20",
+        RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
 };
 
 // Add exception appointment to the current recurrence pattern
-var exceptionDate = Calendar.Instance;
-exceptionDate.Set(2017, 08, 08, 10, 0, 0);
 var exceptionStartTime = Calendar.Instance;
 exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
 var exceptionEndTime = Calendar.Instance;
 exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
-
 var exceptionAppointment = new ScheduleAppointment
 {
 	StartTime = exceptionStartTime,
@@ -654,6 +656,10 @@ Calendar endTime = Calendar.Instance;
 //setting end time for the event
 endTime.Set(2017, 08, 03, 12, 0, 0);
 
+// Set exception date.
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07);
+
 //Adding schedule appointment in schedule appointment collection 
 var recurrenceAppointment = new Meeting
 {
@@ -662,11 +668,8 @@ var recurrenceAppointment = new Meeting
 	EventName = "Daily Occurs",
 	Color = Color.Blue,
 	RecurrenceRule = "FREQ=DAILY;COUNT=20",
+        RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
 };
-
-// Set exception date.
-var exceptionDate = Calendar.Instance;
-exceptionDate.Set(2017, 08, 07);
 
 // Add exception appointment to the current recurrence series
 var exceptionStartTime = Calendar.Instance;
