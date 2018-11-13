@@ -145,9 +145,9 @@ public class FileManagerViewModel
 
       download.SubFiles = new ObservableCollection<FileManager>
       {
-         games,
+         game,
          tutorials,
-         TypeScript,
+         typescript,
          uiGuide
       };
 
@@ -171,8 +171,8 @@ public class FileManagerViewModel
 
       video.SubFiles = new ObservableCollection<FileManager>
       {
-         video1,
-         video2
+         video0,
+         video1
       };
 
       nodeImageInfo.Add(doc);
