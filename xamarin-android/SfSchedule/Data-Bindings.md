@@ -467,7 +467,7 @@ var recurrenceAppointment = new ScheduleAppointment
 	Subject = "Daily Occurs",
 	Color = Color.Blue,
 	RecurrenceRule = "FREQ=DAILY;COUNT=20",
-        RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
+    RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
 };
 
 // Add exception appointment to the current recurrence pattern
@@ -668,7 +668,7 @@ var recurrenceAppointment = new Meeting
 	EventName = "Daily Occurs",
 	Color = Color.Blue,
 	RecurrenceRule = "FREQ=DAILY;COUNT=20",
-        RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
+    RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
 };
 
 // Add exception appointment to the current recurrence series
