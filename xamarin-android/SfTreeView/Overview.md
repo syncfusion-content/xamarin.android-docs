@@ -16,3 +16,5 @@ The Syncfusion TreeView for Xamarin.Android is a data-oriented control that disp
 * Bound and unbound mode - Support for binding hierarchical data or add unbound tree nodes.
 * Selection - Support for selection with different selection modes.
 * Templating - Provides complete UI customization through adapters. 
+
+![TreeView in Xamarin Android](Images/TreeView_Templating.png)
