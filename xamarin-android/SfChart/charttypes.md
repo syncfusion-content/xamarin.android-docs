@@ -87,7 +87,7 @@ chart.Series.Add(splineAreaSeries);
 
 ![SplineArea chart type in Xamarin.Android](charttypes_images/charttypes_img3.png)
 
-### Spline Area Series Type
+### Spline Rendering Types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineAreaSeries~SplineType.html) allows you to change the spline area curve in series. 
 
@@ -282,7 +282,7 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endhighlight %}
 
-### Spline Range Area Series Type
+### Spline Rendering Types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineRangeAreaSeries~SplineType.html) property allows you to change the spline range area curve in series.
 
@@ -344,7 +344,7 @@ chart.Series.Add(columnSeries);
 
 ![Column chart type in Xamarin.Android](charttypes_images/charttypes_img6.png)
 
-## Overlapped placement
+### Overlapped placement
 
 By default, all the column series which has the same x and y axes are placed side by side in a chart. If you want place the series one over the other (overlapped), set the [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~SideBySideSeriesPlacement.html) property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) to false and configure the Width property to differentiate the series. The following code snippet and screenshot illustrate the overlapped placement of column series.
 
@@ -689,7 +689,7 @@ chart.Series.Add(splineSeries);
 
 ![Spline chart type in Xamarin.Android](charttypes_images/charttypes_img13.png)
 
-### SplineSeries Types
+### Spline Rendering Types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
 
@@ -764,6 +764,10 @@ fastLineSeries.PathEffect = new DashPathEffect(new float[]{6,6}, 4);
 {% endhighlight %}
 
 ![Dashed lines support for FastLineSeries in Xamarin.Android Chart](charttypes_images/charttypes_img15.png)
+
+### EnableAntiAliasing
+
+Since [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.FastLineSeries.html) can be loaded with a large number of points, the rendering of series should be smooth. This requirement can be achieved by setting [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.FastLineSeries~EnableAntiAliasing.html) property of [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.FastLineSeries.html) as false.
 
 ## Step Line Chart
 
@@ -1524,6 +1528,10 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 {% endhighlight %}
 
 ![CenterView support for doughnut series in Xamarin.Android Chart](charttypes_images/charttypes_img48.png)
+
+### InnerRadius
+
+The [`InnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries~InnerRadius.html) property of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries.html) is used to get only the inner radius. Using this [`InnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries~InnerRadius.html) value, you can provide [`CentreView`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoughnutSeries~CenterView.html) for series to avoid the view from being cropped outside the series.
 
 ## Pyramid Chart
 
