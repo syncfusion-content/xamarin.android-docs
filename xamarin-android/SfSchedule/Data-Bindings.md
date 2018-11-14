@@ -58,66 +58,7 @@ SetContentView(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointment.png)
-
-## Minimum Appointment Height
-
-[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
-
-{% tabs %}
-{% highlight c# %}
-SfSchedule schedule = new SfSchedule(this);
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-Calendar currentDate = Calendar.Instance;
-Calendar startTime = (Calendar)currentDate.Clone();
-Calendar endTime = (Calendar)currentDate.Clone();
-
-startTime.Set(currentDate.Get(CalendarField.Year),
-              currentDate.Get(CalendarField.Month),
-              currentDate.Get(CalendarField.DayOfMonth),
-              9,0,0);
-endTime.Set(currentDate.Get(CalendarField.Year),
-            currentDate.Get(CalendarField.Month),
-            currentDate.Get(CalendarField.DayOfMonth),
-            9,0,0);
-Calendar startTime1 = (Calendar)currentDate.Clone();
-Calendar endTime1 = (Calendar)currentDate.Clone();
-startTime1.Set(currentDate.Get(CalendarField.Year),
-               currentDate.Get(CalendarField.Month),
-               currentDate.Get(CalendarField.DayOfMonth),
-               11,0,0);
-endTime1.Set(currentDate.Get(CalendarField.Year),
-             currentDate.Get(CalendarField.Month),
-             currentDate.Get(CalendarField.DayOfMonth),
-             12,0,0);
-scheduleAppointmentCollection.Add(new ScheduleAppointment()
-{
-    StartTime = startTime,
-    EndTime = endTime,
-    Subject = "Client Meeting",
-    MinHeight = 30,
-    Color = Color.ParseColor("#FFD80073")
-});
-scheduleAppointmentCollection.Add(new ScheduleAppointment()
-{
-    StartTime = startTime1,
-    EndTime = endTime1,
-    Subject = "Anniversary",
-    Color = Color.ParseColor("#FFA2C139")
-});
-schedule.Appointments= scheduleAppointmentCollection;
-SetContentView(schedule);
-{% endhighlight %}
-{% endtabs %}
-
-![](PopulatingAppointments_images/minheight.png)
-
->**NOTE**
-* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
-* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
-* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration). 
-* `MinHeight` has ScheduleAppointmentMapping Support. 
-* All day Appointment does not support `MinHeight`.
+![Creating Appointment in schedule Xamarin Android](PopulatingAppointments_images/appointment.png)
 
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
@@ -262,7 +203,7 @@ SetContentView(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/span.png)
+![spanning or multiday appointments in schedule Xamarin Android](PopulatingAppointments_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
@@ -312,7 +253,7 @@ weekViewSettings.AllDayAppointmentBackgroundColor = Color.Silver;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/allday.png)
+![All day appointments in schedule Xamarin Android](PopulatingAppointments_images/allday.png)
 
 ## Recurrence Appointment
 Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting `RecurrenceRule` property in Schedule appointments.
@@ -426,217 +367,385 @@ schedule.Appointments = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/recurrence.png)
+![Recurrence appointment support in schedule Xamarin Android](PopulatingAppointments_images/recurrence.png)
 
-## Drag and Drop Appointments
-Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~AllowAppointmentDrag.html) property of `SfSchedule`.
+## Recurrence Pattern Exceptions 
+You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
+### Recurrence Exception Dates
+You can delete any occurrence appointment which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment. 
+ 
+### Recurrence Exception appointment
+You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment in the schedule `ItemsSource`.
+
+### Create recurrence exceptions for schedule appointment
+
+You can add/remove the recurrence exception appointments and recurrence exception dates to `ScheduleAppointment` by using its property, [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceExceptionDates.html), [RecurrenceId](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~RecurrenceId.html), [ExceptionOccurrenceActualDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~ExceptionOccurrenceActualDate.html).
+
+#### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
+You can delete any of occurrence which is exception from recurrence pattern appointment by using `RecurrenceExceptionDates` property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
 {% tabs %}
 {% highlight c# %}
-schedule.AllowAppointmentDrag = true;
-{% endhighlight %}
-{% endtabs %}
+ // Create the new exception date.
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07);
 
-![](PopulatingAppointments_images/draganddrop.gif)
+var startTime = Calendar.Instance;
+ 
+//setting start time for the event
+startTime.Set(2017, 08, 03, 10, 0, 0);
+var endTime = Calendar.Instance;
 
-### Handle dragging based on the appointment
-Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~AppointmentDragStarting_EV.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragStartingEventArgs.html) argument contains the following properties.
-
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragStartingEventArgs~Appointment.html) - Gets the dragged appointment details.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Appointment dragging can be handled (enable/disable) using this boolean property.
-
-{% tabs %}
-{% highlight c# %}
-schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
-
-...
-
-private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
+//setting end time for the event
+endTime.Set(2017, 08, 03, 12, 0, 0);
+var recurrenceAppointment = new ScheduleAppointment
 {
-        var appointment = e.Appointment;
-        e.Cancel = false;
-}
+	StartTime = startTime,
+	EndTime = endTime,
+	Subject = "Daily Occurs",
+	Color = Color.Blue,
+	RecurrenceRule = "FREQ=DAILY;COUNT=20",
+	RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
+};
 {% endhighlight %}
 {% endtabs %}
 
-#### Disabling dragging when the appointment is AllDay appointment
-Using `Cancel` property in the `AppointmentDragStartingEventArgs` argument of Schedule `AppointmentDragStarting` event, you can enable/disable the appointment dragging based on the requirement. In the below code, appointment dragging is disabled when the appointment is AllDay appointment.
+>**NOTE**
+•	Exception dates should be Universal Time Coordinates (UTC) time zone.
+•	You can also update the RecurrenceExceptionDates collection dynamically.
+
+![Recurrence exception dates support in schedule Xamarin Android](PopulatingAppointments_images/exception_dates.png)
+
+#### Delete occurrence from recurrence pattern dynamically or add exception dates to recurrence pattern dynamically
+You can also delete any occurrence from the recurrence pattern appointment by adding exception date to the `RecurrenceExceptionDates` collection.
 
 {% tabs %}
 {% highlight c# %}
-schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 08, 10, 0, 0);
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
+{% endhighlight %}
+{% endtabs %}
 
-...
+#### Add deleted occurrence to recurrence pattern dynamically or remove exception dates from recurrence pattern dynamically
+You can also add the deleted occurrence to the recurrence pattern appointment by removing exception date from the `RecurrenceExceptionDates` collection.
 
-private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
+{% tabs %}
+{% highlight c# %}
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with `RecurrenceId` and `ExceptionOccurrenceActualDate` from Schedule `ItemsSource` and recurrence pattern appointment created for that exception date.
+
+#### Add all deleted occurrences to recurrence pattern dynamically or clear exception dates from recurrence pattern dynamically
+You can also add all deleted occurrences to the recurrence pattern appointment by clearing the exception dates from the `RecurrenceExceptionDates` collection.
+
+{% tabs %}
+{% highlight c# %}
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+recurrenceAppointment.RecurrenceExceptionDates.Clear();
+{% endhighlight %}
+{% endtabs %}
+
+#### Add exception appointment to recurrence pattern
+You can change any occurrence appointment which is an exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of `ScheduleAppointment`.
+You should add the created exception recurrence appointment to the schedule `ItemsSource`.
+{% tabs %}
+{% highlight c# %}
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07, 10, 0, 0);
+
+// Add Recurrence appointment 
+var recurrenceAppointment = new ScheduleAppointment
 {
-        var appointment = e.Appointment as ScheduleAppointment;
+	StartTime = startTime,
+	EndTime = endTime,
+	Subject = "Daily Occurs",
+	Color = Color.Blue,
+	RecurrenceRule = "FREQ=DAILY;COUNT=20",
+    RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
+};
 
-      if (appointment.IsAllDay)
-      {
-            e.Cancel = true;
-      }
-}
-{% endhighlight %}
-{% endtabs %}
-
-### Get the dragging appointment position
-Using [AppointmentDragOver](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~AppointmentDragOver_EV.html) event, you can get the dragging appointment details, position and time of the particular location. The event will be continuously triggered when the appointment is being dragged. The [AppointmentDragEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragEventArgs.html) argument contains the following properties.
-
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragEventArgs~Appointment.html) - Gets the dragging appointment details.
-[DraggingPoint](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragEventArgs~DraggingPoint.html) - Gets the dragging point (X, Y) of the appointment in Schedule.
-[DraggingTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDragEventArgs~DraggingTime.html) - Gets the dragging time of the appointment in Schedule
-
-{% tabs %}
-{% highlight c# %}
-schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
-
-...
-
-private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
+// Add exception appointment to the current recurrence pattern
+var exceptionStartTime = Calendar.Instance;
+exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
+var exceptionEndTime = Calendar.Instance;
+exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
+var exceptionAppointment = new ScheduleAppointment
 {
-        var appointment = e.Appointment;
-        var draggingPoint = e.DraggingPoint;
-        var draggingTime = e.DraggingTime;
-}
+	StartTime = exceptionStartTime,
+	EndTime = exceptionEndTime,
+	Subject = "Meeting",
+	Color = Color.Red,
+	// Recurrence Id should be parent appointment object
+	RecurrenceId = recurrenceAppointment,
+	//Actual occurrence date
+	ExceptionOccurrenceActualDate = exceptionDate
+};
 {% endhighlight %}
 {% endtabs %}
 
-#### Displaying alert while dragging appointment over the blocked time slots
-Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below code, Indicating the message while dragging over the Schedule `NonAccessibleBlock`.
+>**NOTE**
+•	`RecurrenceId` should be a recurrence pattern appointment object.
+•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
+•	`ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
+
+![Add Recurrence exception appointment support in schedule Xamarin Android](PopulatingAppointments_images/exception_appointment.png)
+
+#### Add exception appointment to recurrence pattern dynamically
+You can also add exception appointment dynamically for added exception date by adding exception appointment to the schedule `ItemsSource` which is exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of the `ScheduleAppointment` class.
 
 {% tabs %}
 {% highlight c# %}
-schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 08, 10, 0, 0);
+var exceptionStartTime = Calendar.Instance;
+exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
+var exceptionEndTime = Calendar.Instance;
+exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
 
-...
-
-private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
+// Add exception appointment to the current recurrence series
+var exceptionAppointment = new ScheduleAppointment
 {
-        //// checking whether dragging appointment time within NonAccessibleBlock
-        if (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DraggingTime.Get(CalendarField.HourOfDay) || (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DraggingTime.Get(CalendarField.HourOfDay) && e.DraggingTime.Get(CalendarField.Minute) > 0))
-        {
-                label.Text = "Cannot be moved to blocked time slots";
-        }
-}
+	StartTime = exceptionStartTime,
+	EndTime = exceptionEndTime,
+	Subject = "Meeting",
+	Color = Color.Red,
+	// set the parent appointment to recurrence Id
+	RecurrenceId = recurrenceAppointment,
+	 //Actual occurrence date
+	ExceptionOccurrenceActualDate = exceptionDate
+};
+
+//Adding exception appointment in schedule appointment collection
+scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
+>**NOTE**
+•	`RecurrenceId` should be a recurrence pattern appointment object.
+•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+•	`ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
-### Handle appointment dropping
-Using [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~AppointmentDrop_EV.html) event you can get the dropping appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDropEventArgs.html) argument contains the following properties.
-
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDropEventArgs~Appointment.html) - Gets the details of the appointment to be dropped.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Appointment dropping can be handled (enable / disable) using this Boolean property.
-[DropTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentDropEventArgs~DropTime.html) - Gets the dropped time of the appointment in Schedule
+#### Remove exception appointment from recurrence pattern
+You can directly remove the added exception appointment for recurrence pattern by removing it from schedule `ItemsSource`.
 
 {% tabs %}
 {% highlight c# %}
-schedule.AppointmentDrop += Schedule_AppointmentDrop;
+var exceptionAppointment = scheduleAppointmentCollection[1];
+//Remove exception appointment from schedule appointment collection
+scheduleAppointmentCollection.Remove(exceptionAppointment);
+{% endhighlight %}
+{% endtabs %}
 
-...
+You can download the entire source code of this demo for Xamarin.Android from
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/Create-Recurrence-Exceptions-to-schedule-recurring-appointments-in-Xamarin.Android).
 
-private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
+### Create recurrence exceptions for custom appointment
+
+You can add/remove the recurrence exception appointments and recurrence exception dates to the CustomAppointment, You can create a custom class `Meeting`(refer [DataBinding](#mapping)) with mandatory fields `RecurrenceExceptionDates`, `ActualDate`, `RecurrenceId`.
+
+#### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
+You can delete any occurrence which is exception from the recurrence pattern appointment by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentMapping~RecurrenceExceptionDates.html) property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception dates.
+To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class `Meeting`.
+
+{% tabs %}
+{% highlight c# %}
+ public ObservableCollection<Calendar> RecurrenceExceptionDates { get; set; } = new ObservableCollection<Calendar>();
+{% endhighlight %}
+{% endtabs %}
+
+You should map this custom property `RecurrenceExceptionDates` of custom class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the schedule appointment.
+
+{% tabs %}
+{% highlight c# %}
+// data mapping for custom appointments.
+dataMapping.RecurrenceExceptionDates = "RecurrenceExceptionDates";
+            
+// Create the new exception date.
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07);
+var startTime = Calendar.Instance;
+ 
+//setting start time for the event
+startTime.Set(2017, 08, 03, 10, 0, 0);
+var endTime = Calendar.Instance;
+
+//setting end time for the event
+endTime.Set(2017, 08, 03, 12, 0, 0);
+var recurrenceAppointment = new Meeting
 {
-        var appointment = e.Appointment;
-        e.Cancel = false;
-        var dropTime = e.DropTime;
-}
+	From = startTime,
+	To = endTime,
+	EventName = "Daily Occurs",
+	Color = Color.Blue,
+	RecurrenceRule = "FREQ=DAILY;COUNT=20",
+	RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate}
+};
 {% endhighlight %}
 {% endtabs %}
 
-#### Disabling dropping when dropping appointment within the Non-Accessible region
-Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below code, appointment dropping is disabled while dropping in the Non-Accessible block region.
+>**NOTE**
+•	Exception dates should be in Universal Time Coordinates (UTC) time zone.
+•	You can also dynamically update the custom property RecurrenceExceptionDates collection.
+
+![Recurrence exception dates support in schedule Xamarin Android](PopulatingAppointments_images/exception_dates.png)
+
+#### Delete occurrence from recurrence pattern dynamically or add exception dates to recurrence pattern dynamically
+You can also delete any occurrence from the recurrence pattern appointment by adding exception date to the `RecurrenceExceptionDates` custom property collection.
 
 {% tabs %}
 {% highlight c# %}
-schedule.AppointmentDrop += Schedule_AppointmentDrop;
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 08, 10, 0, 0);
+recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
+{% endhighlight %}
+{% endtabs %}
 
-...
+#### Add deleted occurrence to recurrence pattern dynamically or remove exception dates from recurrence pattern dynamically
+You can also add the deleted occurrence to the recurrence pattern appointment by removing exception date from the `RecurrenceExceptionDates` custom property collection.
 
-private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
+{% tabs %}
+{% highlight c# %}
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with `RecurrenceId` and `ActualDate` from the schedule `ItemsSource` and recurrence pattern appointment created for that exception date.
+
+#### Add all deleted occurrence to recurrence pattern dynamically or clear exception dates from recurrence pattern dynamically
+You can also add all deleted occurrence to the recurrence pattern appointment by clearing the exception dates from the `RecurrenceExceptionDates` custom property collection.
+
+{% tabs %}
+{% highlight c# %}
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+recurrenceAppointment.RecurrenceExceptionDates.Clear();
+{% endhighlight %}
+{% endtabs %}
+
+#### Add exception appointment to recurrence pattern
+You can change any occurrence appointment which is exception from the recurrence pattern appointment by using the [RecurrenceId](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentMapping~RecurrenceId.html) property of `AppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and [ExceptionOccurrenceActualDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentMapping~ExceptionOccurrenceActualDate.html) property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
+For adding custom exception appointment to the recurrence series, add the `ActualDate` and `RecurrenceID` properties to custom class `Meeting`.
+
+{% tabs %}
+{% highlight c# %}
+public Calendar ActualDate { get; set; }
+public object RecurrenceID { get; set; }
+{% endhighlight %}
+{% endtabs %}
+
+You should map this custom property `RecurrenceID` of `Meeting` with the `RecurrenceId` property of `AppointmentMapping` class which is used to map the exception appointment with schedule recurrence series appointment `Meeting`.
+You should also map this custom property `ActualDate` of `Meeting` with the `ExceptionOccurrenceActualDate` property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment with schedule recurrence appointment.
+You should add the created exception recurrence appointment to the schedule `ItemsSource`.
+
+{% tabs %}
+{% highlight c# %}
+Calendar startTime = Calendar.Instance;
+ 
+//setting start time for the event
+startTime.Set(2017, 08, 03, 10, 0, 0);
+Calendar endTime = Calendar.Instance;
+
+//setting end time for the event
+endTime.Set(2017, 08, 03, 12, 0, 0);
+
+// Set exception date.
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07);
+
+//Adding schedule appointment in schedule appointment collection 
+var recurrenceAppointment = new Meeting
 {
-        //// checking whether dropping appointment time within NonAccessibleBlock
-        if (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DropTime.Get(CalendarField.HourOfDay) || (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DropTime.Get(CalendarField.HourOfDay) && e.DropTime.Get(CalendarField.Minute) > 0))
-        {
-                e.Cancel = true;
-        }
-}
+	From = startTime,
+	To = endTime,
+	EventName = "Daily Occurs",
+	Color = Color.Blue,
+	RecurrenceRule = "FREQ=DAILY;COUNT=20",
+    RecurrenceExceptionDates = new ObservableCollection<Calendar> { exceptionDate }
+};
+
+// Add exception appointment to the current recurrence series
+var exceptionStartTime = Calendar.Instance;
+exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
+var exceptionEndTime = Calendar.Instance;
+exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
+var exceptionAppointment = new Meeting
+{
+	From = exceptionStartTime,
+	To = exceptionEndTime,
+	EventName = "Meeting",
+	Color = Color.Red,
+	// set the parent appointment to recurrence Id.
+	RecurrenceID = recurrenceAppointment,
+	//Actual occurrence date
+	ActualDate = exceptionDate
+};
 {% endhighlight %}
 {% endtabs %}
 
-### Customizing the Drag and Drop environment
-Using [DragDropSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings.html) property of schedule, you can handle the behavior of drag and drop in Schedule.
+>**NOTE**
+•	`RecurrenceId` should be a recurrence pattern appointment object.
+•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+•	`ActualDate` should be in Universal Time Coordinates (UTC) time zone.
+
+![Add Recurrence exception appointment support in schedule Xamarin Android](PopulatingAppointments_images/exception_appointment.png)
+
+#### Add exception appointment to recurrence pattern dynamically
+
+You can also add exception appointment dynamically for added exception date by adding exception appointment to the schedule `ItemsSource` by using the `RecurrenceId` property of `AppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and `ExceptionOccurrenceActualDate` property of the `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
 
 {% tabs %}
 {% highlight c# %}
-DragDropSettings dragDropSettings = new DragDropSettings();
-dragDropSettings.AllowNavigate = true;
-dragDropSettings.AllowScroll = false;
-var timeSpan = new TimeSpan(0, 0, 0, 1, 0);
-dragDropSettings.AutoNavigationDelay = timeSpan;
-dragDropSettings.ShowTimeIndicator = true;
-dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
-schedule.DragDropSettings = dragDropSettings;
+   var recurrenceAppointment = scheduleAppointmentCollection[0];
+
+// Set exception dates.
+var exceptionDate = Calendar.Instance;
+exceptionDate.Set(2017, 08, 07);
+var exceptionStartTime = Calendar.Instance;
+exceptionStartTime.Set(2017, 08, 07, 13, 0, 0);
+var exceptionEndTime = Calendar.Instance;
+exceptionEndTime.Set(2017, 08, 07, 14, 0, 0);
+var exceptionAppointment = new Meeting
+{
+	From = exceptionStartTime,
+	To = exceptionEndTime,
+	EventName = "Meeting",
+	Color = Color.Red,
+	// set the parent appointment to recurrence Id.
+	RecurrenceID = recurrenceAppointment,
+	//Actual occurrence date
+	ActualDate = exceptionDate
+};
+           
+scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 
-#### Disabling navigation when dragging appointment
-Using [AllowNavigate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~AllowNavigate.html) boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment the endpoint of the current view.
+>**NOTE**
+•	`RecurrenceId` should be a recurrence pattern appointment object.
+•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+•	`ActualDate` should be in Universal Time Coordinates (UTC) time zone.
+
+
+#### Remove exception appointment from recurrence pattern
+You can directly remove the added exception appointment for recurrence pattern by removing from the schedule `ItemsSource`.
 
 {% tabs %}
 {% highlight c# %}
-dragDropSettings.AllowNavigate = false;
+var exceptionAppointment = scheduleAppointmentCollection[1];
+scheduleAppointmentCollection.Remove(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 
-#### Handling navigation delay while holding dragged appointment
-Using [AutoNavigationDelay](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~AutoNavigationDelay.html)  `TimeSpan` property can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
-
-{% tabs %}
-{% highlight c# %}
-var timeSpan = new TimeSpan(0, 0, 0, 1, 0);
-dragDropSettings.AutoNavigationDelay = timeSpan;
-{% endhighlight %}
-{% endtabs %}
-
-#### Disabling scroll when dragging appointment
-Using [AllowScroll](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~AllowScroll.html) boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
-
-{% tabs %}
-{% highlight c# %}
-dragDropSettings.AllowScroll = false;
-{% endhighlight %}
-{% endtabs %}
-
-#### Disabling dragging time indicator
-[ShowTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~ShowTimeIndicator.html) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots. Default value of the `ShowTimeIndicator` property is true.
-
-{% tabs %}
-{% highlight c# %}
-dragDropSettings.ShowTimeIndicator = false;
-{% endhighlight %}
-{% endtabs %}
-
-### Customize appearance of dragging Time Indicator
-Using [TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.DragDropSettings~TimeIndicatorStyle.html) property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimeIndicatorStyle~TextColor.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimeIndicatorStyle~TextSize.html) and [TextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimeIndicatorStyle~TextFormat.html).
-
-{% tabs %}
-{% highlight c# %}
-TimeIndicatorStyle timeIndicatorStyle = new TimeIndicatorStyle();
-timeIndicatorStyle.TextColor = Color.Red;
-timeIndicatorStyle.TextSize = 15;
-timeIndicatorStyle.TextFormat = "hh : mm";
-dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
-schedule.DragDropSettings = dragDropSettings;
-{% endhighlight %}
-{% endtabs %}
-
-![](PopulatingAppointments_images/timeindicator.png)
-
->**Notes**
-* While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
-* While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.
-* Doesn't support control to control drag and drop.
+You can download the entire source code of this demo for Xamarin.Android from
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/Create-Recurrence-Exceptions-to-schedule-for-custom-recurring-appointments-in-Xamarin.Android).
 
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
@@ -663,7 +772,7 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/style.png)
+![Appointments styling support in schedule Xamarin Android](PopulatingAppointments_images/style.png)
 
 ### Customize appearance using Event
 Schedule appointment can be customized during runtime using [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `AppointmentStyle` property.
@@ -703,7 +812,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointmentstyle_event.png)
+![Appointments customization in schedule Xamarin Android](PopulatingAppointments_images/appointmentstyle_event.png)
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
@@ -744,7 +853,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/custom.png)
+![Custom view support for appointments in schedule Xamarin Android](PopulatingAppointments_images/custom.png)
 
 ### Customize Font Appearance
 
@@ -756,7 +865,7 @@ You can change the appearance of Font by setting the [TextStyle](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/customfontappointment.png)
+![custom font support in schedule Xamarin Android](PopulatingAppointments_images/customfontappointment.png)
 
 Refer [this](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#custom-font-setting-in-xamarinandroid) to configure the custom fonts in Xamarin.Android.
 
@@ -811,4 +920,63 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/selection.png)
+![Selection customization in schedule Xamarin Android](PopulatingAppointments_images/selection.png)
+
+## Minimum Appointment Height
+
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+
+{% tabs %}
+{% highlight c# %}
+SfSchedule schedule = new SfSchedule(this);
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+Calendar currentDate = Calendar.Instance;
+Calendar startTime = (Calendar)currentDate.Clone();
+Calendar endTime = (Calendar)currentDate.Clone();
+
+startTime.Set(currentDate.Get(CalendarField.Year),
+              currentDate.Get(CalendarField.Month),
+              currentDate.Get(CalendarField.DayOfMonth),
+              9,0,0);
+endTime.Set(currentDate.Get(CalendarField.Year),
+            currentDate.Get(CalendarField.Month),
+            currentDate.Get(CalendarField.DayOfMonth),
+            9,0,0);
+Calendar startTime1 = (Calendar)currentDate.Clone();
+Calendar endTime1 = (Calendar)currentDate.Clone();
+startTime1.Set(currentDate.Get(CalendarField.Year),
+               currentDate.Get(CalendarField.Month),
+               currentDate.Get(CalendarField.DayOfMonth),
+               11,0,0);
+endTime1.Set(currentDate.Get(CalendarField.Year),
+             currentDate.Get(CalendarField.Month),
+             currentDate.Get(CalendarField.DayOfMonth),
+             12,0,0);
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime,
+    EndTime = endTime,
+    Subject = "Client Meeting",
+    MinHeight = 30,
+    Color = Color.ParseColor("#FFD80073")
+});
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startTime1,
+    EndTime = endTime1,
+    Subject = "Anniversary",
+    Color = Color.ParseColor("#FFA2C139")
+});
+schedule.Appointments= scheduleAppointmentCollection;
+SetContentView(schedule);
+{% endhighlight %}
+{% endtabs %}
+
+![Minimum Appointment height support in schedule Xamarin Android](PopulatingAppointments_images/minheight.png)
+
+>**NOTE**
+* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
+* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
+* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration). 
+* `MinHeight` has ScheduleAppointmentMapping Support. 
+* All day Appointment does not support `MinHeight`.
