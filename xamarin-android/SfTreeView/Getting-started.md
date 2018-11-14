@@ -130,7 +130,7 @@ public class MainActivity : Activity
 	protected override void OnCreate(Bundle savedInstanceState)
 	{	
 		base.OnCreate(savedInstanceState);
-    	SetContentView(Resource.Layout.Main);
+       	SetContentView(Resource.Layout.Main);
 		treeView = FindViewById<SfTreeView>(Resource.Id.sfTreeView1);
 	}
 }
@@ -374,9 +374,9 @@ public class FileManagerViewModel
 
       download.SubFiles = new ObservableCollection<FileManager>
       {
-         games,
+         game,
          tutorials,
-         TypeScript,
+         typescript,
          uiGuide
       };
 
@@ -400,8 +400,8 @@ public class FileManagerViewModel
 
       video.SubFiles = new ObservableCollection<FileManager>
       {
-         video1,
-         video2
+         video0,
+         video1
       };
 
       nodeImageInfo.Add(doc);
