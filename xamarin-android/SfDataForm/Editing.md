@@ -461,7 +461,6 @@ public double? Amount
 {% endhighlight %}
 {% endtabs %}
 
-
 ### Converting DateTimeOffset value to DateTime
 
 In SfDataForm, you could not pass directly `DateTimeOffset` DataType to a property.You can use `Converter` attribute to convert DateTimeOffset to DateTime and vice-versa.
@@ -471,7 +470,7 @@ In SfDataForm, you could not pass directly `DateTimeOffset` DataType to a proper
 
 private DateTimeOffset displayDate;
 
-Converter(typeof(ValueConverterExt))]
+[Converter(typeof(ValueConverterExt))]
 public DateTimeOffset DisplayDate
 {
     get
@@ -507,6 +506,8 @@ public class ValueConverterExt : IPropertyValueConverter
 }
 {% endhighlight %}
 {% endtabs %}
+
+You can download the source code of this demo from here [DateTimeOffsetConverter](https://github.com/SyncfusionExamples/Convert-DateTimeOffset-into-DateTime-and-back-in-Xamarin-DataForm)
 
 ## Disable editing
 You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~IsReadOnly.html) property of the data form.
