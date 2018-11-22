@@ -13,6 +13,18 @@ documentation: UG
 
 The data form supports linear and grid layouts. The DataFormLayoutManager creates the [DataFormItemView](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemView.html), [DataFormGroupItemView](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormGroupItemView.html), and manages layout of label, editor, and validation label.
 
+## Linear layout support
+
+By default, the data form arranges the fields one-by-one. It is applicable for both label positions: left and top.
+
+When the label position is Left, the linear layout is shown as follows:
+
+![Arranging data form field in linear layout when label position as left in Xamarin.Android DataForm](SfDataForm_images/Linear_LabelLeft.jpg)
+
+When the label position is Top, the linear layout is shown as follows:
+
+![Arranging data form field in linear layout when label position as top in Xamarin.Android DataForm](SfDataForm_images/Linear_LabelTop.jpg)
+
 ## Grid layout support
 
 By default, the data form arranges one data field per row. It is possible to have more than one date fields per row by setting the [ColumnCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ColumnCount.html) property which provides grid like layout for the data form.
@@ -23,13 +35,15 @@ dataForm.ColumnCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
+N> Setting the `ColumnCount` property to SfDataForm does not arrange the data field in a group according to the column count. To set the column count for data fields in the data form group, refer to [loading different layout for data form group](https://help.syncfusion.com/xamarin-android/sfdataform/layout?cs-save-lang=1&cs-lang=csharp#loading-different-layout-for-group)
+
 When the label position is Left, the grid layout is shown as follows:
 
-![](SfDataForm_images/LabelLeft.png)
+![Arranging data form field in grid layout when label position as left in Xamarin.Android DataForm](SfDataForm_images/LabelLeft.png)
 
 When the label position is Top, the grid layout is shown as follows:
 
-![](SfDataForm_images/LabelTop1.png)
+![Arranging data form field in grid layout when label position as top in Xamarin.Android DataForm](SfDataForm_images/LabelTop1.png)
 
 ## Label visibility
 
@@ -73,7 +87,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/HideLabel.png)
+![Hiding label of data form field in Xamarin.Android DataForm](SfDataForm_images/HideLabel.png)
 
 ## Label position
 
@@ -87,7 +101,7 @@ dataForm.LabelPosition = LabelPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/LabelTop.png)
+![Arranging data form field when label position as top in Xamarin.Android DataForm](SfDataForm_images/LabelTop.png)
 
 ## Loading images for label
 
@@ -130,7 +144,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ImageLabel.png)
+![Setting image to data form field in Xamarin.Android DataForm](SfDataForm_images/LabelCustomized.png)
 
 ## Changing order of the DataFormItem
 
@@ -185,7 +199,7 @@ public class ContactsInfo
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/LabelOrder.png)
+![Ordering label of data form fields in Xamarin.Android DataForm](SfDataForm_images/LabelOrder.png)
 
 ### Using event
 
@@ -309,9 +323,9 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DataFormGroup1.png)
+![Assigning group to the data form fields through attribute in Xamarin.Android DataForm](SfDataForm_images/DataFormGroup1.png)
 
-![](SfDataForm_images/DataFormGroup2.png)
+![Assigning group to the data form fields through event in Xamarin.Android DataForm](SfDataForm_images/DataFormGroup2.png)
 
 ### Changing order of the DataFormGroupItem
 
@@ -384,7 +398,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/GroupItemOrder.png)
+![Setting order to the grouped data form fields in Xamarin.Android DataForm](SfDataForm_images/GroupItemOrder.png)
 
 ### Changing group name for group
 
@@ -418,7 +432,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DataFormGroup3.png)
+![Setting order to the grouped data form fields in Xamarin.Android DataForm](SfDataForm_images/DataFormGroup3.png)
 
 #### Loading linear and grid layout for the group
 
@@ -500,7 +514,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 In the following image, for the `Name` group, the grid layout is loaded and for the `Details` group, linear layout is loaded:
 
-![](SfDataForm_images/DataFormGroup3.png)
+![Setting ColumnCount to the data form group fields in Xamarin.Android DataForm](SfDataForm_images/DataFormGroup3.png)
 
 #### Setting different column count
 
@@ -524,7 +538,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DataFormGroup4.png)
+![Setting ColumnCount to different data form fields in Xamarin.Android DataForm](SfDataForm_images/DataFormGroup4.png)
 
 ### Loading group in collapsed state
 
@@ -548,7 +562,7 @@ You can set restrict the group being expanded or collapsed by setting the [Allow
 
 In this case, the group will be shown without expander.
 
-![](SfDataForm_images/AllowExpandCollapse.png)
+![Expand and collapse the data form fields in Xamarin.Android DataForm](SfDataForm_images/AllowExpandCollapse.png)
 
 ### Programmatically expand or collapse group
 
@@ -613,7 +627,7 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/LabelCustomization.png)
+![Customization of label through LayoutManager in Xamarin.Android DataForm](SfDataForm_images/LabelCustomization.png)
 
 ### Changing editor padding
 
@@ -678,7 +692,7 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
 
 Here, the LastName padding is customized.
 
-![](SfDataForm_images/ImageLabel1.png)
+![Editor left padding in Xamarin.Android](SfDataForm_images/EditorPadding.png)
 
 ## Label width customization
 
@@ -693,7 +707,7 @@ dataForm.EditorWidth = 2;
 
 Here, the available width is divided into proportionally for editor (2) and label (1).
 
-![](SfDataForm_images/LabelWidth.png)
+![Label width in Xamarin.Android](SfDataForm_images/LabelWidth.png)
 
 N> It is applicable only when `LabelPosition` is Left.
 
@@ -724,7 +738,7 @@ public string FirstName
 
 Here, `FirstName` field’s row height is increased.
 
-![](SfDataForm_images/RowSpan.png)
+![Layout row span in Xamarin.Android](SfDataForm_images/RowSpan.png)
 
 ### Column span
 
@@ -748,7 +762,7 @@ public string FirstName
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ColumnSpan.png)
+![Layout column span in Xamarin.Android](SfDataForm_images/ColumnSpan.png)
 
 ## Change DataFormItem visibility at runtime
 
