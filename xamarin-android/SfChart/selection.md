@@ -70,6 +70,8 @@ series2.Color = Color.Rgb(192, 216, 240);
 
 ![Series selection support in Xamarin.Android Chart](selection_images/seriesSelection.png)
 
+To set the series selection color,
+
 {% highlight c# %} 
 [C#]
 
