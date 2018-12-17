@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Android
+title: Getting Started with Syncfusion MaskedEdit control for Xamarin.Android
 description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Android platform 
 platform: Xamarin.Android
 control: SfMaskedEdit
