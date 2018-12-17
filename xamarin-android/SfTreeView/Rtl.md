@@ -28,10 +28,12 @@ In `AndroidManifest.xml` file, `<uses-sdk>` node sets the `android:minSdkVersion
 {% endhighlight %}
 {% endtabs %}
 
-Right-to-left localization can then be tested by changing the device/emulator to use the right-to-left language, or by enabling `Force RTL layout direction` in `Settings > Developer Options`.
-
-N> If your application targets Android `API level 16` or lower, the `android:supportsRtl` attribute is ignored, along with any `start` and `end` attribute values that appear in your applications layout files. In this case, RTL layout mirroring doesn't happen automatically in your application.
-
 N> If you need to override the content view of `TreeView` with your custom view, need to layout views in application based on `LayoutDirection` to respond for right-to-left localization.
 
 For more information regarding right-to-left localization you can refer [this](https://developer.android.com/training/basics/supporting-devices/languages#MirroringAddResources) link.
+
+## Device setup to support RTL
+
+Right-to-left localization can then be tested by changing the device/emulator to use the right-to-left language, or by enabling `Force RTL layout direction` in `Settings > Developer Options`.
+
+N> If your application targets Android `API level 16` or lower, the `android:supportsRtl` attribute is ignored, along with any `start` and `end` attribute values that appear in your applications layout files. In this case, RTL layout mirroring doesn't happen automatically in your application.
