@@ -14,7 +14,7 @@ documentation: ug
 
 ## Application setup to support RTL.
 
-In `AndroidManifest.xml` file, `<uses-sdk>` node sets the `android:minSdkVersion` attribute to `API 17 or higher on Android`, and the `<application>` node sets the `android:supportsRtl` attribute to `true` to your application to respond for right-to-left localizaton.
+In `AndroidManifest.xml` file, `<uses-sdk>` node sets the `android:minSdkVersion` attribute to `API 17 or higher on Android`, and the `<application>` node sets the `android:supportsRtl` attribute to `true` to your application to respond for right-to-left localization.
 
 {% tabs %}
 {% highlight xml %}
