@@ -251,7 +251,7 @@ You can download the example for level based styling demo from [here](http://www
 
 ## Right to left(RTL)
 
-TreeView supports right to left localization by setting [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to `Rtl`.TreeView also supports RTL when device layout direction is changed.
+TreeView supports the right-to-left localization by setting [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to `Rtl`.TreeView also supports RTL when device layout direction is changed.
 
 {% tabs %}
 {% highlight c# %}
@@ -262,7 +262,7 @@ treeView.LayoutDirection = LayoutDirection.Rtl;
 {% endhighlight %}
 {% endtabs %}
 
-N> If you need to customize the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, you need to layout views in application based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left localization.
+N> If you need to customize [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, layout the views in application based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left localization.
 
 {% tabs %}
 {% highlight c# %}
