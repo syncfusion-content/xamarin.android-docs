@@ -249,7 +249,7 @@ You can download the example for level based styling demo from [here](http://www
 
 ![Xamarin Android TreeView with styling](Images/TreeView_LevelStyle.png)
 
-## RTL support
+## RTL.
 
 The TreeView supports right-to-left localization when device localization changed to right to left or by setting [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to `LayoutDirection.Rtl`
 
