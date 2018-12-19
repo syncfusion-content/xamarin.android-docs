@@ -248,3 +248,11 @@ protected override void UpdateContentView(View view, TreeViewItemInfoBase itemIn
 You can download the example for level based styling demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-1430010482).
 
 ![Xamarin Android TreeView with styling](Images/TreeView_LevelStyle.png)
+
+## RTL support
+
+`TreeView` supports right-to-left localization when device localization changed to right to left or by setting [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to `LayoutDirection.Rtl`
+
+N> If you need to customize the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, you need to layout views in application based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left localization.
+
+![Xamarin Android TreeView with right-to-left localization](Images/TreeView_Rtl.png)
