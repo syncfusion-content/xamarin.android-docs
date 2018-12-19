@@ -251,8 +251,85 @@ You can download the example for level based styling demo from [here](http://www
 
 ## Right to left(RTL)
 
-The TreeView supports right-to-left localization when device localization changed to right to left or by setting [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to `LayoutDirection.Rtl`
+TreeView supports right to left localization by setting by setting [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to `Rtl`.TreeView also supports RTL when device layout direction is changed.
+
+{% tabs %}
+{% highlight c# %}
+
+SfTreeView treeView = new SfTreeView();
+treeView.LayoutDirection = LayoutDirection.Rtl;
+
+{% endhighlight %}
+{% endtabs %}
 
 N> If you need to customize the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, you need to layout views in application based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left localization.
 
-![Xamarin Android TreeView with right-to-left localization](Images/TreeView_Rtl.png)
+{% tabs %}
+{% highlight c# %}
+//customized view to support rtl
+public class NodeImageView : LinearLayout
+{
+    #region Fields
+
+    private ContentLabel label1;
+    private ImageViewExt imageIcon;
+    SfTreeView view;
+
+    #endregion
+
+    #region Constructor
+
+    public NodeImageView(Context context, SfTreeView treeView) : base(context)
+    {
+        view = treeView;
+        this.Orientation = Orientation.Horizontal;
+        label1 = new ContentLabel(context);
+        label1.Gravity = GravityFlags.CenterVertical;
+        label1.TextDirection = (view.LayoutDirection == Android.Views.LayoutDirection.Rtl)?TextDirection.Rtl:TextDirection.Ltr;
+        imageIcon = new ImageViewExt(context);
+        this.AddView(imageIcon);
+        this.AddView(label1);
+    }
+
+    #endregion
+
+    #region Methods
+
+    protected override void OnMeasure(int widthMeasureSpec, int heightMeasureSpec)
+    {
+        var density = Resources.DisplayMetrics.Density;
+        var measuredwidth = (int)(40 * density);
+        var measuredheight = (int)(45 * density);
+        var labelwidth = Math.Abs(widthMeasureSpec - measuredwidth);
+        this.label1.SetMinimumHeight(measuredheight);
+        this.label1.SetMinimumWidth(labelwidth);
+        this.imageIcon.SetMinimumHeight(measuredheight);
+        this.imageIcon.SetMinimumWidth(measuredwidth);
+        this.imageIcon.Measure(measuredwidth, measuredheight);
+        this.label1.Measure(labelwidth, measuredheight);
+        base.OnMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    protected override void OnLayout(bool changed, int l, int t, int r, int b)
+    {
+        var density = Resources.DisplayMetrics.Density;
+        var measuredwidth = (int)(40 * density);
+        var measuredheight = (int)(45 * density);
+        if (view.LayoutDirection == Android.Views.LayoutDirection.Rtl)
+        {
+            this.imageIcon.Layout(Width- measuredwidth, 0, Width, measuredheight);
+            this.label1.Layout(0, 0, Width- measuredwidth, measuredheight);
+        }
+        else
+        {
+            this.imageIcon.Layout(0, 0, measuredwidth, measuredheight);
+            this.label1.Layout(measuredwidth, 0, Width, measuredheight);
+        }
+    }
+
+    #endregion
+}
+
+N> If you need to customize the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, you need to layout views in application based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left localization.
+
+![Xamarin Android TreeView with right-to-left localization](Images/Right-To-Left-Xamarin-Android-TreeView.png)
