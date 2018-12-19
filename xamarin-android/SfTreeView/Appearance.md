@@ -330,6 +330,4 @@ public class NodeImageView : LinearLayout
     #endregion
 }
 
-N> If you need to customize the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, you need to layout views in application based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left localization.
-
 ![Xamarin Android TreeView with right-to-left localization](Images/Right-To-Left-Xamarin-Android-TreeView.png)
