@@ -285,7 +285,8 @@ public class NodeImageView : LinearLayout
         this.Orientation = Orientation.Horizontal;
         label1 = new ContentLabel(context);
         label1.Gravity = GravityFlags.CenterVertical;
-        label1.TextDirection = (view.LayoutDirection == Android.Views.LayoutDirection.Rtl)?TextDirection.Rtl:TextDirection.Ltr;
+        if(view.LayoutDirection == Android.Views.LayoutDirection.Rtl)
+            TextDirection.Rtl;
         imageIcon = new ImageViewExt(context);
         this.AddView(imageIcon);
         this.AddView(label1);
@@ -298,32 +299,32 @@ public class NodeImageView : LinearLayout
     protected override void OnMeasure(int widthMeasureSpec, int heightMeasureSpec)
     {
         var density = Resources.DisplayMetrics.Density;
-        var measuredwidth = (int)(40 * density);
-        var measuredheight = (int)(45 * density);
-        var labelwidth = Math.Abs(widthMeasureSpec - measuredwidth);
-        this.label1.SetMinimumHeight(measuredheight);
-        this.label1.SetMinimumWidth(labelwidth);
-        this.imageIcon.SetMinimumHeight(measuredheight);
-        this.imageIcon.SetMinimumWidth(measuredwidth);
-        this.imageIcon.Measure(measuredwidth, measuredheight);
-        this.label1.Measure(labelwidth, measuredheight);
+        var measuredWidth = (int)(40 * density);
+        var measuredHeight = (int)(45 * density);
+        var labelWidth = Math.Abs(widthMeasureSpec - measuredWidth);
+        this.label1.SetMinimumHeight(measuredHeight);
+        this.label1.SetMinimumWidth(labelWidth);
+        this.imageIcon.SetMinimumHeight(measuredHeight);
+        this.imageIcon.SetMinimumWidth(measuredWidth);
+        this.imageIcon.Measure(measuredWidth, measuredHeight);
+        this.label1.Measure(labelWidth, measuredHeight);
         base.OnMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
     protected override void OnLayout(bool changed, int l, int t, int r, int b)
     {
         var density = Resources.DisplayMetrics.Density;
-        var measuredwidth = (int)(40 * density);
-        var measuredheight = (int)(45 * density);
+        var measuredWidth = (int)(40 * density);
+        var measuredHeight = (int)(45 * density);
         if (view.LayoutDirection == Android.Views.LayoutDirection.Rtl)
         {
-            this.imageIcon.Layout(Width- measuredwidth, 0, Width, measuredheight);
-            this.label1.Layout(0, 0, Width- measuredwidth, measuredheight);
+            this.imageIcon.Layout(Width- measuredWidth, 0, Width, measuredHeight);
+            this.label1.Layout(0, 0, Width- measuredWidth, measuredHeight);
         }
         else
         {
-            this.imageIcon.Layout(0, 0, measuredwidth, measuredheight);
-            this.label1.Layout(measuredwidth, 0, Width, measuredheight);
+            this.imageIcon.Layout(0, 0, measuredWidth, measuredHeight);
+            this.label1.Layout(measuredWidth, 0, Width, measuredHeight);
         }
     }
 
