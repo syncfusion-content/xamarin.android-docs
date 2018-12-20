@@ -241,6 +241,23 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
+## MultiLine Text editor
+
+In the `MultilineText` editor, the [EditText](https://developer.android.com/reference/android/widget/EditText) is loaded.
+
+And `MultilineText` editor height will auto expand/reduce based on the line wraps in editor , which allowing text to be readable without scrolling the editor.
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.MultilineText)]
+public String Address { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading multi line text editor in Xamarin.Android DataForm](SfDataForm_images/Editors_MultiLine.jpg)
+
 ## Numeric editor
 
 In the numeric editor, the [SfNumericTextBox](https://help.syncfusion.com/xamarin-android/introduction/overview) is loaded.
@@ -266,6 +283,19 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 In the date editor, the [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfDatePicker.html) will be loaded.
 
+### Setting null value in date picker
+
+In data form date picker, by default DateTime data type default value will be displayed (1/01/0001). You can also set the null value by adding nullable DateTime data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor.
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.Date)]
+public DateTime? BirthDate { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Customizing format in date editor
 
 In the `SfDatePicker`, short date will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDateItem~Format.html) property in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDateItem.html).
@@ -285,7 +315,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![DateFormat](SfDataForm_images/DateEditorFormat.png)
+![Setting DateFormat to data form date item in Xamarin.Android DataForm](SfDataForm_images/DateEditorFormat.png)
 
 ### Setting MaximumDate and MinimumDate in date editor
 
@@ -307,7 +337,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Maximum date](SfDataForm_images/DateEditorMax.png)
+![Setting maximum date for data form date item in Xamarin.Android DataForm](SfDataForm_images/DateEditorMax.png)
 
 ## Drop down editor
 
@@ -375,7 +405,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![DropDown items](SfDataForm_images/DropDownItems.png)
+![Setting ItemsSource for drop down editor items in Xamarin.Android DataForm](SfDataForm_images/DropDownItems.png)
 
 You can also change the `ItemsSource` at runtime.
 
@@ -419,7 +449,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Picker items](SfDataForm_images/PickerTitle.png)
+![Changing title for data form picker item in Xamarin.Android DataForm](SfDataForm_images/PickerTitle.png)
 
 ### Customizing ItemsSource of SfPicker
 
@@ -560,7 +590,7 @@ public class Address
 
 You can download the entire source code of this demo for Xamarin.Forms from here [DataFormPickerEditor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataForm_AndroidPicker1618036890.zip)
 
-![Complex property](SfDataForm_images/ComplexPropertyPicker.png)
+![Loading complex type property values in picker in Xamarin.Android DataForm](SfDataForm_images/ComplexPropertyPicker.png)
 
 ## NumericUpDown editor
 
@@ -581,7 +611,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Spin button](SfDataForm_images/SpinButtonCenter.png)
+![Changing spin button alignment for data form item in Xamarin.Android DataForm](SfDataForm_images/SpinButtonCenter.png)
 
 ### Changing step value in numeric up down
 
@@ -671,7 +701,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![NumericTextBox culture](SfDataForm_images/NumericCulture.png)
+![Setting CultureInfo to data form numeric item in Xamarin.Android DataForm](SfDataForm_images/NumericCulture.png)
 
 #### SfNumericUpDown
 
@@ -690,7 +720,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![NumericUpDown culture](SfDataForm_images/NumericUpDownCulture.png)
+![Setting CultureInfo to data form numeric up down item in Xamarin.Android DataForm](SfDataForm_images/NumericUpDownCulture.png)
 
 ## Password editor
 
@@ -715,4 +745,4 @@ public string Password
 {% endhighlight %}
 {% endtabs %}
 
-![Password editor](SfDataForm_images/DataFormPasswordEditor.png)
+![Loading password editor in Xamarin.Android DataForm](SfDataForm_images/DataFormPasswordEditor.png)
