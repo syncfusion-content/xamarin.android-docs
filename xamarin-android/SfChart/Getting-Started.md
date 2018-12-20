@@ -29,6 +29,8 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 You can add [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) to the Xamarin.Android designer from toolbox and customize some basic properties from the property window.
 
+![SfChart Designer support in Xamarin.Android](Getting-Started_images/designer.gif)
+
 You can get the chart instance from axml page in MainActivity using the following code.
 
 {% highlight C# %}
