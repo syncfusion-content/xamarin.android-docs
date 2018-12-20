@@ -49,7 +49,7 @@ You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_f
 
 ![CircularGauge Designer](getting-started_images/designer.gif)
 
-In MainActivity, you can access the circular gauge instannce defined in axml page using the following code.
+In MainActivity, you can access the circular gauge instance defined in axml page using the following code.
 
 {% tabs %}
 

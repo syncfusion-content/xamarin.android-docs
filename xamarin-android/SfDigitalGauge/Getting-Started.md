@@ -51,7 +51,7 @@ You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_fi
 
 ![DigitalGauge Designer](getting-started_images/designer.gif)
 
-In MainActivity, you can access the digital gauge instannce defined in axml page using the following code.
+In MainActivity, you can access the digital gauge instance defined in axml page using the following code.
 
 {% tabs %}
 

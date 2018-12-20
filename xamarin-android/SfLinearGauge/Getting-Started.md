@@ -40,7 +40,7 @@ You can initialize the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_fil
 
 ![LinearGauge Designer](getting-started_images/designer.gif)
 
-In MainActivity, you can access the linear gauge instannce defined in axml page using the following code.
+In MainActivity, you can access the linear gauge instance defined in axml page using the following code.
 
 {% tabs %}
 
