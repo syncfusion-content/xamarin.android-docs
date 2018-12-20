@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion LinearGauge control for Xamarin.Android
+title: Syncfusion SfLinearGauge control for Xamarin.Android
 description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.Android platform
 platform: Xamarin.Android
 control: LinearGauge
@@ -33,6 +33,33 @@ You can initialize the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_fil
         }
 
 {% endhighlight %}
+
+## Initialize gauge in axml:
+
+[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the linear gauge in designer.
+
+![LinearGauge Designer](getting-started_images/designer.gif)
+
+You can get the linear gauge instance from axml page in MainActivity using the following code.
+
+{% tabs %}
+
+{% highlight c# %}
+
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.activity_main);
+
+            SfLinearGauge linearGauge = FindViewById<SfLinearGauge>(Resource.Id.sfLinearGauge1);
+
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can create linear gauge using code behind also. The following steps help to add linear gauge using code behind.
 
 ## Adding header
 
@@ -127,7 +154,7 @@ You can categorize the scale values using the start and end values properties in
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started.png)
+![LinearGauge Getting Started](getting-started_images/getting-started.png)
 
 
 

@@ -45,6 +45,32 @@ You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_fi
 
 {% endhighlight %}
 
+## Initialize gauge in axml:
+
+[`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digtal gauge in designer.
+
+![DigitalGauge Designer](getting-started_images/designer.gif)
+
+You can get the digital gauge instance from axml page in MainActivity using the following code.
+
+{% tabs %}
+
+{% highlight c# %}
+
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    base.OnCreate(savedInstanceState);
+    SetContentView(Resource.Layout.Main);
+
+    SfDigitalGauge digitalGauge = FindViewById<SfDigitalGauge>(Resource.Id.sfDigitalGauge1);
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can create digital gauge using code behind also. The following steps help to add digital gauge using code behind.
+
 ## Setting value for digital gauge
 
 The [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) control provides options to display special characters or values using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~Value.html) property.
@@ -165,7 +191,7 @@ namespace Gauge_GettingStarted
 
 The following screenshot illustrates the result of the previous codes.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![DigitalGauge Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted325239782).
