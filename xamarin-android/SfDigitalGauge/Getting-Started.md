@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion DigitalGauge control for Xamarin.Android
+title: Syncfusion SfDigitalGauge control for Xamarin.Android
 description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Android platform
 platform: Xamarin.Android
 control: DigitalGauge
@@ -47,7 +47,7 @@ You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_fi
 
 ## Initialize gauge in axml:
 
-[`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digtal gauge in designer.
+[`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digital gauge in designer.
 
 ![DigitalGauge Designer](getting-started_images/designer.gif)
 
