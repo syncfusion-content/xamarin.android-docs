@@ -47,11 +47,11 @@ You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_fi
 
 ## Initialize gauge in axml:
 
-[`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digital gauge in designer.
+[`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digital gauge in designer.
 
 ![DigitalGauge Designer](getting-started_images/designer.gif)
 
-You can get the digital gauge instance from axml page in MainActivity using the following code.
+In MainActivity, you can access the digital gauge instannce defined in axml page using the following code.
 
 {% tabs %}
 

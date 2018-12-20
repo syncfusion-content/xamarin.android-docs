@@ -45,11 +45,11 @@ You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_f
 
 ## Initialize gauge in axml:
 
-[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the circular gauge in designer.
+[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the circular gauge in designer.
 
 ![CircularGauge Designer](getting-started_images/designer.gif)
 
-You can get the circular gauge instance from axml page in MainActivity using the following code.
+In MainActivity, you can access the circular gauge instannce defined in axml page using the following code.
 
 {% tabs %}
 
