@@ -296,7 +296,7 @@ public DateTime? BirthDate { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-![Setting nullable date to data form date item in Xamarin.Android DataForm](SfDataForm_images/DateTime_Nullable.png)
+![Setting nullable date to data form date item in Xamarin.Android DataForm](SfDataForm_images/DateTime_Nullable.jpg)
 
 ### Customizing format in date editor
 
