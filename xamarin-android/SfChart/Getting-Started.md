@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Android Chart
+title: Getting Started for Essential Xamarin.Android Chart | Syncfusion
 description: getting started
 platform: Xamarin.Android
 control: SfChart
@@ -27,9 +27,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Initialize Chart
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the chart in designer.
-
-![SfChart Designer support in Xamarin.Android](Getting-Started_images/designer.gif)
+You can add [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) to the Xamarin.Android designer from toolbox and customize some basic properties from the property window.
 
 You can get the chart instance from axml page in MainActivity using the following code.
 
@@ -73,44 +71,11 @@ Run the project and check if you get following output to make sure you have conf
 
 ![Adding Xamarin.Android Chart reference](Getting-Started_images/img1.png)
 
-## Initialize view model
-
-Now, let us define a simple data model that represents a data point in [`SfChart`.](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html)
-
-{% highlight c# %}
-public class Person   
-{   
-    public string Name { get; set; }
-
-    public double Height { get; set; }
-}
-{% endhighlight %} 
-
-Next, create a view model class and initialize a list of `Person` objects as shown below,
-
-{% highlight c# %}
-public class ViewModel  
-{
-      public ObservableCollection<Person> Data { get; set; }      
-
-      public ViewModel()       
-      {
-            Data = new ObservableCollection<Person>()
-            {
-                new Person { Name = "David", Height = 180 },
-                new Person { Name = "Michael", Height = 170 },
-                new Person { Name = "Steve", Height = 160 },
-                new Person { Name = "Joel", Height = 182 }
-            }; 
-       }
- }
-{% endhighlight %} 
-
 ## Populate Chart with data
 
-As we are going to visualize the comparison of heights in the data model, add [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ColumnSeries.html) to [`SfChart.Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) property, and then set the Data property of the above `ViewModel` to the [`ColumnSeries.ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~ItemsSource.html) property as shown below.
+To visualize the comparison of person heights in chart data, create an instance of [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ColumnSeries.html), add it to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html), and then set the actual `Data` collection to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~ItemsSource.html) property of [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) as demonstrated in the following code snippet.
 
-N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.XyDataSeries~YBindingPath.html) properties, so that [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) would fetch values from the respective properties in the data model to plot the series.
+N> You need to get the `Name` and `Height` values in `Data` collection to the [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ColumnSeries.html) by setting [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.XyDataSeries~YBindingPath.html) with the respective field names to plot the series. 
 
 {% highlight C# %}
 //Initializing primary axis
@@ -127,12 +92,18 @@ secondaryAxis.Title.Text = "Height (in cm)";
 
 chart.SecondaryAxis = secondaryAxis;
 
+ObservableCollection<ChartData> Data = new ObservableCollection<ChartData>()
+{
+    new ChartData { Name = "David", Height = 180 },
+    new ChartData { Name = "Michael", Height = 170 },
+    new ChartData { Name = "Steve", Height = 160 },
+    new ChartData { Name = "Joel", Height = 182 }
+};
+
 //Initializing column series
 ColumnSeries series = new ColumnSeries();
 
-ViewModel viewModel = new ViewModel();
-
-series.ItemsSource = viewModel.Data;
+series.ItemsSource = Data;
 
 series.XBindingPath = "Name";
 
@@ -140,6 +111,15 @@ series.YBindingPath = "Height";
 
 chart.Series.Add(series);
 {% endhighlight %}
+
+{% highlight C# %}
+public class ChartData   
+{   
+    public string Name { get; set; }
+
+    public double Height { get; set; }
+}
+{% endhighlight %} 
 
 ## Add Title
 
@@ -216,9 +196,6 @@ namespace Chart_GettingStarted
             chart.Title.Text = "Chart";
             chart.SetBackgroundColor(Color.White);
 	
-			//Initializing view model
-			ViewModel model = new ViewModel();
-
             //Initializing primary axis
             CategoryAxis primaryAxis = new CategoryAxis();
             primaryAxis.Title.Text = "Name";
@@ -228,6 +205,14 @@ namespace Chart_GettingStarted
             NumericalAxis secondaryAxis = new NumericalAxis();
             secondaryAxis.Title.Text = "Height (in cm)";
             chart.SecondaryAxis = secondaryAxis;
+            
+            ObservableCollection<ChartData> Data = new ObservableCollection<ChartData>()
+            {
+                new ChartData { Name = "David", Height = 180 },
+                new ChartData { Name = "Michael", Height = 170 },
+                new ChartData { Name = "Steve", Height = 160 },
+                new ChartData { Name = "Joel", Height = 182 }
+            };
 
             //Initializing column series
             ColumnSeries series = new ColumnSeries();
