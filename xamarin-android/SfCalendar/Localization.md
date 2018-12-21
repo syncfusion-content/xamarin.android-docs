@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfCalendar | Xamarin.Android | Syncfusion
-description: How to Localize the static text of Calendar control.
+description: How to localize the static text in Calendar control
 platform: Xamarin.Android
 control: Calendar
 documentation: ug
@@ -27,7 +27,7 @@ sfCalendar.Locale = new Java.Util.Locale("zh,CN");
 
 ![Localization support in Xamarin.Android Sfcalendar](images/xamarin.android-calendar-localization.png)     
 
-## Change custom texts in the control.
+## Change custom texts in the calendar control
 
 You can localize the custom strings used in the calendar control. You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
 
