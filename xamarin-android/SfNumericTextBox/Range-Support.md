@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Range Support
 
-Restrict the Values within a specific range by setting the Maximum and Minimum property values.
+Restrict the values within a specific range by setting the Maximum and Minimum property values.
 
 {% tabs %}
 	
@@ -25,5 +25,3 @@ Restrict the Values within a specific range by setting the Maximum and Minimum p
 {% endtabs %}
 
 N> Default Value of `Maximum` and `Minimum` is "null".
-
-![SfNumericTextBox RangeSupport](images/RangeSupport.gif)
