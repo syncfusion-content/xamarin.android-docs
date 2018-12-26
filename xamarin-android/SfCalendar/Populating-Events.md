@@ -88,7 +88,31 @@ Assign the created collection to the `DataSource` property of SfCalendar
 
 {% endhighlight %}
 
-![](images/inline_events.png)                                        
+![](images/inline_events.png)      
+
+
+## Inline / Agenda View Appearance
+
+You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~InlineItemLoaded_EV.html) Event using in SfCalendar, using View of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineItemLoadedEventArgs.html) argument. You can get the details of Appointment in the Appointment argument.
+
+{% highlight c# %}
+
+	calendar.InlineItemLoaded += Calendar_InlineItemLoaded; 
+
+	.....
+
+	void Calendar_InlineItemLoaded(object sender, InlineItemLoadedEventArgs e)
+	{
+		var appointment = e.CalendarInlineEvent;
+		Button button = new Button(this);
+		button.Text = "Appointment :" + appointment.Subject;
+		button.SetBackgroundColor(Color.Blue);
+		button.SetTextColor(Color.White);
+		e.View = button;
+	} 
+
+{% endhighlight %}
+                                  
 
 
 
