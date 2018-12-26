@@ -13,12 +13,12 @@ SfCalendar control has an built-in capability to display the events based on the
 
 The default UI of the inline view with events will be like list of events with a Gray background
 
-![](images/inline_events.png)                                        
+![Calendar Inline Events](images/inline_events.png)                                        
 
 
 Default UI of the inline view without events will be hinting No Events available on a particular day.
 
-![](images/no_events.png)                                        
+![Calendar No Event](images/no_events.png)                                        
 
 
 Inline event support can be toggled on / off with `ShowEventsInline` property.
@@ -88,7 +88,7 @@ Assign the created collection to the `DataSource` property of SfCalendar
 
 {% endhighlight %}
 
-![](images/inline_events.png)      
+![Calendar Inline Events](images/inline_events.png)      
 
 
 ## Inline / Agenda View Appearance
