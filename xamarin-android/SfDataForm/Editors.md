@@ -241,7 +241,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-## MultiLine Text editor
+## Multiline Text editor
 
 In the `MultilineText` editor, the [EditText](https://developer.android.com/reference/android/widget/EditText) is loaded.
 
@@ -340,6 +340,24 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ![Setting maximum date for data form date item in Xamarin.Android DataForm](SfDataForm_images/DateEditorMax.png)
+
+## CheckBox editor
+
+In `CheckBox` editor, the [CheckBox]( https://developer.android.com/reference/android/widget/CheckBox) control is loaded.By default, for `bool` data type property, `CheckBox` editor will be loaded in data form.
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(Name = "Is Billable")]
+ public bool IsBillable { get; set; } = true;
+
+[Display(Name = "Registered Member")]
+public bool RegisteredMember { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading check box editor in Xamarin.Android DataForm](SfDataForm_images/CheckBoxEditor.jpg)
 
 ## Drop down editor
 
