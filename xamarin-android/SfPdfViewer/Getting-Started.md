@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started for Essential Xamarin.Android PDF viewer
+title:  Getting Started for Essential Xamarin.Android PDF viewer | Syncfusion
 description: getting started
 platform: Xamarin.Android
 control: SfPdfViewer
@@ -194,7 +194,7 @@ private void PageNumberEntry_KeyPress(object sender, Android.Views.View.KeyEvent
 {% endhighlight %}
 {% endtabs %}
 
-N>**When a page number which is not in the bounds (1 – page count) is provided as an input to the GoToPage method, no action will be performed.
+N>When a page number which is not in the bounds (1 – page count) is provided as an input to the GoToPage method, no action will be performed.
 
 ## How to get the total page number?
 
@@ -352,7 +352,7 @@ private void PageDownButton_Click(object sender, System.EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N>**When the current page is the first page, GoToPreviousPage method will not have any effect. Similarly, when in last page, GoToNextPage method will not have any effect.
+N>When the current page is the first page, GoToPreviousPage method will not have any effect. Similarly, when in last page, GoToNextPage method will not have any effect.
 
 ## Designing a toolbar
 
@@ -521,7 +521,7 @@ namespace GettingStartedDroid
 
 The final output will look as like in the below screenshot.
 
-![](pdfviewer_images/gettingstarted.png)
+![SfPdfViewer](pdfviewer_images/gettingstarted.png)
 
 This demo can be downloaded from the below link.
 
