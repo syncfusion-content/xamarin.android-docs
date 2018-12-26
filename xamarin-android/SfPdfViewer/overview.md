@@ -7,7 +7,7 @@ control: SfPdfViewer
 
 PDF Viewer for Xamarin.Android allows the user to view PDF documents within your Xamarin.Android application. 
 
-![](pdfviewer_images/pdfviewer.png)
+![SfPdfViewer](pdfviewer_images/pdfviewer.png)
 
 **Key features:**
 
@@ -19,5 +19,5 @@ The following list shows the key features available in PDF Viewer control.
 * Scroll, pan, zoom in and out
 * Page navigation
 
-N>**PDF Viewer for Xamarin.Android will be supported from Android 5.0 (API Level 21) onwards.
+N>PDF Viewer for Xamarin.Android will be supported from Android 5.0 (API Level 21) onwards.
 
