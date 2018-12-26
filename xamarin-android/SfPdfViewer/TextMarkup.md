@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with text markup annotation
+title:  Working with text markup annotation | Syncfusion
 description: Working with text markup annotation
 platform: Xamarin.Android
 control: SfPdfViewer
@@ -308,7 +308,7 @@ private void AnnotationButton_Click(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N>**Setting this property will not edit the color of annotations that are included in prior.
+N>Setting this property will not edit the color of annotations that are included in prior.
 
 ### After inclusion of the annotation
 
@@ -515,4 +515,4 @@ private void SaveButton_Click(object sender, EventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
-N>*The CanUndo property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 
+N>The CanUndo property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 
