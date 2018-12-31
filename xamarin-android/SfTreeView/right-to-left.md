@@ -22,7 +22,7 @@ treeView.LayoutDirection = LayoutDirection.Rtl;
 {% endhighlight %}
 {% endtabs %}
 
-N> If you need to customize [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, layout the views in application based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left changes.
+N> If you need to customize [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, layout the views in based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left changes.
 
 {% tabs %}
 {% highlight c# %}
