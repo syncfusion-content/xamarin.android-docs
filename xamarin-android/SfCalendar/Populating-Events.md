@@ -13,12 +13,12 @@ SfCalendar control has an built-in capability to display the events based on the
 
 The default UI of the inline view with events will be like list of events with a Gray background
 
-![](images/inline_events.png)                                        
+![Calendar Inline Events](images/inline_events.png)                                        
 
 
 Default UI of the inline view without events will be hinting No Events available on a particular day.
 
-![](images/no_events.png)                                        
+![Calendar No Event](images/no_events.png)                                        
 
 
 Inline event support can be toggled on / off with `ShowEventsInline` property.
@@ -88,7 +88,43 @@ Assign the created collection to the `DataSource` property of SfCalendar
 
 {% endhighlight %}
 
-![](images/inline_events.png)                                        
+![Calendar Inline Events](images/inline_events.png)      
 
+
+## Customize inline/agenda view appearance
+
+You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~InlineItemLoaded_EV.html) event using in `SfCalendar` and you can get the details of appointment from the `CalendarInlineEvent` property, the custom view can be set to `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineItemLoadedEventArgs.html) argument.
+
+{% highlight c# %}
+
+	calendar.InlineItemLoaded += Calendar_InlineItemLoaded; 
+
+	.....
+
+	void Calendar_InlineItemLoaded(object sender, InlineItemLoadedEventArgs e)
+	{
+		var appointment = e.CalendarInlineEvent;
+		Button button = new Button(this);
+		button.Text = "Appointment :" + appointment.Subject;
+		button.SetBackgroundColor(Color.Blue);
+		button.SetTextColor(Color.White);
+		e.View = button;
+	} 
+
+{% endhighlight %}
+                                  
+## Getting inline/agenda view appointment details
+
+Using `InlineEvent` property from the `InlineItemTappedEventArgs` argument of `InlineItemTapped` event, you can get the month inline/agenda appointments details while tapping the specific appointment in inline/agenda view.
+
+{% highlight c# %}
+calendar.InlineItemTapped+= Calendar_InlineItemTapped; 
+
+private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs e)
+    {
+        var appointment = e.InlineEvent;
+        Toast.MakeText(this, appointment.Subject + " * " + appointment.StartTime.Time.ToString(), ToastLength.Long).Show(); 
+    } 
+{% endhighlight %}
 
 
