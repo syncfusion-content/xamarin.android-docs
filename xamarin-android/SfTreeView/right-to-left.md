@@ -9,9 +9,9 @@ documentation: ug
 
 # Right to left(RTL)
 
-TreeView supports the right-to-left localization by setting [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to `Rtl`.TreeView also supports RTL when device layout direction is changed.
+TreeView supports the right-to-left by setting [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to `Rtl`.TreeView also supports right-to-left when device layout direction is changed.
 
-N> Specific platform setup is required to enable right-to-left localization. For platform settings you can refer [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/right-to-left#platform-setup).
+N> Specific applicaton setup is required to enable right-to-left. For android settings you can refer [here](https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/localization#right-to-left-rtl-languages).
 
 {% tabs %}
 {% highlight c# %}
@@ -22,22 +22,16 @@ treeView.LayoutDirection = LayoutDirection.Rtl;
 {% endhighlight %}
 {% endtabs %}
 
-N> If you need to customize [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, layout the views in application based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left localization.
+N> If you need to customize [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Adapter.html) with your custom views, layout the views in application based on [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to respond for right-to-left changes.
 
 {% tabs %}
 {% highlight c# %}
 //customized view to support rtl
 public class NodeImageView : LinearLayout
 {
-    #region Fields
-
     private ContentLabel label1;
     private ImageViewExt imageIcon;
     SfTreeView view;
-
-    #endregion
-
-    #region Constructor
 
     public NodeImageView(Context context, SfTreeView treeView) : base(context)
     {
@@ -51,10 +45,6 @@ public class NodeImageView : LinearLayout
         this.AddView(imageIcon);
         this.AddView(label1);
     }
-
-    #endregion
-
-    #region Methods
 
     protected override void OnMeasure(int widthMeasureSpec, int heightMeasureSpec)
     {
@@ -87,8 +77,6 @@ public class NodeImageView : LinearLayout
             this.label1.Layout(measuredWidth, 0, Width, measuredHeight);
         }
     }
-
-    #endregion
 }
 
 ![Xamarin Android TreeView with right-to-left localization](Images/Right-To-Left-Xamarin-Android-TreeView.png)
