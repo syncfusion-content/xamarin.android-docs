@@ -40,7 +40,7 @@ public class NodeImageView : LinearLayout
         label1 = new ContentLabel(context);
         label1.Gravity = GravityFlags.CenterVertical;
         if(view.LayoutDirection == Android.Views.LayoutDirection.Rtl)
-            TextDirection.Rtl;
+            label1.TextDirection = TextDirection.Rtl;
         imageIcon = new ImageViewExt(context);
         this.AddView(imageIcon);
         this.AddView(label1);
