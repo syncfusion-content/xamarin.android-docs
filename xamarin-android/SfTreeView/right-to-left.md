@@ -11,7 +11,7 @@ documentation: ug
 
 TreeView supports the right-to-left by setting [LayoutDirection](https://developer.xamarin.com/api/type/Android.Views.LayoutDirection/) to `Rtl`.TreeView also supports right-to-left when device layout direction is changed.
 
-N> Specific applicaton setup is required to enable right-to-left. For android settings you can refer [here](https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/localization#right-to-left-rtl-languages).
+N> Specific setup is required to enable right-to-left. For android settings you can refer [here](https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/localization#right-to-left-rtl-languages).
 
 {% tabs %}
 {% highlight c# %}
@@ -78,5 +78,7 @@ public class NodeImageView : LinearLayout
         }
     }
 }
+
+You can download the entire [source code](https://github.com/SyncfusionExamples/treeview-xamarin-right-to-left) here.
 
 ![Xamarin Android TreeView with right-to-left localization](Images/Right-To-Left-Xamarin-Android-TreeView.png)
