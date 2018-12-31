@@ -256,7 +256,7 @@ public String Address { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-![Loading multi line text editor in Xamarin.Android DataForm](SfDataForm_images/Editors_MultiLine.jpg)
+![Loading multi line text editor in Xamarin.Android DataForm](SfDataForm_images/Editors_MultiLine.png)
 
 ## Numeric editor
 
@@ -296,7 +296,7 @@ public DateTime? BirthDate { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-![Setting nullable date to data form date item in Xamarin.Android DataForm](SfDataForm_images/DateTime_Nullable.jpg)
+![Setting nullable date to data form date item in Xamarin.Android DataForm](SfDataForm_images/DateTime_Nullable.png)
 
 ### Customizing format in date editor
 
@@ -357,7 +357,7 @@ public bool RegisteredMember { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-![Loading check box editor in Xamarin.Android DataForm](SfDataForm_images/CheckBoxEditor.jpg)
+![Loading check box editor in Xamarin.Android DataForm](SfDataForm_images/CheckBoxEditor.png)
 
 ## Drop down editor
 
