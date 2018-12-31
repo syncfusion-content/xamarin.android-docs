@@ -115,8 +115,7 @@ You can customize the inline item view by [OnInlineItemLoaded](https://help.sync
                                   
 ## Getting inline/agenda view appointment details
 
-Using  `InlineEvent` argument from `InlineItemTappedEventArgs` 
-of `InlineItemTapped`  event, you can get the month inline/agenda appointments details while tapping the specific appointment in inline/agenda view.
+Using `InlineEvent` property from the `InlineItemTappedEventArgs` argument of `InlineItemTapped` event, you can get the month inline/agenda appointments details while tapping the specific appointment in inline/agenda view.
 
 {% highlight c# %}
 calendar.InlineItemTapped+= Calendar_InlineItemTapped; 
