@@ -93,7 +93,7 @@ Assign the created collection to the `DataSource` property of SfCalendar
 
 ## Customize inline/agenda view appearance
 
-You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~InlineItemLoaded_EV.html) event using in `SfCalendar`. Using `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineItemLoadedEventArgs.html) argument. You can get the details of appointment from the `CalendarInlineEvent` argument.
+You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~InlineItemLoaded_EV.html) event using in `SfCalendar` and you can get the details of appointment from the `CalendarInlineEvent` property, the custom view can be set to `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineItemLoadedEventArgs.html) argument.
 
 {% highlight c# %}
 
