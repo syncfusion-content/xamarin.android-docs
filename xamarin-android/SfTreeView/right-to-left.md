@@ -78,6 +78,8 @@ public class NodeImageView : LinearLayout
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 You can download the entire [source code](https://github.com/SyncfusionExamples/treeview-xamarin-right-to-left) here.
 
