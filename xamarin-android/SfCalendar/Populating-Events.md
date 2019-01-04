@@ -112,6 +112,14 @@ You can customize the inline item view by [OnInlineItemLoaded](https://help.sync
 	} 
 
 {% endhighlight %}
+
+Inline view mode
+
+![Calendar Inline Events](images/Xamarin.Android-Calendar-Inlineitemcustomview.png) 
+
+Agenda view mode
+
+![Calendar Inline Events](images/Xamarin.Android-Calendar-Agendaitemcustomview.png) 
                                   
 ## Getting inline/agenda view appointment details
 
@@ -127,4 +135,11 @@ private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs 
     } 
 {% endhighlight %}
 
+Inline view mode
+
+![Calendar Inline Events](images/Xamarin.Android-Calendar-Inlineitemtapped.png) 
+
+Agenda view mode
+
+![Calendar Inline Events](images/Xamarin.Android-Calendar-Agendaitemtapped.png) 
 
