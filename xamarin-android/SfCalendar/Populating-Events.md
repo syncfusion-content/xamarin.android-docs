@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Events
 
-[SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) control has an built-in capability to display the events based on the calendar events collection provided to [DataSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~DataSource.html) property. For events to be listed for a particular day, enable the inline feature in month view cell.
+`SfCalendar` control has an built-in capability to display the events based on the calendar events collection provided to [DataSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~DataSource.html) property. For events to be listed for a particular day, enable the inline feature in month view cell.
 
 The default UI of the inline view with events will be like list of events with a Gray background
 
@@ -34,7 +34,7 @@ N> The Inline function will be available only in MonthView with Single selection
 
 ## Adding events using Collection
 
-Calendar Events collection can be provided to [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) using the following steps. [CalendarEventCollection](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineEventToggledEventArgs~CalendarEventCollection.html) is a class, which holds the details about the events to be rendered in `SfCalendar`. 
+Calendar Events collection can be provided to `SfCalendar` using the following steps. [CalendarEventCollection](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineEventToggledEventArgs~CalendarEventCollection.html) is a class, which holds the details about the events to be rendered in `SfCalendar`. 
 
 [CalendarInlineEvent](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineAppointmentTappedEventArgs~CalendarInlineEvent.html) has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.CalendarInlineEvent~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.CalendarInlineEvent~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.CalendarInlineEvent~Subject.html) and [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.CalendarInlineEvent~Color.html)
 

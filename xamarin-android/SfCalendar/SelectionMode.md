@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Selection
 
-Dates can be selected by making a touch on month view cells. The default [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~SelectionMode.html) is Single which allows user to select one date at a time. [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) provides support to select dates in three modes such as single, multiple and range selection.
+Dates can be selected by making a touch on month view cells. The default [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~SelectionMode.html) is Single which allows user to select one date at a time. `SfCalendar` provides support to select dates in three modes such as single, multiple and range selection.
 
 * `SingleSelection` – A single date can be selected in a month view which can be equipped when user needs to select one date at a time / to view events.
 
@@ -27,6 +27,6 @@ sfCalendar.SelectionMode = SelectionMode.MultiSelection;
 
 {% endhighlight %}
 
-N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) control.
+N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of `SfCalendar` control.
 
 ![Multiselection Support in Xamarin.Android Calendar](images/xamarin.android-calendar-Selection.png)

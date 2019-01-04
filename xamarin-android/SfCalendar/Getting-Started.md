@@ -73,7 +73,7 @@ public class MainActivity : Activity
 
 ### Setting blackout dates
 
-In [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html), `BlackoutDates` refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
+In `SfCalendar`, `BlackoutDates` refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
 
 For instance add all the holiday dates to blackout dates property.
 
@@ -117,7 +117,7 @@ public class MainActivity : Activity
 
 ### Restricting Dates with Minimum and Maximum range
 
-Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) control. It is applicable in all the calendar views.
+Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in `SfCalendar` control. It is applicable in all the calendar views.
 
 {% highlight c# %}
 

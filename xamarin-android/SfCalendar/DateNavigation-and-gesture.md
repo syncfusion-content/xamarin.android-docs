@@ -11,7 +11,7 @@ documentation: ug
 
 ## Forward
 
-By default, the date can be navigated to next view using touch gesture and swiping the control in right to left direction. The view can also be changed programmatically using [forward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Forward.html) method available in [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html). It will move to next month, if the view mode is month or it will move to next Year,if the view mode is year.
+By default, the date can be navigated to next view using touch gesture and swiping the control in right to left direction. The view can also be changed programmatically using [forward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Forward.html) method available in `SfCalendar`. It will move to next month, if the view mode is month or it will move to next Year,if the view mode is year.
 
 {% highlight c# %}
 
@@ -23,7 +23,7 @@ N> It can be navigated until it reaches the MaxDate
 
 ## Backward
 
-By default, the date can be navigated to previous view using touch gesture and swiping the control in left to right direction. The view also can be changed programmatically using [backward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Backward.html) method available in [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html). It will move to previous month, if the view mode is month or it will move to previous year, if view mode is year view.
+By default, the date can be navigated to previous view using touch gesture and swiping the control in left to right direction. The view also can be changed programmatically using [backward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Backward.html) method available in `SfCalendar`. It will move to previous month, if the view mode is month or it will move to previous year, if view mode is year view.
 
 {% highlight c# %}
 
@@ -35,7 +35,7 @@ N> It can be navigated until it reaches the MinDate.
 
 ## Move to Date 
 
-Visible dates can be moved to specific date using [MoveToDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MoveToDate.html) property available in SfCalendar. It will move to any specific month if the view mode is month view or move to year if it is a year view.
+Visible dates can be moved to specific date using [MoveToDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MoveToDate.html) property available in `SfCalendar`. It will move to any specific month if the view mode is month view or move to year if it is a year view.
 
 {% highlight c# %}
 
@@ -58,7 +58,7 @@ N>  The specified date should lie between MinDate and MaxDate, if the specified 
 
 ## Toggle  navigation
 
-By default, calendar views can be moved backwards and forwards using touch swipe gesture. This navigation, using touch gesture can be enabled and disabled using [NavigationEnable](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~NavigationEnable.html) property available in [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) control. By default, `NavigationEnable` property is enabled.
+By default, calendar views can be moved backwards and forwards using touch swipe gesture. This navigation, using touch gesture can be enabled and disabled using [NavigationEnable](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~NavigationEnable.html) property available in `SfCalendar` control. By default, `NavigationEnable` property is enabled.
 
 {% highlight c# %}
 

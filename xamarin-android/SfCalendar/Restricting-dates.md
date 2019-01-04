@@ -11,7 +11,7 @@ documentation: ug
 
 ## Min Max dates
 
-Visible dates can be restricted between certain range of dates using [MinDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MaxDate.html) properties available in [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) control. It is applicable in all the calendar views.
+Visible dates can be restricted between certain range of dates using [MinDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MaxDate.html) properties available in `SfCalendar` control. It is applicable in all the calendar views.
 
 The inline feature in month view will work only within the min max date range.
 
@@ -40,7 +40,7 @@ SetContentView(sfCalendar);
 
 ## Blackout dates
 
-In [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html), blackout dates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes. 
+In `SfCalendar`, blackout dates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes. 
 
 The blackout dates can be achieved in two ways. 
 

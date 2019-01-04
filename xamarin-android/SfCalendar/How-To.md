@@ -90,11 +90,11 @@ sfCalendar.SelectionChanged += (object sender, SelectionChangedEventArgs e) =>
 
 ## How to create Calendar control in .axml Layout file.?
 
-We can create a [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) control in .axml file and accessing its property in .cs file.
+We can create a `SfCalendar` control in .axml file and accessing its property in .cs file.
 
 ### Create a control in .axml file
 
-Reference the [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) control view using the fully qualified name like `com.syncfusion.calendar.SfCalendar`.
+Reference the `SfCalendar` control view using the fully qualified name like `com.syncfusion.calendar.SfCalendar`.
 
 {% highlight xaml %}
 
