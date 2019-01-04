@@ -66,16 +66,3 @@ SfCalendar sfCalendar = new SfCalendar(this);
 sfCalendar.NavigationEnable=false;
 
 {% endhighlight %}
-
-## Transition modes
-
-Dates can be navigated by using swipe gesture as well as using built-in methods [forward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Forward.html) and [backward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Backward.html). By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using  TransitionMode property of [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) control.
-
-{% highlight c# %}
-
-SfCalendar sfCalendar = new SfCalendar(this);
-sfCalendar.TransitionMode=TransitionMode.Card;
-	
-{% endhighlight %}
-
-
