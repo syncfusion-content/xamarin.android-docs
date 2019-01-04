@@ -53,7 +53,7 @@ The procedure for creating strings.xml files is as follows:
 ![Localization support in Xamarin.Android Sfcalendar](images/xamarin.android-calendar-localization-allday.png)     
 
 You can download the entire source code of this demo for Xamarin.Android from
-here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Android1830235268.zip).
+here [Localization](https://github.com/SyncfusionExamples/Localizing-the-custom-texts-in-Xamarin.Android-Calendar.).
 
 >**NOTE**
 The corresponding values folder loads only depends on the device configuration and locale.                                  
