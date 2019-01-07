@@ -241,7 +241,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-## MultiLine Text editor
+## Multiline Text editor
 
 In the `MultilineText` editor, the [EditText](https://developer.android.com/reference/android/widget/EditText) is loaded.
 
@@ -256,7 +256,7 @@ public String Address { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-![Loading multi line text editor in Xamarin.Android DataForm](SfDataForm_images/Editors_MultiLine.jpg)
+![Loading multi line text editor in Xamarin.Android DataForm](SfDataForm_images/Editors_MultiLine.png)
 
 ## Numeric editor
 
@@ -285,7 +285,7 @@ In the date editor, the [SfDatePicker](https://help.syncfusion.com/cr/cref_files
 
 ### Setting null value in date editor
 
-In data form date editor, by default `DateTime` data type default value will be displayed (1/01/0001). You can also set the null value by adding nullable `DateTime` data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor.
+In `SfDatePicker`, the default date value (1/01/0001) is displayed by default. You can also set the null value by adding nullable `DateTime` data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -296,7 +296,7 @@ public DateTime? BirthDate { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-![Setting nullable date to data form date item in Xamarin.Android DataForm](SfDataForm_images/DateTime_Nullable.jpg)
+![Setting nullable date to data form date item in Xamarin.Android DataForm](SfDataForm_images/DateTime_Nullable.png)
 
 ### Customizing format in date editor
 
@@ -340,6 +340,64 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ![Setting maximum date for data form date item in Xamarin.Android DataForm](SfDataForm_images/DateEditorMax.png)
+
+## Time editor
+
+In the time editor, the [SfTimePicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfTimePicker.html) will be loaded.
+
+**Setting null value in time editor**
+
+In `SfTimePicker`, the default time value (12:00 AM) is displayed by default. You can also set the null value by adding nullable `DateTime` data type for the time picker property in data form, which allows you to set the null value and display the empty value in time editor. 
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.Time)]
+[Display(Name = "Birth Time")]
+public DateTime? BirthTime { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting nullable time to data form item in Xamarin.Android DataForm](SfDataForm_images/Time_Nullable.png)
+
+**Customizing format in time editor**
+
+In the `SfTimePicker`, short time will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTimeItem~Format.html) property in [DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTimeItem.html).
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "BirthTime")
+        (e.DataFormItem as DataFormTimeItem).Format = "HH:mm";
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting time format to data form time item in Xamarin.Android DataForm](SfDataForm_images/Editors_TimeFormat.png)
+
+## CheckBox editor
+
+In `CheckBox` editor, the [CheckBox]( https://developer.android.com/reference/android/widget/CheckBox) control is loaded.By default, for `bool` data type property, `CheckBox` editor will be loaded in data form.
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(Name = "Is Billable")]
+ public bool IsBillable { get; set; } = true;
+
+[Display(Name = "Registered Member")]
+public bool RegisteredMember { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading check box editor in Xamarin.Android DataForm](SfDataForm_images/CheckBoxEditor.png)
 
 ## Drop down editor
 
