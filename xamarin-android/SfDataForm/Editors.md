@@ -285,7 +285,7 @@ In the date editor, the [SfDatePicker](https://help.syncfusion.com/cr/cref_files
 
 ### Setting null value in date editor
 
-In the `SfDatePicker`, by default `DateTime` date default value will be displayed (1/01/0001). You can also set the null value by adding nullable `DateTime` data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor.
+In `SfDatePicker`, the default date value (1/01/0001) is displayed by default. You can also set the null value by adding nullable `DateTime` data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -347,7 +347,7 @@ In the time editor, the [SfTimePicker](https://help.syncfusion.com/cr/cref_files
 
 **Setting null value in time editor**
 
-In the `SfTimePicker`, by default `DateTime` time default value will be displayed (12:00 AM). You can also set the null value by adding nullable `DateTime` data type for the time picker property in data form, which allows you to set the null value and display the empty value in time editor. 
+In `SfTimePicker`, the default time value (12:00 AM) is displayed by default. You can also set the null value by adding nullable `DateTime` data type for the time picker property in data form, which allows you to set the null value and display the empty value in time editor. 
 
 {% tabs %}
 {% highlight c# %}
