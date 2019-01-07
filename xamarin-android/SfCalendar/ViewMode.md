@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessing View modes in Syncfusion Calendar control for Xamarin.Android
+title: View Modes | SfCalendar | Xamarin.Android | Syncfusion
 description: Learn how to change the view mode for calendar
 platform: Xamarin.Android
 control: Calendar
@@ -9,10 +9,9 @@ documentation: ug
 
 # Built-in Views
 
-SfCalendar control provides two types of views to display dates such as month view and year view. It can be assigned to the SfCalendar control by using view mode property.
+`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~ViewMode.html) property.
 
-By default SfCalendar control is assigned with month view. Based on the user’s preference, SfCalendar can be viewed in any one of the available two type.
-
+By default `SfCalendar` control is assigned with month view. Based on the user’s preference, `SfCalendar` can be viewed in any one of the available two type.
 
 ## MonthView
 
@@ -23,28 +22,26 @@ The dates in month view can be selected by three ways such as single, multiple a
 {% highlight c# %}
 
 SfCalendar sfCalendar = new SfCalendar(this);
-
 sfCalendar.ViewMode = ViewMode.MonthView;
 
 {% endhighlight %}
 
-![](images/month_view.png)                                        
+![Month View in Xamarin.Android Calendar](images/xamarin.android-calendar-month_view.png)                                        
 
 
 ### Month View Settings
 
-* The current day text color can be modified using `TodayTextColor` 
+* The current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~TodayTextColor.html). 
 * The month view label settings class has the APIs to change date text size, day text size and various format options. 
-* The Background color of the inline view can be modified using `InlineBackgroundColor` property.
-* The blackout date color can be modified with `BlackoutColor` Property. 
+* The Background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~InlineBackgroundColor.html) property.
+* The blackout date color can be modified with [BlackoutColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~BlackoutColor.html) Property. 
 
 {% highlight c# %}
 
 SfCalendar sfCalendar = new SfCalendar(this);
-
 MonthViewLabelSetting labelSettings = new MonthViewLabelSetting();
 labelSettings.DateFormat = "dd";
-labelSettings.DayLabelSize = 20;
+labelSettings.DayLabelSize = 10;
 labelSettings.DayFormat = "EEE";
 labelSettings.DateLabelSize = 12;
 
@@ -67,19 +64,18 @@ This displays entire dates/month of a particular year, by default current year w
 {% highlight c# %}
 
 SfCalendar sfCalendar = new SfCalendar(this);
-
 sfCalendar.ViewMode = ViewMode.YearView;
 
 {% endhighlight %}
 
-![](images/year_view.png)                                        
+![Year View in Xamarin.Android Calendar](images/xamarin.android-calendar-year_view.png)                                        
 
 
 ### Year View Settings
 
-*	The Month header color can be modified using `MonthHeaderTextColor` property in similar way, year header and date text color can be changed using `YearTextColor` and `DateTextColor` properties respectively. 
-*	The gravity of the month name can be modified using `LabelAlignment` property, to position it to Left, Right or Center. 
-*	The complete layout’s background color can be modified using `YearLayoutBackground` property.
+*	The Month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~MonthHeaderTextColor.html) property in similar way, year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~DateTextColor.html) properties respectively. 
+*	The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to Left, Right or Center. 
+*	The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~YearLayoutBackground.html) property.
 
 {% highlight c# %}
 
@@ -87,9 +83,6 @@ YearViewSettings yearViewSettings = new YearViewSettings();
 yearViewSettings.YearHeaderTextColor = Android.Graphics.Color.ParseColor("#1B79D6");
 yearViewSettings.MonthHeaderBackground = Android.Graphics.Color.ParseColor("#E4E8ED");
 yearViewSettings.DateTextColor = Android.Graphics.Color.Red;
-yearViewSettings.HeaderLabelAlignment = LabelAlignment.Center;
 sfCalendar.YearViewSettings = yearViewSettings;
 
 {% endhighlight %}
-
-
