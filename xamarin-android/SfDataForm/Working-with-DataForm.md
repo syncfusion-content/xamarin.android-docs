@@ -348,7 +348,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 The [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~DataFormItems.html) collection and handles value reflection and validation. It also overrides to handle the get and set property values from and to the data object.
 
-### Loading data form with data object
+### Generate DataFormItems for data object
 
 You can load the data form with `DataObject` by manually generating items and handling read and write values.
 
@@ -419,7 +419,7 @@ public class DataFormItemManagerExt : DataFormItemManager
 
 You can download the source code of this demo from here [GenerateDataFormItemsForDataObject](https://github.com/SyncfusionExamples/Generate-DataFormItems-for-DataObject-in-Xamarin-DataForm)
 
-### Loading data form with dictionary
+### Generate DataFormItems for dictionary
 
 You can load the data form with custom dictionary by manually generating items and handling read and write values.
 
