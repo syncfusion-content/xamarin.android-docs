@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: ug
 ---
 
-# SfDataForm
+**SfDataForm**
 
 The SfDataForm control helps editing the data fields of any data object. It can be used to develop various forms such as login, reservation, data entry, etc. Key features includes the following:
 
@@ -33,7 +33,7 @@ N> Assemblies can be found in unzipped package location in Mac.
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm.Android/#), and then install it.
 
-![](SfDataForm_images/SfDataForm_NuGet_Android.png)
+![Adding  data form nuget reference in Xamarin.Android DataForm]](SfDataForm_images/SfDataForm_NuGet_Android.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -209,7 +209,7 @@ dataForm.DataObject = new ContactsInfo();
 
 Now, run the application to render the `data form` to edit the data object as in the following screenshot:
 
-![](SfDataForm_images/Overview.png)
+![Setting data object to data form in Xamarin.Android DataForm](SfDataForm_images/Overview.png)
 
 You can download the entire source code of this demo for Xamarin.Android from here [DataFormGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormSample-696015926.zip).
 
@@ -286,7 +286,7 @@ Text
 The String type property and any other type apart from the following specified cases.
 </td>
 <td>
-EditText
+{{'[EditText](https://developer.android.com/reference/android/widget/EditText)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -298,7 +298,7 @@ The String type property with multi line text.
 [DataType(DataType.Multiline)] 
 </td>
 <td>
-EditText
+{{'[EditText](https://developer.android.com/reference/android/widget/EditText)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ Numeric
 Int or Double type property.
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin-android/introduction/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -321,7 +321,7 @@ The Int or Double type Property with percent value.
 [DataType("Percent")]].
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin-android/introduction/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -333,7 +333,7 @@ The Int or Double type property with currency value.
 [DataType(DataType.Currency)].
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin-android/introduction/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -346,7 +346,7 @@ The DateTime type property with date value.
 [DataType(DataType.DateTime)]
 </td>
 <td>
-SfDatePicker
+{{'[SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfDatePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -357,7 +357,7 @@ Time
 Property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-SfTimePicker
+{{'[SfTimePicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfTimePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-SfNumericUpDown
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin-android/sfnumericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -379,7 +379,7 @@ Segment
 Enum type property.
 </td>
 <td>
-RadioGroup
+{{'[RadioGroup](https://developer.android.com/reference/android/widget/RadioGroup)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ Bool
 Bool type property.
 </td>
 <td>
-CheckBox
+{{'[CheckBox](https://developer.android.com/reference/android/widget/CheckBox)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -401,7 +401,7 @@ Switch
 Bool type property.
 </td>
 <td>
-Switch
+{{'[Switch](https://developer.android.com/reference/android/widget/Switch)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -413,7 +413,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-SfPicker
+{{'[SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfPicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -425,7 +425,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-Spinner
+{{'[Spinner](https://developer.xamarin.com/guides/android/user_interface/spinner/)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -436,7 +436,7 @@ Password
 The String type property with [DataType(DataType.Password)] attribute.
 </td>
 <td>
-EditText
+{{'[EditText](https://developer.android.com/reference/android/widget/EditText)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -455,7 +455,7 @@ dataForm.LabelPosition = LabelPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/LabelTop.png)
+![Setting label position to data form item in Xamarin.Android DataForm](SfDataForm_images/LabelTop.png)
 
 ### Grid layout
 
@@ -468,7 +468,7 @@ dataForm.ColumnCount = 2;
 
 {% endhighlight %}
 {% endtabs %}
-![](SfDataForm_images/DataFormGrid.png)
+![Setting column count to data form in Xamarin.Android DataForm](SfDataForm_images/DataFormGrid.png)
 
 ## Editing
 
