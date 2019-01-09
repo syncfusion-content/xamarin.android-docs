@@ -354,7 +354,7 @@ You can load the data form with `DataObject` by manually generating items and ha
 
 #### Manually defining DataFormItem
 
-By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on data object. If you want to generate `DataFormItems` manually, you should override the [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ItemManager.html).
+By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on data object. If you want to generate `DataFormItems` manually for data object, you should override the [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ItemManager.html).
 
 To create `DataFormItems`, you should override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~GenerateDataFormItems(PropertyDescriptorCollection,List%7BDataFormItemBase%7D).html) method.
 
@@ -499,7 +499,7 @@ public class DataFormItemManagerExt : DataFormItemManager
 
 ![Loading data form with dictionary in Xamarin.Android DataForm](SfDataForm_images/DataFormDictionary.png)
 
-Here, the data form is loaded with field from dictionary.
+By default, the value will be shown in editor by getting it from the dictionary.
 
 You can download the source code of this demo from here [GenerateDataFormItemsForDictionary](https://github.com/SyncfusionExamples/Generate-DataFormItems-for-Dictionary-loaded-in-Xamarin-DataForm)
 
