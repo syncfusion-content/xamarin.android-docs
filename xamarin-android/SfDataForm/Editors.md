@@ -399,6 +399,27 @@ public bool RegisteredMember { get; set; }
 
 ![Loading check box editor in Xamarin.Android DataForm](SfDataForm_images/CheckBoxEditor.png)
 
+## Switch Editor
+
+In switch editor, [Switch]( https://developer.android.com/reference/android/widget/Switch) is loaded, and DataForm `Switch` editor supports bool data type property.
+
+To add `Switch` editor in DataForm, register the editor as `Switch` for the required property using the [RegisterEditor]( https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("CellularData", "Switch");
+dataForm.RegisterEditor("AirplaneMode", "Switch");
+
+[Display(Name ="Cellular Data")]
+public bool CellularData { get; set; } = true;
+
+[Display(Name = "Airplane Mode")]
+public bool AirplaneMode { get; set; }
+ 
+{% endhighlight %}
+{% endtabs %}
+
 ## Drop down editor
 
 In the drop down editor, the [Spinner](https://developer.xamarin.com/guides/android/user_interface/spinner/) will be loaded.
