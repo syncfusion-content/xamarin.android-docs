@@ -85,32 +85,31 @@ public class MainActivity : Activity
 	{
 		base.OnCreate(savedInstanceState);
 
-		 SfCalendar sfCalendar = new SfCalendar(this);
-		 List<Date> blackoutDateCollection = new List<Date>();
+		SfCalendar sfCalendar = new SfCalendar(this);
+		List<Date> blackoutDateCollection = new List<Date>();
 
-         Calendar currentDate = Calendar.Instance;
-         Calendar blockedDate1 = (Calendar)currentDate.Clone();
-         blockedDate1.Set(currentDate.Get(CalendarField.Year),
-         currentDate.Get(CalendarField.Month),
-         currentDate.Get(CalendarField.Date) + 1);
+		Calendar currentDate = Calendar.Instance;
+		Calendar blockedDate1 = (Calendar)currentDate.Clone();
+		blockedDate1.Set(currentDate.Get(CalendarField.Year),
+		currentDate.Get(CalendarField.Month),
+		currentDate.Get(CalendarField.Date) + 1);
 
-         Calendar blockedDate2 = (Calendar)currentDate.Clone();
-         blockedDate2.Set(currentDate.Get(CalendarField.Year),
-         currentDate.Get(CalendarField.Month),
-         currentDate.Get(CalendarField.Date) + 2);
+		Calendar blockedDate2 = (Calendar)currentDate.Clone();
+		blockedDate2.Set(currentDate.Get(CalendarField.Year),
+		currentDate.Get(CalendarField.Month),
+		currentDate.Get(CalendarField.Date) + 2);
 
-         Calendar blockedDate3 = (Calendar)currentDate.Clone();
-         blockedDate3.Set(currentDate.Get(CalendarField.Year),
-         currentDate.Get(CalendarField.Month),
-         currentDate.Get(CalendarField.Date) + 3);
+		Calendar blockedDate3 = (Calendar)currentDate.Clone();
+		blockedDate3.Set(currentDate.Get(CalendarField.Year),
+		currentDate.Get(CalendarField.Month),
+		currentDate.Get(CalendarField.Date) + 3);
 
-         blackoutDateCollection.Add(blockedDate1.Time);
-         blackoutDateCollection.Add(blockedDate2.Time);
-         blackoutDateCollection.Add(blockedDate3.Time);
+		blackoutDateCollection.Add(blockedDate1.Time);
+		blackoutDateCollection.Add(blockedDate2.Time);
+		blackoutDateCollection.Add(blockedDate3.Time);
 
-         sfCalendar.BlackoutDates = blackoutDateCollection;
-		 SetContentView(sfCalendar);
-
+		sfCalendar.BlackoutDates = blackoutDateCollection;
+		SetContentView(sfCalendar);
 	}
 }
 {% endhighlight %}

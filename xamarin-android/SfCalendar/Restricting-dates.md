@@ -72,4 +72,5 @@ SetContentView(sfCalendar);
 {% endhighlight %}
 
 ![Blackout Dates support in Xamarin.Android Calendar](images/xamarin.android-calendar-blackout_dates.png)                                        
+
 N> This support is enabled only in month view and the dates that consists inline events will also be disabled, when they are blacked out.
