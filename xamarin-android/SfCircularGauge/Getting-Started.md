@@ -43,6 +43,33 @@ You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_f
 
 {% endhighlight %}
 
+## Initialize gauge in axml:
+
+[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the circular gauge in designer.
+
+![CircularGauge Designer](getting-started_images/designer.gif)
+
+In MainActivity, you can access the circular gauge instance defined in axml page using the following code.
+
+{% tabs %}
+
+{% highlight c# %}
+
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.activity_main);
+
+            SfCircularGauge circularGauge = FindViewById<SfCircularGauge>(Resource.Id.sfCircularGauge1);
+
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can create circular gauge using code behind also. The following steps help to add circular gauge using code behind.
+
 ## Adding header
 
 You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) by using the [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header.html) property and position it by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.Header~Position.html) property as you want.
@@ -219,6 +246,6 @@ namespace Gauge_GettingStarted
  
  The following circular gauge is created as a result of the above codes.
 
-![](getting-started_images/default.png)
+![CircularGauge Getting Started](getting-started_images/default.png)
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Android_Gauge_GettingStarted1223477742.zip).
