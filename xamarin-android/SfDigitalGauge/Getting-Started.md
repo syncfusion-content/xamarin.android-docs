@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion DigitalGauge control for Xamarin.Android
+title: Syncfusion SfDigitalGauge control for Xamarin.Android
 description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Android platform
 platform: Xamarin.Android
 control: DigitalGauge
@@ -44,6 +44,32 @@ You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_fi
         }
 
 {% endhighlight %}
+
+## Initialize gauge in axml:
+
+[`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digital gauge in designer.
+
+![DigitalGauge Designer](getting-started_images/designer.gif)
+
+In MainActivity, you can access the digital gauge instance defined in axml page using the following code.
+
+{% tabs %}
+
+{% highlight c# %}
+
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    base.OnCreate(savedInstanceState);
+    SetContentView(Resource.Layout.Main);
+
+    SfDigitalGauge digitalGauge = FindViewById<SfDigitalGauge>(Resource.Id.sfDigitalGauge1);
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can create digital gauge using code behind also. The following steps help to add digital gauge using code behind.
 
 ## Setting value for digital gauge
 
@@ -165,7 +191,7 @@ namespace Gauge_GettingStarted
 
 The following screenshot illustrates the result of the previous codes.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![DigitalGauge Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted325239782).
