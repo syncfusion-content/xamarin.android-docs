@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with Hyperlink navigation | Syncfusion
+title:  Working with Hyperlink navigation in Xamarin.Android PDF viewer| Syncfusion
 description: Working with Hyperlink navigation in Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer

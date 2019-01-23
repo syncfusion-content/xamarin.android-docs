@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Working with ink annotation | Syncfusion
-description: Working with ink annotation
+title:  Working with ink annotation in Xamarin.Android PDF viewer | Syncfusion
+description: Working with ink annotation in Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug

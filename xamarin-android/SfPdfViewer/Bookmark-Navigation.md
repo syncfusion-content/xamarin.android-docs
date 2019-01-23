@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Bookmark Navigation | Syncfusion
+title:  Bookmark Navigation in Xamarin.Android PDF viewer | Syncfusion
 description: Bookmark Navigation in Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer
