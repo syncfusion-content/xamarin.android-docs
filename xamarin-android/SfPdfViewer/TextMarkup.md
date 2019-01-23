@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Working with text markup annotation | Syncfusion
-description: Working with text markup annotation
+description: Working with text markup annotation in Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Working with Document Link Annotation (Table of content) | Syncfusion
-description: Working with Document Link Annotation (Table of content)
+description: Working with Document Link Annotation (Table of content) in Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug
