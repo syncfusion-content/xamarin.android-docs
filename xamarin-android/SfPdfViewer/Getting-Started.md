@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  View & review PDF using PDF Viewer Xamarin.Android | Syncfusion
-description: Getting Started for PDF viewer in Xamarin.Android 
+description: Getting started section demonstrates how to create an application that displays a PDF file using Xamarin.Android PDF Viewer
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug

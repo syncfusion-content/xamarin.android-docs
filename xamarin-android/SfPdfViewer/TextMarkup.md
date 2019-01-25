@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Add & modify text markups PDF viewer Xamarin.Android | Syncfusion
-description: Working with text markup annotation in Xamarin.Android PDF viewer
+description: PDF viewer Xamarin.Android allows user to highlight, underline and strikethrough the text content in the PDF document.
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug
