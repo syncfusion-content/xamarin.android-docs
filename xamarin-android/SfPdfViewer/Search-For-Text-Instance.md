@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Search for a text instance | Syncfusion
-description: search for a text instance
+title:  Search text in PDF using PDF viewer Xamarin.Android | Syncfusion
+description: Search text support allows the user to locate and highlight text instances in the PDF document using PDF Viewer Xamarin.Android
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug
