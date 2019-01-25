@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Select and copy the text in Xamarin.Android PDF viewer | Syncfusion
+title:  Select & copy text using PDF viewer Xamarin.Android | Syncfusion
 description: Select and copy the text in Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer

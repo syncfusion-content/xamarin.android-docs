@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with shape annotations in Xamarin.Android PDF viewer | Syncfusion
+title:  Add & modify shapes using PDF viewer Xamarin.Android | Syncfusion
 description: Working with shape annotations in Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer

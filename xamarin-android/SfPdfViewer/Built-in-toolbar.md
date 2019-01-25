@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with built-in toolbar in Xamarin.Android PDF viewer | Syncfusion
+title:  Built-in toolbar in PDF viewer Xamarin.Android  | Syncfusion
 description: Working with built-in toolbar in Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer

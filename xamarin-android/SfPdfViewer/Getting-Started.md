@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started for Essential Xamarin.Android PDF viewer | Syncfusion
+title:  View & review PDF using PDF Viewer Xamarin.Android | Syncfusion
 description: Getting Started for PDF viewer in Xamarin.Android 
 platform: Xamarin.Android
 control: SfPdfViewer

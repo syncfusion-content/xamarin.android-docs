@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion PDF Viewer for Xamarin.Android | Syncfusion
+title: Overview of PDF Viewer for Xamarin.Android | Syncfusion
 description: Overview and key features of Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer

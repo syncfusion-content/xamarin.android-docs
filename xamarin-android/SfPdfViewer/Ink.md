@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with ink annotation in Xamarin.Android PDF viewer | Syncfusion
+title:  Add freehand scribble in PDF using Syncfusion PDF Viewer Android
 description: Working with ink annotation in Xamarin.Android PDF viewer
 platform: Xamarin.Android
 control: SfPdfViewer
