@@ -1,6 +1,6 @@
 ---
-title: Diagram for Essential Xamarin.Android Diagram.
-description: Diagram
+title: Diagram for Essential Xamarin.Android Diagram | Syncfusion
+description: Briefs about diagram ,stencil,page setting and diagram constraints in SfDiagram for Xamarin.Android
 platform: Xamarin.Android
 control: SfDiagram
 documentation: UG
