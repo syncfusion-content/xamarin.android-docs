@@ -1,6 +1,6 @@
 ---
 title: Adding connectors in diagram control for Xamarin.Android | Syncfusion
-description: Describes how to add connector,connection with port and node and it's appearance in diagram control for Xamarin.Android
+description: Describes how to add connector,connection with node and it's appearance in diagram control for Xamarin.Android
 platform: Xamarin.Android
 control: SfDiagram
 documentation: UG
