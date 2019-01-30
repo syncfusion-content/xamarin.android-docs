@@ -1,6 +1,6 @@
 ---
-title: Adding gridlines in Diagram control for Xamarin.Android
-description: Learn how to add gridlines in diagram control.
+title: Adding gridlines in Diagram control for Xamarin.Android | Syncfusion
+description: Describes how to add gridlines,snapping gridlines and customization of gridlines in diagram control for Xamarin.Android
 platform: Xamarin.Android
 control: Diagram
 documentation: ug
