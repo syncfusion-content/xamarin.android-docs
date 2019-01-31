@@ -1,6 +1,6 @@
 ---
-title: Adding stencil in diagram control for Xamarin.Android
-description: Learn how to add stencil in diagram control.
+title: Adding stencil in diagram control for Xamarin.Android | Syncfusion
+description: Describes how to add stencil,custom shape,stencil group and stencil header in diagram control for Xamarin.Android
 platform: Xamarin.Android
 control: SfDiagram
 documentation: UG
