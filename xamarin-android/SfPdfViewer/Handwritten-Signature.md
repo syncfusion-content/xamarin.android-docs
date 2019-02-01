@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with handwritten signatures | Syncfusion
+title:  Handwritten signature in Xamarin.Android PDF Viewer | Syncfusion
 description: Working with handwritten signatures
 platform: Xamarin.Android
 control: SfPdfViewer

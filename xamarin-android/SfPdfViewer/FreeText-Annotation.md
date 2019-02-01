@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with freetext annotations | Syncfusion
+title:  Freetext annotations in Xamarin.Android PDF Viewer | Syncfusion
 description: Working with freetext annotations
 platform: Xamarin.Android
 control: SfPdfViewer
