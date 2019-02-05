@@ -49,7 +49,7 @@ Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup
  
 This section explains how to create a simple application using SfSchedule control. SfSchedule control can be configured entirely in C# code. This is how the final output will look like on Android devices.
  
-![](GettingStarted_images/GettingStarted.png) 
+![Getting Started in Schedule](GettingStarted_images/GettingStarted.png) 
 
 You can download the entire source code of this demo for Xamarin.Android from   
 here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted1888257278.zip). 
@@ -101,7 +101,7 @@ schedule.FirstDayOfWeek = Calendar.Tuesday;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/FirstDayofWeek.png) 
+![FirstDayOfWeek in schedule](GettingStarted_images/FirstDayofWeek.png) 
 
 ### Day View 
  
@@ -114,7 +114,7 @@ schedule.ScheduleView = ScheduleView.DayView;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/DayView.png) 
+![Day View in schedule](GettingStarted_images/DayView.png) 
 
 ### Week View 
  
@@ -127,7 +127,7 @@ schedule.ScheduleView = ScheduleView.WeekView;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/WeekView.png) 
+![Week view in schedule](GettingStarted_images/WeekView.png) 
 
 ### Work Week View 
  
@@ -140,7 +140,7 @@ schedule.ScheduleView = ScheduleView.WorkWeekView;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/WorkWeekView.png) 
+![Work Week View in Schedule](GettingStarted_images/WorkWeekView.png) 
 
 >**NOTE**
 Appointments in non-working days will not be displayed.
@@ -157,7 +157,7 @@ schedule.MonthViewSettings.ShowAppointmentsInline = true;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/MonthView.png) 
+![Month View in Schedule](GettingStarted_images/MonthView.png) 
 
 ## Binding data to SfSchedule control  
  
@@ -330,4 +330,4 @@ schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted.png) 
+![Getting Started Schedule](GettingStarted_images/GettingStarted.png) 
