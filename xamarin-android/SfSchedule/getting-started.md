@@ -27,7 +27,7 @@ Assemblies can be found in unzipped package location in Mac
 ## Adding SfSchedule Reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSchedule to your project, open the NuGet package manager in Visual Studio, and search for Syncfusion.Xamarin.SfSchedule, and then install it.  
 
-![](GettingStarted_images/installation_image.png)
+![Installatin Image](GettingStarted_images/installation_image.png)
 
 To know more about obtaining our components, refer this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet,refer the assembly mentioned in the table below.
  
