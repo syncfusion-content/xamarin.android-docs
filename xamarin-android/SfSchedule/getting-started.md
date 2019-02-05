@@ -321,12 +321,12 @@ private void CreateAppointments()
  
 #### Setting appointments for SfSchedule 
 
-Create meetings of type `ScheduleAppointmentCollection` and assign those appointments collection `Meetings` to the [Appointments](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~Appointments.html) property.
+Create meetings of type `ScheduleAppointmentCollection` and assign those appointments collection `Meetings` to the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ItemsSource.html) property.
 
 {% tabs %}
 {% highlight c# %}
 CreateAppointments();
-schedule.Appointments = Meetings;
+schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs %}
 
