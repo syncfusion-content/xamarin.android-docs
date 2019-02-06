@@ -1,6 +1,6 @@
 ---
-title: Getting Started for Essential Xamarin.Android Diagram.
-description: getting started
+title: Getting Started for Essential Xamarin.Android Diagram | Syncfusion
+description: Getting started with Xamarin.Android diagram and walk through to create a demo application from the scratch.
 platform: Xamarin.Android
 control: SfDiagram
 documentation: UG
