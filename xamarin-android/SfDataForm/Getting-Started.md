@@ -488,7 +488,7 @@ SetContentView(linearLayout);
 {% endhighlight %}
 {% endtabs %}
 
-![Loading data form with customized height and width Xamarin.Android DataForm](SfDataForm_images/CustomHeightWidth.jpg)
+![Loading data form with customized height and width Xamarin.Android DataForm](SfDataForm_images/CustomHeightWidth.png)
 
 ## Editing
 
