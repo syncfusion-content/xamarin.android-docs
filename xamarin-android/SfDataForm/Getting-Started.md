@@ -470,9 +470,9 @@ dataForm.ColumnCount = 2;
 {% endtabs %}
 ![Setting column count to data form in Xamarin.Android DataForm](SfDataForm_images/DataFormGrid.png)
 
-## Loading SfDataForm with customized height and width
+## Loading DataForm with customized height and width
 
-The SfDataForm can be loaded with specific height and width inside different layouts by specifying the height and width of the SfDataForm when adding it as a child to its parent.
+The DataForm can be loaded with specific height and width inside different layouts by specifying the height and width of the DataForm when adding it as a child to its parent.
 
 {% tabs %}
 {% highlight c# %}
