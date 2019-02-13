@@ -470,6 +470,26 @@ dataForm.ColumnCount = 2;
 {% endtabs %}
 ![Setting column count to data form in Xamarin.Android DataForm](SfDataForm_images/DataFormGrid.png)
 
+## Loading DataForm with customized height and width
+
+The DataForm can be loaded with specific height and width inside different layouts by specifying the height and width of the DataForm when adding it as a child to its parent.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm = new SfDataForm(this);
+linearLayout = new LinearLayout(this);
+dataForm.DataObject = new ContactInfo();
+//To place SfDataForm at center position, padding has been set.
+linearLayout.SetPadding(100, 550, 0, 0);
+linearLayout.AddView(dataForm,800,800);
+SetContentView(linearLayout);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading data form with customized height and width Xamarin.Android DataForm](SfDataForm_images/CustomHeightWidth.png)
+
 ## Editing
 
 By default, the data form enables editing of the data field. You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~IsReadOnly.html) property of the data form. You can enable or disable editing for a particular data field by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem~IsReadOnly.html) property of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event. The data field editing behavior can also be defined by using [EditableAttribute](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx).
