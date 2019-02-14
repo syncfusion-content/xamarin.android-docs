@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Android
+title: Getting Started with Syncfusion MaskedEdit control for Xamarin.Android
 description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Android platform 
 platform: Xamarin.Android
 control: SfMaskedEdit
@@ -13,9 +13,9 @@ This section explains you the steps required to configure a SfMaskedEdit control
 
 ##  Reference Essential Studio components in your solution
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maskededit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit.android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.Android)", and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add masked edit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit.android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.Android)", and then install it. 
 
-![](SfMaskedEditImages/nuget.png) 
+![Xamarin.Android masked edit nuget](SfMaskedEditImages/nuget.png) 
 
 ## Create a Simple SfMaskedEdit
 
@@ -79,6 +79,6 @@ Refer to this [link](MaskType) to know more about the Mask characters and Mask T
 
 Run the project and check if you get the following output to make sure that you have configured your project properly to add `SfMaskedEdit`.
 
-![](SfMaskedEditImages/GettingStarted.png)
+![Xamarin.Android masked edit](SfMaskedEditImages/GettingStarted.png)
 
 You can find the complete getting started sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_GettingStarted.zip).

@@ -52,8 +52,8 @@ scheduleAppointmentCollection.Add(new ScheduleAppointment()
     Location = "Hutchison road",
 });
 
-//Adding schedule appointment collection to SfSchedule appointments
-schedule.Appointments = scheduleAppointmentCollection;
+//Adding schedule appointment collection to SfSchedule DataSource
+schedule.ItemsSource = scheduleAppointmentCollection;
 SetContentView(schedule);
 {% endhighlight %}
 {% endtabs %}
@@ -118,7 +118,7 @@ You can map those properties of `Meeting` class with our SfSchedule control by u
 {% endtabs %}
 
 
-You can schedule meetings for a day by setting `From` and `To` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `ItemsSource` property which is of `IEnumerable` type.
+You can schedule meetings for a day by setting `From` and `To` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ItemsSource.html) property which is of `IEnumerable` type.
 
 {% tabs %}
 {% highlight c# %}
@@ -197,8 +197,8 @@ scheduleAppointmentCollection.Add(new ScheduleAppointment()
     Location = "Hutchison road",
 });
 
-//Adding schedule appointment collection to SfSchedule appointments
-schedule.Appointments = scheduleAppointmentCollection;
+//Adding schedule appointment collection to SfSchedule DataSource
+schedule.ItemsSource = scheduleAppointmentCollection;
 SetContentView(schedule);
 {% endhighlight %}
 {% endtabs %}
@@ -354,8 +354,8 @@ recurrenceProperties.RecurrenceCount = 10;
 // Setting recurrence rule to schedule appointment
 scheduleAppointment.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
 
-//Adding Schedule appointment collection to SfSchedule appointments
-schedule.Appointments = scheduleAppointmentCollection;
+//Adding Schedule appointment collection to SfSchedule DataSource
+schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
@@ -959,7 +959,7 @@ scheduleAppointmentCollection.Add(new ScheduleAppointment()
     Subject = "Anniversary",
     Color = Color.ParseColor("#FFA2C139")
 });
-schedule.Appointments= scheduleAppointmentCollection;
+schedule.ItemsSource = scheduleAppointmentCollection;
 SetContentView(schedule);
 {% endhighlight %}
 {% endtabs %}
