@@ -433,7 +433,7 @@ dataForm.ItemManager = new DataFormItemManagerExt(dataForm, dictionary);
 
 #### Handling reading and writing values to and from the dictionary
 
-By default, the dictionary value will be shown in corresponding editor and value changes in editor will be committed in dictionary value again by using the [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~SetValue.html) override methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html).
+By default, the dictionary value will be shown in corresponding editor and value changes in editor will be committed again in dictionary value by using the [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~SetValue.html) override methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html).
 
 Here, the value is read and written from/to dictionary instead of the data object.
 
