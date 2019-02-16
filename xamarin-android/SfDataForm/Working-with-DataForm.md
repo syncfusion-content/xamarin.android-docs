@@ -348,11 +348,11 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 The [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~DataFormItems.html) collection and handles value reflection and validation. It also overrides to handle the get and set property values from and to the data object.
 
-### Manually defining DataFormItem
+### Manually generate DataFormItems for DataObject
 
-By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on data object. If you want to generate `DataFormItems` manually, you should override the [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ItemManager.html).
+By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on DataObject. If you need to generate `DataFormItems` manually, override the [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ItemManager.html).
 
-To create `DataFormItems`, you should override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~GenerateDataFormItems(PropertyDescriptorCollection,List%7BDataFormItemBase%7D).html) method.
+To create `DataFormItems`, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~GenerateDataFormItems(PropertyDescriptorCollection,List%7BDataFormItemBase%7D).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -386,13 +386,11 @@ dataForm.ItemManager = new DataFormItemManagerExt(dataForm);
 {% endhighlight %}
 {% endtabs %}
 
-### Loading data form with dictionary
+You can download the source code of this demo from here [GenerateDataFormItemsForDataObject](https://github.com/SyncfusionExamples/generate-dataformitems-for-dataobject-in-xamarin-dataform)
 
-You can load the data form with custom dictionary by manually generating items and handling read and write values.
+### Manually generate DataFormItems for data dictionary
 
-#### Manually defining DataFormItem
-
-To create `DataFormItems` from dictionary , you should override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~GenerateDataFormItems(PropertyDescriptorCollection,List%7BDataFormItemBase%7D).html) method.
+You can load the dataform with custom dictionary by generating DataFormItems manually. To create `DataFormItems` from dictionary, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~GenerateDataFormItems(PropertyDescriptorCollection,List%7BDataFormItemBase%7D).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -433,11 +431,11 @@ dataForm.ItemManager = new DataFormItemManagerExt(dataForm, dictionary);
 {% endhighlight %}
 {% endtabs %}
 
-#### Handling reading and writing values to and from the data object
+#### Handling reading and writing values to and from the dictionary
 
-By default, the value will be shown in editor by getting it from the data object and after editing, the data object will be committed with the new value. If you want to customize the value, you should override [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~SetValue.html) methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html).
+By default, the dictionary value will be shown in corresponding editor and value changes in editor will be committed again in dictionary value by using the [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager~SetValue.html) override methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemManager.html).
 
-Here, the value is reading and writing from/to dictionary instead of the data object.
+Here, the value is read and written from/to dictionary instead of the data object.
 
 {% tabs %}
 {% highlight c# %}
@@ -464,11 +462,11 @@ public class DataFormItemManagerExt : DataFormItemManager
 {% endhighlight %}
 {% endtabs %}
 
-![Loading data form with dictionary in Xamarin.Android DataForm](SfDataForm_images/DataFormDictionary.png)
+![Loading dataform with dictionary in Xamarin.Android DataForm](SfDataForm_images/DataFormDictionary.png)
 
-Here, the data form is loaded with field from dictionary.
+Here, the dataform is loaded with field from dictionary.
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormDictionary837700264).
+You can download the source code of this demo from [GenerateDataFormItemsForDictionary](https://github.com/SyncfusionExamples/generate-dataformitems-for-dictionary-loaded-in-xamarin-dataform)
 
 ## Binding with dynamic data object
 
