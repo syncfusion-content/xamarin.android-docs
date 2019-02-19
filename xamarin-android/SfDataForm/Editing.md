@@ -282,53 +282,88 @@ dataForm.RegisterEditor("Text", new CustomTextEditor(dataForm));
 
 Create the custom editor by overriding the [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormEditor%601.html) class.
 
-Property settings, commit, data validation can be handled by overriding the required methods. Here, the `SeekBar` is loaded for `Salary` editor.
+Property settings, commit, data validation can be handled by overriding the required methods. Here, the `EditText` is loaded for `Age` editor.
 
 {% tabs %}
 {% highlight c# %}
-public class CustomSliderEditor : DataFormEditor<SeekBar>
+
+public class CustomTextEditor : DataFormEditor<EditText>
 {
-    public CustomSliderEditor(SfDataForm dataForm) : base(dataForm)
-    {
-    }
+	public CustomTextEditor(SfDataForm dataForm) : base(dataForm)
+	{
+	}
 
-    protected override SeekBar OnCreateEditorView()
-    {
-        return new SeekBar(this.dataForm.Context);
-    }
+	protected override EditText OnCreateEditorView()
+	{
+		return new EditText(this.dataForm.Context);
+	}
+	protected override void OnInitializeView(DataFormItem dataFormItem, EditText view)
+	{
+		base.OnInitializeView(dataFormItem, view);
+	}
 
-    protected override void OnInitializeView(DataFormItem dataFormItem, SeekBar view)
-    {
-        view.Progress = (int)dataForm.ItemManager.GetValue(dataFormItem);
-    }
+	protected override void OnWireEvents(EditText view)
+	{
+		view.TextChanged += OnViewTextChanged;
+		view.FocusChange += OnViewFocusChange;
+	}
 
-    protected override void OnWireEvents(SeekBar view)
-    {
-        view.ProgressChanged += View_ProgressChanged;
-    }
-    protected override void OnUnWireEvents(SeekBar view)
-    {
-        view.ProgressChanged -= View_ProgressChanged;
-    }
-    private void View_ProgressChanged(object sender, SeekBar.ProgressChangedEventArgs e)
-    {
-        OnCommitValue(sender as SeekBar);
-    }
+	private void OnViewFocusChange(object sender, View.FocusChangeEventArgs e)
+	{
+		var view = sender as EditText;
+		view.SetTextColor(Color.Red);
 
-    
-    protected override void OnCommitValue(SeekBar view)
-    {
-        var dataFormItemView = view.Parent as DataFormItemView;
-        dataForm.ItemManager.SetValue(dataFormItemView.DataFormItem, view.Progress);
-    }
+		if (this.DataForm.CommitMode == CommitMode.LostFocus || this.DataForm.ValidationMode == ValidationMode.LostFocus)
+			this.OnValidateValue(view);
+		if (this.DataForm.CommitMode != CommitMode.LostFocus) return;
+		this.OnCommitValue(view);
+		OnValidateValue(sender as EditText);
+	}
+
+	private void OnViewTextChanged(object sender, Android.Text.TextChangedEventArgs e)
+	{
+		var view = sender as EditText;
+		if (DataForm.CommitMode == CommitMode.PropertyChanged || DataForm.ValidationMode == ValidationMode.PropertyChanged)
+			this.OnValidateValue(view);
+		if (this.DataForm.CommitMode != CommitMode.PropertyChanged) return;
+		this.OnCommitValue(view);
+	}
+
+	private void OnViewPropertyChanged(object sender, PropertyChangedEventArgs e)
+	{
+		OnValidateValue(sender as EditText);
+	}
+
+	protected override bool OnValidateValue(EditText view)
+	{
+		return this.DataForm.Validate("Age");
+	}
+
+	protected override void OnCommitValue(EditText view)
+	{
+		var dataFormItemView = view.Parent as DataFormItemView;
+		this.DataForm.ItemManager.SetValue(dataFormItemView.DataFormItem, view.Text);
+	}
+
+	protected override void OnUnWireEvents(EditText view)
+	{
+		view.TextChanged -= OnViewTextChanged;
+		view.FocusChange -= OnViewFocusChange;
+	}
 }
 
-dataForm.RegisterEditor("Slider", new CustomSliderEditor(dataForm));
-dataForm.RegisterEditor("Salary", "Slider");
+dataForm.RegisterEditor("numeric", new CustomTextEditor(dataForm));
+dataForm.RegisterEditor("Age", "numeric");
+dataForm.ValidationMode = ValidationMode.LostFocus;
+
 {% endhighlight %}
 {% endtabs %}
 
-![Creating custom editor for the data form item in Xamarin.Android DataForm](SfDataForm_images/SeekBarEditor.png)
+You should manually commit the custom DataFormItem editor value by using [OnCommitValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormEditor%601~OnCommitValue.html) override method of [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormEditor%601.html) class on custom editor `Value` or `Focus changed` event which is used to update the custom editor value in respective property in [DataObject](https://help.syncfusion.com/xamarin-android/sfdataform/getting-started#setting-data-object) based on dataform [commit mode](https://help.syncfusion.com/xamarin-android/sfdataform/editing#commit-mode) set. 
+
+Also , you should manually validate the custom editor value in by using [OnValidateValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormEditor%601~OnValidateValue.html) override method of `DataFormEditor` class on custom editor `Value` or `Focus changed` event which is used to validate the custom editor value based on data form [validation mode](https://help.syncfusion.com/xamarin-android/sfdataform/validation?cs-save-lang=1&cs-lang=xaml#validation-mode) set. In the override method for OnValidateValue, you need to return [DataForm.Validate(string)](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validate.html) method in order to validate the particular data item.
+
+![Creating custom editor for the data form item in Xamarin.Android DataForm](SfDataForm_images/DataFormCustomEditor.png)
 
 ## Support for Email editor
 
