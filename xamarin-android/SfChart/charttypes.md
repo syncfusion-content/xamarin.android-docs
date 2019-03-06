@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android Chart Types in Syncfusion Chart
+title: Android Chart Types in Syncfusion SfChart
 description: What are the different types of Charts available in Essential Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
