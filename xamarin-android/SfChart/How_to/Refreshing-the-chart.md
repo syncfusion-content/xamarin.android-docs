@@ -2,7 +2,7 @@
 layout: post
 title: Refreshing the Syncfusion SfChart
 description: Refreshing the SfChart
-platform: xamarin
+platform: Android
 control: Chart
 documentation: ug
 ---
