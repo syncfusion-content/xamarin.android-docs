@@ -689,6 +689,17 @@ chart.Series.Add(splineSeries);
 
 ![Spline chart type in Xamarin.Android](charttypes_images/charttypes_img13.png)
 
+### Dashed Lines
+
+[`PathEffect`] property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineSeries.html) is used to render spline series with dashes.
+
+{% highlight c# %} 
+[C#]
+
+splineSeries.PathEffect = new DashPathEffect(new float[] {5, 6}, 2);
+
+{% endhighlight %}
+
 ### Spline Rendering Types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
