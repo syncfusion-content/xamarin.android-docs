@@ -696,7 +696,15 @@ chart.Series.Add(splineSeries);
 {% highlight c# %} 
 [C#]
 
+SplineSeries splineSeries = new SplineSeries()
+{
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
+};
+
 splineSeries.PathEffect = new DashPathEffect(new float[] {5, 6}, 2);
+chart.Series.Add(splineSeries);
 
 {% endhighlight %}
 
