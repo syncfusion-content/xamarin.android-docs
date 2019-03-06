@@ -859,6 +859,40 @@ chart.Series.Add(scatterSeries);
 
 ![Scatter chart type in Xamarin.Android](charttypes_images/charttypes_img17.png)
 
+## Fast Scatter Chart
+
+The [`FastScatterSeries`]() is a special kind of scatter series that renders a collection with a huge number of data points. You can use the following properties to customize the appearance of a fast scatter point.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) – Changes the color of series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) – Changes the stroke width of series.
+* [`StrokeColor`]() – Changes the stroke color of series.
+* [`ScatterWidth`]() – Changes the width of series.
+* [`ScatterHeight`]() – Changes the height of series.
+* [`ShapeType`]() - Change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartScatterShapeType.html), ['Diamond](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartScatterShapeType.html), ['Ellipse'](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartScatterShapeType.html), ['Hexagon'](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartScatterShapeType.html), ['InvertedTriangle'](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartScatterShapeType.html), ['Pentagon'](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartScatterShapeType.html), ['Plus'](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartScatterShapeType.html), ['Rectangle'](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartScatterShapeType.html) and ['Triangle'](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartScatterShapeType.html).
+* [`EnableAntiAliasing`]() – Since [`FastScatterSeries`]() can be loaded with a large number of points, the rendering of series should be smooth. This requirement can be achieved by setting the [`EnableAntiAliasing`]() property of [`FastScatterSeries`]() to false.
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+FastScatterSeries fastScatterSeries = new FastScatterSeries()
+{
+	ScatterHeight = 15,
+	ScatterWidth = 15,
+	ShapeType = ChartScatterShapeType.Ellipse,
+	ItemsSource = Data,	
+	XBindingPath = "XValue",
+	YBindingPath = "YValue"
+};
+chart.Series.Add(fastScatterSeries);
+
+{% endhighlight %}
+
+![FastScatter chart type in Xamarin.Android](charttypes_images/charttypes_img17.png)
+
+
 ## OHLC Chart
 
 To render an OHLC chart, create an instance of [`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.HiLoOpenCloseSeries.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
