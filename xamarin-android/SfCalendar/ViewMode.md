@@ -57,7 +57,7 @@ sfCalendar.MonthViewSettings = monthViewSettings;
 
 N> Similarly there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
 
-### Hide trailing and leading dates
+### Customize trailing and leading days
 
 The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the `ShowLeadingAndTrailingDays` property. The following code demonstrates how to hide the leading and trailing dates in calendar.
 
