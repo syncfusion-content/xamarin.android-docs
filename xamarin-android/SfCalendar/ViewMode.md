@@ -40,7 +40,6 @@ sfCalendar.ViewMode = ViewMode.MonthView;
 
 SfCalendar sfCalendar = new SfCalendar(this);
 MonthViewLabelSetting labelSettings = new MonthViewLabelSetting();
-labelSettings.DateFormat = "dd";
 labelSettings.DayLabelSize = 10;
 labelSettings.DayFormat = "EEE";
 labelSettings.DateLabelSize = 12;
