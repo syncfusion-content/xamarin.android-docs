@@ -248,3 +248,21 @@ protected override void UpdateContentView(View view, TreeViewItemInfoBase itemIn
 You can download the example for level based styling demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-1430010482).
 
 ![Xamarin Android TreeView with styling](Images/TreeView_LevelStyle.png)
+
+## Animation
+
+The `SfTreeView` supports to animate expanding or collapsing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html). To enable/disable the animation use `IsAnimationEnabled` property of `SfTreeView`.
+ 
+N> The default value of the `IsAnimationEnabled` property is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView x:Name="treeView" IsAnimationEnabled="true">
+{% endhighlight %}
+{% highlight c# %}
+SfTreeView treeView = new SfTreeView();
+treeView.IsAnimationEnabled = true;
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Android TreeView with Animation](Images/TreeView_Animation.gif)
