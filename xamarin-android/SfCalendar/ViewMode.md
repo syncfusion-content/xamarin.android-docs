@@ -40,7 +40,6 @@ sfCalendar.ViewMode = ViewMode.MonthView;
 
 SfCalendar sfCalendar = new SfCalendar(this);
 MonthViewLabelSetting labelSettings = new MonthViewLabelSetting();
-labelSettings.DateFormat = "dd";
 labelSettings.DayLabelSize = 10;
 labelSettings.DayFormat = "EEE";
 labelSettings.DateLabelSize = 12;
@@ -56,6 +55,29 @@ sfCalendar.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 
 N> Similarly there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
+
+### Customize trailing and leading days
+
+The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfCalendar calendar = new SfCalendar(this);
+calendar.ViewMode = ViewMode.MonthView;
+calendar.ShowLeadingAndTrailingDays = true;
+this.Content = calendar;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Month View in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-HideLeadingTrailingDates.png)
+
+N>
+* The DrawMonthCell event is triggered for the current month dates.
+* The VisibleDates in the MonthChanged event will return the current month dates.
 
 ## YearView
 
