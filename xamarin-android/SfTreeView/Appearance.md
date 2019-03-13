@@ -256,9 +256,6 @@ The `SfTreeView` supports to animate expanding or collapsing the [TreeViewNode](
 N> The default value of the `IsAnimationEnabled` property is `false`.
 
 {% tabs %}
-{% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView" IsAnimationEnabled="true">
-{% endhighlight %}
 {% highlight c# %}
 SfTreeView treeView = new SfTreeView();
 treeView.IsAnimationEnabled = true;
