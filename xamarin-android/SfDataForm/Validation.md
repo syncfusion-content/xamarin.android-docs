@@ -412,7 +412,7 @@ private void DataFormGettingStarted_PropertyChanged(object sender, PropertyChang
 
 ## Customize validation message using DataFormLayoutManager
 
-you can use custom [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager.html) class to customize validation message by overriding [UpdateViewForValidation](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~UpdateViewForValidation.html) method. It lets you to return different custom views for each validation message based on certain conditions.
+You can use custom [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager.html) class to customize validation message by overriding [UpdateViewForValidation](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~UpdateViewForValidation.html) method. It lets you to return different custom views for each validation message based on certain conditions.
 
 {% tabs %}
 {% highlight c# %}
