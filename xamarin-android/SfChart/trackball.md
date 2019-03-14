@@ -52,6 +52,16 @@ In the following screenshot, trackball label is shown for only single data point
 
 ![Label display mode support for trackball in Xamarin.Android Chart](trackball_images/trackball_img2.png)
 
+## Activation mode
+
+The [`ActivationMode`] property can be used to restrict the trackball visibility based on the touch actions. The default value of [`ActivationMode`] property is [`ChartTrackballActivationMode.LongPress`].
+
+The ChartTrackballActivationMode enum contains the following values:
+
+* [`LongPress`] – Trackball is activated only when performing long press action.
+* [`TouchMove`] – Trackball is activated only when performing touch move action.
+* [`None`] – Trackball is not visible when setting activation mode as [`None`]. It can be enabled only by using [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~Show.html) method.
+
 ## Customizing appearance
 
 **Customize Trackball Labels**
