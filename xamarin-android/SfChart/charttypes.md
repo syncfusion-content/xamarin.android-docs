@@ -859,7 +859,7 @@ chart.Series.Add(scatterSeries);
 
 ![Scatter chart type in Xamarin.Android](charttypes_images/charttypes_img17.png)
 
-## Fast Scatter Chart1
+## Fast Scatter Chart
 
 The [`FastScatterSeries`]() is a special kind of scatter series that renders a collection with a huge number of data points. You can use the following properties to customize the appearance of a fast scatter point.
 
