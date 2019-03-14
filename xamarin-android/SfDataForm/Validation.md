@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Validation | SfDataForm | Xamarin.Android | Syncfusion
 description: How to validate the data in SfDataForm
@@ -100,7 +100,7 @@ public class EmployeeInfo : IDataErrorInfo, INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Validation2.png)
+![Validation in Xamarin.Android DataForm](SfDataForm_images/Validation2.png)
 
 ### Using INotifyDataErrorInfo
 
@@ -265,7 +265,7 @@ public DateTime JoinDate
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Validation3.png)
+![Date range validation in Xamarin.Android DataForm](SfDataForm_images/Validation3.png)
 
 ## Validation mode
 
@@ -379,7 +379,7 @@ public string Name
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ValidMessage.png)
+![Valid message for validation in Xamarin.Android DataForm](SfDataForm_images/ValidMessage.png)
 
 ## How to validate the property value based on another value
 
@@ -407,5 +407,45 @@ private void DataFormGettingStarted_PropertyChanged(object sender, PropertyChang
             dataForm.Validate("AccountNumber");
     }
 }
+{% endhighlight %}
+{% endtabs %}
+
+## Customize validation message using DataFormLayoutManager
+
+you can use custom [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager.html) class to customize validation message by overriding [UpdateViewForValidation](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~UpdateViewForValidation.html) method. It lets you to return different custom views for each validation message based on certain conditions.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
+public class DataFormLayoutManagerExt: DataFormLayoutManager
+    {
+        public DataFormLayoutManagerExt(SfDataForm dataForm) : base(dataForm)
+        {
+        }
+
+        protected override View UpdateViewForValidation(DataFormItem dataFormItem)
+        {
+            var validView = new View(MainActivity.context);
+            var validMessage = new TextView(MainActivity.context);
+            validMessage.SetBackgroundColor(Color.Green);
+            validMessage.SetTextColor(Color.Black);
+            validMessage.Text = "Field value is valid";
+            validView = validMessage;
+
+            var inValidView = new View(MainActivity.context);
+            var inValidMessage = new TextView(MainActivity.context);
+            inValidMessage.SetBackgroundColor(Color.Red);
+            inValidMessage.SetTextColor(Color.Black);
+            inValidMessage.Text = "Field should not be empty";
+            inValidView = inValidMessage;
+
+            if (dataFormItem.IsValid)
+                return validView;
+            else
+                return inValidView;
+        }
+    }  
+
 {% endhighlight %}
 {% endtabs %}
