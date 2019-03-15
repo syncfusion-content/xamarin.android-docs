@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Trackball
+title: Chart Trackball in Syncfusion SfChart
 description: How to enable and customize the trackball behavior in Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
@@ -51,6 +51,16 @@ trackballBehavior.LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint;
 In the following screenshot, trackball label is shown for only single data point,
 
 ![Label display mode support for trackball in Xamarin.Android Chart](trackball_images/trackball_img2.png)
+
+## Activation mode
+
+The [`ActivationMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~ActivationMode.html) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`ChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballActivationMode.html).
+
+The ChartTrackballActivationMode enum contains the following values:
+
+* [`LongPress`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballActivationMode.html) – Activates trackball only when performing the long press action.
+* [`TouchMove`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballActivationMode.html) – Activates trackball only when performing touch move action.
+* [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballActivationMode.html) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballActivationMode.html). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~Show.html) method.
 
 ## Customizing appearance
 
@@ -295,6 +305,17 @@ The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusio
 [C#]
 
 trackball.Hide();
+
+{% endhighlight %}
+
+### HitTest method
+
+The [`HitTest`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~HitTest.html) method is used to check whether the point is in trackball or not.
+
+{% highlight c# %} 
+[C#]
+
+trackball.HitTest(pointX, pointY);
 
 {% endhighlight %}
 
