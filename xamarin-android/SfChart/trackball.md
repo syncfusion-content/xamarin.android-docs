@@ -308,6 +308,17 @@ trackball.Hide();
 
 {% endhighlight %}
 
+### HitTest method
+
+The [`HitTest`]() method is used to check whether the point is in trackball or not.
+
+{% highlight c# %} 
+[C#]
+
+trackball.HitTest(pointX, pointY);
+
+{% endhighlight %}
+
 ### Get the touch position
 
 The [`OnLongPress(float valueX, float valueY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~OnLongPress.html) method of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) can be override to get the touch points while doing interactions.
