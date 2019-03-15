@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Trackball in in Syncfusion SfChart
+title: Chart Trackball in Syncfusion SfChart
 description: How to enable and customize the trackball behavior in Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
