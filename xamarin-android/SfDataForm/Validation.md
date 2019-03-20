@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Validation | SfDataForm | Xamarin.Android | Syncfusion
 description: How to validate the data in SfDataForm
@@ -355,6 +355,20 @@ private void DataForm_Validated(object sender, ValidatedEventArgs e)
     var isValid = e.IsValid;
     var propertyName = e.PropertyName;
 }
+{% endhighlight %}
+{% endtabs %}
+
+You can get the details of invalid DataFormItems when validating the data form as `Explicit` validation mode using [ValidationCompleted](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ValidationCompleted_EV.html) event. This event contains [ValidationCompletedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.ValidationCompletedEventArgs.html) argument, which holds a list of DataFormItem as errors. 
+
+{% tabs %}
+{% highlight c# %}
+dataForm.ValidationCompleted += DataForm_ValidationCompleted; 
+… 
+
+private void DataForm_ValidationCompleted(object sender, ValidationCompletedEventArgs e) 
+{ 
+    var invalidItems = e.Errors; 
+} 
 {% endhighlight %}
 {% endtabs %}
 
