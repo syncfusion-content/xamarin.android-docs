@@ -779,9 +779,9 @@ if (dataFormItem.Name == "Name")
 {% endtabs %}
 Here, the `Name` field will be hidden.
 
-## Programatically scroll to specific editor
+## Programmatically scroll to specific editor
 
-You can programatically scroll to specific editor using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ScrollTo.html) method by passing the `property name`. 
+You can programmatically scroll to specific editor using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ScrollTo.html) method by passing the `property name`. 
 
 {% tabs %}
 {% highlight c# %}
