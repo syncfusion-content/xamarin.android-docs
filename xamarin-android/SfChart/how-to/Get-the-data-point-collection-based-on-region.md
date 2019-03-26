@@ -24,4 +24,4 @@ List<object> dataPoints = Series.GetDataPoints(startX, endX, startY, endY);
 
 {% endhighlight  %}
 
-N> You can get the visible plotting region of the series in the chart [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~SeriesClipRect.html) or [`SeriesBounds`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~SeriesBounds.html) property in run time.
+N> You can get the visible plotting region of the series in the chart using [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~SeriesClipRect.html) or [`SeriesBounds`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~SeriesBounds.html) property in run time.
