@@ -133,7 +133,7 @@ public class MainActivity : Activity
 
     private void Button_Click(object sender, System.EventArgs e)
     {
-		//Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
+	    //Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
         tooltipBehavior.Show(pointX, pointY, true);
     }
 }
