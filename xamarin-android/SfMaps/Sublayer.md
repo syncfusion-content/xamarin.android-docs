@@ -11,7 +11,7 @@ documentation: ug
 
 Sublayer in the maps control allows to load multiple shape files in a single container and enables maps to display more information.
 
-## Adding sublayer
+## Adding sublayers in ShapeFileLayer
 
 You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer.html) using the [`SubShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.SubShapeFileLayer.html) property.
 
@@ -96,6 +96,37 @@ You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusi
 {% endtabs %}
 
 ![](Images/Sublayer.png)
+
+## Adding sublayers in ImageryLayer
+
+You can add multiple shape files in the `ImageryLayer` using the `SubShapeFileLayers` property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+            SfMaps map = new SfMaps(this);
+
+            ImageryLayer imageryLayer = new ImageryLayer();
+
+            SubShapeFileLayer subShapeLayer = new SubShapeFileLayer();
+            subShapeLayer.Uri = "africa.shp";
+
+            ShapeSetting shapeSetting = new ShapeSetting();
+            shapeSetting.ShapeFill = Color.Orange;
+            shapeSetting.ShapeStrokeThickess = 1;
+            subShapeLayer.ShapeSettings = shapeSetting;
+
+            imageryLayer.SubShapeFileLayers.Add(subShapeLayer);
+
+            map.Layers.Add(imageryLayer);
+
+            SetContentView(map);
+
+{% endhighlight %}
+
+{% endtabs %}
+![Sublayer support in Xamarin.Android Maps](Images/ImageryLayer-SubLayer.jpg)
 
 ### Customizing sublayer
 
