@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Tooltip
+title: Chart Tooltip in Syncfusion SfChart
 description: How to enable and customize the tooltip in Essential Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
