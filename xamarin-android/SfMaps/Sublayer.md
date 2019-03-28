@@ -99,7 +99,7 @@ You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusi
 
 ## Adding sublayers in ImageryLayer
 
-You can add multiple shape files in the `ImageryLayer` using the `SubShapeFileLayers` property.
+You can add multiple shape files in the `ImageryLayer` using the [`SubShapeFileLayers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.SubShapeFileLayer.html) property.
 
 {% tabs %}
 
