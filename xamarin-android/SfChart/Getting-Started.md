@@ -208,7 +208,7 @@ namespace Chart_GettingStarted
             secondaryAxis.Title.Text = "Height (in cm)";
             chart.SecondaryAxis = secondaryAxis;
             
-            ObservableCollection<ChartData> Data = new ObservableCollection<ChartData>()
+            ObservableCollection<ChartData> data = new ObservableCollection<ChartData>()
             {
                 new ChartData { Name = "David", Height = 180 },
                 new ChartData { Name = "Michael", Height = 170 },
@@ -218,7 +218,7 @@ namespace Chart_GettingStarted
 
             //Initializing column series
             ColumnSeries series = new ColumnSeries();
-            series.ItemsSource = viewModel.Data;
+            series.ItemsSource = data;
             series.XBindingPath = "Name";
             series.YBindingPath = "Height";
           
