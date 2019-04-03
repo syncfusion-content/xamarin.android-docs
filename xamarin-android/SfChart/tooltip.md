@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Tooltip
+title: Chart Tooltip in Syncfusion SfChart
 description: How to enable and customize the tooltip in Essential Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
@@ -114,11 +114,30 @@ The  [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusi
 
 {% highlight c# %}
 
+public class MainActivity : Activity
+{
+    ChartTooltipBehavior tooltipBehavior;
+		
+    protected override void OnCreate(Bundle bundle)
+    {
+        . . .          
 
-//Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
+        Button button = new Button(this);
+        button.Click += Button_Click;
+
+        tooltipBehavior = new ChartTooltipBehavior();
+        chart.Behaviors.Add(tooltipBehavior);
+
+        . . .
+    }
+
+    private void Button_Click(object sender, System.EventArgs e)
+    {
+	    //pointX - determines the x position of tooltip, pointY - determines the y position of tooltip and bool value determines whether the tooltip should be animated while displaying.
+        tooltipBehavior.Show(pointX, pointY, true);
+    }
+}
 	
-tooltip.Show(pointX, pointY, true);
-
 {% endhighlight %}
 
 
