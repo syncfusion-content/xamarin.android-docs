@@ -34,7 +34,6 @@ sfCalendar.ViewMode = ViewMode.MonthView;
 * The current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~TodayTextColor.html). 
 * The month view label settings class has the APIs to change date text size, day text size and various format options. 
 * The Background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~InlineBackgroundColor.html) property.
-* The blackout date color can be modified with [BlackoutColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~BlackoutColor.html) Property. 
 
 {% highlight c# %}
 
