@@ -73,7 +73,7 @@ SetContentView(sfCalendar);
 N> This support is enabled only in month view and the dates that consists inline events will also be disabled, when they are blacked out.
 
 ### Customize the BlackoutDates Color
-We can customize the BlackoutDates Color in month view mode by using[BlackOutColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings.html).
+You can customize the color of BlackoutDates in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings.html).
 
 {% tabs %}
 {% highlight c# %}
