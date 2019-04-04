@@ -216,7 +216,6 @@ public class Label : TextView
 {% endhighlight %}
 {% endtabs %}
 
-![Customize row drag and drop template](SfDataGrid_images/CustomizedTemplate.png)
 
 You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomTemplate-1341433818).
 
@@ -465,8 +464,6 @@ public class CustomGridStyle : DataGridStyle
 
 {% endhighlight %}
 {% endtabs %}
-
-![Customize row drag and drop indicator](SfDataGrid_images/CustomizedIndicator_Row.png)
 
 ## Updating summaries when dragging and dropping a row between groups
 
