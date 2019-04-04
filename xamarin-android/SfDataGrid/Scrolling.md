@@ -155,3 +155,29 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 
 ![Do not bounce](SfDataGrid_images/VerticalOverScrollMode_none.gif)
 
+## Identifying scroll state changes
+
+The SfDataGrid will notify the scrolling state changes via the [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollStateChanged_EV.html) event.
+
+Following states will be notified through the [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.ScrollStateChangedEventArgs~ScrollState.html) property in the event argument.
+
+* Dragging: Specifies that `SfDataGrid` is currently being dragged in the view.
+* Fling: Specifies that fling action is performed on the `SfDataGrid`.
+* Idle: Specifies that `SfDataGrid` is not scrolling currently.
+* Programmatic: Specifies that scrolling is performed by using [ScrollToColumnIndex](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToColumnIndex.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowIndex.html) method.
+
+{% tabs %}
+{% highlight c# %}
+
+dataGrid.ScrollStateChanged += DataGrid_ScrollStateChanged;
+
+   private void DataGrid_ScrollStateChanged(object sender, ScrollStateChangedEventArgs e)
+
+        {                    
+           // you can customize your code here.
+           var scrollState = e.ScrollState;            
+        }
+
+{% endhighlight %}
+{% endtabs %}
+
