@@ -19,7 +19,7 @@ sfGrid.AllowDraggingColumn = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/ColumnDraganddrop.gif)
+![Column drag and drop](SfDataGrid_images/ColumnDraganddrop.gif)
 
 ## Events in column drag and drop
 
@@ -211,7 +211,7 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CustomizedIndicator_Column.jpg)
+![Customize column indicator](SfDataGrid_images/CustomizedIndicator_Column.jpg)
 
 ## Cancel auto scrolling
 
