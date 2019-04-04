@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-## Refreshing the chart
+# Refreshing the chart
 
 The following methods are available to refresh the chart.
 

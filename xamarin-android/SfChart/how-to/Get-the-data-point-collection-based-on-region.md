@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-##  Get the data point collection based on region
+# Get the data point collection based on region
 
 [`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries.html) provides the following methods to get the visible range data points: 
 
