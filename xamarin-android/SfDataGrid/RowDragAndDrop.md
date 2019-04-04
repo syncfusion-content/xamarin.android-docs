@@ -19,7 +19,7 @@ sfGrid.AllowDraggingRow = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/RowDragandDrop.gif)
+![Row drag and drop](SfDataGrid_images/RowDragandDrop.gif)
 
 ## Dragging scenarios
 
@@ -39,7 +39,7 @@ SfDataGrid allows you to load a desired content when performing row drag and dro
 
 Default template will be loaded, if template is not explicitly assigned for row drag and drop operations. 
 
-![](SfDataGrid_images/DefaultTemplate.jpg)
+![Default row drag and drop template](SfDataGrid_images/DefaultTemplate.jpg)
 
 ## Customizing row drag and drop template
 
@@ -216,7 +216,7 @@ public class Label : TextView
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CustomizedTemplate.png)
+![Customize row drag and drop template](SfDataGrid_images/CustomizedTemplate.png)
 
 You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomTemplate-1341433818).
 
@@ -231,6 +231,7 @@ The `QueryRowDragging` event provides following properties in [QueryRowDragging
 * [Reason](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~Reason.html) – Returns row dragging details as `QueryRowDraggingReason`.
 * [RowData](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~Reason.html) – Returns the underlying data associated with the dragged row.
 * [CurrentRowData](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~CurrentRowData.html) – Returns the corresponding row data, over which the row drag view is currently placed.
+* [CanAutoScroll](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~CanAutoScroll.html): Returns whether auto-scrolling should happen when row drag view reaches the top or bottom of the `SfDataGrid`.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
 ## Cancel dragging of a particular row 
@@ -465,7 +466,7 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CustomizedIndicator_Row.png)
+![Customize row drag and drop indicator](SfDataGrid_images/CustomizedIndicator_Row.png)
 
 ## Updating summaries when dragging and dropping a row between groups
 
@@ -520,4 +521,22 @@ public class MainActivity : Activity
 
 The following screenshot shows the output rendered when executing the above code example.
 
-![](SfDataGrid_images/UpdatedSummary_Android.png)
+![Summary update during row drag and drop](SfDataGrid_images/UpdatedSummary_Android.png)
+
+## Cancel auto scrolling
+
+Vertical auto-scrolling of the `SfDataGrid` during row drag and drop can be canceled using `CanAutoScroll` argument of the `QueryRowDragging` event handler.
+
+{% tabs %}
+{% highlight c# %}
+
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{  
+    // Disable scroll while dragging and dropping the Rows.    
+    e.CanAutoScroll = false;
+}
+
+{% endhighlight %}
+{% endtabs %}
