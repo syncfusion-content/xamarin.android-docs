@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CenterButton
+title: Syncfusion Xamarin.Android SfTabView CenterButton
 description: Learn how to create and customize CenterButton in Syncfusion TabView control for Xamarin.Android platform. 
 platform: Xamarin.Android
 control: TabView
@@ -15,17 +15,13 @@ This section explains on how to create and customize The Xamarin.Android SfTabVi
 
 {% highlight C# %}
 
-public class MainActivity : AppCompatActivity
+SfTabView tabView;
+protected override void OnCreate(Bundle savedInstanceState)
 {
-    SfTabView tabView;
-
-    protected override void OnCreate(Bundle savedInstanceState)
-    {
-        base.OnCreate(savedInstanceState);
-        tabView = new SfTabView(this);
-        tabView.OverflowMode = OverflowMode.CenterButton;
-        SetContentView(tabView);
-    }
+    base.OnCreate(savedInstanceState);
+    tabView = new SfTabView(this);
+    tabView.OverflowMode = OverflowMode.CenterButton;
+    SetContentView(tabView);
 }
 
 {% endhighlight %}
@@ -74,7 +70,7 @@ private void TabView_CenterButtonTapped(object sender, System.EventArgs e)
     Android.App.AlertDialog.Builder alertDialog = new Android.App.AlertDialog.Builder(this);
     alertDialog.SetTitle("CenterButton Customization");
     alertDialog.SetMessage("CenterButton clicked");
-    alertDialog.SetNeutralButton("Ok", (c, ev) => { });
+    alertDialog.SetNeutralButton("Ok", (c, eve) => { });
     alertDialog.Show();
 }
 
@@ -90,21 +86,17 @@ When built-in view is not needed, It can be overridden by adding custom views to
 
 {% highlight C# %}
 
-public class MainActivity : AppCompatActivity
+SfTabView tabView;
+ImageView image;
+protected override void OnCreate(Bundle savedInstanceState)
 {
-    SfTabView tabView;
-    ImageView image;
-
-    protected override void OnCreate(Bundle savedInstanceState)
-    {
-        base.OnCreate(savedInstanceState);
-        tabView = new SfTabView(this);
-        image = new ImageView(this);
-        image.SetImageResource(Resource.Drawable.Compose);
-        image.Clickable = true;
-        image.Click += Image_Click;
-        tabView.CenterButtonView = image;
-    }
+    base.OnCreate(savedInstanceState);
+    tabView = new SfTabView(this);
+    image = new ImageView(this);
+    image.SetImageResource(Resource.Drawable.Compose);
+    image.Clickable = true;
+    image.Click += Image_Click;
+    tabView.CenterButtonView = image;
 }
 
 private void Image_Click(object sender, System.EventArgs e)
@@ -112,7 +104,7 @@ private void Image_Click(object sender, System.EventArgs e)
     Android.App.AlertDialog.Builder alertDialog = new Android.App.AlertDialog.Builder(this);
     alertDialog.SetTitle("CenterButton Customization");
     alertDialog.SetMessage("CenterButton view customized");
-    alertDialog.SetNeutralButton("Ok", (c, ev) => { });
+    alertDialog.SetNeutralButton("Ok", (c, eve) => { });
     alertDialog.Show();
 }
 
@@ -120,6 +112,6 @@ private void Image_Click(object sender, System.EventArgs e)
 
 {% endtabs %}
 
-![](images/Center-Button/Center_Button_Customization.png)
+![CenterButton](images/Center-Button/Center_Button_Customization.png)
 
-Please Find the sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabView_CenterButtonCustomizatin172840974.zip)
+Please Find the sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabView_CenterButtonCustomizatin1937817286.zip)
