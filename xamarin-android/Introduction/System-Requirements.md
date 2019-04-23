@@ -26,30 +26,37 @@ The following table lists the platforms supported by our Xamarin.Android control
 
 <table>
     <tr>
-        <td>
-            Platform
+        <th>Platform<br/>
+            <br/></th>        
+        <th>
+          Device Types
             <br/>
             <br/>
-        </td>
-          <td>
+        </th>
+          <th>
             Controls
             <br/>
             <br/>
-        </td>
-        <td>
+        </th>
+        <th>
             Supported versions
             <br/>
             <br/>
-        </td>
+        </th>
     </tr>
-	<tr>
+    <tr>
         <td rowspan="2">
             Android
             <br/>
             <br/>
         </td>
+        <td rowspan="2">
+        Phone, Tablet
+        <br/>
+        <br/>
+        </td>
         <td>
-            SfPdfViewer,SfCheckBox
+            SfPdfViewer, SfCheckBox
             <br/>
             <br/>
         </td>
@@ -59,13 +66,13 @@ The following table lists the platforms supported by our Xamarin.Android control
             <br/>
         </td>
     </tr>
-	<tr>
+     <tr>
         <td>
             All other controls 
             <br/>
             <br/>
         </td>
-        <td>
+         <td>
             API level 19 and later versions
             <br/>
             <br/>
