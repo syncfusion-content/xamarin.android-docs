@@ -276,7 +276,7 @@ Note: This property automatically changed to False when close the dialog by clic
 
 Screen shot for the above code
 
-![](images/android_picker.png)
+![Picker mode dailog in Xamarin.Android SfPicker](images/android_picker.png)
 
 We have attached sample for reference. please download the sample from the below link.
 
