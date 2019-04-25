@@ -280,4 +280,4 @@ Screen shot for the above code
 
 We have attached sample for reference. please download the sample from the below link.
 
-Sample link:[GettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/GETTIN~1763331626.ZIP)
+Sample link:[GettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-946810959.zip)
