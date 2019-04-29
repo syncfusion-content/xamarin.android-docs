@@ -9,51 +9,54 @@ documentation: ug
 
 # System Requirements
 
-**Integrated** **Development** **Environment** **for** **Windows**
+### Hardware Environment
 
-By using the following IDEs, you can develop Xamarin.Android applications:
+* Processor: x86 or x64
+* RAM : 512 MB (minimum), 1 GB (recommended)
+* Hard disk: up to 1.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing the setup in other drive.
 
-* Visual Studio 2015
-* Visual Studio 2017
+### Development Environment
+Please find the recommended development environment for Xamarin platform in the following link. 
 
-N> For installing and configuring Xamarin in Visual Studio, please refer this [`link`](https://developer.xamarin.com/guides/android/getting_started/installation/windows/).
+[https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
-**Integrated** **Development** **Environment** **for** **Mac**
-
-By using Visual Studio for Mac, you can develop Xamarin.Android applications.
-
-N> For installing and configuring Xamarin in Visual Studio for Mac, please refer this [`link`](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
-
-**Supported** **Platforms**
+### Supported Platforms
 
 The following table lists the platforms supported by our Xamarin.Android controls.
 
 <table>
     <tr>
-        <td>
-            Platform
+        <th>Platform<br/>
+            <br/></th>        
+        <th>
+          Device Types
             <br/>
             <br/>
-        </td>
-          <td>
+        </th>
+          <th>
             Controls
             <br/>
             <br/>
-        </td>
-        <td>
+        </th>
+        <th>
             Supported versions
             <br/>
             <br/>
-        </td>
+        </th>
     </tr>
-	<tr>
+    <tr>
         <td rowspan="2">
             Android
             <br/>
             <br/>
         </td>
+        <td rowspan="2">
+        Phone, Tablet
+        <br/>
+        <br/>
+        </td>
         <td>
-            SfPdfViewer,SfCheckBox
+            SfPdfViewer, SfCheckBox
             <br/>
             <br/>
         </td>
@@ -63,16 +66,22 @@ The following table lists the platforms supported by our Xamarin.Android control
             <br/>
         </td>
     </tr>
-	<tr>
+     <tr>
         <td>
             All other controls 
             <br/>
             <br/>
         </td>
-        <td>
-            API level 17 and later versions
+         <td>
+            API level 19 and later versions
             <br/>
             <br/>
         </td>
     </tr>
 </table>
+
+### Target Framework (Compile SDK Version) for Android
+
+For Android platform, the target framework or compile SDK version of the application should be equal or greater than the latest API available at the time of our release. Please find more details about setting the target framework in the following link.
+
+ [https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework](https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework)
