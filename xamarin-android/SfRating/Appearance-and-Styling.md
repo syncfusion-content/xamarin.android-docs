@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-SfRating control provides support to customize the Size, Item count and space between rating items.
+When default view is not needed we can customize the view of Xmaarin.Forms SfRating control. SfRating control provides support to customize the Size, Item count and space between rating items.
 
 ## Set Size
 
@@ -47,49 +47,20 @@ N> By default, property value is 5.
 
 ![](images/layoutSpace.jpg)
  
-## Set Number of Items
+ ## Set Number of Items
 
-The `ItemCount` property sets the number of rating items to be displayed. 
+ The `ItemCount` proeprty sets the number of rating items to be displayed. 
 
-N> The default property value is 5.
+ N> The default proeprty value is 5.
 
-{% tabs %}
+ {% tabs %}
 
 {% highlight C# %}
 
-	   rating.ItemCount=4;
+	   rating.ItemCount = 4;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/fourstar.jpg)
-
-## Rating Settings
-
-For styling customization, set the `RatingSettings` property value with `SfRatingSettings` object instance.
-
-
-{% tabs %}
-
-{% highlight C# %}
-
-	SfRatingSettings ratingSettings = new SfRatingSettings();
-    ratingSettings.RatedFill = Color.FromHex("#fbd10a");
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-After adding Rating settings, add the SfRatingSettings instance to Rating instance.
-
-
-{% tabs %}
-
-{% highlight C# %}
-
-    rating.RatingSettings=ratingSettings;
-
-{% endhighlight %}
-
-{% endtabs %}
+![](images/fourStar.jpg)

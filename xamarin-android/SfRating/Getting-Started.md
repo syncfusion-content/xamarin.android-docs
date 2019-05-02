@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
+This section explains how to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
 
 ## Referencing Essential Studio components in your solution
 
@@ -27,40 +27,55 @@ Add the following assembly references to the Android project,
 
 ## Add and Configure the SfRating Control
 
+* The following namespace needs to be added.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Com.Syncfusion.Rating;
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * Create an instance for SfRating control and adding to application.
 
 {% tabs %}
 
 {% highlight C# %}
 
-SfRating rating=new SfRating(this);
-SetContentView(rating);
+SfRating rating;
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    base.OnCreate(savedInstanceState);
+    rating = new SfRating(this);
+    SetContentView(rating);
+}
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-* Configure the properties of SfRating control.
+## Set Nnumber of Rating Items
+
+Number of rating items which are to be displayed can be customized in SfRating control. User may wants to create the ratting application with 5 items as follows.
+
+N> By default, property value is 5.
 
 {% tabs %}
 
 {% highlight C# %}
 
-rating.ItemCount=5;
-rating.Precision = SFRatingPrecision.Half;
-rating.ToolTipPlacement= SFRatingToolTipPlacement.None;
-rating.ItemSize=10;
-rating.Readonly=true;
-rating.Value=(float)3.5;
-rating.ItemSpacing = 5;
+rating.ItemCount = 5;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Set Value
+## SetValue
 
-* The `Value` property sets the display value of the Rating. 
+Display value can be set in SfRating control which is selected among the items. The following code snippet shows the display value of 3 with 5 ratings items.
 
 N> By default, property value is 0.
 
@@ -76,19 +91,18 @@ rating.Value=3;
 
 ## Precision
 
-* To enable full, half and exact values of Rating, set the `Precision` property.
+To enable full, half and exact values of Rating, Set the `Precision` property. 
 
-{% tabs %}
+% tabs %}
 
 {% highlight C# %}
 
-rating.Precision = Precision.Standard;
+rating.Value=3;
 
-{% endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
+![SfRatting Application](images/gettingstarted.png)
 
-![](images/gettingstarted.png)
-
-
+The complete Getting Started sample is available in this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted-436521212.zip).
