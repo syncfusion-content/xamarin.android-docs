@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion Rating control for Xamarin.Android
+title: Appearance and Styling in Syncfusion SfRating control
 description: Learn how to change the appearance and styling of rating control using ItemSize, ItemSpacing, ItemCount and customization properties.
 platform: Xamarin.Android
 control: Rating
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-When default view is not needed we can customize the view of Xmaarin.Forms SfRating control. SfRating control provides support to customize the Size, Item count and space between rating items.
+When default view is not needed we can customize the view of Xamarin.Forms SfRating control. SfRating control provides support to customize the Size, Item count and space between rating items.
 
 ## Set Size
 
@@ -27,7 +27,7 @@ N> By default, property value is 50.
 
 {% endtabs %}
 
-![](images/layoutSize.jpg)
+![ Rating Item Size](images/layoutSize.jpg)
  
 ## Set Space between Items
 
@@ -45,13 +45,13 @@ N> By default, property value is 5.
 
 {% endtabs %}
 
-![](images/layoutSpace.jpg)
+![Space between Rating Items](images/layoutSpace.jpg)
  
  ## Set Number of Items
 
- The `ItemCount` proeprty sets the number of rating items to be displayed. 
+ The `ItemCount` property sets the number of rating items to be displayed. 
 
- N> The default proeprty value is 5.
+ N> The default property value is 5.
 
  {% tabs %}
 
@@ -63,4 +63,4 @@ N> By default, property value is 5.
 
 {% endtabs %}
 
-![](images/fourStar.jpg)
+![Rating Item Customization](images/fourStar.jpg)

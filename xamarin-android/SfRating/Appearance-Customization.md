@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion Rating control for Xamarin.Android
+title: Appearance and Styling in Syncfusion SfRating control
 description: Learn how to change the appearance and styling of rating control using ItemSize, ItemSpacing, ItemCount and customization properties.
 platform: Xamarin.Android
 control: Rating
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance Customization
 
-We can customize the rated and unrated items Color, Strokewidth and Strokecolor using the following properties of SfRatingSettings. `RatedFill`, `UnRatedFill`, `RatedStroke`, `UnRatedStroke`, `RatedStrokeWidth`, `unRatedStrokeWidth`.
+We can customize the rated and unrated items Color, Stroke Wwdth and Stroke color using the following properties of SfRatingSettings. `RatedFill`, `UnRatedFill`, `RatedStroke`, `UnRatedStroke`, `RatedStrokeWidth`, `unRatedStrokeWidth`.
 
 ## Rating Settings
 
@@ -51,7 +51,7 @@ The `RatedFill` property fills the rated area with the specified solid color in 
 
 {% endtabs %}
 
-![](images/ratedFill.jpg)
+![Rated Items](images/ratedFill.jpg)
 
 ### Unselected Items
 
@@ -67,7 +67,7 @@ The `UnRatedFill` property fills the unrated area with the specified solid color
 
 {% endtabs %}
 
-![](images/unRatedFill.jpg)
+![Unrated Items](images/unRatedFill.jpg)
 
 ## Set Stroke Color
 
@@ -87,7 +87,7 @@ The RatedStroke property sets the stroke for the rated area with the specified s
 
 {% endtabs %}
 
-![](images/ratedStroke.jpg)
+![Rated Item Stroke Color](images/ratedStroke.jpg)
 
 ### Unselected Items
 
@@ -103,7 +103,7 @@ The `UnRatedStroke` property sets the stroke for the unrated area with the speci
 
 {% endtabs %}
 
-![](images/unRatedStroke.jpg)
+![Unrated Item Stroke Color](images/unRatedStroke.jpg)
  
 ## Set Stroke Width
 
@@ -123,7 +123,7 @@ The `RatedStrokeWidth` property sets the stroke width for the rated area with th
 
 {% endtabs %}
 
-![](images/ratedStrokeWidth.jpg)
+![Rated Item Stroke Width](images/ratedStrokeWidth.jpg)
 
 ### Unselected Items
 
@@ -139,4 +139,4 @@ The `UnRatedStrokeWidth` property sets the stroke width for the unrated area wit
 
 {% endtabs %}
 
-![](images/unRatedStrokeWidth.jpg)
+![Unrated Item Stroke Width](images/unRatedStrokeWidth.jpg)

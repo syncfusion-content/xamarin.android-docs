@@ -11,11 +11,11 @@ documentation: ug
 
 # ToolTip
 
-A ToolTip is a short description view that is used to understand the unfamiliar object that aren't directly displayed in the UI. In Xamarin.Forms SfRating control TooTip shows the dat's of `Value`. It will be displayed when we move cursor over the rating items. It will be disappered when we select rating item.
+A ToolTip is a short description view that is used to understand the unfamiliar object that aren't directly displayed in the UI. In Xamarin.Forms SfRating control TooTip shows the data's of `Value`. It will be displayed when we move cursor over the rating items. It will be disappeared when we select rating item.
 
 ## Set Tooltip Placement
 
-Using `ToolTipPlacement` property, We can define where the ToolTip need to be displayed. TooTipPlacement having the folowing three types of placemnt.
+Using `ToolTipPlacement` property, We can define where the ToolTip need to be displayed. TooTipPlacement having the following three types of placement.
 
 *BottomRight,
 *None,
@@ -37,7 +37,7 @@ The Tooltip will display on bottom of the rating stars.
 
 {% endtabs %}
 
-![](images/rightBottom.jpg)
+![ToolTip at Bottom](images/rightBottom.jpg)
 
 ### TopLeft 
 
@@ -53,11 +53,11 @@ The Tooltip will display on top of the rating stars.
 
 {% endtabs %}
 
-![](images/leftTop.jpg) 
+![ToolTip at Top](images/leftTop.jpg) 
 
 ### None
 
-When we set ToolTipPlacemnt as None, The ToolTip will be disappear.
+When we set ToolTipPlacement as None, The ToolTip will be disappear.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ When we set ToolTipPlacemnt as None, The ToolTip will be disappear.
 
 {% endtabs %}
 
-![](images/null.jpg)
+![No ToolTip](images/null.jpg)
 
 ## Set ToolTip Precision
 
@@ -87,4 +87,4 @@ N> The default value of ToolTip precision is 1.
 
 {% endtabs %}
 
-![](images/toolTipPrecision.jpg)
+![ToolTip Precision](images/toolTipPrecision.jpg)

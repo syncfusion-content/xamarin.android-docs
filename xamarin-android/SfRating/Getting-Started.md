@@ -57,7 +57,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 
 {% endtabs %}
 
-## Set Nnumber of Rating Items
+## Set Number of Rating Items
 
 Number of rating items which are to be displayed can be customized in SfRating control. User may wants to create the ratting application with 5 items as follows.
 
