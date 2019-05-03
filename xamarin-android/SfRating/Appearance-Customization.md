@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance Customization
 
-We can customize the rated and unrated items Color, Stroke Wwdth and Stroke color using the following properties of SfRatingSettings. `RatedFill`, `UnRatedFill`, `RatedStroke`, `UnRatedStroke`, `RatedStrokeWidth`, `unRatedStrokeWidth`.
+We can customize the rated and unrated items Color, Stroke Width and Stroke color using the following properties of SfRatingSettings. `RatedFill`, `UnRatedFill`, `RatedStroke`, `UnRatedStroke`, `RatedStrokeWidth`, `unRatedStrokeWidth`.
 
 ## Rating Settings
 
