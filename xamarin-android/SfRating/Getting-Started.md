@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
+This section explains how to configure the SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in the SfRating control.
 
 ## Referencing Essential Studio components in your solution
 
@@ -19,13 +19,13 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
-N> Assemblies are available in unzipped package location in Mac
+N> Assemblies are available in an unzipped package location in Mac.
 
-Add the following assembly references to the Android project,
+Add the following assembly reference to the Android project:
 
 [android\Syncfusion.SfRating.Andriod.dll]
 
-## Add and Configure the SfRating Control
+## Add and configure the SfRating control
 
 * The following namespace needs to be added.
 
@@ -39,7 +39,7 @@ using Com.Syncfusion.Rating;
 
 {% endtabs %}
 
-* Create an instance for SfRating control and adding to application.
+* Create an instance for SfRating control, and add it to application.
 
 {% tabs %}
 
@@ -57,11 +57,11 @@ protected override void OnCreate(Bundle savedInstanceState)
 
 {% endtabs %}
 
-## Set Number of Rating Items
+## Set number of rating items
 
-Number of rating items which are to be displayed can be customized in SfRating control. User may wants to create the ratting application with 5 items as follows.
+The number of rating items to be displayed can be customized in the SfRating control. Users can create a rating application with 5 items as follows.
 
-N> By default, property value is 5.
+N> The default value of this property is 5.
 
 {% tabs %}
 
@@ -75,9 +75,9 @@ rating.ItemCount = 5;
 
 ## SetValue
 
-Display value can be set in SfRating control which is selected among the items. The following code snippet shows the display value of 3 with 5 ratings items.
+The display value can be set in the SfRating control, which is selected among the items. The following code sample demonstrates how to set the display value of 3 with 5 ratings items.
 
-N> By default, property value is 0.
+N> The default value of this property is 0.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ rating.Value=3;
 
 ## Precision
 
-To enable full, half and exact values of Rating, Set the `Precision` property. 
+To enable full, half, and exact values of rating, set the `Precision` property.
 
 % tabs %}
 
@@ -103,6 +103,7 @@ rating.Value=3;
 
 {% endtabs %}
 
-![SfRatting Application](images/gettingstarted.png)
+![SfRating application](images/gettingstarted.png)
 
-The complete Getting Started sample is available in this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted-436521212.zip).
+The complete Getting Started sample is available in this [documenation](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted-436521212.zip).
+
