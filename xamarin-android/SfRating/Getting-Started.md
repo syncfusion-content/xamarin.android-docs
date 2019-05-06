@@ -105,5 +105,5 @@ rating.Value=3;
 
 ![SfRating application](images/gettingstarted.png)
 
-The complete Getting Started sample is available in this [documenation](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted-436521212.zip).
+The complete Getting Started sample is available in this [documentation](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted-436521212.zip).
 
