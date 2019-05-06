@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Custom items in Syncfusion SfRating control
+title: Adding Custom items in Syncfusion Rating control
 description: Learn how to add the Custom Items in rating control
 platform: Xamarin.Android
 control: Rating
