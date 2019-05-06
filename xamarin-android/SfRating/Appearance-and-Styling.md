@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion SfRating control
+title: Appearance and Styling in Syncfusion Rating control
 description: Learn how to change the appearance and styling of rating control using ItemSize, ItemSpacing, ItemCount and customization properties.
 platform: Xamarin.Android
 control: Rating
@@ -9,13 +9,13 @@ documentation: ug
 
 # Appearance and Styling
 
-When default view is not needed we can customize the view of Xamarin.Forms SfRating control. SfRating control provides support to customize the Size, Item count and space between rating items.
+When the default view is not needed, you can customize the view of Xamarin.Forms SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
 
-## Set Size
+## Set size
 
-The `ItemSize` property sets the size of the Rating items. 
+The `ItemSize` property sets the size for the rating items. 
 
-N> By default, property value is 50.
+N> The default value of this property is 50.
 
 {% tabs %}
 
@@ -29,11 +29,11 @@ N> By default, property value is 50.
 
 ![ Rating Item Size](images/layoutSize.jpg)
  
-## Set Space between Items
+## Set space between items
 
-The `ItemSpacing` property sets the spacing between the Rating items. 
+The `ItemSpacing` property sets spacing between the rating items.
 
-N> By default, property value is 5.
+N> The default value of this property is 5.
 
 {% tabs %}
 
@@ -47,11 +47,11 @@ N> By default, property value is 5.
 
 ![Space between Rating Items](images/layoutSpace.jpg)
  
- ## Set Number of Items
+## Set number of items
 
- The `ItemCount` property sets the number of rating items to be displayed. 
+The `ItemCount` property sets the number of rating items to be displayed.
 
- N> The default property value is 5.
+N> The default value of this property is 5.
 
  {% tabs %}
 
@@ -63,4 +63,4 @@ N> By default, property value is 5.
 
 {% endtabs %}
 
-![Rating Item Customization](images/fourStar.jpg)
+![Rating item customization](images/fourStar.jpg)
