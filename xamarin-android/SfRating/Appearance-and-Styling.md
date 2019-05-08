@@ -64,3 +64,30 @@ N> The default value of this property is 5.
 {% endtabs %}
 
 ![Rating item customization](images/fourStar.jpg)
+
+## Rating Settings
+
+For styling customization, Set the `RatingSettings` property value with `SfRatingSettings` object instance.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfRatingSettings ratingSettings = new SfRatingSettings();
+ratingSettings.RatedFill = Color.Gray;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+After adding `RatingSettings` add the RatingSettings instance to `SfRating` instance.
+
+{% tabs %}
+
+{% highlight c# %}
+
+rating.RatingSettings = ratingSettings;
+
+{% endhighlight %}
+
+{% endtabs %}
