@@ -35,7 +35,7 @@ The `SelectedView` property is used to apply the given SelectedView to selected 
 
 {% highlight C# %}
 
-	ImageView angrySelected = new ImageView(this);
+    ImageView angrySelected = new ImageView(this);
     angrySelected.SetImageResource(Resource.Drawable.Angry_selected);
     ratingItem.SelectedView = angrySelected;
 
@@ -47,7 +47,7 @@ The `UnSelectedView` property is used to apply the given UnSelectedView to unsel
 
 {% highlight C# %}
 
-	ImageView angryUnselected = new ImageView(this);
+    ImageView angryUnselected = new ImageView(this);
     angryUnselected.SetImageResource(Resource.Drawable.Angry_Unselected);
     ratingItem.UnSelectedView = angryUnselected;
 
@@ -61,7 +61,7 @@ N> SfRatingItem keeps both selected and unselected view respectively.
 
 {% highlight C# %}
 
-	List<SfRatingItem> ratingItemList = new List<SfRatingItem>();
+    List<SfRatingItem> ratingItemList = new List<SfRatingItem>();
     ratingItemList.Add(ratingItem);
     rating.Items = ratingItemList;
 
@@ -73,7 +73,7 @@ When `EnableCustomItems` property is enabled, it will display the custom items a
 
 {% highlight C# %}
 
-	SfRating rating = new SfRating(this);
+    SfRating rating = new SfRating(this);
     SfRatingItem angry = new SfRatingItem(this);
     ImageView angrySelected = new ImageView(this);
     angrySelected.SetImageResource(Resource.Drawable.Angry_selected);			
