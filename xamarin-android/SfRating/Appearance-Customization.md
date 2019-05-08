@@ -94,7 +94,7 @@ The RatedStroke property sets the stroke for the rated area with the specified s
 
 {% endtabs %}
 
-![Rated Item Stroke Color](images/ratedStroke.jpg)
+![Rated Item Stroke Color](images/ratedStroke.png)
 
 ### Unselected items
 

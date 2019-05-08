@@ -93,7 +93,7 @@ rating.Value=3;
 
 To enable full, half, and exact values of rating, set the `Precision` property.
 
-% tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
