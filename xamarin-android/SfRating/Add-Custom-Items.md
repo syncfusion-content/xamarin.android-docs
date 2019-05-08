@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Custom items in Syncfusion Rating control
+title: Adding Custom items in Syncfusion Rating control for Xamarin.Android
 description: Learn how to add the Custom Items in rating control
 platform: Xamarin.Android
 control: Rating
@@ -35,9 +35,9 @@ The `SelectedView` property is used to apply the given SelectedView to selected 
 
 {% highlight C# %}
 
-	ImageView customImageView1 = new ImageView(this);
-	customImageView1.SetImageResource(Resource.Drawable.Angry_selected);
-	ratingItem.SelectedView = customImageView1;
+	ImageView customImageView = new ImageView(this);
+	customImageView.SetImageResource(Resource.Drawable.Angry_selected);
+	ratingItem.SelectedView = customImageView;
 
 {% endhighlight %}
 
@@ -47,9 +47,9 @@ The `UnSelectedView` property is used to apply the given UnSelectedView to unsel
 
 {% highlight C# %}
 
-	ImageView customImageView2 = new ImageView(this);
-	customImageView2.SetImageResource(Resource.Drawable.Angry_Unselected);
-	ratingItem.UnSelectedView = customImageView2;
+	ImageView customImageView = new ImageView(this);
+	customImageView.SetImageResource(Resource.Drawable.Angry_Unselected);
+	ratingItem.UnSelectedView = customImageView;
 
 {% endhighlight %}
 
