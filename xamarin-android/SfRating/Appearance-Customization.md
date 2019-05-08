@@ -1,21 +1,50 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion Rating control for Xamarin.Android
+title: Customization in Syncfusion Rating control for Xamarin.Android
 description: Learn how to change the appearance and styling of rating control using ItemSize, ItemSpacing, ItemCount and customization properties.
 platform: Xamarin.Android
 control: Rating
 documentation: ug
 ---
 
-# Appearance Customization
+# Customizing appearance
 
-Different colors can be applied for rated and unrated items and its border in SfRating control.
+You can customize the color, stroke width, and stroke color of rated and unrated items using the following properties of `SfRatingSettings`:
 
-## Set Fill Color
+* `RatedFill`
+* `UnRatedFill`
+* `RatedStroke`
+* `UnRatedStroke`
+* `RatedStrokeWidth`
+* `UnRatedStrokeWidth`
 
-SfRating control has support to set the fill color for the selected and unselected items.
+## Rating settings
 
-### Selected Items
+For customizing styles, set the value of `RatingSettings` property with `SfRatingsSettings` object instance.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfRating rating;
+SfRatingSettings ratingSettings;
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    base.OnCreate(savedInstanceState);
+    rating = new SfRating(this);
+    ratingSettings = new SfRatingSettings();
+    rating.RatingSettings = ratingSettings;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Set fill color
+
+The SfRating control supports to set the fill color for the selected and unselected items.
+
+### Selected items
 
 The `RatedFill` property fills the rated area with the specified solid color in the SfRating control.
 
@@ -23,15 +52,15 @@ The `RatedFill` property fills the rated area with the specified solid color in 
 
 {% highlight C# %}
 
-	ratingSettings.RatedFill=Color.FromHex("#fbd10a");
+	ratingSettings.RatedFill = Color.Red;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/ratedFill.jpg)
+![Rated Items](images/ratedFill.jpg)
 
-### Unselected Items
+### Unselected items
 
 The `UnRatedFill` property fills the unrated area with the specified solid color in the SfRating control.
 
@@ -39,19 +68,19 @@ The `UnRatedFill` property fills the unrated area with the specified solid color
 
 {% highlight C# %}
 
-	ratingSettings.UnRatedFill=Color.GRAY;
+	ratingSettings.UnRatedFill = Color.Gray;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/unRatedFill.jpg)
+![Unrated Items](images/unRatedFill.jpg)
 
-## Set Stroke Color
+## Set stroke color
 
-SfRating control has support to set the stroke color for the selected and unselected items.
+The SfRating control supports to set the stroke color for the selected and unselected items.
 
-### Selected Items
+### Selected items
 
 The RatedStroke property sets the stroke for the rated area with the specified solid color for the selected items in the SfRating control.
 
@@ -59,15 +88,15 @@ The RatedStroke property sets the stroke for the rated area with the specified s
 
 {% highlight C# %}
 
-	ratingSettings.RatedStroke=Color.GREEN;
+    ratingSettings.RatedStroke = Color.DarkGreen;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/ratedStroke.jpg)
+![Rated Item Stroke Color](images/ratedStroke.png)
 
-### Unselected Items
+### Unselected items
 
 The `UnRatedStroke` property sets the stroke for the unrated area with the specified solid color in the SfRating control.
 
@@ -75,46 +104,46 @@ The `UnRatedStroke` property sets the stroke for the unrated area with the speci
 
 {% highlight C# %}
 
-	ratingSettings.UnRatedStroke=Color.BLACK;
+	ratingSettings.UnRatedStroke = Color.Black;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/unRatedStroke.jpg)
+![Unrated Item Stroke Color](images/unRatedStroke.jpg)
  
-## Set Stroke Thickness
+## Set stroke width
 
-SfRating control has support to set the stroke thickness for the selected and unselected items.
+The SfRating control supports to set the stroke width for the selected and unselected items.
 
-### Selected Items
+### Selected items
 
-The `RatedStrokeThickness` property sets the stroke thickness for the rated area with the specified value in the SfRating control.
-
-{% tabs %}
-
-{% highlight C# %}
-
-	ratingSettings.RatedStrokeThickness=3;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](images/ratedStrokeThickness.jpg)
-
-### Unselected Items
-
-The `UnRatedStrokeThickness` property sets the stroke thickness for the unrated area with the specified value in the SfRating control.
+The `RatedStrokeWidth` property sets the stroke width for the rated area with the specified value in the SfRating control.
 
 {% tabs %}
 
 {% highlight C# %}
 
-	ratingSettings.UnRatedStrokeThickness=3;
+	ratingSettings.RatedStrokeWidth = 3;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/unRatedStrokeThickness.jpg)
+![Rated Item Stroke Width](images/ratedStrokeWidth.jpg)
+
+### Unselected items
+
+The `UnRatedStrokeWidth` property sets the stroke width for the unrated area with the specified value in the SfRating control.
+
+{% tabs %}
+
+{% highlight C# %}
+
+	ratingSettings.UnRatedStrokeWidth = 3;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Unrated Item Stroke Width](images/unRatedStrokeWidth.jpg)
