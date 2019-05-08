@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion Rating control for Xamarin.Android
+title: Appearance-Styling in Syncfusion Rating control for Xamarin.Android
 description: Learn how to change the appearance and styling of rating control using ItemSize, ItemSpacing, ItemCount and customization properties.
 platform: Xamarin.Android
 control: Rating
@@ -9,13 +9,13 @@ documentation: ug
 
 # Appearance and Styling
 
-SfRating control provides support to customize the Size, Item count and space between rating items.
+When the default view is not needed, you can customize the view of Xamarin.Forms SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
 
-## Set Size
+## Set size
 
-The `ItemSize` property sets the size of the Rating items. 
+The `ItemSize` property sets the size for the rating items. 
 
-N> By default, property value is 50.
+N> The default value of this property is 50.
 
 {% tabs %}
 
@@ -27,13 +27,13 @@ N> By default, property value is 50.
 
 {% endtabs %}
 
-![](images/layoutSize.jpg)
+![ Rating Item Size](images/layoutSize.jpg)
  
-## Set Space between Items
+## Set space between items
 
-The `ItemSpacing` property sets the spacing between the Rating items. 
+The `ItemSpacing` property sets spacing between the rating items.
 
-N> By default, property value is 5.
+N> The default value of this property is 5.
 
 {% tabs %}
 
@@ -45,50 +45,48 @@ N> By default, property value is 5.
 
 {% endtabs %}
 
-![](images/layoutSpace.jpg)
+![Space between Rating Items](images/layoutSpace.jpg)
  
-## Set Number of Items
+## Set number of items
 
-The `ItemCount` property sets the number of rating items to be displayed. 
+The `ItemCount` property sets the number of rating items to be displayed.
 
-N> The default property value is 5.
+N> The default value of this property is 5.
 
-{% tabs %}
+ {% tabs %}
 
 {% highlight C# %}
 
-	   rating.ItemCount=4;
+	   rating.ItemCount = 4;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/fourstar.jpg)
+![Rating item customization](images/fourStar.jpg)
 
 ## Rating Settings
 
-For styling customization, set the `RatingSettings` property value with `SfRatingSettings` object instance.
-
+For styling customization, Set the `RatingSettings` property value with `SfRatingSettings` object instance.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-	SfRatingSettings ratingSettings = new SfRatingSettings();
-    ratingSettings.RatedFill = Color.FromHex("#fbd10a");
-	
+SfRatingSettings ratingSettings = new SfRatingSettings();
+ratingSettings.RatedFill = Color.Gray;
+
 {% endhighlight %}
 
 {% endtabs %}
 
-After adding Rating settings, add the SfRatingSettings instance to Rating instance.
-
+After adding `RatingSettings` add the RatingSettings instance to `SfRating` instance.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-    rating.RatingSettings=ratingSettings;
+rating.RatingSettings = ratingSettings;
 
 {% endhighlight %}
 

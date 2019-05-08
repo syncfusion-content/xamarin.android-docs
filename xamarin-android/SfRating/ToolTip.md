@@ -2,86 +2,90 @@
 
 layout: post
 title: Tooltip in Syncfusion Rating control for Xamarin.Android
-description: Learn how to change the toolTip of rating control
+description: Learn how to change the tooltip of rating control
 platform: Xamarin.Android
 control: Rating
 documentation: ug
 
 ---
 
-# ToolTip
+# Tooltip
 
-The ToolTip shows the value of the SfRating control.
+Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.Forms SfRating control, tooltip shows the data of `Value`. It will be displayed when the mouse is hovered over the rating items and will be disappeared when a rating item is selected.
 
-## Set Tooltip Placement
+## Set tooltip placement
 
-SfRating control provides Tooltip support with rating value using `TooltipPlacement` property. 
+Using the `ToolTipPlacement` property, you can define where the tooltip needs to be displayed. The `TooTipPlacement` property have the following three types:
 
-N> By default, this property value is set to None.
+*BottomRight
+*None
+*TopLeft
+
+N> By default, value of the `ToolTipPlacement` property is set to None.
 
 ### TopLeft 
 
-The Tooltip will display on top of the rating stars. 
+The tooltip will be displayed on top of the rating stars. 
 
 {% tabs %}
 
 {% highlight C# %}
 
-	   rating.TooltipPlacement=TooltipPlacement.TopLeft;
+	   rating.TooltipPlacement = TooltipPlacement.TopLeft;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/leftTop.jpg) 
+![Tooltip at top](images/leftTop.jpg) 
 
 ### BottomRight
 
-The Tooltip will display on bottom of the rating stars. 
+The tooltip will be displayed on bottom of the rating stars.
 
 {% tabs %}
 
 {% highlight C# %}
 
-	   rating.TooltipPlacement=TooltipPlacement.BottomRight;
+	   rating.TooltipPlacement = TooltipPlacement.BottomRight;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/rightBottom.jpg)
+![Tooltip at bottom](images/rightBottom.jpg)
 
 ### None
 
-The Tooltip will be disabled.
+The tooltip will be disappeared when setting ToolTipPlacement to None.
 
 {% tabs %}
 
 {% highlight C# %}
 
-	   rating.TooltipPlacement=TooltipPlacement.None;
+	   rating.TooltipPlacement = TooltipPlacement.None;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/null.jpg)
+![No tooltip](images/null.jpg)
 
-## Set ToolTip Precision
+## Set tooltip precision
 
-The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in Tooltip. 
+The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in tooltip.
 
-N> The default value of ToolTip precision is 1. 
+N> The default value of this property is 1. 
 
 {% tabs %}
 
 {% highlight C# %}
 
-       rating.TooltipPlacement=6;
+       rating.TooltipPrecision = 6;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/toolTipPrecision.jpg)
+![Tooltip Precision](images/toolTipPrecision.jpg)
 
