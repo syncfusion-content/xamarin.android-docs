@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion Rating control
+title: Appearance and Styling in Syncfusion Rating control for Xamarin.Android
 description: Learn how to change the appearance and styling of rating control using ItemSize, ItemSpacing, ItemCount and customization properties.
 platform: Xamarin.Android
 control: Rating
@@ -16,7 +16,7 @@ You can customize the color, stroke width, and stroke color of rated and unrated
 * `RatedStroke`
 * `UnRatedStroke`
 * `RatedStrokeWidth`
-* `unRatedStrokeWidth`
+* `UnRatedStrokeWidth`
 
 ## Rating settings
 

@@ -97,7 +97,7 @@ To enable full, half, and exact values of rating, set the `Precision` property.
 
 {% highlight C# %}
 
-rating.Value=3;
+rating.Precision = Precision.Standard;
 
 {% endhighlight %}
 

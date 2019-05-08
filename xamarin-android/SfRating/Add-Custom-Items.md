@@ -35,9 +35,9 @@ The `SelectedView` property is used to apply the given SelectedView to selected 
 
 {% highlight C# %}
 
-	ImageView customImageView = new ImageView(this);
-	customImageView.SetImageResource(Resource.Drawable.Angry_selected);
-	ratingItem.SelectedView = customImageView;
+	ImageView angrySelected = new ImageView(this);
+	angrySelected.SetImageResource(Resource.Drawable.Angry_selected);
+	ratingItem.SelectedView = angrySelected;
 
 {% endhighlight %}
 
@@ -47,9 +47,9 @@ The `UnSelectedView` property is used to apply the given UnSelectedView to unsel
 
 {% highlight C# %}
 
-	ImageView customImageView = new ImageView(this);
-	customImageView.SetImageResource(Resource.Drawable.Angry_Unselected);
-	ratingItem.UnSelectedView = customImageView;
+	ImageView angryUnselected = new ImageView(this);
+	angryUnselected.SetImageResource(Resource.Drawable.Angry_Unselected);
+	ratingItem.UnSelectedView = angryUnselected;
 
 {% endhighlight %}
 
@@ -74,52 +74,52 @@ When `EnableCustomItems` property is enabled, it will display the custom items a
 {% highlight C# %}
 
 	SfRating rating = new SfRating(this);
-	SfRatingItem ratingItem = new SfRatingItem(this);
-		ImageView customImage1 = new ImageView(this);
-		customImage1.SetImageResource(Resource.Drawable.Angry_selected);			
-		ratingItem.SelectedView = customImage1;
-		ImageView customImage2 = new ImageView(this);
-		customImage2.SetImageResource(Resource.Drawable.Angry_Unselected);	
-		ratingItem.UnSelectedView = customImage2;
+	SfRatingItem angry = new SfRatingItem(this);
+		ImageView angrySelected = new ImageView(this);
+		angrySelected.SetImageResource(Resource.Drawable.Angry_selected);			
+		angry.SelectedView = angrySelected;
+		ImageView angryUnselected = new ImageView(this);
+		angryUnselected.SetImageResource(Resource.Drawable.Angry_Unselected);	
+		angry.UnSelectedView = angryUnselected;
 
-	SfRatingItem ratingItem1 = new SfRatingItem(this);
-		ImageView customImage3 = new ImageView(this);
-		customImage3.SetImageResource(Resource.Drawable.UnHappy_selected);
-		ratingItem1.SelectedView = customImage3;
-		ImageView customImage4 = new ImageView(this);
-		customImage4.SetImageResource(Resource.Drawable.UnHappy_Unselected);
-		ratingItem1.UnSelectedView = customImage4;
+	SfRatingItem unhappy = new SfRatingItem(this);
+		ImageView unhappySelected = new ImageView(this);
+		unhappySelected.SetImageResource(Resource.Drawable.UnHappy_selected);
+		unhappy.SelectedView = unhappySelected;
+		ImageView unhappyUnselected = new ImageView(this);
+		unhappyUnselected.SetImageResource(Resource.Drawable.UnHappy_Unselected);
+		unhappy.UnSelectedView = unhappyUnselected;
 
-	SfRatingItem ratingItem2 = new SfRatingItem(this);
-		ImageView customImage5 = new ImageView(this);
-		customImage4.SetImageResource(Resource.Drawable.Neutral_selected);
-		ratingItem2.SelectedView = customImage5;
-		ImageView customImage6 = new ImageView(this);
-		customImage6.SetImageResource(Resource.Drawable.Neutral_Unselected);
-		ratingItem2.UnSelectedView = customImage6;
+	SfRatingItem neutral = new SfRatingItem(this);
+		ImageView neutralSelected = new ImageView(this);
+		neutralSelected.SetImageResource(Resource.Drawable.Neutral_selected);
+		neutral.SelectedView = neutralSelected;
+		ImageView neutralUnselected = new ImageView(this);
+		neutralUnselected.SetImageResource(Resource.Drawable.Neutral_Unselected);
+		neutral.UnSelectedView = neutralUnselected;
 
-	SfRatingItem ratingItem3 = new SfRatingItem(this);
-		ImageView customImage7 = new ImageView(this);
-		customImage7.SetImageResource(Resource.Drawable.Happy_selected);
-		ratingItem3.SelectedView = customImage7;
-		ImageView customImage8 = new ImageView(this);
-		customImage8.SetImageResource(Resource.Drawable.Happy_Unselected);
-		ratingItem3.UnSelectedView = customImage8;
+	SfRatingItem happy = new SfRatingItem(this);
+		ImageView happySelected = new ImageView(this);
+		happySelected.SetImageResource(Resource.Drawable.Happy_selected);
+		happy.SelectedView = happySelected;
+		ImageView happyUnselected = new ImageView(this);
+		happyUnselected.SetImageResource(Resource.Drawable.Happy_Unselected);
+		happy.UnSelectedView = happyUnselected;
 
-	SfRatingItem ratingItem4 = new SfRatingItem(this);
-		ImageView customImage9 = new ImageView(this);
-		customImage9.SetImageResource(Resource.Drawable.Excited_selected);
-		ratingItem4.SelectedView = customImage9;
-		ImageView customImage10 = new ImageView(this);
-		customImage10.SetImageResource(Resource.Drawable.Excited_Unselected);
-		ratingItem4.UnSelectedView = customImage10;
+	SfRatingItem exited = new SfRatingItem(this);
+		ImageView exitedSelected = new ImageView(this);
+		exitedSelected.SetImageResource(Resource.Drawable.Excited_selected);
+		exited.SelectedView = exitedSelected;
+		ImageView exitedUnselected = new ImageView(this);
+		exitedUnselected.SetImageResource(Resource.Drawable.Excited_Unselected);
+		exited.UnSelectedView = exitedUnselected;
 
 	List<SfRatingItem> ratingItemList = new List<SfRatingItem>();
-		ratingItemList.Add(ratingItem);
-		ratingItemList.Add(ratingItem1);
-		ratingItemList.Add(ratingItem2);
-		ratingItemList.Add(ratingItem3);
-		ratingItemList.Add(ratingItem4);
+		ratingItemList.Add(angry);
+		ratingItemList.Add(unhappy);
+		ratingItemList.Add(neutral);
+		ratingItemList.Add(happy);
+		ratingItemList.Add(exited);
 	rating.Items = ratingItemList;
 	rating.EnableCustomView = true;
 

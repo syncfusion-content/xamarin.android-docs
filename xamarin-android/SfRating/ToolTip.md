@@ -23,22 +23,6 @@ Using the `ToolTipPlacement` property, you can define where the tooltip needs to
 
 N> By default, value of the `ToolTipPlacement` property is set to None.
 
-### BottomRight
-
-The tooltip will be displayed on bottom of the rating stars.
-
-{% tabs %}
-
-{% highlight C# %}
-
-	   rating.TooltipPlacement=TooltipPlacement.BottomRight;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Tooltip at bottom](images/rightBottom.jpg)
-
 ### TopLeft 
 
 The tooltip will be displayed on top of the rating stars. 
@@ -47,13 +31,29 @@ The tooltip will be displayed on top of the rating stars.
 
 {% highlight C# %}
 
-	   rating.TooltipPlacement=TooltipPlacement.TopLeft;
+	   rating.TooltipPlacement = TooltipPlacement.TopLeft;
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Tooltip at top](images/leftTop.jpg) 
+
+### BottomRight
+
+The tooltip will be displayed on bottom of the rating stars.
+
+{% tabs %}
+
+{% highlight C# %}
+
+	   rating.TooltipPlacement = TooltipPlacement.BottomRight;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tooltip at bottom](images/rightBottom.jpg)
 
 ### None
 
@@ -63,7 +63,7 @@ The tooltip will be disappeared when setting ToolTipPlacement to None.
 
 {% highlight C# %}
 
-	   rating.TooltipPlacement=TooltipPlacement.None;
+	   rating.TooltipPlacement = TooltipPlacement.None;
 
 {% endhighlight %}
 
