@@ -31,7 +31,7 @@ SfRatingSettings ratingSettings;
 protected override void OnCreate(Bundle savedInstanceState)
 {
     base.OnCreate(savedInstanceState);
-rating = new SfRating(this);
+    rating = new SfRating(this);
     ratingSettings = new SfRatingSettings();
     rating.RatingSettings = ratingSettings;
 }
