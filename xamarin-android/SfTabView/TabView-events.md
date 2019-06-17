@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TabItemTapped event for Syncfusion Essential SfTabView.
-description: TabItemTapped event in TabView control for Xamarin.Android platform
+title: ItemTapped event for Syncfusion Essential SfTabView.
+description: ItemTapped event in TabView control for Xamarin.Android platform
 platform: Xamarin.Android
 control: TabView
 documentation: ug
