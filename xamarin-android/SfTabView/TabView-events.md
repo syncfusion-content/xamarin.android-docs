@@ -9,7 +9,7 @@ documentation: ug
 
 # TabItemTapped
 
-Whenever the TapItem is tapped, the `TapItemTapped` event will occur. Using this event, you can Modify the selected Tab Item properties.
+Whenever the TabItem is tapped, the `TabItemTapped` event will occur. Using this event, you can Modify the selected Tab Item properties.
 
 {% tabs %}
 
