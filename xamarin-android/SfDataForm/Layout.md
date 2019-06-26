@@ -798,7 +798,7 @@ You can define the height of each `DataFormItem` using the `Height` property, an
 You can define the height as described as follows.
 
 * You can directly set the exact height value.
-* You can use the ` AutoFitLabel` to size the height of DataFormItem, so that it fits to the label text that it contains. 
+* You can use the `AutoFitLabel` to size the height of DataFormItem, so that it fits to the label text that it contains. 
 
 {% tabs %}
 
