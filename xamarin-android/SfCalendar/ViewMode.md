@@ -9,11 +9,11 @@ documentation: ug
 
 # Built-in Views
 
-`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~ViewMode.html) property.
+`SfCalendar` control provides four types of views to display dates such as month,year,decade,century. It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~ViewMode.html) property.
 
 By default `SfCalendar` control is assigned with month view. Based on the user’s preference, `SfCalendar` can be viewed in any one of the available two type.
 
-## MonthView
+## Month view
 
 This displays entire dates of a particular month, by default current month will be displayed on Loading. The current date is provided with unique color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
 
@@ -28,8 +28,31 @@ sfCalendar.ViewMode = ViewMode.MonthView;
 
 ![Month View in Xamarin.Android Calendar](images/xamarin.android-calendar-month_view.png)                                        
 
+## Trailing and leading days
 
-### Month View Settings
+The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfCalendar calendar = new SfCalendar(this);
+calendar.ViewMode = ViewMode.MonthView;
+calendar.ShowLeadingAndTrailingDays = true;
+this.Content = calendar;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Month View in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-HideLeadingTrailingDates.png)
+
+N>
+* The DrawMonthCell event is triggered for the current month dates.
+* The VisibleDates in the MonthChanged event will return the current month dates.
+
+
+## Month view customization
 
 * The current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~TodayTextColor.html). 
 * The month view label settings class has the APIs to change date text size, day text size and various format options. 
@@ -55,30 +78,68 @@ sfCalendar.MonthViewSettings = monthViewSettings;
 
 N> Similarly there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
 
-### Customize trailing and leading days
+### Month cell border color customization
 
-The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
+You can customize the border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+
+* The border color of month cells can be customized using the [BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BorderColor.html) property, and the lines of month cells can be enabled using the [CellGridOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellGridOptions.html) property.
+
+{% tabs %}	
+
+{% highlight c# %}
+	
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.BorderColor = Android.Graphics.Color.ParseColor("#ff0000");
+monthViewSettings.CellGridOptions = CellGridOptions.Both;
+calendar.MonthViewSettings = monthViewSettings;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Today border color customization
+
+You can customize the today border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+
+* The border color of current day can be customized using the [TodayBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayBorderColor.html) property, and it is applicable for both Fill and Circle SelectionShape.
+
+{% tabs %}
+
+{% highlight c# %}
+
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.TodayBorderColor = Android.Graphics.Color.ParseColor("#ff00000");
+sfCalendar.MonthViewSettings = monthViewSettings;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Week view
+
+The number of weeks in the month view can be changed by setting the [NumberOfWeeksInView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NumberOfWeeksInView.html) property in SfCalendar. By default, `NumberOfWeeksInView` starts from current week, and this can be modified using the [MoveToDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MoveToDate.html) property of calendar. It also supports all existing features such as [FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~FirstDayOfWeek.html), [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MinDate.html), [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaxDate.html), and [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html).
+
+N>
+* Week number ranges from 1 to 6. If lesser or greater than these range is considered, `NumberOfWeeksInView` will be displayed as 6.
+* Inline view considers  `NumberOfWeeksInView` as only 6. For other count, only agenda view will be displayed in calendar.
+* Dynamically changing `NumberOfWeeksInView` shows the first row of month view dates. It can be handled using the `MoveToDate` property of calendar
+* [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowLeadingAndTrailingDays.html) is not applicable if the `NumberOfWeeksInView` is lesser than 6.
 
 {% tabs %}
 
 {% highlight c# %}
 
 SfCalendar calendar = new SfCalendar(this);
-calendar.ViewMode = ViewMode.MonthView;
-calendar.ShowLeadingAndTrailingDays = true;
-this.Content = calendar;
+calendar.NumberOfWeeksInView = 3;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Month View in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-HideLeadingTrailingDates.png)
 
-N>
-* The DrawMonthCell event is triggered for the current month dates.
-* The VisibleDates in the MonthChanged event will return the current month dates.
 
-## YearView
+
+## Year view
 
 This displays entire dates/month of a particular year, by default current year will be displayed on loading. The Years can be changed by swiping back and forth or `forward` and `backward` methods can be used. The Months can be navigated quickly by selecting on the particular month in year view.
 
@@ -92,7 +153,7 @@ sfCalendar.ViewMode = ViewMode.YearView;
 ![Year View in Xamarin.Android Calendar](images/xamarin.android-calendar-year_view.png)                                        
 
 
-### Year View Settings
+## Year view customization
 
 *	The Month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~MonthHeaderTextColor.html) property in similar way, year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~DateTextColor.html) properties respectively. 
 *	The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to Left, Right or Center. 
