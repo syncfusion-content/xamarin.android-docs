@@ -11,7 +11,7 @@ documentation: ug
 
 ## Forward
 
-By default, the date can be navigated to next view using touch gesture and swiping the control in right to left direction. The view can also be changed programmatically using [forward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Forward.html) method available in `SfCalendar`. It will move to next month,next year,next period of decade years,next period of century years based on the view mode.
+By default, the date can be navigated to next view using touch gesture and swiping the control in right to left direction. The view can also be changed programmatically using [forward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Forward.html) method available in `SfCalendar`. It will move to next month,next year,next period of decade years,next period of century years based on the `ViewMode`.
 
 {% highlight c# %}
 
@@ -23,7 +23,7 @@ N> It can be navigated until it reaches the MaxDate
 
 ## Backward
 
-By default, the date can be navigated to previous view using touch gesture and swiping the control in left to right direction. The view also can be changed programmatically using [backward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Backward.html) method available in `SfCalendar`. It will move to previous month,previous year,previous period of decade years,previous period century years based on the view mode.
+By default, the date can be navigated to previous view using touch gesture and swiping the control in left to right direction. The view also can be changed programmatically using [backward](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~Backward.html) method available in `SfCalendar`. It will move to previous month,previous year,previous period of decade years,previous period century years based on the `ViewMode`.
 
 {% highlight c# %}
 
@@ -35,7 +35,7 @@ N> It can be navigated until it reaches the MinDate.
 
 ## Move to Date 
 
-Visible dates can be moved to specific date using [MoveToDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MoveToDate.html) property available in `SfCalendar`. it will move to any specific month,year,decade,century view based on the view mode.
+Visible dates can be moved to specific date using [MoveToDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MoveToDate.html) property available in `SfCalendar`. it will move to any specific month,year,decade,century view based on the `ViewMode`.
 
 {% highlight c# %}
 
