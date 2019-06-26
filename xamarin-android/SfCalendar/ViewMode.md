@@ -9,7 +9,7 @@ documentation: ug
 
 # Built-in Views
 
-`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~ViewMode.html) property.
+`SfCalendar` control provides four types of views to display dates such as month,year,decade,century. It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~ViewMode.html) property.
 
 By default `SfCalendar` control is assigned with month view. Based on the user’s preference, `SfCalendar` can be viewed in any one of the available two type.
 
@@ -90,6 +90,7 @@ You can customize the border color of calendar month cell using [MonthViewSettin
 	
 MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.BorderColor = Android.Graphics.Color.ParseColor("#ff0000");
+monthViewSettings.CellGridOptions = CellGridOptions.Both;
 calendar.MonthViewSettings = monthViewSettings;
 
 {% endhighlight %}
