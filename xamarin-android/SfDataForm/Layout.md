@@ -795,10 +795,10 @@ dataForm.ScrollTo("BirthDate")
 
 You can define the height of each `DataFormItem` using the `Height` property, and it will be handled in the `AutoGeneratingDataFormItem` event.
 
-You can define the height as described as follows.
+You can define the `Height` as described as follows.
 
-* You can directly set the exact height value.
-* You can use the `AutoFitLabel` to size the height of DataFormItem, so that it fits to the label text that it contains. 
+* You can directly set the exact `Height` value.
+* You can use the `AutoFitLabel` to size the height of `DataFormItem`, so that it fits to the label text that it contains. 
 
 {% tabs %}
 
@@ -809,13 +809,17 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 {
    if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
      {
-        if (e.DataFormItem.Name == "Residential_Address")
-        {
-           e.DataFormItem.Height = 200;
-        }
-        if (e.DataFormItem.Name == "Permanent_Address")
+        if (e.DataFormItem.Name == "Comments")
         {
            e.DataFormItem.AutoFitLabel = true;
+        }
+        if (e.DataFormItem.Name == "Improvement")
+        {
+           e.DataFormItem.AutoFitLabel = true;
+        }
+		if (e.DataFormItem.Name == "Suggestion")
+        {
+            e.DataFormItem.Height = 400;
         }
      }
 }
