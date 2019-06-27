@@ -106,3 +106,12 @@ namespace GettingStarted
 
 ![](images/TickColor.png)
 
+## Tick length
+
+The `TickLength` property used to customize the length of the ticks.
+
+{% highlight c# %}
+
+	rangeSlider.TickLength = 20;
+
+{% endhighlight %}

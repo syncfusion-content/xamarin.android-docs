@@ -143,3 +143,17 @@ namespace GettingStarted
 {% endhighlight %}
 
 ![](images/FontItalicCustom.png)
+
+## Customizing label color
+
+The `LabelColor` property used to change the color of the label.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	rangeSlider.Labelcolor = Color.Red;
+
+{% endhighlight %}
+
+{% endtabs %}
