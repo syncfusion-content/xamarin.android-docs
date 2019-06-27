@@ -56,7 +56,7 @@ The `ValueChanged` event is triggered when `SfRangeSlider` value is changed. The
 
 The `RangeChanged` event is triggered when either RangeStart or RangeEnd values are changed. The argument contains the following information.
 
-`RangeStart` – Gets or sets the range star tvalue of range slider.
+`RangeStart` – Gets or sets the range start value of range slider.
 `RangeEnd` – Gets or sets the range end value of range slider.
 
 {% highlight c# %}
@@ -66,7 +66,7 @@ The `RangeChanged` event is triggered when either RangeStart or RangeEnd values 
             var rangeStart = e.RangeStart;
             var rangeEnd = e.RangeEnd;
         }
-		
+
 {% endhighlight %}
 
 ## How to trigger RangeStartChanged event?

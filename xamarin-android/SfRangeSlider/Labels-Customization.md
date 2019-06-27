@@ -71,7 +71,7 @@ Available options for this property are:
 
 {% endtabs %}
 
-![](images/value-TopLeft.png)
+![SfRangeSlider Value Placement in Xamarin.Android ](images/value-TopLeft.png)
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ Available options for this property are:
 
 {% endtabs %}
 
-![](images/Value-BottomRight.png)
+![Value Placement BottomRight in Xamarin.Android](images/Value-BottomRight.png)
 
 ## LabelPlacement
 
@@ -142,7 +142,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-![](images/FontItalicCustom.png)
+![Customizing label fontin Xamarin.Android](images/FontItalicCustom.png)
 
 ## Customizing label color
 

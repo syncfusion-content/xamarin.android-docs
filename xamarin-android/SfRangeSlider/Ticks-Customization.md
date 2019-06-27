@@ -37,7 +37,7 @@ Tick marks are placed either below the track in horizontal orientation or right 
 
 {% endhighlight %}
 
-![](images/BottomRight.png)
+![TickPlacement BottomRight Xamarin.Android](images/BottomRight.png)
 
 ### TopLeft
 
@@ -49,7 +49,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 {% endhighlight %}
 
-![](images/TopLeft.png)
+![TickPlacement TopLeft Xamarin.Android](images/TopLeft.png)
 
 ### Inline
 
@@ -61,7 +61,7 @@ Tick marks are placed along the track.
 
 {% endhighlight %}
 
-![](images/Inline.png)
+![Tick marks Inline Xamarin.Android](images/Inline.png)
 
 ### Outside
 
@@ -73,7 +73,7 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 {% endhighlight %}
 
-![](images/Outside.png)
+![Tick marks Outline Xamarin.Android](images/Outside.png)
 
 ## Customizing tick color
 
@@ -104,7 +104,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-![](images/TickColor.png)
+![Customizing tick color Xamarin.Android](images/TickColor.png)
 
 ## Tick length
 
