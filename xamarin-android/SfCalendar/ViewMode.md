@@ -136,9 +136,6 @@ calendar.NumberOfWeeksInView = 3;
 
 {% endtabs %}
 
-
-
-
 ## Year view
 
 This displays entire dates/month of a particular year, by default current year will be displayed on loading. The Years can be changed by swiping back and forth or `forward` and `backward` methods can be used. The Months can be navigated quickly by selecting on the particular month in year view.
@@ -151,23 +148,6 @@ sfCalendar.ViewMode = ViewMode.YearView;
 {% endhighlight %}
 
 ![Year View in Xamarin.Android Calendar](images/xamarin.android-calendar-year_view.png)                                        
-
-
-## Year view customization
-
-*	The Month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~MonthHeaderTextColor.html) property in similar way, year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~DateTextColor.html) properties respectively. 
-*	The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to Left, Right or Center. 
-*	The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~YearLayoutBackground.html) property.
-
-{% highlight c# %}
-
-YearViewSettings yearViewSettings = new YearViewSettings();
-yearViewSettings.YearHeaderTextColor = Android.Graphics.Color.ParseColor("#1B79D6");
-yearViewSettings.MonthHeaderBackground = Android.Graphics.Color.ParseColor("#E4E8ED");
-yearViewSettings.DateTextColor = Android.Graphics.Color.Red;
-sfCalendar.YearViewSettings = yearViewSettings;
-
-{% endhighlight %}
 
 ## Year view mode
 
@@ -193,6 +173,23 @@ this.Content = calendar;
 
 N>
 * The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
+
+## Year view customization
+
+*	The Month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~MonthHeaderTextColor.html) property in similar way, year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~DateTextColor.html) properties respectively. 
+*	The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to Left, Right or Center. 
+*	The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.YearViewSettings~YearLayoutBackground.html) property.
+
+{% highlight c# %}
+
+YearViewSettings yearViewSettings = new YearViewSettings();
+yearViewSettings.YearHeaderTextColor = Android.Graphics.Color.ParseColor("#1B79D6");
+yearViewSettings.MonthHeaderBackground = Android.Graphics.Color.ParseColor("#E4E8ED");
+yearViewSettings.DateTextColor = Android.Graphics.Color.Red;
+sfCalendar.YearViewSettings = yearViewSettings;
+
+{% endhighlight %}
+
 
 ## Decade view
 
