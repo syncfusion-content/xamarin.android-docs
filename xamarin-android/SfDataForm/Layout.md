@@ -793,7 +793,7 @@ dataForm.ScrollTo("BirthDate")
 
 ## Changing the height of DataFormItem
 
-You can define the height of each `DataFormItem` using the `Height` property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 You can define the `Height` as described as follows.
 
