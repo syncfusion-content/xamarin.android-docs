@@ -809,21 +809,15 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 {
    if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
      {
-<<<<<<< HEAD
         if (e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement" )
         {
+           e.DataFormItem.LabelPosition = LabelPosition.Left;
            e.DataFormItem.AutoFitLabel = true;
         }
 		if (e.DataFormItem.Name == "Suggestion")
-=======
-        if (e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement")
         {
-           e.DataFormItem.AutoFitLabel = true;
-        }
-        if (e.DataFormItem.Name == "Suggestion")
->>>>>>> 859e8f9348454f8978f6860204634f7bf8ce0e56
-        {
-            e.DataFormItem.Height = 400;
+           e.DataFormItem.LabelPosition = LabelPosition.Left;
+           e.DataFormItem.Height = 400;
         }
      }
 }
