@@ -793,7 +793,7 @@ dataForm.ScrollTo("BirthDate")
 
 ## Changing the height of DataFormItem
 
-You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem~Height.html)  property, and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 You can define the `Height` as described as follows.
 
@@ -809,11 +809,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 {
    if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
      {
-        if (e.DataFormItem.Name == "Comments")
-        {
-           e.DataFormItem.AutoFitLabel = true;
-        }
-        if (e.DataFormItem.Name == "Improvement")
+        if (e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement" )
         {
            e.DataFormItem.AutoFitLabel = true;
         }
