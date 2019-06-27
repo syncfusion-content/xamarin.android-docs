@@ -809,14 +809,11 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 {
    if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
      {
-        if (e.DataFormItem.Name == "Comments")
+        if (e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement")
         {
            e.DataFormItem.AutoFitLabel = true;
         }
-        if (e.DataFormItem.Name == "Improvement")
-        {
-           e.DataFormItem.AutoFitLabel = true;
-        }
+
 		if (e.DataFormItem.Name == "Suggestion")
         {
             e.DataFormItem.Height = 400;
