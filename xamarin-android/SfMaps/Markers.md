@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Markers
+title: Markers in Syncfusion Maps control
 description: This section describes about map marker.
 platform: Xamarin.Android
 control: SfMaps
@@ -107,7 +107,7 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 
 {% endtabs %}
 
-![](Images/Marker_icon_type.png)
+![Marker icon type square](Images/Marker_icon_type.png)
 
 ### Setting contrast color
 
@@ -248,7 +248,7 @@ You can pin an image as marker icon by setting the icon type as `Image`. Set [`I
 
 {% endtabs %}
 
-![](Images/Marker_icon_type_image.png) 
+![marker icon type image](Images/Marker_icon_type_image.png) 
 
 ### Label customization
 
@@ -300,7 +300,7 @@ The following code explains the marker customization.
 
 {% endtabs %}
 
-![](Images/Markers_img4.jpeg)
+![marker label customization](Images/Markers_img4.jpeg)
 
 ## Custom marker
 
@@ -355,7 +355,7 @@ Below snippet explains on how to define custom marker with image support.
 
 {% endtabs %}
 
-![](Images/Markers_img5.png)
+![custom marker](Images/Markers_img5.png)
 
 ## Events
 
@@ -387,5 +387,5 @@ Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/cref_files/xa
 
 {% endtabs %}
 
-![](Images/Markers_img6.png)
+![marker selected event](Images/Markers_img6.png)
 
