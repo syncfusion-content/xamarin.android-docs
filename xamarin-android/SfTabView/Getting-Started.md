@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides a quick overview for working with the tab view control for Xamarin.Android. Walk through the entire process of creating a real-world application with tab view.
 
-# Assembly deployment
+## Assembly deployment
 
 After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders,   
 {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib
@@ -39,13 +39,13 @@ The following list of assemblies should be added as reference from the lib folde
 
 This section explains how to create a tab view and configure it. This is how the final output will look like in Android devices.
 
-![](images/Getting-Started/xamarin_android_tabview.png)
+![simple tab view](images/Getting-Started/xamarin_android_tabview.png)
 
-# Creating the project
+## Creating the project
 
 Create a new BlankApp (Android) application in Xamarin Studio or Visual Studio.
 
-# Adding SfTabView in Xamarin.Android
+## Adding SfTabView in Xamarin.Android
 
 Add the required assembly reference to the project as discussed in the Assembly deployment section.
 
@@ -79,7 +79,7 @@ SetContentView(tabView);
 
 {% endtabs %}
 
-# Adding Tab items
+## Adding Tab items
 
 Tab items can be configured in tab view through the Items property of `SfTabView`, where it holds collection of `SfTabItem` through `TabItemsCollection`
 
