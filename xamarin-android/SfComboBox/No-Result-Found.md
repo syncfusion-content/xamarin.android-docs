@@ -25,7 +25,7 @@ comboBox.NoResultsFoundText="No Results Found";
 
 ## Customizing NoResultsFoundText
 
-The `NoResultsFoundTextColor`, `NoResultsFoundFontSize`, `NoResultsFoundFontAttributes`, and `NoResultsFoundFontFamily` properties are used to customize the foreground color, font size, font attribute, and font family of NoResultsFoundText.
+The `NoResultsFoundTextColor`, `NoResultsFoundFontSize` and `NoResultsFoundTypeface` properties are used to customize the foreground color, font size and typeface of NoResultsFoundText.
 {% tabs %}
 
 {% highlight c# %}
