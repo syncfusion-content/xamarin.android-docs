@@ -75,5 +75,9 @@ Tooltip will be collapsed.
 
 {% endtabs %}
 
+## Tooltip color
+
+`TooltipTextColor` - Used to change the tooltip text color.
+`TooltipBackgroundColor` - Used to change the tooltip background color.
 
 
