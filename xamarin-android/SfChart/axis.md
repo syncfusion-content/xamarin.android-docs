@@ -632,6 +632,39 @@ chart.SecondaryAxis = numericalAxis;
 
 ![Axis tick lines customization support in Xamarin.Android Chart](axis_images/axis_img23.png)
 
+### Customize individual axis elements
+
+The [`RangeStyles`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~RangeStyles.html) can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html). The following properties are used to customize the specific range in an axis:
+
+* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~Start.html) - Sets the start range of an axis
+* [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~End.html) - Sets the end range of an axis
+* [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~MajorGridLineStyle.html) - Customizes the major grid lines of an axis.
+* [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~MinorGridLineStyle.html) - Customizes the minor grid lines of an axis.
+* [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~MajorTickStyle.html) - Customizes the major tick lines of an axis.
+* [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~MinorTickStyle.html) - Customizes the minor tick lines of an axis.
+* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~LabelStyle.html) - Customizes the axis labels for a specific range.
+
+{% highlight c# %} 
+[C#]
+
+NumericalAxis numericalAxis = new NumericalAxis() { Minimum = 15, Maximum = 27 };
+
+ChartAxisRangeStyleCollection axisRangeStyles = new ChartAxisRangeStyleCollection();
+
+ChartAxisRangeStyle rangeStyle = new ChartAxisRangeStyle() { Start = 15, End = 21};
+
+rangeStyle.MajorGridLineStyle = new ChartLineStyle() { StrokeColor = Color.ParseColor("#096EBF"), StrokeWidth = 3 };
+
+rangeStyle.LabelStyle = new ChartAxisLabelStyle() { TextColor = Color.ParseColor("#096EBF"), Typeface = Typeface.DefaultBold }; 
+
+axisRangeStyles.Add(rangeStyle);
+
+....
+
+numericalAxis.RangeStyles = axisRangeStyles;
+
+{% endhighlight %}
+
 ### Inversing Axis
 
 Axis can be inversed using the [`Inversed`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Inversed.html) property of axis. Default value is `False`.
