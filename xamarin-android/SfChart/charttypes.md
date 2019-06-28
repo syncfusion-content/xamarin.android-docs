@@ -1756,3 +1756,33 @@ FunnelSeries funnelSeries = new FunnelSeries()
 {% endhighlight %}
 
 ![Minimum width support for funnel series in Xamarin.Android Chart](charttypes_images/charttypes_img40.png)
+
+## Waterfall Series
+
+[`WaterfallSeries`]() clarifies the cumulative effect of a set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
+
+* [`SummaryBindingPath`]() – Gets or sets the string value that indicates the sum of previous segments in series.
+* [`SummarySegmentColor`]() – Changes the color of summary segment in series.
+* [`NegativeSegmentColor`]() – Changes the color of negative segment in series.
+* [`AllowAutoSum`]() – Enables or disables the segment that has been drawn based on the sum value of previous segments. By default, the value of this property is true. When disabling this property, it renders the segment by using the y-value of provided ItemsSource collection.
+* [`ShowConnectorLine`]() – Enables or disables the connector line of series. By default, value of this property is true.
+* [`ConnectorLineStyle`]() – Customizes the appearance of connector line style.
+
+{% highlight c# %}
+[C#]
+
+WaterfallSeries waterfallSeries = new WaterfallSeries()
+{
+	ItemsSource = RevenueDetails,
+	XBindingPath = "Category",
+	YBindingPath = "Value",
+	AllowAutoSum = true,
+	SummaryBindingPath = "IsSummary",
+	NegativeSegmentColor = Color.Pink,
+	SummarySegmentColor = Color.Gray,
+	ShowConnectorLine = true
+};
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
