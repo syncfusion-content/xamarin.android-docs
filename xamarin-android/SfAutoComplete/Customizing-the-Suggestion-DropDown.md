@@ -63,3 +63,39 @@ countryAutoComplete.MaximumDropDownHeight = 200;
 {% endtabs %}
 	
 ![](images/maximumdropdownheight.png)
+
+## Set border color to the DropDown
+
+The DropDownBorderColor property is used to change the border color of DropDown. The following code example demonstrates how to change the border color of DropDown.
+
+{% tabs %}
+
+{% highlight C# %}
+	
+            LinearLayout linearLayout = new LinearLayout(this);
+            linearLayout.LayoutParameters = new ViewGroup.LayoutParams(1000, ViewGroup.LayoutParams.MatchParent);
+            linearLayout.SetBackgroundColor(Android.Graphics.Color.Transparent);
+
+            SfAutoComplete countryAutoComplete = new SfAutoComplete(this);
+            countryAutoComplete.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
+
+            List<String> countryList = new List<String>();
+            countryList.Add("Uganda");
+            countryList.Add("Ukraine");
+            countryList.Add("United Arab Emirates");
+            countryList.Add("United Kingdom");
+            countryList.Add("United States");
+
+            ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, countryList);
+            countryAutoComplete.AutoCompleteSource = countryListDataAdapters;
+            countryAutoComplete.DropDownBorderColor = Color.Red;
+            countryAutoComplete.MaximumDropDownHeight = 200;
+
+            linearLayout.AddView(countryAutoComplete);
+            SetContentView(linearLayout);
+	 
+{% endhighlight %}
+
+{% endtabs %}
+	
+![](images/dropdown-border-color.png)

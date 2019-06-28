@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : UI Customization for Syncfusion ComboBox Control in Xamarin.Android
 description : Learn how to use customization in SfComboBox 
@@ -60,6 +60,42 @@ comboBox.DropDownItemHeight = 70;
 {% endtabs %}
 
 ![](images/suggestionitemheight.png)
+
+### Changing the border color of suggestion box
+
+The DropDownBorderColor property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
+
+{% tabs %}
+
+{% highlight C# %}
+
+            LinearLayout linearLayout = new LinearLayout(this);
+            linearLayout.LayoutParameters = new ViewGroup.LayoutParams(1000, ViewGroup.LayoutParams.MatchParent);
+            linearLayout.SetBackgroundColor(Android.Graphics.Color.Transparent);
+
+            SfComboBox countryComboBox = new SfComboBox(this);
+            countryComboBox.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 50);
+
+            List<String> countryList = new List<String>();
+            countryList.Add("Uganda");
+            countryList.Add("Ukraine");
+            countryList.Add("United Arab Emirates");
+            countryList.Add("United Kingdom");
+            countryList.Add("United States");
+
+            ArrayAdapter<String> countryListDataAdapters = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, countryList);
+            countryComboBox.ComboBoxSource = countryListDataAdapters;
+            countryComboBox.DropDownBorderColor = Color.Red;
+            countryComboBox.MaximumDropDownHeight = 200;
+
+            linearLayout.AddView(countryComboBox);
+            SetContentView(linearLayout);
+     
+{% endhighlight %}
+
+{% endtabs %}
+	
+![](images/dropdown-border-color.png)
 
 ### Customizing suggestion items
 
