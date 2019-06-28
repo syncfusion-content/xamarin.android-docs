@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Android Chart Axis
+title: Xamarin.Android | Chart Axis | Syncfusion
 description: How to customize the grid lines, tick lines, labels and title of chart axis
 platform: Xamarin.Android
 control: Chart
