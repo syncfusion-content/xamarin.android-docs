@@ -1,7 +1,7 @@
 ---
 layout: post
 title: View Modes | SfCalendar | Xamarin.Android | Syncfusion
-description: Learn how to change the view mode for calendar
+description: Calendar Xamarin.Android displays month, year, decade and century views which allows users to easily select and navigate between all built-in views.
 platform: Xamarin.Android
 control: Calendar
 documentation: ug
@@ -78,7 +78,7 @@ sfCalendar.MonthViewSettings = monthViewSettings;
 
 N> Similarly there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
 
-### Month cell border color customization
+### Month view border color customization
 
 You can customize the border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 
@@ -97,6 +97,8 @@ calendar.MonthViewSettings = monthViewSettings;
 
 {% endtabs %}
 
+![Month view border color in Xamarin.Android Calendar](images/xamarin.android-BorderColor.png)
+
 ### Today border color customization
 
 You can customize the today border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
@@ -114,6 +116,8 @@ sfCalendar.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Today border color in Xamarin.Android Calendar](images/xamarin.android-TodayBorderColor.png)
 
 ## Week view
 
@@ -135,6 +139,8 @@ calendar.NumberOfWeeksInView = 3;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Week view in Xamarin.Android Calendar](images/xamarin.android-NumberOfWeeksInView.png)
 
 ## Year view
 
@@ -170,6 +176,7 @@ this.Content = calendar;
 
 {% endtabs %}
  
+![Year view mode in Xamarin.Android Calendar](images/xamarin.android-YearViewMode.png)
 
 N>
 * The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
@@ -207,7 +214,8 @@ this.Content = calendar;
 
 {% endtabs %}
 
- 
+![Decade view in Xamarin.Android Calendar](images/xamarin.android-DecadeView.png)
+
 ## Decade view customization
 
 You can customize the decade view of calendar by using [YearViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings.html). 
@@ -233,6 +241,8 @@ sfCalendar.YearViewSettings = yearViewSettings;
 
 {% endtabs %}
 
+![Decade view customization in Xamarin.Android Calendar](images/xamarin.android-DecadeView-Custom.png)
+
 ## Century view
 
 This view displays the period of 100 years. By default, current year range of 100 years will be displayed on loading. You can easily navigate between month/year/decade view to century view by tapping the calendar header. You can easily navigate to decade view by selecting decade years in century view.
@@ -248,6 +258,8 @@ this.Content = calendar;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Century view in Xamarin.Android Calendar](images/xamarin.android-CenturyView.png)
  
 ## Century view customization
 
@@ -275,5 +287,6 @@ sfCalendar.YearViewSettings = yearViewSettings;
 
 {% endtabs %}
 
+![Century view customization in Xamarin.Android Calendar](images/xamarin.android-CenturyView-Custom.png)
 
 

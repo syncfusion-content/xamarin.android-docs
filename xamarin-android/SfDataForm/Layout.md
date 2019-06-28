@@ -852,3 +852,4 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 
 {% endtabs %}
 
+![Label height in Xamarin.Android](SfDataForm_images/xamarin.android-Height.png)
