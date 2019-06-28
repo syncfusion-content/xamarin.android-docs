@@ -103,6 +103,33 @@ dataForm.LabelPosition = LabelPosition.Top;
 
 ![Arranging data form field when label position as top in Xamarin.Android DataForm](SfDataForm_images/LabelTop.png)
 
+### Changing label position of the DataFormItem
+
+You can change the label position using the `LabelPosition` property in `DataFormItem`, and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+{% tabs %}
+{% highlight xaml %}
+<dataForm:SfDataForm x:Name="dataForm" DataObject="{Binding ContactsInfo}"  AutoGeneratingDataFormItem="DataForm_AutoGeneratingDataFormItem">
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.RegisterEditor("Gender", "Segment");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name.Equals("Gender") || e.DataFormItem.Name.Equals("Address"))
+        {
+            e.DataFormItem.LabelPosition = LabelPosition.Top;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Loading images for label
 
 You can load image instead of label by defining attribute or by handling the `AutoGeneratingDataFormItem` event.
@@ -790,3 +817,39 @@ dataForm.ScrollTo("BirthDate")
 {% endtabs %}
 
 ![Scroll to specific editor in Xamarin.Android DataForm](SfDataForm_images/xamarin-android-scrolltosupport.gif)
+
+## Changing the height of DataFormItem
+
+You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem~Height.html)  property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+You can define the `Height` as described as follows.
+
+* You can directly set the exact `Height` value.
+* You can use the `AutoFitLabel` to size the height of `DataFormItem`, so that it fits to the label text that it contains. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDataFormItemEventArgs e)
+{
+   if (e.DataFormItem != null)
+     {
+        if (e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement" )
+        {
+           e.DataFormItem.LabelPosition = LabelPosition.Left;
+           e.DataFormItem.AutoFitLabel = true;
+        }
+		if (e.DataFormItem.Name == "Suggestion")
+        {
+           e.DataFormItem.LabelPosition = LabelPosition.Left;
+           e.DataFormItem.Height = 400;
+        }
+     }
+}
+{% endhighlight %}
+
+{% endtabs %}
+
+![Label height in Xamarin.Android](SfDataForm_images/xamarin.android-Height.png)
