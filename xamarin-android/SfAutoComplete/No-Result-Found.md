@@ -21,4 +21,22 @@ countryAutoComplete.NoResultsFoundText="No Results Found";
 
 {% endtabs %}
 
-![](images/NoResultsFound.png)
+![NoResultsFound](images/NoResultsFound.png)
+
+## Customizing NoResultsFoundText
+
+The `NoResultsFoundTextColor`, `NoResultsFoundFontSize`, `NoResultsFoundFontAttributes`, and `NoResultsFoundFontFamily` properties are used to customize the foreground color, font size, font attribute, and font family of NoResultsFoundText.
+{% tabs %}
+
+{% highlight c# %}
+
+countryAutoComplete.NoResultsFoundText = "No Results Found";
+countryAutoComplete.NoResultsFoundFontSize = 20;
+countryAutoComplete.NoResultsFoundTextColor = Android.Graphics.Color.DarkGreen;
+countryAutoComplete.NoResultsFoundTypeface = Typeface.CreateFromAsset(this.Assets, "Pacifico.ttf");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NoResultsFound_Customization](images/NoResultsFound_Customization.jpg)
