@@ -9,9 +9,9 @@ documentation: ug
 
 # Built-in Views
 
-`SfCalendar` control provides four types of views to display dates such as month,year,decade,century. It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~ViewMode.html) property.
+Xamarin.Android calendar control provides 4 different types of views such month, year, decade and century. It allows users to easily select and navigate between all built-in views. This can be achieved by using [ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ViewMode.html) property of SfCalendar.
 
-By default `SfCalendar` control is assigned with month view. Based on the user’s preference, `SfCalendar` can be viewed in any one of the available two type.
+N> By default calendar control is assigned with month view. 
 
 ## Month view
 
