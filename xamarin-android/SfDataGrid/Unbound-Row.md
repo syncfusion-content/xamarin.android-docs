@@ -9,7 +9,7 @@ documentation: ug
 
 # Unbound Rows 
 
-The Xamarin.Android DataGrid allows you to add **additional rows** at top and also bottom of the DataGrid which are **not bound with data object** of underlying data source. You can add unbound rows using `SfDataGrid.UnboundRows` collection property. You can add any no of unbound rows to the DataGrid. Unbound rows can also be exported to pdf and excel documents.
+The Xamarin.Android DataGrid allows you to add **additional rows** at top and also bottom of the DataGrid which are **not bound with data object** of underlying data source. You can add unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundRow.html) collection property. You can add any no of unbound rows to the DataGrid. Unbound rows can also be exported to pdf and excel documents.
 
 
 {% tabs %}
@@ -23,7 +23,7 @@ this.dataGrid.UnboundRows.Add(new GridUnboundRow() { Position = UnboundRowsPosit
 
 ## Positioning unbound rows
 
-Unbound row can be placed in top or bottom of the DataGrid by setting the desired value to the `GridUnboundRow.Position` property.
+Unbound row can be placed in top or bottom of the DataGrid by setting the desired value to the [GridUnboundRow.Position](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundRow~Position.html) property.
 
 Below table shows the available unbound row positions.
 
@@ -76,10 +76,10 @@ Below screenshot shows different unbound rows placed in all possible positions.
 
 ## Populating data for unbound rows
 
-You can populate data for the unbound row by handling `QueryUnboundRow` event of Xamarin.Android DataGrid. This event is fired for each cell of the unbound rows whenever the row gets refreshed or comes to view. 
-`GridUnboundRowEventsArgs` of the `QueryUnboundRow` event provides information about the cell that triggered this event.
+You can populate data for the unbound row by handling [QueryUnboundRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryUnboundRow_EV.html) event of Xamarin.Android DataGrid. This event is fired for each cell of the unbound rows whenever the row gets refreshed or comes to view. 
+[GridUnboundRowEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundRowEventArgs.html) of the [QueryUnboundRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryUnboundRow_EV.html) event provides information about the cell that triggered this event.
 
-You can get or set the `GridUnboundRowEventsArgs.Value` property based on the `UnboundAction`. If `UnboundAction` is `QueryData` then you can set the value to be displayed. If the `UnboundAction` is `CommitData` then you can get the edited value.
+You can get or set the [GridUnboundRowEventsArgs.Value](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundRowEventArgs~Value.html) property based on the [UnboundAction](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundRowEventArgs~UnboundAction.html). If `UnboundAction` is `QueryData` then you can set the value to be displayed. If the `UnboundAction` is `CommitData` then you can get the edited value.
 
 {% tabs %}
 {% highlight c# %}
@@ -137,11 +137,11 @@ private void DataGrid_QueryUnboundRow(object sender, GridUnboundRowEventArgs e)
 
 ### Add/Remove unbound rows
 
-You can add or remove unbound rows using `SfDataGrid.UnboundRows` property which reflects in UI immediately.
+You can add or remove unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundRow.html) property which reflects in UI immediately.
  
 ### Trigger QueryUnboundRow event programmatically
  
-You can trigger the `QueryUnboundRow` event for the unbound row cells at runtime by calling `SfDataGrid.InValidateUnboundRow` method which invalidates the unbound row at the given index.
+You can trigger the [QueryUnboundRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryUnboundRow_EV.html) event for the unbound row cells at runtime by calling [SfDataGrid.InValidateUnboundRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~InvalidateUnboundRow.html) method which invalidates the unbound row at the given index.
 
 Here in the below code example, we have invalidated the unbound rows whenever selection is changed in the DataGrid.
 
@@ -161,7 +161,7 @@ private void dataGrid_SelectionChanged(object sender, GridSelectionChangedEventA
 
 ### Cancel the editing for unbound row cell
 
-You can cancel the editing of unbound row cell in the event handler of  `SfDataGrid.CurrentCellBeginEdit` event with the help of `SfDataGrid.GetUnboundRowAtRowIndex` method and row index.
+You can cancel the editing of unbound row cell in the event handler of  `SfDataGrid.CurrentCellBeginEdit` event with the help of [SfDataGrid.GetUnboundRowAtRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridIndexResolver~GetUnboundRowAtRowIndex.html) method and row index.
 
 
 {% tabs %}
@@ -181,7 +181,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEd
 
 ### Saving edited unbound row cell value to external source
 
-You can get the edited value of unbound row cell from `GridUnboundRowEventArgs.Value` property of `QueryUnboundRow` event when `UnboundAction` is `CommitData`.
+You can get the edited value of unbound row cell from `GridUnboundRowEventArgs.Value` property of [QueryUnboundRow](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryUnboundRow_EV.html) event when [UnboundAction](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundRowEventArgs~UnboundAction.html) is `CommitData`.
 
 {% tabs %}
 {% highlight c# %}
@@ -198,7 +198,7 @@ You can get the edited value of unbound row cell from `GridUnboundRowEventArgs.V
 ## Styling in Unbound rows
 
 ### Override DataGrid style
-The Xamarin.Android DataGrid applies style for unboundRow elements by writing a Style class overriding from DataGridStyle, and assigning it to the `SfDataGrid.GridStyle` property.
+The Xamarin.Android DataGrid applies style for unboundRow elements by writing a Style class overriding from DataGridStyle, and assigning it to the [SfDataGrid.GridStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
 
 To apply custom style for UnboundRow, follow the code example:
 
@@ -234,7 +234,7 @@ public class UnboundRowStyle : DataGridStyle
 
 ## Changing unbound row height
 
-You can change the height of unbound row using `SfDataGrid.QueryRowHeight` event.
+You can change the height of unbound row using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryRowHeight_EV.html) event.
 
 
 {% tabs %}
@@ -256,7 +256,7 @@ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 ## Get unbound rows
 
-You can get the unbound row at the specified row index using `GetUnboundRow` method.
+You can get the unbound row at the specified row index using [GetUnboundRowAtRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridIndexResolver~GetUnboundRowAtRowIndex.html) method.
 
 {% tabs %}
 {% highlight c# %}
