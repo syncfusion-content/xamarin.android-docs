@@ -137,7 +137,7 @@ private void DataGrid_QueryUnboundRow(object sender, GridUnboundRowEventArgs e)
 
 ### Add/Remove unbound rows
 
-You can add or remove unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundRow.html) property which reflects in UI immediately.
+You can add or remove unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.UnboundRows.html) property which reflects in UI immediately.
  
 ### Trigger QueryUnboundRow event programmatically
  
