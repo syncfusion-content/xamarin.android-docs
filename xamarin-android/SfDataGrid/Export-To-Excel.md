@@ -360,7 +360,7 @@ DataGridExcelExportingOption option = new DataGridExcelExportingOption();
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/GroupSummaryExcel.png)
+![ExportGroupSummary](SfDataGrid_images/Excel/GroupSummaryExcel.png)
 
 ### GroupSummaryStyle 
 
