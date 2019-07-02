@@ -36,7 +36,7 @@ SetContentView(linearLayout);
 
 {% endtabs %}
 	
-![](images/customizingentry.png)
+![Customizing entry](images/customizingentry.png)
 
 ## Customizing the suggestion box
 
@@ -95,7 +95,7 @@ The DropDownBorderColor property is used to change the border color of suggestio
 
 {% endtabs %}
 	
-![](images/dropdown-border-color.png)
+![Dropdown border color](images/dropdown-border-color.png)
 
 ### Customizing suggestion items
 
@@ -118,7 +118,7 @@ comboBox.DropDownItemFontTypeface = Typeface.DefaultBold;
 
 {% endtabs %}
 	
-![](images/customizingsuggestionItems.png)
+![Customizing suggestion items](images/customizingsuggestionItems.png)
 
 ## Drop-down button customization 
 
@@ -156,7 +156,7 @@ comboBox.DropDownButtonSettings = buttonSettings;
 
 {% endtabs %}
 	
-![](images/buttoncustomizing.png)
+![Button customizing](images/buttoncustomizing.png)
 
 ## Watermark
 
@@ -170,7 +170,7 @@ comboBox.Watermark = "Enter a Country Name";
 
 {% endtabs %}
 	
-![](images/watermark.png)
+![watermark](images/watermark.png)
 
 ### Changing watermark text color
  
@@ -184,7 +184,7 @@ comboBox.WatermarkColor= Color.ParseColor("#1976d2");
 
 {% endtabs %}
 	
-![](images/watermarkcolor.png)
+![Watermark color](images/watermarkcolor.png)
 
 
 
