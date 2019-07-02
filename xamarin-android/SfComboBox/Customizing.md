@@ -59,7 +59,7 @@ comboBox.DropDownItemHeight = 70;
 
 {% endtabs %}
 
-![](images/suggestionitemheight.png)
+![Suggestion item height](images/suggestionitemheight.png)
 
 ### Changing the border color of suggestion box
 
