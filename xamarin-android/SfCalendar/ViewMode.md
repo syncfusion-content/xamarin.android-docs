@@ -134,7 +134,7 @@ N>
 {% highlight c# %}
 
 SfCalendar calendar = new SfCalendar(this);
-calendar.NumberOfWeeksInView = 3;
+calendar.NumberOfWeeksInView = 2;
 
 {% endhighlight %}
 
