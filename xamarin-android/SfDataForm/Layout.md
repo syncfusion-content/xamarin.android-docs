@@ -838,13 +838,11 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
      {
         if (e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement" )
         {
-           e.DataFormItem.LabelPosition = LabelPosition.Left;
-           e.DataFormItem.AutoFitLabel = true;
+            e.DataFormItem.AutoFitLabel = true;
         }
 		if (e.DataFormItem.Name == "Suggestion")
         {
-           e.DataFormItem.LabelPosition = LabelPosition.Left;
-           e.DataFormItem.Height = 400;
+            e.DataFormItem.Height = 400;
         }
      }
 }
