@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Zooming and Panning
+title: Zooming and Panning in Syncfusion SfChart
 description: How to add ZoomPan behavior in Essential Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
