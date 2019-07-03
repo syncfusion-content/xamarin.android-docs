@@ -830,23 +830,20 @@ You can define the `Height` as described as follows.
 {% tabs %}
 
 {% highlight c# %}
-
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDataFormItemEventArgs e)
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
-   if (e.DataFormItem != null)
-     {
-        if (e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement" )
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement")
         {
-           e.DataFormItem.LabelPosition = LabelPosition.Left;
-           e.DataFormItem.AutoFitLabel = true;
+            e.DataFormItem.AutoFitLabel = true;
         }
-		if (e.DataFormItem.Name == "Suggestion")
+        if (e.DataFormItem.Name == "Suggestion")
         {
-           e.DataFormItem.LabelPosition = LabelPosition.Left;
-           e.DataFormItem.Height = 400;
+            e.DataFormItem.Height = 400;
         }
-     }
+    }
 }
 {% endhighlight %}
 
