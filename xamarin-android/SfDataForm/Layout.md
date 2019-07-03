@@ -844,7 +844,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
         {
             e.DataFormItem.Height = 400;
         }
-        
     }
 }
 {% endhighlight %}
