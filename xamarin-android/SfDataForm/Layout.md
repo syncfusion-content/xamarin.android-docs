@@ -839,7 +839,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
         {
             e.DataFormItem.AutoFitLabel = true;
         }
-
         if (e.DataFormItem.Name == "Suggestion")
         {
             e.DataFormItem.Height = 400;
