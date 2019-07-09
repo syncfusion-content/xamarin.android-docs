@@ -116,7 +116,7 @@ schedule.TimeInterval = 180;
 ![Time interval in xamarin android Timeline view](timeline-view-images/xamarin-android-timeline-view-time-interval.png)
 
 >**NOTE**
-If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` as “hh:mm”. By default, `TimeFormat` is "hh a". Refer to this [documentation](https://help.syncfusion.com/xamarin/sfschedule/weekview#time-label-formatting) for changing `TimeFormat` value.
+If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` as “hh:mm”. By default, `TimeFormat` is "hh a".
 
 
 ## Time interval height 
@@ -257,7 +257,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ## Timeslot customization
 
-You can customize the appearance of time slots using the [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimelineViewSettings~Color.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimelineViewSettings~BorderColor.html) and [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimelineViewSettings~BorderStrokeWidth.html) properties of `TimelineViewSettings`.
+You can customize the appearance of time slots using the [Color](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimelineViewSettings~Color.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimelineViewSettings~BorderColor.html) and [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.TimelineViewSettings~BorderWidth.html) properties of `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight c# %}
