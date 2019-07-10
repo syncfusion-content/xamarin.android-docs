@@ -92,6 +92,3 @@ The `ThumbSize` property is used to change the thumb size of SfRangeSlider.
 {% endhighlight %}
 
 {% endtabs %}
-
-
-
