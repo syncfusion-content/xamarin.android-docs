@@ -90,7 +90,7 @@ protected override void OnCreate(Bundle bundle)
  
 ## Changing Schedule Views 
  
-SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using [ScheduleView](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ScheduleView.html) property. By default the control is assigned with `DayView`.Current date will be displayed initially for all the Schedule views.
+SfSchedule control provides five different types of views to display dates and it can be assigned to the control by using [ScheduleView](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ScheduleView.html) property. By default the control is assigned with `DayView`.Current date will be displayed initially for all the Schedule views.
  
 Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`. 
 
@@ -144,6 +144,18 @@ schedule.ScheduleView = ScheduleView.WorkWeekView;
 
 >**NOTE**
 Appointments in non-working days will not be displayed.
+
+### Timeline view   
+ 
+`TimelineView` displays the dates in horizontal time axis with the desired day's count. You can see the past or future dates by scrolling to the right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature.  
+    
+{% tabs %}     
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.Timeline;
+{% endhighlight %}   
+{% endtabs %}   
+    
+![Timeline view in xamarin Android](timeline-view-images/xamarin-android-timeline-view.png)
 
 ### Month View 
  
