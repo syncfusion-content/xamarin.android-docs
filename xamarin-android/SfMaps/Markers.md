@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: Markers
+title: Markers in Syncfusion Maps control
 description: This section describes about map marker.
 platform: Xamarin.Android
 control: SfMaps
@@ -107,7 +107,94 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 
 {% endtabs %}
 
-![](Images/Marker_icon_type.png)
+![Marker icon type square](Images/Marker_icon_type.png)
+
+### Setting contrast color
+
+Based on the background color of the shapes, contrast color will be applied to marker icon.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfMaps maps = new SfMaps(this);
+            maps.SetBackgroundColor(Color.White);
+
+            ShapeFileLayer layer = new ShapeFileLayer();
+            layer.Uri = "usa_state.shp";
+            layer.DataSource = viewModel.Data;
+            layer.ShapeIdTableField = "STATE_NAME";
+            layer.ShapeIdPath = "State";
+            maps.Layers.Add(layer);
+            LegendSetting legendSetting = new LegendSetting();
+            legendSetting.ShowLegend = true;
+            legendSetting.LegendPosition = new Point(30, 70);
+            legendSetting.IconHeight = 20;
+            legendSetting.IconWidth = 20;
+            layer.LegendSetting = legendSetting;
+
+            MapMarker marker = new MapMarker();
+
+            marker.Latitude = 37;
+
+            marker.Longitude = -120;
+
+            layer.Markers.Add(marker);
+
+            MapMarker marker1 = new MapMarker();
+
+            marker1.Latitude = 31;
+
+            marker1.Longitude = -97;
+
+            layer.Markers.Add(marker1);
+            MapMarker marker2 = new MapMarker();
+
+            marker2.Latitude = 41;
+
+            marker2.Longitude = -92;
+
+            layer.Markers.Add(marker2);
+
+            MapMarker marker3 = new MapMarker();
+
+            marker3.Latitude = 38;
+
+            marker3.Longitude = -98;
+
+            layer.Markers.Add(marker3);
+            MapMarker marker4 = new MapMarker();
+
+            marker4.Latitude = 41;
+
+            marker4.Longitude = -99;
+
+            layer.Markers.Add(marker4);
+
+            EqualColorMapping colorMapping = new EqualColorMapping();
+            colorMapping.Color = Color.ParseColor("#FFD84F");
+            colorMapping.Value = "Romney";
+
+            EqualColorMapping colorMapping1 = new EqualColorMapping();
+            colorMapping1.Color = Color.ParseColor("#316DB5");
+            colorMapping1.Value = "Obama";
+
+            ShapeSetting shapeSetting = new ShapeSetting();
+            shapeSetting.ShapeValuePath = "Candidate";
+            shapeSetting.ShapeColorValuePath = "Candidate";
+            shapeSetting.ColorMapping.Add(colorMapping);
+            shapeSetting.ColorMapping.Add(colorMapping1);
+            layer.ShapeSettings = shapeSetting;
+
+            SetContentView(maps);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Maker icon color based on background color](Images/MarkerIconContrastColor.jpg)
+
 
 ### Setting image marker icon
 
@@ -161,7 +248,7 @@ You can pin an image as marker icon by setting the icon type as `Image`. Set [`I
 
 {% endtabs %}
 
-![](Images/Marker_icon_type_image.png) 
+![marker icon type image](Images/Marker_icon_type_image.png) 
 
 ### Label customization
 
@@ -213,7 +300,7 @@ The following code explains the marker customization.
 
 {% endtabs %}
 
-![](Images/Markers_img4.jpeg)
+![marker label customization](Images/Markers_img4.jpeg)
 
 ## Custom marker
 
@@ -268,7 +355,7 @@ Below snippet explains on how to define custom marker with image support.
 
 {% endtabs %}
 
-![](Images/Markers_img5.png)
+![custom marker](Images/Markers_img5.png)
 
 ## Events
 
@@ -300,5 +387,5 @@ Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/cref_files/xa
 
 {% endtabs %}
 
-![](Images/Markers_img6.png)
+![marker selected event](Images/Markers_img6.png)
 
