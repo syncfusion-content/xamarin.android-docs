@@ -68,7 +68,7 @@ You can set headers for each level by setting the [`ShowHeader`](https://help.sy
 
 {% endtabs %} 
 
-![Treemap header](Getting-Started_images/Trim.png)
+![TreeMap header](Getting-Started_images/Trim.png)
 
 ## Data labels
 
@@ -88,7 +88,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
 
 {% endtabs %} 
 
-![Providing Visibility for data labels in TreeMap](Getting-Started_images/Trim.png)
+![Providing visibility for data labels in TreeMap](Getting-Started_images/Trim.png)
 
 ### Avoid overlap in data labels
 
@@ -144,7 +144,7 @@ You can hide the data labels inside the leaf node boundaries using the `Hide` op
 
 ### Customize data labels
 
-You can customize the data labels using the [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.LeafItemSetting~LabelStyle.html) property of LeafItemSettings. The text color, size and style can be customized using the [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Style~TextColor.html), [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Style~TextSize.html), [`TextStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Style~TextStyle.html) properties respectively.
+You can customize the data labels using the [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.LeafItemSetting~LabelStyle.html) property of LeafItemSettings. The text color, size, and style can be customized using the [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Style~TextColor.html), [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Style~TextSize.html), and [`TextStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Style~TextStyle.html) properties, respectively.
 
 {% tabs %}
 
@@ -156,5 +156,4 @@ You can customize the data labels using the [`LabelStyle`](https://help.syncfusi
 
 {% endtabs %}
 
-![Customizing the data labels support in TreeMap ](Getting-Started_images/LabelCustomization.png)
-
+![Customizing the data labels support in TreeMap](Getting-Started_images/LabelCustomization.png)

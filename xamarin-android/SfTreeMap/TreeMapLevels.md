@@ -9,12 +9,12 @@ documentation: ug
 
 # TreeMap Levels
 
-The levels of tree map can be categorized into the following two types:
+The levels of TreeMap can be categorized into the following two types:
 
 * Flat level
 * Hierarchical level
 
-## Flat Level
+## Flat level
 
 ### GroupPath
 
@@ -99,7 +99,7 @@ You can use the [`GroupGap`](https://help.syncfusion.com/cr/cref_files/xamarin-a
 
 ![FlatLevel](TreeMapLevels_images/Flatlevel.png)
 
-## Hierarchical Level
+## Hierarchical level
 
 Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data.
 
@@ -145,7 +145,7 @@ SfTreeMap treeMap = new SfTreeMap(this);
 
 {% endtabs %}  
 
-Below code snippet explains the underlying hierarchical data model
+The following code snippet demonstrates the underlying hierarchical data model.
 
 {% tabs %}  
 
@@ -203,4 +203,3 @@ Below code snippet explains the underlying hierarchical data model
 {% endtabs %}  
 
 ![HierarchicalLevel](TreeMapLevels_images/Hierarchical.jpg)
-
