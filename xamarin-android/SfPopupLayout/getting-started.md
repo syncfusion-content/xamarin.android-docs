@@ -273,7 +273,7 @@ Executing the above codes renders the following output in an android device.
 
 ![SfPopupLayout Default Appearance](GettingStarted_images/DefaultAppearance.png)
 
-You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1414679923).
+You can download the source code of this sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/sfpopuplayout_android-1829756829).
 
 ## Customize positioning
 
