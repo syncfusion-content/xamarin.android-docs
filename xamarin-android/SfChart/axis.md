@@ -665,6 +665,8 @@ numericalAxis.RangeStyles = axisRangeStyles;
 
 {% endhighlight %}
 
+![Individual axis elements customization support in Xamarin.Android Chart](axis_images/AxisRangeCustomize.png)
+
 ### Inversing Axis
 
 Axis can be inversed using the [`Inversed`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Inversed.html) property of axis. Default value is `False`.
