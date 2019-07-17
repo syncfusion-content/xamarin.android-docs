@@ -140,7 +140,7 @@ namespace Designer_PullToRefresh
 {% endtabs %}
 
 
-You can download the entire source code for this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Designer_Support_SfPullToRefresh_Android1034602329).
+You can download the entire source code for this sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Designer_SfPullToRefresh-1542494193).
 
 Refer this link to know the properties that can be configured using designer for SfPullToRefresh.
 
