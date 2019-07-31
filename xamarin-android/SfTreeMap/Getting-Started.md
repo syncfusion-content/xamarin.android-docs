@@ -294,6 +294,8 @@ The following code sample is used to reproduce the output.
 
 {% endtabs %}
 
+You can find the complete getting-started sample in the following link: [Getting-started](https://github.com/SyncfusionExamples/TreeMap_GettingStarted_Android).
+
 The following screenshot illustrates the output of SfTreeMap.
 
-![Output of SfTreeMap](Getting-Started_images/GettingStarted.jpg)
+![Output of SfTreeMap](Getting-Started_images/GettingStarted.png)
