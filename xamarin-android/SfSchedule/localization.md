@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization of Schedule in Xamairn.Android
+title: Localization of Syncfusion Schedule in Xamairn.Android
 description: How to Localize the contents of Schedule control in Xamarin.Android.
 platform: Xamarin.Android
 control: SfSchedule

@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize the Schedule at SfSchedule control for Xamarin.Android
+title: Customize DayView at Syncfusion SfSchedule for Xamarin.Android
 description: Learn how to Customize the schedule DayView in SfSchedule control for Xamarin.Android
 platform: xamarin.Android
 control: SfSchedule
