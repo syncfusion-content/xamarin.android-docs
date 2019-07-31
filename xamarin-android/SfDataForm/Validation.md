@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation | SfDataForm | Xamarin.Android | Syncfusion
-description: How to validate the data in SfDataForm
+description: How to validate the data in SfDataForm for Xamarin.Android.
 platform: xamarin.Android
 control: SfDataForm
 documentation: ug

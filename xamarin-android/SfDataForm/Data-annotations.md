@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data annotations | SfDataForm | Xamarin.Android | Syncfusion
-description: Supported Data annotations in SfDataForm.
+description: Supported Data annotations in SfDataForm in Xamarin.Android.
 platform: Xamarin.Android
 control: SfDataForm
 documentation: UG

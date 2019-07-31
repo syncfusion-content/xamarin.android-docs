@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with DataForm | SfDataForm | Xamarin.Android | Syncfusion
-description: Working with DataForm.
+description: Working with DataForm in Xamarin.Android.
 platform: Xamarin.Android
 control: SfDataForm
 documentation: UG
