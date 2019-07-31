@@ -85,7 +85,7 @@ This section explains how to create a data grid and configure it. The data grid 
 
 ![SfDataGrid in Xamarin.Android](SfDataGrid_images/GettingStarted.png)
 
-You can download the entire source code of this demo for Xamarin.Android from [here](http://files2.syncfusion.com/Xamarin.Android/Samples/DataGrid_GettingStartedAndroid.zip).
+You can download the entire source code of this demo for Xamarin.Android from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted2087929300).
  
 In this walk through, you will create a new application that contains the data grid which includes the following topics:
 
