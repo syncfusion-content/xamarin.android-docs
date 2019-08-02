@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dates, Navigations and Gestures of Syncfusion Schedule in Android
+title: Dates, Navigations and Gestures of Syncfusion Xamarin.Android Schedule 
 description: How to Navigate date, enable or disable navigation and other functionalities of Schedule control in Xamarin.Android.
 platform: Xamarin.Android
 control: SfSchedule
