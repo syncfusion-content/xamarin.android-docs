@@ -1,7 +1,7 @@
 ---   
 layout: post   
-title: MonthView   
-description: Overview of MonthView related features
+title: Customize MonthView at Syncfusion SfSchedule for Xamarin.Android
+description: Overview of MonthView related features of Schedule in Xamarin.Android
 platform: xamarin.android   
 control: SfSchedule   
 documentation: ug   
