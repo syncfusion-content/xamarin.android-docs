@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization of Schedule
-description: How to Localize the contents of Schedule control.
+title: Localization of Syncfusion Schedule in Xamairn.Android
+description: How to Localize the contents of Schedule control in Xamarin.Android.
 platform: Xamarin.Android
 control: SfSchedule
 documentation: ug
@@ -29,7 +29,7 @@ schedule.Locale = new Locale("ja");
 {% endtabs %}
    
 
-![](Localization_images/Localization_Android.png)   
+![Localization support for schedule in Xamairn.Android](Localization_images/Localization_Android.png)   
 
 ## Change custom texts in the control.
 
@@ -55,7 +55,7 @@ The procedure for creating strings.xml files is as follows:
 You can download the entire source code of this demo for Xamarin.Android from
 here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Android-352507966.zip).
 
-![](Localization_images/localization_img2.jpeg)
+![Localization foldren structure for schedule in Xamairn.Android](Localization_images/localization_img2.jpeg)
 
 >**NOTE**
 The corresponding values folder loads only depends on the device configuration and locale.
