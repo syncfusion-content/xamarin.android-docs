@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Operators
-description: Explains about the list of operators in Essential calculate
+title: Operators | Xamarin.Android | Syncfusion
+description: Explains about the list of operators in Xamarin.Android calculate
 platform: xamarin.Android
 control: Calculate
 documentation: ug
