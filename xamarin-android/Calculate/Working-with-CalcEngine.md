@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with CalcEngine
-description: Description about properties, methods maintained in CalcEngine
+title: Working with CalcEngine | Xamarin.Android | Syncfusion
+description: Description about properties, methods maintained in Xamarin.Android CalcEngine
 platform: xamarin.Android
 control: Calculate
 documentation: ug

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Custom Function
-description: Describes how to about add and remove the user defined function 
-platform: xamarin.Android
+title: Custom Function | Xamarin.Android | Syncfusion
+description: Describes how to about add and remove the user defined function in Xamarin.Android Calculate
+platform: Xamarin.Android
 control: Calculate
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Working with CalcQuickBase
-description: Explains about the computation with CalcQuickBase
-platform: xamarin.Android
+title: Working with CalcQuickBase | Xamarin.Android | Syncfusion
+description: Explains about the computation with Xamarin.Android CalcQuickBase
+platform: Xamarin.Android
 control: Calculate
 documentation: ug
 ---
