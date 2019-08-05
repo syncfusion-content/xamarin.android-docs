@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Working with ICalcData
-description: Explains about the computation in ICalcData
-platform: xamarin.Android
+title: Working with ICalcData | Xamarin.Android | Syncfusion
+description: Explains about the computation in Xamarin.Android ICalcData
+platform: Xamarin.Android
 control: Calculate
 documentation: ug
 ---

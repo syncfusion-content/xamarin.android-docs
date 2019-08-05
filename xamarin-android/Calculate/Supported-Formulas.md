@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supported Formulas
-description: Formulas supported in Essential Calculate
+title: Supported Formulas | Xamarin.Android | Syncfusion
+description: Formulas supported in Xamarin.Android Calculate
 platform: xamarin.Android
 control: Calculate
 documentation: ug

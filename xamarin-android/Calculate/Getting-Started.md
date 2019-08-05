@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Essential Calculate
-description: How to compute the formulas using CalcQuickBase,CalcEngine and ICalcData
-platform: xamarin.Android
+title: Getting Started | Calculate | Xamarin.Android | Syncfusion
+description: How to compute the formulas using CalcQuickBase,CalcEngine and ICalcData in Xamarin.Android Calculate
+platform: Xamarin.Android
 control: Calculate
 documentation: ug
 ---
