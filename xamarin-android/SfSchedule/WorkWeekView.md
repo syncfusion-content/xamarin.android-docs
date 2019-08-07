@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customize the Schedule WorkWeekView at SfSchedule control for Xamarin.Android
-description: Learn how to Customize the schedule WorkWeekView in SfSchedule control
+title: Customize WorkWeekView at Syncfusion SfSchedule for Xamarin.Android
+description: Learn how to Customize the schedule WorkWeekView in SfSchedule control in Xamarin.Android
 platform: xamarin.Android
 control: SfSchedule
 documentation: ug
@@ -32,7 +32,7 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/viewheaderappearance_workweek.png)
+![Work week view view header appearance customization in schedule for Xamarin.Android](daymodule_images/viewheaderappearance_workweek.png)
 
 You can customize the height of the ViewHeader in `WorkWeekView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 
@@ -43,7 +43,7 @@ schedule.ViewHeaderHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/viewheaderheight_workweek.png)
+![Work week view view header height customization for schedule in Xamarin.Android](daymodule_images/viewheaderheight_workweek.png)
 
 ### Customize Font Appearance
 
@@ -56,7 +56,7 @@ viewHeaderStyle.DateTextStyle = Typeface.CreateFromAsset(Assets, "Lobster-Regula
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/customfontviewheader_workweek.png)
+![Week view custom font for view header for schedule in Xamarin.Android](daymodule_images/customfontviewheader_workweek.png)
 
 Refer [this](https://help.syncfusion.com/xamarin-android/sfschedule/monthview#custom-font-setting-in-xamarinandroid) to configure the custom fonts in Xamarin.Android.
 
@@ -78,7 +78,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/DateFormat_WorkWeek.png)
+![Work week view header date format customization for schedule in Xamarin.Android](daymodule_images/DateFormat_WorkWeek.png)
 
 ### ViewHeader Tapped Event
 You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ViewHeaderTappedEventArgs.html) argument which holds [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.HeaderTappedEventArgs~Calendar.html) details in it.
@@ -109,7 +109,7 @@ schedule.TimeInterval = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timeinterval_workweek.png)
+![Work week view time interval customization for schedule in Xamarin.Android](daymodule_images/timeinterval_workweek.png)
 
 
 >**NOTE**
@@ -125,7 +125,7 @@ schedule.TimeIntervalHeight = 180;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/workweekview_height.png)
+![Work week view time interval height customization for schedule in Xamarin.Android](daymodule_images/workweekview_height.png)
 
 >**NOTE**
 `WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
@@ -148,7 +148,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changeworkinghours_workweek.png)
+![Week view working hours customization for schedule in Xamarin.Android](daymodule_images/changeworkinghours_workweek.png)
 
 >**NOTE**
 No need to specify the decimal point values for `WorkStartHour` and `WorkEndHour`, if you don’t want to set the minutes.
@@ -171,7 +171,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changestartendhour_workweek.png)
+![Week view customizing start and end hour for schedule in Xamarin.Android](daymodule_images/changestartendhour_workweek.png)
 
 >**NOTE**
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
@@ -205,7 +205,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timeslotappearance_workweek.png)
+![Work week view time slot appearance customization for schedule in Xamarin.Android](daymodule_images/timeslotappearance_workweek.png)
 
 ### Timeslot customization in Non Working hours
 
@@ -225,7 +225,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/nonworkinghours_workweek.png)
+![Work week view non working hours customization for schedule in Xamarin.Android](daymodule_images/nonworkinghours_workweek.png)
 
 >**NOTE**
 `TimeSlotBorderStrokeWidth`and ` VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
@@ -252,7 +252,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/nonaccessibleblock_workweek.png)
+![Non accessible block support in schedule work week view for Xamarin.Android](daymodule_images/nonaccessibleblock_workweek.png)
 
 >**NOTE**
 Selection and related events will not be working in this blocks.
@@ -268,7 +268,7 @@ schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/firstdayofweek_workweek.png)
+![First day of work week for week view in schedule for Xamarin.Android](daymodule_images/firstdayofweek_workweek.png)
 
 ## Time Label Formatting
 You can customize the format for the labels which are mentioning the time, by setting [TimeFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekLabelSettings~TimeFormat.html) property of [WorkWeekLabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekViewSettings~WorkWeekLabelSettings.html) in `WorkWeekViewSettings`.
@@ -284,7 +284,7 @@ schedule.WorkWeekViewSettings = workweekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timelabelformat_workweek.png)
+![Work week view time label customization for schedule in Xamarin.Android](daymodule_images/timelabelformat_workweek.png)
 
 ## Time Label Appearance
 
@@ -303,7 +303,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timelabelappearance_workweek.png)
+![Work week view time label appearance customization for schedule in Xamarin.Android](daymodule_images/timelabelappearance_workweek.png)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
@@ -327,7 +327,7 @@ schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/selectionstyle_workweek.png)
+![Selection style for schedule Work week view in Xamarin.Android](daymodule_images/selectionstyle_workweek.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectionView.html) property of `SfSchedule`.
@@ -344,7 +344,7 @@ schedule.SelectionView = customView;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/selectioncustomview_workweek.png)
+![Custom selection view support for schedule Work week view in Xamarin.Android](daymodule_images/selectioncustomview_workweek.png)
 
 ### Programmatic selection
 You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
@@ -375,4 +375,4 @@ You can download the entire source code of this demo for Xamarin.Android from he
 * `SfSchedule` does not support multiple selection.
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
-![](daymodule_images/selection_WorkWeek.png)
+![Programmatic selection support for schedule Work week view in Xamarin.Android](daymodule_images/selection_WorkWeek.png)

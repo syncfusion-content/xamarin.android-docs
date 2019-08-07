@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview
-description: overview and the features that are supported in calculate
-platform: xamarin.Android
+title: Overview | Xamarin.Android | Syncfusion
+description: overview and the features that are supported in Xamarin.Android calculate
+platform: Xamarin.Android
 control: Calculate
 documentation: ug
 ---
