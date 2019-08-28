@@ -47,11 +47,11 @@ public class ChartData
 [C#]
 
 ObservableCollection<ChartData> demands = new ObservableCollection<ChartData>(); 
-Demands.Add(new ChartData("Jan", 42, 27));
-Demands.Add(new ChartData("Feb", 44, 28));
-Demands.Add(new ChartData("Mar", 53, 35));
-Demands.Add(new ChartData("Apr", 64, 44));
-Demands.Add(new ChartData("May", 75, 54));
+demands.Add(new ChartData("Jan", 42, 27));
+demands.Add(new ChartData("Feb", 44, 28));
+demands.Add(new ChartData("Mar", 53, 35));
+demands.Add(new ChartData("Apr", 64, 44));
+demands.Add(new ChartData("May", 75, 54));
 
 chart.Series.Add (new ColumnSeries () {
 	
