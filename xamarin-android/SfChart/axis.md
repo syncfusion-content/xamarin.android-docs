@@ -71,7 +71,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ### Indexed category axis
 
-Category axis can also be rendered based on the index values of data source by setting the [`ArrangeByIndex`] property to true in the axis.
+Category axis can also be rendered based on the index values of data source by setting the [`ArrangeByIndex`]() property to true in the axis.
 
 {% highlight c# %} 
 [C#]
