@@ -78,7 +78,7 @@ Category axis can also be rendered based on the index values of data source by s
 
 chart.PrimaryAxis = new CategoryAxis() 
 { 
-	ArrangeByIndex = true 
+	ArrangeByIndex = false 
 };
 
 ColumnSeries series1 = new ColumnSeries()
