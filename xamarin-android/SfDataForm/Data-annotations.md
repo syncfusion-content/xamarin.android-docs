@@ -156,7 +156,7 @@ Refer to [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-w
 The Percent data type is supported. Refer to [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#auto-generating-dataformitems-for-data-field) for more details.
 
 ## Custom attributes
-The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.Android.DataForm`.
+The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.Android.`.
 
 ### DisplayOptions attribute
 
