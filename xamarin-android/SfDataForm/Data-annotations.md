@@ -9,7 +9,7 @@ documentation: UG
 
 # Data Annotations
 
-The data form supports the following attributes:
+The data form supports the following attribute, and these attributes can be accessible using `System.ComponentModel.DataAnnotation` assembly.
 
 ## Display attribute
 
@@ -125,8 +125,6 @@ Specifies the maximum and minimum values. Refer to {{'[here](https://help.syncfu
 </tr>
 </table>
 
-N> For Xamarin.Android platform, `System.ComponentModel.DataAnnotations` assembly should be referred manually in order to set [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute in SfDataForm.  
-
 ## Bindable attribute
 
 It specifies whether the field should be auto generated or not. Refer to [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#cancel-dataformitem-generation-of-data-field) for more details.
@@ -154,6 +152,9 @@ Refer to [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-w
 ## CustomDataType attribute
 
 The Percent data type is supported. Refer to [here](https://help.syncfusion.com/xamarin-android/sfdataform/working-with-dataform#auto-generating-dataformitems-for-data-field) for more details.
+
+## Custom attributes
+The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.Android` assembly.
 
 ### DisplayOptions attribute
 
