@@ -61,7 +61,7 @@ SetContentView(schedule);
 ![Creating Appointment in schedule Xamarin Android](PopulatingAppointments_images/appointment.png)
 
 ## Mapping
-Schedule supports full data binding to any type of IEnumerable source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
+Schedule supports full data binding to any type of IEnumerable source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
 | PropertyName | Description |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -101,7 +101,7 @@ public class Meeting
 >**Note**
 You can inherit this class from INotifyPropertyChanged for dynamic changes in custom data.
 
-You can map those properties of `Meeting` class with our SfSchedule control by using [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.SfSchedule~AppointmentMapping.html).
+You can map those properties of `Meeting` class with our SfSchedule control by using [AppointmentMapping](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentMapping.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -871,7 +871,7 @@ Schedule control has built-in events to handle tapped, double tapped and long pr
 
 These events will be triggered while perform respective touch actions in timeslots, month cells and in appointments. All the three events contain the same argument [CellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs.html) which holds selected appointment and date time details in it.
 
-• [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs~SelectedAppointment.html) -  Contains the selected appointment value, it will be null, if any time slots selected.
+• [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs~ScheduleAppointment.html) -  Contains the selected appointment value, it will be null, if any time slots selected.
 • [Calendar](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.CellTappedEventArgs~Calendar.html) - Contains selected time slot DateTime value.
 
 {% tabs %}
