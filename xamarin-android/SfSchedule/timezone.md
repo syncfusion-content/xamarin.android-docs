@@ -37,7 +37,7 @@ Calendar exactEndTime = appointment.EndTime;
 * If you create an all-day appointment, its start time and end time will be set to 12 A.M. and 12 A.M. by default, so time zone is not applicable for all-day appointments.
 * Schedule supports daylight saving time.
 * The time zone support is applicable for custom appointments too, so you need to map the corresponding property.
-* You can use `TimeZone` for custom appointments by mapping the [StartTimeZone](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~StartTimeZone.html) and [EndTimeZone](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~EndTimeZone.html) custom properties of [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfSchedule.Android~Syncfusion.SfSchedule.Android.SfSchedule~AppointmentMapping.html).
+* You can use `TimeZone` for custom appointments by mapping the [StartTimeZone](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~StartTimeZone.html) and [EndTimeZone](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.ScheduleAppointment~EndTimeZone.html) custom properties of [AppointmentMapping](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.AppointmentMapping.html).
 
 
 ## Display Appointments based on client’s  time zone
