@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering | SfDataGrid | Xamarin.Android | Syncfusion
-description: How to filter the records in view in a SfDataGrid.
+description: Filter the records in view using properties in Xamarin.Android SfDataGrid by simply setting a predicate to the view. 
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
