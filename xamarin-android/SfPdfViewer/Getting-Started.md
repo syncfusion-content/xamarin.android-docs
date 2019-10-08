@@ -28,7 +28,7 @@ For creating a PDF Viewer for android, the following assemblies need to be refer
 </tr>
 <tr>
 <td>Xamarin.Android</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/>Syncfusion.SfRangeSlider.Android.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.Android.dll<br/></td>
 </tr>
 </table>
 

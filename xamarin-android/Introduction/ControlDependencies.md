@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control Dependencies of Xamarin.Android
+title: Control Dependencies of Xamarin.Android | Syncfusion
 description: Contains control dependencies of Syncfusion Xamarin.Android components for each control to be referred in Android project
 platform: Xamarin.Android
 control: Introduction
@@ -286,12 +286,13 @@ This page lists the assemblies required for each control to be referred in Xamar
 <dd>Syncfusion.Xamarin.SfPdfViewer.Android</dd>
 &nbsp;
 <dt>Assemblies</dt>
-<dd>Syncfusion. Compression.Portable.Android.dll</dd>
+<dd>Syncfusion.Compression.Portable.Android.dll</dd>
 <dd>Syncfusion.Pdf.Portable.dll</dd>
 <dd>Syncfusion.SfBusyIndicator.Android.dll</dd>
 <dd>Syncfusion.SfPdfViewer.Android.dll</dd>
 <dd>Syncfusion.SfRangeSlider.Android.dll</dd>
 <dd>Syncfusion.Licensing.dll</dd> 
+<dd>Syncfusion.SfProgressBar.Android.dll</dd>
 </dl>
 
 ## SfPicker
