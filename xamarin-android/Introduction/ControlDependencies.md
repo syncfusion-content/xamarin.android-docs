@@ -286,12 +286,13 @@ This page lists the assemblies required for each control to be referred in Xamar
 <dd>Syncfusion.Xamarin.SfPdfViewer.Android</dd>
 &nbsp;
 <dt>Assemblies</dt>
-<dd>Syncfusion. Compression.Portable.Android.dll</dd>
+<dd>Syncfusion.Compression.Portable.Android.dll</dd>
 <dd>Syncfusion.Pdf.Portable.dll</dd>
 <dd>Syncfusion.SfBusyIndicator.Android.dll</dd>
 <dd>Syncfusion.SfPdfViewer.Android.dll</dd>
 <dd>Syncfusion.SfRangeSlider.Android.dll</dd>
 <dd>Syncfusion.Licensing.dll</dd> 
+<dd>Syncfusion.SfProgressBar.Android.dll</dd>
 </dl>
 
 ## SfPicker
