@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Adding duplicate axis in Syncfusion SfChart
-description: Adding duplicate axis in SfChart
-platform: Android
+description: Adding the duplicate axis in SfChart. Duplicate axis can be added using the SfChart Axes Collection property.
+platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
@@ -10,6 +10,26 @@ documentation: ug
 # Adding duplicate axis in SfChart
 
 Duplicate axis can be added in the [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) using the chart [`Axes`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Axes.html) collection property. The axis added in the [`Axes`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Axes.html) collection will be aligned to the horizontal position by default. The axis position can be changed by using the [`IsVertical`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~IsVertical.html) bool property of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html). When the [`IsVertical`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~IsVertical.html) property is set true, the axis will be placed vertically and vice versa.
+
+The following code sample demonstrates this.
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+. . .
+
+chart.Axes.Add(new NumericalAxis()
+{
+    Minimum = 0,
+    Maximum = 70,
+    IsVertical = true,
+    OpposedPosition = true
+});
+
+{% endhighlight  %}
+
+![Duplicate axis support in Xamarin.Android Chart](images/duplicate_axis.png)
 
 N> 
 - The [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html) added in the [`Axes`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Axes.html) collection will not be removed until removing it from the [`Axes`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Axes.html) collection. 
