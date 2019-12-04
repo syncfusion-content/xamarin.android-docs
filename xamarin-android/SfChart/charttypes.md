@@ -35,6 +35,25 @@ chart.Series.Add(lineSeries);
 
 ![Line chart type in Xamarin.Android](charttypes_images/charttypes_img1.png)
 
+### Dashed Lines
+
+[`PathEffect`]() property of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineSeries.html) is used to render line series with dashes.
+
+{% highlight c# %} 
+[C#]
+
+LineSeries lineSeries = new lineSeries()
+{
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
+};
+
+lineSeries.PathEffect = new DashPathEffect(new float[] {5, 6}, 2);
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
+
 ## Area Chart
 
 To render an area chart, create an instance of `AreaSeries` and add to the series collection of `SfChart`. You can use the following properties to customize the appearance.
