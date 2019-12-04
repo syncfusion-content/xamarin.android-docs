@@ -58,6 +58,43 @@ Following screenshot shows the zoomed area,
 
 ![Zoomed area in Xamarin.Android Chart](zoompan_images/zoompan_img2.png)
 
+### Show axis tooltip on selection zooming
+
+The axis tooltip on selection zooming can be enabled using the [`ChartAxis.ShowTrackballInfo`]() property to show/hide the tooltip on the axis. 
+
+[`ChartAxis.TrackballLabelStyle`]() property is used to customize the appearance of the axis tooltip.
+The following properties are used to customize the axis tooltip:
+
+* LabelAlignment - used to change the position of the tooltip axis label.
+* StrokeColor – used to change the border color.
+* StrokeWidth – used to change the thickness of the border.
+* BackgroundColor – used to change the label background color.
+* MarginBottom – specifies the bottom margin for tooltip text.
+* MarginTop – specifies the top margin for tooltip text.
+* MarginLeft – specifies the left margin for tooltip text.
+* MarginRight – specifies the right margin for tooltip text.
+* TextColor – used to change the text color.
+* TextSize – used to change the text size.
+* Typeface - used to change the font family and font weight.
+* LabelFormat – used to provide numeric or date time format of the tooltip text.
+
+You can customize the line color between the tooltip for the selected range while selection zooming using the chart axis [`TrackballAxisLabelStyle`]() [`StrokeColor`]().
+
+Following code snippet illustrates how to enable axis tooltip while selection zooming.
+
+{% highlight c# %}
+[C#]
+
+primaryAxis.ShowTrackballInfo = true;
+primaryAxis.TrackballLabelStyle.Labelformat = "##.##";
+secondaryAxis.ShowTrackballInfo = true;
+secondaryAxis.TrackballLabelStyle.Labelformat = "##.##";
+
+ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
+zoomPanBehavior.SelectionZoomingEnabled = true;
+
+{% endhighlight %}
+
 ## Zoom Mode
 
 The [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomMode.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomMode.html) is [`XY`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ZoomMode.html) (both axis).
