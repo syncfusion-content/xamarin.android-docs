@@ -60,25 +60,25 @@ Following screenshot shows the zoomed area,
 
 ### Show axis tooltip on selection zooming
 
-The axis tooltip on selection zooming can be enabled using the [`ChartAxis.ShowTrackballInfo`]() property to show/hide the tooltip on the axis. 
+The axis tooltip on selection zooming can be enabled using the [`ChartAxis.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~ShowTrackballInfo.html) property to show/hide the tooltip on the axis. 
 
-[`ChartAxis.TrackballLabelStyle`]() property is used to customize the appearance of the axis tooltip.
+[`ChartAxis.TrackballLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~TrackballLabelStyle.html) property is used to customize the appearance of the axis tooltip.
 The following properties are used to customize the axis tooltip:
 
-* LabelAlignment - used to change the position of the tooltip axis label.
-* StrokeColor – used to change the border color.
-* StrokeWidth – used to change the thickness of the border.
-* BackgroundColor – used to change the label background color.
-* MarginBottom – specifies the bottom margin for tooltip text.
-* MarginTop – specifies the top margin for tooltip text.
-* MarginLeft – specifies the left margin for tooltip text.
-* MarginRight – specifies the right margin for tooltip text.
-* TextColor – used to change the text color.
-* TextSize – used to change the text size.
-* Typeface - used to change the font family and font weight.
-* LabelFormat – used to provide numeric or date time format of the tooltip text.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballAxisLabelStyle~LabelAlignment.html) - used to change the position of the tooltip axis label.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeColor.html) – used to change the border color.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeWidth.html) – used to change the thickness of the border.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – used to change the label background color.
+* [`MarginBottom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginBottom.html) – specifies the bottom margin for tooltip text.
+* [`MarginTop`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginTop.html) – specifies the top margin for tooltip text.
+* [`MarginLeft`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginLeft.html) – specifies the left margin for tooltip text.
+* [`MarginRight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginRight.html) – specifies the right margin for tooltip text.
+* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html) – used to change the text color.
+* [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextSize.html) – used to change the text size.
+* [`Typeface`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~Typeface.html) - used to change the font family and font weight.
+* [`LabelFormat`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~LabelFormat.html) – used to provide numeric or date time format of the tooltip text.
 
-You can customize the line color between the tooltip for the selected range while selection zooming using the chart axis [`TrackballAxisLabelStyle`]() [`StrokeColor`]().
+You can customize the line color between the tooltip for the selected range while selection zooming using the chart axis [`TrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballAxisLabelStyle.html) [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeColor.html).
 
 Following code snippet illustrates how to enable axis tooltip while selection zooming.
 
