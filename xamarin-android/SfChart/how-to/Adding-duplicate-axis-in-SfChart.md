@@ -2,7 +2,7 @@
 layout: post
 title: Adding duplicate axis in Syncfusion SfChart
 description: Adding the duplicate axis in SfChart. Duplicate axis can be added using the SfChart Axes Collection property.
-platform: Xamarin.Android
+platform: Android
 control: Chart
 documentation: ug
 ---
