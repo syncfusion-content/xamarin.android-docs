@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Types | SFChart | Xamarin.Android | Syncfusion
-description: What are the different types of Charts available in Essential Xamarin.Android Chart
+description: This section explains the different types of charts, including Cartesian, Financial, Accumulation, PolarRadar and its properties.
 platform: Xamarin.Android
 control: Chart
 documentation: ug
