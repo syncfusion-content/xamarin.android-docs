@@ -37,7 +37,7 @@ chart.Series.Add(lineSeries);
 
 ### Dashed Lines
 
-[`PathEffect`]() property of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineSeries.html) is used to render line series with dashes.
+[`PathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineSeries~PathEffect.html) property of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineSeries.html) is used to render line series with dashes.
 
 {% highlight c# %} 
 [C#]
