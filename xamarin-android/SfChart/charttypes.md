@@ -130,8 +130,6 @@ chart.Series.Add(stackingLineSeries4);
 
 {% endhighlight %}
 
-![Dashed lines support for StackedLineSeries in Xamarin.Android Chart](charttypes_images/StackingLine_PathEffect.png)
-
 
 ## 100% Stacked Line Chart
 
