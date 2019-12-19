@@ -98,7 +98,7 @@ StackedLineSeries stackingLineSeries1 = new StackedLineSeries()
 	XBindingPath = "XValue",
     YBindingPath = "YValue" 
 };
-stackingLineSeries.PathEffect = new DashPathEffect(new float[]{6,6}, 4);
+stackingLineSeries1.PathEffect = new DashPathEffect(new float[]{6,6}, 4);
 chart.Series.Add(stackingLineSeries1);
 
 StackedLineSeries stackingLineSeries2 = new StackedLineSeries()
