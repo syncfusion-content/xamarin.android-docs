@@ -35,6 +35,25 @@ chart.Series.Add(lineSeries);
 
 ![Line chart type in Xamarin.Android](charttypes_images/charttypes_img1.png)
 
+### Dashed Lines
+
+[`PathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineSeries~PathEffect.html) property of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineSeries.html) is used to render line series with dashes.
+
+{% highlight c# %} 
+[C#]
+
+LineSeries lineSeries = new lineSeries()
+{
+	ItemsSource = Data,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
+};
+
+lineSeries.PathEffect = new DashPathEffect(new float[] {5, 6}, 2);
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
+
 ## Stacked Line Chart
 
 To render a stacked line chart, create an instance of `StackingLineSeries` and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the stacked line appearance.
