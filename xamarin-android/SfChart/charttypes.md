@@ -35,24 +35,152 @@ chart.Series.Add(lineSeries);
 
 ![Line chart type in Xamarin.Android](charttypes_images/charttypes_img1.png)
 
-### Dashed Lines
+## Stacked Line Chart
 
-[`PathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineSeries~PathEffect.html) property of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LineSeries.html) is used to render line series with dashes.
+To render a stacked line chart, create an instance of `StackingLineSeries` and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the stacked line appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) – used to change the color of the line.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) – used to change the stroke width of the line.
+* [`Alpha`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Alpha.html) - controls the transparency of the chart series.
 
 {% highlight c# %} 
 [C#]
 
-LineSeries lineSeries = new lineSeries()
+SfChart chart = new SfChart();
+...
+
+StackingLineSeries stackingLineSeries1 = new StackingLineSeries()
 {
-	ItemsSource = Data,
+	ItemsSource = Data1,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue"
+};
+chart.Series.Add(stackingLineSeries1);
+
+StackingLineSeries stackingLineSeries2 = new StackingLineSeries()
+{
+	ItemsSource = Data2,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue"
+};
+chart.Series.Add(stackingLineSeries2);
+
+StackingLineSeries stackingLineSeries3 = new StackingLineSeries()
+{
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue"
+};
+chart.Series.Add(stackingLineSeries3);
+
+StackingLineSeries stackingLineSeries4 = new StackingLineSeries()
+{
+	ItemsSource = Data4,
+	XBindingPath = "XValue",
+	YBindingPath = "YValue"
+};
+chart.Series.Add(stackingLineSeries4);
+
+{% endhighlight %}
+
+![StackedLine chart type in Xamarin.Android](charttypes_images/StackedLine.png)
+
+### Dashed Stacked Lines
+
+`PathEffect` property of the `StackingLineSeries` is used to render stacked line series with dashes.
+
+{% highlight c# %}
+[C#]
+
+StackedLineSeries stackingLineSeries1 = new StackedLineSeries()
+{ 
+	ItemsSource = Data1,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue" 
+};
+stackingLineSeries1.PathEffect = new DashPathEffect(new float[]{6,6}, 4);
+chart.Series.Add(stackingLineSeries1);
+
+StackedLineSeries stackingLineSeries2 = new StackedLineSeries()
+{ 
+	ItemsSource = Data2,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue" 
+};
+stackingLineSeries2.PathEffect = new DashPathEffect(new float[]{6,6}, 4);
+chart.Series.Add(stackingLineSeries2);
+
+StackedLineSeries stackingLineSeries3 = new StackedLineSeries() 
+{ 
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue" 
+};
+stackingLineSeries3.PathEffect = new DashPathEffect(new float[]{6,6}, 4);
+chart.Series.Add(stackingLineSeries3);
+
+StackedLineSeries stackingLineSeries4 = new StackedLineSeries() 
+{ 
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue" 
+};
+stackingLineSeries4.PathEffect = new DashPathEffect(new float[]{6,6}, 4);
+chart.Series.Add(stackingLineSeries4);
+
+{% endhighlight %}
+
+
+## 100% Stacked Line Chart
+
+To render a 100% stacked Line chart, create an instance of [`StackingLine100Series`]() and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the 100% stacked line appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) – used to change the color of the line.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) – used to change the stroke width of the line.
+* [`Alpha`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Alpha.html) - controls the transparency of the chart series.
+* `PathEffect` - used to changed the dashes of the  stacked line series.
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+StackingLine100Series stackingLine100Series1 = new StackingLine100Series()
+{
+	ItemsSource = Data1,
 	XBindingPath = "XValue",
     YBindingPath = "YValue"
 };
+chart.Series.Add(stackingLine100Series1);
 
-lineSeries.PathEffect = new DashPathEffect(new float[] {5, 6}, 2);
-chart.Series.Add(lineSeries);
+StackingLine100Series stackingLine100Series2 = new StackingLine100Series()
+{
+	ItemsSource = Data2,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
+};
+chart.Series.Add(stackingLine100Series2);
+
+StackingLine100Series stackingLine100Series3 = new StackingLine100Series()
+{
+	ItemsSource = Data3,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
+};
+chart.Series.Add(stackingLine100Series3);
+
+StackingLine100Series stackingLine100Series4 = new StackingLine100Series()
+{
+	ItemsSource = Data4,
+	XBindingPath = "XValue",
+    YBindingPath = "YValue"
+};
+chart.Series.Add(stackingLine100Series4);
 
 {% endhighlight %}
+
+![StackingLine100 chart type in Xamarin.Android](charttypes_images/StackingLine100.png)
 
 ## Area Chart
 
