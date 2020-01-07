@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart legend | SFChart | Xamarin.Android | Syncfusion
-description: How to customize the legend's border, background, labels, icons, title and position in Essential Android Chart
+title: Chart legend | SfChart | Xamarin.Android | Syncfusion
+description: How to customize the legend's border, background, labels, icons, title, orientation and position in Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
 documentation: ug
