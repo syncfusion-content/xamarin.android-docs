@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart legend
-description: How to cutomize the legend in Essential Android Chart
+title: Chart legend | SfChart | Xamarin.Android | Syncfusion
+description: How to customize the legend's border, background, labels, icons, title, orientation and position in Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
 documentation: ug
@@ -21,6 +21,37 @@ chart.Legend.Visibility = Visibility.Visible;
 {% endhighlight %}
 
 ![Legend support in Xamarin.Android Chart](legend_images/legend_img1.png)
+
+## Customizing background & border
+
+The [`Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend.html) provides following properties to customize the legend area border and background. 
+
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~BackgroundColor.html) - used to change legend background color.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~StrokeColor.html) - used to change legend border color.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~StrokeWidth.html) - used to change legend border width. 
+* [`PathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~PathEffect.html) - used to render legend border line with dashes.
+* [`MarginTop`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~MarginTop.html) - used to change the top margin of the legend.
+* [`MarginBottom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~MarginBottom.html) - used to change the bottom margin of the legend.
+* [`MarginLeft`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~MarginLeft.html) - used to change the left margin of the legend.
+* [`MarginRight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~MarginRight.html) - used to change the right margin of the legend.
+* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~CornerRadius.html) - used to add the rounded corners to the legend border rectangle. The TopLeft, TopRight, BottomLeft and BottomRight of ChartCornerRadius properties are used to set the radius value for each corner.
+
+{% highlight c# %} 
+[C#]
+
+chart.Legend.BackgroundColor = Color.Argb(255, 245, 245, 240);
+chart.Legend.StrokeColor = Color.Black;
+chart.Legend.StrokeWidth = 2;
+chart.Legend.MarginTop = 5;
+chart.Legend.MarginBottom = 5;
+chart.Legend.MarginLeft = 5;
+chart.Legend.MarginRight = 5;
+chart.Legend.CornerRadius = new ChartCornerRadius(5);
+chart.Legend.PathEffect = new DashPathEffect(new float[] { 3, 3 }, 4);          
+
+{% endhighlight %}
+
+![Legend background and border customization support in Xamarin.Android Chart](legend_images/legend_background.jpg)
 
 ## Customizing Labels
 
