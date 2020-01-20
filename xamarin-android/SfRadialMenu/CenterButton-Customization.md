@@ -315,7 +315,7 @@ namespace GettingStarted
 
 ## CenterButtonTextSize and CenterButtonBackTextSize
 
-The [CenterButtonTextSize](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~CenterButtonTextSize.html) changes the text size of the center button in `SfRadialMenu�, and the [CenterButtonBackTextSize](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~CenterButtonBackTextSize.html) changes the text size of the center back button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu.html).
+The [CenterButtonTextSize](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~CenterButtonTextSize.html) changes the text size of the center button in `SfRadialMenu`, and the [CenterButtonBackTextSize](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~CenterButtonBackTextSize.html) changes the text size of the center back button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}
