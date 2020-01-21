@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Syncfusion RadialMenu item customization in Xamarin.Android
-description: Working with Syncfusion RadialMenu customization of items, text, textcolor, backgroundcolor and view in Xamarin.Android.
+description: Working with Syncfusion RadialMenu customization of items, text, text color, background color, and view in Xamarin.Android.
 platform: Xamarin.Android
 control: SfRadialMenu
 documentation: ug
 ---
 
-# SfRadialMenuItem customization
+# SfRadialMenuItem Customization
 
-The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html) class provides various options such as `Custom Views`, `FontIcons`, and `Images` to customize the items. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the [Items](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~Items.html) property, which is available in SfRadialMenu.
+The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html) class provides various options such as `Custom Views`, `FontIcons`, and `Images` to customize the items. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the [Items](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~Items.html) property that is available in SfRadialMenu.
 
 ## Items
 
-The [Items](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~Items.html) property populates the items of inner rim in `SfRadialMenu` when tapping the items of outer rim.
+The [Items](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~Items.html) property populates the items of an inner rim in `SfRadialMenu` when the items of an outer rim are tapped.
 
 {% tabs %}
 {% highlight C# %}
@@ -216,7 +216,7 @@ namespace GettingStarted
 
 ## TextTypeFace
 
-The [TextTypeFace](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~TextTypeFace.html) property changes the font family of text in [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
+The [TextTypeFace](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~TextTypeFace.html) property changes the font family of the text in [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -419,7 +419,7 @@ namespace GettingStarted
 
 ## FontIconColor
 
-The [FontIconColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~FontIconColor.html) property changes the color of font icon in [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
+The [FontIconColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~FontIconColor.html) property changes the color of the font icon in [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -460,7 +460,7 @@ namespace GettingStarted
 
 ## FontIconSize
 
-The [FontIconSize](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~FontIconSize.html) property changes the size of font icon in the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
+The [FontIconSize](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~FontIconSize.html) property changes the size of the font icon in the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -499,7 +499,7 @@ namespace GettingStarted
 
 ## IconFont
 
-The [IconFont](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~IconFont.html) property changes the font family of font icon in the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
+The [IconFont](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~IconFont.html) property changes the font family of the font icon in the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -538,11 +538,11 @@ namespace GettingStarted
 
 ![SfRadialMenu with FontIconText](images/FontIconText.png)
 
-N> https://xamarinhelp.com/custom-fonts-xamarin-forms/ provides how to add the ttf file to each platform.
+N> https://xamarinhelp.com/custom-fonts-xamarin-forms/ provides how to add the TTF file to each platform.
 
 ## View
 
-The [View](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~View.html) provides custom view to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
+The [View](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~View.html) property provides custom views to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
