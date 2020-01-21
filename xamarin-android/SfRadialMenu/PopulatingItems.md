@@ -9,15 +9,15 @@ documentation: ug
 
 # Populating Items
 
-This section explains how to populate items using radial menu item and item source.
+This section explains how to populate items using the radial menu item and item source.
 
 ## Using radial menu items
 
-By passing a collection of [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html), you can get the view of `SfRadialMenu` control. The radial menu item class provides various options such as custom views, font icons, and images to customize the items . You can add radial menu items by hierarchy.
+By passing a collection of [SfRadialMenuItems](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html), you can get the view of the `SfRadialMenu` control. The radial menu item class provides various options such as custom views, font icons, and images to customize the items. You can also add radial menu items by hierarchy.
 
-### Adding outer rim items of radial menu
+### Adding outer rim items of the radial menu
 
-The following code sample demonstrates how to add the outer rim items of radial menu.
+The following code sample shows how to add the outer rim items of the radial menu.
 
 {% tabs %}
 {% highlight c# %}
@@ -58,11 +58,11 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-### Adding nested items of radial menu
+### Adding nested items of a radial menu
 
-You can populate the nested levels of items within a menu to group similar actions. For example, you can group the clipboard operations by adding clipboard as main menu and cut, copy, and paste as its children.
+You can populate the nested levels of items within a menu to group similar actions. For example, you can group the clipboard operations by adding clipboard as the main menu and cut, copy, and paste as its children.
 
-The following code sample demonstrates how to add the nested items of radial menu.
+The following code sample shows how to add the nested items of the radial menu.
 
 {% tabs %}
 
@@ -128,7 +128,7 @@ namespace GettingStarted
 
 ## Animation duration
 
-Duration of animation in radial menu can be changed using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~AnimationDuration.html) property. It is used to change the speed of opening and closing of radial menu.
+The duration of animation in the radial menu can be changed using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~AnimationDuration.html) property. It is used to change the speed of opening and closing  the radial menu.
 
 {% tabs %}
 {% highlight c# %}
@@ -191,7 +191,7 @@ namespace GettingStarted
 
 ## IsOpen
 
-The [IsOpen](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~IsOpen.html) property indicates whether the radial menu is in open or close state.
+The [IsOpen](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~IsOpen.html) property indicates whether the radial menu is in an open or closed state.
 
 {% tabs %}
 {% highlight c# %}
@@ -261,9 +261,9 @@ namespace GettingStarted
 
 ![IsOpen](images/overview.png)
 
-## Selection color of radial menu
+## Selection color of the radial menu
 
-Selection color of an item can be changed using the `SelectionColor` property of radial menu.
+The selection color of an item can be changed using the `SelectionColor` property of the radial menu.
 
 {% tabs %}
 {% highlight c# %}
@@ -333,9 +333,9 @@ namespace GettingStarted
 
 ![SelectionColor](images/SelectionColor.png)
 
-## Separator thickness and color in radial menu
+## Separator thickness and color in the radial menu
 
-Thickness of strip between the two items can be changed using the [SeparatorThickness](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~SeparatorThickness.html) property, and the color of strip can be changed using the [SeparatorColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~SeparatorColor.html) property.
+The thickness of the strip between the two items can be changed using the [SeparatorThickness](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~SeparatorThickness.html) property, and the color of the strip can be changed using the [SeparatorColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~SeparatorColor.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -382,7 +382,7 @@ namespace GettingStarted
 
 ## Rim color and rim radius in radial menu
 
-The radius of rim can be changed using the [RimRadius](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~RimRadius.html) property, and the color of rim can be changed using the [RimColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~RimColor.html) property.
+The radius of the rim can be changed using the [RimRadius](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~RimRadius.html) property, and the color of the rim can be changed using the [RimColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~RimColor.html) property.
 
 {% tabs %}
 {% highlight c# %}
