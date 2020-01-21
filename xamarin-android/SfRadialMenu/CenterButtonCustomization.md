@@ -568,7 +568,7 @@ namespace GettingStarted
 
 ## CenterButtonView and CenterButtonBackIcon
 
-Radial Menu allows you to give customized view to its center button and center back button. You accomplish this by using the [CenterButtonView](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~CenterButtonView.html) and [CenterButtonBackIcon](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~CenterButtonBackIcon.html) property.
+A Radial Menu allows you to give a customized view to its center button and center back button. You accomplish this by using the [CenterButtonView](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~CenterButtonView.html) and [CenterButtonBackIcon](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~CenterButtonBackIcon.html) properties.
 
 {% tabs %}
 {% highlight xaml %}
