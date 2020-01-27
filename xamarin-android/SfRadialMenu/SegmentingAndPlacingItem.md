@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Types
 
-The two different [LayoutTypes]](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~LayoutType.html) available in the radial menu are:
+The two different [LayoutTypes](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~LayoutType.html) available in the radial menu are:
 
 * Default
 * Custom
@@ -142,7 +142,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-### VisibleSegmentsCount
+## VisibleSegmentsCount
 
 The [VisibleSegmentsCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~VisibleSegmentsCount.html) property is used to specify the number of segments available in the circular panel. When the children count is greater than the value given in the VisibleSegmentsCount property, the overflowing children are not arranged in the panel. When children count is lesser than the VisibleSegmentsCount property, the remaining segments are left free.
 
@@ -208,11 +208,11 @@ namespace GettingStarted
 
 ![Visible segments count](images/VisibleSegmentsCount.png)
 
-### SegmentIndex
+## SegmentIndex
 
 The [SegmentIndex](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~SegmentIndex.html) property is used to specify the index of the radial menu item in circular panel. Based on the index, the radial menu items are inserted in the segment. When the SegmentIndex is not specified for a RadialMenuItem, the menu item is arranged in the next available free segment.
 
-## Code snippet for VisibleSegmentCount and SegmentIndex
+### Code snippet for VisibleSegmentCount and SegmentIndex
 
 {% tabs %}
 {% highlight c#%}
@@ -265,7 +265,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-### StartAngle
+## StartAngle
 
 The `StartAngle` property is used to set the angle from which the arrangement of radial menu items should start.
 
