@@ -52,25 +52,38 @@ indeterminate.ButtonTintList = new ColorStateList(states, colors);
 ![CheckedColor and UncheckedColor in Checkbox](Images/StateColor.png)
 
 ## BorderWidth
-The tick box border thickness of the checkbox control can be customized with the `BorderWidth` property. 
+Border thickness of check box can be customized with the `BorderWidth` property
 
 {% tabs %}
 {% highlight c# %}
-SfCheckBox check1 = new SfCheckBox();
-check1.Text = "Hello";
-check1.BorderWidth = 2;
-check1.FontSize = 20;
-check1.UncheckedColor = Color.Blue;
-SfCheckBox check2= new SfCheckBox();
-check2.Text = "Hello";
-check2.BorderWidth = 4;
-check2.FontSize = 25;
-check2.UncheckedColor = Color.Blue;
-SfCheckBox check3 = new SfCheckBox();
-check3.Text = "Hello";
-check3.BorderWidth = 6;
-check3.FontSize = 30;
-check3.UncheckedColor = Color.Blue;
+//unchecked state and its color
+int[][] states = { new int[] { -Android.Resource.Attribute.StateChecked } };
+int[] colors = { Color.Blue};
+
+SfCheckBox normalSizedCheckBox = new SfCheckBox(this)
+{
+Text = "Hello",
+BorderWidth = 2,
+TextSize = 20,
+ButtonTintList = new Android.Content.Res.ColorStateList(states,colors)
+};
+
+SfCheckBox mediumSizedCheckBox = new SfCheckBox(this)
+{
+Text = "Hello",
+BorderWidth = 4,
+TextSize = 25,
+ButtonTintList = new Android.Content.Res.ColorStateList(states, colors)
+};
+
+SfCheckBox maximumSizedCheckBox = new SfCheckBox(this)
+{
+Text = "Hello",
+BorderWidth = 6,
+TextSize = 30,
+ButtonTintList = new Android.Content.Res.ColorStateList(states, colors)
+};
+
 {% endhighlight %}
 {% endtabs %}
 
