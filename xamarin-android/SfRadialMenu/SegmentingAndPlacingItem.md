@@ -212,8 +212,6 @@ namespace GettingStarted
 
 The [SegmentIndex](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~SegmentIndex.html) property is used to specify the index of the radial menu item in circular panel. Based on the index, the radial menu items are inserted in the segment. When the SegmentIndex is not specified for a RadialMenuItem, the menu item is arranged in the next available free segment.
 
-### Code snippet for VisibleSegmentCount and SegmentIndex
-
 {% tabs %}
 {% highlight c#%}
 
