@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started | SfDataGrid | Xamarin.Android | Syncfusion
-description: Getting started with SfDataGrid.
+description: Getting started with Xamarin.Android DataGrid and walk through to create a demo application from the scratch.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.Android DataGrid (SfDataGrid)
 
 This section provides a quick overview of working with the data grid for Xamarin.Android. You will walk through the entire process of creating a real world of the data grid.
 
@@ -97,6 +97,7 @@ In this walk through, you will create a new application that contains the data g
 * [Sorting](#sorting) 
 * [Grouping](#grouping) 
 * [Selection](#selection)
+* [Editing](https://help.syncfusion.com/xamarin-android/sfdatagrid/editing)
 
 ## Creating the project
 
