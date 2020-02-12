@@ -9,12 +9,14 @@ documentation: ug
 
 # Editing
 
-The SfDataGrid supports editing the cell values by setting the [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowEditing.html) property.
+The SfDataGrid supports editing the cell values by setting the [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowEditing.html) property, [SfDataGrid.NavigationMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~NavigationMode.html)  as `Cell` and setting the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) as any other than None.
 
 The following code example shows how to enable editing in the SfDataGrid. 
 
 {% highlight c# %}
 dataGrid.AllowEditing = true;
+dataGrid.SelectionMode = SelectionMode.Multiple;
+dataGrid.NavigationMode = NavigationMode.Cell;
 {% endhighlight %}
 
 ![](SfDataGrid_images/Editing_Column_Android.png)
