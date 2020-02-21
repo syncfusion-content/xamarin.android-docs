@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Layout | SfDataForm | Xamarin.Android | Syncfusion
-description: Different layouts and its customization  in SfDataForm for Xamarin.Android.
+description: This section explains layouts and its customization and other functionalities in SfDataForm for Xamarin.Android platform.
 platform: Xamarin.Android
 control: SfDataForm
 documentation: UG
 ---
 
-# Layout
+# Layout in Xamarin.Android DataForm (SfDataForm)
 
 ## Overview
 
@@ -820,7 +820,7 @@ dataForm.ScrollTo("BirthDate")
 
 ## Changing the height of DataFormItem
 
-You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem~Height.html)  property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 You can define the `Height` as described as follows.
 
