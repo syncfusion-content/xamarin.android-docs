@@ -191,15 +191,13 @@ schedule.MonthViewSettings = monthViewSettings;
 ![Week number customization in schedule xamarin android](monthview_images/weeknumberstyle.png)
 
 ## Month Label Formatting 
-You can change the Format of the Month date and day labels string in the Schedule using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DateFormat.html), [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DayFormat.html) and [DateLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DateLabelSize.html) properties of [MonthLabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings~MonthLabelSettings.html) in `MonthViewSettings`. 
-
+You can change the Format of the Month date and day labels string in the Schedule using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DateFormat.html), [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DayFormat.html).
 {% tabs %}
 {% highlight c# %}
 //creating new instance for MonthLabelSettings
 MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
 monthLabelSettings.DayFormat = "EEEE";
 monthLabelSettings.DateFormat = "dd";
-monthLabelSettings.DateLabelSize = 15;
 monthViewSettings.MonthLabelSettings = monthLabelSettings;
 {% endhighlight %}
 {% endtabs %}
