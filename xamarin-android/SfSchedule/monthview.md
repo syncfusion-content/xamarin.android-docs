@@ -1,13 +1,13 @@
 ---   
 layout: post   
 title: Customize MonthView at Syncfusion SfSchedule for Xamarin.Android
-description: Overview of MonthView related features of Schedule in Xamarin.Android
+description: This section explains the schedule month view, appointment indicator, agenda view, week number, first day Of week in Xamarin.Android.
 platform: xamarin.android   
 control: SfSchedule   
 documentation: ug   
 ---   
     
-# Month View
+# Month View in Xamarin Scheduler (SfSchedule)
 `MonthView` of `SfSchedule` used to display entire dates of the specific month, current month will be displayed by default initially. Current date color is differentiated with other dates of the current month, also the color differentiation for dates will be applicable for previous and next month dates.
 
 {% tabs %}
@@ -191,15 +191,13 @@ schedule.MonthViewSettings = monthViewSettings;
 ![Week number customization in schedule xamarin android](monthview_images/weeknumberstyle.png)
 
 ## Month Label Formatting 
-You can change the Format of the Month date and day labels string in the Schedule using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DateFormat.html), [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DayFormat.html) and [DateLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DateLabelSize.html) properties of [MonthLabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings~MonthLabelSettings.html) in `MonthViewSettings`. 
-
+You can change the Format of the Month date and day labels string in the Schedule using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DateFormat.html), [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthLabelSettings~DayFormat.html) properties of [MonthLabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.MonthViewSettings~MonthLabelSettings.html) in `MonthViewSettings`.
 {% tabs %}
 {% highlight c# %}
 //creating new instance for MonthLabelSettings
 MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
 monthLabelSettings.DayFormat = "EEEE";
 monthLabelSettings.DateFormat = "dd";
-monthLabelSettings.DateLabelSize = 15;
 monthViewSettings.MonthLabelSettings = monthLabelSettings;
 {% endhighlight %}
 {% endtabs %}
