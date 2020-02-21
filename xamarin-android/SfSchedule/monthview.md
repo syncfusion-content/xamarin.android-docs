@@ -1,13 +1,13 @@
 ---   
 layout: post   
 title: Customize MonthView at Syncfusion SfSchedule for Xamarin.Android
-description: This section explains about the schedule month view, appointment indicator, agenda view, week number, first day Of week in Xamarin.Android.
+description: This section explains the schedule month view, appointment indicator, agenda view, week number, first day Of week in Xamarin.Android.
 platform: xamarin.android   
 control: SfSchedule   
 documentation: ug   
 ---   
     
-# MonthView in Xamarin Scheduler (SfSchedule)
+# Month View in Xamarin Scheduler (SfSchedule)
 `MonthView` of `SfSchedule` used to display entire dates of the specific month, current month will be displayed by default initially. Current date color is differentiated with other dates of the current month, also the color differentiation for dates will be applicable for previous and next month dates.
 
 {% tabs %}
