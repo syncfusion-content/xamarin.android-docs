@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Trendlines
+# Trendlines in Xamarin.Android Chart
 
 The [`Trendline`]() is a line drawn over the chart to display the overall direction of the results. And it built on the assumption based on current and past beliefs. 
 
