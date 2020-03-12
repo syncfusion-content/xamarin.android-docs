@@ -38,8 +38,8 @@ chart.Behaviors.Add(trackballBehavior);
 [`LabelDisplayMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~LabelDisplayMode.html) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the three options you can set to this property,
 
 * [`FloatAllPoints`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TrackballLabelDisplayMode.html) – Displays label for all the data points along the vertical line.
-* `NearestPoint` – Displays label for single data point that is nearer to the touch contact position.
-* `GroupAllPoints` - Displays label for all the data points are grouped and positioned at the top of the chart area.
+* [`NearestPoint`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TrackballLabelDisplayMode.html) – Displays label for single data point that is nearer to the touch contact position.
+* [`GroupAllPoints`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.TrackballLabelDisplayMode.html) - Displays label for all the data points are grouped and positioned at the top of the chart area.
 
 {% highlight c# %} 
 [C#]
