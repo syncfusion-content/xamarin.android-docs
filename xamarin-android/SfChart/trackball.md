@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Chart Trackball in Syncfusion SfChart
-description: How to enable and customize the trackball behavior in Xamarin.Android Chart
+description: How to enable the trackball behavior feature to display the tooltip and customize the trackball behavior in Xamarin. Android Chart
 platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
 
-# Trackball
+# Trackball in Xamarin.Android Chart(SfChart)
 
 Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Behaviors.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
 
