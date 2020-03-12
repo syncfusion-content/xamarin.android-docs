@@ -93,12 +93,12 @@ SfChart chart = new SfChart (this);
 
 NumericalAxis primaryAxis = new NumericalAxis ();
 primaryAxis.ShowTrackballInfo = true;
-primaryAxis.TrackballLabelStyle.Labelformat = "##.##";
+primaryAxis.TrackballLabelStyle.LabelFormat = "##.##";
 chart.PrimaryAxis = primaryAxis; 
 
 NumericalAxis secondaryAxis = new NumericalAxis ();
 secondaryAxis.ShowTrackballInfo = true;
-secondaryAxis.TrackballLabelStyle.Labelformat = "##.##";
+secondaryAxis.TrackballLabelStyle.LabelFormat = "##.##";
 chart.SecondaryAxis = secondaryAxis; 
 
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
