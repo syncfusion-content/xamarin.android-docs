@@ -38,7 +38,7 @@ chart.Behaviors.Add(zoomPanBehavior);
 
 By specifying the [`SelectionZoomingEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~SelectionZoomingEnabled.html) property to true, you can double tap and drag to select a range on the chart to be zoomed in.
 
-The following code explains illustrates how to enable the box selection zooming,
+The following code explains how to enable the box selection zooming,
 
 {% highlight c# %} 
 [C#]
