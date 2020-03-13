@@ -52,7 +52,7 @@ indeterminate.ButtonTintList = new ColorStateList(states, colors);
 ![CheckedColor and UncheckedColor in Checkbox](Images/StateColor.png)
 
 ## BorderWidth
-Border thickness of check box can be customized with the `BorderWidth` property
+Border thickness of the check box can be customized with the `BorderWidth` property
 
 {% tabs %}
 {% highlight c# %}
@@ -111,4 +111,4 @@ caption.TextSize = 20;
 
 ![CheckBox TextAppearance](Images/CaptionAppearance.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_VisualCustomization.zip).
+The demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_VisualCustomization.zip).
