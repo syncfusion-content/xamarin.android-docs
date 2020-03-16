@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Trackball in Syncfusion SfChart
-description: How to enable the trackball behavior feature to display the tooltip and customize the trackball behavior in Xamarin.Android Chart
+description: How to enable the trackball behavior to view the data points that are closer to the point where you touch the chart and also the customizing options available for the trackball in the Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
 documentation: ug
