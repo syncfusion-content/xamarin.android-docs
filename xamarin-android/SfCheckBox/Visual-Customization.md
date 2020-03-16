@@ -52,7 +52,7 @@ indeterminate.ButtonTintList = new ColorStateList(states, colors);
 ![CheckedColor and UncheckedColor in Checkbox](Images/StateColor.png)
 
 ## BorderWidth
-Border thickness of the check box can be customized with the `BorderWidth` property
+Border thickness of tick in the check box can be customized with the `BorderWidth` property
 
 {% tabs %}
 {% highlight c# %}
