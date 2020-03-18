@@ -213,7 +213,7 @@ trendline.PathEffect = new DashPathEffect(new float[] { 5, 6 }, 2);
 
 {% endtabs %}
 
-![Trendlines customizing appearence in Xamarin.Android Chart](trendline_images/trendline_customizing.png)
+![Trendlines customization in Xamarin.Android Chart](trendline_images/trendline_customizing.png)
 
 ## Legend Item Visibility
 
