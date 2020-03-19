@@ -659,6 +659,22 @@ chart.Annotations.Add(annotation);
 
 ![View annotation type in Xamarin.Android Chart](chartannotation_images/img16.png) 
 
+## Annotation Visibility
+
+The [`Visibility`]() property of [`ChartAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation.html) is used to control the visibility of particular annotation. Default value of Visibility property is Visible.
+
+{% highlight c# %} 
+[C#]
+
+VerticalLineAnnotation verticalLineAnnotation = new VerticalLineAnnotation()
+{
+    Visibility = Visibility.Gone
+};
+
+chart.ChartAnnotations.Add(verticalLineAnnotation);
+
+{% endhighlight %}
+
 ## Event
 
 **AnnotationClicked**
