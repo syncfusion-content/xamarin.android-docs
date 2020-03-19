@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Annotation
+# Annotation in Xamarin.Android Chart
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) supports annotations, which allows you to mark the specific area of interest in the chart area. You can add text, images and custom views.
 
