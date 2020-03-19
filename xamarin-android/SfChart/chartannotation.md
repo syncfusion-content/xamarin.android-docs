@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart Annotation
-description: Learn how to add annotation to the chart
+title: Chart Annotation | SfChart | Xamarin.Android | Syncfusion
+description: Learn how to add different types of annotation and customize its appearance and visibility in Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
 documentation: ug
