@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Annotation
-description: Learn how to add annotation to the chart
+title: Chart Annotation | SfChart | Xamarin.Android | Syncfusion
+description: Learn how to add different types of annotation and customize its appearance and visibility in Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
 
-# Annotation
+# Annotation in Xamarin.Android Chart
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html) supports annotations, which allows you to mark the specific area of interest in the chart area. You can add text, images and custom views.
 
@@ -658,6 +658,22 @@ chart.Annotations.Add(annotation);
 {% endhighlight %}
 
 ![View annotation type in Xamarin.Android Chart](chartannotation_images/img16.png) 
+
+## Annotation Visibility
+
+The [`Visibility`]() property of [`ChartAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAnnotation.html) is used to control the visibility of particular annotation. Default value of Visibility property is Visible.
+
+{% highlight c# %} 
+[C#]
+
+VerticalLineAnnotation verticalLineAnnotation = new VerticalLineAnnotation()
+{
+    Visibility = Visibility.Gone
+};
+
+chart.ChartAnnotations.Add(verticalLineAnnotation);
+
+{% endhighlight %}
 
 ## Event
 

@@ -14,6 +14,7 @@ The [`Trendline`]() is a line drawn over the chart to display the overall direct
 The following code examples shows how to add Trendline in SfChart.
 
 {% highlight c# %} 
+[C#]
 
 ColumnSeries columnSeries = new ColumnSeries();
 columnSeries.Trendlines = new ChartTrendlineCollection();
@@ -39,7 +40,7 @@ SfChart support following types of [`Trendlines`]().
 
 The following is the code example of linear trendline.
 
-{% tabs %} 
+
 {% highlight c# %}
 [C#]
 
@@ -50,8 +51,6 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Linear type trendline in Xamarin.Android Chart](trendline_images/trendline_linear.png)
 
 ### Logarithmic
@@ -60,9 +59,8 @@ A [`Logarithmic`]() trendline is the strongest-fit curved line, that is most eff
 
 The following is the code example of logarithmic trendline.
 
-{% tabs %} 
-
 {% highlight c# %}
+[C#]
 
 ColumnSeries columnSeries = new ColumnSeries();
 columnSeries.Trendlines = new ChartTrendlineCollection();
@@ -72,8 +70,6 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Logarithmic type trendline in Xamarin.Android Chart](trendline_images/trendline_Logarithmic.png)
 
 ### Exponential
@@ -81,8 +77,6 @@ columnSeries.Trendlines.Add(trendline);
 The [`Exponential`]() trendline is the curved line most useful for data values rise or fall at increasingly higher rates.
 
 N> SfChart will not generate Exponential trendline when your data contains zero or negative values. 
-
-{% tabs %} 
 
 {% highlight c# %}
 [C#]
@@ -95,8 +89,6 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Exponential type trendline in Xamarin.Android Chart](trendline_images/trendline_Exponential.png)
 
 ### Power
@@ -104,8 +96,6 @@ columnSeries.Trendlines.Add(trendline);
 The [`Power`]() trendline is typically used with data sets to compare measurements that grow at a specific rate.
 
 The following is the code example of power trendline.
-
-{% tabs %} 
 
 {% highlight c# %}
 [C#]
@@ -118,8 +108,6 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Power type trendline in Xamarin.Android Chart](trendline_images/trendline_Power.png)
 
 ### Polynomial
@@ -127,8 +115,6 @@ columnSeries.Trendlines.Add(trendline);
 The [`polynomial`]() trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolynomialOrder`]().
 
 The following is the code example of polynomial trendline.
-
-{% tabs %} 
 
 {% highlight c# %}
 [C#]
@@ -140,8 +126,6 @@ trendline.PolynomialOrder = 3;
 columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![Polynomial type trendline in Xamarin.Android Chart](trendline_images/trendline_Polynomial.png)
 
@@ -159,8 +143,6 @@ The following two types of forecasting are available in SfChart:
 For determining the future trends (in forward direction). The 
 following code example explains the how to set the value for [`ForwardForecast`]().
 
-{% tabs %} 
-
 {% highlight c# %}
 [C#]
 
@@ -172,15 +154,11 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![ForwardForecast in trendline Xamarin.Android Chart](trendline_images/trendline_Forward.png)
 
 ### Backward Forecast
 
 For determining the future trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`]().
-
-{% tabs %} 
 
 {% highlight c# %}
 [C#]
@@ -193,17 +171,14 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![BackwardForecast in trendline Xamarin.Android Chart](trendline_images/trendline_Backward.png)
 
 ## Customization
 
 We can customize the trendline appearance using [`StrokeWidth`](), [`StrokeColor`]() and [`PathEffect`]() properties. 
 
-{% tabs %} 
-
 {% highlight c# %}
+[C#]
 
 trendline.StrokeColor = Color.Black;
 trendline.StrokeWidth = 2;
@@ -211,21 +186,17 @@ trendline.PathEffect = new DashPathEffect(new float[] { 5, 6 }, 2);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Trendlines customization in Xamarin.Android Chart](trendline_images/trendline_customizing.png)
 
 ## Legend Item Visibility
 
 We can able to control the visibility of the trendline legend items using [`VisibilityOnLegend`]() property of the Trendline.
 
-{% tabs %} 
-
 {% highlight c# %}
+[C#]
 
 trendline.VisibilityOnLegend = Visibility.Visible;
 
 {% endhighlight %}
 
-{% endtabs %}
 
