@@ -64,6 +64,19 @@ You can get current image edits as stream using this argument.
 
 {% endhighlight %}
 
+* FileName
+
+You can save the edited image in the specified name.
+
+{% highlight C# %}
+
+        private void Editor_ImageSaving(object sender, ImageSavingEventArgs e)
+        {
+            e.FileName = "SavedImage";
+        }
+
+{% endhighlight %}
+
 ### ImageSaved
 
 This event occurs after the image has been saved. To get the location of the saved image, use the location argument as shown in the following code.
