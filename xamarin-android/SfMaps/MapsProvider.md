@@ -256,6 +256,148 @@ The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin-a
 
 {% endtabs %}
 
+## Calculate zoom level based on map geo-bounds or distance
+
+This feature is used to calculate the initial zoom level automatically in two ways.
+
+* Distance in radius(Meter/KiloMeter/Mile)
+* Geo-bounds(Northeast, Southwest)
+
+### Distance in radius 
+
+Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of imagery layer class.
+
+N> `DistanceType` property default value is KiloMeter.
+
+{% tabs %}
+
+{% highlight c# %}
+
+    public class MainActivity : AppCompatActivity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            SfMaps maps = new SfMaps(this);
+            ImageryLayer layer = new ImageryLayer();
+            layer.GeoCoordinates = new PointF(38.909804f, -77.043442f);
+            layer.Radius = 5;
+            layer.DistanceType = DistanceType.KiloMeter;
+            CustomMarker marker = new CustomMarker(this);
+            marker.Label = "Washington";
+            marker.Latitude = 38.909804;
+            marker.Longitude = -77.043442;
+            layer.Markers.Add(marker);
+            maps.Layers.Add(layer);
+            SetContentView(maps);
+        }
+    }
+
+    public class CustomMarker : MapMarker
+    {
+        Android.Content.Context context;
+        public CustomMarker(Android.Content.Context con)
+        {
+            context = con;
+        }
+
+        public override void DrawMarker(PointF p0, Canvas p1)
+        {
+            float density = context.Resources.DisplayMetrics.Density / 1.5f;
+            Bitmap bitmap = BitmapFactory.DecodeResource(context.Resources, Resource.Drawable.pin);
+            p1.DrawBitmap(bitmap, (float)p0.X - (12 * density), (float)p0.Y - (35 * density), new Paint());
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Geo-bounds
+
+Calculate the initial zoom level automatically based on the LatLngBounds(Northeast, Southwest) of imagery layer class.
+
+{% highlight c# %}
+
+    public class MainActivity : AppCompatActivity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            SfMaps maps = new SfMaps(this);
+            ImageryLayer layer = new ImageryLayer();
+            LatLngBounds bounds = new LatLngBounds();
+            bounds.Northeast = new Position(38.909804, -77.043442);
+            bounds.Southwest = new Position(38.909804, -77.043442);
+            layer.LatLngBounds = bounds;
+            CustomMarker marker = new CustomMarker(this);
+            marker.Label = "Washington";
+            marker.Latitude = 38.909804;
+            marker.Longitude = -77.043442;
+            layer.Markers.Add(marker);
+            maps.Layers.Add(layer);
+            SetContentView(maps);
+        }
+    }
+
+    public class CustomMarker : MapMarker
+    {
+        Android.Content.Context context;
+        public CustomMarker(Android.Content.Context con)
+        {
+            context = con;
+        }
+
+        public override void DrawMarker(PointF p0, Canvas p1)
+        {
+            float density = context.Resources.DisplayMetrics.Density / 1.5f;
+            Bitmap bitmap = BitmapFactory.DecodeResource(context.Resources, Resource.Drawable.pin);
+            p1.DrawBitmap(bitmap, (float)p0.X - (12 * density), (float)p0.Y - (35 * density), new Paint());
+        }
+    }
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+N> When setting LatLngBounds and DistanceRadius at the same time, the priority is `DistanceRadius` and calculate zoom level based radius value.
+
+![SfMaps zoom level changed image](Images/ZoomLevel.png)
+
+## Get the map tile layer bounds
+
+You can get imagery layer pixel bounds by using `MapBounds` property while zooming, panning, and changing Geo-Coordinate value in imagery layer.
+
+{% tabs %}
+
+{% highlight c# %}
+
+    public class MainActivity : AppCompatActivity
+    {
+        ImageryLayer layer = new ImageryLayer();
+
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            SfMaps maps = new SfMaps(this);
+            layer.GeoCoordinates = new PointF(30.9709225f, -100.2187212f);
+            layer.GeoCoordinateChanged += Layer_GeoCoordinateChanged;
+            maps.Layers.Add(layer);
+            SetContentView(maps);
+        }
+
+        private void Layer_GeoCoordinateChanged(object sender, GeoCoordinateChangedEventArgs e)
+        {
+            var pixelBounds = layer.MapBounds;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Events
 
