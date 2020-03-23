@@ -194,3 +194,64 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
 {% endhighlight %}
 
 ![](scales_images/multiple-scale.png)
+
+
+## Calculate radius and center based on angle
+
+This feature is used to automatically adjust the radius and center of a circular gauge based on the `StartAngle` and `SweepAngle` properties by enable the `IsCenterAligned` property of gauge.
+
+N> Default value of the IsCenterAligned property is false. 
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
+            sfCircularGauge.IsCenterAligned = true;
+            CircularScale scale = new CircularScale();
+            scale.EnableAutoAngle = true;
+            scale.StartAngle = 180;
+            scale.SweepAngle = 180;
+            scale.StartValue = 0;
+            scale.EndValue = 1000;
+            scale.Interval = 500;
+            scale.EnableAutoInterval = true;
+            scale.RimWidth = 15;
+            scale.LabelColor = Color.Black;
+            scale.LabelTextSize = 10;
+            ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer>();
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 500;
+            needlePointer.Color = Color.ParseColor("#666666");
+            needlePointer.Type =NeedleType.Triangle;
+            needlePointer.LengthFactor = 0.7;
+            needlePointer.KnobStrokeWidth = 10;
+            needlePointer.KnobRadius = 15;
+            needlePointer.KnobStrokeColor = Color.Aqua;
+            needlePointer.KnobStrokeWidth = 8;
+            needlePointer.KnobColor = Color.White;
+            needlePointer.KnobRadiusFactor = 0.1;
+            pointers.Add(needlePointer);
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.InvertedTriangle;
+            markerPointer.Value = 300;
+            markerPointer.Color = Color.Brown;
+            markerPointer.MarkerHeight = 30;
+            markerPointer.MarkerWidth = 30;
+            markerPointer.Offset = 1;
+            pointers.Add(markerPointer);
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.RangeCap = RangeCap.Both;
+            rangePointer.Value = 1000;
+            rangePointer.Color = Color.Brown;
+            rangePointer.Width = 15;
+            rangePointer.Offset = 0.5;
+            pointers.Add(rangePointer);
+            scale.CircularPointers = pointers;
+            circularScales.Add(scale);
+            sfCircularGauge.CircularScales = circularScales;
+            sfCircularGauge.SetBackgroundColor(Color.White);
+            SetContentView(sfCircularGauge);
+	
+{% endhighlight %}
+
+![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.png)
