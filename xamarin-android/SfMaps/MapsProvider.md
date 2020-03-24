@@ -156,7 +156,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% endtabs %}
 
-![](Images/Coordinate.png)
+![Geo-Coordinate image](Images/Coordinate.png)
 
 {% tabs %}
 
@@ -172,7 +172,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% endtabs %}
 
-![](Images/Center.png)
+![Center image](Images/Center.png)
 
 ## Markers
 
