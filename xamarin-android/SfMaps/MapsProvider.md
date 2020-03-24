@@ -31,7 +31,7 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 {% endtabs %}
 
-![](Images/OSM.png)
+![OSM image](Images/OSM.png)
 
 N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
 
@@ -53,7 +53,7 @@ The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides
 
 {% endtabs %}
 
-![](Images/Road.png)
+![Bing map image](Images/Road.png)
 
 N> The `LayerType` property of `ImageryLayer` provides support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
 
@@ -90,7 +90,7 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 {% endtabs %}
 
-![](Images/aerial.png)
+![aerial view image](Images/aerial.png)
 
 ## AerialWithLabel
 
@@ -111,7 +111,7 @@ The AerialWithLabel view displays the Aerial map with labels for continent, coun
 
 {% endtabs %}
 
-![](Images/aerialWithLabel.png)
+![AerialWithLabel image](Images/aerialWithLabel.png)
 
 ## Zooming and panning
 
@@ -119,7 +119,7 @@ The maps control provides interactive zooming and panning supports to OSM and Bi
 
 Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
-![](Images/zooming.gif)
+![Zooming image](Images/zooming.gif)
 
 ## ResetOnDoubleTap
 
@@ -222,7 +222,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 {% endtabs %}
 
-![](Images/Marker.png)
+![Marker image](Images/Marker.png)
 
 ## Cache tiles in application memory
 
