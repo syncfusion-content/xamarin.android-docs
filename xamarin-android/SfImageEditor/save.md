@@ -1,13 +1,13 @@
 ---
 layout : post
 title : Save Image in Syncfusion SfImageEditor control in Xamarin.Android
-description : Learn how to save the image in ImageEditor for Xamarin.Android
+description : Learn how to save the image in different ways as well as the use of different events in ImageEditor for Xamarin.Android
 platform : xamarin.android
 control : ImageEditor
 documentation : ug
 ---
 
-## Save
+# Save in SfImageEditor
 
 You can save the image along with the current edits to the device using the `Save` method.
 

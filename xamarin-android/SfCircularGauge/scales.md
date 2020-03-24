@@ -2,14 +2,14 @@
 
 layout: post
 title: Scales in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: Learn about scale in Syncfusion SfCircularGauge control
+description:  This section describes how to set scales and customize the scales in the SfLinearGauge control for Xamarin.Android
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Scales
+# Scales in SfLinearGauge
 
 CircularScales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 

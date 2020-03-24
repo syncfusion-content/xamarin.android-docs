@@ -2,14 +2,14 @@
 
 layout: post
 title: Labels in Syncfusion LinearGauge control for Xamarin.Android
-description:  Learn how to set labels in Syncfusion LinearGauge control
+description:  This section describes how to set labels and customize the labels in Syncfusion LinearGauge control for Xamarin.Android
 platform: Xamarin.Android
 control: LinearGauge
 documentation: ug
 
 ---
 
-# Labels 
+# Labels in SfLinearGauge 
 
 [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html) labels associate a numeric value with major scale tick marks.
 
