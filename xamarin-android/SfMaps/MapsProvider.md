@@ -90,7 +90,7 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 {% endtabs %}
 
-![aerial view image](Images/aerial.png)
+![aerial view image](Images/aerial.jpg)
 
 ## AerialWithLabel
 
@@ -111,7 +111,7 @@ The AerialWithLabel view displays the Aerial map with labels for continent, coun
 
 {% endtabs %}
 
-![AerialWithLabel image](Images/aerialWithLabel.png)
+![AerialWithLabel image](Images/aerialWithLabel.jpg)
 
 ## Zooming and panning
 

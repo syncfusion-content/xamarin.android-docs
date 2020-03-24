@@ -30,7 +30,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
     
 {% endhighlight %}
 
-![](labels_images/label-color-customization.png)
+![Label-color-customization image](labels_images/label-color-customization.png)
 
 ## Label font customization
 
@@ -50,7 +50,7 @@ The label font can be customized by using the [`LabelTextSize`](https://help.syn
     
 {% endhighlight %}
 
-![](labels_images/label-font-customization.png)
+![Label-font-customization image](labels_images/label-font-customization.png)
 
 ## Setting position for labels
 
@@ -69,7 +69,7 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
     
 {% endhighlight %}
 
-![](labels_images/label-offset.png)
+![Label-offset image](labels_images/label-offset.png)
 
 ## Setting number of decimal digits for labels
 
@@ -88,7 +88,7 @@ The [`NumberOfDecimalDigits`](https://help.syncfusion.com/cr/cref_files/xamarin-
     
 {% endhighlight %}
 
-![](labels_images/number-of-decimal-digits.png)
+![Number-of-decimal-digits image](labels_images/number-of-decimal-digits.png)
 
 ## Setting postfix and prefix for labels
 
@@ -111,7 +111,7 @@ You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](
     
 {% endhighlight %}
 
-![](labels_images/label-postfix.png)
+![Label-postfix image](labels_images/label-postfix.png)
 
 ### Label prefix
 
@@ -130,7 +130,7 @@ You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](
     
 {% endhighlight %}
 
-![](labels_images/label-prefix.png)
+![Label-prefix image](labels_images/label-prefix.png)
 
 ## Edge label customization
 
@@ -153,7 +153,7 @@ You can customize the edge label by using the [`ShowFirstLabel`](https://help.sy
     
 {% endhighlight %}
 
-![](labels_images/label-edge-customization.png)
+![Label-edge-customization image](labels_images/label-edge-customization.png)
 
 ## Show labels
 
@@ -172,7 +172,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
     
 {% endhighlight %}
 
-![](labels_images/show-labels.png)
+![Show-labels image](labels_images/show-labels.png)
 
 ## Setting auto angle for label
 
@@ -191,5 +191,5 @@ Scale labels can be rotated automatically based on the current angle. To enable 
     
 {% endhighlight %}
 
-![](labels_images/auto-angle.png)
+![Auto angle image](labels_images/auto-angle.png)
 
