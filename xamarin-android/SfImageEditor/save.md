@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-## Save in SfImageEditor
+# Save in SfImageEditor
 
 You can save the image along with the current edits to the device using the `Save` method.
 
