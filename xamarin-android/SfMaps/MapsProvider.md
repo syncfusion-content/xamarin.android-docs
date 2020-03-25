@@ -119,7 +119,7 @@ The maps control provides interactive zooming and panning supports to OSM and Bi
 
 Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
-![Zooming image](Images/zooming.gif)
+![Zooming image](Images/zooming.jpg)
 
 ## ResetOnDoubleTap
 
