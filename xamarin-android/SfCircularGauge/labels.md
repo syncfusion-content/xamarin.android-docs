@@ -2,7 +2,7 @@
 
 layout: post
 title: Labels in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: Learn how to set labels and customize the labels in Syncfusion CircularGauge control for Xamarin.Android 
+description: Learn how to add and customize the scale labels in CircularGauge control for Xamarin.Android 
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
