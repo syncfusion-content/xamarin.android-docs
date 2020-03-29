@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started in Syncfusion CheckBox for Xamarin.Android platform
-description: Learn how to customize the basic features of SfCheckBox
+description: Learn how to create a simple CheckBox and its customization options with its available basic features in Xamarin.Android
 platform: Xamarin.Android
 control: SfCheckBox
 documentation: ug 
@@ -9,7 +9,7 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Getting Started
+# Getting Started Xamarin.Android Checkbox (SfCheckbox)
 This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
 
 ## Add SfCheckBox reference
@@ -228,4 +228,4 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 
 ![Xamarin.Android CheckBox intermediate state](Images/Inter1.jpg) ![](Images/Inter2.jpg)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_IndeterminateState.zip).
+This demo can be downloaded from this [link](https://github.com/SyncfusionExamples/GettingStarted-Sample-in--CheckBox-Android).
