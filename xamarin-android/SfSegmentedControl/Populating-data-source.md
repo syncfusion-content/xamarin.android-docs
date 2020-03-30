@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data source  in Syncfusion Segmented control for Xamarin.Android
-description: Learn how to add Data sources in Segmented control and its customization in Xamarin.Android Platform
+description: Learn how to add Data sources in Segmented control in Xamarin.Android Platform
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
