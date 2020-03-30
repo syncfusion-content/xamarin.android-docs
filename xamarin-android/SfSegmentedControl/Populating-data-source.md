@@ -48,7 +48,7 @@ SetContentView(segmentedControl);
 
 {% endhighlight %}
 
-![](images/Data-source/Xamarin_Android_string.png)
+![SegmentedControl String collection](images/Data-source/Xamarin_Android_string.png)
 
 ## Segment items
 
@@ -118,7 +118,7 @@ new SfSegmentItem(){Text="XL",FontColor=Color.ParseColor("#3F3F3F")},
     
 {% endhighlight %}
 
-![](images/Data-source/Xamarin_Android_SegmentItemCollection.png) 
+![SegmentedControl Segment items](images/Data-source/Xamarin_Android_SegmentItemCollection.png) 
    
 ## Custom views
 
@@ -203,6 +203,6 @@ if (PropertyChanged != null)
 
 {% endhighlight %}
 
-![](images/Data-source/Xamarin_Android_ViewCollection.png)
+![SegmentedControl Custom views](images/Data-source/Xamarin_iOS_Itemcolor_copy.png)
 
 
