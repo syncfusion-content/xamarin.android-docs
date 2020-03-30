@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data source  in Syncfusion Segmented control for Xamarin.Android
-description: Learn how to add Data sources in Segmented control in Xamarin.Android Platform
+description: Learn how to add Data sources in strings, collection set Segmented control in Xamarin.Android Platform
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Populating data source Xamarin.Android SegmentedControl (SfSegmentedControl)
+# Populating data source
 
 The segmented control can be populated from a collection of strings, views, or a collection of objects in a built-in class.
 

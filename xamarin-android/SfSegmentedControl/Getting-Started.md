@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides a quick overview for working with the segmented control for Xamarin.Android. Walk through the entire process of creating a real-world application with segmented control.
 
-# Assembly deployment
+## Assembly deployment
 
 After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders,   
 {Syncfusion Essential Studio Installed location}\Essential Studio\16.2.0.41\Xamarin\lib
@@ -42,11 +42,11 @@ This section explains how to create a segmented control and configure it.The seg
 
 ![Simple segmented control](images/Getting-started/Xamarin_Android_GettingStarted.png)
 
-# Creating the project
+## Creating the project
 
 Create a new Android application in Visual Studio for Xamarin.Android.
 
-# Adding SfSegmentedControl in Xamarin.Android
+## Adding SfSegmentedControl in Xamarin.Android
 
 1. Add the required assembly reference to the project as discussed in the [Assembly deployment](#assembly-deployment) section.
 
@@ -195,7 +195,7 @@ Initial view for the application can be created by the following code snippet.
 
 ![SegmentedControl Initialview](images/Getting-started/Xamarin-Android-initialview.png)
 
-# Adding data/Items to SfSegmentedControl
+## Adding data/Items to SfSegmentedControl
 
 We can add the data inside the segmented control in 3 different ways. 
 
