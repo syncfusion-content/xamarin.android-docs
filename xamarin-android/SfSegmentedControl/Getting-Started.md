@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion segmented control for Xamarin.Android 
-description: A quick tour to initial users on Syncfusion segmented control for Xamarin.Android platform
+description: Learn how to create a simple segmented control and its customization options with its available basic features in Xamarin.Android
 platform: Xamarin.Android
 control: SfSegmentedControl
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started Xamarin.Android SegmentedControl (SfSegmentedControl)
 
 This section provides a quick overview for working with the segmented control for Xamarin.Android. Walk through the entire process of creating a real-world application with segmented control.
 
@@ -21,7 +21,7 @@ N> Assemblies can be found in unzipped package location in Mac.
 
 ## Adding SfSegmentedControl Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android/#), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.Buttons.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android/#), and then install it.
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -319,7 +319,7 @@ In ViewModel add the below given code to get the respective items in SfSegmented
     {
         public class ViewModel : INotifyPropertyChanged
         {
-            private ObservableCollection<SfSegmentItem> itemCollection = new ObservableCollection<SfSegmentItem>();
+            private ObservableCollection<SfSegmentItem> itemCollection;
             public ObservableCollection<SfSegmentItem> ItemCollection
             {
                 get { return itemCollection; }

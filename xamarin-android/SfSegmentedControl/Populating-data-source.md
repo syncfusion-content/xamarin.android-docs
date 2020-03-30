@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data source  in Syncfusion Segmented control for Xamarin.Android
-description: Learn how to add Data source in Segmented control
+description: Learn how to add Data sources in Segmented control and its customization in Xamarin.Android Platform
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Populating data source
+# Populating data source Xamarin.Android SegmentedControl (SfSegmentedControl)
 
 The segmented control can be populated from a collection of strings, views, or a collection of objects in a built-in class.
 
@@ -87,7 +87,7 @@ The items inside the ItemsSource can be added in the view model as below.
 
 public class ViewModel : INotifyPropertyChanged
 {
-    private ObservableCollection<SfSegmentItem> sizeCollection = new ObservableCollection<SfSegmentItem>();
+    private ObservableCollection<SfSegmentItem> sizeCollection;
     public ObservableCollection<SfSegmentItem> SizeCollection
     {
         get { return sizeCollection; }
@@ -160,7 +160,7 @@ The ItemsSource can be set in the view model as below.
 
 public class ViewModel : INotifyPropertyChanged
 {
-private ObservableCollection<View> viewCollection = new ObservableCollection<View>();
+private ObservableCollection<View> viewCollection;
 
 public ObservableCollection<View> ViewCollection
 {
