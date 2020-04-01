@@ -2,7 +2,7 @@
 
 layout: post
 title: Labels in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: Learn how to add and customize the scale labels in CircularGauge control for Xamarin.Android 
+description: This section explains how the color, font and position of the labels in linear gauge scales can be applied and customized.
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
