@@ -2,14 +2,14 @@
 
 layout: post
 title: Scales in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: Learn about scale in Syncfusion SfCircularGauge control
+description: This section explains the steps required to add and customize scales in circular gauge control for Xamarin.Android.
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Scales
+# Scales in SfLinearGauge
 
 CircularScales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 
@@ -31,7 +31,7 @@ A range is a visual element, which begins and ends at specified values within a 
 
 {% endhighlight %}
 
-![](scales_images/scale.png)
+![Circular Scale Image](scales_images/scale.png)
 
 ## Setting start and end values for scale
 
@@ -49,7 +49,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
 
 {% endhighlight %}
 
-![](scales_images/start-end-value.png)
+![Start-end-value image](scales_images/start-end-value.png)
 
 ## Setting start and sweep angles for scale
 
@@ -69,7 +69,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
 
 {% endhighlight %}
 
-![](scales_images/start-end-angle.png)
+![Start-end-angle imahe](scales_images/start-end-angle.png)
 
 ## Setting interval for scale
 
@@ -88,7 +88,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncf
 
 {% endhighlight %}
 
-![](scales_images/interval.png)
+![Interval image](scales_images/interval.png)
 
 ## Setting auto interval for scale
 
@@ -107,7 +107,7 @@ By default, the interval value is calculated by 10. By using the [`EnableAutoInt
 
 {% endhighlight %}
 
-![](scales_images/auto-interval.png)
+![Auto-interval image](scales_images/auto-interval.png)
 
 ## Setting scale direction for scale
 
@@ -126,7 +126,7 @@ The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Sync
 
 {% endhighlight %}
 
-![](scales_images/scale-direction.png)
+![Scale-direction image](scales_images/scale-direction.png)
 
 ## Setting multiple scales for scale
 
@@ -193,4 +193,65 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
 	
 {% endhighlight %}
 
-![](scales_images/multiple-scale.png)
+![Multiple-scale image](scales_images/multiple-scale.png)
+
+
+## Calculate radius and center based on angle
+
+This feature is used to automatically adjust the radius and center of a circular gauge based on the `StartAngle` and `SweepAngle` properties by enable the `IsCenterAligned` property of gauge.
+
+N> Default value of the IsCenterAligned property is false. 
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> circularScales = new ObservableCollection<CircularScale>();
+            sfCircularGauge.IsCenterAligned = true;
+            CircularScale scale = new CircularScale();
+            scale.EnableAutoAngle = true;
+            scale.StartAngle = 180;
+            scale.SweepAngle = 180;
+            scale.StartValue = 0;
+            scale.EndValue = 1000;
+            scale.Interval = 500;
+            scale.EnableAutoInterval = true;
+            scale.RimWidth = 15;
+            scale.LabelColor = Color.Black;
+            scale.LabelTextSize = 10;
+            ObservableCollection<CircularPointer> pointers = new ObservableCollection<CircularPointer>();
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 500;
+            needlePointer.Color = Color.ParseColor("#666666");
+            needlePointer.Type =NeedleType.Triangle;
+            needlePointer.LengthFactor = 0.7;
+            needlePointer.KnobStrokeWidth = 10;
+            needlePointer.KnobRadius = 15;
+            needlePointer.KnobStrokeColor = Color.Aqua;
+            needlePointer.KnobStrokeWidth = 8;
+            needlePointer.KnobColor = Color.White;
+            needlePointer.KnobRadiusFactor = 0.1;
+            pointers.Add(needlePointer);
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.InvertedTriangle;
+            markerPointer.Value = 300;
+            markerPointer.Color = Color.Brown;
+            markerPointer.MarkerHeight = 30;
+            markerPointer.MarkerWidth = 30;
+            markerPointer.Offset = 1;
+            pointers.Add(markerPointer);
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.RangeCap = RangeCap.Both;
+            rangePointer.Value = 1000;
+            rangePointer.Color = Color.Brown;
+            rangePointer.Width = 15;
+            rangePointer.Offset = 0.5;
+            pointers.Add(rangePointer);
+            scale.CircularPointers = pointers;
+            circularScales.Add(scale);
+            sfCircularGauge.CircularScales = circularScales;
+            sfCircularGauge.SetBackgroundColor(Color.White);
+            SetContentView(sfCircularGauge);
+	
+{% endhighlight %}
+
+![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.png)

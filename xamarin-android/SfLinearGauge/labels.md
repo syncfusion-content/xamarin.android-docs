@@ -2,14 +2,14 @@
 
 layout: post
 title: Labels in Syncfusion LinearGauge control for Xamarin.Android
-description:  Learn how to set labels in Syncfusion LinearGauge control
+description:  This section explains how the color, font and position of the labels in linear gauge scales can be applied and customized.
 platform: Xamarin.Android
 control: LinearGauge
 documentation: ug
 
 ---
 
-# Labels 
+# Labels in SfLinearGauge 
 
 [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfLinearGauge.LinearScale.html) labels associate a numeric value with major scale tick marks.
 
@@ -19,7 +19,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 
 {% highlight c# %}
 
-             SfLinearGauge linearGauge = new SfLinearGauge(this);
+            SfLinearGauge linearGauge = new SfLinearGauge(this);
             linearGauge.SetBackgroundColor(Color.White);
             linearGauge.SetOrientation(SfLinearGauge.Orientation.Horizontal);
             LinearScale linearScale = new LinearScale();
@@ -35,7 +35,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
     
 {% endhighlight %}
 
-![](labels_images/label1.png)
+![Label color customization image](labels_images/label1.png)
 
 ## Label font customization
 
@@ -61,7 +61,7 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
     
 {% endhighlight %}
 
-![](labels_images/label2.png)
+![Label-font-customization image](labels_images/label2.png)
 
 ## Setting position for labels
 
@@ -86,7 +86,7 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
    
 {% endhighlight %}
 
-![](labels_images/label3.png)
+![Label-offset image](labels_images/label3.png)
 
 ### Setting postfix and prefix for labels
 
@@ -118,7 +118,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin-android/S
     
 {% endhighlight %}
 
-![](labels_images/label4.png)
+![Label-postfix image](labels_images/label4.png)
 
 ### Setting label prefix
 
@@ -143,7 +143,7 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Sy
     
 {% endhighlight %}
 
-![](labels_images/label5.png)
+![Label-prefix image](labels_images/label5.png)
 
 ## Labels visibility
 
@@ -171,5 +171,52 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
    
 {% endhighlight %}
 
-![](labels_images/label6.png)
+![Labels visibility image](labels_images/label6.png)
+
+
+## Customize the scale labels
+ 
+The scale label are customized by using `LabelFormat` and `Culture` properties of linear scale.
+
+`LabelFormat` property is used to change the format of labels by setting a formatting string on the `LabelFormat` property.
+`Culture` property is used to format the group separator of the value based on the respective culture.
+
+{% highlight c# %}
+
+            SfLinearGauge linearGauge = new SfLinearGauge(this);
+            ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale>();
+            LinearScale linearScale = new LinearScale();
+            linearScale.MaximumLabels = 4;
+            linearScale.ScaleOffset = 50;
+            linearScale.Minimum = 10;
+            linearScale.Maximum = 50;
+            linearScale.Interval = 10;
+            linearScale.ScaleBarColor = Color.LightGray;
+            linearScale.MinorTicksPerInterval = 1;
+            linearScale.LabelFontSize = 15;
+            linearScale.LabelFormat = "{0:c}";
+            linearScale.LabelOffset = 10;
+            linearScale.ScaleBarSize = 10;
+            linearScale.LabelColor = Color.Black;
+            BarPointer barPointer = new BarPointer();
+            barPointer.Value = 35;
+            barPointer.Color = Color.Red;
+            barPointer.StrokeWidth = 10;
+            linearScale.Pointers.Add(barPointer);
+            LinearRange linearRange = new LinearRange();
+            linearRange.StartValue = 0;
+            linearRange.EndValue = 60;
+            linearRange.Color = Color.Blue;
+            linearRange.Offset = -25;
+            linearRange.StartWidth = 10;
+            linearRange.EndWidth = 10;
+            linearScale.Ranges.Add(linearRange);
+            linearScale.Culture = new System.Globalization.CultureInfo("fr-FR");
+            scales.Add(linearScale);
+            linearGauge.Scales = scales;
+            SetContentView(linearGauge);
+   
+{% endhighlight %}
+
+![Label format Image](labels_images/labelFormat.png)
 
