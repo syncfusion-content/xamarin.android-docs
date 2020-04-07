@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Markers in Syncfusion Maps control
-description: This section describes about map marker.
+description: This section describes about adding marker, customizing marker, custom marker support, marker alignment support in Xamarin Android.
 platform: Xamarin.Android
 control: SfMaps
 documentation: ug
 ---
-# Markers
+# Markers support in SfMaps control
 
 Markers provide some messages on the map.
 
@@ -356,6 +356,145 @@ Below snippet explains on how to define custom marker with image support.
 {% endtabs %}
 
 ![custom marker](Images/Markers_img5.png)
+
+## Marker Alignment
+
+You can align the maps marker horizontally and vertically using the `HorizontalAlignment` and `VerticalAlignment` properties. 
+
+### Setting horizontal alignment
+
+The HorizontalAlignment property is used to position the marker icon in x-axis. The marker icon can be positioned using the following ways in x-axis:
+
+* Near: Specifies the near position of the marker icon for the given latitude and longitude values in x-axis position. 
+* Center: Specifies the center position of the marker icon for the given latitude and longitude values in x-axis position.
+* Far: Specifies the far position of the marker icon for the given latitude and longitude values in x-axis position.
+
+{% tabs %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps(this);
+            ShapeFileLayer layer = new ShapeFileLayer();
+            layer.Uri = "usa_state.shp";
+            layer.ShapeIdTableField = "STATE_NAME";
+            layer.ShapeIdPath = "State";
+            layer.MarkerSelected += Layer_MarkerSelected;
+            MapMarker marker = new MapMarker();
+            marker.Label = "California";
+            marker.Latitude = 40;
+            marker.Longitude = -120;
+            MarkerSetting MarkerSettings = new MarkerSetting();
+            MarkerSettings.ImageSource = "pin.png";
+            MarkerSettings.HorizontalAlignment = MarkerAlignment.Center;
+            MarkerSettings.IconSize = 25;
+            layer.MarkerSetting = MarkerSettings;
+            layer.Markers.Add(marker);
+            maps.Layers.Add(layer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![HorizontalAlignment](Images/Horizontal_Alignment.png)
+
+### Setting vertical alignment
+
+The VerticalAlignment property is used to position the marker icon in y-axis. The marker icon can be positioned using the following ways in y-axis:
+
+* Near: Specifies the near position of the marker icon for the given latitude and longitude values in y-axis position.
+* Center: Specifies the center position of the marker icon for the given latitude and longitude values in y-axis position.
+* Far: Specifies the far position of the marker icon for the given latitude and longitude values in y-axis position.
+
+{% tabs %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps(this);
+            ShapeFileLayer layer = new ShapeFileLayer();
+            layer.Uri = "usa_state.shp";
+            layer.ShapeIdTableField = "STATE_NAME";
+            layer.ShapeIdPath = "State";
+            layer.MarkerSelected += Layer_MarkerSelected;
+            MapMarker marker = new MapMarker();
+            marker.Label = "California";
+            marker.Latitude = 40;
+            marker.Longitude = -120;
+            MarkerSetting MarkerSettings = new MarkerSetting();
+            MarkerSettings.ImageSource = "pin.png";
+            MarkerSettings.VerticalAlignment = MarkerAlignment.Center;
+            MarkerSettings.IconSize = 25;
+            layer.MarkerSetting = MarkerSettings;
+            layer.Markers.Add(marker);
+            maps.Layers.Add(layer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![VerticalAlignment](Images/Vertical_Alignment.png)
+
+N> The default marker icon position for VerticalAlignment and HorizontalAlignment is Center.
+
+## Reset the old custom view marker
+
+If you add any view for marker using `SelectedMarkerView` property from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but do not have option to reset the old one. Now, you can achieve this using the `ResetOldSelectedView` property. If the Boolean set as true, then it will be removed the old view of marker and load the initially rendered marker.
+
+{% tabs %}
+
+{% highlight c# %}
+
+    public class MainActivity : AppCompatActivity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            SfMaps maps = new SfMaps(this);
+            ImageryLayer layer = new ImageryLayer();
+            layer.ResetOldSelectedView = true;
+            layer.MarkerSelected += Layer_MarkerSelected;
+            MapMarker marker = new MapMarker();
+            marker.Label = "United States";
+            marker.Latitude = 40;
+            marker.Longitude = -101;
+            layer.Markers.Add(marker);
+            MapMarker marker1 = new MapMarker();
+            marker1.Label = "Brazil";
+            marker1.Latitude = -15.7833;
+            marker1.Longitude = -52;
+            layer.Markers.Add(marker1);
+            MapMarker marker2 = new MapMarker();
+            marker2.Label = "Congo";
+            marker2.Latitude = -1.6;
+            marker2.Longitude = 24.4;
+            layer.Markers.Add(marker2); 
+            MapMarker marker3 = new MapMarker();
+            marker3.Label = "Kazakhstan";
+            marker3.Latitude = 49.9;
+            marker3.Longitude = 72.23;
+            layer.Markers.Add(marker3);
+            MapMarker marker4 = new MapMarker();
+            marker4.Label = "Australia";
+            marker4.Latitude = -20.54;
+            marker4.Longitude = 134.10;
+            layer.Markers.Add(marker4);
+            maps.Layers.Add(layer);
+            SetContentView(maps);
+      }
+
+        private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
+        {
+            ImageView img = new ImageView(this);
+            img.SetImageResource(Resource.Drawable.pin);
+            e.SelectedMarkerView = img;
+        }
+  }
+  
+{% endhighlight %}
+
+{% endtabs %}
+
+![Reset the previously selected marker](Images/ResetMarker.gif)
 
 ## Events
 
