@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started of Syncfusion Picker control for Xamarin.Android
 description: Getting Started of Picker control
-platform: Xamarin
+platform: Xamarin.Android
 control: Picker
 documentation: ug
 ---
