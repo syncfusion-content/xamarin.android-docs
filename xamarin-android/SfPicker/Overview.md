@@ -80,4 +80,4 @@ Please find the screen shot of SfPicker color selection
 
 Please find the screen shot of SfPicker multicolumn
 
-![](images/multi_column.jpg)
+![Overview](images/multi_column.jpg)
