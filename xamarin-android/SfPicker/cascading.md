@@ -258,7 +258,7 @@ The below code demonstrates Area collection creation.
 
 Screen shot for the above codes.
 
-![](images/cascading.jpg)
+![Cascading](images/cascading.jpg)
 
 
 We have attached Cascading sample for reference. Please download the sample from the following link.
