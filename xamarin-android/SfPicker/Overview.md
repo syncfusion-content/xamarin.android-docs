@@ -76,7 +76,7 @@ The picker control allows users to pick an item among a list of items that can b
 
 Please find the screen shot of SfPicker color selection
 
-![](images/android_picker.png)
+![OverView](images/android_picker.png)
 
 Please find the screen shot of SfPicker multicolumn
 
