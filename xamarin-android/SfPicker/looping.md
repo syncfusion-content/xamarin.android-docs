@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Demonstrate DateTimePicker with EnableLooping property using SfPicker of Syncfusion Picker control for Xamarin.Android
-description: Overview and key features of Picker control
+title: looping feature of Syncfusion Picker control for Xamarin.Android
+description: This section will explain about how to enable and disable looping by using SfPicker control in Xamarin.Andorid.
 platform: Xamarin.Android
 control: Picker
 documentation: ug
 ---
 
 
-# Looping
+# Looping in Xamarin.Andorid
 
 The Looping support is used to automatically navigate the first item to repeat the list of items after reached the last item. Each forward iteration is followed by a backward iteration in the picker control. This can be achieved by `EnableLooping` property.
 
