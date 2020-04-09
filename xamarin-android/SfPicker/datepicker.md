@@ -378,7 +378,7 @@ The below code demonstrates Date collection creation.
 
 Screen shot for the above code.
 
-![](images/date_picker.jpg)
+![Date Picker](images/date_picker.jpg)
 
 
 We have attached DatePicker sample for reference. Please download the sample from the following link.
