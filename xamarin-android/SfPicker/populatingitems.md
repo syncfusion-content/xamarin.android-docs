@@ -174,7 +174,7 @@ Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtra
 
 Screen shot for the above code.
 
-![](images/multi_column.jpg)
+![Multi Column](images/multi_column.jpg)
 
 
 ## Set Items Colors and Font Attributes customization
@@ -457,6 +457,6 @@ In SfPicker, the items can be customized with custom view of each item by adding
 
 Screen shot for the above code.
 
-![](images/populating_items.png)
+![Populating items](images/populating_items.png)
 
 
