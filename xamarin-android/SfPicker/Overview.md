@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Picker control for Xamarin.Android
-description: Overview and key features of Picker control
+description: This section will explain about the Overview and key features Exists in Xamarin.Forms SfPicker control.
 platform: Xamarin.Android
 control: Picker
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The picker control allows users to pick an item among a list of items.
+The picker control allow users to pick an item among a list of items.
 
 ## Feature in Andriod
 
