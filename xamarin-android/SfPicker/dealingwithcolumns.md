@@ -532,7 +532,7 @@ We have prepared cascading sample for change the SfPicker background color when 
 
 Screen shot for the above code
 
-![](images/dealing_with_columns.png)
+![Dealing with columns](images/dealing_with_columns.png)
 
 We have attached sample for reference. please download the sample from the below link.
 
