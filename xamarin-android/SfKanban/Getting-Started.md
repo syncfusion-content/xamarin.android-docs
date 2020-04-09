@@ -27,7 +27,7 @@ android\Syncfusion.SfKanban.Android.dll
 
 This section explains how to create a SfKanban and configure it.
 
-The following screenshot illustrates the final output of SfKanban on Android devices. You can download the entire [source code](http://files2.syncfusion.com/Xamarin.Android/Samples/Kanban_GettingStarted.zip) of this demo for Xamarin.Android.
+The following screenshot illustrates the final output of SfKanban on Android devices. You can download the entire [source code](https://github.com/SyncfusionExamples/Kanban-GettingStarted-in-Xamarin-Android) of this demo for Xamarin.Android.
 
 ![Kanban](kanban_images/KanbanGettingStared.jpeg)
 
