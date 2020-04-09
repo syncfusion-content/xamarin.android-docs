@@ -446,7 +446,7 @@ The below code demonstrates Date collection creation.
 
 Screen shot for the above codes.
 
-![](images/date_time_picker.jpg)
+![date and Time picker](images/date_time_picker.jpg)
 
 
 We have attached DateTimePicker sample for reference. Please download the sample from the following link.
