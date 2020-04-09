@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Getting Started          
+# SfKanban Getting Started          
 
 This section provides a quick overview for working with the kanban control for Xamarin.Android. Using the kanban control is an efficient way to visualize the workflows along with their paths at each stage of completion.
 
