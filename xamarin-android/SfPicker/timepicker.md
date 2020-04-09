@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Demonstrate TimePicker using SfPicker of Syncfusion Picker control for Xamarin.Android
-description: Overview and key features of Picker control
+title: TimePicker using Syncfusion SfPicker control for Xamarin.Android
+description: This section will explain about how to create custom Time Picker control using SfPicker control in Xamarin.Android.
 platform: Xamarin.Android
 control: Picker
 documentation: ug
 ---
 
 
-# Time Picker
+# Time Picker using SfPicker
 
 We have demonstrated how to create TimePicker using Picker control in the following steps.
 
