@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started of Syncfusion Picker control for Xamarin.Android
-description: Getting Started of Picker control
+description: This section will explain about how to create Picker control using SfPicker in Xamarin.Android platform .
 platform: Xamarin.Android
 control: Picker
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with SfPicker
 
 This section explains you the steps to configure a SfPicker control in a real-time scenario and provides a walk-through on some of the customization features available in SfPicker control.
 
