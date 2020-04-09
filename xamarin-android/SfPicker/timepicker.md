@@ -182,7 +182,7 @@ The below code demonstrates Time collection creation.
 
 Screen shot for the above codes.
 
-![](images/time_picker.jpg)
+![Time Picker](images/time_picker.jpg)
 
 We have attached TimePicker sample for reference. Please download the sample from the following link.
 
