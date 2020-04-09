@@ -2,7 +2,7 @@
 layout: post
 title: Dealing with Columns of Syncfusion Picker control for Xamarin.Android
 description: Dealing with Columns of Picker control
-platform: Xamarin
+platform: Xamarin.Android
 control: Picker
 documentation: ug
 ---
