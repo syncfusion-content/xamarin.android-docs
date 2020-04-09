@@ -33,7 +33,7 @@ picker.EnableLooping = true;
 
 Screen shot for the above codes.
 
-![](images/looping_and.png)
+![Looping](images/looping_and.png)
 
 You can find the complete Looping sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/208168/ze/Looping_1756767840).
 
@@ -58,7 +58,7 @@ else
 
 Screen shot for the above codes.
 
-![](images/looping_multi_and.png)
+![Looping](images/looping_multi_and.png)
 
 You can find the sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/208168/ze/AutoReverse_Sample1257178886.zip).
 
