@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Android Kanban
-description: getting started
+title: Getting Started for Syncfusion Essential Xamarin.Android Kanban
+description: A quick tour to the initial users on Syncfusion SfKanban control for Xamarin.Android platform and create a demo application from the scratch
 platform: Xamarin.Android
 control: SfKanban
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started          
 
 This section provides a quick overview for working with the kanban control for Xamarin.Android. Using the kanban control is an efficient way to visualize the workflows along with their paths at each stage of completion.
 
