@@ -2,7 +2,7 @@
 layout: post
 title: Populating Items of Syncfusion Picker control for Xamarin.Android
 description: Populating Items of Picker control
-platform: Xamarin
+platform: Xamarin.Android
 control: Picker
 documentation: ug
 ---
