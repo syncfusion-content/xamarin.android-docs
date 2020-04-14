@@ -1,13 +1,13 @@
 ---
 layout: post
 title: selection changed in Syncfusion Segmented control for Xamarin.Android
-description: Learn how to handle selection changed in Segmented control
+description: Learn how to notify the selection changes in Xamarin.Android SegmentedControl (SfSegmentedControl).
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Selection changed
+# Notify the selection changes in SfSegmentedControl in Xamarin.Android
 
 The segmented control handles the Selection changed when there is a change from one segment item to another. It can be handled by two ways.
 

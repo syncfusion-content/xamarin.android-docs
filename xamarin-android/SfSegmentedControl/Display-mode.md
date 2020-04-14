@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Display mode  in Syncfusion segmented control for Xamarin.Android
-description: Learn how to display segmented items in Segmented control
+description: Learn how to display segmented items with icons,text or a combination of both icon and text in Segmented control
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Display mode
+# Display mode in Xamarin.Android Segmented control (SfSegmentedControl)
 
 Depending on the application, different scenarios may require icons, text, or a combination of both for effective communication. The segmented control supports these three options.
 
