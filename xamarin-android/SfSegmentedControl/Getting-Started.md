@@ -296,7 +296,7 @@ With the help of  `System.Collections.Generic` we can add string data as `ItemsS
 {% endhighlight %}
 
 
-![Xamarin.Android SfSegmentedControl populating data as a collection ofstring](images/Getting-started/Xamarin_Android_String.png)
+![Xamarin.Android SfSegmentedControl populating data as a collection of string](images/Getting-started/Xamarin_Android_String.png)
 
 ## Adding data as a SfSegmentItem
 

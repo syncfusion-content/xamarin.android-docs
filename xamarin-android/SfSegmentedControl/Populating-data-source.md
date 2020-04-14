@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data source  in Syncfusion Segmented control for Xamarin.Android
-description: Learn how to add Data sources in strings, collection set Segmented control in Xamarin.Android Platform
+description: Learn how to add data sources with collection of strings, segment items, and custom views for Segmented control in Xamarin.Android
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
@@ -203,6 +203,6 @@ if (PropertyChanged != null)
 
 {% endhighlight %}
 
-![Xamarin.Android SfSegmentedControl populating items with custom viewss](images/Data-source/Xamarin_Android_Itemcolor.png)
+![Xamarin.Android SfSegmentedControl populating items with custom views](images/Data-source/Xamarin_Android_Itemcolor.png)
 
 
