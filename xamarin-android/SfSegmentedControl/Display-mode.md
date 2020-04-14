@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Display mode  in Syncfusion segmented control for Xamarin.Android
-description: Learn how to display segmented items in Segmented control
+description: Learn how to display segmented items with icons,text or a combination of both icon and text in Segmented control
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Display mode
+# Display mode in Xamarin.Android Segmented control (SfSegmentedControl)
 
 Depending on the application, different scenarios may require icons, text, or a combination of both for effective communication. The segmented control supports these three options.
 
@@ -48,7 +48,7 @@ The items inside the ItemsSource can be added in the view model as below.
 
 public class ViewModel : INotifyPropertyChanged
 {
-private ObservableCollection<SfSegmentItem> textCollection = new ObservableCollection<SfSegmentItem>();
+private ObservableCollection<SfSegmentItem> textCollection;
 public ObservableCollection<SfSegmentItem> TextCollection
 {
     get { return textCollection; }
@@ -57,12 +57,12 @@ public ObservableCollection<SfSegmentItem> TextCollection
 
 public ViewModel(Android.Content.Context segment)
 {
-TextCollection = new ObservableCollection<SfSegmentItem>
-{
-new SfSegmentItem(){ Text = "Day"},
-new SfSegmentItem(){Text = "Week"},
-new SfSegmentItem(){ Text = "Month"},
-};
+    TextCollection = new ObservableCollection<SfSegmentItem>
+    {
+    new SfSegmentItem(){ Text = "Day"},
+    new SfSegmentItem(){Text = "Week"},
+    new SfSegmentItem(){ Text = "Month"},
+    };
 }
 public event PropertyChangedEventHandler PropertyChanged;
 
@@ -78,7 +78,7 @@ public event PropertyChangedEventHandler PropertyChanged;
 
 {% endhighlight %}
 
-![](images/Display-mode/Xamarin_Android_Text.png)
+![Xamarin.Android SfSegmentedControl with Text display mode](images/Display-mode/Xamarin_Android_Text.png)
 
 ## Image 
 
@@ -118,7 +118,7 @@ The items inside the ItemsSource can be added in the view model as below.
 
 public class ViewModel : INotifyPropertyChanged
 {
-private ObservableCollection<SfSegmentItem> imageCollection = new ObservableCollection<SfSegmentItem>();
+private ObservableCollection<SfSegmentItem> imageCollection;
 public ObservableCollection<SfSegmentItem> ImageCollection
 {
     get { return imageCollection; }
@@ -148,7 +148,7 @@ public event PropertyChangedEventHandler PropertyChanged;
 
 {% endhighlight %}
 
-![](images/Display-mode/Xamarin_Android_Image.png)
+![Xamarin.Android SfSegmentedControl with Image display mode](images/Display-mode/Xamarin_Android_Image.png)
 
 ## Image with text
 
@@ -187,7 +187,7 @@ The items inside the ItemsSource can be added in the view model as below.
 
 public class ViewModel : INotifyPropertyChanged
 {
-private ObservableCollection<SfSegmentItem> imageTextCollection = new ObservableCollection<SfSegmentItem>();
+private ObservableCollection<SfSegmentItem> imageTextCollection;
 public ObservableCollection<SfSegmentItem> ImageTextCollection
 {
     get { return imageTextCollection; }
@@ -217,7 +217,7 @@ public event PropertyChangedEventHandler PropertyChanged;
 
 {% endhighlight %}
 
-![](images/Display-mode/Xamarin_Android_ImagewithText.png)
+![Xamarin.Android SfSegmentedControl with Image and Text display mode](images/Display-mode/Xamarin_Android_ImagewithText.png)
 
 ## How to generate font icons
 
