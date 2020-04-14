@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Handling multiple segments in Segmented control for Xamarin.Android
+title: Handling multiple segments in Xamarin.Android Syncfusion Segmented control 
 description: Learn how to restrict the visible segment count and its available scrolling options in Xamarin.Android Segmented control.
 platform: Xamarin.Android
 control: SegmentedControl
