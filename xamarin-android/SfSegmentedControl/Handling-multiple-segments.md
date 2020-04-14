@@ -49,7 +49,7 @@ The items inside the ItemsSource can be added in the view model as below.
 
 public class ViewModel : INotifyPropertyChanged
 {
-private ObservableCollection<SfSegmentItem> itemsCollection = new ObservableCollection<SfSegmentItem>();
+private ObservableCollection<SfSegmentItem> itemsCollection;
 public ObservableCollection<SfSegmentItem> ItemsCollection
 {
     get { return itemsCollection; }
@@ -83,7 +83,7 @@ public event PropertyChangedEventHandler PropertyChanged;
 
 {% endhighlight %}
 
-![](images/Handling-multiple-segments/visiblesegment.png)
+![Xamarin.Android SfSegmentedControl with four visible segment](images/Handling-multiple-segments/visiblesegment.png)
 
 ## Scrolling
 

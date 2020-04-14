@@ -21,7 +21,7 @@ When users navigate from one item to another, selection is changed, so that the 
 
 segmentedControl.SelectionChanged += (object sender, SelectionChangedEventArgs e) => 
 {
-segmentedControl.BorderColor = Color.Red;
+    var selectedIndex = e.Index;
 };
 
 {% endhighlight %}
@@ -37,6 +37,6 @@ segmentedControl.SelectedIndex = 2;
 {% endhighlight %}
 
 
-![](images/Selection-changed/selectionchange.png)
+![Xamarin.Android SfSegmentedControl with selection of second item](images/Selection-changed/selectionchange.png)
 
 

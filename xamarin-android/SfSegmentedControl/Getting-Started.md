@@ -32,7 +32,7 @@ To know more about obtaining our components, refer to this [link](https://help.s
 </tr>
 <tr>
 <td>Xamarin.Android</td>
-<td>pcl\Syncfusion.Buttons.Android.dll</td>
+<td>Syncfusion.Buttons.Android.dll</td>
 </tr>
 </table>
 
@@ -40,7 +40,7 @@ To know more about obtaining our components, refer to this [link](https://help.s
 
 This section explains how to create a segmented control and configure it.The segmented control can be configured entirely in C# code. This is how the final output will look like in Android devices.
 
-![Simple segmented control](images/Getting-started/Xamarin_Android_GettingStarted.png)
+![Xamarin.Android SfSegmentedControl getting started](images/Getting-started/Xamarin_Android_GettingStarted.png)
 
 ## Creating the project
 
@@ -193,15 +193,15 @@ Initial view for the application can be created by the following code snippet.
 {% endhighlight %}
 
 
-![SegmentedControl Initialview](images/Getting-started/Xamarin-Android-initialview.png)
+![Initial view of Xamarin.Android SfSegmentedControl's demo sample](images/Getting-started/Xamarin-Android-initialview.png)
 
-## Adding data/Items to SfSegmentedControl
+## Adding data/items to SfSegmentedControl
 
 We can add the data inside the segmented control in 3 different ways. 
 
-1. String data
+1. Populating string of data
 2. SfSegmentItem
-3. Custom View
+3. Custom view
 
 Items inside the segmented control can be added through the `ItemsSource` property of `SfSegmentedControl`, which holds the collection/list of items.
 
@@ -296,7 +296,7 @@ With the help of  `System.Collections.Generic` we can add string data as `ItemsS
 {% endhighlight %}
 
 
-![SegmentedControl data as a String](images/Getting-started/Xamarin_Android_String.png)
+![Xamarin.Android SfSegmentedControl populating data as a string](images/Getting-started/Xamarin_Android_String.png)
 
 ## Adding data as a SfSegmentItem
 
@@ -467,7 +467,7 @@ In ViewModel add the below given code to get the respective items in SfSegmented
 {% endhighlight %}
 
 
-![SegmentedControl data as a SfSegmentItem](images/Getting-started/Xamarin_Android_StringSegmentItem.png)
+![Xamarin.Android SfSegmentedControl populating data as a SfSegmentItem](images/Getting-started/Xamarin_Android_StringSegmentItem.png)
 
 ## Adding data as Custom View.
 
@@ -490,8 +490,9 @@ In ViewModel add the below given code to get the respective items/collection in 
     {
         public class ViewModel : INotifyPropertyChanged
         {
-            private ObservableCollection<SfSegmentItem> itemCollection = new ObservableCollection<SfSegmentItem>();
-            private ObservableCollection<View> viewCollection = new ObservableCollection<View>();
+            private ObservableCollection<SfSegmentItem> itemCollection;
+            private ObservableCollection<View> viewCollection;
+
             public ObservableCollection<SfSegmentItem> ItemCollection
             {
                 get { return itemCollection; }
@@ -672,7 +673,7 @@ In ViewModel add the below given code to get the respective items/collection in 
 
 {% endhighlight %}
 
-![SegmentedControl data as Custom View](images/Getting-started/Xamarin_Android_GettingStarted.png)
+![Xamarin.Android SfSegmentedControl populating data as custom view](images/Getting-started/Xamarin_Android_GettingStarted.png)
 
 
 ## Customizing segmented control appearance
