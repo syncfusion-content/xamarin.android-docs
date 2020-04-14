@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data source  in Syncfusion Segmented control for Xamarin.Android
-description: Learn how to add Data source in Segmented control
+description: Learn how to add data sources with collection of strings, segment items, and custom views for Segmented control in Xamarin.Android
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
@@ -48,7 +48,7 @@ SetContentView(segmentedControl);
 
 {% endhighlight %}
 
-![](images/Data-source/Xamarin_Android_string.png)
+![Xamarin.Android SfSegmentedControl populating items with string items](images/Data-source/Xamarin_Android_string.png)
 
 ## Segment items
 
@@ -87,7 +87,7 @@ The items inside the ItemsSource can be added in the view model as below.
 
 public class ViewModel : INotifyPropertyChanged
 {
-    private ObservableCollection<SfSegmentItem> sizeCollection = new ObservableCollection<SfSegmentItem>();
+    private ObservableCollection<SfSegmentItem> sizeCollection;
     public ObservableCollection<SfSegmentItem> SizeCollection
     {
         get { return sizeCollection; }
@@ -118,7 +118,7 @@ new SfSegmentItem(){Text="XL",FontColor=Color.ParseColor("#3F3F3F")},
     
 {% endhighlight %}
 
-![](images/Data-source/Xamarin_Android_SegmentItemCollection.png) 
+![Xamarin.Android SfSegmentedControl populating items with segment items](images/Data-source/Xamarin_Android_SegmentItemCollection.png) 
    
 ## Custom views
 
@@ -160,7 +160,7 @@ The ItemsSource can be set in the view model as below.
 
 public class ViewModel : INotifyPropertyChanged
 {
-private ObservableCollection<View> viewCollection = new ObservableCollection<View>();
+private ObservableCollection<View> viewCollection;
 
 public ObservableCollection<View> ViewCollection
 {
@@ -203,6 +203,6 @@ if (PropertyChanged != null)
 
 {% endhighlight %}
 
-![](images/Data-source/Xamarin_Android_ViewCollection.png)
+![Xamarin.Android SfSegmentedControl populating items with custom views](images/Data-source/Xamarin_Android_Itemcolor.png)
 
 

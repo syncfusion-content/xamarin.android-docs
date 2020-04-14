@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Getting Started with Syncfusion segmented control for Xamarin.Android 
-description: A quick tour to initial users on Syncfusion segmented control for Xamarin.Android platform
+description: Learn how to create a simple segmented control and its customization options with its available basic features in Xamarin.Android
 platform: Xamarin.Android
 control: SfSegmentedControl
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started Xamarin.Android SegmentedControl (SfSegmentedControl)
 
 This section provides a quick overview for working with the segmented control for Xamarin.Android. Walk through the entire process of creating a real-world application with segmented control.
 
-# Assembly deployment
+## Assembly deployment
 
 After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders,   
 {Syncfusion Essential Studio Installed location}\Essential Studio\16.2.0.41\Xamarin\lib
@@ -21,32 +21,23 @@ N> Assemblies can be found in unzipped package location in Mac.
 
 ## Adding SfSegmentedControl Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android/#), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.Buttons.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android/#), and then install it.
 
-To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, please refer the below assembly.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>Xamarin.Android</td>
-<td>pcl\Syncfusion.Buttons.Android.dll</td>
-</tr>
-</table>
+android\Syncfusion.Buttons.Android.dll
 
 ### Create a simple segmented control
 
 This section explains how to create a segmented control and configure it.The segmented control can be configured entirely in C# code. This is how the final output will look like in Android devices.
 
-![](images/Getting-started/Xamarin_Android_GettingStarted.png)
+![Xamarin.Android SfSegmentedControl getting started](images/Getting-started/Xamarin_Android_GettingStarted.png)
 
-# Creating the project
+## Creating the project
 
 Create a new Android application in Visual Studio for Xamarin.Android.
 
-# Adding SfSegmentedControl in Xamarin.Android
+## Adding SfSegmentedControl in Xamarin.Android
 
 1. Add the required assembly reference to the project as discussed in the [Assembly deployment](#assembly-deployment) section.
 
@@ -193,15 +184,15 @@ Initial view for the application can be created by the following code snippet.
 {% endhighlight %}
 
 
-![](images/Getting-started/Xamarin-Android-initialview.png)
+![Initial view of Xamarin.Android SfSegmentedControl demo sample](images/Getting-started/Xamarin-Android-initialview.png)
 
-# Adding data/Items to SfSegmentedControl
+## Adding data/items to SfSegmentedControl
 
 We can add the data inside the segmented control in 3 different ways. 
 
-1. String data
+1. Populating string of data
 2. SfSegmentItem
-3. Custom View
+3. Custom view
 
 Items inside the segmented control can be added through the `ItemsSource` property of `SfSegmentedControl`, which holds the collection/list of items.
 
@@ -296,7 +287,7 @@ With the help of  `System.Collections.Generic` we can add string data as `ItemsS
 {% endhighlight %}
 
 
-![](images/Getting-started/Xamarin_Android_String.png)
+![Xamarin.Android SfSegmentedControl populating data as a collection of string](images/Getting-started/Xamarin_Android_String.png)
 
 ## Adding data as a SfSegmentItem
 
@@ -319,7 +310,7 @@ In ViewModel add the below given code to get the respective items in SfSegmented
     {
         public class ViewModel : INotifyPropertyChanged
         {
-            private ObservableCollection<SfSegmentItem> itemCollection = new ObservableCollection<SfSegmentItem>();
+            private ObservableCollection<SfSegmentItem> itemCollection;
             public ObservableCollection<SfSegmentItem> ItemCollection
             {
                 get { return itemCollection; }
@@ -467,7 +458,7 @@ In ViewModel add the below given code to get the respective items in SfSegmented
 {% endhighlight %}
 
 
-![](images/Getting-started/Xamarin_Android_StringSegmentItem.png)
+![Xamarin.Android SfSegmentedControl populating data as a SfSegmentItem](images/Getting-started/Xamarin_Android_StringSegmentItem.png)
 
 ## Adding data as Custom View.
 
@@ -490,8 +481,9 @@ In ViewModel add the below given code to get the respective items/collection in 
     {
         public class ViewModel : INotifyPropertyChanged
         {
-            private ObservableCollection<SfSegmentItem> itemCollection = new ObservableCollection<SfSegmentItem>();
-            private ObservableCollection<View> viewCollection = new ObservableCollection<View>();
+            private ObservableCollection<SfSegmentItem> itemCollection;
+            private ObservableCollection<View> viewCollection;
+
             public ObservableCollection<SfSegmentItem> ItemCollection
             {
                 get { return itemCollection; }
@@ -672,7 +664,7 @@ In ViewModel add the below given code to get the respective items/collection in 
 
 {% endhighlight %}
 
-![](images/Getting-started/Xamarin_Android_GettingStarted.png)
+![Xamarin.Android SfSegmentedControl populating data as custom view](images/Getting-started/Xamarin_Android_GettingStarted.png)
 
 
 ## Customizing segmented control appearance
