@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Handling multiple segments in Syncfusion Segmented control for Xamarin.Android
-description: Learn how to handle multiple segments in Segmented control
+title: Handling the segments in Xamarin.Android Syncfusion Segmented control 
+description: Learn how to restrict the visible segment count and its available scrolling options in Xamarin.Android Segmented control.
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Handling multiple segments
+# Handling multiple segments in Xamarin.Android SfSegmentedControl
 
 The segmented control handles the segmented items with the space distributed for the items on two ways.
 
@@ -49,7 +49,7 @@ The items inside the ItemsSource can be added in the view model as below.
 
 public class ViewModel : INotifyPropertyChanged
 {
-private ObservableCollection<SfSegmentItem> itemsCollection = new ObservableCollection<SfSegmentItem>();
+private ObservableCollection<SfSegmentItem> itemsCollection;
 public ObservableCollection<SfSegmentItem> ItemsCollection
 {
     get { return itemsCollection; }
@@ -83,7 +83,7 @@ public event PropertyChangedEventHandler PropertyChanged;
 
 {% endhighlight %}
 
-![](images/Handling-multiple-segments/visiblesegment.png)
+![Xamarin.Android SfSegmentedControl with four visible segment](images/Handling-multiple-segments/visiblesegment.png)
 
 ## Scrolling
 
