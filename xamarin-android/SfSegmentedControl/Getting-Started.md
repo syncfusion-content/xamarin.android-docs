@@ -193,7 +193,7 @@ Initial view for the application can be created by the following code snippet.
 {% endhighlight %}
 
 
-![Initial view of Xamarin.Android SfSegmentedControl's demo sample](images/Getting-started/Xamarin-Android-initialview.png)
+![Initial view of Xamarin.Android SfSegmentedControl demo sample](images/Getting-started/Xamarin-Android-initialview.png)
 
 ## Adding data/items to SfSegmentedControl
 
@@ -296,7 +296,7 @@ With the help of  `System.Collections.Generic` we can add string data as `ItemsS
 {% endhighlight %}
 
 
-![Xamarin.Android SfSegmentedControl populating data as a string](images/Getting-started/Xamarin_Android_String.png)
+![Xamarin.Android SfSegmentedControl populating data as a collection ofstring](images/Getting-started/Xamarin_Android_String.png)
 
 ## Adding data as a SfSegmentItem
 
