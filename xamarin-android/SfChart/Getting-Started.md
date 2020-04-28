@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started for Essential Xamarin.Android Chart | Syncfusion
-description: getting started
+description: A quick tour to create a chart with title, series, legend, data labels, tooltip, and multiple Y axis in Xamarin.Android Chart.
 platform: Xamarin.Android
 control: SfChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started of Xamarin.Android Chart(SfChart)
 
 This section explains you the steps required to populate the Chart with data, title, add data labels and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 
@@ -71,7 +71,7 @@ SetContentView(chart);
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`.](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html)
 
-![Adding Xamarin.Android Chart reference](Getting-Started_images/img1.png)
+![SfChart Axis support in Xamarin.Android](Getting-Started_images/Chart-Axis-Image.png)
 
 ## Populate Chart with data
 
@@ -237,6 +237,6 @@ namespace Chart_GettingStarted
 
 The following chart is created as a result of the above codes.
 
-![Tooltip support in Xamarin.Android Chart](Getting-Started_images/img2.png)
+![Chart output in Xamarin.Android Chart](Getting-Started_images/ChartSample-Output.png)
 
-You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Android/Samples/Chart_GettingStarted.zip)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Chart-GettingStarted-in-Xamarin-Android)
