@@ -1,7 +1,7 @@
 ---
 layout: post
 title: selection indicator in Syncfusion Segmented control for Xamarin.Android
-description: Learn how to handle selection indicator settings in Segmented control
+description: Learn how to handle selection indicator settings, selection text color and selection strip in Segmented control
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
@@ -13,7 +13,7 @@ The segmented control indicates the selected item by differentiating it with the
 
 ## Selection text color
 
-The user can change the text color of the Selected item to desired color.The selected item text color can be customized by the `SelectionTextColor` property.
+The user can change the text color of the Selected item to desired color.The selected item text color can be customized by the [`SelectionTextColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SelectionTextColor.html) property.
 
 {% highlight c# %}
 
@@ -90,7 +90,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 #### Color
 
-The background color of the selection strip can be customized using `Color` property which is inside SelectionIndicatorSettings class.
+The background color of the selection strip can be customized using [`Color`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentItem~SelectionTextColor.html) property which is inside SelectionIndicatorSettings class.
 
 {% highlight c# %}
 
@@ -104,7 +104,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 #### Thickness
 
-The border thickness of the selection strip can be customized using `Thickness` property which is inside SelectionIndicatorSettings class
+The border thickness of the selection strip can be customized using [`Thickness`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SegmentBorderThickness.html) property which is inside SelectionIndicatorSettings class
 
 {% highlight c# %}
 

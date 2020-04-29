@@ -13,7 +13,7 @@ The segmented control handles the segmented items with the space distributed for
 
 ## Visible segment counts
 
-The segmented control displays the item for the view based on the count which is given for `VisibleSegmentCount`. 
+The segmented control displays the item for the view based on the count which is given for [`VisibleSegmentCount`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~VisibleSegmentsCount.html). 
 
 {% highlight c# %}
 
@@ -45,7 +45,11 @@ SetContentView(segmentedControl);
 }
 }
 
+{% endhighlight %}
+
 The items inside the ItemsSource can be added in the view model as below.
+
+{% highlight c# %}
 
 public class ViewModel : INotifyPropertyChanged
 {

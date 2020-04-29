@@ -72,7 +72,6 @@ segmentedControl.BackColor = Color.White;
 segmentedControl.BorderColor = Color.ParseColor("#929292");
 segmentedControl.SelectedIndex = 0;
 segmentedControl.FontColor = Color.Black;
-segmentedControl.FontIconFontFamily = "segment.ttf";
 segmentedControl.SegmentBackgroundColor = Color.Transparent;
 segmentedControl.ItemsSource = viewModel.SizeCollection;
 SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
@@ -83,7 +82,11 @@ SetContentView(segmentedControl);
 }
 }
 
+{% endhighlight %}
+
 The items inside the ItemsSource can be added in the view model as below.
+
+{% highlight c# %}
 
 public class ViewModel : INotifyPropertyChanged
 {

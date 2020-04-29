@@ -134,7 +134,7 @@ Initial view for the application can be created by the following code snippet.
         {
             LinearLayout mainLayout;
             ViewModel viewModel;
-            TextView HeaderLabel;
+            TextView headerLabel;
             EditText fromEditor, toEditor;
             protected override void OnCreate(Bundle savedInstanceState)
             {
@@ -148,13 +148,13 @@ Initial view for the application can be created by the following code snippet.
                 viewModel = new ViewModel(this);
     
                 //Adding text view as the header part of the application.
-                HeaderLabel = new TextView(this);
-                HeaderLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-                HeaderLabel.Text = "Bus Ticket Booking";
-                HeaderLabel.SetTextColor(Color.Black);
-                HeaderLabel.TextSize =25;
-                HeaderLabel.TextAlignment = TextAlignment.Center;
-                HeaderLabel.TextAlignment = TextAlignment.Gravity;
+                headerLabel = new TextView(this);
+                headerLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
+                headerLabel.Text = "Bus Ticket Booking";
+                headerLabel.SetTextColor(Color.Black);
+                headerLabel.TextSize =25;
+                headerLabel.TextAlignment = TextAlignment.Center;
+                headerLabel.TextAlignment = TextAlignment.Gravity;
     
                 //Adding the editor to enter the origin location.
                 fromEditor = new EditText(this);
@@ -194,11 +194,11 @@ We can add the data inside the segmented control in 3 different ways.
 2. SfSegmentItem
 3. Custom view
 
-Items inside the segmented control can be added through the `ItemsSource` property of `SfSegmentedControl`, which holds the collection/list of items.
+Items inside the segmented control can be added through the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~ItemsSource.html) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl.html), which holds the collection/list of items.
 
 ## Adding data as a String
 
-With the help of  `System.Collections.Generic` we can add string data as `ItemsSource` to SfSegmentedControl.
+With the help of  `System.Collections.Generic` we can add string data as [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~ItemsSource.html) to SfSegmentedControl.
 
 {% highlight C# %}
 
@@ -212,14 +212,14 @@ With the help of  `System.Collections.Generic` we can add string data as `ItemsS
     
     namespace SegmentedGettingStarted
     {
-        [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)]
+        [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)
         public class MainActivity : Activity
         {
     
             SfSegmentedControl segmentedControl;
             LinearLayout mainLayout;
             ViewModel viewModel;
-            TextView HeaderLabel;
+            TextView headerLabel;
             EditText fromEditor, toEditor;
             protected override void OnCreate(Bundle savedInstanceState)
             {
@@ -233,13 +233,13 @@ With the help of  `System.Collections.Generic` we can add string data as `ItemsS
                 viewModel = new ViewModel(this);
     
                 //Adding text view as the header part of the application.
-                HeaderLabel = new TextView(this);
-                HeaderLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-                HeaderLabel.Text = "Bus Ticket Booking";
-                HeaderLabel.SetTextColor(Color.Black);
-                HeaderLabel.TextSize =25;
-                HeaderLabel.TextAlignment = TextAlignment.Center;
-                HeaderLabel.TextAlignment = TextAlignment.Gravity;
+                headerLabel = new TextView(this);
+                headerLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
+                headerLabel.Text = "Bus Ticket Booking";
+                headerLabel.SetTextColor(Color.Black);
+                headerLabel.TextSize =25;
+                headerLabel.TextAlignment = TextAlignment.Center;
+                headerLabel.TextAlignment = TextAlignment.Gravity;
     
                 //Adding the editor to enter the origin location.
                 fromEditor = new EditText(this);
@@ -274,7 +274,7 @@ With the help of  `System.Collections.Generic` we can add string data as `ItemsS
                 };
                 segmentedControl.ItemsSource = list;
    
-                mainLayout.AddView(HeaderLabel);
+                mainLayout.AddView(headerLabel);
                 mainLayout.AddView(fromEditor);
                 mainLayout.AddView(toEditor);
                 mainLayout.AddView(segmentedControl);
@@ -291,7 +291,7 @@ With the help of  `System.Collections.Generic` we can add string data as `ItemsS
 
 ## Adding data as a SfSegmentItem
 
-By using `SfSegmentItem` class, we can add data inside the segmented control.
+By using [`SfSegmentItem`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentItem.html) class, we can add data inside the segmented control.
 
 In ViewModel add the below given code to get the respective items in SfSegmentedControl.
 
@@ -372,7 +372,7 @@ In ViewModel add the below given code to get the respective items in SfSegmented
             SfSegmentedControl segmentedControl, segment;
             LinearLayout mainLayout;
             ViewModel viewModel;
-            TextView HeaderLabel;
+            TextView headerLabel;
             EditText fromEditor, toEditor;
             protected override void OnCreate(Bundle savedInstanceState)
             {
@@ -386,13 +386,13 @@ In ViewModel add the below given code to get the respective items in SfSegmented
                 viewModel = new ViewModel(this);
     
                 //Adding text view as the header part of the application.
-                HeaderLabel = new TextView(this);
-                HeaderLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-                HeaderLabel.Text = "Bus Ticket Booking";
-                HeaderLabel.SetTextColor(Color.Black);
-                HeaderLabel.TextSize =25;
-                HeaderLabel.TextAlignment = TextAlignment.Center;
-                HeaderLabel.TextAlignment = TextAlignment.Gravity;
+                headerLabel = new TextView(this);
+                headerLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
+                headerLabel.Text = "Bus Ticket Booking";
+                headerLabel.SetTextColor(Color.Black);
+                headerLabel.TextSize =25;
+                headerLabel.TextAlignment = TextAlignment.Center;
+                headerLabel.TextAlignment = TextAlignment.Gravity;
     
                 //Adding the editor to enter the origin location.
                 fromEditor = new EditText(this);
@@ -444,7 +444,7 @@ In ViewModel add the below given code to get the respective items in SfSegmented
     
                 segment.SelectionIndicatorSettings = select;
    
-                mainLayout.AddView(HeaderLabel);
+                mainLayout.AddView(headerLabel);
                 mainLayout.AddView(fromEditor);
                 mainLayout.AddView(toEditor);
                 mainLayout.AddView(segment);
@@ -561,7 +561,7 @@ In ViewModel add the below given code to get the respective items/collection in 
             SfSegmentedControl segmentedControl, segment, segmentView;
             LinearLayout mainLayout;
             ViewModel viewModel;
-            TextView HeaderLabel;
+            TextView headerLabel;
             EditText fromEditor, toEditor;
             protected override void OnCreate(Bundle savedInstanceState)
             {
@@ -575,13 +575,13 @@ In ViewModel add the below given code to get the respective items/collection in 
                 viewModel = new ViewModel(this);
     
                 //Adding text view as the header part of the application.
-                HeaderLabel = new TextView(this);
-                HeaderLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-                HeaderLabel.Text = "Bus Ticket Booking";
-                HeaderLabel.SetTextColor(Color.Black);
-                HeaderLabel.TextSize =25;
-                HeaderLabel.TextAlignment = TextAlignment.Center;
-                HeaderLabel.TextAlignment = TextAlignment.Gravity;
+                headerLabel = new TextView(this);
+                headerLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
+                headerLabel.Text = "Bus Ticket Booking";
+                headerLabel.SetTextColor(Color.Black);
+                headerLabel.TextSize =25;
+                headerLabel.TextAlignment = TextAlignment.Center;
+                headerLabel.TextAlignment = TextAlignment.Gravity;
     
                 //Adding the editor to enter the origin location.
                 fromEditor = new EditText(this);
@@ -650,7 +650,7 @@ In ViewModel add the below given code to get the respective items/collection in 
     
                 segmentView.SelectionIndicatorSettings = selectionIndicator;
     
-                mainLayout.AddView(HeaderLabel);
+                mainLayout.AddView(headerLabel);
                 mainLayout.AddView(fromEditor);
                 mainLayout.AddView(toEditor);
                 mainLayout.AddView(segment);
@@ -671,7 +671,7 @@ In ViewModel add the below given code to get the respective items/collection in 
 
 ### Share space equally to all the items.
 
-To share the Item space equally to segmented control, set the number of segment item that has to be visible on the available screen width and that can be distributed in the available space though the `VisibleSegmentsCount` property of `SfSegmentedControl`.
+To share the Item space equally to segmented control, set the number of segment item that has to be visible on the available screen width and that can be distributed in the available space though the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~VisibleSegmentsCount.html) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl.html).
 
 {% highlight C# %}
 
@@ -682,7 +682,7 @@ To share the Item space equally to segmented control, set the number of segment 
 
 ### Display Mode
 
-We can change the appearance of the segmented control by using the `DisplayMode` property of `SfSegmentedControl`. We can set the `DisplayMode` to either Image or Text or ImageWithText.
+We can change the appearance of the segmented control by using the [`DisplayMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~DisplayMode.html) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl.html). We can set the [`DisplayMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~DisplayMode.html) to either Image or Text or ImageWithText.
 
 {% highlight c# %}
 
@@ -693,13 +693,13 @@ We can change the appearance of the segmented control by using the `DisplayMode`
 
 ## Customizing selection indicator appearance
 
-The Selection indicator can be used to indicate the selected index of the segmented control. It can be customized with the built-in APIs that are available in the `SelectionIndicatorSettings` property of SfSegmentedControl.
+The Selection indicator can be used to indicate the selected index of the segmented control. It can be customized with the built-in APIs that are available in the [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SelectionIndicatorSettings.html) property of SfSegmentedControl.
 
 To know more about customizing selection indicator refer [feature link](https://help.syncfusion.com/xamarin-android/sfsegmentedcontrol/indicating-the-selected-item)
 
 ## Handle click events
 
-SfSegmentedControl has SelectionChanged event, using this we can perform operation based on our needs.
+SfSegmentedControl has [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SelectionChanged_EV.html) event, using this we can perform operation based on our needs.
 
 
 {% highlight C# %}
@@ -739,7 +739,7 @@ The below given code can be included on the Custom view viewModel to get the cli
     
     namespace SegmentedGettingStarted
     {
-        public class ViewModel : INotifyPropertyChanged
+        public class ViewModel
         {
             AlertDialog.Builder resultsDialog;
             public ViewModel(Android.Content.Context segment)
