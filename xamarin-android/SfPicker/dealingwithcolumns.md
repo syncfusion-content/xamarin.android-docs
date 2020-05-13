@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Dealing with Columns of Syncfusion Picker control for Xamarin.Android
-description: Dealing with Columns of Picker control
-platform: Xamarin
+description: This section will explain about how to create different Columns in Xamarin.Android SfPicker control.
+platform: Xamarin.Android
 control: Picker
 documentation: ug
 ---
@@ -532,7 +532,7 @@ We have prepared cascading sample for change the SfPicker background color when 
 
 Screen shot for the above code
 
-![](images/dealing_with_columns.png)
+![Dealing with columns](images/dealing_with_columns.png)
 
 We have attached sample for reference. please download the sample from the below link.
 
