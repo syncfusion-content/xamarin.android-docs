@@ -23,9 +23,9 @@ android\Syncfusion.SfNumericUpDown.Android.dll
 
 ## Add SfNumericUpDown
 
-The SfNumericUpDown control configured entirely in C# code or by using AXML markup. The following steps explain on how to create a SfNumericUpDown and configure its elements,
+The `SfNumericUpDown` control configured entirely in C# code or using the AXML markup. The following steps explain how to create a `SfNumericUpDown` and configure their elements.
 
-Add the below code in the Main.axml to include NumericUpDown control.
+Add the following code in the Main.axml to include `NumericUpDown` control.
 
 {% highlight xaml %}
 
@@ -44,7 +44,7 @@ Add the below code in the Main.axml to include NumericUpDown control.
   
 {% endhighlight %}
 
-In MainActivity, you can access the NumericUpDown instance defined in axml page using the following code.
+In MainActivity, you can access the `NumericUpDown` instance defined in axml page using the following code.
 
 {% highlight C# %}
 
@@ -69,7 +69,7 @@ public class MainActivity : Activity
 
 {% endhighlight %}
 
-You can create NumericUpDown control using code behind also. The following steps help to add NumericUpDown control using code behind.
+Also, you can create the `NumericUpDown` control using the code behind. The following steps help to add `NumericUpDown` control using the code behind.
 
 * Adding reference to NumericUpDown.
 
