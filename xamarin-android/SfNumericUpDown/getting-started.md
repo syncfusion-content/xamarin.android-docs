@@ -23,7 +23,7 @@ android\Syncfusion.SfNumericUpDown.Android.dll
 
 ## Add SfNumericUpDown
 
-The SfNumericUpDown control configured entirely in C# code or by using AML markup. The following steps explain on how to create a SfNumericUpDown and configure its elements,
+The SfNumericUpDown control configured entirely in C# code or by using AXML markup. The following steps explain on how to create a SfNumericUpDown and configure its elements,
 
 Add the below code in the Main.axml to include NumericUpDown control.
 
