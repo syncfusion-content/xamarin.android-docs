@@ -23,7 +23,53 @@ android\Syncfusion.SfNumericUpDown.Android.dll
 
 ## Add SfNumericUpDown
 
-The SfNumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNumericUpDown and configure its elements,
+The SfNumericUpDown control configured entirely in C# code or by using AML markup. The following steps explain on how to create a SfNumericUpDown and configure its elements,
+
+Add the below code in the Main.axml to include NumericUpDown control.
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+        <com.syncfusion.numerictextbox.SfNumericTextBox 
+	android:id="@+id/sfNumericTextBox"    
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" />
+
+</LinearLayout> 
+  
+{% endhighlight %}
+
+In MainActivity, you can access the NumericUpDown instance defined in axml page using the following code.
+
+{% highlight C# %}
+
+using Com.Syncfusion.NumericUpDown;
+
+..
+
+public class MainActivity : Activity
+{
+    protected override void OnCreate(Bundle savedInstanceState)
+    {
+    
+        base.OnCreate(savedInstanceState);
+
+        SetContentView(Resource.Layout.content_main);
+
+        SfNumericTextBox textBox = (SfNumericTextBox)FindViewById(Resource.Id.sfNumericTextBox);
+
+        textBox.Value = 30;
+    }
+}
+
+{% endhighlight %}
+
+You can create NumericUpDown control using code behind also. The following steps help to add NumericUpDown control using code behind.
 
 * Adding reference to NumericUpDown.
 
