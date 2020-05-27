@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Getting Started with Syncfusion NumericUpDown Control for Xamarin.Android
-description : A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.Android platform 
-platform : Xamarin.Android
-control : NumericUpDown 
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion NumericUpDown Control for Xamarin.Android
+description: A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.Android platform 
+platform: Xamarin.Android
+control: NumericUpDown 
+documentation: ug
 ---
 
-# Getting Started
+# Getting Started of Xamarin.Android NumericUpDown(SfNumericUpDown)
 
 This section provides overview for working with Essential NumericUpDown for Xamarin.Android. You can walk through the entire process of creating a SfNumericUpDown.
 
@@ -148,4 +148,4 @@ numeric.FormatString= “c”;
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![Xamarin.Android NumericUpDown getting started Image](images/gettingstarted.png)
