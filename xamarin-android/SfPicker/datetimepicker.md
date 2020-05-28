@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Demonstrate DateTimePicker using SfPicker of Syncfusion Picker control for Xamarin.Android
-description: Overview and key features of Picker control
-platform: Xamarin
+title: DateTimePicker using Syncfusion SfPicker control for Xamarin.Android
+description: This section will explain about how to create and use Data Time Picker control in Xmarin. Andorid platofrm.
+platform: Xamarin.Android
 control: Picker
 documentation: ug
 ---
 
 
-# Date Time Picker
+# Date Time Picker of Xamarin.Android
 
 In our Xamarin.Forms, SfPicker control has multi column support. Using this we can populate day, month, year, hour and minute values of collection in SfPicker control. 
 
@@ -446,7 +446,7 @@ The below code demonstrates Date collection creation.
 
 Screen shot for the above codes.
 
-![](images/date_time_picker.jpg)
+![date and Time picker](images/date_time_picker.jpg)
 
 
 We have attached DateTimePicker sample for reference. Please download the sample from the following link.

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion Picker control for Xamarin.Android
-description: Overview and key features of Picker control
-platform: Xamarin
+description: This section will explain about the Overview and key features Exists in Xamarin.Android SfPicker control.
+platform: Xamarin.Android
 control: Picker
 documentation: ug
 ---
 
-# Overview
+# Overview of Xamarin.Android SfPicker
 
 The picker control allows users to pick an item among a list of items that can be customized with custom view. This control can be opened as dialog. Its rich feature set includes functionalities like multi column, header/footer, custom view on header/footer and default validation buttons.
 
@@ -76,8 +76,8 @@ The picker control allows users to pick an item among a list of items that can b
 
 Please find the screen shot of SfPicker color selection
 
-![](images/android_picker.png)
+![OverView](images/android_picker.png)
 
 Please find the screen shot of SfPicker multicolumn
 
-![](images/multi_column.jpg)
+![Overview](images/multi_column.jpg)
