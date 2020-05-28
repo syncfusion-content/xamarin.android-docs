@@ -1,6 +1,6 @@
 ---
 layout: post
-title: selection indicator in Syncfusion Segmented control for Xamarin.Android
+title: selection indicator in Syncfusion SegmentedControl for Xamarin.Android
 description: Learn how to handle selection indicator settings, selection text color and selection strip in Segmented control
 platform: Xamarin.Android
 control: SegmentedControl
@@ -22,7 +22,7 @@ segmentedControl.SelectionTextColor = Color.ParseColor("#02A0AE");
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_selectiontextcolor.png)
+![Xamarin.Android SfSegmentedControl selection text color](images/Selection-indicator/Xamarin_Android_selectiontextcolor.png)
 
 ## Selection Strip
 
@@ -44,7 +44,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_Top.png)
+![Selection Strip Top](images/Selection-indicator/Xamarin_Android_Top.png)
 
 ##### Bottom
 
@@ -58,7 +58,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_Bottom.png)
+![Selection Strip Bottom](images/Selection-indicator/Xamarin_Android_Bottom.png)
 
 ##### Fill
 
@@ -72,7 +72,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_Fill.png)
+![Selection Strip Fill](images/Selection-indicator/Xamarin_Android_Fill.png)
 
 ##### Border
 
@@ -86,7 +86,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_Border.png)
+![Selection Strip Border](images/Selection-indicator/Xamarin_Android_Border.png)
 
 #### Color
 
@@ -100,7 +100,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_stripcolor.png)
+![Selection Strip Color](images/Selection-indicator/Xamarin_Android_stripcolor.png)
 
 #### Thickness
 
