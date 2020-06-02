@@ -7,7 +7,7 @@ control: SegmentedControl
 documentation: ug
 ---
 
-# Customization of Xamarin.Android Segmented Control(SfSegmentedControl)
+# Customization of Xamarin.Android Segmented Control (SfSegmentedControl)
 
 The segmented control supports customizing segment color, text color, icon size, selection color, and more. This control also supports enabling the segments to fit your application’s theme. It can be customized in the following areas.
 

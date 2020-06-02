@@ -54,13 +54,13 @@ using Syncfusion.Android.Buttons;
 
 {% highlight c# %}
 
-        private SfSegmentedControl segmentedControl;
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-            segmentedControl = new SfSegmentedControl(this);
-            SetContentView(segmentedControl);
-        }
+private SfSegmentedControl segmentedControl;
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    base.OnCreate(savedInstanceState);
+    segmentedControl = new SfSegmentedControl(this);
+    SetContentView(segmentedControl);
+}
 		
 {% endhighlight %}
 
@@ -74,42 +74,42 @@ ViewModel class for the Editor which we have used in our View.
 
 {% highlight c# %}
 
-    using System;
-    using System.ComponentModel;
-    using System.Runtime.CompilerServices;
+using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
     
-    namespace SegmentedGettingStarted
+namespace SegmentedGettingStarted
+{
+    public class ViewModel : INotifyPropertyChanged
     {
-        public class ViewModel : INotifyPropertyChanged
+        private string fromText = "";
+        public string FromText
         {
-            private string fromText = "";
-            public string FromText
-            {
-                get { return fromText; }
-                set { fromText = value; NotifyPropertyChanged("FromText"); }
-            }
-            private string toText = "";
-            public string ToText
-            {
-                get { return toText; }
-                set { toText = value; NotifyPropertyChanged("ToText"); }
-            }
+            get { return fromText; }
+            set { fromText = value; NotifyPropertyChanged("FromText"); }
+        }
+        private string toText = "";
+        public string ToText
+        {
+            get { return toText; }
+            set { toText = value; NotifyPropertyChanged("ToText"); }
+        }
     
-            public ViewModel(Android.Content.Context segment)
-            {
+        public ViewModel(Android.Content.Context segment)
+        {
 
-            }
-            public event PropertyChangedEventHandler PropertyChanged;
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
     
-            private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            if (PropertyChanged != null)
             {
-                if (PropertyChanged != null)
-                {
                     PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-                }
             }
         }
     }
+}
 
 {% endhighlight %}
 
@@ -119,67 +119,67 @@ Initial view for the application can be created by the following code snippet.
 
 {% highlight C# %}
 
-    using Android.App;
-    using Android.Widget;
-    using Android.OS;
-    using Syncfusion.Android.Buttons;
-    using Android.Views;
-    using Android.Graphics;
-    using System.Collections.Generic;
+using Android.App;
+using Android.Widget;
+using Android.OS;
+using Syncfusion.Android.Buttons;
+using Android.Views;
+using Android.Graphics;
+using System.Collections.Generic;
     
-    namespace SegmentedGettingStarted
+namespace SegmentedGettingStarted
+{
+    [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)]
+    public class MainActivity : Activity
     {
-        [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)]
-        public class MainActivity : Activity
+        LinearLayout mainLayout;
+        ViewModel viewModel;
+        TextView headerLabel;
+        EditText fromEditor, toEditor;
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            LinearLayout mainLayout;
-            ViewModel viewModel;
-            TextView headerLabel;
-            EditText fromEditor, toEditor;
-            protected override void OnCreate(Bundle savedInstanceState)
-            {
-                base.OnCreate(savedInstanceState);
+            base.OnCreate(savedInstanceState);
     
-                mainLayout = new LinearLayout(this);
-                mainLayout.Orientation = Orientation.Vertical;
-                mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
-                mainLayout.SetBackgroundColor(Color.WhiteSmoke);
-                mainLayout.SetPadding(50,50,50,50);
-                viewModel = new ViewModel(this);
+            mainLayout = new LinearLayout(this);
+            mainLayout.Orientation = Orientation.Vertical;
+            mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
+            mainLayout.SetBackgroundColor(Color.WhiteSmoke);
+            mainLayout.SetPadding(50,50,50,50);
+            viewModel = new ViewModel(this);
     
-                //Adding text view as the header part of the application.
-                headerLabel = new TextView(this);
-                headerLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-                headerLabel.Text = "Bus Ticket Booking";
-                headerLabel.SetTextColor(Color.Black);
-                headerLabel.TextSize =25;
-                headerLabel.TextAlignment = TextAlignment.Center;
-                headerLabel.TextAlignment = TextAlignment.Gravity;
+            //Adding text view as the header part of the application.
+            headerLabel = new TextView(this);
+            headerLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
+            headerLabel.Text = "Bus Ticket Booking";
+            headerLabel.SetTextColor(Color.Black);
+            headerLabel.TextSize =25;
+            headerLabel.TextAlignment = TextAlignment.Center;
+            headerLabel.TextAlignment = TextAlignment.Gravity;
     
-                //Adding the editor to enter the origin location.
-                fromEditor = new EditText(this);
-                fromEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 170);
-                fromEditor.Text = viewModel.FromText;
-                fromEditor.Hint = "From";
-                fromEditor.SetTextColor(Color.Black);
-                fromEditor.SetHintTextColor(Color.Gray);
-    
-                //Adding editor to enter the destination location.
-                toEditor = new EditText(this);
-                toEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 250);
-                toEditor.Text = viewModel.ToText;
-                toEditor.Hint = "To";
-                toEditor.SetTextColor(Color.Black);
-                toEditor.SetHintTextColor(Color.Gray);
-   
-                mainLayout.AddView(HeaderLabel);
-                mainLayout.AddView(fromEditor);
-                mainLayout.AddView(toEditor);
-    
-                SetContentView(mainLayout);
-            }
+            //Adding the editor to enter the origin location.
+            fromEditor = new EditText(this);
+            fromEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent 170);
+            fromEditor.Text = viewModel.FromText;
+            fromEditor.Hint = "From";
+            fromEditor.SetTextColor(Color.Black);
+            fromEditor.SetHintTextColor(Color.Gray);
+
+            //Adding editor to enter the destination location.
+            toEditor = new EditText(this);
+            toEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,250);
+            toEditor.Text = viewModel.ToText;
+            toEditor.Hint = "To";
+            toEditor.SetTextColor(Color.Black);
+            toEditor.SetHintTextColor(Color.Gray);
+
+            mainLayout.AddView(HeaderLabel);
+            mainLayout.AddView(fromEditor);
+            mainLayout.AddView(toEditor);
+
+            SetContentView(mainLayout);
         }
     }
+}
 
 {% endhighlight %}
 
@@ -202,87 +202,87 @@ With the help of  `System.Collections.Generic` we can add string data as [`Items
 
 {% highlight C# %}
 
-    using Android.App;
-    using Android.Widget;
-    using Android.OS;
-    using Syncfusion.Android.Buttons;
-    using Android.Views;
-    using Android.Graphics;
-    using System.Collections.Generic;
+using Android.App;
+using Android.Widget;
+using Android.OS;
+using Syncfusion.Android.Buttons;
+using Android.Views;
+using Android.Graphics;
+using System.Collections.Generic;
     
-    namespace SegmentedGettingStarted
+namespace SegmentedGettingStarted
+{
+    [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)
+    public class MainActivity : Activity
     {
-        [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)
-        public class MainActivity : Activity
+
+        SfSegmentedControl segmentedControl;
+        LinearLayout mainLayout;
+        ViewModel viewModel;
+        TextView headerLabel;
+        EditText fromEditor, toEditor;
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-    
-            SfSegmentedControl segmentedControl;
-            LinearLayout mainLayout;
-            ViewModel viewModel;
-            TextView headerLabel;
-            EditText fromEditor, toEditor;
-            protected override void OnCreate(Bundle savedInstanceState)
+            base.OnCreate(savedInstanceState);
+
+            mainLayout = new LinearLayout(this);
+            mainLayout.Orientation = Orientation.Vertical;
+            mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParentViewGroup.LayoutParams.MatchParent);
+            mainLayout.SetBackgroundColor(Color.WhiteSmoke);
+            mainLayout.SetPadding(50,50,50,50);
+            viewModel = new ViewModel(this);
+
+            //Adding text view as the header part of the application.
+            headerLabel = new TextView(this);
+            headerLabel.LayoutParameters = new ViewGroup.LayoutParam(ViewGroup.LayoutParams.MatchParent, 100);
+            headerLabel.Text = "Bus Ticket Booking";
+            headerLabel.SetTextColor(Color.Black);
+            headerLabel.TextSize =25;
+            headerLabel.TextAlignment = TextAlignment.Center;
+            headerLabel.TextAlignment = TextAlignment.Gravity;
+
+            //Adding the editor to enter the origin location.
+            fromEditor = new EditText(this);
+            fromEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent 170);
+            fromEditor.Text = viewModel.FromText;
+            fromEditor.Hint = "From";
+            fromEditor.SetTextColor(Color.Black);
+            fromEditor.SetHintTextColor(Color.Gray);
+
+            //Adding editor to enter the destination location.
+            toEditor = new EditText(this);
+            toEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,250);
+            toEditor.Text = viewModel.ToText;
+            toEditor.Hint = "To";
+            toEditor.SetTextColor(Color.Black);
+            toEditor.SetHintTextColor(Color.Gray);
+
+            //segmented control to add item as string data.
+            segmentedControl = new SfSegmentedControl(this);
+            segmentedControl.LayoutParameters = new ViewGroup.LayoutParam(ViewGroup.LayoutParams.MatchParent, 300);
+            segmentedControl.SelectionTextColor = Color.White;
+            segmentedControl.BackColor = Color.Transparent;
+            segmentedControl.SegmentHeight = 50;
+            segmentedControl.BorderColor = Color.ParseColor("#929292");
+            segmentedControl.FontColor = Color.ParseColor("#929292");
+            segmentedControl.SegmentBackgroundColor = Color.Transparent;
+            segmentedControl.VisibleSegmentsCount = 6;
+            segmentedControl.DisplayMode = SegmentDisplayMode.Text;
+            List<string> list = new List<string>
             {
-                base.OnCreate(savedInstanceState);
-    
-                mainLayout = new LinearLayout(this);
-                mainLayout.Orientation = Orientation.Vertical;
-                mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,ViewGroup.LayoutParams.MatchParent);
-                mainLayout.SetBackgroundColor(Color.WhiteSmoke);
-                mainLayout.SetPadding(50,50,50,50);
-                viewModel = new ViewModel(this);
-    
-                //Adding text view as the header part of the application.
-                headerLabel = new TextView(this);
-                headerLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-                headerLabel.Text = "Bus Ticket Booking";
-                headerLabel.SetTextColor(Color.Black);
-                headerLabel.TextSize =25;
-                headerLabel.TextAlignment = TextAlignment.Center;
-                headerLabel.TextAlignment = TextAlignment.Gravity;
-    
-                //Adding the editor to enter the origin location.
-                fromEditor = new EditText(this);
-                fromEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 170);
-                fromEditor.Text = viewModel.FromText;
-                fromEditor.Hint = "From";
-                fromEditor.SetTextColor(Color.Black);
-                fromEditor.SetHintTextColor(Color.Gray);
-    
-                //Adding editor to enter the destination location.
-                toEditor = new EditText(this);
-                toEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 250);
-                toEditor.Text = viewModel.ToText;
-                toEditor.Hint = "To";
-                toEditor.SetTextColor(Color.Black);
-                toEditor.SetHintTextColor(Color.Gray);
-    
-                //segmented control to add item as string data.
-                segmentedControl = new SfSegmentedControl(this);
-                segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 300);
-                segmentedControl.SelectionTextColor = Color.White;
-                segmentedControl.BackColor = Color.Transparent;
-                segmentedControl.SegmentHeight = 50;
-                segmentedControl.BorderColor = Color.ParseColor("#929292");
-                segmentedControl.FontColor = Color.ParseColor("#929292");
-                segmentedControl.SegmentBackgroundColor = Color.Transparent;
-                segmentedControl.VisibleSegmentsCount = 6;
-                segmentedControl.DisplayMode = SegmentDisplayMode.Text;
-                List<string> list = new List<string>
-                {
-                    "1","2","3","4","5","6"
-                };
-                segmentedControl.ItemsSource = list;
-   
-                mainLayout.AddView(headerLabel);
-                mainLayout.AddView(fromEditor);
-                mainLayout.AddView(toEditor);
-                mainLayout.AddView(segmentedControl);
-    
-                SetContentView(mainLayout);
-            }
+                "1","2","3","4","5","6"
+            };
+            segmentedControl.ItemsSource = list;
+
+            mainLayout.AddView(headerLabel);
+            mainLayout.AddView(fromEditor);
+            mainLayout.AddView(toEditor);
+            mainLayout.AddView(segmentedControl);
+
+            SetContentView(mainLayout);
         }
     }
+}
 
 {% endhighlight %}
 
@@ -297,163 +297,162 @@ In ViewModel add the below given code to get the respective items in SfSegmented
 
 {% highlight C# %}
 
-    using System;
-    using System.Collections.ObjectModel;
-    using System.ComponentModel;
-    using System.Runtime.CompilerServices;
-    using Android.App;
-    using Android.Views;
-    using Android.Widget;
-    using Syncfusion.Android.Buttons;
-    
-    namespace SegmentedGettingStarted
+using System;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using Android.App;
+using Android.Views;
+using Android.Widget;
+using Syncfusion.Android.Buttons;
+
+namespace SegmentedGettingStarted
+{
+    public class ViewModel : INotifyPropertyChanged
     {
-        public class ViewModel : INotifyPropertyChanged
+        private ObservableCollection<SfSegmentItem> itemCollection;
+        public ObservableCollection<SfSegmentItem> ItemCollection
         {
-            private ObservableCollection<SfSegmentItem> itemCollection;
-            public ObservableCollection<SfSegmentItem> ItemCollection
+            get { return itemCollection; }
+            set { itemCollection = value; }
+        }
+        private string fromText = "";
+        public string FromText
+        {
+            get { return fromText; }
+            set { fromText = value; NotifyPropertyChanged("FromText"); }
+        }
+        private string toText = "";
+        public string ToText
+        {
+            get { return toText; }
+            set { toText = value; NotifyPropertyChanged("ToText"); }
+        }
+
+        public ViewModel()
+        {
+            ItemCollection = new ObservableCollection<SfSegmentItem>
             {
-                get { return itemCollection; }
-                set { itemCollection = value; }
-            }
-            private string fromText = "";
-            public string FromText
+                new SfSegmentItem() {  Text = "Seater"},
+                new SfSegmentItem() {  Text = "Sleeper"},
+            };
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            if (PropertyChanged != null)
             {
-                get { return fromText; }
-                set { fromText = value; NotifyPropertyChanged("FromText"); }
-            }
-            private string toText = "";
-            public string ToText
-            {
-                get { return toText; }
-                set { toText = value; NotifyPropertyChanged("ToText"); }
-            }
-    
-            public ViewModel(Android.Content.Context segment)
-            {
-                ItemCollection = new ObservableCollection<SfSegmentItem>
-                {
-                    new SfSegmentItem() {  Text = "Seater"},
-                    new SfSegmentItem() {  Text = "Sleeper"},
-                };
-            }
-            public event PropertyChangedEventHandler PropertyChanged;
-    
-            private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-            {
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-                }
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
     }
+}
 
 {% endhighlight %}
 
 
 {% highlight C# %}
 
+using Android.App;
+using Android.Widget;
+using Android.OS;
+using Syncfusion.Android.Buttons;
+using Android.Views;
+using Android.Graphics;
+using System.Collections.Generic;
 
-    using Android.App;
-    using Android.Widget;
-    using Android.OS;
-    using Syncfusion.Android.Buttons;
-    using Android.Views;
-    using Android.Graphics;
-    using System.Collections.Generic;
-    
-    namespace SegmentedGettingStarted
+namespace SegmentedGettingStarted
+{
+    [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)]
+    public class MainActivity : Activity
     {
-        [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)]
-        public class MainActivity : Activity
+
+        SfSegmentedControl segmentedControl, segment;
+        LinearLayout mainLayout;
+        ViewModel viewModel;
+        TextView headerLabel;
+        EditText fromEditor, toEditor;
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-    
-            SfSegmentedControl segmentedControl, segment;
-            LinearLayout mainLayout;
-            ViewModel viewModel;
-            TextView headerLabel;
-            EditText fromEditor, toEditor;
-            protected override void OnCreate(Bundle savedInstanceState)
+            base.OnCreate(savedInstanceState);
+
+            mainLayout = new LinearLayout(this);
+            mainLayout.Orientation = Orientation.Vertical;
+            mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent ViewGroup.LayoutParams.MatchParent);
+            mainLayout.SetBackgroundColor(Color.WhiteSmoke);
+            mainLayout.SetPadding(50,50,50,50);
+            viewModel = new ViewModel(this);
+
+            //Adding text view as the header part of the application.
+            headerLabel = new TextView(this);
+            headerLabel.LayoutParameters = new ViewGroup.LayoutParam(ViewGroup.LayoutParams.MatchParent, 100);
+            headerLabel.Text = "Bus Ticket Booking";
+            headerLabel.SetTextColor(Color.Black);
+            headerLabel.TextSize =25;
+            headerLabel.TextAlignment = TextAlignment.Center;
+            headerLabel.TextAlignment = TextAlignment.Gravity;
+
+            //Adding the editor to enter the origin location.
+            fromEditor = new EditText(this);
+            fromEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent 170);
+            fromEditor.Text = viewModel.FromText;
+            fromEditor.Hint = "From";
+            fromEditor.SetTextColor(Color.Black);
+            fromEditor.SetHintTextColor(Color.Gray);
+
+            //Adding editor to enter the destination location.
+            toEditor = new EditText(this);
+            toEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,250);
+            toEditor.Text = viewModel.ToText;
+            toEditor.Hint = "To";
+            toEditor.SetTextColor(Color.Black);
+            toEditor.SetHintTextColor(Color.Gray);
+
+            //segmented control to add item as string data.
+            segmentedControl = new SfSegmentedControl(this);
+            segmentedControl.LayoutParameters = new ViewGroup.LayoutParam(ViewGroup.LayoutParams.MatchParent, 300);
+            segmentedControl.SelectionTextColor = Color.White;
+            segmentedControl.BackColor = Color.Transparent;
+            segmentedControl.SegmentHeight = 50;
+            segmentedControl.BorderColor = Color.ParseColor("#929292");
+            segmentedControl.FontColor = Color.ParseColor("#929292");
+            segmentedControl.SegmentBackgroundColor = Color.Transparent;
+            segmentedControl.VisibleSegmentsCount = 6;
+            segmentedControl.DisplayMode = SegmentDisplayMode.Text;
+            List<string> list = new List<string>
             {
-                base.OnCreate(savedInstanceState);
-    
-                mainLayout = new LinearLayout(this);
-                mainLayout.Orientation = Orientation.Vertical;
-                mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
-                mainLayout.SetBackgroundColor(Color.WhiteSmoke);
-                mainLayout.SetPadding(50,50,50,50);
-                viewModel = new ViewModel(this);
-    
-                //Adding text view as the header part of the application.
-                headerLabel = new TextView(this);
-                headerLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-                headerLabel.Text = "Bus Ticket Booking";
-                headerLabel.SetTextColor(Color.Black);
-                headerLabel.TextSize =25;
-                headerLabel.TextAlignment = TextAlignment.Center;
-                headerLabel.TextAlignment = TextAlignment.Gravity;
-    
-                //Adding the editor to enter the origin location.
-                fromEditor = new EditText(this);
-                fromEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 170);
-                fromEditor.Text = viewModel.FromText;
-                fromEditor.Hint = "From";
-                fromEditor.SetTextColor(Color.Black);
-                fromEditor.SetHintTextColor(Color.Gray);
-    
-                //Adding editor to enter the destination location.
-                toEditor = new EditText(this);
-                toEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 250);
-                toEditor.Text = viewModel.ToText;
-                toEditor.Hint = "To";
-                toEditor.SetTextColor(Color.Black);
-                toEditor.SetHintTextColor(Color.Gray);
-    
-                //segmented control to add item as string data.
-                segmentedControl = new SfSegmentedControl(this);
-                segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 300);
-                segmentedControl.SelectionTextColor = Color.White;
-                segmentedControl.BackColor = Color.Transparent;
-                segmentedControl.SegmentHeight = 50;
-                segmentedControl.BorderColor = Color.ParseColor("#929292");
-                segmentedControl.FontColor = Color.ParseColor("#929292");
-                segmentedControl.SegmentBackgroundColor = Color.Transparent;
-                segmentedControl.VisibleSegmentsCount = 6;
-                segmentedControl.DisplayMode = SegmentDisplayMode.Text;
-                List<string> list = new List<string>
-                {
-                    "1","2","3","4","5","6"
-                };
-                segmentedControl.ItemsSource = list;
-    
-                //segmented control to add item as SfSegmentItem.
-                segment = new SfSegmentedControl(this);
-                segment.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 300);
-                segment.SelectionTextColor = Color.ParseColor("#007CEE");
-                segment.VisibleSegmentsCount = 2;
-                segment.BackColor = Color.White;
-                segment.BorderColor = Color.ParseColor("#929292");
-                segment.SegmentHeight = 50;
-                segment.FontColor = Color.ParseColor("#929292");
-                segment.SegmentBackgroundColor = Color.Transparent;
-                segment.DisplayMode = SegmentDisplayMode.Text;
-                segment.ItemsSource = viewModel.ItemCollection;
-                SelectionIndicatorSettings select = new SelectionIndicatorSettings();
-                select.Color = Color.White;
-    
-                segment.SelectionIndicatorSettings = select;
-   
-                mainLayout.AddView(headerLabel);
-                mainLayout.AddView(fromEditor);
-                mainLayout.AddView(toEditor);
-                mainLayout.AddView(segment);
-                mainLayout.AddView(segmentedControl);
-    
-                SetContentView(mainLayout);
-            }
+                "1","2","3","4","5","6"
+            };
+            segmentedControl.ItemsSource = list;
+
+            //segmented control to add item as SfSegmentItem.
+            segment = new SfSegmentedControl(this);
+            segment.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,300);
+            segment.SelectionTextColor = Color.ParseColor("#007CEE");
+            segment.VisibleSegmentsCount = 2;
+            segment.BackColor = Color.White;
+            segment.BorderColor = Color.ParseColor("#929292");
+            segment.SegmentHeight = 50;
+            segment.FontColor = Color.ParseColor("#929292");
+            segment.SegmentBackgroundColor = Color.Transparent;
+            segment.DisplayMode = SegmentDisplayMode.Text;
+            segment.ItemsSource = viewModel.ItemCollection;
+            SelectionIndicatorSettings select = new SelectionIndicatorSettings();
+            select.Color = Color.White;
+
+            segment.SelectionIndicatorSettings = select;
+
+            mainLayout.AddView(headerLabel);
+            mainLayout.AddView(fromEditor);
+            mainLayout.AddView(toEditor);
+            mainLayout.AddView(segment);
+            mainLayout.AddView(segmentedControl);
+
+            SetContentView(mainLayout);
         }
     }
+}
 
 {% endhighlight %}
 
@@ -468,199 +467,198 @@ In ViewModel add the below given code to get the respective items/collection in 
 
 {% highlight C# %}
 
-    using System;
-    using System.Collections.ObjectModel;
-    using System.ComponentModel;
-    using System.Runtime.CompilerServices;
-    using Android.App;
-    using Android.Views;
-    using Android.Widget;
-    using Syncfusion.Android.Buttons;
-    
-    namespace SegmentedGettingStarted
-    {
-        public class ViewModel : INotifyPropertyChanged
-        {
-            private ObservableCollection<SfSegmentItem> itemCollection;
-            private ObservableCollection<View> viewCollection;
+using System;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using Android.App;
+using Android.Views;
+using Android.Widget;
+using Syncfusion.Android.Buttons;
 
-            public ObservableCollection<SfSegmentItem> ItemCollection
+namespace SegmentedGettingStarted
+{
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<SfSegmentItem> itemCollection;
+        private ObservableCollection<View> viewCollection;
+        public ObservableCollection<SfSegmentItem> ItemCollection
+        {
+            get { return itemCollection; }
+            set { itemCollection = value; }
+        }
+        public ObservableCollection<View> ViewCollection
+        {
+            get { return viewCollection; }
+            set { viewCollection = value; }
+        }
+       
+        private string fromText = "";
+        public string FromText
+        {
+            get { return fromText; }
+            set { fromText = value; NotifyPropertyChanged("FromText"); }
+        }
+        private string toText = "";
+        public string ToText
+        {
+            get { return toText; }
+            set { toText = value; NotifyPropertyChanged("ToText"); }
+        }
+
+        public ViewModel(Android.Content.Context segment)
+        {
+            Button ResetButtonView = new Button(segment);
+            ResetButtonView.Text = "Reset";
+
+            Button GoButtonView = new Button(segment);
+            GoButtonView.Text = "Go";
+
+            ItemCollection = new ObservableCollection<SfSegmentItem>
             {
-                get { return itemCollection; }
-                set { itemCollection = value; }
-            }
-            public ObservableCollection<View> ViewCollection
+                new SfSegmentItem() {  Text = "Seater"},
+                new SfSegmentItem() {  Text = "Sleeper"},
+            };
+            ViewCollection = new ObservableCollection<View>
             {
-                get { return viewCollection; }
-                set { viewCollection = value; }
-            }
-           
-            private string fromText = "";
-            public string FromText
+                ResetButtonView,
+                GoButtonView
+            };
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            if (PropertyChanged != null)
             {
-                get { return fromText; }
-                set { fromText = value; NotifyPropertyChanged("FromText"); }
-            }
-            private string toText = "";
-            public string ToText
-            {
-                get { return toText; }
-                set { toText = value; NotifyPropertyChanged("ToText"); }
-            }
-    
-            public ViewModel(Android.Content.Context segment)
-            {
-                Button ResetButtonView = new Button(segment);
-                ResetButtonView.Text = "Reset";
-    
-                Button GoButtonView = new Button(segment);
-                GoButtonView.Text = "Go";
-    
-                ItemCollection = new ObservableCollection<SfSegmentItem>
-                {
-                    new SfSegmentItem() {  Text = "Seater"},
-                    new SfSegmentItem() {  Text = "Sleeper"},
-                };
-                ViewCollection = new ObservableCollection<View>
-                {
-                    ResetButtonView,
-                    GoButtonView
-                };
-            }
-            public event PropertyChangedEventHandler PropertyChanged;
-    
-            private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-            {
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-                }
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
     }
+}
     
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    using Android.App;
-    using Android.Widget;
-    using Android.OS;
-    using Syncfusion.Android.Buttons;
-    using Android.Views;
-    using Android.Graphics;
-    using System.Collections.Generic;
-    
-    namespace SegmentedGettingStarted
+using Android.App;
+using Android.Widget;
+using Android.OS;
+using Syncfusion.Android.Buttons;
+using Android.Views;
+using Android.Graphics;
+using System.Collections.Generic;
+
+namespace SegmentedGettingStarted
+{
+    [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)]
+    public class MainActivity : Activity
     {
-        [Activity(Label = "SegmentedGettingStarted", MainLauncher = true)]
-        public class MainActivity : Activity
+
+        SfSegmentedControl segmentedControl, segment, segmentView;
+        LinearLayout mainLayout;
+        ViewModel viewModel;
+        TextView headerLabel;
+        EditText fromEditor, toEditor;
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-    
-            SfSegmentedControl segmentedControl, segment, segmentView;
-            LinearLayout mainLayout;
-            ViewModel viewModel;
-            TextView headerLabel;
-            EditText fromEditor, toEditor;
-            protected override void OnCreate(Bundle savedInstanceState)
+            base.OnCreate(savedInstanceState);
+
+            mainLayout = new LinearLayout(this);
+            mainLayout.Orientation = Orientation.Vertical;
+            mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent ViewGroup.LayoutParams.MatchParent);
+            mainLayout.SetBackgroundColor(Color.WhiteSmoke);
+            mainLayout.SetPadding(50,50,50,50);
+            viewModel = new ViewModel(this);
+
+            //Adding text view as the header part of the application.
+            headerLabel = new TextView(this);
+            headerLabel.LayoutParameters = new ViewGroup.LayoutParam(ViewGroup.LayoutParams.MatchParent, 100);
+            headerLabel.Text = "Bus Ticket Booking";
+            headerLabel.SetTextColor(Color.Black);
+            headerLabel.TextSize =25;
+            headerLabel.TextAlignment = TextAlignment.Center;
+            headerLabel.TextAlignment = TextAlignment.Gravity;
+
+            //Adding the editor to enter the origin location.
+            fromEditor = new EditText(this);
+            fromEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent 170);
+            fromEditor.Text = viewModel.FromText;
+            fromEditor.Hint = "From";
+            fromEditor.SetTextColor(Color.Black);
+            fromEditor.SetHintTextColor(Color.Gray);
+
+            //Adding editor to enter the destination location.
+            toEditor = new EditText(this);
+            toEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,250);
+            toEditor.Text = viewModel.ToText;
+            toEditor.Hint = "To";
+            toEditor.SetTextColor(Color.Black);
+            toEditor.SetHintTextColor(Color.Gray);
+
+            //segmented control to add item as string data.
+            segmentedControl = new SfSegmentedControl(this);
+            segmentedControl.LayoutParameters = new ViewGroup.LayoutParam(ViewGroup.LayoutParams.MatchParent, 300);
+            segmentedControl.SelectionTextColor = Color.White;
+            segmentedControl.BackColor = Color.Transparent;
+            segmentedControl.SegmentHeight = 50;
+            segmentedControl.BorderColor = Color.ParseColor("#929292");
+            segmentedControl.FontColor = Color.ParseColor("#929292");
+            segmentedControl.SegmentBackgroundColor = Color.Transparent;
+            segmentedControl.VisibleSegmentsCount = 6;
+            segmentedControl.DisplayMode = SegmentDisplayMode.Text;
+            List<string> list = new List<string>
             {
-                base.OnCreate(savedInstanceState);
-    
-                mainLayout = new LinearLayout(this);
-                mainLayout.Orientation = Orientation.Vertical;
-                mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
-                mainLayout.SetBackgroundColor(Color.WhiteSmoke);
-                mainLayout.SetPadding(50,50,50,50);
-                viewModel = new ViewModel(this);
-    
-                //Adding text view as the header part of the application.
-                headerLabel = new TextView(this);
-                headerLabel.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-                headerLabel.Text = "Bus Ticket Booking";
-                headerLabel.SetTextColor(Color.Black);
-                headerLabel.TextSize =25;
-                headerLabel.TextAlignment = TextAlignment.Center;
-                headerLabel.TextAlignment = TextAlignment.Gravity;
-    
-                //Adding the editor to enter the origin location.
-                fromEditor = new EditText(this);
-                fromEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 170);
-                fromEditor.Text = viewModel.FromText;
-                fromEditor.Hint = "From";
-                fromEditor.SetTextColor(Color.Black);
-                fromEditor.SetHintTextColor(Color.Gray);
-    
-                //Adding editor to enter the destination location.
-                toEditor = new EditText(this);
-                toEditor.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 250);
-                toEditor.Text = viewModel.ToText;
-                toEditor.Hint = "To";
-                toEditor.SetTextColor(Color.Black);
-                toEditor.SetHintTextColor(Color.Gray);
-    
-                //segmented control to add item as string data.
-                segmentedControl = new SfSegmentedControl(this);
-                segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 300);
-                segmentedControl.SelectionTextColor = Color.White;
-                segmentedControl.BackColor = Color.Transparent;
-                segmentedControl.SegmentHeight = 50;
-                segmentedControl.BorderColor = Color.ParseColor("#929292");
-                segmentedControl.FontColor = Color.ParseColor("#929292");
-                segmentedControl.SegmentBackgroundColor = Color.Transparent;
-                segmentedControl.VisibleSegmentsCount = 6;
-                segmentedControl.DisplayMode = SegmentDisplayMode.Text;
-                List<string> list = new List<string>
-                {
-                    "1","2","3","4","5","6"
-                };
-                segmentedControl.ItemsSource = list;
-    
-                //segmented control to add item as SfSegmentItem.
-                segment = new SfSegmentedControl(this);
-                segment.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 300);
-                segment.SelectionTextColor = Color.ParseColor("#007CEE");
-                segment.VisibleSegmentsCount = 2;
-                segment.BackColor = Color.White;
-                segment.BorderColor = Color.ParseColor("#929292");
-                segment.SegmentHeight = 50;
-                segment.FontColor = Color.ParseColor("#929292");
-                segment.SegmentBackgroundColor = Color.Transparent;
-                segment.DisplayMode = SegmentDisplayMode.Text;
-                segment.ItemsSource = viewModel.ItemCollection;
-                SelectionIndicatorSettings select = new SelectionIndicatorSettings();
-                select.Color = Color.White;
-    
-                segment.SelectionIndicatorSettings = select;
-    
-                //segmented control to add item as View.
-                segmentView = new SfSegmentedControl(this);
-                segmentView.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-                segmentView.BorderColor = Color.Transparent;
-                segmentView.SegmentHeight = 100;
-                segmentView.VisibleSegmentsCount = 2;
-                segmentView.BackColor = Color.Transparent;
-                segmentView.SegmentPadding = 30;
-                segmentView.SegmentHeight = 50;
-                segmentView.ItemsSource = viewModel.ViewCollection;
-                SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-                selectionIndicator.Color = Color.Transparent;
-                selectionIndicator.Position = SelectionIndicatorPosition.Fill;
-                selectionIndicator.StrokeThickness = 10;
-    
-                segmentView.SelectionIndicatorSettings = selectionIndicator;
-    
-                mainLayout.AddView(headerLabel);
-                mainLayout.AddView(fromEditor);
-                mainLayout.AddView(toEditor);
-                mainLayout.AddView(segment);
-                mainLayout.AddView(segmentedControl);
-                mainLayout.AddView(segmentView);
-    
-                SetContentView(mainLayout);
-            }
+                "1","2","3","4","5","6"
+            };
+            segmentedControl.ItemsSource = list;
+
+            //segmented control to add item as SfSegmentItem.
+            segment = new SfSegmentedControl(this);
+            segment.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,300);
+            segment.SelectionTextColor = Color.ParseColor("#007CEE");
+            segment.VisibleSegmentsCount = 2;
+            segment.BackColor = Color.White;
+            segment.BorderColor = Color.ParseColor("#929292");
+            segment.SegmentHeight = 50;
+            segment.FontColor = Color.ParseColor("#929292");
+            segment.SegmentBackgroundColor = Color.Transparent;
+            segment.DisplayMode = SegmentDisplayMode.Text;
+            segment.ItemsSource = viewModel.ItemCollection;
+            SelectionIndicatorSettings select = new SelectionIndicatorSettings();
+            select.Color = Color.White;
+
+            segment.SelectionIndicatorSettings = select;
+
+            //segmented control to add item as View.
+            segmentView = new SfSegmentedControl(this);
+            segmentView.LayoutParameters = new ViewGroup.LayoutParam(ViewGroup.LayoutParams.MatchParent, 100);
+            segmentView.BorderColor = Color.Transparent;
+            segmentView.SegmentHeight = 100;
+            segmentView.VisibleSegmentsCount = 2;
+            segmentView.BackColor = Color.Transparent;
+            segmentView.SegmentPadding = 30;
+            segmentView.SegmentHeight = 50;
+            segmentView.ItemsSource = viewModel.ViewCollection;
+            SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
+            selectionIndicator.Color = Color.Transparent;
+            selectionIndicator.Position = SelectionIndicatorPosition.Fill;
+            selectionIndicator.StrokeThickness = 10;
+
+            segmentView.SelectionIndicatorSettings = selectionIndicator;
+
+            mainLayout.AddView(headerLabel);
+            mainLayout.AddView(fromEditor);
+            mainLayout.AddView(toEditor);
+            mainLayout.AddView(segment);
+            mainLayout.AddView(segmentedControl);
+            mainLayout.AddView(segmentView);
+
+            SetContentView(mainLayout);
         }
     }
+}
 
 {% endhighlight %}
 
@@ -675,7 +673,7 @@ To share the Item space equally to segmented control, set the number of segment 
 
 {% highlight C# %}
 
-    segmentedControl.VisibleSegmentsCount = 5;
+segmentedControl.VisibleSegmentsCount = 5;
 
 {% endhighlight %}
 
@@ -697,28 +695,6 @@ The Selection indicator can be used to indicate the selected index of the segmen
 
 To know more about customizing selection indicator refer [feature link](https://help.syncfusion.com/xamarin-android/sfsegmentedcontrol/indicating-the-selected-item)
 
-## Handle click events
-
-SfSegmentedControl has [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SelectionChanged_EV.html) event, using this we can perform operation based on our needs.
-
-
-{% highlight C# %}
-               
-    segmentedControl.SelectionChanged += SegmentedControl_SelectionChanged;
-
-{% endhighlight %}
-
-{% highlight C# %}
-               
-    private void SegmentedControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        var currentValue = e.Index;//To get the current value of selected index
-    }
-
-{% endhighlight %}
-
-To know more about Handling multiple segments refer [feature link](https://help.syncfusion.com/xamarin-android/sfsegmentedcontrol/handling-multiple-segments)
-
 N> For custom view user need to handle click event manually for the view which have been used.
 eg. For Button we have to use its "Click" event.
 
@@ -728,46 +704,44 @@ The below given code can be included on the Custom view viewModel to get the cli
 
 {% highlight C# %}
 
-    using System;
-    using System.Collections.ObjectModel;
-    using System.ComponentModel;
-    using System.Runtime.CompilerServices;
-    using Android.App;
-    using Android.Views;
-    using Android.Widget;
-    using Syncfusion.Android.Buttons;
-    
-    namespace SegmentedGettingStarted
+using System;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using Android.App;
+using Android.Views;
+using Android.Widget;
+using Syncfusion.Android.Buttons;
+
+namespace SegmentedGettingStarted
+{
+    public class ViewModel
     {
-        public class ViewModel
+        AlertDialog.Builder resultsDialog;
+        public ViewModel(Android.Content.Context segment)
         {
-            AlertDialog.Builder resultsDialog;
-            public ViewModel(Android.Content.Context segment)
+            Button ResetButtonView = new Button(segment);
+            ResetButtonView.Text = "Reset";
+
+            Button GoButtonView = new Button(segment);
+            GoButtonView.Text = "Go";
+            resultsDialog = new AlertDialog.Builder(segment);
+            resultsDialog.SetTitle("Status");
+            ResetButtonView.Click += (object sender, EventArgs e) =>
             {
-                Button ResetButtonView = new Button(segment);
-                ResetButtonView.Text = "Reset";
-    
-                Button GoButtonView = new Button(segment);
-                GoButtonView.Text = "Go";
-                resultsDialog = new AlertDialog.Builder(segment);
-                resultsDialog.SetTitle("Status");
-                ResetButtonView.Click += (object sender, EventArgs e) =>
-                {
-                    resultsDialog.SetMessage("Fields has been reset.");
-                    resultsDialog.Create().Show();
-                    resultsDialog.SetCancelable(true);
-                };
-                GoButtonView.Click += (object sender, EventArgs e) =>
-                {
-                    resultsDialog.SetMessage("Your ticket has been booked.");
-                    resultsDialog.Create().Show();
-                    resultsDialog.SetCancelable(true);
-                };
-            }
+                resultsDialog.SetMessage("Fields has been reset.");
+                resultsDialog.Create().Show();
+                resultsDialog.SetCancelable(true);
+            };
+            GoButtonView.Click += (object sender, EventArgs e) =>
+            {
+                resultsDialog.SetMessage("Your ticket has been booked.");
+                resultsDialog.Create().Show();
+                resultsDialog.SetCancelable(true);
+            };
         }
     }
-
-
+}
 
 {% endhighlight %}
 
