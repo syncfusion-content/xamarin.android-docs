@@ -64,6 +64,7 @@ ViewModel viewModel;
 protected override void OnCreate(Bundle savedInstanceState)
 {
 base.OnCreate(savedInstanceState);
+viewModel = new ViewModel(this);
 segmentedControl = new SfSegmentedControl(this);
 segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 400);
 segmentedControl.SelectionTextColor = Color.ParseColor("#007CEE");
@@ -88,7 +89,7 @@ The items inside the ItemsSource can be added in the view model as below.
 
 {% highlight c# %}
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel
 {
     private ObservableCollection<SfSegmentItem> sizeCollection;
     public ObservableCollection<SfSegmentItem> SizeCollection
@@ -108,16 +109,6 @@ new SfSegmentItem(){Text="L",FontColor=Color.ParseColor("#3F3F3F")},
 new SfSegmentItem(){Text="XL",FontColor=Color.ParseColor("#3F3F3F")},
 };
 }
- public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
     
 {% endhighlight %}
 
@@ -161,7 +152,7 @@ SetContentView(mainLayout);
 The ItemsSource can be set in the view model as below.
 
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel
 {
 private ObservableCollection<View> viewCollection;
 
@@ -192,15 +183,6 @@ ViewCollection = new ObservableCollection<View>
     GoButtonView
 };
 
-}
-public event PropertyChangedEventHandler PropertyChanged;
-
-private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-{
-if (PropertyChanged != null)
-{
-    PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-}
 }
 }
 

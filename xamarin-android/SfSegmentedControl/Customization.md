@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Customization in Syncfusion segmented control for Xamarin.Android
-description: Learn how to customize the the text, border, scrolling, corner radius, and color Xamarin.Android SegmentedControl
+description: Learn how to customize the text, border, scrolling, corner radius, and color Xamarin.Android SegmentedControl
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Customization of Xamarin.Android Chart(SfChart)
+# Customization of Xamarin.Android Segmented Control(SfSegmentedControl)
 
 The segmented control supports customizing segment color, text color, icon size, selection color, and more. This control also supports enabling the segments to fit your application’s theme. It can be customized in the following areas.
 

@@ -227,7 +227,7 @@ With the help of  `System.Collections.Generic` we can add string data as [`Items
     
                 mainLayout = new LinearLayout(this);
                 mainLayout.Orientation = Orientation.Vertical;
-                mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
+                mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,ViewGroup.LayoutParams.MatchParent);
                 mainLayout.SetBackgroundColor(Color.WhiteSmoke);
                 mainLayout.SetPadding(50,50,50,50);
                 viewModel = new ViewModel(this);
@@ -717,7 +717,7 @@ SfSegmentedControl has [`SelectionChanged`](https://help.syncfusion.com/cr/cref_
 
 {% endhighlight %}
 
-
+To know more about Handling multiple segments refer [feature link](https://help.syncfusion.com/xamarin-android/sfsegmentedcontrol/handling-multiple-segments)
 
 N> For custom view user need to handle click event manually for the view which have been used.
 eg. For Button we have to use its "Click" event.

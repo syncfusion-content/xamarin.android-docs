@@ -25,6 +25,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 {
 base.OnCreate(savedInstanceState);
 segmentedControl = new SfSegmentedControl(this);
+viewModel = new ViewModel(this);
 segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 400);
 segmentedControl.SelectionTextColor = Color.ParseColor("#02A0AE");
 segmentedControl.VisibleSegmentsCount = 4;
@@ -51,7 +52,7 @@ The items inside the ItemsSource can be added in the view model as below.
 
 {% highlight c# %}
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel
 {
 private ObservableCollection<SfSegmentItem> itemsCollection;
 public ObservableCollection<SfSegmentItem> ItemsCollection
@@ -74,15 +75,6 @@ new SfSegmentItem(){Text = "Item7"},          
   };
   
 }
-public event PropertyChangedEventHandler PropertyChanged;
-
-    private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-    {
-        if (PropertyChanged != null)
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
 }
 
 {% endhighlight %}

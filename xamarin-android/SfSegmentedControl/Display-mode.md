@@ -25,6 +25,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 {
 base.OnCreate(savedInstanceState);
 segmentedControl = new SfSegmentedControl(this);
+viewModel = new ViewModel(this);
 segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 400);
 segmentedControl.SelectionTextColor = Color.ParseColor("#FFFFFF");
 segmentedControl.VisibleSegmentsCount = 3;
@@ -46,7 +47,7 @@ SetContentView(segmentedControl);
 
 The items inside the ItemsSource can be added in the view model as below.
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel
 {
 private ObservableCollection<SfSegmentItem> textCollection;
 public ObservableCollection<SfSegmentItem> TextCollection
@@ -64,15 +65,6 @@ public ViewModel(Android.Content.Context segment)
     new SfSegmentItem(){ Text = "Month"},
     };
 }
-public event PropertyChangedEventHandler PropertyChanged;
-
-    private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-    {
-        if (PropertyChanged != null)
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
 }
     
 
@@ -94,6 +86,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 {
 base.OnCreate(savedInstanceState);
 segmentedControl = new SfSegmentedControl(this);
+viewModel = new ViewModel(this);
 segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 400);
 segmentedControl.SelectionTextColor = Color.ParseColor("#FFFFFF");
 segmentedControl.VisibleSegmentsCount = 3;
@@ -116,7 +109,7 @@ SetContentView(segmentedControl);
 
 The items inside the ItemsSource can be added in the view model as below.
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel
 {
 private ObservableCollection<SfSegmentItem> imageCollection;
 public ObservableCollection<SfSegmentItem> ImageCollection
@@ -134,15 +127,6 @@ new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.ParseColor("#F
 new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.ParseColor("#FFFFFF"),  FontColor=Color.ParseColor("#FFFFFF")},          
 };  
 }
-public event PropertyChangedEventHandler PropertyChanged;
-
-    private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-    {
-        if (PropertyChanged != null)
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
 }
     
 
@@ -164,6 +148,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 {
 base.OnCreate(savedInstanceState);
 segmentedControl = new SfSegmentedControl(this);
+viewModel = new ViewModel(this);
 segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 400);
 segmentedControl.SelectionTextColor = Color.ParseColor("#FFFFFF");
 segmentedControl.VisibleSegmentsCount = 3;
@@ -185,7 +170,7 @@ SetContentView(segmentedControl);
 
 The items inside the ItemsSource can be added in the view model as below.
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel
 {
 private ObservableCollection<SfSegmentItem> imageTextCollection;
 public ObservableCollection<SfSegmentItem> ImageTextCollection
@@ -204,15 +189,6 @@ new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.ParseColor("#F
 };
   
 }
-public event PropertyChangedEventHandler PropertyChanged;
-
-    private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-    {
-        if (PropertyChanged != null)
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
 }
 
 {% endhighlight %}
