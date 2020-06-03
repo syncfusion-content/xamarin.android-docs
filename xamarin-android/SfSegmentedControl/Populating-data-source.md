@@ -70,7 +70,7 @@ public class MainActivity : Activity
     {
         base.OnCreate(savedInstanceState);
 
-        viewModel = new ViewModel(this);
+        viewModel = new ViewModel();
         segmentedControl = new SfSegmentedControl(this);
         segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 400);
         segmentedControl.SelectionTextColor = Color.ParseColor("#007CEE");
@@ -104,7 +104,7 @@ public class ViewModel
         set { sizeCollection = value; }
     }
 
-    public ViewModel(Android.Content.Context segment)
+    public ViewModel()
     {
         SizeCollection = new ObservableCollection<SfSegmentItem>
         {
@@ -142,7 +142,7 @@ public class MainActivity : Activity
         mainLayout.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,        ViewGroup.LayoutParams.MatchParent);
         mainLayout.SetBackgroundColor(Color.White);
         mainLayout.SetPadding(50,50,50,50);
-        viewModel = new ViewModel(this);
+        viewModel = new ViewModel();
         segmentedControl = new SfSegmentedControl(this);
         segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
         segmentedControl.BorderColor = Color.Transparent;

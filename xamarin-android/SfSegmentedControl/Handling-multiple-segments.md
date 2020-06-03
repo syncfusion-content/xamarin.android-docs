@@ -27,7 +27,7 @@ public class MainActivity : Activity
     base.OnCreate(savedInstanceState);
 
     segmentedControl = new SfSegmentedControl(this);
-    viewModel = new ViewModel(this);
+    viewModel = new ViewModel();
     segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 400);
     segmentedControl.SelectionTextColor = Color.ParseColor("#02A0AE");
     segmentedControl.VisibleSegmentsCount = 4;
@@ -63,7 +63,7 @@ public class ViewModel
     set { itemsCollection = value; }
   }
 
-  public ViewModel(Android.Content.Context segment)
+  public ViewModel()
   {
     ItemsCollection = new ObservableCollection<SfSegmentItem>
     {
