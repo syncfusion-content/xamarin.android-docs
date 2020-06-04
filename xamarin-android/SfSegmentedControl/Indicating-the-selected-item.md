@@ -17,8 +17,9 @@ The user can change the text color of the Selected item to desired color.The sel
 
 {% highlight c# %}
 
-segmentedControl.SelectionTextColor = Color.ParseColor("#02A0AE");
+[C#]
 
+segmentedControl.SelectionTextColor = Color.ParseColor("#02A0AE");
 
 {% endhighlight %}
 
@@ -38,9 +39,12 @@ The selection strip can be displayed as a line with customizable color and thick
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Position = Position.Top;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Position = Position.Top
+};
 
 {% endhighlight %}
 
@@ -52,9 +56,12 @@ As like Top placement selection strip can be customized by its color and thickne
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Position = Position.Bottom;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Position = Position.Bottom
+};
 
 {% endhighlight %}
 
@@ -66,9 +73,12 @@ The selection strip can be placed over a segment item to indicate it is selected
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Position = Position.Fill;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Position = Position.Fill
+};
 
 {% endhighlight %}
 
@@ -80,9 +90,12 @@ The selection strip can be set as a border to highlight the selected item.
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Position = Position.Border;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Position = Position.Border
+};
 
 {% endhighlight %}
 
@@ -94,9 +107,12 @@ The background color of the selection strip can be customized using [`Color`](ht
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Color = Color.ParseColor("#2C7BBC");
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Color = Color.ParseColor("#2C7BBC")
+};
 
 {% endhighlight %}
 
@@ -108,13 +124,11 @@ The border thickness of the selection strip can be customized using [`Thickness`
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.StrokeThickness = 10;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    StrokeThickness = 10
+};
 
 {% endhighlight %}
-
-
-
-
-

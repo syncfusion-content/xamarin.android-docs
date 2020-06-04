@@ -21,7 +21,7 @@ You can customize the font family of the segmented item using the [`FontIconStyl
 
 {% highlight c# %}
 
-segmentedControl.FontIconStyle= Typeface.Create("sans-serif-light", TypefaceStyle.Normal);
+segmentedControl.FontIconStyle = Typeface.Create("sans-serif-light", TypefaceStyle.Normal);
 
 {% endhighlight %}
 
@@ -115,9 +115,10 @@ The segmented control customizes corner radius for selection strip using the [`C
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.CornerRadius = 15;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    CornerRadius = 15
+};
 
 {% endhighlight %}
 
@@ -145,9 +146,10 @@ You can customize the background color of each segmented item using the [`Color`
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Color = Color.ParseColor("#FF355088");
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Color = Color.ParseColor("#FF355088")
+};
 
 {% endhighlight %}
 
