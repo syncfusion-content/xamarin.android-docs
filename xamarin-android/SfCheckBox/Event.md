@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event | SfCheckBox | Syncfusion | Xamarin.Android
-description: Learn how to customize the basic  Event in StateChanged event of SfCheckBox Xamarin.Android Platform 
+description: Learn how to get the notification of StateChanged event in Xamarin.Android CheckBox(SfCheckBox) control 
 platform: Xamarin.Android
 control: SfCheckBox
 documentation: ug 
@@ -42,6 +42,6 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBox Unchecked State](Images/Event1.png)
-![CheckBox Checked State](Images/Event2.png)
-![CheckBox Indeterminate State](Images/Event3.png)
+![CheckBox Unchecked State](Images/Unchecked_State.png)
+![CheckBox Checked State](Images/Checked_State.png)
+![CheckBox Indeterminate State](Images/Indeterminate_State.png)
