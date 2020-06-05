@@ -103,7 +103,7 @@ segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
 
 #### Color
 
-The background color of the selection strip can be customized using [`Color`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentItem~SelectionTextColor.html) property which is inside SelectionIndicatorSettings class.
+The background color of the selection strip can be customized using [`Color`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentItem~SelectionBackgroundColor.html) property which is inside SelectionIndicatorSettings class.
 
 {% highlight c# %}
 
