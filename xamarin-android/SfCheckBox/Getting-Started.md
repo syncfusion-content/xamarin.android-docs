@@ -10,7 +10,7 @@ keywords: button, SfCheckBox, CheckBox
 ---
 
 # Getting Started Xamarin.Android Checkbox (SfCheckbox)
-This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
+This section explains the steps required to configure the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox.html) control.
 
 ## Add SfCheckBox reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add checkbox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.android](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android)", and then install it. 
@@ -20,7 +20,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 N>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Create a Simple SfCheckBox
-The `SfCheckBox` control is configured entirely in C# code. The following steps explain how to create a `SfCheckBox` and configure its elements.
+The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox.html) control is configured entirely in C# code. The following steps explain how to create a [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox.html) and configure its elements.
 
 ### Add namespace for referred assemblies
 
@@ -59,7 +59,7 @@ namespace SfCheckBox_Sample
 {% endtabs %}
 
 ## Setting caption
-The check box caption can be defined using the `Text` property of `SfCheckBox`. This caption normally describes the meaning of the check box and it displays next to check box.
+The check box caption can be defined using the `Text` property of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox.html). This caption normally describes the meaning of the check box and it displays next to check box.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,10 +71,8 @@ checkBox.Text = "CheckBox";
 
 ![Xamarin.Android CheckBox caption](Images/Caption.png) 
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_GettingStarted.zip ).
-
 ## Change the check box state
-The three visual states of `SfCheckBox` are: 
+The three visual states of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox.html) are: 
 
 * Checked
 * Unchecked
@@ -82,7 +80,7 @@ The three visual states of `SfCheckBox` are:
 
 ![Xamarin.Android CheckBox states](Images/States.png) 
 
-You can change the state of the check box using the `Checked` property of `SfCheckBox`. In checked state, a tick mark is added to the visualization of check box.
+You can change the state of the check box using the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~Checked.html) property of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox.html). In checked state, a tick mark is added to the visualization of check box.
 
 <table>
 <tr>
@@ -131,7 +129,7 @@ null
 </tr>
 </table>
 
-N>For the check box, to report the indeterminate state, set the `IsThreeState` property to true.
+N>For the check box, to report the indeterminate state, set the [`IsThreeState`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~IsThreeState.html) property to true.
 
 Check box can be used as a single or as a group. A single check box mostly used for a binary yes/no choice, such as "Remember me?", login scenario, or a terms of service agreement.
 
@@ -166,15 +164,13 @@ onion.Checked = true;
 
 ![Xamarin.Android CheckBox multi-selection](Images/StateChange.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/CheckBox_StateChanging.zip).
-
 ## Indeterminate
 
-The `SfCheckBox` allows an indeterminate state in addition to the checked and unchecked state. The indeterminate state of the check box is enabled by setting the `IsThreeState` property of the control to `True`.
+The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox.html) allows an indeterminate state in addition to the checked and unchecked state. The indeterminate state of the check box is enabled by setting the [`IsThreeState`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~IsThreeState.html) property of the control to `True`.
 
-N>When the `IsThreeState` property is set to `False` and `Checked` property is set to `null` then the check box will be in unchecked state.
+N>When the [`IsThreeState`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~IsThreeState.html) property is set to `False` and [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~Checked.html) property is set to `null` then the check box will be in unchecked state.
 
-The indeterminate state is used when a group of sub-choices has both checked and unchecked states. In the following example, the "Select all" checkbox has the `IsThreeState` property set to `true`. The "Select all" checkbox is checked if all child elements are checked, unchecked if all the child elements are unchecked, and indeterminate otherwise.
+The indeterminate state is used when a group of sub-choices has both checked and unchecked states. In the following example, the "Select all" checkbox has the [`IsThreeState`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~IsThreeState.html) property set to `true`. The "Select all" checkbox is checked if all child elements are checked, unchecked if all the child elements are unchecked, and indeterminate otherwise.
 
 {% tabs %}
 {% highlight c# %}
