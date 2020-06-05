@@ -116,7 +116,7 @@ public class MainActivity : Activity
         toEditor.SetTextColor(Color.Black);
         toEditor.SetHintTextColor(Color.Gray);
 
-        mainLayout.AddView(HeaderLabel);
+        mainLayout.AddView(headerLabel);
         mainLayout.AddView(fromEditor);
         mainLayout.AddView(toEditor);
 
@@ -184,19 +184,21 @@ protected override void OnCreate(Bundle savedInstanceState)
     toEditor.SetHintTextColor(Color.Gray);
 
     //segmented control to add item as string data.
-    SfSegmentedControl segmentedControl = new SfSegmentedControl(this);
-    segmentedControl.LayoutParameters = new ViewGroup.LayoutParam(ViewGroup.LayoutParams.MatchParent, 300);
-    segmentedControl.SelectionTextColor = Color.White;
-    segmentedControl.BackColor = Color.Transparent;
-    segmentedControl.SegmentHeight = 50;
-    segmentedControl.BorderColor = Color.ParseColor("#929292");
-    segmentedControl.FontColor = Color.ParseColor("#929292");
-    segmentedControl.SegmentBackgroundColor = Color.Transparent;
-    segmentedControl.VisibleSegmentsCount = 6;
-    segmentedControl.DisplayMode = SegmentDisplayMode.Text;
-    segmentedControl.ItemsSource = new List<string>
+    SfSegmentedControl segmentedControl = new SfSegmentedControl(this)
     {
-        "1","2","3","4","5","6"
+        LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 200),
+        SelectionTextColor = Color.White,
+        BackColor = Color.Transparent,
+        SegmentHeight = 50,
+        BorderColor = Color.ParseColor("#929292"),
+        FontColor = Color.ParseColor("#929292"),
+        SegmentBackgroundColor = Color.Transparent,
+        VisibleSegmentsCount = 6,
+        DisplayMode = SegmentDisplayMode.Text,
+        ItemsSource = new List<string>
+        {
+            "1","2","3","4","5","6"
+        }
     };
 
     mainLayout.AddView(headerLabel);
@@ -223,27 +225,30 @@ By using [`SfSegmentItem`](https://help.syncfusion.com/cr/cref_files/xamarin-and
 [C#]
 
 ...
-
-SfSegmentedControl segment = new SfSegmentedControl(this);
-segment.SelectionTextColor = Color.ParseColor("#007CEE");
-segment.VisibleSegmentsCount = 2;
-segment.BackColor = Color.White;
-segment.BorderColor = Color.ParseColor("#929292");
-segment.SegmentHeight = 50;
-segment.FontColor = Color.ParseColor("#929292");
-segment.SegmentBackgroundColor = Color.Transparent;
-segment.DisplayMode = SegmentDisplayMode.Text;
-segment.ItemsSource = new ObservableCollection<SfSegmentItem>
+SfSegmentedControl segment = new SfSegmentedControl(this)
 {
-    new SfSegmentItem() {  Text = "Seater"},
-    new SfSegmentItem() {  Text = "Sleeper"},
-};
+    SelectionTextColor = Color.White,
+    LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 200),
+    BorderColor = Color.ParseColor("#007CEE"),
+    FontColor = Color.Black,
+    SelectedIndex = 2,
+    FontSize = 15,
+    SegmentHeight = 50,
+    SegmentBackgroundColor = Color.Transparent,
+    VisibleSegmentsCount = 5,
+    DisplayMode = SegmentDisplayMode.Text,
+    ItemsSource = new ObservableCollection<SfSegmentItem>
+    {
+        new SfSegmentItem(){Text="Sleepers"},
+        new SfSegmentItem(){Text="Seaters"},
+    },
 
-segment.SelectionIndicatorSettings = new SelectionIndicatorSettings()
-{
-  Color = Color.White
-};
+    SelectionIndicatorSettings = new SelectionIndicatorSettings()
+    {
+        Color = Color.Transparent
+    }
 
+};
 ...
 
 {% endhighlight %}
@@ -261,28 +266,32 @@ We can add any custom view to the segmented control
 
 ...
 
-SfSegmentedControl segmentView = new SfSegmentedControl(this);
-segmentView.LayoutParameters = new ViewGroup.LayoutParam(ViewGroup.LayoutParams.MatchParent, 100);
-segmentView.BorderColor = Color.Transparent;
-segmentView.SegmentHeight = 100;
-segmentView.VisibleSegmentsCount = 2;
-segmentView.BackColor = Color.Transparent;
-segmentView.SegmentPadding = 30;
-segmentView.SegmentHeight = 50;
-Button resetButtonView = new Button(this){ Text = "Reset" };
-Button goButtonView = new Button(this){ Text = "Go" };
+Button resetButtonView = new Button(this) { Text = "Reset", TextAlignment = TextAlignment.Center };
+resetButtonView.SetHeight(50);
+resetButtonView.SetBackgroundColor(Color.White);
+resetButtonView.SetTextColor(Color.Gray);
 
-segmentView.ItemsSource = new ObservableCollection<View>
-{
-    resetButtonView,
-    goButtonView
-};
+Button goButtonView = new Button(this) { Text = "Go", TextAlignment = TextAlignment.Center };
+goButtonView.SetHeight(50);
+goButtonView.SetTextColor(Color.Gray);
+goButtonView.SetBackgroundColor(Color.White);
 
-segmentView.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+...
+
+//segmented control to add item as View.
+SfSegmentedControl segmentView = new SfSegmentedControl(this)
 {
-    Color = Color.Transparent,
-    Position = SelectionIndicatorPosition.Fill,
-    StrokeThickness = 10
+    LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 200),
+    BorderColor = Color.Transparent,
+    SegmentHeight = 50,
+    VisibleSegmentsCount = 2,
+    SegmentPadding = 30,
+    ItemsSource = new ObservableCollection<View>
+    {
+        resetButtonView,
+        goButtonView
+    },
+
 };
 
 ...
@@ -368,4 +377,4 @@ segmentView.ItemsSource = new ObservableCollection<View>
 {% endhighlight %}
 
 
-Note: Getting started sample can be downloaded from [this link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SegmentedGettingStarted1199664579)
+Note: Getting started sample can be downloaded from [this link](https://github.com/SyncfusionExamples/Getting-Started-Sample-SegmentedControl-Xamarin-Androidd)

@@ -21,22 +21,31 @@ The segmented control provides the collection of strings as a data source.
 
 ...
 
-SfSegmentedControl segmentedControl = new SfSegmentedControl(this);
-segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 300);
-segmentedControl.SelectionTextColor = Color.ParseColor("#02A0AE");
-segmentedControl.BackColor = Color.Transparent;
-segmentedControl.BorderColor = Color.ParseColor("#3F3F3F");
-segmentedControl.FontColor = Color.Black;
-segmentedControl.SelectedIndex = 2;
-segmentedControl.BorderThickness = 15;
-segmentedControl.FontSize = 15;
-segmentedControl.SegmentPadding = 25;
-segmentedControl.SegmentBackgroundColor = Color.Transparent;
-segmentedControl.VisibleSegmentsCount = 3;
-segmentedControl.DisplayMode = SegmentDisplayMode.Text;
-segmentedControl.ItemsSource = new List<String>
+
+SfSegmentedControl segmentedControl = new SfSegmentedControl(this)
 {
-    "Formals","Casuals","Trendy"
+    SelectionTextColor = Color.ParseColor("#02A0AE"),
+    LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 300),
+    BackColor = Color.Transparent,
+    BorderColor = Color.ParseColor("#3F3F3F"),
+    FontColor = Color.Black,
+    SelectedIndex = 2,
+    FontSize = 15,
+    SegmentPadding = 25,
+    SegmentBackgroundColor = Color.Transparent,
+    VisibleSegmentsCount = 3,
+    DisplayMode = SegmentDisplayMode.Text,
+    ItemsSource = new List<String>
+    {
+        "Formals","Casuals","Trendy"
+    },
+    CornerRadius = 25,
+    SelectionIndicatorSettings = new SelectionIndicatorSettings()
+    {
+        Color = Color.Transparent,
+        Position = SelectionIndicatorPosition.Border
+    }
+
 };
 
 ...
@@ -54,29 +63,33 @@ The segmented control customize the text or icons, or use other built-in customi
 [C#]
 
 ...
-SfSegmentedControl segmentedControl = new SfSegmentedControl(this);
-segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 400);
-segmentedControl.SelectionTextColor = Color.ParseColor("#007CEE");
-segmentedControl.VisibleSegmentsCount = 5;
-segmentedControl.BackColor = Color.White;
-segmentedControl.BorderColor = Color.ParseColor("#929292");
-segmentedControl.SelectedIndex = 0;
-segmentedControl.FontColor = Color.Black;
-segmentedControl.SegmentBackgroundColor = Color.Transparent;
-segmentedControl.ItemsSource = new ObservableCollection<SfSegmentItem>
+SfSegmentedControl segmentedControl = new SfSegmentedControl(this)
 {
-    new SfSegmentItem(){Text="XS",FontColor=Color.ParseColor("#3F3F3F")}, 
-    new SfSegmentItem(){Text="S",FontColor=Color.ParseColor("#3F3F3F")},
-    new SfSegmentItem(){Text="M",FontColor=Color.ParseColor("#3F3F3F")},
-    new SfSegmentItem(){Text="L",FontColor=Color.ParseColor("#3F3F3F")},
-    new SfSegmentItem(){Text="XL",FontColor=Color.ParseColor("#3F3F3F")},
-};
+    SelectionTextColor = Color.White,
+    LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 300),
+    BorderColor = Color.ParseColor("#007CEE"),
+    FontColor = Color.Black,
+    SelectedIndex = 2,
+    FontSize = 15,
+    SegmentBackgroundColor = Color.Transparent,
+    VisibleSegmentsCount = 5,
+    DisplayMode = SegmentDisplayMode.Text,
+    ItemsSource = new ObservableCollection<SfSegmentItem>
+    {
+        new SfSegmentItem(){Text="XS"},
+        new SfSegmentItem(){Text="S"},
+        new SfSegmentItem(){Text="M"},
+        new SfSegmentItem(){Text="L"},
+        new SfSegmentItem(){Text="XL"},
+    },
 
-segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
-{
-    Color = Color.White
-};
+    CornerRadius = 25,
+    SelectionIndicatorSettings = new SelectionIndicatorSettings()
+    {
+        Color = Color.ParseColor("#007CEE")
+    }
 
+};
 ...
 
 {% endhighlight %}
@@ -92,34 +105,33 @@ Custom views or images can be added as segments in the Segmented control.
 [C#]
 
 ...
-SfSegmentedControl segmentedControl = new SfSegmentedControl(this);
-segmentedControl.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 100);
-segmentedControl.BorderColor = Color.Transparent;
-segmentedControl.SegmentHeight = 100;
-segmentedControl.VisibleSegmentsCount = 2;
-segmentedControl.BackColor = Color.Transparent;
-segmentedControl.SegmentPadding = 30;
-Button resetButtonView = new Button(this) { Text = "Reset", TextAlignment = TextAlignment.Center};
+Button resetButtonView = new Button(this) { Text = "Reset", TextAlignment = TextAlignment.Center };
 resetButtonView.SetHeight(50);
 resetButtonView.SetBackgroundColor(Color.White);
 resetButtonView.SetTextColor(Color.Gray);
 
-Button goButtonView = new Button(this) { Text = "Go", TextAlignment = TextAlignment.Center};
+Button goButtonView = new Button(this) { Text = "Go", TextAlignment = TextAlignment.Center };
 goButtonView.SetHeight(50);
 goButtonView.SetTextColor(Color.Gray);
 goButtonView.SetBackgroundColor(Color.White);
 
-segmentedControl.ItemsSource = new ObservableCollection<View>
+SfSegmentedControl segmentedControl = new SfSegmentedControl(this)
 {
-    ResetButtonView,
-    GoButtonView
-};
+    SelectionTextColor = Color.White,
+    LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, 300),
+    BorderColor = Color.Transparent,
+    SegmentHeight = 60,
+    SegmentBorderColor = Color.Gray,
+    SegmentPadding = 10,
+    FontSize = 15,
+    VisibleSegmentsCount = 2,
+    SegmentBackgroundColor = Color.Transparent,
+    ItemsSource = new ObservableCollection<View>
+    {
+        resetButtonView,
+        goButtonView
+    },
 
-segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
-{ 
-    Color = Color.Transparent,
-    Position = SelectionIndicatorPosition.Fill,
-    StrokeThickness = 10
 };
 
 ...
