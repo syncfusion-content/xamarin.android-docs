@@ -1,7 +1,7 @@
 ---
 layout: post
-title: selection indicator in Syncfusion Segmented control for Xamarin.Android
-description: Learn how to handle selection indicator settings in Segmented control
+title: selection indicator in Syncfusion SegmentedControl for Xamarin.Android
+description: Learn how to handle selection indicator settings, selection text color and selection strip in Segmented control
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
@@ -13,16 +13,17 @@ The segmented control indicates the selected item by differentiating it with the
 
 ## Selection text color
 
-The user can change the text color of the Selected item to desired color.The selected item text color can be customized by the `SelectionTextColor` property.
+The user can change the text color of the Selected item to desired color.The selected item text color can be customized by the [`SelectionTextColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SelectionTextColor.html) property.
 
 {% highlight c# %}
 
-segmentedControl.SelectionTextColor = Color.ParseColor("#02A0AE");
+[C#]
 
+segmentedControl.SelectionTextColor = Color.ParseColor("#02A0AE");
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_selectiontextcolor.png)
+![Xamarin.Android SfSegmentedControl selection text color](images/Selection-indicator/Xamarin_Android_selectiontextcolor.png)
 
 ## Selection Strip
 
@@ -38,13 +39,16 @@ The selection strip can be displayed as a line with customizable color and thick
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Position = Position.Top;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Position = Position.Top
+};
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_Top.png)
+![Selection Strip Top](images/Selection-indicator/Xamarin_Android_Top.png)
 
 ##### Bottom
 
@@ -52,13 +56,16 @@ As like Top placement selection strip can be customized by its color and thickne
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Position = Position.Bottom;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Position = Position.Bottom
+};
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_Bottom.png)
+![Selection Strip Bottom](images/Selection-indicator/Xamarin_Android_Bottom.png)
 
 ##### Fill
 
@@ -66,13 +73,16 @@ The selection strip can be placed over a segment item to indicate it is selected
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Position = Position.Fill;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Position = Position.Fill
+};
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_Fill.png)
+![Selection Strip Fill](images/Selection-indicator/Xamarin_Android_Fill.png)
 
 ##### Border
 
@@ -80,41 +90,45 @@ The selection strip can be set as a border to highlight the selected item.
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Position = Position.Border;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Position = Position.Border
+};
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_Border.png)
+![Selection Strip Border](images/Selection-indicator/Xamarin_Android_Border.png)
 
 #### Color
 
-The background color of the selection strip can be customized using `Color` property which is inside SelectionIndicatorSettings class.
+The background color of the selection strip can be customized using [`Color`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentItem~SelectionBackgroundColor.html) property which is inside SelectionIndicatorSettings class.
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.Color = Color.ParseColor("#2C7BBC");
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    Color = Color.ParseColor("#2C7BBC")
+};
 
 {% endhighlight %}
 
-![](images/Selection-indicator/Xamarin_Android_stripcolor.png)
+![Selection Strip Color](images/Selection-indicator/Xamarin_Android_stripcolor.png)
 
 #### Thickness
 
-The border thickness of the selection strip can be customized using `Thickness` property which is inside SelectionIndicatorSettings class
+The border thickness of the selection strip can be customized using [`Thickness`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SegmentBorderThickness.html) property which is inside SelectionIndicatorSettings class
 
 {% highlight c# %}
 
-SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings();
-selectionIndicator.StrokeThickness = 10;
-segmentedControl.SelectionIndicatorSettings = selectionIndicator;
+[C#]
+
+segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
+{
+    StrokeThickness = 10
+};
 
 {% endhighlight %}
-
-
-
-
-
