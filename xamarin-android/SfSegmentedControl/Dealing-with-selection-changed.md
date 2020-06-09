@@ -13,9 +13,9 @@ The segmented control handles the Selection changed when there is a change from 
 
 ## User interface
 
-When users navigate from one item to another, selection is changed, so that the `SelectedIndex` value is updated to the new index of the item. The segmented control provides the `SelectionChanged` event, which is triggered when the selection is changed with the `SelectionChangedEventArgs`.
+When users navigate from one item to another, selection is changed, so that the [`SelectedIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SelectedIndex.html) value is updated to the new index of the item. The segmented control provides the [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SelectionChanged_EV.html) event, which is triggered when the selection is changed with the [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SelectionChangedEventArgs.html).
 
-`Index` - Gets the current index value of the selected item.
+[`Index`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SelectionChangedEventArgs~Index.html) - Gets the current index value of the selected item.
 
 {% highlight c# %}
 
@@ -28,7 +28,7 @@ segmentedControl.SelectionChanged += (object sender, SelectionChangedEventArgs e
 
 ## Selected Index through programmatically.
 
-You can set the default value programmatically for the selection to be placed. The selection gets updated based on the index value given for the `SelectedIndex`. 
+You can set the default value programmatically for the selection to be placed. The selection gets updated based on the index value given for the [`SelectedIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SelectedIndex.html). 
 
 {% highlight c# %}
 
