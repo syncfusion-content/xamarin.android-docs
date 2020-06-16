@@ -89,6 +89,8 @@ Assign the created collection to the [DataSource](https://help.syncfusion.com/cr
 
 ![Inline Events in Xamarin.Android Calendar](images/xamarin.android-calendar-inline_events.png)                                   
 
+N> Instead of the actual month of the event it will display the next month in the calendar. So, If you want to get the exact month of the event, you should provide the previous month with the same date. This is the actual behavior of this property.
+
 ## Customize inline/agenda view appearance
 
 You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~InlineItemLoaded_EV.html) event using in `SfCalendar` and you can get the details of appointment from the `CalendarInlineEvent` property, the custom view can be set to `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineItemLoadedEventArgs.html) argument.
