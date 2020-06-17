@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Events in Syncfusion Calendar control for Xamarin.Android
-description: Learn how to populate events inside a cell and inline events descriptions in Syncfusion Xamarin.Android calendar (SfCalendar) control.
+title: Populating Events in Syncfusion Calendar control for Xamarin.Android 
+description: Learn how to populate events inside a cell and inline events descriptions in the Syncfusion Xamarin.Android calendar (SfCalendar) control.
 platform: Xamarin.Android
 control: Calendar
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Events with Xamarin.Android Calendar (SfCalendar)
 
-`SfCalendar` control has an built-in capability to display the events based on the calendar events collection provided to [DataSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~DataSource.html) property. For events to be listed for a particular day, enable the inline feature in month view cell.
+The `SfCalendar` control has a built-in capability to display the events based on the calendar events collection provided to the [DataSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~DataSource.html) property. For events to be listed for a particular day, enable the inline feature in the month view cell.
 
 The default UI of the inline view with events will be like list of events with a Gray background
 
@@ -89,11 +89,11 @@ Assign the created collection to the [DataSource](https://help.syncfusion.com/cr
 
 ![Inline Events in Xamarin.Android Calendar](images/xamarin.android-calendar-inline_events.png)                                   
 
-N> By default SfCalendar manipulation is based on Java.Util.Calendar date settings. In Android Calendar Month January is start from Zero. So, When you set date you need to pass the actual number compare to Android Calendar.
+N> By default, the SfCalendar manipulation is based on Java.Util.Calendar date settings. In Android Calendar Month, January starts from Zero. So, When you set a date you need to pass the actual number compare to the Android Calendar.
 
 ## Customize inline/agenda view appearance
 
-You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~InlineItemLoaded_EV.html) event using in `SfCalendar` and you can get the details of appointment from the `CalendarInlineEvent` property, the custom view can be set to `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineItemLoadedEventArgs.html) argument.
+You can customize the inline item view by using the [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~InlineItemLoaded_EV.html) event in `SfCalendar` and you can get the details of appointment from the `CalendarInlineEvent` property, the custom view can be set to the `View` property of the [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.InlineItemLoadedEventArgs.html) argument.
 
 {% highlight c# %}
 
