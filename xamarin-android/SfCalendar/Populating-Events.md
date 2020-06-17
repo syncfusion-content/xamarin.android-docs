@@ -89,7 +89,7 @@ Assign the created collection to the [DataSource](https://help.syncfusion.com/cr
 
 ![Inline Events in Xamarin.Android Calendar](images/xamarin.android-calendar-inline_events.png)                                   
 
-N> Instead of the actual month of the event it will display the next month in the calendar. So, If you want to get the exact month of the event, you should provide the previous month with the same date. This is the actual behavior of this property.
+N> By default SfCalendar manipulation is based on Java.Util.Calendar date settings. In Android Calendar Month January is start from Zero. So, When you set date you need to pass the actual number compare to Android Calendar.
 
 ## Customize inline/agenda view appearance
 
