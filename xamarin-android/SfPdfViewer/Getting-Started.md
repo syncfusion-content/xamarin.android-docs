@@ -83,6 +83,57 @@ protected override void OnCreate(Bundle bundle)
 
 Deploying this project in the Android device would display the PDF document and allow you to scroll and zoom through the pages.
 
+## Loading a PDF asynchronously
+
+PDF Viewer allows you to load the PDF document from the specified stream asynchronously using the `LoadDocumentAsync` method. You can also cancel the asynchronous PDF loading when it is in progress.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.LoadDocumentAsync(documentStream, cancellationTokenSource);
+
+{% endhighlight %}
+{% endtabs %}
+
+In the above code sample, `documentStream` is a stream that contains the data of the PDF document and the `cancellationTokenSource` enables you to cancel the asynchronous PDF loading.
+
+### Cancel the asynchronous PDF Loading
+
+You can raise cancel request when the asynchronous load is in progress.
+
+{% tabs %}
+{% highlight c# %}
+
+private void cancelButton_Clicked(object sender, EventArgs e)
+{
+     cancellationTokenSource.Cancel();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+In the above code sample, the `cancellationTokenSource` instance is the same as the one given as the argument when loading the PDF asynchronously. 
+
+N>Calling the above method will not have any effect once the PDF has completely loaded. It will stop the loading process only when it is in progress. 
+
+### Detect the cancellation of the PDF load
+
+The cancellation of the PDF load operation can be detected by registering an event handler on the Token property of the `CancellationTokenSource` instance. 
+
+{% tabs %}
+{% highlight c# %}
+
+EventArgs e = new EventArgs();
+cancellationTokenSource.Token.Register(() => LoadDocumentAsyncCancelled(this, e));
+
+private void LoadDocumentAsyncCancelled(object sender, EventArgs e)
+{
+    // handle the cancellation event
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Unloading PDF document from the Viewer
 
 The SfPdfViewer control allows you to unload the PDF document from the viewer, when the PDF document is not in use anymore. This releases the PDF document and all its associated resources of the application.
