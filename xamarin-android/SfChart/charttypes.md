@@ -1955,14 +1955,14 @@ chart.Series.Add(waterfallSeries);
 
 ## ErrorBar Chart
 
-[`ErrorBarSeries`] are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
+[`ErrorBarSeries`] is graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
 
 ## Type
 
- This type property is used to define the ErrorBar type value in `Fixed`, `Custom`,
+ The [`Type`] property is used to define the error Bar type value in `Fixed`, `Custom`,
 `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].
 
- `Fixed`
+ ### Fixed
 
 {% highlight c# %}
 [C#]
@@ -1982,7 +1982,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
- `Percentage`
+ ### Percentage
 
 {% highlight c# %}
 [C#]
@@ -2002,7 +2002,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
- `Standard Deviation`
+ ### Standard Deviation
 
 {% highlight c# %}
 [C#]
@@ -2022,7 +2022,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-`Standard Errors`
+### Standard Errors
 
 {% highlight c# %}
 [C#]
@@ -2042,9 +2042,9 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-`Custom`
+### Custom
 
-If the Type is Custom, you have to bind HorizontalErrorPath and VerticalErrorPath as shown in the below code snippet.
+If [`Type`] is `Custom`, you have to bind [`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the below code snippet.
 
 {% highlight c# %}
 [C#]
@@ -2066,10 +2066,10 @@ chart.Series.Add(errorBarSeries);
 
 ## Mode
 
-This [`Mode`] property is used to set  `Both`, `Horizontal` and `Vertical`  error value in a particular direction.
+The [`Mode`] property is used to set  `Both`, `Horizontal` and `Vertical`  error value in a particular direction.
 The default value of this property is [`Both`]. 
 
-`Both`
+### Both
 
 To display horizontal and vertical error value, you can set the [`Mode`] as `Both` as shown in the below code example.
 
@@ -2091,9 +2091,9 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-`Horizontal`
+### Horizontal
 
-To display horizontal error value, you can set the [`Mode`] as `Horizontal` as shown in the below code example.
+To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the below code example.
 
 {% highlight c# %}
 [C#]
@@ -2113,9 +2113,9 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-`Vertical`
+### Vertical
 
-To display vertical error value, you can set the [`Mode`] as `Vertical` as shown in the below code example.
+To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the below code example.
 
 {% highlight c# %}
 [C#]
@@ -2139,9 +2139,9 @@ chart.Series.Add(errorBarSeries);
 
 The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set the direction of error bar lines. The default value is [`Both`].
 
-* `Both` - used to set error value in positive and negative direction.
-* `Minus` - used to set error value in negative direction.
-* `Plus` - used to set error value in positive direction.	
+* [`Both`] - used to set error value in positive and negative direction.
+* [`Minus`] - used to set error value in negative direction.
+* [`Plus`] - used to set error value in positive direction.	
 
 {% highlight c# %}
 [C#]
@@ -2165,12 +2165,12 @@ chart.Series.Add(errorBarSeries);
 
 ## Customization
 
-You can customize the [ErrorBarSeries] with the following style properties.
+You can customize the [`ErrorBarSeries`] with the following style properties.
 
-* [`HorizontalLineStyle`] – Customizes the appearance of error bar line style.
-* [`VerticalLineStyle`] – Customizes the appearance of error bar line style.
-* [`HorizontalCapLineStyle`] – Customizes the appearance of error bar cap line style.
-* [`VerticalCapLineStyle`] – Customizes the appearance of error bar cap line style.
+* [`HorizontalLineStyle`] – used to customizes the appearance of horizontal error bar line style.
+* [`VerticalLineStyle`] – used to customizes the appearance of vertical error bar line style.
+* [`HorizontalCapLineStyle`] – used to customizes the appearance of error bar cap line style.
+* [`VerticalCapLineStyle`] – used to customizes the appearance of error bar cap line style.
 
 {% highlight c# %}
 [C#]
@@ -2179,21 +2179,20 @@ You can customize the [ErrorBarSeries] with the following style properties.
  errorBarSeries.HorizontalLineStyle.StrokeColor = Color.Blue;
  errorBarSeries.HorizontalLineStyle.StrokeWidth = 
  4;
+ 
  errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
  errorBarSeries.VerticalLineStyle.StrokeColor = Color.Blue;
- errorBarSeries.VerticalLineStyle.StrokeWidth = 
- 4;
+ errorBarSeries.VerticalLineStyle.StrokeWidth = 4;
+ 
  errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
  errorBarSeries.HorizontalCapLineStyle.StrokeColor = Color.Blue;
- errorBarSeries.HorizontalCapLineStyle.StrokeWidth =
- 4;
- errorBarSeries.HorizontalCapLineStyle.IsVisible = true;
+ errorBarSeries.HorizontalCapLineStyle.StrokeWidth = 4;
+ errorBarSeries.HorizontalCapLineStyle.Visibility = Visibility.Visible;
+ 
  errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
  errorBarSeries.VerticalCapLineStyle.StrokeColor = Color.Blue;
- errorBarSeries.VerticalCapLineStyle.StrokeWidth = 
- 4;
- errorBarSeries.VerticalCapLineStyle.IsVisible = 
- true;
+ errorBarSeries.VerticalCapLineStyle.StrokeWidth = 4;
+ errorBarSeries.VerticalCapLineStyle.Visibility =  Visibility.Visible;
 
 {% endhighlight %}
 
