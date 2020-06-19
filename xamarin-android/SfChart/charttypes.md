@@ -1960,7 +1960,7 @@ chart.Series.Add(waterfallSeries);
 ## Type
 
  The [`Type`] property is used to define the error Bar type value in `Fixed`, `Custom`,
-`Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].
+`Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].You have to set value for [`HorizontalErrorValue`] and [`VerticalErrorValue`] properties for all types except [`Custom`].
 
  ### Fixed
 
@@ -1974,8 +1974,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Both,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -1995,7 +1995,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.Percentage,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	VerticalErrorValue = 8
 };
 
 chart.Series.Add(errorBarSeries);
@@ -2015,7 +2015,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.StandardDeviation,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -2035,7 +2035,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.StandardErrors,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -2083,8 +2083,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Horizontal,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -2105,8 +2105,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Horizontal,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -2127,8 +2127,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Vertical,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -2155,8 +2155,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	Mode = ErrorBarMode.Both,
 	HorizontalDirection = ErrorBarDirection.Both,
     VerticalDirection = ErrorBarDirection.Both,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -2176,16 +2176,16 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
 [C#]
 
  errorBarSeries.HorizontalLineStyle = new   ErrorBarLineStyle();
- errorBarSeries.HorizontalLineStyle.StrokeColor = Color.Blue;
+ errorBarSeries.HorizontalLineStyle.StrokeColor = Color.Cyan;
  errorBarSeries.HorizontalLineStyle.StrokeWidth = 
  4;
  
  errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
- errorBarSeries.VerticalLineStyle.StrokeColor = Color.Blue;
+ errorBarSeries.VerticalLineStyle.StrokeColor = Color.Green;
  errorBarSeries.VerticalLineStyle.StrokeWidth = 4;
  
  errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
- errorBarSeries.HorizontalCapLineStyle.StrokeColor = Color.Blue;
+ errorBarSeries.HorizontalCapLineStyle.StrokeColor = Color.Green;
  errorBarSeries.HorizontalCapLineStyle.StrokeWidth = 4;
  errorBarSeries.HorizontalCapLineStyle.Visibility = Visibility.Visible;
  
