@@ -733,6 +733,8 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
+![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Exclusive.png)
+
 ### Customize the series box mode
 
 The series box plotting mode can be changed using the [`BoxPlotMode`] property of [`BoxAndWhiskerSeries`]. The plotting mode of series can be calculated as follows:
@@ -763,6 +765,8 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
+![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Inclusive.png)
+
 ### ShowMedian
 
 The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`]. The following code demonstrates how to enable the [`ShowMedian`] property.
@@ -784,6 +788,8 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
+
+![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Median.png)
 
 ### SymbolType
 
@@ -808,6 +814,8 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
+
+![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_SymbolType.png)
 
 ## Bar Chart
 
