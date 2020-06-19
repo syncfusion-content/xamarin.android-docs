@@ -2061,12 +2061,11 @@ chart.Series.Add(waterfallSeries);
 
 ## ErrorBar Chart
 
-[`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
+[`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
 
 ## Type
 
- The [`Type`] property is used to define the error Bar type value in `Fixed`, `Custom`,
-`Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`]. For all types, You have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
+ The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, you have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
 
 ### Fixed
 
@@ -2172,8 +2171,7 @@ chart.Series.Add(errorBarSeries);
 
 ## Mode
 
-The error value shown on the chart is based on the [`Mode`] property. It have the values of `Both`, `Horizontal`, and `Vertical`.
-The default value of this property is [`Both`]. 
+The error value shown on the chart is based on the [`Mode`] property. It have the values of `Both`, `Horizontal`, and `Vertical`. The default value of this property is [`Both`]. 
 
 ### Both
 
@@ -2260,7 +2258,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Both,
 	HorizontalDirection = ErrorBarDirection.Both,
-    VerticalDirection = ErrorBarDirection.Both,
+        VerticalDirection = ErrorBarDirection.Both,
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
@@ -2273,18 +2271,17 @@ chart.Series.Add(errorBarSeries);
 
 You can customize the [`ErrorBarSeries`] with the following style properties.
 
-* [`HorizontalLineStyle`] – used to customizes the appearance of horizontal error bar line style.
-* [`VerticalLineStyle`] – used to customizes the appearance of vertical error bar line style.
-* [`HorizontalCapLineStyle`] – used to customizes the appearance of error bar cap line style.
-* [`VerticalCapLineStyle`] – used to customizes the appearance of error bar cap line style.
+* [`HorizontalLineStyle`] – used to customizes the appearance of horizontal error bar line.
+* [`VerticalLineStyle`] – used to customizes the appearance of vertical error bar line.
+* [`HorizontalCapLineStyle`] – used to customizes the appearance of horizontal error bar cap line.
+* [`VerticalCapLineStyle`] – used to customizes the appearance of vertical error bar cap line.
 
 {% highlight c# %}
 [C#]
 
- errorBarSeries.HorizontalLineStyle = new   ErrorBarLineStyle();
+ errorBarSeries.HorizontalLineStyle = new ErrorBarLineStyle();
  errorBarSeries.HorizontalLineStyle.StrokeColor = Color.Cyan;
- errorBarSeries.HorizontalLineStyle.StrokeWidth = 
- 4;
+ errorBarSeries.HorizontalLineStyle.StrokeWidth = 4;
  
  errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
  errorBarSeries.VerticalLineStyle.StrokeColor = Color.Cyan;
