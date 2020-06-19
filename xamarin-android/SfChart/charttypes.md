@@ -2181,7 +2181,7 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
  4;
  
  errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
- errorBarSeries.VerticalLineStyle.StrokeColor = Color.Green;
+ errorBarSeries.VerticalLineStyle.StrokeColor = Color.Cyan;
  errorBarSeries.VerticalLineStyle.StrokeWidth = 4;
  
  errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
@@ -2190,7 +2190,7 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
  errorBarSeries.HorizontalCapLineStyle.Visibility = Visibility.Visible;
  
  errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
- errorBarSeries.VerticalCapLineStyle.StrokeColor = Color.Blue;
+ errorBarSeries.VerticalCapLineStyle.StrokeColor = Color.Green;
  errorBarSeries.VerticalCapLineStyle.StrokeWidth = 4;
  errorBarSeries.VerticalCapLineStyle.Visibility =  Visibility.Visible;
 
