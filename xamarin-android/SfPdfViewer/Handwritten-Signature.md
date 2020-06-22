@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Handwritten signature in Xamarin.Android PDF Viewer | Syncfusion
-description: Learn about Handwritten signatures support in Syncfusion Xamarin.Android Pdf Viewer (SfPdfViewer) control and more details.
+description: Learn about handwritten signatures support in Syncfusion Xamarin.Android Pdf Viewer (SfPdfViewer) control and more details.
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug
