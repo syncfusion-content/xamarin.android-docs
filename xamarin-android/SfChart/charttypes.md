@@ -2058,3 +2058,244 @@ WaterfallSeries waterfallSeries = new WaterfallSeries()
 chart.Series.Add(waterfallSeries);
 
 {% endhighlight %}
+
+## ErrorBar Chart
+
+[`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
+
+## Type
+
+ The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, you have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
+
+### Fixed
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+### Percentage
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Percentage,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 1,
+	VerticalErrorValue = 8
+};
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+### Standard Deviation
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.StandardDeviation,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 1,
+	VerticalErrorValue = 4
+};
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+### Standard Errors
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.StandardErrors,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 1,
+	VerticalErrorValue = 4
+};
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+### Custom
+
+If [`Type`] is `Custom`, you have to set values for[`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the following code snippet.
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Custom,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorPath = "HorizontalErrorValues",
+	VerticalErrorValue = "VerticalErrorValues"
+};
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+## Mode
+
+The error value shown on the chart is based on the [`Mode`] property. It have the values of `Both`, `Horizontal`, and `Vertical`. The default value of this property is [`Both`]. 
+
+### Both
+
+To display horizontal and vertical error values, you can set the [`Mode`] as `Both` as shown in the following code.
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Horizontal,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+### Horizontal
+
+To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the following code.
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Horizontal,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+### Vertical
+
+To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the following code.
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Vertical,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+## Direction
+
+The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set the direction of error bar lines. The default value is [`Both`].
+
+* [`Both`] - used to set error value in positive and negative directions.
+* [`Minus`] - used to set error value in a negative direction.
+* [`Plus`] - used to set error value in a positive direction.	
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Both,
+	HorizontalDirection = ErrorBarDirection.Both,
+        VerticalDirection = ErrorBarDirection.Both,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+## Customization
+
+You can customize the [`ErrorBarSeries`] with the following style properties.
+
+* [`HorizontalLineStyle`] – used to customizes the appearance of horizontal error bar line.
+* [`VerticalLineStyle`] – used to customizes the appearance of vertical error bar line.
+* [`HorizontalCapLineStyle`] – used to customizes the appearance of horizontal error bar cap line.
+* [`VerticalCapLineStyle`] – used to customizes the appearance of vertical error bar cap line.
+
+{% highlight c# %}
+[C#]
+
+ errorBarSeries.HorizontalLineStyle = new ErrorBarLineStyle();
+ errorBarSeries.HorizontalLineStyle.StrokeColor = Color.Cyan;
+ errorBarSeries.HorizontalLineStyle.StrokeWidth = 4;
+ 
+ errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
+ errorBarSeries.VerticalLineStyle.StrokeColor = Color.Cyan;
+ errorBarSeries.VerticalLineStyle.StrokeWidth = 4;
+ 
+ errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
+ errorBarSeries.HorizontalCapLineStyle.StrokeColor = Color.Green;
+ errorBarSeries.HorizontalCapLineStyle.StrokeWidth = 4;
+ errorBarSeries.HorizontalCapLineStyle.Visibility = Visibility.Visible;
+ 
+ errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
+ errorBarSeries.VerticalCapLineStyle.StrokeColor = Color.Green;
+ errorBarSeries.VerticalCapLineStyle.StrokeWidth = 4;
+ errorBarSeries.VerticalCapLineStyle.Visibility =  Visibility.Visible;
+
+{% endhighlight %}
+
