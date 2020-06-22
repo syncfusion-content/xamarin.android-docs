@@ -727,7 +727,8 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 { 
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
-	YBindingPath = "Ages" 
+	YBindingPath = "Ages",
+	ShowMedian = true
 };
 chart.Series.Add(boxPlotSeries);
 
@@ -759,6 +760,7 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
 	YBindingPath = "Ages",
+	ShowMedian = true,
 	BoxPlotMode = BoxPlotMode.Inclusive
 };
 chart.Series.Add(boxPlotSeries);
@@ -769,7 +771,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### ShowMedian
 
-The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`]. The following code demonstrates how to enable the [`ShowMedian`] property.
+The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`].By default,[`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
 
 {% highlight c# %}
 
@@ -809,6 +811,7 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 	ItemsSource = Data,
 	XBindingPath = "Department",
 	YBindingPath = "Ages",
+	ShowMedian = true,
 	SymbolType = ChartSymbolType.Cross
 } 
 chart.Series.Add(boxPlotSeries);
