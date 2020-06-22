@@ -734,7 +734,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Exclusive.png)
+![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Exclusive_Median.png)
 
 ### Customize the series box mode
 
@@ -744,7 +744,7 @@ The series box plotting mode can be changed using the [`BoxPlotMode`] property o
 * [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
 * [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
 
-By default,[`BoxPlotMode`] value is [`Exclusive`].
+By default, [`BoxPlotMode`] value is [`Exclusive`].
 
 The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
 
@@ -767,7 +767,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Inclusive.png)
+![BoxPlotMode support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Inclusive.png)
 
 ### ShowMedian
 
@@ -791,7 +791,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Median.png)
+![ShowMedian support for BoxAndWhisker series in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Exclusive_Median.png)
 
 ### SymbolType
 
@@ -818,7 +818,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_SymbolType.png)
+![Outlier for BoxAndWhisker series in Xamarin.Ansrois Chart](charttypes_images/BOxAndWhisker_SymbolType.png)
 
 ## Bar Chart
 
