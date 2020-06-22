@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Freetext annotations in Xamarin.Android PDF Viewer | Syncfusion
-description: PDF Viewer Xamarin.Android allows user to add Freetext annotation and provides options to edit or remove an existing Freetext annotation in the PDF file.
+description: Learn about Free text annotations support in Syncfusion Xamarin.Android Pdf Viewer (SfPdfViewer) control and more details.
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug
