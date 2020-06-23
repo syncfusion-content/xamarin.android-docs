@@ -2063,6 +2063,40 @@ chart.Series.Add(waterfallSeries);
 
 [`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
 
+{% highlight c# %}
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+ScatterSeries scatterSeries = new ScatterSeries ()
+{ 
+	ItemsSource = Data, 	
+	ScatterHeight = 20, 
+	ScatterWidth = 20, 
+	ShapeType = ChartScatterShapeType.Ellipse,
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
+scatterSeries.ColorModel.Palette = ChartColorPalette.Natural;
+chart.Series.Add(scatterSeries);
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![Error Bar chart type in Xamarin.Android](charttypes_images/ErrorBar.png)
+
 ## Type
 
  The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, you have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
@@ -2082,10 +2116,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarType support in Xamarin.Android Chart](charttypes_images/ErrorBar_Fixed.png)
 
 ### Percentage
 
@@ -2102,10 +2137,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 8
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarType support in Xamarin.Android Chart](charttypes_images/ErrorBar_Percentage.png)
 
 ### Standard Deviation
 
@@ -2122,10 +2158,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarType support in Xamarin.Android Chart](charttypes_images/ErrorBar_StandardDeviation.png)
 
 ### Standard Errors
 
@@ -2142,10 +2179,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarType support in Xamarin.Android Chart](charttypes_images/ErrorBar_StandardErrors.png)
 
 ### Custom
 
@@ -2164,10 +2202,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorPath = "HorizontalErrorValues",
 	VerticalErrorValue = "VerticalErrorValues"
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarType support in Xamarin.Android Chart](charttypes_images/ErrorBar_Custom.png)
 
 ## Mode
 
@@ -2190,10 +2229,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarMode support in Xamarin.Android Chart](charttypes_images/ErrorBar_Mode_Both.png)
 
 ### Horizontal
 
@@ -2212,10 +2252,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarMode support in Xamarin.Android Chart](charttypes_images/ErrorBar_Mode_Horizontal.png)
 
 ### Vertical
 
@@ -2234,10 +2275,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarMode support in Xamarin.Android Chart](charttypes_images/ErrorBar_Mode_Vertical.png)
 
 ## Direction
 
@@ -2262,10 +2304,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarDirection support in Xamarin.Android Chart](charttypes_images/ErrorBar_Direction.png)
 
 ## Customization
 
@@ -2299,3 +2342,4 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
 
 {% endhighlight %}
 
+![Customizing the appearance of ErrorBarSeries in Xamarin.Android Chart](ChartTypes_images/ErrorBar_LineStyle.png)
