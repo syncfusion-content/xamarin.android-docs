@@ -734,7 +734,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Exclusive_Median.png)
+![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
 
 ### Customize the series box mode
 
@@ -767,7 +767,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxPlotMode support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Inclusive.png)
+![BoxPlotMode support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Inclusive.png)
 
 ### ShowMedian
 
@@ -791,7 +791,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![ShowMedian support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_Exclusive_Median.png)
+![ShowMedian support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
 
 ### SymbolType
 
@@ -818,7 +818,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![Outlier for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BOxAndWhisker_SymbolType.png)
+![Outlier for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_SymbolType.png)
 
 ## Bar Chart
 
