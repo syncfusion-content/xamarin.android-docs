@@ -2071,11 +2071,11 @@ SfChart chart = new SfChart();
 
 ScatterSeries scatterSeries = new ScatterSeries ()
 { 
-	ItemsSource = Data, 	
+	ItemsSource = CarDistributionDetails, 	
 	ScatterHeight = 20, 
 	ScatterWidth = 20, 
 	ShapeType = ChartScatterShapeType.Ellipse,
-	XBindingPath = "Year", 
+	XBindingPath = "Country", 
 	YBindingPath = "Value" 
 };
 scatterSeries.ColorModel.Palette = ChartColorPalette.Natural;
