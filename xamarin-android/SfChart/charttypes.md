@@ -2095,7 +2095,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![Error Bar chart type in Xamarin.Android](charttypes_images/ErrorBar.png)
+![ErrorBar chart type in Xamarin.Android](charttypes_images/ErrorBar.png)
 
 ## Type
 
