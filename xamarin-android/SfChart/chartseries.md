@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Multiple series in Syncfusion.Xamarin.Android chart
+title:  Multiple series | Syncfusion | Xamarin.Android | SfChart
 description: Learn about the how to render the multiple series, combination series, transpose series, and grouping stacked series.
 platform: Xamarin.Android
 control: Chart
