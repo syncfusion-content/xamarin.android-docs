@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Multiple chart series
-description: Learn how to render different types of series in a chart.
+title:  Multiple series | Syncfusion | Xamarin.Android | SfChart
+description: Learn about the how to render the multiple series, combination series, transpose series, and grouping stacked series.
 platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
 
-# Chart Series
+# Chart Series in Xamarin.Android
 
 ## Multiple Series
 
@@ -239,6 +239,7 @@ The following methods are available in [`ChartSeries`](https://help.syncfusion.c
 * [`FindNearestChartPoint(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~FindNearestChartPoint.html) - Gets the nearest data point for a particular touch point. 
 * [`FindNearestChartPoints(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~FindNearestChartPoints.html) - Gets the list of nearest data points for a particular touch point.
 * [`CreateSegment()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~CreateSegment.html) and [`CreateSegments()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~CreateSegments.html) - Overriding these methods, we can customize the rendering of segments.
+* [`Animate()`] - Animate is a built-in method and a short way to play animation on a chart series.
 
 ## Adding separate view for series
 
