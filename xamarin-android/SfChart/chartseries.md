@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Multiple chart series
-description: Learn how to render different types of series in a chart.
+title:  Multiple chart series | Syncfusion
+description: Learn how to render different types of series in a Syncfusion chart with code examples and reference images.
 platform: Xamarin.Android
 control: Chart
 documentation: ug
----
+--- 
 
-# Chart Series
+# SfChart Series Types
 
 ## Multiple Series
 
