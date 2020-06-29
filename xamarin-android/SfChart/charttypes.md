@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Types
+# Types of Syncfusion SfChart
 
 ## Line Chart
 
