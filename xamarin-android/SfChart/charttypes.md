@@ -2067,7 +2067,6 @@ chart.Series.Add(boxPlotSeries);
 
 ![Outlier for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_SymbolType.png)
 
-
 ## Error Bar Chart
 
 [`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
