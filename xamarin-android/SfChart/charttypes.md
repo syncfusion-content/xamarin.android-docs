@@ -706,120 +706,6 @@ chart.Series.Add(stackingColumn100Series3);
 
 ![StackingColumn100 chart type in Xamarin.Android Chart](charttypes_images/charttypes_img9.png)
 
-## BoxAndWhisker Chart
-
-BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the series collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the appearance.
-
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) - used to change the color of the series.
-* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) - used to change the stroke width of the series.
-* [`StrokeColor`] - used to change the stroke color of the series.
-* [`Spacing`] - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
-* [`Width`] - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
-
-{% highlight c# %}
-
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries() 
-{ 
-	ItemsSource = Data, 
-	XBindingPath = "Department", 
-	YBindingPath = "Ages",
-	ShowMedian = true
-};
-chart.Series.Add(boxPlotSeries);
-
-{% endhighlight %}
-
-![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
-
-### Customize the series box mode
-
-The series box plotting mode can be changed using the [`BoxPlotMode`] property of [`BoxAndWhiskerSeries`]. The plotting mode of series can be calculated as follows:
-
-* [`Exclusive`] - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
-* [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
-* [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
-
-By default, [`BoxPlotMode`] value is [`Exclusive`].
-
-The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
-
-{% highlight c# %}
-
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries() 
-{ 
-	ItemsSource = Data, 
-	XBindingPath = "Department", 
-	YBindingPath = "Ages",
-	ShowMedian = true,
-	BoxPlotMode = BoxPlotMode.Inclusive
-};
-chart.Series.Add(boxPlotSeries);
-
-{% endhighlight %}
-
-![BoxPlotMode support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Inclusive.png)
-
-### ShowMedian
-
-The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`]. By default, [`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
-
-{% highlight c# %}
-
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
-{
-	ItemsSource = Data,
-	XBindingPath = "Department",
-	YBindingPath = "Ages",
-	ShowMedian = true
-} 
-chart.Series.Add(boxPlotSeries);
-
-{% endhighlight %}
-
-![ShowMedian support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
-
-### SymbolType
-
-The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`] value is [`Ellipse`].
-
-The following code shows how to set the [`SymbolType`] value as [`Cross`].
-
-{% highlight c# %}
-
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
-{
-	ItemsSource = Data,
-	XBindingPath = "Department",
-	YBindingPath = "Ages",
-	ShowMedian = true,
-	SymbolType = ChartSymbolType.Cross
-} 
-chart.Series.Add(boxPlotSeries);
-
-{% endhighlight %}
-
-![Outlier for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_SymbolType.png)
-
 ## Bar Chart
 
 To render a bar chart, create an instance of [`BarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BarSeries.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to configure the bar segment.
@@ -2067,7 +1953,121 @@ chart.Series.Add(waterfallSeries);
 
 {% endhighlight %}
 
-## ErrorBar Chart
+## Box and Whisker Chart
+
+BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the series collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) - used to change the color of the series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) - used to change the stroke width of the series.
+* [`StrokeColor`] - used to change the stroke color of the series.
+* [`Spacing`] - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
+* [`Width`] - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Department", 
+    YBindingPath = "Ages",
+    ShowMedian = true
+};
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
+
+### Customize the series box mode
+
+The series box plotting mode can be changed using the [`BoxPlotMode`] property of [`BoxAndWhiskerSeries`]. The plotting mode of series can be calculated as follows:
+
+* [`Exclusive`] - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
+* [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
+* [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
+
+By default, [`BoxPlotMode`] value is [`Exclusive`].
+
+The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Department", 
+    YBindingPath = "Ages",
+    ShowMedian = true,
+    BoxPlotMode = BoxPlotMode.Inclusive
+};
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![BoxPlotMode support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Inclusive.png)
+
+### ShowMedian
+
+The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`]. By default, [`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Department",
+    YBindingPath = "Ages",
+    ShowMedian = true
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![ShowMedian support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
+
+### SymbolType
+
+The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`] value is [`Ellipse`].
+
+The following code shows how to set the [`SymbolType`] value as [`Cross`].
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Department",
+    YBindingPath = "Ages",
+    ShowMedian = true,
+    SymbolType = ChartSymbolType.Cross
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![Outlier for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_SymbolType.png)
+
+## Error Bar Chart
 
 [`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
 
@@ -2105,11 +2105,11 @@ chart.Series.Add(errorBarSeries);
 
 ![ErrorBar chart type in Xamarin.Android](charttypes_images/ErrorBar.png)
 
-## Type
+### Type
 
  The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, you have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
 
-### Fixed
+#### Fixed
 
 {% highlight c# %}
 [C#]
@@ -2130,7 +2130,7 @@ chart.Series.Add(errorBarSeries);
 
 ![Fixed type for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Fixed.png)
 
-### Percentage
+#### Percentage
 
 {% highlight c# %}
 [C#]
@@ -2151,7 +2151,7 @@ chart.Series.Add(errorBarSeries);
 
 ![Percentage type for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Percentage.png)
 
-### Standard Deviation
+#### Standard Deviation
 
 {% highlight c# %}
 [C#]
@@ -2172,7 +2172,7 @@ chart.Series.Add(errorBarSeries);
 
 ![StandardDeviation type for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_StandardDeviation.png)
 
-### Standard Errors
+#### Standard Errors
 
 {% highlight c# %}
 [C#]
@@ -2193,7 +2193,7 @@ chart.Series.Add(errorBarSeries);
 
 ![StandardErrors type For ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_StandardErrors.png)
 
-### Custom
+#### Custom
 
 If [`Type`] is `Custom`, you have to set values for[`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the following code snippet.
 
@@ -2216,11 +2216,11 @@ chart.Series.Add(errorBarSeries);
 
 ![Custom type for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Custom.png)
 
-## Mode
+### Mode
 
 The error value shown on the chart is based on the [`Mode`] property. It have the values of `Both`, `Horizontal`, and `Vertical`. The default value of this property is [`Both`]. 
 
-### Both
+#### Both
 
 To display horizontal and vertical error values, you can set the [`Mode`] as `Both` as shown in the following code.
 
@@ -2243,7 +2243,7 @@ chart.Series.Add(errorBarSeries);
 
 ![ErrorBarMode support for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Mode_Both.png)
 
-### Horizontal
+#### Horizontal
 
 To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the following code.
 
@@ -2266,7 +2266,7 @@ chart.Series.Add(errorBarSeries);
 
 ![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Mode_Horizontal.png)
 
-### Vertical
+#### Vertical
 
 To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the following code.
 
@@ -2289,7 +2289,7 @@ chart.Series.Add(errorBarSeries);
 
 ![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Mode_Vertical.png)
 
-## Direction
+### Direction
 
 The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set the direction of error bar lines. The default value is [`Both`].
 
@@ -2318,7 +2318,7 @@ chart.Series.Add(errorBarSeries);
 
 ![ErrorBarDirection support for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Direction.png)
 
-## Customization
+### Customization
 
 You can customize the [`ErrorBarSeries`] with the following style properties.
 
