@@ -1951,4 +1951,405 @@ WaterfallSeries waterfallSeries = new WaterfallSeries()
 
 chart.Series.Add(waterfallSeries);
 
+
 {% endhighlight %}
+
+## Box and Whisker Chart
+
+BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the series collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) - used to change the color of the series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) - used to change the stroke width of the series.
+* [`StrokeColor`] - used to change the stroke color of the series.
+* [`Spacing`] - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
+* [`Width`] - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Department", 
+    YBindingPath = "Ages",
+    ShowMedian = true
+};
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![BoxAndWhisker chart type in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
+
+### Customize the series box mode
+
+The series box plotting mode can be changed using the [`BoxPlotMode`] property of [`BoxAndWhiskerSeries`]. The plotting mode of series can be calculated as follows:
+
+* [`Exclusive`] - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
+* [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
+* [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
+
+By default, [`BoxPlotMode`] value is [`Exclusive`].
+
+The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Department", 
+    YBindingPath = "Ages",
+    ShowMedian = true,
+    BoxPlotMode = BoxPlotMode.Inclusive
+};
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![BoxPlotMode support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Inclusive.png)
+
+### ShowMedian
+
+The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`]. By default, [`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Department",
+    YBindingPath = "Ages",
+    ShowMedian = true
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![ShowMedian support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
+
+### SymbolType
+
+The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`] value is [`Ellipse`].
+
+The following code shows how to set the [`SymbolType`] value as [`Cross`].
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Department",
+    YBindingPath = "Ages",
+    ShowMedian = true,
+    SymbolType = ChartSymbolType.Cross
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![Outlier for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/BoxAndWhisker_SymbolType.png)
+
+## Error Bar Chart
+
+[`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
+
+{% highlight c# %}
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+ScatterSeries scatterSeries = new ScatterSeries ()
+{ 
+	ItemsSource = CarDistributionDetails, 	
+	ScatterHeight = 20, 
+	ScatterWidth = 20, 
+	ShapeType = ChartScatterShapeType.Ellipse,
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
+};
+scatterSeries.ColorModel.Palette = ChartColorPalette.Natural;
+chart.Series.Add(scatterSeries);
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![ErrorBar chart type in Xamarin.Android](charttypes_images/ErrorBar.png)
+
+### Type
+
+ The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, you have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
+
+#### Fixed
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![Fixed type for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Fixed.png)
+
+#### Percentage
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Percentage,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 1,
+	VerticalErrorValue = 8
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![Percentage type for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Percentage.png)
+
+#### Standard Deviation
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.StandardDeviation,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 1,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![StandardDeviation type for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_StandardDeviation.png)
+
+#### Standard Errors
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.StandardErrors,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 1,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![StandardErrors type For ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_StandardErrors.png)
+
+#### Custom
+
+If [`Type`] is `Custom`, you have to set values for[`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the following code snippet.
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Custom,
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorPath = "HorizontalErrorValues",
+	VerticalErrorValue = "VerticalErrorValues"
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![Custom type for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Custom.png)
+
+### Mode
+
+The error value shown on the chart is based on the [`Mode`] property. It have the values of `Both`, `Horizontal`, and `Vertical`. The default value of this property is [`Both`]. 
+
+#### Both
+
+To display horizontal and vertical error values, you can set the [`Mode`] as `Both` as shown in the following code.
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Horizontal,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![ErrorBarMode support for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Mode_Both.png)
+
+#### Horizontal
+
+To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the following code.
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Horizontal,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Mode_Horizontal.png)
+
+#### Vertical
+
+To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the following code.
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Vertical,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Mode_Vertical.png)
+
+### Direction
+
+The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set the direction of error bar lines. The default value is [`Both`].
+
+* [`Both`] - used to set error value in positive and negative directions.
+* [`Minus`] - used to set error value in a negative direction.
+* [`Plus`] - used to set error value in a positive direction.	
+
+{% highlight c# %}
+[C#]
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Both,
+	HorizontalDirection = ErrorBarDirection.Both,
+        VerticalDirection = ErrorBarDirection.Both,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+![ErrorBarDirection support for ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_Direction.png)
+
+### Customization
+
+You can customize the [`ErrorBarSeries`] with the following style properties.
+
+* [`HorizontalLineStyle`] – used to customizes the appearance of horizontal error bar line.
+* [`VerticalLineStyle`] – used to customizes the appearance of vertical error bar line.
+* [`HorizontalCapLineStyle`] – used to customizes the appearance of horizontal error bar cap line.
+* [`VerticalCapLineStyle`] – used to customizes the appearance of vertical error bar cap line.
+
+{% highlight c# %}
+[C#]
+
+ errorBarSeries.HorizontalLineStyle = new ErrorBarLineStyle();
+ errorBarSeries.HorizontalLineStyle.StrokeColor = Color.Cyan;
+ errorBarSeries.HorizontalLineStyle.StrokeWidth = 4;
+ 
+ errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
+ errorBarSeries.VerticalLineStyle.StrokeColor = Color.Cyan;
+ errorBarSeries.VerticalLineStyle.StrokeWidth = 4;
+ 
+ errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
+ errorBarSeries.HorizontalCapLineStyle.StrokeColor = Color.Green;
+ errorBarSeries.HorizontalCapLineStyle.StrokeWidth = 4;
+ errorBarSeries.HorizontalCapLineStyle.Visibility = Visibility.Visible;
+ 
+ errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
+ errorBarSeries.VerticalCapLineStyle.StrokeColor = Color.Green;
+ errorBarSeries.VerticalCapLineStyle.StrokeWidth = 4;
+ errorBarSeries.VerticalCapLineStyle.Visibility =  Visibility.Visible;
+
+{% endhighlight %}
+
+![Customization of ErrorBarSeries in Xamarin.Android Chart](ChartTypes_images/ErrorBar_LineStyle.png)
+
