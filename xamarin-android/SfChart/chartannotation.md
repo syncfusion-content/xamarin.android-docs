@@ -639,11 +639,11 @@ ViewAnnotation annotation = new ViewAnnotation()
     VerticalAlignment = ChartAnnotationAlignment.Start
 };
 
-ImageView imageView = new ImageView(con);
+ImageView imageView = new ImageView(this);
 
 imageView.SetImageResource(Resource.Drawable.Graduate);
 
-LinearLayout linearLayout = new LinearLayout(con);
+LinearLayout linearLayout = new LinearLayout(this);
 
 LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
 
