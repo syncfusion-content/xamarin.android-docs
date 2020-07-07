@@ -142,13 +142,13 @@ Create a view model class with ContactsInfo collection property, initialized wit
 
 {% highlight c# %}
 
-  public class ContactInfo
+    public class ContactInfo
     {
         public string Name { get; set; }
         public long Number { get; set; }
     }
     
-   public class ContactsViewModel
+    public class ContactsViewModel
     {
         private ObservableCollection<ContactInfo> contactList;
 
@@ -190,8 +190,9 @@ listView.SetAdapter(tabContentListAdapter);
 `TabContentListAdapter` contains `GetView` method for customize the appearance of each item in the listview. 
 
 {% highlight c# %}
+
      public class TabContentListAdapter : BaseAdapter
-    {
+     {
         Context temp;
         private ObservableCollection<ContactInfo> contactList;
         ObservableCollection<ContactInfo> ContactList = new ObservableCollection<ContactInfo>();
