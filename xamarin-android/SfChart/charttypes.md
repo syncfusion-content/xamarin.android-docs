@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Types in Xamarin.Android
+# Types of Syncfusion SfChart
 
 ## Line Chart
 
@@ -1951,6 +1951,7 @@ WaterfallSeries waterfallSeries = new WaterfallSeries()
 
 chart.Series.Add(waterfallSeries);
 
+
 {% endhighlight %}
 
 ## Box and Whisker Chart
@@ -2351,3 +2352,4 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
 {% endhighlight %}
 
 ![Customization of ErrorBarSeries in Xamarin.Android Chart](ChartTypes_images/ErrorBar_LineStyle.png)
+
