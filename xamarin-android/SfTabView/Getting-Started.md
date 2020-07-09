@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion TabView control for Xamarin.Android 
-description: A quick tour to initial users about getting started page on Syncfusion TabView control for Xamarin.Android platform
+description: A quick tour to initial users on Syncfusion TabView control for Xamarin.Android platform
 platform: Xamarin.Android
 control: TabView
 documentation: ug
 ---
 
-# Getting Started with Syncfusion TabView control for Xamarin.Android 
+# Getting Started
 
 This section provides a quick overview for working with the tab view control for Xamarin.Android. Walk through the entire process of creating a real-world application with tab view.
 
@@ -66,13 +66,14 @@ Set the tab view control as content view in the `OnCreate` method.
 {% tabs %}
 
 {% highlight c# %}
-    private SfTabView tabView;
-    protected override void OnCreate(Bundle savedInstanceState)
-    {
-        base.OnCreate(savedInstanceState);
-        tabView = new SfTabView(this.ApplicationContext);
-        SetContentView(tabView);
-    }
+
+private SfTabView tabView;
+protected override void OnCreate(Bundle savedInstanceState)
+{
+base.OnCreate(savedInstanceState);
+tabView = new SfTabView(this.ApplicationContext);
+SetContentView(tabView);
+}
 		
 {% endhighlight %}
 
@@ -142,34 +143,33 @@ Create a view model class with ContactsInfo collection property, initialized wit
 
 {% highlight c# %}
 
-    public class ContactInfo
-    {
-        public string Name { get; set; }
-        public long Number { get; set; }
-    }
-    
-    public class ContactsViewModel
-    {
-        private ObservableCollection<ContactInfo> contactList;
+public class ContactInfo
+{
+public string Name { get; set; }
+public long Number { get; set; }
+}
 
-        public ObservableCollection<ContactInfo> ContactList
-        {
-            get { return contactList; }
-            set { contactList = value; }
-        }
+public class ContactsViewModel
+{
+private ObservableCollection<ContactInfo> contactList;
 
-        public ContactsViewModel()
-        {
-            ContactList = new ObservableCollection<ContactInfo>();
-            ContactList.Add(new ContactInfo { Name = "Aaron", Number = 7363750 });
-            ContactList.Add(new ContactInfo { Name = "Adam", Number = 7323250 });
-            ContactList.Add(new ContactInfo { Name = "Adrian", Number = 7239121 });
-            ContactList.Add(new ContactInfo { Name = "Alwin", Number = 2329823 });
-            ContactList.Add(new ContactInfo { Name = "Alex", Number = 8013481 });
-            ContactList.Add(new ContactInfo { Name = "Alexander", Number = 7872329 });
-            ContactList.Add(new ContactInfo { Name = "Barry", Number = 7317750 });
-        }
-    }
+public ObservableCollection<ContactInfo> ContactList
+{
+get { return contactList; }
+set { contactList = value; }
+}
+public ContactsViewModel()
+{
+ContactList = new ObservableCollection<ContactInfo>();
+ContactList.Add(new ContactInfo{Name = "Aaron",Number = 7363750});
+ContactList.Add(new ContactInfo { Name = "Adam", Number = 7323250 });
+ContactList.Add(new ContactInfo { Name = "Adrian", Number = 7239121 });
+ContactList.Add(new ContactInfo { Name = "Alwin", Number = 2329823 });
+ContactList.Add(new ContactInfo { Name = "Alex", Number = 8013481 });
+ContactList.Add(new ContactInfo { Name = "Alexander", Number = 7872329 });
+ContactList.Add(new ContactInfo { Name = "Barry", Number = 7317750 });
+}
+}
 
 {% endhighlight %}
 
@@ -184,66 +184,6 @@ var listView = new ListView(Context);
 TabContentListAdapter tabContentListAdapter = new TabContentListAdapter(data);
 listView.SetAdapter(tabContentListAdapter);
     
-{% endhighlight %}
-
-
-`TabContentListAdapter` contains `GetView` method for customize the appearance of each item in the listview. 
-
-{% highlight c# %}
-
-     public class TabContentListAdapter : BaseAdapter
-     {
-        Context temp;
-        private ObservableCollection<ContactInfo> contactList;
-        ObservableCollection<ContactInfo> ContactList = new ObservableCollection<ContactInfo>();
-
-        public override int Count
-        {
-            get { return 7; }
-        }
-
-        public TabContentListAdapter(Context context)
-        {
-            temp = context;
-            ContactList.Add(new ContactInfo { Name = "Aaron", Number = 7363750 });
-            ContactList.Add(new ContactInfo { Name = "Adam", Number = 7323250 });
-            ContactList.Add(new ContactInfo { Name = "Adrian", Number = 7239121 });
-            ContactList.Add(new ContactInfo { Name = "Alwin", Number = 2329823 });
-            ContactList.Add(new ContactInfo { Name = "Alex", Number = 8013481 });
-            ContactList.Add(new ContactInfo { Name = "Alexander", Number = 7872329 });
-            ContactList.Add(new ContactInfo { Name = "Barry", Number = 7317750 });
-        }
-
-
-        public override View GetView(int position, View convertView, ViewGroup parent)
-        {
-            var mainlayout = new LinearLayout(temp);
-            mainlayout.Orientation = Orientation.Vertical;
-            TextView text = new TextView(temp);
-            text.SetBackgroundColor(Color.Transparent);
-            text.Text = ContactList[position].Name;
-            text.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
-            TextView text1 = new TextView(temp);
-            text1.Text = ContactList[position].Number.ToString();
-            text1.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
-            text1.SetBackgroundColor(Color.Transparent);
-            mainlayout.AddView(text);
-            mainlayout.AddView(text1);
-            mainlayout.SetMinimumHeight(200);
-            return mainlayout;
-        }
-
-        public override Object GetItem(int position)
-        {
-            return null;
-        }
-
-        public override long GetItemId(int position)
-        {
-            return -1;
-        }
-    }
-
 {% endhighlight %}
 
 Similarly, content region for other tabs can be configured in the same way.
