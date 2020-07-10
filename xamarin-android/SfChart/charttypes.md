@@ -2108,7 +2108,7 @@ chart.Series.Add(errorBarSeries);
 
 ### Type
 
- The [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Type.html) property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarType.html). For all types, you have to set the values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~HorizontalErrorValue.html) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~VerticalErrorValue.html) except [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarType.html).
+ The [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Type.html) property is used to define the error bar type value in Fixed, Custom, Percentage, StandardDeviation, and StandardErrors. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarType.html). For all types, you have to set the values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~HorizontalErrorValue.html) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~VerticalErrorValue.html) except [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarType.html).
 
 #### Fixed
 
@@ -2196,7 +2196,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Custom
 
-If [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Type.html) is `Custom`, you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~HorizontalErrorPath.html) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~VerticalErrorPath.html) as shown in the following code snippet.
+If [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Type.html) is [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarType.html), you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~HorizontalErrorPath.html) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~VerticalErrorPath.html) as shown in the following code snippet.
 
 {% highlight c# %}
 [C#]
@@ -2219,11 +2219,11 @@ chart.Series.Add(errorBarSeries);
 
 ### Mode
 
-The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) property. It have the values of `Both`, `Horizontal`, and `Vertical`. The default value of this property is [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarMode.html). 
+The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) property. It have the values of [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarMode.html), [`Horizontal`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarMode.html), and [`Vertical`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarMode.html). The default value of this property is [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarMode.html). 
 
 #### Both
 
-To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) as `Both` as shown in the following code.
+To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) as [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarMode.html) as shown in the following code.
 
 {% highlight c# %}
 [C#]
@@ -2246,7 +2246,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Horizontal
 
-To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) as `Horizontal` as shown in the following code.
+To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) as [`Horizontal`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarMode.html) as shown in the following code.
 
 {% highlight c# %}
 [C#]
@@ -2269,7 +2269,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Vertical
 
-To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) as `Vertical` as shown in the following code.
+To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) as [`Vertical`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarMode.html) as shown in the following code.
 
 {% highlight c# %}
 [C#]
@@ -2351,5 +2351,5 @@ You can customize the [`ErrorBarSeries`](https://help.syncfusion.com/cr/cref_fil
 
 {% endhighlight %}
 
-![Customization of ErrorBarSeries in Xamarin.Android Chart](ChartTypes_images/ErrorBar_LineStyle.png)
+![Customization of ErrorBarSeries in Xamarin.Android Chart](charttypes_images/ErrorBar_LineStyle.png)
 
