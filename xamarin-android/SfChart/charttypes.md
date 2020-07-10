@@ -1956,13 +1956,13 @@ chart.Series.Add(waterfallSeries);
 
 ## Box and Whisker Chart
 
-BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the series collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the appearance.
+BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries.html) and add to the series collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Color.html) - used to change the color of the series.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~StrokeWidth.html) - used to change the stroke width of the series.
-* [`StrokeColor`] - used to change the stroke color of the series.
-* [`Spacing`] - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
-* [`Width`] - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~StrokeColor.html) - used to change the stroke color of the series.
+* [`Spacing`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~Spacing.html) - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
+* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~Width.html) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
 
 {% highlight c# %}
 
@@ -1986,15 +1986,15 @@ chart.Series.Add(boxPlotSeries);
 
 ### Customize the series box mode
 
-The series box plotting mode can be changed using the [`BoxPlotMode`] property of [`BoxAndWhiskerSeries`]. The plotting mode of series can be calculated as follows:
+The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
 
-* [`Exclusive`] - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
-* [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
-* [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
+* [`Exclusive`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxPlotMode.html) - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxPlotMode.html) - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxPlotMode.html) - The quartile values are calculated by splitting the list and getting the median values.
 
-By default, [`BoxPlotMode`] value is [`Exclusive`].
+By default, [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) value is [`Exclusive`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxPlotMode.html).
 
-The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
+The following code shows how to set the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) value as [`Inclusive`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxPlotMode.html).
 
 {% highlight c# %}
 
@@ -2019,7 +2019,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### ShowMedian
 
-The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`]. By default, [`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
+The Median values of given data set is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~ShowMedian.html) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries.html). By default, [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~ShowMedian.html) value is false. The following code demonstrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~ShowMedian.html) property.
 
 {% highlight c# %}
 
@@ -2043,9 +2043,9 @@ chart.Series.Add(boxPlotSeries);
 
 ### SymbolType
 
-The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`] value is [`Ellipse`].
+The [`SymbolType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~SymbolType.html) is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~SymbolType.html) value is [`Ellipse`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSymbolType.html).
 
-The following code shows how to set the [`SymbolType`] value as [`Cross`].
+The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.BoxAndWhiskerSeries~SymbolType.html) value as [`Cross`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSymbolType.html).
 
 {% highlight c# %}
 
@@ -2070,7 +2070,7 @@ chart.Series.Add(boxPlotSeries);
 
 ## Error Bar Chart
 
-[`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
+ErrorBarSeries is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
 
 {% highlight c# %}
 [C#]
@@ -2108,7 +2108,7 @@ chart.Series.Add(errorBarSeries);
 
 ### Type
 
- The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, you have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
+ The [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Type.html) property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarType.html). For all types, you have to set the values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~HorizontalErrorValue.html) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~VerticalErrorValue.html) except [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarType.html).
 
 #### Fixed
 
@@ -2196,7 +2196,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Custom
 
-If [`Type`] is `Custom`, you have to set values for[`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the following code snippet.
+If [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Type.html) is `Custom`, you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~HorizontalErrorPath.html) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~VerticalErrorPath.html) as shown in the following code snippet.
 
 {% highlight c# %}
 [C#]
@@ -2219,11 +2219,11 @@ chart.Series.Add(errorBarSeries);
 
 ### Mode
 
-The error value shown on the chart is based on the [`Mode`] property. It have the values of `Both`, `Horizontal`, and `Vertical`. The default value of this property is [`Both`]. 
+The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) property. It have the values of `Both`, `Horizontal`, and `Vertical`. The default value of this property is [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarMode.html). 
 
 #### Both
 
-To display horizontal and vertical error values, you can set the [`Mode`] as `Both` as shown in the following code.
+To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) as `Both` as shown in the following code.
 
 {% highlight c# %}
 [C#]
@@ -2246,7 +2246,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Horizontal
 
-To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the following code.
+To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) as `Horizontal` as shown in the following code.
 
 {% highlight c# %}
 [C#]
@@ -2269,7 +2269,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Vertical
 
-To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the following code.
+To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~Mode.html) as `Vertical` as shown in the following code.
 
 {% highlight c# %}
 [C#]
@@ -2292,11 +2292,11 @@ chart.Series.Add(errorBarSeries);
 
 ### Direction
 
-The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set the direction of error bar lines. The default value is [`Both`].
+The [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~HorizontalDirection.html) and [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~VerticalDirection.html) properties are used to set the direction of error bar lines. The default value is [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarDirection.html).
 
-* [`Both`] - used to set error value in positive and negative directions.
-* [`Minus`] - used to set error value in a negative direction.
-* [`Plus`] - used to set error value in a positive direction.	
+* [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarDirection.html) - used to set error value in positive and negative directions.
+* [`Minus`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarDirection.html) - used to set error value in a negative direction.
+* [`Plus`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarDirection.html) - used to set error value in a positive direction.	
 
 {% highlight c# %}
 [C#]
@@ -2321,12 +2321,12 @@ chart.Series.Add(errorBarSeries);
 
 ### Customization
 
-You can customize the [`ErrorBarSeries`] with the following style properties.
+You can customize the [`ErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries.html) with the following style properties.
 
-* [`HorizontalLineStyle`] – used to customizes the appearance of horizontal error bar line.
-* [`VerticalLineStyle`] – used to customizes the appearance of vertical error bar line.
-* [`HorizontalCapLineStyle`] – used to customizes the appearance of horizontal error bar cap line.
-* [`VerticalCapLineStyle`] – used to customizes the appearance of vertical error bar cap line.
+* [`HorizontalLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~HorizontalLineStyle.html) – used to customizes the appearance of horizontal error bar line.
+* [`VerticalLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~VerticalLineStyle.html) – used to customizes the appearance of vertical error bar line.
+* [`HorizontalCapLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~HorizontalCapLineStyle.html) – used to customizes the appearance of horizontal error bar cap line.
+* [`VerticalCapLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ErrorBarSeries~VerticalCapLineStyle.html) – used to customizes the appearance of vertical error bar cap line.
 
 {% highlight c# %}
 [C#]
