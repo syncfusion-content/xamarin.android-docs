@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Expand and Collapse | TreeView for Xamarin.Android | Syncfusion
-description: Describes about expanding and collapsing nodes of TreeView.
+description: Describes about expanding and collapsing nodes of TreeView in xamarin.android. It also explains about events associated with expanding and collapsing.
 platform: Xamarin.Android
 control: SfTreeView
 documentation: ug
 ---
 
-# Expand and Collapse
+# Expand and Collapse with Xamarin.Android TreeView (SfTreeView) 
 
 The TreeView allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. 
 
