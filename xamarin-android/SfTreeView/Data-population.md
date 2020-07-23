@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Populating data | TreeView for Xamarin.Android | Syncfusion
-description: Describes about to populate the data in treeview.
+description: This topic explains how to populate the data and treeview nodes in bound mode in SfTreeView Xamarin.Android.
 platform: Xamarin.Android
 control: SfTreeView
 documentation: ug
 ---
 
-# Data Population
+# Data Population with Xamarin.Android TreeView (SfTreeView)
 
 TreeView can be populated either with the data source by using a [ItemsSource](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ItemsSource.html) property or by creating and adding the [TreeViewNode](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.TreeView.Engine.TreeViewNode.html) in hierarchical structure to [Nodes](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~Nodes.html) property.
 
