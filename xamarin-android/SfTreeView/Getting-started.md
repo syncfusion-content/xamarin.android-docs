@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with TreeView for Xamarin.Android | Syncfusion
-description: The User guide explains needed references, adding control to app, binding data etc. with demo app.
+description: The user guide explains needed references, adding control to the app, binding data, etc. with demo app.
 platform: Xamarin.Android
 control: SfTreeView
 documentation: ug
