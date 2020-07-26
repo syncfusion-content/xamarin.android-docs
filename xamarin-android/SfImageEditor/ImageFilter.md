@@ -2,8 +2,8 @@
 layout: post
 title: ImageFilter in Syncfusion SfImageEditor control in Xamarin.Android
 description: This section describes how to apply image filter support in SfImageEditor control for Xamarin.Android platform
-platform: xamarin.Android
-control: ImageEditor
+platform: Xamarin.Android
+control: SfImageEditor
 documentation: ug
 ---
 
@@ -19,7 +19,7 @@ Using the SfImageEditor control, you can add effects such as hue, saturation, br
 * Sharpen 
 * None
 
-The EffectValue is the corresponding ImageEffect values, which varies for each effect, and they are explained as follows.
+The [`EffectValue`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.SfImageEditor~EffectValue.html) is the corresponding [`ImageEffect`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.SfImageEditor~ImageEffect.html) values, which varies for each effect, and they are explained as follows.
 
 ## Hue
 
