@@ -53,4 +53,4 @@ The following steps explain on how to create a image editor  and configure its e
 ![SfImageEditor](ImageEditor_images/gettingstarted.png)
 
 
-You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EditorSample-614277950).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-Started-Sample-of-SfImageEditor-in-Xamarin.Android).
