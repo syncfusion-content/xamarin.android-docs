@@ -52,6 +52,19 @@ treeView.SelectedItems.Add(viewModel.CountriesInfo[3]);
 {% endhighlight %}
 {% endtabs %}
 
+Using the [SelectAll](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~SelectAll.html) method, you can select all the items in the TreeView.
+
+{% tabs %}
+{% highlight c# %}
+treeView.Loaded += TreeView_Loaded;
+
+private void TreeView_Loaded(object sender, TreeViewLoadedEventArgs e)
+{
+    treeView.SelectAll();
+}
+{% endhighlight %}
+{% endtabs %}
+
 W> If an item is selected programmatically when `SelectionMode` is `None` and if multiple items are programmatically selected when `SelectionMode` is `Single` or `SingleDeselect`, then exception will be thrown internally.
 
 ## Selected items 
@@ -72,28 +85,13 @@ treeView.SelectedItems.Clear();
 
 The TreeView gets the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when selecting single item. When selecting more than one item, the `SelectedItem` property returns the first selected item, and the `CurrentItem` property returns the last selected item.
 
-## FullRowSelect
+## Select an entire row
 
-By default, the selection start from indent level only. To select the full row, enable the [FullRowSelect](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~FullRowSelect.html) property. By setting the `FullRowSelect` to `true` the selection spans the width of tree view control.
-
-{% tabs %}
-{% highlight c# %}
-treeView.FullRowSelect = true;;
-{% endhighlight %}
-{% endtabs %}
-
-## SelectAll
-
-Using the [SelectAll](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~SelectAll.html) method, you can select all the items in the TreeView.
+By default, the selection starts from the indent level only. You can select the full row by enable the [FullRowSelect](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~FullRowSelect.html) property. By setting the `FullRowSelect` to `true` the selection spans the width of tree view control.
 
 {% tabs %}
 {% highlight c# %}
-treeView.Loaded += TreeView_Loaded;
-
-private void TreeView_Loaded(object sender, TreeViewLoadedEventArgs e)
-{
-    treeView.SelectAll();
-}
+treeView.FullRowSelect = true;
 {% endhighlight %}
 {% endtabs %}
 
