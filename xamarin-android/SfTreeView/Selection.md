@@ -95,6 +95,8 @@ treeView.FullRowSelect = true;
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Android TreeView with Selection](Images/Treeview_Fullrowselect.png)                      
+
 ## Selected item style
 
 ### Selection background
