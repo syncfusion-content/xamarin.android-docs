@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with TreeView for Xamarin.Android | Syncfusion
-description: User guide explains needed references, adding control to app, binding data etc. with demo app.
+description: The user guide explains needed references, adding control to the app, binding data, etc. with demo app.
 platform: Xamarin.Android
 control: SfTreeView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.Android TreeView (SfTreeView)
 
 This section provides a quick overview of working with the TreeView for Xamarin.Android. Walk through the entire process of creating an app with TreeView.
 
@@ -700,7 +700,7 @@ public class FileManagerViewModel
 
 ## Bind to a Hierarchy Property Descriptors data source - Bound Mode
 
-You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ItemsSource.html) to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the `ItemsSource` property. Then create a `HierarchyPropertyDescriptors` and set the `TargetType` and [ChildPropertyName](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ChildPropertyName.html) property values. Finally add that `HierarchyPropertyDescriptors` to treeview.
+You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ItemsSource.html) to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the `ItemsSource` property. Then create a [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~HierarchyPropertyDescriptors.html) and set the `TargetType` and [ChildPropertyName](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ChildPropertyName.html) property values. Finally add that [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~HierarchyPropertyDescriptors.html) to treeview.
 
 {% tabs %}
 {% highlight c# %}
@@ -896,5 +896,25 @@ protected override void OnCreate(Bundle savedInstanceState)
     SfTreeView treeView = FindViewById<SfTreeView>(Resource.Id.sfTreeView1);
     treeView.SelectionMode = SelectionMode.Single;
 }
+{% endhighlight %}
+{% endtabs %}
+
+## Reset tree view items
+
+You can reset the visible treeview items by using the [ResetTreeViewItems](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~ResetTreeViewItems.html) method. If the parameter is null, all the visible treeview items will reset. If you are passing the `data object` as a parameter, a particular treeview item will reset.
+
+{% tabs %}
+{% highlight c# %}
+treeView.ResetTreeViewItems();
+{% endhighlight %}
+{% endtabs %}
+
+## Refresh view
+
+You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~RefreshView.html) method. It will be used to refresh the items in the treeview at runtime while updating the view.
+
+{% tabs %}
+{% highlight c# %}
+treeView.RefreshView();
 {% endhighlight %}
 {% endtabs %}
