@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Android ImageEditor
-description: getting started
+title: Getting Started for Syncfusion Essential Xamarin.Android SfImageEditor
+description: A quick tour to the initial users on Syncfusion SfImageEditor control for Xamarin.Android  platform and create a demo application.
 platform: xamarin.android
 control: SfImageEditor
 documentation: ug
 ---
-# Getting Started
+# Getting Started of ImageEditor (SfImageEditor)
 
 This section explains you the steps required to load an image to the image editor. Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
 
@@ -52,3 +52,5 @@ The following steps explain on how to create a image editor  and configure its e
 
 ![SfImageEditor](ImageEditor_images/gettingstarted.png)
 
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-Started-Sample-of-SfImageEditor-in-Xamarin.Android).
