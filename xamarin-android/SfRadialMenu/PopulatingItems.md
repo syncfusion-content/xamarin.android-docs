@@ -13,7 +13,7 @@ This section explains how to populate items using the radial menu item and item 
 
 ## Using radial menu items
 
-By passing a collection of [SfRadialMenuItems](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html), you can get the view of the `SfRadialMenu` control. The radial menu item class provides various options such as custom views, font icons, and images to customize the items. You can also add radial menu items by hierarchy.
+By passing a collection of [SfRadialMenuItems](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html), you can get the view of the `SfRadialMenu` control. The radial menu item class provides various options such as custom views, font icons, and images to customize the items. You can also add radial menu items by hierarchy.
 
 ### Adding outer rim items of the radial menu
 
@@ -128,7 +128,7 @@ namespace GettingStarted
 
 ## Animation duration
 
-The duration of animation in the radial menu can be changed using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~AnimationDuration.html) property. It is used to change the speed of opening and closing  the radial menu.
+The duration of animation in the radial menu can be changed using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_AnimationDuration) property. It is used to change the speed of opening and closing  the radial menu.
 
 {% tabs %}
 {% highlight c# %}
@@ -191,7 +191,7 @@ namespace GettingStarted
 
 ## IsOpen
 
-The [IsOpen](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~IsOpen.html) property indicates whether the radial menu is in an open or closed state.
+The [IsOpen](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_IsOpen) property indicates whether the radial menu is in an open or closed state.
 
 {% tabs %}
 {% highlight c# %}
@@ -335,7 +335,7 @@ namespace GettingStarted
 
 ## Separator thickness and color in the radial menu
 
-The thickness of the strip between the two items can be changed using the [SeparatorThickness](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~SeparatorThickness.html) property, and the color of the strip can be changed using the [SeparatorColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~SeparatorColor.html) property.
+The thickness of the strip between the two items can be changed using the [SeparatorThickness](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_SeparatorThickness) property, and the color of the strip can be changed using the [SeparatorColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_SeparatorColor) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -382,7 +382,7 @@ namespace GettingStarted
 
 ## Rim color and rim radius in radial menu
 
-The radius of the rim can be changed using the [RimRadius](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~RimRadius.html) property, and the color of the rim can be changed using the [RimColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenu~RimColor.html) property.
+The radius of the rim can be changed using the [RimRadius](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_RimRadius) property, and the color of the rim can be changed using the [RimColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_RimColor) property.
 
 {% tabs %}
 {% highlight c# %}

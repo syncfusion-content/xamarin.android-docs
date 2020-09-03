@@ -47,7 +47,7 @@ SetContentView(maps);
 
 ## Adding layers
 
-Map is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.SfMaps~Layers.html). It can accommodate one or more shape file layers.
+Map is maintained through [`Layers`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.SfMaps.html#Com_Syncfusion_Maps_SfMaps_Layers). It can accommodate one or more shape file layers.
 
 {% tabs %}
 
@@ -82,7 +82,7 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
 *	Right-click the added shape file, and navigate to properties.
 *	Choose the `AndroidAsset` option under BuildAction of respective shape file.
 
-[`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer~Uri.html) property in shape file layer is used to retrieve the location of the shape file that is added.
+[`Uri`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html#Com_Syncfusion_Maps_ShapeFileLayer_Uri) property in shape file layer is used to retrieve the location of the shape file that is added.
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ Maps control supports reading and loading the GeoJSON files. GeoJSON file contai
 
 ## Data binding
 
-Data can be binded to the shape file layer using the [`DataSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer~DataSource.html), [`ShapeIdPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer~ShapeIdPath.html), [`ShapeIdTableField`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer~ShapeIdTableField.html) properties.
+Data can be binded to the shape file layer using the [`DataSource`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html#Com_Syncfusion_Maps_ShapeFileLayer_DataSource), [`ShapeIdPath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html#Com_Syncfusion_Maps_ShapeFileLayer_ShapeIdPath), [`ShapeIdTableField`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html#Com_Syncfusion_Maps_ShapeFileLayer_ShapeIdTableField) properties.
  [`Populate data`](https://help.syncfusion.com/xamarin/SfMaps/PopulateData) topic gives the detailed explanation of data binding.
 
 {% tabs %}

@@ -11,13 +11,13 @@ documentation: ug
 
 # Scales in SfLinearGauge
 
-CircularScales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
+CircularScales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 
 ## Scale
 
-[`CircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html) contains the sub elements such as rim, ticks, labels, ranges, and pointers. It defines the radius, start angle, sweep direction, sweep angle, overall minimum and maximum values, frequency of labels, and tick marks. It will have multiple ranges.
+[`CircularScale`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html) contains the sub elements such as rim, ticks, labels, ranges, and pointers. It defines the radius, start angle, sweep direction, sweep angle, overall minimum and maximum values, frequency of labels, and tick marks. It will have multiple ranges.
 
-A range is a visual element, which begins and ends at specified values within a [`CircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html). It will have one or more pointers to point out the values in scale.
+A range is a visual element, which begins and ends at specified values within a [`CircularScale`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html). It will have one or more pointers to point out the values in scale.
 
 {% highlight c# %}
 
@@ -35,7 +35,7 @@ A range is a visual element, which begins and ends at specified values within a 
 
 ## Setting start and end values for scale
 
-The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~EndValue.html) properties allow  you to set the start and end values for scale.
+The [`StartValue`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_EndValue) properties allow  you to set the start and end values for scale.
 
 {% highlight c# %}
 
@@ -53,7 +53,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
 
 ## Setting start and sweep angles for scale
 
-The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~StartAngle.html) and [`SweepAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~SweepAngle.html) properties allow you to set the start and end angles for scale.
+The [`StartAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_StartAngle) and [`SweepAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_SweepAngle) properties allow you to set the start and end angles for scale.
 
 {% highlight c# %}
 
@@ -73,7 +73,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
 
 ## Setting interval for scale
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~Interval.html) property allows you to set the interval for scale.
+The [`Interval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_Interval) property allows you to set the interval for scale.
 
 {% highlight c# %}
 
@@ -92,7 +92,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncf
 
 ## Setting auto interval for scale
 
-By default, the interval value is calculated by 10. By using the [`EnableAutoInterval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~EnableAutoInterval.html) property, you can set auto interval based on the start and end values.
+By default, the interval value is calculated by 10. By using the [`EnableAutoInterval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_EnableAutoInterval) property, you can set auto interval based on the start and end values.
 
 {% highlight c# %}
 
@@ -111,7 +111,7 @@ By default, the interval value is calculated by 10. By using the [`EnableAutoInt
 
 ## Setting scale direction for scale
 
-The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~Direction.html) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
+The [`Direction`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_Direction) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
 
 {% highlight c# %}
 
@@ -130,7 +130,7 @@ The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Sync
 
 ## Setting multiple scales for scale
 
-It helps you to add multiple scales to the same circular gauge. You can customize all the scales in a [`CircularScales`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge~CircularScales.html) collection.
+It helps you to add multiple scales to the same circular gauge. You can customize all the scales in a [`CircularScales`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html#Com_Syncfusion_Gauges_SfCircularGauge_SfCircularGauge_CircularScales) collection.
 
 {% highlight c# %}
 

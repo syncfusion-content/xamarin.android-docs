@@ -126,7 +126,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 
 ### Refreshing ColumnSizer for the SfDataGrid at runtime
 
-To refresh the column sizing for `SfDataGrid.Columns` at runtime, use the [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumnSizer~Refresh(Boolean).html) property.
+To refresh the column sizing for `SfDataGrid.Columns` at runtime, use the [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumnSizer.html#Syncfusion_SfDataGrid_GridColumnSizer_Refresh_System_Boolean_) property.
 
 Consider that `ColumnSizer.Auto` is applied to the SfDataGrid. If the underlying values are changed at run time, refresh the column sizer as follows.
 

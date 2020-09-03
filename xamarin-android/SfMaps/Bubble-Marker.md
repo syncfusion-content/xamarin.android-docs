@@ -12,7 +12,7 @@ Bubbles in the maps control represents the underlying data values of the map. Bu
 
 ## Bubble data
 
-Bubbles are included when the data binding and [`BubbleMarkerSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer~BubbleMarkerSetting.html) are set to the shape layers.
+Bubbles are included when the data binding and [`BubbleMarkerSetting`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html#Com_Syncfusion_Maps_ShapeFileLayer_BubbleMarkerSetting) are set to the shape layers.
 
 Below code snippet explains the data binding that is provided for bubble.
 
@@ -55,9 +55,9 @@ Below code snippet explains the data binding that is provided for bubble.
 
 ## Adding bubbles
 
-To add bubbles to a map, the bubble marker setting should be added to the shape file layer.[`ShowBubbles`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.BubbleMarkerSetting~ShowBubbles.html) property should be enabled for the bubble to be visible.
+To add bubbles to a map, the bubble marker setting should be added to the shape file layer.[`ShowBubbles`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.BubbleMarkerSetting.html#Com_Syncfusion_Maps_BubbleMarkerSetting_ShowBubbles) property should be enabled for the bubble to be visible.
 
-[`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.BubbleMarkerSetting~ValuePath.html) represents the field value that is to be fetched from the data for each bubble.
+[`ValuePath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.BubbleMarkerSetting.html#Com_Syncfusion_Maps_BubbleMarkerSetting_ValuePath) represents the field value that is to be fetched from the data for each bubble.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ To add bubbles to a map, the bubble marker setting should be added to the shape 
 
 ### Fill color 
 
-The fill color and opacity of the bubbles can be customized using the [`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.BubbleMarkerSetting~FillColor.html) and [`Alpha`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.BubbleMarkerSetting~Alpha.html)  properties.
+The fill color and opacity of the bubbles can be customized using the [`FillColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.BubbleMarkerSetting.html#Com_Syncfusion_Maps_BubbleMarkerSetting_FillColor) and [`Alpha`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.BubbleMarkerSetting.html#Com_Syncfusion_Maps_BubbleMarkerSetting_Alpha)  properties.
 
 {% tabs %}
 
@@ -96,7 +96,7 @@ The fill color and opacity of the bubbles can be customized using the [`FillColo
 
 ![Bubble marker color customization](Images/BubbleFillColor.jpg)
 
-Bubble color can be customized using the [`ColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ColorMapping.html) property.
+Bubble color can be customized using the [`ColorMapping`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ColorMapping.html) property.
 
 Maps provide the following two types of color mapping to bubble marker:
 
@@ -105,7 +105,7 @@ Maps provide the following two types of color mapping to bubble marker:
 
 ### Range color mapping
 
-It is used to differentiate the bubble fill based on its under-bound value and color ranges.The [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.RangeColorMapping~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.RangeColorMapping~To.html) properties are used to define the color range and color for the range that can be specified using the Color property.
+It is used to differentiate the bubble fill based on its under-bound value and color ranges.The [`From`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.RangeColorMapping.html#Com_Syncfusion_Maps_RangeColorMapping_From) and [`To`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.RangeColorMapping.html#Com_Syncfusion_Maps_RangeColorMapping_To) properties are used to define the color range and color for the range that can be specified using the Color property.
 
 {% tabs %}
 
@@ -137,7 +137,7 @@ It is used to differentiate the bubble fill based on its under-bound value and c
 
 ### Equal color mapping
 
-It is used to differentiate the bubble fill based on its underlying value and color using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.EqualColorMapping~Value.html) and [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ColorMapping~Color.html) properties.
+It is used to differentiate the bubble fill based on its underlying value and color using the [`Value`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.EqualColorMapping.html#Com_Syncfusion_Maps_EqualColorMapping_Value) and [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ColorMapping.html#Com_Syncfusion_Maps_ColorMapping_Color) properties.
 
 {% tabs %}
 
@@ -169,9 +169,9 @@ It is used to differentiate the bubble fill based on its underlying value and co
 
 ### Bubble size customization
 
-Size of the bubbles depends on the data that is bound to the [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.BubbleMarkerSetting~ValuePath.html) but the maximum and minimum size of the bubble can be customized using [`MaxSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.BubbleMarkerSetting~MaxSize.html) and [`MinSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.BubbleMarkerSetting~MinSize.html) properties.
+Size of the bubbles depends on the data that is bound to the [`ValuePath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.BubbleMarkerSetting.html#Com_Syncfusion_Maps_BubbleMarkerSetting_ValuePath) but the maximum and minimum size of the bubble can be customized using [`MaxSize`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.BubbleMarkerSetting.html#Com_Syncfusion_Maps_BubbleMarkerSetting_MaxSize) and [`MinSize`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.BubbleMarkerSetting.html#Com_Syncfusion_Maps_BubbleMarkerSetting_MinSize) properties.
 
-I> [`ShowItems`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer~ShowItems.html) should be enabled to display label on bubble marker.
+I> [`ShowItems`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html#Com_Syncfusion_Maps_ShapeFileLayer_ShowItems) should be enabled to display label on bubble marker.
 
 
 {% tabs %}

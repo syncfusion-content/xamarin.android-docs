@@ -33,7 +33,7 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 ![OSM image](Images/OSM.png)
 
-N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
+N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
 
 ## Bing Maps
 
@@ -176,7 +176,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 ## Markers
 
-As [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the `MarkerSettings` property in imagery layer.
+As [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the `MarkerSettings` property in imagery layer.
 The detailed explanation of marker and its customization have been provided in Markers section.
 
 {% tabs %}
@@ -226,7 +226,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Cache tiles in application memory
 
-The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ImageryLayer~CanCacheTiles.html) property used to decide whether the tiles should be cached or not.
+The [`CanCacheTiles`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ImageryLayer.html#Com_Syncfusion_Maps_ImageryLayer_CanCacheTiles) property used to decide whether the tiles should be cached or not.
 
 {% tabs %}
 
@@ -242,7 +242,7 @@ The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin-android/
 
 ## Delete the tiles from cache
 
-The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ImageryLayer~DeleteTilesFromCache.html) method used to delete the cache stored in the applications.
+The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ImageryLayer.html#Com_Syncfusion_Maps_ImageryLayer_DeleteTilesFromCache) method used to delete the cache stored in the applications.
 
 {% tabs %}
 
@@ -403,13 +403,13 @@ You can get imagery layer pixel bounds by using `MapBounds` property while zoomi
 
 ## Events
 
-[`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ImageryLayer~ZoomLevelChanging_EV.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
+[`ZoomLevelChanging`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ImageryLayer.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
 
-* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ZoomLevelChangingEventArgs~Cancel.html) - Used to cancel the zooming.
+* [`Cancel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ZoomLevelChangingEventArgs.html#Com_Syncfusion_Maps_ZoomLevelChangingEventArgs_Cancel) - Used to cancel the zooming.
 
-* [`PreviousLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ZoomLevelChangingEventArgs~PreviousLevel.html) - Returns the previous level after the zooming.
+* [`PreviousLevel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ZoomLevelChangingEventArgs.html#Com_Syncfusion_Maps_ZoomLevelChangingEventArgs_PreviousLevel) - Returns the previous level after the zooming.
 
-* [`CurrentLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ZoomLevelChangingEventArgs~CurrentLevel.html) - Returns the current level to be zoomed.
+* [`CurrentLevel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ZoomLevelChangingEventArgs.html#Com_Syncfusion_Maps_ZoomLevelChangingEventArgs_CurrentLevel) - Returns the current level to be zoomed.
 
 {% tabs %}
 

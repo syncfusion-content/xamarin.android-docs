@@ -9,7 +9,7 @@ documentation: ug
 
 ## Angle
 
-The appearance of the circular progress bar can be customized to semi-circle, arc, etc. The start and end angles can be customized using the [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfCircularProgressBar~StartAngle.html) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfCircularProgressBar~EndAngle.html) properties. 
+The appearance of the circular progress bar can be customized to semi-circle, arc, etc. The start and end angles can be customized using the [`StartAngle`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfCircularProgressBar.html#Syncfusion_Android_ProgressBar_SfCircularProgressBar_StartAngle) and [`EndAngle`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfCircularProgressBar.html#Syncfusion_Android_ProgressBar_SfCircularProgressBar_EndAngle) properties. 
 
 The following code example explains how to change the appearance of the circular progress bar to semi-circle.
 
@@ -32,14 +32,14 @@ circularProgressBar.EndAngle = 360;
 
 You can also visualize multiple ranges with different colors that are mapped to each range to enhance readability of progress.Currently, it is applicable only for linear progress bar.
 
-The colors can be mapped to the specific ranges using the [`RangeColors`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfLinearProgressBar~RangeColors.html) property in the linear progress bar, which holds a collection of [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.RangeColor.html). 
+The colors can be mapped to the specific ranges using the [`RangeColors`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfLinearProgressBar.html) property in the linear progress bar, which holds a collection of [`RangeColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.RangeColor.html). 
 
-The following properties in [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.RangeColor.html) are used to map the colors to range:
+The following properties in [`RangeColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.RangeColor.html) are used to map the colors to range:
 
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.RangeColor~Color.html): Represents the color to the specified range.
-* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.RangeColor~Start.html): Represents the start range of the color.
-* [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.RangeColor~End.html): Represents the end range of the color.
-* [`IsGradient`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.RangeColor~IsGradient.html): Represents whether the gradient effect is applied to the color.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.RangeColor.html#Syncfusion_Android_ProgressBar_RangeColor_Color): Represents the color to the specified range.
+* [`Start`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.RangeColor.html#Syncfusion_Android_ProgressBar_RangeColor_Start): Represents the start range of the color.
+* [`End`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.RangeColor.html#Syncfusion_Android_ProgressBar_RangeColor_End): Represents the end range of the color.
+* [`IsGradient`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.RangeColor.html#Syncfusion_Android_ProgressBar_RangeColor_IsGradient): Represents whether the gradient effect is applied to the color.
 
 The following code example shows mapping the solid color range in the linear progress bar.
 
@@ -114,10 +114,10 @@ linearProgressBar.Padding = 2;
 
 The following properties are used to customize the appearance of the circular progress bar:
 
-* [`IndicatorOuterRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfCircularProgressBar~IndicatorInnerRadius.html): Defines the outer radius of the progress indicator.
-* [`IndicatorInnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfCircularProgressBar~IndicatorOuterRadius.html): Defines the inner radius of the progress indicator.
-* [`TrackOuterRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfCircularProgressBar~TrackOuterRadius.html): Defines the outer radius of the track indicator.
-* [`TrackInnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfCircularProgressBar~TrackOuterRadius.html): Defines the inner radius of the track indicator.
+* [`IndicatorOuterRadius`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfCircularProgressBar.html#Syncfusion_Android_ProgressBar_SfCircularProgressBar_IndicatorInnerRadius): Defines the outer radius of the progress indicator.
+* [`IndicatorInnerRadius`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfCircularProgressBar.html#Syncfusion_Android_ProgressBar_SfCircularProgressBar_IndicatorOuterRadius): Defines the inner radius of the progress indicator.
+* [`TrackOuterRadius`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfCircularProgressBar.html#Syncfusion_Android_ProgressBar_SfCircularProgressBar_TrackOuterRadius): Defines the outer radius of the track indicator.
+* [`TrackInnerRadius`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfCircularProgressBar.html#Syncfusion_Android_ProgressBar_SfCircularProgressBar_TrackOuterRadius): Defines the inner radius of the track indicator.
 
 The following code example shows how to customize the appearance of circular progress bar.
 
@@ -140,7 +140,7 @@ trackOutsideProgressBar.ShowProgressValue = false;
 
 ## Corner radius
 
-The [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfLinearProgressBar~CornerRadius.html) property is used to customize the rounded edges in the linear progress bar, as shown in the following code example.
+The [`CornerRadius`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfLinearProgressBar.html#Syncfusion_Android_ProgressBar_SfLinearProgressBar_CornerRadius) property is used to customize the rounded edges in the linear progress bar, as shown in the following code example.
 
 {% highlight c# %}
 
@@ -159,8 +159,8 @@ linearProgressBar.CornerRadius = 10;
 
 The following properties are used to customize the color in the progress bar:
 
-* [`ProgressColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfLinearProgressBar~CornerRadius.html): Represents the color of the progress indicator.
-* [`TrackColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.ProgressBarBase~TrackColor.html): Represents the color of the track indicator.
+* [`ProgressColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfLinearProgressBar.html#Syncfusion_Android_ProgressBar_SfLinearProgressBar_CornerRadius): Represents the color of the progress indicator.
+* [`TrackColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.ProgressBarBase.html#Syncfusion_Android_ProgressBar_ProgressBarBase_TrackColor): Represents the color of the track indicator.
 
 The following code example shows the color customization in progress and track indicator.
 
@@ -179,7 +179,7 @@ linearProgressBar.TrackColor = Android.Graphics.Color.ParseColor("#3351483a");
 ![](overview_images/color1.png)
 
 
-The linear progress bar provides support to customize the color for the secondary progress bar using the [`SecondaryProgressColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfProgressBar.Android~Syncfusion.Android.ProgressBar.SfLinearProgressBar~SecondaryProgressColor.html) property, as shown in the following code example.
+The linear progress bar provides support to customize the color for the secondary progress bar using the [`SecondaryProgressColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfLinearProgressBar.html#Syncfusion_Android_ProgressBar_SfLinearProgressBar_SecondaryProgressColor) property, as shown in the following code example.
 
 {% highlight c# %}
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar(this);

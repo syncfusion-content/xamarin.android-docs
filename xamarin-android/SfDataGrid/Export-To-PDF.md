@@ -87,7 +87,7 @@ private void ExportToPdf_Clicked(object sender, EventArgs e)
 
 ### Exclude Columns while Exporting
 
-By default, all the columns (including hidden columns) in the SfDataGrid will be exported to PDF. To exclude some particular columns while exporting to PDF, add those columns to the [DataGridPdfExportOption.ExcludeColumns](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExcludeColumns.html) list.
+By default, all the columns (including hidden columns) in the SfDataGrid will be exported to PDF. To exclude some particular columns while exporting to PDF, add those columns to the [DataGridPdfExportOption.ExcludeColumns](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ExcludeColumns) list.
 
 {% tabs %}
 {% highlight c# %}
@@ -106,7 +106,7 @@ var doc = pdfExport.ExportToPdf (this.dataGrid, exportOption);
 
 ### PdfDocument
 
-The [DataGridPdfExportOption.PdfDocument](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~PdfDocument.html) allows exporting the SfDataGrid to an existing or new PdfDocument. 
+The [DataGridPdfExportOption.PdfDocument](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_PdfDocument) allows exporting the SfDataGrid to an existing or new PdfDocument. 
 
 {% tabs %}
 {% highlight c# %}
@@ -122,7 +122,7 @@ option.PdfDocument = pdfDocument;
 
 ### RepeatHeaders
 
-You can show or hide the column headers on each page of the exported PDF document by using the [DataGridPdfExportOption.RepeatHeaders](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~RepeatHeaders.html) property. The default value is true.
+You can show or hide the column headers on each page of the exported PDF document by using the [DataGridPdfExportOption.RepeatHeaders](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_RepeatHeaders) property. The default value is true.
 
 {% tabs %}
 {% highlight c# %}
@@ -142,7 +142,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 
 ### Exclude Groups while Exporting
 
-By default, all the groups in the data grid will be exported to PDF document. To export the data grid without Groups, set the [DataGridPdfExportOption.ExportGroups](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportGroups.html) property to `false`.
+By default, all the groups in the data grid will be exported to PDF document. To export the data grid without Groups, set the [DataGridPdfExportOption.ExportGroups](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ExportGroups) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -164,7 +164,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 
 ### Exclude Column Header while Exporting
 
-By default, the column headers will be exported to PDF document. To export the SfDataGrid without the column headers, set the [DataGridPdfExportOption.ExportHeader](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportHeader.html) to `false`.
+By default, the column headers will be exported to PDF document. To export the SfDataGrid without the column headers, set the [DataGridPdfExportOption.ExportHeader](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ExportHeader) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -186,7 +186,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 
 ### Exclude Table Summaries while Exporting
 
-By default, the table summaries in data grid will be exported to excel. To export the SfDataGrid without the table summaries, set the [DataGridPdfExportOption.ExportTableSummary](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportTableSummary.html) property to `false`.
+By default, the table summaries in data grid will be exported to excel. To export the SfDataGrid without the table summaries, set the [DataGridPdfExportOption.ExportTableSummary](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ExportTableSummary) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -215,7 +215,7 @@ The SfDataGrid allows exporting the data from a particular staring position usin
 
 #### StartPageIndex 
 
-The SfDataGrid allows exporting the data to a particular starting page by using the [DataGridPdfExportOption.StartPageIndex](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~StartPageIndex.html) property.
+The SfDataGrid allows exporting the data to a particular starting page by using the [DataGridPdfExportOption.StartPageIndex](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_StartPageIndex) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -242,7 +242,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 
 #### StartPoint
 
-The SfDataGrid allows exporting the data to a particular x,y starting point in the PDF page by using the [DataGridPdfExportOption.StartPoint](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~StartPoint.html) property.
+The SfDataGrid allows exporting the data to a particular x,y starting point in the PDF page by using the [DataGridPdfExportOption.StartPoint](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_StartPoint) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -264,7 +264,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 
 ### ApplyGridStyle
 
-The SfDataGrid allows exporting the data with the applied GridStyle by setting the [DataGridPdfExportOption.ApplyGridStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ApplyGridStyle.html) to `true`. By default, data will be exported without the GridStyle.
+The SfDataGrid allows exporting the data with the applied GridStyle by setting the [DataGridPdfExportOption.ApplyGridStyle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ApplyGridStyle) to `true`. By default, data will be exported without the GridStyle.
 
 {% tabs %}
 {% highlight c# %}
@@ -294,7 +294,7 @@ The SfDataGrid also allows customizing the following styles while exporting to P
 
 #### BottomTableSummaryStyle
 
-The SfDataGrid supports exporting the bottom TableSummary with custom style by using the [DataGridPdfExportOption.BottomTableSummaryStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~BottomTableSummaryStyle.html) property.
+The SfDataGrid supports exporting the bottom TableSummary with custom style by using the [DataGridPdfExportOption.BottomTableSummaryStyle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_BottomTableSummaryStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -315,7 +315,7 @@ option.BottomTableSummaryStyle = new PdfGridCellStyle()
 
 #### GroupCaptionStyle
 
-The SfDataGrid supports exporting the GroupCaptionSummaries with custom style by using the [DataGridPdfExportOption.GroupCaptionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~GroupCaptionStyle.html) property.
+The SfDataGrid supports exporting the GroupCaptionSummaries with custom style by using the [DataGridPdfExportOption.GroupCaptionStyle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_GroupCaptionStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -336,7 +336,7 @@ option.GroupCaptionStyle = new PdfGridCellStyle()
 
 #### HeaderStyle
 
-The SfDataGrid allows exporting the column headers with custom style by using the [DataGridPdfExportOption.HeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~HeaderStyle.html) property.
+The SfDataGrid allows exporting the column headers with custom style by using the [DataGridPdfExportOption.HeaderStyle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_HeaderStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -357,7 +357,7 @@ option.HeaderStyle = new PdfGridCellStyle()
 
 #### RecordStyle 
 
-SfDataGrid allows exporting the records with custom style by using the [DataGridPdfExportOption.RecordStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~RecordStyle.html) property.
+SfDataGrid allows exporting the records with custom style by using the [DataGridPdfExportOption.RecordStyle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_RecordStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -378,7 +378,7 @@ option.RecordStyle = new PdfGridCellStyle()
 
 #### TopTableSummaryStyle
 
-The SfDataGrid supports exporting the top TableSummary with custom style by using the [DataGridPdfExportOption.TopTableSummaryStyle](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~TopTableSummaryStyle.html) property.
+The SfDataGrid supports exporting the top TableSummary with custom style by using the [DataGridPdfExportOption.TopTableSummaryStyle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_TopTableSummaryStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -399,7 +399,7 @@ option.TopTableSummaryStyle = new PdfGridCellStyle()
 
 ## Exclude group summaries when exporting
 
-By default, the `GroupSummary` rows in the data grid will be exported to PDF. To export the SfDataGrid without `GroupSummary` rows, set the [DataGridPdfExportOption.ExportGroupSummary](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportGroupSummary.html) property to `false`.
+By default, the `GroupSummary` rows in the data grid will be exported to PDF. To export the SfDataGrid without `GroupSummary` rows, set the [DataGridPdfExportOption.ExportGroupSummary](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ExportGroupSummary) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -413,7 +413,7 @@ DataGridPdfExportOption option = new DataGridPdfExportOption();
 
 ### GroupSummaryStyle 
 
-`SfDataGrid` supports exporting the `GroupSummary` rows with custom style by using the [DataGridPdfExportOption.GroupSummaryStyle](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~GroupSummaryStyle.html) property.
+`SfDataGrid` supports exporting the `GroupSummary` rows with custom style by using the [DataGridPdfExportOption.GroupSummaryStyle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_GroupSummaryStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -441,7 +441,7 @@ The SfDataGrid allows customizing the grid borders by using the `GridLineType` p
 
 #### Both
 
-Set the [DataGridPdfExportOption.GridLineType](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~GridLineType.html) to `GridLineType.Both` to export the data grid with both horizontal and vertical borders.
+Set the [DataGridPdfExportOption.GridLineType](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_GridLineType) to `GridLineType.Both` to export the data grid with both horizontal and vertical borders.
 
 {% tabs %}
 {% highlight c# %}
@@ -454,7 +454,7 @@ option.GridLineType = GridLineType.Both;
 
 #### Horizontal
 
-Set the [DataGridPdfExportOption.GridLineType](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~GridLineType.html) to `GridLineType.Both` to export the data grid with horizontal border only.
+Set the [DataGridPdfExportOption.GridLineType](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_GridLineType) to `GridLineType.Both` to export the data grid with horizontal border only.
 
 {% tabs %}
 {% highlight c# %}
@@ -467,7 +467,7 @@ option.GridLineType = GridLineType.Horizontal;
 
 #### Vertical
 
-Set the [DataGridPdfExportOption.GridLineType](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~GridLineType.html) to `GridLineType.Both` to export the data grid with vertical border only.
+Set the [DataGridPdfExportOption.GridLineType](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_GridLineType) to `GridLineType.Both` to export the data grid with vertical border only.
 
 {% tabs %}
 {% highlight c# %}
@@ -480,7 +480,7 @@ option.GridLineType = GridLineType.Vertical;
 
 #### None
 
-Set the [DataGridPdfExportOption.GridLineType](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~GridLineType.html) to `GridLineType.Both` to export the data grid without any borders.
+Set the [DataGridPdfExportOption.GridLineType](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_GridLineType) to `GridLineType.Both` to export the data grid without any borders.
 
 {% tabs %}
 {% highlight c# %}
@@ -493,7 +493,7 @@ option.GridLineType = GridLineType.None;
 
 ### ExportAllPages
 
-While exporting to excel using the SfDataPager inside the SfDataGrid, by default it will be export only the current page. However, you can export all the pages by setting the [DataGridPdfExportOption.ExportAllPages](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportAllPages.html) to `true`. The default value of this property is false.
+While exporting to excel using the SfDataPager inside the SfDataGrid, by default it will be export only the current page. However, you can export all the pages by setting the [DataGridPdfExportOption.ExportAllPages](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ExportAllPages) to `true`. The default value of this property is false.
 
 {% tabs %}
 {% highlight c# %}
@@ -510,7 +510,7 @@ option.ExportAllPages = true;
 
 ### ExportColumnWidth
 
-By default, the data grid columns will be exported to Excel with the value of the `DataGridPdfExportOption.DefaultColumnWidth` but, you can also export the data grid to Excel with the exact column widths from the SfDataGrid by setting the [DataGridPdfExportOption.ExportColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportColumnWidth.html) to `true`. The default value of `ExportColumnWidth` property is false.
+By default, the data grid columns will be exported to Excel with the value of the `DataGridPdfExportOption.DefaultColumnWidth` but, you can also export the data grid to Excel with the exact column widths from the SfDataGrid by setting the [DataGridPdfExportOption.ExportColumnWidth](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ExportColumnWidth) to `true`. The default value of `ExportColumnWidth` property is false.
 
 {% tabs %}
 {% highlight c# %}
@@ -523,7 +523,7 @@ option.ExportColumnWidth = true;
 
 ### ExportRowHeight
 
-By default, the data grid rows will be exported to Excel with the value of the `DataGridPdfExportOption.DefaultRowHeight` but, you can also export the data grid to Excel with the exact row heights from the SfDataGrid by setting the [DataGridPdfExportOption.ExportRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportRowHeight.html) to `true`. The default value of `ExportRowHeight` property is false.
+By default, the data grid rows will be exported to Excel with the value of the `DataGridPdfExportOption.DefaultRowHeight` but, you can also export the data grid to Excel with the exact row heights from the SfDataGrid by setting the [DataGridPdfExportOption.ExportRowHeight](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ExportRowHeight) to `true`. The default value of `ExportRowHeight` property is false.
 
 {% tabs %}
 {% highlight c# %}
@@ -536,7 +536,7 @@ option.ExportRowHeight = true;
 
 ### DefaultColumnWidth
 
-The SfDataGrid allows customizing the column width in Excel file using the [DataGridPdfExportOption.DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~DefaultColumnWidth.html) property. The `DefaultColumnWidth` value will be applied to all the columns in the Excel sheet.
+The SfDataGrid allows customizing the column width in Excel file using the [DataGridPdfExportOption.DefaultColumnWidth](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_DefaultColumnWidth) property. The `DefaultColumnWidth` value will be applied to all the columns in the Excel sheet.
 
 {% tabs %}
 {% highlight c# %}
@@ -547,7 +547,7 @@ option.DefaultColumnWidth = 100;
 
 ### DefaultRowHeight
 
-The SfDataGrid allows customizing the row height in Excel file by using the [DataGridPdfExportOption.DefaultRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~DefaultRowHeight.html) property. The `DefaultRowHeight` value will be applied to all the rows in the Excel sheet.
+The SfDataGrid allows customizing the row height in Excel file by using the [DataGridPdfExportOption.DefaultRowHeight](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_DefaultRowHeight) property. The `DefaultRowHeight` value will be applied to all the rows in the Excel sheet.
 
 {% tabs %}
 {% highlight c# %}
@@ -843,7 +843,7 @@ private void PdfExport_CellExporting(object sender, DataGridCellPdfExportingEven
 
 ## Exporting Unbound rows
 
-By default the unbound rows will not be exported to pdf document. However, You can export the unbound rows to PDF by setting the [DataGridPdfExportOption.ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportUnboundRows.html) property as `true`.
+By default the unbound rows will not be exported to pdf document. However, You can export the unbound rows to PDF by setting the [DataGridPdfExportOption.ExportUnboundRows](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportOption_ExportUnboundRows) property as `true`.
 
 {% highlight c# %}
 DataGridPdfExportOption option = new DataGridPdfExportOption();

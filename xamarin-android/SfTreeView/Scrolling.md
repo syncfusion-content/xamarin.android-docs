@@ -13,7 +13,7 @@ documentation: ug
 
 ### Bring InTo View
 
-The TreeView allows programmatically scrolling based on the data model and [TreeViewNode](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.TreeView.Engine.TreeViewNode.html) by using the [BringIntoView](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~BringIntoView.html) method.
+The TreeView allows programmatically scrolling based on the data model and [TreeViewNode](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html) by using the [BringIntoView](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.TreeView.SfTreeView.html#Syncfusion_Android_TreeView_SfTreeView_BringIntoView_Syncfusion_TreeView_Engine_TreeViewNode_System_Boolean_System_Boolean_Syncfusion_Android_TreeView_ScrollToPosition_) method.
 
 It also enables and disables the scrolling animation when changing the view. By default, the scrolling will be animated.
 
@@ -48,7 +48,7 @@ private void TreeView_Loaded(object sender, TreeViewLoadedEventArgs e)
 
 ## Scrollbar Visibility
 
-The TreeView provides an option to enable or disable the `Scrollbar` visibility by using the [IsScrollBarVisible](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfTreeView.Android~Syncfusion.Android.TreeView.SfTreeView~IsScrollBarVisible.html) property. By default, the value will be true.
+The TreeView provides an option to enable or disable the `Scrollbar` visibility by using the [IsScrollBarVisible](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.TreeView.SfTreeView.html#Syncfusion_Android_TreeView_SfTreeView_IsScrollBarVisible) property. By default, the value will be true.
 
 N> Due to some restrictions in native ScrollView, you cannot change the `IsScrollBarVisible` value at runtime. It can be defined only when initializing the TreeView.
 

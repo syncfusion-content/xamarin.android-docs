@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the steps required to configure the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) and add basic elements to it using various APIs.
+This section explains the steps required to configure the [`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) and add basic elements to it using various APIs.
 
 ## Adding digital gauge reference
 
-Syncfusion components for Xamarin.Android are available in nuget.org. To add [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfGauge, and then install it.
+Syncfusion components for Xamarin.Android are available in nuget.org. To add [`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfGauge, and then install it.
 
 To learn more about obtaining our components, refer to these links: Mac and Windows. Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this link to learn about the dependent assemblies for digital gauge.
 
@@ -30,7 +30,7 @@ using Com.Syncfusion.Gauges.SfDigitalGauge;
 
 ## Initialize gauge
 
-You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) control with a required optimal name using the included namespace.
+You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) control with a required optimal name using the included namespace.
 
 {% highlight c# %}
 
@@ -47,7 +47,7 @@ You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_fi
 
 ## Initialize gauge in axml:
 
-[`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digital gauge in designer.
+[`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digital gauge in designer.
 
 ![DigitalGauge Designer](getting-started_images/designer.gif)
 
@@ -73,7 +73,7 @@ You can create digital gauge using code behind also. The following steps help to
 
 ## Setting value for digital gauge
 
-The [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) control provides options to display special characters or values using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~Value.html) property.
+The [`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) control provides options to display special characters or values using the [`Value`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html#Com_Syncfusion_Gauges_SfDigitalGauge_SfDigitalGauge_Value) property.
 
 {% highlight c# %}
 
@@ -85,7 +85,7 @@ The [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android
 
 ## Setting character type for digital gauge
 
-By using the [`CharacterType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterType.html) property, you can set the segments for digital gauge. The digital characters can be drawn in the following four different segments:
+By using the [`CharacterType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html#Com_Syncfusion_Gauges_SfDigitalGauge_SfDigitalGauge_CharacterType) property, you can set the segments for digital gauge. The digital characters can be drawn in the following four different segments:
 
 •	EightCrossEightDotMatrix
 
@@ -105,7 +105,7 @@ By using the [`CharacterType`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 ## Configuring properties
 
-The [`CharacterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterHeight.html), [`CharacterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterWidth.html), and [`CharacterStroke`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge~CharacterStroke.html)properties are used to display characters, which can be customized as shown in the following code snippets:
+The [`CharacterHeight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html#Com_Syncfusion_Gauges_SfDigitalGauge_SfDigitalGauge_CharacterHeight), [`CharacterWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html#Com_Syncfusion_Gauges_SfDigitalGauge_SfDigitalGauge_CharacterWidth), and [`CharacterStroke`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html#Com_Syncfusion_Gauges_SfDigitalGauge_SfDigitalGauge_CharacterStroke)properties are used to display characters, which can be customized as shown in the following code snippets:
 
 {% highlight c# %}
 

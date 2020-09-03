@@ -16,7 +16,7 @@ The SfDataGrid allows you to create and add columns in two ways:
 
 ## Automatic columns generation
 
-The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html).Columns are generated based on type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridNumericColumn.html) is added for int type property. Below table shows the column type created for the respective data type. For remaining types, [GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTextColumn.html) will be created. 
+The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html).Columns are generated based on type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridNumericColumn.html) is added for int type property. Below table shows the column type created for the respective data type. For remaining types, [GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTextColumn.html) will be created. 
 
 <table>
 <tr>
@@ -269,11 +269,11 @@ The below code example shows how to cancel resizing for a column using the `SfDa
 
 ## Picker closed event
 
-This event is available for both the `GridPickerColumn` and the `GridDateTimeColumn`.The [GridPickerColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridPickerColumn~Closed_EV.html) and the [GridDateTimeColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridDateTimeColumn~Closed_EV.html) events will be triggered whenever the "OK" or "Cancel" button is pressed in Picker editor and DateTime editor of the `GridPickerColumn` and `GridDateTimeColumn` respectively. This event handler contains the parameter of type [PickerClosedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.PickerClosedEventArgs.html) that contains the following properties.
+This event is available for both the `GridPickerColumn` and the `GridDateTimeColumn`.The [GridPickerColumn.Closed](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridPickerColumn.html) and the [GridDateTimeColumn.Closed](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridDateTimeColumn.html) events will be triggered whenever the "OK" or "Cancel" button is pressed in Picker editor and DateTime editor of the `GridPickerColumn` and `GridDateTimeColumn` respectively. This event handler contains the parameter of type [PickerClosedEventArgs](https://help.syncfusion.com/cr/xamarin-Android/Syncfusion.SfDataGrid.PickerClosedEventArgs.html) that contains the following properties.
 
-* [OldValue](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.PickerClosedEventArgs~OldValue.html) : Gets the old value of the picker.
-* [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.PickerClosedEventArgs~NewValue.html) : Gets the newly selected value of the picker.
-* [Action](https://help.syncfusion.com/cr/cref_files/xamarin-Android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.PickerClosedEventArgs~Action.html)   : Returns string value "Commit" when "Ok" button is pressed or "Cancel" when the "Cancel" button is pressed or the picker view is collapsed by touching outside the picker.
+* [OldValue](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.PickerClosedEventArgs.html#Syncfusion_SfDataGrid_PickerClosedEventArgs_OldValue) : Gets the old value of the picker.
+* [NewValue](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.PickerClosedEventArgs.html#Syncfusion_SfDataGrid_PickerClosedEventArgs_NewValue) : Gets the newly selected value of the picker.
+* [Action](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.PickerClosedEventArgs.html#Syncfusion_SfDataGrid_PickerClosedEventArgs_Action)   : Returns string value "Commit" when "Ok" button is pressed or "Cancel" when the "Cancel" button is pressed or the picker view is collapsed by touching outside the picker.
 
 {% highlight c# %}
 

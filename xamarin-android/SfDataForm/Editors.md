@@ -23,7 +23,7 @@ The data form supports several built-in editors as follows:
 Text
 </td>
 <td>
-{{'[DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormTextEditor.html)'| markdownify }}
+{{'[DataFormTextEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormTextEditor.html)'| markdownify }}
 </td>
 <td>
 The String type property and any other type apart from the below specified cases.
@@ -37,7 +37,7 @@ The String type property and any other type apart from the below specified cases
 MultilineText
 </td>
 <td>
-{{'[DataFormMultiLineTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormMultiLineTextEditor.html)'| markdownify }}
+{{'[DataFormMultiLineTextEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormMultiLineTextEditor.html)'| markdownify }}
 </td>
 <td>
 The String type property with multi line text.
@@ -52,7 +52,7 @@ The String type property with multi line text.
 Numeric
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 The property of Int, Double, Float, Decimal, Long types and also its nullable property.
@@ -66,7 +66,7 @@ The property of Int, Double, Float, Decimal, Long types and also its nullable pr
 Percent
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(“Percent”)] attribute.
@@ -80,7 +80,7 @@ The property of Int, Double, Float, Decimal, Long types and also its nullable pr
 Currency
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] attribute.
@@ -94,13 +94,13 @@ The property of Int, Double, Float, Decimal, Long types and also its nullable pr
 Date
 </td>
 <td>
-{{'[DataFormDateEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormDateEditor.html)'| markdownify }}
+{{'[DataFormDateEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormDateEditor.html)'| markdownify }}
 </td>
 <td>
 DateTime type property and the property with [DataType(DataType.Date)] and [DataType(DataType.DateTime)] attributes.
 </td>
 <td>
-{{'[SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfDatePicker.html)'| markdownify }}
+{{'[SfDatePicker](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.SfDatePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -108,13 +108,13 @@ DateTime type property and the property with [DataType(DataType.Date)] and [Data
 Time
 </td>
 <td>
-{{'[DataFormTimeEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormTimeEditor.html)'| markdownify }}
+{{'[DataFormTimeEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormTimeEditor.html)'| markdownify }}
 </td>
 <td>
 The property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-{{'[SfTimePicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfTimePicker.html)'| markdownify }}
+{{'[SfTimePicker](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.SfTimePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -122,7 +122,7 @@ The property with [DataType(DataType.Time)] attribute.
 NumericUpDown
 </td>
 <td>
-{{'[DataFormNumericUpDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericUpDownEditor.html)'| markdownify }}
+{{'[DataFormNumericUpDownEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormNumericUpDownEditor.html)'| markdownify }}
 </td>
 <td>
 Int or Double type property.
@@ -136,7 +136,7 @@ Int or Double type property.
 Segment
 </td>
 <td>
-{{'[DataFormSegmentedEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormSegmentedEditor.html)'| markdownify }}
+{{'[DataFormSegmentedEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormSegmentedEditor.html)'| markdownify }}
 </td>
 <td>
 Enum type property.
@@ -150,7 +150,7 @@ Enum type property.
 Bool
 </td>
 <td>
-{{'[DataFormCheckBoxEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormCheckBoxEditor.html)'| markdownify }}
+{{'[DataFormCheckBoxEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormCheckBoxEditor.html)'| markdownify }}
 </td>
 <td>
 Bool type property.
@@ -164,7 +164,7 @@ Bool type property.
 Switch
 </td>
 <td>
-{{'[DataFormSwitchEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormSwitchEditor.html)'| markdownify }}
+{{'[DataFormSwitchEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormSwitchEditor.html)'| markdownify }}
 </td>
 <td>
 Bool type property.
@@ -178,14 +178,14 @@ Bool type property.
 Picker
 </td>
 <td>
-{{'[DataFormPickerEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormPickerEditor.html)'| markdownify }}
+{{'[DataFormPickerEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormPickerEditor.html)'| markdownify }}
 </td>
 <td>
 Enum and List type property. 
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfPicker.html)'| markdownify }}
+{{'[SfPicker](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.SfPicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ Enum and List type property.
 DropDown
 </td>
 <td>
-{{'[DataFormDropDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormDropDownEditor.html)'| markdownify }}
+{{'[DataFormDropDownEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormDropDownEditor.html)'| markdownify }}
 </td>
 <td>
 Enum and List type property.
@@ -208,7 +208,7 @@ Enum and List type property.
 Password
 </td>
 <td>
-{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
+{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
 </td>
 <td>
 The String type property and property with 
@@ -226,7 +226,7 @@ In the text editor, the [EditText](https://developer.xamarin.com/guides/android/
 
 ### Loading upper case keyboard in EditText
 
-You can load upper case letters keyboard by setting the [InputType](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTextItem~InputType.html) as `TextFlagCapCharacters`.
+You can load upper case letters keyboard by setting the [InputType](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormTextItem.html) as `TextFlagCapCharacters`.
 
 {% tabs %}
 {% highlight c# %}
@@ -264,7 +264,7 @@ In the numeric editor, the [SfNumericTextBox](https://help.syncfusion.com/xamari
 
 ### Change maximum NumberDecimalDigits in the numeric editor
 
-In the `SfNumericTextBox`, two decimal digits will be displayed by default. You can change the number of decimal digits being displayed by setting the [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericItemBase~MaximumNumberDecimalDigits.html) property in the [DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericItem.html).
+In the `SfNumericTextBox`, two decimal digits will be displayed by default. You can change the number of decimal digits being displayed by setting the [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericItemBase.html#Syncfusion_Android_DataForm_DataFormNumericItemBase_MaximumNumberDecimalDigits) property in the [DataFormNumericItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -281,7 +281,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Date editor
 
-In the date editor, the [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfDatePicker.html) will be loaded.
+In the date editor, the [SfDatePicker](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.SfDatePicker.html) will be loaded.
 
 ### Setting null value in date editor
 
@@ -300,7 +300,7 @@ public DateTime? BirthDate { get; set; }
 
 ### Customizing format in date editor
 
-In the `SfDatePicker`, short date will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDateItem~Format.html) property in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDateItem.html).
+In the `SfDatePicker`, short date will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormDateItem.html#Syncfusion_Android_DataForm_DataFormDateItem_Format) property in [DataFormDateItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormDateItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -321,7 +321,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Setting MaximumDate and MinimumDate in date editor
 
-You can customize the maximum and minimum allowable dates in the `SfDatePicker` by setting [MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDateItem~MaximumDate.html) and [MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDateItem~MinimumDate.html) in the [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDateItem.html) respectively.
+You can customize the maximum and minimum allowable dates in the `SfDatePicker` by setting [MaximumDate](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormDateItem.html#Syncfusion_Android_DataForm_DataFormDateItem_MaximumDate) and [MinimumDate](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormDateItem.html#Syncfusion_Android_DataForm_DataFormDateItem_MinimumDate) in the [DataFormDateItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormDateItem.html) respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -343,7 +343,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Time editor
 
-In the time editor, the [SfTimePicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfTimePicker.html) will be loaded.
+In the time editor, the [SfTimePicker](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.SfTimePicker.html) will be loaded.
 
 **Setting null value in time editor**
 
@@ -363,7 +363,7 @@ public DateTime? BirthTime { get; set; }
 
 **Customizing format in time editor**
 
-In the `SfTimePicker`, short time will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTimeItem~Format.html) property in [DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTimeItem.html).
+In the `SfTimePicker`, short time will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormTimeItem.html#Syncfusion_Android_DataForm_DataFormTimeItem_Format) property in [DataFormTimeItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormTimeItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -403,7 +403,7 @@ public bool RegisteredMember { get; set; }
 
 In switch editor, [Switch]( https://developer.android.com/reference/android/widget/Switch) is loaded, and DataForm `Switch` editor supports bool data type property.
 
-To add `Switch` editor in DataForm, register the editor as `Switch` for the required property using the [RegisterEditor]( https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+To add `Switch` editor in DataForm, register the editor as `Switch` for the required property using the [RegisterEditor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_RegisterEditor_System_String_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -426,7 +426,7 @@ In the drop down editor, the [Spinner](https://developer.xamarin.com/guides/andr
 
 ### Customizing ItemsSource of spinner
 
-By default, the `ItemsSource` for spinner is auto-generated for enum types and collection type properties. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~SourceProvider.html).
+By default, the `ItemsSource` for spinner is auto-generated for enum types and collection type properties. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_SourceProvider).
 
 #### Using SourceProvider
 
@@ -465,7 +465,7 @@ dataForm.RegisterEditor("ItemName", "DropDown");
 
 #### Using ItemsSource property
 
-You can also set the ItemsSource for drop down editor by using the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDropDownItem~ItemsSource.html) property in the `DataFormDropDownItem`.
+You can also set the ItemsSource for drop down editor by using the [ItemsSource](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormDropDownItem.html#Syncfusion_Android_DataForm_DataFormDropDownItem_ItemsSource) property in the `DataFormDropDownItem`.
 
 {% tabs %}
 {% highlight c# %}
@@ -510,11 +510,11 @@ private void Button_Click(object sender, EventArgs e)
 
 ## Picker editor
 
-In the picker editor, the [SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.SfPicker.html) will be loaded.
+In the picker editor, the [SfPicker](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.Editors.SfPicker.html) will be loaded.
 
 ### Changing title in the SfPicker
 
-You can show some text in the `SfPicker` popup by using the [Title](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem~Title.html) property in the [DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem.html).
+You can show some text in the `SfPicker` popup by using the [Title](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormPickerItem.html#Syncfusion_Android_DataForm_DataFormPickerItem_Title) property in the [DataFormPickerItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormPickerItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -534,7 +534,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Customizing ItemsSource of SfPicker
 
-By default, the `ItemsSource` for picker is auto-generated for enum type and collection type properties. For other types, you can set the `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~SourceProvider.html).
+By default, the `ItemsSource` for picker is auto-generated for enum type and collection type properties. For other types, you can set the `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_SourceProvider).
 
 ### Using SourceProvider
 
@@ -573,7 +573,7 @@ dataForm.RegisterEditor("ItemName", "Picker");
 
 ### Using event
 
-You can also set `ItemsSource` for picker editor by using the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem~ItemsSource.html) property in the [DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem.html).
+You can also set `ItemsSource` for picker editor by using the [ItemsSource](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormPickerItem.html#Syncfusion_Android_DataForm_DataFormPickerItem_ItemsSource) property in the [DataFormPickerItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormPickerItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -618,7 +618,7 @@ private void Button_Click(object sender, EventArgs e)
 
 ### Loading complex type property values in picker
 
-You can display the complex type property values in picker editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for picker editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem` event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem~ValueMemberPath.html) property value DataFormPickerItem for complex type property. 
+You can display the complex type property values in picker editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SourceProvider.html#Syncfusion_Android_DataForm_SourceProvider_GetSource_System_String_) override method of SourceProvider class, which is used to get source list as complex property values for picker editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem` event to set [DisplayMemberPath](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormPickerItem.html) and [ValueMemberPath](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormPickerItem.html#Syncfusion_Android_DataForm_DataFormPickerItem_ValueMemberPath) property value DataFormPickerItem for complex type property. 
 
 N> Class cannot be directly set as data type for picker editor in this complex type scenario.
 
@@ -679,7 +679,7 @@ In the numeric editor, the [SfNumericUpDown](https://help.syncfusion.com/xamarin
 
 ### Changing SpinButtonAlignment in NumericUpDown
 
-By default, up down button will be displayed in right side. You can change its alignment by using the [SpinButtonAlignment](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericUpDownItem~SpinButtonAlignment.html) property in the [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html).
+By default, up down button will be displayed in right side. You can change its alignment by using the [SpinButtonAlignment](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html#Syncfusion_Android_DataForm_DataFormNumericUpDownItem_SpinButtonAlignment) property in the [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -696,7 +696,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Changing step value in numeric up down
 
-You can change the next increment and decrement values by using the [StepValue](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericUpDownItem~StepValue.html) property in the [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html). The default value of step value is 1.
+You can change the next increment and decrement values by using the [StepValue](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html#Syncfusion_Android_DataForm_DataFormNumericUpDownItem_StepValue) property in the [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html). The default value of step value is 1.
 
 {% tabs %}
 {% highlight c# %}
@@ -712,7 +712,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Setting Maximum and Minimum value in numeric up down
 
-You can set minimum and maximum values for numeric up down by using [Minimum](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericUpDownItem~Minimum.html) and [Maximum](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericUpDownItem~Maximum.html) properties values respectively.
+You can set minimum and maximum values for numeric up down by using [Minimum](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html#Syncfusion_Android_DataForm_DataFormNumericUpDownItem_Minimum) and [Maximum](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html#Syncfusion_Android_DataForm_DataFormNumericUpDownItem_Maximum) properties values respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -731,7 +731,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Enabling auto reverse in numeric up down
 
-In the `SfNumericUpDown`, once maximum and minimum values reached, the value will be unchanged. You can enable the cyclic behavior by setting the [AutoReverse](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericUpDownItem~AutoReverse.html) to `true` in the [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html).
+In the `SfNumericUpDown`, once maximum and minimum values reached, the value will be unchanged. You can enable the cyclic behavior by setting the [AutoReverse](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html#Syncfusion_Android_DataForm_DataFormNumericUpDownItem_AutoReverse) to `true` in the [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericUpDownItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -749,7 +749,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Changing CultureInfo in numeric up down and numeric text box
 
-You can change the culture in `SfNumericTextBox` and `SfNumericUpDown` by using the [CultureInfo](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericItemBase~CultureInfo.html) property in the [DataFormNumericItemBase](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericItemBase.html).
+You can change the culture in `SfNumericTextBox` and `SfNumericUpDown` by using the [CultureInfo](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericItemBase.html#Syncfusion_Android_DataForm_DataFormNumericItemBase_CultureInfo) property in the [DataFormNumericItemBase](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormNumericItemBase.html).
 
 #### SfNumericTextBox
 

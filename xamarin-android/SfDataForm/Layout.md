@@ -11,7 +11,7 @@ documentation: UG
 
 ## Overview
 
-The data form supports linear and grid layouts. The DataFormLayoutManager creates the [DataFormItemView](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemView.html), [DataFormGroupItemView](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormGroupItemView.html), and manages layout of label, editor, and validation label.
+The data form supports linear and grid layouts. The DataFormLayoutManager creates the [DataFormItemView](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormItemView.html), [DataFormGroupItemView](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormGroupItemView.html), and manages layout of label, editor, and validation label.
 
 ## Linear layout support
 
@@ -27,7 +27,7 @@ When the label position is Top, the linear layout is shown as follows:
 
 ## Grid layout support
 
-By default, the data form arranges one data field per row. It is possible to have more than one date fields per row by setting the [ColumnCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ColumnCount.html) property which provides grid like layout for the data form.
+By default, the data form arranges one data field per row. It is possible to have more than one date fields per row by setting the [ColumnCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_ColumnCount) property which provides grid like layout for the data form.
 
 {% tabs %}
 {% highlight c# %}
@@ -47,7 +47,7 @@ When the label position is Top, the grid layout is shown as follows:
 
 ## Label visibility
 
-You can hide the label by defining the [DisplayOptions](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DisplayOptionsAttribute.html) attribute or by handling `AutoGeneratingDataFormItem` event. In this case, only the editor will be loaded.
+You can hide the label by defining the [DisplayOptions](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DisplayOptionsAttribute.html) attribute or by handling `AutoGeneratingDataFormItem` event. In this case, only the editor will be loaded.
 
 ### Using attributes
 
@@ -91,7 +91,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Label position
 
-Labels can be positioned either top or left side of the editor. By using the [LabelPosition](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~LabelPosition.html) property, you can layout the label associated with editor.
+Labels can be positioned either top or left side of the editor. By using the [LabelPosition](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_LabelPosition) property, you can layout the label associated with editor.
 
 By default, the label will be positioned at left side of the editor.
 
@@ -105,7 +105,7 @@ dataForm.LabelPosition = LabelPosition.Top;
 
 ### Changing label position of the DataFormItem
 
-You can change the label position using the [LabelPosition](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem~LabelPosition.html) property in `DataFormItem`, and it will be handled in the `AutoGeneratingDataFormItem` event.
+You can change the label position using the [LabelPosition](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormItem.html#Syncfusion_Android_DataForm_DataFormItem_LabelPosition) property in `DataFormItem`, and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -136,7 +136,7 @@ You can load image instead of label by defining attribute or by handling the `Au
 
 ### Using attributes
 
-To show the image as label, use the [ImageSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DisplayOptionsAttribute~ImageSource.html) property in [DisplayOptions](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DisplayOptionsAttribute.html) attribute. Images will be taken from …\Resources\drawable folder.
+To show the image as label, use the [ImageSource](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DisplayOptionsAttribute.html#Syncfusion_Android_DataForm_DisplayOptionsAttribute_ImageSource) property in [DisplayOptions](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DisplayOptionsAttribute.html) attribute. Images will be taken from …\Resources\drawable folder.
 
 {% tabs %}
 {% highlight c# %}
@@ -155,7 +155,7 @@ public string FirstName
 
 ### Using event
 
-By using the [ImageSource](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem~ImageSource.html) property in the `DataFormItem`, you can load the image as label.
+By using the [ImageSource](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormItem.html#Syncfusion_Android_DataForm_DataFormItem_ImageSource) property in the `DataFormItem`, you can load the image as label.
 
 {% tabs %}
 {% highlight c# %}
@@ -230,7 +230,7 @@ public class ContactsInfo
 
 ### Using event
 
-You can change the fields order by using the [Order](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem~Order.html) property in the `DataFormItem`.
+You can change the fields order by using the [Order](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormItem.html#Syncfusion_Android_DataForm_DataFormItem_Order) property in the `DataFormItem`.
 
 {% tabs %}
 {% highlight c# %}
@@ -445,7 +445,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 ### Loading different layout for group
 
 You can load linear or grid layout for the particular group by handling the `AutoGeneratingDataFormItem` event.
-By setting the `ColumnCount` property in the data form, non-grouped items only will be arranged in the grid layout. To load the grid layout, set the [ColumnCount](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormGroupItem~ColumnCount.html) for the [DataFormGroupItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormGroupItem.html).
+By setting the `ColumnCount` property in the data form, non-grouped items only will be arranged in the grid layout. To load the grid layout, set the [ColumnCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormGroupItem.html#Syncfusion_Android_DataForm_DataFormGroupItem_ColumnCount) for the [DataFormGroupItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormGroupItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -569,7 +569,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Loading group in collapsed state
 
-By default, the group will be loaded in expanded state. You can collapse the group by setting the [IsExpanded](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormGroupItem~IsExpanded.html) property to false in the [DataFormGroupItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormGroupItem.html).
+By default, the group will be loaded in expanded state. You can collapse the group by setting the [IsExpanded](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormGroupItem.html#Syncfusion_Android_DataForm_DataFormGroupItem_IsExpanded) property to false in the [DataFormGroupItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormGroupItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -585,7 +585,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Restricting the group expanding and collapsing
 
-You can set restrict the group being expanded or collapsed by setting the [AllowExpandCollapse](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormGroupItem~AllowExpandCollapse.html) to `false` in the [DataFormGroupItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormGroupItem.html).
+You can set restrict the group being expanded or collapsed by setting the [AllowExpandCollapse](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormGroupItem.html#Syncfusion_Android_DataForm_DataFormGroupItem_AllowExpandCollapse) to `false` in the [DataFormGroupItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormGroupItem.html).
 
 In this case, the group will be shown without expander.
 
@@ -593,7 +593,7 @@ In this case, the group will be shown without expander.
 
 ### Programmatically expand or collapse group
 
-You can expand or collapse the group programmatically by using [ExpandGroup](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ExpandGroup.html) and [CollapseGroup](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~CollapseGroup.html) methods respectively.
+You can expand or collapse the group programmatically by using [ExpandGroup](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_ExpandGroup_System_String_) and [CollapseGroup](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_CollapseGroup_System_String_) methods respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -605,7 +605,7 @@ dataForm.CollapseGroup("Group1");
 
 ## Customizing DataFormLayoutManager
 
-To customize the layout, override the [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager.html) and assign to the [SfDataForm.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~LayoutManager.html) property.
+To customize the layout, override the [DataFormLayoutManager](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormLayoutManager.html) and assign to the [SfDataForm.LayoutManager](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_LayoutManager) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -622,7 +622,7 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 
 ### Customizing label and editor
 
-By using DataFormLayoutManager class , you can customize the generated label by overriding the [GenerateViewForLabel](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~GenerateViewForLabel.html) method and also you can customize the editor by overriding the `OnEditorCreated` method.Here, BackgroundColor and TextColor of label and editor is customized.
+By using DataFormLayoutManager class , you can customize the generated label by overriding the [GenerateViewForLabel](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormLayoutManager.html#Syncfusion_Android_DataForm_DataFormLayoutManager_GenerateViewForLabel_Syncfusion_Android_DataForm_DataFormItem_) method and also you can customize the editor by overriding the `OnEditorCreated` method.Here, BackgroundColor and TextColor of label and editor is customized.
 
 {% tabs %}
 {% highlight c# %}
@@ -723,7 +723,7 @@ Here, the LastName padding is customized.
 
 ## Label width customization
 
-You can set label and editor width proportionally by using [LabelWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~LabelWidth.html) and [EditorWidth](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~EditorWidth.html) properties.
+You can set label and editor width proportionally by using [LabelWidth](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_LabelWidth) and [EditorWidth](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_EditorWidth) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -746,7 +746,7 @@ You can increase row height and column width by defining the `DisplayOptions` at
 
 ### Row span
 
-You can increase the row height by using the [RowSpan](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DisplayOptionsAttribute~RowSpan.html) property in the`DisplayOptions` attribute.
+You can increase the row height by using the [RowSpan](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DisplayOptionsAttribute.html#Syncfusion_Android_DataForm_DisplayOptionsAttribute_RowSpan) property in the`DisplayOptions` attribute.
 
 {% tabs %}
 {% highlight c# %}
@@ -769,7 +769,7 @@ Here, `FirstName` field’s row height is increased.
 
 ### Column span
 
-When the grid layout is used, you can increase the column width by using the [ColumnSpan](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DisplayOptionsAttribute~ColumnSpan.html) property in the `DisplayOptions `attribute.
+When the grid layout is used, you can increase the column width by using the [ColumnSpan](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DisplayOptionsAttribute.html#Syncfusion_Android_DataForm_DisplayOptionsAttribute_ColumnSpan) property in the `DisplayOptions `attribute.
 
 {% tabs %}
 {% highlight c# %}
@@ -793,7 +793,7 @@ public string FirstName
 
 ## Change DataFormItem visibility at runtime
 
-You can change the field visibility by using the [IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormItem`.
+You can change the field visibility by using the [IsVisible](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormItemBase.html#Syncfusion_Android_DataForm_DataFormItemBase_IsVisible) property in the `DataFormItem`.
 
 {% tabs %}
 {% highlight c# %}
@@ -808,7 +808,7 @@ Here, the `Name` field will be hidden.
 
 ## Programmatically scroll to specific editor
 
-You can programmatically scroll to specific editor using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~ScrollTo.html) method by passing the `property name`. 
+You can programmatically scroll to specific editor using the [ScrollTo](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html#Syncfusion_Android_DataForm_SfDataForm_ScrollTo_System_String_) method by passing the `property name`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -820,7 +820,7 @@ dataForm.ScrollTo("BirthDate")
 
 ## Changing the height of DataFormItem
 
-You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 You can define the `Height` as described as follows.
 

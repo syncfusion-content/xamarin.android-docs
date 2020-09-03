@@ -11,7 +11,7 @@ documentation: ug
 
 ## How to Perform an Operation while a Calendar Cell is Tapped?
 
-We can perform operation while the Calendar cell is Tapped using [CalendarTapped](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~CalendarTapped_EV.html) event. CalendarTapped event returns the date selected and the Appointments that are associated with the date selected.
+We can perform operation while the Calendar cell is Tapped using [CalendarTapped](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html) event. CalendarTapped event returns the date selected and the Appointments that are associated with the date selected.
 
 {% highlight c# %}
 	
@@ -24,7 +24,7 @@ We can perform operation while the Calendar cell is Tapped using [CalendarTapped
 
 ## How to Perform an Operation while Dealing with Appointments?
 
-[InlineEventToggled](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~InlineEventToggled_EV.html) event returns the selected date along with the appointments it carries. Using this event user can perform operation while dealing with appointments.
+[InlineEventToggled](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html) event returns the selected date along with the appointments it carries. Using this event user can perform operation while dealing with appointments.
 
 {% highlight c# %}
 	
@@ -37,7 +37,7 @@ sfCalendar.InlineEventToggled += (object sender, InlineEventToggledEventArgs e) 
 
 ## How to Perform an Operation when Navigate to Next Month?
 
-User defined operation can be performed using [MonthChanged](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MonthChanged_EV.html) event when navigating to next month. This event returns the details about current value and previous value of month.
+User defined operation can be performed using [MonthChanged](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html) event when navigating to next month. This event returns the details about current value and previous value of month.
 
 {% highlight c# %}
 	
@@ -50,7 +50,7 @@ sfCalendar.MonthChanged += (object sender, MonthChangedEventArgs e) =>
 
 ## How to Customize Cell or Month View?
 
-[DrawMonthCell](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~DrawMonthCell_EV.html) event allows us to customize the month view in SfCalendar control. It returns MonthCell args
+[DrawMonthCell](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html) event allows us to customize the month view in SfCalendar control. It returns MonthCell args
 
 {% highlight c# %}
 
@@ -63,7 +63,7 @@ sfCalendar.DrawMonthCell += (object sender, DrawMonthCellEventArgs e) =>
 
 ## How to Customize Year View?
 
-[DrawYearCell](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~DrawYearCell_EV.html) event allows us to customize the year view in  SfCalendar control. It returns YearCell args
+[DrawYearCell](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html) event allows us to customize the year view in  SfCalendar control. It returns YearCell args
 
 {% highlight c# %}
 
@@ -77,7 +77,7 @@ sfCalendar.DrawYearCell += (object sender, DrawYearCellEventArgs e) =>
 
 ## How to Perform an Operation when the Selected Date Get Changed?
 
-We can perform an operation when the selected date get changed using [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~SelectionChanged_EV.html) event which returns the dates selected and dates deselected from the SfCalendar.
+We can perform an operation when the selected date get changed using [SelectionChanged](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html) event which returns the dates selected and dates deselected from the SfCalendar.
 
 {% highlight c# %}
 

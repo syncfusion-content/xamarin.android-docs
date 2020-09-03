@@ -132,12 +132,12 @@ You can group TreeMapItems using the following two types of levels:
 * TreeMap flat level
 * TreeMap hierarchical level
 
-Add either flat level or hierarchical level to the [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~Levels.html) collection in TreeMap.
-Each level will be formed based on the property specified in the [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.TreeMapFlatLevel~GroupPath.html), and each rectangle size will be calculated based on the [`WeightValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~WeightValuePath.html) property.
+Add either flat level or hierarchical level to the [`Levels`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_Levels) collection in TreeMap.
+Each level will be formed based on the property specified in the [`GroupPath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.TreeMapFlatLevel.html#Com_Syncfusion_Treemap_TreeMapFlatLevel_GroupPath), and each rectangle size will be calculated based on the [`WeightValuePath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_WeightValuePath) property.
 
 ## Customizing the appearance of TreeMap by range
 
-You can differentiate the nodes based on their values and colors using [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.RangeColorMapping.html). You can define the color value range using the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Range~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Range~To.html) properties in range. The values of the From and To properties depend on underlying data bound to the [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~ColorValuePath.html) property.
+You can differentiate the nodes based on their values and colors using [`RangeColorMapping`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.RangeColorMapping.html). You can define the color value range using the [`From`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.Range.html#Com_Syncfusion_Treemap_Range_From) and [`To`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.Range.html#Com_Syncfusion_Treemap_Range_To) properties in range. The values of the From and To properties depend on underlying data bound to the [`ColorValuePath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_ColorValuePath) property.
 
 {% tabs %} 
 
@@ -182,7 +182,7 @@ RangeColorMapping rangeColorMapping = new RangeColorMapping();
 
 ## LeafItemSetting
 
-You can customize the leaf nodes of  TreeMap using [`LeafItemSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~LeafItemSettings.html).
+You can customize the leaf nodes of  TreeMap using [`LeafItemSettings`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_LeafItemSettings).
 
 {% tabs %}  
 
@@ -200,11 +200,11 @@ LeafItemSetting leafItemSetting = new LeafItemSetting();
 
 ## Enabling legends
 
-The color value of leaf nodes can be tracked using TreeMap legend. The legend support is applicable only for the TreeMap whose leaf nodes are colored using RangeColorMapping. Set the value of [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.LegendSetting~ShowLegend.html) property to “True” to make legends visible.
+The color value of leaf nodes can be tracked using TreeMap legend. The legend support is applicable only for the TreeMap whose leaf nodes are colored using RangeColorMapping. Set the value of [`ShowLegend`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.LegendSetting.html#Com_Syncfusion_Treemap_LegendSetting_ShowLegend) property to “True” to make legends visible.
 
 ## Labels for legends
 
-You can customize the labels of legend items using the [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Range~LegendLabel.html) property in RangeColorMapping. 
+You can customize the labels of legend items using the [`LegendLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.Range.html#Com_Syncfusion_Treemap_Range_LegendLabel) property in RangeColorMapping. 
 
 {% tabs %} 
 

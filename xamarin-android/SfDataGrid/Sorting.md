@@ -11,7 +11,7 @@ documentation: UG
  
 The dataGrid allows sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~AllowSorting.html) property to `true`. It allows sorting the data against one or more columns. When sorting is applied, the data grid automatically rearranges the data to match with the current sort criteria. When the `SfDataGrid.AllowSorting` is `true`, you can sort the data simply by tapping the column header. Once sorting is applied, the data grid shows a sort icon in the respective column header indicating the direction of sorting.
 
-N> To update sorting for newly added row or column, set the [SfDataGrid.View.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Linq.Android~Syncfusion.Data.LiveDataUpdateMode.html) to `LiveDataUpdateMode.AllowDataShaping`.
+N> To update sorting for newly added row or column, set the [SfDataGrid.View.LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Data.LiveDataUpdateMode.html) to `LiveDataUpdateMode.AllowDataShaping`.
 
 ## Programmatic sorting
 

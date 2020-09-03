@@ -13,7 +13,7 @@ documentation: ug
 
 ## Changing the gauge size
 
-The [`CircularCoefficient`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge~CircularCoefficient.html) property is used to change the diameter of the gauge.
+The [`CircularCoefficient`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html#Com_Syncfusion_Gauges_SfCircularGauge_SfCircularGauge_CircularCoefficient) property is used to change the diameter of the gauge.
 This offset ranges from 0 to 1, and the default value is 1.
 
 {% highlight c# %}
@@ -52,7 +52,7 @@ This offset ranges from 0 to 1, and the default value is 1.
 
 ## Gauge alignment
 
-The [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge~IsCenterAligned.html) property is used to align the gauge to the center and adjust it radius based on available size. In semi-circular gauge, bottom space will be removed using the [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge~IsCenterAligned.html) property.
+The [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html#Com_Syncfusion_Gauges_SfCircularGauge_SfCircularGauge_IsCenterAligned) property is used to align the gauge to the center and adjust it radius based on available size. In semi-circular gauge, bottom space will be removed using the [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html#Com_Syncfusion_Gauges_SfCircularGauge_SfCircularGauge_IsCenterAligned) property.
 
 {% highlight c# %}
 

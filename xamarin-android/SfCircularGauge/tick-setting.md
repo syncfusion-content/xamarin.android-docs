@@ -15,7 +15,7 @@ The `TickSetting    ` property helps you to identify the gauge’s data value by
 
 ## Show ticks for scale
 
-The [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~ShowTicks.html) property allows you to enable or disable the ticks of circular gauge.
+The [`ShowTicks`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_ShowTicks) property allows you to enable or disable the ticks of circular gauge.
 
 {% highlight c# %}
 
@@ -33,9 +33,9 @@ The [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Sync
 
 ## Ticks customization 
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~Interval.html) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.CircularScale~MinorTicksPerInterval.html) property.
+The [`Interval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_Interval) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularScale.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularScale_MinorTicksPerInterval) property.
 
-Color and thickness of the tick are set by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~Width.html) UI properties. You can also customize the length of the ticks by using the  [`Size`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~Size.html) property. First, you should set the `Offset` property for ticks, then increase the size of the ticks.
+Color and thickness of the tick are set by using the [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.TickSetting.html#Com_Syncfusion_Gauges_SfCircularGauge_TickSetting_Color) and [`Width`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.TickSetting.html#Com_Syncfusion_Gauges_SfCircularGauge_TickSetting_Width) UI properties. You can also customize the length of the ticks by using the  [`Size`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.TickSetting.html#Com_Syncfusion_Gauges_SfCircularGauge_TickSetting_Size) property. First, you should set the `Offset` property for ticks, then increase the size of the ticks.
 
 ## Customize major ticks for scale  
 
@@ -83,8 +83,8 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 
 The major and minor ticks can be positioned far away from the rim by using the following two ways:
 
-1.[`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~Offset.html) property. 
-2.[`StartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~StartOffset.html) and [`EndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.TickSetting~EndOffset.html) properties.
+1.[`Offset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.TickSetting.html#Com_Syncfusion_Gauges_SfCircularGauge_TickSetting_Offset) property. 
+2.[`StartOffset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.TickSetting.html#Com_Syncfusion_Gauges_SfCircularGauge_TickSetting_StartOffset) and [`EndOffset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.TickSetting.html#Com_Syncfusion_Gauges_SfCircularGauge_TickSetting_EndOffset) properties.
 
 ### Setting offset for scale
 
