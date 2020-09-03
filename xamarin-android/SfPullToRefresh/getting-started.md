@@ -175,7 +175,7 @@ public class MainActivity : Activity
 
 ### Adding a simple layout as the PullableContent
 
-Any view can be added as the pullable content using the [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullableContent.html) property to refresh it. Refer to the following code example in which a simple linear layout is added as pullable content:
+Any view can be added as the pullable content using the [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPullToRefresh.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_SfPullToRefresh_PullableContent) property to refresh it. Refer to the following code example in which a simple linear layout is added as pullable content:
 
 {% tabs %}
 {% highlight c# %}
@@ -240,9 +240,9 @@ protected override void OnCreate(Bundle bundle)
 
 ### Refreshing the view
 
-To refresh the view, hook the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event. The [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event will be fired, once the pulling progress reaches 100% and touch is released. You can do the required operations to refresh the view and once the view is refreshed, set the [RefreshingEventArgs.Refreshed](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.RefreshingEventArgs~Refreshed.html) as <b>true</b> to stop the refreshing animation. 
+To refresh the view, hook the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPullToRefresh.SfPullToRefresh.html) event. The [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPullToRefresh.SfPullToRefresh.html) event will be fired, once the pulling progress reaches 100% and touch is released. You can do the required operations to refresh the view and once the view is refreshed, set the [RefreshingEventArgs.Refreshed](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPullToRefresh.RefreshingEventArgs.html#Syncfusion_SfPullToRefresh_RefreshingEventArgs_Refreshed) as <b>true</b> to stop the refreshing animation. 
 
-Refer to the following code example illustrating hooking of the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event and refreshing the view:
+Refer to the following code example illustrating hooking of the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPullToRefresh.SfPullToRefresh.html) event and refreshing the view:
 
 {% tabs %}
 {% highlight c# %}
@@ -283,7 +283,7 @@ public class MainActivity : Activity
 
 SfPullToRefresh support two types of transitions. By default, `TransitionType.SlideOnTop` is enabled. 
 
-Refer to the topic `TransitionType` under `Built-in Customization` section for more details regarding [SfPullToRefresh.TransitionType](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~TransitionType.html) property.
+Refer to the topic `TransitionType` under `Built-in Customization` section for more details regarding [SfPullToRefresh.TransitionType](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPullToRefresh.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_SfPullToRefresh_TransitionType) property.
 
 Refer to the following code example to switch to the `TransitionType.Push` mode of transition.
 

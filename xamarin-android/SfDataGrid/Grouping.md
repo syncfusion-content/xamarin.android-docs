@@ -173,7 +173,7 @@ public class GroupConverter : IValueConverter
 
 ## Display based grouping using group mode property
 
-By default, column grouping occurs based on the value in the underlying collection, thereby creating a new group for each new value of that column. However, you can also group a column based on the display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~GroupMode.html) property as `Display`. In the following code example, set [GridColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Format.html) property as "#" which displays only the rounded off value in the `GridCell`:  
+By default, column grouping occurs based on the value in the underlying collection, thereby creating a new group for each new value of that column. However, you can also group a column based on the display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html#Syncfusion_SfDataGrid_GridColumn_GroupMode) property as `Display`. In the following code example, set [GridColumn.Format](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html#Syncfusion_SfDataGrid_GridColumn_Format) property as "#" which displays only the rounded off value in the `GridCell`:  
 
 {% highlight c# %}
 GridNumericColumn cargoWeight = new GridTextColumn();
@@ -238,7 +238,7 @@ Run the application to render the following output:
 
 ![](SfDataGrid_images/Remove_Grouping.png)
 
-N> You can also clear or remove grouping on [GridTapped event](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridDoubleTapped_EV.html), or [GridLongPressed event](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridLongPressed_EV.html).
+N> You can also clear or remove grouping on [GridTapped event](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html), or [GridLongPressed event](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html).
 
 ## Events
 

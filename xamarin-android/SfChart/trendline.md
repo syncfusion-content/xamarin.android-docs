@@ -9,7 +9,7 @@ documentation: ug
 
 # Trendlines in Xamarin.Android Chart
 
-The [`Trendline`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendline.html) is a line drawn over the chart to display the overall direction of the results. And it built on the assumption based on current and past beliefs. 
+The [`Trendline`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html) is a line drawn over the chart to display the overall direction of the results. And it built on the assumption based on current and past beliefs. 
 
 The following code examples shows how to add Trendline in SfChart.
 
@@ -25,7 +25,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ## Types of Trendline
 
-SfChart support following types of [`Trendlines`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CartesianSeries~Trendlines.html).
+SfChart support following types of [`Trendlines`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CartesianSeries.html#Com_Syncfusion_Charts_CartesianSeries_Trendlines).
 
 * [`Linear`](https://help.syncfusion.com/xamarin-android/sfchart/trendline#linear)
 * [`Exponential`](https://help.syncfusion.com/xamarin-android/sfchart/trendline#exponential)
@@ -36,7 +36,7 @@ SfChart support following types of [`Trendlines`](https://help.syncfusion.com/cr
 
 ### Linear
 
-[`Linear`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendlineType.html) trendline was best-fit straight line for simple linear datasets. A linear trend line usually shows that something is increasing or decreasing at a steady rate. This is the default trendline to be drawn for the SfChart.
+[`Linear`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline was best-fit straight line for simple linear datasets. A linear trend line usually shows that something is increasing or decreasing at a steady rate. This is the default trendline to be drawn for the SfChart.
 
 The following is the code example of linear trendline.
 
@@ -55,7 +55,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ### Logarithmic
 
-A [`Logarithmic`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is the strongest-fit curved line, that is most effective when the data change rate increases or decreases rapidly. Logarithmic trends may use negative and/or positive values as well. 
+A [`Logarithmic`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is the strongest-fit curved line, that is most effective when the data change rate increases or decreases rapidly. Logarithmic trends may use negative and/or positive values as well. 
 
 The following is the code example of logarithmic trendline.
 
@@ -74,7 +74,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ### Exponential
 
-The [`Exponential`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is the curved line most useful for data values rise or fall at increasingly higher rates.
+The [`Exponential`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is the curved line most useful for data values rise or fall at increasingly higher rates.
 
 N> SfChart will not generate Exponential trendline when your data contains zero or negative values. 
 
@@ -93,7 +93,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ### Power
 
-The [`Power`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is typically used with data sets to compare measurements that grow at a specific rate.
+The [`Power`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is typically used with data sets to compare measurements that grow at a specific rate.
 
 The following is the code example of power trendline.
 
@@ -112,7 +112,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ### Polynomial
 
-The [`polynomial`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolynomialOrder`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendline~PolynomialOrder.html).
+The [`polynomial`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolynomialOrder`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html#Com_Syncfusion_Charts_ChartTrendline_PolynomialOrder).
 
 The following is the code example of polynomial trendline.
 
@@ -141,7 +141,7 @@ The following two types of forecasting are available in SfChart:
 ### Forward Forecasting
 
 For determining the future trends (in forward direction). The 
-following code example explains the how to set the value for [`ForwardForecast`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendline~ForwardForecast.html).
+following code example explains the how to set the value for [`ForwardForecast`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html#Com_Syncfusion_Charts_ChartTrendline_ForwardForecast).
 
 {% highlight c# %}
 [C#]
@@ -158,7 +158,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ### Backward Forecasting
 
-For determining the future trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendline~BackwardForecast.html).
+For determining the future trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html#Com_Syncfusion_Charts_ChartTrendline_BackwardForecast).
 
 {% highlight c# %}
 [C#]
@@ -175,7 +175,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ## Customization
 
-We can customize the trendline appearance using [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendline~StrokeWidth.html), [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendline~StrokeColor.html) and [`PathEffect`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendline~PathEffect.html) properties. 
+We can customize the trendline appearance using [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html#Com_Syncfusion_Charts_ChartTrendline_StrokeWidth), [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html#Com_Syncfusion_Charts_ChartTrendline_StrokeColor) and [`PathEffect`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html#Com_Syncfusion_Charts_ChartTrendline_PathEffect) properties. 
 
 {% highlight c# %}
 [C#]
@@ -190,7 +190,7 @@ trendline.PathEffect = new DashPathEffect(new float[] { 5, 6 }, 2);
 
 ## Legend Item Visibility
 
-We can able to control the visibility of the trendline legend items using [`VisibilityOnLegend`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrendline~VisibilityOnLegend.html) property of the Trendline.
+We can able to control the visibility of the trendline legend items using [`VisibilityOnLegend`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html#Com_Syncfusion_Charts_ChartTrendline_VisibilityOnLegend) property of the Trendline.
 
 {% highlight c# %}
 [C#]

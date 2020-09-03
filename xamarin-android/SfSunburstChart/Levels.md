@@ -9,7 +9,7 @@ documentation: ug
 
 # Levels
 
-The sunburst chart is used to display hierarchical data. More than one hierarchical data can be added to the [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~Levels.html) collection of the sunburst chart. Each level of the hierarchy is represented by a circle.
+The sunburst chart is used to display hierarchical data. More than one hierarchical data can be added to the [`Levels`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SfSunburstChart.html#Syncfusion_SfSunburstChart_Android_SfSunburstChart_Levels) collection of the sunburst chart. Each level of the hierarchy is represented by a circle.
 
 The following code shows how to add hierarchical levels in the Levels collection.
 
@@ -26,7 +26,7 @@ The following code shows how to add hierarchical levels in the Levels collection
 
 ## Group member path
 
-The [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstHierarchicalLevel~GroupMemberPath.html) is a string property that is used to map the group category value in the sunburst [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SfSunburstChart~ItemsSource.html).
+The [`GroupMemberPath`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstHierarchicalLevel.html#Syncfusion_SfSunburstChart_Android_SunburstHierarchicalLevel_GroupMemberPath) is a string property that is used to map the group category value in the sunburst [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SfSunburstChart.html#Syncfusion_SfSunburstChart_Android_SfSunburstChart_ItemsSource).
 
 The following code shows how to map the group member path.
 

@@ -91,7 +91,7 @@ segmentedControl.ItemsSource = new ObservableCollection<SfSegmentItem>
 
 ## How to generate font icons
 
-The segmented control enables the user to use font icons for the items in the data source collection. For this we have to first give the desired font icon and its font family using [`IconFont`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentItem~IconFont.html) and [`FontIconTypeface`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentItem~FontIconTypeface.html) property.
+The segmented control enables the user to use font icons for the items in the data source collection. For this we have to first give the desired font icon and its font family using [`IconFont`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentItem.html#Syncfusion_Android_Buttons_SfSegmentItem_IconFont) and [`FontIconTypeface`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentItem.html#Syncfusion_Android_Buttons_SfSegmentItem_FontIconTypeface) property.
 
 N> Font family must be added to the respective folders based on the platforms 
 Android -> Add the font family inside Resource-> drawable

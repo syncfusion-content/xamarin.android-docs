@@ -13,7 +13,7 @@ The segmented control indicates the selected item by differentiating it with the
 
 ## Selection text color
 
-The user can change the text color of the Selected item to desired color.The selected item text color can be customized by the [`SelectionTextColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SelectionTextColor.html) property.
+The user can change the text color of the Selected item to desired color.The selected item text color can be customized by the [`SelectionTextColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_SelectionTextColor) property.
 
 {% highlight c# %}
 
@@ -103,7 +103,7 @@ segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
 
 #### Color
 
-The background color of the selection strip can be customized using [`Color`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentItem~SelectionBackgroundColor.html) property which is inside SelectionIndicatorSettings class.
+The background color of the selection strip can be customized using [`Color`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentItem.html#Syncfusion_Android_Buttons_SfSegmentItem_SelectionBackgroundColor) property which is inside SelectionIndicatorSettings class.
 
 {% highlight c# %}
 
@@ -120,7 +120,7 @@ segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
 
 #### Thickness
 
-The border thickness of the selection strip can be customized using [`Thickness`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~SegmentBorderThickness.html) property which is inside SelectionIndicatorSettings class
+The border thickness of the selection strip can be customized using [`Thickness`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_SegmentBorderThickness) property which is inside SelectionIndicatorSettings class
 
 {% highlight c# %}
 

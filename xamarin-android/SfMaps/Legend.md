@@ -9,11 +9,11 @@ documentation: ug
 # Legend
 
 A legend is a key used on a map that contains swatches of symbols with descriptions. A legend interprets what the map displays; it can be represented in various colors, shapes, or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
-Legends can be added with the help of [`LegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer~LegendSetting.html) in the shape file layer.
+Legends can be added with the help of [`LegendSetting`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html#Com_Syncfusion_Maps_ShapeFileLayer_LegendSetting) in the shape file layer.
 
 ## Visibility
 
-The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~ShowLegend.html) property in [`LegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting.html) class to true.
+The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_ShowLegend) property in [`LegendSetting`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html) class to true.
 
 {% tabs %}
 
@@ -29,14 +29,14 @@ The legends can be made visible by setting the [`ShowLegend`](https://help.syncf
 
 ## Legend type
 
-The [`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~LegendType.html) property is used to display the shapes and bubble legends in maps.
+The [`LegendType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_LegendType) property is used to display the shapes and bubble legends in maps.
 
 * Layers
 * Bubbles
 
 ## Legend position
 
-Based on the values of x and y, the legends can be positioned using the  [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~LegendPosition.html) property of the [`LegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting.html) lass. Legends will be positioned in the range of 0 to 100 (screen size ratio). By default, the *LegendPosition* is (50,10).
+Based on the values of x and y, the legends can be positioned using the  [`LegendPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_LegendPosition) property of the [`LegendSetting`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html) lass. Legends will be positioned in the range of 0 to 100 (screen size ratio). By default, the *LegendPosition* is (50,10).
 
 The legend items will be placed in multiple rows if size of the total legend exceeds the available size.  
 
@@ -64,7 +64,7 @@ The legend items will be placed in multiple rows if size of the total legend exc
 
 ## Legend alignment
 
-Legends can be aligned using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~VerticalAlignment.html) Properties. By default, the legends will be aligned in center.
+Legends can be aligned using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_VerticalAlignment) Properties. By default, the legends will be aligned in center.
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ Legends can be aligned using the [`HorizontalAlignment`](https://help.syncfusion
 
 ## Icon customization
 
-The icon size of a legend can be customized using the [`IconHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~IconSize.html#) and [`IconWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~IconWidth.html) properties.
+The icon size of a legend can be customized using the [`IconHeight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_IconHeight) and [`IconWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_IconWidth) properties.
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ The icon size of a legend can be customized using the [`IconHeight`](https://hel
 
 {% endtabs %}
 
-The icon shape can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~LegendIcon.html) property. By default, this property is set to circle for bubbles and rectangle for shapes.
+The icon shape can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_LegendIcon) property. By default, this property is set to circle for bubbles and rectangle for shapes.
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ layer.LegendSetting = legendSetting;
 
 ## Item margin
 
-The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~ItemMargin.html) property is used to set spacing between the legend items.
+The [`ItemMargin`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_ItemMargin) property is used to set spacing between the legend items.
 
 {% tabs %}
 
@@ -159,15 +159,15 @@ The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syn
 
 ## Legend label
 
-The[`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ColorMapping~LegendLabel.html)  provides an information about the maps. It is specified under color mapping. If *LegendLabel* is not specified, ColorMapping values will be applied as legend label.
+The[`LegendLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ColorMapping.html#Com_Syncfusion_Maps_ColorMapping_LegendLabel)  provides an information about the maps. It is specified under color mapping. If *LegendLabel* is not specified, ColorMapping values will be applied as legend label.
 
 The following properties are used to customize the label of the legends:
 
- * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~TextColor.html) : used to change the color of the legend text.
+ * [`TextColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_TextColor) : used to change the color of the legend text.
 
- * [`Typeface`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~Typeface.html) : used to change the font family,font weight of the legend label.
+ * [`Typeface`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_Typeface) : used to change the font family,font weight of the legend label.
 
- * [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.LegendSetting~TextSize.html) : used to change the text size of the legend label.
+ * [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.LegendSetting.html#Com_Syncfusion_Maps_LegendSetting_TextSize) : used to change the text size of the legend label.
 
 {% tabs %}
 

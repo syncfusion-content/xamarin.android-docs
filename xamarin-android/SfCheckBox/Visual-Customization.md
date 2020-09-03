@@ -12,7 +12,7 @@ keywords: button, SfCheckBox, CheckBox
 # Visual Customization
 
 ## Customizing shape
-The check box shape can be customized using the [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~CornerRadius.html) property. This property specifies uniform radius value for every corner of the check box.
+The check box shape can be customized using the [`CornerRadius`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_CornerRadius) property. This property specifies uniform radius value for every corner of the check box.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ checkBox.CornerRadius = 5.0f;
 ![CheckBox CornerRadius](Images/Radius.png)
 
 ## Customizing state color
-The default state colors can be customized using the [`ButtonTintList`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~ButtonTintList.html) property. The checked/unchecked/indeterminate state color is updated with `ColorStateList` to the [`ButtonTintList`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~ButtonTintList.html).
+The default state colors can be customized using the [`ButtonTintList`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html) property. The checked/unchecked/indeterminate state color is updated with `ColorStateList` to the [`ButtonTintList`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html).
 {% tabs %}
 {% highlight c# %}
 int[][] states ={new int[]{ Android.Resource.Attribute.StateChecked },                            
@@ -52,7 +52,7 @@ indeterminate.ButtonTintList = new ColorStateList(states, colors);
 ![CheckedColor and UncheckedColor in Checkbox](Images/StateColor.png)
 
 ## BorderWidth
-The border thickness of the tick box in the checkbox can be customized with the [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~BorderWidth.html) property.
+The border thickness of the tick box in the checkbox can be customized with the [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_BorderWidth) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,12 +90,12 @@ ButtonTintList = new Android.Content.Res.ColorStateList(states, colors)
 ![CheckBox BorderWidth](Images/BorderWidth.png)
 
 ## Setting caption text appearance 
-You can customize the display text appearance of the [`SfCheckBox`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox.html) control using the following properties:
+You can customize the display text appearance of the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html) control using the following properties:
 
-* [`SetTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~SetTextColor.html): Changes the color of the text.
-* [`TextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~TextAlignment.html): Changes the horizontal alignment of the caption text.
-* [`Typeface`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~Typeface.html): Changes the font family of the text and sets font attributes(bold/italic/none) of the caption text.
-* [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~TextSize.html): Sets font size of the caption text.
+* [`SetTextColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html): Changes the color of the text.
+* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html): Changes the horizontal alignment of the caption text.
+* [`Typeface`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html): Changes the font family of the text and sets font attributes(bold/italic/none) of the caption text.
+* [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html): Sets font size of the caption text.
 
 {% tabs %}
 {% highlight c# %}

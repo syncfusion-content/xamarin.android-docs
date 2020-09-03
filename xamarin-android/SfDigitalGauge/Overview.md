@@ -12,7 +12,7 @@ The digital gauge control is used to display alphanumeric characters in digital 
 
 ## Key features
 
-The digital gauge is composed of several segments which are major UI components. [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) comprises the following segments to display digital characters:
+The digital gauge is composed of several segments which are major UI components. [`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html) comprises the following segments to display digital characters:
 
 •	7-segment display
 •	14-segment display

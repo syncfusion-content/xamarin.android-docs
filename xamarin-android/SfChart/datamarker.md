@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Markers
 
-Data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. [`DataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~DataMarker.html) can be enabled using following code snippet,
+Data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. [`DataMarker`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_DataMarker) can be enabled using following code snippet,
 
 {% highlight c# %} 
 [C#]
@@ -22,7 +22,7 @@ lineSeries.DataMarker.ShowLabel = true;
 
 ## Customizing Labels
 
-The [`DataMarkerLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries+DataMarkerLabelCreatedEventArgs~DataMarkerLabel.html) appearance can be customized using [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~LabelStyle.html) property.
+The [`DataMarkerLabel`](https://help.syncfusion.com/cr/xamarin-android/) appearance can be customized using [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartDataMarker.html#Com_Syncfusion_Charts_ChartDataMarker_LabelStyle) property.
 
 * [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html) – used to change the color of the label.
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html) – used to change the label background color.
@@ -38,7 +38,7 @@ The [`DataMarkerLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-androi
 * [`LabelPadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~LabelPadding.html) - used to change the padding value of label.
 * [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~OffsetX.html) - used to set the offset value of X.
 * [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~OffsetY.html) - used to set the offset value of Y.
-* [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~UseSeriesPalette.html) - used to bind the series color to the background color of data marker labels.
+* [`UseSeriesPalette`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartDataMarker.html#Com_Syncfusion_Charts_ChartDataMarker_UseSeriesPalette) - used to bind the series color to the background color of data marker labels.
 
 Following code snippet illustrates the customization of label and its background,
 
@@ -66,8 +66,8 @@ lineSeries.DataMarker.LabelStyle.MarginBottom = 5;
 
 You can customize the content of the label using [`LabelContent`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~LabelContent.html) property. Following are the two options that are supported now,
 
-* [`Percentage`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LabelContent.html) – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
-* [`YValue`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LabelContent.html) – This will show the corresponding Y value.
+* [`Percentage`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LabelContent.html) – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
+* [`YValue`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LabelContent.html) – This will show the corresponding Y value.
 
 {% highlight c# %} 
 [C#]
@@ -80,7 +80,7 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 ## Label Position
 
-The [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarkerLabelStyle~LabelPosition.html) property is used to position the data marker labels at the [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabelPosition.html), [`Inner`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabelPosition.html) and [`Outer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabelPosition.html) positions.
+The [`LabelPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartDataMarkerLabelStyle.html#Com_Syncfusion_Charts_ChartDataMarkerLabelStyle_LabelPosition) property is used to position the data marker labels at the [`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabelPosition.html), [`Inner`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabelPosition.html) and [`Outer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabelPosition.html) positions.
 
 The following screenshot illustrates the default position of data marker labels,
 
@@ -152,7 +152,7 @@ chart.Series.Add(pieSeries);
 
 ## Customizing Marker Shapes
 
-Shapes can be added to chart data marker by setting the [`ShowMarker`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~ShowMarker.html) property to true. There are different shapes you can set to the chart using [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~MarkerType.html) property such as [`Cross`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerType.html), [`Ellipse`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerType.html), [`Diamond`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerType.html) etc. Following properties are used to customize marker appearance,
+Shapes can be added to chart data marker by setting the [`ShowMarker`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~ShowMarker.html) property to true. There are different shapes you can set to the chart using [`MarkerType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartDataMarker.html#Com_Syncfusion_Charts_ChartDataMarker_MarkerType) property such as [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerType.html), [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerType.html), [`Diamond`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerType.html) etc. Following properties are used to customize marker appearance,
 
 * [`MarkerWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~MarkerWidth.html) - used to change the width of the marker.
 * [`MarkerHeight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~MarkerHeight.html) - used to change the height of the marker.
@@ -181,7 +181,7 @@ lineSeries.DataMarker.MarkerStrokeWidth = 2;
 
 ## Connector Line
 
-This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. The [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartDataMarker~ConnectorLineStyle.html) property is used to customize the connector line.
+This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. The [`ConnectorLineStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartDataMarker.html#Com_Syncfusion_Charts_ChartDataMarker_ConnectorLineStyle) property is used to customize the connector line.
 
 
 * [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineStyle~StrokeColor.html) – used to change the color of the line.
@@ -206,24 +206,24 @@ lineSeries.DataMarker.ConnectorLineStyle.PathEffect = new DashPathEffect(new flo
 
 ![Connector line support for data markers in Xamarin.Android Chart](datamarker_images/datamarker_img9.png)
 
-N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ConnectorType.html) curve for connector line using [`ConnectorType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CircularSeries~ConnectorType.html) property of Pie and Doughnut series.
+N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ConnectorType.html) curve for connector line using [`ConnectorType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_ConnectorType) property of Pie and Doughnut series.
 
 ## Event
 
 ### DataMarkerLabelCreated
 
-The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~DataMarkerLabelCreated_EV.html) event occurs when the data marker label is created. This argument contains object of the [`DataMarkerLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries+DataMarkerLabelCreatedEventArgs~DataMarkerLabel.html). The following properties are available in [`DataMarkerLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel.html) to customize the appearance of data markers based on condition.
+The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html) event occurs when the data marker label is created. This argument contains object of the [`DataMarkerLabel`](https://help.syncfusion.com/cr/xamarin-android/). The following properties are available in [`DataMarkerLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html) to customize the appearance of data markers based on condition.
 
-* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~Label.html) – Gets or sets the text of data marker.
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~BackgroundColor.html) – Gets or sets the background color of data marker label.
-* [`Index`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~Index.html) – Gets the data point index of data marker label.
-* [`XPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~XPosition.html) – Gets the x-position of data marker label.
-* [`YPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~YPosition.html) – Gets the y-position of data marker label.
-* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~LabelStyle.html) – Gets or sets the label style to customize the appearance of individual data marker label.
-* [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~MarkerWidth.html) – Gets or sets the marker width.
-* [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~MarkerHeight.html) – Gets or sets the marker height.
-* [`MarkerBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~MarkerBorderWidth.html) – Gets or sets the border width of marker symbol.
-* [`MarkerBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~MarkerBorderColor.html) – Gets or sets the border color of marker symbol.
-* [`MarkerColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~MarkerColor.html) – Gets or sets the marker color.
-* [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~MarkerType.html) – Gets or sets the shape type of marker. The available shapes are [`Ellipse`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerType.html), diamond, hexagon, cross, HorizontalLine, VerticalLine, InvertedTriangle, triangle, pentagon, plus, and square.
-* [`View`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DataMarkerLabel~View.html) Gets or sets the view.
+* [`Label`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_Label) – Gets or sets the text of data marker.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_BackgroundColor) – Gets or sets the background color of data marker label.
+* [`Index`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_Index) – Gets the data point index of data marker label.
+* [`XPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_XPosition) – Gets the x-position of data marker label.
+* [`YPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_YPosition) – Gets the y-position of data marker label.
+* [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_LabelStyle) – Gets or sets the label style to customize the appearance of individual data marker label.
+* [`MarkerWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerWidth) – Gets or sets the marker width.
+* [`MarkerHeight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerHeight) – Gets or sets the marker height.
+* [`MarkerBorderWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerBorderWidth) – Gets or sets the border width of marker symbol.
+* [`MarkerBorderColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerBorderColor) – Gets or sets the border color of marker symbol.
+* [`MarkerColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerColor) – Gets or sets the marker color.
+* [`MarkerType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerType) – Gets or sets the shape type of marker. The available shapes are [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerType.html), diamond, hexagon, cross, HorizontalLine, VerticalLine, InvertedTriangle, triangle, pentagon, plus, and square.
+* [`View`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_View) Gets or sets the view.

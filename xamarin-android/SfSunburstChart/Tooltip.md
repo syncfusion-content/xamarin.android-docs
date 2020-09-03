@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-Tooltip provides additional information about the segments in the sunburst chart. Tooltip is displayed by tapping the segment. By default, tooltip displays the corresponding segment’s category and value. To enable the tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings~ShowTooltip.html) property to true.
+Tooltip provides additional information about the segments in the sunburst chart. Tooltip is displayed by tapping the segment. By default, tooltip displays the corresponding segment’s category and value. To enable the tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_Android_SunburstTooltipSettings_ShowTooltip) property to true.
 
 The following code shows enabling the tooltip.
 
@@ -29,16 +29,16 @@ The following code shows enabling the tooltip.
 
 The appearance of the tooltip can be customized using the following properties:
 
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings~BackgroundColor.html) : Customizes the background color of the tooltip.
-* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings~BorderColor.html) : Customizes the border color of the tooltip.
-* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings~BorderWidth.html) : Customizes the border width of the tooltip.
-* [`Duration`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings~Duration.html) : Specifies the duration of the tooltip to be displayed.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_Android_SunburstTooltipSettings_BackgroundColor) : Customizes the background color of the tooltip.
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_Android_SunburstTooltipSettings_BorderColor) : Customizes the border color of the tooltip.
+* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_Android_SunburstTooltipSettings_BorderWidth) : Customizes the border width of the tooltip.
+* [`Duration`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_Android_SunburstTooltipSettings_Duration) : Specifies the duration of the tooltip to be displayed.
 
-The following properties are available under [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings~LabelStyle.html).
+The following properties are available under [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_Android_SunburstTooltipSettings_LabelStyle).
 
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle~Color.html) : Customizes the text color of the tooltip.
-* [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle~TextSize.html) : Customizes the size of the tooltip text.
-* [`Typeface`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle~Typeface.html) : Customizes the font style.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle.html#Syncfusion_SfSunburstChart_Android_SunburstChartLabelStyle_Color) : Customizes the text color of the tooltip.
+* [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle.html#Syncfusion_SfSunburstChart_Android_SunburstChartLabelStyle_TextSize) : Customizes the size of the tooltip text.
+* [`Typeface`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle.html#Syncfusion_SfSunburstChart_Android_SunburstChartLabelStyle_Typeface) : Customizes the font style.
 
 The following code shows all the above customizations.
 
@@ -63,7 +63,7 @@ The following code shows all the above customizations.
 
 ## Custom template
 
-The sunburst chart provides options to design your own template for tooltip by inheriting [`SunburstTooltipSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings.html) class.
+The sunburst chart provides options to design your own template for tooltip by inheriting [`SunburstTooltipSettings`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstTooltipSettings.html) class.
 
 {% tabs %} 
 
