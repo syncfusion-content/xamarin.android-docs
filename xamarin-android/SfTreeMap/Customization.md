@@ -13,9 +13,9 @@ The TreeMap control supports color customization to determine the exact combinat
 
 ## Color
 
-You can customize the colors of leaf nodes using the [`ColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.ColorMapping.html) support.
+You can customize the colors of leaf nodes using the [`ColorMapping`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.ColorMapping.html) support.
 
-The [`ColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.ColorMapping.html) is categorized into the following three different types:
+The [`ColorMapping`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.ColorMapping.html) is categorized into the following three different types:
 
 * UniColorMapping
 * RangeColorMapping
@@ -23,7 +23,7 @@ The [`ColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/S
 
 ### UniColorMapping
 
-You can color all the leaf nodes with the same color by setting a value to the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.UniColorMapping~Color.html) property of [`UniColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.UniColorMapping.html).
+You can color all the leaf nodes with the same color by setting a value to the [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.UniColorMapping.html#Com_Syncfusion_Treemap_UniColorMapping_Color) property of [`UniColorMapping`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.UniColorMapping.html).
 
 {% tabs %}  
 
@@ -41,7 +41,7 @@ You can color all the leaf nodes with the same color by setting a value to the [
 
 ### RangeColorMapping
 
-You can group the leaf nodes based on the range of color values of data. You can set a unique color for every range. To achieve this, specify the [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Range~To.html) and [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Range~From.html) values as range bound and specify the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Range~Color.html) value to fill the leaf nodes of a particular range using the `RangeColorMapping` property of TreeMap. You must specify value to ColorValuePath since the ranges `From` and `To` depend on the under bound value of [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~ColorValuePath.html).
+You can group the leaf nodes based on the range of color values of data. You can set a unique color for every range. To achieve this, specify the [`To`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.Range.html#Com_Syncfusion_Treemap_Range_To) and [`From`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.Range.html#Com_Syncfusion_Treemap_Range_From) values as range bound and specify the [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.Range.html#Com_Syncfusion_Treemap_Range_Color) value to fill the leaf nodes of a particular range using the `RangeColorMapping` property of TreeMap. You must specify value to ColorValuePath since the ranges `From` and `To` depend on the under bound value of [`ColorValuePath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_ColorValuePath).
 
 {% tabs %}  
 
@@ -88,7 +88,7 @@ You can group the leaf nodes based on the range of color values of data. You can
 
 ### DesaturationColorMapping
 
-You can differentiate all the leaf nodes using the [`DesaturationColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.DesaturationColorMapping.html) property of TreeMap. Differentiation can be achieved even when the same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.DesaturationColorMapping~Color.html) value specified. You can also change the opacity range by setting the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.DesaturationColorMapping~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.DesaturationColorMapping~To.html) properties of `DesaturationColorMapping`.
+You can differentiate all the leaf nodes using the [`DesaturationColorMapping`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.DesaturationColorMapping.html) property of TreeMap. Differentiation can be achieved even when the same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.DesaturationColorMapping.html#Com_Syncfusion_Treemap_DesaturationColorMapping_Color) value specified. You can also change the opacity range by setting the [`From`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.DesaturationColorMapping.html#Com_Syncfusion_Treemap_DesaturationColorMapping_From) and [`To`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.DesaturationColorMapping.html#Com_Syncfusion_Treemap_DesaturationColorMapping_To) properties of `DesaturationColorMapping`.
 
 {% tabs %}  
 
@@ -108,7 +108,7 @@ You can differentiate all the leaf nodes using the [`DesaturationColorMapping`](
 
 ### Palette color mapping
 
-Leaf nodes were colored based on the colors mentioned in the `Colors` collection of the [`PaletteColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.PaletteColorMapping.html). 
+Leaf nodes were colored based on the colors mentioned in the `Colors` collection of the [`PaletteColorMapping`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.PaletteColorMapping.html). 
 
 {% tabs %}  
 
@@ -132,7 +132,7 @@ Leaf nodes were colored based on the colors mentioned in the `Colors` collection
 
 ## Tooltip
 
-You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~ShowTooltip.html) property to true. By default, it takes the property of bound object referenced in [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.TreeMapFlatLevel~GroupPath.html) and displays its content when the corresponding node is tapped.
+You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_ShowTooltip) property to true. By default, it takes the property of bound object referenced in [`GroupPath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.TreeMapFlatLevel.html#Com_Syncfusion_Treemap_TreeMapFlatLevel_GroupPath) and displays its content when the corresponding node is tapped.
 
 {% tabs %}  
 
@@ -148,7 +148,7 @@ You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](ht
 
 ### Tooltip customization
 
-Tooltip can be customized by inheriting [`TooltipSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~TooltipSettings.html). Tooltip defines our own customized view.
+Tooltip can be customized by inheriting [`TooltipSetting`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_TooltipSettings). Tooltip defines our own customized view.
 
 {% tabs %} 
 
@@ -220,7 +220,7 @@ public class CustomTooltipSetting : TooltipSetting
 
 ## Selection
 
-The TreeMap control provides selection support, which allows you to select the tree map items. The selection can be enabled by setting the [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~HighlightOnSelection.html) property to true in TreeMap. You can specify the highlight color and border width using the [`HighlightStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~HighlightStrokeColor.html) and [`HighlightStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~HighlightStrokeColor.html) properties, respectively.
+The TreeMap control provides selection support, which allows you to select the tree map items. The selection can be enabled by setting the [`HighlightOnSelection`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_HighlightOnSelection) property to true in TreeMap. You can specify the highlight color and border width using the [`HighlightStrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_HighlightStrokeColor) and [`HighlightStrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.SfTreeMap.html#Com_Syncfusion_Treemap_SfTreeMap_HighlightStrokeColor) properties, respectively.
 
 {% tabs %}  
 
@@ -240,7 +240,7 @@ The TreeMap control provides selection support, which allows you to select the t
 
 The TreeMap control provides support to customize the items, which allows any type of custom view to replace the item.
 
-To achieve this, derive a class from [`TreeMapAdapter`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.TreeMapAdapter.html), override the GetTreeMapItemView method, and return the needed custom view as in the following code snippet.
+To achieve this, derive a class from [`TreeMapAdapter`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Treemap.TreeMapAdapter.html), override the GetTreeMapItemView method, and return the needed custom view as in the following code snippet.
 
 {% tabs %} 
 

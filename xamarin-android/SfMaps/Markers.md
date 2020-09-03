@@ -17,13 +17,13 @@ Markers are set to map by using the following two ways:
 
 ## Adding marker
 
-Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MapLayer~Markers.html) property. Each marker object contains the following list of properties:
+Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MapLayer.html#Com_Syncfusion_Maps_MapLayer_Markers) property. Each marker object contains the following list of properties:
 
-[`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MapMarker~Label.html): Text that is used to display information.
+[`Label`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MapMarker.html#Com_Syncfusion_Maps_MapMarker_Label): Text that is used to display information.
 
-[`Latitude`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MapMarker~Latitude.html): Latitude point that specifies the y-axis position of the marker.
+[`Latitude`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MapMarker.html#Com_Syncfusion_Maps_MapMarker_Latitude): Latitude point that specifies the y-axis position of the marker.
 
-[`Longitude`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MapMarker~Longitude.html): Longitude point that specifies the x-axis position of the marker.
+[`Longitude`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MapMarker.html#Com_Syncfusion_Maps_MapMarker_Longitude): Longitude point that specifies the x-axis position of the marker.
 
 {% tabs %}
 
@@ -52,16 +52,16 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 ## Marker customization
 
-A map marker can be customized using the [`MarkerSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MapLayer~MarkerSetting.html) property in shape file layer.
+A map marker can be customized using the [`MarkerSetting`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MapLayer.html#Com_Syncfusion_Maps_MapLayer_MarkerSetting) property in shape file layer.
 
 ### Customizing marker icons
 
-The size and color of marker icons can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~IconSize.html) and [`MarkerIconColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~MarkerIconColor.html) properties.
+The size and color of marker icons can be customized using the [`IconSize`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MarkerSetting.html#Com_Syncfusion_Maps_MarkerSetting_IconSize) and [`MarkerIconColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MarkerSetting.html#Com_Syncfusion_Maps_MarkerSetting_MarkerIconColor) properties.
 
 
 ### Icon types
 
-The shape of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~MarkerIcon.html) property. The maps control supports the following types of marker icons:
+The shape of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MarkerSetting.html#Com_Syncfusion_Maps_MarkerSetting_MarkerIcon) property. The maps control supports the following types of marker icons:
 
 * Circle
 * Diamond
@@ -198,7 +198,7 @@ SfMaps maps = new SfMaps(this);
 
 ### Setting image marker icon
 
-You can pin an image as marker icon by setting the icon type as `Image`. Set [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~ImageSource.html) to get the image from local path.
+You can pin an image as marker icon by setting the icon type as `Image`. Set [`ImageSource`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MarkerSetting.html#Com_Syncfusion_Maps_MarkerSetting_ImageSource) to get the image from local path.
 
 {% tabs %}
 
@@ -252,7 +252,7 @@ You can pin an image as marker icon by setting the icon type as `Image`. Set [`I
 
 ### Label customization
 
-A marker label’s color and font style can be customized using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~LabelColor.html)  and [`LabelFontStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MarkerSetting~LabelFontStyle.html) properties.
+A marker label’s color and font style can be customized using the [`LabelColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MarkerSetting.html#Com_Syncfusion_Maps_MarkerSetting_LabelColor)  and [`LabelFontStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MarkerSetting.html#Com_Syncfusion_Maps_MarkerSetting_LabelFontStyle) properties.
 
 The following code explains the marker customization.
 
@@ -498,8 +498,8 @@ If you add any view for marker using `SelectedMarkerView` property from `MarkerS
 
 ## Events
 
-[`MarkerSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MapLayer~MarkerSelected_EV.html) event is triggered when the marker is selected.
-Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.MapMarker.html) which gives the information about the marker.
+[`MarkerSelected`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MapLayer.html) event is triggered when the marker is selected.
+Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.MapMarker.html) which gives the information about the marker.
 
 {% tabs %}
 

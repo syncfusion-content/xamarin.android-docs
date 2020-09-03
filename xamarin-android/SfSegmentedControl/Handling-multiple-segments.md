@@ -13,7 +13,7 @@ The segmented control handles the segmented items with the space distributed for
 
 ## Visible segment counts
 
-The segmented control displays the item for the view based on the count which is given for [`VisibleSegmentCount`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfSegmentedControl~VisibleSegmentsCount.html). 
+The segmented control displays the item for the view based on the count which is given for [`VisibleSegmentCount`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_VisibleSegmentsCount). 
 
 {% highlight c# %}
 

@@ -45,7 +45,7 @@ N> For Accumulation series like pie, doughnut, pyramid and funnel, when you sele
 
 ## Series Selection
 
-Series selection is used in case of multiple series when you want to highlight a particular series. Series Selection can be enabled by setting [`EnableSeriesSelection`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~EnableSeriesSelection.html) property to true. The [`SeriesSelectionColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~SeriesSelectionColor.html) property is used to set the color to highlight the series.
+Series selection is used in case of multiple series when you want to highlight a particular series. Series Selection can be enabled by setting [`EnableSeriesSelection`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_EnableSeriesSelection) property to true. The [`SeriesSelectionColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_SeriesSelectionColor) property is used to set the color to highlight the series.
 
 {% highlight c# %} 
 [C#]
@@ -88,7 +88,7 @@ The [`SelectionChanging`](http://help.syncfusion.com/cr/cref_files/xamarin-andro
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~SelectedSeries.html) – used to get the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~SelectedDataPointIndex.html) – used to get the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~PreviousSelectedIndex.html) – used to get the previous selected data point index.
-* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~PreviousSelectedSeries.html) - used to get the previous selected series. 
+* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSelectionEvent.html#Com_Syncfusion_Charts_ChartSelectionEvent_PreviousSelectedSeries) - used to get the previous selected series. 
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionChangingEvent~Cancel.html) – used to set the value indicating whether the selection should be canceled.
 
 **SelectionChanged**
@@ -98,5 +98,5 @@ The [`SelectionChanged`](http://help.syncfusion.com/cr/cref_files/xamarin-androi
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~SelectedSeries.html) – used to get the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~PreviousSelectedIndex.html) – used to get the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~PreviousSelectedIndex.html) – used to get the previous selected data point index.
-* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~PreviousSelectedSeries.html) - used to get the previous selected series.
+* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSelectionEvent.html#Com_Syncfusion_Charts_ChartSelectionEvent_PreviousSelectedSeries) - used to get the previous selected series.
 * [`SelectedSegment`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSelectionEvent~SelectedSegment.html) - used to get the selected segment of the series.

@@ -23,13 +23,13 @@ You can customize the appearance of the text using the `TextSettings` property.
 
 The `TextSettings` property consists of the following properties:
 
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.TextSettings~Color.html): Defines the color of the desired text.
-* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.TextSettings~FontSize.html): Specifies the desired font size of the text under text settings.
-* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.TextSettings~FontFamily.html): Specifies the desired font family for text. Six types of font families are available in toolbar: `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`, `Bradley Hand`, `Snell Round hand`.
-* [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.TextSettings~Bounds.html): Allows to set frame for the newly added `Text`. You can position the text wherever you want on the image. In percentage, the value of the text frame should fall between 0 and 100.
-* [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.TextSettings~Opacity.html): Changes the opacity of text.
-* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.TextSettings~Angle.html): Changes the angle of text.
-* [`TextEffects`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.TextSettings~TextEffects.html): Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.TextSettings.html#Syncfusion_SfImageEditor_Android_TextSettings_Color): Defines the color of the desired text.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.TextSettings.html#Syncfusion_SfImageEditor_Android_TextSettings_FontSize): Specifies the desired font size of the text under text settings.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.TextSettings.html#Syncfusion_SfImageEditor_Android_TextSettings_FontFamily): Specifies the desired font family for text. Six types of font families are available in toolbar: `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`, `Bradley Hand`, `Snell Round hand`.
+* [`Bounds`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.TextSettings.html#Syncfusion_SfImageEditor_Android_TextSettings_Bounds): Allows to set frame for the newly added `Text`. You can position the text wherever you want on the image. In percentage, the value of the text frame should fall between 0 and 100.
+* [`Opacity`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.TextSettings.html#Syncfusion_SfImageEditor_Android_TextSettings_Opacity): Changes the opacity of text.
+* [`Angle`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.TextSettings.html#Syncfusion_SfImageEditor_Android_TextSettings_Angle): Changes the angle of text.
+* [`TextEffects`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.TextSettings.html#Syncfusion_SfImageEditor_Android_TextSettings_TextEffects): Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
 
 
 {% tabs %}

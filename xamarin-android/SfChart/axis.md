@@ -19,8 +19,8 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 
 The following APIs are available in ChartAxis:
 
-* [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~VisibleLabels.html) - Represents the axis label collection, which is visible in axis.
-* [`VisibleRange`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~VisibleRange.html) - Represents the [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~End.html) range of an axis. The [`Delta`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DoubleRange~Delta.html) property of VisibleRange represents the delta value.
+* [`VisibleLabels`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_VisibleLabels) - Represents the axis label collection, which is visible in axis.
+* [`VisibleRange`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_VisibleRange) - Represents the [`Start`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoubleRange.html#Com_Syncfusion_Charts_DoubleRange_Start) and [`End`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoubleRange.html#Com_Syncfusion_Charts_DoubleRange_End) range of an axis. The [`Delta`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoubleRange.html#Com_Syncfusion_Charts_DoubleRange_Delta) property of VisibleRange represents the delta value.
 
 ## Category Axis
 
@@ -38,7 +38,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 ### Placing labels between ticks
 
-Labels in category axis can be placed between the ticks by using [`LabelPlacement`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CategoryAxis~LabelPlacement.html) property of categoryAxis. Default value of [`LabelPlacement`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CategoryAxis~LabelPlacement.html) is [`OnTicks`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LabelPlacement.html) i.e. labels will be placed on the ticks by default.
+Labels in category axis can be placed between the ticks by using [`LabelPlacement`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CategoryAxis~LabelPlacement.html) property of categoryAxis. Default value of [`LabelPlacement`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CategoryAxis~LabelPlacement.html) is [`OnTicks`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LabelPlacement.html) i.e. labels will be placed on the ticks by default.
 
 {% highlight c# %} 
 [C#]
@@ -71,7 +71,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ### Indexed category axis
 
-Category axis can also be rendered based on the index values of data source by setting the [`ArrangeByIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.CategoryAxis~ArrangeByIndex.html) property to true in the axis.
+Category axis can also be rendered based on the index values of data source by setting the [`ArrangeByIndex`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CategoryAxis.html#Com_Syncfusion_Charts_CategoryAxis_ArrangeByIndex) property to true in the axis.
 
 {% highlight c# %} 
 [C#]
@@ -158,7 +158,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **None**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalPadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) for horizontal axis.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) for horizontal axis.
 
 {% highlight c# %} 
 [C#]
@@ -174,7 +174,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Round**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`Round`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`Round`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded to the nearest possible value divided by the interval.
 
 {% highlight c# %} 
 [C#]
@@ -190,7 +190,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Additional**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`Additional`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`Additional`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
 
 {% highlight c# %} 
 [C#]
@@ -206,7 +206,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Normal**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`Normal`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalPadding.html), nice range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`Normal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), nice range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
 
 {% highlight c# %} 
 [C#]
@@ -222,7 +222,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### Auto Interval On Zooming 
 
-[`AutoIntervalOnZoomingEnabled`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AutoIntervalOnZoomingEnabled.html)property determines the update of axis interval based on the current visible range while zooming the chart. Default value of this property is true. If this property is false, the nice interval will not be calculated for new range after zoom in and actual [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) will be sustained.
+[`AutoIntervalOnZoomingEnabled`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_AutoIntervalOnZoomingEnabled)property determines the update of axis interval based on the current visible range while zooming the chart. Default value of this property is true. If this property is false, the nice interval will not be calculated for new range after zoom in and actual [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) will be sustained.
 
 {% highlight c# %} 
 [C#]
@@ -267,11 +267,11 @@ chart.PrimaryAxis = dateTimeAxis;
 
 ### Date time intervals
 
-Date time intervals can be customized using [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~IntervalType.html) properties of the [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis.html). For example, setting [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) as 2 and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~IntervalType.html) as [`Years`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeIntervalType.html) will consider 2 years as interval.
+Date time intervals can be customized using [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~IntervalType.html) properties of the [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis.html). For example, setting [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) as 2 and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~IntervalType.html) as [`Years`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeIntervalType.html) will consider 2 years as interval.
 
 Essential Chart supports the following types of interval for date time axis
 
-* [`Years`]( [`Years`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeIntervalType.html))
+* [`Years`]( [`Years`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeIntervalType.html))
 * Months
 * Days
 * Hours
@@ -302,7 +302,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **None**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeRangePadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html).
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeRangePadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html).
 
 {% highlight c# %} 
 [C#]
@@ -318,7 +318,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Round**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`round`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeRangePadding.html), axis range will be rounded to the nearest possible date time value.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`round`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeRangePadding.html), axis range will be rounded to the nearest possible date time value.
 
 {% highlight c# %} 
 [C#]
@@ -334,7 +334,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Additional**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`Additional`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeRangePadding.html), range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`Additional`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeRangePadding.html), range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
 
 {% highlight c# %} 
 [C#]
@@ -350,10 +350,10 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ## Date-time category axis
 
-The [`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeCategoryAxis.html) is a unique type of axis used mainly with financial series. Like CategoryAxis, all the data points are plotted with equal spaces by removing space for missing dates. Intervals and ranges for the axis are calculated similar to DateTimeAxis. There will be no visual gaps between points even when the difference between two points is more than a year. The following APIs are used to customize the interval of DateTimeCategoryAxis.
+The [`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeCategoryAxis.html) is a unique type of axis used mainly with financial series. Like CategoryAxis, all the data points are plotted with equal spaces by removing space for missing dates. Intervals and ranges for the axis are calculated similar to DateTimeAxis. There will be no visual gaps between points even when the difference between two points is more than a year. The following APIs are used to customize the interval of DateTimeCategoryAxis.
 
-•	[`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Interval.html) - Gets or sets the double value that represents the interval between the labels.
-•	[`IntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeCategoryAxis~IntervalType.html) - Gets or sets the DateTimeIntervalType that represents the type of the interval to be displayed.
+•	[`Interval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_Interval) - Gets or sets the double value that represents the interval between the labels.
+•	[`IntervalType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeCategoryAxis.html#Com_Syncfusion_Charts_DateTimeCategoryAxis_IntervalType) - Gets or sets the DateTimeIntervalType that represents the type of the interval to be displayed.
 
 {% highlight c# %} 
 [C#]
@@ -382,7 +382,7 @@ chart.SecondaryAxis = new LogarithmicAxis();
 
 ### Customizing the logarithmic range
 
-To customize the range of log axis, you can use the [`Minimum`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LogarithmicAxis~Minimum.html) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LogarithmicAxis~Maximum.html) properties of [`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LogarithmicAxis.html). By default, nice range will be calculated automatically based on the provided data.
+To customize the range of log axis, you can use the [`Minimum`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LogarithmicAxis~Minimum.html) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.LogarithmicAxis~Maximum.html) properties of [`LogarithmicAxis`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LogarithmicAxis.html). By default, nice range will be calculated automatically based on the provided data.
 
 {% highlight c# %} 
 [C#]
@@ -419,7 +419,7 @@ Customization of features such as axis title, labels, grid lines and tick lines 
 
 ### Axis Visibility
 
-Axis visibility can be controlled using the [`Visibility`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Visibility.html) property of axis. Default value of [`Visibility`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Visibility.html) is [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.Visibility.html).
+Axis visibility can be controlled using the [`Visibility`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Visibility.html) property of axis. Default value of [`Visibility`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Visibility.html) is [`Visible`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.Visibility.html).
 
 {% highlight c# %} 
 [C#]
@@ -475,10 +475,10 @@ The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Sync
 * [`MarginBottom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginBottom.html) - used to change the bottom margin of the labels.
 * [`MarginLeft`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginLeft.html) - used to change the left margin of the labels.
 * [`MarginRight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginRight.html) - used to change the right margin of the labels.
-* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~LabelAlignment.html) - Used to align the label at the [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelAlignment.html), [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelAlignment.html), or [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelAlignment.html).
-* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~CornerRadius.html) - Used to change the corner radius of the background of labels.
-* [`MaxWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~MaxWidth.html) - Provides the maximum text width of the axis label and wraps into the next line when exceeds the maximum width.
-* [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~WrappedLabelAlignment.html) - Positions the wrapped text at the start, center, or end. The default value of the [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~WrappedLabelAlignment.html) property is Start.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_LabelAlignment) - Used to align the label at the [`Start`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelAlignment.html), [`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelAlignment.html), or [`End`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelAlignment.html).
+* [`CornerRadius`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_CornerRadius) - Used to change the corner radius of the background of labels.
+* [`MaxWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_MaxWidth) - Provides the maximum text width of the axis label and wraps into the next line when exceeds the maximum width.
+* [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_WrappedLabelAlignment) - Positions the wrapped text at the start, center, or end. The default value of the [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_WrappedLabelAlignment) property is Start.
 
 {% highlight c# %} 
 [C#]
@@ -493,11 +493,11 @@ chart.PrimaryAxis.LabelStyle.Typeface = Typeface.DefaultBold;
 
 ### Format the Labels
 
-Axis labels can be formatted using [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~LabelFormat.html) property of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html). This supports all the [`SimpleDateFormat`](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html) patterns for date time axis and all the [`DecimalFormat`](https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html) patterns for the number axis.
+Axis labels can be formatted using [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~LabelFormat.html) property of [`ChartAxis`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html). This supports all the [`SimpleDateFormat`](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html) patterns for date time axis and all the [`DecimalFormat`](https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html) patterns for the number axis.
 
 ### Label and Tick Positioning
 
-Axis labels and ticks can be positioned [`Inside`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AxisElementPosition.html) or outside the chart area by using [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelStyle.html).[`LabelsPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~LabelsPosition.html) and [`TickPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~TickPosition.html) properties of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html). By default labels and ticks will be positioned outside the chart area.
+Axis labels and ticks can be positioned [`Inside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.AxisElementPosition.html) or outside the chart area by using [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelStyle.html).[`LabelsPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisLabelStyle~LabelsPosition.html) and [`TickPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~TickPosition.html) properties of [`ChartAxis`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html). By default labels and ticks will be positioned outside the chart area.
 
 {% highlight c# %} 
 [C#]
@@ -524,7 +524,7 @@ chart.PrimaryAxis.LabelRotationAngle = 315;
 
 ### Edge Labels Placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners. Default mode is [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsDrawingMode.html).
+Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners. Default mode is [`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.EdgeLabelsDrawingMode.html).
 
 {% highlight c# %} 
 [C#]
@@ -537,13 +537,13 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 ### Edge labels visibility
 
-The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~EdgeLabelsVisibilityMode.html) property.
+The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.RangeAxisBase.html#Com_Syncfusion_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) property.
 
-The following options are available in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~EdgeLabelsVisibilityMode.html),
+The following options are available in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.RangeAxisBase.html#Com_Syncfusion_Charts_RangeAxisBase_EdgeLabelsVisibilityMode),
 
-*	[`Default`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to display the edge label based on auto interval calculations
-*	[`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
-*	[`AlwaysVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to always display the edge labels even while zooming the chart.
+*	[`Default`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to display the edge label based on auto interval calculations
+*	[`Visible`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+*	[`AlwaysVisible`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.EdgeLabelsVisibilityMode.html) - used to always display the edge labels even while zooming the chart.
 
 The following code example demonstrates the AlwaysVisible option while zooming.
 
@@ -559,7 +559,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ### Axis line offset
 
-[`AxisLineOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AxisLineOffset.html) property can be used to set offset value for the axis line.
+[`AxisLineOffset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_AxisLineOffset) property can be used to set offset value for the axis line.
 
 {% highlight c# %} 
 [C#]
@@ -573,7 +573,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ### Label extent
 
-The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelExtent.html) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
+The [`LabelExtent`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_LabelExtent) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
 
 {% highlight c# %} 
 [C#]
@@ -587,7 +587,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ### Offset the rendering
 
-The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~PlotOffset.html) property is used to offset the rendering of the axis at start and end position. The following code snippet demonstrates to apply the plot offset to both x and y axes.
+The [`PlotOffset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PlotOffset) property is used to offset the rendering of the axis at start and end position. The following code snippet demonstrates to apply the plot offset to both x and y axes.
 
 {% highlight c# %} 
 [C#]
@@ -644,7 +644,7 @@ chart.SecondaryAxis.MinorTicksPerInterval = 2;
 
 ### Tick Lines Customization
 
-The [`MajorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~MajorTickStyle.html) and [`MinorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisTickStyle~StrokeWidth.html), [`Size`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisTickStyle~TickSize.html), [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisTickStyle~StrokeColor.html) and Visibility of tick lines. By default minor tick lines will not be visible. [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~MinorTicksPerInterval.html) property can be used to specify the number of minor ticks per interval that resided between the adjacent major ticks. 
+The [`MajorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~MajorTickStyle.html) and [`MinorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.RangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisTickStyle.html#Com_Syncfusion_Charts_ChartAxisTickStyle_StrokeWidth), [`Size`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisTickStyle.html#Com_Syncfusion_Charts_ChartAxisTickStyle_TickSize), [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisTickStyle.html#Com_Syncfusion_Charts_ChartAxisTickStyle_StrokeColor) and Visibility of tick lines. By default minor tick lines will not be visible. [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.RangeAxisBase.html#Com_Syncfusion_Charts_RangeAxisBase_MinorTicksPerInterval) property can be used to specify the number of minor ticks per interval that resided between the adjacent major ticks. 
 
 {% highlight c# %} 
 [C#]
@@ -666,15 +666,15 @@ chart.SecondaryAxis = numericalAxis;
 
 ### Customize individual axis elements
 
-The [`RangeStyles`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~RangeStyles.html) can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis.html). The following properties are used to customize the specific range in an axis:
+The [`RangeStyles`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_RangeStyles) can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html). The following properties are used to customize the specific range in an axis:
 
-* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~Start.html) - Sets the start range of an axis
-* [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~End.html) - Sets the end range of an axis
-* [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~MajorGridLineStyle.html) - Customizes the major grid lines of an axis.
-* [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~MinorGridLineStyle.html) - Customizes the minor grid lines of an axis.
-* [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~MajorTickStyle.html) - Customizes the major tick lines of an axis.
-* [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~MinorTickStyle.html) - Customizes the minor tick lines of an axis.
-* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxisRangeStyle~LabelStyle.html) - Customizes the axis labels for a specific range.
+* [`Start`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisRangeStyle.html#Com_Syncfusion_Charts_ChartAxisRangeStyle_Start) - Sets the start range of an axis
+* [`End`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisRangeStyle.html#Com_Syncfusion_Charts_ChartAxisRangeStyle_End) - Sets the end range of an axis
+* [`MajorGridLineStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisRangeStyle.html#Com_Syncfusion_Charts_ChartAxisRangeStyle_MajorGridLineStyle) - Customizes the major grid lines of an axis.
+* [`MinorGridLineStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisRangeStyle.html#Com_Syncfusion_Charts_ChartAxisRangeStyle_MinorGridLineStyle) - Customizes the minor grid lines of an axis.
+* [`MajorTickStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisRangeStyle.html#Com_Syncfusion_Charts_ChartAxisRangeStyle_MajorTickStyle) - Customizes the major tick lines of an axis.
+* [`MinorTickStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisRangeStyle.html#Com_Syncfusion_Charts_ChartAxisRangeStyle_MinorTickStyle) - Customizes the minor tick lines of an axis.
+* [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisRangeStyle.html#Com_Syncfusion_Charts_ChartAxisRangeStyle_LabelStyle) - Customizes the axis labels for a specific range.
 
 {% highlight c# %} 
 [C#]
@@ -740,12 +740,12 @@ chart.SecondaryAxis.MaximumLabels = 5;
 
 ### AutoScrollingDelta
 
-[`AutoScrollingDelta`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AutoScrollingDelta.html) is used to ensure that the specified range of data is always visible in the chart. It always shows the recently added data points at the end and scrolling will be reset to the end of the range whenever a new point is added.
+[`AutoScrollingDelta`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_AutoScrollingDelta) is used to ensure that the specified range of data is always visible in the chart. It always shows the recently added data points at the end and scrolling will be reset to the end of the range whenever a new point is added.
 By adding [`ChartZoomPanBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior.html) to the chart, you can scroll to see the previous datapoints.
 
 ### AutoScrollingDeltaType
 
-In DateTimeAxis, you can apply auto scrolling delta value in Years, Months, Days, Hours, Minutes, Seconds and Milliseconds by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~AutoScrollingDeltaType.html) property. Default value of this property is [`Auto`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeDeltaType.html) and the delta will be calculated automatically based on range.
+In DateTimeAxis, you can apply auto scrolling delta value in Years, Months, Days, Hours, Minutes, Seconds and Milliseconds by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeAxis.html#Com_Syncfusion_Charts_DateTimeAxis_AutoScrollingDeltaType) property. Default value of this property is [`Auto`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeDeltaType.html) and the delta will be calculated automatically based on range.
 
 {% highlight c# %} 
 [C#]
@@ -760,7 +760,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ### AutoScrollingMode
 
-[`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~AutoScrollingMode.html) is [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAutoScrollingMode.html).
+[`AutoScrollingMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_AutoScrollingMode) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_AutoScrollingMode) is [`End`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAutoScrollingMode.html).
 
 {% highlight c# %} 
 [C#]
@@ -791,7 +791,7 @@ chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = 8 };
 
 ### Crossing a specific axis
 
-[`CrossingAxisName`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossingAxisName.html) property takes axis [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~Name.html) as input and determines the axis that used for crossing. By default, all the horizontal axes cross in primary Y axis, and all the vertical axes cross in primary X axis.
+[`CrossingAxisName`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~CrossingAxisName.html) property takes axis [`Name`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_Name) as input and determines the axis that used for crossing. By default, all the horizontal axes cross in primary Y axis, and all the vertical axes cross in primary X axis.
 
 {% highlight c# %}
 [C#]
@@ -874,7 +874,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Smart Axis Labels
 
-Axis labels may overlap with each other based on chart dimensions and label size. The [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) property of axis is used to avoid overlapping of axis labels. The default value of the [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) is [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AxisLabelsIntersectAction.html); other available values are [`MultipleRows`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AxisLabelsIntersectAction.html), [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AxisLabelsIntersectAction.html), and [`Wrap`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.AxisLabelsIntersectAction.html).
+Axis labels may overlap with each other based on chart dimensions and label size. The [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) property of axis is used to avoid overlapping of axis labels. The default value of the [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelsIntersectAction.html) is [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.AxisLabelsIntersectAction.html); other available values are [`MultipleRows`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.AxisLabelsIntersectAction.html), [`Hide`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.AxisLabelsIntersectAction.html), and [`Wrap`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.AxisLabelsIntersectAction.html).
 
 {% highlight c# %} 
 [C#]
@@ -889,27 +889,27 @@ chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
 
 **ActualRangeChanged**
 
-The [`ActualRangeChanged`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~ActualRangeChanged_EV.html) event is triggered when the axis range is changed. The argument contains the following information.
+The [`ActualRangeChanged`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html) event is triggered when the axis range is changed. The argument contains the following information.
 
-* [`ActualMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~ActualMinimum.html) - used to get the axis actual minimum value
-* [`ActualMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~ActualMaximum.html) - used to get the axis actual maximum value
-* [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~VisibleMinimum.html) - used to get the axis visible minimum value
-* [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ActualRangeChangedEventArgs~VisibleMaximum.html) - used to get the axis visible maximum value
+* [`ActualMinimum`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.ActualRangeChangedEventArgs.html#Com_Syncfusion_Charts_ChartAxis_ActualRangeChangedEventArgs_ActualMinimum) - used to get the axis actual minimum value
+* [`ActualMaximum`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.ActualRangeChangedEventArgs.html#Com_Syncfusion_Charts_ChartAxis_ActualRangeChangedEventArgs_ActualMaximum) - used to get the axis actual maximum value
+* [`VisibleMinimum`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.ActualRangeChangedEventArgs.html#Com_Syncfusion_Charts_ChartAxis_ActualRangeChangedEventArgs_VisibleMinimum) - used to get the axis visible minimum value
+* [`VisibleMaximum`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.ActualRangeChangedEventArgs.html#Com_Syncfusion_Charts_ChartAxis_ActualRangeChangedEventArgs_VisibleMaximum) - used to get the axis visible maximum value
 
 N> Actual range and visible range are similar unless the range is changed by specifying the [`ZoomPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~ZoomPosition.html) and [`ZoomFactor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~ZoomFactor.html) property or zoom the chart interactively. Visible range is always the range which you see visually in the screen.
 
 **Label Clicked**
 
-The [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelClicked_EV.html) event is triggered when an axis label is clicked. The [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabelClickedEventArgs~Label.html) argument contains the following information:
+The [`LabelClicked`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html) event is triggered when an axis label is clicked. The [`Label`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.ChartAxisLabelClickedEventArgs.html#Com_Syncfusion_Charts_ChartAxis_ChartAxisLabelClickedEventArgs_Label) argument contains the following information:
 
 * [`LabelContent`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~LabelContent.html) - used to get or set the content of label.
 * [`Position`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~Position.html) - used to get or set the position of the label.
 
 **Label Created**
 
-The [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis~LabelCreated_EV.html) event is triggered when the axis label is created. The argument contains [`AxisLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+LabelCreatedEventArgs~AxisLabel.html) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel.html) which contains following properties.
+The [`LabelCreated`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html) event is triggered when the axis label is created. The argument contains [`AxisLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.LabelCreatedEventArgs.html#Com_Syncfusion_Charts_ChartAxis_LabelCreatedEventArgs_AxisLabel) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.ChartAxisLabel.html) which contains following properties.
 
 * [`LabelContent`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~LabelContent.html) - used to get or set the content of label.
 * [`Position`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~Position.html) - used to get or set the position of the label.
-* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~LabelStyle.html) - used to customize the appearance of axis labels based on condition. The properties listed in [`Label customization`](https://help.syncfusion.com/xamarin-android/sfchart/axis#label-customization) can be customized using LabelStyle property.
-* [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartAxis+ChartAxisLabel~IsVisible.html) - used to define the visibility of labels.
+* [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.ChartAxisLabel.html#Com_Syncfusion_Charts_ChartAxis_ChartAxisLabel_LabelStyle) - used to customize the appearance of axis labels based on condition. The properties listed in [`Label customization`](https://help.syncfusion.com/xamarin-android/sfchart/axis#label-customization) can be customized using LabelStyle property.
+* [`IsVisible`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.ChartAxisLabel.html#Com_Syncfusion_Charts_ChartAxis_ChartAxisLabel_IsVisible) - used to define the visibility of labels.

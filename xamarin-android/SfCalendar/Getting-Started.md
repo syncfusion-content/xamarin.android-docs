@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to render the [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar.html) control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the `SfCalendar`.
+This section explains you the steps required to render the [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html) control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the `SfCalendar`.
 
 ## Referencing Essential Studio Components in Your Solution
 

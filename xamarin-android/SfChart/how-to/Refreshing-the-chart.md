@@ -11,5 +11,5 @@ documentation: ug
 
 The following methods are available to refresh the chart.
 
-* [`ReloadChart()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~ReloadChart.html) - Reloads the chart.
-* [`RedrawChart()`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartBase~RedrawChart.html) - Redraws the chart.
+* [`ReloadChart()`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_ReloadChart) - Reloads the chart.
+* [`RedrawChart()`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_RedrawChart) - Redraws the chart.

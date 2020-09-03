@@ -118,7 +118,7 @@ SetContentView(dataGrid);
 
 ## Binding Complex properties
 
-SfDataGrid control supports binding Complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
+SfDataGrid control supports binding Complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html#Syncfusion_SfDataGrid_GridColumn_MappingName).
 
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" });
@@ -126,7 +126,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" }
 
 ## Binding Indexer properties
 
-SfDataGrid control supports binding an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
+SfDataGrid control supports binding an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html#Syncfusion_SfDataGrid_GridColumn_MappingName).
 
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID[0].Customer" });
@@ -134,7 +134,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID[0].Cu
 
 ## View
 
-The data grid has the [View](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~View.html) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Linq.Android~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. The `View` is responsible for maintaining and manipulating data and other advanced operations like `Sorting`, `Grouping`, etc.
+The data grid has the [View](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~View.html) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. The `View` is responsible for maintaining and manipulating data and other advanced operations like `Sorting`, `Grouping`, etc.
 
 When binding Collection to the `ItemsSource` property of the SfDataGrid, `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 
@@ -146,7 +146,7 @@ The following property is associated with `View`.
 
 ### LiveDataUpdateMode
 
-The SfDataGrid supports updating the view during data manipulation operations and property changes using [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Linq.Android~Syncfusion.Data.LiveDataUpdateMode.html). It allows customizing when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
+The SfDataGrid supports updating the view during data manipulation operations and property changes using [LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Data.LiveDataUpdateMode.html). It allows customizing when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
 
 <table>
 <tr>
@@ -179,7 +179,7 @@ The following events are associated with `View`.
 
 ### RecordPropertyChanged
 
-The [RecordPropertyChanged ](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Linq.Android~Syncfusion.Data.ICollectionViewAdv~RecordPropertyChanged_EV.html) event is raised when the `DataModel` property value is changed, if the `DataModel` implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely, sender that handles the `DataModel`, and [PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) as argument.
+The [RecordPropertyChanged ](https://help.syncfusion.com/cr/xamarin-android/) event is raised when the `DataModel` property value is changed, if the `DataModel` implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely, sender that handles the `DataModel`, and [PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) as argument.
 
 `PropertyChangedEventArgs` has the following property:
 
@@ -187,7 +187,7 @@ The [RecordPropertyChanged ](https://help.syncfusion.com/cr/cref_files/xamarin-
 
 ### CollectionChanged
 
-The [CollectionChanged ](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Linq.Android~Syncfusion.Data.CollectionViewAdv~CollectionChanged_EV.html) event is raised whenever changes occur in `Records or DisplayElements` collection. The event receives two arguments namely, sender that handles `View` object, and [NotifyCollectionChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) as argument.
+The [CollectionChanged ](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Data.CollectionViewAdv.html) event is raised whenever changes occur in `Records or DisplayElements` collection. The event receives two arguments namely, sender that handles `View` object, and [NotifyCollectionChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) as argument.
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 
@@ -199,7 +199,7 @@ The [CollectionChanged ](https://help.syncfusion.com/cr/cref_files/xamarin-andr
 
 ### SourceCollectionChanged
 
-The [SourceCollectionChanged ](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Linq.Android~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html) event is raised when you make changes in `SourceCollection` for example, add or remove the collection. The event receives two arguments namely, sender that handles `GridQueryableCollectionViewWrapper` object, and `NotifyCollectionChangedEventArgs` as argument.
+The [SourceCollectionChanged ](https://help.syncfusion.com/cr/xamarin-android/) event is raised when you make changes in `SourceCollection` for example, add or remove the collection. The event receives two arguments namely, sender that handles `GridQueryableCollectionViewWrapper` object, and `NotifyCollectionChangedEventArgs` as argument.
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 

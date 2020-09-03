@@ -9,7 +9,7 @@ documentation: ug
 
 # Data label
 
-Data labels are used to display information about segments. Data labels are enabled and disabled using the [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstChartDataLabel~ShowLabel.html) property. The default value of the ShowLabel property is true.
+Data labels are used to display information about segments. Data labels are enabled and disabled using the [`ShowLabel`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstChartDataLabel.html#Syncfusion_SfSunburstChart_Android_SunburstChartDataLabel_ShowLabel) property. The default value of the ShowLabel property is true.
 
 The following code explains how to initialize data labels.
 
@@ -29,7 +29,7 @@ The following code explains how to initialize data labels.
 
 ## Overflow Mode
 
-When the data labels are large in size, they will overlap each other. To avoid overlapping, trim or hide the data labels using the [`OverflowMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstChartDataLabel~OverflowMode.html) property.
+When the data labels are large in size, they will overlap each other. To avoid overlapping, trim or hide the data labels using the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstChartDataLabel.html#Syncfusion_SfSunburstChart_Android_SunburstChartDataLabel_OverflowMode) property.
 
 ### Trim
 
@@ -71,7 +71,7 @@ The following code shows hiding the data labels.
 
 ## Rotation Mode
 
-The view of data labels can be customized using the [`RotationMode`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstChartDataLabel~RotationMode.html) property. Data labels can be rotated to a angle for better readability. By default, the rotation mode is angle.
+The view of data labels can be customized using the [`RotationMode`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstChartDataLabel.html#Syncfusion_SfSunburstChart_Android_SunburstChartDataLabel_RotationMode) property. Data labels can be rotated to a angle for better readability. By default, the rotation mode is angle.
 
 ### Angle
 
@@ -113,10 +113,10 @@ The following code shows normal mode of data labels.
 
 ## Customization
 
-Data labels can be customized using the properties available in [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstChartDataLabel~LabelStyle.html).
+Data labels can be customized using the properties available in [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstChartDataLabel.html#Syncfusion_SfSunburstChart_Android_SunburstChartDataLabel_LabelStyle).
 
-* [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle~TextSize.html) : Data label font size can be modified.
-* [`Typeface`](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfsunburstchart/Syncfusion.SfSunburstChart.Android~Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle~Typeface.html) : Typeface such as Serif, SansSerif, Default etc can be used.
+* [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle.html#Syncfusion_SfSunburstChart_Android_SunburstChartLabelStyle_TextSize) : Data label font size can be modified.
+* [`Typeface`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfSunburstChart.Android.SunburstChartLabelStyle.html#Syncfusion_SfSunburstChart_Android_SunburstChartLabelStyle_Typeface) : Typeface such as Serif, SansSerif, Default etc can be used.
 
 {% tabs %} 
 
