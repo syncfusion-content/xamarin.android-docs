@@ -9,7 +9,7 @@ documentation: ug
 
 # Layers
 
-The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.SfMaps~Layers.html) ;a map can accommodate one or more layers.
+The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.SfMaps.html#Com_Syncfusion_Maps_SfMaps_Layers) ;a map can accommodate one or more layers.
 
 The maps control consists the following two layers:
 
@@ -30,9 +30,9 @@ Using shape file layer, custom shape files can be rendered and the shapes can be
 
 This section defines how to customize the shapes in a map.
 
-You can customize a shape's fill, stroke, and stroke thickness using the [`ShapeFill`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeSetting~ShapeFill.html),
-[`ShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeSetting~ShapeStroke.html),
-[`ShapeStrokeThickess`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeSetting~ShapeStrokeThickess.html)
+You can customize a shape's fill, stroke, and stroke thickness using the [`ShapeFill`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeSetting.html#Com_Syncfusion_Maps_ShapeSetting_ShapeFill),
+[`ShapeStroke`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeSetting.html#Com_Syncfusion_Maps_ShapeSetting_ShapeStroke),
+[`ShapeStrokeThickess`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeSetting.html#Com_Syncfusion_Maps_ShapeSetting_ShapeStrokeThickess)
 
 Refer to the following code sample for customizing shapes.
 
@@ -54,9 +54,9 @@ Refer to the following code sample for customizing shapes.
 
 To customize the shapes based on the bound values, use the following properties:
 
-[`ShapeValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeSetting~ShapeValuePath.html): Field value that has to be bound for each shape.
+[`ShapeValuePath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeSetting.html#Com_Syncfusion_Maps_ShapeSetting_ShapeValuePath): Field value that has to be bound for each shape.
 
-[`ShapeColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeSetting~ShapeColorValuePath.html): Field value that has to be bound to determine the color.
+[`ShapeColorValuePath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeSetting.html#Com_Syncfusion_Maps_ShapeSetting_ShapeColorValuePath): Field value that has to be bound to determine the color.
 
 {% tabs %}
 
@@ -99,15 +99,15 @@ To customize the shapes based on the bound values, use the following properties:
 
 ### Customize selected shapes
 
-Selection can be enabled with the help of [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer~EnableSelection.html) property in shape file layer.
+Selection can be enabled with the help of [`EnableSelection`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html#Com_Syncfusion_Maps_ShapeFileLayer_EnableSelection) property in shape file layer.
 
 To customize the selected shapes alone, use the following properties:
 
-[`SelectedShapeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeSetting~SelectedShapeColor.html): Sets the color for selected shapes in a map.
+[`SelectedShapeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeSetting.html#Com_Syncfusion_Maps_ShapeSetting_SelectedShapeColor): Sets the color for selected shapes in a map.
 
-[`SelectedShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeSetting~SelectedShapeStroke.html): Sets the border color for selected shapes in a map.
+[`SelectedShapeStroke`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeSetting.html#Com_Syncfusion_Maps_ShapeSetting_SelectedShapeStroke): Sets the border color for selected shapes in a map.
 
-[`SelectedShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeSetting~SelectedShapeStrokeThickness.html): Sets the border thickness for selected shapes in a map.
+[`SelectedShapeStrokeThickness`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeSetting.html#Com_Syncfusion_Maps_ShapeSetting_SelectedShapeStrokeThickness): Sets the border thickness for selected shapes in a map.
 
 {% tabs %}
 
@@ -133,7 +133,7 @@ To customize the selected shapes alone, use the following properties:
 
 ## Events
 
-The [`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer~ShapeSelected_EV.html) event will be triggered when changing the the map shapes selection with corresponding argument as model [`P0`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer+ShapeSelectedEventArgs~P0.html) of the shape will be changed using the [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer+ShapeSelectedEventArgs~IsSelected.html) property
+The [`ShapeSelected`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html) event will be triggered when changing the the map shapes selection with corresponding argument as model [`P0`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.ShapeSelectedEventArgs.html#Com_Syncfusion_Maps_ShapeFileLayer_ShapeSelectedEventArgs_P0) of the shape will be changed using the [`IsSelected`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.ShapeSelectedEventArgs.html#Com_Syncfusion_Maps_ShapeFileLayer_ShapeSelectedEventArgs_IsSelected) property
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ The multiple layer can be added in the maps using [`Sublayer`](https://help.sync
 
 ### Displaying layer in the view
 
-The [`BaseMapIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.SfMaps~BaseMapIndex.html) property allows drill-down from main layer to another layer.
+The [`BaseMapIndex`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.SfMaps.html#Com_Syncfusion_Maps_SfMaps_BaseMapIndex) property allows drill-down from main layer to another layer.
 
 In the ShapeSelected event, *BaseMapIndex* property has been used to change the layer when Asia shape selected.
 

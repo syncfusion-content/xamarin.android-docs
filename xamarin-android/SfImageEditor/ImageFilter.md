@@ -9,7 +9,7 @@ documentation: ug
 
 # Image filter in SfImageEditor
 
-Using the SfImageEditor control, you can add effects such as hue, saturation, brightness, contrast, blur, and sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.SfImageEditor~ApplyImageEffect(ImageEffect,Single).html) method contains two arguments: [`ImageEffect`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.SfImageEditor~ImageEffect.html) and [`EffectValue`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.SfImageEditor~EffectValue.html). The ImageEffect is an enum, which contains the following effects:
+Using the SfImageEditor control, you can add effects such as hue, saturation, brightness, contrast, blur, and sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.SfImageEditor.html#Syncfusion_SfImageEditor_Android_SfImageEditor_ApplyImageEffect_Syncfusion_SfImageEditor_Android_ImageEffect_System_Single_) method contains two arguments: [`ImageEffect`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.SfImageEditor.html#Syncfusion_SfImageEditor_Android_SfImageEditor_ImageEffect) and [`EffectValue`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.SfImageEditor.html#Syncfusion_SfImageEditor_Android_SfImageEditor_EffectValue). The ImageEffect is an enum, which contains the following effects:
 
 * Hue
 * Saturation
@@ -19,7 +19,7 @@ Using the SfImageEditor control, you can add effects such as hue, saturation, br
 * Sharpen 
 * None
 
-The [`EffectValue`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.SfImageEditor~EffectValue.html) is the corresponding [`ImageEffect`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android~Syncfusion.SfImageEditor.Android.SfImageEditor~ImageEffect.html) values, which varies for each effect, and they are explained as follows.
+The [`EffectValue`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.SfImageEditor.html#Syncfusion_SfImageEditor_Android_SfImageEditor_EffectValue) is the corresponding [`ImageEffect`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.SfImageEditor.html#Syncfusion_SfImageEditor_Android_SfImageEditor_ImageEffect) values, which varies for each effect, and they are explained as follows.
 
 ## Hue
 

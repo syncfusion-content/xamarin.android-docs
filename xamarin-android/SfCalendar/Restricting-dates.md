@@ -11,7 +11,7 @@ documentation: ug
 
 ## Min Max dates
 
-Visible dates can be restricted between certain range of dates using [MinDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~MaxDate.html) properties available in `SfCalendar` control. It is applicable in all the calendar views.
+Visible dates can be restricted between certain range of dates using [MinDate](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html#Com_Syncfusion_Calendar_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html#Com_Syncfusion_Calendar_SfCalendar_MaxDate) properties available in `SfCalendar` control. It is applicable in all the calendar views.
 
 The inline feature in month view will work only within the min max date range.
 
@@ -41,9 +41,9 @@ In `SfCalendar`, blackout dates refers the disabled dates that restrict the user
 
 The blackout dates can be achieved in two ways. 
 
-* A date collection can be provided to set the [BlackoutDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~BlackoutDates.html) property. This is useful when one wants to block dates where holidays or any other events occur. 
+* A date collection can be provided to set the [BlackoutDates](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html#Com_Syncfusion_Calendar_SfCalendar_BlackoutDates) property. This is useful when one wants to block dates where holidays or any other events occur. 
 
-* By invoking the [AddDatesInPast](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~AddDatesInPast.html) method, all past dates will be blacked out till current date.
+* By invoking the [AddDatesInPast](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html#Com_Syncfusion_Calendar_SfCalendar_AddDatesInPast) method, all past dates will be blacked out till current date.
 
 {% highlight c# %}
 
@@ -73,7 +73,7 @@ SetContentView(sfCalendar);
 N> This support is enabled only in month view and the dates that consists inline events will also be disabled, when they are blacked out.
 
 ### Customize the blackout dates Color
-You can customize the color of [BlackoutDates](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfcalendar/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.SfCalendar~BlackoutDates.html) in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfCalendar.Android~Com.Syncfusion.Calendar.MonthViewSettings.html).
+You can customize the color of [BlackoutDates](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html#Com_Syncfusion_Calendar_SfCalendar_BlackoutDates) in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_BlackoutColor) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html).
 
 {% tabs %}
 {% highlight c# %}

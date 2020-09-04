@@ -12,9 +12,9 @@ keywords: button, SfCheckBox, CheckBox
 # Event in Xamarin.Android Chart(SfChart)
 
 ## StateChanged event
-Occurs when the value(state) of the [`Checked`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~Checked.html) property is changed by either touching the check box or setting the value to the [`Checked`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~Checked.html) property using C# code. The event arguments are of type [`StateChangedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.StateChangedEventArgs.html) and expose the following property:
+Occurs when the value(state) of the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_Checked) property is changed by either touching the check box or setting the value to the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_Checked) property using C# code. The event arguments are of type [`StateChangedEventArgs`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.StateChangedEventArgs.html) and expose the following property:
 
-* [`IsChecked`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.StateChangedEventArgs~IsChecked.html): The new value(state) of the [`Checked`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.Buttons.Android~Syncfusion.Android.Buttons.SfCheckBox~Checked.html) property.
+* [`IsChecked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.StateChangedEventArgs.html#Syncfusion_Android_Buttons_StateChangedEventArgs_IsChecked): The new value(state) of the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_Checked) property.
 
 {% tabs %}
 {% highlight c# %}

@@ -13,7 +13,7 @@ Sublayer in the maps control allows to load multiple shape files in a single con
 
 ## Adding sublayers in ShapeFileLayer
 
-You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.ShapeFileLayer.html) using the [`SubShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.SubShapeFileLayer.html) property.
+You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.ShapeFileLayer.html) using the [`SubShapeFileLayer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.SubShapeFileLayer.html) property.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusi
 
 ## Adding sublayers in ImageryLayer
 
-You can add multiple shape files in the `ImageryLayer` using the [`SubShapeFileLayers`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfMaps.Android~Com.Syncfusion.Maps.SubShapeFileLayer.html) property.
+You can add multiple shape files in the `ImageryLayer` using the [`SubShapeFileLayers`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.SubShapeFileLayer.html) property.
 
 {% tabs %}
 
