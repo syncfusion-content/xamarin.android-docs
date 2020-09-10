@@ -238,6 +238,8 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/NumericalAxis_range_padding_RoundStart.png)
+
 **RoundEnd**
 
 When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`RoundEnd`], axis range will be rounded in the end to the nearest possible value divided by the interval.
@@ -251,6 +253,8 @@ chart.SecondaryAxis = new NumericalAxis()
 };
 
 {% endhighlight %}
+
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/NumericalAxis_range_padding_RoundEnd.png)
 
 **PrependInterval**
 
@@ -266,6 +270,8 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/NumericalAxis_range_padding_PrependInterval.png)
+
 **AppendInterval**
 
 When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the minimum and maximum values of the range.
@@ -279,6 +285,8 @@ chart.SecondaryAxis = new NumericalAxis()
 };
 
 {% endhighlight %}
+
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/NumericalAxis_range_padding_AppendInterval.png)
 
 ### Auto Interval On Zooming 
 
