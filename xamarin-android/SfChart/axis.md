@@ -594,14 +594,56 @@ The [`PlotOffset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-    PlotOffset = 20
+    PlotOffset = 30
 };
 chart.SecondaryAxis = new NumericalAxis()
 {
-    PlotOffset = 20
+    PlotOffset = 30
 };
 
 {% endhighlight %}
+
+![PlotOffsetEnd support for axis in Xamarin.Android Chart](axis_images/plotOffset.png)
+
+#### PlotOffsetStart
+
+The [`PlotOffsetStart`] property is used to offset the rendering of the axis at start position. The following code snippet demonstrates to apply the plot offset start to both x and y axes.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    PlotOffsetStart = 30
+};
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PlotOffsetStart = 30
+};
+
+{% endhighlight %}
+
+![PlotOffsetStart support for axis in Xamarin.Android Chart](axis_images/plotOffset_start.png)
+
+#### PlotOffsetEnd
+
+The [`PlotOffsetEnd`] property is used to offset the rendering of the axis at end position. The following code snippet demonstrates to apply the plot offset end to both x and y axes.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    PlotOffsetEnd = 30
+};
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PlotOffsetEnd = 30
+};
+
+{% endhighlight %}
+
+![PlotOffsetEnd support for axis in Xamarin.Android Chart](axis_images/PlotOffset_end.png)
 
 ### Axis Line Customization
 
