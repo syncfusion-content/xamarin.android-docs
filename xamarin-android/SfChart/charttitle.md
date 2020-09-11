@@ -55,7 +55,7 @@ sfChart.Title.SetTextColor( Color.Blue);
 
 ## Text Wrap
 
-You can wrap chart title text content using the LineBreakMode property. The default value of this property is NoWrap.
+You can wrap chart title text content using the [`LineBreakMode`] property. The default value of this property is NoWrap.
 
 {% highlight c# %}
 [C#]
