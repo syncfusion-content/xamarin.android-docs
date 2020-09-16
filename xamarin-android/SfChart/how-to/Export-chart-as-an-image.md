@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export chart as an image in Xamarin.Android
-description: This session describes how the Syncfusion Xamarin. Android SfChart can be exported as an image.
+title: Export Syncfusion SfChart as an image in Xamarin.Android
+description: This session describes how the Syncfusion Xamarin.Android SfChart can be exported as an image at device storage.
 platform: Android
 control: Chart
 documentation: ug
