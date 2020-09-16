@@ -1,0 +1,73 @@
+---
+layout: post
+title: Export chart as an image in Xamarin.Android
+description: This session describes how the Syncfusion Xamarin. Android SfChart can be exported as an image.
+platform: Android
+control: Chart
+documentation: ug
+---
+
+# Export SfChart as an image in Xamarin.Android
+
+The SfChart can be converted as image and saved at the desired directory by creating Bitmap from drawing cache and save it using FileStream.
+
+The following code sample demonstrates this.
+
+{% highlight c# %}
+
+public void SaveAsImage(string filename) 
+{       
+    chart.DrawingCacheEnabled = true; 
+    
+    chart.SaveEnabled = true; 
+    Bitmap bitmap = null; 
+    using (bitmap = chart.DrawingCache) 
+    { 
+        var extension = filename.Split('.'); 
+        var imagePath = 
+            new Java.IO.File(Android.OS.Environment.ExternalStorageDirectory + "/Pictures/" + filename); 
+        imagePath.CreateNewFile(); 
+        using (Stream fileStream = new FileStream(imagePath.AbsolutePath, System.IO.FileMode.OpenOrCreate)) 
+        { 
+            try 
+            { 
+                string imageExtension = extension.Length > 1 ? extension[1].Trim().ToLower() : "jpg"; 
+                switch (imageExtension) 
+                { 
+                    case "png": 
+                        bitmap.Compress(Bitmap.CompressFormat.Png, 100, fileStream); 
+                        break; 
+                    case "jpg":  case "jpeg": default: 
+                        bitmap.Compress(Bitmap.CompressFormat.Jpeg, 100, fileStream); 
+                        break; 
+                } 
+            } 
+            finally 
+            { 
+                fileStream.Flush(); 
+                fileStream.Close(); 
+                chart.DrawingCacheEnabled = false; 
+            } 
+        } 
+    } 
+}
+
+{% endhighlight  %}
+
+To save the image in Android, must grant device storage permission.
+
+{% highlight xaml %}
+
+<manifest . . . 
+          package="ExportChartAsImage.ExportChartAsImage">
+
+. . . 
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>
+
+{% endhighlight  %}
+
+## See Also
+
+[How to export chart to PDF in Xamarin.Android](https://www.syncfusion.com/kb/9370/how-to-export-chart-to-pdf-in-xamarin-android)
