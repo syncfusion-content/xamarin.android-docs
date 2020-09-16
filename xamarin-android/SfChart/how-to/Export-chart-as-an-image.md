@@ -9,9 +9,9 @@ documentation: ug
 
 # Export SfChart as an image in Xamarin.Android
 
-The SfChart can be converted as image and saved at the desired directory by creating Bitmap from drawing cache and save it using FileStream.
+The [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html) can be converted as an image and saved in the desired directory by creating Bitmap from drawing cache and save it using the FileStream.
 
-The following code sample demonstrates this.
+The code sample demonstrated as follows.
 
 {% highlight c# %}
 
@@ -36,7 +36,7 @@ public void SaveAsImage(string filename)
             { 
                 string imageExtension = extension.Length > 1 ? extension[1].Trim().ToLower() : "jpg"; 
 
-                //Compressed bitmap to get needed format
+                //Compressed bitmap to get needed format.
                 switch (imageExtension) 
                 { 
                     case "png": 
