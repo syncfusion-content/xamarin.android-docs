@@ -17,13 +17,16 @@ The following code sample demonstrates this.
 
 public void SaveAsImage(string filename) 
 {       
+    //Enabled drawing cache
     chart.DrawingCacheEnabled = true; 
     
     chart.SaveEnabled = true; 
     Bitmap bitmap = null; 
+    //Create bitmap from chart drawing cache.
     using (bitmap = chart.DrawingCache) 
     { 
         var extension = filename.Split('.'); 
+        //Create an image path with existing environment with the provided file name.
         var imagePath = 
             new Java.IO.File(Android.OS.Environment.ExternalStorageDirectory + "/Pictures/" + filename); 
         imagePath.CreateNewFile(); 
@@ -32,6 +35,8 @@ public void SaveAsImage(string filename)
             try 
             { 
                 string imageExtension = extension.Length > 1 ? extension[1].Trim().ToLower() : "jpg"; 
+
+                //Compressed bitmap to get needed format
                 switch (imageExtension) 
                 { 
                     case "png": 
@@ -44,6 +49,7 @@ public void SaveAsImage(string filename)
             } 
             finally 
             { 
+                //Closing stream and disabled drawing cache. 
                 fileStream.Flush(); 
                 fileStream.Close(); 
                 chart.DrawingCacheEnabled = false; 
@@ -68,6 +74,6 @@ To save the image in Android, must grant device storage permission.
 
 {% endhighlight  %}
 
-## See Also
+## See also
 
 [How to export chart to PDF in Xamarin.Android](https://www.syncfusion.com/kb/9370/how-to-export-chart-to-pdf-in-xamarin-android)
