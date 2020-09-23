@@ -9,7 +9,7 @@ documentation: UG
 
 # Column Drag and Drop
 
-The SfDataGrid allows dragging and dropping a column header by setting the [SfDataGrid.AllowDraggingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowDraggingColumn.html) property to `true`. Drag view is displayed when dragging a column header. The drag and drop operations can be handled using the [SfDataGrid QueryColumnDragging](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~QueryColumnDragging_EV.html) event. 
+The SfDataGrid allows dragging and dropping a column header by setting the [SfDataGrid.AllowDraggingColumn](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AllowDraggingColumn) property to `true`. Drag view is displayed when dragging a column header. The drag and drop operations can be handled using the [SfDataGrid QueryColumnDragging](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html) event. 
 
 The following code example illustrates how to enable column drag and drop in the SfDataGrid.
 
@@ -25,18 +25,18 @@ sfGrid.AllowDraggingColumn = true;
 
 The `QueryColumnDragging` event is fired upon dragging a column and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryColumnDragging ` event, you can also cancel the dragging of a particular column header.
 
-The `QueryColumnDragging` event provides following properties in [QueryColumnDraggingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html):
+The `QueryColumnDragging` event provides following properties in [QueryColumnDraggingEventArgs](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html):
 
-* [From](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~From.html): Returns the index of the dragging column.
-* [To](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~To.html): Returns the dragging index where you try to drop the column.
-* [Reason](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~Reason.html): Returns column dragging details as `QueryColumnDraggingReason`.
-* [DraggingPosition](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~DraggingPosition.html): Returns the positions of the drag view during column drag and drop operations.
+* [From](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryColumnDraggingEventArgs_From): Returns the index of the dragging column.
+* [To](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryColumnDraggingEventArgs_To): Returns the dragging index where you try to drop the column.
+* [Reason](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryColumnDraggingEventArgs_Reason): Returns column dragging details as `QueryColumnDraggingReason`.
+* [DraggingPosition](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryColumnDraggingEventArgs_DraggingPosition): Returns the positions of the drag view during column drag and drop operations.
 * [CanAutoScroll](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryColumnDraggingEventArgs_CanAutoScroll): Returns whether auto-scrolling should happen when column drag view reaches the left or right ends of the `SfDataGrid`.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): Returns the Boolean property to cancel the event.
 
 ### Cancel dragging for a particular column 
 
-Dragging of a particular column can be canceled using [QueryColumnDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.QueryColumnDraggingReason.html) argument of the `QueryColumnDragging` event handler.
+Dragging of a particular column can be canceled using [QueryColumnDraggingReason](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingReason.html) argument of the `QueryColumnDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -183,7 +183,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ## Customize column drag and drop indicators
 
-The SfDataGrid allows customizing the column drag and drop indicators by writing a custom grid style, deriving from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
+The SfDataGrid allows customizing the column drag and drop indicators by writing a custom grid style, deriving from [DataGridStyle](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_GridStyle) property.
 
 {% tabs %}
 {% highlight c#%}

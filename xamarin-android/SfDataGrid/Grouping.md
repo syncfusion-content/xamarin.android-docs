@@ -9,7 +9,7 @@ documentation: UG
 
 # Grouping 
 
-A group represents a collection of records of a category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~CaptionSummaryRow.html) to get the underlying records in view.
+A group represents a collection of records of a category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_CaptionSummaryRow) to get the underlying records in view.
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
@@ -17,12 +17,12 @@ N> When `BeginInit` method is called, it suspends all the updates until `EndInit
 
 ## Programmatic Grouping
 
-The data grid also performs grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription.html) object and adding it in the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescriptions.html) collection. The data grid groups the data based on the `GroupColumnDescription` object added to this collection.
+The data grid also performs grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GroupColumnDescription.html) object and adding it in the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GroupColumnDescriptions.html) collection. The data grid groups the data based on the `GroupColumnDescription` object added to this collection.
 
 The `GroupColumnDescription` object holds following two properties:
 
-* [ColumnName](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription~ColumnName.html): Gets the name of the grouped column.
-* [Converter](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription~Converter.html): Get the `IValueConverter` as input that helps to apply the custom grouping.
+* [ColumnName](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GroupColumnDescription.html#Syncfusion_SfDataGrid_GroupColumnDescription_ColumnName): Gets the name of the grouped column.
+* [Converter](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GroupColumnDescription.html#Syncfusion_SfDataGrid_GroupColumnDescription_Converter): Get the `IValueConverter` as input that helps to apply the custom grouping.
 
 The following code example illustrates how to apply grouping to a column in the data grid:
 
@@ -90,7 +90,7 @@ The following screenshot shows the output rendered when above code is executed:
 
 ## Expand groups while grouping
  
-You can expand all the groups while grouping by setting the [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AutoExpandGroups.html) to `true`. So, when grouping any column, all groups will be in expanded states. 
+You can expand all the groups while grouping by setting the [SfDataGrid.AutoExpandGroups](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AutoExpandGroups) to `true`. So, when grouping any column, all groups will be in expanded states. 
 
 {% highlight c# %}
 this.dataGrid.AutoExpandGroups = true;
@@ -99,7 +99,7 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 
 ## Expand or collapse the groups
 
-By default, the groups will be in expanded state in the data grid. However, you can expand or collapse a group at runtime by setting the [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~AllowGroupExpandCollapse.html) to `true`.
+By default, the groups will be in expanded state in the data grid. However, you can expand or collapse a group at runtime by setting the [SfDataGrid.AllowGroupExpandCollapse](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AllowGroupExpandCollapse) to `true`.
 
 {% highlight c# %}
 this.dataGrid.AllowGroupExpandCollapse = true;
@@ -130,7 +130,7 @@ this.dataGrid.CollapseGroup(group);
 
 ## Custom grouping
 
-The data grid groups a column based on custom logic. To use the custom grouping, write a converter that implements `IValueConverter` with your custom grouping logic and assign that converter to the [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GroupColumnDescription~Converter.html) property.
+The data grid groups a column based on custom logic. To use the custom grouping, write a converter that implements `IValueConverter` with your custom grouping logic and assign that converter to the [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GroupColumnDescription.html#Syncfusion_SfDataGrid_GroupColumnDescription_Converter) property.
 
 The following code example illustrates how to set the custom grouping converter for the group description added to group the freight column.
 
@@ -334,7 +334,7 @@ public class CustomStyle : DataGridStyle
 
 ## Hiding the column when grouped
 
-In the data grid, a column will be generated with the default column width. In order to group by a column that should not be visible in the view, add the column to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection and set its width as 0. Thus, the column will be grouped but will not be visually seen. Refer to the following code example:
+In the data grid, a column will be generated with the default column width. In order to group by a column that should not be visible in the view, add the column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_Columns) collection and set its width as 0. Thus, the column will be grouped but will not be visually seen. Refer to the following code example:
 
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 

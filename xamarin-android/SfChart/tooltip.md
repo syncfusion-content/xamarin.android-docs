@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-Tooltip for data points, can be enabled by setting [`TooltipEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~TooltipEnabled.html) property as `true`.
+Tooltip for data points, can be enabled by setting [`TooltipEnabled`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_TooltipEnabled) property as `true`.
 
 {% highlight c# %} 
 [C#]
@@ -35,21 +35,21 @@ chart.Series.Add(columnSeries);
 
 ## Customizing appearance
 
-For customizing the tooltip appearance, you need to add an instance of [`ChartTooltipBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBehavior.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). You can use the following properties available in the [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html).
+For customizing the tooltip appearance, you need to add an instance of [`ChartTooltipBehavior`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBehavior.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html). You can use the following properties available in the [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html).
 
-* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~StrokeColor.html) – used to change the label border color.
-* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~StrokeWidth.html) – used to change the label border width.
-* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~BackgroundColor.html) – used to change the label background color.
-* [`MarginBottom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~MarginBottom.html) – specifies the bottom margin for tooltip text.
-* [`MarginTop`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~MarginTop.html) – specifies the top margin for tooltip text.
-* [`MarginLeft`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~MarginLeft.html) – specifies the left margin for tooltip text.
-* [`MarginRight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~MarginRight.html) – specifies the right margin for tooltip text.
-* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~TextColor.html) – used to change the text color.
-* [`TextSize`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~TextSize.html) – used to change label font size, family and weight.
-* [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~LabelFormat.html) – used to provide numeric or date time format of the tooltip text.
-* [`Duration`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~Duration.html) – used to set the duration of the tooltip.
-* [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~OffsetX.html) - used to move the label horizontally.
-* [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTooltipBehavior~OffsetY.html) - used to move the label vertically.
+* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_StrokeColor) – used to change the label border color.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_StrokeWidth) – used to change the label border width.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_BackgroundColor) – used to change the label background color.
+* [`MarginBottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_MarginBottom) – specifies the bottom margin for tooltip text.
+* [`MarginTop`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_MarginTop) – specifies the top margin for tooltip text.
+* [`MarginLeft`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_MarginLeft) – specifies the left margin for tooltip text.
+* [`MarginRight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_MarginRight) – specifies the right margin for tooltip text.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_TextColor) – used to change the text color.
+* [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_TextSize) – used to change label font size, family and weight.
+* [`LabelFormat`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_LabelFormat) – used to provide numeric or date time format of the tooltip text.
+* [`Duration`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_Duration) – used to set the duration of the tooltip.
+* [`OffsetX`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_OffsetX) - used to move the label horizontally.
+* [`OffsetY`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_OffsetY) - used to move the label vertically.
 * [`PointerLength`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_PointerLength) - used to change the pointer length of the tooltip.
 * [`TooltipPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_TooltipPosition) - used to change the position of the tooltip([`Left`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartElementPosition.html), [`Top`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartElementPosition.html), [`Right`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartElementPosition.html) ,[`Bottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartElementPosition.html)). 
 * [`AnimationType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTooltipBehavior.html#Com_Syncfusion_Charts_ChartTooltipBehavior_AnimationType) - used to change the animation type of the tooltip([`Fade`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TooltipAnimation.html), [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TooltipAnimation.html), [`Pop`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TooltipAnimation.html)).

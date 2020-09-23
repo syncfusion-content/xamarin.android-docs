@@ -11,14 +11,14 @@ documentation: ug
 
 ## Enable zooming
 
-Chart allows you to zoom in to view the data clearly. To enable this feature, you need to add an instance of [`ChartZoomPanBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBehavior.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html).
+Chart allows you to zoom in to view the data clearly. To enable this feature, you need to add an instance of [`ChartZoomPanBehavior`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartZoomPanBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBehavior.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html).
 
 The following properties are used to configure the zooming feature:
 
-* [`ZoomingEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomingEnabled.html) – used to enable/disable the pinch zooming. Default value is true. 
+* [`ZoomingEnabled`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartZoomPanBehavior.html#Com_Syncfusion_Charts_ChartZoomPanBehavior_ZoomingEnabled) – used to enable/disable the pinch zooming. Default value is true. 
 * [`EnableDirectionalZooming`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartZoomPanBehavior.html#Com_Syncfusion_Charts_ChartZoomPanBehavior_EnableDirectionalZooming) - Enables or disables the pinch zooming based on pinch gesture direction. The default value of this property is false.
-* [`DoubleTapEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~DoubleTapEnabled.html) – when you enable this property, you can double tap on the chart to reset it to the original size or zoom in by one level.
-* [`ScrollingEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ScrollingEnabled.html) – used to enable/disable the panning. Default value is true.
+* [`DoubleTapEnabled`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartZoomPanBehavior.html#Com_Syncfusion_Charts_ChartZoomPanBehavior_DoubleTapEnabled) – when you enable this property, you can double tap on the chart to reset it to the original size or zoom in by one level.
+* [`ScrollingEnabled`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartZoomPanBehavior.html#Com_Syncfusion_Charts_ChartZoomPanBehavior_ScrollingEnabled) – used to enable/disable the panning. Default value is true.
 * [`MaximumZoomLevel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartZoomPanBehavior.html#Com_Syncfusion_Charts_ChartZoomPanBehavior_MaximumZoomLevel) - used to determine the maximum zoom level of the chart.
 
 The following code snippet explains how to enable zooming.
@@ -36,7 +36,7 @@ chart.Behaviors.Add(zoomPanBehavior);
 
 ## Selection zooming
 
-By specifying the [`SelectionZoomingEnabled`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~SelectionZoomingEnabled.html) property to true, you can double tap and drag to select a range on the chart to be zoomed in.
+By specifying the [`SelectionZoomingEnabled`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartZoomPanBehavior.html#Com_Syncfusion_Charts_ChartZoomPanBehavior_SelectionZoomingEnabled) property to true, you can double tap and drag to select a range on the chart to be zoomed in.
 
 The following code snippet explains how to enable the box selection zooming,
 
@@ -111,7 +111,7 @@ chart.Behaviors.Add(zoomPanBehavior);
 
 ## Zoom mode
 
-The [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomMode.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartZoomPanBehavior~ZoomMode.html) is [`XY`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ZoomMode.html) (both axis).
+The [`ZoomMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartZoomPanBehavior.html#Com_Syncfusion_Charts_ChartZoomPanBehavior_ZoomMode) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartZoomPanBehavior.html#Com_Syncfusion_Charts_ChartZoomPanBehavior_ZoomMode) is [`XY`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ZoomMode.html) (both axis).
 
 The following code example explains how to restrict the chart to be zoomed only along horizontal axis.
 
