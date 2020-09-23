@@ -603,7 +603,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endhighlight %}
 
-![PlotOffsetEnd support for axis in Xamarin.Android Chart](axis_images/plotOffset.png)
+![PlotOffset support for axis in Xamarin.Android Chart](axis_images/plotOffset.png)
 
 #### PlotOffsetStart
 
