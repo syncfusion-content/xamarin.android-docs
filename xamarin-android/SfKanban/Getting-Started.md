@@ -36,8 +36,8 @@ The following section describes how to create a new kanban application.
 ## Adding SfKanban in Xamarin.Android
 
 1. Add the required assembly references to the project as discussed in the _Referencing Essential Studio Components in your solution_ section.
-2. Import [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html) control namespace in [`Syncfusion.SfKanban.Android`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android.html).
-3. Create an instance of [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html) control, and set is as content view of the activity.
+2. Import [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html) control namespace in [`Syncfusion.SfKanban.Android`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android.html).
+3. Create an instance of [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html) control, and set is as content view of the activity.
 
 
 {% highlight C# %}
@@ -61,7 +61,7 @@ public  class MainActivity : Activity
 
 ## Creating KanbanModel for the SfKanban
 
-Create a collection of [`KanbanModel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanModel.html) objects for populating [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html).
+Create a collection of [`KanbanModel`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanModel.html) objects for populating [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html).
 
 {% highlight C# %}
 using System.Collections.ObjectModel;
@@ -133,7 +133,7 @@ public class MainActivity : Activity
 
 ## Binding data to SfKanban
 
-To bind the data source of the [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html), set the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ItemsSource) property. The following code binds the collection created in previous step to the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ItemsSource) property.
+To bind the data source of the [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html), set the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ItemsSource) property. The following code binds the collection created in previous step to the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ItemsSource) property.
 
 {% highlight C# %}
 kanban.ItemsSource = ItemsSourceCards();
@@ -141,13 +141,13 @@ kanban.ItemsSource = ItemsSourceCards();
 
 ## Defining columns
 
-Define the columns manually by adding the [`KanbanColumn`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanColumn.html) objects to the [`Columns`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_Columns) collection property in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html).
+Define the columns manually by adding the [`KanbanColumn`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanColumn.html) objects to the [`Columns`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_Columns) collection property in [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html).
 
-The [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ItemsSource) bound to the kanban will be added to the respective columns using the [`ColumnMappingPath`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ColumnMappingPath) property in the [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html) and [`Categories`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanColumn.html#Syncfusion_SfKanban_Android_KanbanColumn_Categories) collection properties in [`KanbanColumn`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanColumn.html).
+The [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ItemsSource) bound to the kanban will be added to the respective columns using the [`ColumnMappingPath`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ColumnMappingPath) property in the [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html) and [`Categories`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanColumn.html#Syncfusion_SfKanban_Android_KanbanColumn_Categories) collection properties in [`KanbanColumn`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanColumn.html).
 
 Set the required property name to [`ColumnMappingPath`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ColumnMappingPath). It is essential to add data to the respective columns.
 
-In the following code sample, the data whose [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.KanbanModel~Category.html) property’s value is set to `Open` will be added to the openColumn, [`Title`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanColumn.html#Syncfusion_SfKanban_Android_KanbanColumn_Title) and other data will be added to the respective columns.
+In the following code sample, the data whose [`Category`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanModel.html#Syncfusion_SfKanban_Android_KanbanModel_Category) property’s value is set to `Open` will be added to the openColumn, [`Title`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanColumn.html#Syncfusion_SfKanban_Android_KanbanColumn_Title) and other data will be added to the respective columns.
 
 The following code sample demonstrates how to define columns.
 
@@ -177,7 +177,7 @@ kanban.Columns.Add(doneColumn);
 
 Set the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_AutoGenerateColumns) property to true, in which you don't need to define the columns as mentioned in the previous code sample. This will create columns depending on the [`ColumnMappingPath`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ColumnMappingPath) property for all the distinct values in [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ItemsSource).
 
-When the columns are auto-generated, you can handle the [`ColumnsGenerated`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html) event to customize the columns after they are added to the [`ActualColumns`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban~ActualColumns.html) collection in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android~Syncfusion.SfKanban.Android.SfKanban.html).
+When the columns are auto-generated, you can handle the [`ColumnsGenerated`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html) event to customize the columns after they are added to the [`ActualColumns`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_ActualColumns) collection in [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html).
 
 ## Customizing Column Size
 

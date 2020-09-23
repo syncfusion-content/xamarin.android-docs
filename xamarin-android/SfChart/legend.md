@@ -55,15 +55,15 @@ chart.Legend.PathEffect = new DashPathEffect(new float[] { 3, 3 }, 4);
 
 ## Customizing Labels
 
-[`Label`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~Label.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries.html) is used to define the label for the corresponding series legend item. The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_LabelStyle) property can be used to customize the legend items label appearance.
+[`Label`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_Label) property of [`ChartSeries`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html) is used to define the label for the corresponding series legend item. The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_LabelStyle) property can be used to customize the legend items label appearance.
 
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendLabelStyle.html#Com_Syncfusion_Charts_ChartLegendLabelStyle_TextColor) – used to change the color of the label.
 * [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendLabelStyle.html#Com_Syncfusion_Charts_ChartLegendLabelStyle_TextSize) – used to change the text size.
 * [`Typeface`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendLabelStyle.html#Com_Syncfusion_Charts_ChartLegendLabelStyle_Typeface) – used to change the font family and font weight.
-* [`MarginTop`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginTop.html) - used to change the top margin of the labels.
-* [`MarginBottom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginBottom.html) - used to change the bottom margin of the labels.
-* [`MarginLeft`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginLeft.html) - used to change the left margin of the labels.
-* [`MarginRight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginRight.html) - used to change the right margin of the labels.
+* [`MarginTop`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginTop) - used to change the top margin of the labels.
+* [`MarginBottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginBottom) - used to change the bottom margin of the labels.
+* [`MarginLeft`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginLeft) - used to change the left margin of the labels.
+* [`MarginRight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginRight) - used to change the right margin of the labels.
 
 {% highlight c# %} 
 [C#]
@@ -82,7 +82,7 @@ chart.Legend.LabelStyle.MarginTop = 5;
 
 ## Legend Icons
 
-Legend icons are enabled by default, however, you can control its visibility using [`IconVisibility`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~IconVisibility.html) property. Also you can specify the icon type using [`LegendIcon`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~LegendIcon.html) property in ChartSeries. Default legend icon is [`Circle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendIcon.html). [`IconWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~IconWidth.html) and [`IconHeight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~IconHeight.html) properties are used to adjust the width and height of the legend icons respectively.
+Legend icons are enabled by default, however, you can control its visibility using [`IconVisibility`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_IconVisibility) property. Also you can specify the icon type using [`LegendIcon`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_LegendIcon) property in ChartSeries. Default legend icon is [`Circle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendIcon.html). [`IconWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_IconWidth) and [`IconHeight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_IconHeight) properties are used to adjust the width and height of the legend icons respectively.
 
 {% highlight c# %} 
 [C#]
@@ -100,16 +100,16 @@ pieSeries.LegendIcon = ChartLegendIcon.SeriesType;
 
 Following properties are used to define and customize the legend [`Title`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_Title).
 
-* [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendTitleView~Text.html) – used to set the title for legend.
-* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendTitleView~TextColors.html) – used to change the color of the title text.
-* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendTitleView~Background.html) – used to change the title background color.
-* [`TextSize`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendTitleView~TextSize.html) – used to change the text size of the title.
-* [`Typeface`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendTitleView~Typeface.html) – used to change the font family and font weight.
-* [`MarginTop`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendLabelStyle~MarginTop.html) - used to change the top margin of the title.
-* [`MarginBottom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendLabelStyle~MarginBottom.html) - used to change the bottom margin of the title.
-* [`MarginLeft`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendLabelStyle~MarginLeft.html) - used to change the left margin of the title.
-* [`MarginRight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendLabelStyle~MarginRight.html) - used to change the right margin of the title.
-* [`TextAlignment`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegendTitleView~TextAlignment.html) – used to change the alignment of the title text, it can be start, end and center.
+* [`Text`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendTitleView.html) – used to set the title for legend.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendTitleView.html) – used to change the color of the title text.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendTitleView.html) – used to change the title background color.
+* [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendTitleView.html) – used to change the text size of the title.
+* [`Typeface`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendTitleView.html) – used to change the font family and font weight.
+* [`MarginTop`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendLabelStyle.html#Com_Syncfusion_Charts_ChartLegendLabelStyle_MarginTop) - used to change the top margin of the title.
+* [`MarginBottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendLabelStyle.html#Com_Syncfusion_Charts_ChartLegendLabelStyle_MarginBottom) - used to change the bottom margin of the title.
+* [`MarginLeft`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendLabelStyle.html#Com_Syncfusion_Charts_ChartLegendLabelStyle_MarginLeft) - used to change the left margin of the title.
+* [`MarginRight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendLabelStyle.html#Com_Syncfusion_Charts_ChartLegendLabelStyle_MarginRight) - used to change the right margin of the title.
+* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendTitleView.html) – used to change the alignment of the title text, it can be start, end and center.
 
 {% highlight c# %} 
 [C#]
@@ -127,7 +127,7 @@ chart.Legend.Title.TextAlignment = TextAlignment.Center;
 
 ## Toggle the series visibility
 
-You can control the visibility of the series by tapping on the legend item. You can enable this feature by enabling [`ToggleSeriesVisibility`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~ToggleSeriesVisibility.html) property.
+You can control the visibility of the series by tapping on the legend item. You can enable this feature by enabling [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_ToggleSeriesVisibility) property.
 
 {% highlight c# %} 
 [C#]
@@ -138,7 +138,7 @@ chart.Legend.ToggleSeriesVisibility = true;
 
 ## Legend item visibility
 
-You can control the visibility of particular series legend item by using the [`VisibilityOnLegend`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartSeries~VisibilityOnLegend.html) property of series. Default value of VisibilityOnLegend property is Visible.
+You can control the visibility of particular series legend item by using the [`VisibilityOnLegend`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_VisibilityOnLegend) property of series. Default value of VisibilityOnLegend property is Visible.
 
 {% highlight c# %} 
 [C#]
@@ -150,7 +150,7 @@ series.VisibilityOnLegend = Visibility.Gone;
 
 ## Legend Wrap
 
-The legend items can be placed in multiple rows by using [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~OverflowMode.html) property if size of the total legend exceeds the available size. The default value of [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~OverflowMode.html) property is [`Scroll`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendOverflowMode.html).
+The legend items can be placed in multiple rows by using [`OverflowMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_OverflowMode) property if size of the total legend exceeds the available size. The default value of [`OverflowMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_OverflowMode) property is [`Scroll`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendOverflowMode.html).
 
 {% highlight c# %}
 [C#]
@@ -165,7 +165,7 @@ The legend items can be placed in multiple rows by using [`OverflowMode`](http:/
 
 ### Legend Width
 
-The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~MaxWidth.html) property. This property works only when the [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~OverflowMode.html) is [`Wrap`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendOverflowMode.html). The default value of [`MaxWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~MaxWidth.html) property is double.NAN.
+The legend width can be specified by using [`MaxWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_MaxWidth) property. This property works only when the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_OverflowMode) is [`Wrap`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegendOverflowMode.html). The default value of [`MaxWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_MaxWidth) property is double.NAN.
 
 {% highlight c# %}
 [C#]
@@ -184,9 +184,9 @@ The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.c
 
 You can position the legend anywhere inside the chart. Following properties are used to customize the legend positions.
 
-* [`DockPosition`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~DockPosition.html)– used to position the legend relatively. Options available are:  [`Left`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartDock.html), Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
-* [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~OffsetX.html) – used to move the legend on x coordinate by the given offset value, this will work only if the dock position is Floating.
-* [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLegend~OffsetY.html) - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is Floating.
+* [`DockPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_DockPosition)– used to position the legend relatively. Options available are:  [`Left`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartDock.html), Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
+* [`OffsetX`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_OffsetX) – used to move the legend on x coordinate by the given offset value, this will work only if the dock position is Floating.
+* [`OffsetY`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_OffsetY) - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is Floating.
 * [`LegendPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_LegendPosition) - used to position the legend items [`Inside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LegendPosition.html) or [`Outside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LegendPosition.html) of the chart series. The default position is Outside.
 * [`ItemMarginTop`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_ItemMarginTop) - used to change the top margin of the legend item.
 * [`ItemMarginBottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_ItemMarginBottom) - used to change the bottom margin of the legend item.
