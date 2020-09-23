@@ -9,7 +9,7 @@ documentation: UG
 
 # Data Binding
 
-The SfDataGrid is bound to an external data source to display the data. It supports the data sources such as [List](https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx), [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx), and so on. The [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~ItemsSource.html) property helps binding the SfDataGrid with the collection of objects.
+The SfDataGrid is bound to an external data source to display the data. It supports the data sources such as [List](https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx), [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx), and so on. The [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_ItemsSource) property helps binding the SfDataGrid with the collection of objects.
 
 To bind the data source of the SfDataGrid, set the `SfDataGrid.ItemsSource` property as follows, such that each row in the SfDataGrid would bind to an object in the data source and each column would bind to a property in the data model object.
 
@@ -134,7 +134,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID[0].Cu
 
 ## View
 
-The data grid has the [View](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~View.html) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. The `View` is responsible for maintaining and manipulating data and other advanced operations like `Sorting`, `Grouping`, etc.
+The data grid has the [View](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_View) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. The `View` is responsible for maintaining and manipulating data and other advanced operations like `Sorting`, `Grouping`, etc.
 
 When binding Collection to the `ItemsSource` property of the SfDataGrid, `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 

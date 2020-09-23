@@ -9,7 +9,7 @@ documentation: ug
 
 # Unbound Column
 
-The dataGrid adds additional columns which are not bound with data object from the underlying data source. Add unbound column using [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumn.html) class.
+The dataGrid adds additional columns which are not bound with data object from the underlying data source. Add unbound column using [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridUnboundColumn.html) class.
 
 {% highlight c# %}
 SfDataGrid dataGrid = new SfDataGrid(context);
@@ -38,15 +38,15 @@ dataGrid.Columns.Add(TotalColumn);
 
 ![](SfDataGrid_images/UnboundColumn.png)
 
-N> It is mandatory to specify the [GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~MappingName.html) for `SfDataGrid.GridUnboundColumn` with some name to identify the column. It is not necessary to define the name of the field in the data object.
+N> It is mandatory to specify the [GridColumn.MappingName](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html#Syncfusion_SfDataGrid_GridColumn_MappingName) for `SfDataGrid.GridUnboundColumn` with some name to identify the column. It is not necessary to define the name of the field in the data object.
 
 ## Populating data for unbound column
 
-You can populate the data for unbound column by setting [Expression](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumn~Expression.html) or [Format](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridColumn~Format.html) property.
+You can populate the data for unbound column by setting [Expression](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridUnboundColumn.html#Syncfusion_SfDataGrid_GridUnboundColumn_Expression) or [Format](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html#Syncfusion_SfDataGrid_GridColumn_Format) property.
 
 ### Using Expression
 
-Specifies the arithmetic or logic expression using `Expression` property to compute the display value. By default, `GridUnboundColumn` evaluates the expression with casing. Disable the casing while evaluate the expression by setting the [CaseSensitive](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridUnboundColumn~CaseSensitive.html) property to `false`.
+Specifies the arithmetic or logic expression using `Expression` property to compute the display value. By default, `GridUnboundColumn` evaluates the expression with casing. Disable the casing while evaluate the expression by setting the [CaseSensitive](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridUnboundColumn.html#Syncfusion_SfDataGrid_GridUnboundColumn_CaseSensitive) property to `false`.
 
 Following list of arithmetic and logical operations supported:
 
