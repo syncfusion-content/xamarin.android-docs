@@ -178,7 +178,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Round**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`Round`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`Round`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded to the nearest possible value by the interval.
 
 {% highlight c# %} 
 [C#]
@@ -226,7 +226,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **RoundStart**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`RoundStart`], axis range will be rounded in the start to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`RoundStart`], axis range will be rounded in the start to the nearest possible value by the interval.
 
 {% highlight c# %} 
 [C#]
@@ -242,7 +242,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **RoundEnd**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`RoundEnd`], axis range will be rounded in the end to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`RoundEnd`], axis range will be rounded in the end to the nearest possible value by the interval.
 
 {% highlight c# %} 
 [C#]
@@ -258,7 +258,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **PrependInterval**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`PrependInterval`], axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum and maximum values of the range.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`PrependInterval`], axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum values of the range.
 
 {% highlight c# %} 
 [C#]
@@ -274,7 +274,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **AppendInterval**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the minimum and maximum values of the range.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the maximum values of the range.
 
 {% highlight c# %} 
 [C#]
@@ -454,7 +454,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **PrependInterval**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`PrependInterval`], range will be rounded and date time interval of the axis will be added in the start as padding to the minimum and maximum extremes of the range.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`PrependInterval`], range will be rounded and date time interval of the axis will be added in the start as padding to the minimum extremes of the range.
 
 {% highlight c# %} 
 [C#]
@@ -470,7 +470,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **AppendInterval**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`AppendInterval`], range will be rounded and date time interval of the axis will be added in the start as padding to the minimum and maximum extremes of the range.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`AppendInterval`], range will be rounded and date time interval of the axis will be added in the start as padding to the maximum extremes of the range.
 
 {% highlight c# %} 
 [C#]
