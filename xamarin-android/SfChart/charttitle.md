@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Xamarin.Android | Chart Title | Syncfusion
-description: How to add chart title and customize the appearance of the chart title in Xamarin.Android Chart
+description: This section explains how to add the chart title and customize the appearance of the chart title in Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
 documentation: ug
