@@ -601,13 +601,13 @@ Each summary has a specific key using which the custom summary renderer can be r
 
 <tr>
 <td>Table summary</td>
-<td><a href="https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html">GridTableSummaryCellRenderer</a> </td>
+<td><a href="https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html">GridTableSummaryCellRenderer</a> </td>
 <td>TableSummary</td>
 </tr>
 
 <tr>
 <td>Caption summary</td>
-<td><a href="https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html">GridCaptionSummaryCellRenderer</a> </td>
+<td><a href="https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html">GridCaptionSummaryCellRenderer</a> </td>
 <td>CaptionSummary</td>
 </tr>
 
