@@ -12,7 +12,7 @@ documentation: ug
 [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html) offers two utility methods to transform the pixel to chart point and vice-versa.
 
 * [`ValueToPoint(ChartAxis axis, double value)`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_ValueToPoint_Com_Syncfusion_Charts_ChartAxis_System_Double_) - Converts the data point value to screen point.
-* [`PointToValue(ChartAxis axis, PointF point)`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart~PointToValue(ChartAxis,PointF).html) - Converts the screen point to chart value.
+* [`PointToValue(ChartAxis axis, PointF point)`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html#Com_Syncfusion_Charts_SfChart_PointToValue_Com_Syncfusion_Charts_ChartAxis_Android_Graphics_PointF_) - Converts the screen point to chart value.
 
 {% highlight c# %}
 
