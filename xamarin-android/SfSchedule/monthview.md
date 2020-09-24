@@ -526,7 +526,7 @@ You can download the entire source code of this demo for Xamarin.Android from he
 ![Month programatic selection in schedule xamarin android](monthview_images/selection_Month.png)
 
 ## Today Background Color
-You can customize the current date background of  `SfSchedule`  by using [TodayBackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~TodayBackground.html) property of `MonthViewSettings`.
+You can customize the current date background of  `SfSchedule`  by using [TodayBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.MonthViewSettings.html#Syncfusion_SfSchedule_XForms_MonthViewSettings_TodayBackground) property of `MonthViewSettings`.
 
 {% tabs %}
 {% highlight c# %}

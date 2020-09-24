@@ -9,13 +9,13 @@ documentation: ug
 
 # Trackball in Xamarin.Android Chart(SfChart)
 
-The Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_Behaviors) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.SfChart.html). Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
+The Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_Behaviors) collection property of [`SfChart`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html). Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
 
 You can use the following properties to show or hide the line and labels.
 
-* [`ShowLabel`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~ShowLabel.html): Shows or hides trackball label. Default value is true.
+* [`ShowLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_ShowLabel): Shows or hides trackball label. Default value is true.
 
-* [`ShowLine`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~ShowLine.html): Shows or hides the trackball line. Default value is true.
+* [`ShowLine`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_ShowLine): Shows or hides the trackball line. Default value is true.
 
 {% highlight c# %} 
 [C#]
@@ -35,7 +35,7 @@ chart.Behaviors.Add(trackballBehavior);
 
 ## Label display mode
 
-The [`LabelDisplayMode`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~LabelDisplayMode.html) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the three options you can set to this property:
+The [`LabelDisplayMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_LabelDisplayMode) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the three options you can set to this property:
 
 * [`FloatAllPoints`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TrackballLabelDisplayMode.html): Displays label for all the data points along the vertical line.
 * [`NearestPoint`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TrackballLabelDisplayMode.html): Displays label for single data point that is nearer to the touch contact position.
@@ -68,17 +68,17 @@ The ChartTrackballActivationMode enum contains the following values:
 
 The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_LabelStyle) property provides options to customize the trackball labels.
 
-* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextColor.html): Used to change the color of the labels.
-* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~BackgroundColor.html): Used to change the label background color.
-* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeColor.html): Used to change the border color.
-* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~StrokeWidth.html): Used to change the thickness of the border.
-* [`TextSize`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~TextSize.html): Used to change the text size.
-* [`Typeface`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~Typeface.html): Used to change the font family and font weight.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_TextColor): Used to change the color of the labels.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_BackgroundColor): Used to change the label background color.
+* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_StrokeColor): Used to change the border color.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_StrokeWidth): Used to change the thickness of the border.
+* [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_TextSize): Used to change the text size.
+* [`Typeface`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_Typeface): Used to change the font family and font weight.
 * [`LabelFormat`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_LabelFormat): Used to set numeric or date time format for the trackball labels.
-* [`MarginTop`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginTop.html): Used to change the top margin of the labels.
-* [`MarginBottom`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginBottom.html): Used to change the bottom margin of the labels.
-* [`MarginLeft`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginLeft.html): Used to change the left margin of the labels.
-* [`MarginRight`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLabelStyle~MarginRight.html): Used to change the right margin of the labels.
+* [`MarginTop`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginTop): Used to change the top margin of the labels.
+* [`MarginBottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginBottom): Used to change the bottom margin of the labels.
+* [`MarginLeft`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginLeft): Used to change the left margin of the labels.
+* [`MarginRight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginRight): Used to change the right margin of the labels.
 
 {% highlight c# %} 
 [C#]
@@ -109,12 +109,12 @@ The [`MarkerStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusio
 
 The following properties are used to customize the trackball marker:
 
-* [`ShowMarker`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~ShowMarker.html): Used to enable or disable the marker. Default value is true.
-* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~StrokeColor.html): Used to change the marker stroke color.
-* [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~Color.html): Used to change the marker background color.
-* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~StrokeWidth.html): Used to change the width of the marker stroke.
-* [`Width`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~Width.html): Used to change the width of the marker.
-* [`Height`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballMarkerStyle~Height.html): Used to change the height of the marker.
+* [`ShowMarker`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_ShowMarker): Used to enable or disable the marker. Default value is true.
+* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_StrokeColor): Used to change the marker stroke color.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_Color): Used to change the marker background color.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_StrokeWidth): Used to change the width of the marker stroke.
+* [`Width`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_Width): Used to change the width of the marker.
+* [`Height`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_Height): Used to change the height of the marker.
 * [`MarkerType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_MarkerType): Used to change the type of the marker such as [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.MarkerType.html), Ellipse, Diamond, and more.
 
 {% highlight c# %} 
@@ -144,10 +144,10 @@ chart.Behaviors.Add(trackballBehavior);
 
 The [`LineStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_LineStyle) property provides options to customize the trackball line.
 
-* [`ShowLine`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior~ShowLine.html): Used to enable or disable the line. Default value is true.
-* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineStyle~StrokeWidth.html): Used to change the stroke width of the line.
-* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineStyle~StrokeColor.html): Used to change the stroke color of the line.
-* [`PathEffect`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartLineStyle~PathEffect.html): Specifies the dashes to be applied on the line.
+* [`ShowLine`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_ShowLine): Used to enable or disable the line. Default value is true.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLineStyle.html#Com_Syncfusion_Charts_ChartLineStyle_StrokeWidth): Used to change the stroke width of the line.
+* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLineStyle.html#Com_Syncfusion_Charts_ChartLineStyle_StrokeColor): Used to change the stroke color of the line.
+* [`PathEffect`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLineStyle.html#Com_Syncfusion_Charts_ChartLineStyle_PathEffect): Specifies the dashes to be applied on the line.
 
 {% highlight c# %} 
 [C#]
@@ -275,7 +275,7 @@ chart.Series.Add(lineSeries);
 
 **OnLabelsGenerated**
 
-To customize the appearance of trackball label based on condition, override the OnLabelsGenerated method of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html). The argument of this method is [`ChartPointInfo`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPointInfo.html), which contains the following properties: 
+To customize the appearance of trackball label based on condition, override the OnLabelsGenerated method of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html). The argument of this method is [`ChartPointInfo`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPointInfo.html), which contains the following properties: 
 
 * [`Label`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPointInfo.html#Com_Syncfusion_Charts_ChartPointInfo_Label): Used to provide text for trackball label.
 * [`IsVisible`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPointInfo.html#Com_Syncfusion_Charts_ChartPointInfo_IsVisible): Determines the visibility of trackball.
@@ -322,4 +322,4 @@ trackball.HitTest(pointX, pointY);
 
 ### Get the touch position
 
-The [`OnLongPress(float valueX, float valueY)`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_OnLongPress_System_Single_System_Single_) method of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.ChartTrackballBehavior.html) can be override to get the touch points while doing interactions.
+The [`OnLongPress(float valueX, float valueY)`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_OnLongPress_System_Single_System_Single_) method of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html) can be override to get the touch points while doing interactions.

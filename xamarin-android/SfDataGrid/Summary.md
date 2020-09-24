@@ -17,7 +17,7 @@ The data grid supports displaying concise information about bound data objects u
 
 ![](SfDataGrid_images/Summary.PNG)
 
-Summary rows are represented by using the [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryRow.html). Each `GridSummaryRow` hold the summary information of columns in the [SummaryColumns](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridSummaryRow.html#Syncfusion_SfDataGrid_GridSummaryRow_SummaryColumns) property . `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridSummaryColumn.html) which carries the name, format, and summary aggregate type of the column.
+Summary rows are represented by using the [GridSummaryRow](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridSummaryRow.html). Each `GridSummaryRow` hold the summary information of columns in the [SummaryColumns](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridSummaryRow.html#Syncfusion_SfDataGrid_GridSummaryRow_SummaryColumns) property . `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridSummaryColumn.html) which carries the name, format, and summary aggregate type of the column.
 
 Derive additional information from your data like sum, average, maximum, minimum, and count using summaries in the data grid. These summary values can be computed for groups or for the entire control using `GridSummaryRow` and `GridSummaryColumn` that implements [ISummaryRow](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Data.ISummaryRow.html) and [ISummaryColumn](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Data.ISummaryColumn.html) interfaces.
 
@@ -601,13 +601,13 @@ Each summary has a specific key using which the custom summary renderer can be r
 
 <tr>
 <td>Table summary</td>
-<td><a href="https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html">GridTableSummaryCellRenderer</a> </td>
+<td><a href="https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html">GridTableSummaryCellRenderer</a> </td>
 <td>TableSummary</td>
 </tr>
 
 <tr>
 <td>Caption summary</td>
-<td><a href="https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html">GridCaptionSummaryCellRenderer</a> </td>
+<td><a href="https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html">GridCaptionSummaryCellRenderer</a> </td>
 <td>CaptionSummary</td>
 </tr>
 

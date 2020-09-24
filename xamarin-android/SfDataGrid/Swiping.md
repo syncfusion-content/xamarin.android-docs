@@ -15,7 +15,7 @@ The data grid enables the swiping option by setting the [SfDataGrid.AllowSwiping
 this.sfGrid.AllowSwiping = true;
 {% endhighlight %}
 
-Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a data row. The data grid provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted up to a certain point on the row by setting the [SfDataGrid.MaxSwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~MaxSwipeOffset.html) property.
+Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a data row. The data grid provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted up to a certain point on the row by setting the [SfDataGrid.MaxSwipeOffset](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_MaxSwipeOffset) property.
 
 
 ## Swipe views
@@ -71,9 +71,9 @@ The following screenshot shows the outcome upon execution of the above code wher
 
 ## Swipe events
 
-[SwipeStarted](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SwipeStarted_EV.html): This event is fired when the swipe offset changes from its initial value. You can cancel the swipe action by setting the `Cancel` property of the [SwipeStartedEventArgs](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SwipeStartedEventArgs.html) to `true`.
-[SwipeEnded](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SwipeEnded_EV.html): This event is fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SwipeEndedEventArgs.html).
-[Swiping](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~Swiping_EV.html): This event is raised while swiping is in progress. This event is triggered with [SwipingEventArgs](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SwipingEventArgs.html) .
+[SwipeStarted](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html): This event is fired when the swipe offset changes from its initial value. You can cancel the swipe action by setting the `Cancel` property of the [SwipeStartedEventArgs](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SwipeStartedEventArgs.html) to `true`.
+[SwipeEnded](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html): This event is fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SwipeEndedEventArgs.html).
+[Swiping](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html): This event is raised while swiping is in progress. This event is triggered with [SwipingEventArgs](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SwipingEventArgs.html) .
 
 All the swipe events provides the following properties in their arguments:
 

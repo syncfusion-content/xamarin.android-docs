@@ -65,7 +65,7 @@ protected override void OnCreate(Bundle bundle)
 
 ## Export to PDF
 
-You can export data to PDF by using the [DataGridPdfExportingController.ExportToPdf](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController~ExportToPdf.html) method by passing the SfDataGrid as an argument. 
+You can export data to PDF by using the [DataGridPdfExportingController.ExportToPdf](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportingController_ExportToPdf_Syncfusion_SfDataGrid_SfDataGrid_) method by passing the SfDataGrid as an argument. 
 
 {% tabs %}
 {% highlight c# %}
@@ -660,17 +660,17 @@ public void Save(string fileName, String contentType, MemoryStream stream,Contex
 
 The SfDataGrid provides you the following events for `Exporting`:
 
-* [RowExporting](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController~RowExporting_EV.html): Raised while exporting a row at the execution time.
-* [CellExporting](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController~CellExporting_EV.html): Raised while exporting a cell at the execution time.
+* [RowExporting](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.html): Raised while exporting a row at the execution time.
+* [CellExporting](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.html): Raised while exporting a cell at the execution time.
 
 ### RowExporting
 
-The [DataGridRowPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventhandler.html) delegate allows customizing the styles for the record rows, group caption rows, and group summary rows. The`RowExporting` event is triggered with [DataGridRowPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.html) that contains the following properties:
+The [DataGridRowPdfExportingEventHandler](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventhandler.html) delegate allows customizing the styles for the record rows, group caption rows, and group summary rows. The`RowExporting` event is triggered with [DataGridRowPdfExportingEventArgs](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.html) that contains the following properties:
 
-* [PdfGrid](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs~PdfGrid.html): Customizes the properties of pdfGrid such as `Background`, `CellPadding`, `CellSpacing`, etc.
-* [PdfRow](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs~PdfRow.html): Specifies the `PdfGridRow` to be exported. You can use this to customize the properties of a particular row. 
-* [Record](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs~Record.html): Gets the collection of exported underlying data objects.
-* [RowType](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs~RowType.html): Specifies the row type by using `ExportRowType` `Enum`. You can use this property to check the row type and apply different styles based on the row type.
+* [PdfGrid](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridRowPdfExportingEventArgs__ctor_Syncfusion_Data_RecordEntry_Syncfusion_Pdf_Grid_PdfGridRow_Syncfusion_Pdf_Grid_PdfGrid_Syncfusion_SfDataGrid_Exporting_ExportRowType_Syncfusion_Pdf_Grid_PdfGridCellStyle_System_Object_): Customizes the properties of pdfGrid such as `Background`, `CellPadding`, `CellSpacing`, etc.
+* [PdfRow](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridRowPdfExportingEventArgs_PdfRow): Specifies the `PdfGridRow` to be exported. You can use this to customize the properties of a particular row. 
+* [Record](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridRowPdfExportingEventArgs_Record): Gets the collection of exported underlying data objects.
+* [RowType](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridRowPdfExportingEventArgs_RowType): Specifies the row type by using `ExportRowType` `Enum`. You can use this property to check the row type and apply different styles based on the row type.
 
 You can use this event to customize the properties of the grid rows exported to PDF. The following code example illustrates how to change the background color of the record rows, caption summary rows, and group summary rows when exporting.
 
@@ -700,14 +700,14 @@ void pdfExport_RowExporting (object sender, DataGridRowPdfExportingEventArgs e)
 
 #### CellExporting
 
-The [DataGridCellPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventhandler.html) delegate allows customizing the styles for the header cells, record cells, group caption cells, and group summary cells. The `CellExporting` event is triggered with [DataGridCellPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.html) that contains the following properties:
+The [DataGridCellPdfExportingEventHandler](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventhandler.html) delegate allows customizing the styles for the header cells, record cells, group caption cells, and group summary cells. The `CellExporting` event is triggered with [DataGridCellPdfExportingEventArgs](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.html) that contains the following properties:
 
-* [CellType](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs~CellType.html): Specifies the cell type by using `ExportCellType` `Enum`. You can use this property to check the cell type and apply different cell styles based on the cell type.
-* [CellValue](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs~CellValue.html): Contains the actual value exported to the PDF. You can use this value to apply formatting in PDF using `Range` property.
-* [ColumnName](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs~ColumnName.html): Specifies the column name (MappingName) of the exporting cell. You can apply formatting for a particular column by checking the `ColumnName`.
-* [Handled](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs~Handled.html): Determines whether the cell is exported to PDF or not.
-* [PdfGrid](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs~PdfGridCell.html): Specifies the `PDFGridCell` to be exported. You can use this to customize the properties (Background, Foreground, Font, Alignment, etc.) of a particular cell.
-* [Record](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs~Record.html): Gets the collection of the exported underlying data objects.
+* [CellType](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridCellPdfExportingEventArgs_CellType): Specifies the cell type by using `ExportCellType` `Enum`. You can use this property to check the cell type and apply different cell styles based on the cell type.
+* [CellValue](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridCellPdfExportingEventArgs_CellValue): Contains the actual value exported to the PDF. You can use this value to apply formatting in PDF using `Range` property.
+* [ColumnName](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridCellPdfExportingEventArgs_ColumnName): Specifies the column name (MappingName) of the exporting cell. You can apply formatting for a particular column by checking the `ColumnName`.
+* [Handled](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridCellPdfExportingEventArgs_Handled): Determines whether the cell is exported to PDF or not.
+* [PdfGrid](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridCellPdfExportingEventArgs__ctor_Syncfusion_Data_RecordEntry_Syncfusion_Pdf_Grid_PdfGridCell_Syncfusion_SfDataGrid_Exporting_ExportCellType_System_Object_System_String_System_Object_): Specifies the `PDFGridCell` to be exported. You can use this to customize the properties (Background, Foreground, Font, Alignment, etc.) of a particular cell.
+* [Record](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.html#Syncfusion_SfDataGrid_Exporting_DataGridCellPdfExportingEventArgs_Record): Gets the collection of the exported underlying data objects.
 
 You can use this event to customize the properties of the grid cells exported to PDF. The following code example illustrates how to customize the background color, foreground color, and cell value of the header cells, record cells, caption summary cells, and group summary cells when exporting.
 
@@ -872,7 +872,7 @@ The below screenshot shows that the unbound column is exported to PDF document a
 
 ## Exporting the selected rows of SfDataGrid
 
-SfDataGrid allows you to export only the currently selected rows in the grid to the document using the [DataGridPdfExportingController.ExportToPdf](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGridConverter.Android~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController~ExportToPdf.html) method by passing the instance of the SfDataGrid and [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataGrid.Android~Syncfusion.SfDataGrid.SfDataGrid~SelectedItems.html) collection as an argument.
+SfDataGrid allows you to export only the currently selected rows in the grid to the document using the [DataGridPdfExportingController.ExportToPdf](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.html#Syncfusion_SfDataGrid_Exporting_DataGridPdfExportingController_ExportToPdf_Syncfusion_SfDataGrid_SfDataGrid_) method by passing the instance of the SfDataGrid and [SfDataGrid.SelectedItems](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_SelectedItems) collection as an argument.
 
 Refer the below code to export the selected rows alone to the PDF document.
 
