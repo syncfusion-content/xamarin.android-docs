@@ -36,7 +36,7 @@ The following section describes how to create a new kanban application.
 ## Adding SfKanban in Xamarin.Android
 
 1. Add the required assembly references to the project as discussed in the _Referencing Essential Studio Components in your solution_ section.
-2. Import [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html) control namespace in [`Syncfusion.SfKanban.Android`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfKanban.Android.html).
+2. Import [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html) control namespace in [`Syncfusion.SfKanban.Android`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.html).
 3. Create an instance of [`SfKanban`](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html) control, and set is as content view of the activity.
 
 
