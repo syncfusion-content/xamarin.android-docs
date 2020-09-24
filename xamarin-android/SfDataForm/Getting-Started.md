@@ -72,7 +72,7 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.
 To add the data form to your application, follow the steps:
 
 1. Add required assemblies as discussed in assembly deployment section.
-2. Import the `SfDataForm` namespace [Syncfusion.Android.DataForm](https://help.syncfusion.com/cr/cref_files/xamarin-android/webtoc.html).
+2. Import the `SfDataForm` namespace [Syncfusion.Android.DataForm](https://help.syncfusion.com/cr/xamarin-android).
 3. Create an instance of data form control and add as a view to the linear layout.
 
 {% tabs %}
