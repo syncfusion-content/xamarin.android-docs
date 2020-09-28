@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Title
-description: How to customize the chart title. 
+title: Xamarin.Android | Chart Title | Syncfusion
+description: This section explains how to add the chart title and customize the appearance of the chart title in Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
 
-# Title
+# Title in Xamarin.Android Chart (SfChart)
 
 You can define and customize the Chart title using [`Title`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_Title) property of [`SfChart`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html). The [`Text`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTitle.html) property of [`ChartTitle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTitle.html) is used to set the text for the title. 
 
@@ -52,3 +52,22 @@ sfChart.Title.SetTextColor( Color.Blue);
 {% endhighlight %}
 
 ![Text alignment support for title in Xamarin.Android Chart](charttitle_images/charttitle_img2.png)
+
+## Text Wrap
+
+By using the `LineBreakMode` property, You can wrap the chart title text content. The default value of this property is `NoWrap`.
+
+{% highlight c# %}
+[C#]
+
+SfChart sfChart = new SfChart(this);
+
+sfChart.Title.Text = "Percentage change in efficiency of oil-fired power production in Russia for six months;
+
+sfChart.Title.SetTextColor( Color.Blue);
+
+sfChart.Title.LineBreakMode = LineBreakMode.TailTruncation;
+
+{% endhighlight %}
+
+![Text wrap support for title in Xamarin.Android Chart](charttitle_images/charttitle_img3.png)
