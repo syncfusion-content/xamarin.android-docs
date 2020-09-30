@@ -6,7 +6,7 @@ control: Diagram
 documentation: ug
 keywords: 
 ---
-# Gridlines
+# Gridlines in Xamarin.Android Diagram
 Gridlines are the pattern of lines drawn behind the diagram elements. It provides a visual guidance when dragging or arranging the node on the diagram surface.
 
 ## Gridlines visibility

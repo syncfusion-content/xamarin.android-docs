@@ -6,7 +6,7 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Connector
+# Connector in Xamarin.Android Diagram
 The connectors are objects used to create link between two points. Nodes or ports are used to represent the relationship between them.
 
 ## Create connector
