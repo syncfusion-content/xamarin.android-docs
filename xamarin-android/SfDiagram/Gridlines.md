@@ -1,12 +1,12 @@
 ---
-title: Adding gridlines in Diagram control for Xamarin.Android | Syncfusion
+title: Adding gridlines in Xamarin.Android Diagram control | Syncfusion
 description: Describes how to add gridlines,snapping gridlines and customization of gridlines in diagram control for Xamarin.Android
 platform: Xamarin.Android
 control: Diagram
 documentation: ug
 keywords: 
 ---
-# Gridlines
+# Gridlines in Xamarin.Android Diagram
 Gridlines are the pattern of lines drawn behind the diagram elements. It provides a visual guidance when dragging or arranging the node on the diagram surface.
 
 ## Gridlines visibility
