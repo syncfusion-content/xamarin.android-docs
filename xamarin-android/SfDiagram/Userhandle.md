@@ -1,12 +1,12 @@
 ---
-title: Adding userhadles for Essential Xamarin.Android Diagram | Syncfusion
+title: Adding userhandles in Xamarin.Android Diagram | Syncfusion
 description: Learn how to add userhandles ,userhandles customization and its event handle in diagram for Xamarin.Android
 platform: Xamarin.Android
 control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# User handles
+# User handles in Xamarin.Android diagram
 User handles are customizable handles which can be used to perform custom actions and also default clipboard actions. You can able to customize the user handles using:
 * SfGraphicPath
 * Image

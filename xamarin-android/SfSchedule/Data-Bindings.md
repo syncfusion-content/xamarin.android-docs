@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Populating Appointment in Syncfusion SfSchedule for Xamarin.Android
-description: Learn how to Populate Appointments in SfSchedule control in Xamarin.Android
+title: Populating Appointment in Xamarin.Android SfSchedule | Syncfusion
+description: This section explains on how to Populate Appointments in SfSchedule control for Xamarin.Android platform.
 platform: xamarin.android
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# Appointments
+# Appointments in Xamarin.Android Schedule (SfSchedule)
 
 [ScheduleAppointment](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.ScheduleAppointment.html#Com_Syncfusion_Schedule_ScheduleAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.ScheduleAppointment.html#Com_Syncfusion_Schedule_ScheduleAppointment_EndTime), [Subject](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.ScheduleAppointment.html#Com_Syncfusion_Schedule_ScheduleAppointment_Subject) and some additional information about the appointment can be added using [Color](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.ScheduleAppointment.html#Com_Syncfusion_Schedule_ScheduleAppointment_Color), [Notes](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.ScheduleAppointment.html#Com_Syncfusion_Schedule_ScheduleAppointment_Notes), [Location](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.ScheduleAppointment.html#Com_Syncfusion_Schedule_ScheduleAppointment_Location), [All Day](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.ScheduleAppointment.html#Com_Syncfusion_Schedule_ScheduleAppointment_IsAllDay), [Recurring properties](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.ScheduleAppointment.html#Com_Syncfusion_Schedule_ScheduleAppointment_RecurrenceProperties).
 
