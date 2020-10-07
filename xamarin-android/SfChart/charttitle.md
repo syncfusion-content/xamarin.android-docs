@@ -55,7 +55,7 @@ sfChart.Title.SetTextColor( Color.Blue);
 
 ## Text Wrap
 
-By using the `LineBreakMode` property, You can wrap the chart title text content. The default value of this property is `NoWrap`.
+By using the [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LineBreakMode.html) property, You can wrap the chart title text content. The default value of this property is [`NoWrap`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LineBreakMode.html).
 
 {% highlight c# %}
 [C#]
