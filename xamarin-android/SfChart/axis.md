@@ -155,6 +155,10 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 * Round
 * Additional
 * Normal
+* RoundStart
+* RoundEnd
+* PrependInterval
+* AppendInterval
 
 **None**
 
@@ -174,7 +178,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Round**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalAxis.html#Com_Syncfusion_Charts_NumericalAxis_RangePadding) is [`Round`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`Round`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded to the nearest possible value by the interval.
 
 {% highlight c# %} 
 [C#]
@@ -219,6 +223,70 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endhighlight %}
 
 ![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/NumericalAxis_range_padding_Normal.png)
+
+**RoundStart**
+
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`RoundStart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded in the start to the nearest possible value by the interval.
+
+{% highlight c# %} 
+[C#]
+
+chart.SecondaryAxis = new NumericalAxis() 
+{ 
+	RangePadding = NumericalPadding.RoundStart  
+};
+
+{% endhighlight %}
+
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/NumericalAxis_range_padding_RoundStart.png)
+
+**RoundEnd**
+
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`RoundEnd`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded in the end to the nearest possible value by the interval.
+
+{% highlight c# %} 
+[C#]
+
+chart.SecondaryAxis = new NumericalAxis() 
+{ 
+	RangePadding = NumericalPadding.RoundEnd  
+};
+
+{% endhighlight %}
+
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/NumericalAxis_range_padding_RoundEnd.png)
+
+**PrependInterval**
+
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`PrependInterval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum values of the range.
+
+{% highlight c# %} 
+[C#]
+
+chart.SecondaryAxis = new NumericalAxis() 
+{ 
+	RangePadding = NumericalPadding.PrependInterval 
+};
+
+{% endhighlight %}
+
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/NumericalAxis_range_padding_PrependInterval.png)
+
+**AppendInterval**
+
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.NumericalAxis~RangePadding.html) is [`AppendInterval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.NumericalPadding.html), axis range will be rounded and an interval of the axis will be added in the end as padding to the maximum values of the range.
+
+{% highlight c# %} 
+[C#]
+
+chart.SecondaryAxis = new NumericalAxis() 
+{ 
+	RangePadding = NumericalPadding.AppendInterval 
+};
+
+{% endhighlight %}
+
+![NumericalAxis range padding support in Xamarin.Android Chart](axis_images/NumericalAxis_range_padding_AppendInterval.png)
 
 ### Auto Interval On Zooming 
 
@@ -299,6 +367,10 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 * None
 * Round
 * Additional
+* RoundStart
+* RoundEnd
+* PrependInterval
+* AppendInterval
 
 **None**
 
@@ -347,6 +419,70 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% endhighlight %}
 
 ![DateTimeAxis range padding support in Xamarin.Android Chart](axis_images/DateTimeAxis_range_padding_Normal.png)
+
+**RoundStart**
+
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`RoundStart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeRangePadding.html), axis range will be rounded in the start to the nearest possible date time value.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new DateTimeAxis() 
+{ 
+	RangePadding = DateTimeRangePadding.RoundStart 
+};
+
+{% endhighlight %}
+
+![DateTimeAxis range padding support in Xamarin.Android Chart](axis_images/DateTimeAxis_range_padding_RoundStart.png)
+
+**RoundEnd**
+
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`RoundEnd`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeRangePadding.html), axis range will be rounded in the end to the nearest possible date time value.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new DateTimeAxis() 
+{ 
+	RangePadding = DateTimeRangePadding.RoundEnd 
+};
+
+{% endhighlight %}
+
+![DateTimeAxis range padding support in Xamarin.Android Chart](axis_images/DateTimeAxis_range_padding_RoundEnd.png)
+
+**PrependInterval**
+
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`PrependInterval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeRangePadding.html), range will be rounded and date time interval of the axis will be added in the start as padding to the minimum extremes of the range.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new DateTimeAxis() 
+{ 
+	RangePadding = DateTimeRangePadding.PrependInterval 
+};
+
+{% endhighlight %}
+
+![DateTimeAxis range padding support in Xamarin.Android Chart](axis_images/DateTimeAxis_range_padding_PrependInterval.png)
+
+**AppendInterval**
+
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfChart.Android~Com.Syncfusion.Charts.DateTimeAxis~RangePadding.html) is [`AppendInterval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DateTimeRangePadding.html), range will be rounded and date time interval of the axis will be added in the end as padding to the maximum extremes of the range.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new DateTimeAxis() 
+{ 
+	RangePadding = DateTimeRangePadding.AppendInterval 
+};
+
+{% endhighlight %}
+
+![DateTimeAxis range padding support in Xamarin.Android Chart](axis_images/DateTimeAxis_range_padding_AppendInterval.png)
 
 ## Date-time category axis
 
@@ -602,6 +738,48 @@ chart.SecondaryAxis = new NumericalAxis()
 };
 
 {% endhighlight %}
+
+![PlotOffset support for axis in Xamarin.Android Chart](axis_images/plotOffset.png)
+
+#### PlotOffsetStart
+
+The [`PlotOffsetStart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PlotOffsetStart) property is used to offset the rendering of the axis at start position. The following code snippet demonstrates to apply the plot offset start to both x and y axes.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    PlotOffsetStart = 30
+};
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PlotOffsetStart = 30
+};
+
+{% endhighlight %}
+
+![PlotOffsetStart support for axis in Xamarin.Android Chart](axis_images/plotOffset_start.png)
+
+#### PlotOffsetEnd
+
+The [`PlotOffsetEnd`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PlotOffsetEnd) property is used to offset the rendering of the axis at end position. The following code snippet demonstrates to apply the plot offset end to both x and y axes.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    PlotOffsetEnd = 30
+};
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PlotOffsetEnd = 30
+};
+
+{% endhighlight %}
+
+![PlotOffsetEnd support for axis in Xamarin.Android Chart](axis_images/PlotOffset_end.png)
 
 ### Axis Line Customization
 
