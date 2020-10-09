@@ -248,7 +248,7 @@ public class MusicInfo : INotifyPropertyChanged
 
 ## On-demand loading of child items
 
-You can load child items for the node in the `LoadOnDemandCommand` event. It will get called when user expands the tree node. In `LoadOnDemand` event, you have can perform following operations,
+You can load child items for the node in the `LoadOnDemand` event. It will get called when user expands the tree node. In `LoadOnDemand` event, you have can perform following operations,
 * Show or hide busy indicator in the place of expander by setting [TreeViewNode.ShowExpanderAnimation](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_ShowExpanderAnimation) until the data fetched.
 * Once data fetched, you can populate the child nodes by calling [TreeViewNode.PopulateChildNodes](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_PopulateChildNodes_System_Collections_IEnumerable_) method by passing the child items collection. 
 * When load on-demand event triggered, the expanding operation will not be handled by `TreeView`. So, you have to set [TreeViewNode.IsExpanded](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_IsExpanded) property to `true` to expand the tree node after populating child nodes.
