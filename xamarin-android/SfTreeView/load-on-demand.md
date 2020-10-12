@@ -246,6 +246,53 @@ public class MusicInfo : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+## On-demand loading of child items
+
+You can load child items for the node in the `LoadOnDemand` event. It will get called when user expands the tree node. In `LoadOnDemand` event, you have can perform following operations,
+* Show or hide busy indicator in the place of expander by setting [TreeViewNode.ShowExpanderAnimation](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_ShowExpanderAnimation) until the data fetched.
+* Once data fetched, you can populate the child nodes by calling [TreeViewNode.PopulateChildNodes](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_PopulateChildNodes_System_Collections_IEnumerable_) method by passing the child items collection. 
+* When load on-demand event triggered, the expanding operation will not be handled by `TreeView`. So, you have to set [TreeViewNode.IsExpanded](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_IsExpanded) property to `true` to expand the tree node after populating child nodes.
+* You can skip population of child items again and again when every time the node expands, based on [TreeViewNode.ChildNodes](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_ChildNodes) count. 
+* You can get the number of child nodes displayed in the view by using the [TreeViewNode.VisibleNodesCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_VisibleNodesCount) property.
+* The child nodes of the treeView node can be notified based upon the return value of [HasChildNodes](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_HasChildNodes) property. If the node has any child nodes, it returns `true` otherwise it returns `false`.
+
+{% tabs %}
+{% highlight c# %}
+private async void TreeView_LoadOnDemandEvent(object sender, LoadOnDemandEventArgs e)
+{
+    if (e.Action == Action.RequestStatus)
+    {
+
+        e.HasChildNodes = (e.Node.Content as MusicInfo).HasChild;
+    }
+    else if (e.Action == Action.PopulateNodes)
+    {
+        var viewModel = new MusicInfoRepository();
+        var node = e.Node;
+        // Skip the repeated population of child items when every time the node expands.
+        if (node.ChildNodes.Count > 0)
+        {
+            node.IsExpanded = true;
+            return;
+        }
+        //Animation starts for expander to show progressing of load on demand
+        node.ShowExpanderAnimation = true;
+        await Task.Delay(2000);
+        MusicInfo musicInfo = node.Content as MusicInfo;
+        //Fetching child items to add
+        var items = viewModel.GetSubMenu(musicInfo.ID);
+        // Populating child items for the node in on-demand
+        node.PopulateChildNodes(items);
+        if (items.Count() > 0)
+            //Expand the node after child items are added.
+            node.IsExpanded = true;
+        //Stop the animation after load on demand is executed, if animation not stopped, it remains still after execution of load on demand.
+        node.ShowExpanderAnimation = false;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 You can download the entire source code [here](https://github.com/SyncfusionExamples/load-on-demand-treeview-xamarin-android)
 
 ![Xamarin Android TreeView with LoadOnDemand](Images/TreeView_LoadonDemand.gif)
