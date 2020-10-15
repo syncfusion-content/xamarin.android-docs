@@ -127,7 +127,7 @@ private void Treeviewnode_PropertyChanged(object sender, PropertyChangedEventArg
 
 [SetDirty](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_SetDirty) notifies the TreeViewNode to recalculate the child collection update mechanism to invalidate that node which helps to update the engine and refresh the UI.
 
-{% endhighlight %}
+{% tabs %}
 {% highlight c# %}
 node.SetDirty();
 {% endhighlight %}
