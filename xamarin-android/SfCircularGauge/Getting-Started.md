@@ -249,3 +249,11 @@ namespace Gauge_GettingStarted
 ![CircularGauge Getting Started](getting-started_images/default.png)
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Android_Gauge_GettingStarted1223477742.zip).
+
+## See also
+
+[How to use a circular gague as a quarter gauge](https://www.syncfusion.com/kb/7874/how-to-use-a-circular-gauge-control-as-a-quarter-gauge)
+
+[How to use a circular gauge control as a circular progress bar](https://www.syncfusion.com/kb/6619/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
+
+[How to design a fuel meter using circular gauge](https://www.syncfusion.com/kb/6616/how-to-design-a-fuel-meter-using-circular-gauge)

@@ -257,3 +257,7 @@ private void Editor_ItemUnselected(object sender, ItemUnselectedEventArgs e)
 }
 
 {% endhighlight %}
+
+## See also
+
+[How to add text after image is loaded in SfImageEditor](https://www.syncfusion.com/kb/10035/how-to-add-text-after-image-is-loaded-in-sfimageeditor)

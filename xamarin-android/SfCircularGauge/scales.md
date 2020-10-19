@@ -255,3 +255,11 @@ N> Default value of the IsCenterAligned property is false.
 {% endhighlight %}
 
 ![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.png)
+
+## See also
+
+[How to set start and sweep angles for scale](https://www.syncfusion.com/kb/10566/how-to-set-start-and-sweep-angles-for-scale)
+
+[How to use a circular gauge control as a circular progress bar](https://www.syncfusion.com/kb/6619/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
+
+[How to design a fuel meter using circular gauge](https://www.syncfusion.com/kb/6616/how-to-design-a-fuel-meter-using-circular-gauge)

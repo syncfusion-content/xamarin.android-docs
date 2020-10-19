@@ -263,3 +263,9 @@ You can give smooth color transition to range by specifying the different colors
 {% endhighlight %}
 
 ![](ranges_images/gradient.png)
+
+## See also
+
+[How to add multiple range gradient brushes to SfCircularGauge](https://www.syncfusion.com/kb/10571/how-to-add-multiple-range-gradient-brushes-to-circulargauge)
+
+[How to design a fuel meter using circular gauge](https://www.syncfusion.com/kb/6616/how-to-design-a-fuel-meter-using-circular-gauge)
