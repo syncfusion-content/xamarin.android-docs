@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Ranges in Xamarin.Android SfCicularGauge
+# Ranges in Xamarin.Android SfCircularGauge
 
 Range is a visual element, which begins and ends at specified values within a scale.
 
