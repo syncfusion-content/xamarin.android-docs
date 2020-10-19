@@ -314,3 +314,7 @@ ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 zoomPan.Reset();
 
 {% endhighlight %}
+
+## See also
+
+[How to zoom chart with respect to pinch gesture orientation](https://www.syncfusion.com/kb/9314/how-to-zoom-chart-with-respect-to-pinch-gesture-orientation)

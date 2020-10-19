@@ -76,4 +76,6 @@ To save the image in Android, must grant device storage permission.
 
 ## See also
 
+[How to export chart as an image in Xamarin.Android](https://www.syncfusion.com/kb/11930/how-to-export-the-charts-in-xamarin-android)
+
 [How to export chart to PDF in Xamarin.Android](https://www.syncfusion.com/kb/9370/how-to-export-chart-to-pdf-in-xamarin-android)

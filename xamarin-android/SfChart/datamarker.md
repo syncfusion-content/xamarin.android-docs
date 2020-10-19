@@ -227,3 +227,7 @@ The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/xamarin-android/Co
 * [`MarkerColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerColor) – Gets or sets the marker color.
 * [`MarkerType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerType) – Gets or sets the shape type of marker. The available shapes are [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerType.html), diamond, hexagon, cross, HorizontalLine, VerticalLine, InvertedTriangle, triangle, pentagon, plus, and square.
 * [`View`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_View) Gets or sets the view.
+
+## See also
+
+[How to customize the data marker of charts in Xamarin.Android](https://www.syncfusion.com/kb/11926/how-to-customize-the-data-marker-of-charts-in-xamarin-android)
