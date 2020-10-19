@@ -326,4 +326,4 @@ The [`OnLongPress(float valueX, float valueY)`](https://help.syncfusion.com/cr/x
 
 ## See also
 
-[How to add the multiple trackball in Xamain.Android charts](https://www.syncfusion.com/kb/10840/how-to-add-the-multiple-trackball-in-xamarin-android-charts)
+[How to add the multiple trackball in Xamarin.Android charts](https://www.syncfusion.com/kb/10840/how-to-add-the-multiple-trackball-in-xamarin-android-charts)
