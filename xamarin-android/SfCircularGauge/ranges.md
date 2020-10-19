@@ -2,14 +2,14 @@
 
 layout: post
 title: Ranges in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: Learn how to set ranges in Syncfusion SfCircularGauge control
+description: This section explains how to set ranges in Xamarin.Android Syncfusion SfCircularGauge control and also range customization
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Ranges
+# Ranges in Xamarin.Android SfCicularGauge
 
 Range is a visual element, which begins and ends at specified values within a scale.
 
@@ -32,7 +32,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
 {% endhighlight %}
 
-![](ranges_images/default-range.png)
+![Output image of range with start and end values](ranges_images/default-range.png)
 
 ## Range customization
 
@@ -66,7 +66,7 @@ An UI of a range is customized by using the [`Color`](https://help.syncfusion.co
 
 {% endhighlight %}
 
-![](ranges_images/range-customization.png)
+![Output image of range customization](ranges_images/range-customization.png)
 
 ## Setting position for range
 
@@ -91,7 +91,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% endhighlight %}
 
-![](ranges_images/range-offset.png)
+![Output image of range positioned](ranges_images/range-offset.png)
 
 2.The [`InnerStartOffset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularRange.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularRange_InnerStartOffset), [`InnerEndOffset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularRange.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularRange_InnerEndOffset), [`OuterStartOffset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularRange.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularRange_OuterStartOffset), and [`OuterEndOffset`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.CircularRange.html#Com_Syncfusion_Gauges_SfCircularGauge_CircularRange_OuterEndOffset) properties.
 
@@ -114,7 +114,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% endhighlight %}
 
-![](ranges_images/range-inner-outer-offset.png)
+![Output image of range with offset](ranges_images/range-inner-outer-offset.png)
 
 ## Setting multiple ranges
 
@@ -197,7 +197,7 @@ In addition to the default range, you can add n number of ranges to a scale by u
 
 {% endhighlight %}
 
-![](ranges_images/multiple-range.png)
+![Output image of multiple ranges](ranges_images/multiple-range.png)
 
 ## Setting gradient color for range
 
@@ -262,7 +262,7 @@ You can give smooth color transition to range by specifying the different colors
 
 {% endhighlight %}
 
-![](ranges_images/gradient.png)
+![Output image of range with gradient color](ranges_images/gradient.png)
 
 ## See also
 
