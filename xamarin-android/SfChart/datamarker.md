@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markers and data labels in Xamarin.Android Syncfusion Chart
-description: This section explains how to add markers and data point labels to a Xamarin.Android Syncfusio Chart series and also explains how to customize the labels
+description: This section explains how to add markers and data point labels to a Xamarin.Android Syncfusion Chart series and explains how to customize the labels
 platform: Xamarin.Android
 control: Chart
 documentation: ug

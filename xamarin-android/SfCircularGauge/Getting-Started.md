@@ -2,7 +2,7 @@
 
 layout: post
 title: Syncfusion SfCircularGauge control for Xamarin.Android 
-description: A quick tour to initial users on Syncfusion SfCircularGauge control for Xamarin.Android  Platform and also explain how to add scale, pointer and ranges
+description: A quick tour to the initial users on the Syncfusion SfCircularGauge control for Xamarin.Android Platform and explain how to add scale, pointer, and ranges
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
