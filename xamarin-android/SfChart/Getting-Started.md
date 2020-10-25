@@ -243,4 +243,4 @@ You can find the complete getting started sample from this [link.](https://githu
 
 ## See also
 
-[How to zoom chart with respect to pinch gesture orientation](https://www.syncfusion.com/kb/9314/how-to-zoom-chart-with-respect-to-pinch-gesture-orientation)
+[How to export chart as an image in Xamarin.Android](https://www.syncfusion.com/kb/11930/how-to-export-the-charts-in-xamarin-android)
