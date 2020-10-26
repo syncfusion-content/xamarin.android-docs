@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markers and data labels in Xamarin.Android Chart
-description: Learn how to add markers and data point labels to a Chart series
+title: Markers and data labels in Xamarin.Android Syncfusion Chart
+description: This section explains how to add markers and data point labels to a Xamarin.Android Syncfusion Chart series and explains how to customize the labels
 platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
 
-# Data Markers
+# Data Markers in Xamarin.Android Chart(SfChart)
 
 Data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. [`DataMarker`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_DataMarker) can be enabled using following code snippet,
 
@@ -227,3 +227,7 @@ The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/xamarin-android/Co
 * [`MarkerColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerColor) – Gets or sets the marker color.
 * [`MarkerType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_MarkerType) – Gets or sets the shape type of marker. The available shapes are [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerType.html), diamond, hexagon, cross, HorizontalLine, VerticalLine, InvertedTriangle, triangle, pentagon, plus, and square.
 * [`View`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerLabel.html#Com_Syncfusion_Charts_DataMarkerLabel_View) Gets or sets the view.
+
+## See also
+
+[How to customize the data marker of charts in Xamarin.Android](https://www.syncfusion.com/kb/11926/how-to-customize-the-data-marker-of-charts-in-xamarin-android)

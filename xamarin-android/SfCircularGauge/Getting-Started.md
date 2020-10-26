@@ -2,7 +2,7 @@
 
 layout: post
 title: Syncfusion SfCircularGauge control for Xamarin.Android 
-description:  A quick tour to initial users on Syncfusion SfCircularGauge control for Xamarin.Android  Platform
+description: A quick tour to the initial users on the Syncfusion SfCircularGauge control for Xamarin.Android Platform and explain how to add scale, pointer, and ranges
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with SfCircularGauge
 
 This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html), and also explains the steps required to add basic elements to [`SfCircularGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) through various APIs available within it.
 
@@ -249,3 +249,11 @@ namespace Gauge_GettingStarted
 ![CircularGauge Getting Started](getting-started_images/default.png)
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Android_Gauge_GettingStarted1223477742.zip).
+
+## See also
+
+[How to use a circular gauge as a quarter gauge](https://www.syncfusion.com/kb/7874/how-to-use-a-circular-gauge-control-as-a-quarter-gauge)
+
+[How to use a circular gauge control as a circular progress bar](https://www.syncfusion.com/kb/6619/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
+
+[How to design a fuel meter using circular gauge](https://www.syncfusion.com/kb/6616/how-to-design-a-fuel-meter-using-circular-gauge)

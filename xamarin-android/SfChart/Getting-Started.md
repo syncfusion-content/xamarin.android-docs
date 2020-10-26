@@ -240,3 +240,7 @@ The following chart is created as a result of the above codes.
 ![Chart output in Xamarin.Android Chart](Getting-Started_images/ChartSample-Output.png)
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Chart-GettingStarted-in-Xamarin-Android)
+
+## See also
+
+[How to export chart as an image in Xamarin.Android](https://www.syncfusion.com/kb/11930/how-to-export-the-charts-in-xamarin-android)

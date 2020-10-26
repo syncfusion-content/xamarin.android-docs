@@ -323,3 +323,7 @@ trackball.HitTest(pointX, pointY);
 ### Get the touch position
 
 The [`OnLongPress(float valueX, float valueY)`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_OnLongPress_System_Single_System_Single_) method of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html) can be override to get the touch points while doing interactions.
+
+## See also
+
+[How to add the multiple trackball in Xamarin.Android charts](https://www.syncfusion.com/kb/10840/how-to-add-the-multiple-trackball-in-xamarin-android-charts)
