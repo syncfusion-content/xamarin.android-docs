@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Text in Syncfusion SfImageEditor control in Xamarin.Android
-description : Learn how to add text in ImageEditor for Xamarin.Android.
-platform : xamarin.android
-control : ImageEditor
-documentation : ug
+layout: post
+title: Text in Syncfusion SfImageEditor control in Xamarin.Android
+description: This section explains how to add text in the SfImageEditor for Xamarin.Android and also explains how to customize the text using the TextSettings property
+platform: xamarin.android
+control: SfImageEditor
+documentation: ug
 ---
 
 ## Text
@@ -105,3 +105,7 @@ You can rotate the text based on a particular angle using `Angle` property in `T
 {% endtabs %}
 
 ![SfImageEditor](ImageEditor_images/rotation.png)
+
+## See also
+
+[How to add text after image is loaded in SfImageEditor](https://www.syncfusion.com/kb/10035/how-to-add-text-after-image-is-loaded-in-sfimageeditor)

@@ -54,3 +54,9 @@ The following steps explain on how to create a image editor  and configure its e
 
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-Started-Sample-of-SfImageEditor-in-Xamarin.Android).
+
+## See also
+
+[How to load an image from the gallery to image editor in Xamarin.Android](https://www.syncfusion.com/kb/7777/how-to-load-an-image-from-gallery-in-imageeditor-xamarin-android)
+
+[How to load an image from the camera to image editor in Xamarin.Android](https://www.syncfusion.com/kb/7775/how-to-load-an-image-from-the-camera-to-image-editor-in-xamarin-android)
