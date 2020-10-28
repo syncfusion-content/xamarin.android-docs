@@ -9,7 +9,7 @@ documentation: ug
 
 # Welcome to Syncfusion Essential Studio for Xamarin.Android
 
-Essential Studio for Xamarin.Android is a comprehensive collection of enterprise-grade Xamarin.Android components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, DataGrid, Gauge, Maps and much more.
+Essential Studio for [`Xamarin.Android'](https://www.syncfusion.com/products/release-history/estudio/xamarin-android) is a comprehensive collection of enterprise-grade Xamarin.Android components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, DataGrid, Gauge, Maps and much more.
 
 ## How to best read this user guide
 
