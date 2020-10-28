@@ -11,7 +11,7 @@ documentation: ug
 
 ## Download directly from website
 
-You can download the complete [`Xamarin.Android'](https://www.syncfusion.com/products/release-history/estudio/xamarin-android) component from [here](https://www.syncfusion.com/downloads/latest-version).
+You can download the complete Xamarin.Android component from [here](https://www.syncfusion.com/downloads/latest-version).
 
 **MAC Installer (pkg)**
 
@@ -45,6 +45,6 @@ You can find the Syncfusion libraries, samples and NuGet from the installed loca
 
 ### Add reference to the project
 
-You can then add the assembly references to the [`Xamarin.Android'](https://www.syncfusion.com/products/release-history/estudio/xamarin-android). The following is the location where you can locate assembly for Chart control and you can find assemblies for the other controls also from the same location.
+You can then add the assembly references to the Xamarin.Android. The following is the location where you can locate assembly for Chart control and you can find assemblies for the other controls also from the same location.
 
 android\Syncfusion.SfChart.Android.dll
