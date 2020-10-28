@@ -85,3 +85,5 @@ The following table lists the platforms supported by our Xamarin.Android control
 For Android platform, the target framework or compile SDK version of the application should be equal or greater than the latest API available at the time of our release. Please find more details about setting the target framework in the following link.
 
  [https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework](https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework)
+
+N> You can explore the release history of Essential Studio for Xamarin.Android from [`here`](https://www.syncfusion.com/products/release-history/estudio/xamarin-android).
