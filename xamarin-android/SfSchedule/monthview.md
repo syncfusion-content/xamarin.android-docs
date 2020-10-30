@@ -38,6 +38,7 @@ If appointments count are lesser than the AppointmentIndicatorCount value in the
 ## Month appointment display mode
 
 You can handle the schedule month view appointment display by using the [AppointmentDisplayMode](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.Enums.AppointmentDisplayMode.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.MonthViewSettings.html). By default, the `AppointmentDisplayMode` is set as `Indicator.` Using the `AppointmentDisplayMode,` you can set the month view appointments display as follows.
+
 `Indicator`:  Appointment will be denoted as the circle.
 `Appointment`: Appointment subject will be displayed in the month cell.
 `None`: Appointment will not be displayed.
