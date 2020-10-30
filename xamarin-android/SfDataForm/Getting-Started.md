@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfDataForm | Xamarin.Android | Syncfusion
-description: Getting started with SfDataForm.
+description: This section explains key features and getting started with SfDataForm for Xamarin.Android platform.
 platform: Xamarin.Android
 control: SfDataForm
 documentation: ug
@@ -17,7 +17,7 @@ The SfDataForm control helps editing the data fields of any data object. It can 
 * Custom editor: Supports loading the custom editors.
 * Validation: Built-in support to validate the data based on the [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx), [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx), and data annotations. It also programmatically supports validation handling.
 
-# Getting started
+# Getting started with Xamarin.Android DataForm(SfDataForm)
 
 This section explains the quick overview to use the [SfDataForm](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.SfDataForm.html) for Xamarin.Android in your application.
 
