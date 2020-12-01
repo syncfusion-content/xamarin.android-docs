@@ -2070,7 +2070,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### ShowOutlier
 
-The Outlier value of given data set is viewed by enabling the [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html).. By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
+The Outlier value of given data set is viewed by enabling the [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
 
 {% highlight c# %}
 
