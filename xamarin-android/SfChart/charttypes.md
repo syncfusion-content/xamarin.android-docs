@@ -2091,7 +2091,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-[Outlier for BoxAndWhiskerSeries in Xamarin.Android Chart]
+![ShowOutlier support for BoxAndWhiskerSeries in Xamarin.Android Chart](charttypes_images/ShowOutlier.png)
 
 ## Error Bar Chart
 
