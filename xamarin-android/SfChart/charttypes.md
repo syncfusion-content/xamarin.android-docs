@@ -2085,7 +2085,7 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
     XBindingPath = "Department",
     YBindingPath = "Ages",
     ShowMedian = true,
-	ShowOutlier = false
+    ShowOutlier = false
 } 
 chart.Series.Add(boxPlotSeries);
 
