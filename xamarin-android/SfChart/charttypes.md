@@ -2072,7 +2072,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### SymbolType
 
-The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different type of symbol. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSymbolType.html).
+The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different type of symbols. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSymbolType.html).
 
 The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSymbolType.html).
 
