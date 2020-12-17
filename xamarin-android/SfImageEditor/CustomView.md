@@ -30,6 +30,8 @@ CustomViewSettings is defined to set the values for `CanMaintainAspectRatio`, `B
 
 • Angle property is used to set the angle of the custom view. Using this property, you can rotate the custom view at desired angle.
 
+* `EnableDrag` - Controls the dragging of selected view over the image.
+
 {% highlight C# %}
 
             CustomViewSettings customViewSettings = new CustomViewSettings()
