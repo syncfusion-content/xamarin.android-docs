@@ -694,7 +694,6 @@ var exceptionAppointment = new Meeting
 {% endtabs %}
 
 >**NOTE**
-•	The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment `Id`. 
 •	The `RecurrenceId` should be a recurrence pattern appointment `Id` .
 •	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
 •	The `ActualDate` should be in Universal Time Coordinates (UTC) time zone.
