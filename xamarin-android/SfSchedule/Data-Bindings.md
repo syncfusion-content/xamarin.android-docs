@@ -487,7 +487,7 @@ var exceptionAppointment = new ScheduleAppointment
 {% endtabs %}
 
 >**NOTE**
-•	The `RecurrenceId` should be a recurrence pattern appointment Id .
+•   The exception appointment should have different `Id` with original pattern appointment `Id`.
 •   The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment `Id`.
 •	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
 •	The `ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
@@ -642,7 +642,7 @@ public object Id { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-You should map this custom property `RecurrenceID` of `Meeting` with the `Id` property of `AppointmentMapping` class which is used to map the exception appointment with schedule recurrence series appointment `Meeting`.
+You should map this custom property `RecurrenceID` of `Meeting` with the `RecurrenceId` property of `AppointmentMapping` class which is used to map the exception appointment with schedule recurrence series appointment `Meeting`.
 You should also map this custom property `ActualDate` of `Meeting` with the `ExceptionOccurrenceActualDate` property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment with schedule recurrence appointment.
 You should add the created exception recurrence appointment to the schedule `ItemsSource`.
 
@@ -695,7 +695,7 @@ var exceptionAppointment = new Meeting
 
 >**NOTE**
 •	The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment `Id`. 
-•	The `RecurrenceId` should be a recurrence pattern appointment Id .
+•	The `RecurrenceId` should be a recurrence pattern appointment `Id` .
 •	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
 •	The `ActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
@@ -733,6 +733,7 @@ scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endtabs %}
 
 >**NOTE**
+•   The `RecurrenceId` should be a recurrence pattern appointment `Id`.
 •	The exception appointment should have different `Id` with original pattern appointment `Id`.
 •	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
 •	The `ActualDate` should be in Universal Time Coordinates (UTC) time zone.
