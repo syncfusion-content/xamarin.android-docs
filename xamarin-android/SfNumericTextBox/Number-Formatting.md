@@ -112,4 +112,29 @@ N> The control displays the percent value on lost focus.
 
 ![](images/PercentDisplayMode.png)
 
+## Group separator modes
+
+[`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Numerictextbox.GroupSeparatorMode.html) provides 2 states to display the group separator. 
+When the mode is set as `Always`, it will display separtor while typing itself on the other hand when the mode is set as `LostFocus` it will enable the separator when the control lost its focus.
+
+N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Numerictextbox.SfNumericTextBox.html#Com_Syncfusion_Numerictextbox_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the `GroupSeparatorMode`.
+
+{% tabs %}
+
+{% highlight c# %}
+
+            SfNumericTextBox numericTextBox = new SfNumericTextBox(this);
+            numericTextBox.Value = 12345;
+            numericTextBox.FormatString = "n";
+            numericTextBox.GroupSeparatorMode = GroupSeparatorMode.Always;
+            numericTextBox.EnableGroupSeparator = true;
+            SetContentView(numericTextBox);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Display the value with enable group separator](images/SeparatorMode.png)
+
+
 
