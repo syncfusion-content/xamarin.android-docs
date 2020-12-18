@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic features in syncfusion MaskedEdit for Xamarin.Android platform
-description: Learn how to customize the basic features of syncfusion masked edit control.
+description: Learn how to customize the value and setting prompt character and hint text for syncfusion masked edit control.
 platform: Xamarin.Android
 control: SfMaskedEdit
 documentation: ug 
