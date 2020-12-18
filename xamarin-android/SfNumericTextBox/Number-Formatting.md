@@ -135,6 +135,3 @@ N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin-android/Com.S
 {% endtabs %}
 
 ![Display the value with enable group separator](images/SeparatorMode.png)
-
-
-
