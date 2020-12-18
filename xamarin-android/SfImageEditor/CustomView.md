@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Custom view of Syncfusion SfImageEditor control in Xamarin.Android
-description : Learn how to add custom view in ImageEditor for Xamarin.Android
-platform : xamarin.android
-control : ImageEditor
-documentation : ug
+layout: post
+title: Custom view of Syncfusion SfImageEditor control in Xamarin.Android
+description: Learn how to add and customize the custom view in syncfusion ImageEditor for Xamarin.Android
+platform: xamarin.android
+control: ImageEditor
+documentation: ug
 ---
 
 # CustomView and its customization
