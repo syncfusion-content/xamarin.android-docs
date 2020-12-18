@@ -68,7 +68,7 @@ You can find the complete basic features sample from this [link](http://files2.s
 
 ## Select text on focus
 
-You can control the selection of masked edit [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) when the control gets its focus using the `SetSelectAllOnFocus` method.
+You can control the selection of masked edit `Value` when the control gets its focus using the `SetSelectAllOnFocus` method.
 
 {% tabs %}
 
