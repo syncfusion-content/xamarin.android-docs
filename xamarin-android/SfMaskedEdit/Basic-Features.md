@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Basic features in SfMaskedEdit for Xamarin.Android platform
-description: Learn how to customize the basic features of SfMaskedEdit
+title: Basic features in syncfusion MaskedEdit for Xamarin.Android platform
+description: Learn how to customize the basic features of syncfusion masked edit control.
 platform: Xamarin.Android
 control: SfMaskedEdit
 documentation: ug 
@@ -9,7 +9,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 ---
 
-# Basic Features
+# Basic features in masked edit
 
 
 ## Setting Value

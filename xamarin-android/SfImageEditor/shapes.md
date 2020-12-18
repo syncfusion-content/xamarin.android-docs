@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Shapes
+# Shapes and its customization
 
 You can annotate any shapes over an image using the `AddShape` method. The following shapes are available in image editor:
 

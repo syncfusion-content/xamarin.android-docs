@@ -6,7 +6,8 @@ platform: Xamarin.Android
 control: NumericTextBox
 documentation: ug
 ---
-# Number Formatting
+
+# Number formatting and group separator
 
 The Values of the SfNumericTextBox can be configured to display different formats like currency format, percent format etc.
 
