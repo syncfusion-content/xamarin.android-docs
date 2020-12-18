@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-## Crop
+# Cropping image in various aspect ratios
 
 You can crop the desired portion of an image using the cropping tool.
 

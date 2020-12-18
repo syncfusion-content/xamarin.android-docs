@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-## CustomView
+# CustomView and its customization
 
 You can add any custom shapes or views to an image using the `AddCustomView` method in the image editor control. To add a custom view, specify the view and its desired `CustomViewSettings` as shown in the following code snippet.
 
