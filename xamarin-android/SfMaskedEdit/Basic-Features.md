@@ -24,7 +24,7 @@ maskedEdit.Value =@"14/11/2014";
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/BF_SetValue.png)
+![Setting value](SfMaskedEditImages/BF_SetValue.png)
 
 
 ## Setting Prompt Character
@@ -39,7 +39,7 @@ maskedEdit.PromptChar = '*';
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/BF_Prompt.png)
+![Prompt Character](SfMaskedEditImages/BF_Prompt.png)
 
 ## Setting Hint
 
@@ -62,13 +62,13 @@ maskedEdit.HintTextSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/BF_Hint.png)
+![Setting Hint](SfMaskedEditImages/BF_Hint.png)
 
 You can find the complete basic features sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_BasicFeatures.zip).
 
 ## Select text on focus
 
-You can control the selection of masked edit `Value` when the control gets its focus using the `SetSelectAllOnFocus` method.
+You can control the selection of masked edit [`Value`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.MaskedEdit.SfMaskedEdit.html#Syncfusion_Android_MaskedEdit_SfMaskedEdit_Value) when the control gets its focus using the `SetSelectAllOnFocus` method.
 
 {% tabs %}
 
