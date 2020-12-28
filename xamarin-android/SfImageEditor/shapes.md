@@ -56,7 +56,7 @@ N> The `FillColor` property is applicable only if the ShapeType is `Rectangle` o
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/Shapes.gif)
+![SfImageEditor](ImageEditor_images/Shapes.png)
 
 * You can annotate any path on an image using free hand drawing as shown in the following code snippet.
 
@@ -70,7 +70,7 @@ N> The `FillColor` property is applicable only if the ShapeType is `Rectangle` o
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/path.gif)
+![SfImageEditor](ImageEditor_images/Path.png)
 
 ## Deleting a shape or text from view
 
