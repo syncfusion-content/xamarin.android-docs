@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to set opacity of chart series in Xamarin.Android
+title: How to set opacity of Syncfusion chart series in Xamarin.Android
 description: This session describes how the Syncfusion Xamarin.Android SfChart can be set a opacity in chart series.
 platform: Android
 control: Chart
