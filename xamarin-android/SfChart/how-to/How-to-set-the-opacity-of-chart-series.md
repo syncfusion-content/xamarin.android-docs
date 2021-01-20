@@ -20,4 +20,4 @@ splineAreaSeries.StrokeWidth = 2;
 splineAreaSeries.StrokeColor = Color.Black;
 splineAreaSeries.Alpha = 0.5f;
 
-![opacity support in Xamarin.Android Chart](how-to/images/opacity.png)
+![opacity support in Xamarin.Android Chart](images/opacity.png)
