@@ -14,10 +14,19 @@ The [`Alpha`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Char
 The code sample demonstrated as follows.
 
 {% highlight c# %}
+...
+            AreaSeries series = new AreaSeries()
+            {
+                ItemsSource = new AreaChartViewModel().Performance,
+                XBindingPath = "Load",
+                YBindingPath = "Server",
+                //to set opacity value
+                Alpha = 0.3f,
+                TooltipEnabled = true,
+                StrokeColor=Color.Blue,
+                Color = Color.Blue
+            };
+            chart.Series.Add(series);
+...
 
-SplineAreaSeries splineAreaSeries = new SplineAreaSeries();splineAreaSeries.Color = Color.Green;
-splineAreaSeries.StrokeWidth = 2;
-splineAreaSeries.StrokeColor = Color.Black;
-splineAreaSeries.Alpha = 0.5f;
-
-![opacity support in Xamarin.Android Chart](images/opacity.png)
+![opacity support in Xamarin.Android Chart](images/Alpha.png)
