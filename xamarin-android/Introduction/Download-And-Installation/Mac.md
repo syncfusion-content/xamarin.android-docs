@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Download and Installation in Mac | Xamarin.Android | Syncfusion
-description: Download and Installation in Mac
+description: Download and Installation for Xamarin.Android in Mac
 platform: Xamarin.Android
 control: Download and Installation 
 documentation: ug
