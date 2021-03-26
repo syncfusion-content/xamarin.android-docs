@@ -23,7 +23,7 @@ You can annotate any shapes over an image using the `AddShape` method. The follo
 
 ### Selecting a shape type
 
-The `ShapeType` is an enum property with values `Rectangle`, `Circle`, `Arrow`, `Path`, `Line`, `Dotted`, `DoubleArrow`, `DottedArrow`, and `DottedDoubleArrow`. You can give the desired shape type as an argument to the `AddShape` method.
+The `ShapeType` is an enum property with values of `Rectangle`, `Circle`, `Arrow`, `Path`, `Line`, `Dotted`, `DoubleArrow`, `DottedArrow`,and `DottedDoubleArrow`. You can give the desired shape type as an argument to the `AddShape` method.
 
 {% highlight C# %}
 
@@ -31,9 +31,9 @@ The `ShapeType` is an enum property with values `Rectangle`, `Circle`, `Arrow`, 
 
 {% endhighlight %}
 
-By default, the toolbar contains the`Rectangle`, `Circle`, `Arrow`, and `Path` shapes. You can add other shapes to the toolbar items by using the `VisibleShapesItems` in [`ToolbarSettings`]().
+By default, the toolbar contains the `Rectangle`, `Circle`, `Arrow`, and `Path` shapes. You can add other shapes to the toolbar items by using the `VisibleShapesItems` in [`ToolbarSettings`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.SfImageEditor.html#Syncfusion_SfImageEditor_Android_SfImageEditor_ToolbarSettings).
 
-[`VisibleShapesItems`] is an enum property with values of `Rectangle`, `Circle`, `Arrow`, `Path`, `Line`, `Dotted`, `DoubleArrow`, `DottedArrow`, and `DottedDoubleArrow`. You can specify one or more shapes in the property to add shapes into the toolbar.
+`VisibleShapesItems` is a flagged enum property with values of `Rectangle`, `Circle`, `Arrow`, `Path`, `Line`, `Dotted`, `DoubleArrow`, `DottedArrow`, and `DottedDoubleArrow`. You can specify one or more shapes in the property to add shapes into the toolbar.
 
 {% highlight C# %}
 
