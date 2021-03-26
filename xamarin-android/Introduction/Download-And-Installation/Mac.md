@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Download and Installation in Mac | Xamarin.Android | Syncfusion
-description: Download and Installation for Xamarin.Android in Mac
+description: Download and Installation for Xamarin.Android platform in Mac and explain the procedure for how to install the installer.
 platform: Xamarin.Android
 control: Download and Installation 
 documentation: ug
 ---
 
-# Mac
+# Mac Installation of Xamarin.Android platform
 
 ## Download directly from website
 

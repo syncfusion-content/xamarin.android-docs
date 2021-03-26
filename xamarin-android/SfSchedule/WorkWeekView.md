@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customize WorkWeekView at SfSchedule for Xamarin.Android
-description: Learn how to Customize the schedule WorkWeekView in SfSchedule control in Xamarin.Android
+title: Customize WorkWeekView at SfSchedule for Xamarin.Android | Syncfusion
+description: Learn how to Customize the schedule WorkWeekView in SfSchedule control in Xamarin.Android platform and explain about key features and configuration.
 platform: xamarin.Android
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# WorkWeekView
+# WorkWeekView at SfSchedule for Xamarin.Android
 WorkWeekView is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.
 
 ## ViewHeader Appearance
