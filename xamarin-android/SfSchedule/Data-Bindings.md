@@ -63,7 +63,7 @@ SetContentView(schedule);
 N> 
 * The Scheduler supports the functionality that arranges the appointments based on their start time and duration for the normal appointments in a day, week and workweek views.
 * In an all-day panel of the day, week and workweek views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists of time duration of an appointment, followed by `IsSpanned,` `IsAllDay,` appointments respectively.
-* In Timeline views, all the appointments (span, all day and normal) are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned,` `IsAllDay,` and normal appointments respectively.
+* In Timeline views, all the appointments (span, all day and normal) are ordered and rendered based on the start date-time of appointment that consists of time duration of an appointment, followed by `IsSpanned,` `IsAllDay,` and normal appointments respectively.
 
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
