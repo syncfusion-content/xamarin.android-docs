@@ -158,7 +158,7 @@ On changing the [`GeoCoordinates`](https://help.syncfusion.com/cr/xamarin-androi
 
 {% endtabs %}
 
-![Geo-Coordinate image](Images/MapsAnimation.gif)
+![Geo-Coordinate change with animation](Images/MapsAnimation.gif)
 
 {% tabs %}
 
