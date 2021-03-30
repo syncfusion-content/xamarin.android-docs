@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Download and Installation in Mac | Xamarin.Android | Syncfusion
-description: Download and Installation for Xamarin.Android platform in Mac and explain the procedure for how to install the installer.
+description: This page has steps how to download and install Essential Studio for Xamarin.Android platform in Mac machine using the Mac installer.
 platform: Xamarin.Android
 control: Download and Installation 
 documentation: ug
