@@ -504,3 +504,5 @@ private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
 {% endtabs %}
 
 N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the `InkAdded` event. But this can be done in all other events as well. 
+
+

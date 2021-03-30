@@ -533,3 +533,5 @@ private void PdfViewerControl_TextMarkupAdded(object sender, TextMarkupAddedEven
 {% endtabs %}
 
 N> For illustration purposes, we have only provided the sample for modifying the name of the annotation in the `TextMarkupAdded` event. But this can be done in all other events as well. 
+
+
