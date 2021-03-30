@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dates, Navigations and Gestures of Syncfusion Xamarin.Android Schedule 
+title: Dates Navigations, Gestures of Xamarin.Android Schedule | Syncfusion
 description: How to Navigate date, enable or disable navigation and other functionalities of Schedule control in Xamarin.Android.
 platform: Xamarin.Android
 control: SfSchedule
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Date Navigations
+# Date Navigations and Gestures of Xamarin.Android Schedule
 
 ## Enabling Navigation 
 By default, Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation gesture can be enabled or disabled by setting [EnableNavigation](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Schedule.SfSchedule.html#Com_Syncfusion_Schedule_SfSchedule_EnableNavigation) property of `SfSchedule`. By default, it is enabled.

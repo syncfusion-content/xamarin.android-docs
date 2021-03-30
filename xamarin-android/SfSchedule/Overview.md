@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Schedule for Xamarin.Android 
-description: Overview of Schedule
+description: Learn overview of Syncfusion Essential Schedule for Xamarin.Android platform and about key features of Scheduler for Xamarin.Android platform.
 platform: Xamarin.Android
 control: SfSchedule
 documentation: ug
 ---
 
-# Overview
+# Overview of Essential Schedule for Xamarin.Android 
 
 SfSchedule is used to provide common scheduling functionalities. The SfSchedule control allows user to create and manage appointments. It includes features such as viewing daily/all day/spanned appointments, complete customization of month cell and appointments, efficient performance.
 
