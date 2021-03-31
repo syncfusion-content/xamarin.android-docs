@@ -519,9 +519,9 @@ N>The CanUndo property is used to identify whether a document loaded in the PDF 
 
 ##How to get and set the name of the annotations?
 
-The PDF Viewer allows the users to get and set the name of annotations through the `Name` API.
+The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.IAnnotation.html#Syncfusion_SfPdfViewer_Android_IAnnotation_Name) API.
 
-The following code sample explains modifying the name of the annotation in the `TextMarkupAdded` event.
+The following code sample explains modifying the name of the annotation in the [TextMarkupAdded](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.SfPdfViewer.html#Syncfusion_SfPdfViewer_Android_SfPdfViewer_TextMarkupAdded) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -532,6 +532,6 @@ private void PdfViewerControl_TextMarkupAdded(object sender, TextMarkupAddedEven
 {% endhighlight %}
 {% endtabs %}
 
-N> For illustration purposes, we have only provided the sample for modifying the name of the annotation in the `TextMarkupAdded` event. But this can be done in all other events as well. 
+N> For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [TextMarkupAdded](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.SfPdfViewer.html#Syncfusion_SfPdfViewer_Android_SfPdfViewer_TextMarkupAdded) event. But this can be done in all other events as well. 
 
 

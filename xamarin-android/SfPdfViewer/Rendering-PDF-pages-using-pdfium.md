@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title: Rendering PDF pages using pdfium in PDF Viewer Xamarin.Android Platform | Syncfusion
-description: PDF Viewer in Xamarin.Android Platform supports rendering PDF pages using pdfium.
+title: PDFium rendering in PDF Viewer Xamarin.Android | Syncfusion
+description: PDF Viewer in Xamarin.Android supports rendering the PDF pages using pdfium.
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: UG
@@ -30,7 +30,7 @@ https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-libr
 
 Refer to the created binding library in your android project. 
 
-Add a new class named `CustomPdfRenderer` to the android application project. This class must implement the `ICustomPdfRenderer` interface defined in the `Syncfusion.SfPdfViewer.Android` namespace. .
+Add a new class named `CustomPdfRenderer` to the android application project. This class must implement the [ICustomPdfRenderer](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.ICustomPdfRenderer.html) interface defined in the `Syncfusion.SfPdfViewer.Android` namespace. .
 
 The entire CustomPdfRenderer class is given as follows. 
 
@@ -275,7 +275,9 @@ Create an instance of the `CustomPdfRenderer` class and assign it to the [Custom
 
 {% tabs %}
 {% highlight c# %}
+
 pdfViewer.CustomPdfRenderer = new CustomPdfRenderer();
+
 {% endhighlight %}
 {% endtabs %}
 
