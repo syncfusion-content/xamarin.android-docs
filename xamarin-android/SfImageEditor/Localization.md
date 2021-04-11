@@ -25,8 +25,8 @@ Location- ProjectName.Android/Resources/values/Strings.Xml
 
 In below screenshot we have localized the text to French language.
 
-![SfImageEditor](ImageEditor_images/androidresources.PNG)
+![SfImageEditor](ImageEditor_images/androidresources.png)
 
-![SfImageEditor](ImageEditor_images/localization.PNG)
+![SfImageEditor](ImageEditor_images/localization.png)
 
 You can download localization sample here.
