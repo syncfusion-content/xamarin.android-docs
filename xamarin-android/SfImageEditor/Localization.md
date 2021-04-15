@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization of SfImageEditor control
+title: Localization of Syncfusion SfImageEditor control
 description: This section describes how to Localize the contents of SfImageEditor control for Xamarin.Android platform
 platform: xamarin.android
 control: ImageEditor
