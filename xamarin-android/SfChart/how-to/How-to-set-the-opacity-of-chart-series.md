@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to set opacity of Syncfusion chart series in Xamarin.Android
-description: This session describes how the Syncfusion Xamarin.Android SfChart can be set a opacity in chart series.
+description: This section describes about how to set the opacity/alpha to the chart series in the Syncfusion Xamarin.Android Chart.
 platform: Android
 control: Chart
 documentation: ug
@@ -22,7 +22,6 @@ The code sample demonstrated as follows.
                 YBindingPath = "Server",
                 //to set opacity value
                 Alpha = 0.3f,
-                TooltipEnabled = true,
                 StrokeColor=Color.Blue,
                 Color = Color.Blue
             };
