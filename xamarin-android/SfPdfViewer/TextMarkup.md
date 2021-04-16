@@ -517,7 +517,7 @@ private void SaveButton_Click(object sender, EventArgs e)
 {% endtabs %}
 N>The CanUndo property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 
 
-##How to get and set the name of the annotations?
+## How to get and set the name of the annotations?
 
 The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.IAnnotation.html#Syncfusion_SfPdfViewer_Android_IAnnotation_Name) API.
 

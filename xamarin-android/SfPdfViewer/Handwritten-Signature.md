@@ -121,7 +121,7 @@ private void PdfViewer_InkSelected(object sender, Syncfusion.SfPdfViewer.Android
 {% endhighlight %}
 {% endtabs %}
 
-##How to get and set the name of the annotations?
+## How to get and set the name of the annotations?
 
 The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.IAnnotation.html#Syncfusion_SfPdfViewer_Android_IAnnotation_Name) API.
 
