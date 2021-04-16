@@ -22,7 +22,7 @@ To use Pdfium in your application, the Pdfium binding library is needed. The Pdf
 2.To create the binding project from this archive file refer to this link. 
 <https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/binding-an-aar/> 
 
-3.Install the [Xamarin.Android.Support.Compat](<https://www.nuget.org/packages/Xamarin.Android.Support.Compat/>) dependency package in the project.
+3.Install the `Xamarin.Android.Support.Compat` dependency package in the project.
 
 4.Compile the project to generate the Pdfium library.
 
