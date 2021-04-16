@@ -7,7 +7,7 @@ control: SfPdfViewer
 documentation: UG
 ---
 
-# Rendering PDF pages using pdfium in PDF Viewer Xamarin.Android Platform
+# Rendering PDF pages using pdfium in PDF Viewer Xamarin.Android
 
 The PdfViewer allows using Pdfium to render the pages of a PDF document, which is a third-party open-source PDF rendering engine. By default, the PdfViewer uses native Android PDF rendering. However, using the Pdfium rendering engine will overcome the defects in the native Android PDF rendering.
 
@@ -22,7 +22,7 @@ To use Pdfium in your application, the Pdfium binding library is needed. The Pdf
 2.To create the binding project from this archive file refer to this link. 
 <https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/binding-an-aar/> 
 
-3.Install the [Xamarin.Android.Support.Compat](https://www.nuget.org/packages/Xamarin.Android.Support.Compat/) dependency package in the project.
+3.Install the [Xamarin.Android.Support.Compat](<https://www.nuget.org/packages/Xamarin.Android.Support.Compat/>) dependency package in the project.
 
 4.Compile the project to generate the Pdfium library.
 
