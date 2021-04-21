@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion NumericUpDown control for Xamarin.Android
-description: Overview and Key features of NumericUpDown control
+description: Overview of Syncfusion NumericUpDown control for Xamarin.Android and Key features of NumericUpDown control like `FormatString`, `Culture`, and etc.
 platform: Xamarin.Android
 control: NumericUpDown
 documentation: ug
 ---
 
-# Overview
+# Overview of NumericUpDown control for Xamarin.Android
 
 The Essential Xamarin.Android NumericUpDown control provides up and down repeat buttons to increase and decrease values. The control respects UI culture and can be configured to display different formats like currency, scientific, etc.
 
