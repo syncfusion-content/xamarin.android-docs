@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Download and Installation in Windows | Xamarin.Android | Syncfusion
-description: Download and Installation in Windows
+description: This section provides information on how to download and install Syncfusion Xamarin.Android Controls on Windows.
 platform: Xamarin.Android
 control: Download and Installation
 documentation: ug
 ---
 
-# Windows
+# Installing Xamarin.Android Controls in Windows
 
 ## Download directly from website
 
