@@ -7,7 +7,7 @@ control: Download and Installation
 documentation: ug
 ---
 
-# Installing Xamarin.Android Controls in Mac
+# Download and Installation of Xamarin.Android controls in Mac
 
 ## Download directly from website
 

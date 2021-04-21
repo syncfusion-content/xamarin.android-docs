@@ -7,7 +7,7 @@ control: Download and Installation
 documentation: ug
 ---
 
-# Installing Xamarin.Android Controls in Windows
+# Download and Installation of Xamarin.Android controls in Windows
 
 ## Download directly from website
 
