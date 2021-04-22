@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion NumericUpDown control for Xamarin.Android
-description: Overview of Syncfusion NumericUpDown control for Xamarin.Android and Key features of NumericUpDown control like `FormatString`, `Culture`, and etc.
+description: Overview of Syncfusion NumericUpDown control for Xamarin.Android and Key features of NumericUpDown control like FormatString, Culture, and etc.
 platform: Xamarin.Android
 control: NumericUpDown
 documentation: ug
