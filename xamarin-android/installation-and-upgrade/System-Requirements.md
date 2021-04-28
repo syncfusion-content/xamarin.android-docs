@@ -9,6 +9,8 @@ documentation: ug
 
 # System Requirements for Xamarin.Android
 
+The system requirements for using our Syncfusion Xamarin platform are as follows
+
 ### Operating Systems
 
 * Windows XP
@@ -27,7 +29,7 @@ documentation: ug
 
 ### Development Environment
 
-Please see the following link for the recommended development environment for the Xamarin platform.
+See the link below for the recommended Xamarin development environments
 
 [https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
