@@ -20,6 +20,8 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY
 
 N> Place the license key between double quotes.  Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered.
 
+### Xamarin.Android
+
 You can register the license key in **OnCreate** override method of your main activity class before initializing any Syncfusion control.
 
 {% tabs %}
