@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: ug
 ---
 
-# Localization 
+# Localization in SfDataForm for Xamarin.Android
 
 You can localize the DataFormItem [Display](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms.SfChip.html) attribute values and validation ( [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-5.0) ,[StringLength](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=net-5.0) ) attributes values by using `ResourceType` display attribute or using the `AutoGeneratingDataFormItem` event.
  
