@@ -486,3 +486,37 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 {% endhighlight %}
 
 ![](pointers_images/marker-pointer/pointer-interaction.gif)
+
+### Step frequency
+
+`StepFrequency` property will be considered as an interval and based on this value needle and marker pointer will gets updated to the next value while dragging.
+For example when the value of step frequency is of 20 then while dragging, pointer will not move continuosly instaed it will update in terms of 20.
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 70;
+            markerPointer.EnableDragging = true;
+            markerPointer.StepFrequency = 20;
+            markerPointer.EnableAnimation = false;
+            scale.CircularPointers.Add(markerPointer);
+
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 40;
+            needlePointer.EnableDragging = true;
+            needlePointer.StepFrequency = 5;
+            needlePointer.EnableAnimation = false;
+            scale.CircularPointers.Add(needlePointer);
+
+            scales.Add(scale);
+            circularGauge.CircularScales = scales;
+            SetContentView(circularGauge);
+
+{% endhighlight %}
+
