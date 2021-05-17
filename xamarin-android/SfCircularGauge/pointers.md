@@ -489,11 +489,11 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 
 ### Step frequency
 
-The `StepFrequency` property is used to specify the interval between snap points while dragging the [`MarkerPointer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer.html) or [`NeedlePointer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer.html).
+The [`StepFrequency`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer.html#Com_Syncfusion_Gauges_SfCircularGauge_MarkerPointer_StepFrequency) property is used to specify the interval between snap points while dragging the [`MarkerPointer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer.html) or [`NeedlePointer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.NeedlePointer.html).
 
-For example, when the value of `StepFrequency` is 20, then while dragging, the pointer will not move continuously, instead it will update in terms of 20.
+For example, when the value of [`StepFrequency`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer.html#Com_Syncfusion_Gauges_SfCircularGauge_MarkerPointer_StepFrequency) is 20, then while dragging, the pointer will not move continuously, instead it will update in terms of 20.
 
-N> To work with the `StepFrequency` value, enable pointer dragging support.
+N> To work with the [`StepFrequency`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer.html#Com_Syncfusion_Gauges_SfCircularGauge_MarkerPointer_StepFrequency) value, enable pointer dragging support.
 
 {% highlight c# %}
 
