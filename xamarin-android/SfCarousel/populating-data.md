@@ -152,3 +152,5 @@ carousel.SelectedIndex=2;
 
 {% endhighlight %}
 
+You can find the sample to load images from SD card or internal storage to carousel view from this [link](https://github.com/SyncfusionExamples/how-to-load-image-from-sdcard-or-internal-storage-in-carousel-view-xamarin-android).
+
