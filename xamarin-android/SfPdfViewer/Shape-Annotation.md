@@ -363,7 +363,7 @@ pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
 {% endhighlight %}
 {% endtabs %}
 
-N>The older API [`SfPdfViewer.AnnotationSettings.Rectangle.IsLocked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.RectangleAnnotation.html#Syncfusion_SfPdfViewer_Android_RectangleAnnotation_IsLocked) is marked as obsolete and, this is applicable for other shape annotations as well.
+N> The `IsLocked` properties of the classes [`RectangleAnnotation`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.RectangleAnnotation.html), [`CircleAnnotation`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.CircleAnnotation.html), [`LineAnnotation`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.LineAnnotation.html) and [`ArrowAnnotation`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.ArrowAnnotation.html) have been marked as obsolete. Use the `RectangleAnnotation.Settings.IsLocked`, `CircleAnnotation.Settings.IsLocked`, `LineAnnotation.Settings.IsLocked` and `ArrowAnnotation.Settings.IsLocked` properties instead.
 
 The interaction with shape annotation types will be allowed only if the [`SfPdfViewer.AnnotationSettings.IsLocked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.AnnotationSettings.html#Syncfusion_SfPdfViewer_Android_AnnotationSettings_IsLocked) API is set to `false`. The following code does not allow the interactions with shape annotations, although the `IsLocked` property of the shape annotation is set to `false`. 
 
