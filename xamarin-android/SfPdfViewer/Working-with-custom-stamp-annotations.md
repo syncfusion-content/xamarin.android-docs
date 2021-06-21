@@ -155,6 +155,33 @@ pdfViewer.StampAnnotationRemoved += PdfViewer_StampAnnotationRemoved;
 {% endhighlight %}
 {% endtabs %}
 
+## How to enable or disable custom stamp annotation interaction?
+
+The interaction operation can be enabled or disabled for custom stamp annotation alone by setting the `IsLocked` API to `false` or `true` respectively.
+
+For example, the following code disables the interaction operations for all custom stamp annotations in the PDF. But other annotation types can be selected, moved, resized, or removed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the custom stamp annotation interaction
+pdfViewerControl.AnnotationSettings.Stamp.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+The interaction with custom stamp annotation types will be allowed only if the [`SfPdfViewer.AnnotationSettings.IsLocked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.AnnotationSettings.html#Syncfusion_SfPdfViewer_Android_AnnotationSettings_IsLocked) API is set to `false`. The following code does not allow the interactions with custom stamp annotations, although the `IsLocked` property of the custom stamp annotation is set to `false`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disables the custom stamp annotation interaction, though its 'IsLocked' property is set to ‘false’ 
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Stamp.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## How to retrieve the actual view added as the stamp using the AddStamp method?
 
 The stamp annotation view can be retrieved when the stamp is added, tapped, selected, deselected, moved, or resized, and removed from the event data parameter of the respective event handler from the [`CustomStampView`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.StampAnnotationSelectedEventArgs.html#Syncfusion_SfPdfViewer_Android_StampAnnotationSelectedEventArgs_CustomStampView) property. The stamp view, thus retrieved, is the same instance as the one added using the [`AddStamp`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.SfPdfViewer.html#Syncfusion_SfPdfViewer_Android_SfPdfViewer_AddStamp_Android_Views_View_System_Int32_) method. 

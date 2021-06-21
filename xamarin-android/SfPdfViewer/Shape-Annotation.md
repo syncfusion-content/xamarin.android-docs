@@ -339,6 +339,51 @@ private void PdfViewer_ShapeAnnotationRemoved(object sender, ShapeAnnotationRemo
 {% endhighlight %}
 {% endtabs %}
 
+## How to enable or disable shape annotation interaction?
+
+The interaction operation can be enabled or disabled for shape annotation alone by setting the `IsLocked` API to `false` or `true` respectively.
+
+For example, the following code disables the interaction operations for all shape annotations in the PDF. But other annotation types can be selected, moved, resized, or removed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the arrow annotation interaction
+pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = true;
+
+//Disable the line annotation interaction
+pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = true;
+
+//Disable the rectangle annotation interaction
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = true;
+
+//Disable the circle annotation interaction
+pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
+
+//Disable the polygon annotation interaction
+pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+The interaction with shape annotation types will be allowed only if the [`SfPdfViewer.AnnotationSettings.IsLocked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.AnnotationSettings.html#Syncfusion_SfPdfViewer_Android_AnnotationSettings_IsLocked) API is set to `false`. The following code does not allow the interactions with shape annotations, although the `IsLocked` property of the shape annotation is set to `false`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disables the shape annotation interaction, though its 'IsLocked' property is set to ‘false’ 
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The `IsLocked` properties of the classes [`RectangleAnnotation`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.RectangleAnnotation.html), [`CircleAnnotation`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.CircleAnnotation.html), [`LineAnnotation`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.LineAnnotation.html) and [`ArrowAnnotation`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.ArrowAnnotation.html) have been marked as obsolete. Use the `RectangleAnnotation.Settings.IsLocked`, `CircleAnnotation.Settings.IsLocked`, `LineAnnotation.Settings.IsLocked` and `ArrowAnnotation.Settings.IsLocked` properties instead.
+
 ## How to get and set the name of the annotations?
 
 The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.IAnnotation.html#Syncfusion_SfPdfViewer_Android_IAnnotation_Name) API. 
