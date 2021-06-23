@@ -82,7 +82,7 @@ ShapeAnnotation shapeAnnotation = new ShapeAnnotation(ShapeAnnotationType.Rectan
 shapeAnnotation.Settings.StrokeColor = Color.Red;
 
 //Add the rectangle shape annotation to the specified page
-pdfViewerControl.AddAnnotation(shapeAnnotation);
+pdfViewer.AddAnnotation(shapeAnnotation);
 
 {% endhighlight %}
 {% endtabs %}
@@ -100,7 +100,7 @@ SfPdfViewer pdfViewer = new SfPdfViewer();
 
 pdfViewer.AnnotationMode = AnnotationMode.Rectangle;
 
-pdfViewerControl.AnnotationSettings.Rectangle.Settings.BorderEffect = BorderEffect.Cloudy;
+pdfViewer.AnnotationSettings.Rectangle.Settings.BorderEffect = BorderEffect.Cloudy;
 
 {% endhighlight %}
 {% endtabs %}
@@ -155,7 +155,7 @@ The following code sample illustrates the same.
 {% highlight c# %}
 
 //Selects the specified shape annotation
-pdfViewerControl.SelectAnnotation(shapeAnnotation);
+pdfViewer.SelectAnnotation(shapeAnnotation);
 
 {% endhighlight %}
 {% endtabs %}
@@ -205,13 +205,12 @@ The following code sample illustrates the same.
 {% highlight c# %}
 
 //Deselects the specified shape annotation
-pdfViewerControl.DeselectAnnotation(shapeAnnotation);
+pdfViewer.DeselectAnnotation(shapeAnnotation);
 
 {% endhighlight %}
 {% endtabs %}
 
 N> Calling `DeselectAnnotation` method has no effect if the given annotation is not selected. The `SelectedAnnotation` property will return null until any other annotation gets selected.
-
 
 ## Customizing the appearance of shape annotations
 

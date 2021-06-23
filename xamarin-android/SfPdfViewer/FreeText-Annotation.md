@@ -143,7 +143,6 @@ pdfViewer.SelectAnnotation(freetextAnnotation);
 
 N> Once `SelectAnnotation` method is called and as long as the annotation stays selected, the `SelectedAnnotation` property will return the same instance as the parameter of this method.
 
-
 ## Deselecting free text annotations
 
 You can deselect a selected free text annotation by tapping on it or somewhere else on the PDF page. Deselection can be detected using the `FreeTextAnnotationDeselected` event.
@@ -232,7 +231,6 @@ pdfViewerControl.AnnotationSettings.FreeText.MinimumSize = new Size(10, 10);
 
 {% endhighlight %}
 {% endtabs %}
-
 
 ### Changing the properties of a selected free text
 
