@@ -517,11 +517,11 @@ private void SaveButton_Click(object sender, EventArgs e)
 {% endtabs %}
 N>The CanUndo property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 
 
-## How to get and set the name of the annotations?
+## How to get and set the name of the text markup annotations?
 
-The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.IAnnotation.html#Syncfusion_SfPdfViewer_Android_IAnnotation_Name) API.
+The PDF Viewer allows the users to get and set the name of text markup annotations through the [Name](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.IAnnotation.html#Syncfusion_SfPdfViewer_Android_IAnnotation_Name) API.
 
-The following code sample explains modifying the name of the annotation in the [TextMarkupAdded](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.SfPdfViewer.html#Syncfusion_SfPdfViewer_Android_SfPdfViewer_TextMarkupAdded) event.
+The following code sample explains modifying the name of the text markup annotation in the [TextMarkupAdded](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.SfPdfViewer.html#Syncfusion_SfPdfViewer_Android_SfPdfViewer_TextMarkupAdded) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -534,4 +534,55 @@ private void PdfViewerControl_TextMarkupAdded(object sender, TextMarkupAddedEven
 
 N> For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [TextMarkupAdded](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.SfPdfViewer.html#Syncfusion_SfPdfViewer_Android_SfPdfViewer_TextMarkupAdded) event. But this can be done in all other events as well. 
 
+## How to add the text markup annotation programmatically?
+
+By `AddAnnotation` method , You can add the text markup annotations programmatically. The created text markup annotation object passed as a parameter. The `TextMarkupAnnotation` instance  acquires the TextMarkupAnnotationType, page number, start index and end index of the text as the parameters. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Creates the text markup annotation             
+TextMarkupAnnotation textMarkupAnnotation = new TextMarkupAnnotation(TextMarkupAnnotationType.Highlight, 2, 20, 200);        
+   
+//Add the text markup annotation to the specified page
+pdfViewerControl.AddAnnotation(textMarkupAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to select the text markup annotation programmatically?
+
+By `SelectAnnotation` method ,You can select the text markup annotation programmatically. The specified text markup annotation object passed as a parameter.
+ 
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Selects the specified text markup annotation
+pdfViewerControl.SelectAnnotation(textMarkupAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Once `SelectAnnotation` method is called and as long as the annotation stays selected, the `SelectedAnnotation` property will return the same instance as the parameter of this method.
+
+## How to deselect the text markup annotation programmatically?
+
+By `DeselectAnnotation` method ,You can deselect the text markup annotation programmatically. The specified text markup annotation object passed as a parameter. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Deselects the specified text markup annotation 
+pdfViewerControl.DeselectAnnotation(textMarkupAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> There is no effect in calling `DeselectAnnotation` method, if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
 
