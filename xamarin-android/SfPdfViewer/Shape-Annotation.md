@@ -249,7 +249,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.Thickness = 5;
 
 {% endhighlight %}
 
-## Setting the default minimum size and minimum length
+### Setting the default minimum size and minimum length
 
 By the `MinimumSize` property, You can set the minimum size to which the rectangle and circle shape annotations could be resized. 
 
@@ -277,7 +277,7 @@ pdfViewer.AnnotationSettings.Arrow.Settings.MinimumLength = 10;
 
 N> The value of `MinimumSize` property will does not affect line, arrow, and polygon annotations. Also, the value of `MinimumLength` property will does not affect rectangle, circle, and polygon annotations.
 
-## Setting the default border style
+### Setting the default border style
 
 You can set the border style for the rectangle and polygon annotations using the `BorderEffect` property.  
 
