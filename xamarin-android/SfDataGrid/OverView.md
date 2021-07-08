@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview | SfDataGrid | Xamarin.Android | Syncfusion
-description: Overview
+description: Overview in Xamarin.Android DataGrid helps you to create customizable features used to display and manipulate a large amount of data in a tabular view.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: ug
 ---
 
-# SfDataGrid
+# Overview in Xamarin.Android DataGrid (SfDataGrid)
 
 The data grid control is available in Xamarin.Forms, Xamarin.Android and Xamarin.iOS. It creates entirely customizable features to display and manipulate a large amounts of data in a tabular view. The following table lists the key features of the data grid in Xamarin.Forms, Xamarin.Android and Xamarin.iOS:
 
