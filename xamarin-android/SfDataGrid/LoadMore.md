@@ -129,4 +129,4 @@ public class CustomLoadMoreView : LoadMoreView
 
 Running the application renders the following output:
 
-![](SfDataGrid_images/LoadMore.png)
+![Load More in Xamarin Android DataGrid](SfDataGrid_images/LoadMore.png)

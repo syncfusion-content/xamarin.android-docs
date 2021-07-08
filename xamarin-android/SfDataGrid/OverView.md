@@ -164,6 +164,6 @@ Click [here](http://help.syncfusion.com/xamarin/sfdatagrid/overview) to checkout
 Click [here](http://help.syncfusion.com/xamarin-ios/sfdatagrid/overview) to checkout the data grid for Xamarin.iOS.
  
 
-![](SfDataGrid_images/Overview.png)
+![Overview in Xamarin Android DataGrid](SfDataGrid_images/Overview.png)
 
-![](SfDataGrid_images/GettingStarted.png)
+![Getting Started in Xamarin Android DataGrid](SfDataGrid_images/GettingStarted.png)
