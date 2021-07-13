@@ -7,7 +7,7 @@ control: SfPullToRefresh
 documentation: ug
 --- 
 
-# Getting Started
+# Getting Started with Xamarin.Android SfPullToRefresh
 
 This section provides a quick overview for working with SfPullToRefresh in Xamarin.Android. Walk through the entire process of creating a simple application with this control.
 

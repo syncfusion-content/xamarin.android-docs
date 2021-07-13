@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Getting Started with Syncfusion Rating control for Xamarin.Android
+title: Getting Started with Xamarin.Android Rating control | Syncfusion
 description: A quick tour to initial users on Syncfusion Rating control for Xamarin.Android platform
 platform: Xamarin.Android
 control: Rating
@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Getting Started
+# Getting Started with Xamarin.Android Rating control
 
 This section explains how to configure the SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in the SfRating control.
 
