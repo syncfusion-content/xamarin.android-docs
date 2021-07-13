@@ -25,7 +25,7 @@ The rating item will be filled completely based on the rating value.
 
 {% endtabs %}
 
-![](images/standard.jpg)
+![Standard_Images1](images/standard.jpg)
 
 ## Half
 
@@ -41,7 +41,7 @@ The rating item will be filled partially based on the rating value.
 
 {% endtabs %}
 
-![](images/half.jpg) 
+![Half_Images2](images/half.jpg) 
 
 ## Exact
 
@@ -57,7 +57,7 @@ The rating item will be filled exactly based on the rating value.
 
 {% endtabs %}
 
-![](images/exact.jpg) 
+![Exact_Images3](images/exact.jpg) 
 
 
 

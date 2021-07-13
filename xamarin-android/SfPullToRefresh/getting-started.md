@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | SfPullToRefresh |Xamarin.Android | Syncfusion
-description: Getting Started with SfPullToRefresh
+description: Learn here about getting started with Syncfusion Essential Xamarin.Android SfPullToRefresh Control, and more.
 platform: Xamarin.Android
 control: SfPullToRefresh
 documentation: ug

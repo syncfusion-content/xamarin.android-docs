@@ -2,7 +2,7 @@
 
 layout: post
 title: Getting Started with Xamarin.Android Rating control | Syncfusion
-description: A quick tour to initial users on Syncfusion Rating control for Xamarin.Android platform
+description: Learn here about getting started with Syncfusion Essential Xamarin.Android Rating control, and more.
 platform: Xamarin.Android
 control: Rating
 documentation: ug
