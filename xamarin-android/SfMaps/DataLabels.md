@@ -19,7 +19,7 @@ Data labels are used to display the values of shapes.
 
 {% highlight c# %}
 
-             SfMaps maps = new SfMaps(this);
+            SfMaps maps = new SfMaps(this);
          
             ShapeFileLayer layer = new ShapeFileLayer();
 
@@ -45,6 +45,80 @@ Data labels are used to display the values of shapes.
 
 {% endtabs %}
 
+You can use below collection as a datasource of SfMaps.
+
+{% tabs %}
+
+{% highlight c# %}
+
+        JSONArray GetDataSource()
+        {
+            JSONArray array = new JSONArray();
+
+            array.Put(getJsonObject("Alabama", "Vegetables", 49));
+            array.Put(getJsonObject("Alaska", "Vegetables", 43));
+            array.Put(getJsonObject("Arizona", "Rice", 31));
+            array.Put(getJsonObject("Arkansas", "Vegetables", 36));
+            array.Put(getJsonObject("California", "Rice", 50));
+            array.Put(getJsonObject("Colorado", "Rice", 49));
+            array.Put(getJsonObject("Connecticut", "Grains", 7));
+            array.Put(getJsonObject("Delaware", "Grains", 3));
+            array.Put(getJsonObject("Florida", "Rice", 29));
+            array.Put(getJsonObject("Georgia", "Rice", 36));
+            array.Put(getJsonObject("Hawaii", "Grains", 4));
+            array.Put(getJsonObject("Idaho", "Grains", 4));
+            array.Put(getJsonObject("Illinois", "Vegetables", 20));
+            array.Put(getJsonObject("Indiana", "Grains", 11));
+            array.Put(getJsonObject("Iowa", "Vegetables", 6));
+            array.Put(getJsonObject("Kansas", "Rice", 6));
+            array.Put(getJsonObject("Kentucky", "Grains", 8));
+            array.Put(getJsonObject("Louisiana", "Rice", 48));
+            array.Put(getJsonObject("Maine", "Grains", 4));
+            array.Put(getJsonObject("Maryland", "Grains", 10));
+            array.Put(getJsonObject("Massachusetts", "Grains", 11));
+            array.Put(getJsonObject("Michigan", "Grains", 16));
+            array.Put(getJsonObject("Minnesota", "Wheat", 10));
+            array.Put(getJsonObject("Mississippi", "Vegetables", 36));
+            array.Put(getJsonObject("Missouri", "Vegetables", 30));
+            array.Put(getJsonObject("Montana", "Grains", 3));
+            array.Put(getJsonObject("Nebraska", "Rice", 5));
+            array.Put(getJsonObject("Nevada", "Wheat", 6));
+            array.Put(getJsonObject("New Hampshire", "Grains", 34));
+            array.Put(getJsonObject("New Jersey", "Vegetables", 14));
+            array.Put(getJsonObject("New Mexico", "Rice", 35));
+            array.Put(getJsonObject("New York", "Vegetables", 24));
+            array.Put(getJsonObject("North Carolina", "Rice", 45));
+            array.Put(getJsonObject("North Dakota", "Grains", 3));
+            array.Put(getJsonObject("Ohio", "Vegetables", 18));
+            array.Put(getJsonObject("Oklahoma", "Rice", 47));
+            array.Put(getJsonObject("Oregon", "Wheat", 7));
+            array.Put(getJsonObject("Pennsylvania", "Vegetables", 20));
+            array.Put(getJsonObject("Rhode Island", "Grains", 4));
+            array.Put(getJsonObject("South Carolina", "Rice", 49));
+            array.Put(getJsonObject("South Dakota", "Grains", 3));
+            array.Put(getJsonObject("Tennessee", "Vegetables", 41));
+            array.Put(getJsonObject("Texas", "Vegetables", 38));
+            array.Put(getJsonObject("Utah", "Rice", 6));
+            array.Put(getJsonObject("Vermont", "Grains", 3));
+            array.Put(getJsonObject("Virginia", "Rice", 13));
+            array.Put(getJsonObject("Washington", "Vegetables", 12));
+            array.Put(getJsonObject("West Virginia", "Grains", 5));
+            array.Put(getJsonObject("Wisconsin", "Grains", 10));
+            array.Put(getJsonObject("Wyoming", "Wheat", 3));
+            return array;
+        }
+        JSONObject getJsonObject(String name, String type, double count)
+        {
+            JSONObject obj = new JSONObject();
+            obj.Put("Name", name);
+            obj.Put("Type", type);
+            obj.Put("Count", count);
+            return obj;
+        }
+{% endhighlight %}
+
+{% endtabs %}
+
 ![DataLabel Image](Images/DataLabel_img.png)
 
 ## Setting contrast color
@@ -55,8 +129,8 @@ Based on the background color of the shapes, contrast color will be applied to d
 
 {% highlight c# %}
 
-             SfMaps maps = new SfMaps(this);
-         
+            SfMaps maps = new SfMaps(this);
+
             ShapeFileLayer layer = new ShapeFileLayer();
 
             layer.Uri = "usa_state.shp";
@@ -69,7 +143,7 @@ Based on the background color of the shapes, contrast color will be applied to d
 
             layer.ShapeIdTableField = "STATE_NAME";
 
-            layer.ShapeSettings.ShapeValuePath = "Type";
+            layer.ShapeSettings.ShapeValuePath = "Name";
 
             layer.ShapeSettings.ShapeColorValuePath = "Count";
 
@@ -102,7 +176,7 @@ Based on the background color of the shapes, contrast color will be applied to d
             maps.Layers.Add(layer);
 
             SetContentView(maps);
-
+			
 {% endhighlight %}
 
 {% endtabs %}
