@@ -143,7 +143,7 @@ Based on the background color of the shapes, contrast color will be applied to d
 
             layer.ShapeIdTableField = "STATE_NAME";
 
-            layer.ShapeSettings.ShapeValuePath = "Name";
+            layer.ShapeSettings.ShapeValuePath = "Type";
 
             layer.ShapeSettings.ShapeColorValuePath = "Count";
 
@@ -191,7 +191,7 @@ Data labels can be customized using the [`DataLabelSetting`](https://help.syncfu
 
 {% highlight c# %}
 
-             SfMaps maps = new SfMaps(this);
+            SfMaps maps = new SfMaps(this);
          
             ShapeFileLayer layer = new ShapeFileLayer();
 
