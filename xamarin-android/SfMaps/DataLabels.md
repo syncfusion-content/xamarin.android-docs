@@ -35,7 +35,7 @@ Data labels are used to display the values of shapes.
 
             layer.ShapeIdTableField = "STATE_NAME";
 
-            layer.ShapeSettings.ShapeValuePath = "Type";
+            layer.ShapeSettings.ShapeValuePath = "ShortName";
 
             maps.Layers.Add(layer);
 
@@ -51,67 +51,64 @@ You can use below collection as a datasource of SfMaps.
 
 {% highlight c# %}
 
-        JSONArray GetDataSource()
+                JSONArray GetDataSource()
         {
             JSONArray array = new JSONArray();
 
-            array.Put(getJsonObject("Alabama", "Vegetables", 49));
-            array.Put(getJsonObject("Alaska", "Vegetables", 43));
-            array.Put(getJsonObject("Arizona", "Rice", 31));
-            array.Put(getJsonObject("Arkansas", "Vegetables", 36));
-            array.Put(getJsonObject("California", "Rice", 50));
-            array.Put(getJsonObject("Colorado", "Rice", 49));
-            array.Put(getJsonObject("Connecticut", "Grains", 7));
-            array.Put(getJsonObject("Delaware", "Grains", 3));
-            array.Put(getJsonObject("Florida", "Rice", 29));
-            array.Put(getJsonObject("Georgia", "Rice", 36));
-            array.Put(getJsonObject("Hawaii", "Grains", 4));
-            array.Put(getJsonObject("Idaho", "Grains", 4));
-            array.Put(getJsonObject("Illinois", "Vegetables", 20));
-            array.Put(getJsonObject("Indiana", "Grains", 11));
-            array.Put(getJsonObject("Iowa", "Vegetables", 6));
-            array.Put(getJsonObject("Kansas", "Rice", 6));
-            array.Put(getJsonObject("Kentucky", "Grains", 8));
-            array.Put(getJsonObject("Louisiana", "Rice", 48));
-            array.Put(getJsonObject("Maine", "Grains", 4));
-            array.Put(getJsonObject("Maryland", "Grains", 10));
-            array.Put(getJsonObject("Massachusetts", "Grains", 11));
-            array.Put(getJsonObject("Michigan", "Grains", 16));
-            array.Put(getJsonObject("Minnesota", "Wheat", 10));
-            array.Put(getJsonObject("Mississippi", "Vegetables", 36));
-            array.Put(getJsonObject("Missouri", "Vegetables", 30));
-            array.Put(getJsonObject("Montana", "Grains", 3));
-            array.Put(getJsonObject("Nebraska", "Rice", 5));
-            array.Put(getJsonObject("Nevada", "Wheat", 6));
-            array.Put(getJsonObject("New Hampshire", "Grains", 34));
-            array.Put(getJsonObject("New Jersey", "Vegetables", 14));
-            array.Put(getJsonObject("New Mexico", "Rice", 35));
-            array.Put(getJsonObject("New York", "Vegetables", 24));
-            array.Put(getJsonObject("North Carolina", "Rice", 45));
-            array.Put(getJsonObject("North Dakota", "Grains", 3));
-            array.Put(getJsonObject("Ohio", "Vegetables", 18));
-            array.Put(getJsonObject("Oklahoma", "Rice", 47));
-            array.Put(getJsonObject("Oregon", "Wheat", 7));
-            array.Put(getJsonObject("Pennsylvania", "Vegetables", 20));
-            array.Put(getJsonObject("Rhode Island", "Grains", 4));
-            array.Put(getJsonObject("South Carolina", "Rice", 49));
-            array.Put(getJsonObject("South Dakota", "Grains", 3));
-            array.Put(getJsonObject("Tennessee", "Vegetables", 41));
-            array.Put(getJsonObject("Texas", "Vegetables", 38));
-            array.Put(getJsonObject("Utah", "Rice", 6));
-            array.Put(getJsonObject("Vermont", "Grains", 3));
-            array.Put(getJsonObject("Virginia", "Rice", 13));
-            array.Put(getJsonObject("Washington", "Vegetables", 12));
-            array.Put(getJsonObject("West Virginia", "Grains", 5));
-            array.Put(getJsonObject("Wisconsin", "Grains", 10));
-            array.Put(getJsonObject("Wyoming", "Wheat", 3));
+            array.Put(getJsonObject("Alabama", "AL",49));
+            array.Put(getJsonObject("Alaska", "AK",43));
+            array.Put(getJsonObject("Arizona", "AZ",31));
+            array.Put(getJsonObject("Arkansas", "AR",36));
+            array.Put(getJsonObject("California", "CA",50));
+            array.Put(getJsonObject("Colorado", "CO",9));
+            array.Put(getJsonObject("Connecticut", "CT",3));
+            array.Put(getJsonObject("Florida", "FL",29));
+            array.Put(getJsonObject("Georgia", "GA",36));
+            array.Put(getJsonObject("Hawaii", "HI",4));
+            array.Put(getJsonObject("Idaho", "ID",4));
+            array.Put(getJsonObject("Illinois", "IL",20));
+            array.Put(getJsonObject("Indiana", "IN",11));
+            array.Put(getJsonObject("Iowa", "IA",6));
+            array.Put(getJsonObject("Kansas", "KS",6));
+            array.Put(getJsonObject("Kentucky", "KY",38));
+            array.Put(getJsonObject("Louisiana", "LA",48));
+            array.Put(getJsonObject("Maine", "ME",34));
+            array.Put(getJsonObject("Maryland", "MD",10));
+            array.Put(getJsonObject("Michigan", "MI",16));
+            array.Put(getJsonObject("Minnesota", "MN",10));
+            array.Put(getJsonObject("Mississippi", "MS",36));
+            array.Put(getJsonObject("Missouri", "MO",3));
+            array.Put(getJsonObject("Montana", "MT",3));
+            array.Put(getJsonObject("Nebraska", "NE",5));
+            array.Put(getJsonObject("Nevada", "NV",6));
+            array.Put(getJsonObject("New Jersey", "NJ",34));
+            array.Put(getJsonObject("New Mexico", "NM",35));
+            array.Put(getJsonObject("New York", "NY",29));
+            array.Put(getJsonObject("North Carolina", "NC",35));
+            array.Put(getJsonObject("North Dakota", "ND",3));
+            array.Put(getJsonObject("Ohio", "OH",18));
+            array.Put(getJsonObject("Oklahoma", "OK",47));
+            array.Put(getJsonObject("Oregon", "OR",7));
+            array.Put(getJsonObject("Pennsylvania", "PA",40));
+            array.Put(getJsonObject("Rhode Island", "RI",4));
+            array.Put(getJsonObject("South Carolina", "SC",39));
+            array.Put(getJsonObject("South Dakota", "SD",3));
+            array.Put(getJsonObject("Tennessee", "TN",41));
+            array.Put(getJsonObject("Texas", "TX",38));
+            array.Put(getJsonObject("Utah", "UT",6));
+            array.Put(getJsonObject("Vermont", "VT",3));
+            array.Put(getJsonObject("Virginia", "VA",43));
+            array.Put(getJsonObject("Washington", "WA",12));
+            array.Put(getJsonObject("West Virginia", "WV",35));
+            array.Put(getJsonObject("Wisconsin", "WI",10));
+            array.Put(getJsonObject("Wyoming", "WY",3));
             return array;
         }
-        JSONObject getJsonObject(String name, String type, double count)
+        JSONObject getJsonObject(String name, String shortname, double count)
         {
             JSONObject obj = new JSONObject();
             obj.Put("Name", name);
-            obj.Put("Type", type);
+            obj.Put("ShortName", shortname);
             obj.Put("Count", count);
             return obj;
         }
@@ -143,7 +140,7 @@ Based on the background color of the shapes, contrast color will be applied to d
 
             layer.ShapeIdTableField = "STATE_NAME";
 
-            layer.ShapeSettings.ShapeValuePath = "Type";
+            layer.ShapeSettings.ShapeValuePath = "ShortName";
 
             layer.ShapeSettings.ShapeColorValuePath = "Count";
 
@@ -207,7 +204,7 @@ Data labels can be customized using the [`DataLabelSetting`](https://help.syncfu
 
             layer.ShapeIdTableField = "STATE_NAME";
 
-            layer.ShapeSettings.ShapeValuePath = "Type";
+            layer.ShapeSettings.ShapeValuePath = "ShortName";
 
             DataLabelSetting dataLabelSetting = new DataLabelSetting();
 
