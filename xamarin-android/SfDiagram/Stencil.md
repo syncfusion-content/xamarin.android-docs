@@ -221,4 +221,4 @@ this.Content = grid;
 {% endhighlight %}
 {% endtabs %}
 
-![Add annotation into stencil in Xamarin.Forms diagram](Stencil_images/Stencil_img4.png)
+![Add annotation into stencil in Xamarin.Android diagram](Stencil_images/Stencil_img4.png)
