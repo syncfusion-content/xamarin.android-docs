@@ -34,7 +34,7 @@ The following code example illustrates how to apply grouping to a column in the 
 
 The following screenshot shows the output rendered when grouping is applied:
 
-![](SfDataGrid_images/Grouping.png)
+![SfDataGrid_images1](SfDataGrid_images/Grouping.png)
 
 ## MultiGrouping
 
@@ -47,7 +47,7 @@ this.dataGrid.GroupingMode = GroupingMode.Multiple;
 {% endhighlight %}
 
 The following screenshot shows the output rendered when above code is executed:
-![](SfDataGrid_images/MultiColumnGrouping.png)
+![SfDataGrid_images2](SfDataGrid_images/MultiColumnGrouping.png)
 
 ## Indent column customizations
 
@@ -86,7 +86,7 @@ public class CustomStyle : DataGridStyle
 {% endhighlight %}
 
 The following screenshot shows the output rendered when above code is executed:
-![](SfDataGrid_images/IndentColumnStyling.png)
+![SfDataGrid_images3](SfDataGrid_images/IndentColumnStyling.png)
 
 ## Expand groups while grouping
  
@@ -126,7 +126,7 @@ this.dataGrid.ExpandGroup(group);
 this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
 
-![](SfDataGrid_images/GroupExpandCollapse.png)
+![SfDataGrid_images4](SfDataGrid_images/GroupExpandCollapse.png)
 
 ## Custom grouping
 
@@ -184,7 +184,7 @@ cargoWeight.Format = "#";
 
 The following screenshot shows the comparison between the two group modes. GroupMode.Value on the left and GroupMode.Display on the right.
 
-![](SfDataGrid_images/GroupMode.png)
+![SfDataGrid_images5](SfDataGrid_images/GroupMode.png)
 
 ## Clearing or removing a group
 
@@ -236,7 +236,7 @@ public class MainActivity : Activity
 
 Run the application to render the following output:
 
-![](SfDataGrid_images/Remove_Grouping.png)
+![SfDataGrid_images6](SfDataGrid_images/Remove_Grouping.png)
 
 N> You can also clear or remove grouping on [GridTapped event](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html), or [GridLongPressed event](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html).
 
