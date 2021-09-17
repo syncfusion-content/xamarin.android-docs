@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Grouping in Xamarin.Android DataGrid (SfDataGrid)
+# Grouping in Xamarin.Android SfDataGrid
 
 A group represents a collection of records of a category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_CaptionSummaryRow) to get the underlying records in view.
 
