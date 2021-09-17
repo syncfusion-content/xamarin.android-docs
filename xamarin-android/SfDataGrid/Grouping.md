@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grouping | SfDataGrid | Xamarin.Android | Syncfusion
-description: How to group a column in a SfDataGrid and about the properites and customizations in grouping.
+description: How to group a column in a SfDataGrid and about the properites and customizations in grouping, its elements, and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Grouping 
+# Grouping in Xamarin.Android DataGrid (SfDataGrid)
 
 A group represents a collection of records of a category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_CaptionSummaryRow) to get the underlying records in view.
 
@@ -252,7 +252,7 @@ The `GroupChangingEventArgs` of the `GroupExpanding` event provides the informat
 
 `Cancel`: Decides to cancel the group expansion.
  
-You can cancel the group expansion by setting the [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) to `true`.
+You can cancel the group expansion by setting the [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0) to `true`.
 
 {% highlight c# %}
 this.dataGrid.GroupExpanding += dataGrid_GroupExpanding;
@@ -282,7 +282,7 @@ The `GroupChangingEventArgs` of the `GroupCollapsing` event provides the informa
 
 `Cancel`: Decides to cancel the group collapsing.
 
-You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of the `GroupCollapsing` event.
+You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0) of the `GroupCollapsing` event.
 
 {% highlight c# %}
 this.dataGrid.GroupCollapsing += dataGrid_GroupCollapsing;
