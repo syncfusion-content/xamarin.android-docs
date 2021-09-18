@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  View & review PDF using PDF Viewer Xamarin.Android | Syncfusion
-description: Getting started section demonstrates how to create an application that displays a PDF file using Xamarin.Android PDF Viewer
+title: Getting Started with Xamarin.Android PDF Viewer Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Xamarin.Android PDF Viewer Control, its elements, and more.
 platform: Xamarin.Android
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Getting started about SfPdfViewer
+# Getting Started with Xamarin.Android PDF Viewer
 
-This section demonstrates how to create an application that displays a PDF file using SfPdfViewer control.
+This section demonstrates how to create an application that displays a PDF file using [Xamarin.Android PDF Viewer](https://www.syncfusion.com/xamarin-android-ui-controls/pdf-viewer) (SfPdfViewer) control.
 
 ## Assemblies Required
 
@@ -85,7 +85,7 @@ Deploying this project in the Android device would display the PDF document and 
 
 ## Unloading PDF document from the Viewer
 
-The SfPdfViewer control allows you to unload the PDF document from the viewer, when the PDF document is not in use anymore. This releases the PDF document and all its associated resources of the application.
+The Xamarin.Android PDF Viewer (SfPdfViewer) control allows you to unload the PDF document from the viewer, when the PDF document is not in use anymore. This releases the PDF document and all its associated resources of the application.
 
 You need to call the Unload method of SfPdfViewer control as in the below code snippet to achieve the same.
 
