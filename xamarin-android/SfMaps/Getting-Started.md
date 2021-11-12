@@ -153,7 +153,7 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
 
 After loading the shapes file, the following output will be reproduced.
 
-![](Images/GettingStartedimg1.jpeg)
+![ShapeFileLayer](Images/GettingStartedimg1.jpeg)
 
 ## GeoJSON support
 
