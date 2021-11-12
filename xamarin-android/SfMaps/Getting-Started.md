@@ -320,6 +320,6 @@ The following code example gives you the complete code for map with marker and l
 
 The following output is reproduced as a result of above codes.
 
-![](Images/GettingStartedimg2.PNG) 
+![ShapeFileLayer with markers, legends and color mapping](Images/GettingStartedimg2.PNG) 
 
 You can download the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MapsAndroid1536742134).
