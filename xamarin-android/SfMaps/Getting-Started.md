@@ -97,6 +97,10 @@ sfMaps.Layers.Add(layer);
 
 {% endtabs %}
 
+After initializing the Maps control in AXML Layout, the following output will be reproduced.
+
+![Initialize Maps in AXML Layout](Images/axmlmap.jpg)
+
 ## Adding layers
 
 Map is maintained through [`Layers`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Maps.SfMaps.html#Com_Syncfusion_Maps_SfMaps_Layers). It can accommodate one or more shape file layers.
