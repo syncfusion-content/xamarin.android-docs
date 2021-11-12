@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Maps control for Xamarin.Android
-description: A quick tour about Syncfusion maps control in Xamarin.Android platform
+description: A quick tour to initial users to initialize the Syncfusion SfMaps control in Xamarin.Android platform
 platform: Xamarin.Android
 control: SfMaps 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started of Xamarin.Android Maps(SfMaps)
 
 This section explains the steps required to configure the SfMaps control and provides information to its basic customization.
 
 ## Configuring SfMaps 
 
-THis section describes on configuring the SfMaps control along with its basic customization.
+This section describes on configuring the SfMaps control along with its basic customization.
 
 ## Adding namespace
 
@@ -40,6 +40,58 @@ Create an instance for maps control, and add it as content.
 SfMaps maps = new SfMaps(this);
 
 SetContentView(maps);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Initialize Maps in AXML Layout
+
+To initialize the SfMaps control, add the following code to the activity_main.axml file.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+<Com.Syncfusion.Maps.SfMaps
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sfMaps"
+        />
+</LinearLayout>
+
+
+{% endhighlight %}
+	
+{% endtabs %}
+
+The following code in MainActivity allows you to access the maps instance defined in the axml page.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class MainActivity : Activity 
+{ 
+protected override void OnCreate(Bundle savedInstanceState) 
+{ 
+base.OnCreate(savedInstanceState);
+Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+// Set our view from the "main" layout resource
+SetContentView(Resource.Layout.activity_main);
+SfMaps sfMaps = FindViewById<SfMaps>(Resource.Id.sfMaps);
+ImageryLayer layer = new ImageryLayer();
+sfMaps.Layers.Add(layer);
+}
+}
 
 {% endhighlight %}
 
@@ -101,7 +153,7 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
 
 After loading the shapes file, the following output will be reproduced.
 
-![](Images/GettingStartedimg1.jpeg)
+![ShapeFileLayer](Images/GettingStartedimg1.jpeg)
 
 ## GeoJSON support
 
@@ -268,6 +320,6 @@ The following code example gives you the complete code for map with marker and l
 
 The following output is reproduced as a result of above codes.
 
-![](Images/GettingStartedimg2.PNG) 
+![ShapeFileLayer with markers, legends and color mapping](Images/GettingStartedimg2.PNG) 
 
 You can download the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MapsAndroid1536742134).
