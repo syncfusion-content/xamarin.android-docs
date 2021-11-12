@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Maps control for Xamarin.Android
-description: A quick tour about Syncfusion maps control in Xamarin.Android platform
+description: A quick tour to initial users to initialize the Syncfusion SfMaps control in Xamarin.Android platform
 platform: Xamarin.Android
 control: SfMaps 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started of Xamarin.Android Maps(SfMaps)
 
 This section explains the steps required to configure the SfMaps control and provides information to its basic customization.
 
