@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Popup positioning | SfPopupLayout |Xamarin.Android | Syncfusion
-description: Positioning capabilities of SfPopupLayout
+description: Learn here all about pop-up positioning with Syncfusion Xamarin android sfpopuplayout control, its elements and more.
 platform: Xamarin.Android
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Pop-up Positioning
+# Pop-up Positioning with Xamarin android sfpopuplayout
 
 SfPopupLayout allows you to show the Popup content at various position based on the requirement.
 
@@ -96,7 +96,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/IsOpen_Property.png)
+![Xamarin android posisioned at the center](GettingStarted_images/IsOpen_Property.png)
 
 To open the SfPopupLayout, use the `SfPopupLayout.Show()` as in the following code sample.
 
@@ -143,7 +143,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/ShowPopup.png)
+![Xamarin android positioned at the center](GettingStarted_images/ShowPopup.png)
 
 ## Absolute Positioning
 
@@ -196,7 +196,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/ShowAtXYPosition.png)
+![Xamarin android absolutely positioned](GettingStarted_images/ShowAtXYPosition.png)
 
 ### Show At Touch Point
 
@@ -245,7 +245,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/ShowAtTouchPoint.png)
+![Xamarin android shown at touch point](GettingStarted_images/ShowAtTouchPoint.png)
 
 N> SfPopupLayout.ShowAtTouchPoint() is not applicable for displaying pop-up when the SfPopupLayout is not set as root view .
 
@@ -305,7 +305,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/RelativeToBottom.png)
+![Xamarin android shown relatively to view](GettingStarted_images/RelativeToBottom.png)
 
 ### Absolute relative positioning
 
@@ -363,7 +363,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![](GettingStarted_images/AbsoluteRelativePosition.png)
+![Xamarin android absolutely relatively positioned](GettingStarted_images/AbsoluteRelativePosition.png)
 
 You can pass both negative and positive values as parameters to the `SfPopupLayout.ShowRelativeToView(View, RelativePosition, x-position, y-position)`. The pop-up will be positioned by considering the relative position as (0, 0) the center point. For example, if you have set the `RelativePosition` as `RelativePosition.BottomRight` and `RelativeView` as a button, bottom right corner of the button will be considered as the 0, 0 point and a negative x-position value will place the pop-up to the left of that point and a positive x-position value will place the pop-up to the right of that point. The same applies for y-position also.
 

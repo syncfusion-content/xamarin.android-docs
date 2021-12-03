@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Columns | SfDataGrid | Xamarin.Android | Syncfusion
-description: How to create and add columns, different ways to create columns and its customizations in a SfDataGrid.
+description: Learn here all about Columns with Syncfusion Xamarin android sfpopuplayout control, its elements and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Columns 
+# Columns with Xamarin android sfpopuplayout
 
 The SfDataGrid allows you to create and add columns in two ways:
 
@@ -190,8 +190,8 @@ N> Resizing considers 'GridColumn.MinimumWidth' and 'GridColumn.MaximumWidth' of
 dataGrid.AllowResizingColumn = true;
 {% endhighlight %}
 
-![](SfDataGrid_images/Resizing_HitTest_Android.png)
-![](SfDataGrid_images/Resizing_OnMoved.png)
+![Xamarin android resizing columns](SfDataGrid_images/Resizing_HitTest_Android.png)
+![Xamarin android resizing columns onmoved](SfDataGrid_images/Resizing_OnMoved.png)
 
 You can change the column width by tapping and dragging the resizing indicator.
 
@@ -210,11 +210,11 @@ N> The default resizing mode is OnMoved.
 
 The following image shows the resizing mode OnMoved.
 
-![](SfDataGrid_images/Resizing_OnMoved.png)
+![Xamarin android resizing modes onmoved](SfDataGrid_images/Resizing_OnMoved.png)
 
 The following image shows the resizing mode OnTouchUp.
 
-![](SfDataGrid_images/Resizing_OnTouchUp.png)
+![Xamarin android resizing modes ontouchup](SfDataGrid_images/Resizing_OnTouchUp.png)
 
 ### Resizing events
 
