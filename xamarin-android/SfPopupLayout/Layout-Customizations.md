@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Popup Layouts | SfPopupLayout |Xamarin.Android | Syncfusion
-description: Learn here all about Layout Customization with Syncfusion Xamarin android sfpopuplayout control, its elements and more.
+description: Learn here all about Layout Customization support with Syncfusion Xamarin android popuplayout control, its elements and more.
 platform: Xamarin.Android
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Layout Customizations with Xamarin android sfpopuplayout
+# Layout Customizations in Xamarin.Android popuplayout
 
 The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.PopupLayout.AppearanceMode.html). By default,`AppearanceMode.OneButton` is set. You can change the appearance of the SfPopupLayout by using the `SfPopupLayout.PopupView.AppearanceMode` property.
 

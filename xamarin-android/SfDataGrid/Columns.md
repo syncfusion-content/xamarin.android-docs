@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Columns | SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here all about Columns with Syncfusion Xamarin android sfpopuplayout control, its elements and more.
+description: Learn here all about Columns support with Syncfusion Syncfusion Xamarin.Android datagrid control, its elements and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Columns with Xamarin android sfpopuplayout
+# Columns with Xamarin.Android datagrid
 
 The SfDataGrid allows you to create and add columns in two ways:
 
@@ -97,7 +97,7 @@ When the `SfDataGrid.AutoGenerateColumns` is `true`, the [SfDataGrid.AutoGenerat
 The `AutoGeneratingColumnArgs` object contains the following properties.
 
 * [Column](https://help.syncfusion.com/cr/xamarin-android/): This property returns the created column using which can be customized.
-* [Cancel](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.AutoGeneratingColumnArgs.html#): This property cancels the column creation.
+* [Cancel](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Autocomplete.html): This property cancels the column creation.
 * PropertyType: This property provides the type of underlying model property for which the column is created.
 
 You can skip generating a column by handling the `SfDataGrid.AutoGeneratingColumn` event as follows.
@@ -190,8 +190,8 @@ N> Resizing considers 'GridColumn.MinimumWidth' and 'GridColumn.MaximumWidth' of
 dataGrid.AllowResizingColumn = true;
 {% endhighlight %}
 
-![Xamarin android resizing columns](SfDataGrid_images/Resizing_HitTest_Android.png)
-![Xamarin android resizing columns onmoved](SfDataGrid_images/Resizing_OnMoved.png)
+![Resizing columns in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_HitTest_Android.png)
+![Resizing columns onmoved in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_OnMoved.png)
 
 You can change the column width by tapping and dragging the resizing indicator.
 
