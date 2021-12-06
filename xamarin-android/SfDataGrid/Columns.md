@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Columns with Xamarin.Android datagrid
+# Columns in Xamarin.Android datagrid
 
 The SfDataGrid allows you to create and add columns in two ways:
 
@@ -191,7 +191,7 @@ dataGrid.AllowResizingColumn = true;
 {% endhighlight %}
 
 ![Resizing columns in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_HitTest_Android.png)
-![Resizing columns onmoved in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_OnMoved.png)
+![Resizing columns Onmoved in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_OnMoved.png)
 
 You can change the column width by tapping and dragging the resizing indicator.
 
@@ -210,11 +210,11 @@ N> The default resizing mode is OnMoved.
 
 The following image shows the resizing mode OnMoved.
 
-![Xamarin android resizing modes onmoved](SfDataGrid_images/Resizing_OnMoved.png)
+![Xamarin.Android resizing modes Onmoved](SfDataGrid_images/Resizing_OnMoved.png)
 
 The following image shows the resizing mode OnTouchUp.
 
-![Xamarin android resizing modes ontouchup](SfDataGrid_images/Resizing_OnTouchUp.png)
+![Xamarin.Android resizing modes OnTouchUp](SfDataGrid_images/Resizing_OnTouchUp.png)
 
 ### Resizing events
 
