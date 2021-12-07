@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Columns | SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here all about Columns support with Syncfusion Syncfusion Xamarin.Android datagrid control, its elements and more.
+description: Learn here all about Column support with Syncfusion Xamarin.Android datagrid control, its elements and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Columns in Xamarin.Android datagrid
+# Column in Xamarin.Android datagrid
 
 The SfDataGrid allows you to create and add columns in two ways:
 
@@ -210,11 +210,11 @@ N> The default resizing mode is OnMoved.
 
 The following image shows the resizing mode OnMoved.
 
-![Xamarin.Android resizing modes Onmoved](SfDataGrid_images/Resizing_OnMoved.png)
+![Resizing modes OnMoved in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_OnMoved.png)
 
 The following image shows the resizing mode OnTouchUp.
 
-![Xamarin.Android resizing modes OnTouchUp](SfDataGrid_images/Resizing_OnTouchUp.png)
+![Resizing mode OnTouchUp in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_OnTouchUp.png)
 
 ### Resizing events
 
@@ -225,7 +225,7 @@ The `SfDataGrid.ColumnResizing` event provides the following properties through 
 * [Index](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridResizingEventArgs.html#Syncfusion_SfDataGrid_GridResizingEventArgs_Index): Returns the index of the resizing column.
 * [NewValue](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridResizingEventArgs.html#Syncfusion_SfDataGrid_GridResizingEventArgs_Index): Returns the current width of the resizing column.
 * [ResizingState](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridResizingEventArgs.html#Syncfusion_SfDataGrid_GridResizingEventArgs_ResizingState): Returns the current state of the user-interaction through a value from the ProgressStates enum.
-* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Returns the Boolean property to cancel the event and the resizing operation. 
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0): Returns the Boolean property to cancel the event and the resizing operation. 
 
 ### Cancel resizing for a column
 

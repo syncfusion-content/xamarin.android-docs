@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Popup Layouts | SfPopupLayout |Xamarin.Android | Syncfusion
-description: Learn here all about Layout Customization support with Syncfusion Xamarin.Android popuplayout control, its elements and more.
+description: Learn here all about Layout Customization support with Syncfusion Xamarin.Android popup layout control, its elements and more.
 platform: Xamarin.Android
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Layout Customizations in Xamarin.Android popuplayout
+# Layout Customizations in Xamarin.Android popup layout
 
 The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.PopupLayout.AppearanceMode.html). By default,`AppearanceMode.OneButton` is set. You can change the appearance of the SfPopupLayout by using the `SfPopupLayout.PopupView.AppearanceMode` property.
 
@@ -77,7 +77,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![Xamarin.Android displaying accepted button in footer view](GettingStarted_images/AppearanceMode_OneButton.png)
+![Displaying accepted button in Xamarin.Android popup layout](GettingStarted_images/AppearanceMode_OneButton.png)
 
 ## Pop-up with two buttons in the footer
 
@@ -128,7 +128,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![Xamarin.Android displaying both accepted and declined button in footer view](GettingStarted_images/AppearanceMode_TwoButton.png)
+![Displaying both accepted and declined button in Xamarin.Android popup layout](GettingStarted_images/AppearanceMode_TwoButton.png)
 
 ## Customizing pop-up layouts
  
@@ -194,7 +194,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![Xamarin android customized header](PopupLayout_images/HeaderTemplate.png)
+![Customized header in Xamarin.Android popup layout](PopupLayout_images/HeaderTemplate.png)
 
 ### Footer customization
 
@@ -255,7 +255,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![Xamarin.Android customized footer](PopupLayout_images/FooterTemplate.png)
+![Customized footer in Xamarin.Android popup layout](PopupLayout_images/FooterTemplate.png)
 
 ## Styles
 
@@ -318,7 +318,7 @@ protected override void OnCreate(Bundle bundle)
 
 Executing the above codes renders the following output in an android device.
 
-![Xamarin.Android customized header elements](PopupLayout_images/HeaderCustomization.png)
+[Customized header elements in Xamarin.Android popup layout](PopupLayout_images/HeaderCustomization.png)
 
 ### Customizing footer elements
 
@@ -377,7 +377,7 @@ protected override void OnCreate(Bundle bundle)
 
 Executing the above codes renders the following output in an android device.
 
-![Xamarin.Android customized footer elements](PopupLayout_images/FooterCustomization.png)
+![Customized footer elements in Xamarin.Android popup layout](PopupLayout_images/FooterCustomization.png)
 
 ### Border customization
 
@@ -422,4 +422,4 @@ protected override void OnCreate(Bundle bundle)
 
 Executing the above codes renders the following output in an android device.
 
-![Xamarin.Android customized border](PopupLayout_images/BorderCustomization.png)
+![Customized border in Xamarin.Android popup layout](PopupLayout_images/BorderCustomization.png)
