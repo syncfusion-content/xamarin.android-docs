@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Popup positioning | SfPopupLayout |Xamarin.Android | Syncfusion
-description: Learn here all about pop-up positioning support with Syncfusion Xamarin.Android popuplayout control, its elements and more.
+description: Learn here all about pop-up positioning support with Syncfusion Xamarin.Android popup layout control, its elements and more.
 platform: Xamarin.Android
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Pop-up Positioning in Xamarin.Android popuplayout
+# Pop-up Positioning in Xamarin.Android popup layout
 
 SfPopupLayout allows you to show the Popup content at various position based on the requirement.
 

@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Column in Xamarin.Android datagrid
+# Column in Xamarin.Android DataGrid
 
 The SfDataGrid allows you to create and add columns in two ways:
 
