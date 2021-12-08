@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 --- 
 
-# Pop-up Positioning in Xamarin.Android popuplayout
+# Pop-up Positioning in Xamarin.Android popup layout
 
 SfPopupLayout allows you to show the Popup content at various position based on the requirement.
 
