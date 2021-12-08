@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns | SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here all about Column support with Syncfusion Xamarin.Android datagrid control, its elements and more.
+description: Learn here all about Column support in Syncfusion Xamarin.Android datagrid control, its elements and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
