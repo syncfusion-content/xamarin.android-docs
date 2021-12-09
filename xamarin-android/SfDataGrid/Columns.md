@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Columns | SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here all about Column support in Syncfusion Xamarin.Android DataGrid control, its elements and more.
+description: Learn here all about Columns support in Syncfusion Xamarin.Android DataGrid control, its elements and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Column in Xamarin.Android DataGrid
+# Columns in Xamarin.Android DataGrid
 
 The SfDataGrid allows you to create and add columns in two ways:
 
