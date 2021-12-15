@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Drag and Drop in Xamarin.Android SfDataGrid Control | Syncfusion
+title: Column Drag and Drop in Xamarin.Android SfDataGrid Control| Syncfusion
 description: How to enable and perform column drag and drop operation in Syncfusion Xamarin.Android SfDataGrid Control, and its customization.
 platform: Xamarin.Android
 control: SfDataGrid
@@ -32,7 +32,7 @@ The `QueryColumnDragging` event provides following properties in [QueryColumnDr
 * [Reason](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryColumnDraggingEventArgs_Reason): Returns column dragging details as `QueryColumnDraggingReason`.
 * [DraggingPosition](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryColumnDraggingEventArgs_DraggingPosition): Returns the positions of the drag view during column drag and drop operations.
 * [CanAutoScroll](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryColumnDraggingEventArgs_CanAutoScroll): Returns whether auto-scrolling should happen when column drag view reaches the left or right ends of the `SfDataGrid`.
-* [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): Returns the Boolean property to cancel the event.
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?redirectedfrom=MSDN&view=net-6.0#properties): Returns the Boolean property to cancel the event.
 
 ### Cancel dragging for a particular column 
 
