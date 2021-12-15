@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Drag and Drop | SfDataGrid | Xamarin | Syncfusion
-description: How to enable and perform column drag and drop operation and its customization.
+title: Column Drag and Drop in Xamarin.Android SfDataGrid Control | Syncfusion
+description: How to enable and perform column drag and drop operation in Syncfusion Xamarin.Android SfDataGrid Control, and its customization.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Column Drag and Drop
+# Column Drag and Drop in Xamarin.Android SfDataGrid
 
 The SfDataGrid allows dragging and dropping a column header by setting the [SfDataGrid.AllowDraggingColumn](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AllowDraggingColumn) property to `true`. Drag view is displayed when dragging a column header. The drag and drop operations can be handled using the [SfDataGrid QueryColumnDragging](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html) event. 
 
