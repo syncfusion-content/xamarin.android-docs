@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Row Drag and Drop | SfDataGrid | Xamarin | Syncfusion
-description:  How to enable and perform row drag and drop operation and its customization.
+title: Row Drag and Drop Xamarin.Android SfDataGrid Control | Syncfusion
+description:  How to enable and perform row drag and drop operation in Syncfusion Xamarin.Android SfDataGrid Control, and its customization.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Row Drag and Drop
+# Row Drag and Drop Xamarin.Android SfDataGrid
 
 SfDataGrid allows you to drag and drop a row by setting the [SfDataGrid.AllowDraggingRow](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AllowDraggingRow) property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using [SfDataGrid.QueryRowDragging](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html) event.  
 
@@ -231,7 +231,7 @@ The `QueryRowDragging` event provides following properties in [QueryRowDragging
 * [RowData](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryRowDraggingEventArgs_Reason) – Returns the underlying data associated with the dragged row.
 * [CurrentRowData](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryRowDraggingEventArgs_CurrentRowData) – Returns the corresponding row data, over which the row drag view is currently placed.
 * [CanAutoScroll](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryRowDraggingEventArgs_CanAutoScroll): Returns whether auto-scrolling should happen when row drag view reaches the top or bottom of the `SfDataGrid`.
-* [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?redirectedfrom=MSDN&view=net-6.0#properties) – A Boolean property to cancel the event.
 
 ## Cancel dragging of a particular row 
 
