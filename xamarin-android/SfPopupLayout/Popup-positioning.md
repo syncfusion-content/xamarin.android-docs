@@ -96,7 +96,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![Center positioning using Is Open Property in Xamarin.Android Popup Layout](GettingStarted_images/IsOpen_Property.png)
+![Center positioning using IsOpen Property in Xamarin.Android Popup Layout](GettingStarted_images/IsOpen_Property.png)
 
 To open the SfPopupLayout, use the `SfPopupLayout.Show()` as in the following code sample.
 
@@ -363,7 +363,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an android device.
 
-![Absolutely relatively positioned in Xamarin.Android Popup Layout](GettingStarted_images/AbsoluteRelativePosition.png)
+![Positions in Xamarin.Android Popup Layout](GettingStarted_images/AbsoluteRelativePosition.png)
 
 You can pass both negative and positive values as parameters to the `SfPopupLayout.ShowRelativeToView(View, RelativePosition, x-position, y-position)`. The pop-up will be positioned by considering the relative position as (0, 0) the center point. For example, if you have set the `RelativePosition` as `RelativePosition.BottomRight` and `RelativeView` as a button, bottom right corner of the button will be considered as the 0, 0 point and a negative x-position value will place the pop-up to the left of that point and a positive x-position value will place the pop-up to the right of that point. The same applies for y-position also.
 
