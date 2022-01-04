@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Columns | SfDataGrid | Xamarin.Android | Syncfusion
-description: How to create and add columns, different ways to create columns and its customizations in a SfDataGrid.
+description: Learn here all about Columns support in Syncfusion Xamarin.Android DataGrid control, its elements and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Columns 
+# Columns in Xamarin.Android DataGrid
 
 The SfDataGrid allows you to create and add columns in two ways:
 
@@ -97,7 +97,7 @@ When the `SfDataGrid.AutoGenerateColumns` is `true`, the [SfDataGrid.AutoGenerat
 The `AutoGeneratingColumnArgs` object contains the following properties.
 
 * [Column](https://help.syncfusion.com/cr/xamarin-android/): This property returns the created column using which can be customized.
-* [Cancel](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.AutoGeneratingColumnArgs.html#): This property cancels the column creation.
+* [Cancel](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Autocomplete.html): This property cancels the column creation.
 * PropertyType: This property provides the type of underlying model property for which the column is created.
 
 You can skip generating a column by handling the `SfDataGrid.AutoGeneratingColumn` event as follows.
@@ -190,8 +190,8 @@ N> Resizing considers 'GridColumn.MinimumWidth' and 'GridColumn.MaximumWidth' of
 dataGrid.AllowResizingColumn = true;
 {% endhighlight %}
 
-![](SfDataGrid_images/Resizing_HitTest_Android.png)
-![](SfDataGrid_images/Resizing_OnMoved.png)
+![Resizing columns in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_HitTest_Android.png)
+![Resizing columns Onmoved in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_OnMoved.png)
 
 You can change the column width by tapping and dragging the resizing indicator.
 
@@ -210,11 +210,11 @@ N> The default resizing mode is OnMoved.
 
 The following image shows the resizing mode OnMoved.
 
-![](SfDataGrid_images/Resizing_OnMoved.png)
+![Resizing modes OnMoved in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_OnMoved.png)
 
 The following image shows the resizing mode OnTouchUp.
 
-![](SfDataGrid_images/Resizing_OnTouchUp.png)
+![Resizing mode OnTouchUp in Xamarin.Android DataGrid](SfDataGrid_images/Resizing_OnTouchUp.png)
 
 ### Resizing events
 
@@ -225,7 +225,7 @@ The `SfDataGrid.ColumnResizing` event provides the following properties through 
 * [Index](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridResizingEventArgs.html#Syncfusion_SfDataGrid_GridResizingEventArgs_Index): Returns the index of the resizing column.
 * [NewValue](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridResizingEventArgs.html#Syncfusion_SfDataGrid_GridResizingEventArgs_Index): Returns the current width of the resizing column.
 * [ResizingState](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridResizingEventArgs.html#Syncfusion_SfDataGrid_GridResizingEventArgs_ResizingState): Returns the current state of the user-interaction through a value from the ProgressStates enum.
-* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Returns the Boolean property to cancel the event and the resizing operation. 
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0): Returns the Boolean property to cancel the event and the resizing operation. 
 
 ### Cancel resizing for a column
 
