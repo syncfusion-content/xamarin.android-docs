@@ -7,7 +7,7 @@ control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with ink annotation
+# Working with ink annotation in Xamarin.Android PDF Viewer
 
 PDF viewer allows you to include ink annotation in the PDF document and provides options to edit or remove the existing ink annotation in the PDF document.
 
@@ -86,9 +86,9 @@ var inkPointsCollection = new List<List<float>>();
 
 inkPointsCollection.Add(new List<float> { 53f, 525f, 53f, 527f, 53f, 528f, 53f, 531f, 53f, 549f, 54f, 570f, 56f, 597f, 57f, 623f, 59f, 652f, 60f, 679f, 62f, 705f, 64f, 726f, 65f, 744f, 66f, 758f, 66f, 768f, 65f, 777f, 65f, 782f, 65f, 784f, 64f, 786f, 64f, 786f, 63f, 786f, 63f, 786f, 63f, 784f, 66f, 774f, 71f, 757f, 79f, 734f, 88f, 708f, 99f, 681f, 112f, 652f, 126f, 627f, 140f, 606f, 150f, 591f, 158f, 582f, 162f, 578f, 164f, 577f, 165f, 576f, 166f, 576f, 165f, 578f, 155f, 592f, 143f, 605f, 121f, 621f, 99f, 631f, 77f, 639f, 54f, 644f, 35f, 645f, 20f, 644f, 10f, 642f, 4f, 642f, 2f, 641f, 1f, 640f, 0f, 639f, 0f, 639f, 2f, 639f, 20f, 645f, 47f, 657f, 75f, 672f, 106f, 688f, 137f, 704f, 168f, 718f, 197f, 732f, 221f, 741f, 240f, 748f, 254f, 753f, 254f, 753f });
 
-System.Drawing.Point position = new System.Drawing.Point(100, 100);
+Android.Graphics.Point position = new Android.Graphics.Point(100, 100);
 InkAnnotation inkAnnotation = new InkAnnotation(inkPointsCollection, 1, position);
-inkAnnotation.Settings.Color = Color.Red;     
+inkAnnotation.Settings.Color = Android.Graphics.Color.Red;     
       
 //Adds the ink annotation to the specified page 
 pdfViewer.AddAnnotation(inkAnnotation);
