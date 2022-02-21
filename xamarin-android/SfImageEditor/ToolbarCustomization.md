@@ -1,13 +1,13 @@
 ---
 layout : post
-title : ToolbarCustomization in Syncfusion SfImageEditor control in Xamarin.Android
-description : Learn how to customize toolbar in ImageEditor for Xamarin.Android
+title : ToolbarCustomization in Syncfusion SfImageEditor in Xamarin.Android
+description : Learn how to customize toolbar in Syncfusion Xamarin.Android ImageEditor (SfImageEditor) Control, its elements, and more.
 platform : xamarin.android
 control : ImageEditor
 documentation : ug
 ---
 
-## ToolbarCustomization
+# ToolbarCustomization in Xamarin.Android ImageEditor
 
 You can customize the color palette, toolbar visibility and appearance of each toolbar item.
 
