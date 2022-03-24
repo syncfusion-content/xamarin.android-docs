@@ -1,13 +1,13 @@
 ---
 layout: post
 title: System Requirements | Xamarin.Android | Syncfusion
-description: System Requirements
+description: Describes about system requirements to install the Syncfusion Xamarin Android Components and list of supported platforms.
 platform: Xamarin.Android
 control: Introduction
 documentation: ug
 ---
 
-# System Requirements
+# System Requirements for Xamarin.Android
 
 ### Hardware Environment
 
