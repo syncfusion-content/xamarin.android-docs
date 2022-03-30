@@ -35,8 +35,8 @@ Add the following code in the Main.axml to include `NumericUpDown` control.
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 
-        <com.syncfusion.numerictextbox.SfNumericTextBox 
-	android:id="@+id/sfNumericTextBox"    
+        <com.syncfusion.numericupdown.SfNumericUpDown 
+	android:id="@+id/sfNumericUpDown"    
 	android:layout_height="wrap_content" 
 	android:layout_width="fill_parent" />
 
@@ -61,9 +61,9 @@ public class MainActivity : Activity
 
         SetContentView(Resource.Layout.content_main);
 
-        SfNumericTextBox textBox = (SfNumericTextBox)FindViewById(Resource.Id.sfNumericTextBox);
+        SfNumericUpDown numericUpDown = (SfNumericUpDown)FindViewById(Resource.Id.sfNumericUpDown);
 
-        textBox.Value = 30;
+        numericUpDown.Value = 30;
     }
 }
 
