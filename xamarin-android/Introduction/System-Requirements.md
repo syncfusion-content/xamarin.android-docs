@@ -1,13 +1,13 @@
 ---
 layout: post
 title: System Requirements | Xamarin.Android | Syncfusion
-description: System Requirements
+description: Describes about system requirements to install the Syncfusion Xamarin Android Components and list of supported platforms.
 platform: Xamarin.Android
 control: Introduction
 documentation: ug
 ---
 
-# System Requirements
+# System Requirements for Xamarin.Android
 
 ### Hardware Environment
 
@@ -45,35 +45,23 @@ The following table lists the platforms supported by our Xamarin.Android control
         </th>
     </tr>
     <tr>
-        <td rowspan="2">
+        <td>
             Android
             <br/>
             <br/>
         </td>
-        <td rowspan="2">
+        <td>
         Phone, Tablet
         <br/>
         <br/>
         </td>
         <td>
-            SfPdfViewer, SfCheckBox
+            All controls 
             <br/>
             <br/>
         </td>
          <td>
             API level 21 and later versions
-            <br/>
-            <br/>
-        </td>
-    </tr>
-     <tr>
-        <td>
-            All other controls 
-            <br/>
-            <br/>
-        </td>
-         <td>
-            API level 19 and later versions
             <br/>
             <br/>
         </td>
