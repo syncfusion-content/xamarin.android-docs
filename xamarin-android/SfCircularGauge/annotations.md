@@ -1,15 +1,13 @@
 ---
-
 layout: post
 title: Header in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: Learn how to set annotation in Syncfusion SfCircularGauge control
+description: Learn here about how to set annotation in Syncfusion Essential SfCircularGauge control, its elements, and more.
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
-
 ---
 
-# Annotations
+# Annotations in Xamarin.Android SfCircularGauge
 
 [`SfCircularGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html#Com_Syncfusion_Gauges_SfCircularGauge_SfCircularGauge_Annotations), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfCircularGauge.SfCircularGauge.html#Com_Syncfusion_Gauges_SfCircularGauge_SfCircularGauge_Annotations) property.
 
@@ -265,7 +263,7 @@ The following code is used to create the `Annotations`.
      
 {% endhighlight %}
 
-![](annotations_images/annotations.png)
+![Xamarin.Android SfCircularGauge Setting view annotation](annotations_images/annotations.png)
 
 ##  Setting image annotation
 
@@ -337,7 +335,7 @@ Annotations provide options to add any image over the gauge control with respect
 
 {% endhighlight %}
 
-![](annotations_images/image_annotation.PNG)
+![Xamarin.Android SfCircularGauge Setting image annotation](annotations_images/image_annotation.PNG)
 
 ##  Setting text annotation
 
@@ -407,4 +405,4 @@ You can add any text over the gauge control to enhance the readability. You can 
 
 {% endhighlight %}
 
-![](annotations_images/text_annotation.PNG)
+![Xamarin.Android SfCircularGauge Setting text annotation](annotations_images/text_annotation.PNG)
