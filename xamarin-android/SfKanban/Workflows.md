@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Workflows for Essential Xamarin.Android Kanban
-description: Kanban Workflows
+title: Workflows for Xamarin.Android Kanban Control | Syncfusion
+description: Learn here about Workflows support in Syncfusion Essential Xamarin.Android Kanban Control, its elements, and more.
 platform: xamarin.android
 control: Kanban
 documentation: ug
 ---
 
-# Workflows
+# Workflows in Xamarin.Android Kanban
 
 This feature is used to define the flow of card transition from one state to another. Create an instance of [`KanbanWorkflow`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanWorkflow.html) class and add it to the [`SfKanban.Workflows`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.SfKanban.html#Syncfusion_SfKanban_Android_SfKanban_Workflows) property to define the workflow for each column. The [`KanbanWorkflow`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfKanban.Android.KanbanWorkflow.html) contains the following properties to define the source category and target categories:
 
