@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NavigationDrawer control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion NavigationDrawer control for Xamarin.Android platform
+title: Getting Started with Syncfusion NavigationDrawer for Xamarin.Android
+description: Learn here about getting started with Syncfusion Xamarin.Android NavigationDrawer control, its elements, and more.
 platform: Xamarin.Android
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.Android NavigationDrawer
 
 This section provides overview for working with Essential NavigationDrawer for Xamarin.Android. You can walk through the entire process of creating an NavigationDrawer.
 
@@ -181,7 +181,7 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
 
 {% endtabs %}
 
-![](images/getting-started.png)
+![Xamarin.Android NavigationDrawer Add Main Content](images/getting-started.png)
 
 ## Set Drawing Edge for Drawer Panel
 
