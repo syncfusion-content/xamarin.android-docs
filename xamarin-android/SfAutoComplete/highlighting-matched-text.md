@@ -30,10 +30,9 @@ It highlights the first position of the matching characters in the suggestion li
 
 {% highlight C# %}
 
-countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
-countryNameAutoComplete.HighlightedTextColor = Color.Red; 
-countryNameAutoComplete.HighlightedTextFontAttributes = HighlightedTextFontAttributes.Bold;
+countryAutoComplete.TextHighlightMode = OccurrenceMode.FirstOccurrence; 
+countryAutoComplete.HighlightedTextColor = Color.Blue; 
+countryAutoComplete.HighlightedTextFontTypeFace = TypefaceStyle.Bold; 
 	 
 {% endhighlight %}
 
