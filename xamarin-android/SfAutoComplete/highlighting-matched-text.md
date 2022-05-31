@@ -7,6 +7,12 @@ control : SfAutoComplete
 documentation : ug
 ---
 
+{% banner %}
+
+{:.gradient_m}
+
+{% col_2_equal %}
+
 # Highlighting matched text
 
 Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
@@ -41,7 +47,7 @@ countryAutoComplete.HighlightedTextFontTypeFace = TypefaceStyle.Bold;
 N> The default Color of HighlightedTextColor is Red.
    The default FontAttribute of HighlightedTextFontAttributes is None.
 	
-![](images/FirstOccurrence.png)
+![First Occurrence AutoComplete Image](images/FirstOccurrence.png)
 
 ## Multiple Occurrence
 
@@ -60,7 +66,7 @@ countryNameAutoComplete.HighlightedTextFontAttributes = HighlightedTextFontAttri
 
 {% endtabs %}
 	
-![](images/MultipleOccurrence.png)
+![Multiple Occurrence AutoComplete Image](images/MultipleOccurrence.png)
 
 
 
