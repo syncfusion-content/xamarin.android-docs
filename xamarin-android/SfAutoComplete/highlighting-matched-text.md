@@ -1,7 +1,7 @@
 ---
 layout : post
-title : MatchHighlighting in Syncfusion SfAutoComplete control for Xamarin.Android
-description : Learn how to highlight the matched text in SfAutoComplete
+title: MatchHighlighting in Syncfusion SfAutoComplete control for Xamarin.Android
+description: Learn how to highlight the matched text in SfAutoComplete
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
