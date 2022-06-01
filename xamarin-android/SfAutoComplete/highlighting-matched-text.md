@@ -1,11 +1,17 @@
 ---
 layout : post
-title : MatchHighlighting in Syncfusion SfAutoComplete control for Xamarin.Android
-description : Learn how to highlight the matched text in SfAutoComplete
+title: MatchHighlighting text in Syncfusion SfAutoComplete control.
+description: Learn on how to highlight the matched text in SfAutoComplete for Xamarin.Android and also understood the highlight the matching characters in suggestion list
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
 ---
+
+{% banner %}
+
+{:.gradient_m}
+
+{% col_2_equal %}
 
 # Highlighting matched text
 
@@ -41,7 +47,7 @@ countryAutoComplete.HighlightedTextFontTypeFace = TypefaceStyle.Bold;
 N> The default Color of HighlightedTextColor is Red.
    The default FontAttribute of HighlightedTextFontAttributes is None.
 	
-![](images/FirstOccurrence.png)
+![First Occurrence AutoComplete Image](images/FirstOccurrence.png)
 
 ## Multiple Occurrence
 
@@ -60,7 +66,7 @@ countryNameAutoComplete.HighlightedTextFontAttributes = HighlightedTextFontAttri
 
 {% endtabs %}
 	
-![](images/MultipleOccurrence.png)
+![Multiple Occurrence AutoComplete Image](images/MultipleOccurrence.png)
 
 
 
