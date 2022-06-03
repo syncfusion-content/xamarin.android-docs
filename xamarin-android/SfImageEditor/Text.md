@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text in Syncfusion SfImageEditor control in Xamarin.Android
-description: This section explains how to add text in the SfImageEditor for Xamarin.Android and also explains how to customize the text using the TextSettings property
+title: Text in Xamarin.Android SfImageEditor control | Syncfusion
+description: Learn more on how to add and customize text in Syncfusion Xamarin.Android SfImageEditor control, it's elements, and more.  
 platform: xamarin.android
 control: SfImageEditor
 documentation: ug
 ---
 
-## Text
+# Text in Xamarin.Android SfImageEditor
 
 You can annotate the desired text elements to an image using the `AddText` method with customization options.
 
@@ -42,7 +42,7 @@ The `TextSettings` property consists of the following properties:
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/text.png)
+![Xamarin.Android SfImageEditor Text](ImageEditor_images/text.png)
 
 ## Custom Font Family
 
@@ -50,7 +50,7 @@ Using a font other than the built-in typefaces can be applied for image editor t
 
 Add the custom fonts into Assets folder and right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to `Copy Always`.
 
-![SfImageEditor](ImageEditor_images/CustomFont.png)   
+![Xamarin.Android SfImageEditor CustomFont](ImageEditor_images/CustomFont.png)   
 
 {% highlight C# %}
 
@@ -74,7 +74,7 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 
 {% endhighlight %}
 
-![SfImageEditor](ImageEditor_images/multiline.png)
+![Xamarin.Android SfImageEditor Multiline](ImageEditor_images/multiline.png)
 
 ## Text Rotation
 
@@ -104,7 +104,7 @@ You can rotate the text based on a particular angle using `Angle` property in `T
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/rotation.png)
+![Xamarin.Android SfImageEditor Rotation](ImageEditor_images/rotation.png)
 
 ## See also
 
