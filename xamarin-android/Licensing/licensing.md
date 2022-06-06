@@ -34,7 +34,3 @@ This application was built using a trial version of Syncfusion Essential Studio.
 </div>
 
 
-## See Also
-
-* [How to Generate Syncfusion Xamarin.Android License Key?](https://help.syncfusion.com/xamarin-android/licensing/generating-license-keys)
-* [How to Register Syncfusion License Key in Xamarin.Android Application?](https://help.syncfusion.com/xamarin-android/licensing/registering-license-keys)
