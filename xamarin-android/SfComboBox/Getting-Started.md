@@ -1,13 +1,13 @@
 ---
 layout : post
 title : Getting Started with Syncfusion ComboBox Control for Xamarin.Android
-description : A quick tour to initial users on Syncfusion SfComboBox control for Xamarin.Android platform 
+description : Learn here about getting started with Syncfusion Xamarin.Android SfComboBox control, its elements, and more. 
 platform : Xamarin.Android
 control : SfComboBox
 documentation : ug
 ---
 
-# Getting started
+# Getting started with Xamarin.Android SfComboBox
 
 This section explains the steps required to create combo box, populate it with data, and filter  suggestions.Here we create a simple sample for changing the resolution and this section covers only the minimal features that are needed to get started with the ComboBox.  
 
@@ -59,7 +59,7 @@ SetContentView(linearLayout);
 
 The following screenshot depicts view of the control after adding SfComboBox.
 
-![](images/GettingStarted_1.png)
+![Xamarin.Android SfComboBox Add SfComboBox](images/GettingStarted_1.png)
 
 	
 ## Adding items
@@ -118,7 +118,7 @@ SetContentView(linearLayout);
 
 The following screenshot depicts view of the control after adding items.
 
-![](images/GettingStarted_2.png)
+![Xamarin.Android SfComboBox Add Items](images/GettingStarted_2.png)
 
 Refer to this [link](https://help.syncfusion.com/xamarin-android/sfcombobox/populating-items) link to learn more about the options available in SfComboBox to populate data.
 
@@ -182,7 +182,7 @@ SetContentView(linearLayout);
 
 {% endtabs %}
 
-![](images/GettingStarted_3.png)
+![Xamarin.Android SfComboBox Combo box modes](images/GettingStarted_3.png)
 
  ## Editable combo box
 
@@ -238,7 +238,7 @@ SetContentView(linearLayout);
 
 {% endtabs %} 
 
-![](images/GettingStarted_4.png)
+![Xamarin.Android SfComboBox Editable combo box](images/GettingStarted_4.png)
 
 ## Selecting  item
 
@@ -314,7 +314,7 @@ SetContentView(linearLayout);
 
 The following screenshot depicts the output of previous codes.
 
-![](images/GettingStarted_5.png)
+![Xamarin.Android SfComboBox Select Items](images/GettingStarted_5.png)
 
 
 You can find the complete getting started sample from this [Link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1080051374)
