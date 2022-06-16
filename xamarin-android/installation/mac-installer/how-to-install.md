@@ -1,17 +1,20 @@
 ---
 layout: post
-title: Install and Getting Started Syncfusion component in Mac.
-description: The following section will explain about the Overview and Installation process of Xamarin application in Visual Studio for Mac.
+title: Installing Syncfusion Xamarin.android Mac installer - Syncfusion
+description: Learn here about how to install Syncfusion Xamarin.android mac installer after downloading from our Syncfusion website.
 platform: xamarin.android
 control: Syncfusion Controls
 documentation: ug
 ---
 
-# Overview of Syncfusion components Installation in Mac
+# Installing Syncfusion Xamarin.android Mac Installer
+
+
+## Overview of Syncfusion components Installation in Mac
 
 The Syncfusion Essential Studio allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components.
 
-## Mac Build and Installation
+### Step-by-Step Installation
 
 The steps below show how to install the Xamarin Mac installer. 
 
