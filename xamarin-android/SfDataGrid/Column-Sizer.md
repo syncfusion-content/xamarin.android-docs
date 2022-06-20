@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Column Sizer | SfDataGrid | Xamarin.Android | Syncfusion
-description: What are all the different ColumnSizer and how it works in a SfDataGrid.
+description: Learn here about Column Sizer in Syncfusion Essential Xamarin.Android SfDataGrid Control, its elements, and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: ug
 ---
 
-# Column Sizer
+# Column Sizer in Xamarin.Android SfDataGrid
 
 The SfDataGrid allows applying `ColumnSizer` for the [GridColumns](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html) by setting the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_ColumnSizer) property. 
 
@@ -32,7 +32,7 @@ No column sizing is applied when the [SfDataGrid.ColumnSizer](https://help.syncf
 dataGrid.ColumnSizer = ColumnSizer.None;
 {% endhighlight %}
 
-![](SfDataGrid_images/ColumnSizer_img1.png)
+![Xamarin.Android SfDataGrid ColumnSizer None](SfDataGrid_images/ColumnSizer_img1.png)
 
 ## ColumnSizer.LastColumnFill
 
@@ -42,7 +42,7 @@ When the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin-android
 dataGrid.ColumnSizer = ColumnSizer.LastColumnFill;
 {% endhighlight %}
 
-![](SfDataGrid_images/ColumnSizer_img2.png)
+![Xamarin.Android SfDataGrid ColumnSizer LastColumnFill](SfDataGrid_images/ColumnSizer_img2.png)
 
 ## ColumnSizer.Star
 
@@ -52,7 +52,7 @@ When the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin-android
 dataGrid.ColumnSizer = ColumnSizer.Star;
 {% endhighlight %}
 
-![](SfDataGrid_images/ColumnSizer_img3.png)
+![Xamarin.Android SfDataGrid ColumnSizer Star](SfDataGrid_images/ColumnSizer_img3.png)
 
 ## ColumnSizer.Auto
 
@@ -62,7 +62,7 @@ When the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin-android
 dataGrid.ColumnSizer = ColumnSizer.Auto;
 {% endhighlight %}
 
-![](SfDataGrid_images/ColumnSizer_img4.png)
+![Xamarin.Android SfDataGrid ColumnSizer Auto](SfDataGrid_images/ColumnSizer_img4.png)
 
 N> If any column is specified a width explicitly using the [GridColumn.Width](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html#Syncfusion_SfDataGrid_GridColumn_Width) property, that column is not considered for column sizing the width and skipped while applying the ColumnSizer for grid columns.
 
@@ -122,7 +122,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/FillRemainingColumns_Xamarin_Android.png)
+![Xamarin.Android SfDataGrid width for any column](SfDataGrid_images/FillRemainingColumns_Xamarin_Android.png)
 
 ### Refreshing ColumnSizer for the SfDataGrid at runtime
 
@@ -160,7 +160,7 @@ private void ColumnSizerChanged(object sender, System.EventArgs e)
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/Refreshing-Columnsizer_Xamarin.Android.gif)
+![Xamarin.Android SfDataGrid at runtime](SfDataGrid_images/Refreshing-Columnsizer_Xamarin.Android.gif)
 
 ### Resetting column width to apply ColumnSizer   
 
@@ -227,7 +227,7 @@ private void ResetColumnsWidth()
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/Reset_ColumnWidth_Xamarin.Android.png)
+![Xamarin.Android SfDataGrid Reset ColumnWidth](SfDataGrid_images/Reset_ColumnWidth_Xamarin.Android.png)
 
 ## Star column sizer ratio support
 
@@ -395,4 +395,4 @@ public class ViewModel : INotifyPropertyChanged
 }
 {% endhighlight %} 
 
-![](SfDataGrid_images/StarColumnSizerRatio_Xamarin.Android.png)
+![Xamarin.Android SfDataGrid Star column sizer ratio support](SfDataGrid_images/StarColumnSizerRatio_Xamarin.Android.png)
