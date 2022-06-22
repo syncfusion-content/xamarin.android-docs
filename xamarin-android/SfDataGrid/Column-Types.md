@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Column Types | SfDataGrid | Xamarin.Android | Syncfusion
-description: What are all the different types of column and it's properties and customizations in a SfDataGrid.
+description: What are all the different types of column and it's properties and customizations in a Syncfusion Xamarin.Android SfDataGrid Control.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Column Types
+# Column Types in Xamarin.Android SfDataGrid
 
 The SfDataGrid contains two types of columns each with its own functionalities. You can use any column.
  
@@ -352,7 +352,7 @@ public class CustomCell : GridCell
 {% endhighlight %}
 
 The following screenshot shows how template columns are used in SfDataGrid
-![](SfDataGrid_images/ColumnTypes.png)
+![Xamarin.Android SfDataGrid column types](SfDataGrid_images/ColumnTypes.png)
 
 ## Row header 
 
@@ -440,7 +440,7 @@ public class ViewModel
     #endregion
 } 
 {% endhighlight %}
-![](SfDataGrid_images/SwitchColumn.png)
+![Xamarin.Android SfDataGrid row header](SfDataGrid_images/SwitchColumn.png)
 
 ### Editing for switch column
 
@@ -540,7 +540,7 @@ public class ViewModel
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/ImageColumn.png)
+![Xamarin.Android SfDataGrid embedded sources](SfDataGrid_images/ImageColumn.png)
 
 N> The images should have its BuildAction set as EmbeddedResource, since getting the image as stream from an [Assembly.GetManifestResourceStream](https://developer.xamarin.com/api/member/System.Reflection.Assembly.GetManifestResourceStream/p/System.Type/System.String/) in the LoadResource method.
 
@@ -635,7 +635,7 @@ public class ViewModel
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/DateTimeColumn.png)
+![Xamarin.Android SfDataGrid datetime column](SfDataGrid_images/DateTimeColumn.png)
 
 N> You have to pass the activity itself as the context when creating a `GridPickerColumn`, since you have customized an alert dialog to display a picker.
 
@@ -646,7 +646,7 @@ The [GridPickerColumn](https://help.syncfusion.com/cr/xamarin-android/Syncfusion
 * Collection of primitive types
 * Collection of user defined types (Custom objects)
 
-![](SfDataGrid_images/PickerColumn.png)
+![Xamarin.Android SfDataGrid picker column](SfDataGrid_images/PickerColumn.png)
 
 ### Collection of primitive types
 
@@ -803,15 +803,15 @@ The following screenshots explains the above code and shows the working of the `
 
 Here in the above code example underlying collection has 2 properties (OrderID,EmployeeID). We have created a `GridPickerColumn` with MappingName = OrderID, DisplayMemberPath = EmployeeID, ValueMemberPath = OrderID. EmployeeId has the values 6,7,8,9,10.... and OrderID has the values 1,2,3,4,5.... Initially, the GridCells of the `PickerColumn` will be displayed with the values 6,7,8,9,10.... in row wise order based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_DisplayMemberPath.png)
+![Xamarin.Android SfDataGrid pickerColumn displaymemberpath](SfDataGrid_images/PickerColumn_DisplayMemberPath.png)
 
 Upon entering the edit mode at RowColumnIndex(1,1), the picker pop-up opens and with the picker items as 6,7,8,9,10.... again based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_PickerPopUp.png)
+![Xamarin.Android SfDataGrid picker popup](SfDataGrid_images/PickerColumn_PickerPopUp.png)
 
 When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index (0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4. Note that the PickerColumn's `GridCell` data is not changed and only the OrderID columns data is changed to 4. 
 
-![](SfDataGrid_images/PickerColumn_Customization.png)
+![Xamarin.Android SfDataGrid customization](SfDataGrid_images/PickerColumn_Customization.png)
 
 ## GridNumericColumn
 
@@ -840,4 +840,4 @@ dataGrid.Columns.Add(numericColumn);
 * [MinValue](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridEditorColumn.html#Syncfusion_SfDataGrid_GridEditorColumn_MinValue): You can set the minimum value for the numeric column using the `GridNumericColumn.MinValue` property.
 * [MaxValue](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridEditorColumn.html#Syncfusion_SfDataGrid_GridEditorColumn_MaxValue): You can set the maximum value for the numeric column using the `GridNumericColumn.MaxValue` property.
 
-![](SfDataGrid_images/NumericColumn.png)
+![Xamarin.Android SfDataGrid numericColumn](SfDataGrid_images/NumericColumn.png)
