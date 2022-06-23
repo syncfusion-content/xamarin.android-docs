@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Built-in customizations | SfPullToRefresh | Xamarin.Android | Syncfusion
-description: Built-in customizations in SfPullToRefresh
+title: Built in customizations in Xamarin.Android SfPullToRefresh| Syncfusion
+description: Learn here about Built-in customizations in Syncfusion Xamarin.Android SfPullToRefresh Control, its elements, and more.
 platform: Xamarin.Android
 control: SfPullToRefresh
 documentation: ug
 --- 
 
-# Built-in Customizations
+# Built-in Customizations in Xamarin.Android SfPullToRefresh
 
 This section gives a quick overview of the various built-in customizations supported by SfPullToRefresh.
 
@@ -262,5 +262,5 @@ private async void PerformRefreshing()
 The following GIF demonstrates the programmatic refresh:
 
 <div style="text-align:center" markdown="1">
-![](built_in_customization_images\ProgrammaticRefresh_Android.gif)
+![Xamarin.Android SfPullToRefresh built in customization](built_in_customization_images\ProgrammaticRefresh_Android.gif)
 </div>
