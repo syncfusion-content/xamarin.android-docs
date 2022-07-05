@@ -20,5 +20,5 @@ I> * Syncfusion license keys are **version and platform specific**, refer to the
 
 ## See Also
 
-* [How to Register Syncfusion License Key in Xamarin.Android Application?](https://help.syncfusion.com/xamarin-android/licensing/registering-license-keys)
+* [How to Register Syncfusion License Key in Xamarin.Android Application?](https://help.syncfusion.com/xamarin-android/licensing/how-to-register-in-an-application)
 
