@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grouping | SfDataGrid | Xamarin.Android | Syncfusion
-description: How to use different events exposed in SfDataGrid
+description: Learn here about Grouping support in Syncfusion Essential Xamarin.Android SfDataGrid Control, its elements, and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Grid Events
+# Grouping in Xamarin.Android SfDataGrid
 
 ## GridTapped event
 
@@ -274,4 +274,4 @@ public class MainActivity : Activity
 
 Refer to the following GIF for the final rendering on execution of the above code example:
 
-![](SfDataGrid_images/CustomContextMenu.gif)
+![Xamarin.Android SfDataGrid Custom Context Menu](SfDataGrid_images/CustomContextMenu.gif)
