@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-## Text
+# Text in Xamarin.Android SfImageEditor
 
 You can annotate the desired text elements to an image using the `AddText` method with customization options.
 
