@@ -1,13 +1,13 @@
 ---
 layout : post
 title : Header and Footer in Syncfusion SfAutoComplete control for Xamarin.Android
-description :  Learn how to enable Header and Footer in SfAutoComplete
+description : Learn here about how to enable Header and Footer in Syncfusion Essential Xamarin.Android SfAutoComplete Control, its elements, and more.
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
 ---
 
-## Header and Footer
+# Header and Footer in Xamarin.Android SfAutoComplete
 
 We can provide Header and Footer content in the SfAutoComplete by enabling `ShowDropDownHeaderView` and `ShowDropDownFooterView`. 
 
@@ -42,7 +42,7 @@ countryAutoComplete.DropDownHeaderView = textView;
 
 {% endtabs %}
 
-![](images/Header.png)
+![Xamarin.Android SfAutoComplete header](images/Header.png)
 
 ## Footer Content
 
@@ -74,7 +74,7 @@ countryAutoComplete.DropDownFooterView = textView;
 
 {% endtabs %}
 
-![](images/Footer.png)
+![Xamarin.Android SfAutoComplete footer](images/Footer.png)
 
 
 
