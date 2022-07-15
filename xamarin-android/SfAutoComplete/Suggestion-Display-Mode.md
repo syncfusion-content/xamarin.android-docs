@@ -1,6 +1,6 @@
 ---
 layout : post
-title: AutoComplete mode for Syncfusion AutoComplete control in Xamarin.Android
+title: AutoComplete mode in Xamarin.Android SfAutoComplete Control|Syncfusion
 description: Learn here about Suggestion Display Mode in Syncfusion Essential Xamarin.Android SfAutoComplete Control, its elements, and more.
 platform: Xamarin.Android
 control: SfAutoComplete
