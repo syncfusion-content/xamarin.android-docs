@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Character customization of DigitalGauge
-description: Learn how to customise the Character in DigitalGauge
+title: Character customization of Xamarin.Android DigitalGauge | Syncfusion
+description: Learn here about how to customise the Character in Syncfusion Essential Xamarin.Android DigitalGauge Control, its elements, and more.
 platform: Xamarin.Android 
 control: DigitalGauge
 documentation: ug
 ---
 
-# Customize character segments
+# Customize character segments in Xamarin.Android DigitalGauge
 
 The characters of a digital gauge can be customized in terms of [`CharacterWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html#Com_Syncfusion_Gauges_SfDigitalGauge_SfDigitalGauge_CharacterWidth), [`CharacterHeight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html#Com_Syncfusion_Gauges_SfDigitalGauge_SfDigitalGauge_CharacterHeight), [`CharacterSpacing`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html#Com_Syncfusion_Gauges_SfDigitalGauge_SfDigitalGauge_CharactersSpacing), and [`CharacterStroke`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfDigitalGauge.SfDigitalGauge.html#Com_Syncfusion_Gauges_SfDigitalGauge_SfDigitalGauge_CharacterStroke).
 
@@ -55,7 +55,7 @@ The values of digital characters are scaled by altering the height and width of 
 
 {% endhighlight %}
 
-![](Customize-Character-Segments_images/Customize-Character-Segments_img1.png)
+![Xamarin.Android DigitalGauge customize character size](Customize-Character-Segments_images/Customize-Character-Segments_img1.png)
 
 ## Setting character spacing
 
@@ -103,7 +103,7 @@ The values of digital characters are spaced by altering the space of digital cha
 
 {% endhighlight %}
 
-![](Customize-Character-Segments_images/Customize-Character-Segments_img2.png)
+![Xamarin.Android DigitalGauge Setting character spacing](Customize-Character-Segments_images/Customize-Character-Segments_img2.png)
 
 ## Customize character segment stroke
 
@@ -151,7 +151,7 @@ The values of digital characters color can be customized using the [`CharacterSt
 
 {% endhighlight %}
 
-![](Customize-Character-Segments_images/Customize-Character-Segments_img3.png)
+![Xamarin.Android DigitalGauge Customize character segment stroke](Customize-Character-Segments_images/Customize-Character-Segments_img3.png)
 
 ## Customize disabled segment
 
@@ -199,4 +199,4 @@ You can customize the color and opacity of disabled segments using the [`DimmedS
 
 {% endhighlight %}
 
-![](Customize-Character-Segments_images/Customize-Character-Segments_img4.png)
+![Xamarin.Android DigitalGauge Customize disabled segment](Customize-Character-Segments_images/Customize-Character-Segments_img4.png)
