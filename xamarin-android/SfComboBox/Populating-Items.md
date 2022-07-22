@@ -1,13 +1,13 @@
 ---
-layout : post
-title : DataSource mode in Syncfusion ComboBox control for Xamarin.Android
-description : Learn how to use DataSource in SfComboBox 
-platform : Xamarin.Android
-control : SfComboBox
-documentation : ug
+layout: post
+title: DataSource mode in Syncfusion ComboBox control for Xamarin.Android
+description: Learn here about populating items in Syncfusion Essential Xamarin.Android ComboBox Control, its elements, and more.
+platform: Xamarin.Android
+control: SfComboBox
+documentation: ug
 ---
 
-# Populating data
+# Populating items in Xamarin.Android ComboBox
 
 * The combo box control can be populated with a list of string or business objects, which assist users when typing. Users can choose an item from the filtered suggestion list.
 
@@ -33,7 +33,7 @@ comboBox.ComboBoxMode= ComboBoxMode.Suggest;
 
 {% endtabs %}
 	
-![](images/populatestringdata.png)
+![Xamarin.Android ComboBox Populating business objects](images/populatestringdata.png)
 
 ## Populating business objects
  
@@ -114,4 +114,4 @@ comboBox.DataSource = new EmployeeViewModel().EmployeeCollection;
 
 {% endtabs %}
 
-![](images/populatebusiness.png)
+![Xamarin.Android ComboBox populate business](images/populatebusiness.png)
