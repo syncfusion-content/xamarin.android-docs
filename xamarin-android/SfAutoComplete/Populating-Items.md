@@ -1,13 +1,13 @@
 ---
-layout : post
-title : AutoCompleteSource mode in Syncfusion AutoComplete control for Xamarin.Android
-description : Learn how to use AutoCompleteSource in SfAutoComplete 
-platform : Xamarin.Android
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Populating Items in Xamarin.Android SfAutoComplete Control| Syncfusion
+description: Learn here about Populating Items in Syncfusion Essential Xamarin.Android SfAutoComplete Control, its elements, and more.
+platform: Xamarin.Android
+control: SfAutoComplete
+documentation: ug
 ---
 
-# Populating Items
+# Populating Items in Xamarin.Android SfAutoComplete
 
 * The `AutoCompleteSource` property in the SfAutoComplete control is used to set the list of strings to the suggestions dropdown using DataAdapter.
 
@@ -32,5 +32,5 @@ documentation : ug
 
 {% endtabs %}
 	
-![](images/autocompletesource.png)
+![Xamarin.Android SfAutoComplete AutoComplete Source](images/autocompletesource.png)
 
