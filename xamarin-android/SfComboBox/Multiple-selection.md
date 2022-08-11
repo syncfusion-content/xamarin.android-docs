@@ -7,7 +7,7 @@ control : SfComboBox
 documentation : ug
 ---
 
-# Multiple selection
+# Multiple selection in Xamarin.Android SfComboBox
 
 Select multiple items from a suggestion list. In the combo box, you can perform multi selection in the following two ways:
 
@@ -105,7 +105,7 @@ comboBox.ImageMemberPath = "Image";
 
 {% endtabs %}
 
-![](images/TokenRepresentationWrap.png)
+![Xamarin.Android SfComboBox TokenRepresentationWrap](images/TokenRepresentationWrap.png)
 
 ### Token customization
 
@@ -144,7 +144,7 @@ comboBox.TokenSettings = token;
 
 {% endtabs %}
 
-![](images/TokenCustomization.png)
+![Xamarin.Android SfComboBox TokenCustomization](images/TokenCustomization.png)
 
 ## Delimiter
 
@@ -161,7 +161,7 @@ comboBox.MultiSelectMode = MultiSelectMode.Delimiter;
 
 {% endtabs %}
 	
-![](images/defaultdelimiter.png)
+![Xamarin.Android SfComboBox defaultdelimiter](images/defaultdelimiter.png)
 
 We can add the custom delimiter character by `Delimiter` property.
 	
@@ -175,7 +175,7 @@ comboBox.Delimiter = '#';
 
 {% endtabs %}
 	
-![](images/delimiter.png)
+![Xamarin.Android SfComboBox delimiter](images/delimiter.png)
 
 
 
