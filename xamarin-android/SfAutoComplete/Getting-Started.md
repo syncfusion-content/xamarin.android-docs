@@ -1,13 +1,13 @@
 ---
 layout : post
 title : Getting Started with Syncfusion AutoComplete Control for Xamarin.Android
-description : A quick tour to initial users on Syncfusion SfAutoComplete control for Xamarin.Android platform 
+description : Learn here about getting started with Syncfusion Xamarin.Android AutoComplete control, its elements, and more.
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
 ---
 
-# Getting Started
+# Getting Started in Xamarin.Android AutoComplete
 
 This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
@@ -132,7 +132,7 @@ SetContentView(linearLayout);
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![Xamarin.Android AutoComplete gettingstarted](images/gettingstarted.png)
 
 ## Creating AutoComplete control in AXML layout
 
