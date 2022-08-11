@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Sorting 
+# Sorting in Xamarin.Android SFDataGrid
  
 The dataGrid allows sorting on its data by setting the [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html#Syncfusion_SfDataGrid_GridColumn_AllowSorting) property to `true`. It allows sorting the data against one or more columns. When sorting is applied, the data grid automatically rearranges the data to match with the current sort criteria. When the `SfDataGrid.AllowSorting` is `true`, you can sort the data simply by tapping the column header. Once sorting is applied, the data grid shows a sort icon in the respective column header indicating the direction of sorting.
 
@@ -44,7 +44,7 @@ The following code example shows how to enable tri-state sorting in the data gri
 dataGrid.AllowTriStateSorting = true;
 {% endhighlight %}
 
-![](SfDataGrid_images/Tristate_Sorting.gif)
+![Xamarin.Android SFDataGrid tri-state sorting](SfDataGrid_images/Tristate_Sorting.gif)
 
 ## Multi-column sorting
 
@@ -56,7 +56,7 @@ The following code example shows how to enable multi-sorting in the data grid:
 dataGrid.AllowMultiSorting = true;
 {% endhighlight %}
 
-![](SfDataGrid_images/MultiColumn_Sorting.gif)
+![Xamarin.Android SFDataGrid multi column sorting](SfDataGrid_images/MultiColumn_Sorting.gif)
 
 ## Sort column by double click
 
@@ -71,7 +71,7 @@ dataGrid.SortTapAction=SortTapAction.DoubleTap;
 {% endhighlight %}
 
 The following screenshot shows the sorting functionality in the data grid:
-![](SfDataGrid_images/Sorting.png)
+![Xamarin.Android SFDataGrid sort-column by double click](SfDataGrid_images/Sorting.png)
 
 ## Sorting events
 
