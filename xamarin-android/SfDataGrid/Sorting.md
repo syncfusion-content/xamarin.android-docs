@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting | SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here all more about sorting support in Syncfusion Essential Xamarine.Android SFDataGrid control, its elements, and more..
+description: Learn here all about sorting support in Syncfusion Essential Xamarine.Android SFDataGrid control, its elements, and more..
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
