@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Getting Started with Syncfusion AutoComplete Control for Xamarin.Android
-description : A quick tour to initial users on Syncfusion SfAutoComplete control for Xamarin.Android platform 
+title : Getting-Started | SfAutoComplete | Xamarin.Android | Syncfusion
+description : Learn here all about getting started with Syncfusion AngularJS RichTextEditor control, its elements, and more.
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.Android SfAutoComplete
 
 This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
@@ -98,4 +98,4 @@ countryAutoComplete.MinimumPrefixCharacters = 2;
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![Xamarin.Android SfAutoComplete set filter mode](images/gettingstarted.png)

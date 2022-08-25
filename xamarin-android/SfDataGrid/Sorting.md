@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Sorting | SfDataGrid | Xamarin.Android | Syncfusion
-description: How to sort the data and about the properties and events that involve in sorting in a SfDataGrid.
+description: Learn here all about sorting support in Syncfusion Essential Xamarin.Android SFDataGrid control, its elements, and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Sorting 
+# Sorting in Xamarin.Android SfDataGrid
  
 SfDataGrid allows you to apply sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) property to `true`. It allows you to sort the data against one or more columns. When sorting is applied, the SfDataGrid automatically rearranges the data to match with the current sort criteria. When `SfDataGrid.AllowSorting` is `true`, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the SfDataGrid shows a sort icon in the respective column header indicating the direction of sorting.
 
@@ -68,7 +68,7 @@ dataGrid.SortTapAction=SortTapAction.DoubleTap;
 {% endhighlight %}
 
 The following screenshot shows the sorting functionality in SfDataGrid
-![](SfDataGrid_images/Sorting.png)
+![Xamarin.Android SfDataGrid sort column in double click](SfDataGrid_images/Sorting.png)
 
 ## Sorting Events
 
