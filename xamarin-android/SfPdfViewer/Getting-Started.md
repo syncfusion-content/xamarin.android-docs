@@ -64,6 +64,7 @@ Please add the below code snippet in the MainActivity class
 * In the MainActivity.cs class, declare an instance of SfPdfViewer globally. 
 * In the override method OnCreate, set the content view to Main, locate the PDF viewer and load the PDF document.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -80,6 +81,8 @@ protected override void OnCreate(Bundle bundle)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 Deploying this project in the Android device would display the PDF document and allow you to scroll and zoom through the pages.
 
@@ -522,6 +525,7 @@ In MainActivity.cs, please add the below code snippet which contains the impleme
 * Navigate to the previous page
 * Navigate to the next page
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -630,6 +634,8 @@ namespace GettingStartedDroid
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 The final output will look as like in the below screenshot.
 

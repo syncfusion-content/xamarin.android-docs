@@ -93,7 +93,8 @@ Node constraints allow to enable or disable the following behaviors of node.
 * Rotate
 * AnnotationEditing
 * IsLocked
-Example:
+
+**Example:**
 The following code illustrates how to disable node dragging:
 {% tabs %}
 {% highlight c# %}
