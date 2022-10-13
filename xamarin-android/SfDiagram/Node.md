@@ -6,7 +6,7 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Node
+# Node in Xamarin.Android Diagram
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data. It represents the functions of a complete system in regards to how it interacts with external entities.
 
 ## Create node
