@@ -1,6 +1,6 @@
 ---
 title: Node in Xamarin.Android diagram control | Syncfusion
-description: Briefs about node,customization of node and node constraints in Xamarin.Android
+description: Briefs about Node support,customization of node and node constraints in Xamarin.Android diagram control
 platform: Xamarin.Android
 control: SfDiagram
 documentation: UG
