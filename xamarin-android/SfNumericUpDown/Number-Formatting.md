@@ -90,6 +90,8 @@ It provides the following options
 
 * `Value`: Displays the value with percentage symbol.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
@@ -100,7 +102,13 @@ It provides the following options
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * `Compute`: Displays the computed value with percentage symbol.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -111,5 +119,9 @@ It provides the following options
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![](images/percent.png)

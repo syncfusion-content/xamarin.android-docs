@@ -73,6 +73,8 @@ Also, you can create the `NumericUpDown` control using the code behind. The foll
 
 * Adding reference to NumericUpDown.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight c# %}
@@ -83,7 +85,13 @@ using Com.Syncfusion.NumericUpDown;
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Create an instance of SfNumericUpDown.
+
+{% capture codesnippet1 %}
 
 {% tabs %}
 
@@ -95,6 +103,10 @@ SetContentView(numeric);
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ## Set Value
 

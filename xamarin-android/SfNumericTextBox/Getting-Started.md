@@ -27,6 +27,8 @@ android\Syncfusion.SfNumericTextBox.Android.dll
 
 * Adding reference to NumericTextBox.
 
+{% capture codesnippet1 %}
+ 
 {% tabs %}
 
 {% highlight c# %}
@@ -37,8 +39,14 @@ using Com.Syncfusion.NumericTextBox;
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
+
 * Create an instance of SfNumericTextBox.
 
+{% capture codesnippet2 %}
+ 
 {% tabs %}
 
 {% highlight c# %}
@@ -49,6 +57,10 @@ SetContentView(numericTextBox);
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ## Set Value
 
