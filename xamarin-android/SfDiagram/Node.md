@@ -1,12 +1,11 @@
 ---
 title: Node in Xamarin.Android diagram control | Syncfusion
-description: Briefs about node,customization of node and node constraints in Xamarin.Android diagram control 
+description: Briefs about node,customization of node and node constraints in Xamarin.Android
 platform: Xamarin.Android
 control: SfDiagram
 documentation: UG
 keywords: 
 ---
-
 # Node
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data. It represents the functions of a complete system in regards to how it interacts with external entities.
 
