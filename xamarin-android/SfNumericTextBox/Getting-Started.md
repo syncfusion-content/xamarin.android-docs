@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericTextBox control for Xamarin.Android
+title: Getting Started with SfNumericTextBox control for Xamarin.Android
 description: A quick tour to initial users on Syncfusion numericTextBox control for Xamarin.Android platform 
 platform: Xamarin.Android
 control: NumericTextBox
