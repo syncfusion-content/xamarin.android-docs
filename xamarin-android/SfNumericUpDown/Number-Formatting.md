@@ -6,7 +6,7 @@ platform: Xamarin.Android
 control: NumericUpDown
 documentation: ug
 ---
-# Number Formatting in SfNumericUpDown
+# Number Formatting in NumericUpDown (SfNumericUpDown)
 
 The Values of the SfNumericUpDown can be configured to display different formats like currency format, percent format etc. 
 
@@ -60,7 +60,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericUpDown.
 
-![Xamarin.Android_SfNumericUpDown_Percentage_Notation](images/format.png)
+![Xamarin.Android SfNumericUpDown percentage notation](images/format.png)
 
 ## Parser Input Value
 
@@ -78,7 +78,7 @@ numeric.ParserMode=ParserMode.Decimal;
 
 {% endtabs %}
 
-![Xamarin.Android_SfNumericUpDown_Parser_Input_Value](images/ParserMode.png)
+![Xamarin.Android SfNumericUpDown parser mode](images/ParserMode.png)
 
 ## Compute to Percentage
 
@@ -124,4 +124,4 @@ It provides the following options
 
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
-![Xamarin.Android_SfNumericUpDown_Compute_to_Percentage](images/percent.png)
+![Xamarin.Android SfNumericUpDown compute to percentage](images/percent.png)

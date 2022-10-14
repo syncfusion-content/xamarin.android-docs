@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion NumericTextBox control
-description: A quick tour to initial users on Syncfusion NumericTextBox(SfNumericTextBox) control for Xamarin.Android platform 
+description: A quick tour to initial users on Syncfusion NumericTextBox (SfNumericTextBox) control for Xamarin.Android platform 
 platform: Xamarin.Android
 control: NumericTextBox
 documentation: ug
 ---
 
-# Getting Started with Xamarin.Android NumericTextBox(SfNumericTextBox)
+# Getting Started with Xamarin.Android NumericTextBox (SfNumericTextBox)
 
 This section explains you the steps to configure a SfNumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNumericTextBox control.
 
@@ -115,4 +115,4 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% endtabs %}
 
-![Xamarin.Android_Getting Started](images/gettingstarted.png) 
+![Xamarin.Android NumericTextBox](images/gettingstarted.png) 
