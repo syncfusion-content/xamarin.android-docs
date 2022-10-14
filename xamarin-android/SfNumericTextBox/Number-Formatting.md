@@ -89,6 +89,8 @@ N> The control displays the percent value on lost focus.
 
 * `Value`: Displays the value with percentage symbol.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight c# %}
@@ -99,7 +101,13 @@ N> The control displays the percent value on lost focus.
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * `Compute`: Displays the computed value with percentage symbol.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -110,6 +118,10 @@ N> The control displays the percent value on lost focus.
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![Percent display mode](images/PercentDisplayMode.png)
 
