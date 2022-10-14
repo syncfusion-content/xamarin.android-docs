@@ -39,7 +39,7 @@ android:id="@+id/linear_layout">
 Please add the below code snippet in the MainActivity class
 *	In the MainActivity.cs class, declare an instance of SfDiagram globally.
 *	In the override method OnCreate, set the content view to Main.
-{% capture codesnippet1 %}
+
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.SfDiagram.Android;
@@ -58,8 +58,6 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 The following code snippet illustrates the creation of Nodes and Connectors in the diagram.
 {% tabs %}
 {% highlight c# %}
@@ -137,7 +135,7 @@ public class Employees : ObservableCollection<Employee>
 Define Employee Information as a Collection. The below code example shows an employee array whose,
 * Name is used as a unique identifier and
 * ParentId is used to identify the person to whom an employee report to, in the organization.
-{% capture codesnippet1 %}
+
 {% tabs %}
 {% highlight c# %}
 //Initializes the employee collection
@@ -156,8 +154,6 @@ DirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 8
 diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 The Employee data is displayed in the SfDiagram as follows
 ![Organization chart demo in Xamarin.Android diagram](images/Getting-Started_img3.jpeg)
 
