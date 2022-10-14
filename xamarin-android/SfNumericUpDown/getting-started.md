@@ -91,7 +91,7 @@ using Com.Syncfusion.NumericUpDown;
 
 * Create an instance of SfNumericUpDown.
 
-{% capture codesnippet1 %}
+{% capture codesnippet2 %}
 
 {% tabs %}
 
