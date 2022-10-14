@@ -7,7 +7,7 @@ control: NumericTextBox
 documentation: ug
 ---
 
-# Getting Started     
+# Getting Started with Xamarin.Android NumericTextBox(SfNumericTextBox)
 
 This section explains you the steps to configure a SfNumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNumericTextBox control.
 
