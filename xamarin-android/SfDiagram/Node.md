@@ -1,12 +1,12 @@
 ---
 title: Node in Xamarin.Android diagram control | Syncfusion
-description: Briefs about node,customization of node and node constraints in Xamarin.Android diagram control 
+description: Briefs about Node support,customization of node and node constraints in Xamarin.Android diagram control
 platform: Xamarin.Android
 control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Node
+# Node in Xamarin.Android Diagram
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data. It represents the functions of a complete system in regards to how it interacts with external entities.
 
 ## Create node
@@ -93,7 +93,8 @@ Node constraints allow to enable or disable the following behaviors of node.
 * Rotate
 * AnnotationEditing
 * IsLocked
-Example:
+
+**Example:**
 The following code illustrates how to disable node dragging:
 {% tabs %}
 {% highlight c# %}
