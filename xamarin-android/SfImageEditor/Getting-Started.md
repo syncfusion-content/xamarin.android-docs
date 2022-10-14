@@ -30,6 +30,8 @@ The following steps explain on how to create a image editor  and configure its e
 
 * Create an instance of SfImageEditor.
 
+{% capture codesnippet1 %}
+
 {% highlight C# %}
 
     SfImageEditor editor  = new SfImageEditor(this);
@@ -37,7 +39,13 @@ The following steps explain on how to create a image editor  and configure its e
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Load an image to the image editor as bitmap object.Since SfImageEditor supports bitmap images you can load the image to the control as a bitmap object only.
+
+{% capture codesnippet2 %}
 
 {% highlight C# %}
 
@@ -46,7 +54,9 @@ The following steps explain on how to create a image editor  and configure its e
  
 {% endhighlight %}
 
+{% endcapture %}
 
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 * Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
 

@@ -11,7 +11,9 @@ User handles are customizable handles which can be used to perform custom action
 * SfGraphicPath
 * Image
 * View
+
 The following code illustrates how to add custom user handle in diagram:
+
 {% tabs %}
 {% highlight c# %}
 //Add graphic path into user handle
