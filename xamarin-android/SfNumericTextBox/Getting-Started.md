@@ -7,7 +7,7 @@ control: NumericTextBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started     
 
 This section explains you the steps to configure a SfNumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNumericTextBox control.
 
@@ -115,4 +115,4 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% endtabs %}
 
-![](images/gettingstarted.png) 
+![Xamarin.Android_Getting Started](images/gettingstarted.png) 
