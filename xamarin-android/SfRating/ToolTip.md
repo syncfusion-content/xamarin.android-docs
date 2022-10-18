@@ -17,9 +17,9 @@ Tooltip provides additional information about objects that are unfamiliar to use
 
 Using the `ToolTipPlacement` property, you can define where the tooltip needs to be displayed. The `TooTipPlacement` property have the following three types:
 
-*BottomRight
-*None
-*TopLeft
+* BottomRight
+* None
+* TopLeft
 
 N> By default, value of the `ToolTipPlacement` property is set to None.
 
