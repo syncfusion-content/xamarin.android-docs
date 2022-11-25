@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in Syncfusion Xamarin.Android Chart
-description: How to add Selection support in Syncfusion Xamarin.Android Chart(SfChart) control.
+description: Learn here about Selection support in Syncfusion Xamarin.Android Chart(SfChart) control, its elements and more.
 platform: Android
 control: Chart
 documentation: ug

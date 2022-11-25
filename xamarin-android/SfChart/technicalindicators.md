@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Technical Indicators in Xamarin.Android Chart control | Syncfusion
-description: How to enable technical indicator behavior in Essential Xamarin.Android Chart
+description: Learn here about Technical Indicators support in Syncfusion Xamarin.Android Chart(SfChart) control and more.
 platform: Xamarin.Android
 control: Chart
 documentation: ug
