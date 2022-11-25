@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Technical Indicators
-description: How to enable and customize the technical indicator behavior in Essential Xamarin.Android Chart
+title: Technical Indicators in Xamarin.Android Chart control | Syncfusion
+description: Learn here about how to enable technical indicator behavior in Essential Xamarin.Android Chart
 platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
 
-# Technical Indicators
+# Technical Indicators in Xamarin.Android Chart(SfChart)
 
 The different types of technical indicators available in chart are follows:
 

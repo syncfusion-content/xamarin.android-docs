@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Point Selection in Syncfusion Chart
-description: How to select the data point in Android Chart
+title: Selection in Syncfusion Xamarin.Android Chart
+description: Learn here about how to add Selection support in Syncfusion Xamarin.Android Chart(SfChart) control.
 platform: Android
 control: Chart
 documentation: ug
 ---
 
-# Selection
+# Selection in Xamarin.Android Chart(SfChart)
 
 [`SfChart`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html) supports selection that enables you to select a segment in a series or series itself.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart StripLines
-description: Learn how to add horizontal or vertical lines in Chart.
+title: StripLines in Xamarin.Android Chart | Syncfusion
+description: Learn here about how to add StripLines support in Syncfusion Xamarin.Android Chart(SfChart) control.
 platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
 
-# Strip Lines
+# StripLines in Xamarin.Android Chart(SfChart)
 
 ## What is strip line?
 

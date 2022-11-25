@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Tooltip in Syncfusion SfChart
-description: How to enable and customize the tooltip in Essential Xamarin.Android Chart
+title: Tooltip in Xamarin.Android Chart control | Syncfusion
+description: Learn here about how to enable and customize the tooltip in Syncfusion Xamarin.Android Chart(SfChart) control.
 platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in Xamarin.Android Chart(SfChart)
 
 Tooltip for data points, can be enabled by setting [`TooltipEnabled`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_TooltipEnabled) property as `true`.
 

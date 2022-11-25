@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Legend
+# Legend in Xamarin.Android Chart(SfChart)
 
 Legend contains list of chart series/data points in the chart. The information provided in each legend item helps in identifying the corresponding data series in chart. The [`Visibility`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLegend.html#Com_Syncfusion_Charts_ChartLegend_Visibility) property is used to control the visibility of legend.
 

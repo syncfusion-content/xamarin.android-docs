@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance tips
-description: How to improve the performance of Essential Android Chart
+title: Performance in Xamarin.Android Chart control | Syncfusion
+description: Learn here about the improved Performance support in Syncfusion Xamarin.Android Chart(SfChart) control.
 platform: Xamarin.Android
 control: Chart
 documentation: ug
 ---
 
-# Performance
+# Performance in Xamarin.Android Chart(SfChart)
 
 Following are the key points that can be used to boost the performance of the chart when there is a need to plot high volume data.
 
