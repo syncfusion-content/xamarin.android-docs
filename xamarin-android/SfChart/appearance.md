@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing the appearance of Essential Xamarin.Android Chart Control | Syncfusion
+title: Appearance of Xamarin.Android Chart Control | Syncfusion
 description: Learn how to customize the appearance of Syncfusion Xamarin.Android Chart(SfChart) control and its elements using palette.
 platform: Xamarin.Android
 control: Chart
