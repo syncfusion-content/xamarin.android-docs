@@ -56,7 +56,7 @@ chart.Series.Add(lineSeries);
 
 ## Stacked Line Chart
 
-To render a stacked line chart, create an instance of `StackingLineSeries` and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the stacked line appearance.
+To render a stacked line chart, create an instance of [`StackingLineSeries`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.StackingLineSeries.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the stacked line appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_Color) – used to change the color of the line.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_StrokeWidth) – used to change the stroke width of the line.
@@ -106,7 +106,7 @@ chart.Series.Add(stackingLineSeries4);
 
 ### Dashed Stacked Lines
 
-`PathEffect` property of the `StackingLineSeries` is used to render stacked line series with dashes.
+[`PathEffect`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.StackingLineSeries.html#Com_Syncfusion_Charts_StackingLineSeries_PathEffect) property of the [`StackingLineSeries`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.StackingLineSeries.html) is used to render stacked line series with dashes.
 
 {% highlight c# %}
 [C#]
@@ -152,7 +152,7 @@ chart.Series.Add(stackingLineSeries4);
 
 ## 100% Stacked Line Chart
 
-To render a 100% stacked Line chart, create an instance of [`StackingLine100Series`]() and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the 100% stacked line appearance.
+To render a 100% stacked Line chart, create an instance of [`StackingLine100Series`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.StackingLine100Series.html) and add to the series collection of [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html). You can use the following properties to customize the 100% stacked line appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_Color) – used to change the color of the line.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_StrokeWidth) – used to change the stroke width of the line.
@@ -264,9 +264,9 @@ The following types are used in [`SplineAreaSeries`](https://help.syncfusion.com
 * Cardinal
 * Clamped
 
-By default [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineAreaSeries.html#Com_Syncfusion_Charts_SplineAreaSeries_SplineType) value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html). 
+By default [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineAreaSeries.html#Com_Syncfusion_Charts_SplineAreaSeries_SplineType) value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html#Com_Syncfusion_Charts_SplineType_Natural). 
 
-The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineAreaSeries.html#Com_Syncfusion_Charts_SplineAreaSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html)
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineAreaSeries.html#Com_Syncfusion_Charts_SplineAreaSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html#Com_Syncfusion_Charts_SplineType_Cardinal)
 
 {% highlight c# %} 
 [C#]
@@ -429,7 +429,7 @@ Following properties are used to customize the spline range area segment appeara
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_Color) – used to change the color of the series.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_StrokeWidth) – used to change the stroke width of the series.
-* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.StackingSeriesBase.html#Com_Syncfusion_Charts_StackingSeriesBase_StrokeColor) – used to change the stroke color of the series.
+* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.RangeAreaSeries.html#Com_Syncfusion_Charts_RangeAreaSeries_StrokeColor) – used to change the stroke color of the series.
 
 {% highlight c# %} 
 [C#]
@@ -459,9 +459,9 @@ The following types can be used for [`SplineRangeAreaSeries`](https://help.syncf
 * Cardinal
 * Clamped
 
-By default SplineType value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html).
+By default SplineType value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html#Com_Syncfusion_Charts_SplineType_Natural).
 
-The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineRangeAreaSeries.html#Com_Syncfusion_Charts_SplineRangeAreaSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html)
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineRangeAreaSeries.html#Com_Syncfusion_Charts_SplineRangeAreaSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html#Com_Syncfusion_Charts_SplineType_Cardinal)
 
 {% highlight c# %} 
 [C#]
@@ -556,7 +556,7 @@ You can customize intervals using the [`Interval`](https://help.syncfusion.com/c
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.HistogramSeries.html#Com_Syncfusion_Charts_HistogramSeries_StrokeWidth) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.HistogramSeries.html#Com_Syncfusion_Charts_HistogramSeries_StrokeColor) – used to change the stroke color of the series.
 * [`CurveColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.HistogramSeries.html#Com_Syncfusion_Charts_HistogramSeries_CurveColor) – used to change the color of the normal distribution curve.
-* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.HistogramSeries.html#Com_Syncfusion_Charts_HistogramSeries_DataMarkerPosition) - used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerPosition.html), Top and Center of the rectangle.
+* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.HistogramSeries.html#Com_Syncfusion_Charts_HistogramSeries_DataMarkerPosition) - used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DataMarkerPosition.html#Com_Syncfusion_Charts_DataMarkerPosition_Bottom), Top and Center of the rectangle.
 {% highlight c# %} 
 [C#]
 
@@ -885,9 +885,9 @@ The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/
 * Cardinal
 * Clamped
 
-By default [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineSeries.html#Com_Syncfusion_Charts_SplineSeries_SplineType) value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html).
+By default [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineSeries.html#Com_Syncfusion_Charts_SplineSeries_SplineType) value is [`Natural`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html#Com_Syncfusion_Charts_SplineType_Natural).
 
-The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineSeries.html#Com_Syncfusion_Charts_SplineSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html)
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineSeries.html#Com_Syncfusion_Charts_SplineSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SplineType.html#Com_Syncfusion_Charts_SplineType_Cardinal)
 
 {% highlight c# %} 
 [C#]
@@ -1021,7 +1021,7 @@ To render a scatter chart, create an instance of [`ScatterSeries`](https://help.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ScatterSeries.html#Com_Syncfusion_Charts_ScatterSeries_StrokeColor) – used to change the stroke color of the series.
 * [`ScatterWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ScatterSeries.html#Com_Syncfusion_Charts_ScatterSeries_ScatterWidth) – used to change the width of the series.
 * [`ScatterHeight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ScatterSeries.html#Com_Syncfusion_Charts_ScatterSeries_ScatterHeight) – used to change the height of the series.
-* [`ShapeType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ScatterSeries.html#Com_Syncfusion_Charts_ScatterSeries_ShapeType) - used to change the rendering shape of scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html), diamond, ellipse, hexagon, inverted triangle, pentagon, plus, rectangle and triangle.
+* [`ShapeType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ScatterSeries.html#Com_Syncfusion_Charts_ScatterSeries_ShapeType) - used to change the rendering shape of scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_Cross), diamond, ellipse, hexagon, inverted triangle, pentagon, plus, rectangle and triangle.
 
 {% highlight c# %} 
 [C#]
@@ -1054,7 +1054,7 @@ The [`FastScatterSeries`](https://help.syncfusion.com/cr/xamarin-android/Com.Syn
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastScatterSeries.html#Com_Syncfusion_Charts_FastScatterSeries_StrokeColor) – used to change the stroke color of series.
 * [`ScatterWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastScatterSeries.html#Com_Syncfusion_Charts_FastScatterSeries_ScatterWidth) – used to change the width of series.
 * [`ScatterHeight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastScatterSeries.html#Com_Syncfusion_Charts_FastScatterSeries_ScatterHeight) – used to change the height of series.
-* [`ShapeType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastScatterSeries.html#Com_Syncfusion_Charts_FastScatterSeries_ShapeType) - used to change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html), [`Diamond`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html), [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html), [`Hexagon`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html), [`Pentagon`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html), [`Plus`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html), [`Rectangle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html) and [`Triangle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html).
+* [`ShapeType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastScatterSeries.html#Com_Syncfusion_Charts_FastScatterSeries_ShapeType) - used to change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_Cross), [`Diamond`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_Diamond), [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_Ellipse), [`Hexagon`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_Hexagon), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_InvertedTriangle), [`Pentagon`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_Pentagon), [`Plus`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_Plus), [`Rectangle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_Rectangle) and [`Triangle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartScatterShapeType.html#Com_Syncfusion_Charts_ChartScatterShapeType_Triangle).
 * [`EnableAntiAliasing`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastScatterSeries.html#Com_Syncfusion_Charts_FastScatterSeries_EnableAntiAliasing) – Enables or disables the smoothness of series. Default value of [`EnableAntiAliasing`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastScatterSeries.html#Com_Syncfusion_Charts_FastScatterSeries_EnableAntiAliasing) property is true.
 
 {% highlight c# %} 
