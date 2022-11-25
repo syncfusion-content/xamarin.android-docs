@@ -11,7 +11,7 @@ documentation: ug
 
 Following are the key points that can be used to boost the performance of the chart when there is a need to plot high volume data.
 
-* When there are large number of points to load in line series, you can use [`FastLineSeries`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastLineSeries.html) series instead of [`LineSeries`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LineSeries.html). To renderer a fast line chart, create an instance of [`FastLineSeries`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastLineSeries.html) and add to the series using [`Series`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html) property of [`SfChart`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html).
+* When there are large number of points to load in line series, you can use [`FastLineSeries`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastLineSeries.html) series instead of [`LineSeries`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LineSeries.html). To renderer a fast line chart, create an instance of [`FastLineSeries`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.FastLineSeries.html) and add to the series using [`Series`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_Series) property of [`SfChart`](http://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html).
 
 {% highlight c# %} 
 [C#]

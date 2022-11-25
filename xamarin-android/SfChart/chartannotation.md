@@ -52,7 +52,7 @@ Annotations can be positioned in plot area based on [`X1`](https://help.syncfusi
 
 ### Positioning based on CoordinateUnit as axis
 
-To position the annotation based on an axis, set the X1 and Y1, X2 and Y2 properties based on axis range values, if needed, and then set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotation.html#Com_Syncfusion_Charts_ChartAnnotation_CoordinateUnit) value as [`Axis`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartCoordinateUnit.html).
+To position the annotation based on an axis, set the X1 and Y1, X2 and Y2 properties based on axis range values, if needed, and then set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotation.html#Com_Syncfusion_Charts_ChartAnnotation_CoordinateUnit) value as [`Axis`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartCoordinateUnit.html#Com_Syncfusion_Charts_ChartCoordinateUnit_Axis).
 
 {% highlight c# %} 
 [C#]
@@ -83,7 +83,7 @@ chart.Annotations.Add(annotation);
 
 ### Positioning based on CoordinateUnit as pixels
 
-To position the annotations based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotation.html#Com_Syncfusion_Charts_ChartAnnotation_CoordinateUnit) value as [`Pixels`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartCoordinateUnit.html). The pixel values in X1 and Y1, X2 and Y2 properties of an annotation are shown in the following code snippet,
+To position the annotations based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotation.html#Com_Syncfusion_Charts_ChartAnnotation_CoordinateUnit) value as [`Pixels`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartCoordinateUnit.html#Com_Syncfusion_Charts_ChartCoordinateUnit_Pixels). The pixel values in X1 and Y1, X2 and Y2 properties of an annotation are shown in the following code snippet,
 
 {% highlight c# %} 
 [C#]
@@ -197,7 +197,7 @@ The [`TextAnnotation`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfu
 * [`MarginBottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginBottom) – Used to change the bottom margin of the text.
 * [`MarginLeft`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginLeft) – Used to change the left margin of the text.
 * [`MarginRight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginRight) – Used to change the right margin of the text.
-* [`HorizontalLabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationLabelStyle.html#Com_Syncfusion_Charts_ChartAnnotationLabelStyle_HorizontalLabelAlignment) – Used to align the text horizontally ([`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationAlignment.html),[`Start`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationAlignment.html),[`End`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationAlignment.html)).
+* [`HorizontalLabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationLabelStyle.html#Com_Syncfusion_Charts_ChartAnnotationLabelStyle_HorizontalLabelAlignment) – Used to align the text horizontally ([`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationAlignment.html#Com_Syncfusion_Charts_ChartAnnotationAlignment_Center),[`Start`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationAlignment.html#Com_Syncfusion_Charts_ChartAnnotationAlignment_Start),[`End`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationAlignment.html#Com_Syncfusion_Charts_ChartAnnotationAlignment_End).
 * [`VerticalLabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationLabelStyle.html#Com_Syncfusion_Charts_ChartAnnotationLabelStyle_VerticalLabelAlignment) – Used to align the text vertically.
 
 {% highlight c# %} 
@@ -352,7 +352,7 @@ chart.Annotations.Add(annotation);
 
 **Adding arrow to line annotation**
 
-To display the single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LineAnnotation.html#Com_Syncfusion_Charts_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLineCap.html). The default value of the [`LineCap`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LineAnnotation.html#Com_Syncfusion_Charts_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLineCap.html).
+To display the single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LineAnnotation.html#Com_Syncfusion_Charts_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLineCap.html#Com_Syncfusion_Charts_ChartLineCap_Arrow). The default value of the [`LineCap`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.LineAnnotation.html#Com_Syncfusion_Charts_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLineCap.html#Com_Syncfusion_Charts_ChartLineCap_None).
 
 {% highlight c# %} 
 [C#]
@@ -453,7 +453,7 @@ The default appearance of the axis labels can be customized by using [`AxisLabel
 * [`MarginBottom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginBottom) - Used to change the bottom margin of the text.
 * [`MarginLeft`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginLeft) - Used to change the left margin of the text.
 * [`MarginRight`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelStyle.html#Com_Syncfusion_Charts_ChartLabelStyle_MarginRight) - Used to change the right margin of the text.
-* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_LabelAlignment) - Used to align the text at the [`Start`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelAlignment.html), [`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelAlignment.html), or [`End`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelAlignment.html).
+* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_LabelAlignment) - Used to align the text at the [`Start`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelAlignment.html#Com_Syncfusion_Charts_ChartAxisLabelAlignment_Start), [`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelAlignment.html#Com_Syncfusion_Charts_ChartAxisLabelAlignment_Center), or [`End`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelAlignment.html#Com_Syncfusion_Charts_ChartAxisLabelAlignment_End).
 * [`LabelsPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_LabelsPosition) - Used to position the text at [`Inside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.AxisElementPosition.html#Com_Syncfusion_Charts_AxisElementPosition_Inside) or [`outside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.AxisElementPosition.html#Com_Syncfusion_Charts_AxisElementPosition_Outside) of the chart axis. By default, the text will be positioned outside the chart axis.
 * [`CornerRadius`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_CornerRadius) - Used to change the corner radius of the background of the text.
 * [`MaxWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxisLabelStyle.html#Com_Syncfusion_Charts_ChartAxisLabelStyle_MaxWidth) - Provides the maximum text width of the axis label and wraps to the next line when exceeds the maximum width.
@@ -688,7 +688,7 @@ chart.ChartAnnotations.Add(verticalLineAnnotation);
 
 **AnnotationClicked**
 
-The [`AnnotationClicked`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html) event is triggered when the user has clicked the annotation. The argument contains the following information.
+The [`AnnotationClicked`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartBase.html#Com_Syncfusion_Charts_ChartBase_AnnotationClicked) event is triggered when the user has clicked the annotation. The argument contains the following information.
 
 * [`Annotation`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationClickedEventArgs.html#Com_Syncfusion_Charts_ChartAnnotationClickedEventArgs_Annotation) – used to get the instance of annotation which is clicked.
 * [`X`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotationClickedEventArgs.html#Com_Syncfusion_Charts_ChartAnnotationClickedEventArgs_X) – used to get the x position of touch point on annotation.
@@ -696,7 +696,7 @@ The [`AnnotationClicked`](https://help.syncfusion.com/cr/xamarin-android/Com.Syn
 
 ## Get the touch position in annotation
 
-The [`OnTouchEvent`]() method of ChartAnnotation occurs while doing the interactions inside the annotation. 
+The [`OnTouchEvent`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAnnotation.html#Com_Syncfusion_Charts_ChartAnnotation_OnTouchEvent_Android_Views_MotionEvent_) method of ChartAnnotation occurs while doing the interactions inside the annotation. 
 
 {% highlight c# %}
 

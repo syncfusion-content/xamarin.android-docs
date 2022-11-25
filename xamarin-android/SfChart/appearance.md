@@ -15,7 +15,7 @@ documentation: ug
 
 **Predefined Palettes**
 
-Currently, Chart supports three types of palette and [`Metro`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorPalette.html) palette is the default palette for [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html).
+Currently, Chart supports three types of palette and [`Metro`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorPalette.html#Com_Syncfusion_Charts_ChartColorPalette_Metro) palette is the default palette for [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html).
 
 These predefined palettes are
 
@@ -29,7 +29,7 @@ These predefined palettes are
 
 **Custom Palette**
 
-You can apply the custom colors by setting the palette as [`Custom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorPalette.html) using [`ColorPalette`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_ColorPalette) and provide the custom colors using [`CustomColors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_CustomColors) property.
+You can apply the custom colors by setting the palette as [`Custom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorPalette.html#Com_Syncfusion_Charts_ChartColorPalette_Custom) using [`ColorPalette`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_ColorPalette) and provide the custom colors using [`CustomColors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_CustomColors) property.
 
 Following code illustrates how to set the custom colors.
 
@@ -107,7 +107,7 @@ None palette will not apply any color to the data points. So in order to define 
 
 ## Gradient Colors
 
-The [`CustomGradientColors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_CustomGradientColors) property of [`ChartColorModel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html) is used to define the gradient colors, the colors from this property is used for series or chart if the [`Palette`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_ColorPalette) property of ChartColorModel is [`Custom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorPalette.html) and the [`CustomColors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_CustomColors) property is null. The following properties are used to define the gradient color for the chart.
+The [`CustomGradientColors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_CustomGradientColors) property of [`ChartColorModel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html) is used to define the gradient colors, the colors from this property is used for series or chart if the [`Palette`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_ColorPalette) property of ChartColorModel is [`Custom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorPalette.html#Com_Syncfusion_Charts_ChartColorPalette_Custom) and the [`CustomColors`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartColorModel.html#Com_Syncfusion_Charts_ChartColorModel_CustomColors) property is null. The following properties are used to define the gradient color for the chart.
 
 The [`StartPoint`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartGradientColor.html#Com_Syncfusion_Charts_ChartGradientColor_StartPoint) and [`EndPoint`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartGradientColor.html#Com_Syncfusion_Charts_ChartGradientColor_EndPoint)  properties of [`ChartGradientColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartGradientColor.html) is used to configure the direction of gradient color, [`GradientStops`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartGradientColor.html#Com_Syncfusion_Charts_ChartGradientColor_GradientStops)  property is used to set the color based on the offset.
 

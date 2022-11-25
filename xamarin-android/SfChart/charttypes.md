@@ -1219,8 +1219,8 @@ To render a radar chart, create an instance of [`RadarSeries`](https://help.sync
 
 [`DrawType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarSeries.html#Com_Syncfusion_Charts_PolarSeries_DrawType) property is used to specify the radar series rendering type. Following are the two options you can set to this property,
 
-* [`Line`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarChartDrawType.html) – data points are visualized using line series.
-* [`Area`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarChartDrawType.html) – data points are visualized using area series.
+* [`Line`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarChartDrawType.html#Com_Syncfusion_Charts_PolarChartDrawType_Line) – data points are visualized using line series.
+* [`Area`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarChartDrawType.html#Com_Syncfusion_Charts_PolarChartDrawType_Area) – data points are visualized using area series.
 
 {% highlight c# %}
 [C#]
@@ -1292,7 +1292,7 @@ radarSeries.Closed = false;
 
 ### Radar start angle for primary axis
 
-The start position of the radar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPolarAngle.html). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes.
+The start position of the radar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPolarAngle.html#Com_Syncfusion_Charts_ChartPolarAngle_Rotate270). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes.
 
 {% highlight c# %}
 [C#]
@@ -1340,8 +1340,8 @@ To render a polar chart, create an instance of [`PolarSeries`](https://help.sync
 
 [`DrawType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarSeries.html#Com_Syncfusion_Charts_PolarSeries_DrawType) property is used to specify the polar series rendering type. Following are the two options you can set to this property,
 
-* [`Line`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarChartDrawType.html) – data points are visualized using line series.
-* [`Area`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarChartDrawType.html) – data points are visualized using area series.
+* [`Line`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarChartDrawType.html#Com_Syncfusion_Charts_PolarChartDrawType_Line) – data points are visualized using line series.
+* [`Area`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PolarChartDrawType.html#Com_Syncfusion_Charts_PolarChartDrawType_Area) – data points are visualized using area series.
 
 {% highlight c# %}
 [C#]
@@ -1415,7 +1415,7 @@ polarSeries.Closed = false;
 
 ### Polar start angle for primary axis
 
-The start position of the polar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPolarAngle.html). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes.
+The start position of the polar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPolarAngle.html#Com_Syncfusion_Charts_ChartPolarAngle_Rotate270). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartAxis.html#Com_Syncfusion_Charts_ChartAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes.
 
 {% highlight c# %}
 [C#]
@@ -1461,7 +1461,7 @@ To render a pie chart, create an instance of [`PieSeries`](https://help.syncfusi
 * [`Color`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_Color) – used to change the color of the series.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSeries.html#Com_Syncfusion_Charts_ChartSeries_StrokeWidth) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.AccumulationSeries.html#Com_Syncfusion_Charts_AccumulationSeries_StrokeColor) – used to change the stroke color of the series.
-* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_DataMarkerPosition) - used to change the position of data marker.  Default position is [`Inside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeriesDataMarkerPosition.html).
+* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_DataMarkerPosition) - used to change the position of data marker.  Default position is [`Inside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeriesDataMarkerPosition.html#Com_Syncfusion_Charts_CircularSeriesDataMarkerPosition_Inside).
 
 {% highlight c# %} 
 [C#]
@@ -1564,7 +1564,7 @@ PieSeries pieSeries = new PieSeries()
 
 ### Group small data points into “others”
 
-The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupMode) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupMode) property is used to specify the grouping type based on slice [`Angle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PieGroupMode.html), actual data point value, or [`Percentage`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PieGroupMode.html), and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupTo) property is [`double.NAN`], and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupMode) property is Value.
+The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupMode) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupMode) property is used to specify the grouping type based on slice [`Angle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PieGroupMode.html#Com_Syncfusion_Charts_PieGroupMode_Angle), actual data point value, or [`Percentage`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PieGroupMode.html#Com_Syncfusion_Charts_PieGroupMode_Percentage), and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupTo) property is [`double.NAN`], and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.CircularSeries.html#Com_Syncfusion_Charts_CircularSeries_GroupMode) property is Value.
 
 ## Doughnut Chart
 
@@ -1597,7 +1597,7 @@ chart.Series.Add(doughnutSeries);
 
 Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutSeries.html#Com_Syncfusion_Charts_DoughnutSeries_IsStackedDoughnut) property. The following properties are used to customize the stacked doughnut chart:
 
-* [`CapStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutSeries.html#Com_Syncfusion_Charts_DoughnutSeries_CapStyle) - Specifies the shape of the start and end points of the circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutCapStyle.html), `BothCurve`, `StartCurve`, and `EndCurve`. The default value of the this property is [`BothFlat`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutCapstyle.html).
+* [`CapStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutSeries.html#Com_Syncfusion_Charts_DoughnutSeries_CapStyle) - Specifies the shape of the start and end points of the circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutCapstyle.html#Com_Syncfusion_Charts_DoughnutCapStyle_BothFlat), `BothCurve`, `StartCurve`, and `EndCurve`. The default value of the this property is [`BothFlat`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutCapstyle.html#Com_Syncfusion_Charts_DoughnutCapStyle_BothFlat).
 * [`Spacing`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutSeries.html#Com_Syncfusion_Charts_DoughnutSeries_Spacing) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`MaximumValue`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutSeries.html#Com_Syncfusion_Charts_DoughnutSeries_MaximumValue) - Represents the entire span of an individual circle. The default value of the this property is `double.NaN`.
 * [`TrackColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.DoughnutSeries.html#Com_Syncfusion_Charts_DoughnutSeries_TrackColor) - Changes the color of the track area.
@@ -1781,7 +1781,7 @@ chart.Series.Add(pyramidSeries);
 
 ### Pyramid Mode
 
-You can render the pyramid series as linear or surface mode. In linear mode, height of the pyramid segment is based on the Y value and in surface mode, area of the pyramid segment is based on the Y values. The default value of [`ChartPyramidMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PyramidSeries.html#Com_Syncfusion_Charts_PyramidSeries_PyramidMode) is [`Linear`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPyramidMode.html).
+You can render the pyramid series as linear or surface mode. In linear mode, height of the pyramid segment is based on the Y value and in surface mode, area of the pyramid segment is based on the Y values. The default value of [`ChartPyramidMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.PyramidSeries.html#Com_Syncfusion_Charts_PyramidSeries_PyramidMode) is [`Linear`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartPyramidMode.html#Com_Syncfusion_Charts_ChartPyramidMode_Linear).
 
 {% highlight c# %} 
 [C#]
@@ -1988,13 +1988,13 @@ chart.Series.Add(boxPlotSeries);
 
 The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_BoxPlotMode) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
 
-* [`Exclusive`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html) - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
-* [`Inclusive`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html) - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
-* [`Normal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html) - The quartile values are calculated by splitting the list and getting the median values.
+* [`Exclusive`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html#Com_Syncfusion_Charts_BoxPlotMode_Exclusive) - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html#Com_Syncfusion_Charts_BoxPlotMode_Inclusive) - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html#Com_Syncfusion_Charts_BoxPlotMode_Normal) - The quartile values are calculated by splitting the list and getting the median values.
 
-By default, [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_BoxPlotMode) value is [`Exclusive`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html).
+By default, [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_BoxPlotMode) value is [`Exclusive`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html#Com_Syncfusion_Charts_BoxPlotMode_Exclusive).
 
-The following code shows how to set the [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_BoxPlotMode) value as [`Inclusive`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html).
+The following code shows how to set the [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_BoxPlotMode) value as [`Inclusive`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxPlotMode.html#Com_Syncfusion_Charts_BoxPlotMode_Inclusive).
 
 {% highlight c# %}
 
@@ -2072,9 +2072,9 @@ chart.Series.Add(boxPlotSeries);
 
 ### SymbolType
 
-The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different types of symbols. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSymbolType.html).
+The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different types of symbols. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSymbolType.html#Com_Syncfusion_Charts_ChartSymbolType_Ellipse).
 
-The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSymbolType.html).
+The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.BoxAndWhiskerSeries.html#Com_Syncfusion_Charts_BoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartSymbolType.html#Com_Syncfusion_Charts_ChartSymbolType_Cross).
 
 {% highlight c# %}
 
@@ -2137,7 +2137,7 @@ chart.Series.Add(errorBarSeries);
 
 ### Type
 
- The [`Type`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Type) property is used to define the error bar type value in Fixed, Custom, Percentage, StandardDeviation, and StandardErrors. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarType.html). For all types, you have to set the values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_VerticalErrorValue) except [`Custom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarType.html).
+ The [`Type`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Type) property is used to define the error bar type value in Fixed, Custom, Percentage, StandardDeviation, and StandardErrors. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarType.html#Com_Syncfusion_Charts_ErrorBarType_Fixed). For all types, you have to set the values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_VerticalErrorValue) except [`Custom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarType.html#Com_Syncfusion_Charts_ErrorBarType_Custom).
 
 #### Fixed
 
@@ -2225,7 +2225,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Custom
 
-If [`Type`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Type) is [`Custom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarType.html), you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_HorizontalErrorPath) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_VerticalErrorPath) as shown in the following code snippet.
+If [`Type`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Type) is [`Custom`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarType.html#Com_Syncfusion_Charts_ErrorBarType_Custom), you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_HorizontalErrorPath) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_VerticalErrorPath) as shown in the following code snippet.
 
 {% highlight c# %}
 [C#]
@@ -2248,11 +2248,11 @@ chart.Series.Add(errorBarSeries);
 
 ### Mode
 
-The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Mode) property. It have the values of [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html), [`Horizontal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html), and [`Vertical`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html). The default value of this property is [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html). 
+The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Mode) property. It have the values of [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html#Com_Syncfusion_Charts_ErrorBarMode_Both), [`Horizontal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html#Com_Syncfusion_Charts_ErrorBarMode_Horizontal), and [`Vertical`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html#Com_Syncfusion_Charts_ErrorBarMode_Vertical). The default value of this property is [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html#Com_Syncfusion_Charts_ErrorBarMode_Both). 
 
 #### Both
 
-To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Mode) as [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html) as shown in the following code.
+To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Mode) as [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html#Com_Syncfusion_Charts_ErrorBarMode_Both) as shown in the following code.
 
 {% highlight c# %}
 [C#]
@@ -2275,7 +2275,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Horizontal
 
-To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Mode) as [`Horizontal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html) as shown in the following code.
+To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Mode) as [`Horizontal`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html#Com_Syncfusion_Charts_ErrorBarMode_Horizontal) as shown in the following code.
 
 {% highlight c# %}
 [C#]
@@ -2298,7 +2298,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Vertical
 
-To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Mode) as [`Vertical`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html) as shown in the following code.
+To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_Mode) as [`Vertical`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarMode.html#Com_Syncfusion_Charts_ErrorBarMode_Vertical) as shown in the following code.
 
 {% highlight c# %}
 [C#]
@@ -2321,11 +2321,11 @@ chart.Series.Add(errorBarSeries);
 
 ### Direction
 
-The [`HorizontalDirection`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_HorizontalDirection) and [`VerticalDirection`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_VerticalDirection) properties are used to set the direction of error bar lines. The default value is [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarDirection.html).
+The [`HorizontalDirection`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_HorizontalDirection) and [`VerticalDirection`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarSeries.html#Com_Syncfusion_Charts_ErrorBarSeries_VerticalDirection) properties are used to set the direction of error bar lines. The default value is [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarDirection.html#Com_Syncfusion_Charts_ErrorBarDirection_Both).
 
-* [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarDirection.html) - used to set error value in positive and negative directions.
-* [`Minus`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarDirection.html) - used to set error value in a negative direction.
-* [`Plus`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarDirection.html) - used to set error value in a positive direction.	
+* [`Both`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarDirection.html#Com_Syncfusion_Charts_ErrorBarDirection_Both) - used to set error value in positive and negative directions.
+* [`Minus`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarDirection.html#Com_Syncfusion_Charts_ErrorBarDirection_Minus) - used to set error value in a negative direction.
+* [`Plus`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ErrorBarDirection.html#Com_Syncfusion_Charts_ErrorBarDirection_Plus) - used to set error value in a positive direction.	
 
 {% highlight c# %}
 [C#]
