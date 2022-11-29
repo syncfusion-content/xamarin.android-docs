@@ -37,9 +37,9 @@ chart.Behaviors.Add(trackballBehavior);
 
 The [`LabelDisplayMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_LabelDisplayMode) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the three options you can set to this property:
 
-* [`FloatAllPoints`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TrackballLabelDisplayMode.html): Displays label for all the data points along the vertical line.
-* [`NearestPoint`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TrackballLabelDisplayMode.html): Displays label for single data point that is nearer to the touch contact position.
-* [`GroupAllPoints`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TrackballLabelDisplayMode.html): Displays label for all the data points are grouped and positioned at the top of the chart area.
+* [`FloatAllPoints`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TrackballLabelDisplayMode.html#Com_Syncfusion_Charts_TrackballLabelDisplayMode_FloatAllPoints): Displays label for all the data points along the vertical line.
+* [`NearestPoint`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TrackballLabelDisplayMode.html#Com_Syncfusion_Charts_TrackballLabelDisplayMode_NearestPoint): Displays label for single data point that is nearer to the touch contact position.
+* [`GroupAllPoints`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.TrackballLabelDisplayMode.html#Com_Syncfusion_Charts_TrackballLabelDisplayMode_GroupAllPoints): Displays label for all the data points are grouped and positioned at the top of the chart area.
 
 {% highlight c# %} 
 [C#]
@@ -54,13 +54,13 @@ In the following screenshot, trackball label is shown for only single data point
 
 ## Activation mode
 
-The [`ActivationMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`ChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html).
+The [`ActivationMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`ChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html#Com_Syncfusion_Charts_ChartTrackballActivationMode_LongPress).
 
 The ChartTrackballActivationMode enum contains the following values:
 
-* [`LongPress`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html) – Activates trackball only when performing the long press action.
-* [`TouchMove`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html) – Activates trackball only when performing touch move action.
-* [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_Show_System_Single_System_Single_) method.
+* [`LongPress`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html#Com_Syncfusion_Charts_ChartTrackballActivationMode_LongPress) – Activates trackball only when performing the long press action.
+* [`TouchMove`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html#Com_Syncfusion_Charts_ChartTrackballActivationMode_TouchMove) – Activates trackball only when performing touch move action.
+* [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html#Com_Syncfusion_Charts_ChartTrackballActivationMode_None) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballActivationMode.html#Com_Syncfusion_Charts_ChartTrackballActivationMode_None). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballBehavior.html#Com_Syncfusion_Charts_ChartTrackballBehavior_Show_System_Single_System_Single_) method.
 
 ## Customizing appearance
 
@@ -115,7 +115,7 @@ The following properties are used to customize the trackball marker:
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_StrokeWidth): Used to change the width of the marker stroke.
 * [`Width`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_Width): Used to change the width of the marker.
 * [`Height`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_Height): Used to change the height of the marker.
-* [`MarkerType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_MarkerType): Used to change the type of the marker such as [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.MarkerType.html), Ellipse, Diamond, and more.
+* [`MarkerType`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballMarkerStyle.html#Com_Syncfusion_Charts_ChartTrackballMarkerStyle_MarkerType): Used to change the type of the marker such as [`Cross`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.MarkerType.html#Com_Syncfusion_Charts_MarkerType_Cross), Ellipse, Diamond, and more.
 
 {% highlight c# %} 
 
@@ -236,9 +236,9 @@ chart.PrimaryAxis = new NumericalAxis()
 
 The position of trackball’s axis label can be changed using the [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballAxisLabelStyle.html#Com_Syncfusion_Charts_ChartTrackballAxisLabelStyle_LabelAlignment) property of [`ChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballAxisLabelStyle.html). The following options are available in [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrackballAxisLabelStyle.html#Com_Syncfusion_Charts_ChartTrackballAxisLabelStyle_LabelAlignment).
 
-* [`Far`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelAlignment.html): The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis.
-* [`Near`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelAlignment.html): The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
-* [`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelAlignment.html): The label will be positioned at the center of tick. This is the default value.
+* [`Far`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelAlignment.html#Com_Syncfusion_Charts_ChartLabelAlignment_Far): The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis.
+* [`Near`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelAlignment.html#Com_Syncfusion_Charts_ChartLabelAlignment_Near): The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
+* [`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartLabelAlignment.html#Com_Syncfusion_Charts_ChartLabelAlignment_Center): The label will be positioned at the center of tick. This is the default value.
 
 The following code snippet demonstrate the placement of label at the left to tick line.
 
