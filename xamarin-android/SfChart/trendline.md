@@ -36,7 +36,7 @@ SfChart support following types of [`Trendlines`](https://help.syncfusion.com/cr
 
 ### Linear
 
-[`Linear`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline was best-fit straight line for simple linear datasets. A linear trend line usually shows that something is increasing or decreasing at a steady rate. This is the default trendline to be drawn for the SfChart.
+[`Linear`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html#Com_Syncfusion_Charts_ChartTrendlineType_Linear) trendline was best-fit straight line for simple linear datasets. A linear trend line usually shows that something is increasing or decreasing at a steady rate. This is the default trendline to be drawn for the SfChart.
 
 The following is the code example of linear trendline.
 
@@ -55,7 +55,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ### Logarithmic
 
-A [`Logarithmic`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is the strongest-fit curved line, that is most effective when the data change rate increases or decreases rapidly. Logarithmic trends may use negative and/or positive values as well. 
+A [`Logarithmic`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html#Com_Syncfusion_Charts_ChartTrendlineType_Logarithmic) trendline is the strongest-fit curved line, that is most effective when the data change rate increases or decreases rapidly. Logarithmic trends may use negative and/or positive values as well. 
 
 The following is the code example of logarithmic trendline.
 
@@ -74,7 +74,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ### Exponential
 
-The [`Exponential`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is the curved line most useful for data values rise or fall at increasingly higher rates.
+The [`Exponential`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html#Com_Syncfusion_Charts_ChartTrendlineType_Exponential) trendline is the curved line most useful for data values rise or fall at increasingly higher rates.
 
 N> SfChart will not generate Exponential trendline when your data contains zero or negative values. 
 
@@ -93,7 +93,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ### Power
 
-The [`Power`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is typically used with data sets to compare measurements that grow at a specific rate.
+The [`Power`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html#Com_Syncfusion_Charts_ChartTrendlineType_Power) trendline is typically used with data sets to compare measurements that grow at a specific rate.
 
 The following is the code example of power trendline.
 
@@ -112,7 +112,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ### Polynomial
 
-The [`polynomial`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html) trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolynomialOrder`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html#Com_Syncfusion_Charts_ChartTrendline_PolynomialOrder).
+The [`polynomial`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendlineType.html#Com_Syncfusion_Charts_ChartTrendlineType_Polynomial) trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolynomialOrder`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.ChartTrendline.html#Com_Syncfusion_Charts_ChartTrendline_PolynomialOrder).
 
 The following is the code example of polynomial trendline.
 
