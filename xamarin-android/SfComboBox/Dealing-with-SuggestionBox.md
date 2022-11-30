@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Suggestionbox Placement in Syncfusion SfComboBox control for Xamarin.Android
-description : Learn how to place the Suggestion Box in SfComboBox
+title : Dealing with Suggestion Box in Xamarin.Android ComboBox Control | Syncfusion 
+description : Learn here all about dealing with suggestion box in Syncfusion Essential Xamarin.Android ComboBox control, its elements, and more.
 platform : Xamarin.Android 
 control : ComboBox
 documentation : ug
 ---
 
-# Dealing with suggestion box 
+# Dealing with suggestion box in Xamarin.Android ComboBox
 In the combobox control, the DropDown Box can placed in the following two positions:
 
 * Bottom 
@@ -28,7 +28,7 @@ combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/bottom.png)
+![Suggestion Box placement at bottom in Xamarin.Android ComboBox](images/bottom.png)
 
 ## SuggestionBox placement at top
 
@@ -42,4 +42,4 @@ combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/top.png)
+![Suggestion Box placement at top in Xamarin.Android ComboBox](images/top.png)
