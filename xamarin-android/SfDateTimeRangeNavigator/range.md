@@ -7,7 +7,7 @@ control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Selecting Range in Xamarin.Android SfDateTimeRangeNavigator
+# Selecting Range in Xamarin.Android RangeNavigator
 
 The left and right thumb of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) are used to indicate the selected range in the large collection of data. Following are the ways you can select a range.
 

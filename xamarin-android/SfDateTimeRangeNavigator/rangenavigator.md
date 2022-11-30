@@ -7,7 +7,7 @@ control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Getting started in Xamarin.Android SfDateTimeRangeNavigator
+# Getting started in Xamarin.Android RangeNavigator
 
 This section walks you through the steps required to add SfDateTimeRangeNavigator and populate it with data, and also explains how to respond to range selection performed in the control. 
 
