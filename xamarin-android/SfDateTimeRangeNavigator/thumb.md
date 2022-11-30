@@ -36,6 +36,6 @@ rangeNavigator.RightThumbStyle.LineColor = 0xE70E49;
 rangeNavigator.RightThumbStyle.LineWidth = 5;
 {% endhighlight %}
 
-![](thumb_images/thumb_img1.png)
+![Thumb Style in Xamarin.Android SfDateTimeRangeNavigator](thumb_images/thumb_img1.png)
 
 

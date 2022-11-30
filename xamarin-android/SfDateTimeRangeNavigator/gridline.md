@@ -29,6 +29,6 @@ rangeNavigator.MinorScaleStyle.GridLineWidth = 3;
 rangeNavigator.MinorScaleStyle.GridLinePathEffect = new DashPathEffect(new float[] { 4, 4}, 0);
 {% endhighlight %}
 
-![](gridline_images/gridline_img1.png)
+![Grid Lines in Xamarin.Android SfDateTimeRangeNavigator](gridline_images/gridline_img1.png)
 
 
