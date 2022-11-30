@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Xamarin.Android DateTimeRangeNavigator Getting Started
-description: Xamarin.Android DateTimeRangeNavigator Getting Started
+title: Xamarin.Android DateTimeRangeNavigator Getting Started | Syncfusion
+description: Learn about the steps required to add Xamarin.Android SfDateTimeRangeNavigator and populate it with data.
 platform: Android
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Getting started
+# Getting started in Xamarin.Android RangeNavigator
 
 This section walks you through the steps required to add SfDateTimeRangeNavigator and populate it with data, and also explains how to respond to range selection performed in the control. 
 
@@ -61,9 +61,9 @@ sfDateTimeRangeNavigator.Maximum = new GregorianCalendar(2016, 01, 01).Time;
 
 ## Handle range selection
 
-In real time, other controls like chart, grid etc., are updated in response to the range selection performed in `SfDateTimeRangeNavigator`. You can handle the selection using `RangeChanged` event and update other controls based on the selected date time or perform some other tasks using the selected data.
+In real time, other controls like chart, grid etc., are updated in response to the range selection performed in [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html). You can handle the selection using [`RangeChanged`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_RangeChanged) event and update other controls based on the selected date time or perform some other tasks using the selected data.
 
-N> You can get the selected date time using `ViewRangeStart` and `ViewRangeEnd`.
+N> You can get the selected date time using [`ViewRangeStart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_ViewRangeStart) and [`ViewRangeEnd`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_ViewRangeEnd).
 
 Following code example illustrates how to handle range selection and update chart's date time axis range,
 
@@ -81,6 +81,6 @@ void sfDateTimeRangeNavigator_RangeChanged(object sender, SfDateTimeRangeNavigat
 
 {% endhighlight %}
 
-N> Though the [`Content`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator__ctor_Android_Content_Context_) property’s data type is View and it can accept any View as its value, but currently [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) can accept only [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html) as its content.
+N> Though the [`Content`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_Content) property’s data type is View and it can accept any View as its value, but currently [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) can accept only [`SfChart`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Charts.SfChart.html) as its content.
 
 ![Range selection in Xamarin.Android DateTimeRangeNavigator](gettingstarted_images/gettingstarted_img3.jpeg)
