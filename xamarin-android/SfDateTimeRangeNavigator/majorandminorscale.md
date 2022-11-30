@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Major and minor scale customization for DateTimeRangeNavigator
-description: Major and minor scale customization
+title: Scale customization for DateTimeRangeNavigator | Syncfusion
+description: Learn about how to customize the major and minor scales at top and bottom of Xamarin.Android SfDateTimeRangeNavigator
 platform: Xamarin.Android
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Major and Minor Scales
+# Major and Minor Scales in Xamarin.Android RangeNavigator
 
 SfDateTimeRangeNavigator displays major and minor scales at the top and bottom position of the control. You can also control its visibility using [`MajorScaleStyle.Visible`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_Visible) and [`MinorScaleStyle.Visible`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_Visible) properties.
 
@@ -25,10 +25,10 @@ dateTime.Intervals = EnumSet.Of(DateTimeIntervalType.Year, DateTimeIntervalType.
 
 ## Appearance Customization
 
-The [`MajorScaleStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MajorScaleStyle) and [`MinorScaleStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MinorScaleStyle) properties of `SfDateTimeRangeNavigator` are used to customize the appearance of ticks and labels.
+The [`MajorScaleStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MajorScaleStyle) and [`MinorScaleStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MinorScaleStyle) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) are used to customize the appearance of ticks and labels.
 
-* [`Position`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_Position) - used to position the labels and ticks [`Inside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScalePosition.html) or [`Outside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScalePosition.html) of the range navigator.
-* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_LabelAlignment) - used to set the alignment of the labels([`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.LabelAlignment.html), Left, Right).  
+* [`Position`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_Position) - used to position the labels and ticks [`Inside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScalePosition.html#Com_Syncfusion_Rangenavigator_ScalePosition_Inside) or [`Outside`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScalePosition.html#Com_Syncfusion_Rangenavigator_ScalePosition_Outside) of the range navigator.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_LabelAlignment) - used to set the alignment of the labels([`Center`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.LabelAlignment.html#Com_Syncfusion_Rangenavigator_LabelAlignment_Center), Left, Right).  
 * [`LabelTextColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_LabelTextColor) - used to change the text color of the labels.
 * [`LabelBackgroundColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_LabelBackgroundColor) - used to change the background color of the labels.
 * [`LabelStrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_LabelStrokeColor) - used to change the stroke color of the labels.
@@ -91,7 +91,7 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 
 ### MajorScaleLabelsCreate
 
-The [`MajorScaleLabelsCreate`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) event is triggered when the major scale label is created. The argument contains [`MajorScaleLabels`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.MajorScaleLabelsCreateEventArgs.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MajorScaleLabelsCreateEventArgs_MajorScaleLabels) of [`RangeNavigatorLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html) which contains following properties:
+The [`MajorScaleLabelsCreate`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MajorScaleLabelsCreate) event is triggered when the major scale label is created. The argument contains [`MajorScaleLabels`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.MajorScaleLabelsCreateEventArgs.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MajorScaleLabelsCreateEventArgs_MajorScaleLabels) of [`RangeNavigatorLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html) which contains following properties:
 
 * [`GridLinePosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html#Com_Syncfusion_Rangenavigator_RangeNavigatorLabel_GridLinePosition) - Used to get the position of grid lines. 
 * [`IsVisible`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html#Com_Syncfusion_Rangenavigator_RangeNavigatorLabel_IsVisible) - Used to define the visibility of labels.
@@ -100,7 +100,7 @@ The [`MajorScaleLabelsCreate`](https://help.syncfusion.com/cr/xamarin-android/Co
 
 ### MinorScaleLabelsCreate
 
-The [`MinorScaleLabelsCreate`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) event is triggered when the minor scale label is created. The argument contains [`MinorScaleLabels`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.MinorScaleLabelsCreateEventArgs.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MinorScaleLabelsCreateEventArgs_MinorScaleLabels) of [`RangeNavigatorLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html) which contains following properties:
+The [`MinorScaleLabelsCreate`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MinorScaleLabelsCreate) event is triggered when the minor scale label is created. The argument contains [`MinorScaleLabels`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.MinorScaleLabelsCreateEventArgs.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MinorScaleLabelsCreateEventArgs_MinorScaleLabels) of [`RangeNavigatorLabel`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html) which contains following properties:
 
 * [`GridLinePosition`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html#Com_Syncfusion_Rangenavigator_RangeNavigatorLabel_GridLinePosition) - Used to get the position of grid lines. 
 * [`IsVisible`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.RangeNavigatorLabel.html#Com_Syncfusion_Rangenavigator_RangeNavigatorLabel_IsVisible) - Used to define the visibility of labels.
