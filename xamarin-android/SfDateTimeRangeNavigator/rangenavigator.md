@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Xamarin.Android DateTimeRangeNavigator Getting Started | Syncfusion
-description: Learn about the steps required to add SfDateTimeRangeNavigator and populate it with data.
+description: Learn about the steps required to add Xamarin.Android SfDateTimeRangeNavigator and populate it with data.
 platform: Android
 control: SfDateTimeRangeNavigator
 documentation: ug

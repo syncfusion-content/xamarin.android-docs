@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Major and minor scale customization for DateTimeRangeNavigator | Syncfusion
-description: Learn about how to customize the major and minor scales of SfDateTimeRangeNavigator
+title: Scale customization for DateTimeRangeNavigator | Syncfusion
+description: Learn about how to customize the major and minor scales of Xamarin.Android SfDateTimeRangeNavigator
 platform: Xamarin.Android
 control: SfDateTimeRangeNavigator
 documentation: ug

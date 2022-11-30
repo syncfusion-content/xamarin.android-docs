@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip customization for DateTimeRangeNavigator
+title: Tooltip customization for DateTimeRangeNavigator | Syncfusion
 description: Learn about how to show the selected range start and end value of the Xamarin.Android SfDateTimeRangeNavigator.
 platform: Xamarin.Android
 control: SfDateTimeRangeNavigator

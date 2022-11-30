@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid line customization for DateTimeRangeNavigator | Syncfusion
-description: Learn about how to customize the minor and major grid lines of range navigator
+description: Learn about how to customize the minor and major grid lines of Xamarin.Android SfDateTimeRangeNavigator
 platform: Xamarin.Android
 control: SfDateTimeRangeNavigator
 documentation: ug

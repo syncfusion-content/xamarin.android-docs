@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Select the Range of SfDateTimeRangeNavigator | Syncfusion
-description: Learn about how left and right thumb are used to selected range in the range navigator
+description: Learn about how left and right thumb are used to selected range in the SfDataTimeRangeNavigator
 platform: Xamarin.Android
 control: SfDateTimeRangeNavigator
 documentation: ug
