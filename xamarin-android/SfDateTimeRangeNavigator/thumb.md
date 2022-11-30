@@ -9,7 +9,7 @@ documentation: ug
 
 # Thumb
 
-The [`LeftThumbStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_LeftThumbStyle) and [`RightThumbStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_RightThumbStyle) properties are used to configure the left and right thumb of the `SfDateTimeRangeNavigator`. Following properties are available in thumb style to configure left and right thumb individually. 
+The [`LeftThumbStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_LeftThumbStyle) and [`RightThumbStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_RightThumbStyle) properties are used to configure the left and right thumb of the [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html). Following properties are available in thumb style to configure left and right thumb individually. 
 
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ThumbStyle.html#Com_Syncfusion_Rangenavigator_ThumbStyle_StrokeColor) – used to change the stroke color of the thumb.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ThumbStyle.html#Com_Syncfusion_Rangenavigator_ThumbStyle_BackgroundColor) – used to change the background color of the thumb.

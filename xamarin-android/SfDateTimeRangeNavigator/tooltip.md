@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip
 
-The tooltip is used to show the selected range start and end value of the `SfDateTimeRangeNavigator``.`
+The tooltip is used to show the selected range start and end value of the [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html).
 
 ## Tooltip Visibility
 
-The [`TooltipEnabled`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_TooltipEnabled) property of `SfDateTimeRangeNavigator` is used to control the visibility of the left and right tooltip. It is true by default.
+The [`TooltipEnabled`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_TooltipEnabled) property of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) is used to control the visibility of the left and right tooltip. It is true by default.
 
 {% highlight c# %}
 [C#]
@@ -24,11 +24,11 @@ rangeNavigator.TooltipEnabled = false;
 
 ![Tooltip visibility in Xamarin.Android DateTimeRangeNavigator](tooltip_images/tooltip_img1.png)
 
-N> The [`TooltipDisplayMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_TooltipDisplayMode) property is used to determine whether the visibility of tooltip should be [`Always`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.TooltipDisplayMode.html) or [`On_Demand`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.TooltipDisplayMode.html) when selecting a range.	
+N> The [`TooltipDisplayMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_TooltipDisplayMode) property is used to determine whether the visibility of tooltip should be [`Always`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.TooltipDisplayMode.html#Com_Syncfusion_Rangenavigator_TooltipDisplayMode_Always) or [`On_Demand`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.TooltipDisplayMode.html#Com_Syncfusion_Rangenavigator_TooltipDisplayMode_On_Demand) when selecting a range.	
 
 ## Tooltip Format
 
-You can format the date value of the tooltip using [`TooltipFormat`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_TooltipFormat) property of `SfDateTimeRangeNavigator`.
+You can format the date value of the tooltip using [`TooltipFormat`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_TooltipFormat) property of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html).
 
 {% highlight c# %}
 [C#]
@@ -39,7 +39,7 @@ dateTimeRangeNavigator.TooltipFormat = "yyyy/MM";
 
 ## Appearance Customization
 
-The [`LeftTooltipStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_LeftTooltipStyle) and [`RightTooltipStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_RightTooltipStyle) properties of `SfDateTimeRangeNavigator` are used to customize the left and right tooltip. Following properties are available in each tooltip style to customize the appearance of the tooltip.
+The [`LeftTooltipStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_LeftTooltipStyle) and [`RightTooltipStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_RightTooltipStyle) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) are used to customize the left and right tooltip. Following properties are available in each tooltip style to customize the appearance of the tooltip.
 
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.TooltipStyle.html#Com_Syncfusion_Rangenavigator_TooltipStyle_TextColor) – used to change the color of the tooltip text.
 * [`TextSize`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.TooltipStyle.html#Com_Syncfusion_Rangenavigator_TooltipStyle_TextSize) - used to change the text size of the tooltip.
