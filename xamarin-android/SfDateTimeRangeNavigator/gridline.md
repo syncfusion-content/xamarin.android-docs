@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grid line customization for DateTimeRangeNavigator
-description: Grid line customization
+title: Grid line customization for DateTimeRangeNavigator | Syncfusion
+description: Learn about how to customize the minor and major grid lines of Xamarin.Android SfDateTimeRangeNavigator
 platform: Xamarin.Android
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Grid Lines
+# Grid Lines in Xamarin.Android RangeNavigator
 
-The `MinorScaleStyle` and `MajorScaleStyle` properties of `SfDateTimeRangeNavigator` used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
+The [`MinorScaleStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MinorScaleStyle) and [`MajorScaleStyle`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html#Com_Syncfusion_Rangenavigator_SfDateTimeRangeNavigator_MajorScaleStyle) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator.html) used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
 
 * [`ShowGridLines`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_ShowGridLines) – used to set the visibility of grid lines.
 * [`GridLineWidth`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Rangenavigator.ScaleStyle.html#Com_Syncfusion_Rangenavigator_ScaleStyle_GridLineWidth) – used to set the width for grid lines.
@@ -29,6 +29,6 @@ rangeNavigator.MinorScaleStyle.GridLineWidth = 3;
 rangeNavigator.MinorScaleStyle.GridLinePathEffect = new DashPathEffect(new float[] { 4, 4}, 0);
 {% endhighlight %}
 
-![](gridline_images/gridline_img1.png)
+![Grid Lines in Xamarin.Android SfDateTimeRangeNavigator](gridline_images/gridline_img1.png)
 
 
