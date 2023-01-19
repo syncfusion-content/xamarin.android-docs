@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Getting Started with Xamarin.Android SfMaskedEdit
+# Getting Started
 This section explains you the steps required to configure a SfMaskedEdit control in a real-time scenario and provides a walk-through on some of the customization features available in `SfMaskedEdit` control.
 
 ##  Reference Essential Studio components in your solution
@@ -81,4 +81,4 @@ Run the project and check if you get the following output to make sure that you 
 
 ![Xamarin.Android masked edit](SfMaskedEditImages/GettingStarted.png)
 
-You can find the complete getting started sample from this [link](https://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_GettingStarted.zip).
+You can find the complete getting started sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_GettingStarted.zip).
