@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance | TreeView for Xamarin.Android | Syncfusion
-description: Describes about view appearance and different functionalities in TreeView.
+description: Learn here all about appearance support in Syncfusion Essential Xamarin.Android TreeView Control, its elements, and more.
 platform: Xamarin.Android
 control: SfTreeView
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Xamarin.Android TreeView
 
 The TreeView allows customizing appearance of the underlying data, and provides different functionalities to the end-user.
 
@@ -89,7 +89,7 @@ public class CustomAdapter : TreeViewAdapter
 ![Xamarin Android TreeView Customized adapter](Images/TreeView_CustomAdapter.png)
 
 To create custom view to use in adapter, refer this [link](https://help.syncfusion.com/xamarin-android/sftreeview/getting-started#creating-custom-view-for-adapter).
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomizedAdapter-1866983821)
+You can also download the entire source code of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomizedAdapter-1866983821)
 
 ## Indentation
 
@@ -215,7 +215,7 @@ public class NodeImageAdapter : TreeViewAdapter
 
 ![Xamarin Android TreeView with Level based Views](Images/TreeView_LevelBasedView.png)
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedViews-1568238571)
+You can also download the entire source code of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedViews-1568238571)
 
 ### Level based styling.
 
@@ -259,7 +259,7 @@ protected override void UpdateContentView(View view, TreeViewItemInfoBase itemIn
 {% endhighlight %}
 {% endtabs %}
 
-You can download the example for level based styling demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-1430010482).
+You can download the example for level based styling demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-1430010482).
 
 ![Xamarin Android TreeView with styling](Images/TreeView_LevelStyle.png)
 
