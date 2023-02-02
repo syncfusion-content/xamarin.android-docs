@@ -120,6 +120,26 @@ Inline view mode
 Agenda view mode
 
 ![Calendar Inline Events](images/Xamarin.Android-Calendar-Agendaitemcustomview.png) 
+
+### InlineAppointmentTextSize
+
+ [InlineAppointmentTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTextSize) property is used to set the text size of the appointments displayed in the SfCalendar control.
+
+ ### InlineAppointmentTimeTextSize
+
+ [InlineAppointmentTimeTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTimeTextSize) property is used to set the text size of the appointments displayed in the SfCalendar control.
+
+ {% highlight c# %}
+  SfCalendar sfCalendar = new SfCalendar(this);
+            sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;
+            sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;        
+            sfCalendar.ShowEventsInline = true;
+            sfCalendar.InlineViewMode = InlineViewMode.Inline;
+{% endhighlight %}
+
+ ![InlineAppointmentTextSize](images/Xamarin.Android-Calendar-InlineAppointmentTextSize.PNG)
+
+ ![InlineAppointmentTimeTextSize](images/Xamarin.Android-Calendar-InlineAppointmentTimeTextSize.PNG)
                                   
 ## Getting inline/agenda view appointment details
 
