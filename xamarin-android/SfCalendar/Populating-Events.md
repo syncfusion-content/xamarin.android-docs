@@ -119,31 +119,51 @@ Inline view mode
 
 Agenda view mode
 
-![Calendar Inline Events](images/Xamarin.Android-Calendar-Agendaitemcustomview.png) 
-
-## Setting Text Size of Appointments
-
-You can customize the text size of appointments displayed in your calendar. The 'InlineAppointmentTextSize' and 'InlineAppointmentTimeTextSize' properties allow you to set the font size of the text used to display appointment information.
+![Calendar Inline Events](images/Xamarin.Android-Calendar-Agendaitemcustomview.png)
 
 ### InlineAppointmentTextSize
 
- [InlineAppointmentTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTextSize) property is used to set the text size of the appointments displayed in the SfCalendar control.
+You can customize the text size of the appointment detail text by using the [InlineAppointmentTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTextSize) property which is displayed in the SfCalendar control.
+
+{% highlight c# %}
+  SfCalendar sfCalendar = new SfCalendar(this);
+            sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;    
+            sfCalendar.ShowEventsInline = true;
+			sfCalendar.InlineViewMode = InlineViewMode.Inline;
+{% endhighlight %}
+
+![InlineView with InlineAppointmentTextSize in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-InlineView-InlineAppointmentTextSize.JPG)
+
+{% highlight c# %}
+  SfCalendar sfCalendar = new SfCalendar(this);
+            sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;
+			sfCalendar.InlineViewMode = InlineViewMode.Agenda;
+            sfCalendar.ShowEventsInline = true;
+{% endhighlight %}
+
+![AgendaView with InlineAppointmentTextSize in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-AgendaView-InlineAppointmentTextSize.JPG)
 
  ### InlineAppointmentTimeTextSize
-
- [InlineAppointmentTimeTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTimeTextSize) property is used to set the text size of the appointments displayed in the SfCalendar control.
+ 
+ You can customize the time text size of the appointment detail time text by using the [InlineAppointmentTimeTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTimeTextSize) property which is displayed in the SfCalendar control.
 
  {% highlight c# %}
   SfCalendar sfCalendar = new SfCalendar(this);
-            sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;
-            sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;        
+            sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;    
             sfCalendar.ShowEventsInline = true;
-            sfCalendar.InlineViewMode = InlineViewMode.Inline;
+			sfCalendar.InlineViewMode = InlineViewMode.Inline;
 {% endhighlight %}
 
- ![InlineView InlineAppointmentTextSize and InlineAppointmentTimeTextSize](images/Xamarin.Android-Calendar-InlineAppointmentTimeTextSize.JPG)
+![InlineView with InlineAppointmentTimeTextSize in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-InlineView-InlineAppointmentTimeTextSize.JPG)
 
- ![AgendaView InlineAppointmentTextSize and InlineAppointmentTimeTextSize](images/Xamarin.Android-Calendar-AgendaViewMode.JPG)
+{% highlight c# %}
+  SfCalendar sfCalendar = new SfCalendar(this);
+            sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;
+		    sfCalendar.InlineViewMode = InlineViewMode.Agenda;  
+            sfCalendar.ShowEventsInline = true;
+{% endhighlight %}
+
+![AgendaView with InlineAppointmentTimeTextSize in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-AgendaView-InlineAppointmentTextSize.JPG)
                                   
 ## Getting inline/agenda view appointment details
 
