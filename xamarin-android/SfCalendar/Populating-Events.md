@@ -123,7 +123,7 @@ Agenda view mode
 
 ### InlineAppointmentTextSize
 
-By using the [InlineAppointmentTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTextSize) property from the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html) class of SfCalendar` control, you can customize the text size for the appointment details text in inline and agenda view.
+By using the [InlineAppointmentTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTextSize) property from the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html) class of `SfCalendar` control, you can customize the text size for the appointment details text in inline and agenda view.
 
 The following code explains how to customize the InlineAppointmentTextSize in Calendar InlineView.
 
@@ -149,7 +149,7 @@ The following code explains how to customize the InlineAppointmentTextSize in Ca
 
  ### InlineAppointmentTimeTextSize
 
-By using the [InlineAppointmentTimeTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTimeTextSize) property from the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html) class of SfCalendar` control, you can customize the time text size for the appointment details time in both inline and agenda view.
+By using the [InlineAppointmentTimeTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTimeTextSize) property from the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html) class of `SfCalendar` control, you can customize the time text size for the appointment details time in both inline and agenda view.
 
 The following code explains how to customize the InlineAppointmentTimeTextSize in Calendar InlineView.
 
