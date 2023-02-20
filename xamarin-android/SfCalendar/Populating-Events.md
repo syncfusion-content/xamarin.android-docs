@@ -34,7 +34,7 @@ N> The Inline function will be available only in MonthView with Single selection
 
 ## Adding events using Collection
 
-Calendar Events collection can be provided to `SfCalendar` using the following steps. [CalendarEventCollection](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.InlineEventToggledEventArgs.html#Com_Syncfusion_Calendar_InlineEventToggledEventArgs_CalendarEventCollection) is a class, which holds the details about the events to be rendered in `SfCalendar`. 
+Calendar Events collection can be provided to `SfCalendar` by following these steps. The [CalendarEventCollection](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.InlineEventToggledEventArgs.html#Com_Syncfusion_Calendar_InlineEventToggledEventArgs_CalendarEventCollection) is a class, which holds the details about the events to be rendered in `SfCalendar`.
 
 [CalendarInlineEvent](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.InlineItemTappedEventArgs.html#Com_Syncfusion_Calendar_InlineItemTappedEventArgs_InlineEvent) has some basic properties such as [StartTime](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.CalendarInlineEvent.html#Com_Syncfusion_Calendar_CalendarInlineEvent_StartTime), [EndTime](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.CalendarInlineEvent.html#Com_Syncfusion_Calendar_CalendarInlineEvent_EndTime), [Subject](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.CalendarInlineEvent.html#Com_Syncfusion_Calendar_CalendarInlineEvent_Subject) and [Color](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.CalendarInlineEvent.html#Com_Syncfusion_Calendar_CalendarInlineEvent_Color)
 
@@ -119,8 +119,61 @@ Inline view mode
 
 Agenda view mode
 
-![Calendar Inline Events](images/Xamarin.Android-Calendar-Agendaitemcustomview.png) 
-                                  
+![Calendar Inline Events](images/Xamarin.Android-Calendar-Agendaitemcustomview.png)
+
+### InlineAppointmentTextSize
+
+By using the [InlineAppointmentTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTextSize) property from the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html) class of `SfCalendar` control, you can customize the text size for the appointment details text in inline and agenda view.
+
+The following code explains how to customize the InlineAppointmentTextSize in Calendar InlineView.
+
+{% highlight c# %}
+
+    SfCalendar sfCalendar = new SfCalendar(this);
+    sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;    
+    sfCalendar.ShowEventsInline = true;
+	sfCalendar.InlineViewMode = InlineViewMode.Inline;
+	
+{% endhighlight %}
+
+The following code explains how to customize the InlineAppointmentTextSize in Calendar AgendaView.
+
+{% highlight c# %}
+
+	SfCalendar sfCalendar = new SfCalendar(this);
+    sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;
+	sfCalendar.InlineViewMode = InlineViewMode.Agenda;
+    sfCalendar.ShowEventsInline = true;
+
+{% endhighlight %}
+
+ ### InlineAppointmentTimeTextSize
+
+By using the [InlineAppointmentTimeTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTimeTextSize) property from the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html) class of `SfCalendar` control, you can customize the time text size for the appointment details time in both inline and agenda view.
+
+The following code explains how to customize the InlineAppointmentTimeTextSize in Calendar InlineView.
+
+ {% highlight c# %}
+ 
+	SfCalendar sfCalendar = new SfCalendar(this);
+    sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;    
+    sfCalendar.ShowEventsInline = true;
+	sfCalendar.InlineViewMode = InlineViewMode.Inline;
+
+{% endhighlight %}
+
+
+The following code explains how to customize the InlineAppointmentTimeTextSize in Calendar AgendaView.
+
+{% highlight c# %}
+
+    SfCalendar sfCalendar = new SfCalendar(this);
+    sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;
+	sfCalendar.InlineViewMode = InlineViewMode.Agenda;  
+    sfCalendar.ShowEventsInline = true;
+
+{% endhighlight %}
+                        
 ## Getting inline/agenda view appointment details
 
 Using `InlineEvent` property from the `InlineItemTappedEventArgs` argument of `InlineItemTapped` event, you can get the month inline/agenda appointments details while tapping the specific appointment in inline/agenda view.
