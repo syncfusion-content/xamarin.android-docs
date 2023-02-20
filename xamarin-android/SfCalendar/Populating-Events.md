@@ -128,19 +128,23 @@ By using the [InlineAppointmentTextSize](https://help.syncfusion.com/cr/xamarin-
 The following code explains how to customize the InlineAppointmentTextSize in Calendar InlineView.
 
 {% highlight c# %}
-  SfCalendar sfCalendar = new SfCalendar(this);
-            sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;    
-            sfCalendar.ShowEventsInline = true;
-			sfCalendar.InlineViewMode = InlineViewMode.Inline;
+
+    SfCalendar sfCalendar = new SfCalendar(this);
+    sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;    
+    sfCalendar.ShowEventsInline = true;
+	sfCalendar.InlineViewMode = InlineViewMode.Inline;
+	
 {% endhighlight %}
 
 The following code explains how to customize the InlineAppointmentTextSize in Calendar AgendaView.
 
 {% highlight c# %}
-  SfCalendar sfCalendar = new SfCalendar(this);
-            sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;
-			sfCalendar.InlineViewMode = InlineViewMode.Agenda;
-            sfCalendar.ShowEventsInline = true;
+
+	SfCalendar sfCalendar = new SfCalendar(this);
+    sfCalendar.MonthViewSettings.InlineAppointmentTextSize = 20;
+	sfCalendar.InlineViewMode = InlineViewMode.Agenda;
+    sfCalendar.ShowEventsInline = true;
+
 {% endhighlight %}
 
  ### InlineAppointmentTimeTextSize
@@ -150,20 +154,24 @@ By using the [InlineAppointmentTimeTextSize](https://help.syncfusion.com/cr/xama
 The following code explains how to customize the InlineAppointmentTimeTextSize in Calendar InlineView.
 
  {% highlight c# %}
-  SfCalendar sfCalendar = new SfCalendar(this);
-            sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;    
-            sfCalendar.ShowEventsInline = true;
-			sfCalendar.InlineViewMode = InlineViewMode.Inline;
+ 
+	SfCalendar sfCalendar = new SfCalendar(this);
+    sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;    
+    sfCalendar.ShowEventsInline = true;
+	sfCalendar.InlineViewMode = InlineViewMode.Inline;
+
 {% endhighlight %}
 
 
 The following code explains how to customize the InlineAppointmentTimeTextSize in Calendar AgendaView.
 
 {% highlight c# %}
-  SfCalendar sfCalendar = new SfCalendar(this);
-            sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;
-		    sfCalendar.InlineViewMode = InlineViewMode.Agenda;  
-            sfCalendar.ShowEventsInline = true;
+
+    SfCalendar sfCalendar = new SfCalendar(this);
+    sfCalendar.MonthViewSettings.InlineAppointmentTimeTextSize = 20;
+	sfCalendar.InlineViewMode = InlineViewMode.Agenda;  
+    sfCalendar.ShowEventsInline = true;
+
 {% endhighlight %}
                         
 ## Getting inline/agenda view appointment details
