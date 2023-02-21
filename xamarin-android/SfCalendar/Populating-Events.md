@@ -136,6 +136,8 @@ The following code explains how to customize the InlineAppointmentTextSize in Ca
 	
 {% endhighlight %}
 
+![InlineView with InlineAppointmentTextSize in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-InlineView-InlineAppointmentTextSize.png)
+
 The following code explains how to customize the InlineAppointmentTextSize in Calendar AgendaView.
 
 {% highlight c# %}
@@ -146,6 +148,8 @@ The following code explains how to customize the InlineAppointmentTextSize in Ca
     sfCalendar.ShowEventsInline = true;
 
 {% endhighlight %}
+
+![AgendaView with InlineAppointmentTextSize in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-AgendaView-InlineAppointmentTextSize.png)
 
  ### InlineAppointmentTimeTextSize
 
@@ -162,6 +166,7 @@ The following code explains how to customize the InlineAppointmentTimeTextSize i
 
 {% endhighlight %}
 
+![InlineView with InlineAppointmentTimeTextSize in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-InlineView-InlineAppointmentTimeTextSize.png)
 
 The following code explains how to customize the InlineAppointmentTimeTextSize in Calendar AgendaView.
 
@@ -173,6 +178,8 @@ The following code explains how to customize the InlineAppointmentTimeTextSize i
     sfCalendar.ShowEventsInline = true;
 
 {% endhighlight %}
+
+![AgendaView with InlineAppointmentTimeTextSize in Xamarin.Android Calendar](images/Xamarin.Android-Calendar-AgendaView-InlineAppointmentTimeTextSize.png)
                         
 ## Getting inline/agenda view appointment details
 
