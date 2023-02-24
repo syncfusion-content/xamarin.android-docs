@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Summary | SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here about summaries in Syncfusion Essential Xamarin.Android SfDataGrid Control, its elements, and more.
+description: How to apply summaries for the elements in a SfDataGrid.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Summary in Xamarin.Android SfDataGrid
+# Summary
 
 The data grid supports displaying concise information about bound data objects using summaries. It provides the following summary types:
 
@@ -15,7 +15,7 @@ The data grid supports displaying concise information about bound data objects u
 * **Group Summary** - Used to display summary information of data objects in each group.
 * **Table Summary**: Used to display the summary information at top and/or bottom in the data grid.
 
-![Xamarin.Android SfDataGrid summary](SfDataGrid_images/Summary.PNG)
+![](SfDataGrid_images/Summary.PNG)
 
 Summary rows are represented by using the [GridSummaryRow](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridSummaryRow.html). Each `GridSummaryRow` hold the summary information of columns in the [SummaryColumns](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridSummaryRow.html#Syncfusion_SfDataGrid_GridSummaryRow_SummaryColumns) property . `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridSummaryColumn.html) which carries the name, format, and summary aggregate type of the column.
 
@@ -30,7 +30,7 @@ The data grid provides built-in support for caption summaries. The caption summa
 
 The following screenshot shows the built-in caption summary of a group:
 
-![Xamarin.Android SfDataGrid caption summaries](SfDataGrid_images/Captionsummaries.PNG)
+![](SfDataGrid_images/Captionsummaries.PNG)
 
 
 ### Formatting built-in caption summary
@@ -43,7 +43,7 @@ Default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 *  **Key**: Displays the key value of the group.
 *  **ItemsCount**: Displays the number of items in a group.
 
-![Xamarin.Android SfDataGrid formatting summary](SfDataGrid_images/Formattingbuiltincaptionsummary.PNG)
+![](SfDataGrid_images/Formattingbuiltincaptionsummary.PNG)
 
 Customize the group caption text format by setting the `SfDataGrid.GroupCaptionTextFormat` property. The following code example illustrates how to customize group caption text in the data grid:
 
@@ -54,7 +54,7 @@ dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key}";
 
 The following screenshot shows the outcome of the previous code:
 
-![Xamarin.Android SfDataGrid caption summary](SfDataGrid_images/Formattingbuiltincaptionsummary_1.PNG)
+![](SfDataGrid_images/Formattingbuiltincaptionsummary_1.PNG)
 
 
 ### Displaying summary in a row
@@ -84,7 +84,7 @@ dataGrid.CaptionSummaryRow= summaryRow;
 
 The following screenshot shows the outcome for both values of `ShowSummaryInRow` to `true`:
 
-![Xamarin.Android SfDataGrid summary in row](SfDataGrid_images/Displayingsummaryinarow.PNG)
+![](SfDataGrid_images/Displayingsummaryinarow.PNG)
 
 
 ### Displaying summary in a column
@@ -122,7 +122,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid summary in column](SfDataGrid_images/Displayingsummaryinacolumn.PNG)
+![](SfDataGrid_images/Displayingsummaryinacolumn.PNG)
 
 ## Group summary
 
@@ -161,7 +161,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
 });
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid summary for entire row](SfDataGrid_images/DisplayGroupSummaryForEntireRow.jpg)
+![](SfDataGrid_images/DisplayGroupSummaryForEntireRow.jpg)
 
 ### Displaying summary in the column
 
@@ -199,7 +199,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
 });
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid summary for individual column](SfDataGrid_images/DisplayGroupSummaryForIndividualColumn.jpg)
+![](SfDataGrid_images/DisplayGroupSummaryForIndividualColumn.jpg)
 
 ## Table summaries
 
@@ -209,7 +209,7 @@ Add the table summary row in the data grid by adding [GridTableSummaryRow](https
 
 The following screenshot illustrates table summary rows in the data grid:
 
-![Xamarin.Android SfDataGrid table summary](SfDataGrid_images/Tablesummaries1.PNG)
+![](SfDataGrid_images/Tablesummaries1.PNG)
 
 {% highlight c#%}
 GridTableSummaryRow summaryRow1 = new GridTableSummaryRow();
@@ -245,7 +245,7 @@ summaryRow2.SummaryColumns.Add(new GridSummaryColumn()
 sfGrid.TableSummaryRows.Add(summaryRow2);
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid summary table](SfDataGrid_images/Tablesummaries2.PNG)
+![](SfDataGrid_images/Tablesummaries2.PNG)
 
 ### Displaying summary in a row
 
@@ -274,7 +274,7 @@ sfGrid.TableSummaryRows.Add(summaryRow);
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `true`:
 
-![Xamarin.Android SfDataGrid summary in row](SfDataGrid_images/TableDisplayingsummaryinarow.PNG)
+![](SfDataGrid_images/TableDisplayingsummaryinarow.PNG)
 
 ### Displaying summary in a column
 
@@ -313,7 +313,7 @@ sfGrid.TableSummaryRows.Add(summaryRow);
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `false`:
 
-![Xamarin.Android SfDataGrid summary in column](SfDataGrid_images/TableDisplayingsummaryinacolumn.PNG)
+![](SfDataGrid_images/TableDisplayingsummaryinacolumn.PNG)
 
 ### Positioning TableSummaryRows
 
@@ -355,7 +355,7 @@ sfGrid.TableSummaryRows.Add(bottomSummaryRow);
 
 The following screenshot illustrates the positioning of table summary rows in the data grid:
 
-![Xamarin.Android SfDataGrid summary row](SfDataGrid_images/PositioningTableSummaryRows.PNG)
+![](SfDataGrid_images/PositioningTableSummaryRows.PNG)
 
 
 ## Formatting summary
@@ -382,7 +382,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid summary function](SfDataGrid_images/Definingsummaryfunction.PNG)
+![](SfDataGrid_images/Definingsummaryfunction.PNG)
 
 ### Formatting summary value
 
@@ -403,7 +403,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid formatting summary value](SfDataGrid_images/Formattingsummaryvalue.PNG)
+![](SfDataGrid_images/Formattingsummaryvalue.PNG)
 
 
 ### Displaying additional content in summary
@@ -425,7 +425,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid content summary](SfDataGrid_images/Displayingadditionalcontentinsummary.PNG)
+![](SfDataGrid_images/Displayingadditionalcontentinsummary.PNG)
 
 
 ### Formatting summary for row using Title property
@@ -453,7 +453,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid summary title property](SfDataGrid_images/FormattingsummaryforrowusingTitleproperty.PNG)
+![](SfDataGrid_images/FormattingsummaryforrowusingTitleproperty.PNG)
 
 N> The above formatting section is explained using `CaptionSummary` but the formatting can also be applied for `TableSummaries`.
 
@@ -581,7 +581,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn
 dataGrid.CaptionSummaryRow = summaryRow;
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid custom summary](SfDataGrid_images/Customsummaries.PNG)
+![](SfDataGrid_images/Customsummaries.PNG)
 
 N> The above custom summaries section is explained using `CaptionSummary` but the custom summaries can also be applied for `TableSummaries`.
 
@@ -660,7 +660,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![Xamarin.Android SfDataGrid table summary](SfDataGrid_images/Customizingtablesummary.PNG)
+![](SfDataGrid_images/Customizingtablesummary.PNG)
 
 ### Customizing caption summary
 
@@ -703,7 +703,7 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
     }
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid caption summary](SfDataGrid_images/Customizingcaptionsummary.PNG)
+![](SfDataGrid_images/Customizingcaptionsummary.PNG)
 
 ### Customizing Group summary
 
@@ -781,6 +781,6 @@ public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
 }
 {% endhighlight %}
 
-![Xamarin.Android SfDataGrid Customizing Group Summary](SfDataGrid_images/CustomizingGroupSummary.jpg)
+![](SfDataGrid_images/CustomizingGroupSummary.jpg)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo-17513216751825467197).
