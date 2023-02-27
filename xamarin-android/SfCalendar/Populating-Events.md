@@ -153,7 +153,7 @@ The following code explains how to customize the InlineAppointmentTextSize in Ca
 
 ### InlineAppointmentTimeTextSize
 
-By using the [InlineAppointmentTimeTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTimeTextSize) property from the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html) class of `SfCalendar` control, you can customize the time text size for the appointment details time in both inline and agenda view.
+By using the [InlineAppointmentTimeTextSize](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html#Com_Syncfusion_Calendar_MonthViewSettings_InlineAppointmentTimeTextSize) property from the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.MonthViewSettings.html)class of `SfCalendar` control, you can customize the time text size for the appointment details time in both inline and agenda view
 
 The following code explains how to customize the InlineAppointmentTimeTextSize in Calendar InlineView.
 
