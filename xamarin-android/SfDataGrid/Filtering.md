@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Filtering
+# Filtering in Xamarin.Android SfDataGrid
 
 The data grid supports view filtering.
 
