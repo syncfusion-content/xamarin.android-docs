@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Refreshing the Syncfusion SfChart
-description: Refreshing the SfChart
+title: Refreshing the Xamarin.Android SfChart Control | Syncfusion
+description: Learn here about Refreshing the Syncfusion Essential Xamarin.Android SfChart Control, its elements, and more.
 platform: Android
 control: Chart
 documentation: ug
 ---
 
-# Refreshing the chart
+# Refreshing the Xamarin.Android SfChart
 
 The following methods are available to refresh the chart.
 
