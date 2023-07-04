@@ -40,7 +40,7 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 	
 	<em>**Installed**</em>
 	
-    ![Platform Selection wizard Installed](images/Step-by-Step-Installation_img24.png)
+    ![Platform Selection wizard Installed in Xamarin.Android](images/xamarin.android-platform-selection-wizard-installed.png)
 	
 	I> If the required software for the selected product isn't already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
 	
@@ -51,14 +51,14 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 	
 4.	If previous version(s) for the selected products are installed, the Uninstall previous version wizard will be displayed. You can see the list of previously installed versions for the products you've chosen here. To remove all versions, check the **Uninstall All** checkbox. Click the Next button.
 
-	![Existing Version for install](images/Step-by-Step-Installation_img20.png)
+	![Existing Version for install in Xamarin.Android](images/S.png)
 	
 	N> From the 2021 Volume 1 release, Syncfusion has provided option to uninstall the previous versions from 18.1 while installing the new version.
 	
 	
 5.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
-	![Existing Version for install](images/Step-by-Step-Installation_img21.png)
+	![Existing Version for install in Xamarine.Android](images/xamarin.android-install-existing-version.png)
 	
 	
 6. 	The Confirmation Wizard will appear with the list of products to be installed/uninstalled. You can view and modify the list of products that will be installed and uninstalled from this page.
@@ -125,7 +125,7 @@ Syncfusion provides the option to uninstall products of the same version directl
 	
 You can uninstall all the installed products by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall Xamarin alone by selecting the **Syncfusion Essential Studio for Xamarin {version}** entry (element 2 in the below screenshot) from the Windows control panel.
 
-![Control Panel](images/Step-by-Step-Installation_img22.png)
+![Control Panel in Xamarin.Android](images/xamarin.android-control-panel.png)
 	
 N> If the **Syncfusion Essential Studio for Xamarin {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio Xamarin alone will be removed and the below default MSI uninstallation window will be displayed.	
 
@@ -143,15 +143,15 @@ N> If the **Syncfusion Essential Studio for Xamarin {version}** entry is selecte
 	
 	<em>**Available**</em>
 	
-	![Platform Selection wizard Available](images/Step-by-Step-Installation_img25.png)
+	![Platform Selection wizard Available in Xamarin.Android](images/xamarin.android-platform-selection-wizard-available.png)
 	
 3.  If any other products selected for installation, Uninstall previous version wizard will be displayed with previous version(s) installed for the selected products. Here you can view the list of installed previous versions for the selected products. Select **Uninstall All** checkbox to select all the versions. Click Next.
 
-	![Existing Version for install](images/Step-by-Step-Installation_img26.png)
+	![Existing Version for install in Xamarin.Android](images/xamarin.android-existing-version-installation.png)
 	
 4.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
-	![Existing Version for install](images/Step-by-Step-Installation_img21.png)	
+	![Existing Version for install in Xamarin.Android](images/xamarin.android-step-by-step-Installation.png)	
 	
 5.  The Confirmation Wizard will appear with the list of products to be installed/uninstalled. Here you can view and modify the list of products that will be installed/uninstalled.
 
@@ -161,7 +161,7 @@ N> If the **Syncfusion Essential Studio for Xamarin {version}** entry is selecte
 	
 6.	The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
-    ![Install and samples location install/uninstall](images/Step-by-Step-Installation_img23.png)
+    ![Install and samples location install/uninstall in Xamarin.Android](images/xamarin.android-install-and-samples-location.png)
 	
 7.	After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
 
