@@ -34,7 +34,7 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
     
 	<em>**Available**</em>
 	
-	![Platform Selection wizard Available](images/Step-by-Step-Installation_img3.png)
+	![Platform Selection wizard Available in Xamarin.Android](images/xamarin.android-platform-selection-wizard-available.png)
 	
 	If you have multiple products installed in the same version, they will be listed under the **Installed** tab. You can also select which products to uninstall from the same version. Click the Next button.
 	
@@ -46,7 +46,7 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 	
 	**Required Software**
 	
-	![Additional Software Alert](images/Step-by-Step-Installation_img5.png)
+	![Additional Software Alert in Xamarin.Android](images/xamarin.android-additional-software-alert.png)
 		
 	
 4.	If previous version(s) for the selected products are installed, the Uninstall previous version wizard will be displayed. You can see the list of previously installed versions for the products you've chosen here. To remove all versions, check the **Uninstall All** checkbox. Click the Next button.
@@ -70,7 +70,7 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 
 7.  The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
-    ![Install and samples location for install](images/Step-by-Step-Installation_img8.png)
+    ![Install and samples location for install in Xamarin.Android](images/xamarin.android-install-and-samples-location.png)
 	
 	**Additional settings**
 	
@@ -86,7 +86,7 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 
 9.  The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button. 
 
-    ![Login wizard install](images/Step-by-Step-Installation_img9.png)
+    ![Login wizard install in Xamarin.Android](images/xamarin.android-login-wizard-installation.png)
 	
 	I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
@@ -118,7 +118,7 @@ Follow either one of the option below to uninstall Syncfusion Essential Studio X
 
 Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
-![Platform Selection wizard Installed](images/Step-by-Step-Installation_img4.png)
+![Platform Selection wizard Installed in Xamarin.Android](images/xamarin.android-platform-selection-wizard-installation.png)
 	
 	
 **Option 2: Uninstall the Xamarin from Windows Control Panel**  
@@ -137,7 +137,7 @@ N> If the **Syncfusion Essential Studio for Xamarin {version}** entry is selecte
     
 	<em>**Installed**</em>
 	
-	![Platform Selection wizard Installed](images/Step-by-Step-Installation_img4.png)
+	![Platform Selection wizard Installed in Xamarin.Android](images/xamarin.android-platform-selection-wizard-installation.png)
 	
 	You can also select the products to be installed from the **Available** tab.Click the Next button.
 	
@@ -167,7 +167,7 @@ N> If the **Syncfusion Essential Studio for Xamarin {version}** entry is selecte
 
 8.	The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
-    ![Login wizard install/uninstall](images/Step-by-Step-Installation_img9.png)
+    ![Login wizard install/uninstall in Xamarin.Android](images/xamarin.android-login-wizard-installation.png)
 	
 	I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
