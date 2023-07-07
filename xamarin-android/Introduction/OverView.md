@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Essential Studio in Xamarin.Android OverView Control | Syncfusion
+title: Overview of Essential Studio Xamarin.Android | Syncfusion
 description: Basic overview about the list of available features on Syncfusion Xamarin.Android components and steps to use the guide.
 platform: Xamarin.Android
 control: Overview
