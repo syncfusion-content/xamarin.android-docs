@@ -51,7 +51,7 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 	
 4.	If previous version(s) for the selected products are installed, the Uninstall previous version wizard will be displayed. You can see the list of previously installed versions for the products you've chosen here. To remove all versions, check the **Uninstall All** checkbox. Click the Next button.
 
-	![Existing Version for install in Xamarin.Android](images/S.png)
+	![Existing Version for install in Xamarin.Android](images/xamarin.android-existing-version-install.png)
 	
 	N> From the 2021 Volume 1 release, Syncfusion has provided option to uninstall the previous versions from 18.1 while installing the new version.
 	
