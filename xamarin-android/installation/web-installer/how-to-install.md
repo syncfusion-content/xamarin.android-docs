@@ -34,7 +34,7 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
     
 	<em>**Available**</em>
 	
-	![Platform Selection wizard Available in Xamarin.Android](images/xamarin.android-platform-selection-wizard-available.png)
+	![Platform Selection wizard Available in Xamarin.Android](images/xamarin-android-platform-selection-wizard-available.png)
 	
 	If you have multiple products installed in the same version, they will be listed under the **Installed** tab. You can also select which products to uninstall from the same version. Click the Next button.
 	
