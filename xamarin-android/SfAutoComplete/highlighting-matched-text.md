@@ -7,12 +7,6 @@ control : SfAutoComplete
 documentation : ug
 ---
 
-{% banner %}
-
-{:.gradient_m}
-
-{% col_2_equal %}
-
 # Highlighting matched text
 
 Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
