@@ -20,14 +20,14 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 
 1.  Open the Syncfusion Essential Studio Xamarin Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
-    ![Installer Extraction Wizard](images/Step-by-Step-Installation_img1.png)
+    ![Installer Extraction Wizard in Xamarin.Android](images/xamarin-android-installer-extraction-wizard.png)
 
     
     N> The installer wizard extracts the syncfusionessentialxamarinwebinstaller_{version}.exe dialog, which displays the package's unzip operation.
     
 2. 	The Syncfusion Xamarin Web Installer's welcome wizard will be displayed. Click the Next button.
 
-    ![Welcome wizard](images/Step-by-Step-Installation_img2.png)
+    ![Welcome wizard in Xamarin.Android](images/xamarin-android-welcom-wizard.png)
 
   
 3.  The Platform Selection Wizard will appear. From the **Available** tab, select the products to be installed. Select the **Install All** checkbox to install all products. 
@@ -46,7 +46,7 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 	
 	**Required Software**
 	
-	![Additional Software Alert](images/Step-by-Step-Installation_img5.png)
+	![Additional Software Alert in Xamarin.Android](images/xamarin-android-additional-software.png)
 		
 	
 4.	If previous version(s) for the selected products are installed, the Uninstall previous version wizard will be displayed. You can see the list of previously installed versions for the products you've chosen here. To remove all versions, check the **Uninstall All** checkbox. Click the Next button.
@@ -63,14 +63,14 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 	
 6. 	The Confirmation Wizard will appear with the list of products to be installed/uninstalled. You can view and modify the list of products that will be installed and uninstalled from this page.
 
-    ![Confirmation for install/uninstall](images/Step-by-Step-Installation_img15.png)
+    ![Confirmation for install/uninstall in Xamarin.Android](images/xamarin-android-confirmation-for-install.png)
 	
 	N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 	
 
 7.  The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
-    ![Install and samples location for install](images/Step-by-Step-Installation_img8.png)
+    ![Install and samples location for install in Xamarin.Android](images/xamarin-android-install-and-samples-location.png)
 	
 	**Additional settings**
 	
@@ -86,23 +86,23 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 
 9.  The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button. 
 
-    ![Login wizard install](images/Step-by-Step-Installation_img9.png)
+    ![Login wizard install in Xamarin.Android](images/xamarin-android-login-wizard-install.png)
 	
 	I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
 10. The download and installation\uninstallation progress will be displayed as shown below.
 
-    ![Download and Installation progress install](images/Step-by-Step-Installation_img10.png)
+    ![Download and Installation progress install in Xamarin.Android](images/xamarin-android-download-and-installation.png)
 
 11. When the installation is finished, the **Summary** wizard will appear. Here you can see the list of products that have been installed successfully and those that have failed. To close the Summary wizard, click Finish. 
 
-    ![Installation Summary](images/Step-by-Step-Installation_img11.png)
+    ![Installation Summary in Xamarin.Android](images/xamarin-android-installation-summary.png)
 	
 	* To open the Syncfusion Control Panel, click **Launch Control Panel**.
 
 12. After installation, there will be two Syncfusion control panel entries, as shown below. The Essential Studio entry will manage all Syncfusion products installed in the same version, while the Product entry will only uninstall the specific platform setup.
 
-    ![Control Panel](images/Step-by-Step-Installation_img19.png)
+    ![Control Panel in Xamarin.Android](images/xamarin-android-control-panel.png)
 	
 
 ## Uninstallation
@@ -118,7 +118,7 @@ Follow either one of the option below to uninstall Syncfusion Essential Studio X
 
 Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
-![Platform Selection wizard Installed](images/Step-by-Step-Installation_img4.png)
+![Platform Selection wizard Installed in Xamarin.Android](images/xamarin-android-platform-selection-wizard-installed.png)
 	
 	
 **Option 2: Uninstall the Xamarin from Windows Control Panel**  
@@ -131,13 +131,13 @@ N> If the **Syncfusion Essential Studio for Xamarin {version}** entry is selecte
 
 1.  The Syncfusion Xamarin Web Installer's welcome wizard will be displayed. Click the Next button
 	
-    ![Welcome wizard uninstall](images/Step-by-Step-Installation_img2.png)
+    ![Welcome wizard uninstall in Xamarin.Android](images/xamarin-android-welcome-wizard-uninstall.png)
 
 2.  The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all products, check the **Uninstall All** checkbox. Click the Next button.
     
 	<em>**Installed**</em>
 	
-	![Platform Selection wizard Installed](images/Step-by-Step-Installation_img4.png)
+	![Platform Selection wizard Installed in Xamarin.Android](images/xamarin-android-platform-selection.png)
 	
 	You can also select the products to be installed from the **Available** tab.Click the Next button.
 	
@@ -155,7 +155,7 @@ N> If the **Syncfusion Essential Studio for Xamarin {version}** entry is selecte
 	
 5.  The Confirmation Wizard will appear with the list of products to be installed/uninstalled. Here you can view and modify the list of products that will be installed/uninstalled.
 
-    ![Confirmation for install/uninstall](images/Step-by-Step-Installation_img15.png)
+    ![Confirmation for install/uninstall in Xamarin.Android](images/xamarin-android-confirmation-for-instsll.png)
 	
 	N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 	
@@ -173,10 +173,10 @@ N> If the **Syncfusion Essential Studio for Xamarin {version}** entry is selecte
 
 9.	The download, installation, and uninstallation progresses will be shown.
 
-    ![Download and Installation progress install/uninstall](images/Step-by-Step-Installation_img17.png)
+    ![Download and Installation progress install/uninstall in Xamarin.Android](images/xamarin-android-download-and-installation-progress.png)
 
 10.	When the installation is finished, the **Summary** wizard will appear. Here you can see the list of products that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click Finish.
 
-    ![Summary install/uninstall](images/Step-by-Step-Installation_img18.png)
+    ![Summary install/uninstall in Xamarin.Android](images/xamarin-android-sammary-install.png)
 	
 	* To open the Syncfusion Control Panel, click **Launch Control Panel**.
