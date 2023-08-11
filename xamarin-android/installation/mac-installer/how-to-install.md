@@ -168,3 +168,9 @@ You can then add the assembly references to the respective projects such as PCL,
 3. Right click the iOS/ Android project-> Select Set As Startup Project in Debug/Release mode. Build and Run the project in any platform as desired.	
 
    Thus, you can create Xamarin Visual Studio MAC project for any Syncfusion Xamarin control using the above guidelines.
+
+## License key registration in samples
+
+After the installation, the license key is required to register the demo source that is included in the Mac installer. To learn about the steps for license registration for the Xamarin Mac installer, please refer to this.
+
+ Register the license key in [OnCreate](https://help.syncfusion.com/xamarin-android/licensing/how-to-register-in-an-application#xamarinandroid) override method of your main activity class before initializing any Syncfusion control.
