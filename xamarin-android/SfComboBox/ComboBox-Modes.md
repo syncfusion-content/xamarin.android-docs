@@ -1,13 +1,13 @@
 ---
 layout : post
 title : ComboBox modes for Syncfusion ComboBox control in Xamarin.Android
-description : Learn how to change the ComboBox modes in SfComboBox
+description : Learn how to change the ComboBox modes in in Syncfusion Essential Xamarin.Android SfComboBox Control, its elements, and more.
 platform : Xamarin.Android
 control : SfComboBox
 documentation : ug
 ---
 
-# ComboBox modes
+# ComboBox modes in Xamarin.Android SfComboBox
 
 The SfComboBox supports both editable and non-editable text boxes to choose selected items in given data source. Users can select an item from the suggestion list. 
 
@@ -23,7 +23,7 @@ comboBox.IsEditableMode = true;
 
 {% endtabs %}
 
-![](images/editable.png)
+![Editable Combo Box in Xamarin.Android SfComboBox](images/editable.png)
 	
 ## Non-editable combo box
 
@@ -37,5 +37,5 @@ comboBox.IsEditableMode = false;
 
 {% endtabs %}
 
-![](images/noneditable.png)
+![Non-editable Combo Box in Xamarin.Android SfComboBox](images/noneditable.png)
  
