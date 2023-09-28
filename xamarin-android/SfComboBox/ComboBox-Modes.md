@@ -1,7 +1,7 @@
 ---
 layout : post
-title : ComboBox modes for Syncfusion ComboBox control in Xamarin.Android
-description : Learn how to change the ComboBox modes in in Syncfusion Essential Xamarin.Android ComboBox Control, its elements, and more.
+title : ComboBox modes in Xamarin.Android ComboBox Control | Syncfusion
+description : Learn how to change the ComboBox modes in Syncfusion Essential Xamarin.Android ComboBox Control, its elements, and more.
 platform : Xamarin.Android
 control : SfComboBox
 documentation : ug

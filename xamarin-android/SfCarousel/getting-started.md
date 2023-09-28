@@ -114,6 +114,6 @@ carousel.SelectedIndex=2;
 
 {% endhighlight %}
 
-![Selected Index Xamarin.Android SfCarousel](images/carousel.png)
+![Selected index Xamarin.Android Carousel](images/carousel.png)
 
 You can find the complete getting started sample from this [Link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSampleCarousel39791457)
