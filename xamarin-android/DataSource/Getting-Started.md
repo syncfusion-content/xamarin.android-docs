@@ -36,7 +36,7 @@ pcl\Syncfusion.DataSource.Portable.dll
 
 ## Creating your first DataSource in Xamarin.Android
 
-This is how the final output will look like. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Android/Samples/DataSourceAndroid_GettingStarted.zip).
+This is how the final output will look like. You can also download the entire source code of this demo from [here](https://files2.syncfusion.com/Xamarin.Android/Samples/DataSourceAndroid_GettingStarted.zip).
 
 ![](DataSource_images/gettingstarted.png)
 
