@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Getting Started with Syncfusion Carousel Control for Xamarin.Android
+title : Getting Started with Xamarin.Android Carousel Control | Syncfusion
 description : Learn here about getting started with Syncfusion Essential Xamarin.Android Carousel Control, its elements, and more.
 platform : Xamarin.Android
 control : SfCarousel
