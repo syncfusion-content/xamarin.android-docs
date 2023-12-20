@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Getting Started with Syncfusion Carousel Control for Xamarin.Android
-description : A quick tour to initial users on Syncfusion carousel control for Xamarin.Android platform.
+title : Getting Started with Xamarin.Android Carousel Control | Syncfusion
+description : Learn here about getting started with Syncfusion Essential Xamarin.Android Carousel Control, its elements, and more.
 platform : Xamarin.Android
 control : SfCarousel
 documentation : ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.Android Carousel
 
 This section explains you the steps to configure a SfCarousel control in a real-time scenario and also provides a walk-through on some of the customization features available in SfCarousel control.
 
@@ -114,6 +114,6 @@ carousel.SelectedIndex=2;
 
 {% endhighlight %}
 
-![](images/carousel.png)
+![Selected index Xamarin.Android Carousel](images/carousel.png)
 
 You can find the complete getting started sample from this [Link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSampleCarousel39791457)
