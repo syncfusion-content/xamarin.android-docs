@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Header and Footer in Xamarin.Android ComboBox control | Syncfusion
-description : Learn here all about header and footer in Syncfusion Essential Xamarin.Android ComboBox control, its elements, and more.
-platform : Xamarin.Android
-control : SfComboBox
-documentation : ug
+layout: post
+title: Header and Footer in Xamarin.Android ComboBox control | Syncfusion
+description: Learn here all about header and footer in Syncfusion Essential Xamarin.Android ComboBox control, its elements, and more.
+platform: Xamarin.Android
+control: SfComboBox
+documentation: ug
 ---
 
 # Header and footer in Xamarin.Android ComboBox
