@@ -7,7 +7,7 @@ control : SfComboBox
 documentation : ug
 ---
 
-## Header and footer
+# Header and footer
 
 You can add header and footer view to the suggestion list in the combo box by enabling the `ShowDropDownHeaderView` and `ShowDropDownFooterView` properties.
 
