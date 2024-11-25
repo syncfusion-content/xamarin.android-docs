@@ -12,7 +12,7 @@ documentation: ug
 
 ## Overview of Syncfusion components Installation in Mac
 
-The Syncfusion Essential Studio allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components.
+The Syncfusion Essential Studio® allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components.
 
 ### Step-by-Step Installation
 
@@ -36,7 +36,7 @@ The steps below show how to install the Xamarin Mac installer.
 
    N> The Unlock key is not required to install the Mac installer. The Syncfusion Mac installer can be used for development purposes without registering the Unlock key.
 
-5. Now you can open the folder to explore the Syncfusion Essential Studio Mac installer.
+5. Now you can open the folder to explore the Syncfusion Essential Studio® Mac installer.
 
    ![Destination](Images/destination.JPG)
 

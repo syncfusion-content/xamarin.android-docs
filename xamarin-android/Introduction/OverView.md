@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview of Xamarin.Android Essential Studio Products | Syncfusion
+title: Overview of Xamarin.Android Essential Studio® Products | Syncfusion
 description: Basic overview about the list of available features on Syncfusion Xamarin.Android components and steps to use the guide.
 platform: Xamarin.Android
 control: Overview
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential Studio for Xamarin.Android
+# Welcome to Syncfusion Essential Studio® for Xamarin.Android
 
-Essential Studio for Xamarin.Android is a comprehensive collection of enterprise-grade Xamarin.Android components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, DataGrid, Gauge, Maps and much more.
+Essential Studio® for Xamarin.Android is a comprehensive collection of enterprise-grade Xamarin.Android components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, DataGrid, Gauge, Maps and much more.
 
 ## How to best read this user guide
 
@@ -24,7 +24,7 @@ The Knowledge Base section contains responses to some of the most common questio
 
 Similar to the Knowledge Base, the Forum section also contains responses to questions of other customers asked in the past.
 
-And, you can explore the release history of Essential Studio for Xamarin.Android from  [`here`](https://www.syncfusion.com/products/release-history/estudio/xamarin-android).
+And, you can explore the release history of Essential Studio® for Xamarin.Android from  [`here`](https://www.syncfusion.com/products/release-history/estudio/xamarin-android).
 
 ## Create a support incident
 

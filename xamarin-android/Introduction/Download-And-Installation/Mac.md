@@ -17,7 +17,7 @@ You can download the complete Xamarin.Android component from [here](https://www.
 
 The following procedure illustrates how to install the installer of Syncfusion Xamarin components in Mac.
 
-1. Double-click the Syncfusion Essential Studio for Xamarin Setup file. The Self-Extractor wizard opens, click continue.
+1. Double-click the Syncfusion Essential Studio® for Xamarin Setup file. The Self-Extractor wizard opens, click continue.
 2. After reading the terms in Software License Agreement, click continue.
 3. Click Agree in the dialog box that appears to continue the installation.
 4. Select a destination to install the software and click continue.

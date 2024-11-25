@@ -17,7 +17,7 @@ You can download the complete Xamarin.Android component from [here](https://www.
 
 The following procedure illustrates how to install the installer of Syncfusion Xamarin components in Windows.
 
-1. Double-click the Syncfusion Essential Studio for Xamarin Setup file. The Self-Extractor wizard opens and extracts the package automatically.
+1. Double-click the Syncfusion Essential Studio® for Xamarin Setup file. The Self-Extractor wizard opens and extracts the package automatically.
 2. Enter User Name, Organization and Unlock Key in the corresponding text boxes provided.
 3. Click Next.
 4. After reading the terms, click “I accept the terms and conditions” check box.
