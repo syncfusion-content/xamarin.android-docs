@@ -25,7 +25,7 @@ android\Syncfusion.SfProgressBar.Android.dll
 
 Import the progress bar namespace as shown in the following codes in your respective page,
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 using Syncfusion.Android.ProgressBar;
 
@@ -33,7 +33,7 @@ using Syncfusion.Android.ProgressBar;
 
 There are two variants of progress bar: SfLinearProgressBar and SfCircularProgressBar. Each render the progress in its own shape such as rectangle and circle respectively. Initialize both the progress bar with a progress value using Progress property as shown in the following code snippet.
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 // Using linear progress bar. 
 LinearLayout linearLayout = new LinearLayout(this);
@@ -70,7 +70,7 @@ Run the project, and check if you get following output to make sure that you hav
 When the progress of a task cannot be shown determinately, you can enable indeterminate state using [IsIndeterminate](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.ProgressBarBase.html#Syncfusion_Android_ProgressBar_ProgressBarBase_IsIndeterminate) property to let user know that some progress is happening in the background.
 
 
-{% highlight C# %} 
+{% highlight c# %} 
 
  // Using linear progress bar. 
 LinearLayout linearLayout = new LinearLayout(this);
@@ -101,7 +101,7 @@ SetContentView(linearLayout);
 
 To visualize the progress of a multiple sequential task, split the progress bar into the multiple segments by defining the [SegmentCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.ProgressBarBase.html#Syncfusion_Android_ProgressBar_ProgressBarBase_SegmentCount) property as shown in the following code.
 
-{% highlight C# %} 
+{% highlight c# %} 
 
  // Using linear progress bar. 
 LinearLayout linearLayout = new LinearLayout(this);
@@ -133,7 +133,7 @@ SetContentView(linearLayout);
 
 You can customize the color of the progress indicator and track by defining the [ProgressColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.ProgressBarBase.html#Syncfusion_Android_ProgressBar_ProgressBarBase_ProgressColor) and [TrackColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.ProgressBarBase.html#Syncfusion_Android_ProgressBar_ProgressBarBase_TrackColor) properties respectively.
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 LinearLayout linearLayout = new LinearLayout(this);
 linearLayout.SetPadding(50, 0, 0, 0);
