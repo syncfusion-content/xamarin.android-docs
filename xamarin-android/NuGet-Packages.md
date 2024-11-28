@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Xamarin.Android NuGet Packages | Syncfusion
-description: NuGet Packages
+description: Learn here about the NuGet Packages and how they can be used to automatically add files and references to your Visual Studio projects.
 platform: xamarin.android
 control: NuGet Packages
 documentation: ug
 ---
 
-# NuGet Packages
+# NuGet Packages Overview
 
 [NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Xamarin.Android NuGet packages without installing the Essential Studio® or Xamarin platform installation to development with the Syncfusion Xamarin.Android controls. From v15.4.0.17 onwards, the Syncfusion Xamarin.Android NuGet packages are published in [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 

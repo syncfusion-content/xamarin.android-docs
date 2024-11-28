@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview | Xamarin.Android | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Xamarin ProgressBar (Progress Bar) control, its elements and more.
 platform: Xamarin.Android
 control: Overview
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ProgressBar
 
 This section explains the steps required to work with progress bar in Xamarin.Android.
 
@@ -25,15 +25,15 @@ android\Syncfusion.SfProgressBar.Android.dll
 
 Import the progress bar namespace as shown in the following codes in your respective page,
 
-{% highlight c# %} 
+{% highlight c# %}
 
 using Syncfusion.Android.ProgressBar;
 
-{% endhighlight %} 
+{% endhighlight %}
 
 There are two variants of progress bar: SfLinearProgressBar and SfCircularProgressBar. Each render the progress in its own shape such as rectangle and circle respectively. Initialize both the progress bar with a progress value using Progress property as shown in the following code snippet.
 
-{% highlight c# %} 
+{% highlight c# %}
 
 // Using linear progress bar. 
 LinearLayout linearLayout = new LinearLayout(this);
@@ -62,7 +62,7 @@ N>By default, the value of progress should be specified between 0 and 100. If yo
 
 Run the project, and check if you get following output to make sure that you have configured your project properly to add the progress bar.
 
-![](overview_images/progressbar.png)
+![ProgressBar Initialized](overview_images/progressbar.png)
 
 
 ## Enable indeterminate state
@@ -70,7 +70,7 @@ Run the project, and check if you get following output to make sure that you hav
 When the progress of a task cannot be shown determinately, you can enable indeterminate state using [IsIndeterminate](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.ProgressBarBase.html#Syncfusion_Android_ProgressBar_ProgressBarBase_IsIndeterminate) property to let user know that some progress is happening in the background.
 
 
-{% highlight c# %} 
+{% highlight c# %}
 
  // Using linear progress bar. 
 LinearLayout linearLayout = new LinearLayout(this);
@@ -101,7 +101,7 @@ SetContentView(linearLayout);
 
 To visualize the progress of a multiple sequential task, split the progress bar into the multiple segments by defining the [SegmentCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.ProgressBarBase.html#Syncfusion_Android_ProgressBar_ProgressBarBase_SegmentCount) property as shown in the following code.
 
-{% highlight c# %} 
+{% highlight c# %}
 
  // Using linear progress bar. 
 LinearLayout linearLayout = new LinearLayout(this);
@@ -126,14 +126,14 @@ circularProgressBar.SegmentCount = 4;
 linearLayout.AddView(circularProgressBar);            
 SetContentView(linearLayout);
  {% endhighlight %}
-![](overview_images/indeterminate.png)
+![ProgressBar Indeterminated](overview_images/indeterminate.png)
 
 
 ## Apply colors
 
 You can customize the color of the progress indicator and track by defining the [ProgressColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.ProgressBarBase.html#Syncfusion_Android_ProgressBar_ProgressBarBase_ProgressColor) and [TrackColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.ProgressBarBase.html#Syncfusion_Android_ProgressBar_ProgressBarBase_TrackColor) properties respectively.
 
-{% highlight c# %} 
+{% highlight c# %}
 
 LinearLayout linearLayout = new LinearLayout(this);
 linearLayout.SetPadding(50, 0, 0, 0);
@@ -181,7 +181,7 @@ linearLayout.AddView(SfCircularProgressBar);
 SetContentView(linearLayout);
 {% endhighlight %}
  
-![](overview_images/style.png)
+![ProgressBar Style Applied](overview_images/style.png)
 
 
 You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar_Android-166812374).
