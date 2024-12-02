@@ -11,9 +11,9 @@ documentation: ug
 
 This section explains you the steps required to render the [SfCalendar](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html) control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the `SfCalendar`.
 
-## Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio® Components in Your Solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 

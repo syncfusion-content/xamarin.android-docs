@@ -14,7 +14,7 @@ This section explains you the steps to configure a SfPicker control in a real-
 
 ## Adding SfPicker reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation# "") to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpicker "") link to know about the assemblies required for adding SfPicker to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation# "") to know how to obtain and reference Essential Studio® components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpicker "") link to know about the assemblies required for adding SfPicker to your project.
 
 ## Initialize SfPicker on Android
 

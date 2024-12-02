@@ -11,9 +11,9 @@ documentation : ug
 
 This section explains you the steps to configure a SfCarousel control in a real-time scenario and also provides a walk-through on some of the customization features available in SfCarousel control.
 
-## Referencing Essential Studio components in your solution
+## Referencing Essential Studio® components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Installed location}\Essential Studio\15.x.x.x\lib
 

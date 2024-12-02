@@ -13,7 +13,7 @@ This section provides a quick overview for working with the segmented control fo
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders,   
+After installing Essential Studio® for Xamarin, find all the required assemblies in the installation folders,   
 {Syncfusion Essential Studio Installed location}\Essential Studio\16.2.0.41\Xamarin\lib
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\16.2.0.41\Xamarin\lib
 
