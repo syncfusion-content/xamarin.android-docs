@@ -11,9 +11,9 @@ documentation: ug
 
 This section walks you through the steps required to add SfDateTimeRangeNavigator and populate it with data, and also explains how to respond to range selection performed in the control. 
 
-## Reference Essential Studio components in your solution
+## Reference Essential Studio® components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, 
 
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
