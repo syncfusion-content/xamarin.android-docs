@@ -1,5 +1,5 @@
 ---
-title: Annotation for Essential&reg; Xamarin.Android Diagram | Syncfusion&reg;
+title: Annotation for Essential® Xamarin.Android Diagram | Syncfusion®
 description: Describes how to add annotation in node and connector ,annotation customization in diagram for Xamarin.Android
 platform: xamarin.android
 control: SfDiagram

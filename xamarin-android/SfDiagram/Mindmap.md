@@ -1,5 +1,5 @@
 ---
-title: Add mindmap for Essential&reg; Xamarin.Android Diagram | Syncfusion&reg;
+title: Add mindmap for Essential® Xamarin.Android Diagram | Syncfusion®
 description: Describes how to add mindmap,free form layout and mindmap layout style in diagram for Xamarin.Android
 platform: xamarin.android
 control: SfDiagram
