@@ -20,4 +20,4 @@ The progress bar provides a customizable visual that indicates the progress of a
 * Customize the angle of the circular progress bar.
 
 
-![](overview_images/overview.png)
+![Overview in Xamarin.Android ProgressBar](overview_images/overview.png)
