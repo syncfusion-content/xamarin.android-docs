@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Auto-Scroll Limit in Xamarin.Android Diagram control | Syncfusion
-description: Learn here all about Auto-Scroll Limit support in Syncfusion Xamarin.Android Diagram (SfDiagram) control and more.
-platform: Xamarin.Android
+title: Auto-Scroll Limit in Xamarin.Android Diagram control | Syncfusion&reg;
+description: Learn here all about Auto-Scroll Limit support in Syncfusion&reg; Xamarin.Android Diagram (SfDiagram) control and more.
+platform: xamarin.android
 control: SfDiagram
 documentation: ug
 ---
