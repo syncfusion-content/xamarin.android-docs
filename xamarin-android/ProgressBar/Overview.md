@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Xamarin.Android | Syncfusion&reg;
-description: overview
+description: Syncfusion&reg; ProgressBar (SfProgressBar) control overview and the key features are available in Xamarin.Android
 platform: xamarin.android
 control: Overview
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 The progress bar provides a customizable visual that indicates the progress of a task.
 
-Key features
+## Key features
 
 * Visualize the progress in different shapes, such as rectangle and circle.
 * Customize the ranges with different colors in linear progress bar.
