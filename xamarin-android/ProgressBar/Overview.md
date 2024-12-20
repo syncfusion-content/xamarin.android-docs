@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Xamarin.Android | Syncfusion
+title: Overview | Xamarin.Android | Syncfusion&reg;
 description: overview
-platform: Xamarin.Android
+platform: xamarin.android
 control: Overview
 documentation: ug
 ---
