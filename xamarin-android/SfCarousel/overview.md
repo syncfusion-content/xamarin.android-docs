@@ -9,7 +9,7 @@ documentation : ug
 
 # Overview
 
-Essential SfCarousel control for Xamarin.Android is a user interface providing rich visual navigation experience of image data. Also provides efficient customization of items and interactive navigation features. 
+Essential® SfCarousel control for Xamarin.Android is a user interface providing rich visual navigation experience of image data. Also provides efficient customization of items and interactive navigation features. 
 
 ![](images/carousel.png)
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The Essential Xamarin.Android Rating control has a group of stars to indicate the rating with flexible precision. Also provides various customization support on item size, item spacing and the number of displayed items.
+The Essential® Xamarin.Android Rating control has a group of stars to indicate the rating with flexible precision. Also provides various customization support on item size, item spacing and the number of displayed items.
 
 ![](images/overview.png)
 

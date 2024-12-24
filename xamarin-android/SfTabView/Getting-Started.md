@@ -7,7 +7,7 @@ control: TabView
 documentation: ug
 ---
 
-# Getting Started with Syncfusion TabView control for Xamarin.Android 
+# Getting Started with Syncfusion® TabView control for Xamarin.Android 
 
 This section provides a quick overview for working with the tab view control for Xamarin.Android. Walk through the entire process of creating a real-world application with tab view.
 
