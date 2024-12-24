@@ -9,9 +9,9 @@ documentation : ug
 
 # Overview
 
-The Essential Xamarin.Android AutoComplete widget provides the suggestions while typing. The suggested text can be appended to the original text or it can be displayed in a drop-down list. Also provides a gesture friendly UI to perform operations like Suggest, Append and SuggestAppend.
+The Essential® Xamarin.Android AutoComplete widget provides the suggestions while typing. The suggested text can be appended to the original text or it can be displayed in a drop-down list. Also provides a gesture friendly UI to perform operations like Suggest, Append and SuggestAppend.
 
-Essential AutoComplete can be used in any search box.
+Essential® AutoComplete can be used in any search box.
 
 ![](images/overview.png)
 
