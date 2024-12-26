@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Carousel control for Xamarin.Android
-description: Overview and key features of Carousel Control
+description: This explains about the Overview and key features of Syncfusion Essential Xamarin.Android Carousel Control
 platform: xamarin.android
 control: Carousel
 documentation: ug

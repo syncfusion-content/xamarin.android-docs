@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion AutoComplete control for Xamarin.Android
-description: Overview and key features of SfAutoComplete control
+description: This explains about the Overview and key features of Syncfusion Essential Xamarin.Android SfAutoComplete control
 platform: xamarin.android
 control: SfAutoComplete
 documentation: ug
