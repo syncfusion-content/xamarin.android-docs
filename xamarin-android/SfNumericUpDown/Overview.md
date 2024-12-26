@@ -2,7 +2,7 @@
 layout: post
 title: About Xamarin.Android NumericUpDown Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Xamarin.Android NumericUpDown control its features, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: NumericUpDown
 documentation: ug
 ---

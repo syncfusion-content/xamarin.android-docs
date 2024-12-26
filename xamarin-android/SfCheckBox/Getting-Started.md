@@ -2,7 +2,7 @@
 layout: post
 title: Getting started in Syncfusion CheckBox for Xamarin.Android platform
 description: Learn how to create a simple CheckBox and their customization options with the available basic features in Xamarin.Android
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfCheckBox
 documentation: ug 
 keywords: button, SfCheckBox, CheckBox

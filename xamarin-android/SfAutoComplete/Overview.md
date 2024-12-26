@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Overview of Syncfusion AutoComplete control for Xamarin.Android
-description : Overview and key features of SfAutoComplete control
-platform : Xamarin.Android
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Overview of Syncfusion AutoComplete control for Xamarin.Android
+description: Overview and key features of SfAutoComplete control
+platform: xamarin.android
+control: SfAutoComplete
+documentation: ug
 ---
 
 # Overview
@@ -13,7 +13,7 @@ The Essential® Xamarin.Android AutoComplete widget provides the suggestions whi
 
 Essential® AutoComplete can be used in any search box.
 
-![](images/overview.png)
+![Xamarin.Android AutoComplete Overview](images/overview.png)
 
 ## Key Features
 
