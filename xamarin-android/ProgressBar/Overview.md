@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Xamarin.Android | Syncfusion&reg;
-description: Syncfusion&reg; ProgressBar (SfProgressBar) control overview and the key features are available in Xamarin.Android
+description: An overview of the Syncfusion&reg; ProgressBar (SfProgressBar) control and its key features is available in Xamarin.Android.
 platform: xamarin.android
 control: Overview
 documentation: ug
