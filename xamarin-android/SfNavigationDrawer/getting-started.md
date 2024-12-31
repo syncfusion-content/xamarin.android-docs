@@ -2,14 +2,14 @@
 layout: post
 title: Getting Started with Syncfusion NavigationDrawer for Xamarin.Android
 description: Learn here about getting started with Syncfusion Xamarin.Android NavigationDrawer control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: NavigationDrawer
 documentation: ug
 ---
 
 # Getting Started with Xamarin.Android NavigationDrawer
 
-This section provides overview for working with Essential NavigationDrawer for Xamarin.Android. You can walk through the entire process of creating an NavigationDrawer.
+This section provides overview for working with Essential® NavigationDrawer for Xamarin.Android. You can walk through the entire process of creating an NavigationDrawer.
 
 ## Referencing Essential Studio® Components in Your Solution
 
