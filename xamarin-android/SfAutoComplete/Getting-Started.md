@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Getting Started with Syncfusion AutoComplete Control for Xamarin.Android
-description : A quick tour to initial users on Syncfusion SfAutoComplete control for Xamarin.Android platform 
+title : Getting Started with Syncfusion® AutoComplete Control for Xamarin.Android
+description : A quick tour to initial users on Syncfusion® SfAutoComplete control for Xamarin.Android platform 
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug

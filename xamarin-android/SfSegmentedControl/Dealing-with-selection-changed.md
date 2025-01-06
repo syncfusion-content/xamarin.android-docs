@@ -1,6 +1,6 @@
 ---
 layout: post
-title: selection changed in Syncfusion Segmented control for Xamarin.Android
+title: selection changed in Syncfusion® Segmented control for Xamarin.Android
 description: Learn how to notify the selection changes on its segments in Xamarin.Android SegmentedControl (SfSegmentedControl).
 platform: Xamarin.Android
 control: SegmentedControl

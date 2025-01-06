@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion NumericTextBox control for Xamarin.Android
-description: This explains about the Overview and key features of Syncfusion Essential Xamarin.Android NumericTextBox control
+title: Overview of Syncfusion® NumericTextBox control for Xamarin.Android
+description: This explains about the Overview and key features of Syncfusion® Essential® Xamarin.Android NumericTextBox control
 platform: xamarin.android
 control: NumericTextBox
 documentation: ug

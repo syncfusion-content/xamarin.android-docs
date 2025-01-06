@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion RadialMenu control for Xamarin.Android 
-description: A quick tour to the new users of Syncfusion RadialMenu control to get familiar with the control for Xamarin.Android platform.
+title: Getting Started with Syncfusion® RadialMenu control for Xamarin.Android 
+description: A quick tour to the new users of Syncfusion® RadialMenu control to get familiar with the control for Xamarin.Android platform.
 platform: Xamarin.Android 
 control: RadialMenu
 documentation: ug

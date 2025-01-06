@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TracBar in Syncfusion RangeSlider control for Xamarin.Android
+title: TracBar in Syncfusion® RangeSlider control for Xamarin.Android
 description: Learn how to customize the track bar of RangeSlider control in Xamarin.Android
 platform: Xamarin.Android
 control: RangeSlider

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Syncfusion RadialMenu control for Xamarin.Android
+title: Events in Syncfusion® RadialMenu control for Xamarin.Android
 description: Learn how to perform events like navigating, opening, navigated, opened, center button tapped and when the center button back has been tapped in SfRadialMenu.
 platform: Xamarin.Android
 control: SfRadialMenu

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Rating control for Xamarin.Android
-description: This explains about the Overview and key features of Syncfusion Essential Xamarin.Android Rating Control
+title: Overview of Syncfusion® Rating control for Xamarin.Android
+description: This explains about the Overview and key features of Syncfusion® Essential® Xamarin.Android Rating Control
 platform: xamarin.android
 control: Rating
 documentation: ug

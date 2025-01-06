@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with syncfusion Rotator control for Xamarin.Android 
-description:  A quick tour to initial users on Syncfusion Rotator control for Xamarin.Android platform
+title: Getting Started with syncfusion® Rotator control for Xamarin.Android 
+description:  A quick tour to initial users on Syncfusion® Rotator control for Xamarin.Android platform
 platform: Xamarin.Android 
 control: Rotator 
 documentation: ug
