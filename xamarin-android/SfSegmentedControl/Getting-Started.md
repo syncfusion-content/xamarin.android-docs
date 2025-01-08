@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion segmented control for Xamarin.Android 
+title: Getting Started with Syncfusion<sup>&reg;</sup> segmented control for Xamarin.Android 
 description: Learn how to create a simple segmented control and its customization options with its available basic features in Xamarin.Android
 platform: Xamarin.Android
 control: SfSegmentedControl

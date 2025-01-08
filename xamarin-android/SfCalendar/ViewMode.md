@@ -1,6 +1,6 @@
 ---
 layout: post
-title: View Modes | SfCalendar | Xamarin.Android | Syncfusion
+title: View Modes | SfCalendar | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: Calendar Xamarin.Android displays month, year, decade and century views which allows users to easily select and navigate between all built-in views.
 platform: Xamarin.Android
 control: Calendar

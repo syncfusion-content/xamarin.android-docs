@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion Picker control for Xamarin.Android
+title: Overview of Syncfusion<sup>&reg;</sup> Picker control for Xamarin.Android
 description: This section will explain about the Overview and key features Exists in Xamarin.Android SfPicker control.
 platform: Xamarin.Android
 control: Picker

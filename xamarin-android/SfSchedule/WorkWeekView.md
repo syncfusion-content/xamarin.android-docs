@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customize WorkWeekView in Xamarin.Android Schedule | Syncfusion
-description: Learn how to Customize the schedule WorkWeekView in Syncfusion Xamarin.Android Schedule (SfSchedule) control, its elements and more.
+title: Customize WorkWeekView in Xamarin.Android Schedule | Syncfusion<sup>&reg;</sup>
+description: Learn how to Customize the schedule WorkWeekView in Syncfusion<sup>&reg;</sup> Xamarin.Android Schedule (SfSchedule) control, its elements and more.
 platform: xamarin.Android
 control: SfSchedule
 documentation: ug

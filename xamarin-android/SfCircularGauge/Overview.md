@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Overview of Syncfusion SfCircularGauge control for Xamarin.Android
-description: Overview of Syncfusion SfCircularGauge control
+title: Overview of Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Android
+description: Overview of Syncfusion<sup>&reg;</sup> SfCircularGauge control
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug

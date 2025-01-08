@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Header in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: Learn how to set header in Syncfusion SfCircularGauge control
+title: Header in Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Android 
+description: Learn how to set header in Syncfusion<sup>&reg;</sup> SfCircularGauge control
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Timeline view scheduler | Xamarin.Android | Syncfusion
+title: Timeline view scheduler | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: Xamarin.Android scheduler timeline view displays the dates in a horizontal time axis with desired days count, displays events accurately across the time slots.
 platform: xamarin.Android
 control: SfSchedule

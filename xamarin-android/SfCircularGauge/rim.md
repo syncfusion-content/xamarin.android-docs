@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Rim in Syncfusion SfCircularGauge control for Xamarin.Android 
-description:  in Syncfusion SfCircularGauge control
+title: Rim in Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Android 
+description:  in Syncfusion<sup>&reg;</sup> SfCircularGauge control
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug

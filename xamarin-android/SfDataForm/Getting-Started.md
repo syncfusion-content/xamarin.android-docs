@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | SfDataForm | Xamarin.Android | Syncfusion
+title: Getting started | SfDataForm | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: This section explains key features and getting started with SfDataForm for Xamarin.Android platform.
 platform: Xamarin.Android
 control: SfDataForm

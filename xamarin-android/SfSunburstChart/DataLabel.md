@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Data labels of Essential Xamarin.Android SfSunburstChart
+title:  Data labels of Essential<sup>&reg;</sup> Xamarin.Android SfSunburstChart
 description: This section describes the data label and its customization.
 platform: Xamarin.Android
 control: SfSunburstChart

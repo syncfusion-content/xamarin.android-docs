@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeMapLevels in Syncfusion TreeMap control for Xamarin.Android
-description: Learn how to categorize the levels in Syncfusion TreeMap control
+title: TreeMapLevels in Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.Android
+description: Learn how to categorize the levels in Syncfusion<sup>&reg;</sup> TreeMap control
 platform:  Xamarin.Android
 control: TreeMap
 documentation: ug
