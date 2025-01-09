@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Android NuGet Packages | Syncfusion<sup>®</sup>
+title: Xamarin.Android NuGet Packages | Syncfusion®
 description: Learn here about the NuGet Packages and how they can be used to automatically add files and references to your Visual Studio projects.
 platform: xamarin.android
 control: NuGet Packages

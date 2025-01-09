@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Errors in Xamarin.android - Syncfusion<sup>®</sup>
-description: Learn here about the common installation errors and solution to those errors in Syncfusion<sup>®</sup> Xamarin.android Components installation.
+title: Installation Errors in Xamarin.android - Syncfusion®
+description: Learn here about the common installation errors and solution to those errors in Syncfusion® Xamarin.android Components installation.
 platform: xamarin.android
 control: Installation and Deployment
 documentation: ug

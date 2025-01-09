@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installing Syncfusion<sup>®</sup> Xamarin.android installer - Syncfusion<sup>®</sup>
-description: Learn here about the how to install Syncfusion<sup>®</sup> Xamarin.android offline installer after downloading from our syncfusion<sup>®</sup> website.
+title: Installing Syncfusion® Xamarin.android installer - Syncfusion®
+description: Learn here about the how to install Syncfusion® Xamarin.android offline installer after downloading from our syncfusion® website.
 platform: xamarin.android
 control: Installation and Deployment
 documentation: ug
