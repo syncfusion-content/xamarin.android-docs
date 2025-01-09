@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Installing Syncfusion Xamarin.android Mac installer - Syncfusion
-description: Learn here about how to install Syncfusion Xamarin.android mac installer after downloading from our Syncfusion website.
+title: Installing Syncfusion<sup>®</sup> Xamarin.android Mac installer - Syncfusion®
+description: Learn here about how to install Syncfusion® Xamarin.android mac installer after downloading from our Syncfusion® website.
 platform: xamarin.android
-control: Syncfusion Controls
+control: Syncfusion<sup>®</sup> Controls
 documentation: ug
 ---
 
-# Installing Syncfusion Xamarin.android Mac Installer
+# Installing Syncfusion<sup>®</sup> Xamarin.android Mac Installer
 
 
-## Overview of Syncfusion components Installation in Mac
+## Overview of Syncfusion<sup>®</sup> components Installation in Mac
 
-The Syncfusion Essential Studio® allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components.
+The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion<sup>®</sup> components.
 
 ### Step-by-Step Installation
 
@@ -34,9 +34,9 @@ The steps below show how to install the Xamarin Mac installer.
 
    ![License Agree Confirmation](images/Mac_Installer4.png)
 
-   N> The Unlock key is not required to install the Mac installer. The Syncfusion Mac installer can be used for development purposes without registering the Unlock key.
+   N> The Unlock key is not required to install the Mac installer. The Syncfusion<sup>®</sup> Mac installer can be used for development purposes without registering the Unlock key.
 
-5. Now you can open the folder to explore the Syncfusion Essential Studio® Mac installer.
+5. Now you can open the folder to explore the Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Mac installer.
 
    ![Destination](Images/destination.JPG)
 
@@ -52,7 +52,7 @@ I> After adding the reference, currently, an additional step is required for iOS
 
 ### Explore the libraries package
 
-You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
+You can find the Syncfusion<sup>®</sup> libraries, samples and NuGet from the installed location in Mac.
 
 {Essential Studio installed location}\Syncfusion\Essential Studio{version}\Xamarin
 
@@ -117,7 +117,7 @@ You can then add the assembly references to the respective projects such as PCL,
 6. **Option 2:** 
    You can add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS from the MAC build installed location in your machine. You can find the dependencies for each control from this link.
    
-   You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
+   You can find the Syncfusion<sup>®</sup> libraries, samples and NuGet from the installed location in Mac.
 
    {Essential Studio installed location}\Syncfusion\Essential Studio{version}\Xamarin
 
@@ -152,10 +152,10 @@ You can then add the assembly references to the respective projects such as PCL,
 
 3. Right click the iOS/ Android project-> Select Set As Startup Project in Debug/Release mode. Build and Run the project in any platform as desired.	
 
-   Thus, you can create Xamarin Visual Studio MAC project for any Syncfusion Xamarin control using the above guidelines.
+   Thus, you can create Xamarin Visual Studio MAC project for any Syncfusion<sup>®</sup> Xamarin control using the above guidelines.
 
 ## License key registration in samples
 
 After the installation, the license key is required to register the demo source that is included in the Mac installer. To learn about the steps for license registration for the Xamarin Mac installer, please refer to this.
 
- Register the license key in [OnCreate](https://help.syncfusion.com/xamarin-android/licensing/how-to-register-in-an-application#xamarinandroid) override method of your main activity class before initializing any Syncfusion control.
+ Register the license key in [OnCreate](https://help.syncfusion.com/xamarin-android/licensing/how-to-register-in-an-application#xamarinandroid) override method of your main activity class before initializing any Syncfusion<sup>®</sup> control.
