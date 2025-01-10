@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summary | SfDataGrid | Xamarin.Android | Syncfusion
+title: Summary | SfDataGrid | Xamarin.Android | Syncfusion®
 description: How to apply summaries for the elements in a SfDataGrid.
 platform: Xamarin.Android
 control: SfDataGrid

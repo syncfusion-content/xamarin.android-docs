@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Drag and Drop in Xamarin.Android SfDataGrid Control| Syncfusion
-description: How to enable and perform column drag and drop operation in Syncfusion Xamarin.Android SfDataGrid Control, and its customization.
+title: Column Drag and Drop in Xamarin.Android SfDataGrid Control| Syncfusion®
+description: How to enable and perform column drag and drop operation in Syncfusion® Xamarin.Android SfDataGrid Control, and its customization.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Freeze Panes | SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here about freeze panes in Syncfusion Essential Xamarin.Android SfDataGrid Control, its elements, and more.
+title: Freeze Panes | SfDataGrid | Xamarin.Android | Syncfusion®
+description: Learn here about freeze panes in Syncfusion® Essential Xamarin.Android SfDataGrid Control, its elements, and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG

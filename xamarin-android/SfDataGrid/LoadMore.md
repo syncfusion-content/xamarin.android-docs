@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load More | SfDataGrid | Xamarin.Android | Syncfusion
+title: Load More | SfDataGrid | Xamarin.Android | Syncfusion®
 description: How to perform load more and it's properties and customizations in a Xamarin.Android DataGrid (SfDataGrid).
 platform: Xamarin.Android
 control: SfDataGrid
