@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Getting Started with Xamarin.Android PDF Viewer Control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Xamarin.Android PDF Viewer Control, its elements, and more.
-platform: Xamarin.Android
+description: Learn here about getting started with Syncfusion Essential<sup>®</sup> Xamarin.Android PDF Viewer Control, its elements, and more.
+platform: xamarin.android
 control: SfPdfViewer
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section demonstrates how to create an application that displays a PDF file 
 
 ## Assemblies Required
 
-After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Essential Studio Installed location}\Essential Studio\{Essential Studio version}\Xamarin\lib\android\
 
@@ -32,7 +32,7 @@ For creating a PDF Viewer for android, the following assemblies need to be refer
 </tr>
 </table>
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin.Android application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion<sup>®</sup> license key in your Xamarin.Android application to use our components.
 
 ## Create a simple PDF Viewer
 

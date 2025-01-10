@@ -1,8 +1,8 @@
 ---
 layout: post
 title: PDF coordinates in Xamarin.Android Pdf Viewer control | Syncfusion
-description: Learn here all about working with PDF coordinates and their conversions support in Syncfusion Xamarin.Android Pdf Viewer control and more.
-platform: Xamarin.Android
+description: Learn here all about working with PDF coordinates and their conversions support in Syncfusion<sup>®</sup> Xamarin.Android Pdf Viewer control and more.
+platform: xamarin.android
 control: SfPdfViewer
 documentation: ug
 ---
