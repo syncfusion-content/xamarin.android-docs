@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding | SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here how to bind the data from different sources in Syncfusion Xamarin.Android DataGrid (SfDataGrid) control with more detail.
+title: Data Binding | SfDataGrid | Xamarin.Android | Syncfusion®
+description: Learn here how to bind the data from different sources in Syncfusion® Xamarin.Android DataGrid (SfDataGrid) control with more detail.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG

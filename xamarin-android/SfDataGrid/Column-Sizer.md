@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Sizer | SfDataGrid | Xamarin.Android | Syncfusion
+title: Column Sizer | SfDataGrid | Xamarin.Android | Syncfusion®
 description: What are all the different ColumnSizer and how it works in a SfDataGrid.
 platform: Xamarin.Android
 control: SfDataGrid

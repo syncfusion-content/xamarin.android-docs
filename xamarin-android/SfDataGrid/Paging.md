@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging | SfDataGrid | Xamarin.Android | Syncfusion
+title: Paging | SfDataGrid | Xamarin.Android | Syncfusion®
 description: Information about how to enable paging and use its properties
 platform: Xamarin.Android
 control: SfDataGrid

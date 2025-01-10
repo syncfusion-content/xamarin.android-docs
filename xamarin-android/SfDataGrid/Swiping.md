@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swiping| SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here about Swiping support in Syncfusion Essential Xamarin.Android SfDataGrid Control, its elements, and more.
+title: Swiping| SfDataGrid | Xamarin.Android | Syncfusion®
+description: Learn here about Swiping support in Syncfusion® Essential Xamarin.Android SfDataGrid Control, its elements, and more.
 platform: xamarin.android
 control: SfDataGrid
 documentation: ug

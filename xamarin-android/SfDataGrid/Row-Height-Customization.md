@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row Height Customization | SfDataGrid | Xamarin.Android | Syncfusion
-description: How to customize the height of rows in Syncfusion Xamarin.Android SfDataGrid Control, its elements, and more.
+title: Row Height Customization | SfDataGrid | Xamarin.Android | Syncfusion®
+description: How to customize the height of rows in Syncfusion® Xamarin.Android SfDataGrid Control, its elements, and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: ug

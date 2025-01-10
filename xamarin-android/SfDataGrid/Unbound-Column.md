@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UnboundColumn | SfDataGrid | Xamarin.Android | Syncfusion
-description: Learn here about UnboundColumn support in Syncfusion Essential Xamarin.Android SfDataGrid Control, its elements, and more.
+title: UnboundColumn | SfDataGrid | Xamarin.Android | Syncfusion®
+description: Learn here about UnboundColumn support in Syncfusion® Essential Xamarin.Android SfDataGrid Control, its elements, and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: ug
