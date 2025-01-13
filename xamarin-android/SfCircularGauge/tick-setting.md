@@ -29,7 +29,7 @@ The [`ShowTicks`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.
 
 {% endhighlight %}
 
-![](tick-setting_images/show-ticks.png)
+![Circular gauge show tick image](tick-setting_images/show-ticks.png)
 
 ## Ticks customization 
 
@@ -56,7 +56,7 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
   
 {% endhighlight %}
 
-![](tick-setting_images/majortick-customise.png)
+![Circular gauge tick customization image](tick-setting_images/majortick-customise.png)
 
 ## Customize minor ticks for scale
 
@@ -77,7 +77,7 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
   
 {% endhighlight %}
 
-![](tick-setting_images/minortick-customise.png)
+![Circular gauge minor tick scale image](tick-setting_images/minortick-customise.png)
 
 ## Setting position for ticks
 
@@ -105,7 +105,7 @@ The major and minor ticks can be positioned far away from the rim by using the f
 
 {% endhighlight %}
 
-![](tick-setting_images/offset.png)
+![Circular gauge offset scale image](tick-setting_images/offset.png)
 
 ### Setting scale start and end offset for scale
 
@@ -128,4 +128,4 @@ The major and minor ticks can be positioned far away from the rim by using the f
   
 {% endhighlight %}
 
-![](tick-setting_images/start-end-offset.png)
+![Circular gauge start and end offset image](tick-setting_images/start-end-offset.png)
