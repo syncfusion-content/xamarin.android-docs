@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Legends of Essential Xamarin.Android SfSunburstChart
+title:  Legends of Essential<sup>&reg;</sup> Xamarin.Android SfSunburstChart
 description: This section describes the legend and its customization.
 platform: Xamarin.Android
 control: SfSunburstChart

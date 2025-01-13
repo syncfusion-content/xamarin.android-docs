@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential Xamarin.Android SfImageEditor
-description: A quick tour to the initial users on Syncfusion SfImageEditor control for Xamarin.Android  platform and create a demo application.
+title: Getting Started for Syncfusion<sup>&reg;</sup> Essential Xamarin.Android SfImageEditor
+description: A quick tour to the initial users on Syncfusion<sup>&reg;</sup> SfImageEditor control for Xamarin.Android  platform and create a demo application.
 platform: xamarin.android
 control: SfImageEditor
 documentation: ug

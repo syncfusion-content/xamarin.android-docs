@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TreeMap control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion TreeMap control for Xamarin.Android platform.
+title: Getting Started with Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.Android
+description: A quick tour to initial users on Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.Android platform.
 platform: Xamarin.Android
 control: SfTreeMap
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization | SfCalendar | Xamarin.Android | Syncfusion
+title: Localization | SfCalendar | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: How to localize the static text in Calendar control
 platform: Xamarin.Android
 control: Calendar

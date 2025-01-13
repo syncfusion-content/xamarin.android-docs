@@ -1,7 +1,7 @@
 ---
 layout : post
-title: ToolbarCustomization in Syncfusion SfImageEditor in Xamarin.Android
-description: Learn how to customize toolbar in Syncfusion Xamarin.Android ImageEditor (SfImageEditor) Control, its elements, and more.
+title: ToolbarCustomization in Syncfusion<sup>&reg;</sup> SfImageEditor in Xamarin.Android
+description: Learn how to customize toolbar in Syncfusion<sup>&reg;</sup> Xamarin.Android ImageEditor (SfImageEditor) Control, its elements, and more.
 platform : xamarin.android
 control : ImageEditor
 documentation : ug

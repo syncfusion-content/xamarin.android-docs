@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential Xamarin.Android Kanban
-description: A quick tour to the initial users on Syncfusion SfKanban control for Xamarin.Android platform and create a demo application from the scratch
+title: Getting Started for Syncfusion<sup>&reg;</sup> Essential Xamarin.Android Kanban
+description: A quick tour to the initial users on Syncfusion<sup>&reg;</sup> SfKanban control for Xamarin.Android platform and create a demo application from the scratch
 platform: Xamarin.Android
 control: SfKanban
 documentation: ug

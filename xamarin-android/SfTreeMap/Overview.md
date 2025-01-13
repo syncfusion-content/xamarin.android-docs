@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion TreeMap control for Xamarin.Android
+title: Overview of Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.Android
 description: Overview and key features of the SfTreeMap control
 platform: Xamarin.Android
 control: SfTreeMap

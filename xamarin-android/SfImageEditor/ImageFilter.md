@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ImageFilter in Syncfusion SfImageEditor control in Xamarin.Android
+title: ImageFilter in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.Android
 description: This section describes how to apply image filter support in SfImageEditor control for Xamarin.Android platform
 platform: Xamarin.Android
 control: SfImageEditor

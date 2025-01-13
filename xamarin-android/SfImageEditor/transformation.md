@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Transformation in Syncfusion SfImageEditor control in Xamarin.Android
+title : Transformation in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.Android
 description : Learn how to perform transformations in ImageEditor for Xamarin.Android
 platform : xamarin.android
 control : ImageEditor

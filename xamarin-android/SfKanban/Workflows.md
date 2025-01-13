@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Workflows for Xamarin.Android Kanban Control | Syncfusion
-description: Learn here about Workflows support in Syncfusion Essential Xamarin.Android Kanban Control, its elements, and more.
+title: Workflows for Xamarin.Android Kanban Control | Syncfusion<sup>&reg;</sup>
+description: Learn here about Workflows support in Syncfusion<sup>&reg;</sup> Essential Xamarin.Android Kanban Control, its elements, and more.
 platform: xamarin.android
 control: Kanban
 documentation: ug

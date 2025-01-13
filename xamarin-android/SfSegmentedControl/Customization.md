@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Syncfusion segmented control for Xamarin.Android
+title: Customization in Syncfusion<sup>&reg;</sup> segmented control for Xamarin.Android
 description: Learn how to customize the text, border, scrolling, corner radius, and color in Xamarin.Android SegmentedControl
 platform: Xamarin.Android
 control: SegmentedControl

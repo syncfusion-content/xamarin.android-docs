@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Calendar control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion calendar control Xamarin.Android platform 
+title: Getting Started with Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.Android
+description: A quick tour to initial users on Syncfusion<sup>&reg;</sup> calendar control Xamarin.Android platform 
 platform: Xamarin.Android
 control: Calendar
 documentation: ug
