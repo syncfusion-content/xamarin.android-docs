@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Xamarin.Android | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin ProgressBar (Progress Bar) control, its elements and more.
+title: Overview | Xamarin.Android | Syncfusion&reg;
+description: Learn here about getting started with Syncfusion&reg; Xamarin ProgressBar (Progress Bar) control, its elements and more.
 platform: xamarin.android
 control: Overview
 documentation: ug
@@ -14,7 +14,7 @@ This section explains the steps required to work with progress bar in Xamarin.An
 ## Add progress bar reference
 
 After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
-{Syncfusion Installed location}\Essential Studio{version number}\lib
+{Syncfusion&reg; Installed location}\Essential Studio&reg;{version number}\lib
 
 N>Assemblies are available in unzipped package location in Mac.
 
