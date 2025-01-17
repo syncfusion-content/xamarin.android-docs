@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The Essential® Xamarin.Android NumericTextBox is an advanced version of the Entry control that restricts input to numeric values.
+The Essential<sup>®</sup> Xamarin.Android NumericTextBox is an advanced version of the Entry control that restricts input to numeric values.
 
 Also provides, a gesture friendly UI culture and can be configured to display different formats like currency format, scientific format etc.
 

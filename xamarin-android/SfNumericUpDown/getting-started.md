@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started of Xamarin.Android NumericUpDown(SfNumericUpDown)
 
-This section provides overview for working with Essential® NumericUpDown for Xamarin.Android. You can walk through the entire process of creating a SfNumericUpDown.
+This section provides overview for working with Essential<sup>®</sup> NumericUpDown for Xamarin.Android. You can walk through the entire process of creating a SfNumericUpDown.
 
-## Referencing Essential Studio® Components in Your Solution	
+## Referencing Essential Studio<sup>®</sup> Components in Your Solution	
 
-After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
