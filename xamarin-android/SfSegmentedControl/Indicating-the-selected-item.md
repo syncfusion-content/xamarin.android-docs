@@ -1,6 +1,6 @@
 ---
 layout: post
-title: selection indicator in SyncfusionÂ® SegmentedControl for Xamarin.Android
+title: selection indicator in Syncfusion® SegmentedControl for Xamarin.Android
 description: Learn how to handle selection indicator settings, selection text color and selection strip in Segmented control
 platform: Xamarin.Android
 control: SegmentedControl

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with Columns of Syncfusion Picker control for Xamarin.Android
+title: Dealing with Columns of Syncfusion<sup>&reg;</sup> Picker control for Xamarin.Android
 description: This section will explain about how to create different Columns in Xamarin.Android SfPicker control.
 platform: Xamarin.Android
 control: Picker

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Right-to-left | Schedule for Xamarin.Android | Syncfusion
+title: Right-to-left | Schedule for Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: Describes how to enable right-to-left localization schedule.
 platform: Xamarin.Android
 control: SfSchedule

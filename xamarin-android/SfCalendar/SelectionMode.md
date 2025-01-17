@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection Modes | SfCalendar | Xamarin.Android | Syncfusion
+title: Selection Modes | SfCalendar | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description:  Learn how to change the selection mode of calendar control
 platform: Xamarin.Android
 control: Calendar

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save Image in Syncfusion SfImageEditor control in Xamarin.Android
+title: Save Image in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.Android
 description: Learn how to save the image in different ways and use of different events in ImageEditor for Xamarin.Android.
 platform: xamarin.android
 control: ImageEditor

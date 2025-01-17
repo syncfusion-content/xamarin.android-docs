@@ -1,7 +1,7 @@
 ---
-title: Overview of Diagram control for Xamarin.Android | Syncfusion
-description: Diagram overview and the key features are available in Xamarin.Android
-platform: Xamarin.Android
+title: Overview of Diagram control for Xamarin.Android | Syncfusion&reg;
+description: Syncfusion&reg; Diagram (SfDiagram) control overview and the key features are available in Xamarin.Android
+platform: xamarin.android
 control: SfDiagram
 documentation: Ug
 keywords: Diagram, org chart, flowchart, shape, use case, workflow.

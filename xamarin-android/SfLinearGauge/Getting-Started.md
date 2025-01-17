@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion SfLinearGauge control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.Android platform
+title: Syncfusion<sup>&reg;</sup> SfLinearGauge control for Xamarin.Android
+description: A quick tour to initial users on Syncfusion<sup>&reg;</sup> linearGauge control for Xamarin.Android platform
 platform: Xamarin.Android
 control: LinearGauge
 documentation: ug

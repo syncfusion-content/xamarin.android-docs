@@ -1,6 +1,6 @@
 ---
 layout: post
-title: looping feature of Syncfusion Picker control for Xamarin.Android
+title: looping feature of Syncfusion<sup>&reg;</sup> Picker control for Xamarin.Android
 description: This section will explain about how to enable and disable looping by using SfPicker control in Xamarin.Android.
 platform: Xamarin.Android
 control: Picker

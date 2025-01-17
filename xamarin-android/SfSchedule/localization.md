@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization of Syncfusion Schedule in Xamairn.Android
-description: Learn here about localization in Syncfusion Essential Xamairn.Android Schedule (SfSchedule) Control, its elements, and more.
+title: Localization of Syncfusion<sup>&reg;</sup> Schedule in Xamairn.Android
+description: Learn here about localization in Syncfusion<sup>&reg;</sup> Essential Xamairn.Android Schedule (SfSchedule) Control, its elements, and more.
 platform: Xamarin.Android
 control: SfSchedule
 documentation: ug

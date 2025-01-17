@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Picker using Syncfusion Picker control in Xamarin.Android
+title: Date Picker using Syncfusion<sup>&reg;</sup> Picker control in Xamarin.Android
 description: This section will explain about how to create  Date Picker control using Xamarin.Android SfPicker control.
 platform: Xamarin.Android
 control: Picker

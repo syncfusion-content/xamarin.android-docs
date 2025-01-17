@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Overview of Syncfusion SfCircularGauge control for Xamarin.Android
-description: Overview of Syncfusion SfCircularGauge control
+title: Overview of Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Android
+description: Overview of Syncfusion<sup>&reg;</sup> SfCircularGauge control
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
@@ -47,4 +47,4 @@ The circular gauge control is highly customizable control with variety of simple
 
  Annotations allows you to mark the specific area of interest in a circular gauge. You can place custom views, text, and images as annotations by using the annotations feature.
 
-![](overview_images/overview.png)
+![Overview image](overview_images/overview.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: Learn here about how to set annotation in Syncfusion Essential SfCircularGauge control, its elements, and more.
+title: Header in Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Android 
+description: Learn here about how to set annotation in Syncfusion<sup>&reg;</sup> Essential<sup>&reg;</sup> SfCircularGauge control, its elements, and more.
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug

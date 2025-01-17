@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of Syncfusion Calendar control in Xamarin.Android
+title: Customization of Syncfusion<sup>&reg;</sup> Calendar control in Xamarin.Android
 description: How to Perform an operation and load Sfcalendar from .axml layout.
 platform: Xamarin.Android
 control: Calendar
