@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion NavigationDrawer control for Xamarin.Android
+title: Overview of Syncfusion® NavigationDrawer control for Xamarin.Android
 description: Overview and key features of NavigationDrawer control
 platform: Xamarin.Android
 control: NavigationDrawer

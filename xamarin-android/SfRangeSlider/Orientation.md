@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various features of Syncfusion RangeSlider control for Xamarin.Android
+title: Various features of Syncfusion® RangeSlider control for Xamarin.Android
 description: Learn how to set minimum value, maximum value, tick frequency, step frequency, enabling snaps to support and orientation for RangeSlider
 platform: Xamarin.Android
 control: RangeSlider

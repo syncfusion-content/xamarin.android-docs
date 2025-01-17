@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TabView control for Xamarin.Android 
-description: A quick tour to initial users about getting started page on Syncfusion TabView control for Xamarin.Android platform
+title: Getting Started with Syncfusion® TabView control for Xamarin.Android 
+description: A quick tour to initial users about getting started page on Syncfusion® TabView control for Xamarin.Android platform
 platform: xamarin.android
 control: TabView
 documentation: ug
 ---
 
-# Getting Started with Syncfusion® TabView control for Xamarin.Android 
+# Getting Started with Syncfusion<sup>®</sup> TabView control for Xamarin.Android 
 
 This section provides a quick overview for working with the tab view control for Xamarin.Android. Walk through the entire process of creating a real-world application with tab view.
 
 ## Assembly deployment
 
-After installing Essential Studio® for Xamarin, find all the required assemblies in the installation folders,   
+After installing Essential Studio<sup>®</sup> for Xamarin, find all the required assemblies in the installation folders,   
 {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 

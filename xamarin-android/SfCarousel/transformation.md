@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Transformation in Syncfusion Carousel control in Xamarin.Android
+title : Transformation in Syncfusion® Carousel control in Xamarin.Android
 description : Learn how to set the Transformation in Carousel for Xamarin.Android
 platform : Xamarin.Android
 control : Carousel

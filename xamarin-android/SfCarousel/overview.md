@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Carousel control for Xamarin.Android
-description: This explains about the Overview and key features of Syncfusion Essential Xamarin.Android Carousel Control
+title: Overview of Syncfusion® Carousel control for Xamarin.Android
+description: This explains about the Overview and key features of Syncfusion® Essential® Xamarin.Android Carousel Control
 platform: xamarin.android
 control: Carousel
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Essential® SfCarousel control for Xamarin.Android is a user interface providing rich visual navigation experience of image data. Also provides efficient customization of items and interactive navigation features. 
+Essential<sup>®</sup> SfCarousel control for Xamarin.Android is a user interface providing rich visual navigation experience of image data. Also provides efficient customization of items and interactive navigation features. 
 
 ![Xamarin.Android Carousel Overview](images/carousel.png)
 
