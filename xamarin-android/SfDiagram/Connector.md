@@ -1,5 +1,5 @@
 ---
-title: Adding connectors in Xamarin.Android diagram control | Syncfusion&reg;
+title: Adding connectors in Xamarin.Android diagram control | Syncfusion<sup>&reg;</sup>;
 description: Describes how to add connector,connection with node and it's appearance in diagram control for Xamarin.Android
 platform: xamarin.android
 control: SfDiagram

@@ -1,5 +1,5 @@
 ---
-title: Adding layout in diagram control for Xamarin.Android | Syncfusion&reg;
+title: Adding layout in diagram control for Xamarin.Android | Syncfusion<sup>&reg;</sup>;
 description: Describes how to add layout,data source setting,drag & drop support in layout and expand & collapse in diagram control for Xamarin.Android.
 platform: xamarin.android
 control: SfDiagram
