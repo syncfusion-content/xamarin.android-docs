@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Populating data in Syncfusion Rotator control in Xamarin.Android
+title : Populating data in Syncfusion® Rotator control in Xamarin.Android
 description : Learn how to set the DataSource in Rotator for Xamarin.Android
 platform : Xamarin.Android
 control : Rotator 

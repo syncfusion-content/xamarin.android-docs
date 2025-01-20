@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview of Syncfusion Rating control for Xamarin.Android
-description: Overview and key features of Rating control.
-platform: Xamarin.Android
+title: Overview of Syncfusion® Rating control for Xamarin.Android
+description: This explains about the Overview and key features of Syncfusion® Essential® Xamarin.Android Rating Control
+platform: xamarin.android
 control: Rating
 documentation: ug
 ---
 
 # Overview
 
-The Essential Xamarin.Android Rating control has a group of stars to indicate the rating with flexible precision. Also provides various customization support on item size, item spacing and the number of displayed items.
+The Essential<sup>®</sup> Xamarin.Android Rating control has a group of stars to indicate the rating with flexible precision. Also provides various customization support on item size, item spacing and the number of displayed items.
 
-![](images/overview.png)
+![Xamarin.Android Rating Overview](images/overview.png)
 
 ## Key Features
 

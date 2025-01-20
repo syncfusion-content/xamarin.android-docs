@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Position of Drawer in Syncfusion NavigationDrawer control for Xamarin.Android
+title: Position of Drawer in Syncfusion® NavigationDrawer control for Xamarin.Android
 description: Learn how to set position of the DrawerView panel.
 platform: Xamarin.Android
 control: NavigationDrawer

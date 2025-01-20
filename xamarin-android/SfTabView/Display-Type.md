@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display Type
-description: Different display types available in Syncfusion TabView control for Xamarin.Android platform
+description: Different display types available in Syncfusion® TabView control for Xamarin.Android platform
 platform: Xamarin.Android
 control: TabView
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion Xamarin.Android SfTabView CenterButton
-description: Learn how to create and customize CenterButton in Syncfusion TabView control for Xamarin.Android platform. 
+title: Syncfusion® Xamarin.Android SfTabView CenterButton
+description: Learn how to create and customize CenterButton in Syncfusion® TabView control for Xamarin.Android platform. 
 platform: Xamarin.Android
 control: TabView
 documentation: ug

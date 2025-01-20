@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Syncfusion NumericTextBox control for Xamarin.Android
+title: Localization in Syncfusion® NumericTextBox control for Xamarin.Android
 description: Learn how to localize the  NumericTextBox
 platform: Xamarin.Android
 control: NumericTextBox

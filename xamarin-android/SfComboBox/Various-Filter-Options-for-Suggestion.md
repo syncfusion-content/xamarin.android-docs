@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Suggestion mode for Syncfusion ComboBox Control in Xamarin.Android
+title : Suggestion mode for Syncfusion® ComboBox Control in Xamarin.Android
 description : Learn how to display suggestion mode in SfComboBox
 platform : Xamarin.Android
 control : SfComboBox

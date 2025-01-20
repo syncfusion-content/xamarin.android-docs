@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Label Support for Syncfusion RangeSlider control for Xamarin.Android
+title: Label Support for Syncfusion® RangeSlider control for Xamarin.Android
 description: Learn how to set label and their positions in RangeSlider control
 platform: Xamarin.Android
 control: RangeSlider

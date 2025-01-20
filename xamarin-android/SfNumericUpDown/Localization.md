@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Syncfusion NumericUpDown control for Xamarin.Android
+title: Localization in Syncfusion® NumericUpDown control for Xamarin.Android
 description: Learn how to localize the NumericUpDown control
 platform: Xamarin.Android
 control: NumericUpDown
