@@ -1,5 +1,5 @@
 ---
-title: Node in Xamarin.Android diagram control | Syncfusion&reg;
+title: Node in Xamarin.Android diagram control | Syncfusion<sup>&reg;</sup>;
 description: Briefs about Node support,customization of node and node constraints in Xamarin.Android diagram control
 platform: xamarin.android
 control: SfDiagram

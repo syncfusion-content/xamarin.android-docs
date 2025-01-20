@@ -1,6 +1,6 @@
 ---
-title: Port for Essential&reg; Xamarin.Android Diagram | Syncfusion&reg;
-description: Briefs about port, connection with node and its customization in Syncfusion&reg; Diagram (SfDiagram) control for Xamarin.Android
+title: Port for Essential&reg; Xamarin.Android Diagram | Syncfusion<sup>&reg;</sup>;
+description: Briefs about port, connection with node and its customization in Syncfusion<sup>&reg;</sup>; Diagram (SfDiagram) control for Xamarin.Android
 platform: xamarin.android
 control: SfDiagram
 documentation: UG
