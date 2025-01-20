@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion BusyIndicator for Xamarin.Android
+title: Overview of Syncfusion® BusyIndicator for Xamarin.Android
 description: Overview and key features of BusyIndicator control
 platform: Xamarin.Android
 control: BusyIndicator

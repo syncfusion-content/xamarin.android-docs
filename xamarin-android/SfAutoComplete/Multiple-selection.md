@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multipe Selection in Xamarin.Android SfAutoComplete | Syncfusion
-description: Learn how to select multiple items in Syncfusion Essential Xamarin.Android SfAutoComplete Control, its elements, and more.
+title: Multipe Selection in Xamarin.Android SfAutoComplete | Syncfusion®
+description: Learn how to select multiple items in Syncfusion® Essential® Xamarin.Android SfAutoComplete Control, its elements, and more.
 platform: Xamarin.Android
 control: SfAutoComplete
 documentation: ug

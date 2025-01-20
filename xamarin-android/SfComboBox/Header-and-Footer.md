@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Header and Footer in Syncfusion SfComboBox control for Xamarin.Android
+title : Header and Footer in Syncfusion® SfComboBox control for Xamarin.Android
 description :  Learn how to enable Header and Footer in SfComboBox
 platform : Xamarin.Android
 control : SfComboBox

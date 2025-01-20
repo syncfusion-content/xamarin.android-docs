@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Filtering in Syncfusion SfComboBox control for Xamarin.Android
+title : Filtering in Syncfusion® SfComboBox control for Xamarin.Android
 description : Learn how to filter the text in SfComboBox
 platform : Xamarin.Android
 control : ComboBox

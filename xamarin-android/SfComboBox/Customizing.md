@@ -1,6 +1,6 @@
 ---
 layout : post
-title : UI Customization for Syncfusion ComboBox Control in Xamarin.Android
+title : UI Customization for Syncfusion® ComboBox Control in Xamarin.Android
 description : Learn how to use customization in SfComboBox 
 platform : Xamarin.Android
 control : SfComboBox

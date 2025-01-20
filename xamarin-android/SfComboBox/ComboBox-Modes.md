@@ -1,6 +1,6 @@
 ---
 layout : post
-title : ComboBox modes for Syncfusion ComboBox control in Xamarin.Android
+title : ComboBox modes for Syncfusion® ComboBox control in Xamarin.Android
 description : Learn how to change the ComboBox modes in SfComboBox
 platform : Xamarin.Android
 control : SfComboBox

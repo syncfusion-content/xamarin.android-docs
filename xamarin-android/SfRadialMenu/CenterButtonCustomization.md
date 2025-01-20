@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Center button with Syncfusion RadialMenu control in Xamarin.Android.
+title: Center button with Syncfusion® RadialMenu control in Xamarin.Android.
 description: Working with customization options available in the SfRadialMenuItems for CenterButton and BackButton in Xamarin.Android.
 platform: Xamarin.Android
 control: SfRadialMenu
