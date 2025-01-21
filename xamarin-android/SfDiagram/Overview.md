@@ -1,5 +1,5 @@
 ---
-title: Overview of Diagram control for Xamarin.Android | Syncfusion;
+title: Overview of Diagram control for Xamarin.Android | Syncfusion&reg;
 description: Syncfusion<sup>&reg;</sup>; Diagram (SfDiagram) control overview and the key features are available in Xamarin.Android
 platform: xamarin.android
 control: SfDiagram
