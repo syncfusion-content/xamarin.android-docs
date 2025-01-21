@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag Limit in Xamarin.Android Diagram control | Syncfusion<sup>&reg;</sup>;
+title: Drag Limit in Xamarin.Android Diagram control | Syncfusion;
 description: Learn here all about Drag Limit support in Syncfusion<sup>&reg;</sup>; Xamarin.Android Diagram (SfDiagram) control, its elements and more.
 platform: xamarin.android
 control: SfDiagram

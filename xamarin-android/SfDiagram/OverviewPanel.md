@@ -1,5 +1,5 @@
 ---
-title: Overview for Essential&reg; Xamarin.Android Diagram | Syncfusion<sup>&reg;</sup>;
+title: Overview for Essential&reg; Xamarin.Android Diagram | Syncfusion;
 description: Describes how to add overview panel and its customizion in Syncfusion<sup>&reg;</sup>; Diagram (SfDiagram) for Xamarin.Android
 platform: xamarin.android
 control: SfDiagram

@@ -1,5 +1,5 @@
 ---
-title: Diagram for Essential&reg; Xamarin.Android Diagram | Syncfusion<sup>&reg;</sup>;
+title: Diagram for Essential&reg; Xamarin.Android Diagram | Syncfusion;
 description: Learn here all about Diagram support in Syncfusion<sup>&reg;</sup>; Diagram (SfDiagram) control in Xamarin.Android, its elements and more.
 platform: xamarin.android
 control: SfDiagram
