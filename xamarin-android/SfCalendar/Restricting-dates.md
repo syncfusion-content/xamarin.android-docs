@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blackout Dates | SfCalendar | Xamarin.Android | Syncfusion
+title: Blackout Dates | SfCalendar | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: Learn how to add black out dates for calendar
 platform: Xamarin.Android
 control: Calendar

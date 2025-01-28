@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markers in Syncfusion Maps control
+title: Markers in Syncfusion<sup>&reg;</sup> Maps control
 description: This section describes about adding marker, customizing marker, custom marker support, marker alignment support in Xamarin Android.
 platform: Xamarin.Android
 control: SfMaps

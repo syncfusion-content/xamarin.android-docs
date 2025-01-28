@@ -1,7 +1,7 @@
 --- 
 layout: post 
-title: Getting started with Syncfusion Essential Schedule for Xamarin.Android 
-description: A quick tour to initial users on Syncfusion SfSchedule control for Xamarin.Android platform 
+title: Getting started with Syncfusion<sup>&reg;</sup> Essential<sup>&reg;</sup> Schedule for Xamarin.Android 
+description: A quick tour to initial users on Syncfusion<sup>&reg;</sup> SfSchedule control for Xamarin.Android platform 
 platform: Xamarin.Android 
 control: SfSchedule 
 documentation: ug 

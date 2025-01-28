@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion Calendar control for Xamarin.Android
+title: Overview of Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.Android
 description: Overview and key features of Calendar control
 platform: Xamarin.Android
 control: Calendar

@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Ranges in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: This section explains how to set ranges in Xamarin.Android Syncfusion SfCircularGauge control and also range customization
+title: Ranges in Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Android 
+description: This section explains how to set ranges in Xamarin.Android Syncfusion<sup>&reg;</sup> SfCircularGauge control and also range customization
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug

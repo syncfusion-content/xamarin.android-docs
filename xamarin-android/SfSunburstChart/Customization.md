@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of Essential Xamarin.Android SfSunburstChart
+title: Customization of Essential<sup>&reg;</sup> Xamarin.Android SfSunburstChart
 description: This section describes the customization available in sunburst chart.
 platform: Xamarin.Android
 control: SfSunburstChart

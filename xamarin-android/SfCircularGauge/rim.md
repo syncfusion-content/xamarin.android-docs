@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Rim in Syncfusion SfCircularGauge control for Xamarin.Android 
-description:  in Syncfusion SfCircularGauge control
+title: Rim in Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Android 
+description:  in Syncfusion<sup>&reg;</sup> SfCircularGauge control
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
@@ -31,7 +31,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion
 
 {% endhighlight %}
 
-![](rim_images/rim.png)
+![Circular gauge rim image](rim_images/rim.png)
 
 ## Rim customization
 
@@ -54,7 +54,7 @@ The color and thickness of rim can be set by using the [`RimColor`](https://help
 
 {% endhighlight %}
 
-![](rim_images/rim-customization.png)
+![Circular gauge rim customization image](rim_images/rim-customization.png)
 
 ## Setting position for rim
 
@@ -77,7 +77,7 @@ You can customize the position of [`CircularScales`](https://help.syncfusion.com
 
 {% endhighlight %}
 
-![](rim_images/rim-offset.png)
+![Circular gauge rim offset image](rim_images/rim-offset.png)
 
 ### Setting scale start and end offsets for rim
 
@@ -94,7 +94,7 @@ You can customize the position of [`CircularScales`](https://help.syncfusion.com
 
 {% endhighlight %}
 
-![](rim_images/rim-start-end-offset.png)
+![Circular gauge start and end offset rim image](rim_images/rim-start-end-offset.png)
 
 ## Show rim
 
@@ -112,6 +112,6 @@ The [`ShowRim`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Ga
     
 {% endhighlight %}
 
-![](rim_images/show-rim.png)
+![Circular gauge rim show image](rim_images/show-rim.png)
 
 

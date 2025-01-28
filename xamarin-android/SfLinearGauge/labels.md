@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Labels in Syncfusion LinearGauge control for Xamarin.Android
+title: Labels in Syncfusion<sup>&reg;</sup> LinearGauge control for Xamarin.Android
 description:  This section explains how the color, font and position of the labels in linear gauge scales can be applied and customized.
 platform: Xamarin.Android
 control: LinearGauge

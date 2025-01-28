@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential Schedule for Xamarin.Android 
-description: Learn here all about introduction of Syncfusion Xamarin.Android Schedule (SfSchedule) control, its features, and more.
+title: Overview of Syncfusion<sup>&reg;</sup> Essential<sup>&reg;</sup> Schedule for Xamarin.Android 
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin.Android Schedule (SfSchedule) control, its features, and more.
 platform: Xamarin.Android
 control: SfSchedule
 documentation: ug

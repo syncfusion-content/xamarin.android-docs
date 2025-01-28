@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: TimeZone support in Xamarin.Android SfSchedule | Syncfusion
+title: TimeZone support in Xamarin.Android SfSchedule | Syncfusion<sup>&reg;</sup>
 description: This section explains on how to use the TimeZone in SfSchedule control for Xamarin.Android platform.
 platform: xamarin.android
 control: SfSchedule
