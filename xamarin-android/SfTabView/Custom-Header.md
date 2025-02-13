@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Custom Header
-description: Custom Header in Syncfusion TabView control for Xamarin.Android platform
+description: Custom Header in Syncfusion® TabView control for Xamarin.Android platform
 platform: Xamarin.Android
 control: TabView
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto scrolling the Syncfusion segmented control for Xamarin.Android
+title: Auto scrolling the Syncfusion® segmented control for Xamarin.Android
 description: Learn how to auto scroll the selected index in the segmented control
 platform: Xamarin.Android
 control: SegmentedControl

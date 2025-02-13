@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion RadialMenu control for Xamarin.Android.
-description: Overview and key features of Syncfusion RadialMenu control  to know more about the control in Xamarin.Android.
+title: Overview of Syncfusion® RadialMenu control for Xamarin.Android.
+description: Overview and key features of Syncfusion® RadialMenu control  to know more about the control in Xamarin.Android.
 platform: Xamarin.Android
 control: SfRadialMenu
 documentation: ug
