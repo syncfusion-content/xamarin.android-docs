@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion RangeSlider control for Xamarin.Android
+title: Overview of Syncfusion® RangeSlider control for Xamarin.Android
 description: Overview and key features of RangeSlider control in Xamarin.Android
 platform: Xamarin.Android
 control: RangeSlider

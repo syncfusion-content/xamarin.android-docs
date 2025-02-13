@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various Features in Syncfusion NumericUpDown control for Xamarin.Android
+title: Various Features in Syncfusion® NumericUpDown control for Xamarin.Android
 description: Learn how to decide maximum decimal digits to be displayed, nullable value support, autoreverse, setting range and configuring step value in NumericUpDown
 platform: Xamarin.Android
 control: NumericUpDown

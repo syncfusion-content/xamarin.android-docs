@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set title to the Syncfusion BusyIndicator control for Xamarin.Android
+title: Set title to the Syncfusion® BusyIndicator control for Xamarin.Android
 description: Learn how to set title and fontface to BusyIndicator control
 platform: Xamarin.Android
 control: SfBusyIndicator

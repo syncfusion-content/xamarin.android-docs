@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ticks of Syncfusion RangeSlider control for Xamarin.Android
+title: Ticks of Syncfusion® RangeSlider control for Xamarin.Android
 description: Learn how to set ticks in proper position for RangeSlider control in Xamarin.Android
 platform: Xamarin.Android
 control: RangeSlider

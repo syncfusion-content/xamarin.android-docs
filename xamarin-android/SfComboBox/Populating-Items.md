@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataSource mode in Syncfusion ComboBox control for Xamarin.Android
-description: Learn here about populating items in Syncfusion Essential Xamarin.Android ComboBox Control, its elements, and more.
+title: DataSource mode in Syncfusion® ComboBox control for Xamarin.Android
+description: Learn here about populating items in Syncfusion Essential® Xamarin.Android ComboBox Control, its elements, and more.
 platform: Xamarin.Android
 control: SfComboBox
 documentation: ug

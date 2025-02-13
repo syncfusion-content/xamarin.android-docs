@@ -1,6 +1,6 @@
-# Syncfusion Xamarin.Android Documentation
+# Syncfusion<sup>®</sup> Xamarin.Android Documentation
 
-This is the GitHub repository for the technical product documentation for Syncfusion Xamarin.Android components. This documentation is published to http://help.syncfusion.com/xamarin-android
+This is the GitHub repository for the technical product documentation for Syncfusion<sup>®</sup> Xamarin.Android components. This documentation is published to http://help.syncfusion.com/xamarin-android
 
 ## Contributions Welcome!
 
