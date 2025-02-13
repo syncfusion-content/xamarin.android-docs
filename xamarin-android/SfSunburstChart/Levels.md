@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Levels of Essential Xamarin.Android SfSunburstChart
+title:  Levels of Essential<sup>&reg;</sup> Xamarin.Android SfSunburstChart
 description: This section describes the hierarchical levels in SfSunburstChart.
 platform: Xamarin.Android
 control: SfSunburstChart

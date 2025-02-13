@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Pointers in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: This section describes in detail about pointers and its customization in Syncfusion SfCircularGauge control.
+title: Pointers in Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Android 
+description: This section describes in detail about pointers and its customization in Syncfusion<sup>&reg;</sup> SfCircularGauge control.
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug

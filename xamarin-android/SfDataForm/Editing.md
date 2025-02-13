@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing | SfDataForm | Xamarin.Android | Syncfusion
+title: Editing | SfDataForm | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: Editing in SfDataForm for Xamarin.Android
 platform: xamarin.Android
 control: SfDataForm

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sublayer in Syncfusion Maps control for Xamarin.Android
+title: Sublayer in Syncfusion<sup>&reg;</sup> Maps control for Xamarin.Android
 description: This section describes about sublayer.
 platform: Xamarin.Android
 control: SfMaps

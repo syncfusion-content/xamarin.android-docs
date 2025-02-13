@@ -1,6 +1,6 @@
 ---   
 layout: post   
-title: Customize MonthView at Syncfusion SfSchedule for Xamarin.Android
+title: Customize MonthView at Syncfusion<sup>&reg;</sup> SfSchedule for Xamarin.Android
 description: This section explains the schedule month view, appointment indicator, agenda view, week number, first day Of week in Xamarin.Android.
 platform: xamarin.android   
 control: SfSchedule   

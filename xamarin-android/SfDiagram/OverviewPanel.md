@@ -1,6 +1,6 @@
 ---
 title: Overview for Essential&reg; Xamarin.Android Diagram | Syncfusion&reg;
-description: Describes how to add overview panel and its customizion in Syncfusion&reg; Diagram (SfDiagram) for Xamarin.Android
+description: Describes how to add overview panel and its customizion in Syncfusion<sup>&reg;</sup>; Diagram (SfDiagram) for Xamarin.Android
 platform: xamarin.android
 control: SfDiagram
 documentation: UG

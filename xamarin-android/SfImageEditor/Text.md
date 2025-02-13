@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text in Syncfusion SfImageEditor control in Xamarin.Android
+title: Text in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.Android
 description: This section explains how to add text in the SfImageEditor for Xamarin.Android and also explains how to customize the text using the TextSettings property
 platform: xamarin.android
 control: SfImageEditor

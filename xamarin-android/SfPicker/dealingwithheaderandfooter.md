@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with Header and Footer of Syncfusion Picker control for Xamarin.Android
+title: Dealing with Header and Footer of Syncfusion<sup>&reg;</sup> Picker control for Xamarin.Android
 description: Dealing with Header and Footer of Picker control
 platform: Xamarin
 control: Picker

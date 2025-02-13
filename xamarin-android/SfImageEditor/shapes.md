@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes in Syncfusion SfImageEditor control in Xamarin.Android
-description: Learn how to add shapes, text and draw a path over an Image in syncfusion ImageEditor for Xamarin.Android
+title: Shapes in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.Android
+description: Learn how to add shapes, text and draw a path over an Image in Syncfusion<sup>&reg;</sup> ImageEditor for Xamarin.Android
 platform: xamarin.android
 control: ImageEditor
 documentation: ug

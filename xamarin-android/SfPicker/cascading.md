@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CascadingPicker using SfPicker contol of Syncfusion Xamarin.Android
+title: CascadingPicker using SfPicker contol of Syncfusion<sup>&reg;</sup> Xamarin.Android
 description: This section will explain about how to working in custom Cascading on Xamarin.Andorid Picker control
 platform: Xamarin.Android
 control: Picker

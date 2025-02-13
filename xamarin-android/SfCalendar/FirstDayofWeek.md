@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FirstDayofWeek | SfCalendar | Xamarin.Android | Syncfusion
+title: FirstDayofWeek | SfCalendar | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: Learn how to change the first day of week 
 platform: Xamarin.Android
 control: Calendar

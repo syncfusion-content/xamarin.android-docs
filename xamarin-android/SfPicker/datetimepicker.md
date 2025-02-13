@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DateTimePicker using Syncfusion SfPicker control for Xamarin.Android
+title: DateTimePicker using Syncfusion<sup>&reg;</sup> SfPicker control for Xamarin.Android
 description: This section will explain about how to create and use Data Time Picker control in Xmarin. Andorid platofrm.
 platform: Xamarin.Android
 control: Picker

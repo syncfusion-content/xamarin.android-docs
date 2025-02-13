@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion LinearGauge control for Xamarin.Android
+title: Overview of Syncfusion<sup>&reg;</sup> LinearGauge control for Xamarin.Android
 description: Overview and key features of LinearGauge control
 platform: Xamarin.Android
 control: LinearGauge

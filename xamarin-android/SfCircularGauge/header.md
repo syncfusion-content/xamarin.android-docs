@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Header in Syncfusion SfCircularGauge control for Xamarin.Android 
-description: Learn how to set header in Syncfusion SfCircularGauge control
+title: Header in Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Android 
+description: Learn how to set header in Syncfusion<sup>&reg;</sup> SfCircularGauge control
 platform: Xamarin.Android
 control: SfCircularGauge
 documentation: ug
@@ -35,7 +35,7 @@ The [`Header`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gau
 
 {% endhighlight %}
 
-![](header_images/header.png)
+![Circular gauge header image](header_images/header.png)
 
 ##  Setting position for header
 
@@ -58,7 +58,7 @@ The [`Position`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.G
     
 {% endhighlight %}
 
-![](header_images/header-position.png)
+![Circular gauge header position image](header_images/header-position.png)
 
 ##  Customization of header
 
@@ -82,4 +82,4 @@ You can customize the header's text by using the [`TextStyle`](https://help.sync
     
 {% endhighlight %}
 
-![](header_images/header-customise.png)
+![Circular gauge customizations image](header_images/header-customise.png)

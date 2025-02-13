@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Android SunburstChart
+title: Getting Started for Essential<sup>&reg;</sup> Xamarin.Android SunburstChart
 description: getting started
 platform: Xamarin.Android
 control: SfSunburstChart

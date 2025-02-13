@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating Items of Syncfusion Picker control for Xamarin.Android
+title: Populating Items of Syncfusion<sup>&reg;</sup> Picker control for Xamarin.Android
 description: This section will explain about how to populate more number of items as itemsource in Xamarin.Android SfPicker control.
 platform: Xamarin.Android
 control: Picker

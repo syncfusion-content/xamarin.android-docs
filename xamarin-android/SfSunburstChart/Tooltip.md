@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip feature of Essential Xamarin.Android SfSunburstChart
+title: Tooltip feature of Essential<sup>&reg;</sup> Xamarin.Android SfSunburstChart
 description: This section describes the tooltip feature of sunburst chart.
 platform: Xamarin.Android
 control: SfSunburstChart

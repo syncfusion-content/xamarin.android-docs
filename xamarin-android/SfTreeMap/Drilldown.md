@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drilldown support for Syncfusion TreeMap control in Xamarin.Android
+title: Drilldown support for Syncfusion<sup>&reg;</sup> TreeMap control in Xamarin.Android
 description: Drilldown feature of TreeMap control
 platform: Xamarin.Android
 control: SfTreeMap
