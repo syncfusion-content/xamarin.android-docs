@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range Support in Syncfusion NumericTextBox control for Xamarin.Android
+title: Range Support in Syncfusion® NumericTextBox control for Xamarin.Android
 description: Learn how to use range support for NumericTextBox control.
 platform: Xamarin.Android
 control: NumericTextBox

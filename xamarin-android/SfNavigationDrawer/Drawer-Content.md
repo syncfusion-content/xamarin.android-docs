@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various features of Syncfusion NavigationDrawer control for Android.
+title: Various features of Syncfusion® NavigationDrawer control for Android.
 description: Learn how to set content view, drawer content view, footer view, header view, drawer size in NavigationDrawer.
 platform: Xamarin.Android
 control: NavigationDrawer

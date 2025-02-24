@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Overview of Syncfusion ComboBox control for Xamarin.Android
+title : Overview of Syncfusion® ComboBox control for Xamarin.Android
 description : Overview and key features of SfComboBox control
 platform : Xamarin.Android
 control : SfComboBox

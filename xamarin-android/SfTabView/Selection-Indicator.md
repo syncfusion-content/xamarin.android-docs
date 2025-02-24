@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection Indicator in Xamarin.Android TabView Control | Syncfusion
-description: Learn here about Selection Indicator in Syncfusion Essential Xamarin.Android TabView Control, its elements, and more.
+title: Selection Indicator in Xamarin.Android TabView Control | Syncfusion®
+description: Learn here about Selection Indicator in Syncfusion® Essential® Xamarin.Android TabView Control, its elements, and more.
 platform: Xamarin.Android
 control: TabView
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Syncfusion RangeSlider control for Xamarin.Android
+title: Events in Syncfusion® RangeSlider control for Xamarin.Android
 description: Learn how to populate events in RangeSlider control
 platform: Xamarin.Android
 control: RangeSlider 

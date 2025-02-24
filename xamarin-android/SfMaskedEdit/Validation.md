@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Input validation in Xamarin.Android SfMaskedEdit Control | Syncfusion
-description: Learn here about Input validation in Syncfusion Essential Xamarin.Android SfMaskedEdit Control, its elements, and more.
+title: Input validation in Xamarin.Android SfMaskedEdit Control | Syncfusion®
+description: Learn here about Input validation in Syncfusion® Essential® Xamarin.Android SfMaskedEdit Control, its elements, and more.
 platform: Xamarin.Android
 control: SfMaskedEdit
 documentation: ug 

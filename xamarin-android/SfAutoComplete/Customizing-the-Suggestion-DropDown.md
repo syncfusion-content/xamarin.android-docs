@@ -1,6 +1,6 @@
 ---
 layout : post
-title : MinimumPrefixCharacters for Syncfusion AutoComplete Control in Xamarin.Android
+title : MinimumPrefixCharacters for Syncfusion® AutoComplete Control in Xamarin.Android
 description : Learn how to set the MinimumPrefixCharacter in SfAutoComplete 
 platform : Xamarin.Android
 control : SfAutoComplete
