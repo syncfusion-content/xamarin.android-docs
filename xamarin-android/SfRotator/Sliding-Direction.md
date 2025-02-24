@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sliding Direction in Xamarin.Android Rotator | Syncfusion  
+title: Sliding Direction in Xamarin.Android Rotator | Syncfusion®  
 description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Android 
 platform: Xamarin.Android 
 control: Rotator

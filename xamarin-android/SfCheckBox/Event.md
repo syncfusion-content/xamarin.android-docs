@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event | SfCheckBox | Syncfusion | Xamarin.Android
+title: Event | SfCheckBox | Syncfusion® | Xamarin.Android
 description: Learn how to get the notification of StateChanged event in Xamarin.Android CheckBox(SfCheckBox) control 
 platform: Xamarin.Android
 control: SfCheckBox
