@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various features in Syncfusion NumericTextBox control.
+title: Various features in Syncfusion® NumericTextBox control.
 description: Here learn how to decide maximum decimal digits and default decimal digits support in Xamarin.Android NumericTextBox.
 platform: Xamarin.Android
 control: NumericTextBox

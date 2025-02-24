@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion RadialMenu item customization in Xamarin.Android
-description: Working with Syncfusion RadialMenu customization of items, text, text color, background color, and view in Xamarin.Android.
+title: Syncfusion® RadialMenu item customization in Xamarin.Android
+description: Working with Syncfusion® RadialMenu customization of items, text, text color, background color, and view in Xamarin.Android.
 platform: Xamarin.Android
 control: SfRadialMenu
 documentation: ug

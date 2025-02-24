@@ -1,6 +1,6 @@
 ---
 layout : post
-title : WaterMark in Syncfusion AutoComplete Control for Xamarin.Android
+title : WaterMark in Syncfusion® AutoComplete Control for Xamarin.Android
 description : Learn how to set the Watermark in SfAutoComplete 
 platform : Xamarin.Android
 control : SfAutoComplete

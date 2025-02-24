@@ -1,6 +1,6 @@
 ---
 layout : post
-title : LoadMore in Syncfusion SfAutoComplete control for Xamarin.Android
+title : LoadMore in Syncfusion® SfAutoComplete control for Xamarin.Android
 description : Learn how to restrict maximum suggestion to be displayed in SfAutoComplete
 platform : Xamarin.Android
 control : SfAutoComplete

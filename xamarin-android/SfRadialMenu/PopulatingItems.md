@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding  in Syncfusion RadialMenu control for Xamarin.Android
+title: Data Binding  in Syncfusion® RadialMenu control for Xamarin.Android
 description: Learn how to perform DataBinding, adding outer rim items, nested item, duration of the animation and other property usages in SfRadialMenu.
 platform: Xamarin.Android
 control: SfRadialMenu

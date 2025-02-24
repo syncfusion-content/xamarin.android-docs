@@ -1,6 +1,6 @@
 ---
 layout : post
-title : MatchHighlighting in Syncfusion SfComboBox control for Xamarin.Android
+title : MatchHighlighting in Syncfusion® SfComboBox control for Xamarin.Android
 description : Learn how to highlight the matched text in SfComboBox
 platform : Xamarin.Android
 control : SfComboBox
