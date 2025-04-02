@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Styles | SfDataGrid | Xamarin.Android | Syncfusion
-description: How to apply styles for the elements in a SfDataGrid.
+description: Learn here about Styles support in Syncfusion Essential Xamarin.Android SfDataGrid Control, its elements, and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: UG
 ---
 
-# Styles
+# Styles support in Xamarin.Android SfDataGrid
 
 The data grid applies styles to all of its elements by writing a Style class, overriding the [DataGridStyle](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_GridStyle) property.
 
@@ -90,7 +90,7 @@ public class Dark : DataGridStyle
 
 The following picture shows the grid loaded in different styles:
 
-![](SfDataGrid_images/Styles.png)
+![Xamarin.Android SfDataGrid styles](SfDataGrid_images/Styles.png)
 
 ## Applying alternate row style
 
@@ -114,7 +114,7 @@ public class CustomGridStyle : DataGridStyle
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/AlternateRowStyle.png)
+![Xamarin.Android SfDataGrid Customizing the alternation count](SfDataGrid_images/AlternateRowStyle.png)
 
 ## Customizing the alternation count
 
@@ -129,7 +129,7 @@ dataGrid.AlternationCount = 3;
 
 {% endhighlight %}
 
-![](SfDataGrid_images/AlernationCount.png)
+![Xamarin.Android SfDataGrid Border customization](SfDataGrid_images/AlernationCount.png)
 
 ## Border customization
 
@@ -174,7 +174,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/BorderCustomization_Both.png)
+![Xamarin.Android SfDataGrid Horizontal](SfDataGrid_images/BorderCustomization_Both.png)
 
 ### Horizontal
 
@@ -189,7 +189,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/BorderCustomization_Horizontal.png)
+![Xamarin.Android SfDataGrid Vertical](SfDataGrid_images/BorderCustomization_Horizontal.png)
 
 ### Vertical
 
@@ -204,7 +204,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/BorderCustomization_Vertical.png)
+![Xamarin.Android SfDataGrid None](SfDataGrid_images/BorderCustomization_Vertical.png)
 
 ### None
 
@@ -220,7 +220,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 The following screenshot shows the outcome upon execution of the above code:
 
 
-![](SfDataGrid_images/BorderCustomization_None.png)
+![Xamarin.Android SfDataGrid Customizing sort icons in the header](SfDataGrid_images/BorderCustomization_None.png)
 
 ## Customizing sort icons in the header
 
@@ -248,7 +248,7 @@ public class Custom : DataGridStyle
 {% endhighlight %}
 
 The following screenshots shows the outcome of the above code:
-![](SfDataGrid_images/SortIconCustomization.png)
+![Xamarin.Android SfDataGrid Customizing resizing indicator](SfDataGrid_images/SortIconCustomization.png)
 
 N> The image BuildAction must be set to AndroidResource to access the image via its generated ID value.
 

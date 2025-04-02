@@ -1,13 +1,13 @@
 ---
 layout: post
 title: UnboundColumn | SfDataGrid | Xamarin.Android | Syncfusion
-description: How to create and use Unbound column in SfDataGrid?
+description: Learn here about UnboundColumn support in Syncfusion Essential Xamarin.Android SfDataGrid Control, its elements, and more.
 platform: Xamarin.Android
 control: SfDataGrid
 documentation: ug
 ---
 
-# Unbound Column
+# Unbound Column in Xamarin.Android SfDataGrid
 
 The dataGrid adds additional columns which are not bound with data object from the underlying data source. Add unbound column using [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridUnboundColumn.html) class.
 
@@ -36,7 +36,7 @@ TotalColumn.TextAlignment = GravityFlags.Center;
 dataGrid.Columns.Add(TotalColumn);
 {% endhighlight %}
 
-![](SfDataGrid_images/UnboundColumn.png)
+![Xamarin.Android SfDataGrid unbound column](SfDataGrid_images/UnboundColumn.png)
 
 N> It is mandatory to specify the [GridColumn.MappingName](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html#Syncfusion_SfDataGrid_GridColumn_MappingName) for `SfDataGrid.GridUnboundColumn` with some name to identify the column. It is not necessary to define the name of the field in the data object.
 

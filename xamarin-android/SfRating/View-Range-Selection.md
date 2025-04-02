@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Range selection in Syncfusion SfRating for Xamarin.Andorid
+title: Range selection in Syncfusion® SfRating for Xamarin.Andorid
 description: Perform range selection with custom views in rating control
 platform: Xamarin.Android
 control: Rating

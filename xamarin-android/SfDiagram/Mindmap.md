@@ -1,12 +1,12 @@
 ---
-title: Add mindmap for Essential Xamarin.Android Diagram | Syncfusion
+title: Add mindmap for Essential® Xamarin.Android Diagram | Syncfusion®
 description: Describes how to add mindmap,free form layout and mindmap layout style in diagram for Xamarin.Android
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Mind map layout
+# Mind map layout in Xamarin.Android Diagram
 A mind map is a diagram used to visually organize the information. It is hierarchical and shows relationship of the whole idea. It consists of a central ideas, related ideas, and lines connecting them together.  It is used for brainstorming, planning, and information gathering etc. The following code example illustrates how to create and mind map layout:
 {% tabs %}
 {% highlight c# %}

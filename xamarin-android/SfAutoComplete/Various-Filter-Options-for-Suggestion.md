@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Suggestion mode for Syncfusion AutoComplete Control in Xamarin.Android
+title : Suggestion mode for Syncfusion® AutoComplete Control in Xamarin.Android
 description : Learn how to display suggestion mode in SfAutoComplete
 platform : Xamarin.Android
 control : SfAutoComplete

@@ -1,7 +1,7 @@
 ---
-title: Diagram for Essential Xamarin.Android Diagram | Syncfusion
-description: Learn here all about Diagram support in Syncfusion Diagram (SfDiagram) control in Xamarin.Android, its elements and more.
-platform: Xamarin.Android
+title: Diagram for Essential&reg; Xamarin.Android Diagram | Syncfusion&reg;
+description: Learn here all about Diagram support in Syncfusion<sup>&reg;</sup>; Diagram (SfDiagram) control in Xamarin.Android, its elements and more.
+platform: xamarin.android
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -65,6 +65,7 @@ This will enable or disable the following node behavior.
 * EnableSelectors
 * EnableZoomAndPan
 * IsReadOnly
+
 **Example**
 The following code illustrates how to disable the item dragging.
 {% tabs %}
@@ -82,6 +83,7 @@ It is easier to apply default rendering styles to all shapes, connectors, stenci
  * DefaultConnectorStyle argument: Defines the connector style properties.
  * DefaultSymbolStyle argument: Defines the symbol style properties. 
  * DefaultHeaderStyle argument: Defines the header style properties. 
+
 The following code shows how to define the diagram style settings for the diagram object.
 
 {% tabs %}

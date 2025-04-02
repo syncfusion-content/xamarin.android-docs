@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential Xamarin.Android SfImageEditor
-description: A quick tour to the initial users on Syncfusion SfImageEditor control for Xamarin.Android  platform and create a demo application.
+title: Getting Started for Syncfusion<sup>&reg;</sup> Essential Xamarin.Android SfImageEditor
+description: A quick tour to the initial users on Syncfusion<sup>&reg;</sup> SfImageEditor control for Xamarin.Android  platform and create a demo application.
 platform: xamarin.android
 control: SfImageEditor
 documentation: ug
@@ -10,9 +10,9 @@ documentation: ug
 
 This section explains you the steps required to load an image to the image editor. Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
 
-## Reference Essential Studio components in your solution
+## Reference Essential Studio® components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, 
 
 {Syncfusion Installed location}\Essential Studio\15.2.0.40\lib
 
@@ -30,6 +30,8 @@ The following steps explain on how to create a image editor  and configure its e
 
 * Create an instance of SfImageEditor.
 
+{% capture codesnippet1 %}
+
 {% highlight C# %}
 
     SfImageEditor editor  = new SfImageEditor(this);
@@ -37,7 +39,13 @@ The following steps explain on how to create a image editor  and configure its e
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Load an image to the image editor as bitmap object.Since SfImageEditor supports bitmap images you can load the image to the control as a bitmap object only.
+
+{% capture codesnippet2 %}
 
 {% highlight C# %}
 
@@ -46,7 +54,9 @@ The following steps explain on how to create a image editor  and configure its e
  
 {% endhighlight %}
 
+{% endcapture %}
 
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 * Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
 

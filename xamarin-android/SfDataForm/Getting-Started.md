@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | SfDataForm | Xamarin.Android | Syncfusion
+title: Getting started | SfDataForm | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: This section explains key features and getting started with SfDataForm for Xamarin.Android platform.
 platform: Xamarin.Android
 control: SfDataForm
@@ -15,7 +15,7 @@ The SfDataForm control helps editing the data fields of any data object. It can 
 * Caption customization: Supports loading the image as caption for the editor.
 * Editors: Built-in support for text, numeric, numeric up-down, picker, date picker, time picker, switch, and checkbox editors. 
 * Custom editor: Supports loading the custom editors.
-* Validation: Built-in support to validate the data based on the [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx), [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx), and data annotations. It also programmatically supports validation handling.
+* Validation: Built-in support to validate the data based on the [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-8.0&redirectedfrom=MSDN), [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-8.0&redirectedfrom=MSDN), and data annotations. It also programmatically supports validation handling.
 
 # Getting started with Xamarin.Android DataForm(SfDataForm)
 
@@ -23,7 +23,7 @@ This section explains the quick overview to use the [SfDataForm](https://help.sy
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\15.x.x.x\Xamarin\lib
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\15.x.x.x\Xamarin\lib
 
 Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\15.3.0.26\Xamarin\lib
 
@@ -31,7 +31,7 @@ N> Assemblies can be found in unzipped package location in Mac.
 
 ### Adding SfDataForm Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm.Android/#), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm.Android/), and then install it.
 
 ![Adding  data form nuget reference in Xamarin.Android DataForm]](SfDataForm_images/SfDataForm_NuGet_Android.png)
 
@@ -52,7 +52,7 @@ Syncfusion.SfNumericUpDown.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.d
 </table>
 
 >**Important** 
-Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Creating the data form
 
@@ -72,7 +72,7 @@ Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.
 To add the data form to your application, follow the steps:
 
 1. Add required assemblies as discussed in assembly deployment section.
-2. Import the `SfDataForm` namespace [Syncfusion.Android.DataForm](https://help.syncfusion.com/cr/xamarin-android).
+2. Import the `SfDataForm` namespace [Syncfusion.Android.DataForm](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.html).
 3. Create an instance of data form control and add as a view to the linear layout.
 
 {% tabs %}
@@ -211,7 +211,7 @@ Now, run the application to render the `data form` to edit the data object as in
 
 ![Setting data object to data form in Xamarin.Android DataForm](SfDataForm_images/Overview.png)
 
-You can download the entire source code of this demo for Xamarin.Android from here [DataFormGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormSample-696015926.zip).
+You can download the entire source code of this demo for Xamarin.Android from here [DataFormGettingStarted](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormSample-696015926.zip).
 
 ## Defining editors
 
@@ -496,6 +496,6 @@ By default, the data form enables editing of the data field. You can disable edi
 
 ## Additional Help Resources
 
-The [`Xamarin.Android SfDataForm`](https://www.syncfusion.com/kb/xamarin.android/dataform) Knowledge Base section contains responses to some of the most common questions that other customers have asked us before. So this will be a good place to search for topics that are not covered in the user guide.
+The [`Xamarin.Android SfDataForm`](https://support.syncfusion.com/kb/cross-platforms/section/1134) Knowledge Base section contains responses to some of the most common questions that other customers have asked us before. So this will be a good place to search for topics that are not covered in the user guide.
 
-Similar to the [`Knowledge Base`](https://www.syncfusion.com/kb/xamarin.android/dataform), the [`forum`](https://www.syncfusion.com/forums/xamarin.Android) section also contains responses to questions that other customers have asked us in the past.
+Similar to the [`Knowledge Base`](https://support.syncfusion.com/kb/cross-platforms/section/1134), the [`forum`](https://www.syncfusion.com/forums/xamarin.Android) section also contains responses to questions that other customers have asked us in the past.

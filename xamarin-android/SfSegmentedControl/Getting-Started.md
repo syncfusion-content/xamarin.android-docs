@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Syncfusion segmented control for Xamarin.Android 
+title: Getting Started with Syncfusion® segmented control for Xamarin.Android 
 description: Learn how to create a simple segmented control and its customization options with its available basic features in Xamarin.Android
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfSegmentedControl
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section provides a quick overview for working with the segmented control fo
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders,   
+After installing Essential Studio<sup>®</sup> for Xamarin, find all the required assemblies in the installation folders,   
 {Syncfusion Essential Studio Installed location}\Essential Studio\16.2.0.41\Xamarin\lib
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\16.2.0.41\Xamarin\lib
 
@@ -21,7 +21,7 @@ N> Assemblies can be found in unzipped package location in Mac.
 
 ## Adding SfSegmentedControl Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.Buttons.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android/#), and then install it.
+Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.Buttons.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android/#), and then install it.
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, please refer the below assembly.
 

@@ -1,27 +1,27 @@
 ---
-title: Getting Started in Essential Xamarin.Android Diagram | Syncfusion
+title: Getting Started in Essential® Xamarin.Android Diagram | Syncfusion®
 description: Getting started with Xamarin.Android diagram and walk through to create a demo application from the scratch.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Getting started in Essential Xamarin.Android Diagram
+# Getting started in Essential<sup>&reg;</sup>; Xamarin.Android Diagram
 This section provides a quick overview for working with Diagram for Xamarin.Android. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
 ## Adding diagram reference 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram.Android”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram.Android), and then install it. 
+Syncfusion<sup>&reg;</sup>; Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram.Android”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram.Android), and then install it. 
 
 ![Diagram reference in Xamarin.Android diagram](images/Getting-Started_img1.jpeg)
 
-I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I>Starting with v16.2.0.x, if you reference Syncfusion<sup>&reg;</sup>; assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion&reg; license key in your Xamarin application to use our components.
 
 ## Basic building blocks of Diagram
-• **Diagram-**It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and connectors to represent the  graphical diagram.
-• **Nodes-**This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc.
-• **Connectors-**These are the objects used to create link between two nodes, to represent the relationships between them in the diagram.
-• **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
-• **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
+* **Diagram-**It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and connectors to represent the  graphical diagram.
+* **Nodes-**This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc.
+* **Connectors-**These are the objects used to create link between two nodes, to represent the relationships between them in the diagram.
+* **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
+* **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
 
 ## Creating a simple flow chart
 Create a new cross platform app (Xamarin.Android) with portable class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assemblies to the respective projects.
@@ -37,8 +37,9 @@ android:id="@+id/linear_layout">
 {% endhighlight %}
 {% endtabs %}
 Please add the below code snippet in the MainActivity class
-•	In the MainActivity.cs class, declare an instance of SfDiagram globally.
-•	In the override method OnCreate, set the content view to Main.
+*	In the MainActivity.cs class, declare an instance of SfDiagram globally.
+*	In the override method OnCreate, set the content view to Main.
+
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.SfDiagram.Android;
@@ -132,8 +133,9 @@ public class Employees : ObservableCollection<Employee>
 {% endtabs %}
 **Initialize Employee data**
 Define Employee Information as a Collection. The below code example shows an employee array whose,
-•Name is used as a unique identifier and
-•ParentId is used to identify the person to whom an employee report to, in the organization.
+* Name is used as a unique identifier and
+* ParentId is used to identify the person to whom an employee report to, in the organization.
+
 {% tabs %}
 {% highlight c# %}
 //Initializes the employee collection

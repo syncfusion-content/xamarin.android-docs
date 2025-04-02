@@ -1,17 +1,14 @@
 ---
 layout: post
-title: Input validation in SfMaskedEdit control for Xamarin.Android platform
-description: Learn how and when to validate the input characters with the given Mask of SfMaskedEdit control.
+title: Input validation in Xamarin.Android SfMaskedEdit Control | Syncfusion®
+description: Learn here about Input validation in Syncfusion® Essential® Xamarin.Android SfMaskedEdit Control, its elements, and more.
 platform: Xamarin.Android
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
-
 ---
 
-
-
-# Validation
+# Validation in Xamarin.Android SfMaskedEdit
 
 ## Validation Mode
 
@@ -67,6 +64,6 @@ private void MaskedEdit_ValueChanged(object sender, ValueChangedEventArgs e)
 
 Refer this [link](Events#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
 
-![](SfMaskedEditImages/Validation.png)
+![Xamarin.Android SfMaskedEdit validation](SfMaskedEditImages/Validation.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_Validation.zip).

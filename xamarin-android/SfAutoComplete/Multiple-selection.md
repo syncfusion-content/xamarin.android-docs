@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Multipe Selection in Syncfusion SfAutoComplete control for Xamarin.Android
-description : Learn how to select multiple items in SfAutoComplete
-platform : Xamarin.Android
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Multipe Selection in Xamarin.Android SfAutoComplete | Syncfusion®
+description: Learn how to select multiple items in Syncfusion® Essential® Xamarin.Android SfAutoComplete Control, its elements, and more.
+platform: Xamarin.Android
+control: SfAutoComplete
+documentation: ug
 ---
 
-# Multiple Selection
+# Multiple Selection in Xamarin.Android SfAutoComplete
 
 Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
 
@@ -85,7 +85,7 @@ SetContentView(linearLayout);
 
 {% endtabs %}
 
-![](images/TokenRepresentationWrap.png)
+![Xamarin.Android SfAutoComplete token representation](images/TokenRepresentationWrap.png)
 
 ### Token Customization
 
@@ -127,7 +127,7 @@ employeeAutoComplete.TokenSettings = token;
 
 {% endtabs %}
 
-![](images/TokenRepresentation.png)
+![Xamarin.Android SfAutoComplete Token Customization](images/TokenRepresentation.png)
 
 ## Delimiter
 
@@ -145,7 +145,7 @@ countryAutoComplete.Delimiter="#";
 
 {% endtabs %}
 	
-![](images/delimiter.png)
+![Xamarin.Android SfAutoComplete Delimiter](images/delimiter.png)
 	
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Labels in Xamarin.Android Maps control | Syncfusion
-description: Learn here all about Data Labels support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
+title: Data Labels in Xamarin.Android Maps control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Data Labels support in Syncfusion<sup>&reg;</sup> Xamarin Maps (SfMaps) control, its elements and more.
 platform: Xamarin.Android
 control: SfMaps
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Android SunburstChart
+title: Getting Started for Essential<sup>&reg;</sup> Xamarin.Android SunburstChart
 description: getting started
 platform: Xamarin.Android
 control: SfSunburstChart
@@ -12,7 +12,7 @@ This section explains the steps required to configure the [`SfSunburstChart`](ht
 
 ## Add sunburst chart references
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, 
 
 {Syncfusion Installed location}\Essential Studio\16.2.0.41\lib
 

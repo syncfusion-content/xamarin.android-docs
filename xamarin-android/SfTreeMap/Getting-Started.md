@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TreeMap control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion TreeMap control for Xamarin.Android platform.
+title: Getting Started with Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.Android
+description: A quick tour to initial users on Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.Android platform.
 platform: Xamarin.Android
 control: SfTreeMap
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the steps required to configure the TreeMap control and pr
 
 ## Adding SfTreeMap reference
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders.
 
 {Syncfusion Installed location} \Essential Studio\17.2.0.28\lib
 

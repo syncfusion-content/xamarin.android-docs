@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validation | SfDataForm | Xamarin.Android | Syncfusion
+title: Validation | SfDataForm | Xamarin.Android | Syncfusion<sup>&reg;</sup>
 description: How to validate the data in SfDataForm for Xamarin.Android.
 platform: xamarin.Android
 control: SfDataForm

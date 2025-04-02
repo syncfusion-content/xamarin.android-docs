@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation feature of Essential Xamarin.Android SfSunburstChart
+title: Animation feature of Essential<sup>&reg;</sup> Xamarin.Android SfSunburstChart
 description: This section describes the animation feature of sunburst chart.
 platform: Xamarin.Android
 control: SfSunburstChart

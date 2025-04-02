@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with Syncfusion BusyIndicator control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion busyIndicator control for Xamarin.Android platform
+title: Getting Started with Xamarin.Android BusyIndicator Control| Syncfusion®
+description: Learn here about Getting Started with Syncfusion® Essential® Xamarin.Android BusyIndicator Control, its elements, and more.
 platform: Xamarin.Android
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.Android BusyIndicator
 
 This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
                                                  
-## Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
@@ -85,5 +85,5 @@ busyIndicator.IsBusy=true;
 
 {% endtabs %}
 
-![](images/Getting-Started_img1.png)
+![Xamarin.Android BusyIndicator getting started](images/Getting-Started_img1.png)
 

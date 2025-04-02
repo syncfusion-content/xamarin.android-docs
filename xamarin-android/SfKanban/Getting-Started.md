@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential Xamarin.Android Kanban
-description: A quick tour to the initial users on Syncfusion SfKanban control for Xamarin.Android platform and create a demo application from the scratch
+title: Getting Started for Syncfusion<sup>&reg;</sup> Essential Xamarin.Android Kanban
+description: A quick tour to the initial users on Syncfusion<sup>&reg;</sup> SfKanban control for Xamarin.Android platform and create a demo application from the scratch
 platform: Xamarin.Android
 control: SfKanban
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 This section provides a quick overview for working with the kanban control for Xamarin.Android. Using the kanban control is an efficient way to visualize the workflows along with their paths at each stage of completion.
 
-## Referencing Essential Studio components in your solution
+## Referencing Essential Studio® components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders.
 
 {Syncfusion Installed location}\Essential Studio{14.2.0.26}\lib
 

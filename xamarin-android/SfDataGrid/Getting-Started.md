@@ -2,7 +2,7 @@
 layout: post
 title: Getting started | SfDataGrid | Xamarin.Android | Syncfusion
 description: Getting started with Xamarin.Android DataGrid and walk through to create a demo application from the scratch.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfDataGrid
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section provides a quick overview of working with the data grid for Xamarin
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
@@ -25,7 +25,7 @@ To install the required NuGet for the SfDataGrid control in the application, con
 
 Refer to the following KB to configure the NuGet package of the Syncfusion components:
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-in-xamarin-datagrid)
 
 The following NuGet package should be installed to use the SfDataGrid control in the application
 
@@ -176,7 +176,7 @@ namespace Custom_Designer
 
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Designer_Support_SfDataGrid_Android429337173).
+You can download the entire source code of this demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Designer_Support_SfDataGrid_Android429337173).
 
 Refer to this link to know the properties that can be configured through designer for SfDataGrid.
 
@@ -353,7 +353,7 @@ Now, run the application to render the following output.
 
 ## Defining columns
 
-By default, the data grid automatically creates the column for all the properties in the data source. The type of the generated column depends on the type of data in the column. When the column is auto generated, handle the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html) event to customize or cancel the columns before it is added to the Columns collection in the data grid.
+By default, the data grid automatically creates the column for all the properties in the data source. The type of the generated column depends on the type of data in the column. When the column is auto generated, handle the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AutoGeneratingColumn) event to customize or cancel the columns before it is added to the Columns collection in the data grid.
  
 Columns can also be manually defined by setting the [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AutoGenerateColumns) property to false and by adding the [GridColumn](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html) objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.GridColumn.html) collection. The following code example illustrates how this can be done. 
 
@@ -412,7 +412,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnNa
 
 ## Grouping
 
-The data grid allows grouping a column by adding the column to the [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_SortColumnDescriptions) collection as follows.
+The data grid allows grouping a column by adding the column to the [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_GroupColumnDescriptions) collection as follows.
 
 {% highlight c# %}
 dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { ColumnName = "Product" });
@@ -426,7 +426,7 @@ Run the application to render the following output.
 
 The data grid allows selecting the row or rows by setting the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_SelectionMode) property. You can set the `SfDataGrid.SelectionMode` property to single, multiple, single deselect, or none. Information about the selected row or rows can be tracked using the [SfDataGrid.SelectedItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_SelectedItem) and [SfDataGrid.SelectedItems](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_SelectedItems) properties.
 
-You can handle the selection operations with the help of the [SelectionChanging](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html) events of the data grid.
+You can handle the selection operations with the help of the [SelectionChanging](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_SelectionChanged) events of the data grid.
 
 ## Loading the data grid with customized height and width
 

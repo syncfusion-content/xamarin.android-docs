@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Overview of Syncfusion Segmented control for Xamarin.Android
+title : Overview of Syncfusion® Segmented control for Xamarin.Android
 description : Overview and key features of Segmented control
 platform : xamarin.Android
 control : SfSegmentedControl

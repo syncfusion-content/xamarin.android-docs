@@ -1,13 +1,13 @@
 ---
 layout : post
-title : AutoComplete mode for Syncfusion AutoComplete control in Xamarin.Android
-description : Learn how to change the AutoComplete mode in SfAutoComplete 
-platform : Xamarin.Android
-control : SfAutoComplete
-documentation : ug
+title: AutoComplete mode in Xamarin.Android SfAutoComplete Control|Syncfusion®
+description: Learn here about Suggestion Display Mode in Syncfusion® Essential® Xamarin.Android SfAutoComplete Control, its elements, and more.
+platform: Xamarin.Android
+control: SfAutoComplete
+documentation: ug
 ---
 
-# Suggestion Display Mode
+# Suggestion Display Mode in Xamarin.Android SfAutoComplete
 
 The `AutocompleteMode` property is used to decide the suggestion pattern for displaying the filtered data according to the text entered. The different types of pattern are described below
 
@@ -61,5 +61,5 @@ countryAutoComplete.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 
 {% endtabs %}
 
-![](images/autocompletemode.png)
+![Xamarin.Android SfAutoComplete autocomplete mode](images/autocompletemode.png)
  

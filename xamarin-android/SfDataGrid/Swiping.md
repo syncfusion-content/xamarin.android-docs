@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Swiping| SfDataGrid | Xamarin.Android | Syncfusion
-description: How to perform swiping and customize it
+description: Learn here about Swiping support in Syncfusion Essential Xamarin.Android SfDataGrid Control, its elements, and more.
 platform: xamarin.android
 control: SfDataGrid
 documentation: ug
 ---
 
-# Swiping
+# Swiping in Xamarin.Android SfDataGrid
 
 The data grid enables the swiping option by setting the [SfDataGrid.AllowSwiping](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AllowSwiping) property to `true`.
 
@@ -62,11 +62,11 @@ sfGrid.RightSwipeView = rightSwipeView;
 
 The following screenshot shows the outcome upon execution of the above code where swiping towards right loads an image and a label in the `LeftSwipeView`:
 
-![](SfDataGrid_images/Swiping_img1.png)
+![Xamarin.Android SfDataGrid events](SfDataGrid_images/Swiping_img1.png)
 
 The following screenshot shows the outcome upon execution of the above code where swiping towards left loads an image and a label in the `RightSwipeView`:
 
-![](SfDataGrid_images/Swiping_img2.png)
+![Xamarin.Android SfDataGrid Swipe events](SfDataGrid_images/Swiping_img2.png)
 
 
 ## Swipe events
@@ -360,11 +360,11 @@ public class Swiping : SamplePage
 
 The following screenshot shows the outcome upon execution of the above code where swiping towards right loads two views in the `SfDataGrid.LeftSwipeView` to edit and delete a row respectively:
 
-![](SfDataGrid_images/Swiping_img3.png)
+![Xamarin.Android SfDataGrid Customized swipe](SfDataGrid_images/Swiping_img3.png)
 
 N> Similarly, you can load two views in the `SfDataGrid.RightSwipeView` when swiping towards left. The following screenshot shows the `SfDataGrid.RightSwipeView` with two views to edit and delete a row respectively:
 
-![](SfDataGrid_images/Swiping_img4.png)
+![Xamarin.Android SfDataGrid Customized swipe delete functionality](SfDataGrid_images/Swiping_img4.png)
 
 
 ## Customized swipe delete functionality
@@ -414,4 +414,4 @@ private async void doDeleting()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/Swiping_img5.png)
+![Xamarin.Android SfDataGrid swipe](SfDataGrid_images/Swiping_img5.png)

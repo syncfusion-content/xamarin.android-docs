@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Displaying Text of DigitalGauge
-description: Learn how to set Display Text in DigitalGauge
+title: Displaying Types in Xamarin.Android DigitalGauge Control | Syncfusion
+description: Learn here about how to set Display Text in Syncfusion Essential Xamarin.Android DigitalGauge Control, its elements, and more.
 platform: Xamarin.Android
 control: DigitalGauge
 documentation: ug
 ---
 
-# Display value types
+# Display value types in Xamarin.Android DigitalGauge
 
 The digital gauge displays numbers, alphabet, and special characters, which are given in the value property.
 
@@ -57,7 +57,7 @@ Numbers can be displayed in digital gauge in different formats using the `Charac
 
 {% endhighlight %}
 
-![](Display-Types_images/Display-Types_img1.png)
+![Xamarin.Android DigitalGauge Display Types](Display-Types_images/Display-Types_img1.png)
 
 ## Setting value to alphabet
 
@@ -105,7 +105,7 @@ Alphabet can be displayed in digital gauge using any one of the character format
 
 {% endhighlight %}
 
-![](Display-Types_images/Display-Types_img2.png)
+![Xamarin.Android DigitalGauge Setting value to alphabet](Display-Types_images/Display-Types_img2.png)
 
 ## Setting value to special characters
 
@@ -153,5 +153,5 @@ Special characters can also be displayed in digital gauge using the EightCrossEi
 
 {% endhighlight %}
 
-![](Display-Types_images/Display-Types_img3.png)
+![Xamarin.Android DigitalGauge Setting value to special characters](Display-Types_images/Display-Types_img3.png)
 

@@ -1,7 +1,7 @@
 ---
-title: Adding connectors in Xamarin.Android diagram control | Syncfusion
+title: Adding connectors in Xamarin.Android diagram control | Syncfusion&reg;
 description: Describes how to add connector,connection with node and it's appearance in diagram control for Xamarin.Android
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -166,6 +166,7 @@ diagram.AddConnector(connector);
 There are two ways to remove connector from the connection, they are the following:
 1.Passing the connector as parameter to remove connector method in the diagram.
 The following code example illustrates how to remove a connector from the connection:
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 //creating connector instance
@@ -178,8 +179,11 @@ diagram.AddConnector(connector);
 diagram.RemoveConnector(connector);
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 2.Passing the index value of the connector to remove connector method in the diagram (using RemoveAt method).
 The following code example illustrates how to remove a connector from connection:
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 Connector connector = new Connector(this);
@@ -191,6 +195,8 @@ diagram.AddConnector(connector);
 diagram.Connectors.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ## Appearance
 The StrokeThickness, Stroke are the set of properties. The style of line connectors  and decorators can be customized with that properties.

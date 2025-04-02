@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes in Syncfusion SfImageEditor control in Xamarin.Android
-description: Learn how to add shapes, text and draw a path over an Image in syncfusion ImageEditor for Xamarin.Android
+title: Shapes in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.Android
+description: Learn how to add shapes, text and draw a path over an Image in Syncfusion<sup>&reg;</sup> ImageEditor for Xamarin.Android
 platform: xamarin.android
 control: ImageEditor
 documentation: ug
@@ -21,7 +21,7 @@ You can annotate any shapes over an image using the [`AddShape`](https://help.sy
 * DottedArrow
 * DottedDoubleArrow
 
-### Selecting a shape type
+## Selecting a shape type
 
 The [`ShapeType`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html) is an enum property with values of [`Rectangle`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html#Syncfusion_SfImageEditor_Android_ShapeType_Rectangle), [`Circle`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html#Syncfusion_SfImageEditor_Android_ShapeType_Circle), [`Arrow`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html#Syncfusion_SfImageEditor_Android_ShapeType_Arrow), [`Path`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html#Syncfusion_SfImageEditor_Android_ShapeType_Path), [`Line`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html#Syncfusion_SfImageEditor_Android_ShapeType_Line), [`Dotted`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html#Syncfusion_SfImageEditor_Android_ShapeType_Dotted), [`DoubleArrow`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html#Syncfusion_SfImageEditor_Android_ShapeType_DoubleArrow), [`DottedArrow`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html#Syncfusion_SfImageEditor_Android_ShapeType_DottedArrow),and [`DottedDoubleArrow`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html#Syncfusion_SfImageEditor_Android_ShapeType_DottedDoubleArrow). You can give the desired shape type as an argument to the [`AddShape`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.SfImageEditor.html#Syncfusion_SfImageEditor_Android_SfImageEditor_AddShape_Syncfusion_SfImageEditor_Android_ShapeType_Syncfusion_SfImageEditor_Android_PenSettings_) method.
 
@@ -51,7 +51,7 @@ By default, the toolbar contains the [`Rectangle`](https://help.syncfusion.com/c
 
 You can customize the appearance of each shape using the [`PenSettings`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.PenSettings.html) property:
 
-## PenSettings
+### PenSettings
 
 The [`PenSettings`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.PenSettings.html) property consists of the following properties:
 
@@ -67,6 +67,8 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 
 * To add a rectangle, circle, or arrow over an image, specify the [`ShapeType`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.ShapeType.html) and the desired [`PenSettings`]([`PenSettings`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.PenSettings.html)) as shown in the following code snippet.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
@@ -77,9 +79,15 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 ![SfImageEditor](ImageEditor_images/Shapes.png)
 
 * You can annotate any path on an image using free hand drawing as shown in the following code snippet.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -90,6 +98,10 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![SfImageEditor](ImageEditor_images/Path.png)
 

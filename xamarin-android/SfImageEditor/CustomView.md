@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom view of Syncfusion SfImageEditor control in Xamarin.Android
-description: Learn how to add and customize the custom view with its settings in syncfusion ImageEditor for Xamarin.Android
+title: Custom view of Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.Android
+description: Learn how to add and customize the custom view with its settings in Syncfusion<sup>&reg;</sup> ImageEditor for Xamarin.Android
 platform: xamarin.android
 control: ImageEditor
 documentation: ug
@@ -32,6 +32,8 @@ CustomViewSettings is defined to set the values for `CanMaintainAspectRatio`, `B
 
 * [`EnableDrag`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfImageEditor.Android.CustomViewSettings.html#Syncfusion_SfImageEditor_Android_CustomViewSettings_EnableDrag) - Controls the dragging of selected view over the image.
 
+{% capture codesnippet1 %}
+
 {% highlight C# %}
 
             CustomViewSettings customViewSettings = new CustomViewSettings()
@@ -42,6 +44,10 @@ CustomViewSettings is defined to set the values for `CanMaintainAspectRatio`, `B
             };
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 ![SfImageEditor](ImageEditor_images/CustomView.png)
 

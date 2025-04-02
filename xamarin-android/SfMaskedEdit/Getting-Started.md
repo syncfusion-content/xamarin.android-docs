@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Syncfusion MaskedEdit control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Android platform 
-platform: Xamarin.Android
+title: Getting Started with Syncfusion® MaskedEdit control for Xamarin.Android
+description: A quick tour to initial users on Syncfusion® SfMaskedEdit control and customization features available in Xamarin.Android platform 
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug
 ---
@@ -11,9 +11,9 @@ documentation: ug
 # Getting Started
 This section explains you the steps required to configure a SfMaskedEdit control in a real-time scenario and provides a walk-through on some of the customization features available in `SfMaskedEdit` control.
 
-##  Reference Essential Studio components in your solution
+##  Reference Essential Studio<sup>®</sup> components in your solution
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add masked edit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit.android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.Android)", and then install it. 
+Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add masked edit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit.android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.Android)", and then install it. 
 
 ![Xamarin.Android masked edit nuget](SfMaskedEditImages/nuget.png) 
 
@@ -29,7 +29,7 @@ using Syncfusion.Android.MaskedEdit;
 {% endhighlight %}
 {% endtabs %}
   
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion<sup>®</sup> license key in your Xamarin application to use our components.
  
 ### Create a sample with simple SfMaskedEdit
 
