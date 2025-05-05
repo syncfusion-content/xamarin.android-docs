@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting | SfDataGrid | Xamarin.Android | Syncfusion
+title: Exporting | SfDataGrid | Xamarin.Android | Syncfusion®
 description: How to export a SfDataGrid to excel and it's customizations.
 platform: Xamarin.Android
 control: SfDataGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfDataGrid | Xamarin.Android | Syncfusion
+title: Overview | SfDataGrid | Xamarin.Android | Syncfusion®
 description: Overview in Xamarin.Android DataGrid helps you to create customizable features used to display and manipulate a large amount of data in a tabular view.
 platform: Xamarin.Android
 control: SfDataGrid
