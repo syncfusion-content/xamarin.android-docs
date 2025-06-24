@@ -1,41 +1,41 @@
 ---
 layout: post
-title: Getting Started with Syncfusion® segmented control for Xamarin.Android 
-description: Learn how to create a simple segmented control and its customization options with its available basic features in Xamarin.Android
+title: Getting Started with Syncfusion® Segmented Control for Xamarin.Android
+description: Learn how to create a simple Segmented Control and its customization options with its available basic features in Xamarin.Android
 platform: xamarin.android
 control: SfSegmentedControl
 documentation: ug
 ---
 
-# Getting Started Xamarin.Android SegmentedControl (SfSegmentedControl)
+# Getting Started with Xamarin.Android Segmented Control (SfSegmentedControl)
 
-This section provides a quick overview for working with the segmented control for Xamarin.Android. Walk through the entire process of creating a real-world application with segmented control.
+This section provides a quick overview for working with the Segmented Control for Xamarin.Android. Walk through the entire process of creating a real-world application with the Segmented Control.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing Essential Studio<sup>®</sup> for Xamarin, find all the required assemblies in the installation folders,   
+After installing Essential Studio<sup>®</sup> for Xamarin, find all the required assemblies in the installation folders:
 {Syncfusion Essential Studio Installed location}\Essential Studio\16.2.0.41\Xamarin\lib
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\16.2.0.41\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location in Mac.
+N> Assemblies can be found in the unzipped package location on Mac.
 
 ## Adding SfSegmentedControl Reference
 
-Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.Buttons.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android/#), and then install it.
+Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons.Android](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.Android/#), and then install it.
 
-To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, please refer the below assembly.
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually reference the assemblies instead of NuGet, please refer to the assembly below:
 
 android\Syncfusion.Buttons.Android.dll
 
-### Create a simple segmented control
+### Create a Simple Segmented Control
 
-This section explains how to create a segmented control and configure it.The segmented control can be configured entirely in C# code. This is how the final output will look like in Android devices.
+This section explains how to create a Segmented Control and configure it. The Segmented Control can be configured entirely in C# code. This is how the final output will look on Android devices:
 
 ![Xamarin.Android SfSegmentedControl getting started](images/Getting-started/Xamarin_Android_GettingStarted.png)
 
-## Creating the project
+## Creating the Project
 
-Create a new Android application in Visual Studio for Xamarin.Android.
+Create a new Android application in Visual Studio for Xamarin.Android.
 
 ## Adding SfSegmentedControl in Xamarin.Android
 
@@ -72,9 +72,9 @@ protected override void OnCreate(Bundle savedInstanceState)
 
 ### Adding supportive views to the application.
  
-For the completeness of the ticket booking application, few framework controls are added to the application, to get the data from the user.
+For the completeness of the ticket booking application, a few framework controls are added to the application to get data from the user.
 
-Initial view for the application can be created by the following code snippet.
+The initial view for the application can be created by the following code snippet:
 
 {% highlight C# %}
 
@@ -130,19 +130,19 @@ public class MainActivity : Activity
 
 ![Initial view of Xamarin.Android SfSegmentedControl demo sample](images/Getting-started/Xamarin-Android-initialview.png)
 
-## Adding data/items to SfSegmentedControl
+## Adding Data/Items to SfSegmentedControl
 
-We can add the data inside the segmented control in 3 different ways. 
+You can add data inside the Segmented Control in three different ways:
 
-1. Populating string of data
+1. Populating string data
 2. SfSegmentItem
 3. Custom view
 
-Items inside the segmented control can be added through the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_ItemsSource) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html), which holds the collection/list of items.
+Items inside the Segmented Control can be added through the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_ItemsSource) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html), which holds the collection/list of items.
 
-## Adding data as a String
+## Adding Data as a String
 
-With the help of  `System.Collections.Generic` we can add string data as [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_ItemsSource) to SfSegmentedControl.
+With the help of `System.Collections.Generic`, you can add string data as [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_ItemsSource) to SfSegmentedControl:
 
 {% highlight C# %}
 
@@ -215,9 +215,9 @@ protected override void OnCreate(Bundle savedInstanceState)
 
 ![Xamarin.Android SfSegmentedControl populating data as a collection of string](images/Getting-started/Xamarin_Android_String.png)
 
-## Adding data as a SfSegmentItem
+## Adding Data as a SfSegmentItem
 
-By using [`SfSegmentItem`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentItem.html) class, we can add data inside the segmented control.
+By using the [`SfSegmentItem`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentItem.html) class, you can add data inside the Segmented Control:
 
 
 {% highlight C# %}
@@ -256,9 +256,9 @@ SfSegmentedControl segment = new SfSegmentedControl(this)
 
 ![Xamarin.Android SfSegmentedControl populating data as a SfSegmentItem](images/Getting-started/Xamarin_Android_StringSegmentItem.png)
 
-## Adding data as Custom View.
+## Adding Data as Custom View
 
-We can add any custom view to the segmented control
+You can add any custom view to the Segmented Control:
 
 {% highlight C# %}
 
@@ -300,12 +300,11 @@ SfSegmentedControl segmentView = new SfSegmentedControl(this)
 
 ![Xamarin.Android SfSegmentedControl populating data as custom view](images/Getting-started/Xamarin_Android_GettingStarted.png)
 
+## Customizing Segmented Control Appearance
 
-## Customizing segmented control appearance
+### Share Space Equally to All the Items
 
-### Share space equally to all the items.
-
-To share the Item space equally to segmented control, set the number of segment item that has to be visible on the available screen width and that can be distributed in the available space though the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_VisibleSegmentsCount) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html).
+To share the item space equally in the Segmented Control, set the number of segment items that have to be visible on the available screen width and that can be distributed in the available space through the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_VisibleSegmentsCount) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html):
 
 {% highlight C# %}
 
@@ -318,7 +317,7 @@ segmentedControl.VisibleSegmentsCount = 5;
 
 ### Display Mode
 
-We can change the appearance of the segmented control by using the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_DisplayMode) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html). We can set the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_DisplayMode) to either Image or Text or ImageWithText.
+You can change the appearance of the Segmented Control by using the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_DisplayMode) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html). You can set the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_DisplayMode) to either Image, Text, or ImageWithText:
 
 {% highlight c# %}
 
@@ -328,12 +327,16 @@ segmentedControl.DisplayMode = SegmentDisplayMode.Text;
 
 {% endhighlight %}
 
+## Customizing Selection Indicator Appearance
 
-## Customizing selection indicator appearance
+The selection indicator can be used to indicate the selected index of the Segmented Control. It can be customized with the built-in APIs that are available in the [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_SelectionIndicatorSettings) property of SfSegmentedControl.
 
-The Selection indicator can be used to indicate the selected index of the segmented control. It can be customized with the built-in APIs that are available in the [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_SelectionIndicatorSettings) property of SfSegmentedControl.
+To know more about customizing the selection indicator, refer to this [feature link](https://help.syncfusion.com/xamarin-android/sfsegmentedcontrol/indicating-the-selected-item).
 
-To know more about customizing selection indicator refer [feature link](https://help.syncfusion.com/xamarin-android/sfsegmentedcontrol/indicating-the-selected-item)
+N> For custom views, users need to handle click events manually for the view that has been used.
+Example: For Button, you have to use its "Click" event.
+
+The code below can be included on the custom view to get the click event output:
 
 N> For custom view user need to handle click event manually for the view which have been used.
 eg. For Button we have to use its "Click" event.
@@ -378,3 +381,4 @@ segmentView.ItemsSource = new ObservableCollection<View>
 
 
 Note: Getting started sample can be downloaded from [this link](https://github.com/SyncfusionExamples/Getting-Started-Sample-SegmentedControl-Xamarin-Androidd)
+

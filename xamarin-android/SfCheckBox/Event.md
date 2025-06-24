@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event | SfCheckBox | Syncfusion® | Xamarin.Android
-description: Learn how to get the notification of StateChanged event in Xamarin.Android CheckBox(SfCheckBox) control 
+description: Learn how to get the notification of StateChanged event in Xamarin.Android CheckBox (SfCheckBox) control
 platform: Xamarin.Android
 control: SfCheckBox
 documentation: ug 
@@ -9,12 +9,12 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Event in Xamarin.Android Chart(SfChart)
+# Event in Xamarin.Android CheckBox (SfCheckBox)
 
-## StateChanged event
-Occurs when the value(state) of the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_Checked) property is changed by either touching the check box or setting the value to the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_Checked) property using C# code. The event arguments are of type [`StateChangedEventArgs`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.StateChangedEventArgs.html) and expose the following property:
+## StateChanged Event
+Occurs when the value (state) of the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_Checked) property is changed by either touching the check box or setting the value to the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_Checked) property using C# code. The event arguments are of type [`StateChangedEventArgs`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.StateChangedEventArgs.html) and expose the following property:
 
-* [`IsChecked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.StateChangedEventArgs.html#Syncfusion_Android_Buttons_StateChangedEventArgs_IsChecked): The new value(state) of the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_Checked) property.
+* [`IsChecked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.StateChangedEventArgs.html#Syncfusion_Android_Buttons_StateChangedEventArgs_IsChecked): The new value (state) of the [`Checked`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfCheckBox.html#Syncfusion_Android_Buttons_SfCheckBox_Checked) property.
 
 {% tabs %}
 {% highlight c# %}

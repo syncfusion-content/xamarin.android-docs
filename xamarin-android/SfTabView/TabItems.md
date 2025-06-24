@@ -9,7 +9,8 @@ documentation: ug
 
 # Tab Items
 
-Tab items can be configured in tab view through the Items property of `SfTabView`, where it holds collection of `SfTabItem` through `TabItemsCollection`
+Tab items are the individual tabs within the TabView control that contain both the header (title/icon) and the associated content. Each tab item represents a distinct section or view in your application, allowing users to navigate between different content areas seamlessly.
+Tab items can be configured in the TabView through the `Items` property of `SfTabView`, which holds a collection of `SfTabItem` objects through `TabItemsCollection`.
 
 
 {% tabs %}

@@ -1,31 +1,30 @@
 ---
 
 layout: post
-title: Tooltip in Syncfusion® Rating control for Xamarin.Android
-description: Learn here all about ToolTip support in Syncfusion® Xamarin.Android Rating (SfRating) control, its elements and more.
+title: Tooltip in Syncfusion® Rating Control for Xamarin.Android
+description: Learn here all about Tooltip support in Syncfusion® Xamarin.Android Rating (SfRating) control, its elements and more.
 platform: Xamarin.Android
 control: Rating
 documentation: ug
 
 ---
 
-# ToolTip in Rating (SfRating)
+# Tooltip in Rating (SfRating)
 
-Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.Forms SfRating control, tooltip shows the data of `Value`. It will be displayed when the mouse is hovered over the rating items and will be disappeared when a rating item is selected.
+Tooltips provide additional information about objects that are unfamiliar to users and are not directly displayed in the UI. In the Xamarin.Android SfRating control, the tooltip displays the current `Value` of the rating. It appears when users interact with the rating items and disappears when a rating item is selected or when the interaction ends.
 
-## Set tooltip placement
+## Set Tooltip Placement
 
-Using the `ToolTipPlacement` property, you can define where the tooltip needs to be displayed. The `TooTipPlacement` property have the following three types:
+Using the `ToolTipPlacement` property, you can define where the tooltip should be displayed. The `ToolTipPlacement` property supports the following three options:
 
-* BottomRight
-* None
-* TopLeft
+* **BottomRight** - Displays tooltip at the bottom-right of the rating control
+* **None** - Disables tooltip display
+* **TopLeft** - Displays tooltip at the top-left of the rating control
+N> By default, the value of the `ToolTipPlacement` property is set to `None`.
 
-N> By default, value of the `ToolTipPlacement` property is set to None.
+### TopLeft Placement
 
-### TopLeft 
-
-The tooltip will be displayed on top of the rating stars. 
+The tooltip will be displayed at the top-left position relative to the rating stars.
 
 {% tabs %}
 
@@ -37,11 +36,11 @@ The tooltip will be displayed on top of the rating stars.
 
 {% endtabs %}
 
-![Tooltip at top](images/leftTop.jpg) 
+![Tooltip at Top-Left Position](images/leftTop.jpg)
 
-### BottomRight
+### BottomRight Placement
 
-The tooltip will be displayed on bottom of the rating stars.
+The tooltip will be displayed at the bottom-right position relative to the rating stars.
 
 {% tabs %}
 
@@ -69,12 +68,11 @@ The tooltip will be disappeared when setting ToolTipPlacement to None.
 
 {% endtabs %}
 
-![No tooltip](images/null.jpg)
+![No Tooltip Display](images/null.jpg)
 
-## Set tooltip precision
+## Set Tooltip Precision
 
-The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in tooltip.
-
+The `ToolTipPrecision` property controls the number of decimal places displayed in the tooltip value. This is particularly useful when working with precise rating values.
 N> The default value of this property is 1. 
 
 {% tabs %}

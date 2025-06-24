@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding Custom items in Syncfusion® Rating control for Xamarin.Android
-description: Learn how to add the Custom Items in rating control
+title: Adding Custom Items in Syncfusion® Rating Control for Xamarin.Android
+description: Learn how to add custom items and views to the Syncfusion Rating control for enhanced user experience
 platform: Xamarin.Android
 control: Rating
 documentation: ug
@@ -9,12 +9,10 @@ documentation: ug
 
 # Custom Views
 
-SfRating Items control provides support to add custom views.
+The SfRating control provides support for adding custom views to create personalized rating experiences with custom graphics and layouts.
+## Add SfRating Control
 
-## Add SfRating Items
-
-Add the SfRating Items control with a required optimal name by using the included namespace.
-
+Initialize the SfRating control and SfRatingItem with an appropriate namespace reference.
 {% highlight C# %}
 
 SfRating rating;
@@ -31,7 +29,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 
 ## Set Selected View
  
-The `SelectedView` property is used to apply the given SelectedView to selected rating item.
+The `SelectedView` property applies a custom view to the selected rating item state.
 
 {% highlight C# %}
 
@@ -41,9 +39,9 @@ The `SelectedView` property is used to apply the given SelectedView to selected 
 
 {% endhighlight %}
 
-## Set UnSelected View
+## Set Unselected View
  
-The `UnSelectedView` property is used to apply the given UnSelectedView to unselected rating item.
+The `UnSelectedView` property applies a custom view to the unselected rating item state.
 
 {% highlight C# %}
 
@@ -53,12 +51,11 @@ The `UnSelectedView` property is used to apply the given UnSelectedView to unsel
 
 {% endhighlight %}
 
-## Add Items
+## Add Items to Collection
 
-The `Items` property is used to hold the collection of SfRatingItem. 
+The `Items` property holds the collection of SfRatingItem objects that define the rating scale.
 
-N> SfRatingItem keeps both selected and unselected view respectively.
-
+N> Each SfRatingItem maintains both selected and unselected view states.
 {% highlight C# %}
 
     List<SfRatingItem> ratingItemList = new List<SfRatingItem>();
@@ -69,7 +66,7 @@ N> SfRatingItem keeps both selected and unselected view respectively.
 
 ## Enable Custom Items
 
-When `EnableCustomItems` property is enabled, it will display the custom items added in the rating items. 
+When the `EnableCustomView` property is set to true, the control displays the custom items configured in the rating collection.
 
 {% highlight C# %}
 

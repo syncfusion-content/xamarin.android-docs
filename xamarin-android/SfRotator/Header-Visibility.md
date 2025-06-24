@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Various features in Syncfusion® Rotator control for Xamarin.Android 
-description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Android 
+title: Text Area Visibility in Syncfusion® Rotator control for Xamarin.Android
+description: Learn how to enable and customize the text area visibility feature in Rotator control for Xamarin.Android platform
 platform: Xamarin.Android 
 control: Rotator
 documentation: ug
@@ -28,8 +28,7 @@ for(int i = 1; i < 5; i++)
 	collection.Add(item);
 }
 
-// Assign the collection of Image date to Rotator's DataSource
-
+// Assign the collection to the rotator's data source
 rotator.DataSource = collection;
 
 // Used Resource folder images's name will display at the bottom of Rotator control.
@@ -41,3 +40,4 @@ rotator.SelectedIndex = 2;
 SetContentView(rotator);
 
 {% endhighlight %}
+

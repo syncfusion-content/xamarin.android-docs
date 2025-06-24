@@ -1,19 +1,18 @@
 ---
 layout: post
-title: ToolTip support for Syncfusion® RangeSlider control for Xamarin.Android
-description: Learn how to set tooltip for RangeSlider in Xamarin.Android
+title: Tooltip Support for Syncfusion® RangeSlider Control for Xamarin.Android
+description: Learn how to configure and customize tooltips for RangeSlider in Xamarin.Android
 platform: Xamarin.Android
 control: RangeSlider
 documentation: ug
 ---
 
-# ToolTip Support
+# Tooltip Support
 
-The Tooltip shows the current value based on thumb position.
+The tooltip displays the current value based on the thumb position, providing immediate visual feedback to users during slider interaction. This feature enhances user experience by showing precise values without requiring additional UI elements.
+## Set Tooltip Precision
 
-## Set ToolTip Precision
-
-The `ToolTipPrecision` property is used to define the precision of the value displayed in the Tooltip.
+The `ToolTipPrecision` property defines the number of decimal places displayed in the tooltip value. This is particularly useful when working with precise decimal values or when you need to control the level of detail shown to users.
 
 {% tabs %}
 

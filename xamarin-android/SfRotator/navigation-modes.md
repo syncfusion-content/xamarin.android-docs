@@ -1,8 +1,8 @@
 ---
 layout: post
-title: NavigationMode of Syncfusion® Rotator control for Xamarin.Forms 
-description: Learn how to view the different navigation modes of the Rotator control in Xamarin.Forms
-platform: Xamarin.Forms 
+title: NavigationMode of Syncfusion® Rotator control for Xamarin.Android
+description: Learn how to view the different navigation modes of the Rotator control in Xamarin.Android
+platform: Xamarin.Android
 control: Rotator
 documentation: ug
 ---

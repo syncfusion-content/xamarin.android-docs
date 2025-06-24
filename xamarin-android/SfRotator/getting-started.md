@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with syncfusion® Rotator control for Xamarin.Android 
-description:  A quick tour to initial users on Syncfusion® Rotator control for Xamarin.Android platform
+title: Getting Started with Syncfusion® Rotator control for Xamarin.Android
+description: A quick tour for initial users on Syncfusion® Rotator control for Xamarin.Android platform
 platform: Xamarin.Android 
 control: Rotator 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
+This section explains how to configure an SfRotator control in a real-world scenario and provides a walkthrough of the customization features available in the SfRotator control.
 
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
@@ -25,7 +25,8 @@ android\Syncfusion.SfRotator.Android.dll
 
 ## Initializing the SfRotator
 
-* Adding namespace for the added assemblies.
+### Adding Namespace
+Add the namespace for the included assemblies:
 
 {% highlight C# %}
 
@@ -33,7 +34,8 @@ using Com.Syncfusion.Rotator;
 
 {% endhighlight %}
 
-* Now add the SfRotator control with a required optimal name by using the included namespace.
+### Creating the SfRotator Instance
+Create the SfRotator control using the included namespace:
 
 {% highlight C# %}
 	
@@ -42,18 +44,23 @@ SetContentView(rotator);
 
 {% endhighlight %}
 
-# Adding items 
+## Adding Items
 
-SfRotator items can be populated with a collection of image data or any other custom view. This collection must be the items of SfRotatorItem. To get the view of Rotator, we have two ways with SfRotatorItem or using RotatorAdapter.
+SfRotator items can be populated with a collection of image data or custom views. The control provides two approaches for adding content:
 
-## Through RotatorItem 
+1. **Using SfRotatorItem** - Direct item creation with image content or custom views
+2. **Using RotatorAdapter** - Advanced customization with adapter pattern
 
-* `ImageContent` - Populating the RotatorItem with collection of Image data.
+### Approach 1: Using SfRotatorItem
 
-* `Content` - Populating the RotatorItem with custom view.
+The `SfRotatorItem` class provides two main properties for content:
 
-### Using ImageContent 
+- **`ImageContent`** - For populating items with image data
+- **`Content`** - For populating items with custom views
 
+#### Using ImageContent
+
+This approach is ideal for simple image carousels:
 {% highlight C# %}
 
 Context context = this;
@@ -69,8 +76,7 @@ for(int i = 1; i < 5; i++)
 	collection.Add(item);
 }
 
-// Assign the collection of Image date to Rotator's DataSource
-
+// Assign the collection to the rotator's data source
 rotator.DataSource = collection;
 
 rotator.SelectedIndex = 2;
@@ -79,7 +85,7 @@ SetContentView(rotator);
 
 {% endhighlight %}
 
-![](images/rotator.png)
+![Simple Image Rotator](images/rotator.png)
 
 ### Using Content
 
@@ -230,5 +236,7 @@ rotator.NavigationStripPosition = NavigationStripPosition.Right;
 {% endhighlight %}
 
 N> Default Navigation strip position is `Bottom`.
+
+
 
 

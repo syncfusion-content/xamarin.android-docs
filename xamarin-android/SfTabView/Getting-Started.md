@@ -2,27 +2,26 @@
 layout: post
 title: Getting Started with Syncfusion® TabView control for Xamarin.Android 
 description: A quick tour to initial users about getting started page on Syncfusion® TabView control for Xamarin.Android platform
-platform: xamarin.android
+platform: Xamarin.Android
 control: TabView
 documentation: ug
 ---
 
 # Getting Started with Syncfusion<sup>®</sup> TabView control for Xamarin.Android 
 
-This section provides a quick overview for working with the tab view control for Xamarin.Android. Walk through the entire process of creating a real-world application with tab view.
+This section provides a quick overview for working with the TabView control for Xamarin.Android. This guide walks you through the entire process of creating a real-world application with TabView.
 
 ## Assembly deployment
 
-After installing Essential Studio<sup>®</sup> for Xamarin, find all the required assemblies in the installation folders,   
-{Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders:
+**Installation Path:** {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib
+Example: C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location in Mac.
+N> Assemblies can be found in the unzipped package location on Mac.
 
+## TabView for Xamarin.Android
 
-## Tab View for Xamarin.Android
-
-The following list of assemblies should be added as reference from the lib folder to use the tab view.
+The following assemblies should be added as references from the lib folder to use the TabView:
 
 <table>
 <tr>
@@ -35,21 +34,21 @@ The following list of assemblies should be added as reference from the lib folde
 </tr>
 </table>
 
-### Create a simple tab view
+### Create a simple TabView
 
-This section explains how to create a tab view and configure it. This is how the final output will look like in Android devices.
+This section explains how to create a TabView and configure it. The following image shows how the final output will appear on Android devices:
 
-![simple tab view](images/Getting-Started/xamarin_android_tabview.png)
+![Simple TabView](images/Getting-Started/xamarin_android_tabview.png)
 
 ## Creating the project
 
-Create a new BlankApp (Android) application in Xamarin Studio or Visual Studio.
+Create a new BlankApp (Android) application in Xamarin Studio or Visual Studio.
 
 ## Adding SfTabView in Xamarin.Android
 
-Add the required assembly reference to the project as discussed in the Assembly deployment section.
+Add the required assembly reference to the project as discussed in the Assembly deployment section.
 
-Import the control namespace as
+Import the control namespace:
 
 {% tabs %}
 
@@ -61,7 +60,7 @@ using Syncfusion.Android.TabView;
 
 {% endtabs %}
 
-Set the tab view control as content view in the `OnCreate` method.
+Set the TabView control as the content view in the `OnCreate` method:
 
 {% tabs %}
 
@@ -80,7 +79,7 @@ Set the tab view control as content view in the `OnCreate` method.
 
 ## Adding Tab items
 
-Tab items can be configured in tab view through the Items property of `SfTabView`, where it holds collection of `SfTabItem` through `TabItemsCollection`
+Tab items can be configured in TabView through the `Items` property of `SfTabView`, which holds a collection of `SfTabItem` through `TabItemsCollection`:
 
 {% tabs %}
 
@@ -120,7 +119,7 @@ SetContentView(tabView);
 
 ## Share the header space equally
 
-In order to share the header space equally for the , we can set the number of tabs which can be distributed in the available space though `VisibleHeaderCount` of SfTabView.
+To share the header space equally among tabs, you can set the number of tabs that can be distributed in the available space through the `VisibleHeaderCount` property of `SfTabView`:
 
 {% tabs %}
 
@@ -132,13 +131,13 @@ tabView.VisibleHeaderCount = 3;
 
 {% endtabs %}
 
-That’s it, tab view control is ready. Now we can add the required controls for our application.  Here we are adding a `ListView` in the content region.
+The TabView control is now ready. You can add the required controls for your application. In the following example, we'll add a `ListView` in the content region.
 
-## Adding List view in the tab view
+## Adding ListView in the TabView
 
-## Preparing data
+### Preparing data
 
-Create a view model class with ContactsInfo collection property, initialized with required number of data objects.
+Create a view model class with a ContactsInfo collection property, initialized with the required number of data objects:
 
 {% highlight c# %}
 
@@ -173,9 +172,9 @@ Create a view model class with ContactsInfo collection property, initialized wit
 
 {% endhighlight %}
 
-## Binding data to list view
+### Binding data to ListView
 
-Create a custom adapter for ListView and customize the appearance of each item by overriding `GetView` method in the inherited class of BaseAdapter<T>. Where the list view can be hosted within the content region of tab item. 
+Create a custom adapter for ListView and customize the appearance of each item by overriding the `GetView` method in the inherited class of `BaseAdapter<T>`. The ListView can be hosted within the content region of the tab item:
 
 {% highlight c# %}
 
@@ -186,8 +185,7 @@ listView.SetAdapter(tabContentListAdapter);
     
 {% endhighlight %}
 
-
-`TabContentListAdapter` contains `GetView` method for customize the appearance of each item in the listview. 
+`TabContentListAdapter` contains the `GetView` method to customize the appearance of each item in the ListView:
 
 {% highlight c# %}
 
@@ -246,11 +244,11 @@ listView.SetAdapter(tabContentListAdapter);
 
 {% endhighlight %}
 
-Similarly, content region for other tabs can be configured in the same way.
+Similarly, content regions for other tabs can be configured in the same way.
 
 ## ContentTransitionDuration
 
-You can set the duration for the TabView content transition by setting `ContentTransitionDuration`  property. 
+You can set the duration for the TabView content transition by setting the `ContentTransitionDuration` property:
 
 {% tabs %}
 
@@ -264,4 +262,6 @@ You can set the duration for the TabView content transition by setting `ContentT
 
 ## Swiping
 
-Both vertical swiping for the list view and horizontal swiping for the tab view will works by default. If it is not required it can be customized by `EnableSwiping` property of `SfTabView`.
+Both vertical swiping for the ListView and horizontal swiping for the TabView work by default. If swiping is not required, it can be customized using the `EnableSwiping` property of `SfTabView`:
+
+

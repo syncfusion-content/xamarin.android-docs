@@ -1,27 +1,28 @@
 ---
-layout : post
-title : Populating data in Syncfusion® Rotator control in Xamarin.Android
-description : Learn how to set the DataSource in Rotator for Xamarin.Android
-platform : Xamarin.Android
-control : Rotator 
-documentation : ug
+layout: post
+title: Populating data in Syncfusion® Rotator control in Xamarin.Android
+description: Learn how to set the DataSource in Rotator for Xamarin.Android
+platform: Xamarin.Android
+control: Rotator
+documentation: ug
 ---
 
 # Populating Data
 
-SfRotator items can be populated with a collection of image data or any other custom view. `DataSource` property is used to hold the collection of RotatorItems in Rotator.
+The SfRotator control provides flexible options for populating content through its `DataSource` property. You can display various types of content including images, custom views, or complex layouts. The control supports multiple approaches for data population, each suited to different scenarios and requirements.
 
-To get the view of Rotator, we have two ways with SfRotatorItem
+## Data Population Approaches
 
-* `ImageContent` - Populating the RotatorItem with collection of Image data.
+The SfRotator offers three primary methods for populating data:
 
-* `Content` - Populating the RotatorItem with custom view.
-
+1. **ImageContent Approach**: Simple image display using resource names
+2. **Custom Content Approach**: Complex layouts with multiple UI elements
+3. **Adapter Pattern**: Advanced customization with RotatorAdapter
 ## Using ImageContent 
 
-`ImageContent` property in RotatorItem helps to view the Rotator from Resource folder image item.
-We can add the Resource folder's images to the Items of Rotator.
+The `ImageContent` property provides the simplest way to display images in the SfRotator. This approach is ideal for basic image galleries where you want to display images from your application's resources.
 
+### Basic ImageContent Implementation
 {% highlight C# %}
 
 Context context = this;
@@ -37,8 +38,7 @@ for(int i = 1; i < 5; i++)
 	collection.Add(item);
 }
 
-// Assign the collection of Image date to Rotator's DataSource
-
+// Assign the collection to the rotator's DataSource
 rotator.DataSource = collection;
 
 rotator.SelectedIndex = 2;
@@ -47,7 +47,7 @@ SetContentView(rotator);
 
 {% endhighlight %}
 
-![](images/rotator.png)
+![Simple Image Rotator](images/rotator.png)
 
 ## Using Content
 
@@ -190,3 +190,4 @@ public class MainActivity : Activity
 {% endhighlight %}
 
 ![](images/rotator.png)
+

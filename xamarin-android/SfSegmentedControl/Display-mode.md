@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Display mode  in Syncfusion® segmented control for Xamarin.Android
-description: Learn how to display segmented items with icons,text or a combination of both icon and text in Segmented control
+title: Display Mode in Syncfusion® Segmented Control for Xamarin.Android
+description: Learn how to display segmented items with icons, text, or a combination of both icon and text in Segmented Control
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Display mode in Xamarin.Android Segmented control (SfSegmentedControl)
+# Display Mode in Xamarin.Android Segmented Control (SfSegmentedControl)
 
-Depending on the application, different scenarios may require icons, text, or a combination of both for effective communication. The segmented control supports these three options.
+Depending on the application, different scenarios may require icons, text, or a combination of both for effective communication. The Segmented Control supports these three options:
 
 ## Text
 
-Items populated in the segmented control will be displayed as text by default.
+Items populated in the Segmented Control will be displayed as text by default.
 
 {% highlight c# %}
 
@@ -47,7 +47,7 @@ SelectionIndicatorSettings selectionIndicator = new SelectionIndicatorSettings()
 
 ## Image 
 
-Items populated in the segmented control can be displayed as icons.
+Items populated in the Segmented Control can be displayed as icons.
 
 {% highlight c# %}
 
@@ -67,9 +67,9 @@ segmentedControl.ItemsSource = new ObservableCollection<SfSegmentItem>
 
 ![Xamarin.Android SfSegmentedControl with Image display mode](images/Display-mode/Xamarin_Android_Image.png)
 
-## Image with text
+## Image with Text
 
-Items populated in the segmented control can be displayed as icons with accompanying text.
+Items populated in the Segmented Control can be displayed as icons with accompanying text.
 
 {% highlight c# %}
 
@@ -89,12 +89,12 @@ segmentedControl.ItemsSource = new ObservableCollection<SfSegmentItem>
 
 ![Xamarin.Android SfSegmentedControl with Image and Text display mode](images/Display-mode/Xamarin_Android_ImagewithText.png)
 
-## How to generate font icons
+## How to Generate Font Icons
 
-The segmented control enables the user to use font icons for the items in the data source collection. For this we have to first give the desired font icon and its font family using [`IconFont`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentItem.html#Syncfusion_Android_Buttons_SfSegmentItem_IconFont) and [`FontIconTypeface`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentItem.html#Syncfusion_Android_Buttons_SfSegmentItem_FontIconTypeface) property.
+The Segmented Control enables the user to use font icons for the items in the data source collection. For this, you must first specify the desired font icon and its font family using the [`IconFont`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentItem.html#Syncfusion_Android_Buttons_SfSegmentItem_IconFont) and [`FontIconTypeface`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentItem.html#Syncfusion_Android_Buttons_SfSegmentItem_FontIconTypeface) properties.
 
-N> Font family must be added to the respective folders based on the platforms 
-Android -> Add the font family inside Resource-> drawable
+N> The font family must be added to the respective folders based on the platform:
+Android -> Add the font family inside Resource -> drawable
 
 {% highlight c# %}
 
