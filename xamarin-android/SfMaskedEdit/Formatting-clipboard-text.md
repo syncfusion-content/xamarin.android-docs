@@ -1,27 +1,27 @@
 ---
 layout: post
-title: Formatting clipboard text of SfMaskedEit in Xamarin.Android plarform
-description: Learn how to format the clipboard text during cut and copy operation of SfMaskedEdit control
+title: Formatting Clipboard Text of SfMaskedEdit in Xamarin.Android Platform
+description: Learn how to format the clipboard text during cut and copy operations of the SfMaskedEdit control.
 platform: Xamarin.Android
 control: SfMaskedEdit
 documentation: ug 
-keywords: mask, SfMaskedEdit, maskededit
+keywords: mask, SfMaskedEdit, maskededit, clipboard, cut, copy, formatting
 
 ---
 
+# Formatting Clipboard Text
 
-# Formatting clipboard text
+The `SfMaskedEdit` control allows you to format clipboard text in mask scenarios (when the `Mask` property is set). When you perform cut or copy operations, the clipboard text is formatted with your input characters and the literals defined in the mask. You can modify this behavior and control whether the clipboard holds characters with or without prompt characters and literals by setting the `CutCopyMaskFormat` property of the control.
 
-SfMaskedEdit allows you to format the clipboard text in a mask scenario (when the Mask property is set). When you perform the cut or copy operation, the clipboard text will be formatted with your input characters and the literals defined in the mask. You can modify this and allow the clipboard to hold the characters with or without prompt and literals by setting the CutCopyMaskFormat property of the control. The clipboard text is formatted by any one of the following formatting enum values:
-
-* ExcludePromptAndLiterals
-* IncludePrompt
-* IncludeLiterals
-* IncludePromptAndLiterals
+The clipboard text can be formatted using any of the following `MaskFormat` enumeration values:
+* `ExcludePromptAndLiterals`
+* `IncludePrompt`
+* `IncludeLiterals`
+* `IncludePromptAndLiterals`
 
 ## ExcludePromptAndLiterals
 
-Clipboard text will contain only the typed characters, the prompt characters and literals are excluded.
+The clipboard text will contain only the typed characters. Prompt characters and literals are excluded.
 
 {% tabs %}
 {% highlight c# %}
@@ -34,7 +34,7 @@ maskedEdit.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
 
 ## IncludePrompt
 
-Clipboard text contains the typed characters and prompt characters, literals are excluded.
+The clipboard text contains the typed characters and prompt characters. Literals are excluded.
 
 {% tabs %}
 {% highlight c# %}
@@ -47,7 +47,7 @@ maskedEdit.CutCopyMaskFormat = MaskFormat.IncludePrompt;
 
 ## IncludeLiterals
 
-Clipboard text contains the typed characters and literals, prompt characters are excluded.
+The clipboard text contains the typed characters and literals. Prompt characters are excluded.
 
 {% tabs %}
 {% highlight c# %}
@@ -60,7 +60,7 @@ maskedEdit.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
 
 ## IncludePromptAndLiterals
 
-Clipboard text contains typed characters, prompt characters, and literals.
+The clipboard text contains typed characters, prompt characters, and literals.
 
 {% tabs %}
 {% highlight c# %}
@@ -70,3 +70,4 @@ maskedEdit.Mask = "00/00/0000";
 maskedEdit.CutCopyMaskFormat = MaskFormat.IncludePromptAndLiterals;
 {% endhighlight %}
 {% endtabs %}
+

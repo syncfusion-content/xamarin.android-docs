@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Number Formatting in Syncfusion® NumericTextBox for Xamarin.Android
-description: Learn how to format string, enable parser mode and percent display mode for syncfusion® NumericTextBox control.
+description: Learn how to format strings, enable parser mode, and percent display mode for Syncfusion® NumericTextBox control.
 platform: Xamarin.Android
 control: NumericTextBox
 documentation: ug
 ---
 
-# Number formatting and group separator
+# Number Formatting and Group Separator
 
-The Values of the SfNumericTextBox can be configured to display different formats like currency format, percent format etc.
+The values of the SfNumericTextBox can be configured to display different formats like currency format, percent format, etc.
 
 ## Format String
 
 The `FormatString` property determines the format specifier by which the display text has to be formatted. 
 
-N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+N> The control displays the formatted text on lost focus. The default value of `FormatString` is "n".
 
 ### Display Currency Notation
 
@@ -33,7 +33,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 ### Display Number Notation
 
-`n` – Displays the value in number format.
+`n` - Displays the value in number format.
 
 {% tabs %}
 	
@@ -47,7 +47,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 ### Display Percentage Notation
 
-`p` – Displays the value in percentage.
+`p` - Displays the value in percentage.
 
 {% tabs %}
 	
@@ -59,7 +59,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% endtabs %}
 	
-N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericTextBox. 
+N> Instead of using the above `FormatString` types, you can provide any symbol or value as a string in the `FormatString` property, which will be appended with the value in SfNumericTextBox.
 
 ![Format string](images/FormatString.png)
 
@@ -67,7 +67,7 @@ N> Instead of using above `FormatString` types, we can provide any symbol or val
 
 The value of the SfNumericTextBox can be parsed based on the `ParsingMode` property. 
 
-N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
+N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default value for `ParsingMode` is Double.
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 ## Compute to Percentage
 
-The `PercentDisplayMode` property can be used to display numeric data in Percent mode. 
+The `PercentDisplayMode` property can be used to display numeric data in percent mode.
 
 N> The control displays the percent value on lost focus. 
 
@@ -125,12 +125,10 @@ N> The control displays the percent value on lost focus.
 
 ![Percent display mode](images/PercentDisplayMode.png)
 
-## Group separator modes
+## Group Separator Modes
 
-[`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Numerictextbox.GroupSeparatorMode.html) provides 2 states to display the group separator. 
-When the mode is set as `Always`, it will display separator while typing itself on the other hand when the mode is set as `LostFocus` it will enable the separator when the control lost its focus.
-
-N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Numerictextbox.SfNumericTextBox.html#Com_Syncfusion_Numerictextbox_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the `GroupSeparatorMode`.
+[`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Numerictextbox.GroupSeparatorMode.html) provides two states to display the group separator. When the mode is set as `Always`, it will display the separator while typing. On the other hand, when the mode is set as `LostFocus`, it will enable the separator when the control loses its focus.
+N> The [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Numerictextbox.SfNumericTextBox.html#Com_Syncfusion_Numerictextbox_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the `GroupSeparatorMode`.
 
 {% tabs %}
 
@@ -147,4 +145,4 @@ N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin-android/Com.S
 
 {% endtabs %}
 
-![Display the value with enable group separator](images/SeparatorMode.png)
+![Display the value with enabled group separator](images/SeparatorMode.png)

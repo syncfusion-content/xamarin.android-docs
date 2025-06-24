@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Visual appearence customization of SfMaskedEdit control for Xamarin.Android Platform
-description: Learn how to customize the visual appearence of SfMaskedEdit control
+title: Visual Appearance Customization of SfMaskedEdit Control for Xamarin.Android Platform
+description: Learn how to customize the visual appearance of the SfMaskedEdit control.
 platform: Xamarin.Android
 control: SfMaskedEdit
 documentation: ug 
-keywords: mask, SfMaskedEdit, maskededit
-
+keywords: mask, SfMaskedEdit, maskededit, visual customization, appearance, styling
 ---
 
+# Visual Customization
 
-# Visual Customization:
+The appearance of the `SfMaskedEdit` control can be customized using the following properties to match your application's design requirements.
 
 The appearance of SfMaskedEdit can be customized using the following properties:
 
@@ -27,15 +27,15 @@ maskedEdit.BorderColor = Color.Green;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/Visual_BorderColor.png)
+![Border Color Customization](SfMaskedEditImages/Visual_BorderColor.png)
 
-## ErrorBorderColor
+### ErrorBorderColor
 
-Sets the custom error border color to SfMaskedEdit. Error border color indicates the color to be used when the validation fails for your input with respect to the mask used. 
+Sets a custom error border color for the `SfMaskedEdit` control. The error border color indicates the color to be used when validation fails for the input with respect to the mask pattern.
 
-> Validation triggers based on `ValidationMode` property.
+> **Note:** Validation triggers based on the `ValidationMode` property setting.
 
-Refer this [link](Validation#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
+Refer to this [link](Validation#validation-mode) to learn more about the `ValidationMode` property of the `SfMaskedEdit` control.
 
 {% tabs %}
 {% highlight c# %}
@@ -46,17 +46,18 @@ maskedEdit.ErrorBorderColor = Color.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/Visual_ErrorBorderColor.png)
+![Error Border Color Customization](SfMaskedEditImages/Visual_ErrorBorderColor.png)
 
+## Text Appearance Customization
  
-## Setting Appearance of Text
+You can customize the display text appearance of the `SfMaskedEdit` control using the following properties:
 
-You can customize the display text appearance of SfMaskedEdit control using the following properties:
+* `SetTextColor` - Changes the color of the text
+* `TextAlignment` - Changes the horizontal alignment of the text
+* `Typeface` - Changes the font family and sets font attributes (bold/italic/normal) of the text
+* `TextSize` - Sets the font size of the text
 
-* `SetTextColor`: Changes the color of the text.
-* `TextAlignment`: Changes the horizontal alignment of the text.
-* `Typeface`: Changes the font family of the text and sets font attributes(bold/italic/none) of the text.
-* `TextSize`: Sets font size of the text.
+### Example
 
 {% tabs %}
 {% highlight c# %}
@@ -70,6 +71,6 @@ maskedEdit.TextSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/Visual_TextColor.png)
+![Text Appearance Customization](SfMaskedEditImages/Visual_TextColor.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_VisualCustomize.zip).

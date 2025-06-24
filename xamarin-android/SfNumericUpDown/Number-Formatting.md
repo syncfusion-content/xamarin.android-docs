@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Number Formatting in Syncfusion® NumericUpDown control
-description: Learn how to add format String, enable parser mode and percent display mode for NumericUpDown control.
+title: Number Formatting in Syncfusion® NumericUpDown Control for Xamarin.Android
+description: Learn how to add format strings, enable parser mode, and configure percent display mode for the NumericUpDown control.
 platform: Xamarin.Android
 control: NumericUpDown
 documentation: ug
+keywords: NumericUpDown, number formatting, format string, parser mode, percentage, currency, localization
 ---
 # Number Formatting in NumericUpDown (SfNumericUpDown)
 
-The Values of the SfNumericUpDown can be configured to display different formats like currency format, percent format etc. 
+The values of the `SfNumericUpDown` control can be configured to display different formats such as currency format, percent format, and custom number formats to meet various application requirements.
 
 ## Format String
 
-The `FormatString` property determines the format specifier by which the display text has to be formatted. 
+The `FormatString` property determines the format specifier by which the display text is formatted. This property allows you to control how numeric values are presented to users.
 
-N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+N> The control displays the formatted text when it loses focus. The default value of `FormatString` is "n".
 
 ### Display Currency Notation
 
-`c` - Displays the value with currency notation.
-
+Use `c` to display the value with currency notation based on the current culture settings.
 {% tabs %}
 	
 {% highlight C# %}
@@ -32,8 +32,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 ### Display Number Notation
 
-`n` – Displays the value in number format.
-
+Use `n` to display the value in standard number format with appropriate decimal and group separators.
 {% tabs %}
 	
 {% highlight C# %}
@@ -46,8 +45,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 ### Display Percentage Notation	
 
-`p` – Displays the value in Percentage.
-
+Use `p` to display the value as a percentage (the value is multiplied by 100 and the % symbol is appended).
 {% tabs %}
 	
 {% highlight C# %}
@@ -58,7 +56,8 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% endtabs %}
 	
-N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericUpDown.
+### Custom Format Strings
+You can also provide custom symbols or values as strings in the `FormatString` property, which will be appended to the value in the `SfNumericUpDown`.
 
 ![Xamarin.Android SfNumericUpDown percentage notation](images/format.png)
 

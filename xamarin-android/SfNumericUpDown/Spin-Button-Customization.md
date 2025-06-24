@@ -1,26 +1,29 @@
 ---
 layout: post
-title: Appearance in Syncfusion® NumericUpDown control for Xamarin.Android
-description: Learn how to add customize spin buttons position in NumericUpDown.
+title: Spin Button Customization in Syncfusion® NumericUpDown Control for Xamarin.Android
+description: Learn how to customize spin button position and appearance in the NumericUpDown control.
 platform: Xamarin.Android
 control: NumericUpDown
 documentation: ug
+keywords: NumericUpDown, spin buttons, button alignment, button customization, appearance, UI customization
 ---
 
-# Spin Button Alignment
+# Spin Button Customization
 
-Spin Button position in the SfNumericUpDown control can be changed relative to the TextBox based on `SpinButtonAlignment` property. 
+The `SfNumericUpDown` control provides extensive customization options for spin buttons, including position alignment and visual appearance. You can customize both the placement and the visual representation of the increment and decrement buttons to match your application's design requirements.
 
-There are three built-in modes.
+## Spin Button Alignment
+The spin button position in the `SfNumericUpDown` control can be changed relative to the text box using the `SpinButtonAlignment` property. This property offers three built-in alignment modes:
 
-* Right
-* Left
-* Both
+* `Right` - Buttons aligned to the right side
+* `Left` - Buttons aligned to the left side
+* `Both` - Buttons aligned to both sides
 
-### Right
+N> By default, the `SpinButtonAlignment` property value is `Right`.
 
-Spin Buttons will get aligned to the right side of the control.
+### Right Alignment
 
+Spin buttons will be aligned to the right side of the control, providing a traditional numeric input appearance.
 {% tabs %}
 
 {% highlight C# %}
@@ -31,12 +34,11 @@ numeric.SpinButtonAlignment = SpinButtonAlignment.Right;
 
 {% endtabs %}
 
-![](images/spinright.png)
+![Right Aligned Spin Buttons](images/spinright.png)
 
-### Left
+### Left Alignment
 
-Spin Buttons will get aligned to the left side of the control.
-
+Spin buttons will be aligned to the left side of the control, useful for right-to-left layouts or specific design requirements.
 {% tabs %}
 
 {% highlight C# %}
@@ -47,12 +49,11 @@ numeric.SpinButtonAlignment = SpinButtonAlignment.Left;
 
 {% endtabs %}
 
-![](images/spinleft.png)
+![Left Aligned Spin Buttons](images/spinleft.png)
 
-### Both
+### Both Sides Alignment
 
-Spin Buttons will get aligned to the both side of the control.
-
+Spin buttons will be aligned to both sides of the control, with increment on one side and decrement on the other.
 {% tabs %}
 
 {% highlight C# %}
@@ -63,24 +64,22 @@ numeric.SpinButtonAlignment = SpinButtonAlignment.Both;
 
 {% endtabs %}
 
-![](images/spinboth.png)
+![Both Sides Aligned Spin Buttons](images/spinboth.png)
+## UpDownButtonSettings Customization
 
-N> By default the property value is Right.
+The `SfNumericUpDown` control allows you to customize the appearance of increment and decrement buttons using the `UpDownButtonSettings` class. You can customize buttons using three different approaches:
 
-## UpDownButtonSetting Customization
+1. **Custom View** - Use any Android view as a button
+2. **Image** - Use image resources for button appearance
+3. **Font Icon** - Use font icons for scalable button graphics
 
-We can set the Up Down button of SfNumericUpDown control by using any of the below given ways.
+N> **Resource Requirements:**
+> * For images: Add image files to `Resources/drawable/` folder
+> * For font icons: Add TTF font files to `Assets/` folder
 
-1. View
-2. Image
-3. FontIconText
+### Custom View Customization
 
-N> For image and FontIcon we need to add the the respective image and TTF file.
-		For android: Add image at Resource/Drawable/{Image} and .ttf file at Asserts/{.ttf}
-		
-
-### By using View
-
+You can use any Android view as a custom button, providing complete control over button appearance and behavior.
 {% tabs %}
 
 {% highlight C# %}
@@ -128,8 +127,9 @@ N> For image and FontIcon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-### By using Image
+### Image-Based Customization
 
+Use image resources to create visually appealing buttons with custom graphics.
 {% tabs %}
 
 {% highlight C# %}
@@ -165,8 +165,9 @@ N> For image and FontIcon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-### By using FontIconText
+### Font Icon Customization
 
+Use font icons for scalable, customizable button graphics that maintain quality at any size.
 {% tabs %}
 
 {% highlight C# %}
@@ -207,7 +208,5 @@ N> For image and FontIcon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-![](images/image.png)
-
-
+![Customized Spin Buttons](images/image.png)
 

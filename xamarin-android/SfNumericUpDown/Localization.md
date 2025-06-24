@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Localization in Syncfusion® NumericUpDown control for Xamarin.Android
-description: Learn how to localize the NumericUpDown control
+title: Localization in Syncfusion® NumericUpDown Control for Xamarin.Android
+description: Learn how to localize the NumericUpDown control to support different cultures and regions.
 platform: Xamarin.Android
 control: NumericUpDown
 documentation: ug
+keywords: NumericUpDown, localization, culture, globalization, regional settings, formatting
 ---
 # Localization
 
-The SfNumericUpDown value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
+The `SfNumericUpDown` control supports localization to display values according to specific cultural conventions. You can localize the control by setting the `Culture` property with a `System.Globalization.CultureInfo` object instance.
 
-N> Default `Culture` property value is en-US.
+N> The default `Culture` property value is `en-US`.
 
 {% tabs %}
 
