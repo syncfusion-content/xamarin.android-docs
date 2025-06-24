@@ -1,23 +1,27 @@
 ---
 layout: post
-title: Getting Started with Syncfusion® ComboBox Control for Xamarin.Android
-description: Learn here about getting started with Syncfusion® Essential® Xamarin.Android ComboBox Control, its elements, and more.
+title: Getting Started with Syncfusion® SfComboBox Control for Xamarin.Android
+description: A comprehensive guide to implementing the Syncfusion SfComboBox control in Xamarin.Android applications, including setup, data population, and configuration options.
 platform: Xamarin.Android
 control: SfComboBox
 documentation: ug
 ---
 
-# Getting started with Xamarin.Android ComboBox
+# Getting Started with Xamarin.Android SfComboBox
 
-This section explains the steps required to create combo box, populate it with data, and filter  suggestions.Here we create a simple sample for changing the resolution and this section covers only the minimal features that are needed to get started with the ComboBox.  
+## Prerequisites
 
-## Referencing Essential Studio<sup>®</sup> components in your solution
+Before getting started, ensure you have:
+- Xamarin.Android development environment set up
+- Syncfusion Essential Studio® for Xamarin installed
+- Basic knowledge of Xamarin.Android development
 
-After installing Essential Studio<sup>®</sup> for Xamarin,find all the required assemblies in the installation folders,
+## Referencing Essential Studio® Components
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders:
 
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
-Add the following assembly references to the Android project,
+Add the following assembly references to the Android project:
 
 android\Syncfusion.SfComboBox.Android.dll
 

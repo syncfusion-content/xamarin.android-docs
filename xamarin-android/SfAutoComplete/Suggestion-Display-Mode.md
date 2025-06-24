@@ -1,6 +1,6 @@
 ---
 layout : post
-title: AutoComplete mode in Xamarin.Android SfAutoComplete Control|Syncfusion®
+title: Suggestion Display Mode in Xamarin.Android SfAutoComplete Control | Syncfusion®
 description: Learn here about Suggestion Display Mode in Syncfusion® Essential® Xamarin.Android SfAutoComplete Control, its elements, and more.
 platform: Xamarin.Android
 control: SfAutoComplete
@@ -9,7 +9,7 @@ documentation: ug
 
 # Suggestion Display Mode in Xamarin.Android SfAutoComplete
 
-The `AutocompleteMode` property is used to decide the suggestion pattern for displaying the filtered data according to the text entered. The different types of pattern are described below
+The `AutoCompleteMode` property is used to determine the suggestion pattern for displaying the filtered data according to the text entered. The different types of patterns are described below:
 
 * Suggest
 
@@ -17,11 +17,11 @@ The `AutocompleteMode` property is used to decide the suggestion pattern for dis
 
 * Suggest and Append
 
-N> The default option is suggest mode.
+N> The default mode is Suggest.
 
 ## Append
 
-* Append - It appends the first matching string with the entered character.
+Appends the first matching string to the entered text.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Append;
 	
 ## Suggest in Dropdown 
 
-* Suggest - It displays the suggestion in the dropdown.
+Displays suggestions in the dropdown.
 
 {% tabs %}
 
@@ -47,10 +47,9 @@ countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
 
 {% endtabs %}
 
-## Both Append and Suggest in DropDown
-	
-* SuggestAppend - It displays the suggestion in the dropdown along with appending the first matching string.
+## Suggest and Append
 
+Displays suggestions in the dropdown and appends the first matching string to the entered text.
 {% tabs %}
 
 {% highlight C# %}
@@ -63,3 +62,4 @@ countryAutoComplete.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 
 ![Xamarin.Android SfAutoComplete autocomplete mode](images/autocompletemode.png)
  
+

@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Diacritic sensitivity in Syncfusion® SfAutoComplete control for Xamarin.Android
-description : Learn how to enable and disable Diacritic sensitivity in SfAutoComplete
+title : Diacritic Sensitivity in Syncfusion® SfAutoComplete Control for Xamarin.Android
+description : Learn how to enable and disable diacritic sensitivity in SfAutoComplete for multilingual text search
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
@@ -9,9 +9,9 @@ documentation : ug
 
 # Diacritic Sensitivity
 
-The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity with the `IgnoreDiacritic` property. 
+The control supports multiple keyboard types, allowing you to populate items from languages with diacritical marks and search for them using English characters from an en-US keyboard. Users can enable or disable diacritic sensitivity using the `IgnoreDiacritic` property.
 
-In the below code example we have illustrate how to enable the diacritic sensitivity so that items in the suggestion list get populated by entering any diacritic character of that alphabet.
+The following code example demonstrates how to disable diacritic sensitivity so that items in the suggestion list are populated when entering any diacritic character of that alphabet.
 
 
 {% tabs %}
@@ -39,7 +39,4 @@ countryAutoComplete.IgnoreDiacritic=false;
 
 {% endtabs %}
 	
-![](images/diacritic.png)
-
-
-	
+![Diacritic sensitivity example](images/diacritic.png)

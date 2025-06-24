@@ -1,21 +1,30 @@
 ---
-layout : post
-title : Header and Footer in Syncfusion® SfComboBox control for Xamarin.Android
-description :  Learn how to enable Header and Footer in SfComboBox
-platform : Xamarin.Android
-control : SfComboBox
-documentation : ug
+layout: post
+title: Header and Footer Views in Syncfusion® SfComboBox control for Xamarin.Android
+description: Learn how to add and customize header and footer views in the SfComboBox dropdown list to enhance user experience and provide additional functionality.
+platform: Xamarin.Android
+control: SfComboBox
+documentation: ug
+tags: [header-footer, dropdown-customization, xamarin-android, sfcombobox, syncfusion, ui-customization, views, dropdown-views]
 ---
 
-## Header and footer
+# Header and Footer Views
 
-You can add header and footer view to the suggestion list in the combo box by enabling the `ShowDropDownHeaderView` and `ShowDropDownFooterView` properties.
+The SfComboBox control allows you to add custom header and footer views to the dropdown list, providing additional functionality and improved user experience. These views can display contextual information, search hints, action buttons, or any custom content that enhances the dropdown interface.
 
-## Header content
+## Overview
+You can add header and footer views to the dropdown list in the SfComboBox by enabling the `ShowDropDownHeaderView` and `ShowDropDownFooterView` properties. This feature is particularly useful for:
 
-The header content can be added at the top of the combo box’s Suggestion box. The `DropDownHeaderView` property is used to set the content of the header. The height of the header in the combo box can be adjusted using the `DropDownHeaderViewHeight` property.
+- Displaying search context or instructions
+- Adding action buttons (like "Add New Item")
+- Showing category information
+- Providing additional navigation options
+## Header Content
 
-The following code example illustrate how to set Header content in SfComboBox.
+The header content appears at the top of the SfComboBox dropdown list. Use the `DropDownHeaderView` property to set the header content, and adjust its height using the `DropDownHeaderViewHeight` property.
+
+### Implementation
+The following code example illustrates how to set header content in the SfComboBox:
 
 {% tabs %}
 
@@ -44,13 +53,13 @@ comboBox.TextChanged += (object sender, TextChangedEventArgs e) =>
 
 {% endtabs %}
 
-![](images/Header.png)
+![SfComboBox with custom header view displaying search context](images/Header.png)
+## Footer Content
 
-## Footer content
+The footer content appears at the bottom of the SfComboBox dropdown list. Use the `DropDownFooterView` property to set the footer content, and adjust its height using the `DropDownFooterViewHeight` property.
 
-The footer content can be added at the bottom of the combo box’s suggestion box. `The DropDownFooterView` property is used to set the content of the footer. The height of the footer in the combo box can be adjusted using the `DropDownFooterViewHeight` property.
-
-The following code example illustrate how to set Footer content in SfComboBox.
+### Implementation
+The following code example illustrates how to set footer content in the SfComboBox:
 
 {% tabs %}
 
@@ -75,8 +84,4 @@ comboBox.DropDownFooterView = footerView;
 
 {% endtabs %}
 
-![](images/Footer.png)
-
-
-
- 
+![SfComboBox with custom footer view showing "Add New" action](images/Footer.png)

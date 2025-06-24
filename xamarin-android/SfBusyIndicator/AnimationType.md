@@ -9,8 +9,7 @@ documentation: ug
 
 # AnimationType
 
-The `AnimationType` property of SfBusyIndicator allows to set anyone of the animation from the built-in animations as a SfBusyIndicator.
-
+The `AnimationType` property of SfBusyIndicator allows you to set any of the built-in animations for the SfBusyIndicator control. This property provides various predefined animation styles to enhance the visual appeal of the loading indicator.
 {% tabs %}
 
 {% highlight c# %}
@@ -26,3 +25,4 @@ N> For getting animation types of SfBusyIndicator, need to add the `using Com.Sy
 
 ![](images/Ball.png)
                                           
+

@@ -1,10 +1,10 @@
 ---
-layout : post
-title : MatchHighlighting in Syncfusion® SfComboBox control for Xamarin.Android
-description : Learn how to highlight the matched text in SfComboBox
-platform : Xamarin.Android
-control : SfComboBox
-documentation : ug
+layout: post
+title: Text Highlighting in Syncfusion® SfComboBox control for Xamarin.Android
+description: Learn how to highlight matching text in the SfComboBox dropdown list to improve user experience and make item selection more intuitive with customizable highlighting options.
+platform: Xamarin.Android
+control: SfComboBox
+documentation: ug
 ---
 
 # Highlighting matched text
@@ -41,15 +41,11 @@ comboBox.HighlightedTextFontTypeFace = TypefaceStyle.Bold;
 
 {% endtabs %}
 
-N> The default Color of HighlightedTextColor is Red.
-   The default FontTypeFace of HighlightedTextFontTypeFace is None.
-	
-![](images/FirstOccurrence.png)
+![SfComboBox with first occurrence text highlighting](images/FirstOccurrence.png)
 
-## Multiple Occurrence
+## Multiple Occurrence Highlighting
 
-Highlights the matching character that occurs everywhere in the suggestion list for Contains case in SuggestionMode.
-
+This mode highlights all occurrences of matching characters throughout each item in the dropdown list. It works particularly well with the `Contains` suggestion mode to provide comprehensive text matching.
 {% tabs %}
 
 {% highlight C# %}
@@ -65,7 +61,5 @@ comboBox.SuggestionMode = SuggestionMode.Contains;
 
 {% endtabs %}
 	
-![](images/MultipleOccurrence.png)
-
-
+![SfComboBox with multiple occurrence text highlighting](images/MultipleOccurrence.png)
 

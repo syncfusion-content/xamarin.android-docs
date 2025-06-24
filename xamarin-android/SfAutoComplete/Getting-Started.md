@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Getting Started with Syncfusion® AutoComplete Control for Xamarin.Android
-description : A quick tour to initial users on Syncfusion® SfAutoComplete control for Xamarin.Android platform 
+description : A quick tour for initial users on Syncfusion® SfAutoComplete control for Xamarin.Android platform
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
@@ -9,21 +9,21 @@ documentation : ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
+This section explains the steps to configure an SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in the SfAutoComplete control.
 
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
-After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders:
 
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
-Add the following assembly references to the Android project,
+Add the following assembly reference to the Android project:
 
 android\Syncfusion.SfAutoComplete.Android.dll
 
 ### Add SfAutoComplete
 
-The following steps helps to add a SfAutoComplete control through code.
+The following steps help to add an SfAutoComplete control through code.
 
 * Adding namespace for the added assemblies.
 
@@ -59,9 +59,9 @@ SetContentView(linearLayout);
 	
 ## Add Items
 
-A list of string with country names are created and added to auto complete source. This list will be populated as suggestion list by setting the `AutoCompleteSource` property based on text entry .
+A list of strings with country names is created and added to the AutoComplete source. This list will be populated as a suggestion list by setting the `AutoCompleteSource` property based on text entry.
 
-You can set the suggestion list to the SfAutoComplete using the property `AutoCompleteSource`. Add the AutoCompleteSource for the SfAutoComplete as follows.
+You can set the suggestion list to the SfAutoComplete using the `AutoCompleteSource` property. Add the AutoCompleteSource for the SfAutoComplete as follows:
 
 {% tabs %}
 
@@ -94,9 +94,9 @@ SetContentView(linearLayout);
 
 ## Set Filter Mode
 
-Filters can be applied to the displayed items based on starting letter. We can also append the first item from the suggested list to the TextBox. This can be done by using the `SuggestionMode` and `AutoCompleteMode` properties in SfAutoComplete control.
+Filters can be applied to the displayed items based on the starting letter. You can also append the first item from the suggested list to the TextBox. This can be achieved by using the `SuggestionMode` and `AutoCompleteMode` properties in the SfAutoComplete control.
 
-The following example shows the SfAutoComplete control which suggest the country list starting with the letter U.
+The following example shows the SfAutoComplete control which suggests countries from the list starting with the letter "U":
 
 {% tabs %}
 
@@ -132,13 +132,12 @@ SetContentView(linearLayout);
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
-
-## Creating AutoComplete control in AXML layout
+![AutoComplete getting started example](images/gettingstarted.png)
+## Creating AutoComplete Control in AXML Layout
 
 Create a new blank application for Android using Visual Studio. Add reference to the required assemblies in the project.
 
-Add the following code in the Main.axml file to include SfAutoComplete control.
+Add the following code in the Main.axml file to include the SfAutoComplete control:
 
 {% tabs %}
 
@@ -160,9 +159,9 @@ android:id="@+id/autocomplete" />
 	
 {% endtabs %}
 
-Add the following code in MainActivity.cs file.
+Add the following code in the MainActivity.cs file.
 
-Declare an instance of SfAutoComplete to access the control and its properties.
+Declare an instance of SfAutoComplete to access the control and its properties:
 
 {% tabs %}
 

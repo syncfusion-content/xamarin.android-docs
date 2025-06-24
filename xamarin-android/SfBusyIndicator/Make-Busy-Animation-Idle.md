@@ -9,7 +9,7 @@ documentation: ug
 
 # Make Busy Animation Idle
 
-SfBusyIndicator control provides support to determine whether an animation needs to be executed or not. Setting the `IsBusy` property to false will stop the animation and removes the control from view.
+The SfBusyIndicator control provides support to control whether the animation should be running. The `IsBusy` property determines the visibility and animation state of the busy indicator.
 
 {% tabs %}
 
@@ -27,5 +27,6 @@ SfBusyIndicator control provides support to determine whether an animation needs
 
 BusyIndicator
 {:.caption}
+
 
 

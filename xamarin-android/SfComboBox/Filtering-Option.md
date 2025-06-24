@@ -1,17 +1,18 @@
 ---
-layout : post
-title : Filtering in Syncfusion® SfComboBox control for Xamarin.Android
-description : Learn how to filter the text in SfComboBox
-platform : Xamarin.Android
-control : ComboBox
-documentation : ug
+layout: post
+title: Filtering Options in Syncfusion® SfComboBox control for Xamarin.Android
+description: Learn how to enable and configure text filtering in the SfComboBox dropdown list for enhanced user experience
+platform: Xamarin.Android
+control: SfComboBox
+documentation: ug
+tags: [filtering, combobox, xamarin-android, syncfusion, dropdown, search, editable, user-input]
 ---
 
-# Filtering Option 
+# Filtering Options
 
-The combo box control provides an option to filter the dropdown list based on the text typed. You can set filter option by setting the `AllowFiltering` boolean property to true. 
+The SfComboBox control provides filtering functionality that allows users to filter the dropdown list based on the text they type. You can enable this feature by setting the `AllowFiltering` boolean property to `true`.
 
-N> The Allow-Filtering property works only when the IsEditableMode property is set to true.
+N> The AllowFiltering property works only when the IsEditableMode property is set to true.
 
 {% tabs %}
 
@@ -25,4 +26,4 @@ combobox.AllowFiltering = true;
 
 {% endtabs %}
 
-![](images/filtering.png)
+![SfComboBox filtering demonstration](images/filtering.png)

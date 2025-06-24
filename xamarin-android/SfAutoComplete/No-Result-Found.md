@@ -1,7 +1,7 @@
 ---
 layout : post
-title : No Result Found Text in Syncfusion® SfAutoComplete control for Xamarin.Android
-description : Learn how to display the no result found text in SfAutoComplete
+title : No Results Found Text in Syncfusion® SfAutoComplete Control for Xamarin.Android
+description : Learn how to display and customize the no results found text in SfAutoComplete
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
@@ -9,7 +9,7 @@ documentation : ug
 
 # No Results Found
 
-When the entered item is not in the suggestion list, SfAutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the `NoResultsFoundText` property.
+When the entered item is not in the suggestion list, SfAutoComplete displays text indicating that no search results were found. You can set the desired text to be displayed when no results are found using the `NoResultsFoundText` property.
 
 {% tabs %}
 
@@ -21,11 +21,12 @@ countryAutoComplete.NoResultsFoundText="No Results Found";
 
 {% endtabs %}
 
-![NoResultsFound](images/NoResultsFound.png)
+![No results found example](images/NoResultsFound.png)
 
-## Customizing NoResultsFoundText
+## Customizing No Results Found Text
 
-The `NoResultsFoundTextColor`, `NoResultsFoundFontSize` and `NoResultsFoundTypeface` properties are used to customize the foreground color, font size and typeface of NoResultsFoundText.
+The `NoResultsFoundTextColor`, `NoResultsFoundFontSize`, and `NoResultsFoundTypeface` properties are used to customize the foreground color, font size, and typeface of the no results found text.
+
 {% tabs %}
 
 {% highlight c# %}
@@ -39,4 +40,4 @@ countryAutoComplete.NoResultsFoundTypeface = Typeface.CreateFromAsset(this.Asset
 
 {% endtabs %}
 
-![NoResultsFound_Customization](images/NoResultsFound_Customization.jpg)
+![No results found customization example](images/NoResultsFound_Customization.jpg)

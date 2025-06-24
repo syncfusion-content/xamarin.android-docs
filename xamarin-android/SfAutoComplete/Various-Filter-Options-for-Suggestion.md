@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Suggestion mode for Syncfusion® AutoComplete Control in Xamarin.Android
-description : Learn how to display suggestion mode in SfAutoComplete
+title : Various Filter Options for Suggestion in Syncfusion® AutoComplete Control for Xamarin.Android
+description : Learn how to configure various filter options and suggestion modes in SfAutoComplete
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
@@ -9,11 +9,11 @@ documentation : ug
 
 # Various Filter Options for Suggestion
 
-By default, the items that matches with the starting letter will be displayed as suggestion. This phenomenon can be changed using  `SuggestionMode` property, which provides various option to filter the data according to the text entered. There are eight types of suggestion modes and are described as follows.
+By default, items that match the starting letter will be displayed as suggestions. This behavior can be changed using the `SuggestionMode` property, which provides various options to filter the data according to the text entered. There are eight types of suggestion modes, which are described as follows:
 
-## Words that Starts with Input Text
+## Words that Start with Input Text
 
-Displays the list of suggestions based on starting letter.
+Displays the list of suggestions based on the starting letter.
 
 {% tabs %}
 
@@ -25,11 +25,10 @@ Displays the list of suggestions based on starting letter.
 
 {% endtabs %}
 	
-![](images/startswith.png)
-
+![StartsWith filter mode example](images/startswith.png)
 ### Filter with Character Casing
 
-Displays the list of suggestions based on starting letter with case sensitive.
+Displays the list of suggestions based on the starting letter with case sensitivity.
 
 {% tabs %}
 
@@ -41,11 +40,10 @@ Displays the list of suggestions based on starting letter with case sensitive.
 
 {% endtabs %}
 	
-![](images/startswithcasesensitive.png)
+![StartsWith case sensitive filter mode example](images/startswithcasesensitive.png)
+## Words that Contain the Input Text
 
-## Words that Contains the Input Text
-
-Displays the list of suggestions, if autocomplete list contains that words.
+Displays the list of suggestions if the AutoComplete list contains those words.
 
 {% tabs %}
 
@@ -57,11 +55,10 @@ Displays the list of suggestions, if autocomplete list contains that words.
 
 {% endtabs %}
 	
-![](images/contains.png)
-
+![Contains filter mode example](images/contains.png)
 ### Filter with Character Casing
 
-Displays the list of suggestions, if autocomplete list contains that words with case sensitive.
+Displays the list of suggestions if the AutoComplete list contains those words with case sensitivity.
 
 {% tabs %}
 
@@ -73,12 +70,10 @@ Displays the list of suggestions, if autocomplete list contains that words with 
 
 {% endtabs %}
 	
-![](images/containswithcasesensitive.png)
+![Contains case sensitive filter mode example](images/containswithcasesensitive.png)
+## Words that Equal the Input Text
 
-## Words that Equals to the Input Text
-
-Displays the word that matches.
-
+Displays words that exactly match the input text.
 {% tabs %}
 
 {% highlight C# %}
@@ -89,11 +84,10 @@ Displays the word that matches.
 
 {% endtabs %}
 	
-![](images/equals.png)
-
+![Equals filter mode example](images/equals.png)
 ### Filter with Character Casing
 
-Displays the word that matches with case sensitive.
+Displays words that exactly match the input text with case sensitivity.
 
 {% tabs %}
 
@@ -105,11 +99,10 @@ Displays the word that matches with case sensitive.
 
 {% endtabs %}
 	
-![](images/equalswithcasesensitive.png)
+![Equals case sensitive filter mode example](images/equalswithcasesensitive.png)
+## Words that End with Input Text
 
-## Words that Ends with Input Text
-
-Displays the list of suggestions based on ending word.
+Displays the list of suggestions based on the ending text.
 
 {% tabs %}
 
@@ -121,11 +114,10 @@ Displays the list of suggestions based on ending word.
 
 {% endtabs %}
 	
-![](images/endswith.png)
-
+![EndsWith filter mode example](images/endswith.png)
 ### Filter with Character Casing
 
-Displays the list of suggestions based on the ending word with case sensitive.
+Displays the list of suggestions based on the ending text with case sensitivity.
 
 {% tabs %}
 
@@ -137,12 +129,11 @@ countryAutoComplete.SuggestionMode = SuggestionMode.EndsWithCaseSensitive;
 
 {% endtabs %}
 	
-![](images/endswithcasesensitive.png)
+![EndsWith case sensitive filter mode example](images/endswithcasesensitive.png)
+## Custom Filter
 
+Displays the list of suggestions based on custom filtering logic in the SfAutoComplete.
 
-### Custom filter
-
-Displays the list of suggestions based on the custom words in the SfAutoComplete.
 {% tabs %}
 
 {% highlight C# %}
@@ -153,7 +144,4 @@ countryAutoComplete.SuggestionMode = SuggestionMode.Custom;
 
 {% endtabs %}
 	
-![](images/customfilter.png)
-
-
-
+![Custom filter mode example](images/customfilter.png)

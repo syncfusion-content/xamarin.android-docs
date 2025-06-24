@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set title to the Syncfusion® BusyIndicator control for Xamarin.Android
-description: Learn how to set title and fontface to BusyIndicator control
+title: Set header to the Syncfusion® BusyIndicator control for Xamarin.Android
+description: Learn how to set header text and customize font properties for the BusyIndicator control
 platform: Xamarin.Android
 control: SfBusyIndicator
 documentation: ug
@@ -9,8 +9,7 @@ documentation: ug
 
 # Set Header
 
-SfBusyIndicator provides option to set the text that indicates the information related to loading. This can be done using `Title` property.
-
+The SfBusyIndicator control provides an option to display informative text that indicates the current loading status. You can set this header text using the `Title` property to provide users with context about the ongoing operation.
 {% tabs %}
 
 {% highlight c# %}
@@ -25,13 +24,12 @@ SfBusyIndicator provides option to set the text that indicates the information r
 
 ![](images/Title_img1.png) 
                                           
-BusyIndicator with title
+BusyIndicator with header text
 {:.caption}
 
 ## FontFace
 
-User can modify the Font style and Font size of the title which is displayed beneath the animation. `FontFace` property can be used to modify these settings. 
-
+You can customize the font style and size of the header text that appears beneath the animation. Use the `FontFace` property to modify the typography settings and enhance the visual appearance of your loading indicator.
 {% tabs %}
 
 {% highlight c# %}
@@ -47,6 +45,7 @@ User can modify the Font style and Font size of the title which is displayed ben
 
 ![](images/Title_img2.png)   
                                                   
-BusyIndicator with font face
+BusyIndicator with custom font face
 {:.caption}
+
 

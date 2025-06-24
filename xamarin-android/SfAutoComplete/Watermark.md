@@ -1,7 +1,7 @@
 ---
 layout : post
-title : WaterMark in Syncfusion® AutoComplete Control for Xamarin.Android
-description : Learn how to set the Watermark in SfAutoComplete 
+title : Watermark in Syncfusion® AutoComplete Control for Xamarin.Android
+description : Learn how to set and customize the watermark text in SfAutoComplete
 platform : Xamarin.Android
 control : SfAutoComplete
 documentation : ug
@@ -9,8 +9,7 @@ documentation : ug
 
 # Watermark
 
-This property is used to customize the watermark text that is displayed when the textbox is empty.
-
+The `Watermark` property is used to set placeholder text that is displayed when the text input is empty. This provides users with helpful hints about the expected input format or content.
 {% tabs %}
 
 {% highlight C# %}
@@ -21,4 +20,4 @@ This property is used to customize the watermark text that is displayed when the
 
 {% endtabs %}
 	
-![](images/watermark.png)
+![Watermark example in AutoComplete](images/watermark.png)
