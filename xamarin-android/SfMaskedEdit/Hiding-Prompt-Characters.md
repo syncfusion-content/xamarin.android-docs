@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Hiding Prompt Characters of SfMaskedEdit Control for Xamarin.Android Platform
-description: Learn how to hide the prompt characters of the SfMaskedEdit control when the control loses focus.
-platform: Xamarin.Android
+title: Hiding Prompt Characters of Syncfusion® SfMaskedEdit for Xamarin.Android
+description: Learn how to hide the prompt characters of the Syncfusion® SfMaskedEdit control when the control loses focus.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit, prompt characters, hide prompt, focus

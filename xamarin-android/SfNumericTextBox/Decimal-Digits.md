@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Decimal Digits in Syncfusion® NumericTextBox Control for Xamarin.Android
+title: Syncfusion® NumericTextBox Decimal Digits for Xamarin.Android
 description: Learn how to set maximum decimal digits and control default decimal digits support in Xamarin.Android NumericTextBox.
-platform: Xamarin.Android
+platform: xamarin.android
 control: NumericTextBox
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Basic Features in Syncfusion® MaskedEdit for Xamarin.Android Platform
 description: Learn how to customize the value and configure prompt characters and hint text for the Syncfusion® MaskedEdit control.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit, prompt character, hint text, value setting

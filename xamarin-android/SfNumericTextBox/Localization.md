@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Localization in Syncfusion® NumericTextBox Control for Xamarin.Android
-description: Learn how to localize the NumericTextBox control for different cultures and regions.
-platform: Xamarin.Android
+description: Learn how to localize the Syncfusion® NumericTextBox control to support different cultures and regions effectively.
+platform: xamarin.android
 control: NumericTextBox
 documentation: ug
 ---

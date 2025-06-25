@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Formatting Value Property of SfMaskedEdit Control for Xamarin.Android Platform
-description: Learn how to format the characters in the Value property of the SfMaskedEdit control.
-platform: Xamarin.Android
+title: Formatting Syncfusion® SfMaskedEdit Value Property for Xamarin.Android
+description: Learn how to format the characters in the Value property of the Syncfusion® SfMaskedEdit control for Xamarin.Android.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit, value formatting, mask format

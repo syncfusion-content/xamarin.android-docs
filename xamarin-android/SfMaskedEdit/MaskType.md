@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Mask Types of SfMaskedEdit Control for Xamarin.Android Platform
+title: Mask Types of Syncfusion® SfMaskedEdit for Xamarin.Android
 description: Learn about the different types of mask characters available in the SfMaskedEdit control to restrict user input.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit, mask types, text mask, regex mask

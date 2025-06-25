@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Nullable Value Support in Syncfusion® NumericTextBox Control for Xamarin.Android
+title: Syncfusion® NumericTextBox Nullable Value Support
 description: Learn how to assign nullable values and set hint text in NumericTextBox control for Xamarin.Android.
-platform: Xamarin.Android
+platform: xamarin.android
 control: NumericTextBox
 documentation: ug
 ---

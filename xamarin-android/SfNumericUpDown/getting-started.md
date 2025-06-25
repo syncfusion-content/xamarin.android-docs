@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion® NumericUpDown Control for Xamarin.Android
+title: Getting Started with Syncfusion® NumericUpDown for Xamarin.Android
 description: A quick tour for initial users on the Syncfusion® NumericUpDown (SfNumericUpDown) control for the Xamarin.Android platform.
 platform: xamarin.android
 control: NumericUpDown 

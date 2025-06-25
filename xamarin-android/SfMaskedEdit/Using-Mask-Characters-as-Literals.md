@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using Mask Characters as Literals in SfMaskedEdit Control for Xamarin.Android Platform
+title: Using Mask Characters as Literals in Syncfusion® SfMaskedEdit
 description: Learn how to use mask characters as literals in the SfMaskedEdit control for the Xamarin.Android platform.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit, literals, escape characters, backslash

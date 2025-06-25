@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual Appearance Customization of SfMaskedEdit Control for Xamarin.Android Platform
-description: Learn how to customize the visual appearance of the SfMaskedEdit control.
-platform: Xamarin.Android
+title: Visual Customization of Syncfusion® SfMaskedEdit for Xamarin.Android
+description: Learn how to customize the visual appearance of the Syncfusion® SfMaskedEdit control for Xamarin.Android applications.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit, visual customization, appearance, styling

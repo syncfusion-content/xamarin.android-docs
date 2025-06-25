@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Events in SfMaskedEdit for Xamarin.Android Platform
-description: Learn how to handle value changed and mask input rejected events in SfMaskedEdit control.
-platform: Xamarin.Android
+title: Events in Syncfusion® SfMaskedEdit for Xamarin.Android
+description: Learn how to handle value changed and mask input rejected events in Syncfusion® SfMaskedEdit control for Xamarin.Android.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit, events, ValueChanged, MaskInputRejected

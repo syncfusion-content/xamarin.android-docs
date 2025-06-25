@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of SfMaskedEdit Control for Xamarin.Android Platform
+title: Overview of Syncfusion® SfMaskedEdit Control for Xamarin.Android
 description: Overview of the SfMaskedEdit control features and capabilities for input masking in Xamarin.Android applications.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug
 keywords: mask, SfMaskedEdit, maskededit, overview, masked input, input validation

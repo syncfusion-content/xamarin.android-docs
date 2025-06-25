@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Range Support in Syncfusion® NumericTextBox Control for Xamarin.Android
+title: Syncfusion® NumericTextBox Range Support for Xamarin.Android
 description: Learn how to use range support to restrict input values within specified minimum and maximum limits in NumericTextBox control.
-platform: Xamarin.Android
+platform: xamarin.android
 control: NumericTextBox
 documentation: ug
 ---

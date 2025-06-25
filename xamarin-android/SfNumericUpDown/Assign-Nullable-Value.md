@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Assign Nullable Value in Syncfusion® NumericUpDown Control for Xamarin.Android
+title: Assign Nullable Value in Syncfusion® NumericUpDown for Xamarin.Android
 description: Learn how to assign nullable values and configure watermark text in the SfNumericUpDown control for Xamarin.Android.
-platform: Xamarin.Android
+platform: xamarin.android
 control: NumericUpDown
 documentation: ug
 keywords: NumericUpDown, nullable value, watermark, hint text, AllowNull

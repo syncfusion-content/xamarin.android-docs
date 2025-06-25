@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization with Syncfusion® SfMaskedEdit Control for Xamarin.Android Platform
-description: Learn how to localize special symbols such as currency symbol, date separator, and decimal separator in the SfMaskedEdit control for the Xamarin.Android platform.
-platform: Xamarin.Android
+title: Localization with Syncfusion® SfMaskedEdit for Xamarin.Android
+description: Learn how to localize special symbols like currency, date separator, and decimal separator in SfMaskedEdit control for Xamarin.Android.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit, localization, culture, symbols

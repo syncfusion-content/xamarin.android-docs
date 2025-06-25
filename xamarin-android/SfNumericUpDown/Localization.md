@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Localization in Syncfusion® NumericUpDown Control for Xamarin.Android
-description: Learn how to localize the NumericUpDown control to support different cultures and regions.
-platform: Xamarin.Android
+description: Learn how to localize the Syncfusion® NumericUpDown control to support different cultures and regions.
+platform: xamarin.android
 control: NumericUpDown
 documentation: ug
 keywords: NumericUpDown, localization, culture, globalization, regional settings, formatting
@@ -23,7 +23,7 @@ N> The default `Culture` property value is `en-US`.
 
 {% endtabs %}
 
-![](images/Culture.png)
+![Culture](images/Culture.png)
 
 
 

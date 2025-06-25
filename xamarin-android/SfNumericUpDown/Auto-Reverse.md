@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Auto Reverse Feature in Syncfusion® NumericUpDown Control for Xamarin.Android
+title: Auto Reverse in Syncfusion® NumericUpDown for Xamarin.Android
 description: Learn how to enable auto reverse functionality, set value ranges, and configure step values in the SfNumericUpDown control for Xamarin.Android.
-platform: Xamarin.Android
+platform: xamarin.android
 control: NumericUpDown
 documentation: ug
 keywords: NumericUpDown, auto reverse, minimum, maximum, step value, range, continuous spinning

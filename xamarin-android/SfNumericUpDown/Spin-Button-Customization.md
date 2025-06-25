@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Spin Button Customization in Syncfusion® NumericUpDown Control for Xamarin.Android
-description: Learn how to customize spin button position and appearance in the NumericUpDown control.
-platform: Xamarin.Android
+title: Spin Button Customization in Syncfusion® NumericUpDown for Xamarin
+description: Learn how to customize spin button position, alignment, and visual appearance in the Xamarin NumericUpDown control.
+platform: xamarin.android
 control: NumericUpDown
 documentation: ug
 keywords: NumericUpDown, spin buttons, button alignment, button customization, appearance, UI customization
