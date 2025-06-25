@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Overview of Syncfusion® RangeSlider Control for Xamarin.Android
-description: Overview and key features of RangeSlider control in Xamarin.Android
-platform: Xamarin.Android
+description: Overview and key features of RangeSlider control in Xamarin.Android including dual thumb support, range selection, and customization options.
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---

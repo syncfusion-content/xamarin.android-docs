@@ -2,7 +2,7 @@
 layout: post
 title: Precision Mode in Xamarin.Android Rating Control | Syncfusion®
 description: Learn how to configure the precision mode of Syncfusion® Essential® Xamarin.Android Rating control for different rating accuracy levels.
-platform: Xamarin.Android
+platform: xamarin.android
 control: Rating
 documentation: ug
 ---

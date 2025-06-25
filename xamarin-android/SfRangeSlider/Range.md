@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Range in Syncfusion® RangeSlider Control for Xamarin.Android
-description: Learn how to set dual thumb slider and configure ranges in RangeSlider control.
-platform: Xamarin.Android
+description: Learn how to set dual thumb slider and configure ranges in RangeSlider control for selecting minimum and maximum values in Xamarin.Android apps.
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---

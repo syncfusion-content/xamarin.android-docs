@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Overview of Syncfusion® Rotator control for Xamarin.Android 
-description: Overview and key features of Rotator control in Xamarin.Android 
-platform: Xamarin.Android 
+description: Explore the overview and key features of Syncfusion® Essential® Rotator control for Xamarin.Android mobile apps. 
+platform: xamarin.android 
 control: Rotator 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tooltip Support for Syncfusion® RangeSlider Control for Xamarin.Android
-description: Learn how to configure and customize tooltips for RangeSlider in Xamarin.Android
-platform: Xamarin.Android
+title: Tooltip Support for Syncfusion® RangeSlider for Xamarin.Android
+description: Learn how to configure and customize tooltips for RangeSlider in Xamarin.Android applications to display current values and enhance user experience.
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ticks Customization in Syncfusion® RangeSlider Control for Xamarin.Android
+title: Ticks Customization in Syncfusion® RangeSlider for Xamarin.Android
 description: Learn how to customize tick marks, their position, color, and length in RangeSlider control for Xamarin.Android
-platform: Xamarin.Android
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---

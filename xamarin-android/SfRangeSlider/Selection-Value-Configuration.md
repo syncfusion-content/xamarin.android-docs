@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Selection Value Configuration in Syncfusion® RangeSlider Control for Xamarin.Android
+title: Selection Value Configuration in Syncfusion® RangeSlider for Android
 description: Learn how to configure minimum value, maximum value, tick frequency, step frequency, and snapping behavior for RangeSlider
-platform: Xamarin.Android
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---

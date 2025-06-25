@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Syncfusion® RangeSlider Control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion® RangeSlider control for Xamarin.Android platform
-platform: Xamarin.Android 
+title: Getting Started with Syncfusion® RangeSlider for Xamarin.Android
+description: A quick tour and step-by-step guide for initial users to get started with Syncfusion® RangeSlider control implementation in Xamarin.Android
+platform: xamarin.android 
 control: RangeSlider
 documentation: ug
 ---
@@ -124,4 +124,4 @@ rangeSlider.StepFrequency=6;
 
 {% endtabs %}
 
-![](images/RangeSlider.png)
+![Image of RangeSlider](images/RangeSlider.png)

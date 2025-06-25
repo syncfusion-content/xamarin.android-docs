@@ -2,7 +2,7 @@
 layout: post
 title: Navigation Direction in Xamarin.Android Rotator | Syncfusion®
 description: Learn how to configure navigation directions and sliding behavior in the Rotator control for Xamarin.Android platform
-platform: Xamarin.Android 
+platform: xamarin.android 
 control: Rotator
 documentation: ug
 ---

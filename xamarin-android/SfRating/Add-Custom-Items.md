@@ -2,7 +2,7 @@
 layout: post
 title: Adding Custom Items in Syncfusion® Rating Control for Xamarin.Android
 description: Learn how to add custom items and views to the Syncfusion Rating control for enhanced user experience
-platform: Xamarin.Android
+platform: xamarin.android
 control: Rating
 documentation: ug
 ---

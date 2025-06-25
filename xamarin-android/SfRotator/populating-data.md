@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Populating data in Syncfusion® Rotator control in Xamarin.Android
-description: Learn how to set the DataSource in Rotator for Xamarin.Android
-platform: Xamarin.Android
+description: Discover how to configure and set the DataSource property in Syncfusion® Rotator control for Xamarin.Android apps.
+platform: xamarin.android
 control: Rotator
 documentation: ug
 ---
@@ -98,9 +98,9 @@ SetContentView(rotator);
 
 {% endhighlight %}
 
-![](images/content.png)
+![Content View Example](images/content.png)
 
-# Through RotatorAdapter
+## Through RotatorAdapter
 
 RotatorAdapter object acts as a bridge between an RotatorAdapterView and the underlying data for that view. The Adapter provides access to the data items. The Adapter is also responsible for making a View for each item in the data set.
 
@@ -189,5 +189,5 @@ public class MainActivity : Activity
 
 {% endhighlight %}
 
-![](images/rotator.png)
+![Simple Image Rotator Example](images/rotator.png)
 

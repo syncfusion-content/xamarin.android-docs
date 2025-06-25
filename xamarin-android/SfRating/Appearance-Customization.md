@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance Customization in Syncfusion® Rating Control for Xamarin.Android
+title: Appearance Customization in Syncfusion® Rating for Xamarin.Android
 description: Learn how to customize the appearance and styling of the Rating control using fill colors, stroke colors, and stroke width properties through SfRatingSettings.
-platform: Xamarin.Android
+platform: xamarin.android
 control: Rating
 documentation: ug
 ---

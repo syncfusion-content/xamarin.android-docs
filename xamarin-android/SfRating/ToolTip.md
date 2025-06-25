@@ -3,7 +3,7 @@
 layout: post
 title: Tooltip in Syncfusion® Rating Control for Xamarin.Android
 description: Learn here all about Tooltip support in Syncfusion® Xamarin.Android Rating (SfRating) control, its elements and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: Rating
 documentation: ug
 

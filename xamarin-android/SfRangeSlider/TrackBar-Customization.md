@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TrackBar Customization in Syncfusion® RangeSlider Control for Xamarin.Android
+title: TrackBar Customization in Syncfusion® RangeSlider for Xamarin.Android
 description: Learn how to customize the track bar appearance, colors, and styling of RangeSlider control in Xamarin.Android
-platform: Xamarin.Android
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---

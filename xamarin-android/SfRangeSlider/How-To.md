@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Events in Syncfusion® RangeSlider Control for Xamarin.Android
-description: Learn how to handle events in RangeSlider control for responsive user interactions
-platform: Xamarin.Android
+description:  Learn how to handle events in RangeSlider control for responsive user interactions and implement custom behaviors in Xamarin.Android applications.
+platform: xamarin.android
 control: RangeSlider 
 documentation: ug
 ---
-
+# Events in Syncfusion® RangeSlider Control for Xamarin.Android
 ## How to get notifications when a thumb drag is started and completed?
 
 The `DragStarted` event is raised when a thumb is dragged. After the thumb releases the pointer capture, the `DragCompleted` event is raised. The `IsStartThumb` property of the `DragThumbEventArgs` returns a boolean value, which indicates the thumb used for performing drag operations.

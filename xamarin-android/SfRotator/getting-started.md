@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Getting Started with Syncfusion® Rotator control for Xamarin.Android
-description: A quick tour for initial users on Syncfusion® Rotator control for Xamarin.Android platform
-platform: Xamarin.Android 
+description: A quick tour and getting started guide for initial users on Syncfusion® Rotator control for Xamarin.Android platform.
+platform: xamarin.android 
 control: Rotator 
 documentation: ug
 ---
@@ -134,7 +134,7 @@ SetContentView(rotator);
 
 {% endhighlight %}
 
-![](images/content.png)
+![Content](images/content.png)
 
 ## Through RotatorAdapter
 
@@ -207,7 +207,7 @@ public class MainActivity : Activity
 
 {% endhighlight %}
 
-![](images/rotator.png)
+![Simple Image Rotator](images/rotator.png)
 
 ## Set Navigation Mode
 

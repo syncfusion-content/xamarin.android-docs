@@ -2,7 +2,7 @@
 layout: post
 title: Text Area Visibility in Syncfusion® Rotator control for Xamarin.Android
 description: Learn how to enable and customize the text area visibility feature in Rotator control for Xamarin.Android platform
-platform: Xamarin.Android 
+platform: xamarin.android 
 control: Rotator
 documentation: ug
 ---

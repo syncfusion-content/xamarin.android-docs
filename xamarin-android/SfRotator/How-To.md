@@ -2,7 +2,7 @@
 layout: post
 title: Customization in Syncfusion® Rotator control for Xamarin.Android 
 description: Learn how to customize the Rotator control with its Properties
-platform: Xamarin.Android 
+platform: xamarin.android 
 control: Rotator
 documentation: ug
 ---

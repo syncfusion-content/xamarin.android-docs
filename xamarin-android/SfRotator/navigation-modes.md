@@ -1,8 +1,8 @@
 ---
 layout: post
 title: NavigationMode of Syncfusion® Rotator control for Xamarin.Android
-description: Learn how to view the different navigation modes of the Rotator control in Xamarin.Android
-platform: Xamarin.Android
+description: Learn how to view the different navigation modes of the Syncfusion® Rotator control in Xamarin.Android applications.
+platform: xamarin.android
 control: Rotator
 documentation: ug
 ---
@@ -20,7 +20,7 @@ rotator.NavigationStripMode = NavigationStripMode.Thumbnail;
 
 {% endhighlight %}
 
-![](images/thumbnail1.png)
+![Thumbnail navigation strip](images/thumbnail1.png)
 
 * `Dots` - The slider items will be loaded in dots view additionally. When a dots item is clicked, the slider will switch to the corresponding image data.
 
@@ -31,7 +31,7 @@ rotator.NavigationStripMode = NavigationStripMode.Dots;
 
 {% endhighlight %}
 
-![](images/rotator.png)
+![Dots navigation strip](images/rotator.png)
 
 ## Items / Dot Strip Positions
 
@@ -51,4 +51,4 @@ rotator.NavigationStripPosition = NavigationStripPosition.Top;
 
 {% endhighlight %}
 
-![](images/top.png)
+![The navigation strip positioned at the top](images/top.png)

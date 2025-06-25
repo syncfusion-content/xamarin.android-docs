@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of SfCheckBox for Xamarin.Android Platform
-description: Learn how to customize the basic features of SfCheckBox
-platform: Xamarin.Android
+title: Overview of Syncfusion® SfCheckBox for Xamarin.Android Platform
+description: Learn how to customize and configure the basic features of Syncfusion SfCheckBox control for enhanced user interface in Xamarin.Android applications.
+platform: xamarin.android
 control: SfCheckBox
 documentation: ug 
 keywords: button, SfCheckBox, CheckBox

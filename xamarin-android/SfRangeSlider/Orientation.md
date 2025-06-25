@@ -2,7 +2,7 @@
 layout: post
 title: Orientation in Syncfusion® RangeSlider Control for Xamarin.Android
 description: Learn how to set horizontal and vertical orientation for RangeSlider control to suit different layout requirements
-platform: Xamarin.Android
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---
@@ -26,7 +26,7 @@ rangeSlider.Orientation=Orientation.Horizontal
 
 {% endtabs %}
 
-![](images/RangeSlider-Horizontal.png)
+![Horizontal RangeSlider in Xamarin.Android](images/RangeSlider-Horizontal.png)
 
 ## Vertical
 

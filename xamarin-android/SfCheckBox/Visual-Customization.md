@@ -2,7 +2,7 @@
 layout: post
 title: Visual Customization | SfCheckBox | Syncfusion® | Xamarin.Android
 description: Learn how to customize the SfCheckBox CornerRadius, CheckedColor, UncheckedColor, BorderWidth, and Text.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfCheckBox
 documentation: ug 
 keywords: button, SfCheckBox, CheckBox

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion® Rating Control for Xamarin.Android
+title: Appearance and Styling in Syncfusion® Rating for Xamarin.Android
 description: Learn how to customize the appearance and styling of the Rating control using ItemSize, ItemSpacing, ItemCount, and RatingSettings properties.
-platform: Xamarin.Android
+platform: xamarin.android
 control: Rating
 documentation: ug
 ---
