@@ -9,8 +9,9 @@ documentation: ug
 
 # CenterButtonSettings
 
-This section explains on how to create and customize The Xamarin.Android SfTabView CenterButton. To enable CenterButton we need to set the `OverFlowMode` of Xamarin.Android SfTabView as `CenterButton`.
+This section explains how to create and customize the CenterButton in the Xamarin.Android SfTabView control. The CenterButton provides a prominent action button positioned in the center of the tab bar, commonly used for primary actions like creating new content or accessing frequently used features.
 
+To enable the CenterButton, you need to set the `OverflowMode` property of the SfTabView to `CenterButton`.
 {% tabs %}
 
 {% highlight C# %}
@@ -30,7 +31,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 
 ## Customize CenterButtonSettings
 
-We can customize the CenterButton by using the properties of `CenterButtonSetting`. Following are the some properties that are used to customize the view of CenterButton `BackgroundColor`, `BorderColor`, `BorderThickness`, `Height`, `Title`, `TitleFontColor`, `TitleFontSize`, `TitleFontStyle`, `Width`.
+You can customize the appearance of the CenterButton using the properties available in `CenterButtonSettings`. The following properties allow you to modify the visual aspects of the CenterButton: `BackgroundColor`, `BorderColor`, `BorderThickness`, `Height`, `Title`, `TitleFontColor`, `TitleFontSize`, `TitleFontStyle`, and `Width`.
 
 {% tabs %}
 
