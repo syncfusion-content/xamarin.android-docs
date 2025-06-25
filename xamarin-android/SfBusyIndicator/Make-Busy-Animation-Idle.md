@@ -1,8 +1,8 @@
 ---
 layout: post
-title: IsBusy support in Syncfusion® BusyIndicator control for Xamarin.Android
-description: Learn how to enable and disable animation in BusyIndicator
-platform: Xamarin.Android
+title: IsBusy support in Syncfusion® BusyIndicator for Xamarin.Android
+description: Learn how to enable and disable animation in BusyIndicator control to manage loading states effectively
+platform: xamarin.android
 control: SfBusyIndicator
 documentation: ug
 ---
@@ -23,7 +23,7 @@ The SfBusyIndicator control provides support to control whether the animation sh
 
 {% endtabs %}
 
-![](images/IsBusy_img1.png)                                                                                                   
+![IsBusy Image](images/IsBusy_img1.png)
 
 BusyIndicator
 {:.caption}

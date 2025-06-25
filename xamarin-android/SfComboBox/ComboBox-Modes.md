@@ -2,10 +2,9 @@
 layout: post
 title: ComboBox Modes in Syncfusion® SfComboBox for Xamarin.Android
 description: Learn how to configure and use different ComboBox modes in the Syncfusion SfComboBox control for Xamarin.Android applications
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
-tags: [ComboBox, Xamarin.Android, Syncfusion, SfComboBox, Editable, Non-editable, Dropdown, User-Input, Mobile-Controls]
 ---
 
 # ComboBox Modes

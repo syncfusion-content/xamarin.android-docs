@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AnimationTypes in Syncfusion® BusyIndicator control for Xamarin.Android
-description: Learn various animation types in SfBusyIndicator
-platform: Xamarin.Android
+title: AnimationTypes in Syncfusion® BusyIndicator for Xamarin.Android
+description: Learn various animation types in SfBusyIndicator control and how to customize visual loading effects
+platform: xamarin.android
 control: SfBusyIndicator
 documentation: ug
 ---
@@ -23,6 +23,6 @@ The `AnimationType` property of SfBusyIndicator allows you to set any of the bui
 
 N> For getting animation types of SfBusyIndicator, need to add the `using Com.Syncfusion.Sfbusyindicator.Enums` namespace.
 
-![](images/Ball.png)
+![Image of Ball animation type](images/Ball.png){:width="300px"}
                                           
 

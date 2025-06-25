@@ -2,7 +2,7 @@
 layout: post
 title: Interaction in Syncfusion® Carousel Control in Xamarin.Android
 description: Learn how to perform an operation while changing the carouselItem or Collection in Carousel for Xamarin.Android
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfCarousel
 documentation: ug
 ---
@@ -20,7 +20,7 @@ carousel.SelectionChanged += (object sender, SfCarousel.SelectionChangedEventArg
 
 {% endhighlight %}
 
-# How to perform an operation while changing the collection of carousel?
+## How to perform an operation while changing the collection of carousel?
 
 You can perform an operation while changing the collection of carousel using the `ItemsCollectionChanged` event. The ItemsCollectionChanged event returns the changed collection of SfCarouselItem.
 

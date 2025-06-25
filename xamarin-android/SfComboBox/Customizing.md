@@ -2,10 +2,9 @@
 layout: post
 title: UI Customization for Syncfusion® SfComboBox in Xamarin.Android
 description: Learn how to customize the appearance and styling of the Syncfusion SfComboBox control, including entry field, dropdown, buttons, and watermark customization
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
-tags: [UI-Customization, ComboBox, Xamarin.Android, Syncfusion, SfComboBox, Styling, Theming, Dropdown-Customization, Text-Formatting, Button-Customization, Watermark, Mobile-UI]
 ---
 
 # UI Customization

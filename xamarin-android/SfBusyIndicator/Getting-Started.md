@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Xamarin.Android BusyIndicator Control| Syncfusion®
+title: Getting Started with Syncfusion® BusyIndicator for Android
 description: Learn here about Getting Started with Syncfusion® Essential® Xamarin.Android BusyIndicator Control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfBusyIndicator
 documentation: ug
 ---

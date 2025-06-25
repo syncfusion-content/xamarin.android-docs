@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion® SfComboBox Control for Xamarin.Android
 description: A comprehensive guide to implementing the Syncfusion SfComboBox control in Xamarin.Android applications, including setup, data population, and configuration options.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
 ---

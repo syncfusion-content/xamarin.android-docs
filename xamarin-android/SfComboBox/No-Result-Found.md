@@ -2,7 +2,7 @@
 layout: post
 title: No Result Found Text in Syncfusion® SfComboBox control for Xamarin.Android
 description: Learn how to display and customize the no result found text in SfComboBox when search queries return no matches
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sizing support in Syncfusion® BusyIndicator control for Xamarin.Android
-description: Learn how to customize the size and dimensions of the BusyIndicator animation
-platform: Xamarin.Android
+title: Sizing support in Syncfusion® BusyIndicator for Xamarin.Android
+description: Learn how to customize the size and dimensions of the BusyIndicator animation for optimal display
+platform: xamarin.android
 control: SfBusyIndicator
 documentation: ug
 ---
@@ -23,7 +23,7 @@ busyIndicator.ViewBoxHeight=200;
 
 {% endtabs %}
 
-![](images/Sizing_img1.png)                                                                              
+![Image of BusyIndicator customization](images/Sizing_img1.png)
 
 ViewBox height and width
 {:.caption}

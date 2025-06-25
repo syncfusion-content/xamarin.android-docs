@@ -1,8 +1,8 @@
 ---
-layout : post
-title: Header and Footer in Xamarin.Android SfAutoComplete Control|Syncfusion®
+layout: post
+title: Header and Footer in Syncfusion® SfAutoComplete Xamarin.Android
 description: Learn here about how to enable Header and Footer in Syncfusion® Essential® Xamarin.Android SfAutoComplete Control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfAutoComplete
 documentation: ug
 ---

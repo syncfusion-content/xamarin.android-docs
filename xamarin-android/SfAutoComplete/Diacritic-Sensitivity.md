@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Diacritic Sensitivity in Syncfusion® SfAutoComplete Control for Xamarin.Android
-description : Learn how to enable and disable diacritic sensitivity in SfAutoComplete for multilingual text search
-platform : Xamarin.Android
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Syncfusion® SfAutoComplete Diacritic Sensitivity Android
+description: Learn how to enable and disable diacritic sensitivity in SfAutoComplete for multilingual text search
+platform: xamarin.android
+control: SfAutoComplete
+documentation: ug
 ---
 
 # Diacritic Sensitivity

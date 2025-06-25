@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion® ComboBox control for Xamarin.Android
 description: Comprehensive overview and key features of the SfComboBox control including data binding, filtering, customization, and multi-selection capabilities
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
 ---

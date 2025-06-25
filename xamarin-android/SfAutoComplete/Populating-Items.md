@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Populating Items in Xamarin.Android SfAutoComplete Control | Syncfusion®
+title: Syncfusion® SfAutoComplete Populating Items for Android
 description: Learn here about Populating Items in Syncfusion® Essential® Xamarin.Android SfAutoComplete Control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfAutoComplete
 documentation: ug
 ---

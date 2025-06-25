@@ -2,7 +2,7 @@
 layout: post
 title: DataSource mode in Syncfusion® ComboBox control for Xamarin.Android
 description: Learn how to populate items in the Syncfusion Xamarin.Android ComboBox Control with string data and business objects, including DataSource configuration and DisplayMemberPath usage.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
 ---

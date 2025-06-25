@@ -2,10 +2,9 @@
 layout: post
 title: Header and Footer Views in Syncfusion® SfComboBox control for Xamarin.Android
 description: Learn how to add and customize header and footer views in the SfComboBox dropdown list to enhance user experience and provide additional functionality.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
-tags: [header-footer, dropdown-customization, xamarin-android, sfcombobox, syncfusion, ui-customization, views, dropdown-views]
 ---
 
 # Header and Footer Views

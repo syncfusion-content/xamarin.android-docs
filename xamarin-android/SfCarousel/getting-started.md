@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Getting Started with Syncfusion® Carousel Control for Xamarin.Android
-description: A quick tour to initial users on Syncfusion® carousel control for Xamarin.Android platform.
-platform: Xamarin.Android
+description: A quick tour to initial users on Syncfusion® carousel control for Xamarin.Android platform and setup
+platform: xamarin.android
 control: SfCarousel
 documentation: ug
 ---

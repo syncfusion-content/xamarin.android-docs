@@ -2,7 +2,7 @@
 layout: post
 title: Text Highlighting in Syncfusion® SfComboBox control for Xamarin.Android
 description: Learn how to highlight matching text in the SfComboBox dropdown list to improve user experience and make item selection more intuitive with customizable highlighting options.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
 ---

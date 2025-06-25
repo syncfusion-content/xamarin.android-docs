@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Filtering Options in Syncfusion® SfComboBox control for Xamarin.Android
+title: Filtering Options in Syncfusion® SfComboBox for Xamarin.Android
 description: Learn how to enable and configure text filtering in the SfComboBox dropdown list for enhanced user experience
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
-tags: [filtering, combobox, xamarin-android, syncfusion, dropdown, search, editable, user-input]
 ---
 
 # Filtering Options

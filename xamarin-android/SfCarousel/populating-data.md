@@ -2,7 +2,7 @@
 layout: post
 title: Populating data in Syncfusion® Carousel control in Xamarin.Android
 description: Learn details about how to set the DataSource, set the customview, adapter support and selected index in Carousel for Xamarin.Android platform
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfCarousel
 documentation: ug
 ---

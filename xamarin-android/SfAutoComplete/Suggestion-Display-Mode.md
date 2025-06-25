@@ -1,8 +1,8 @@
 ---
-layout : post
-title: Suggestion Display Mode in Xamarin.Android SfAutoComplete Control | Syncfusion®
+layout: post
+title: SfAutoComplete Suggestion Display Mode Syncfusion® Android
 description: Learn here about Suggestion Display Mode in Syncfusion® Essential® Xamarin.Android SfAutoComplete Control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfAutoComplete
 documentation: ug
 ---

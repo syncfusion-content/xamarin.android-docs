@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Linear Arrangement in Syncfusion® Carousel control for Xamarin.Android
-description: Learn how to arrange carousel items in linear layout using ViewMode property in Xamarin.Android
-platform: Xamarin.Android
+description: Learn how to arrange carousel items in linear layout using ViewMode property in Xamarin.Android platform
+platform: xamarin.android
 control: SfCarousel
 documentation: ug
 ---

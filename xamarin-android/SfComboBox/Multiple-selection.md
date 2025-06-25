@@ -2,7 +2,7 @@
 layout: post
 title: Multiple Selection in Xamarin.Android SfComboBox Control | Syncfusion®
 description: Learn here about Multiple Selection in Syncfusion® Essential® Xamarin.Android SfComboBox Control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
 ---

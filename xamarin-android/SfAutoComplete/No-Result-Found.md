@@ -1,10 +1,10 @@
 ---
-layout : post
-title : No Results Found Text in Syncfusion® SfAutoComplete Control for Xamarin.Android
-description : Learn how to display and customize the no results found text in SfAutoComplete
-platform : Xamarin.Android
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Syncfusion® SfAutoComplete No Results Found Text Android
+description: Learn how to display and customize the no results found text in SfAutoComplete
+platform: xamarin.android
+control: SfAutoComplete
+documentation: ug
 ---
 
 # No Results Found

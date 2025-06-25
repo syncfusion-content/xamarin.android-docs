@@ -2,7 +2,7 @@
 layout: post
 title: ComboBoxMode for Syncfusion® ComboBox control in Xamarin.Android
 description: Learn how to configure the ComboBoxMode property in SfComboBox to control suggestion display patterns
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
 ---

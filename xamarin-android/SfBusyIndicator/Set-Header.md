@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Set header to the Syncfusion® BusyIndicator control for Xamarin.Android
-description: Learn how to set header text and customize font properties for the BusyIndicator control
-platform: Xamarin.Android
+title: Set header to the Syncfusion® BusyIndicator for Xamarin.Android
+description: Learn how to set header text and customize font properties for the BusyIndicator control in Xamarin.Android
+platform: xamarin.android
 control: SfBusyIndicator
 documentation: ug
 ---
@@ -22,7 +22,7 @@ The SfBusyIndicator control provides an option to display informative text that 
 
 {% endtabs %}
 
-![](images/Title_img1.png) 
+![Image showing BusyIndicator with header text](images/Title_img1.png)
                                           
 BusyIndicator with header text
 {:.caption}
@@ -43,7 +43,7 @@ You can customize the font style and size of the header text that appears beneat
 
 {% endtabs %}
 
-![](images/Title_img2.png)   
+![Image showing BusyIndicator with custom header text](images/Title_img2.png)
                                                   
 BusyIndicator with custom font face
 {:.caption}

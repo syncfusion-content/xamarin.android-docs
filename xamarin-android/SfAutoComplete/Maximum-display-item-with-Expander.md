@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Maximum Display Items with Load More in Syncfusion® SfAutoComplete Control for Xamarin.Android
+title: Max Display Items with Load More Syncfusion® SfAutoComplete
 description: Learn how to restrict the maximum number of suggestions displayed in SfAutoComplete and implement load more functionality
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfAutoComplete
 documentation: ug
 ---
