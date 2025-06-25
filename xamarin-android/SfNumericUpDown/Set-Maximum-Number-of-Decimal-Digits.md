@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set Maximum Decimal Digits in Syncfusion® NumericUpDown for Xamarin.Android
+title: Syncfusion® NumericUpDown Maximum Decimal Digits Setting
 description: Learn how to configure the maximum number of decimal digits to be displayed in the NumericUpDown control.
 platform: xamarin.android
 control: NumericUpDown
