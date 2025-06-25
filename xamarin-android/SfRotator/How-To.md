@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in Syncfusion® Rotator control for Xamarin.Android 
-description: Learn how to customize the Rotator control with its Properties
+description: Learn how to customize the Syncfusion® Rotator control with its various properties and settings effectively.
 platform: xamarin.android 
 control: Rotator
 documentation: ug
@@ -62,7 +62,7 @@ public class MainActivity : Activity
 
 {% endhighlight %}
 
-# How to perform the operation while changing the Rotator's Item.?
+## How to perform the operation while changing the Rotator's Item.?
 
 We can perform operation while the changing the Rotator's item using `SelectionChanged` event. SelectionChanged event returns changed Rotator control's Item.
 <table>
@@ -85,7 +85,7 @@ rotator.SelectionChanged += (object sender, SfRotator.SelectionChangedEventArgs 
 
 {% endhighlight %}
 
-# How to dynamically change the Rotator's Item.?
+## How to dynamically change the Rotator's Item.?
 
 `SelectedIndex` property is used dynamically change the selected items in Rotator control.
 
