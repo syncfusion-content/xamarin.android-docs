@@ -23,6 +23,6 @@ The `AnimationType` property of SfBusyIndicator allows you to set any of the bui
 
 N> For getting animation types of SfBusyIndicator, need to add the `using Com.Syncfusion.Sfbusyindicator.Enums` namespace.
 
-![Image of Ball animation type](images/Ball.png){:width="300px"}
+![Image of Ball animation type](images/Ball.png)
                                           
 
