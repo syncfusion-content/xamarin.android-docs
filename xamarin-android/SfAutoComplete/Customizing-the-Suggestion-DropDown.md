@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion® AutoComplete MinimumPrefixCharacters Android
-description: Learn how to set the MinimumPrefixCharacter in SfAutoComplete 
+description: Learn how to set the MinimumPrefixCharacter property in SfAutoComplete control to define the minimum character count needed to trigger the suggestion dropdown display. 
 platform: xamarin.android
 control: SfAutoComplete
 documentation: ug

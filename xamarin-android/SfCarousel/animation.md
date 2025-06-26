@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Setting animation duration in Xamarin.Android Carousel
+title:  Setting Syncfusion® Carousel animation duration in Xamarin.Android
 description: Learn how to set the duration for animation in Carousel for Xamarin.Android and customize timing properties
 platform: xamarin.android
 control: SfCarousel

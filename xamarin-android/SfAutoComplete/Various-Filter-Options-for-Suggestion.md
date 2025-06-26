@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion® AutoComplete Filter Options for Suggestion
-description: Learn how to configure various filter options and suggestion modes in SfAutoComplete
+description: Learn how to configure various filter options and suggestion modes in SfAutoComplete control to enhance search functionality and user experience.
 platform: xamarin.android
 control: SfAutoComplete
 documentation: ug

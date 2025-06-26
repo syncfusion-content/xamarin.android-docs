@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transformation in Syncfusion® Carousel control in Xamarin.Android
-description: Learn how to set the Transformation in Carousel for Xamarin.Android and customize visual effects
+description: Learn how to implement Transformation settings in Carousel control for Xamarin.Android and customize advanced visual effects and transitions.
 platform: xamarin.android
 control: SfCarousel
 documentation: ug

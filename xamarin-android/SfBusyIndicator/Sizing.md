@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sizing support in Syncfusion® BusyIndicator for Xamarin.Android
-description: Learn how to customize the size and dimensions of the BusyIndicator animation for optimal display
+description: Learn how to customize the size and dimensions of the BusyIndicator animation control for optimal display across different screen sizes and layouts.
 platform: xamarin.android
 control: SfBusyIndicator
 documentation: ug

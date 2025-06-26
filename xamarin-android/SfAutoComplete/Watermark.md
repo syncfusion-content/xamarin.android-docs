@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Watermark in Syncfusion® AutoComplete for Xamarin.Android
-description: Learn how to set and customize the watermark text in SfAutoComplete
+description: Learn how to set and customize the watermark text in SfAutoComplete control to provide helpful placeholder guidance for users.
 platform: xamarin.android
 control: SfAutoComplete
 documentation: ug
