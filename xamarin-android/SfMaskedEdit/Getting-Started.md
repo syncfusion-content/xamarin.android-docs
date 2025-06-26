@@ -13,7 +13,7 @@ This section explains the steps required to configure an `SfMaskedEdit` control 
 
 ## Reference Essential Studio<sup>®</sup> Components in Your Solution
 
-Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add the sfmaskededit to your project, open the NuGet package manager in Visual Studio, search for "[syncfusion.xamarin.sfmaskededit.android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.Android)", and then install it.
+Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add the SfMaskedEdit to your project, open the NuGet package manager in Visual Studio, search for "[syncfusion.xamarin.SfMaskedEdit.android](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.Android)", and then install it.
 
 ![Xamarin.Android MaskedEdit NuGet](SfMaskedEditImages/nuget.png)
 
