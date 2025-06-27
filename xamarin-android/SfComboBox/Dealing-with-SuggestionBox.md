@@ -1,25 +1,24 @@
 ---
-layout : post
-title : Suggestionbox Placement in Syncfusion® SfComboBox control for Xamarin.Android
-description : Learn how to place the Suggestion Box in SfComboBox
-platform : Xamarin.Android 
-control : ComboBox
-documentation : ug
+layout: post
+title: Suggestion Box Placement in Syncfusion® SfComboBox for Xamarin.Android
+description: Learn how to configure and control the placement of the suggestion box in the Syncfusion SfComboBox control for optimal user experience
+platform: xamarin.android
+control: SfComboBox
+documentation: ug
 ---
 
-# Dealing with suggestion box 
-In the combobox control, the DropDown Box can placed in the following two positions:
+# Suggestion Box Placement
 
-* Bottom 
+The Syncfusion SfComboBox control provides flexible positioning options for the suggestion box (dropdown) to ensure optimal user experience across different screen layouts and orientations. The suggestion box can be positioned in two locations relative to the ComboBox control:
 
-* Top 
+* **Bottom** - Displays below the ComboBox (default behavior)
+* **Top** - Displays above the ComboBox
 
-Using the `SuggestionBoxPlacement` property, you can place the suggestion box at the top or bottom. 
+The `SuggestionBoxPlacement` property allows you to explicitly control where the suggestion box appears, ensuring it remains visible and accessible.
 
-## SuggestionBox placement at bottom
+## Bottom Placement
 
-Displays the suggestion box at the bottom of the combo box control. 
- 
+Bottom placement displays the suggestion box below the ComboBox control. This is the default behavior.
 {% tabs %}
 {% highlight c# %}
 
@@ -28,12 +27,11 @@ combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/bottom.png)
+![Suggestion box positioned at bottom](images/bottom.png)
 
-## SuggestionBox placement at top
+## Top Placement
 
-Displays the suggestion box at the top of the combo box control. 
- 
+Top placement displays the suggestion box above the ComboBox control.
 {% tabs %}
 {% highlight c# %}
 
@@ -42,4 +40,4 @@ combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/top.png)
+![Suggestion box positioned at top](images/top.png)
