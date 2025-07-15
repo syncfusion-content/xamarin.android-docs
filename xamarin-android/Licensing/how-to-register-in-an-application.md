@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion® license registration - Syncfusion®
+title: Overview of Xamarin.Android License Registration | Syncfusion®
 description: Learn here about how to register Syncfusion® Xamarin.Android license key for Xamarin.Android application for license validation.
 platform: xamarin.android
 control: Essential Studio<sup>®</sup>
