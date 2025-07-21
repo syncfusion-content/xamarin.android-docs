@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Basic features in syncfusion® MaskedEdit for Xamarin.Android platform
-description: Learn how to customize the value and setting prompt character and hint text for syncfusion® masked edit control.
-platform: Xamarin.Android
+title: Basic Features in Syncfusion® MaskedEdit for Xamarin.Android Platform
+description: Learn how to customize the value and configure prompt characters and hint text for the Syncfusion® MaskedEdit control.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
-keywords: mask, SfMaskedEdit, maskededit
-
+keywords: mask, SfMaskedEdit, maskededit, prompt character, hint text, value setting
 ---
 
-# Basic features in masked edit
+# Basic Features in MaskedEdit
 
 
 ## Setting Value
 
-The SfMaskedEdit control displays the value that can be set using the `Value` property:
+The `SfMaskedEdit` control displays a value that can be configured using the `Value` property:
 
 {% tabs %}
 {% highlight c# %}
@@ -29,7 +28,7 @@ maskedEdit.Value =@"14/11/2014";
 
 ## Setting Prompt Character
 
-Displays prompt character for the absence of your input in Mask and its default value is '_'. You can set the custom prompt character using `PromptChar` property.
+The prompt character is displayed when no input is provided for a mask position. The default value is '_'. You can customize the prompt character using the `PromptChar` property:
 
 {% tabs %}
 {% highlight c# %}
@@ -41,15 +40,15 @@ maskedEdit.PromptChar = '*';
 
 ![Prompt Character](SfMaskedEditImages/BF_Prompt.png)
 
-## Setting Hint
+## Setting Hint Text
 
-The hint will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The `Hint` property of `SfMaskedEdit` is used to set the hint text for the control.
+The hint text provides instructions or important information when the control is not focused and no valid characters have been entered. Use the `Hint` property of `SfMaskedEdit` to configure the hint text for the control.
 
-The following properties are used to customize its appearance:
+The following properties are available to customize the hint text appearance:
 
-* `SetHintTextColor`: Sets text color for the hint.
-* `HintTypeface`: Sets font family and sets font attributes(bold/italic/none) for the hint.
-* `HintTextSize`: Sets font size for the hint.
+* `SetHintTextColor`: Sets the text color for the hint
+* `HintTypeface`: Sets the font family and font attributes (bold/italic/normal) for the hint
+* `HintTextSize`: Sets the font size for the hint
 
 {% tabs %}
 {% highlight c# %}
