@@ -7,6 +7,7 @@ control: Overview
 documentation: ug
 ---
 
+
 > With the 2025 Volume 3 release, support for Xamarin platforms will be discontinued. We recommend migrating to .NET MAUI to continue receiving updates and support.
 
 # Welcome to Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Xamarin.Android
