@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Getting Started with Syncfusion® NavigationDrawer for Xamarin.Android
-description: Learn here about getting started with Syncfusion® Xamarin.Android NavigationDrawer control, its elements, and more.
-platform: xamarin.android
+description: Learn how to get started with the Syncfusion Xamarin.Android NavigationDrawer control, including setup, configuration, and basic implementation.
+platform: Xamarin.Android
 control: NavigationDrawer
 documentation: ug
 ---
 
 # Getting Started with Xamarin.Android NavigationDrawer
 
-This section provides overview for working with Essential<sup>®</sup> NavigationDrawer for Xamarin.Android. You can walk through the entire process of creating an NavigationDrawer.
+This section provides an overview for working with the Syncfusion NavigationDrawer for Xamarin.Android. You can walk through the entire process of creating a NavigationDrawer control and implementing its key features.
 
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
@@ -52,10 +52,9 @@ SetContentView(navigationDrawer);
 
 {% endtabs %}
 
-## Add Drawer Content
+## Configuring Drawer Content
 
-The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
-
+The drawer content is the main sliding panel that contains your navigation items. Configure it using the `DrawerContentView` property:
 {% tabs %}
 
 {% highlight c# %}
@@ -98,13 +97,9 @@ namespace NavigationDrawerSample
 
 {% endtabs %}
 
+## Adding Drawer Header Content
 
-## Add Drawer Header Content
-
-SfNavigationDrawer provides option to display certain information like user id or names in the header part instead of providing everything in the drawer content view. 
-
-This can be done using `DrawerHeaderView` property in SfNavigationDrawer.
-
+The NavigationDrawer provides an option to display user information or branding in the header section. This can be configured using the `DrawerHeaderView` property:
 {% tabs %}
 
 {% highlight c# %}
@@ -146,10 +141,9 @@ This can be done using `DrawerHeaderView` property in SfNavigationDrawer.
 
 {% endtabs %}
 
-## Add Main Content
+## Setting Up Main Content
 
-The main view of the SfNavigationDrawer can be set using `ContentView` property with desired views.
-
+The main content area displays your primary application content. Configure it using the `ContentView` property:
 {% tabs %}
 
 {% highlight c# %}
@@ -181,7 +175,7 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
 
 {% endtabs %}
 
-![Xamarin.Android NavigationDrawer Add Main Content](images/getting-started.png)
+![Xamarin.Android NavigationDrawer getting started example](images/getting-started.png)
 
 ## Set Drawing Edge for Drawer Panel
 

@@ -11,14 +11,13 @@ documentation: ug
 
 The two different [LayoutTypes](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_LayoutType) available in the radial menu are:
 
-* Default
-* Custom
-
-Both the layout types divide the available space equally among all the children in the circular panel.
+* **Default**: Segments are determined by the number of child items
+* **Custom**: Segments are determined by the VisibleSegmentsCount property
+Both layout types divide the available space equally among all the children in the circular panel.
 
 ## Default
 
-The number of segments in the panel is determined by the children count in a level. As the segment count in each hierarchical level differs, radial menu items are arranged in a sequential order as added to the radial menu.
+The number of segments in the panel is determined by the children count at each level. Since the segment count in each hierarchical level may differ, radial menu items are arranged in sequential order as they are added to the radial menu.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +80,7 @@ namespace GettingStarted
 
 ## Custom
 
-The number of segments in the panel is determined using the [VisibleSegmentsCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_VisibleSegmentsCount) property. As the segment count in all the hierarchical levels is the same, radial menu items are arranged in any order based on the [SegmentIndex](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_Android_SfRadialMenuItem_SegmentIndex) property.
+The number of segments in the panel is determined using the [VisibleSegmentsCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_VisibleSegmentsCount) property. Since the segment count is consistent across all hierarchical levels, radial menu items can be arranged in any order based on the [SegmentIndex](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_Android_SfRadialMenuItem_SegmentIndex) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -144,7 +143,7 @@ namespace GettingStarted
 
 ## VisibleSegmentsCount
 
-The [VisibleSegmentsCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_VisibleSegmentsCount) property is used to specify the number of segments available in the circular panel. When the children count is greater than the value given in the VisibleSegmentsCount property, the overflowing children are not arranged in the panel. When children count is lesser than the VisibleSegmentsCount property, the remaining segments are left free.
+The [VisibleSegmentsCount](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_VisibleSegmentsCount) property specifies the number of segments available in the circular panel. When the children count exceeds the value specified in the VisibleSegmentsCount property, the overflowing children are not arranged in the panel. When the children count is less than the VisibleSegmentsCount property value, the remaining segments are left empty.
 
 {% tabs %}
 {% highlight c# %}
@@ -210,7 +209,7 @@ namespace GettingStarted
 
 ## SegmentIndex
 
-The [SegmentIndex](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_Android_SfRadialMenuItem_SegmentIndex) property is used to specify the index of the radial menu item in circular panel. Based on the index, the radial menu items are inserted in the segment. When the SegmentIndex is not specified for a RadialMenuItem, the menu item is arranged in the next available free segment.
+The [SegmentIndex](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_Android_SfRadialMenuItem_SegmentIndex) property specifies the index position of the radial menu item in the circular panel. Based on this index, radial menu items are inserted into the corresponding segment. When the SegmentIndex is not specified for a RadialMenuItem, the menu item is arranged in the next available segment.
 
 {% tabs %}
 {% highlight c#%}
@@ -263,12 +262,11 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-N> It is necessary to set the VisibleSegmentsCount for the SegmentIndex API to be set.
+N> It is necessary to set the VisibleSegmentsCount property for the SegmentIndex property to function properly.
 
 ## StartAngle
 
-The `StartAngle` property is used to set the angle from which the arrangement of radial menu items should start.
-
+The [StartAngle](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_StartAngle) property sets the angle from which the arrangement of radial menu items should begin.
 {% tabs %}
 {% highlight c#%}
 

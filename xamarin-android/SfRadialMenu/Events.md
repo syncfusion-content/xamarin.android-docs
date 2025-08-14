@@ -11,7 +11,7 @@ documentation: ug
 
 ## Perform an action when navigating to the next level
 
-In a radial menu, you can perform actions when navigating from one level to another. The `Navigating` event occurs when navigating from one level to another, and the `Navigated` event occurs after  navigating to another level.
+In a radial menu, you can perform actions when navigating from one level to another. The `Navigating` event occurs when navigating from one level to another, and the `Navigated` event occurs after navigating to another level.
 
 {% tabs %}
 {% highlight c# %}
@@ -224,7 +224,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-N> You can close navigation using the `Cancel` event argument.
+N> You can cancel closing using the `Cancel` event argument.
 
 ## Perform an action by tapping the center button
 
@@ -284,7 +284,7 @@ namespace GettingStarted
 
 ## Perform an action by tapping the radial menu item
 
-You can perform an action by tapping a radial menu item. The `CenterButtonBackTapped` event occurs when the radial menu item is tapped.
+You can perform an action by tapping a radial menu item. The `ItemTapped` event occurs when the radial menu item is tapped.
 
 {% tabs %}
 {% highlight xaml %}

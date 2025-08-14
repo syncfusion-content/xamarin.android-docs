@@ -9,7 +9,7 @@ documentation: ug
 
 # SfRadialMenuItem Customization
 
-The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html) class provides various options such as `Custom Views`, `FontIcons`, and `Images` to customize the items. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the [Items](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_Items) property that is available in SfRadialMenu.
+The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html) class provides various options such as `Custom Views`, `FontIcons`, and `Images` to customize the items. You can add radial menu items hierarchically. To add a SfRadialMenuItem to SfRadialMenu, create an instance of SfRadialMenuItem and add it to the [Items](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_Items) property that is available in SfRadialMenu.
 
 ## Items
 
@@ -53,7 +53,7 @@ namespace GettingStarted
 
 ## Text
 
-The [Text](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_Android_SfRadialMenuItem_Text) property provides text to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
+The [Text](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_Android_SfRadialMenuItem_Text) property provides text content to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -93,7 +93,7 @@ namespace GettingStarted
 
 ## ItemHeight
 
-The [ItemHeight](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_Android_SfRadialMenuItem_ItemHeight) changes the height of the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
+The [ItemHeight](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_Android_SfRadialMenuItem_ItemHeight) property changes the height of the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -580,3 +580,4 @@ namespace GettingStarted
 {% endtabs %}
 
 ![SfRadialMenu with Items](images/Customization.png)
+
