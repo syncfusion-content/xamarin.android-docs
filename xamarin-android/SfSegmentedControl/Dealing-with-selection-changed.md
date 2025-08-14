@@ -1,19 +1,19 @@
 ---
 layout: post
-title: selection changed in Syncfusion® Segmented control for Xamarin.Android
-description: Learn how to notify the selection changes on its segments in Xamarin.Android SegmentedControl (SfSegmentedControl).
+title: Selection Changed in Syncfusion® Segmented Control for Xamarin.Android
+description: Learn how to notify the selection changes on its segments in Xamarin.Android Segmented Control (SfSegmentedControl).
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Notify the selection changes in SfSegmentedControl in Xamarin.Android
+# Notify the Selection Changes in SfSegmentedControl in Xamarin.Android
 
-The segmented control handles the Selection changed when there is a change from one segment item to another. It can be handled by two ways.
+The Segmented Control handles the selection changed event when there is a change from one segment item to another. It can be handled in two ways:
 
-## User interface
+## User Interface
 
-When users navigate from one item to another, selection is changed, so that the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_SelectedIndex) value is updated to the new index of the item. The segmented control provides the [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html) event, which is triggered when the selection is changed with the [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SelectionChangedEventArgs.html).
+When users navigate from one item to another, the selection is changed, so the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_SelectedIndex) value is updated to the new index of the item. The Segmented Control provides the [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html) event, which is triggered when the selection is changed with the [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SelectionChangedEventArgs.html).
 
 [`Index`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SelectionChangedEventArgs.html#Syncfusion_Android_Buttons_SelectionChangedEventArgs_Index) - Gets the current index value of the selected item.
 
@@ -26,9 +26,9 @@ segmentedControl.SelectionChanged += (object sender, SelectionChangedEventArgs e
 
 {% endhighlight %}
 
-## Selected Index through programmatically.
+## Selected Index Through Programming
 
-You can set the default value programmatically for the selection to be placed. The selection gets updated based on the index value given for the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_SelectedIndex). 
+You can set the default value programmatically for the selection to be placed. The selection gets updated based on the index value given for the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_SelectedIndex) property.
 
 {% highlight c# %}
 
