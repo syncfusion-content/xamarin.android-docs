@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Overview of Xamarin.Android license generation | Syncfusion
-description: Learn here about how to generate Syncfusion® Xamarin.Android license key for syncfusion® Xamarin.Android application for license validation.
+description: Learn here about how to generate Syncfusion Xamarin.Android license key for syncfusion Xamarin.Android application for license validation.
 platform: xamarin.android
-control: Essential Studio<sup>®</sup>
+control: Essential Studio
 documentation: ug
 ---
 
