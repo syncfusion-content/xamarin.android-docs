@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview of Syncfusion® licensing errors - Syncfusion®
-description: Learn here about Syncfusion® common licensing errors which appears on license validation in Syncfusion® Xamarin.Android applications.
+title: Overview of Xamarin.Android Licensing Errors | Syncfusion
+description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion Xamarin.Android applications.
 platform: xamarin.android
-control: Essential Studio<sup>®</sup>
+control: Essential Studio
 documentation: ug
 ---
 
