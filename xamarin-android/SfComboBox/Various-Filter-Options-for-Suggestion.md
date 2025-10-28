@@ -56,7 +56,7 @@ Displays the list of suggestions based on the starting letter.
 
 {% endtabs %}
 	
-![](images/startswith.png)
+![Start words with input text in Xamarin.Android ComboBox.](images/startswith.png)
 
 ### Filter with character casing
 
@@ -72,7 +72,7 @@ Displays the list of suggestions based on the starting letter with case sensitiv
 
 {% endtabs %}
 	
-![](images/startswithcasesensitive.png)
+![Xamarin.Android ComboBox starting letter with case sensitive.](images/startswithcasesensitive.png)
 
 ## Words that contain the input text
 
@@ -88,7 +88,7 @@ Displays the list of suggestions if the combo box list contains that words.
 
 {% endtabs %}
 	
-![](images/contains.png)
+![Words that contains input text in Xamarin.Android ComboBox.](images/contains.png)
 
 ### Filter with character casing
 
@@ -104,9 +104,9 @@ Displays the list of suggestions if the combo box list contains that words with 
 
 {% endtabs %}
 	
-![](images/containswithcasesensitive.png)
+![Words that contains case sensitive in Xamarin.Android ComboBox.](images/containswithcasesensitive.png)
 
-## Words that equals to  input text
+## Words that equals to input text
 
 Displays the word that matches.
 
@@ -120,7 +120,7 @@ Displays the word that matches.
 
 {% endtabs %}
 	
-![](images/equals.png)
+![Equal words to input text in Xamarin.Android ComboBox.](images/equals.png)
 
 ### Filter with character casing
 
@@ -136,7 +136,7 @@ Displays the word that matches with case sensitive.
 
 {% endtabs %}
 	
-![](images/equalswithcasesensitive.png)
+![Equals word with case sensitive in Xamarin.Android ComboBox.](images/equalswithcasesensitive.png)
 
 ## Words that ends with input text
 
@@ -152,7 +152,7 @@ Displays the list of suggestions based on the ending word.
 
 {% endtabs %}
 	
-![](images/endswith.png)
+![Ending word with input text in Xamarin.Android ComboBox.](images/endswith.png)
 
 ### Filter with character casing
 
@@ -168,7 +168,7 @@ comboBox.SuggestionMode = SuggestionMode.EndsWithCaseSensitive;
 
 {% endtabs %}
 	
-![](images/endswithcasesensitive.png)
+![Ending word with case sensitive in Xamarin.Android ComboBox.](images/endswithcasesensitive.png)
 
 
 ### Custom filter
@@ -184,7 +184,7 @@ comboBox.SuggestionMode = SuggestionMode.Custom;
 
 {% endtabs %}
 	
-![](images/customfilter.png)
+![Custom filter in Xamarin.Android ComboBox.](images/customfilter.png)
 
 
 

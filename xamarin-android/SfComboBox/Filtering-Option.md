@@ -25,4 +25,4 @@ combobox.AllowFiltering = true;
 
 {% endtabs %}
 
-![](images/filtering.png)
+![Filtering Option in Xamarin.Android ComboBox.](images/filtering.png)
