@@ -39,9 +39,9 @@ sfNumericUpDown.Maximum = 50
 
 {% endtabs %}
 
-![](images/maximum.png)
+![Maximum spinning range value in Xamarin.Android NumericUpDown.](images/maximum.png)
 
-![](images/minimum.png)
+![Minimum spinning range value in Xamarin.Android NumericUpDown.](images/minimum.png)
 
 ## Set Increment
 

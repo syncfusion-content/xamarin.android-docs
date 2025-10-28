@@ -31,7 +31,7 @@ numeric.SpinButtonAlignment = SpinButtonAlignment.Right;
 
 {% endtabs %}
 
-![](images/spinright.png)
+![Spin right side button in Xamarin.Android NumericUpDown.](images/spinright.png)
 
 ### Left
 
@@ -47,7 +47,7 @@ numeric.SpinButtonAlignment = SpinButtonAlignment.Left;
 
 {% endtabs %}
 
-![](images/spinleft.png)
+![Spin left side button in Xamarin.Android NumericUpDown.](images/spinleft.png)
 
 ### Both
 
@@ -63,7 +63,7 @@ numeric.SpinButtonAlignment = SpinButtonAlignment.Both;
 
 {% endtabs %}
 
-![](images/spinboth.png)
+![Spin both side button in Xamarin.Android NumericUpDown.](images/spinboth.png)
 
 N> By default the property value is Right.
 
@@ -207,7 +207,7 @@ N> For image and FontIcon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-![](images/image.png)
+![Using font icon text in Xamarin.Android NumericUpDown.](images/image.png)
 
 
 
