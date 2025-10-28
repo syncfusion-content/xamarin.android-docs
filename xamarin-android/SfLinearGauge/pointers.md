@@ -39,7 +39,7 @@ documentation: ug
 
 {% endhighlight %}
 
-![](pointers_images/bar-pointer/bar-pointer.png)
+![Adding bar pointer to scale in Xamarin.Android Linear Gauge.](pointers_images/bar-pointer/bar-pointer.png)
 
 ## Bar pointer customization
 
@@ -70,7 +70,7 @@ The bar pointer’s UI is customized by using the [`Color`](https://help.syncfus
 
 {% endhighlight %}
 
-![](pointers_images/bar-pointer/bar-pointer2.png)
+![Bar pointer customization in Xamarin.Android Linear Gauge.](pointers_images/bar-pointer/bar-pointer2.png)
 
 ## Setting corner radius type for bar pointer
 
@@ -106,7 +106,7 @@ Corners of the [`BarPointer`](https://help.syncfusion.com/cr/xamarin-android/Com
 
 {% endhighlight  %}
 
-![](pointers_images/bar-pointer/bar-pointer3.png)
+![Setting corner radius type for bar pointer in Xamarin.Android Linear Gauge.](pointers_images/bar-pointer/bar-pointer3.png)
 
 ## Setting gradient color for bar pointer
 
@@ -162,7 +162,7 @@ You can give smooth color transition to bar pointer to specifying the different 
 
 {% endhighlight  %}
 
-![](pointers_images/bar-pointer/bar-pointer4.png)
+![Setting gradient color for bar pointer in Xamarin.Android Linear Gauge.](pointers_images/bar-pointer/bar-pointer4.png)
 
 ## Adding symbol pointer to scale
 
@@ -205,7 +205,7 @@ In [`SymbolPointer`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusi
 
 {% endhighlight  %}
 
-![](pointers_images/symbol-pointer/symbol-pointer1.png)
+![Adding symbol pointer to scale in Xamarin.Android Linear Gauge.](pointers_images/symbol-pointer/symbol-pointer1.png)
 
 ## Symbol pointer customization
 
@@ -234,7 +234,7 @@ You can modify the symbol pointer’s size using the [`StrokeWidth`](https://hel
 
 {% endhighlight  %}
 
-![](pointers_images/symbol-pointer/symbol-pointer2.png)
+![Symbol pointer customization in Xamarin.Android Linear Gauge.](pointers_images/symbol-pointer/symbol-pointer2.png)
 
 ## Positioning symbol pointer
 
@@ -279,7 +279,7 @@ You can customize the position of the [`SymbolPointer`](https://help.syncfusion.
 
 {% endhighlight  %}
 
-![](pointers_images/symbol-pointer/symbol-pointer3.png)
+![Setting symbol pointer position in Xamarin.Android Linear Gauge.](pointers_images/symbol-pointer/symbol-pointer3.png)
 
 ## Setting offset for symbol pointer
 
@@ -321,7 +321,7 @@ You can move  the [`SymbolPointer`](https://help.syncfusion.com/cr/xamarin-andro
 
 {% endhighlight  %}
 
-![](pointers_images/symbol-pointer/symbol-pointer4.png)
+![Setting offset for symbol pointer in Xamarin.Android Linear Gauge.](pointers_images/symbol-pointer/symbol-pointer4.png)
 
 ## Change symbol pointer shapes
 
@@ -361,7 +361,7 @@ Different types of shapes are used in [`SymbolPointer`](https://help.syncfusion.
 
 {% endhighlight  %}
 
-![](pointers_images/symbol-pointer/symbol-pointer5.png)
+![Change symbol pointer shapes in Xamarin.Android Linear Gauge.](pointers_images/symbol-pointer/symbol-pointer5.png)
 
 ![](pointers_images/symbol-pointer/symbol-pointer6.png)
 
@@ -407,7 +407,7 @@ You can achieve the image shape  by setting the [`MarkerShape`](https://help.syn
 
 {% endhighlight  %}
 
-![](pointers_images/symbol-pointer/symbol-pointer7.png)
+![Setting image shape for symbol pointer in Xamarin.Android Linear Gauge.](pointers_images/symbol-pointer/symbol-pointer7.png)
 
 ## Adding multiple pointers
 
@@ -450,4 +450,4 @@ In addition to the default pointer, you can add n number of pointers to a linear
 
 {% endhighlight  %}
 
-![](pointers_images/symbol-pointer/symbol-pointer8.png)
+![Adding multiple pointers in Xamarin.Android Linear Gauge.](pointers_images/symbol-pointer/symbol-pointer8.png)

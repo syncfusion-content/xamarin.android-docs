@@ -24,7 +24,7 @@ documentation: ug
 
 * [`Annotations`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html#Com_Syncfusion_Gauges_SfLinearGauge_SfLinearGauge_Annotations): Annotations are used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
-![](overview_images/overview.png)
+![Overview of Xamarin.Android Linear Gauge.](overview_images/overview.png)
 
 
 

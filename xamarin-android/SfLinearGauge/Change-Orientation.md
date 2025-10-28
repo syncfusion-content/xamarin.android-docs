@@ -31,4 +31,4 @@ documentation: ug
 
 {% endhighlight %}
 
-![](change_orientation/orientaion.png)
+![Change Orientation in Xamarin.Android Linear Gauge.](change_orientation/orientaion.png)
