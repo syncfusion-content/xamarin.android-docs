@@ -13,7 +13,7 @@ documentation: ug
 
 [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfLinearGauge.SfLinearGauge.html#Com_Syncfusion_Gauges_SfLinearGauge_SfLinearGauge_Annotations), which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
-##  Annotation
+## Annotation
 
 By using the [`View`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Gauges.SfLinearGauge.LinearGaugeAnnotation.html#Com_Syncfusion_Gauges_SfLinearGauge_LinearGaugeAnnotation_View) property of annotation object, you can specify the new element that needs to be displayed in the gauge area.
 
@@ -45,7 +45,7 @@ By using the [`View`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfus
     
 {% endhighlight %}
 
-![](annotations_images/annotation1.png)
+![Positioning annotation in Xamarin.Android Linear Gauge.](annotations_images/annotation1.png)
 
 ##  Positioning the annotation
 
@@ -83,7 +83,7 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
     
 {% endhighlight %}
 
-![](annotations_images/annotation2.png)
+![Change annotation position by using offset in Xamarin.Android Linear Gauge.](annotations_images/annotation2.png)
 
 ### Change annotation position by using scale value
 
@@ -130,7 +130,7 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
     
 {% endhighlight %}
 
-![](annotations_images/annotation3.png)
+![Change annotation position by using scale value in Xamarin.Android Linear Gauge.](annotations_images/annotation3.png)
 
 ## Set margin to the annotation
 
@@ -177,7 +177,7 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
     
 {% endhighlight %}
 
-![](annotations_images/annotation4.png)
+![Alignment of annotation in Xamarin.Android Linear Gauge.](annotations_images/annotation4.png)
 
 ## Alignment of annotation
 
@@ -226,7 +226,7 @@ You can align the annotation using the [`HorizontalViewAlignment`](https://help.
     
 {% endhighlight %}
 
-![](annotations_images/annotation5.png)
+![Setting horizontal view alignment in Xamarin.Android Linear Gauge.](annotations_images/annotation5.png)
 
 ### Setting vertical view alignment
 
@@ -271,7 +271,7 @@ You can align the annotation using the [`HorizontalViewAlignment`](https://help.
     
 {% endhighlight %}
 
-![](annotations_images/annotation6.png)
+![Setting vertical view alignment in Xamarin.Android Linear Gauge.](annotations_images/annotation6.png)
 
 ## Setting scale index for annotation
 
@@ -338,7 +338,7 @@ You can set the index for the scale by using [`ScaleIndex`](https://help.syncfus
     
 {% endhighlight %}
 
-![](annotations_images/annotation7.png)
+![Setting scale index for annotation in Xamarin.Android Linear Gauge.](annotations_images/annotation7.png)
 
 ## Multiple annotations
 
@@ -454,4 +454,4 @@ You can add multiple annotations to the gauge as demonstrated below.
     
 {% endhighlight %}
 
-![](annotations_images/annotation8.png)
+![Multiple annotations in Xamarin.Android Linear Gauge.](annotations_images/annotation8.png)
