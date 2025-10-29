@@ -29,7 +29,7 @@ Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusi
 			
 {% endhighlight %}
 
-![](tick-setting_images/tick-setting1.png)
+![Tick Setting in Xamarin.Android Linear Gauge.](tick-setting_images/tick-setting1.png)
 
 ## Tick customization
 
@@ -54,7 +54,7 @@ You can customize the color and thickness of ticks by using the [`Color`](https:
 			
 {% endhighlight %}
 
-![](tick-setting_images/tick-setting2.png)
+![Major tick customization in Xamarin.Android Linear Gauge.](tick-setting_images/tick-setting2.png)
 
 ### Minor tick customization
 
@@ -78,7 +78,7 @@ You can customize the color and thickness of ticks by using the [`Color`](https:
 			
 {% endhighlight %}
 
-![](tick-setting_images/tick-setting3.png)
+![Minor tick customization in Xamarin.Android Linear Gauge.](tick-setting_images/tick-setting3.png)
 
 ## Setting minor ticks per interval
 
@@ -100,7 +100,7 @@ The [`Interval`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.G
 			
 {% endhighlight %}
 
-![](tick-setting_images/tick-setting4.png)
+![Setting minor ticks per interval in Xamarin.Android Linear Gauge.](tick-setting_images/tick-setting4.png)
 
 ## Setting position for ticks
 
@@ -129,4 +129,4 @@ The major and minor ticks can be positioned far away from the scale by using the
 			
 {% endhighlight %}
 
-![](tick-setting_images/tick-setting5.png)
+![Setting position for ticks in Xamarin.Android Linear Gauge.](tick-setting_images/tick-setting5.png)

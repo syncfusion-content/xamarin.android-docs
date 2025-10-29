@@ -35,7 +35,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
     
 {% endhighlight %}
 
-![Label color customization image](labels_images/label1.png)
+![Label color customization image in Xamarin.Android Linear Gauge.](labels_images/label1.png)
 
 ## Label font customization
 
@@ -61,7 +61,7 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
     
 {% endhighlight %}
 
-![Label-font-customization image](labels_images/label2.png)
+![Label font customization image in Xamarin.Android Linear Gauge.](labels_images/label2.png)
 
 ## Setting position for labels
 
@@ -86,7 +86,7 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
    
 {% endhighlight %}
 
-![Label-offset image](labels_images/label3.png)
+![Label offset image in Xamarin.Android Linear Gauge.](labels_images/label3.png)
 
 ### Setting postfix and prefix for labels
 
@@ -118,7 +118,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusi
     
 {% endhighlight %}
 
-![Label-postfix image](labels_images/label4.png)
+![Label postfix image in Xamarin.Android Linear Gauge.](labels_images/label4.png)
 
 ### Setting label prefix
 
@@ -143,7 +143,7 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusio
     
 {% endhighlight %}
 
-![Label-prefix image](labels_images/label5.png)
+![Label prefix image in Xamarin.Android Linear Gauge.](labels_images/label5.png)
 
 ## Labels visibility
 
@@ -171,7 +171,7 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
    
 {% endhighlight %}
 
-![Labels visibility image](labels_images/label6.png)
+![Labels visibility image in Xamarin.Android Linear Gauge.](labels_images/label6.png)
 
 
 ## Customize the scale labels
@@ -218,5 +218,5 @@ The scale label are customized by using `LabelFormat` and `Culture` properties o
    
 {% endhighlight %}
 
-![Label format Image](labels_images/labelFormat.png)
+![Label format Image in Xamarin.Android Linear Gauge.](labels_images/labelFormat.png)
 

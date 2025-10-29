@@ -43,7 +43,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
 {% endhighlight %}
 
-![](ranges_images/range1.png)
+![Setting start and end values for range in Xamarin.Android Linear Gauge.](ranges_images/range1.png)
 
 ## Range customization
 
@@ -75,7 +75,7 @@ To change the range’s background color, use the [`Color`](https://help.syncfus
 
 {% endhighlight %}
 
-![](ranges_images/range2.png)
+![Range customization in Xamarin.Android Linear Gauge.](ranges_images/range2.png)
 
 ## Setting position for range
 
@@ -112,7 +112,7 @@ The range can be adjusted above or below the scale by using the [`Offset`](https
 
 {% endhighlight %}
 
-![](ranges_images/range3.png)
+![Setting position for range in Xamarin.Android Linear Gauge.](ranges_images/range3.png)
 
 ## Setting multiple ranges
 
@@ -167,7 +167,7 @@ You can add n number of ranges to a scale by using the [`LinearRange`](https://h
 
 {% endhighlight %}
 
-![](ranges_images/range4.png)
+![Setting multiple ranges in Xamarin.Android Linear Gauge.](ranges_images/range4.png)
 
 ## Setting gradient color for range
 
@@ -204,4 +204,4 @@ You can give smooth color transition to range to specifying the different colors
 
 {% endhighlight %}
 
-![](ranges_images/range5.png)
+![Setting gradient color for range in Xamarin.Android Linear Gauge.](ranges_images/range5.png)
