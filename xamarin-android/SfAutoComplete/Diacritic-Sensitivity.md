@@ -39,7 +39,7 @@ countryAutoComplete.IgnoreDiacritic=false;
 
 {% endtabs %}
 	
-![](images/diacritic.png)
+![Diacritic sensitivity in Xamarin.Android Autocomplete.](images/diacritic.png)
 
 
 	

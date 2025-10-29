@@ -23,7 +23,7 @@ countryAutoComplete.LoadMoreText="LOAD MORE";
 
 {% endtabs %}
 	
-![](images/loadmore.png)
+![Maximum display item with expander in in Xamarin.Android Autocomplete.](images/loadmore.png)
 
 ### Restricting the maximum display of item dynamically
 

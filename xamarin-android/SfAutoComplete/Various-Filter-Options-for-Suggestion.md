@@ -25,7 +25,7 @@ Displays the list of suggestions based on starting letter.
 
 {% endtabs %}
 	
-![](images/startswith.png)
+![Start words with input text in Xamarin.Android Autocomplete.](images/startswith.png)
 
 ### Filter with Character Casing
 
@@ -41,7 +41,7 @@ Displays the list of suggestions based on starting letter with case sensitive.
 
 {% endtabs %}
 	
-![](images/startswithcasesensitive.png)
+![Starting letter with case sensitive in Xamarin.Android Autocomplete.](images/startswithcasesensitive.png)
 
 ## Words that Contains the Input Text
 
@@ -57,7 +57,7 @@ Displays the list of suggestions, if autocomplete list contains that words.
 
 {% endtabs %}
 	
-![](images/contains.png)
+![Words that contains input text in Xamarin.Android Autocomplete.](images/contains.png)
 
 ### Filter with Character Casing
 
@@ -73,7 +73,7 @@ Displays the list of suggestions, if autocomplete list contains that words with 
 
 {% endtabs %}
 	
-![](images/containswithcasesensitive.png)
+![Words that contains case sensitive in Xamarin.Android Autocomplete.](images/containswithcasesensitive.png)
 
 ## Words that Equals to the Input Text
 
@@ -89,7 +89,7 @@ Displays the word that matches.
 
 {% endtabs %}
 	
-![](images/equals.png)
+![Equal words to input text in Xamarin.Android Autocomplete.](images/equals.png)
 
 ### Filter with Character Casing
 
@@ -105,7 +105,7 @@ Displays the word that matches with case sensitive.
 
 {% endtabs %}
 	
-![](images/equalswithcasesensitive.png)
+![Equals word with case sensitive in Xamarin.Android Autocomplete.](images/equalswithcasesensitive.png)
 
 ## Words that Ends with Input Text
 
@@ -121,7 +121,7 @@ Displays the list of suggestions based on ending word.
 
 {% endtabs %}
 	
-![](images/endswith.png)
+![Ending word with input text in Xamarin.Android Autocomplete.](images/endswith.png)
 
 ### Filter with Character Casing
 
@@ -137,7 +137,7 @@ countryAutoComplete.SuggestionMode = SuggestionMode.EndsWithCaseSensitive;
 
 {% endtabs %}
 	
-![](images/endswithcasesensitive.png)
+![Ending word with case sensitive in Xamarin.Android Autocomplete.](images/endswithcasesensitive.png)
 
 
 ### Custom filter
@@ -153,7 +153,7 @@ countryAutoComplete.SuggestionMode = SuggestionMode.Custom;
 
 {% endtabs %}
 	
-![](images/customfilter.png)
+![Custom filter in Xamarin.Android Autocomplete.](images/customfilter.png)
 
 
 
