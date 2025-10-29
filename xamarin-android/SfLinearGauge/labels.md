@@ -86,7 +86,7 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
    
 {% endhighlight %}
 
-![Label-offset image in Xamarin.Android Linear Gauge.](labels_images/label3.png)
+![Label offset image in Xamarin.Android Linear Gauge.](labels_images/label3.png)
 
 ### Setting postfix and prefix for labels
 
@@ -118,7 +118,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusi
     
 {% endhighlight %}
 
-![Label-postfix image in Xamarin.Android Linear Gauge.](labels_images/label4.png)
+![Label postfix image in Xamarin.Android Linear Gauge.](labels_images/label4.png)
 
 ### Setting label prefix
 
@@ -143,7 +143,7 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusio
     
 {% endhighlight %}
 
-![Label-prefix image in Xamarin.Android Linear Gauge.](labels_images/label5.png)
+![Label prefix image in Xamarin.Android Linear Gauge.](labels_images/label5.png)
 
 ## Labels visibility
 
