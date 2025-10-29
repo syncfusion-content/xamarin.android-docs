@@ -20,7 +20,7 @@ carousel.ViewMode = ViewMode.Linear;
 
 N> It is important to include Xamarin.Android.Support.v17.Leanback library to use carousel linear mode in Android platform.
 
-![](images/linear.png)
+![Linear arrangement in Xamarin.Android Carousel. ](images/linear.png)
 
 
 

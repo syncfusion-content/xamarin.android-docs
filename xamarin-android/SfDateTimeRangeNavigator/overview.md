@@ -19,4 +19,4 @@ Main capabilities of the control are listed below
 * Visualize data with the available built-in chart types.
 * Intuitive user interface to select a particular time range.
 
-![](overview_images/overview_img1.jpeg)
+![Overview of Xamarin.Android DateTime Range Navigator.](overview_images/overview_img1.jpeg)

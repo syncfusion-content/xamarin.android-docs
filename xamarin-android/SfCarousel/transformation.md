@@ -26,7 +26,7 @@ carousel.RotationAngle=40;
 {% endhighlight %}
 
 
-![](images/rotationangle.png)
+![Tilt non selected items using rotation angle in Xamarin.Android Carousel. ](images/rotationangle.png)
 
 ## Set Gap between Unselected Items
 
@@ -42,7 +42,7 @@ carousel.Offset=30;
 
 {% endhighlight %}
 
-![](images/offset.png)
+![Set gap between unselected items using offset in Xamarin.Android Carousel.](images/offset.png)
 
 ## Set Gap between Selected Item and Unselected Item
 
@@ -70,7 +70,7 @@ carousel.ScaleOffset=0.7f;
 {% endhighlight %}
 
 
-![](images/scaleoffset.png)
+![Set scaling for unselected items using scale offset in Xamarin.Android Carousel.](images/scaleoffset.png)
 
 ## Spacing between the Items in Linear mode
 
