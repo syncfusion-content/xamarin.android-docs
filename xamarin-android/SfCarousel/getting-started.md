@@ -114,6 +114,6 @@ carousel.SelectedIndex=2;
 
 {% endhighlight %}
 
-![](images/carousel.png)
+![Carousel control selected index item in Xamarin.Android.](images/carousel.png)
 
 You can find the complete getting started sample from this [Link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSampleCarousel39791457)
