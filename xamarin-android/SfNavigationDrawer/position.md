@@ -82,7 +82,7 @@ Sets the SfNavigationDrawer sliding position to the bottom.
 
 {% endhighlight %}
 
-![](images/bottom.png)
+![Sets the bottom sliding position of Xamarin.Android NavigationDrawer.](images/bottom.png)
 
 
 
