@@ -61,7 +61,7 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
     
 {% endhighlight %}
 
-![Label-font-customization image in Xamarin.Android Linear Gauge.](labels_images/label2.png)
+![Label font customization image in Xamarin.Android Linear Gauge.](labels_images/label2.png)
 
 ## Setting position for labels
 
