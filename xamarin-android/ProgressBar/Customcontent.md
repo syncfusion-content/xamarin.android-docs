@@ -58,6 +58,6 @@ private async void SetCustomContentProgress()
 
 {% endhighlight %}
 
-![](overview_images/customcontent.png)
+![Custom content in Xamarin.Android Progressbar.](overview_images/customcontent.png)
 
 By default, the progress value will be displayed at the center. You can hide the label in the circular progress bar by setting the [`ShowProgressValue`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfCircularProgressBar.html#Syncfusion_Android_ProgressBar_SfCircularProgressBar_ShowProgressValue) property to false. 
