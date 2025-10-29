@@ -36,4 +36,4 @@ circularProgressBar.Progress = 0.5;
 
 {% endhighlight %} 
 
-![](overview_images/range.png)
+![Defining range in Xamarin.Android Progressbar.](overview_images/range.png)

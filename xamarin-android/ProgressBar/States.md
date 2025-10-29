@@ -44,4 +44,4 @@ sfLinearProgressBar.SecondaryProgress = 25;
 
 {% endhighlight %}
 
-![](overview_images/buffer.png)
+![Configure the states of the Progressbar in Xamarin.Android.](overview_images/buffer.png)
