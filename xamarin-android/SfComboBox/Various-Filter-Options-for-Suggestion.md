@@ -72,7 +72,7 @@ Displays the list of suggestions based on the starting letter with case sensitiv
 
 {% endtabs %}
 	
-![Xamarin.Android ComboBox starting letter with case sensitive.](images/startswithcasesensitive.png)
+![Starting letter with case sensitive in Xamarin.Android ComboBox.](images/startswithcasesensitive.png)
 
 ## Words that contain the input text
 
