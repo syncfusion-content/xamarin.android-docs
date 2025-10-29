@@ -136,7 +136,7 @@ Displays the word that matches with case sensitive.
 
 {% endtabs %}
 	
-![Equals word with case sensitive in Xamarin.Android ComboBox.](images/equalswithcasesensitive.png)
+![Equal word with case sensitive in Xamarin.Android ComboBox.](images/equalswithcasesensitive.png)
 
 ## Words that ends with input text
 
