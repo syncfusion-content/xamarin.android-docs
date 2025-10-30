@@ -61,5 +61,5 @@ comboBox.ComboBoxMode = ComboBoxMode.SuggestAppend;
 
 {% endtabs %}
 
-![Suggest and append mode in Xamarin.Android ComboBox.](images/comboboxmode.png)
+![Dropdown display suggestion(combo mode).](images/comboboxmode.png)
  
