@@ -61,5 +61,5 @@ comboBox.ComboBoxMode = ComboBoxMode.SuggestAppend;
 
 {% endtabs %}
 
-![](images/comboboxmode.png)
+![Dropdown display suggestion(combo mode).](images/comboboxmode.png)
  
