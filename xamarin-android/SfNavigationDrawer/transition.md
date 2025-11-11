@@ -53,4 +53,4 @@ This transition keeps the Drawer content in fixed position and the main content 
 
 {% endhighlight %}
 
-![](images/reveal.png)
+![Reveal transition in Xamarin.Android Navigationdrawer.](images/reveal.png)
