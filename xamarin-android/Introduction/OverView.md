@@ -27,7 +27,7 @@ The Knowledge Base section contains responses to some of the most common questio
 
 Similar to the Knowledge Base, the Forum section also contains responses to questions of other customers asked in the past.
 
-And, you can explore the release history of Essential Studio<sup>®</sup> for Xamarin.Android from  [`here`](https://www.syncfusion.com/products/release-history/estudio/xamarin-android).
+And, you can explore the release history of Essential Studio<sup>®</sup> for Xamarin.Android from  [`here`](https://www.syncfusion.com/products/release-history/estudio).
 
 ## Create a support incident
 
