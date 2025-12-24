@@ -25,7 +25,7 @@ circularProgressBar.EndAngle = 360;
 
 {% endhighlight %} 
 
-![](overview_images/angle.png)
+![Customize start and end angles in Xamarin.Android Progressbar.](overview_images/angle.png)
 
 
 ## Range colors
@@ -59,7 +59,7 @@ linearProgressBar.RangeColors.Add(new RangeColor() { Color = Android.Graphics.Co
 
 {% endhighlight %} 
 
-![](overview_images/rangecolors.png)
+![Mapping solid range colors in Xamarin.Android Progressbar.](overview_images/rangecolors.png)
 
 The following code example shows how to apply gradient transition effect to the range colors in the linear progress bar.
 
@@ -87,7 +87,7 @@ new RangeColor() { Color = Android.Graphics.Color.ParseColor("#FF1C96C5"), IsGra
 
 {% endhighlight %} 
 
-![](overview_images/gradient.png)
+![Apply gradient transition effects in Xamarin.Android Progressbar.](overview_images/gradient.png)
 
 ## Thickness
 
@@ -107,7 +107,7 @@ linearProgressBar.Padding = 2;
 
 {% endhighlight %}
 
-![](overview_images/thickness_linear.png)
+![Thickness of linear Progressbar property in Xamarin.Android.](overview_images/thickness_linear.png)
 
 
 **Circular** **progress** **bar**
@@ -135,7 +135,7 @@ trackOutsideProgressBar.ShowProgressValue = false;
 
 {% endhighlight %} 
 
-![](overview_images/appearance.png)
+![Customize the appearance of Xamarin.Android Progressbar.](overview_images/appearance.png)
 
 
 ## Corner radius
@@ -152,7 +152,7 @@ linearProgressBar.CornerRadius = 10;
 
 {% endhighlight %} 
 
-![](overview_images/cornerradius.png)
+![Customize the rounded edges in Xamarin.Android Progressbar using corner radius. ](overview_images/cornerradius.png)
 
 
 ## Color customization
@@ -176,7 +176,7 @@ linearProgressBar.TrackColor = Android.Graphics.Color.ParseColor("#3351483a");
 
 {% endhighlight %} 
 
-![](overview_images/color1.png)
+![Color Customization in Xamarin.Android Progressbar.](overview_images/color1.png)
 
 
 The linear progress bar provides support to customize the color for the secondary progress bar using the [`SecondaryProgressColor`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.ProgressBar.SfLinearProgressBar.html#Syncfusion_Android_ProgressBar_SfLinearProgressBar_SecondaryProgressColor) property, as shown in the following code example.
@@ -192,6 +192,6 @@ linearProgressBar.SecondaryProgressColor = Android.Graphics.Color.CornflowerBlue
 
 {% endhighlight %} 
 
-![](overview_images/color2.png)
+![Color Customization support in Xamarin.Android Progressbar.](overview_images/color2.png)
 
 
