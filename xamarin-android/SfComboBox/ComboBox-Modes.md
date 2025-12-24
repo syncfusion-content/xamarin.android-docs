@@ -23,7 +23,7 @@ comboBox.IsEditableMode = true;
 
 {% endtabs %}
 
-![](images/editable.png)
+![Editable mode in Xamarin.Android ComboBox.](images/editable.png)
 	
 ## Non-editable combo box
 
@@ -37,5 +37,5 @@ comboBox.IsEditableMode = false;
 
 {% endtabs %}
 
-![](images/noneditable.png)
+![Non-editable mode in Xamarin.Android ComboBox.](images/noneditable.png)
  

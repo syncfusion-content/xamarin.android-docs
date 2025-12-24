@@ -25,4 +25,4 @@ combobox.AllowFiltering = true;
 
 {% endtabs %}
 
-![](images/filtering.png)
+![Filtering option of dropdown list.](images/filtering.png)
