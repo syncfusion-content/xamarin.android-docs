@@ -20,7 +20,7 @@ rotator.NavigationStripMode = NavigationStripMode.Thumbnail;
 
 {% endhighlight %}
 
-![](images/thumbnail1.png)
+![Thumbnail navigation mode in Xamarin.Android Rotator.](images/thumbnail1.png)
 
 * `Dots` - The slider items will be loaded in dots view additionally. When a dots item is clicked, the slider will switch to the corresponding image data.
 
@@ -31,7 +31,7 @@ rotator.NavigationStripMode = NavigationStripMode.Dots;
 
 {% endhighlight %}
 
-![](images/rotator.png)
+![Items or dot strip positions in Xamarin.Android Rotator.](images/rotator.png)
 
 ## Items / Dot Strip Positions
 
@@ -51,4 +51,4 @@ rotator.NavigationStripPosition = NavigationStripPosition.Top;
 
 {% endhighlight %}
 
-![](images/top.png)
+![Set navigation bar items to the top position in Xamarin.Android Rotator.](images/top.png)
