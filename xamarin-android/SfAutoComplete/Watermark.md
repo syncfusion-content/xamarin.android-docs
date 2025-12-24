@@ -21,4 +21,4 @@ This property is used to customize the watermark text that is displayed when the
 
 {% endtabs %}
 	
-![](images/watermark.png)
+![Watermark text in Xamarin.Android Autocomplete.](images/watermark.png)

@@ -132,7 +132,7 @@ SetContentView(linearLayout);
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![Getting started Xamarin.Android Autocomplete.](images/gettingstarted.png)
 
 ## Creating AutoComplete control in AXML layout
 
