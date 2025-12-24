@@ -22,7 +22,7 @@ N> By default, the property value is false.
 
 {% endtabs %}
 
-![](images/allownull.png)
+![Allow null value in Xamarin.Android NumericUpDown.](images/allownull.png)
 
 ## Set Hint Text
 
@@ -38,4 +38,4 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% endtabs %}
 
-![](images/watermark.png)
+![Watermark text in Xamarin.Android NumericUpDown.](images/watermark.png)

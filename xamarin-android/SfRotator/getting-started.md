@@ -79,7 +79,7 @@ SetContentView(rotator);
 
 {% endhighlight %}
 
-![](images/rotator.png)
+![Image content in Xamarin.Android Rotator.](images/rotator.png)
 
 ### Using Content
 
@@ -128,7 +128,7 @@ SetContentView(rotator);
 
 {% endhighlight %}
 
-![](images/content.png)
+![Content property in Xamarin.Android Rotator.](images/content.png)
 
 ## Through RotatorAdapter
 
@@ -201,7 +201,7 @@ public class MainActivity : Activity
 
 {% endhighlight %}
 
-![](images/rotator.png)
+![Main activity in Xamarin.Android Rotator.](images/rotator.png)
 
 ## Set Navigation Mode
 
