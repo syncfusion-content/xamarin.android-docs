@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Appearance-Styling in Syncfusion® Rating control for Xamarin.Android
-description: Learn how to change the appearance and styling of rating control using ItemSize, ItemSpacing, ItemCount and customization properties.
-platform: Xamarin.Android
+title: Appearance and Styling in Syncfusion® Rating for Xamarin.Android
+description: Learn how to customize the appearance and styling of the Rating control using ItemSize, ItemSpacing, ItemCount, and RatingSettings properties.
+platform: xamarin.android
 control: Rating
 documentation: ug
 ---
 
 # Appearance and Styling
 
-When the default view is not needed, you can customize the view of Xamarin.Forms SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
+When the default appearance doesn't meet your requirements, you can customize the view of the Xamarin.Android SfRating control. The SfRating control provides support for customizing the size, item count, and spacing between rating items.
 
-## Set size
+## Set Item Size
 
-The `ItemSize` property sets the size for the rating items. 
+The `ItemSize` property sets the size for individual rating items.
 
 N> The default value of this property is 50.
 
@@ -29,9 +29,9 @@ N> The default value of this property is 50.
 
 ![ Rating Item Size](images/layoutSize.jpg)
  
-## Set space between items
+## Set Space Between Items
 
-The `ItemSpacing` property sets spacing between the rating items.
+The `ItemSpacing` property sets the spacing between rating items.
 
 N> The default value of this property is 5.
 
@@ -47,7 +47,7 @@ N> The default value of this property is 5.
 
 ![Space between Rating Items](images/layoutSpace.jpg)
  
-## Set number of items
+## Set Number of Items
 
 The `ItemCount` property sets the number of rating items to be displayed.
 
@@ -67,7 +67,7 @@ N> The default value of this property is 5.
 
 ## Rating Settings
 
-For styling customization, Set the `RatingSettings` property value with `SfRatingSettings` object instance.
+For advanced styling customization, configure the `RatingSettings` property with an `SfRatingSettings` object instance.
 
 {% tabs %}
 

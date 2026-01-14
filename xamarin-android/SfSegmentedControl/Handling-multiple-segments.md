@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Handling the segments in Xamarin.Android Syncfusion® Segmented control
-description: Learn how to restrict the visible segment count and its available scrolling options in Xamarin.Android Segmented control.
+title: Handling the Segments in Xamarin.Android Syncfusion® Segmented Control
+description: Learn how to restrict the visible segment count and its available scrolling options in Xamarin.Android Segmented Control.
 platform: Xamarin.Android
 control: SegmentedControl
 documentation: ug
 ---
 
-# Handling multiple segments in Xamarin.Android SfSegmentedControl
+# Handling Multiple Segments in Xamarin.Android SfSegmentedControl
 
-The segmented control handles the segmented items with the space distributed for the items on two ways.
+The Segmented Control handles the segmented items with the space distributed for the items in two ways:
 
-## Visible segment counts
+## Visible Segment Count
 
-The segmented control displays the item for the view based on the count which is given for [`VisibleSegmentCount`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_VisibleSegmentsCount). 
+The Segmented Control displays the items for the view based on the count that is given for [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.Buttons.SfSegmentedControl.html#Syncfusion_Android_Buttons_SfSegmentedControl_VisibleSegmentsCount).
 
 {% highlight c# %}
 
@@ -34,12 +34,8 @@ segmentedControl.ItemsSource = = new ObservableCollection<SfSegmentItem>
    
 {% endhighlight %}
 
-![Xamarin.Android SfSegmentedControl with four visible segment](images/Handling-multiple-segments/visiblesegment.png)
+![Xamarin.Android SfSegmentedControl with four visible segments](images/Handling-multiple-segments/visiblesegment.png)
 
 ## Scrolling
 
-When the available space in the segmented control is not equally distributed, the items beyond the edges of the control can be viewed by scrolling the panel.
-
-
-
-
+When the available space in the Segmented Control is not equally distributed, the items beyond the edges of the control can be viewed by scrolling the panel.

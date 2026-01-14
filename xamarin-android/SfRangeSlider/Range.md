@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Range in Syncfusion® RangeSlider control for Xamarin.Android
-description: Learn how to set Dual thumb slider and its ranges in RangeSlider control.
-platform: Xamarin.Android
+title: Range in Syncfusion® RangeSlider Control for Xamarin.Android
+description: Learn how to set dual thumb slider and configure ranges in RangeSlider control for selecting minimum and maximum values in Xamarin.Android apps.
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---
 
 # Range
 
-The SfRangeSlider control supports to select range of value by using two Thumbs.
+The SfRangeSlider control supports selecting a range of values by using two thumbs, providing flexibility for scenarios where you need to define both minimum and maximum boundaries within a dataset.
 
-## Set Show Range
+## Enable Range Mode
 
-The `ShowRange` property should be set to true for displaying two thumbs in track with range of values.
+The `ShowRange` property controls whether the slider operates in single-thumb or dual-thumb mode. Set this property to `true` to display two thumbs on the track for range selection.
 
-N> When this property is set to false, single thumb is displayed without any range 
+N> When this property is set to `false`, a single thumb is displayed for selecting individual values without range functionality.
 
 {% tabs %}
 
@@ -27,10 +27,9 @@ N> When this property is set to false, single thumb is displayed without any ran
 
 {% endtabs %}
 
-## Set Range values
+## Configure Range Values
 
-Ranges can be customized using RangeStart and RangeEnd properties in SfRangeSlider.
-
+Range values can be customized using the `RangeStart` and `RangeEnd` properties to define the initial selected range when the control loads.
 ### RangeStart
 
 Gets and sets the start value of the range.

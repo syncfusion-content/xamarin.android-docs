@@ -7,15 +7,17 @@ control: TabView
 documentation: ug
 ---
 
-# Selection Indicator strip in Xamarin.Android TabView
+# Selection Indicator in Xamarin.Android TabView
 
-Selection indicator strip can be used to indicate the selected index of the tab view control. It can be customized with the built in APIs available in `SelectionIndicatorSettings` of `SfTabView`.
+The selection indicator is a visual element that highlights the currently selected tab in the TabView control. This indicator provides clear visual feedback to users about which tab is active, enhancing the overall user experience and navigation clarity.
+The selection indicator can be extensively customized using the built-in APIs available in the `SelectionIndicatorSettings` property of `SfTabView`.
 
 ![Xamarin.Android TabView Selection Indicator](images/Selection-Indicator/xamarin_android_tabstyle02.png)
 
 
-Selection indicator can be positioned below the title or above the title or else it can be filled in the entire selected header space.
+## Basic Configuration
 
+To customize the selection indicator, create an instance of `SelectionIndicatorSettings` and configure its properties:
 {% tabs %}
 
 {% highlight C# %}

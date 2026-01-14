@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion® Rating control for Xamarin.Android
-description: Learn how to change the appearance and styling of rating control using ItemSize, ItemSpacing, ItemCount and customization properties.
-platform: Xamarin.Android
+title: Restrict User Selection in Syncfusion® Rating for Xamarin.Android
+description: Learn how to restrict user interaction and make the Rating control read-only using the ReadOnly property.
+platform: xamarin.android
 control: Rating
 documentation: ug
 ---
 
 # Restrict User Selection
 
-SfRating control provides support for changeable or unchangeable values for Rating control. This is achieved by the `ReadOnly` property. When this property is set to True, the Rating value becomes unchangeable. 
+The SfRating control provides the ability to control user interaction through the `ReadOnly` property. When enabled, this property prevents users from modifying the rating value, making the control display-only while maintaining its visual appearance. 
 
 N> By default, property value is set to False.
 
@@ -23,5 +23,5 @@ N> By default, property value is set to False.
 
 {% endtabs %}
 
-![](images/readOnly.jpg)
+![Read-Only Rating Control](images/readOnly.jpg)
 

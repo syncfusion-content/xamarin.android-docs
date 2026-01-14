@@ -1,16 +1,20 @@
 ---
 layout: post
-title: Tapped event for Syncfusion® Essential® SfTabView.
-description: Tapped event in TabView control for Xamarin.Android platform
+title: TabView Events for Syncfusion® Essential® SfTabView
+description: Events in TabView control for Xamarin.Android platform
 platform: Xamarin.Android
 control: TabView
 documentation: ug
 ---
 
-# TabItemTapped
+# TabView Events
 
-Whenever the TabItem is tapped, the `TabItemTapped` event will occur. Using this event, you can Modify the selected Tab Item properties.
+The SfTabView control provides several events that allow you to respond to user interactions and control lifecycle changes. These events enable you to create dynamic, responsive tabbed interfaces that can react to user behavior and implement custom logic.
+## TabItemTapped Event
 
+The `TabItemTapped` event is triggered when a user taps on a tab header. This event occurs regardless of whether the tapped tab is already selected or not, making it useful for implementing custom behaviors such as refresh actions, analytics tracking, or conditional navigation.
+
+### Event Handler Setup
 {% tabs %}
 
 {% highlight C# %}

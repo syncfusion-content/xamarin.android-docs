@@ -9,17 +9,16 @@ documentation: ug
 
 # Display Type
 
-Tab view will display the title of each tab item by default. It can be changed to any of the below type.
+The TabView displays the title of each tab item by default. This can be changed to any of the following types:
 
-* Text only.
-* Image only.
-* Image with text.
-* No header.
+* Text only
+* Image only
+* Image with text
+* No header
 
-![](images/Display-Type/xamarin_android_tabstyle01.png)
+![TabView Display Types](images/Display-Type/xamarin_android_tabstyle01.png)
 
-
-It can be changed by settings the `DisplayMode` property of `SfTabView`.
+The display type can be changed by setting the `DisplayMode` property of `SfTabView`.
 
 {% tabs %}
 
@@ -31,13 +30,13 @@ tabView.DisplayMode = TabDisplayMode.ImageWithText;
 
 {% endtabs %}
 
-`No header` can be used when header is not needed for the tab view control, so content space will be occupied in the entire available height.
+The `No header` option can be used when a header is not needed for the TabView control, allowing the content to occupy the entire available height.
 
 N> Image appearance in the header can be achieved through font icons.
 
 ## How to change the selection color for text and font icons?
 
-Selected index can be differentiated by setting `SelectionColor` property of `SfTabItem`.
+The selected tab can be highlighted by setting the `SelectionColor` property of `SfTabItem`.
 
 {% tabs %}
 
