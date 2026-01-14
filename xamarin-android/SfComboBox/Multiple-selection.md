@@ -2,12 +2,12 @@
 layout: post
 title: Multiple Selection in Xamarin.Android SfComboBox Control | Syncfusion®
 description: Learn here about Multiple Selection in Syncfusion® Essential® Xamarin.Android SfComboBox Control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
 ---
 
-# Multiple selection in Xamarin.Android SfComboBox
+# Multiple Selection in Xamarin.Android SfComboBox
 
 Select multiple items from a suggestion list. In the combo box, you can perform multi selection in the following two ways:
 
@@ -31,14 +31,14 @@ comboBox.IsSelectedItemsVisibleInDropDown = false;
 
 {% endtabs %}
 
-### Wrap mode of token
+### Token Wrap Modes
 
-The selected item can be displayed as token inside the combo box in two ways. They are,
+The `TokensWrapMode` property controls how tokens are arranged within the SfComboBox:
 
-* `Wrap` - When `TokensWrapMode` is set to `Wrap` ,the selected items will be wrapped to the next line of the SfComboBox.
+- **`Wrap`**: Selected items wrap to the next line when the available width is exceeded
+- **`None`**: Selected items are arranged horizontally in a single line with horizontal scrolling
 
-* `None` - When `TokensWrapMode` is set to `None`, the selected item will be wrapped in horizontal orientation.
-
+### Data Binding Example
 {% tabs %}
 
 {% highlight C# %}
@@ -105,9 +105,9 @@ comboBox.ImageMemberPath = "Image";
 
 {% endtabs %}
 
-![Xamarin.Android SfComboBox Token Representation Wrap](images/TokenRepresentationWrap.png)
+![SfComboBox with token representation and wrap mode enabled](images/TokenRepresentationWrap.png)
 
-### Token customization
+### Token Customization
 
 Token can be customized in the following ways:
 
@@ -144,9 +144,9 @@ comboBox.TokenSettings = token;
 
 {% endtabs %}
 
-![Xamarin.Android SfComboBox Token Customization](images/TokenCustomization.png)
+![SfComboBox with customized token appearance](images/TokenCustomization.png)
 
-## Delimiter
+## Delimiter Mode
 
 When selecting the multiple items, the selected items can be divided with a desired character given for delimiter. The delimiter character can be set using the `Delimiter` property.
 
@@ -161,7 +161,7 @@ comboBox.MultiSelectMode = MultiSelectMode.Delimiter;
 
 {% endtabs %}
 	
-![Xamarin.Android SfComboBox default delimiter](images/defaultdelimiter.png)
+![SfComboBox with default comma delimiter](images/defaultdelimiter.png)
 
 We can add the custom delimiter character by `Delimiter` property.
 	
@@ -175,7 +175,8 @@ comboBox.Delimiter = '#';
 
 {% endtabs %}
 	
-![Xamarin.Android SfComboBox delimiter](images/delimiter.png)
+![SfComboBox with custom hash delimiter](images/delimiter.png)
+
 
 
 

@@ -1,15 +1,15 @@
 ---
-layout : post
-title : Overview of Syncfusion® Carousel control for Xamarin.Forms
-description : Overview and key features of Carousel control
-platform : Xamarin
-control : Carousel
-documentation : ug
+layout: post
+title: Linear Arrangement in Syncfusion® Carousel control for Xamarin.Android
+description: Learn how to arrange carousel items in linear layout using ViewMode property in Xamarin.Android platform
+platform: xamarin.android
+control: SfCarousel
+documentation: ug
 ---
 
 # Linear Arrangement
 
-The Carousel items can be populated in the view in a stacked linear layout by setting the `ViewMode` property to Linear. The present option is `Default`.
+The Carousel items can be arranged in a stacked linear layout by setting the `ViewMode` property to `Linear`. The default option is `Default`, which displays items in the standard carousel arrangement.
 
 {% highlight C# %}
 
@@ -18,9 +18,7 @@ carousel.ViewMode = ViewMode.Linear;
 
 {% endhighlight %}
 
-N> It is important to include Xamarin.Android.Support.v17.Leanback library to use carousel linear mode in Android platform.
+N> It is important to include the Xamarin.Android.Support.v17.Leanback library to use the carousel linear mode on the Android platform.
 
-![](images/linear.png)
-
-
+![Linear arrangement](images/linear.png)
 

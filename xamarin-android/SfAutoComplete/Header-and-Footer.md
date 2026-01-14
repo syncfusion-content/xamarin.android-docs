@@ -1,21 +1,21 @@
 ---
-layout : post
-title: Header and Footer in Xamarin.Android SfAutoComplete Control|Syncfusion®
+layout: post
+title: Header and Footer in Syncfusion® SfAutoComplete Xamarin.Android
 description: Learn here about how to enable Header and Footer in Syncfusion® Essential® Xamarin.Android SfAutoComplete Control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfAutoComplete
 documentation: ug
 ---
 
 # Header and Footer in Xamarin.Android SfAutoComplete
 
-We can provide Header and Footer content in the SfAutoComplete by enabling `ShowDropDownHeaderView` and `ShowDropDownFooterView`. 
+You can provide header and footer content in the SfAutoComplete by enabling `ShowDropDownHeaderView` and `ShowDropDownFooterView` properties.
 
 ## Header Content
 
-We can provide Header Content at the top of the AutoComplete's Suggestion box. `DropDownHeaderView` property is used to set the content of the header. The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
+You can provide header content at the top of the AutoComplete suggestion box. The `DropDownHeaderView` property is used to set the content of the header. The height of the header in the SfAutoComplete can be adjusted using the `DropDownHeaderViewHeight` property.
 
- The following code example illustrate how to set Header content in SfAutoComplete.
+The following code example illustrates how to set header content in SfAutoComplete:
 
 {% tabs %}
 
@@ -25,7 +25,7 @@ countryAutoComplete.ShowDropDownHeaderView = true;
 countryAutoComplete.DropDownItemHeight = 30;
 countryAutoComplete.DropDownTextSize = 16;
 
-// set the Height for the HeaderView
+// Set the height for the HeaderView
 countryAutoComplete.DropDownHeaderViewHeight = 50;
 
 
@@ -46,9 +46,9 @@ countryAutoComplete.DropDownHeaderView = textView;
 
 ## Footer Content
 
-We can provide Footer Content at the bottom of the AutoComplete's Suggestion box. `DropDownFooterView` property is used to set the content of the footer. The height of the Footer in the SfAutoComplete can be adjusted by the property `DropDownFooterViewHeight`.
+You can provide footer content at the bottom of the AutoComplete suggestion box. The `DropDownFooterView` property is used to set the content of the footer. The height of the footer in the SfAutoComplete can be adjusted using the `DropDownFooterViewHeight` property.
 
-The following code example illustrate how to set Footer content in SfAutoComplete.
+The following code example illustrates how to set footer content in SfAutoComplete:
 
 {% tabs %}
 
@@ -58,7 +58,7 @@ countryAutoComplete.ShowDropDownHeaderView = true;
 countryAutoComplete.DropDownItemHeight = 30;
 countryAutoComplete.DropDownTextSize = 16;
 
-// set the Height for the FooterView
+// Set the height for the FooterView
 countryAutoComplete.DropDownFooterViewHeight = 50;
 
 TextView textView = new TextView(this);
@@ -75,7 +75,3 @@ countryAutoComplete.DropDownFooterView = textView;
 {% endtabs %}
 
 ![Xamarin.Android SfAutoComplete footer](images/Footer.png)
-
-
-
- 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Placing and dragging RadialMenu
 
-You can place the radial menu anywhere on its parent layout and drag it within the parent layout. 
+You can place the RadialMenu anywhere within its parent layout and enable dragging functionality to allow users to reposition it dynamically.
 
 ## Dragging RadialMenu
 
-You can enable or disable dragging using the [IsDragEnabled](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_IsDragEnabled) property.
+You can enable or disable dragging functionality using the [IsDragEnabled](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_IsDragEnabled) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -48,19 +48,19 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## DragEvents
+## Drag Events
 
 SfRadialMenu provides the DragBegin and DragEnd events that occur when the RadialMenu is dragged.
+SfRadialMenu provides the DragBegin and DragEnd events that occur when the RadialMenu is being dragged.
 
 ### DragBegin
 
-This event occurs when you start dragging RadialMenu with `DragBeginEventArgs`.
+This event occurs when you start dragging the RadialMenu. It provides `DragBeginEventArgs` with the following properties:
 
-* `Position`: Gets the start position of the RadialMenu.
+* **Position**: Gets the starting position of the RadialMenu.
+* **Handled**: Gets or sets a Boolean value to enable or disable the dragging operation.
 
-* `Handled`: Gets or sets the Boolean value for enabling and disabling the dragging of RadialMenu.
-
-To hook the [DragBegin](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html) event and to get the start position and restrict dragging, refer to the following code example.
+To handle the [DragBegin](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html) event and get the start position or restrict dragging, refer to the following code example:
 
 {% tabs %}
 {% highlight c# %}
@@ -103,15 +103,12 @@ namespace GettingStarted
 
 ### DragEnd
 
-This event occurs when dragging ends in RadialMenu with `DragEndEventArgs`.
+This event occurs when the dragging operation ends. It provides `DragEndEventArgs` with the following properties:
+* **OldValue**: Gets the starting position of the RadialMenu.
+* **NewValue**: Gets the ending position of the RadialMenu.
+* **Handled**: Gets or sets a Boolean value to restrict the RadialMenu from moving to the new position.
 
-* `OldValue`: Gets the start position of the RadialMenu.
-
-* `NewValue`: Gets the end position of the RadialMenu.
-
-* `Handled`: Gets or sets the Boolean value for restricting the RadialMenu from moving to another position.
-
-To hook the [DragEnd](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html) event, to get the start and end positions, and to restrict the movement of RadialMenu, refer to the following code example.
+To handle the [DragEnd](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html) event and get the start and end positions or restrict the movement, refer to the following code example:
 
 {% tabs %}
 {% highlight c# %}
@@ -154,13 +151,12 @@ namespace GettingStarted
 
 ## Placement of RadialMenu
 
-You can place the SfRadialMenu based on its CenterButton axis by providing the [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_CenterButtonPlacement) enum property with TopLeft and Center positions.
+You can configure the placement of the SfRadialMenu based on its center button axis using the [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_CenterButtonPlacement) property with the following options:
 
-`TopLeft`: Places the origin (0,0) of SfRadialMenu at the top-left corner.
+* **TopLeft**: Places the origin (0,0) of the SfRadialMenu at the top-left corner.
+* **Center**: Places the origin (0,0) of the SfRadialMenu at the center.
 
-`Center`: Places the origin (0,0) of SfRadialMenu at the center.
-
-N> The default value of the [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_CenterButtonPlacement) property is center.
+N> The default value of the [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_CenterButtonPlacement) property is Center.
 
 {% tabs %}
 {% highlight c# %}
@@ -198,9 +194,9 @@ namespace GettingStarted
 
 ![Image for placement](images/CenterButtonPlacement.png)
 
-## Placing RadialMenu
+## Positioning RadialMenu
 
-You can place the radial menu anywhere on its parent layout using the [Point](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_Point) property. The position of Radial Menu is calculated based on the center point of parent layout.
+You can position the RadialMenu at a specific location within its parent layout using the [Point](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android.SfRadialMenu.html#Syncfusion_SfRadialMenu_Android_SfRadialMenu_Point) property. The position is calculated based on the coordinate system of the parent layout.
 
 {% tabs %}
 {% highlight c# %}
