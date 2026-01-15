@@ -1,26 +1,25 @@
 ---
 layout: post
-title: Mask Types of SfMaskedEdit control for Xamarin.Android platform
-description: Learn the different types of mask characters available in SfMaskedEdit control to restrict the user input
-platform: Xamarin.Android
+title: Mask Types of Syncfusion® SfMaskedEdit for Xamarin.Android
+description: Learn about the different types of mask characters available in the SfMaskedEdit control to restrict user input.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
-keywords: mask, SfMaskedEdit, maskededit
-
+keywords: mask, SfMaskedEdit, maskededit, mask types, text mask, regex mask
 ---
 
 
 # MaskType
-Each MaskType has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as:
+Each `MaskType` has a different set of mask characters that are combined to form a mask expression. Based on complexity and usage, mask types are classified as:
 
 * Text
 * RegEx
 
 ## Text
 
-The expressions that are generated with letters, digits, and special characters come under this group. This is mainly used for fixed length inputs. For example: phone number, zip code, and so on.
+Expressions that are generated with letters, digits, and special characters come under this group. This is mainly used for fixed-length inputs such as phone numbers, zip codes, and similar data.
 
-### Text Mask characters
+### Text Mask Characters
 
 <table>
 <tr>
@@ -121,18 +120,18 @@ maskedEdit.Mask = "+1(000)000000";
 {% endhighlight %}
 {% endtabs %}
 
-This mask expression allows only numeric inputs in the places of 0.
+This mask expression allows only numeric inputs in the places of `0`.
 
-## Regex
+## RegEx
 
-The expressions that are generated with regular expressions come under this group, preferable for variable length inputs and input in range. For example: hexadecimal values [0-9A-C].
-The regular expressions provide significant advantages when creating masks as compared with other mask modes. 
+Expressions that are generated with regular expressions come under this group, preferable for variable-length inputs and input ranges. For example: hexadecimal values [0-9A-F].
+Regular expressions provide significant advantages when creating masks compared to other mask modes.
 
-**Advantages**
+### Advantages
 
-* Allows you to enter the value of indeterminate length.
-* Restricts with specific pattern. Example email, password, and more.
-* Restricts you to enter specific range at specific position.
+* Allows you to enter values of indeterminate length
+* Restricts input with specific patterns (e.g., email, password, and more)
+* Restricts you to enter specific ranges at specific positions
 
 
 ### Regex Mask Characters
@@ -229,8 +228,8 @@ maskedEdit.Mask = @"+1(\d{3})\d{6}";
 {% endhighlight %}
 {% endtabs %}
 
-This mask expression '\d{3}' and '\d{6}' allows only numeric, where {n} is the count that the input should be accepted.
+This mask expression `\d{3}` and `\d{6}` allows only numeric input, where `{n}` is the count that specifies how many times the input should be accepted.
 
-![](SfMaskedEditImages/MaskType.png)
+![MaskType Example](SfMaskedEditImages/MaskType.png)
 
 You can find the complete mask type sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_MaskType.zip).

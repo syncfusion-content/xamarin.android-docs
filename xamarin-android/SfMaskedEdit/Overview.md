@@ -1,14 +1,17 @@
 ---
-platform: Xamarin.Android
+layout: post
+title: Overview of Syncfusion® SfMaskedEdit Control for Xamarin.Android
+description: Overview of the SfMaskedEdit control features and capabilities for input masking in Xamarin.Android applications.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug
-keywords: mask, SfMaskedEdit, maskededit
+keywords: mask, SfMaskedEdit, maskededit, overview, masked input, input validation
 ---
 
 # Overview
-The Masked text box is an advanced version of the EditText control that restricts your input to certain types of characters, text, and numbers using a mask pattern. This control is used to create a template for providing information such as telephone numbers, IP addresses, product IDs, and so on.
+The `SfMaskedEdit` control is an advanced version of the `EditText` control that restricts user input to certain types of characters, text, and numbers using a mask pattern. This control is used to create templates for providing structured information such as telephone numbers, IP addresses, product IDs, and similar data formats.
 
-![](SfMaskedEditImages/OverView_img1.jpeg)
+![SfMaskedEdit Overview](SfMaskedEditImages/OverView_img1.jpeg)
 
 ## Key features
 * The input can be masked with a fixed or variable length by setting the `MaskType` to `Text` or `RegEx`, respectively.
@@ -19,4 +22,5 @@ The Masked text box is an advanced version of the EditText control that restrict
 * Clipboard operations can be used with or without literal and prompt characters.
 * Watermark text can be used to display an instruction or important information.
 * The UI of the masked text box is completely customizable.
+
 

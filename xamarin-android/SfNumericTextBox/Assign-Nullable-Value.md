@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Various features in Syncfusion® NumericTextBox control for Xamarin.Android
-description: Learn how to decide maximum decimal digits to be displayed and nullable value support in NumericTextBox.
-platform: Xamarin.Android
+title: Syncfusion® NumericTextBox Nullable Value Support
+description: Learn how to assign nullable values and set hint text in NumericTextBox control for Xamarin.Android.
+platform: xamarin.android
 control: NumericTextBox
 documentation: ug
 ---
 # Assign Nullable Value
 
-The null values can be set in SfNumericTextBox `Value` property, by setting `AllowNull` property value to true.
+Null values can be set in the SfNumericTextBox `Value` property by setting the `AllowNull` property value to `true`.
 
-N> By default, the property value is false.
+N> By default, the property value is `false`.
 
 {% tabs %}
 
@@ -22,11 +22,10 @@ N> By default, the property value is false.
 
 {% endtabs %}
 
-![](images/AllowNull.png)
-
+![NumericTextBox with AllowNull enabled](images/AllowNull.png)
 ## Set Hint Text
 
-The `WaterMark` property can be used to provide a hint that helps the user to get started with their input. The watermark text is visible when the value is empty or null.
+The `WaterMark` property can be used to provide a hint that helps the user get started with their input. The watermark text is visible when the value is empty or null.
 
 {% tabs %}
 
@@ -38,5 +37,4 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% endtabs %}
 
-![](images/WaterMark.png)
-
+![NumericTextBox with Watermark](images/WaterMark.png)

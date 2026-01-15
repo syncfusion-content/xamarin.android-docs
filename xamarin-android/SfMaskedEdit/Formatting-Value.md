@@ -1,39 +1,40 @@
 ---
 layout: post
-title: Formatting value of Value property of SfMaskedEdit control for Xamarin.Android platform
-description: Learn how to format the characters in the Value property of SfMaskedEdit control
-platform: Xamarin.Android
+title: Formatting Syncfusion® SfMaskedEdit Value Property for Xamarin.Android
+description: Learn how to format the characters in the Value property of the Syncfusion® SfMaskedEdit control for Xamarin.Android.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
-keywords: mask, SfMaskedEdit, maskededit
+keywords: mask, SfMaskedEdit, maskededit, value formatting, mask format
 
 ---
 
 
 # Formatting Value
 
-SfMaskedEdit allows you to format the characters in the `Value` property in a mask scenario (when the Mask property is set). By default, the Value property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the Value property to hold the characters without prompt and literals by setting the ValueMaskFormat property of the control. The Value in the SfMaskedEdit is formatted by any one of the following formatting enum values:
+The `SfMaskedEdit` control allows you to format the characters in the `Value` property in mask scenarios (when the `Mask` property is set). By default, the `Value` property holds your input characters, prompt characters, and the literals defined in the mask. You can modify this behavior and control whether the `Value` property holds characters with or without prompt characters and literals by setting the `ValueMaskFormat` property of the control.
 
-* ExcludePromptAndLiterals
-* IncludePrompt
-* IncludeLiterals
-* IncludePromptAndLiterals
+The `Value` in the `SfMaskedEdit` control can be formatted using any of the following `MaskFormat` enumeration values:
+* `ExcludePromptAndLiterals`
+* `IncludePrompt`
+* `IncludeLiterals`
+* `IncludePromptAndLiterals`
 
 ## ExcludePromptAndLiterals
 
-Value contains only the typed characters, the prompt characters and literals are excluded.
+The `Value` contains only the typed characters. Prompt characters and literals are excluded.
 
 ## IncludePrompt
 
-Value contains the typed characters and prompt characters, literals are excluded.
+The `Value` contains the typed characters and prompt characters. Literals are excluded.
 
 ## IncludeLiterals
 
-Value contains the typed characters and literals, prompt characters are excluded.
+The `Value` contains the typed characters and literals. Prompt characters are excluded.
 
 ## IncludePromptAndLiterals
 
-Value contains typed characters, prompt characters, and literals.
+The `Value` contains typed characters, prompt characters, and literals.
 
 {% tabs %}
 {% highlight c# %}
@@ -104,8 +105,8 @@ private void MaskedEdit4_ValueChanged(object sender, Syncfusion.XForms.MaskedEdi
 {% endhighlight %}
 {% endtabs %}
 
-Refer this [link](Events#valuechanged-event) to know more about the ‘ValueChanged’ event of SfMaskedEdit control.
+Refer to this [link](Events#valuechanged-event) to learn more about the `ValueChanged` event of the `SfMaskedEdit` control.
 
-![](SfMaskedEditImages/FormattingValue.png)
+![Formatting Value](SfMaskedEditImages/FormattingValue.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_FormattingValue.zip).
+You can download the complete value formatting sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_FormattingValue.zip).
