@@ -1,21 +1,21 @@
 ---
 layout: post
 title: DataSource mode in Syncfusion® ComboBox control for Xamarin.Android
-description: Learn here about populating items in Syncfusion Essential® Xamarin.Android ComboBox Control, its elements, and more.
-platform: Xamarin.Android
+description: Learn how to populate items in the Syncfusion Xamarin.Android ComboBox Control with string data and business objects, including DataSource configuration and DisplayMemberPath usage.
+platform: xamarin.android
 control: SfComboBox
 documentation: ug
 ---
 
-# Populating items in Xamarin.Android ComboBox
+# Populating Items in Xamarin.Android ComboBox
 
-* The combo box control can be populated with a list of string or business objects, which assist users when typing. Users can choose an item from the filtered suggestion list.
+The SfComboBox control can be populated with a list of strings or business objects, which assist users when typing. Users can choose an item from the filtered suggestion list.
 
-* The `DataSource` property is used to populate data in the SfComboBox control. This section explains how to populate the combo box with list of string and list of employee details separately. 
+The `DataSource` property is used to populate data in the SfComboBox control. This section explains how to populate the ComboBox with a list of strings and a list of employee details separately.
 
-## Populating string data
+## Populating String Data
 
-Create an instance of the string list, and populate items as shown below.
+Create an instance of the string list and populate items as shown below.
 
 {% tabs %}
 
@@ -33,15 +33,15 @@ comboBox.ComboBoxMode= ComboBoxMode.Suggest;
 
 {% endtabs %}
 	
-![Xamarin.Android ComboBox Populating business objects](images/populatestringdata.png)
+![Xamarin.Android ComboBox populated with string data](images/populatestringdata.png)
 
-## Populating business objects
+## Populating Business Objects
  
-Apart from string data, the SfComboBox can deal with business object data also. Now, create Model and ViewModel classes to populate the combo box with employee details.
+Apart from string data, the SfComboBox can also work with business object data. The following example demonstrates how to create Model and ViewModel classes to populate the ComboBox with employee details.
 
-### Create and initialize business models
+### Create and Initialize Business Models
 
-Define a simple model class “Employee” with fields ID, and name. Then, populate employee data in ViewModel. 
+Define a simple model class "Employee" with fields ID and Name. Then, populate employee data in the ViewModel.
 
 {% tabs %}
 
@@ -101,17 +101,17 @@ employeeCollection.Add(new Employee() { ID = 9, Name = "Howard" });
 
 ### Setting DisplayMemberPath
 
-The control is populated with list of employees. But, the Employee model contains two properties: ID and Name. So, you should intimate by which property it should filter suggestions. The `DisplayMemberPath` property specifies the property path with which filtering is done on business objects.In this case, make the control to provide suggestions based on Name.
+The control is populated with a list of employees. However, the Employee model contains two properties: ID and Name. You need to specify which property should be used for filtering suggestions. The `DisplayMemberPath` property specifies the property path used for filtering on business objects. In this case, configure the control to provide suggestions based on the Name property.
 
 {% tabs %}
 
 {% highlight C# %}
-//To display the Name, set the DisplayMemberPath
+// To display the Name, set the DisplayMemberPath
 comboBox.DisplayMemberPath = "Name";
-//Add the data source
+// Add the data source
 comboBox.DataSource = new EmployeeViewModel().EmployeeCollection; 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Xamarin.Android ComboBox populate business](images/populatebusiness.png)
+![Xamarin.Android ComboBox populated with business objects](images/populatebusiness.png)
