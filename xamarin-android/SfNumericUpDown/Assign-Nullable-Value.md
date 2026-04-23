@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Various Features in Syncfusion® NumericUpDown control for Xamarin.Android
-description: Learn how to decide maximum decimal digits to be displayed, nullable value support, autoreverse, setting range and configuring step value in NumericUpDown
-platform: Xamarin.Android
+title: Assign Nullable Value in Syncfusion® NumericUpDown for Xamarin.Android
+description: Learn how to assign nullable values and configure watermark text in the SfNumericUpDown control for Xamarin.Android.
+platform: xamarin.android
 control: NumericUpDown
 documentation: ug
+keywords: NumericUpDown, nullable value, watermark, hint text, AllowNull
 ---
 # Assign Nullable Value
 
-The null values can be set in SfNumericUpDown `Value` property, by setting `AllowNull` property value to true.
+The `SfNumericUpDown` control supports nullable values, allowing you to set null values in the `Value` property by setting the `AllowNull` property to `true`.
+N> By default, the `AllowNull` property value is `false`.
 
 N> By default, the property value is false.
 
@@ -22,11 +24,11 @@ N> By default, the property value is false.
 
 {% endtabs %}
 
-![](images/allownull.png)
+![Nullable Value Support](images/allownull.png)
 
 ## Set Hint Text
 
-The `WaterMark` property can be used to provide a hint that helps the user to get started with their input. The watermark text is visible when value is empty or null.
+The `Watermark` property can be used to provide a hint that helps users get started with their input. The watermark text is visible when the value is empty or null.
 
 {% tabs %}
 
@@ -38,4 +40,4 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% endtabs %}
 
-![](images/watermark.png)
+![Watermark Text](images/watermark.png)
