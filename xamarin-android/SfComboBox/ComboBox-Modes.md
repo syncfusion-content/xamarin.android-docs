@@ -1,20 +1,18 @@
 ---
-layout : post
-title : ComboBox modes for Syncfusion® ComboBox control in Xamarin.Android
-description : Learn how to change the ComboBox modes in SfComboBox
-platform : Xamarin.Android
-control : SfComboBox
-documentation : ug
+layout: post
+title: ComboBox Modes in Syncfusion® SfComboBox for Xamarin.Android
+description: Learn how to configure and use different ComboBox modes in the Syncfusion SfComboBox control for Xamarin.Android applications
+platform: xamarin.android
+control: SfComboBox
+documentation: ug
 ---
 
-# ComboBox modes
+# ComboBox Modes
 
-The SfComboBox supports both editable and non-editable text boxes to choose selected items in given data source. Users can select an item from the suggestion list. 
+The Syncfusion SfComboBox control supports both editable and non-editable modes, providing flexibility in how users interact with the control. In both modes, users can select items from a dropdown list populated with data from a given data source.
+## Editable ComboBox
 
-## Editable combo box
-
-In editable mode, the combo box allows users to edit in the text box that shows the suggestion in drop-down list based on the input.
-
+In editable mode, the ComboBox allows users to type directly into the text input field. As users type, the control displays filtered suggestions in a dropdown list based on their input. This mode is ideal when you want to provide both selection and custom input capabilities.
 {% tabs %}
 
 {% highlight C# %}	
@@ -23,12 +21,11 @@ comboBox.IsEditableMode = true;
 
 {% endtabs %}
 
-![](images/editable.png)
+![Editable ComboBox](images/editable.png)
 	
-## Non-editable combo box
+## Non-editable ComboBox
 
-Non-editable mode is used to prevent users from typing and allows them select from the drop-down list.
-
+Non-editable mode restricts user input to selection only, preventing users from typing in the text field. Users can only choose from the predefined items in the dropdown list. This mode is suitable when you want to limit user choices to specific options and prevent custom input.
 {% tabs %}
 
 {% highlight C# %}
@@ -37,5 +34,6 @@ comboBox.IsEditableMode = false;
 
 {% endtabs %}
 
-![](images/noneditable.png)
+![Non-editable ComboBox](images/noneditable.png)
  
+

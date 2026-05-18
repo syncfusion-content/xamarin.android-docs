@@ -1,20 +1,20 @@
 ---
-layout : post
-title : MinimumPrefixCharacters for Syncfusion® AutoComplete Control in Xamarin.Android
-description : Learn how to set the MinimumPrefixCharacter in SfAutoComplete 
-platform : Xamarin.Android
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Syncfusion® AutoComplete MinimumPrefixCharacters Android
+description: Learn how to set MinimumPrefixCharacter property in SfAutoComplete to define minimum characters needed for suggestion dropdown display.
+platform: xamarin.android
+control: SfAutoComplete
+documentation: ug
 ---
 
 
 # Customizing the Suggestion DropDown
 
-The suggestion list displaying behavior can be customized based on the entered text and delays in displaying the items.
+The suggestion list display behavior can be customized based on the entered text and delays in displaying the items.
 
-## Set Minimum Prefix Character
+## Set Minimum Prefix Characters
 
-Instead of displaying suggestion list on every text entry, the most possible match can be filtered and displayed after few text entries. This can be done by modifying `MinimumPrefixCharacters`.
+Instead of displaying the suggestion list on every text entry, you can filter and display the most relevant matches after a few text entries. This can be achieved by modifying the `MinimumPrefixCharacters` property.
 
 N> The default property value is 1.
 
@@ -32,9 +32,9 @@ countryAutoComplete.MinimumPrefixCharacters = 4;
 
 ## Set PopUp Delay
 
-We can delay the time taken to display the dropdown with suggestion list by using the `PopUpDelay` property in SfAutoComplete .
+You can delay the time taken to display the dropdown with the suggestion list by using the `PopUpDelay` property in SfAutoComplete.
 
-N> The default value is 0. The property value is maintained in milliseconds.
+N> The default value is 0. The property value is specified in milliseconds.
 
 {% tabs %}
 
@@ -46,9 +46,9 @@ countryAutoComplete.PopUpDelay = 100;
 
 {% endtabs %}
 
-## Set Maximum Height to the DropDown
+## Set Maximum Height for the DropDown
 
-The height of the drop-down portion of the SfAutocomplete control can be varied using `MaximumDropDownHeight` property. 
+The height of the dropdown portion of the SfAutoComplete control can be customized using the `MaximumDropDownHeight` property.
 
 N> The `MaximumDropDownHeight` value can be any positive integer value.	
 
@@ -64,9 +64,9 @@ countryAutoComplete.MaximumDropDownHeight = 200;
 	
 ![Maximum drop down height](images/maximumdropdownheight.png)
 
-## Set border color to the DropDown
+## Set Border Color for the DropDown
 
-The DropDownBorderColor property is used to change the border color of DropDown. The following code example demonstrates how to change the border color of DropDown.
+The `DropDownBorderColor` property is used to change the border color of the dropdown. The following code example demonstrates how to change the border color of the dropdown.
 
 {% tabs %}
 

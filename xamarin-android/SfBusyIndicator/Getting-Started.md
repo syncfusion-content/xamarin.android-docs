@@ -1,31 +1,31 @@
 ---
 layout: post
-title: Getting Started with Xamarin.Android BusyIndicator Control| Syncfusion®
+title: Getting Started with Syncfusion® BusyIndicator for Android
 description: Learn here about Getting Started with Syncfusion® Essential® Xamarin.Android BusyIndicator Control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfBusyIndicator
 documentation: ug
 ---
 
 # Getting Started with Xamarin.Android BusyIndicator
 
-This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
+This section explains the steps to configure a SfBusyIndicator control in a real-time scenario and provides a walk-through of some customization features available in the SfBusyIndicator control.
                                                  
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
-After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders:
 
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
-Add the following assembly references to the Android project,
+Add the following assembly reference to the Android project:
 
 android\Syncfusion.SfBusyIndicator.Android.dll
 
 ## Add SfBusyIndicator
 
-The following steps helps to add a SfBusyIndicator control through code.
+The following steps help you add a SfBusyIndicator control through code.
 
-* Adding namespace for the added assemblies. 
+* Add the namespace for the added assemblies.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ using Com.Syncfusion.SfBusyIndicator;
 
 {% endtabs %}
 
-* Now add the SfBusyIndicator control with a required optimal name by using the included namespace.
+* Now add the SfBusyIndicator control with the required optimal name using the included namespace.
 
 {% tabs %}
 
@@ -52,9 +52,9 @@ SetContentView(busyIndicator);
 
 ## Setting Animation Type
 
-SfBusyIndicator provides 10 predefined animation types like Ball, Battery, Globe and so on. User can select any one of the animation types using AnimationType property.
+SfBusyIndicator provides 10 predefined animation types such as Ball, Battery, Globe, and more. You can select any one of the animation types using the `AnimationType` property.
 
-Following example depicts the battery type animation for SfBusyIndicator.
+The following example demonstrates the battery type animation for SfBusyIndicator:
 
 {% tabs %}
 
@@ -67,9 +67,9 @@ busyIndicator.AnimationType = AnimationTypes.Battery;
 
 {% endtabs %}
 
-## Configure the Properties in SfBusyIndicator
+## Configure Properties in SfBusyIndicator
 
-User can customize the height, width and TextColor properties in SfBusyIndicator as follows.
+You can customize the height, width, and text color properties in SfBusyIndicator as follows:
 
 {% tabs %}
 

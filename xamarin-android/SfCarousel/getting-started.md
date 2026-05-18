@@ -1,23 +1,23 @@
 ---
-layout : post
-title : Getting Started with Syncfusion® Carousel Control for Xamarin.Android
-description : A quick tour to initial users on Syncfusion® carousel control for Xamarin.Android platform.
-platform : Xamarin.Android
-control : SfCarousel
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion® Carousel Control for Xamarin.Android
+description: A quick tour to initial users on Syncfusion® carousel control for Xamarin.Android platform and setup
+platform: xamarin.android
+control: SfCarousel
+documentation: ug
 ---
 
 # Getting Started
 
-This section explains you the steps to configure a SfCarousel control in a real-time scenario and also provides a walk-through on some of the customization features available in SfCarousel control.
+This section explains the steps to configure a SfCarousel control in a real-time scenario and provides a walk-through of some customization features available in the SfCarousel control.
 
 ## Referencing Essential Studio<sup>®</sup> components in your solution
 
-After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders:
 
 {Syncfusion Installed location}\Essential Studio\15.x.x.x\lib
 
-Add the following assembly references to the Android project,
+Add the following assembly references to the Android project:
 
 android\Syncfusion.SfCarousel.Android.dll
 
@@ -27,7 +27,7 @@ Xamarin.Android.Support.v17.Leanback library (from NuGet Packages)
 
 ## Add SfCarousel
 
-The SfCarousel control is configured entirely in C# code. The following steps explain on how to create a SfCarousel and configure its elements,
+The SfCarousel control is configured entirely in C# code. The following steps explain how to create a SfCarousel and configure its elements:
 
 * Adding namespace for the added assemblies. 
 
@@ -37,7 +37,7 @@ using Com.Syncfusion.Carousel;
 
 {% endhighlight %}
 
-* Now add the SfCarousel control with a required optimal name by using the included namespace.
+* Now add the SfCarousel control with a required optimal name using the included namespace.
 
 {% highlight C# %}
 
@@ -48,7 +48,7 @@ SetContentView(carousel);
 
 ## Set Gap between Items
 
-SfCarousel provides option to set the distance between the items in the panel. This can be done by using the `Offset` property in SfCarousel control.
+SfCarousel provides an option to set the distance between items in the panel. This can be accomplished using the `Offset` property in the SfCarousel control.
 
 {% highlight C# %}
 
@@ -57,9 +57,9 @@ carousel.Offset=20;
 
 {% endhighlight %}
 
-## Tilt Non Selected Items
+## Tilt Non-Selected Items
 
-Items in the SfCarousel control can be rotated in user defined angle. `RotationAngle` property is used to decide the angle in which items should be rotated.
+Items in the SfCarousel control can be rotated at a user-defined angle. The `RotationAngle` property is used to specify the angle at which items should be rotated.
 
 {% highlight C# %}
 
@@ -70,7 +70,7 @@ carousel.RotationAngle = 45;
 
 ## Setting DataSource
 
-SfCarousel items can be populated with a collection of image data. For example, a user may want to create a SfCarousel control which will display a list of images.
+SfCarousel items can be populated with a collection of image data. For example, you may want to create a SfCarousel control that displays a list of images.
 
 {% highlight c# %}
 
@@ -88,10 +88,9 @@ carousel.DataSource = tempCollection;
 
 {% endhighlight %}
 
+### Setting the height and width of carousel items
 
-### Setting the height and width of carousel's Item
-
-`ItemHeight` and `ItemWidth` properties are used to change the height and width of carouselItem in carousel panel.
+The `ItemHeight` and `ItemWidth` properties are used to change the height and width of carousel items in the carousel panel.
 
 {% highlight C# %}
 
@@ -103,7 +102,7 @@ sfCarousel.ItemHeight=170;
 
 ## SelectedIndex
 
-We can bring particular item to the center of the screen using `SelectedIndex` property in SfCarousel control.
+You can bring a particular item to the center of the screen using the `SelectedIndex` property in the SfCarousel control.
 
 N> The `SelectedIndex` property will be 0 by default.
 
@@ -114,6 +113,6 @@ carousel.SelectedIndex=2;
 
 {% endhighlight %}
 
-![](images/carousel.png)
+![Carousel](images/carousel.png)
 
 You can find the complete getting started sample from this [Link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSampleCarousel39791457)

@@ -1,20 +1,18 @@
 ---
-layout : post
-title : UI Customization for Syncfusion® ComboBox Control in Xamarin.Android
-description : Learn how to use customization in SfComboBox 
-platform : Xamarin.Android
-control : SfComboBox
-documentation : ug
+layout: post
+title: UI Customization for Syncfusion® SfComboBox in Xamarin.Android
+description: Learn how to customize the appearance and styling of the Syncfusion SfComboBox control, including entry field, dropdown, buttons, and watermark customization
+platform: xamarin.android
+control: SfComboBox
+documentation: ug
 ---
 
-# UI customization
+# UI Customization
 
-The combo box control provides user-friendly customizing options for both entry part and drop-down part.  This section explains how to customize the entire combo box control.
+The Syncfusion SfComboBox control provides comprehensive customization options for both the entry field and dropdown components. This section demonstrates how to customize the visual appearance of the entire ComboBox control to match your application's design requirements.
+## Customizing the Entry Field
 
-## Customizing the entry
-
-The `TextColor`, `TextSize`, `FontAttributes`, `FontFamily` and `BorderColor` properties are used to customize the foreground color, font size, font attribute, font family, and border color of the entry part.
-
+The entry field appearance can be customized using properties such as `TextColor`, `TextSize`, `FontTypeface`, and `BorderColor` to modify the text color, font size, font style, and border color respectively.
 {% tabs %}
 
 {% highlight C# %}
@@ -36,13 +34,13 @@ SetContentView(linearLayout);
 
 {% endtabs %}
 	
-![Customizing entry](images/customizingentry.png)
+![Customized entry field appearance](images/customizingentry.png)
 
-## Customizing the suggestion box
+## Customizing the Dropdown
 
-### Changing suggestion item height
+### Changing Dropdown Item Height
 
-The `DropDownItemHeight` property is used to modify the height of suggestion items in the drop-down list. The following code example shows this:
+The `DropDownItemHeight` property allows you to modify the height of individual items in the dropdown list, providing better visual spacing and improved readability.
 
 {% tabs %}
 
@@ -59,12 +57,11 @@ comboBox.DropDownItemHeight = 70;
 
 {% endtabs %}
 
-![Suggestion item height](images/suggestionitemheight.png)
+![Custom dropdown item height](images/suggestionitemheight.png)
 
-### Changing the border color of suggestion box
+### Changing the Dropdown Border Color
 
-The DropDownBorderColor property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
-
+The `DropDownBorderColor` property customizes the border color of the dropdown container, allowing you to match your application's color scheme.
 {% tabs %}
 
 {% highlight C# %}
@@ -185,6 +182,7 @@ comboBox.WatermarkColor= Color.ParseColor("#1976d2");
 {% endtabs %}
 	
 ![Watermark color](images/watermarkcolor.png)
+
 
 
 

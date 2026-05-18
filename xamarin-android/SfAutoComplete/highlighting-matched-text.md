@@ -1,13 +1,13 @@
 ---
-layout : post
-title: MatchHighlighting text in Syncfusion® SfAutoComplete control.
-description: Learn on how to highlight the matched text in SfAutoComplete for Xamarin.Android and also understood the highlight the matching characters in suggestion list
-platform : Xamarin.Android
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Highlighting Matched Text in Syncfusion® SfAutoComplete Control
+description: Learn how to highlight matched text in SfAutoComplete for Xamarin.Android and understand how to highlight matching characters in the suggestion list
+platform: xamarin.android
+control: SfAutoComplete
+documentation: ug
 ---
 
-# Highlighting matched text
+# Highlighting Matched Text
 
 Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 
@@ -16,15 +16,14 @@ Highlight matching characters in a suggestion list to pick an item with more cla
 
 * Multiple Occurrence
 
-The text highlight can be indicated with various customizing styles by enabling the below properties. They are
+Text highlighting can be customized with various styles using the following properties:
 
-* HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
-
-* HighlightedTextFontTypeFace - sets the FontAttributes of the highlighted text.
+* `HighlightedTextColor` - Sets the color of the highlighted text for differentiating the highlighted characters.
+* `HighlightedTextFontTypeFace` - Sets the font attributes of the highlighted text.
 
 ## First Occurrence
 
-It highlights the first position of the matching characters in the suggestion list.
+This mode highlights the first position of the matching characters in the suggestion list.
 
 {% tabs %}
 
@@ -39,14 +38,12 @@ countryAutoComplete.HighlightedTextFontTypeFace = TypefaceStyle.Bold;
 
 {% endtabs %}
 
-N> The default Color of HighlightedTextColor is Red.
-   The default FontAttribute of HighlightedTextFontTypeFace is None.
-	
+N> The default color of `HighlightedTextColor` is Red. The default font attribute of `HighlightedTextFontTypeFace` is None.
 ![First Occurrence AutoComplete Image](images/FirstOccurrence.png)
 
 ## Multiple Occurrence
 
-It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
+This mode highlights the matching characters that are present everywhere in the suggestion list for Contains case in SuggestionMode.
 
 {% tabs %}
 
@@ -62,6 +59,7 @@ countryNameAutoComplete.HighlightedTextFontTypeFace = TypefaceStyle.Bold;
 {% endtabs %}
 	
 ![Multiple Occurrence AutoComplete Image](images/MultipleOccurrence.png)
+
 
 
 

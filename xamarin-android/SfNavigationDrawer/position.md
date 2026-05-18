@@ -1,15 +1,14 @@
 ---
 layout: post
 title: Position of Drawer in Syncfusion® NavigationDrawer control for Xamarin.Android
-description: Learn how to set position of the DrawerView panel.
+description: Learn how to configure the position of the DrawerView panel and understand the best practices for different drawer positions.
 platform: Xamarin.Android
 control: NavigationDrawer
 documentation: ug
 ---
-# Configuring The Drawer In Different Sides
+# Configuring Drawer Position
 
-The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options,
-
+The `Position` property determines from which edge of the screen the drawer panel will slide. This property provides flexibility in designing your navigation interface to match your application's layout and user experience requirements. The `Position` property supports four distinct options:
 * Left
 
 * Right
@@ -35,7 +34,7 @@ Sets the SfNavigationDrawer sliding position to the left.
 
 {% endtabs %}
 
-![](images/Left.png)
+![NavigationDrawer positioned on the left side](images/Left.png)
 
 ## Right
 
@@ -52,7 +51,7 @@ Sets the SfNavigationDrawer sliding position to the right.
 
 {% endtabs %}
 
-![](images/Right.png)
+![NavigationDrawer positioned on the right side](images/Right.png)
 	
 ## Top
 
@@ -69,7 +68,7 @@ Sets the SfNavigationDrawer sliding position to the top.
 
 {% endtabs %}
 
-![](images/Top.png)
+![NavigationDrawer positioned at the top](images/Top.png)
 
 ## Bottom
 
@@ -83,6 +82,7 @@ Sets the SfNavigationDrawer sliding position to the bottom.
 {% endhighlight %}
 
 ![](images/bottom.png)
+
 
 
 

@@ -1,15 +1,14 @@
 ---
 layout: post
 title: Transition of drawer in Syncfusion® NavigationDrawer control for Xamarin.Android
-description: Learn how to set Transition of the DrawerView panel.
+description: Learn how to configure transition animations for the DrawerView panel, including SlideOnTop, Push, and Reveal effects with best practices and performance considerations.
 platform: Xamarin.Android
 control: NavigationDrawer
 documentation: ug
 ---
 # Drawer Opening Animation
 
-The `Transition` property specifies the sliding animations for the DrawerView panel. The `Transition` property has the following three options,
-
+The `Transition` property controls the animation behavior when the drawer opens and closes, providing different visual effects that can enhance your application's user experience. The property offers three distinct animation types, each creating a unique interaction pattern:
 * SlideOnTop
 * Push
 * Reveal
