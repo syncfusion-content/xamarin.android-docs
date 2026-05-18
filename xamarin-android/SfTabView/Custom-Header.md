@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Custom Header
-description: Custom Header in Syncfusion® TabView control for Xamarin.Android platform
+title: Custom Header
+description: Learn how to create and customize header content in Syncfusion® TabView control for Xamarin.Android platform
 platform: Xamarin.Android
 control: TabView
 documentation: ug
@@ -42,4 +42,5 @@ tabView.SelectedIndex = 0;
 }
 			
 {% endhighlight %}
+
 

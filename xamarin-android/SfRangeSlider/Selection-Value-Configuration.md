@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Various features of Syncfusion® RangeSlider control for Xamarin.Android
-description: Learn how to set minimum value, maximum value, tick frequency, step frequency, enabling snaps to support and orientation for RangeSlider
-platform: Xamarin.Android
+title: Selection Value Configuration in Syncfusion® RangeSlider for Android
+description: Learn how to configure minimum value, maximum value, tick frequency, step frequency, and snapping behavior for RangeSlider
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---
 
 # Selection Value Configuration
 
-Various customization options are available to configure the selection value in SfRangeSlider.
-
+The SfRangeSlider provides various customization options to configure selection values, boundaries, and snapping behavior to create precise and user-friendly range selection interfaces.
 ## Set Minimum Value
 
 Gets or sets the minimum possible value of the range. The thumb could not move beyond that value.
@@ -39,7 +38,7 @@ Gets or sets the maximum possible value of the range. The thumb could not move a
 
 {% endtabs %}
 
-## Set Tick Frequency
+## Configure Tick Frequency
 
 The `TickFrequency` property is used to decide the number of ticks to be displayed along the track based on Minimum and Maximum values.
 
@@ -55,9 +54,9 @@ The `TickFrequency` property is used to decide the number of ticks to be display
 
 N> When the `SnapsTo` property is set to `Ticks`, the `TickFrequency` is used to specify the interval between snap points.
 
-## Set Interval between Snap Points.
+## Set Step Frequency
 
-The `StepFrequency` property is used to specify the interval between snap points.
+The `StepFrequency` property specifies the interval between step values, providing fine-grained control over value increments when snapping is enabled.
 
 {% tabs %}
 

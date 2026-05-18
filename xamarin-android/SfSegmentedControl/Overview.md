@@ -1,17 +1,17 @@
 ---
-layout : post
-title : Overview of Syncfusion® Segmented control for Xamarin.Android
-description : Overview and key features of Segmented control
-platform : xamarin.Android
-control : SfSegmentedControl
-documentation : ug
+layout: post
+title: Overview of Syncfusion® Segmented Control for Xamarin.Android
+description: Overview and key features of Segmented Control
+platform: xamarin.android
+control: SfSegmentedControl
+documentation: ug
 ---
 
 # Overview
 
-The segmented control for Xamarin.Android provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
+The Segmented Control for Xamarin.Android provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
 
-![](images/overview/Xamarin_Android_Overview.png)
+![Xamarin.Android Segmented Control Overview](images/overview/Xamarin_Android_Overview.png)
 
 ## Key Features
 
@@ -19,6 +19,6 @@ The segmented control for Xamarin.Android provides a simple way to choose from a
 
 * Supports scrolling and aligning the segments equally within the available space.
 
-* Populates the segments from a collection of strings and views along with the objects of built-in classes.
+* Populates the segments from a collection of strings and views along with objects of built-in classes.
 
 * Supports customizing the text and other UI elements.
