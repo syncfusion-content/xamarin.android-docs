@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Positioning of header 
+title: Positioning of Header
 description: Positioning of header in Syncfusion® TabView control for Xamarin.Android platform
 platform: Xamarin.Android
 control: TabView
 documentation: ug
 ---
 
-## Positioning of header
+# Positioning of Header
 
 Tab headers can be positioned either above the content or below the content, it can be done by setting TabHeaderPosition property of SfTabView.
 

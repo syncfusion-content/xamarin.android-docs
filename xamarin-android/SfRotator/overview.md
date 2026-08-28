@@ -1,17 +1,19 @@
 ---
 layout: post
 title: Overview of Syncfusion® Rotator control for Xamarin.Android 
-description: Overview and key features of Rotator control in Xamarin.Android 
-platform: Xamarin.Android 
+description: Explore the overview and key features of Syncfusion® Essential® Rotator control for Xamarin.Android mobile apps. 
+platform: xamarin.android 
 control: Rotator 
 documentation: ug
 ---
 
 # Overview
 
-The SfRotator is a data control used to display image data and navigate through them. The images can be selected either by Thumbnail or by Dots support.
+The SfRotator is a versatile UI control designed to display and navigate through collections of content in an interactive, carousel-style interface. This control enables users to browse through multiple items—such as images, custom views, or mixed content—with smooth navigation and customizable presentation options.
 
-![](images/rotator.png)
+The SfRotator provides an engaging way to showcase content while maintaining a clean and intuitive user interface. It supports various navigation modes and positioning options, making it suitable for a wide range of applications from simple image galleries to complex content presentations.
+
+![SfRotator Control](images/rotator.png)
  
 ## Key Features
 

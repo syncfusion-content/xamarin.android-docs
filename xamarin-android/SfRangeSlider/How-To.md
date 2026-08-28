@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Events in Syncfusion® RangeSlider control for Xamarin.Android
-description: Learn how to populate events in RangeSlider control
-platform: Xamarin.Android
+title: Events in Syncfusion® RangeSlider Control for Xamarin.Android
+description:  Learn how to handle events in RangeSlider control for responsive user interactions and implement custom behaviors in Xamarin.Android applications.
+platform: xamarin.android
 control: RangeSlider 
 documentation: ug
 ---
-
+# Working with RangeSlider Events
 ## How to get notifications when a thumb drag is started and completed?
 
 The `DragStarted` event is raised when a thumb is dragged. After the thumb releases the pointer capture, the `DragCompleted` event is raised. The `IsStartThumb` property of the `DragThumbEventArgs` returns a boolean value, which indicates the thumb used for performing drag operations.
@@ -37,12 +37,14 @@ The `DragStarted` event is raised when a thumb is dragged. After the thumb relea
 
 {% endhighlight %}
 
-## How to trigger ValueChanged event?
+## Value Change Events
 
-The `ValueChanged` event is triggered when `SfRangeSlider` value is changed. The argument contains the value of RangeSlider.
+### How to Handle ValueChanged Event
 
-`Value` - Used to gets or sets the value for range slider.
+The `ValueChanged` event is triggered when the SfRangeSlider value changes in single thumb mode. This event is useful for responding to value changes in real-time.
 
+**Event Arguments:**
+- `Value` - Gets the current value of the range slider
 {% highlight c# %}
 
         private void RangeSlider_ValueChanged(object sender, ValueChangedEventArgs e)
@@ -52,13 +54,13 @@ The `ValueChanged` event is triggered when `SfRangeSlider` value is changed. The
 
 {% endhighlight %}
 
-## How to trigger RangeChanged event?
+### How to Handle RangeChanged Event
 
-The `RangeChanged` event is triggered when either RangeStart or RangeEnd values are changed. The argument contains the following information.
+The `RangeChanged` event is triggered when either `RangeStart` or `RangeEnd` values change in double thumb mode. This event provides both range values simultaneously.
 
-`RangeStart` – Gets or sets the range start value of range slider.
-`RangeEnd` – Gets or sets the range end value of range slider.
-
+**Event Arguments:**
+- `RangeStart` - Gets the range start value of the range slider
+- `RangeEnd` - Gets the range end value of the range slider
 {% highlight c# %}
 
         private void RangeSlider_RangeChanged(object sender, RangeChangedEventArgs e)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Precision Mode in Xamarin.Android Rating control | Syncfusion®
-description: Learn how to change the precision mode of Syncfusion® Essential® Xamarin.Android Rating control, and more.
-platform: Xamarin.Android
+title: Precision Mode in Xamarin.Android Rating Control | Syncfusion®
+description: Learn how to configure the precision mode of Syncfusion® Essential® Xamarin.Android Rating control for different rating accuracy levels.
+platform: xamarin.android
 control: Rating
 documentation: ug
 ---
 
-# Precision Mode in Xamarin.Android Rating control
+# Precision Mode in Xamarin.Android Rating Control
 
 The precision mode defines the accuracy level of the SfRating control. It has Standard, Half and Exact options.
 
@@ -58,6 +58,7 @@ The rating item will be filled exactly based on the rating value.
 {% endtabs %}
 
 ![Exact_Images3](images/exact.jpg) 
+
 
 
 

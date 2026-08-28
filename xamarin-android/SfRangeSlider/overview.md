@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview of Syncfusion® RangeSlider control for Xamarin.Android
-description: Overview and key features of RangeSlider control in Xamarin.Android
-platform: Xamarin.Android
+title: Overview of Syncfusion® RangeSlider Control for Xamarin.Android
+description: Overview and key features of RangeSlider control in Xamarin.Android including dual thumb support, range selection, and customization options.
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---
 
 # Overview
 
-The range slider control for Xamarin.Android allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
+The RangeSlider control for Xamarin.Android allows you to select a range of values within specified minimum and maximum limits. The range can be selected by moving one or both thumbs along the track, providing an intuitive interface for range-based input scenarios such as price filtering, date ranges, or value boundaries.
 
-![](images/Overview.png)
+![RangeSlider Control Overview](images/Overview.png)
 
 ## Key features
 

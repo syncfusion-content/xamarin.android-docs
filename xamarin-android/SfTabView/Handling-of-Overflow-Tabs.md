@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Handling OverFlow Tabs
-description: Handling of Overflow tabs in Syncfusion® TabView control for Xamarin.Android platform
+title: Handling Overflow Tabs
+description: Handling of overflow tabs in Syncfusion® TabView control for Xamarin.Android platform
 platform: Xamarin.Android
 control: TabView
 documentation: ug
@@ -9,8 +9,7 @@ documentation: ug
 
 # Handling overflow tabs
 
-When having large number of tabs, by default scroller will be enabled to view the overflow of headers, in case needed, it can be selected from pop-up by setting `OverflowMode` of `SfTabView` as `DropDown`.
-
+When you have a large number of tabs in your TabView, the control needs to manage tabs that don't fit within the available header space. By default, a scroller will be enabled to view the overflow headers. If needed, you can change this behavior to display overflow tabs in a dropdown by setting the `OverflowMode` property of `SfTabView` to `DropDown`.
 {% tabs %}
 
 {% highlight C# %}
@@ -21,13 +20,14 @@ tabView.OverflowMode = OverflowMode.DropDown;
 
 {% endtabs %}
 
-By selection drop-down option for tab view control, there is a button named `“Overflow button”` (or `“More button”`) will be added to the header. When click on this button, it will display a pop-up to navigate the other indices.
+## DropDown Mode
+By selecting the dropdown option for the TabView control, a button called "Overflow button" (or "More button") will be added to the header. When you click on this button, it will display a popup to navigate to the other tab indices.
 
-N> Pop-up will display the text value only, it will show the title value of the respective tab item.
+N> The popup will display text values only. It will show the title value of the respective tab item.
 
 ## How to customize the more button?
 
-Appearance of the text can be customized through the APIs available `OverflowButtonSettings` of `SfTabView`. It has APIs to customize both text and font icons available in this button. 
+The appearance of the overflow button can be customized through the `OverflowButtonSettings` property of `SfTabView`. This property provides APIs to customize both text and font icons for the button.
 
 {% tabs %}
 
@@ -44,3 +44,4 @@ tabView.OverflowButtonSettings = overflowButtonSettings;
 {% endhighlight %}
 
 {% endtabs %}
+

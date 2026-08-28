@@ -1,36 +1,33 @@
 ---
 layout: post
-title: Ticks of Syncfusion® RangeSlider control for Xamarin.Android
-description: Learn how to set ticks in proper position for RangeSlider control in Xamarin.Android
-platform: Xamarin.Android
+title: Ticks Customization in Syncfusion® RangeSlider for Xamarin.Android
+description: Learn how to customize tick marks, their position, color, and length in RangeSlider control for Xamarin.Android
+platform: xamarin.android
 control: RangeSlider
 documentation: ug
 ---
 
-# Customizing ticks
+# Customizing Ticks
 
-Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
+Tick marks provide visual reference points along the slider track to help users make precise selections. The SfRangeSlider allows you to customize tick placement, appearance, and behavior to match your application's design requirements.
+Tick marks can be placed along the track in a uniform manner, or their position can be customized based on your specific layout needs and user experience goals.
 
-## TickPlacement
+## Tick Placement
 
-The `TickPlacement` property determines where to draw tick marks in relation to the track. Available options for this property are,
+The `TickPlacement` property determines where to draw tick marks in relation to the track. This property provides flexibility in positioning ticks to optimize visual clarity and space utilization.
 
-* BottomRight
+**Available Options:**
+- `BottomRight` - Places ticks below (horizontal) or right (vertical) of the track
+- `TopLeft` - Places ticks above (horizontal) or left (vertical) of the track
+- `Inline` - Places ticks along the track itself
+- `Outside` - Places ticks on both sides of the track
+- `None` - Hides all tick marks
 
-* Inline
+N> The default option is `Inline`.
 
-* None
+### BottomRight Placement
 
-* Outside
-
-* TopLeft
-
-N> The default option is Inline.
-
-### BottomRight
-
-Tick marks are placed either below the track in horizontal orientation or right of the track in vertical orientation.
-
+Tick marks are placed either below the track in horizontal orientation or to the right of the track in vertical orientation. This placement is ideal when you want to keep the top or left area clear for labels or other UI elements.
 {% highlight c# %}
 
 	rangeSlider.TickPlacement=TickPlacement.BottomRight;
@@ -41,7 +38,7 @@ Tick marks are placed either below the track in horizontal orientation or right 
 
 ### TopLeft
 
-Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation.
+Tick marks are placed either above the track in horizontal orientation or to the left of the track in vertical orientation. This placement works well for traditional slider designs and when bottom space is limited.
 
 {% highlight c# %}
 
@@ -53,7 +50,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 ### Inline
 
-Tick marks are placed along the track.
+Tick marks are placed directly along the track, providing a clean, integrated appearance. This is the default placement and works well for most scenarios.
 
 {% highlight c# %}
 
@@ -65,7 +62,7 @@ Tick marks are placed along the track.
 
 ### Outside
 
-Tick marks are placed on both sides of the track either in horizontal or vertical orientation.
+Tick marks are placed on both sides of the track, providing maximum visual prominence and reference points from multiple angles.
 
 {% highlight c# %}
 
@@ -73,7 +70,7 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 {% endhighlight %}
 
-![Tick marks Outline Xamarin.Android](images/Outside.png)
+![Tick marks Outside Xamarin.Android](images/Outside.png)
 
 ## Customizing tick color
 
@@ -115,3 +112,4 @@ The `TickLength` property used to customize the length of the ticks.
 	rangeSlider.TickLength = 20;
 
 {% endhighlight %}
+
