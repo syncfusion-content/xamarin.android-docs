@@ -17,13 +17,13 @@ After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the
 
 {Syncfusion Installed location}\Essential Studio\14.XXXX.X.XX\lib
 
-Add the following assembly references to the Android project.
+Add the following assembly reference to the Android project:
 
 android\Syncfusion.SfRadialMenu.Andriod.dll
 
 ## Adding SfRadialMenu
 
-* Add namespace for the added assemblies. 
+* Add the namespace for the added assemblies.
 
 {% tabs %}
 {% highlight c# %}
@@ -33,7 +33,7 @@ using Syncfusion.SfRadialMenu.Android;
 {% endhighlight %}
 {% endtabs %}
 
-* Now, instantiate and add the SfRadialMenu control with a required optimal name.
+* Now, instantiate and add the SfRadialMenu control with the required optimal name.
 
 {% tabs %}
 {% highlight c# %}		
@@ -64,7 +64,7 @@ namespace GettingStarted
 
 ## Adding RadialMenu items
 
-SfRadialMenu provides the option to add a number of radial menu items. Add an external font icon typeface into the `Asset` folder, and then set its build action to Android assets. The Unicode can be passed as text to display icons in the SfRadialMenu item.
+SfRadialMenu provides the option to add multiple radial menu items. Add an external font icon typeface into the `Assets` folder, and then set its build action to Android assets. The Unicode can be passed as text to display icons in the SfRadialMenu items.
 
 {% tabs %}
 {% highlight c# %}

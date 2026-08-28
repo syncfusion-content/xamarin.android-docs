@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Multipe Selection in Xamarin.Android SfAutoComplete | Syncfusion®
+title: Multiple Selection in Xamarin.Android SfAutoComplete | Syncfusion®
 description: Learn how to select multiple items in Syncfusion® Essential® Xamarin.Android SfAutoComplete Control, its elements, and more.
-platform: Xamarin.Android
+platform: xamarin.android
 control: SfAutoComplete
 documentation: ug
 ---
 
 # Multiple Selection in Xamarin.Android SfAutoComplete
 
-Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
+You can select multiple items from a suggestion list. There are two ways to perform multiple selection in AutoComplete:
 
 * Token Representation
 
@@ -17,15 +17,14 @@ Select multiple items from a suggestion list. There are two ways to perform mult
 
 ## Token Representation
 
-Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button.
+Selected items will be displayed with customizable token representation, and users can remove each tokenized item using the close button.
 
-### Wrap Mode of Token
+### Wrap Mode of Tokens
 
-The selected item can be displayed as token inside SfAutoComplete in two ways. They are
+Selected items can be displayed as tokens inside SfAutoComplete in two ways:
 
-* `Wrap` - When `TokensWrapMode` is set to `Wrap` the selected items will be wrap to the next line of the SfAutoComplete.
-
-* `None` - When `TokensWrapMode` is set to `None` the selected item will be wrap in horizontal orientation.
+* `Wrap` - When `TokensWrapMode` is set to `Wrap`, the selected items will wrap to the next line of the SfAutoComplete.
+* `None` - When `TokensWrapMode` is set to `None`, the selected items will be displayed in horizontal orientation.
 
 {% tabs %}
 
@@ -89,24 +88,15 @@ SetContentView(linearLayout);
 
 ### Token Customization
 
-Customization can be done for Token. There are various ways to customize the tokens. They are as follows.
-
-* `TextColor` - sets the color of the text inside the token.
-
-* `FontSize` - sets the size of the Font inside the token.
-
-* `FontFamily` - sets the Font family for the text inside the token.
-
-* `BackgroundColor` - sets the background color of the token.
-
-* `SelectedBackgroundColor` - sets the background color of the token when it is selected.
-
-* `IsCloseButtonVisible` - Enables and disables the close button inside SfAutoComplete.
-
-* `DeleteButtonColor` - sets the color of the close button inside SfAutoComplete.
-
-* `CornerRadius` - sets the corner radius for the token.
-
+Tokens can be customized in various ways. The available customization options are as follows:
+* `TextColor` - Sets the color of the text inside the token.
+* `FontSize` - Sets the size of the font inside the token.
+* `FontFamily` - Sets the font family for the text inside the token.
+* `BackgroundColor` - Sets the background color of the token.
+* `SelectedBackgroundColor` - Sets the background color of the token when it is selected.
+* `IsCloseButtonVisible` - Enables and disables the close button inside the token.
+* `DeleteButtonColor` - Sets the color of the close button inside the token.
+* `CornerRadius` - Sets the corner radius for the token.
 
 {% tabs %}
 
@@ -131,7 +121,7 @@ employeeAutoComplete.TokenSettings = token;
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
+When selecting multiple items, the selected items can be separated using a desired delimiter character. You can set the delimiter character using the `Delimiter` property.
 
 {% tabs %}
 
@@ -147,6 +137,7 @@ countryAutoComplete.Delimiter="#";
 	
 ![Xamarin.Android SfAutoComplete Delimiter](images/delimiter.png)
 	
+
 
 
 

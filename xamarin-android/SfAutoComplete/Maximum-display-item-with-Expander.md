@@ -1,15 +1,15 @@
 ---
-layout : post
-title : LoadMore in Syncfusion® SfAutoComplete control for Xamarin.Android
-description : Learn how to restrict maximum suggestion to be displayed in SfAutoComplete
-platform : Xamarin.Android
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Max Display Items with Load More Syncfusion® SfAutoComplete
+description: Learn how to restrict the maximum number of suggestions displayed in SfAutoComplete and implement load more functionality
+platform: xamarin.android
+control: SfAutoComplete
+documentation: ug
 ---
 
-# Maximum Display Item with Expander
+# Maximum Display Items with Load More
 
-Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
+You can restrict the number of suggestions displayed and load the remaining items by selecting Load More. The maximum number of suggestions to be displayed can be restricted using the `MaximumSuggestion` property. You can set the desired text for displaying the Load More text using the `LoadMoreText` property.
 
 
 {% tabs %}
@@ -23,20 +23,19 @@ countryAutoComplete.LoadMoreText="LOAD MORE";
 
 {% endtabs %}
 	
-![](images/loadmore.png)
+![Load More functionality example](images/loadmore.png)
+## Restricting Maximum Display Items Dynamically
 
-### Restricting the maximum display of item dynamically
-
-We can restrict the maximum display of items dynamically by calling `LoadMore` method. The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
+You can restrict the maximum display of items dynamically by calling the `LoadMore` method. The maximum suggestion count can be changed dynamically by calling the LoadMore method with the maximum suggestion count as an argument.
  
 {% tabs %}
 
 {% highlight c# %}
  
-// without passing arguments
+// Without passing arguments
 autoComplete.LoadMore();
  
-// with passing arguments
+// With passing arguments
 autoComplete.LoadMore(5);
  
 {% endhighlight %}

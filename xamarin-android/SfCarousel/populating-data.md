@@ -2,18 +2,18 @@
 layout: post
 title: Populating data in Syncfusion® Carousel control in Xamarin.Android
 description: Learn details about how to set the DataSource, set the customview, adapter support and selected index in Carousel for Xamarin.Android platform
-platform: Xamarin.Android
-control: Carousel
+platform: xamarin.android
+control: SfCarousel
 documentation: ug
 ---
 
 # Populating Data in Xamarin.Android Carousel (SfCarousel)
 
-`DataSource` property is used to populate the collection of SfCarouselItem which can be either the collection of Image or custom view.
+The `DataSource` property is used to populate the collection of SfCarouselItem, which can be either a collection of images or custom views.
 
 ## DataSource with collection of images
 
-SfCarousel items can be populated with a collection of image data. For example, a user may wants to create a SfCarousel control which will display a list of images.
+SfCarousel items can be populated with a collection of image data. For example, you may want to create a SfCarousel control that displays a list of images.
 
 {% highlight C# %}
 
@@ -34,9 +34,9 @@ SetContentView(carousel);
 
 {% endhighlight %}
 
-## DataSource with collection of custom view
+## DataSource with collection of custom views
 
-`ContentView` property used to populate with a collection of custom view.
+The `ContentView` property is used to populate the carousel with a collection of custom views.
 
 {% highlight C# %}
 
@@ -74,11 +74,11 @@ SetContentView(carousel);
 
 ## Adapter Support in Carousel control
 
-Instead of giving the collection of desired SfCarouselItem, we can pass the single view which connects with some kind of DataSource.
+Instead of providing a collection of SfCarouselItem objects, you can pass a single view that connects with a data source using the adapter pattern.
 
 ### Create an adapter class by inheriting CarouselAdapter
 
-By extending the `CarouselAdapter` class, we can have Adapter support in Carousel with `getItemView` method.
+By extending the `CarouselAdapter` class, you can implement adapter support in Carousel using the `GetItemView` method.
 
 {% highlight c# %}
 
@@ -108,7 +108,7 @@ public class AdapterTestingClass:CarouselAdapter
 }
 {% endhighlight %}
 
-### Way to use this adapter class into Carousel panel view
+### Using the adapter class with Carousel
 
 {% highlight C# %}
 
@@ -141,7 +141,7 @@ SetContentView(carousel);
 
 ## SelectedIndex
 
-It gets or sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen.
+The SelectedIndex property gets or sets the selected item index value of the SfCarousel control to bring a particular item to the center of the screen.
 
 N> The `SelectedIndex` property will be 0 by default.
 
@@ -152,5 +152,4 @@ carousel.SelectedIndex=2;
 
 {% endhighlight %}
 
- Load images from SD card or internal storage to carousel view sample available in this [link](https://github.com/SyncfusionExamples/how-to-load-image-from-sdcard-or-internal-storage-in-carousel-view-xamarin-android).
-
+You can find a sample for loading images from SD card or internal storage to carousel view at this [link](https://github.com/SyncfusionExamples/how-to-load-image-from-sdcard-or-internal-storage-in-carousel-view-xamarin-android).
