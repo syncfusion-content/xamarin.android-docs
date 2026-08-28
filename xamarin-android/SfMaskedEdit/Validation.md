@@ -1,21 +1,24 @@
 ---
 layout: post
-title: Input validation in Xamarin.Android SfMaskedEdit Control | Syncfusion®
-description: Learn here about Input validation in Syncfusion® Essential® Xamarin.Android SfMaskedEdit Control, its elements, and more.
-platform: Xamarin.Android
+title: Input Validation in Xamarin.Android SfMaskedEdit Control | Syncfusion®
+description: Learn about input validation in the Syncfusion® Essential® Xamarin.Android SfMaskedEdit Control, its elements, and more.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
-keywords: mask, SfMaskedEdit, maskededit
+keywords: mask, SfMaskedEdit, maskededit, validation, input validation, validation mode
 ---
 
 # Validation in Xamarin.Android SfMaskedEdit
 
+The `SfMaskedEdit` control provides input validation capabilities to ensure data integrity and user input compliance with the specified mask pattern.
+
 ## Validation Mode
 
-Input validation happens based on the value of the `ValidationMode` property. The enum values of this property are:
+Input validation occurs based on the value of the `ValidationMode` property. This property accepts the following enumeration values:
 
-* KeyPress
-* LostFocus
+* `KeyPress` - Validation is triggered on each key press
+* `LostFocus` - Validation is triggered when the control loses focus
+The default value for the validation mode is `LostFocus`.
 
 The default value for validation mode is `LostFocus`.
 
@@ -28,9 +31,9 @@ maskedEdit.ValidationMode = InputValidationMode.KeyPress;
 {% endhighlight %}
 {% endtabs %}
 
-When the ValidationMode is LostFocus, the validation takes place when the control lost its focus. For KeyPress, the validation triggers for each key press.
+When the `ValidationMode` is set to `LostFocus`, validation takes place when the control loses its focus. When set to `KeyPress`, validation is triggered for each key press event.
 
-## HasError
+## HasError Property
 
 This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else returns false. The following code example shows the usage of `HasError` property.
 
@@ -61,9 +64,8 @@ private void MaskedEdit_ValueChanged(object sender, ValueChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+Refer to this [link](Events#valuechanged-event) to learn more about the `ValueChanged` event of the `SfMaskedEdit` control.
 
-Refer this [link](Events#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
+![Xamarin.Android SfMaskedEdit Validation](SfMaskedEditImages/Validation.png)
 
-![Xamarin.Android SfMaskedEdit validation](SfMaskedEditImages/Validation.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_Validation.zip).
+You can download the complete validation sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_Validation.zip).

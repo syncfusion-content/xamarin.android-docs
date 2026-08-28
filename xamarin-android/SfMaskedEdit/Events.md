@@ -1,30 +1,29 @@
 ---
 layout: post
-title: Eevnts in SfMaskedEdit for Xamarin.Android platform
-description: Learn how to get the value changed and Mask input reject events in SfMaskedEdit
-platform: Xamarin.Android
+title: Events in Syncfusion® SfMaskedEdit for Xamarin.Android
+description: Learn how to handle value changed and mask input rejected events in Syncfusion® SfMaskedEdit control for Xamarin.Android.
+platform: xamarin.android
 control: SfMaskedEdit
 documentation: ug 
-keywords: mask, SfMaskedEdit, maskededit
-
+keywords: mask, SfMaskedEdit, maskededit, events, ValueChanged, MaskInputRejected
 ---
 
 
 # Events
 
-The SfMaskedEdit exposes the following events:
+The `SfMaskedEdit` control exposes the following events:
 
-* `ValueChanged`: Occurs when the value of `Value` property is changed.
+* `ValueChanged`: Occurs when the value of the `Value` property changes.
 * `MaskInputRejected`: Occurs when a character is rejected by the input mask.
 
-## ValueChanged event
+## ValueChanged Event
 
-Occurs when the value of the `Value` property is changed by either entering the valid input character or setting the value to the `Value` property through C# code. The event arguments are of type ValueChangedEventArgs and expose the following property:
+The `ValueChanged` event occurs when the value of the `Value` property changes, either by entering a valid input character or by setting the value programmatically through C# code. The event arguments are of type `ValueChangedEventArgs` and expose the following property:
 
-* `Value`: The read only property contains the updated value of the `Value` property of SfMaskedEdit.
+* `Value`: A read-only property that contains the updated value of the `Value` property of `SfMaskedEdit`.
 
-> Your valid input character is updated to `Value` property based on the `ValidationMode` property.
-> Refer to this [link](Validation#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
+> **Note:** Valid input characters are updated to the `Value` property based on the `ValidationMode` property setting.
+> Refer to this [link](Validation#validation-mode) to learn more about the `ValidationMode` property of the `SfMaskedEdit` control.
 
 {% tabs %}
 {% highlight c# %}
@@ -61,20 +60,20 @@ private void MaskedEdit_OnValueChanged(object sender, ValueChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/ValueChangedevent.png)
+![ValueChanged event](SfMaskedEditImages/ValueChangedevent.png)
 
-## MaskInputRejected event
+## MaskInputRejected Event
 
-Occurs when your input or assigned character does not match the corresponding format element of the input mask. The event arguments are type of MaskInputRejectedEventArgs and expose the following properties:
+The `MaskInputRejected` event occurs when an input or assigned character does not match the corresponding format element of the input mask. The event arguments are of type `MaskInputRejectedEventArgs` and expose the following properties:
 
 * `Position`: The position in the mask corresponding to the invalid input character.
-* `RejectionHint`: The enumerated value that describes why the input character was rejected.
+* `RejectionHint`: An enumerated value that describes why the input character was rejected.
 
-MaskInputRejected is raised in the following situations:
+The `MaskInputRejected` event is raised in the following situations:
 
-* An input character does not match the corresponding format element. For example, if you enter an alphabetic character when a digit is required. This is probably the most common reason why this event is raised.
-* When you try to input extraneous characters beyond the end of the mask.
-* A paste operation inserts a character that does not match with its associated format element. 
+* An input character does not match the corresponding format element (for example, entering an alphabetic character when a digit is required). This is the most common reason for this event.
+* When attempting to input extraneous characters beyond the end of the mask.
+* A paste operation inserts a character that does not match its associated format element.
 
 {% tabs %}
 {% highlight c# %}
@@ -103,6 +102,6 @@ private void MaskedEdit_OnMaskInputRejected(object sender, MaskInputRejectedEven
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/MaskInputRejectedevent.png)
+![MaskInputRejected event](SfMaskedEditImages/MaskInputRejectedevent.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_Events.zip).
+You can download the complete events sample from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_Events.zip).
